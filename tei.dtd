@@ -1,0 +1,282 @@
+<!--
+    BULLINGER DIGITAL
+    *****************
+    - file: tei.dtd (bullinger corpus description according to TEI standards)
+    - documentation:
+        - official: https://www.tei-c.org/release/doc/tei-p5-doc/en/html/
+        - wiki: https://en.wikipedia.org/wiki/Text_Encoding_Initiative
+    - source: https://www.bullinger-digital.ch/, Volk et al., 23.11.2022
+-->
+
+<!-- TEI-ROOT
+https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-TEI.html -->
+<!ELEMENT TEI (teiHeader, facsimile, text)>
+    <!-- official TEI namespace URI (since 2002) -->
+    <!ATTLIST TEI xmlns CDATA #REQUIRED>
+    <!-- informal signature [quadruple (file-type, edition-abbrev., edition-nr, letter-nr) -->
+    <!ATTLIST TEI xml:id CDATA #REQUIRED>
+    <!-- actual file identifier [bullinger-digital-id, integer] -->
+    <!ATTLIST TEI n CDATA #REQUIRED>
+
+<!-- e.g. <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief_HBBW_1_42" n="10070">
+online reference: https://www.bullinger-digital.ch/letter/<int> -->
+
+<!-- TEI-HEADER
+https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teiHeader.html -->
+<!ELEMENT teiHeader (fileDesc, profileDesc, revisionDesc)>
+    <!-- metadata language [always "de" in this version] -->
+    <!ATTLIST teiHeader xml:lang CDATA #REQUIRED>
+
+<!-- bibliographic description (metadata only -> publicationStmt/seriesStmt (the letter[text]) missing)
+https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html -->
+<!ELEMENT fileDesc (titleStmt, publicationStmt?, seriesStmt?, sourceDesc)>
+
+<!-- title https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titleStmt.html -->
+<!ELEMENT titleStmt (title)>
+<!-- https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-title.html -->
+<!ELEMENT title (#PCDATA)>
+<!-- {"file", "publication", "Literatur", "Gedruckt"} -->
+<!ATTLIST title subtype CDATA #IMPLIED>
+
+<!-- e.g. <title subtype="file">[Konrad Gessner] / Zürich AN [Bullinger] / Zürich, 1548/49 oder 1553</title> -->
+
+<!-- publisher (empty if there are only metadata present)
+https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html -->
+<!ELEMENT publicationStmt (publisher?, address?, authority?, date?, (idno)*)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT address (addrLine)+>
+<!ELEMENT addrLine (#PCDATA)>
+<!ELEMENT authority (#PCDATA)>
+<!ELEMENT idno (#PCDATA)>
+    <!-- {"ISBN", "url"} -->
+    <!ATTLIST idno type CDATA #REQUIRED>
+<!-- e.g.:
+    <publicationStmt>
+         <address>
+              <addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
+              <addrLine>Badenerstrasse 73</addrLine>
+              <addrLine>8004 Zürich</addrLine>
+         </address>
+    </publicationStmt>
+-->
+
+<!-- edition-name publication-title
+https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html -->
+<!ELEMENT seriesStmt (title | idno | biblScope)*>
+<!ELEMENT biblScope (#PCDATA)>
+    <!-- {"edition", "volume", "page"} -->
+    <!ATTLIST biblScope type CDATA #IMPLIED>
+<!-- e.g. (unpublished TUSTEP/pdf-File):
+    <seriesStmt>
+         <title subtype="publication">Heinrich Bullinger Werke (Vorläufige Transkriptionen der HBBW-EditorInnen)</title>
+         <biblScope type="volume">HBBW</biblScope>
+         <biblScope type="page">1264</biblScope>
+    </seriesStmt>
+-->
+
+<!-- DATES -->
+<!ELEMENT date (#PCDATA | note)*>
+<!ATTLIST date when CDATA #IMPLIED>
+<!ATTLIST date min CDATA #IMPLIED>
+<!ATTLIST date max CDATA #IMPLIED>
+<!ATTLIST date cert CDATA #IMPLIED>
+
+<!-- DOCUMENTS -->
+<!ELEMENT sourceDesc (msDesc)*>
+<!-- manuscript -->
+<!ELEMENT msDesc (msIdentifier | history | physDesc | msContents | additional)*>
+<!ATTLIST msDesc type CDATA #IMPLIED>
+<!ATTLIST msDesc subtype CDATA #IMPLIED>
+<!ATTLIST msDesc xml:lang CDATA #IMPLIED>
+<!-- sources (archive, signature, old signature, [xerox-copy, microfilm, remarks]) -->
+<!ELEMENT msIdentifier (settlement | idno | institution | repository | altIdentifier)*>
+<!ELEMENT institution (#PCDATA)>
+<!ELEMENT repository (name | date | note | ref)*>
+<!ATTLIST repository ref CDATA #IMPLIED>
+<!ELEMENT altIdentifier (idno)>
+<!-- history [e.g. "16. Jh."] -->
+<!ELEMENT history (origin)>
+<!ELEMENT origin (p)>
+<!-- [physical] properties -->
+<!ELEMENT physDesc (objectDesc | sealDesc)*>
+<!-- state [e.g. "beschädigt"] -->
+<!ELEMENT objectDesc (p)*>
+<!-- seal(s) [e.g. "Siegelspuren"] -->
+<!ELEMENT sealDesc (seal)*>
+<!ELEMENT seal (p)*>
+
+<!-- CONTENTS -->
+<!ELEMENT msContents (#PCDATA | msItem | summary)*>
+<!ELEMENT msItem (author?, incipit?, textLang?)>
+<!ELEMENT author (#PCDATA)>
+<!-- first sentence -->
+<!ELEMENT incipit (#PCDATA)>
+<!ELEMENT textLang (#PCDATA)>
+<!-- regest -->
+<!ELEMENT summary (#PCDATA | p)*>
+<!ELEMENT p (#PCDATA | note | foreign | pb | date | persName | placeName | ref | hi)*>
+<!ATTLIST p xml:id CDATA #IMPLIED>
+
+<!-- Literatur/Gedruckt -->
+<!ELEMENT additional (#PCDATA | listBibl | note)*>
+<!ELEMENT listBibl (#PCDATA | bibl)*>
+<!ELEMENT bibl (#PCDATA | title | note | citedRange)*>
+<!ATTLIST bibl type CDATA #IMPLIED>
+<!ATTLIST bibl subtype CDATA #IMPLIED>
+<!ELEMENT citedRange (#PCDATA)>
+<!ATTLIST citedRange target CDATA #IMPLIED>
+<!ATTLIST citedRange from CDATA #IMPLIED>
+<!ATTLIST citedRange to CDATA #IMPLIED>
+<!ATTLIST citedRange unit CDATA #IMPLIED>
+
+<!-- SCAN IMAGES -->
+<!ELEMENT facsimile (graphic)*>
+
+<!-- ADDRESSES (correspondents) -->
+<!ELEMENT profileDesc (#PCDATA | correspDesc | creation | langUsage)*>
+<!ELEMENT correspDesc (#PCDATA | correspAction | correspContext)*>
+<!ATTLIST correspDesc ref CDATA #IMPLIED>
+<!ELEMENT correspContext (#PCDATA | ref)*>
+<!ELEMENT ref (#PCDATA)>
+<!ATTLIST ref type CDATA #IMPLIED>
+<!ATTLIST ref target CDATA #IMPLIED>
+<!ELEMENT creation (#PCDATA | date)*>
+<!-- type: sent/received -->
+<!ELEMENT correspAction (#PCDATA | persName | roleName | orgName | location | date)*>
+<!ATTLIST correspAction type CDATA #IMPLIED>
+<!-- persons -->
+<!ELEMENT persName (#PCDATA | forename | surname | addName | location | roleName | orgName | note | graphic | ref | persName | placeName)*>
+<!ATTLIST persName ref CDATA #IMPLIED>
+<!ATTLIST persName cert CDATA #IMPLIED>
+<!ELEMENT forename (#PCDATA)>
+<!ATTLIST forename cert CDATA #IMPLIED>
+<!ELEMENT surname (#PCDATA)>
+<!ATTLIST surname cert CDATA #IMPLIED>
+<!-- normalized name, inclusively aliases [e.g. "Gwalther (Walter, Gualtherus, Walthart), Rudolf"] -->
+<!ELEMENT addName (#PCDATA)>
+<!ATTLIST addName type CDATA #IMPLIED>
+<!-- portraits/scans -->
+<!ELEMENT graphic (#PCDATA)>
+<!ATTLIST graphic xml:id CDATA #IMPLIED>
+<!ATTLIST graphic type CDATA #IMPLIED>
+<!ATTLIST graphic url CDATA #IMPLIED>
+<!ATTLIST graphic n CDATA #IMPLIED>
+<!-- roles [titles/professions], e.g. "Geistliche", "Professoren", "Bischof" -->
+<!ELEMENT roleName (name | location)*>
+<!ATTLIST roleName type CDATA #IMPLIED>
+<!ATTLIST roleName ref CDATA #IMPLIED>
+<!-- organizations[/institutions], e.g. Kirche(n), Gemeinde(n), Synode(n), Kapitel, ... -->
+<!ELEMENT orgName (name | location)*>
+<!ATTLIST orgName type CDATA #IMPLIED>
+<!ATTLIST orgName ref CDATA #IMPLIED>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name type CDATA #IMPLIED>
+<!ATTLIST name ref CDATA #IMPLIED>
+<!ATTLIST name cert CDATA #IMPLIED>
+<!-- locations (place, district/region, country & coordinates) -->
+<!ELEMENT location (settlement | district | country | geo)*>
+<!ATTLIST location cert CDATA #IMPLIED>
+<!ELEMENT settlement (#PCDATA)>
+<!ATTLIST settlement ref CDATA #IMPLIED>
+<!ELEMENT district (#PCDATA)>
+<!ATTLIST district ref CDATA #IMPLIED>
+<!ELEMENT country (#PCDATA)>
+<!ATTLIST country ref CDATA #IMPLIED>
+<!ELEMENT geo (#PCDATA)>
+
+<!-- LANGUAGES -->
+<!ELEMENT langUsage (language)*>
+    <!ELEMENT language (#PCDATA)>
+        <!-- iso-code [e.g. "de"] -->
+        <!ATTLIST language ident CDATA #IMPLIED>
+        <!-- percentage [e.g. "42"] -->
+        <!ATTLIST language usage CDATA #IMPLIED>
+
+<!-- REVISION (changes)-->
+<!ELEMENT revisionDesc (#PCDATA | change)*>
+<!ATTLIST revisionDesc status CDATA #IMPLIED>
+<!ELEMENT change (#PCDATA)>
+<!ATTLIST change who CDATA #IMPLIED>
+<!ATTLIST change when-iso CDATA #IMPLIED>
+<!ATTLIST change status CDATA #IMPLIED>
+
+<!-- NEs -->
+<!ELEMENT placeName (#PCDATA | placeName)*>
+<!ATTLIST placeName ref CDATA #IMPLIED>
+<!ATTLIST placeName cert CDATA #IMPLIED>
+<!ELEMENT geogName (#PCDATA | placeName | geo | geogName)*>
+<!ATTLIST geogName type CDATA #IMPLIED>
+<!ATTLIST geogName ref CDATA #IMPLIED>
+
+<!-- LETTER, FOOTNOTES, REGEST -->
+<!ELEMENT text (#PCDATA | body)*>
+<!ATTLIST text xml:lang CDATA #IMPLIED>
+<!ELEMENT body (#PCDATA | div)*>
+<!ELEMENT div (#PCDATA | link | ab)*>
+<!ATTLIST div xml:id CDATA #IMPLIED>
+<!ATTLIST div corresp CDATA #IMPLIED>
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link target CDATA #IMPLIED>
+<!-- paragraphs (ab: anonymous block) -->
+<!ELEMENT ab (#PCDATA | s | note)*>
+<!-- sentences -->
+<!ELEMENT s (#PCDATA | note | ptr | pb | foreign | persName | placeName | del | zzl)*>
+    <!ATTLIST s xml:lang CDATA #REQUIRED>
+    <!ATTLIST s type CDATA #REQUIRED>
+    <!ATTLIST s n CDATA #IMPLIED>
+
+<!-- code switchings (identifies a word or phrase as belonging to some language other than that of the surrounding text)
+https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-foreign.html -->
+<!ELEMENT foreign (#PCDATA | note | pb | ptr | persName | placeName)*>
+    <!-- iso-code -->
+    <!ATTLIST foreign xml:lang CDATA #REQUIRED>
+
+<!-- deletion (text marked as deleted)
+https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-del.html -->
+<!ELEMENT del (#PCDATA)>
+
+<!-- various [types of] notes (in metadata/regest and letter/footnotes)
+https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-note.html -->
+<!ELEMENT note (#PCDATA | foreign | ptr | persName | placeName | note | ref | pb | hi | abbr | zfn | qv)*>
+<!-- attributes id/n only for footnotes/pointers -->
+    <!-- footnote-id, resp. ptr-reference (present if type="footnote"); "fn"+reference -->
+    <!ATTLIST note xml:id CDATA #IMPLIED>
+    <!-- metadata: {"Datum", "Person", ..., "Xeroxkopie", "Mikrofilm", ...}; text: {"footnote", "sub", "sup", ...} -->
+    <!ATTLIST note type CDATA #IMPLIED>
+    <!-- footnote reference (alpha|num-marker: [a-z]+ OR \d+) -->
+    <!ATTLIST note n CDATA #IMPLIED>
+
+<!-- start of footnote ranges (points to the actual footnote(/text)
+https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-ptr.html -->
+<!ELEMENT ptr EMPTY>
+    <!-- == note xml:id [footnote, resp. pointer-id] -->
+    <!ATTLIST ptr target CDATA #REQUIRED>
+    <!-- {"footnote"} [redundant: pointers appear only together with footnotes] -->
+    <!ATTLIST ptr type CDATA #REQUIRED>
+    <!-- == note n [footnote reference] -->
+    <!ATTLIST ptr n CDATA #REQUIRED>
+
+<!-- e.g.: <ptr target="#fn42" type="footnote" n="42"/> -->
+
+<!-- page breaks (letters/regests)
+https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html -->
+<!ELEMENT pb EMPTY>
+    <!-- {"edition", "scan"} -->
+    <!ATTLIST pb type CDATA #REQUIRED>
+    <!-- edition >> int; scan >> signature -->
+    <!ATTLIST pb next CDATA #REQUIRED>
+
+<!-- e.g.: <pb type="edition" next="42"/>, <pb type="scan" next="E II 235,420"/> -->
+
+<!-- "highlighted" [usually italic (editorial notes)]
+https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-hi.html -->
+<!ELEMENT hi (#PCDATA | note | ptr | foreign | persName | placeName | ref | abbr | qv | zfn)*>
+
+<!-- abbreviations(/publication titles) [e.g. "HBBW", "SI", "BucerDS", but also "Epistolae Tigurinae", etc.]
+https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-abbr.html -->
+<!ELEMENT abbr (#PCDATA | placeName)*>
+
+<!-- NON TEI -->
+<!ELEMENT zzl (#PCDATA)>
+<!ELEMENT zfn (#PCDATA)>
+<!ELEMENT qv (#PCDATA)>
