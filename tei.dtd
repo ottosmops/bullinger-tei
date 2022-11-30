@@ -10,7 +10,7 @@
 
 <!-- TEI-ROOT
 https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-TEI.html -->
-<!ELEMENT TEI (teiHeader, facsimile, text)>
+<!ELEMENT TEI (teiHeader | facsimile | text)*>
     <!-- official TEI namespace URI (since 2002) -->
     <!ATTLIST TEI xmlns CDATA #REQUIRED>
     <!-- informal signature [quadruple (file-type, edition-abbrev., edition-nr, letter-nr) -->
@@ -25,7 +25,7 @@ online reference: https://www.bullinger-digital.ch/letter/<int> -->
 https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teiHeader.html -->
 <!ELEMENT teiHeader (fileDesc, profileDesc, revisionDesc)>
     <!-- metadata language [always "de" in this version] -->
-    <!ATTLIST teiHeader xml:lang CDATA #REQUIRED>
+    <!ATTLIST teiHeader xml:lang CDATA #IMPLIED>
 
 <!-- bibliographic description (metadata only -> publicationStmt/seriesStmt (the letter[text]) missing)
 https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html -->
@@ -82,7 +82,7 @@ https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html -->
 <!ATTLIST date cert CDATA #IMPLIED>
 
 <!-- DOCUMENTS -->
-<!ELEMENT sourceDesc (msDesc)*>
+<!ELEMENT sourceDesc (msDesc|listPerson|listPlace)*>
 <!-- manuscript -->
 <!ELEMENT msDesc (msIdentifier | history | physDesc | msContents | additional)*>
 <!ATTLIST msDesc type CDATA #IMPLIED>
@@ -145,7 +145,10 @@ https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html -->
 <!ELEMENT correspAction (#PCDATA | persName | roleName | orgName | location | date)*>
 <!ATTLIST correspAction type CDATA #IMPLIED>
 <!-- persons -->
-<!ELEMENT persName (#PCDATA | forename | surname | addName | location | roleName | orgName | note | graphic | ref | persName | placeName)*>
+<!ELEMENT listPerson (persName)*>
+<!ATTLIST listPerson xml:id CDATA #IMPLIED>
+<!ELEMENT persName (#PCDATA | forename | surname | addName | location | roleName | orgName | note | graphic | ref | persName | placeName | idno)*>
+<!ATTLIST persName xml:id CDATA #IMPLIED>
 <!ATTLIST persName ref CDATA #IMPLIED>
 <!ATTLIST persName cert CDATA #IMPLIED>
 <!ELEMENT forename (#PCDATA)>
@@ -153,8 +156,9 @@ https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html -->
 <!ELEMENT surname (#PCDATA)>
 <!ATTLIST surname cert CDATA #IMPLIED>
 <!-- normalized name, inclusively aliases [e.g. "Gwalther (Walter, Gualtherus, Walthart), Rudolf"] -->
-<!ELEMENT addName (#PCDATA)>
+<!ELEMENT addName (#PCDATA | forename | surname)*>
 <!ATTLIST addName type CDATA #IMPLIED>
+<!ATTLIST addName xml:id CDATA #IMPLIED>
 <!-- portraits/scans -->
 <!ELEMENT graphic (#PCDATA)>
 <!ATTLIST graphic xml:id CDATA #IMPLIED>
@@ -174,7 +178,9 @@ https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html -->
 <!ATTLIST name ref CDATA #IMPLIED>
 <!ATTLIST name cert CDATA #IMPLIED>
 <!-- locations (place, district/region, country & coordinates) -->
+<!ELEMENT listPlace (location)*>
 <!ELEMENT location (settlement | district | country | geo)*>
+<!ATTLIST location xml:id CDATA #IMPLIED>
 <!ATTLIST location cert CDATA #IMPLIED>
 <!ELEMENT settlement (#PCDATA)>
 <!ATTLIST settlement ref CDATA #IMPLIED>
