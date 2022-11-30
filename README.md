@@ -1,5 +1,7 @@
 # BULLINGER CORPUS (TEI-XML)
 
+PROVISIONAL VERSION
+
 ### Contents
 
 - Letters: data/letters/\*.xml [13'154 files; ~120 MB]
