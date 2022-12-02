@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief"
-	 n="6684">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief" n="6684">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
@@ -10,10 +8,10 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 371,1057</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -31,10 +29,10 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="places.xml#441">Schaffhausen</settlement>
+						<settlement ref="place#441">Schaffhausen</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Kopie">Abschriften 4/6 p. 520</idno>
-						<repository ref="archives.xml#76">
+						<repository ref="archive#76">
 							<name>Schaffhausen StA</name>
 							<note type="Xeroxkopie">IRG</note>
 							<ref target="https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Regierung/Staatskanzlei/Staatsarchiv-3936-DE.html"/>
@@ -53,42 +51,44 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6684">
 				<correspAction type="sent">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<note type="Person">namens der übrigen Geistlichen</note>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#587">Zürich</settlement>
-						<district ref="districts.xml#210">Zürich</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#587" cert="high">
+						<settlement>Zürich</settlement>
+						<district>Zürich</district>
+						<country>Schweiz</country>
 						<geo>47.370093 8.544054</geo>
-					</location>
+					</place>
 					<date when="1566-02-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#1309" cert="high">
+					<persName ref="person#1309" cert="high">
 						<forename cert="high">Sebastian</forename>
 						<surname cert="high">Grübel</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Sebastian_Gr%C3%BCbel"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11422484"/>
 					</persName>
 					<roleName type="title">
-						<name type="plural" ref="titles.xml#26" cert="high">Geistliche</name>
-						<location cert="high">
-							<settlement ref="places.xml#441">Schaffhausen</settlement>
-							<district ref="districts.xml#159">Schaffhausen</district>
-							<country ref="countries.xml#58">Schweiz</country>
+						<name type="plural" ref="role#26" cert="high">Geistliche</name>
+						<place source="#441" cert="high">
+							<settlement>Schaffhausen</settlement>
+							<district>Schaffhausen</district>
+							<country>Schweiz</country>
 							<geo>47.69732 8.63493</geo>
-						</location>
+						</place>
 					</roleName>
-					<location cert="high">
-						<settlement ref="places.xml#441">Schaffhausen</settlement>
-						<district ref="districts.xml#159">Schaffhausen</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<note type="Adresse">und die übrigen Geistlichen von Schaffhausen</note>
+					<place source="#441" cert="high">
+						<settlement>Schaffhausen</settlement>
+						<district>Schaffhausen</district>
+						<country>Schweiz</country>
 						<geo>47.69732 8.63493</geo>
-					</location>
+					</place>
 				</correspAction>
 				<correspContext>
 					<ref type="next_chronologically" target="files.xml#6685"/>

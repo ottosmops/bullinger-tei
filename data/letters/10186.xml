@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-2-155"
-	 n="10186">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-2-155" n="10186">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Berchtold Haller / [Bern] AN Heinrich Bullinger, 30. November 1532</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</authority>
-				<date>1982</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="1982"/>
 				<idno type="ISBN">ISBN 3-290-11467-8</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=155</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 2</title>
+				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">2</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1532</biblScope>
 				<biblScope type="page">273</biblScope>
+				<biblScope type="pages">304</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 343,101</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,13 +45,13 @@
 							<textLang>la</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Gleichzeitig mit einer Anfrage des <placeName ref="121">Berner</placeName> Rates an Zürich wegen
-							zwei Problemen der Ehegesetzgebung stellt <persName ref="90">Haller</persName> dieselben Fragen an
-							Bullinger: 1. Ob die Heirat eines schuldig Geschiedenen, wenn sie ohne Erlaubnis, gegen das im Gesetz
-							ausgesprochene Verbot geschieht, eine Ehe bewirke. 2. Ob wegen Ehebruch Geschiedene jene Person heiraten
-							dürfen, mit der sie die Ehe gebrochen haben.
-						</p>
+							<p xml:id="regest1">
+								Gleichzeitig mit einer Anfrage des <placeName ref="121">Berner</placeName> Rates an Zürich wegen
+								zwei Problemen der Ehegesetzgebung stellt <persName ref="90">Haller</persName> dieselben Fragen an
+								Bullinger: 1. Ob die Heirat eines schuldig Geschiedenen, wenn sie ohne Erlaubnis, gegen das im Gesetz
+								ausgesprochene Verbot geschieht, eine Ehe bewirke. 2. Ob wegen Ehebruch Geschiedene jene Person heiraten
+								dürfen, mit der sie die Ehe gebrochen haben.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -57,20 +60,20 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10186">
 				<correspAction type="sent">
-					<persName ref="persons.xml#1391" cert="high">
+					<persName ref="person#1391" cert="high">
 						<forename cert="high">Berchtold</forename>
 						<surname cert="high">Haller</surname>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#41">Bern</settlement>
-						<district ref="districts.xml#31">Bern/Berne</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#41" cert="high">
+						<settlement>Bern</settlement>
+						<district>Bern</district>
+						<country>Schweiz</country>
 						<geo>46.94809 7.44744</geo>
-					</location>
+					</place>
 					<date when="1532-11-30" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -109,13 +112,13 @@
 	</facsimile>
 	<text xml:lang="de">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
+			<div xml:id="div1" corresp="regest1">
+				<p>
 					<s xml:lang="la" type="auto">S.</s>
 					<s xml:lang="la" type="auto">Querit consilia senatus noster a vestrate in negocio iudicii censorii, quod consistorium vocant<note xml:id="fn1" type="footnote" n="1">Zusammenfassung der Anfrage aus <placeName ref="121">Bern</placeName> vom 29. November 1532 sowie des Gutachtens des Zürcher Ehegerichtes und der danach erfolgten Antwort Zürichs: AZürcherRef 1908; ASchweizerRef <hi>IV</hi> 2022. Gutachten der Zürcher Prediger: ABernerRef 2929. - Zur ganzen Frage s. <hi>de Quervain</hi> 40f; <hi>Köhler,</hi> Ehegericht I 334-337.</note>.</s>
 					<s xml:lang="la" type="auto">Duae sunt sanctiones ante biennium institutae<note xml:id="fn2" type="footnote" n="2">In den Erläuterungen zur Ehegerichtsordnung, 13. November 1530, s. ABernerRef 2905; <hi>de Quervain</hi> 217; <hi>Köhler,</hi> Ehegericht I 330-334.</note>, quibus casibus experientia quottidiana obvenientibus imposterum occurrere volebamus; sed crescente hominum malicia ita nihil effęcimus, quod quottidie novis conatibus impellant nos, quorum malicia nullo obice impediri potest.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="de" type="auto"><foreign xml:lang="la">Prior sanctio hęc est:</foreign> die dess eescheidenß schuld tragend, söllend zuͤ dem minsten ein jar lang still stan<note xml:id="fn3" type="footnote" n="3">zuwarten (SI XI 730).</note>, sich eerlich und frommklich tragen, sich onn dess egrichts erlouben und gnuͤgsame [k]untschafft<note xml:id="fn4" type="footnote" n="4">Zeugnis, Beweis (SI III 353).</note> der<note xml:id="fna" type="footnote" n="a">[k]untschafft der <hi>am Rande nachgetragen.</hi></note> besserung nitt<note xml:id="fnb" type="footnote" n="b">nitt <hi>übergeschrieben.</hi></note> vereelichen; welche es aber tätind wider das verbott, sollend unser statt und land miden, doch uff unser gnad und straff<note xml:id="fn5" type="footnote" n="5">mit Vorbehalt von Begnadigung oder Bestrafung.</note>.</s>
 					<s xml:lang="la" type="auto">Hic sunt duę declarationes, super quibus senatus concordari non potuit.</s>
 					<s xml:lang="de" type="auto">Ein teil wil es nütt dess minder für ein ee han, diewil sy von gott niemant verspert soll sin<note xml:id="fn6" type="footnote" n="6">Vgl. Gen 2,24; Dtn 24,1ff; 1 Kor 7,9.</note>, und die leistung<note xml:id="fn7" type="footnote" n="7">Verbannung, Verweisung (SI III 1473).</note> von der statt für ein straff der ungehorsami lassen sin.</s>
@@ -124,8 +127,8 @@
 					<s xml:lang="de" type="auto">Zühend sy uss unser herren biet, halte man sy, worfür man welle, an andren orten.</s>
 					<s xml:lang="la" type="auto">Faciles sunt magistratus, personas accipere et semel proscriptos rursus in urbem admittere, quo fieret, ut quisque sic ad divortium anhelaret.</s>
 					<s xml:lang="la" type="auto">Tu igitur cogita, quod divinius, id est minus offendere videatur; nam verbum domini super his non habemus<note xml:id="fn12" type="footnote" n="12">Weil nämlich der Ehebruch im Alten Testament ohnehin mit dem Tod bestraft wurde, vgl. Lev 20,10.</note>.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="de" type="auto">Posterior lex: es sol hinfür kein person sich mitt der person vereelichen, mitt deren sy geebrechet hett, si trage scheidenß schuld oder nitt.</s>
 					<s xml:lang="de" type="auto">Dise satzung wil sich so wyttleuffig zuͤtragen, daß die gscheidnen ire huͤren oder buͤben<note xml:id="fn13" type="footnote" n="13">Huren-Buben, Hurer (SI IV 928).</note> nämend, vermeinend, wenn es nitt in klag oder recht kummen sye <foreign xml:lang="la">ab innocente<note xml:id="fn14" type="footnote" n="14">wenn es von Seiten des unschuldigen Teils nicht zu Klage oder Prozeß gekommen sei.</note></foreign> und scheidens kein schuld trage, sölle inen nitt verspert sin<note xml:id="fn15" type="footnote" n="15">soll ihnen (die Ehe) nicht verboten sein.</note>, <foreign xml:lang="la">quantumvis notorium fuerit adulterium.</foreign></s>
 					<s xml:lang="de" type="auto">Ettlich meinend, ergernuß ze vermiden, söllen man <foreign xml:lang="la">salutem ecclesię</foreign> höher<pb type="edition" next="274"/> schätzen, dann sunderer<note xml:id="fn16" type="footnote" n="16">einzelner (SI VII 1140).</note> lüten.</s>
@@ -133,20 +136,20 @@
 					<s xml:lang="de" type="auto">Ettlich ouch, aber mitt dem zuͤsatz, daß ein chorgricht gwalt hab, nach billicheit und gstalt der sachen<note xml:id="fn19" type="footnote" n="19">nach den Umständen (SI XI 344).</note> ze urteilen.</s>
 					<s xml:lang="la" type="auto">Hoc quoque perpende et scribe sententiam tuam fulciasque argumentis, quibus potes<note xml:id="fn20" type="footnote" n="20">Die Zürcher Prädikanten beantworteten in ihrem Gutachten beide Fragen negativ, s. ABernerRef 2929 und die oben (Anm. 1) angeführte Lit.</note>.</s>
 					<s xml:lang="la" type="auto">Non dubito <persName ref="145">Megandrum</persName> Leoni etiam scripsisse<note xml:id="fn21" type="footnote" n="21">Ein Brief <persName ref="145">Meganders</persName> an <persName ref="114">Jud</persName> aus dieser Zeit ist nicht erhalten.</note>.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Vale; nulla alia sunt apud nos nova.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Ultima novembris.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Tuus B. H.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
 					<s xml:lang="la" type="auto">Docto iuxtaque pio Heinrico Bullingero, suo fratri semper charissimo.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

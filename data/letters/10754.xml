@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-6-716"
-	 n="10754">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-6-716" n="10754">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Johannes Zwick / [Konstanz] AN Heinrich Bullinger, 7. Januar 1536</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Bächtold, Hans Ulrich; Henrich, Rainer</authority>
-				<date>1995</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="1995"/>
 				<idno type="ISBN">ISBN 3-290-10980-1</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=716</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1536</biblScope>
 				<biblScope type="page">55</biblScope>
+				<biblScope type="pages">518</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 346,48</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,13 +45,13 @@
 							<textLang>la</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Befürwortet die baldige Entsendung einer Gesandtschaft an <persName ref="138">Luther</persName>.
-							Dieser hat sich gegenüber den Strassburgern für einen Konvent auch ohne Unterstützung durch Fürsten und
-							Städte ausgesprochen, doch würde damit der evangelischen Sache geschadet. Die Strassburger drängen auf die
-							Teilnahme [der Zürcher]. Schickt Nachricht über einen in <placeName ref="688">Meersburg</placeName>
-							gefangenen Bruder und bittet, diesem zu helfen.
-						</p>
+							<p xml:id="regest1">
+								Befürwortet die baldige Entsendung einer Gesandtschaft an <persName ref="138">Luther</persName>.
+								Dieser hat sich gegenüber den Strassburgern für einen Konvent auch ohne Unterstützung durch Fürsten und
+								Städte ausgesprochen, doch würde damit der evangelischen Sache geschadet. Die Strassburger drängen auf die
+								Teilnahme [der Zürcher]. Schickt Nachricht über einen in <placeName ref="688">Meersburg</placeName>
+								gefangenen Bruder und bittet, diesem zu helfen.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -57,21 +60,22 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10754">
 				<correspAction type="sent">
-					<persName ref="persons.xml#4079" cert="high">
+					<persName ref="person#4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#257">Konstanz</settlement>
-						<district ref="districts.xml#16">Baden-Württemberg</district>
-						<country ref="countries.xml#18">Deutschland</country>
+					<place source="#257" cert="high">
+						<settlement>Konstanz</settlement>
+						<district>Baden-Württemberg</district>
+						<country>Deutschland</country>
 						<geo>47.6633 9.1759</geo>
-					</location>
+					</place>
 					<date when="1536-01-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -109,39 +113,39 @@
 	</facsimile>
 	<text xml:lang="la">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
+			<div xml:id="div1" corresp="regest1">
+				<p>
 					<s xml:lang="la" type="auto">Salus.</s>
-				</ab>
-				<ab>
-					<s xml:lang="la" type="auto">Magis atque magis arridet nobis consilium de mittendis legatis a vobis ad <persName ref="138">Lutherum</persName><note xml:id="fn1" type="footnote" n="1">Vgl. unten <ref target="files.xml#10769">Nr. 731</ref>, 64-67.</note>, neque iam aliud volumus, quam ut maturetis hanc rem; vigilant enim alii atque urgent conventum.</s>
-				</ab>
-				<ab>
-					<s xml:lang="la" type="auto"><persName ref="138">Lutherus</persName> visus est <placeName ref="1049">Argentoratensibus</placeName> conventum in principum et magistratuum arbitrium<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> arbitrium <hi>gestrichenes</hi> conven aut.</note> reiicere, sed persuasus est venire et adesse, etiam si nolint civitates et principes manum addere auxiliatricem<note xml:id="fn2" type="footnote" n="2"><persName ref="263">Zwick</persName> bezieht sich auf <persName ref="138">Luthers</persName> Brief an die <placeName ref="1049">Straßburger</placeName> Geistlichen vom 27. November 1535 (s. oben <ref target="files.xml#10751">Nr. 713</ref>, Anm. 9).</note>.</s>
+				</p>
+				<p>
+					<s xml:lang="la" type="auto">Magis atque magis arridet nobis consilium de mittendis legatis a vobis ad <persName ref="138">Lutherum</persName><note xml:id="fn1" type="footnote" n="1">Vgl. unten <ref target="file#10769">Nr. 731</ref>, 64-67.</note>, neque iam aliud volumus, quam ut maturetis hanc rem; vigilant enim alii atque urgent conventum.</s>
+				</p>
+				<p>
+					<s xml:lang="la" type="auto"><persName ref="138">Lutherus</persName> visus est <placeName ref="1049">Argentoratensibus</placeName> conventum in principum et magistratuum arbitrium<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> arbitrium <hi>gestrichenes</hi> conven aut.</note> reiicere, sed persuasus est venire et adesse, etiam si nolint civitates et principes manum addere auxiliatricem<note xml:id="fn2" type="footnote" n="2"><persName ref="263">Zwick</persName> bezieht sich auf <persName ref="138">Luthers</persName> Brief an die <placeName ref="1049">Straßburger</placeName> Geistlichen vom 27. November 1535 (s. oben <ref target="file#10751">Nr. 713</ref>, Anm. 9).</note>.</s>
 					<s xml:lang="la" type="auto">Nos vero non dubitamus, quin<note xml:id="fnb" type="footnote" n="b"><hi>in der Vorlage</hi> quim.</note> maximam invidiam simus conflaturi rei evangelicae, si conemur vel invitis vel insciis potestatibus convenire.</s>
 					<s xml:lang="la" type="auto">O quam strenue orandus est dominus, ne nobis ipsis nos sinat!</s>
 					<s xml:lang="la" type="auto">Iterum atque iterum urgent <placeName ref="1049">Argentoratenses</placeName>, ne fugiatis congressum.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Vale, mi frater<note xml:id="fnc" type="footnote" n="c"><hi>nach</hi> frater <hi>gestrichenes</hi> raptim.</note>, cum omnibus fratribus.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Datum raptim 7. ianuarii 1536.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Hic mitto<note xml:id="fnd" type="footnote" n="d">Hic mitto <hi>am Rande nachgetragen.</hi></note> negotium boni illius fratris, qui iam biennio fere carceri inclusus est Merspurg<note xml:id="fn3" type="footnote" n="3">Vgl. HBBW V, S. 223, 32f mit Anm. 16.</note>, nec dubita, quin ita sese res habeat.</s>
 					<s xml:lang="la" type="auto">Si quicquam excogitare potes in consolationem captivi, fac, ut<note xml:id="fne" type="footnote" n="e"><hi>vor</hi> ut <hi>gestrichenes</hi> c.</note> tuam diligentiam experiatur.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Vale cum tota domo.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Tuus Io. <persName ref="263">Zvick</persName>.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
 					<s xml:lang="la" type="auto">Domino Hainricho Bullingero, Tigurinae eclesiae ecclesiastae, fratri charissimo.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

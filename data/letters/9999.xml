@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief"
-	 n="9999">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief" n="9999">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
@@ -10,10 +8,10 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 377,2623 + 2702,2703</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<note type="Hinweis">E II 377,2623 Hand des Kaspar HubenschmidE II 377,2702 und E II 377,2702 : Unterschriften der Absender</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
@@ -32,10 +30,10 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Zentralbibliothek</institution>
 						<idno type="Kopie">Ms S 133,30+31</idno>
-						<repository ref="archives.xml#96">
+						<repository ref="archive#96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
@@ -48,41 +46,42 @@
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9999">
 				<correspAction type="sent">
 					<roleName type="title">
-						<name type="plural" ref="titles.xml#26" cert="high">Geistliche</name>
-						<location cert="high">
-							<settlement ref="places.xml#98">Chur</settlement>
+						<name type="plural" ref="role#26" cert="high">Geistliche</name>
+						<place source="#98" cert="high">
+							<settlement>Chur</settlement>
 							<geo>46.84986 9.53287</geo>
-						</location>
+						</place>
 					</roleName>
 					<roleName type="title">
-						<name type="plural" ref="titles.xml#26" cert="high">Geistliche</name>
-						<location cert="high">
-							<district ref="districts.xml#55">Graubünden</district>
-							<country ref="countries.xml#58">Schweiz</country>
-						</location>
+						<name type="plural" ref="role#26" cert="high">Geistliche</name>
+						<place source="#648" cert="high">
+							<district>Graubünden</district>
+							<country>Schweiz</country>
+						</place>
 					</roleName>
-					<location cert="high">
-						<district ref="districts.xml#55">Graubünden</district>
-						<country ref="countries.xml#58">Schweiz</country>
-					</location>
+					<note type="Adresse">Bündner Geistliche</note>
+					<place source="#648" cert="high">
+						<district>Graubünden</district>
+						<country>Schweiz</country>
+					</place>
 					<date when="1575-08-16" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
 					<roleName type="title">
-						<name type="plural" ref="titles.xml#26" cert="high">Geistliche</name>
-						<location cert="high">
-							<settlement ref="places.xml#587">Zürich</settlement>
-							<district ref="districts.xml#210">Zürich</district>
-							<country ref="countries.xml#58">Schweiz</country>
+						<name type="plural" ref="role#26" cert="high">Geistliche</name>
+						<place source="#587" cert="high">
+							<settlement>Zürich</settlement>
+							<district>Zürich</district>
+							<country>Schweiz</country>
 							<geo>47.370093 8.544054</geo>
-						</location>
+						</place>
 					</roleName>
-					<location cert="high">
-						<settlement ref="places.xml#587">Zürich</settlement>
-						<district ref="districts.xml#210">Zürich</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#587" cert="high">
+						<settlement>Zürich</settlement>
+						<district>Zürich</district>
+						<country>Schweiz</country>
 						<geo>47.370093 8.544054</geo>
-					</location>
+					</place>
 				</correspAction>
 				<correspContext>
 					<ref type="next_chronologically" target="files.xml#10000"/>

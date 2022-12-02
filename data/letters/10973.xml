@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-7-931"
-	 n="10973">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-7-931" n="10973">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Kaspar Megander / [Bern] AN Heinrich Bullinger, 3. Januar 1537</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Bächtold, Hans Ulrich; Henrich, Rainer</authority>
-				<date>1998</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="1998"/>
 				<idno type="ISBN">ISBN 3-290-10980-1</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=931</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1537</biblScope>
 				<biblScope type="page">29</biblScope>
+				<biblScope type="pages">357</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 360,319</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,13 +45,13 @@
 							<textLang>la</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Bestätigt, daß er das Bestreben bernischer Landpfarrer, Reisläufer mit kirchlichem Bann zu belegen,
-							mißbilligt und bekämpfen will. Lobt die Anstrengungen Zürichs zur Unterbindung des Solddienstes und deutet
-							an, daß er gegen das Frühjahr bedeutende [militärische] Ereignisse erwartet. Dankt für ein Geschenk und
-							hofft, den Rest [von <persName ref="165">Pellikans</persName> Kommentar] zur Apostelgeschichte später
-							zu erhalten. Gruß.
-						</p>
+							<p xml:id="regest1">
+								Bestätigt, daß er das Bestreben bernischer Landpfarrer, Reisläufer mit kirchlichem Bann zu belegen,
+								mißbilligt und bekämpfen will. Lobt die Anstrengungen Zürichs zur Unterbindung des Solddienstes und deutet
+								an, daß er gegen das Frühjahr bedeutende [militärische] Ereignisse erwartet. Dankt für ein Geschenk und
+								hofft, den Rest [von <persName ref="165">Pellikans</persName> Kommentar] zur Apostelgeschichte später
+								zu erhalten. Gruß.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -57,22 +60,22 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10973">
 				<correspAction type="sent">
-					<persName ref="persons.xml#2263" cert="high">
+					<persName ref="person#2263" cert="high">
 						<forename cert="high">Kaspar</forename>
 						<surname cert="high">Megander</surname>
 						<addName type="main">Megander (Großmann), Kaspar</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Kaspar_Megander"/>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#41">Bern</settlement>
-						<district ref="districts.xml#31">Bern/Berne</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#41" cert="high">
+						<settlement>Bern</settlement>
+						<district>Bern</district>
+						<country>Schweiz</country>
 						<geo>46.94809 7.44744</geo>
-					</location>
+					</place>
 					<date when="1537-01-03" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -110,40 +113,40 @@
 	</facsimile>
 	<text xml:lang="la">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
+			<div xml:id="div1" corresp="regest1">
+				<p>
 					<s xml:lang="la" type="auto">Gratiam a domino.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Censuram ecclesiasticam a quibusdam agri nostri ministris praeter consilium ac voluntatem nostram in milites tentatam esse recte sentis<note xml:id="fn1" type="footnote" n="1">Die Pfarrer von <placeName ref="1234">Zofingen</placeName>, <placeName ref="6">Aarburg</placeName> und <placeName ref="184">Brittnau</placeName> hatten Reisläufer, die unerlaubterweise nach <placeName ref="11">Frankreich</placeName> gezogen waren, von den Sakramenten ausgeschlossen. Nachdem die Stadtpfarrer die Verhängung des Banns laut Ratsmanual (entgegen <persName ref="145">Meganders</persName> Darstellung) als zulässig erklärt hatten, wies der Rat die Dekane am 23./24. Dezember 1536 an, den Pfarrern eigenmächtiges Vorgehen zu untersagen (s. <placeName ref="121">Bern</placeName> StA, A II 128, 259. 283. 290f; A III 24, 387f). Bullinger scheint sich in einem nicht erhaltenen Brief über den Vorfall erkundigt zu haben.</note>.</s>
 					<s xml:lang="la" type="auto">Non enim tam iniqui et insipidi sum iudicii, tametsi stupidissimus, quin facile capere queam audacem hanc, praesertim tempore hoc perplexo et periculoso, hac in re prorupcionem non modo domino fructum nullum reportaturam, imo, nisi deus caveat, quod hactenus labore ac studio ingente extructum est, adobruturam.</s>
 					<s xml:lang="la" type="auto">Curabimus igitur sedulo, quo quorundam non solum mitigentur, sed ab instituto avocentur animi.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Studium dominorum tuorum, quo bellorum temp[ore] domi suos retineant<note xml:id="fn2" type="footnote" n="2">Zu den Maßnahmen Zürichs gegen den Solddienst s. HBBW VI, S. 317, Anm. 3.</note>, nemini non perplacet.</s>
 					<s xml:lang="la" type="auto">Est certe facinus comendacione amplissima dignum.</s>
 					<s xml:lang="la" type="auto">Ne dubites, charissime mi Bullingere, sub ver nos stupenda et visuros et audituros.</s>
 					<s xml:lang="la" type="auto">Faxit deus, quo omnia in suam cedant gloriam!</s>
-				</ab>
-				<ab>
-					<s xml:lang="la" type="auto">Gratissimum quod misisti munus accepi, haud dubie, quod reliquum est in Acta, quoque accepturus<note xml:id="fn3" type="footnote" n="3">Beim Geschenk Bullingers handelte es sich offenbar um einen Teil von <persName ref="165">Pellikans</persName> Kommentar zu den Evangelien und zur Apostelgeschichte (BZD C 266), dessen Druck erst im März abgeschlossen wurde. Vgl. auch unten <ref target="files.xml#10993">Nr. 951</ref>, 2-5 mit Anm. 2.</note>.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
+					<s xml:lang="la" type="auto">Gratissimum quod misisti munus accepi, haud dubie, quod reliquum est in Acta, quoque accepturus<note xml:id="fn3" type="footnote" n="3">Beim Geschenk Bullingers handelte es sich offenbar um einen Teil von <persName ref="165">Pellikans</persName> Kommentar zu den Evangelien und zur Apostelgeschichte (BZD C 266), dessen Druck erst im März abgeschlossen wurde. Vgl. auch unten <ref target="file#10993">Nr. 951</ref>, 2-5 mit Anm. 2.</note>.</s>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Bene vale.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto"><placeName ref="121">Bernę</placeName>, 3. ianuarii anno 37.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Uxore tua<note xml:id="fn4" type="footnote" n="4">Anna, geb. Adlischwyler.</note> et fratribus omnibus salvis.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Megand. tuus ex animo.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
 					<s xml:lang="la" type="auto">Domino Heinrico Bullingero, Tiguri a concionibus sacris, suo colendissimo et charissimo fratri.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

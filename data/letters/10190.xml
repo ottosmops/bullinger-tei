@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-2-159"
-	 n="10190">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-2-159" n="10190">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Sebastian Grübel / [St. Gallen] AN Heinrich Bullinger, 7. Dezember 1532</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</authority>
-				<date>1982</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="1982"/>
 				<idno type="ISBN">ISBN 3-290-11467-8</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=159</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 2</title>
+				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">2</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1532</biblScope>
 				<biblScope type="page">279</biblScope>
+				<biblScope type="pages">304</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 351,201r-v</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,22 +45,22 @@
 							<textLang>de</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Berichtet über die zunehmende Bedrängnis der Evangelischen im
-							Rheintal und in den äbtischen Gebieten. Überall wird versucht,
-							die Messe wieder einzuführen, auch gegen den Willen der Bevölkerung. Schikanen gegen reformierte
-							Prädikanten. <persName ref="82">Grübel</persName> schreibt Bullinger auf Anraten
-							<persName ref="226">Vadians</persName> und hofft auf die Hilfe Zürichs.
-						</p>
+							<p xml:id="regest1">
+								Berichtet über die zunehmende Bedrängnis der Evangelischen im
+								Rheintal und in den äbtischen Gebieten. Überall wird versucht,
+								die Messe wieder einzuführen, auch gegen den Willen der Bevölkerung. Schikanen gegen reformierte
+								Prädikanten. <persName ref="82">Grübel</persName> schreibt Bullinger auf Anraten
+								<persName ref="226">Vadians</persName> und hofft auf die Hilfe Zürichs.
+							</p>
 						</summary>
 					</msContents>
 					<additional>
 						<listBibl>
 							<bibl type="Gedruckt" subtype="Gedruckt">
-								<title subtype="Gedruckt">ASchweizerRef IV 2033</title>
+								<title>ASchweizerRef IV 2033</title>
 							</bibl>
 							<bibl type="Gedruckt" subtype="Teildruck">
-								<title subtype="Gedruckt">Knittel, Kirche 42f</title>
+								<title>Knittel, Kirche 42f</title>
 							</bibl>
 						</listBibl>
 					</additional>
@@ -67,21 +70,22 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10190">
 				<correspAction type="sent">
-					<persName ref="persons.xml#1309" cert="high">
+					<persName ref="person#1309" cert="high">
 						<forename cert="high">Sebastian</forename>
 						<surname cert="high">Grübel</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Sebastian_Gr%C3%BCbel"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11422484"/>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#474">St. Gallen</settlement>
-						<district ref="districts.xml#171">Sankt Gallen</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#474" cert="high">
+						<settlement>St. Gallen</settlement>
+						<district>St.Gallen</district>
+						<country>Schweiz</country>
 						<geo>47.42391 9.37477</geo>
-					</location>
+					</place>
 					<date when="1532-12-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -120,11 +124,11 @@
 	</facsimile>
 	<text xml:lang="de">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
+			<div xml:id="div1" corresp="regest1">
+				<p>
 					<s xml:lang="de" type="auto">Gnad und frid von gott durch Christum etc.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="de" type="auto">Besonders lieber herr und bruͤder.</s>
 					<s xml:lang="de" type="auto">Wie dan uff verschinen osteren Jacob <persName ref="1939">Riner</persName> selig<note xml:id="fn2" type="footnote" n="2"><persName ref="1939">Jakob Riner</persName> war am 11. Oktober 1532 an der Pest gestorben, s. Kessler, Sabbata 398,31-37.</note> und ich für mine g[nädigen] h[erren] von Zürrich uß bevelch aller bruͤder, der predicanten im Rintall und Gotzhuß<note xml:id="fn3" type="footnote" n="3">Das Herrschaftsgebiet des Abtes von <placeName ref="1011">St. Gallen</placeName>.</note>, abgefertigat warend<note xml:id="fn4" type="footnote" n="4">Der Vortrag der Delegation der «diener des wortes Gottes» aus der Landschaft der Abtei <placeName ref="1011">St. Gallen</placeName> ist abgedruckt in ASchweizerRef IV 1584.</note>, damit der uffgericht landtsfriden<note xml:id="fn5" type="footnote" n="5">Der Zweite Landfriede von 1531 (EA <hi>IV/1b</hi> 1567-1571) bezieht das Rheintal und die äbtischen Gebiete nicht ausdrücklich in die Friedensregelung ein. Vgl. dazu auch <hi>Frey</hi> 181-191; <hi>Näf,</hi> <persName ref="226">Vadian</persName> II 341-355.</note> erlütterett, ouch was articell den landfriden brechen mügend, worend mir in hoffnung, alle sach in mittler zitt<note xml:id="fn6" type="footnote" n="6">inzwischen.</note> dahin gebracht werd, das mir gottes bevelch<note xml:id="fn7" type="footnote" n="7">Auftrag, d. h. Gottes Wort bzw. die reformatorische Lehre.</note> fry, unverhollen hettend dörffen predigen, so ist es je lenger je ferner.</s>
 					<s xml:lang="de" type="auto">Dan ich üch unverhaltten will haben, das der appt<note xml:id="fn8" type="footnote" n="8">Der Abt von <placeName ref="1011">St. Gallen</placeName>, <persName ref="463">Diethelm Blarer von Wartensee</persName>.</note> ain solliche tyrannery im Gotzhuß brucht, das es zuͤ erbarmen ist.</s>
@@ -137,31 +141,31 @@
 					<s xml:lang="de" type="auto">Ist inen gar abgeschlagen, dan der bricht<note xml:id="fn26" type="footnote" n="26">Das Abkommen zwischen dem Abt und Zürich, s. oben Anm. 14.</note> vermügs nit<note xml:id="fn27" type="footnote" n="27">enthalte das nicht (vgl. SI IV 111).</note>, sonder man sölle in nit hinderen, öb er schon erst umb die 12 stund grech würde.</s>
 					<s xml:lang="de" type="auto">Das also ain sonetag verschinen der predicant zuͤ Stainach<note xml:id="fn28" type="footnote" n="28">Als Pfarrer von <placeName ref="1033">Steinach</placeName> (Kt. St. Gallen) nahm an der St. Galler Synode von 1530 ein weiter nicht bekannter «Herr <persName ref="2652">Lux</persName>» teil (s. <hi>Egli,</hi> Analecta I 125.132; <persName ref="226">Vadian</persName> BW <hi>IV</hi> 163). Ob es sich hier um denselben handelt, ließ sich nicht nachweisen.</note> nit hett künden predigen, dan er erst umm den mittag grech ist worden.</s>
 					<s xml:lang="de" type="auto">Semlichs hab ich uß besonderem vertruwen, so ir zuͤ der worhait und allen predicanten hand, nit wellen verhaltten.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="de" type="auto">Es hats michs ouch der from und wiß<pb type="scan" next="||201v."/> burgenmaister von Watt üch kaissen<note xml:id="fn29" type="footnote" n="29">geheißen.</note> ze schriben und anzaigend.</s>
 					<s xml:lang="de" type="auto">Ist also min früntlich bitt und beger, mir und uns allen predicanten ze rattend, wie der sach ze thuͤnd were.</s>
 					<s xml:lang="de" type="auto">Dan, der herr sigs gelobt, die predicanten sind all tapffer und handtlich<note xml:id="fn30" type="footnote" n="30">standhaft, mutig (SI II 1405).</note>.</s>
 					<s xml:lang="de" type="auto">So witt und irß ouch riettend, möcht ich liden<note xml:id="fn31" type="footnote" n="31">gestatten, zugeben; oft geradezu: würde ich gern sehen, wäre mir erwünscht (vgl. SI III 1089).</note>, das vertruwtten, als burgenmaster Rösten (dan er selbs<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> sebs.</note> in kurtz verschinen tagen die handlichait und yffer by miner gemand gesehen hatt<note xml:id="fn32" type="footnote" n="32">aus welchem Grund <persName ref="180">Diethelm Röist</persName> zu jener Zeit in der Ostschweiz war, ließ sich nicht ermitteln.</note>), anzaigt würde, damit mir nit gewaltigett, und der trutz und boch abgestelt wurde.</s>
 					<s xml:lang="de" type="auto">Des will ich mich gentzlich, ouch alle bruder, zuͤ üch versehen<note xml:id="fn33" type="footnote" n="33">von euch erwarten (SI VII 566f).</note>.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="de" type="auto"><pb type="edition" next="281"/>Hiemit bewar uns die gnad gottes, und troste uns ouch der rich gott, damit mir stiff in siner verjechung<note xml:id="fn34" type="footnote" n="34">Bekenntnis (vgl. SI III 6).</note> und crütz blibend, dan er ain richer bezaller ist, das zittlich mit dem ewigen.</s>
 					<s xml:lang="de" type="auto">Amen.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="de" type="auto">So üch min schwager Gebhartt <persName ref="526">Brunner</persName><note xml:id="fn35" type="footnote" n="35">Unbekannt.</note> begegnaty, so sagend im vill gutts und eeren von mir, ouch den ergangen handell.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="de" type="auto">Geben zuͦ Sant <placeName ref="1011">Gallen</placeName>, uff 7. tag december im 1532 jar.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="de" type="auto"><persName ref="82">Sebastian</persName> Grubell, diner zuͤ <placeName ref="112">Berg</placeName>, üwer früntlicher bruͤder.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf f. 202v.:]</note>
 					<s xml:lang="de" type="auto">Dem fromen und getrüwen Hainricho Bullinger, predicanten zuͤ Zürich, minem besonders herren und bruͤder.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

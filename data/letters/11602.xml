@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-11-1559"
-	 n="11602">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-11-1559" n="11602">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Erasmus Ritter / [Bern] AN Heinrich Bullinger, 27. August 1541</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Henrich, Rainer; Kess, Alexandra; Moser, Christian</authority>
-				<date>2005</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="2005"/>
 				<idno type="ISBN">ISBN 3-290-17339-9</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1559</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 11</title>
+				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">11</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1541</biblScope>
 				<biblScope type="page">299</biblScope>
+				<biblScope type="pages">385</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 337a,325</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,21 +45,21 @@
 							<textLang>de</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Obwohl Bullingers Warnung zu spät kam, waren [die <placeName ref="121">Berner</placeName> Pfarrer]
-							dank <persName ref="154">Myconius</persName> vorbereitet, als der
-							[<placeName ref="839">Passauer</placeName>] Dekan
-							[<persName ref="1681">Ruprecht von Mosham</persName>] am 22. August in
-							<placeName ref="121">Bern</placeName> ankam; nachdem dieser die Verhältnisse ausgekundschaftet
-							hatte, ersuchte er den Rat um eine Disputation mit den Pfarrern, doch diese hatten bereits dafür gesorgt,
-							dass ihm der Aufenthalt in Stadt und Land untersagt wurde. Als Bürgermeister
-							[<persName ref="1753">Hans Franz</persName>]
-							<persName ref="1753">Nägeli</persName> entdeckte, dass er seine Schriften bei
-							<persName ref="339">Apiarius</persName> drucken lassen wollte, wurde er nochmals vorgeladen und wegen
-							seiner Kritik an der in <placeName ref="121">Bern</placeName> geltenden Lehre umgehend ausgewiesen;
-							er behauptet, der Mensch werde auch aufgrund seiner Werke gerechtfertigt, und tritt sehr gewandt auf,
-							weshalb ihm mit Vorsicht begegnet werden muss.
-						</p>
+							<p xml:id="regest1">
+								Obwohl Bullingers Warnung zu spät kam, waren [die <placeName ref="121">Berner</placeName> Pfarrer]
+								dank <persName ref="154">Myconius</persName> vorbereitet, als der
+								[<placeName ref="839">Passauer</placeName>] Dekan
+								[<persName ref="1681">Ruprecht von Mosham</persName>] am 22. August in
+								<placeName ref="121">Bern</placeName> ankam; nachdem dieser die Verhältnisse ausgekundschaftet
+								hatte, ersuchte er den Rat um eine Disputation mit den Pfarrern, doch diese hatten bereits dafür gesorgt,
+								dass ihm der Aufenthalt in Stadt und Land untersagt wurde. Als Bürgermeister
+								[<persName ref="1753">Hans Franz</persName>]
+								<persName ref="1753">Nägeli</persName> entdeckte, dass er seine Schriften bei
+								<persName ref="339">Apiarius</persName> drucken lassen wollte, wurde er nochmals vorgeladen und wegen
+								seiner Kritik an der in <placeName ref="121">Bern</placeName> geltenden Lehre umgehend ausgewiesen;
+								er behauptet, der Mensch werde auch aufgrund seiner Werke gerechtfertigt, und tritt sehr gewandt auf,
+								weshalb ihm mit Vorsicht begegnet werden muss.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -65,20 +68,20 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11602">
 				<correspAction type="sent">
-					<persName ref="persons.xml#2810" cert="high">
+					<persName ref="person#2810" cert="high">
 						<forename cert="high">Erasmus</forename>
 						<surname cert="high">Ritter</surname>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#41">Bern</settlement>
-						<district ref="districts.xml#31">Bern/Berne</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#41" cert="high">
+						<settlement>Bern</settlement>
+						<district>Bern</district>
+						<country>Schweiz</country>
 						<geo>46.94809 7.44744</geo>
-					</location>
+					</place>
 					<date when="1541-08-27" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -117,42 +120,42 @@
 	</facsimile>
 	<text xml:lang="la">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
+			<div xml:id="div1" corresp="regest1">
+				<p>
 					<s xml:lang="la" type="auto">Gratia et pax etc.</s>
-				</ab>
-				<ab>
-					<s xml:lang="la" type="auto">S. Tarde nimis venit monitio tua, sed Miconii praecessit<note xml:id="fn1" type="footnote" n="1">Weder der Brief Bullingers noch jener von <persName ref="154">Myconius</persName> ist erhalten.</note>.</s>
-					<s xml:lang="la" type="auto">Venit decanus ille<note xml:id="fn2" type="footnote" n="2"><persName ref="1681">Ruprecht von Mosham</persName>, Domdekan zu <placeName ref="839">Passau</placeName> (vgl. zuletzt oben <ref target="files.xml#11597">Nr. 1554</ref>, 5-22).</note> <placeName ref="121">Bernam</placeName> die lune, quae erat 22. augusti, et delituit in hospitio corone<note xml:id="fn3" type="footnote" n="3">Die "Krone" (Gerechtigkeitsgasse 64 / Postgasse 57) war im 16. Jahrhundert der bedeutendste Gasthof <placeName ref="121">Berns</placeName>; s. Eduard <hi>von Rodt,</hi> <placeName ref="121">Bern</placeName> im sechzehnten Jahrhundert, <placeName ref="121">Bern</placeName> 1904, S. 82.</note> nobis insciis usque in diem Veneris interim diligenter omnia considerans, quo viam excogitaret nos callide invadendi.</s>
+				</p>
+				<p>
+					<s xml:lang="la" type="auto">S. Tarde nimis venit monitio tua, sed <persName ref="154">Miconii</persName> praecessit<note xml:id="fn1" type="footnote" n="1">Weder der Brief Bullingers noch jener von <persName ref="154">Myconius</persName> ist erhalten.</note>.</s>
+					<s xml:lang="la" type="auto">Venit decanus ille<note xml:id="fn2" type="footnote" n="2"><persName ref="1681">Ruprecht von Mosham</persName>, Domdekan zu <placeName ref="839">Passau</placeName> (vgl. zuletzt oben <ref target="file#11597">Nr. 1554</ref>, 5-22).</note> <placeName ref="121">Bernam</placeName> die lune, quae erat 22. augusti, et delituit in hospitio corone<note xml:id="fn3" type="footnote" n="3">Die "Krone" (Gerechtigkeitsgasse 64 / Postgasse 57) war im 16. Jahrhundert der bedeutendste Gasthof <placeName ref="121">Berns</placeName>; s. Eduard <hi>von Rodt,</hi> <placeName ref="121">Bern</placeName> im sechzehnten Jahrhundert, <placeName ref="121">Bern</placeName> 1904, S. 82.</note> nobis insciis usque in diem Veneris interim diligenter omnia considerans, quo viam excogitaret nos callide invadendi.</s>
 					<s xml:lang="la" type="auto">Tandem consilio reperto senatum adiit petiturus, quatinus illi copia fieret nobiscum congrediendi et disputandi de fide et religione nostra.</s>
-					<s xml:lang="la" type="auto">Nos moniti praevenimus eum et depinximus hominem senatui, ut ex literis Miconii intellexeramus.</s>
+					<s xml:lang="la" type="auto">Nos moniti praevenimus eum et depinximus hominem senatui, ut ex literis <persName ref="154">Miconii</persName> intellexeramus.</s>
 					<s xml:lang="la" type="auto">Senatus interdixit illi urbe et agro<note xml:id="fn4" type="footnote" n="4">Zum ersten Auftritt <persName ref="1681">Moshams</persName> vordem Rat am 26. August vgl. <placeName ref="121">Bern</placeName> StA, A ll 147 (= Ratsmanual 277), 247f.</note>.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Postero die consul Negelinus<note xml:id="fn5" type="footnote" n="5"><persName ref="1753">Hans Franz Nägeli</persName>.</note>, ut est vir prudens, intellexit unum e famulis suis (habet enim duos<note xml:id="fn6" type="footnote" n="6">Unbekannt.</note>) ędes <persName ref="339">Apiarii</persName>, typographi nostri, frequentare multoties.</s>
 					<s xml:lang="la" type="auto">Cogitavit, si forsan <persName ref="339">Apiarius</persName> aliquid nęniarum suarum imprimeret.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Adiit domum <persName ref="339">Apiarii</persName> et rem ita reperit, quemadmodum suspicabatur.</s>
 					<s xml:lang="la" type="auto">Protinus igitur vocabatur in senatum decanus et sciscitabatur, qua authoritate fretus id tentarit sine consensu senatus.</s>
 					<s xml:lang="la" type="auto">Respondit inter alia fidem nostram non esse fidem christianam, sed offendiculis plenam neque authoritate scripture suffultam, quapropter statim ab urbe et agro expellitur<note xml:id="fn7" type="footnote" n="7">Vgl. <placeName ref="121">Bern</placeName> StA, All 147, 254. Stadtschreiber <persName ref="671">Cyro</persName> bemerkt zur Ausweisung <persName ref="1681">Moshams</persName>: "Gliche antwurt solt Bucero et suis geben sin worden!"</note>.</s>
 					<s xml:lang="la" type="auto">Docet autem iustificationem homini non ex fide sola, sed etiam operibus provenire.</s>
 					<s xml:lang="la" type="auto">Quare diligenter circumspicite; est enim homo non indoctus et vafer supraque modum<pb type="edition" next="300"/> eloquens, callidus et insignis hopocritha[!]<note xml:id="fn8" type="footnote" n="8">Heuchler (hypocrita).</note>, qui facie, vestitu incessuque<note xml:id="fna" type="footnote" n="a"><hi>Endung nicht sicher lesbar.</hi></note> mirum ad decipiendum se artificem praebet.</s>
 					<s xml:lang="la" type="auto">Sic habes, de nebulone quid apud nos actum sit.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Vale.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Ex <placeName ref="121">Berna</placeName>, 27. augusti 1541.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto"><persName ref="176">Erasmus Ritter</persName> ex animo tuus.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
 					<s xml:lang="de" type="auto">Dem wolgelerten herrnn Meister Heinrich Bullingernn, predicanten zuͦ Zürich, minem gunstigen, lieben herrnn zuͦ handen.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

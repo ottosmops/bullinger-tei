@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Verweis"
-	 n="5723">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Verweis" n="5723">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
@@ -10,10 +8,10 @@
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Kopie">E II 371,936</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<note type="Hinweis">von HBs Hand</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
@@ -29,7 +27,7 @@
 					<additional>
 						<listBibl>
 							<bibl type="Gedruckt">
-								<title subtype="Gedruckt">Wotschke BW, Polen, S. 183f</title>
+								<title>Wotschke BW, Polen, S. 183f</title>
 							</bibl>
 						</listBibl>
 						<note type="Allgemein">Kleinpolen: um Krakau und Lublin "Russia"/Kronreussen: Woiwodschaften Rotreußen (Przemysl, Sanok, Lemberg, Halitsch, Chelm), Belz, Podolien, Wolhynien, Kiev (damals Teile des Königreiches Polen und des Großfürstentums Litauen)</note>
@@ -42,39 +40,41 @@
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5723">
 				<correspAction type="sent">
 					<orgName type="institution">
-						<name type="singular" ref="institutions.xml#19" cert="low">Kirche</name>
-						<location cert="low">
-							<settlement ref="places.xml#587">Zürich</settlement>
-							<district ref="districts.xml#210">Zürich</district>
-							<country ref="countries.xml#58">Schweiz</country>
+						<name type="singular" ref="org#19" cert="low">Kirche</name>
+						<place source="#587" cert="low">
+							<settlement>Zürich</settlement>
+							<district>Zürich</district>
+							<country>Schweiz</country>
 							<geo>47.370093 8.544054</geo>
-						</location>
+						</place>
 					</orgName>
-					<location cert="low">
-						<settlement ref="places.xml#587">Zürich</settlement>
-						<district ref="districts.xml#210">Zürich</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#587" cert="low">
+						<settlement>Zürich</settlement>
+						<district>Zürich</district>
+						<country>Schweiz</country>
 						<geo>47.370093 8.544054</geo>
-					</location>
+					</place>
 					<date when="1563-05-03" cert="low"><note>2. Karte  1. Karte siehe: 1563 Mai 3. (= ID 5722)</note></date>
 				</correspAction>
 				<correspAction type="received">
 					<roleName type="title">
-						<name type="plural" ref="titles.xml#70" cert="low">Senioren</name>
-						<location cert="low">
-							<district ref="districts.xml#80">Kleinpolen</district>
-							<country ref="countries.xml#48">Polen</country>
-						</location>
+						<name type="plural" ref="role#70" cert="low">Senioren</name>
+						<place source="#673" cert="low">
+							<district>Kleinpolen</district>
+							<country>Polen</country>
+						</place>
 					</roleName>
+					<note type="Adresse">Senioren der Kirchen von Kleinpolen</note>
 					<roleName type="title">
-						<name type="plural" ref="titles.xml#70" cert="low">Senioren</name>
-						<location cert="low">
-							<country ref="countries.xml#55">Russland</country>
-						</location>
+						<name type="plural" ref="role#70" cert="low">Senioren</name>
+						<place source="#859" cert="low">
+							<country>Russland</country>
+						</place>
 					</roleName>
-					<location cert="low">
-						<country ref="countries.xml#55">Russland</country>
-					</location>
+					<note type="Adresse">Senioren der Kirchen von Kronreußen</note>
+					<place source="#859" cert="low">
+						<country>Russland</country>
+					</place>
 				</correspAction>
 				<correspContext>
 					<ref type="next_chronologically" target="files.xml#5724"/>

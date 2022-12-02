@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-3-180"
-	 n="10211">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-3-180" n="10211">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Berchtold Haller / [Bern] AN Heinrich Bullinger, 23. Januar 1533</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Zsindely, Endre; Senn, Matthias</authority>
-				<date>1983</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="1983"/>
 				<idno type="ISBN">ISBN 3-290-11531-3</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=180</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 3</title>
+				<biblScope type="editor">Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">3</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1533</biblScope>
 				<biblScope type="page">51</biblScope>
+				<biblScope type="pages">292</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 343,8b</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,13 +45,13 @@
 							<textLang>la</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Die <placeName ref="83">Solothurner</placeName> Reformierten wollen, laut eines Briefes von
-							<persName ref="1244">Hans Hugi</persName> an <persName ref="90">Haller</persName>,
-							<persName ref="173">Paul Rasdorfer</persName> zum Pfarrer in einer der Gemeinden der Vogtei
-							<placeName ref="284">Dorneck</placeName> berufen. <persName ref="173">Rasdorfer</persName> soll mit dem Überbringer dieses Briefes
-							gleich nach <placeName ref="284">Dorneck</placeName> reisen. Bitte um Nachrichten.
-						</p>
+							<p xml:id="regest1">
+								Die <placeName ref="83">Solothurner</placeName> Reformierten wollen, laut eines Briefes von
+								<persName ref="1244">Hans Hugi</persName> an <persName ref="90">Haller</persName>,
+								<persName ref="173">Paul Rasdorfer</persName> zum Pfarrer in einer der Gemeinden der Vogtei
+								<placeName ref="284">Dorneck</placeName> berufen. <persName ref="173">Rasdorfer</persName> soll mit dem Überbringer dieses Briefes
+								gleich nach <placeName ref="284">Dorneck</placeName> reisen. Bitte um Nachrichten.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -57,20 +60,20 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10211">
 				<correspAction type="sent">
-					<persName ref="persons.xml#1391" cert="high">
+					<persName ref="person#1391" cert="high">
 						<forename cert="high">Berchtold</forename>
 						<surname cert="high">Haller</surname>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#41">Bern</settlement>
-						<district ref="districts.xml#31">Bern/Berne</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#41" cert="high">
+						<settlement>Bern</settlement>
+						<district>Bern</district>
+						<country>Schweiz</country>
 						<geo>46.94809 7.44744</geo>
-					</location>
+					</place>
 					<date when="1533-01-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -109,8 +112,8 @@
 	</facsimile>
 	<text xml:lang="de">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
+			<div xml:id="div1" corresp="regest1">
+				<p>
 					<s xml:lang="la" type="auto">S.</s>
 					<s xml:lang="de" type="auto">Lieber bruͦder Heinrich.</s>
 					<s xml:lang="de" type="auto">Es hett mir zuͦgschriben<note xml:id="fn2" type="footnote" n="2">Der Brief ist nicht erhalten.</note> venner Hanß <persName ref="1244">Hugi</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="1244">Hans Hugi</persName>, gest. 1562, von <placeName ref="83">Solothurn</placeName>, seit 1519 Großrat, Vogt in verschiedenen Vogteien, wurde 1527 Venner und 1529 Heimlicher. Als Parteigänger der Reformierten wurde er bei der Schultheißenwahl von 1532 übergangen und verlor auch das Amt des Venners. 1533 war er Seckelmeister, verließ aber im Oktober desselben Jahres mit den Reformierten <placeName ref="83">Solothurn</placeName> und zog 1540 nach <placeName ref="136">Biel</placeName>. - Lit.: HBRG II 357. III 277; <hi>Haefliger</hi> 144f; Bruno <hi>Amiet</hi> und Hans <hi>Sigrist,</hi> Solothurnische Geschichte, Bd. II: Stadt und Kanton <placeName ref="83">Solothurn</placeName> von der Reformation bis zum Höhepunkt des patrizischen Regimes, <placeName ref="83">Solothurn</placeName> 1976, S. 23. 27. 36. 42. 44f; HBLS IV 312. 315.</note> von <placeName ref="83">Soloturn</placeName> ich sölle verhelfen, so verr möglich, das <persName ref="173">Paulus</persName> Rasdorffer mitt Zeiger diss brieffs<note xml:id="fn4" type="footnote" n="4">Der Überbringer ist unbekannt.</note> gen Dornegg<note xml:id="fn5" type="footnote" n="5"><placeName ref="284">Dorneck</placeName> (Kt. <placeName ref="83">Solothurn</placeName>).</note> uff das schlosß keren welle; der<note xml:id="fn6" type="footnote" n="6">Gemeint ist offenbar der Vogt von <placeName ref="284">Dorneck</placeName>, s. unten Anm. 11.</note> habe in siner vogty ettlich pfarren, so noch nitt versähen<note xml:id="fn7" type="footnote" n="7">Pfarreien, die noch nicht besetzt, bzw. (mit Pfarrern) versorgt sind.</note>, und so <persName ref="173">Paulo</persName> gefellig, begärend sy inn also in irem biett ze versähen<note xml:id="fn8" type="footnote" n="8"><persName ref="90">Haller</persName> hatte davon bereits am 14. Dezember 1532 berichtet, s. HBBW II 283, 11-15.</note>.</s>
@@ -119,22 +122,22 @@
 					<s xml:lang="de" type="auto">Hab ich dir nitt wellen verhalten.</s>
 					<s xml:lang="de" type="auto">In unserm biet<note xml:id="fn14" type="footnote" n="14">Gemeint ist das bernische Gebiet.</note> ist noch nitt möglich, inn ze versähen, dann wir noch meer stat und land kind<note xml:id="fn15" type="footnote" n="15">Das heißt: Mehrere Kandidaten, die von Stadt und Land <placeName ref="121">Bern</placeName> stammen.</note> hend, aber so er möcht<note xml:id="fn16" type="footnote" n="16">könnte.</note> ein ingang<note xml:id="fn17" type="footnote" n="17">Zutritt, Anfang (SI II 343).</note> han, in <placeName ref="83">Soloturner</placeName> biet ze beliben, wär mir träffelich lieb, in hoffnung, wo die andren bruͤder ein sömlichen gehilfen hettind, wurde gottes handel träffelich fürdren.</s>
 					<s xml:lang="de" type="auto">Hiemitt bitt ich dich<pb type="edition" next="52"/> umm gots willen, schrib mir, und bi gwisser bottschafft<note xml:id="fn18" type="footnote" n="18">durch einen zuverlässigen Boten.</note>, wie es stande aller dingen halb.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Datum in II, 23. ianuarii.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Tuus Berch. H.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="de" type="auto">Er mag allein hinab keren und alle ding besichtigen.</s>
 					<s xml:lang="de" type="auto">Ich welte inn nitt gern verwysen<note xml:id="fn19" type="footnote" n="19">abweisen, wegschicken (Grimm XIII/I 2184-2186). - Zum weiteren Lebensweg <persName ref="173">Rasdorfers</persName> im Jahre 1533 s. unten S. 80, 8.</note>.</s>
 					<s xml:lang="la" type="auto">Si frustra ierit, expostulabo cum Solotur[ensibus].</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
 					<s xml:lang="de" type="auto">An den getrüwen <persName ref="225">Heinrich</persName> Bullinger, prędicanten ze Zürich.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

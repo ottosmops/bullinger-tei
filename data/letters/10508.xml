@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-4-472"
-	 n="10508">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-4-472" n="10508">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Lorenz Meyer / [Stammheim] AN Heinrich Bullinger, 9. November 1534</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</authority>
-				<date>1989</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="1989"/>
 				<idno type="ISBN">ISBN 3-290-11600-X</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=472</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1534</biblScope>
 				<biblScope type="page">395</biblScope>
+				<biblScope type="pages">484</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 335,2007</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,13 +45,13 @@
 							<textLang>la</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Bittet Bullinger, <persName ref="816">Michael</persName>
-							[<persName ref="816">Farner</persName>], der zurzeit wegen kirchlicher Probleme zutiefst betrübt und
-							verwirrt ist, anzuhören und zu beraten. Weiß nicht, wie es mit der Kirche in
-							<placeName ref="1096">Trüllikon</placeName> weitergeht, könnte aber seine eigene Gemeinde auf
-							keinen Fall verlassen, um dort Dienst zu tun. Grüße.
-						</p>
+							<p xml:id="regest1">
+								Bittet Bullinger, <persName ref="816">Michael</persName>
+								[<persName ref="816">Farner</persName>], der zurzeit wegen kirchlicher Probleme zutiefst betrübt und
+								verwirrt ist, anzuhören und zu beraten. Weiß nicht, wie es mit der Kirche in
+								<placeName ref="1096">Trüllikon</placeName> weitergeht, könnte aber seine eigene Gemeinde auf
+								keinen Fall verlassen, um dort Dienst zu tun. Grüße.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -57,21 +60,21 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10508">
 				<correspAction type="sent">
-					<persName ref="persons.xml#2115" cert="high">
+					<persName ref="person#2115" cert="high">
 						<forename cert="high">Lorenz</forename>
 						<surname cert="high">Meyer</surname>
 						<addName type="main">Meyer (Agricola), Lorenz</addName>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#486">Stammheim</settlement>
-						<district ref="districts.xml#16">Baden-Württemberg</district>
-						<country ref="countries.xml#18">Deutschland</country>
+					<place source="#486" cert="high">
+						<settlement>Stammheim</settlement>
+						<district>Baden-Württemberg</district>
+						<country>Deutschland</country>
 						<geo>47.63244 8.79963</geo>
-					</location>
+					</place>
 					<date when="1534-11-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -109,17 +112,17 @@
 	</facsimile>
 	<text xml:lang="la">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
+			<div xml:id="div1" corresp="regest1">
+				<p>
 					<s xml:lang="la" type="auto">Gratiam, pa[cem et]<note xml:id="fna" type="footnote" n="a"><hi>Textverlust durch Beschädigung.</hi></note> constantiam per Christum.</s>
-				</ab>
-				<ab>
-					<s xml:lang="la" type="auto">Obsecro te, mi Bullingere charissime, per Christum dominum, velis placido vultu suscipere et animo pio audire illum optimum et mihi amantissimum<pb type="edition" next="396"/> virum Michaelem<note xml:id="fn1" type="footnote" n="1">Beim genannten Michael handelt es sich ohne Zweifel um <persName ref="816">Michael Farner</persName>, den reformierten Pfarrer des unweit <placeName ref="1025">Stammheims</placeName> gelegenen <placeName ref="96">Basadingen</placeName> (Kt. Thurgau). - <persName ref="816">Michael Farner</persName>, gest. 1562, war ein Sohn des <placeName ref="1025">Stammheimer</placeName> Untervogtes <persName ref="817">Walter Farner</persName>. Im Glückshafenrodel (298, 30-43) ist seine, seiner Eltern und Geschwister Anwesenheit in Zürich für das Jahr 1504 nachgewiesen. Im Jahre 1516 verzichtete er auf die Leutpriesterstelle <placeName ref="333">Eschenz</placeName> zugunsten von <persName ref="1746">Jakob Nusplinger</persName>, seinem Mitbewerber. Er erscheint fünf Jahre später als Priester in <placeName ref="1025">Stammheim</placeName> (s. AZürcherRef 163). Von 1521 an war er Kaplan und Inhaber der Vögelinspfrund in <placeName ref="272">Dießenhofen</placeName>. Um die Mitte der zwanziger Jahre trat er zur Reformation über und verehelichte sich mit <persName ref="815">Anna</persName> Ziegler. 1529 übernahm <persName ref="815">Farner</persName> in <placeName ref="96">Basadingen</placeName> die Stelle des von der reformierten Gemeinde verdrängten Priesters <persName ref="2170">Johannes Sigg</persName>. Bald nach dem Zweiten Kappelerkrieg verlangte das Kloster <placeName ref="1015">St</placeName>. Katharinental die Rückerstattung des Kollaturrechtes für <placeName ref="96">Basadingen</placeName>. Durch Beschluß der <placeName ref="50">Acht Orte</placeName> vom 28. Oktober 1534 wurde dem Kloster die Kollatur und dem Priester Sigg die Pfarrpfrund wieder zuerkannt. Wie lange <persName ref="815">Farner</persName> noch die reformierte Kirchgemeinde <placeName ref="96">Basadingen</placeName>, von <placeName ref="272">Dießenhofen</placeName> aus, versah, ist nicht bekannt; wahrscheinlich wurde er zum Nachfolger des im Frühjahr 1536 in <placeName ref="928">Rüti</placeName> verstorbenen Pfarrers Niklaus <persName ref="203">Steiner</persName> (s. oben S. 359, Anm. 1) bestellt. Im Jahre 1542 (gemäß Pfarrerbuch 24 und 268 schon 1534, was sicher unrichtig ist) übernahm <persName ref="815">Farner</persName> die Pfarrei <placeName ref="298">Dürnten</placeName>, von der er 1559 zurücktrat. Mit Bullinger stand er offenbar nicht im Briefwechsel. - Lit.: H[uldreich] G[ustav] <hi>Sulzberger,</hi> Geschichte der Kirchgemeinden im Bezirke <placeName ref="272">Dießenhofen</placeName>, <placeName ref="272">Dießenhofen</placeName> 1884, S. 84-91; Alfred <hi>Farner,</hi> Geschichte der Kirchgemeinde <placeName ref="1025">Stammheim</placeName>, Zürich 1911, S. 116; <hi>Knittel,</hi> Kirche 109-111; Pfarrerbuch 268; Sulzberger 118.</note>, satis nunc superque satis ecclesię in rebus adflictum, perturbatum et distractum.</s>
+				</p>
+				<p>
+					<s xml:lang="la" type="auto">Obsecro te, mi Bullingere charissime, per Christum dominum, velis placido vultu suscipere et animo pio audire illum optimum et mihi amantissimum<pb type="edition" next="396"/> virum <persName ref="816">Michaelem</persName><note xml:id="fn1" type="footnote" n="1">Beim genannten Michael handelt es sich ohne Zweifel um <persName ref="816">Michael Farner</persName>, den reformierten Pfarrer des unweit <placeName ref="1025">Stammheims</placeName> gelegenen <placeName ref="96">Basadingen</placeName> (Kt. Thurgau). - <persName ref="816">Michael Farner</persName>, gest. 1562, war ein Sohn des <placeName ref="1025">Stammheimer</placeName> Untervogtes <persName ref="817">Walter Farner</persName>. Im Glückshafenrodel (298, 30-43) ist seine, seiner Eltern und Geschwister Anwesenheit in Zürich für das Jahr 1504 nachgewiesen. Im Jahre 1516 verzichtete er auf die Leutpriesterstelle <placeName ref="333">Eschenz</placeName> zugunsten von <persName ref="1746">Jakob Nusplinger</persName>, seinem Mitbewerber. Er erscheint fünf Jahre später als Priester in <placeName ref="1025">Stammheim</placeName> (s. AZürcherRef 163). Von 1521 an war er Kaplan und Inhaber der Vögelinspfrund in <placeName ref="272">Dießenhofen</placeName>. Um die Mitte der zwanziger Jahre trat er zur Reformation über und verehelichte sich mit <persName ref="815">Anna</persName> Ziegler. 1529 übernahm <persName ref="815">Farner</persName> in <placeName ref="96">Basadingen</placeName> die Stelle des von der reformierten Gemeinde verdrängten Priesters <persName ref="2170">Johannes Sigg</persName>. Bald nach dem Zweiten Kappelerkrieg verlangte das Kloster <placeName ref="1015">St</placeName>. Katharinental die Rückerstattung des Kollaturrechtes für <placeName ref="96">Basadingen</placeName>. Durch Beschluß der <placeName ref="50">Acht Orte</placeName> vom 28. Oktober 1534 wurde dem Kloster die Kollatur und dem Priester Sigg die Pfarrpfrund wieder zuerkannt. Wie lange <persName ref="815">Farner</persName> noch die reformierte Kirchgemeinde <placeName ref="96">Basadingen</placeName>, von <placeName ref="272">Dießenhofen</placeName> aus, versah, ist nicht bekannt; wahrscheinlich wurde er zum Nachfolger des im Frühjahr 1536 in <placeName ref="928">Rüti</placeName> verstorbenen Pfarrers Niklaus <persName ref="203">Steiner</persName> (s. oben S. 359, Anm. 1) bestellt. Im Jahre 1542 (gemäß Pfarrerbuch 24 und 268 schon 1534, was sicher unrichtig ist) übernahm <persName ref="815">Farner</persName> die Pfarrei <placeName ref="298">Dürnten</placeName>, von der er 1559 zurücktrat. Mit Bullinger stand er offenbar nicht im Briefwechsel. - Lit.: H[uldreich] G[ustav] <hi>Sulzberger,</hi> Geschichte der Kirchgemeinden im Bezirke <placeName ref="272">Dießenhofen</placeName>, <placeName ref="272">Dießenhofen</placeName> 1884, S. 84-91; Alfred <hi>Farner,</hi> Geschichte der Kirchgemeinde <placeName ref="1025">Stammheim</placeName>, Zürich 1911, S. 116; <hi>Knittel,</hi> Kirche 109-111; Pfarrerbuch 268; Sulzberger 118.</note>, satis nunc superque satis ecclesię in rebus adflictum, perturbatum et distractum.</s>
 					<s xml:lang="la" type="auto">Mira audies<note xml:id="fn2" type="footnote" n="2"><persName ref="815">Farner</persName> stand ganz unter dem Eindruck des wenige Tage zuvor gefaßten Beschlusses der <placeName ref="50">Acht Orte</placeName> (s. oben, Anm. 1), welcher von einem <placeName ref="272">Dießenhofener</placeName> Schiedsgericht am 6. November noch folgendermaßen verdeutlicht worden war: Der Priester <persName ref="2170">Johannes Sigg</persName> durfte das Pfarrhaus beziehen und einen Altar errichten, konnte aber niemanden zur Teilnahme an der Messe zwingen. Dem Prädikanten <persName ref="815">Farner</persName> wurde erlaubt, noch ein Jahr lang die Gemeinde zu betreuen; dafür sollte ihm aus dem Pfrundeinkommen eine Besoldung zukommen. (Siehe <hi>Sulzberger,</hi> <placeName ref="272">Dießenhofen</placeName>, aaO, S. 88f; <hi>Knittel,</hi> Kirche 110). Es ist anzunehmen, daß <persName ref="816">Michael Farner</persName> in dieser Sache nach Zürich reiste, um bei Bullinger vorzusprechen.</note>.</s>
 					<s xml:lang="la" type="auto">Iuva et consule<note xml:id="fnb" type="footnote" n="b">luva et consule <hi>am Rande nachgetragen.</hi></note>.</s>
 					<s xml:lang="la" type="auto">Et hęc hactenus.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Quo vero nunc in portu navigent<note xml:id="fn3" type="footnote" n="3">Vgl. Adagia, 1, 1, 46 (LB II 47); Otto 285, Nr. 1455.</note> res ecclesię in Trullikon, ignoro<note xml:id="fn4" type="footnote" n="4">Um die in der Reformation entstandene Pfarrei <placeName ref="1096">Trüllikon</placeName> (Kt. Zürich) waren Schwierigkeiten entstanden, da sich die Klöster <placeName ref="890">Rheinau</placeName>, <placeName ref="570">Kreuzlingen</placeName> und <placeName ref="1015">St</placeName>. Katharinental dagegen wehrten, ihren Teil zur Pfarrpfrund beizutragen. Der Bestand der Pfarrei war daher zeitweise gefährdet. (Siehe EA IV/IC 8 z. 130 Z. 471 f. 489f p-q und ad q. 509 kk und ll. 540 v. H. <hi>Keller,</hi> Aus der Geschichte der Pfarrei <placeName ref="1096">Trüllikon</placeName>, Andelfingen 1928, S. 9-13).</note>.</s>
 					<s xml:lang="la" type="auto">Cupio certior fieri.</s>
 					<s xml:lang="la" type="auto">Id quidem non abs re, quum quidem neminem habeo, qui meam curet illuc me vocato.</s>
@@ -127,17 +130,17 @@
 					<s xml:lang="la" type="auto">Interim urget me offitii mei onus.</s>
 					<s xml:lang="la" type="auto">Quod velim, intelligis.</s>
 					<s xml:lang="la" type="auto">Interim bene vale in domino Iesu Christo, cui te commendo una tam ecclesia tua quam domo honestissima et fratribus charissimis.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Raptim, Stammę, 9. novembris anno 34.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto"><persName ref="151">Laurentius Agricola</persName>.<pb type="edition" next="397"/></s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
 					<s xml:lang="la" type="auto">Christiano viro et evangelico doctori H. Bullingero, fratri in domino observando.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

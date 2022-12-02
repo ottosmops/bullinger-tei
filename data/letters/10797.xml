@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-6-759"
-	 n="10797">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-6-759" n="10797">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Kaspar Megander / [Bern] AN Leo Jud, Heinrich Bullinger, 6. März 1536</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Bächtold, Hans Ulrich; Henrich, Rainer</authority>
-				<date>1995</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="1995"/>
 				<idno type="ISBN">ISBN 3-290-10980-1</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=759</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1536</biblScope>
 				<biblScope type="page">160</biblScope>
+				<biblScope type="pages">518</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 343,131</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,13 +45,13 @@
 							<textLang>de</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							[Die <placeName ref="121">Berner</placeName> Pfarrer] haben sich beim Rat wegen der ohne ihr
-							Wissen erfolgten Berufung [von <persName ref="1647">Sebastian Meyer</persName>] aus Strassburg
-							beschwert; der Rat hat versprochen, ohne ihre Zustimmung niemanden einzusetzen, behält sich jedoch vor,
-							selbst nach geeigneten Kandidaten zu suchen. <persName ref="145">Megander</persName> hält dies für
-							die Sache der Pfarrer und bittet um Stellungnahme. Grüsse. Die übrigen Briefe sollen verbrannt werden.
-						</p>
+							<p xml:id="regest1">
+								[Die <placeName ref="121">Berner</placeName> Pfarrer] haben sich beim Rat wegen der ohne ihr
+								Wissen erfolgten Berufung [von <persName ref="1647">Sebastian Meyer</persName>] aus Strassburg
+								beschwert; der Rat hat versprochen, ohne ihre Zustimmung niemanden einzusetzen, behält sich jedoch vor,
+								selbst nach geeigneten Kandidaten zu suchen. <persName ref="145">Megander</persName> hält dies für
+								die Sache der Pfarrer und bittet um Stellungnahme. Grüsse. Die übrigen Briefe sollen verbrannt werden.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -57,28 +60,28 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10797">
 				<correspAction type="sent">
-					<persName ref="persons.xml#2263" cert="high">
+					<persName ref="person#2263" cert="high">
 						<forename cert="high">Kaspar</forename>
 						<surname cert="high">Megander</surname>
 						<addName type="main">Megander (Großmann), Kaspar</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Kaspar_Megander"/>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#41">Bern</settlement>
-						<district ref="districts.xml#31">Bern/Berne</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#41" cert="high">
+						<settlement>Bern</settlement>
+						<district>Bern</district>
+						<country>Schweiz</country>
 						<geo>46.94809 7.44744</geo>
-					</location>
+					</place>
 					<date when="1536-03-06" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#1753" cert="high">
+					<persName ref="person#1753" cert="high">
 						<forename cert="high">Leo</forename>
 						<surname cert="high">Jud</surname>
 						<graphic type="portrait" url="portraits/1753_Jud_Leo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Leo_Jud"/>
 					</persName>
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -117,12 +120,12 @@
 	</facsimile>
 	<text xml:lang="la">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
+			<div xml:id="div1" corresp="regest1">
+				<p>
 					<s xml:lang="la" type="auto">Gratiam a domino.</s>
-				</ab>
-				<ab>
-					<s xml:lang="la" type="auto">Fratres charissimi, senatum hodie nostrum convenimus graviter conquerentes vocandorum ministrorum morem parum recte per hoc esse servatum, quod praeter voluntatem ac scitum nostrum Argentinam pro quopiam miserint<note xml:id="fn2" type="footnote" n="2">Zur Berufung von <persName ref="1647">Sebastian Meyer</persName> aus Strassburg nach <placeName ref="121">Bern</placeName> vgl. den Bericht <persName ref="213">Simon Sulzers</persName>, der auch <persName ref="145">Meganders</persName> Verstimmung erwähnt (unten <ref target="files.xml#10810">Nr. 772</ref>, 14-32).</note>, scire igitur cupientes, num morem hunc, quemadmodum ab apostolis est institutus, a primitiva et nostra ecclesia iandiu servatus, posthac ita observatum velint necne.</s>
+				</p>
+				<p>
+					<s xml:lang="la" type="auto">Fratres charissimi, senatum hodie nostrum convenimus graviter conquerentes vocandorum ministrorum morem parum recte per hoc esse servatum, quod praeter voluntatem ac scitum nostrum Argentinam pro quopiam miserint<note xml:id="fn2" type="footnote" n="2">Zur Berufung von <persName ref="1647">Sebastian Meyer</persName> aus Strassburg nach <placeName ref="121">Bern</placeName> vgl. den Bericht <persName ref="213">Simon Sulzers</persName>, der auch <persName ref="145">Meganders</persName> Verstimmung erwähnt (unten <ref target="file#10810">Nr. 772</ref>, 14-32).</note>, scire igitur cupientes, num morem hunc, quemadmodum ab apostolis est institutus, a primitiva et nostra ecclesia iandiu servatus, posthac ita observatum velint necne.</s>
 					<s xml:lang="la" type="auto">Respondent se absque nobis ullam apud ecclesiam praeficere neminem, neque, quod Argentinam scripsere, hoc nomine factum, ut apud nos ita fieri velint; imo morem hunc servatum iri.</s>
 					<s xml:lang="la" type="auto">At de viris doctis ecclesiae nostrae aptis ut inquirant, hac ecclesiae constitutione eis prohibitum non esse.</s>
 					<s xml:lang="la" type="auto">Atque ita, ut verbo dicam, eo negocium ventum est, quod sine nobis neminem praeficere promittunt, sed pro doctis laborare eis licere, imo decere magis; id quod nobis plane ordine inverso agere videtur.</s>
@@ -130,24 +133,24 @@
 					<s xml:lang="la" type="auto">Nostrum enim est de doctis investigare et, si quos invenerimus, eis tanquam ecclesiae adprobanti offerre ac insinuare.</s>
 					<s xml:lang="la" type="auto">Quare adhuc dubius in arena hereo.</s>
 					<s xml:lang="la" type="auto">Consulite igitur vel hoc vel aliquo alio certo nuncio<note xml:id="fn3" type="footnote" n="3">Der Überbringer des Briefes ist nicht bekannt.</note>.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto"><placeName ref="121">Bernę</placeName>, marcii 6.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Salutate <persName ref="14">Theodorum</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="14">Theodor Bibliander</persName>.</note>, <persName ref="165">Pellicanum</persName>, custodem<note xml:id="fn5" type="footnote" n="5">Stiftskustos <persName ref="225">Heinrich Utinger</persName>.</note> et fratres omnes.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Comburantur reliquae literae, obsecro plurimum.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Megand. ex animo vester.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
 					<s xml:lang="la" type="auto">Fratribus suis Tigurinis Leoni<note xml:id="fn6" type="footnote" n="6"><persName ref="114">Leo Jud</persName>.</note> et Bullingero in domino charissimis.</s>
 					<s xml:lang="de" type="auto">Zurich.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-2-123"
-	 n="10154">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-2-123" n="10154">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Heinrich Strübi / [Marbach] AN Heinrich Bullinger, 15. August 1532</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</authority>
-				<date>1982</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="1982"/>
 				<idno type="ISBN">ISBN 3-290-11467-8</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=123</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 2</title>
+				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">2</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1532</biblScope>
 				<biblScope type="page">179</biblScope>
+				<biblScope type="pages">304</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 355,45</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,10 +45,10 @@
 							<textLang>la</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Klagt über die schwierige Lage der Evangelischen im Rheintal.
-							Ersucht Bullinger um Rat und versichert ihn seines völligen Vertrauens.
-						</p>
+							<p xml:id="regest1">
+								Klagt über die schwierige Lage der Evangelischen im Rheintal.
+								Ersucht Bullinger um Rat und versichert ihn seines völligen Vertrauens.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -54,20 +57,20 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10154">
 				<correspAction type="sent">
-					<persName ref="persons.xml#2836" cert="high">
+					<persName ref="person#2836" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Strübi</surname>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#310">Marbach</settlement>
-						<district ref="districts.xml#171">Sankt Gallen</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#310" cert="high">
+						<settlement>Marbach</settlement>
+						<district>St.Gallen</district>
+						<country>Schweiz</country>
 						<geo>47.3919868 9.5686092</geo>
-					</location>
+					</place>
 					<date when="1532-08-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -105,12 +108,12 @@
 	</facsimile>
 	<text xml:lang="la">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
-					<s xml:lang="la" type="auto">Heinrycho Bullingero, Tigurinae ecclesiae pastori ac doctori fidelissimo, Heinrychus Strüby gratiam optat et vitę innocentiam a domino.</s>
-				</ab>
-				<ab>
-					<s xml:lang="la" type="auto">Inanem sermonem tibi iniucundum esse cum sciam, brevitatem secutus sum te magistro, doctissime Heinryche.</s>
+			<div xml:id="div1" corresp="regest1">
+				<p>
+					<s xml:lang="la" type="auto">Heinrycho Bullingero, Tigurinae ecclesiae pastori ac doctori fidelissimo, <persName ref="210">Heinrychus Strüby</persName> gratiam optat et vitę innocentiam a domino.</s>
+				</p>
+				<p>
+					<s xml:lang="la" type="auto">Inanem sermonem tibi iniucundum esse cum sciam, brevitatem secutus sum te magistro, doctissime <persName ref="210">Heinryche</persName>.</s>
 					<s xml:lang="la" type="auto">Breviter ergo accipe turbulentum rei evangelicae statum esse in Reni valle.</s>
 					<s xml:lang="la" type="auto">Nam nos omnes evangelii ministri coacti sumus (quod tibi ignotum non est) suspendere citharas nostras<note xml:id="fn3" type="footnote" n="3">Über die Schwierigkeiten, mit denen die evangelischen Prädikanten im Rheintal seit 1532 zu kämpfen hatten, s. oben S. 121, Anm. 7. Auf dem Tag vom 10. Juli 1532 in <placeName ref="37">Altstätten</placeName> und <placeName ref="891">Rheineck</placeName> erließen die im Rheintal regierenden Orte außer Zürich ein Mandat, wonach u. a. kein Prediger oder Meßpriester die Kanzel besteigen dürfe, sofern er nicht zuvor 100 Gulden Bürgschaft geleistet habe, daß er nichts gegen den neuen Landfrieden predigen wolle (EA IV/1b 1373 c. 1376f). Auf der <placeName ref="85">Badener</placeName> Tagsatzung vom 23. Juli 1532 protestierte Zürich gegen dieses Mandat (s. ebenda 1381f).</note>, quibus Christus decantari deberet, sicuti legimus factitatum esse de Israelitis in Babiloniam abductis<note xml:id="fn4" type="footnote" n="4">Vgl. Ps 137,1-3.</note>.</s>
 					<s xml:lang="la" type="auto">Hasce enim litteras mihi a senatu Tigurino datas<note xml:id="fn5" type="footnote" n="5">Es ist nicht klar, um was für einen Brief des Zürcher Rates es sich hier handelt.</note> curavi ut praesidi<note xml:id="fn6" type="footnote" n="6">Wahrscheinlich der eidgenössische Landvogt im Rheintal. Zu dieser Zeit war es <persName ref="2580">Götschi Z'Hag</persName> von <placeName ref="1238">Zug</placeName> (EA IV/1b 1601).</note> nostro darentur.</s>
@@ -134,21 +137,21 @@
 					<s xml:lang="la" type="auto">Quapropter, si me meum iudicium de te fallit, et oneri ferendo non sufficis, invenies et Theseum<note xml:id="fn16" type="footnote" n="16">Theseus gilt wegen der Unterstützung seines Freundes Perithoos als Inbegriff der Hilfsbereitschaft, vgl. Otto 347, Nr. 1779.</note> aliquem, scilicet Christum ipsum.</s>
 					<s xml:lang="la" type="auto">Denique ob tuam in me benevolentiam habeo tibi ingentes gracias et ob hanc ego quae te velle scio omnia studiose diligenterque curabo.</s>
 					<s xml:lang="la" type="auto">Rescribere si velis<note xml:id="fn17" type="footnote" n="17">Ein Brief Bullingers an <persName ref="210">Strübi</persName> ist nicht erhalten.</note>, ille, qui hasce tibi attulit schedas, mihi reportabit<note xml:id="fn18" type="footnote" n="18">Der Überbringer des Briefes ist nicht bekannt.</note>.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Cura, ut valeas.</s>
 					<s xml:lang="la" type="auto">Salutato michi tuam piissimam uxorem<note xml:id="fn19" type="footnote" n="19"><persName ref="32">Anna Bullinger</persName>, geb. Adlischwyler.</note> cum tota tua familia.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">1532, 15. die augusti.</s>
-				</ab>
-				<ab>
-					<s xml:lang="la" type="auto">Heinrychus Strüby, indignus evangelii minister in Marpach apud Renivallanos, infimus ac subditus tuus frater, et hoc ex animo pio.<pb type="edition" next="181"/></s>
-				</ab>
-				<ab>
+				</p>
+				<p>
+					<s xml:lang="la" type="auto"><persName ref="210">Heinrychus Strüby</persName>, indignus evangelii minister in Marpach apud Renivallanos, infimus ac subditus tuus frater, et hoc ex animo pio.<pb type="edition" next="181"/></s>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Doctissimo ac piissimo Magistro Heinrycho Bullingero, sanctę ecclesię Tigurinę doctori, suo in Christo quam charissimo.</s>
-				</ab>
+					<s xml:lang="la" type="auto">Doctissimo ac piissimo Magistro <persName ref="210">Heinrycho</persName> Bullingero, sanctę ecclesię Tigurinę doctori, suo in Christo quam charissimo.</s>
+				</p>
 			</div>
 		</body>
 	</text>

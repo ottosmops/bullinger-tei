@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-2-150"
-	 n="10181">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-2-150" n="10181">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Berchtold Haller / [Bern] AN Heinrich Bullinger, 15. November 1532</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</authority>
-				<date>1982</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="1982"/>
 				<idno type="ISBN">ISBN 3-290-11467-8</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=150</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 2</title>
+				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">2</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1532</biblScope>
 				<biblScope type="page">260</biblScope>
+				<biblScope type="pages">304</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 343,102</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,13 +45,13 @@
 							<textLang>de</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Mitteilungen von Nachrichten aus <placeName ref="97">Basel</placeName>: Die Armee des Kaisers soll
-							in Oberitalien überwintern, was <placeName ref="51">die V Orte</placeName> in ihrer
-							unnachgiebigen Haltung gegenüber den Reformierten weiter bestärken dürfte; darum sollten diese
-							zusammenhalten. Dem bernischen Abgesandten <persName ref="1753">Hans <persName ref="1753">Franz</persName> Nägeli</persName> kann man
-							vertrauen. <persName ref="90">Haller</persName> bittet um weitere Nachrichten.
-						</p>
+							<p xml:id="regest1">
+								Mitteilungen von Nachrichten aus <placeName ref="97">Basel</placeName>: Die Armee des Kaisers soll
+								in Oberitalien überwintern, was <placeName ref="51">die V Orte</placeName> in ihrer
+								unnachgiebigen Haltung gegenüber den Reformierten weiter bestärken dürfte; darum sollten diese
+								zusammenhalten. Dem bernischen Abgesandten <persName ref="1753">Hans <persName ref="1753">Franz</persName> Nägeli</persName> kann man
+								vertrauen. <persName ref="90">Haller</persName> bittet um weitere Nachrichten.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -57,20 +60,20 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10181">
 				<correspAction type="sent">
-					<persName ref="persons.xml#1391" cert="high">
+					<persName ref="person#1391" cert="high">
 						<forename cert="high">Berchtold</forename>
 						<surname cert="high">Haller</surname>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#41">Bern</settlement>
-						<district ref="districts.xml#31">Bern/Berne</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#41" cert="high">
+						<settlement>Bern</settlement>
+						<district>Bern</district>
+						<country>Schweiz</country>
 						<geo>46.94809 7.44744</geo>
-					</location>
+					</place>
 					<date when="1532-11-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -109,12 +112,12 @@
 	</facsimile>
 	<text xml:lang="la">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
+			<div xml:id="div1" corresp="regest1">
+				<p>
 					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
-				</ab>
-				<ab>
-					<s xml:lang="la" type="auto">Hac die denuo monemur a Miconio<note xml:id="fn2" type="footnote" n="2">Der Brief von <persName ref="154">Oswald Myconius</persName> an <persName ref="90">Haller</persName> oder an die Kirche in <placeName ref="121">Bern</placeName> ist nicht erhalten.</note>, monentur et primates nostri a primis urbis <placeName ref="97">Basiliensis</placeName><note xml:id="fn3" type="footnote" n="3">Das betreffende Schreiben von <placeName ref="97">Basel</placeName> an <placeName ref="121">Bern</placeName> ist nicht erhalten.</note> cesarem <placeName ref="667">Mediolanensi</placeName> arce hiematurum dissipato exercitu<note xml:id="fn4" type="footnote" n="4">Gemeint ist die kaiserliche Armee nach dem erfolglosen Türkenkrieg von 1532, vgl. oben S. 251,8-18. Zum Gerücht vom Winterlager des kaiserlichen Heeres s. PC II 177.</note> per totam <placeName ref="16">Italiam</placeName> ad lacum <placeName ref="250">Cumanum</placeName> et <placeName ref="106">Bellinzonam</placeName> usque.</s>
+				</p>
+				<p>
+					<s xml:lang="la" type="auto">Hac die denuo monemur a <persName ref="154">Miconio</persName><note xml:id="fn2" type="footnote" n="2">Der Brief von <persName ref="154">Oswald Myconius</persName> an <persName ref="90">Haller</persName> oder an die Kirche in <placeName ref="121">Bern</placeName> ist nicht erhalten.</note>, monentur et primates nostri a primis urbis <placeName ref="97">Basiliensis</placeName><note xml:id="fn3" type="footnote" n="3">Das betreffende Schreiben von <placeName ref="97">Basel</placeName> an <placeName ref="121">Bern</placeName> ist nicht erhalten.</note> cesarem <placeName ref="667">Mediolanensi</placeName> arce hiematurum dissipato exercitu<note xml:id="fn4" type="footnote" n="4">Gemeint ist die kaiserliche Armee nach dem erfolglosen Türkenkrieg von 1532, vgl. oben S. 251,8-18. Zum Gerücht vom Winterlager des kaiserlichen Heeres s. PC II 177.</note> per totam <placeName ref="16">Italiam</placeName> ad lacum <placeName ref="250">Cumanum</placeName> et <placeName ref="106">Bellinzonam</placeName> usque.</s>
 					<s xml:lang="la" type="auto">Quo potissimum freti Immontani vos urgent pro veritate ex edicto<note xml:id="fn5" type="footnote" n="5">Das Zürcher Messemandat vom 29. Mai 1532, s. oben S. 129, Anm. 12; zu dem mit <placeName ref="51">den V Orten</placeName> um dieses Mandat geführten Streit s. unten S. 288f, Anm. 7.</note> eluenda.</s>
 					<s xml:lang="la" type="auto">Quod si impetrarint, maiora in nos sint attentaturi.</s>
 					<s xml:lang="la" type="auto">Proinde eliminato ex Helvetia evangelio imperii civitates facile sit papismo restituturus.</s>
@@ -123,31 +126,31 @@
 					<s xml:lang="la" type="auto">Fama item apud nos publica est Immontanos a Gallo defecisse<note xml:id="fn7" type="footnote" n="7">Vgl. oben <hi>S.</hi> 247,29-31.</note>.</s>
 					<s xml:lang="la" type="auto">Sed missa sint haec<note xml:id="fn8" type="footnote" n="8">Eine schriftliche Mitteilung ist nicht bekannt.</note>.</s>
 					<s xml:lang="la" type="auto">Tu cogita, et communica, quibus debes.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Legatus ille noster <placeName ref="11">Franciscus</placeName> <persName ref="1753">Nägeli</persName><note xml:id="fn9" type="footnote" n="9"><persName ref="1753">Hans Franz Nägeli</persName>, etwa 1500-1579, aus <placeName ref="121">Berner</placeName> Adelsgeschlecht, oberster Hauptmann bei der Eroberung der <placeName ref="96">Waadt</placeName> 1536, 1540-1568 Schultheiß und während mehr als dreißig Jahren mächtigster Mann in <placeName ref="121">Bern</placeName>. Nägeli kam als Abgeordneter <placeName ref="121">Berns</placeName> an die Tagsatzung in Zürich vom 19. bis 21. November 1532 (EA IV/1b 1435-1440) und traf bei dieser Gelegenheit Bullinger wohl zum ersten Mal. Ein Brief Bullingers an Nägeli aus dem Jahr 1548 ist erhalten. - Lit.: R[udolf] <hi>von Sinner,</hi> <persName ref="1753">Hans Franz Nägeli</persName>. Ein biographischer Versuch, in: <placeName ref="121">Berner</placeName> Taschenbuch, Jg. 22, 1873, S. 1-113; Oskar <hi>Vasella,</hi> Der Krieg <placeName ref="121">Berns</placeName> gegen Savoyen im Jahre 1536 und die Unterwerfung savoyischer Territorien nach den amtlichen Aufzeichnungen der bernischen Kanzlei, in: ZSKG XXIX, 1935, 239-274. XXX, 1936, 1-24.81-106.201-224.293-319; <hi>Feller</hi> II 330f; Emil <hi>Blösch,</hi> in: ADB XXIII 219-221; HBLS V 230.</note> talis est, cui omnia tutissime credere poteris.</s>
 					<s xml:lang="la" type="auto">Quem velim non sinas abire insalutatum.</s>
 					<s xml:lang="la" type="auto">Pius est et auctoritatem habet apud nos.</s>
 					<s xml:lang="la" type="auto">Quantumvis iuvenis sit, constans tamen est et virum agit.</s>
 					<s xml:lang="la" type="auto">Si quae tu nova habes, communica.</s>
 					<s xml:lang="la" type="auto">Aliud nihil habeo.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Vale.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto"><pb type="edition" next="261"/>Nocte intempesta, 15. novembris.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Scribe, num acceperis et tuas et meas literas<note xml:id="fn10" type="footnote" n="10">Es handelt sich sicherlich um diesen Brief und ein von <persName ref="90">Haller</persName> zurückgesandtes Schreiben Bullingers.</note>.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Tuum minimum nummisma.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
 					<s xml:lang="de" type="auto">An Meister Heinrich Bullinger, prędicanten ze Zürich, sinem günstigen herren und bruͤder.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

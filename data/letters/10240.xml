@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-3-209"
-	 n="10240">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-3-209" n="10240">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Heinrich Pfiffer / [Maschwanden] AN Heinrich Bullinger, 10. April 1533</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Zsindely, Endre; Senn, Matthias</authority>
-				<date>1983</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="1983"/>
 				<idno type="ISBN">ISBN 3-290-11531-3</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=209</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 3</title>
+				<biblScope type="editor">Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">3</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1533</biblScope>
 				<biblScope type="page">104</biblScope>
+				<biblScope type="pages">292</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 340,57</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,12 +45,12 @@
 							<textLang>la</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Berichtet über den neuen <placeName ref="560">Knonauer</placeName> Landvogt
-							[<persName ref="1213">Leonhard Holzhalb</persName>], der sich bei den Pfarrern der Vogtei gut
-							eingeführt hat. Bittet Bullinger, er möge <persName ref="1213">Holzhalbs</persName> reformierte Haltung mit einem Brief unterstützen, und
-							versichert ihn der Treue.
-						</p>
+							<p xml:id="regest1">
+								Berichtet über den neuen <placeName ref="560">Knonauer</placeName> Landvogt
+								[<persName ref="1213">Leonhard Holzhalb</persName>], der sich bei den Pfarrern der Vogtei gut
+								eingeführt hat. Bittet Bullinger, er möge <persName ref="1213">Holzhalbs</persName> reformierte Haltung mit einem Brief unterstützen, und
+								versichert ihn der Treue.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -56,21 +59,21 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10240">
 				<correspAction type="sent">
-					<persName ref="persons.xml#2444" cert="high">
+					<persName ref="person#2444" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Pfiffer</surname>
 						<addName type="main">Pfiffer (Syricteus), Heinrich</addName>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#313">Maschwanden</settlement>
-						<district ref="districts.xml#210">Zürich</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#313" cert="high">
+						<settlement>Maschwanden</settlement>
+						<district>Zürich</district>
+						<country>Schweiz</country>
 						<geo>47.2349836 8.4266177</geo>
-					</location>
+					</place>
 					<date when="1533-04-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -109,35 +112,35 @@
 	</facsimile>
 	<text xml:lang="de">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
+			<div xml:id="div1" corresp="regest1">
+				<p>
 					<s xml:lang="la" type="auto">Gratia et pax Christi tecum.</s>
 					<s xml:lang="de" type="auto">Frommer, getrüwer, lieber M. <persName ref="167">Heinrich</persName>.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="de" type="auto">Ich laß üch wüssen von unsers nüwen vogts<note xml:id="fn2" type="footnote" n="2"><persName ref="1213">Leonhard Holzhalb</persName>, 1503-1553, aus Zürich, war Achtzehner der Konstaffel und erhielt Ende 1532 die Landvogtei <placeName ref="560">Knonau</placeName>. Seit 1542 gehörte er dem Kleinen Rat an, 1546 wurde er Landvogt im <placeName ref="87">Thurgau</placeName>. Der Reformation stand er anfänglich eher abgeneigt gegenüber. - Lit.: AZürcherRef, Reg.; Georg <hi>Gerig,</hi> Reisläufer und Pensionenherren in Zürich 1519-1532. Ein Beitrag zur Kenntnis der Kräfte, welche der Reformation widerstrebten, Zürich 1947. - Schweizer Studien zur Geschichtswissenschaft, NF, 12, S. 80; <hi>Jacob</hi> 108. 188; HBLS IV 280.</note> zuͦ Cnonow wägen, das wir nit anderst könnend verston, dann das er sich wol und rächt understadt ze halten.</s>
-					<s xml:lang="de" type="auto">Er hatt sich früntlich und guͦtwillig gegen uns erbotten und insonders mit uns, nammlich mit dem von Rifferschwil<note xml:id="fn3" type="footnote" n="3">Pfarrer in <placeName ref="900">Rifferswil</placeName> (Kt. Zürich) war seit 1529 <persName ref="1063">Rudolf Gwerb</persName> (1483-1563), s. Max <hi>Stiefel,</hi> Die kirchlichen Verhältnisse im Knonaueramt nach der Reformation 1531-1600, Diss. phil. Zürich, <placeName ref="14">Affoltern am Albis</placeName> 1947, S. 99; Pfarrerbuch 312.</note>, <placeName ref="704">Mettmenstetten</placeName><note xml:id="fn4" type="footnote" n="4">Seit Anfang 1533 war <persName ref="684">Felix Deck</persName> Pfarrer in <placeName ref="704">Mettmenstetten</placeName> (Kt. Zürich). Sein Predigen wurde in der Mai-Synode 1533 kritisiert (AZürcherRef 1941, S. 853), s. <hi>Stiefel,</hi> aaO, S. 71.</note>, Cnonow<note xml:id="fn5" type="footnote" n="5">Pfarrer in <placeName ref="560">Knonau</placeName> (Kt. Zürich) war damals noch <persName ref="7">Hans <persName ref="1063">Rudolf</persName> Ammann</persName>, der wegen einer Ehebruchsgeschichte im Mai 1533 aus der Synode ausgeschlossen wurde, s. AZürcherRef 1941, S. 853f. 856-858 und unten <ref target="files.xml#10308">Nr. 277</ref>.</note> und mit mir, geredt und verheissen, er welli daran sin, das m[iner] herren mandata gehalten, die laster gestraft werdind, und er welli uns dapfer und trülich ruggen halten.</s>
+					<s xml:lang="de" type="auto">Er hatt sich früntlich und guͦtwillig gegen uns erbotten und insonders mit uns, nammlich mit dem von Rifferschwil<note xml:id="fn3" type="footnote" n="3">Pfarrer in <placeName ref="900">Rifferswil</placeName> (Kt. Zürich) war seit 1529 <persName ref="1063">Rudolf Gwerb</persName> (1483-1563), s. Max <hi>Stiefel,</hi> Die kirchlichen Verhältnisse im Knonaueramt nach der Reformation 1531-1600, Diss. phil. Zürich, <placeName ref="14">Affoltern am Albis</placeName> 1947, S. 99; Pfarrerbuch 312.</note>, <placeName ref="704">Mettmenstetten</placeName><note xml:id="fn4" type="footnote" n="4">Seit Anfang 1533 war <persName ref="684">Felix Deck</persName> Pfarrer in <placeName ref="704">Mettmenstetten</placeName> (Kt. Zürich). Sein Predigen wurde in der Mai-Synode 1533 kritisiert (AZürcherRef 1941, S. 853), s. <hi>Stiefel,</hi> aaO, S. 71.</note>, Cnonow<note xml:id="fn5" type="footnote" n="5">Pfarrer in <placeName ref="560">Knonau</placeName> (Kt. Zürich) war damals noch <persName ref="7">Hans <persName ref="1063">Rudolf</persName> Ammann</persName>, der wegen einer Ehebruchsgeschichte im Mai 1533 aus der Synode ausgeschlossen wurde, s. AZürcherRef 1941, S. 853f. 856-858 und unten <ref target="file#10308">Nr. 277</ref>.</note> und mit mir, geredt und verheissen, er welli daran sin, das m[iner] herren mandata gehalten, die laster gestraft werdind, und er welli uns dapfer und trülich ruggen halten.</s>
 					<s xml:lang="de" type="auto">Und sin erbieten, läben und wandel nach bißhar gevalt uns warlich nit übel.</s>
 					<s xml:lang="de" type="auto">Wir versähend uns alles guͦten zu imm und hoffend, das ir ouch nüt dann trüw und dapferkeit von imm werdind hören.</s>
 					<s xml:lang="de" type="auto">Darumb wäri also unser beger und früntlich bitt zuͦ üch, das ir ouch ettwa, wenn ir so vil wyl hettind und es üch wil gevallen, ein früntlich zuͦschriben und ermanung zuͦ imm thätind<note xml:id="fn6" type="footnote" n="6">Ein diesbezüglicher Brief Bullingers ist nicht erhalten.</note>, damit der man ouch dester trülicher fürfuͦri, wie er sich gegen uns und susti<note xml:id="fn7" type="footnote" n="7">sonst (SI VII 1396).</note> erzeigt hett.</s>
 					<s xml:lang="de" type="auto">Und wir, so vil mir vermögend, wend ouch für und für hie imm ampt<note xml:id="fn8" type="footnote" n="8">Das zürcherische Freiamt, das dem Gebiet der Landvogtei <placeName ref="560">Knonau</placeName> entsprach, s. HBLS III 247.</note> trülich leeren und läben nach üwerem bevelch.</s>
 					<s xml:lang="de" type="auto">Versähend üch aller trüw und dapferkeit zuͦ uns.</s>
 					<s xml:lang="de" type="auto">Hiemit sy got mit sinen gnaden alle zit mit üch.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="de" type="auto">Datum 10. die aprilis anno etc. 33.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="de" type="auto">Mit herren prior von Cappel<note xml:id="fn9" type="footnote" n="9"><persName ref="200">Peter Simler</persName>.</note> hatt er insonders geredt ouch.</s>
 					<s xml:lang="de" type="auto">Item so handlet er gegen demm frommen <persName ref="167">Heinrichen</persName><note xml:id="fn10" type="footnote" n="10"><persName ref="210">Heinrich Strübi</persName>.</note> zuͦ Affholteren<note xml:id="fn11" type="footnote" n="11"><placeName ref="14">Affoltern am Albis</placeName> (Kt. Zürich).</note> ouch trülich etc.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="de" type="auto"><persName ref="167">Heinrich Pfiffer</persName>, diener der kuchen zuͦ <placeName ref="678">Maschwanden</placeName>, üwer williger.<pb type="edition" next="105"/></s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
 					<s xml:lang="de" type="auto">Dem frommen, christenlichen, trüwen, wolgelerten M. <persName ref="167">Heinrichen</persName> Bullinger, predicanten Zurich, sinem lieben herren.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

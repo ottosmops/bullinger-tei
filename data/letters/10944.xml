@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-6-902"
-	 n="10944">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-6-902" n="10944">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Johannes Zwick / [Tübingen] AN Heinrich Bullinger, [10.] Oktober 1536</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Bächtold, Hans Ulrich; Henrich, Rainer</authority>
-				<date>1995</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="1995"/>
 				<idno type="ISBN">ISBN 3-290-10980-1</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=902</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1536</biblScope>
 				<biblScope type="page">440</biblScope>
+				<biblScope type="pages">518</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 346,78</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,11 +45,11 @@
 							<textLang>la</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Ist nach <placeName ref="1107">Tübingen</placeName> gereist, um mit
-							<persName ref="146">Philipp</persName> [<persName ref="146">Melanchthon</persName>] über die
-							Beförderung der Konkordie zu sprechen; wird nach seiner Rückkehr ausführlicher berichten.
-						</p>
+							<p xml:id="regest1">
+								Ist nach <placeName ref="1107">Tübingen</placeName> gereist, um mit
+								<persName ref="146">Philipp</persName> [<persName ref="146">Melanchthon</persName>] über die
+								Beförderung der Konkordie zu sprechen; wird nach seiner Rückkehr ausführlicher berichten.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -55,21 +58,22 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10944">
 				<correspAction type="sent">
-					<persName ref="persons.xml#4079" cert="high">
+					<persName ref="person#4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#512">Tübingen</settlement>
-						<district ref="districts.xml#16">Baden-Württemberg</district>
-						<country ref="countries.xml#18">Deutschland</country>
+					<place source="#512" cert="high">
+						<settlement>Tübingen</settlement>
+						<district>Baden-Württemberg</district>
+						<country>Deutschland</country>
 						<geo>48.52266 9.05222</geo>
-					</location>
+					</place>
 					<date when="1536-10-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -107,29 +111,29 @@
 	</facsimile>
 	<text xml:lang="la">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
+			<div xml:id="div1" corresp="regest1">
+				<p>
 					<s xml:lang="la" type="auto">Salus.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Cum sperarem me <persName ref="146">Philippum</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="146">Philipp Melanchthon</persName>.</note> invenire <placeName ref="1107">Tubingae</placeName>, accinxi me itineri, neque me fefellit spes mea.</s>
-					<s xml:lang="la" type="auto">Inveni illum impeditum a principe<note xml:id="fn3" type="footnote" n="3"><persName ref="224">Herzog Ulrich von Württemberg</persName>.</note> et etiamnum agentem <placeName ref="1107">Tubingae</placeName> reformandae achademiae caussa<note xml:id="fn4" type="footnote" n="4">Siehe oben <ref target="files.xml#10942">Nr. 900</ref>, Anm. 10.</note>.</s>
+					<s xml:lang="la" type="auto">Inveni illum impeditum a principe<note xml:id="fn3" type="footnote" n="3"><persName ref="224">Herzog Ulrich von Württemberg</persName>.</note> et etiamnum agentem <placeName ref="1107">Tubingae</placeName> reformandae achademiae caussa<note xml:id="fn4" type="footnote" n="4">Siehe oben <ref target="file#10942">Nr. 900</ref>, Anm. 10.</note>.</s>
 					<s xml:lang="la" type="auto">Ego cum illo nunc agam de concordiae negotio non impediendo, sed firmius et certius concludendo.</s>
-					<s xml:lang="la" type="auto">Ubi domum rediero, faciam te de reliquis certiorem<note xml:id="fn5" type="footnote" n="5">Siehe unten <ref target="files.xml#10950">Nr. 908</ref>.</note>.</s>
-				</ab>
-				<ab>
+					<s xml:lang="la" type="auto">Ubi domum rediero, faciam te de reliquis certiorem<note xml:id="fn5" type="footnote" n="5">Siehe unten <ref target="file#10950">Nr. 908</ref>.</note>.</s>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Vale cum fratribus et dominis.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Datum <placeName ref="1107">Tubingae</placeName>.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Tuus Io. <persName ref="263">Zvick</persName>.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
 					<s xml:lang="la" type="auto">Domino Hainricho Bullingero, Tigurinae ecclesię antistiti, fratri optimo.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

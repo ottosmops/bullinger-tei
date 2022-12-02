@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-1-12"
-	 n="10037">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-1-12" n="10037">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Heinrich Bullinger / [Kappel am Albis] AN [Michael Wüst], 16. Dezember 1525</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Gäbler, Ulrich; Zsindely, Endre</authority>
-				<date>1974</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="1974"/>
 				<idno type="ISBN">ISBN 3-290-11334-5</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=12</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 1</title>
+				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">1</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1524-1531</biblScope>
 				<biblScope type="page">83</biblScope>
+				<biblScope type="pages">268</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph (Kopie)" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Zentralbibliothek</institution>
 						<idno type="Autograph (Kopie)">Ms A 82,90r 1/2 fol. S.</idno>
-						<repository ref="archives.xml#96">
+						<repository ref="archive#96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
@@ -46,9 +49,9 @@
 							<textLang>la</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Übersendet eine Abschrift des Schreibens über das Abendmahl vom 10. December 1525.
-						</p>
+							<p xml:id="regest1">
+								Übersendet eine Abschrift des Schreibens über das Abendmahl vom 10. December 1525.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -57,22 +60,22 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10037">
 				<correspAction type="sent">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#242">Kappel am Albis</settlement>
-						<district ref="districts.xml#210">Zürich</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#242" cert="high">
+						<settlement>Kappel am Albis</settlement>
+						<district>Zürich</district>
+						<country>Schweiz</country>
 						<geo>47.2288482 8.5251335</geo>
-					</location>
+					</place>
 					<date when="1525-12-16" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#4031" cert="low">
+					<persName ref="person#4031" cert="low">
 						<forename cert="low">Michael</forename>
 						<surname cert="low">Wüst</surname>
 					</persName>
@@ -105,27 +108,27 @@
 	<facsimile/>
 	<text xml:lang="la">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
-					<s xml:lang="la" type="auto">Michaeli<note xml:id="fna" type="footnote" n="a"><hi>oben aRvB:</hi> De eucharistia.</note> suo gratiam et pacem.</s>
-				</ab>
-				<ab>
-					<s xml:lang="la" type="auto">Mittimus tibi, Michael dilecte, epistolam nostram, quae de eucharistia ante aliquot dies excidit venus quam scripta sit<note xml:id="fn2" type="footnote" n="2">Siehe Anhang II, Nr. 5.</note>, si fortassis per eam tribuat tibi oculos deus, ut cognita missandi impietate cogites, quo pacto possis propediem immutare mores, studia, questum et vitam tuam, esseque adhuc in tam spatioso terrarum orbe reliquum, unde vivere possis, meliore nimirum conscientia, quam in impiissimo questu et eidololatria.</s>
+			<div xml:id="div1" corresp="regest1">
+				<p>
+					<s xml:lang="la" type="auto"><persName ref="254">Michaeli</persName><note xml:id="fna" type="footnote" n="a"><hi>oben aRvB:</hi> De eucharistia.</note> suo gratiam et pacem.</s>
+				</p>
+				<p>
+					<s xml:lang="la" type="auto">Mittimus tibi, <persName ref="254">Michael</persName> dilecte, epistolam nostram, quae de eucharistia ante aliquot dies excidit venus quam scripta sit<note xml:id="fn2" type="footnote" n="2">Siehe Anhang II, Nr. 5.</note>, si fortassis per eam tribuat tibi oculos deus, ut cognita missandi impietate cogites, quo pacto possis propediem immutare mores, studia, questum et vitam tuam, esseque adhuc in tam spatioso terrarum orbe reliquum, unde vivere possis, meliore nimirum conscientia, quam in impiissimo questu et eidololatria.</s>
 					<s xml:lang="la" type="auto">Est enim etiamdum<note xml:id="fnb" type="footnote" n="b"><hi>ein zweites</hi> dum <hi>gestrichen.</hi></note> sana mens tibi in corpore sano<note xml:id="fn3" type="footnote" n="3"><persName ref="1315">Juvenal</persName>, Satiren X, 356.</note>.</s>
 					<s xml:lang="la" type="auto">Nihil habes post infidelitatem, quo te tueri possis; satis superque satis offendisti dominum.</s>
 					<s xml:lang="la" type="auto">Revertere ergo ad eum, qui non vult «mortem peccatoris, sed magis ut convertatur et vivat» [Ez 33,11], ac nostram pro te sollicitudinem boni consule.</s>
 					<s xml:lang="la" type="auto">Nam ferre non potui, ut a te separarer religione, qui non modo sanguine, verum a cunis tibi per omnem vitam arctissime hesi.</s>
 					<s xml:lang="la" type="auto">Quod ad<pb type="edition" next="84"/> litterarum figuras spectat, noli esse <persName ref="348">Aristarchus</persName><note xml:id="fn4" type="footnote" n="4">Aristarchos aus Samothrake, 217-145 v. Chr., griechischer Philologe und Bibliothekar in Alexandria, galt im Altertum als größter Meister der Kritik und Exegese. Sein Name wurde als Bezeichnung für Literaturkritiker sprichwörtlich, Adagia, 1, 5, 57 (LB II 204f). Der Ausdruck soll also heißen: sei kein allzu strenger Kritiker!</note>; sic enim unus ex adulescentulis meis me dictante quam celerrime istaec excepit, at mihi otium vix fuit relegendi, taceo vel innumeras expungendi mendas<note xml:id="fn6" type="footnote" n="6">Dieses von <persName ref="66">Frey</persName> geschriebene Exemplar ist nicht erhalten.</note><note xml:id="fn7" type="footnote" n="7">Nam exemplar, quod misimus, rescripserat Ioan. Liberianus<ptr target="#fn5" type="footnote" n="5"/>, discipulus noster.</note></s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Vale et ita age, ut intelligam te malle esse pauperem christianum, quam divitem impium, incredulum, mactatorem.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Ex coenobio nostro, 16. decembris 1525.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Heimrych tuus.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

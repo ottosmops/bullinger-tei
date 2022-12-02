@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-11-1519"
-	 n="11562">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-11-1519" n="11562">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Simon Grynäus / Basel AN Heinrich Bullinger, 14. Mai [1541]</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Henrich, Rainer; Kess, Alexandra; Moser, Christian</authority>
-				<date>2005</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="2005"/>
 				<idno type="ISBN">ISBN 3-290-17339-9</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1519</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 11</title>
+				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">11</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1541</biblScope>
 				<biblScope type="page">188</biblScope>
+				<biblScope type="pages">385</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 343,181</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,13 +45,13 @@
 							<textLang>la</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Schickt Bücher, die [<persName ref="228">Hans</persName>]
-							<persName ref="228">Vogler</persName> [d. J.] zurückließ, und fragt sich, wer sich um dessen
-							restliche Habe kümmern wird; hat wegen <persName ref="228">Voglers</persName> Schulden an dessen
-							Vater [<persName ref="228">Hans</persName> d. Ä.] geschrieben. Erkundigt sich nach dem Reichstag [in
-							<placeName ref="880">Regensburg</placeName>].
-						</p>
+							<p xml:id="regest1">
+								Schickt Bücher, die [<persName ref="228">Hans</persName>]
+								<persName ref="228">Vogler</persName> [d. J.] zurückließ, und fragt sich, wer sich um dessen
+								restliche Habe kümmern wird; hat wegen <persName ref="228">Voglers</persName> Schulden an dessen
+								Vater [<persName ref="228">Hans</persName> d. Ä.] geschrieben. Erkundigt sich nach dem Reichstag [in
+								<placeName ref="880">Regensburg</placeName>].
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -57,22 +60,22 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11562">
 				<correspAction type="sent">
-					<persName ref="persons.xml#1365" cert="high">
+					<persName ref="person#1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
 					</persName>
-					<location cert="low">
-						<settlement ref="places.xml#28">Basel</settlement>
-						<district ref="districts.xml#23">Basel-Stadt</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#28" cert="low">
+						<settlement>Basel</settlement>
+						<district>Basel-Stadt</district>
+						<country>Schweiz</country>
 						<geo>47.55839 7.57327</geo>
-					</location>
+					</place>
 					<date when="1541-05-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -110,29 +113,29 @@
 	</facsimile>
 	<text xml:lang="la">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
+			<div xml:id="div1" corresp="regest1">
+				<p>
 					<s xml:lang="la" type="auto">S.</s>
 					<s xml:lang="la" type="auto">Reliquit hic <persName ref="228">Voglerus</persName> librum unum et alterum; eos hic cum isto<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> mitto.</s>
 					<s xml:lang="la" type="auto">Vas, in quo est omnis eius suppellex, nemo hactenus aufert; miror, qui fiat.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Sunt quaedam debita perexigua, quae patri nuper scripsi,<note xml:id="fn3" type="footnote" n="3">Der Brief an <persName ref="228">Hans Vogler</persName> d. Ä. ist nicht erhalten.</note> et valde cupiam dissolvi.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Vale in domino cum omnibus tuis.</s>
 					<s xml:lang="la" type="auto">14. maii.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">S. <persName ref="81">Grynęus</persName> tuus.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">A comitiis<note xml:id="fn4" type="footnote" n="4">Gemeint ist zweifellos der Reichstag zu <placeName ref="880">Regensburg</placeName>.</note> si quid habes, imperti.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
 					<s xml:lang="la" type="auto">Domino H. Bullingero suo, amico.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

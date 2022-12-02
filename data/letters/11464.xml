@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-10-1421"
-	 n="11464">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-10-1421" n="11464">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Johannes Wolf / [Frankfurt am Main] AN Heinrich Bullinger, 15. September 1540</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Bächtold, Hans Ulrich; Henrich, Rainer</authority>
-				<date>2003</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="2003"/>
 				<idno type="ISBN">ISBN 3-290-17265-1</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1421</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 10</title>
+				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">10</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1540</biblScope>
 				<biblScope type="page">166</biblScope>
+				<biblScope type="pages">224</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 340,95</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,13 +45,13 @@
 							<textLang>la</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Ist entgegen seiner Ankündigung bereits [mit <persName ref="242">Wick</persName> und
-							<persName ref="91">Haller</persName>] auf dem Weg nach
-							<placeName ref="672">Marburg</placeName>, da die Erlaubnis dazu ohnehin zu erwarten war und da sich
-							eine günstige Reisegelegenheit bot; bittet um Verständnis, denn das Geld hätte nicht mehr lange gereicht.
-							Grüße.
-						</p>
+							<p xml:id="regest1">
+								Ist entgegen seiner Ankündigung bereits [mit <persName ref="242">Wick</persName> und
+								<persName ref="91">Haller</persName>] auf dem Weg nach
+								<placeName ref="672">Marburg</placeName>, da die Erlaubnis dazu ohnehin zu erwarten war und da sich
+								eine günstige Reisegelegenheit bot; bittet um Verständnis, denn das Geld hätte nicht mehr lange gereicht.
+								Grüße.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -57,22 +60,22 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11464">
 				<correspAction type="sent">
-					<persName ref="persons.xml#3988" cert="high">
+					<persName ref="person#3988" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Wolf</surname>
 						<graphic type="portrait" url="portraits/3988_Wolf_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johann_Wolf_(Theologe,_1521)"/>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#157">Frankfurt am Main</settlement>
-						<district ref="districts.xml#71">Hessen</district>
-						<country ref="countries.xml#18">Deutschland</country>
+					<place source="#157" cert="high">
+						<settlement>Frankfurt am Main</settlement>
+						<district>Hessen</district>
+						<country>Deutschland</country>
 						<geo>50.110922 8.682126</geo>
-					</location>
+					</place>
 					<date when="1540-09-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -110,25 +113,25 @@
 	</facsimile>
 	<text xml:lang="la">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
-					<s xml:lang="la" type="auto">Proximis tuis literis, d. Bullingere observande, cum responderem, decretum vestrum expectaturos pollicebar<note xml:id="fn1" type="footnote" n="1">Siehe oben <ref target="files.xml#11447">Nr. 1404</ref>, 9-11. - Die Rede ist außer von <persName ref="251">Wolf</persName> selbst auch von <persName ref="242">Wick</persName> und <persName ref="91">Haller</persName>.</note>.</s>
+			<div xml:id="div1" corresp="regest1">
+				<p>
+					<s xml:lang="la" type="auto">Proximis tuis literis, d. Bullingere observande, cum responderem, decretum vestrum expectaturos pollicebar<note xml:id="fn1" type="footnote" n="1">Siehe oben <ref target="file#11447">Nr. 1404</ref>, 9-11. - Die Rede ist außer von <persName ref="251">Wolf</persName> selbst auch von <persName ref="242">Wick</persName> und <persName ref="91">Haller</persName>.</note>.</s>
 					<s xml:lang="la" type="auto">Verum, quoniam quasi certissimo<note xml:id="fna" type="footnote" n="a"><hi>korrigiert aus</hi> certissimam.</note> proficiscendi facultatem a vobis datum iri animis nostris conceperamus, non potuimus cum temporis, tum vero maxime itineris quam commodissimam oblatam occasionem praetermittere, ne amissa illa frustra recuperandi tantum non assequendi copia concederetur.</s>
 					<s xml:lang="la" type="auto">Proinde petitis et comparatis a d. rectore<note xml:id="fn2" type="footnote" n="2"><persName ref="2408">Kaspar Volland</persName>; s. <placeName ref="1107">Tübingen</placeName>, Matrikel I 300.</note> et universitat[e] scholae Thubingensis [necessari]is[?] testimoniis<note xml:id="fnb" type="footnote" n="b">[necessari]is testimoniis <hi>am Rande nachgetragen,</hi> im engen Einband nur teilweise lesbar.</note><note xml:id="fn3" type="footnote" n="3">Nicht erhalten.</note><pb type="edition" next="167"/> una cum typographo<note xml:id="fn4" type="footnote" n="4">Gemeint ist gewiß der Tübinger Buchdrucker <persName ref="1675">Ulrich Morhart</persName>; s. <hi>Benzing,</hi> Buchdrucker 465.</note>, homine piissimo, Francfordiam profecti sumus et illinc nunc <placeName ref="672">Marpurgum</placeName>.</s>
 					<s xml:lang="la" type="auto">Quare te et patronum et patrem seu sacram anchoram<note xml:id="fn5" type="footnote" n="5">Vgl. Adagia, 1, 1, 24 (LB II 35f).</note> oratum quammaxime voluerim, ne id, quod factum est, indignius feras, siquidem totum id factum est, ut aeris alieni obligationem evitaremus, praesertim, quod ob nostri aeris tantam tenuitatem diutius manere non licuisset.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Quin iam vale et <persName ref="251">Wolffium</persName> tuum, quod soles, ama.</s>
 					<s xml:lang="la" type="auto">Francfordię, raptim, 1540, 15. septembris.</s>
-				</ab>
-				<ab>
-					<s xml:lang="la" type="auto">Salutabis matrem<note xml:id="fn6" type="footnote" n="6">Anna, geb. Wiederkehr.</note>, uxorem<note xml:id="fn7" type="footnote" n="7">Anna, geb. Adlischwyler.</note>, liberos<note xml:id="fn8" type="footnote" n="8">Siehe oben <ref target="files.xml#11387">Nr. 1344</ref>, Anm. 14.</note> etc.</s>
+				</p>
+				<p>
+					<s xml:lang="la" type="auto">Salutabis matrem<note xml:id="fn6" type="footnote" n="6">Anna, geb. Wiederkehr.</note>, uxorem<note xml:id="fn7" type="footnote" n="7">Anna, geb. Adlischwyler.</note>, liberos<note xml:id="fn8" type="footnote" n="8">Siehe oben <ref target="file#11387">Nr. 1344</ref>, Anm. 14.</note> etc.</s>
 					<s xml:lang="la" type="auto">Iohan. <persName ref="251">Wolffius</persName> tuus quam etc.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
 					<s xml:lang="la" type="auto">Cum docto tum integro viro d. Heinricho Bullingero, Tigurinę ecclesię episcopo vigilantissimo.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>

@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-	 xml:id="Brief_HBBW-4-394"
-	 n="10429">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief-HBBW-4-394" n="10429">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">Beat Gering / [Schaffhausen] AN Heinrich Bullinger, 13. Juni 1534</title>
 			</titleStmt>
 			<publicationStmt>
-				<publisher>TVZ (Theologischer Verlag Zürich)</publisher>
+				<publisher>Theologischer Verlag Zürich (TVZ)</publisher>
+				<pubPlace>Zürich</pubPlace>
 				<address>
 					<addrLine>TVZ Theologischer Verlag Zürich AG</addrLine>
 					<addrLine>Badenerstrasse 73</addrLine>
 					<addrLine>8004 Zürich</addrLine>
 				</address>
-				<authority>Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</authority>
-				<date>1989</date>
+				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
+				<date when="1989"/>
 				<idno type="ISBN">ISBN 3-290-11600-X</idno>
 				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=394</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Werke</title>
+				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
+				<biblScope type="volumes">20</biblScope>
+				<biblScope type="period">1534</biblScope>
 				<biblScope type="page">210</biblScope>
+				<biblScope type="pages">484</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="places.xml#587">Zürich</settlement>
+						<settlement ref="place#587">Zürich</settlement>
 						<institution>Staatsarchiv</institution>
 						<idno type="Autograph">E II 441,561</idno>
-						<repository ref="archives.xml#94">
+						<repository ref="archive#94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
@@ -42,15 +45,15 @@
 							<textLang>de</textLang>
 						</msItem>
 						<summary>
-								<p xml:id="regest1">
-							Dankt Bullinger für die Bemühungen, ihn aus dem Fegefeuer [seiner Schaffhauser Stelle] zu befreien.
-							Allerdings fühlt er sich zu ungebildet, die Nachfolge eines so gelehrten Mannes [wie
-							<persName ref="117">Karlstadt</persName>] anzutreten, zu schwach, um die Anforderungen der Stelle zu
-							erfüllen. Doch im Vertrauen auf Bullingers Versprechungen wird er gehorchen. Bittet um Rat, wie er die
-							Entlassung in <placeName ref="943">Schaffhausen</placeName> bewerkstelligen soll. Für den Umzug
-							nach Zürich wird er finanzielle Hilfe brauchen. <persName ref="1289">Joachim</persName> wird alles
-							mit Bullinger besprechen.
-						</p>
+							<p xml:id="regest1">
+								Dankt Bullinger für die Bemühungen, ihn aus dem Fegefeuer [seiner Schaffhauser Stelle] zu befreien.
+								Allerdings fühlt er sich zu ungebildet, die Nachfolge eines so gelehrten Mannes [wie
+								<persName ref="117">Karlstadt</persName>] anzutreten, zu schwach, um die Anforderungen der Stelle zu
+								erfüllen. Doch im Vertrauen auf Bullingers Versprechungen wird er gehorchen. Bittet um Rat, wie er die
+								Entlassung in <placeName ref="943">Schaffhausen</placeName> bewerkstelligen soll. Für den Umzug
+								nach Zürich wird er finanzielle Hilfe brauchen. <persName ref="1289">Joachim</persName> wird alles
+								mit Bullinger besprechen.
+							</p>
 						</summary>
 					</msContents>
 				</msDesc>
@@ -59,21 +62,21 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10429">
 				<correspAction type="sent">
-					<persName ref="persons.xml#1385" cert="high">
+					<persName ref="person#1385" cert="high">
 						<forename cert="high">Beat</forename>
 						<surname cert="high">Gering</surname>
 						<addName type="main">Gering (Gerung), Beat (Batt)</addName>
 					</persName>
-					<location cert="high">
-						<settlement ref="places.xml#441">Schaffhausen</settlement>
-						<district ref="districts.xml#159">Schaffhausen</district>
-						<country ref="countries.xml#58">Schweiz</country>
+					<place source="#441" cert="high">
+						<settlement>Schaffhausen</settlement>
+						<district>Schaffhausen</district>
+						<country>Schweiz</country>
 						<geo>47.69732 8.63493</geo>
-					</location>
+					</place>
 					<date when="1534-06-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="persons.xml#495" cert="high">
+					<persName ref="person#495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
@@ -109,11 +112,11 @@
 	<facsimile/>
 	<text xml:lang="la">
 		<body>
-			<div xml:id="div1" corresp="#regest1">
-				<ab>
+			<div xml:id="div1" corresp="regest1">
+				<p>
 					<s xml:lang="la" type="auto">Gratiam et vitę innocentiam.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Non possum non ingentes tibi agere gratias, quod mei fueris memor meque ex antri patriciani purgatorio<note xml:id="fn2" type="footnote" n="2"><persName ref="78">Gering</persName> hatte in <placeName ref="943">Schaffhausen</placeName> unter dem Streit der Pfarrer <persName ref="176">Erasmus Ritter</persName> und <persName ref="36">Benedikt Burgauer</persName> zu leiden, denen beiden er als Helfer unterstellt war, s. <hi>Wipf</hi> 309.</note> liberare tentes<note xml:id="fn3" type="footnote" n="3">Ein diesbezüglicher Brief Bullingers ist nicht erhalten.</note>.</s>
 					<s xml:lang="la" type="auto">Verum illud non vehementer probo, quod eo modo id tentas.</s>
 					<s xml:lang="la" type="auto">Nam cum mediocritatem, imo parvitatem<pb type="edition" next="211"/> ingenii mei considero, tunc plane non agnosco in me tales vires, quae ferendo tanto oneri possint esse pares.</s>
@@ -135,21 +138,21 @@
 					<s xml:lang="la" type="auto">Praeterito enim anno omnem meam pecuniam, quam pręsentem habebam, consumpsi, ut hoc anno nonnisi in diem mihi vivere licuerit.</s>
 					<s xml:lang="la" type="auto">Quare et hic subveniendum erit.</s>
 					<s xml:lang="la" type="auto">Sed quid hisce rebus immoror etc.</s>
-					<s xml:lang="la" type="auto">Ioachimus<note xml:id="fn7" type="footnote" n="7">Unbekannt; auch im folgenden Brief <persName ref="78">Gerings</persName> als Bote erwähnt, s. S. 226, 12f.</note> frater, noster charissimus, cętera omnia tecum conferet.</s>
-				</ab>
-				<ab>
+					<s xml:lang="la" type="auto"><persName ref="1289">Ioachimus</persName><note xml:id="fn7" type="footnote" n="7">Unbekannt; auch im folgenden Brief <persName ref="78">Gerings</persName> als Bote erwähnt, s. S. 226, 12f.</note> frater, noster charissimus, cętera omnia tecum conferet.</s>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">Vale.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto">13. iunii.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<s xml:lang="la" type="auto"><persName ref="78">Beatus Gerungus</persName> totus tuus.</s>
-				</ab>
-				<ab>
+				</p>
+				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
 					<s xml:lang="la" type="auto">Doctissimo simul ac piissimo viro M. Heinricho Bullingero, fratri suo charissimo.</s>
-				</ab>
+				</p>
 			</div>
 		</body>
 	</text>
