@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">8104/74</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,703</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,703</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,49 +54,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9279">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1573-04-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#993" cert="high">
+					<!--
+					<persName ref="person993" cert="high">
 						<forename cert="high">Tobias</forename>
 						<surname cert="high">Egli</surname>
-						<addName type="main">Egli (Iconius, Götz), Tobias</addName>
+						<persName type="main" ref="person8016>Egli (Iconius, Götz), Tobias</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Tobias_Egli"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089466366"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person993" cert="high"/>
+					<place source="place98" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9281"/>
-					<ref type="prev_chronologically" target="files.xml#9280"/>
-					<ref type="next_correspondence" target="files.xml#9284"/>
-					<ref type="prev_correspondence" target="files.xml#9276"/>
-					<ref type="next_correspondence_request" target="files.xml#9289"/>
-					<ref type="prev_correspondence_request" target="files.xml#9272"/>
-					<ref type="next_correspondence_reaction" target="files.xml#9284"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#9276"/>
-					<ref type="next_same_sender" target="files.xml#9289"/>
-					<ref type="prev_same_sender" target="files.xml#9278"/>
-					<ref type="next_same_addressee" target="files.xml#9284"/>
-					<ref type="prev_same_addressee" target="files.xml#9276"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9289"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9278"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9284"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#9276"/>
+					<ref type="next_chronologically" target="file9281"/>
+					<ref type="prev_chronologically" target="file9280"/>
+					<ref type="next_correspondence" target="file9284"/>
+					<ref type="prev_correspondence" target="file9276"/>
+					<ref type="next_correspondence_request" target="file9289"/>
+					<ref type="prev_correspondence_request" target="file9272"/>
+					<ref type="next_correspondence_reaction" target="file9284"/>
+					<ref type="prev_correspondence_reaction" target="file9276"/>
+					<ref type="next_same_sender" target="file9289"/>
+					<ref type="prev_same_sender" target="file9278"/>
+					<ref type="next_same_addressee" target="file9284"/>
+					<ref type="prev_same_addressee" target="file9276"/>
+					<ref type="next_with_sender_as_addressee" target="file9289"/>
+					<ref type="prev_with_sender_as_addressee" target="file9278"/>
+					<ref type="next_with_addressee_as_sender" target="file9284"/>
+					<ref type="prev_with_addressee_as_sender" target="file9276"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -111,42 +115,42 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Redditae sunt mihi tuae literae una cum historia adiuncta rerum vestrarum.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Redditae sunt mihi tuae literae una cum historia adiuncta rerum vestrarum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominum oro, ut, quemadmodum ante annum periculosas motus non infeliciter terminavit, ita nunc quoque misertus suorum misericorditer ad bonum finem mala illa omnia perducat.</s>
-					<s xml:lang="la" type="auto">Impatienter forte audis, cum ego mea consilia tuis oppono institutis nihilominus nunc quoque amici fidi officium faciens et quidem nunc et postea non amplius molestiam tibi hanc obtundens, ne hoc, quod instituisti, facias, hortor.</s>
-					<s xml:lang="la" type="auto">Discessum paras, et quod turbis omnia plena sint et quod pseudodoctores plus amari quam fidos doctores cernas.</s>
+					<s n="3" xml:lang="la" type="auto">Dominum oro, ut, quemadmodum ante annum periculosas motus non infeliciter terminavit, ita nunc quoque misertus suorum misericorditer ad bonum finem mala illa omnia perducat.</s>
+					<s n="4" xml:lang="la" type="auto">Impatienter forte audis, cum ego mea consilia tuis oppono institutis nihilominus nunc quoque amici fidi officium faciens et quidem nunc et postea non amplius molestiam tibi hanc obtundens, ne hoc, quod instituisti, facias, hortor.</s>
+					<s n="5" xml:lang="la" type="auto">Discessum paras, et quod turbis omnia plena sint et quod pseudodoctores plus amari quam fidos doctores cernas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Futurum itaque tibi praedico, ut, cum in periculo tam gravi discesseris, non defuturi sint, qui clamabunt per te hanc turbam esse excitatam et postea ductum poenitentia aufugere ipsis in medio gurgite et in profundo relictis.</s>
+					<s n="6" xml:lang="la" type="auto">Futurum itaque tibi praedico, ut, cum in periculo tam gravi discesseris, non defuturi sint, qui clamabunt per te hanc turbam esse excitatam et postea ductum poenitentia aufugere ipsis in medio gurgite et in profundo relictis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Deinde, cum Corinthiorum ecclesia a nonnullis pseudodoctoribus esset nonnihil corrupta et periculum esset, ne gravius malis et erroribus involveretur, adeo de deserendis illis et locum permittendum seductoribus non cogitavit, ut tum demum omnium vehementissime laboraret, ne reciperentur pseudodoctores<note type="misc">Egli bem. hiezu a. R.: "periculum vitę."</note>.</s>
-					<s xml:lang="la" type="auto">Vide ergo, quid tu sis facturus.</s>
+					<s n="7" xml:lang="la" type="auto">Deinde, cum Corinthiorum ecclesia a nonnullis pseudodoctoribus esset nonnihil corrupta et periculum esset, ne gravius malis et erroribus involveretur, adeo de deserendis illis et locum permittendum seductoribus non cogitavit, ut tum demum omnium vehementissime laboraret, ne reciperentur pseudodoctores<note type="misc">Egli bem. hiezu a. R.: "periculum vitę."</note>.</s>
+					<s n="8" xml:lang="la" type="auto">Vide ergo, quid tu sis facturus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nova praeter ea, quae ultimo ad te dedi, nulla sunt, nisi quod spargitur fama de morte imperatoris et de exercitu Turcico, qui Zygethum nuper venerit expectaturus ibi copias Turcicas immensas, cum quibus profecturus sit per Carinthiam et vicinia adversus Venetos.</s>
-					<s xml:lang="la" type="auto">Quae si vera sunt, habebit Germania, quod agat.</s>
-					<s xml:lang="la" type="auto">Valde metuo grande malum paratum esse universis christianis, et qui vere sunt, quod dicuntur, et eorum, qui dicuntur et nihil sunt minus.</s>
-					<s xml:lang="la" type="auto">Dominus misereatur nostri!</s>
+					<s n="9" xml:lang="la" type="auto">Nova praeter ea, quae ultimo ad te dedi, nulla sunt, nisi quod spargitur fama de morte imperatoris et de exercitu Turcico, qui Zygethum nuper venerit expectaturus ibi copias Turcicas immensas, cum quibus profecturus sit per Carinthiam et vicinia adversus Venetos.</s>
+					<s n="10" xml:lang="la" type="auto">Quae si vera sunt, habebit Germania, quod agat.</s>
+					<s n="11" xml:lang="la" type="auto">Valde metuo grande malum paratum esse universis christianis, et qui vere sunt, quod dicuntur, et eorum, qui dicuntur et nihil sunt minus.</s>
+					<s n="12" xml:lang="la" type="auto">Dominus misereatur nostri!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pro laboribus tuis impensis scribendae vel consignandae historiae rerum vestrarum maximas ago gratias.</s>
-					<s xml:lang="la" type="auto">Dominus benedicat tibi et servet te una cum universa familia et bonis amicisque et notis omnibus!</s>
+					<s n="13" xml:lang="la" type="auto">Pro laboribus tuis impensis scribendae vel consignandae historiae rerum vestrarum maximas ago gratias.</s>
+					<s n="14" xml:lang="la" type="auto">Dominus benedicat tibi et servet te una cum universa familia et bonis amicisque et notis omnibus!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Festinantissime scripsi has.</s>
+					<s n="15" xml:lang="la" type="auto">Festinantissime scripsi has.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 10. aprilis anno 1573.</s>
+					<s n="16" xml:lang="la" type="auto">Tiguri 10. aprilis anno 1573.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Bullingerus.</s>
+					<s n="17" xml:lang="la" type="auto">Tuus Bullingerus.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Dem wolgelerten, frommen und getruwen herren Thobia Egli, pfarreren zuͦ S. Martin zuͦ Chur, minem lieben herren und bruͦder.</s>
+					<s n="18" xml:lang="de" type="auto">Dem wolgelerten, frommen und getruwen herren Thobia Egli, pfarreren zuͦ S. Martin zuͦ Chur, minem lieben herren und bruͦder.</s>
 				</p>
 			</div>
 		</body>

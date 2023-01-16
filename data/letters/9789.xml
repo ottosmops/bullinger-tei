@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 381,1376-1377</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 381,1376-1377</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -25,13 +28,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#441">Schaffhausen</settlement>
-						<institution>Stadtbibliothek</institution>
-						<idno type="Kopie">Min. 127,...</idno>
-						<repository ref="archive#77">
+						<!--
+						<repository ref="archive77">
 							<name>Schaffhausen StB</name>
 							<ref target="https://bibliotheken-schaffhausen.ch/digitale-bibliothek/online-katalog/"/>
 						</repository>
+						<settlement ref="place441">Schaffhausen</settlement>
+						<institution>Stadtbibliothek</institution>
+						-->
+						<repository ref="archive77"/>
+						<idno subtype="Kopie">Min. 127,...</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -40,65 +46,44 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9789">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="singular" ref="role#40" cert="high">Kirchenrat</name>
-						<place source="#210" cert="high">
-							<settlement>Heidelberg</settlement>
-							<district>Baden-Württemberg</district>
-							<country>Deutschland</country>
-							<geo>49.41222 8.71</geo>
-						</place>
-					</roleName>
-					<place source="#210" cert="high">
-						<settlement>Heidelberg</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>49.41222 8.71</geo>
-					</place>
+					<personGrp ref="role0" role="Kirchenrat"/>
+					<place source="place210" cert="high"/>
 					<date when="1574-09-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<orgName type="institution">
-						<name type="singular" ref="org#19" cert="high">Kirche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</orgName>
+					<!--
 					<note type="Adresse">Zürcher Kirche</note>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<orgName ref="org37" role="Kirche"/>"
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9790"/>
-					<ref type="prev_chronologically" target="files.xml#9788"/>
+					<ref type="next_chronologically" target="file9790"/>
+					<ref type="prev_chronologically" target="file9788"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#9834"/>
+					<ref type="next_same_sender" target="file9834"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#9992"/>
-					<ref type="prev_same_addressee" target="files.xml#8791"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9834"/>
+					<ref type="next_same_addressee" target="file9992"/>
+					<ref type="prev_same_addressee" target="file8791"/>
+					<ref type="next_with_sender_as_addressee" target="file9834"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9992"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8791"/>
+					<ref type="next_with_addressee_as_sender" target="file9992"/>
+					<ref type="prev_with_addressee_as_sender" target="file8791"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="9789/Autograph/00 E_II_381__S__1376_.tif" n="1"/>
+		<graphic url="9789/Autograph/01 E_II_381__S__1377_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

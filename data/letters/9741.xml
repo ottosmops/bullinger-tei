@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 368,181-183</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 368,181-183</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -25,13 +28,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#492">Strassburg</settlement>
-						<institution>National- und Universitätsbibliothek</institution>
-						<idno type="Kopie">Ms 0.689 = STB Bd. 30,243 f.</idno>
-						<repository ref="archive#81">
+						<!--
+						<repository ref="archive81">
 							<name>Strassburg BNU</name>
 							<ref target="https://www.bnu.fr/fr"/>
 						</repository>
+						<settlement ref="place492">Strassburg</settlement>
+						<institution>National- und Universitätsbibliothek</institution>
+						-->
+						<repository ref="archive81"/>
+						<idno subtype="Kopie">Ms 0.689 = STB Bd. 30,243 f.</idno>
 					</msIdentifier>
 					<history><origin><p><date>19. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -41,53 +47,63 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9741">
 				<correspAction type="sent">
-					<persName ref="person#890" cert="high">
+					<!--
+					<persName ref="person890" cert="high">
 						<forename cert="high">Theodor</forename>
 						<surname cert="high">Beza</surname>
-						<addName type="main">de Bèze (Beza), Théodor</addName>
+						<persName type="main" ref="person8033>de Bèze (Beza), Théodor</addName>
 						<graphic type="portrait" url="portraits/876_Beza_Theodor.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Th%C3%A9odore_de_B%C3%A8ze"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118662864"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11418065"/>
 					</persName>
-					<place source="#330" cert="high">
-						<settlement>Morges</settlement>
-						<district>Waadt</district>
-						<country>Schweiz</country>
-						<geo>46.5093268 6.498317</geo>
-					</place>
+					-->
+					<persName ref="person890" cert="high"/>
+					<place source="place330" cert="high"/>
 					<date when="1574-07-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9742"/>
-					<ref type="prev_chronologically" target="files.xml#9740"/>
-					<ref type="next_correspondence" target="files.xml#9742"/>
-					<ref type="prev_correspondence" target="files.xml#9722"/>
-					<ref type="next_correspondence_request" target="files.xml#9778"/>
-					<ref type="prev_correspondence_request" target="files.xml#9712"/>
-					<ref type="next_correspondence_reaction" target="files.xml#9742"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#9722"/>
-					<ref type="next_same_sender" target="files.xml#9778"/>
-					<ref type="prev_same_sender" target="files.xml#9712"/>
-					<ref type="next_same_addressee" target="files.xml#9742"/>
-					<ref type="prev_same_addressee" target="files.xml#9734"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9778"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9712"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9742"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#9734"/>
+					<ref type="next_chronologically" target="file9742"/>
+					<ref type="prev_chronologically" target="file9740"/>
+					<ref type="next_correspondence" target="file9742"/>
+					<ref type="prev_correspondence" target="file9722"/>
+					<ref type="next_correspondence_request" target="file9778"/>
+					<ref type="prev_correspondence_request" target="file9712"/>
+					<ref type="next_correspondence_reaction" target="file9742"/>
+					<ref type="prev_correspondence_reaction" target="file9722"/>
+					<ref type="next_same_sender" target="file9778"/>
+					<ref type="prev_same_sender" target="file9712"/>
+					<ref type="next_same_addressee" target="file9742"/>
+					<ref type="prev_same_addressee" target="file9734"/>
+					<ref type="next_with_sender_as_addressee" target="file9778"/>
+					<ref type="prev_with_sender_as_addressee" target="file9712"/>
+					<ref type="next_with_addressee_as_sender" target="file9742"/>
+					<ref type="prev_with_addressee_as_sender" target="file9734"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="9741/Autograph/00 E_II_368__S__181_.tif" n="1"/>
+		<graphic url="9741/Autograph/01 E_II_368__S__182_.tif" n="2"/>
+		<graphic url="9741/Autograph/02 E_II_368__S__183_.tif" n="3"/>
+		<graphic url="9741/Autograph/03 E_II_368__S__183_a_.tif" n="4"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

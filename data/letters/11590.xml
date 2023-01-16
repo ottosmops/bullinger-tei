@@ -9,10 +9,10 @@
 				<publisher>Basler Buch- und Antiquariatshandlung</publisher>
 				<pubPlace>Basel</pubPlace>
 				<date when="1904"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1547</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1547</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Bullingers Korrespondenz mit den Graubündnern</title>
+				<title subtype="publication">Graubünden, Korr.</title>
 				<biblScope type="author">Bullinger, H.; Schiess, T.</biblScope>
 				<biblScope type="edition">Bullingers Korrespondenz mit den Graubündnern</biblScope>
 				<biblScope type="page">38</biblScope>
@@ -20,13 +20,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,31</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,31</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -36,20 +39,20 @@
 						<summary>
 							<p xml:id="regest1">
 								Erneute Fürsprache für den werdenbergischen Pfarrer - gleicher Herkunft und gleichen Alters wie
-								<persName ref="265">Zwingli</persName> [<persName ref="100">Jakob Hewer</persName>?] -, der
-								seinen Sohn nach dem Schulbesuch in <placeName ref="243">Chur</placeName> in Zürich weiter
+								<persName ref="person265">Zwingli</persName> [<persName ref="person100">Jakob Hewer</persName>?] -, der
+								seinen Sohn nach dem Schulbesuch in <placeName ref="place243">Chur</placeName> in Zürich weiter
 								studieren lassen will, um ihm eine Laufbahn als Pfarrer zu ermöglichen; um die finanziellen Verhältnisse des
 								Vaters steht es nicht zum Besten, viele Landpfarreien nötigen zu bescheidenem Lebenswandel; der Knabe ist
-								<persName ref="43">Comander</persName> bekannt, da er ein halbes Jahr bei ihm wohnte; er begibt sich
-								zu <persName ref="2653">Margaretha</persName>, der einstigen Magd
-								<persName ref="265">Zwinglis</persName>; [<persName ref="21">Johannes</persName>] Pontisella
-								kennt ihn auch; <persName ref="43">Comander</persName> würde Bullinger liebend gerne auch einmal
-								einen Dienst erweisen. Ist begierig, den Ausgang des <placeName ref="880">Regensburger</placeName>
+								<persName ref="person43">Comander</persName> bekannt, da er ein halbes Jahr bei ihm wohnte; er begibt sich
+								zu Margaretha, der einstigen Magd
+								<persName ref="person265">Zwinglis</persName>; [Johannes] Pontisella
+								kennt ihn auch; <persName ref="person43">Comander</persName> würde Bullinger liebend gerne auch einmal
+								einen Dienst erweisen. Ist begierig, den Ausgang des <placeName ref="place880">Regensburger</placeName>
 								Reichstages zu erfahren; es ist zu befürchten, dass der Kaiser eng mit dem
-								<persName ref="1792">Papst</persName> kooperiert, da der Gubernator von
-								<placeName ref="667">Mailand</placeName> [Alfonso d’Avalos, Marchese del Vasto] die Protestanten
+								Papst kooperiert, da der Gubernator von
+								<placeName ref="place667">Mailand</placeName> [Alfonso d’Avalos, Marchese del Vasto] die Protestanten
 								schärfer als jemals zuvor verfolgen lässt. Grüße, auch von
-								<persName ref="21">Johannes Blasius</persName> und [Nikolaus Pfister, gen.] Baling.
+								<persName ref="person21">Johannes Blasius</persName> und [Nikolaus Pfister, gen.] Baling.
 							</p>
 						</summary>
 					</msContents>
@@ -66,42 +69,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11590">
 				<correspAction type="sent">
-					<persName ref="person#654" cert="high">
+					<!--
+					<persName ref="person654" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Comander</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Comander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118713841"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413826"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person654" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1541-07-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11591"/>
-					<ref type="prev_chronologically" target="files.xml#11595"/>
-					<ref type="next_correspondence" target="files.xml#11651"/>
-					<ref type="prev_correspondence" target="files.xml#11572"/>
-					<ref type="next_correspondence_request" target="files.xml#11651"/>
-					<ref type="prev_correspondence_request" target="files.xml#11572"/>
+					<ref type="next_chronologically" target="file11591"/>
+					<ref type="prev_chronologically" target="file11595"/>
+					<ref type="next_correspondence" target="file11651"/>
+					<ref type="prev_correspondence" target="file11572"/>
+					<ref type="next_correspondence_request" target="file11651"/>
+					<ref type="prev_correspondence_request" target="file11572"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11508"/>
-					<ref type="next_same_sender" target="files.xml#11651"/>
-					<ref type="prev_same_sender" target="files.xml#11572"/>
-					<ref type="next_same_addressee" target="files.xml#11591"/>
-					<ref type="prev_same_addressee" target="files.xml#11585"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11651"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11572"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11591"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11585"/>
+					<ref type="prev_correspondence_reaction" target="file11508"/>
+					<ref type="next_same_sender" target="file11651"/>
+					<ref type="prev_same_sender" target="file11572"/>
+					<ref type="next_same_addressee" target="file11591"/>
+					<ref type="prev_same_addressee" target="file11585"/>
+					<ref type="next_with_sender_as_addressee" target="file11651"/>
+					<ref type="prev_with_sender_as_addressee" target="file11572"/>
+					<ref type="next_with_addressee_as_sender" target="file11591"/>
+					<ref type="prev_with_addressee_as_sender" target="file11585"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -110,36 +120,39 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="11590/Autograph/00 E_II_365__fol__31_r_.tif" n="1"/>
+		<graphic url="11590/Autograph/01 E_II_365__fol__31_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et vitae innocentiam a Domino.</s>
-					<s xml:lang="la" type="auto">Literas ad te iam pridem dederam, colendissime Bullingere; an redditae sint necne, penitus ignoro.</s>
-					<s xml:lang="la" type="auto">De quodam adulescentulo scripseram, qui per biennium aut plus apud nos <placeName ref="243">Curiae</placeName> literis operam navavit, Latinis et Grecis probe iniciatus, cupiens deinceps Tiguri bonis literis incumbere.</s>
-					<s xml:lang="la" type="auto">Filius est evangelistae in comitatu Werdenbergensi, ditionis Glareanae, viri honesti et probi et de evangelio optime meriti, qui et Zvinglii nostri piae memoriae conterraneus et coaetaneus fuit.</s>
-					<s xml:lang="la" type="auto">Qui animo syncero ac pio filium suum evangelii ministerio consecrare desyderat, sed re familiari minor est, quam ut id commode possit.</s>
-					<s xml:lang="la" type="auto">Inopia enim premimur plerique in terris nostris sacerdotiolis parvis sustentati, ut parce tenuiterque vivendum sit.</s>
-					<s xml:lang="la" type="auto">Praecamur itaque plurimum, quatenus gratia et auxilio tuo adiutus et commendatus apud dominos venerabiles ut distributionis in pauperes aliqua saltem parte particeps fiat.</s>
-					<s xml:lang="la" type="auto">Puer est bonus et pius; ego illum per dimidium annum in mensa mea alui, unde mihi cognitus est adeo, ut minime diffidam, quin benefitium bene collocetur in eum.</s>
-					<s xml:lang="la" type="auto">Divertit ille ad Margaretam, quondam Zvinglii ancillam; Pontasella illum novit.</s>
-					<s xml:lang="la" type="auto">Tu importunitati meae ignoscas, et si in gratiam aut commodum tuum unquam aliquid potero, cupidissime faciam.</s>
-					<s xml:lang="la" type="auto">Caeterum de Ratisbonensibus comitiis, in quam catastrophen diverterint, miramur valde.</s>
-					<s xml:lang="la" type="auto">Caesarem timemus Romano episcopo addictum esse et coniunctum ut squamae in Behemot.</s>
-					<s xml:lang="la" type="auto">Coniecturam ex hoc habemus: gubernator ducatus Mediolani Christianos misere persequitur plus quam antehac unquam.</s>
-					<s xml:lang="la" type="auto">Ad palinodiam turpissimam cogit et recusantes recantare in servitutem nauticam damnat, etiam viros ingenuos et de optimo genere natos.</s>
-					<s xml:lang="la" type="auto">Ex Caesare habet hanc saevitiem marchio; ipse enim non admodum infensus evangelio.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">Ex <placeName ref="243">Curia</placeName> Rhetiae, decimo quarto kalendas Augusti.</s>
-					<s xml:lang="la" type="auto">Salvum exoptant te cum dilectissimis fratribus omnibus <persName ref="43">Ioannes</persName> Blasius, Balingius et ego <persName ref="43">Comander</persName>.</s>
-					<s xml:lang="la" type="auto">Tuus ex animo <persName ref="43">Ioannes Comander</persName>.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et vitae innocentiam a Domino.</s>
+					<s n="2" xml:lang="la" type="auto">Literas ad te iam pridem dederam, colendissime Bullingere; an redditae sint necne, penitus ignoro.</s>
+					<s n="3" xml:lang="la" type="auto">De quodam adulescentulo scripseram, qui per biennium aut plus apud nos <placeName ref="place243">Curiae</placeName> literis operam navavit, Latinis et Grecis probe iniciatus, cupiens deinceps Tiguri bonis literis incumbere.</s>
+					<s n="4" xml:lang="la" type="auto">Filius est evangelistae in comitatu Werdenbergensi, ditionis Glareanae, viri honesti et probi et de evangelio optime meriti, qui et Zvinglii nostri piae memoriae conterraneus et coaetaneus fuit.</s>
+					<s n="5" xml:lang="la" type="auto">Qui animo syncero ac pio filium suum evangelii ministerio consecrare desyderat, sed re familiari minor est, quam ut id commode possit.</s>
+					<s n="6" xml:lang="la" type="auto">Inopia enim premimur plerique in terris nostris sacerdotiolis parvis sustentati, ut parce tenuiterque vivendum sit.</s>
+					<s n="7" xml:lang="la" type="auto">Praecamur itaque plurimum, quatenus gratia et auxilio tuo adiutus et commendatus apud dominos venerabiles ut distributionis in pauperes aliqua saltem parte particeps fiat.</s>
+					<s n="8" xml:lang="la" type="auto">Puer est bonus et pius; ego illum per dimidium annum in mensa mea alui, unde mihi cognitus est adeo, ut minime diffidam, quin benefitium bene collocetur in eum.</s>
+					<s n="9" xml:lang="la" type="auto">Divertit ille ad Margaretam, quondam Zvinglii ancillam; Pontasella illum novit.</s>
+					<s n="10" xml:lang="la" type="auto">Tu importunitati meae ignoscas, et si in gratiam aut commodum tuum unquam aliquid potero, cupidissime faciam.</s>
+					<s n="11" xml:lang="la" type="auto">Caeterum de Ratisbonensibus comitiis, in quam catastrophen diverterint, miramur valde.</s>
+					<s n="12" xml:lang="la" type="auto">Caesarem timemus Romano episcopo addictum esse et coniunctum ut squamae in Behemot.</s>
+					<s n="13" xml:lang="la" type="auto">Coniecturam ex hoc habemus: gubernator ducatus Mediolani Christianos misere persequitur plus quam antehac unquam.</s>
+					<s n="14" xml:lang="la" type="auto">Ad palinodiam turpissimam cogit et recusantes recantare in servitutem nauticam damnat, etiam viros ingenuos et de optimo genere natos.</s>
+					<s n="15" xml:lang="la" type="auto">Ex Caesare habet hanc saevitiem marchio; ipse enim non admodum infensus evangelio.</s>
+					<s n="16" xml:lang="la" type="auto">Vale.</s>
+					<s n="17" xml:lang="la" type="auto">Ex <placeName ref="place243">Curia</placeName> Rhetiae, decimo quarto kalendas Augusti.</s>
+					<s n="18" xml:lang="la" type="auto">Salvum exoptant te cum dilectissimis fratribus omnibus Ioannes Blasius, Balingius et ego <persName ref="person43">Comander</persName>.</s>
+					<s n="19" xml:lang="la" type="auto">Tuus ex animo <persName ref="person43">Ioannes Comander</persName>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De comitiis si quid habes, communica nobis, ut coepisti.</s>
+					<s n="20" xml:lang="la" type="auto">De comitiis si quid habes, communica nobis, ut coepisti.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ornatissimo doctissimoque viro magistro Heinrycho Bullingero, Tigurinae ecclesiae antistiti, domino suo et amico observando.</s>
+					<s n="21" xml:lang="la" type="auto">Ornatissimo doctissimoque viro magistro Heinrycho Bullingero, Tigurinae ecclesiae antistiti, domino suo et amico observando.</s>
 				</p>
 			</div>
 		</body>

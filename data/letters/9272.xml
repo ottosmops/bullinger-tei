@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">8099/69</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Beilage" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 441,343a</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 441,343a</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -52,51 +55,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9272">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 					<date when="1573-04-03" cert="low"><note>s.d. (Beilage zu: 1573 April 3. (= ID 9271)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#993" cert="low">
+					<!--
+					<persName ref="person993" cert="low">
 						<forename cert="low">Tobias</forename>
 						<surname cert="low">Egli</surname>
-						<addName type="main">Egli (Iconius, Götz), Tobias</addName>
+						<persName type="main" ref="person8016>Egli (Iconius, Götz), Tobias</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Tobias_Egli"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089466366"/>
 					</persName>
-					<place source="#98" cert="low">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person993" cert="low"/>
+					<place source="place98" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9273"/>
-					<ref type="prev_chronologically" target="files.xml#9271"/>
-					<ref type="next_correspondence" target="files.xml#9276"/>
-					<ref type="prev_correspondence" target="files.xml#9271"/>
-					<ref type="next_correspondence_request" target="files.xml#9279"/>
-					<ref type="prev_correspondence_request" target="files.xml#9271"/>
-					<ref type="next_correspondence_reaction" target="files.xml#9276"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#9266"/>
-					<ref type="next_same_sender" target="files.xml#9273"/>
-					<ref type="prev_same_sender" target="files.xml#9271"/>
-					<ref type="next_same_addressee" target="files.xml#9276"/>
-					<ref type="prev_same_addressee" target="files.xml#9266"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9273"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9271"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9276"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#9266"/>
-					<ref type="child" target="files.xml#9271"/>
-					<ref type="parent" target="files.xml#9271"/>
+					<ref type="next_chronologically" target="file9273"/>
+					<ref type="prev_chronologically" target="file9271"/>
+					<ref type="next_correspondence" target="file9276"/>
+					<ref type="prev_correspondence" target="file9271"/>
+					<ref type="next_correspondence_request" target="file9279"/>
+					<ref type="prev_correspondence_request" target="file9271"/>
+					<ref type="next_correspondence_reaction" target="file9276"/>
+					<ref type="prev_correspondence_reaction" target="file9266"/>
+					<ref type="next_same_sender" target="file9273"/>
+					<ref type="prev_same_sender" target="file9271"/>
+					<ref type="next_same_addressee" target="file9276"/>
+					<ref type="prev_same_addressee" target="file9266"/>
+					<ref type="next_with_sender_as_addressee" target="file9273"/>
+					<ref type="prev_with_sender_as_addressee" target="file9271"/>
+					<ref type="next_with_addressee_as_sender" target="file9276"/>
+					<ref type="prev_with_addressee_as_sender" target="file9266"/>
+					<ref type="child" target="file9271"/>
+					<ref type="parent" target="file9271"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -106,37 +110,40 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="9272/Autograph/00 E_II_441__fol__343_a_r_.tif" n="1"/>
+		<graphic url="9272/Autograph/01 E_II_441__fol__343_a_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Post occlusas literas haec adferuntur Augusta scripta 25. martii: Albanus, fax bellorum, mortuus est, et Caesar iterum decumbit loetaliter.</s>
+					<s n="1" xml:lang="la" type="auto">Post occlusas literas haec adferuntur Augusta scripta 25. martii: Albanus, fax bellorum, mortuus est, et Caesar iterum decumbit loetaliter.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Apud nos confluunt milites ad praesidia in Italiam ducendi.</s>
-					<s xml:lang="la" type="auto">Hispani et Itali praesidiarii imponentur navibus.</s>
-					<s xml:lang="la" type="auto">Turcae legatus Viennam Austriae venit petiturus Turcis transitum per Stiriam.</s>
-					<s xml:lang="la" type="auto">Caesar oppignoravit Augusto electori Silesiam pro ingenti summa pecuniae.</s>
-					<s xml:lang="la" type="auto">Poloni convenient ad eligendum regem suum 5. aprilis.</s>
+					<s n="2" xml:lang="la" type="auto">Apud nos confluunt milites ad praesidia in Italiam ducendi.</s>
+					<s n="3" xml:lang="la" type="auto">Hispani et Itali praesidiarii imponentur navibus.</s>
+					<s n="4" xml:lang="la" type="auto">Turcae legatus Viennam Austriae venit petiturus Turcis transitum per Stiriam.</s>
+					<s n="5" xml:lang="la" type="auto">Caesar oppignoravit Augusto electori Silesiam pro ingenti summa pecuniae.</s>
+					<s n="6" xml:lang="la" type="auto">Poloni convenient ad eligendum regem suum 5. aprilis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Urbinates dicuntur principi suo reconciliari.</s>
-					<s xml:lang="la" type="auto">Rustici Carni a Carolo suo principe sunt caesi, nonnulli affixi palis, omnes crudeliter necati; nam in eos severiter dicitur saevitum.</s>
+					<s n="7" xml:lang="la" type="auto">Urbinates dicuntur principi suo reconciliari.</s>
+					<s n="8" xml:lang="la" type="auto">Rustici Carni a Carolo suo principe sunt caesi, nonnulli affixi palis, omnes crudeliter necati; nam in eos severiter dicitur saevitum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Heydelberga, Basilea, Schaffhusio etc scribitur: Rupellani secunda eruptione regis exercitum obsidentem urbem gravi clade affecerunt.</s>
+					<s n="9" xml:lang="la" type="auto">Heydelberga, Basilea, Schaffhusio etc scribitur: Rupellani secunda eruptione regis exercitum obsidentem urbem gravi clade affecerunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Interfecti sunt dux Aumalius, nothus item regis frater et multi viri primarii et duces, Guysius loetaliter vulneratus.</s>
-					<s xml:lang="la" type="auto">Rex latro valde sibi metuit.</s>
+					<s n="10" xml:lang="la" type="auto">Interfecti sunt dux Aumalius, nothus item regis frater et multi viri primarii et duces, Guysius loetaliter vulneratus.</s>
+					<s n="11" xml:lang="la" type="auto">Rex latro valde sibi metuit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Philippus rogavit Caesarem, ut pacem componat cum Uranio.</s>
-					<s xml:lang="la" type="auto">Danus colligit militem; nescitur et in quem finem.</s>
+					<s n="12" xml:lang="la" type="auto">Philippus rogavit Caesarem, ut pacem componat cum Uranio.</s>
+					<s n="13" xml:lang="la" type="auto">Danus colligit militem; nescitur et in quem finem.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Und ist zuͦ hurß allenthalben.</s>
+					<s n="14" xml:lang="de" type="auto">Und ist zuͦ hurß allenthalben.</s>
 				</p>
 				<p>
 					<note>[Ohne Datum, Unterschrift und Adresse.]</note>

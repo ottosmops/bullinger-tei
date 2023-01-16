@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5428/67</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 375,625</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 375,625</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 96,204</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 96,204</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -56,49 +62,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4252">
 				<correspAction type="sent">
-					<persName ref="person#1553" cert="high">
+					<!--
+					<persName ref="person1553" cert="high">
 						<forename cert="high">Christian</forename>
 						<surname cert="high">Hochholzer</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/108932216X"/>
 					</persName>
-					<place source="#490" cert="high">
-						<settlement>Stein am Rhein</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.65933 8.85964</geo>
-					</place>
+					-->
+					<persName ref="person1553" cert="high"/>
+					<place source="place490" cert="high"/>
 					<date when="1560-04-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4253"/>
-					<ref type="prev_chronologically" target="files.xml#4251"/>
-					<ref type="next_correspondence" target="files.xml#4693"/>
-					<ref type="prev_correspondence" target="files.xml#4055"/>
-					<ref type="next_correspondence_request" target="files.xml#4693"/>
-					<ref type="prev_correspondence_request" target="files.xml#4055"/>
+					<ref type="next_chronologically" target="file4253"/>
+					<ref type="prev_chronologically" target="file4251"/>
+					<ref type="next_correspondence" target="file4693"/>
+					<ref type="prev_correspondence" target="file4055"/>
+					<ref type="next_correspondence_request" target="file4693"/>
+					<ref type="prev_correspondence_request" target="file4055"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#4693"/>
-					<ref type="prev_same_sender" target="files.xml#4055"/>
-					<ref type="next_same_addressee" target="files.xml#4257"/>
-					<ref type="prev_same_addressee" target="files.xml#4248"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4693"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4055"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4257"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#4248"/>
+					<ref type="next_same_sender" target="file4693"/>
+					<ref type="prev_same_sender" target="file4055"/>
+					<ref type="next_same_addressee" target="file4257"/>
+					<ref type="prev_same_addressee" target="file4248"/>
+					<ref type="next_with_sender_as_addressee" target="file4693"/>
+					<ref type="prev_with_sender_as_addressee" target="file4055"/>
+					<ref type="next_with_addressee_as_sender" target="file4257"/>
+					<ref type="prev_with_addressee_as_sender" target="file4248"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -107,47 +112,50 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="4252/Autograph/00 E_II_375__fol__625_r_.tif" n="1"/>
+		<graphic url="4252/Autograph/01 E_II_375__fol__625_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Quod operose ac enixe, venerande domine ac compater colende multisque precibus a me impetrare voluisti, ut scilicet, qua possim fide, fasciculum ad me missum principi Wirtenbergensi tradi curarem, quam potui fidelissime procuravi.</s>
-					<s xml:lang="la" type="auto">Heri enim, cum intelligerem te id maxime velle, ipse profectus sum in arcem Duelli ac capitaneo praesidii illius tuo nomine tradidi, qui bona fide recepit se principi in suas ipsius manus tradendum curaturum.</s>
-					<s xml:lang="la" type="auto">Proinde non est, quod dubites, absque mora certo princeps ipse accipiet.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Quod operose ac enixe, venerande domine ac compater colende multisque precibus a me impetrare voluisti, ut scilicet, qua possim fide, fasciculum ad me missum principi Wirtenbergensi tradi curarem, quam potui fidelissime procuravi.</s>
+					<s n="3" xml:lang="la" type="auto">Heri enim, cum intelligerem te id maxime velle, ipse profectus sum in arcem Duelli ac capitaneo praesidii illius tuo nomine tradidi, qui bona fide recepit se principi in suas ipsius manus tradendum curaturum.</s>
+					<s n="4" xml:lang="la" type="auto">Proinde non est, quod dubites, absque mora certo princeps ipse accipiet.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Non opus erat, ut tot verbis orares, cui pro tuo iure imperare potuisses; nam etiamsi prius ob ingentia beneficia in me collata tuę humanitati non obstrictus essem, tamen tam gratum mihi fuit tuas videre literas, ut vel hoc solo nomine quidvis essem facturus; fuere enim mihi gratissimę, cum sciam te multis variisque laboribus ac negociis occupatum ac distractum, ut vel parum vel nihil temporis scribendis ad fratres et amicos literis impendere liceat.</s>
-					<s xml:lang="la" type="auto">Tamen inter negociorum procellas mei nondum obrepsit oblivio, qui ad ultimos limites Helvetię, ad Svevos minime suaves sum remotus.</s>
-					<s xml:lang="la" type="auto">Non parum refocillatus sum, cum non solum literas tuas, sed et librum dono a te acceperim, qui liber, ut argumenti eiusque illustri tractatione, dignitate ac constantia non potest non esse gratus, ita quod a te mihi dono missus est, longe est gratissimus.</s>
-					<s xml:lang="la" type="auto">Et certe, quod longiori spacio temporis nullas a te acceperam literas, iniquiori animo ferre non potui certas ob causas; tamen, quod illic diminutum erat, facile amoris tui in me hoc testimonium resarcire potest.</s>
-					<s xml:lang="la" type="auto">Habeo ergo tuę humanitati gratias ingentes dubio procul relaturus, si ullo modo possem vel ulla sese obtulerit occasio.</s>
-					<s xml:lang="la" type="auto">Res meę sic utcunque se habent.</s>
+					<s n="5" xml:lang="la" type="auto">Non opus erat, ut tot verbis orares, cui pro tuo iure imperare potuisses; nam etiamsi prius ob ingentia beneficia in me collata tuę humanitati non obstrictus essem, tamen tam gratum mihi fuit tuas videre literas, ut vel hoc solo nomine quidvis essem facturus; fuere enim mihi gratissimę, cum sciam te multis variisque laboribus ac negociis occupatum ac distractum, ut vel parum vel nihil temporis scribendis ad fratres et amicos literis impendere liceat.</s>
+					<s n="6" xml:lang="la" type="auto">Tamen inter negociorum procellas mei nondum obrepsit oblivio, qui ad ultimos limites Helvetię, ad Svevos minime suaves sum remotus.</s>
+					<s n="7" xml:lang="la" type="auto">Non parum refocillatus sum, cum non solum literas tuas, sed et librum dono a te acceperim, qui liber, ut argumenti eiusque illustri tractatione, dignitate ac constantia non potest non esse gratus, ita quod a te mihi dono missus est, longe est gratissimus.</s>
+					<s n="8" xml:lang="la" type="auto">Et certe, quod longiori spacio temporis nullas a te acceperam literas, iniquiori animo ferre non potui certas ob causas; tamen, quod illic diminutum erat, facile amoris tui in me hoc testimonium resarcire potest.</s>
+					<s n="9" xml:lang="la" type="auto">Habeo ergo tuę humanitati gratias ingentes dubio procul relaturus, si ullo modo possem vel ulla sese obtulerit occasio.</s>
+					<s n="10" xml:lang="la" type="auto">Res meę sic utcunque se habent.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Domino clementissimo ac sapientissimo eiusque voluntati semper optimę me totum commisi, in cuius providentiae agnitione unica spes et solatium mihi est repositum.</s>
-					<s xml:lang="la" type="auto">Te rogo iam quam qui maxime, ut me porro habeas commendatum; dabitur fortassis aliquando, ut coram plura colloqui tecum liceat.</s>
+					<s n="11" xml:lang="la" type="auto">Domino clementissimo ac sapientissimo eiusque voluntati semper optimę me totum commisi, in cuius providentiae agnitione unica spes et solatium mihi est repositum.</s>
+					<s n="12" xml:lang="la" type="auto">Te rogo iam quam qui maxime, ut me porro habeas commendatum; dabitur fortassis aliquando, ut coram plura colloqui tecum liceat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salutant te tuosque mei omnes.</s>
+					<s n="13" xml:lang="la" type="auto">Salutant te tuosque mei omnes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino.</s>
+					<s n="14" xml:lang="la" type="auto">Vale in domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex improviso se obtulit tabellarius hic; proinde raptim scribendum fuit; iamiam erat abiturus.</s>
-					<s xml:lang="la" type="auto">Vale iterum.</s>
+					<s n="15" xml:lang="la" type="auto">Ex improviso se obtulit tabellarius hic; proinde raptim scribendum fuit; iamiam erat abiturus.</s>
+					<s n="16" xml:lang="la" type="auto">Vale iterum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salvos cupio d. Gvalterum, Lavaterum, Zvinglium ac reliquos fratres et symmistas venerandos.</s>
+					<s n="17" xml:lang="la" type="auto">Salvos cupio d. Gvalterum, Lavaterum, Zvinglium ac reliquos fratres et symmistas venerandos.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Steinę ad Rhenum 1. aprilis anno 1560.</s>
-					<s xml:lang="la" type="auto">Tuae humanitati deditissimus Christianus Hochholtzer.</s>
+					<s n="18" xml:lang="la" type="auto">Steinę ad Rhenum 1. aprilis anno 1560.</s>
+					<s n="19" xml:lang="la" type="auto">Tuae humanitati deditissimus Christianus Hochholtzer.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Praestantissimo viro d. Heinrycho Bullingero, Tigurinę ecclesię antistiti fidelissimo, domino ac compatri suo colendissimo.</s>
+					<s n="20" xml:lang="la" type="auto">Praestantissimo viro d. Heinrycho Bullingero, Tigurinę ecclesię antistiti fidelissimo, domino ac compatri suo colendissimo.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2008"/>
-				<idno type="ISBN">ISBN 978-3-290-17459-0</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1819</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17459-0</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1819</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 13</title>
+				<title subtype="publication">HBBW XIII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">13</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Teilkopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#378">Paris</settlement>
-						<institution>Nationalbibliothek</institution>
-						<idno type="Teilkopie">Ms Dupuy 103,23r.–24v.</idno>
-						<repository ref="archive#71">
+						<!--
+						<repository ref="archive71">
 							<name>Paris BN</name>
 							<ref target="https://www.bnf.fr/fr"/>
 						</repository>
+						<settlement ref="place378">Paris</settlement>
+						<institution>Nationalbibliothek</institution>
+						-->
+						<repository ref="archive71"/>
+						<idno subtype="Teilkopie">Ms Dupuy 103,23r.–24v.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,23 +51,23 @@
 								und von Christus nicht vorgeschrieben, und er selbst hält es für ausreichend, wenn in der Kirche auf eine
 								gewisse Disziplin geachtet wird; Calvin, der sich in der „Institutio“ zur Exkommunikation äußert, wird den
 								Frieden in der Kirche gewiss nicht gefährden wollen, und Oekolampad hat mit ihrer Einführung wenig erreicht;
-								Bullinger verweist auf<pb type="edition" next="324"/> <persName ref="371">Augustin</persName>, Contra
+								Bullinger verweist auf<pb type="edition" next="324"/> <persName ref="person371">Augustin</persName>, Contra
 								epistolam Parmeniani, 3, 2, und warnt vor einer Verknechtung der Kirche. [Nimmt Stellung zu den auf Anfrage
-								der Pfarrer von <placeName ref="734">Mömpelgard</placeName> in
-								<placeName ref="764">Neuenburg</placeName> diskutierten Artikeln:] Eine Zulassungsprüfung zum
+								der Pfarrer von <placeName ref="place734">Mömpelgard</placeName> in
+								<placeName ref="place764">Neuenburg</placeName> diskutierten Artikeln:] Eine Zulassungsprüfung zum
 								Abendmahl wäre der erste Schritt zur Wiedereinführung der Ohrenbeichte und lässt sich biblisch nicht
 								begründen; jeder prüfe sich selbst [1Kor 11, 28]! Die Letzte Ölung wurzelt in papistischem Aberglauben und
 								bindet die Gnade an die Zeichen; auch hier will man zu menschlichen Erfindungen zurückkehren, die man früher
 								bekämpft hat. Die Taufe soll von Amtsträgern der Kirche gespendet werden; die Hebammentaufe wird durch das
 								Beispiel von Zippora Ex 4 [24-26] nicht gestützt und ist überflüssig; Bullinger vertraut - trotz
-								abweichender Meinung <persName ref="371">Augustins</persName> - darauf, dass ungetaufte Kinder
-								gerettet werden; <persName ref="1582">Marcion</persName> ließ zu, dass Frauen taufen, doch der
+								abweichender Meinung <persName ref="person371">Augustins</persName> - darauf, dass ungetaufte Kinder
+								gerettet werden; <persName ref="person1582">Marcion</persName> ließ zu, dass Frauen taufen, doch der
 								Apostel [Paulus] hielt sie von kirchlichen Ämtern fern. Im Gebrauch von Glocken und Begräbnisriten soll
 								Freiheit herrschen, wenn nur kein Aberglaube damit verbunden ist. Gewisse Leute wollen sich durch die
-								Einführung neuer Zeremonien als treue Schüler <persName ref="138">Luthers</persName> erweisen. Dieser verurteilt die Zürcher Theologen als
-								gottlose Verführer, doch sein Schreiben [oben <ref target="file#11843">Nr. 1797</ref>, 67-82] ist privat, und
+								Einführung neuer Zeremonien als treue Schüler <persName ref="person138">Luthers</persName> erweisen. Dieser verurteilt die Zürcher Theologen als
+								gottlose Verführer, doch sein Schreiben [oben <ref target="file11843">Nr. 1797</ref>, 67-82] ist privat, und
 								sie werden darauf nicht mit Gleichem antworten; aus
-								<placeName ref="46">Niederdeutschland</placeName> ist zu hören, ihr Ruf sei unbeschädigt.
+								<placeName ref="place46">Niederdeutschland</placeName> ist zu hören, ihr Ruf sei unbeschädigt.
 							</p>
 						</summary>
 					</msContents>
@@ -81,43 +84,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11865">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="low"/>
 					<date when="1543-11-22" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2810" cert="high">
+					<!--
+					<persName ref="person2810" cert="high">
 						<forename cert="high">Erasmus</forename>
 						<surname cert="high">Ritter</surname>
+						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Erasmus_Ritter_(Theologe)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/137993781"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11416562"/>
 					</persName>
+					-->
+					<persName ref="person2810" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11866"/>
-					<ref type="prev_chronologically" target="files.xml#11864"/>
-					<ref type="next_correspondence" target="files.xml#11901"/>
-					<ref type="prev_correspondence" target="files.xml#11860"/>
+					<ref type="next_chronologically" target="file11866"/>
+					<ref type="prev_chronologically" target="file11864"/>
+					<ref type="next_correspondence" target="file11901"/>
+					<ref type="prev_correspondence" target="file11860"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#10867"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11901"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11860"/>
-					<ref type="next_same_sender" target="files.xml#11871"/>
-					<ref type="prev_same_sender" target="files.xml#11856"/>
-					<ref type="next_same_addressee" target="files.xml#11901"/>
-					<ref type="prev_same_addressee" target="files.xml#11860"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11871"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11856"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11901"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11860"/>
+					<ref type="prev_correspondence_request" target="file10867"/>
+					<ref type="next_correspondence_reaction" target="file11901"/>
+					<ref type="prev_correspondence_reaction" target="file11860"/>
+					<ref type="next_same_sender" target="file11871"/>
+					<ref type="prev_same_sender" target="file11856"/>
+					<ref type="next_same_addressee" target="file11901"/>
+					<ref type="prev_same_addressee" target="file11860"/>
+					<ref type="next_with_sender_as_addressee" target="file11871"/>
+					<ref type="prev_with_sender_as_addressee" target="file11856"/>
+					<ref type="next_with_addressee_as_sender" target="file11901"/>
+					<ref type="prev_with_addressee_as_sender" target="file11860"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

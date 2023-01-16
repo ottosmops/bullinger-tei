@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2002"/>
-				<idno type="ISBN">ISBN 3-290-17220-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1239</idno>
+				<idno subtype="ISBN">ISBN 3-290-17220-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1239</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 9</title>
+				<title subtype="publication">HBBW IX</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">9</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,90</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,90</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,11 +49,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Dankt ihm für alles, was er für <persName ref="84">Rudolf</persName>
-								[<persName ref="84">Gwalther</persName>] tut, und bittet ihn,
-								<persName ref="81">Grynäus</persName> daran zu erinnern, was er ihm bezüglich
-								<persName ref="84">Gwalthers</persName> vorgeschlagen hat. Schickt ihm und
-								<persName ref="81">Grynäus</persName> die Neubearbeitung seiner Schrift „De origine erroris“ und
+								Dankt ihm für alles, was er für Rudolf
+								[<persName ref="person84">Gwalther</persName>] tut, und bittet ihn,
+								<persName ref="person81">Grynäus</persName> daran zu erinnern, was er ihm bezüglich
+								<persName ref="person84">Gwalthers</persName> vorgeschlagen hat. Schickt ihm und
+								<persName ref="person81">Grynäus</persName> die Neubearbeitung seiner Schrift „De origine erroris“ und
 								bittet um ihr Urteil.
 							</p>
 						</summary>
@@ -61,46 +64,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11282">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="low"/>
 					<date when="1539-03-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
+					-->
+					<persName ref="person2234" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11283"/>
-					<ref type="prev_chronologically" target="files.xml#11281"/>
-					<ref type="next_correspondence" target="files.xml#11286"/>
-					<ref type="prev_correspondence" target="files.xml#11273"/>
-					<ref type="next_correspondence_request" target="files.xml#11286"/>
-					<ref type="prev_correspondence_request" target="files.xml#11270"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11295"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11273"/>
-					<ref type="next_same_sender" target="files.xml#11283"/>
-					<ref type="prev_same_sender" target="files.xml#11280"/>
-					<ref type="next_same_addressee" target="files.xml#11295"/>
-					<ref type="prev_same_addressee" target="files.xml#11273"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11283"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11280"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11295"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11273"/>
+					<ref type="next_chronologically" target="file11283"/>
+					<ref type="prev_chronologically" target="file11281"/>
+					<ref type="next_correspondence" target="file11286"/>
+					<ref type="prev_correspondence" target="file11273"/>
+					<ref type="next_correspondence_request" target="file11286"/>
+					<ref type="prev_correspondence_request" target="file11270"/>
+					<ref type="next_correspondence_reaction" target="file11295"/>
+					<ref type="prev_correspondence_reaction" target="file11273"/>
+					<ref type="next_same_sender" target="file11283"/>
+					<ref type="prev_same_sender" target="file11280"/>
+					<ref type="next_same_addressee" target="file11295"/>
+					<ref type="prev_same_addressee" target="file11273"/>
+					<ref type="next_with_sender_as_addressee" target="file11283"/>
+					<ref type="prev_with_sender_as_addressee" target="file11280"/>
+					<ref type="next_with_addressee_as_sender" target="file11295"/>
+					<ref type="prev_with_addressee_as_sender" target="file11273"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,34 +125,34 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nihil nunc habeo, frater in domino colendissime, quod scribam, nisi quod maximas tibi gratias ago pro tua illa in <persName ref="84">Rodolphum</persName><note xml:id="fn1" type="footnote" n="1"><persName ref="84">Rudolf Gwalther</persName>.</note> insigni humanitate exhibita<note xml:id="fn2" type="footnote" n="2"><persName ref="154">Myconius</persName> hatte <persName ref="84">Gwalther</persName> nach dessen Rückkehr aus <placeName ref="1049">Straßburg</placeName> wieder in sein Haus aufgenommen; vgl. oben <ref target="file#11273">Nr. 1230</ref>, 32; 1232, 12-15.</note>.</s>
-					<s xml:lang="la" type="auto">Dominus sit merces tua.</s>
-					<s xml:lang="la" type="auto">Quicquid autem huic impenderis, mihi impensum putabo.</s>
-					<s xml:lang="la" type="auto">Amo enim ingenuitatem et candorem adolescentis, [p]upilli alioqui<note xml:id="fna" type="footnote" n="a">[p]upilli alioqui <hi>am Rande nachgetragen; Rand beschädigt.</hi></note><note xml:id="fn3" type="footnote" n="3">Vgl. HBBW VIII, S. 177, Anm. 5.</note>.</s>
-					<s xml:lang="la" type="auto">Oro ergo, ut pater illius esse velis, sancte educes et a lubricitate pravitateque, imo stoliditate iuvenili abstrahas.</s>
-					<s xml:lang="la" type="auto">Rogabis praeterea meo nomine <persName ref="81">Grynaeum</persName>, eius meminerit, quod ei<note xml:id="fnb" type="footnote" n="b">ei <hi>anstelle von gestrichenem</hi> cum es[?] <hi>über der Zeile nachgetragen.</hi></note>, dum Tiguri esset<note xml:id="fn4" type="footnote" n="4">Anläßlich der Zürcher Konkordientagung von Ende April /Anfang Mai 1538 (vgl. Stumpf, Abendmahlsstreit 111).</note>, de <persName ref="84">Rodolpho</persName> suggerebam<note xml:id="fn5" type="footnote" n="5">Bullinger muß mit <persName ref="81">Grynäus</persName> über die Aufnahme von <persName ref="84">Gwalther</persName> in sein Haus gesprochen haben; vgl. unten <ref target="file#11288">Nr. 1245</ref>, 24-28; 1252, 25-30.</note>, et ut illum sibi habeat commendatum.</s>
+					<s n="2" xml:lang="la" type="auto">Nihil nunc habeo, frater in domino colendissime, quod scribam, nisi quod maximas tibi gratias ago pro tua illa in <persName ref="person84">Rodolphum</persName><note xml:id="fn1" type="footnote" n="1"><persName ref="person84">Rudolf Gwalther</persName>.</note> insigni humanitate exhibita<note xml:id="fn2" type="footnote" n="2"><persName ref="person154">Myconius</persName> hatte <persName ref="person84">Gwalther</persName> nach dessen Rückkehr aus <placeName ref="place1049">Straßburg</placeName> wieder in sein Haus aufgenommen; vgl. oben <ref target="file11273">Nr. 1230</ref>, 32; 1232, 12-15.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Dominus sit merces tua.</s>
+					<s n="4" xml:lang="la" type="auto">Quicquid autem huic impenderis, mihi impensum putabo.</s>
+					<s n="5" xml:lang="la" type="auto">Amo enim ingenuitatem et candorem adolescentis, [p]upilli alioqui<note xml:id="fna" type="footnote" n="a">[p]upilli alioqui <hi>am Rande nachgetragen; Rand beschädigt.</hi></note><note xml:id="fn3" type="footnote" n="3">Vgl. HBBW VIII, S. 177, Anm. 5.</note>.</s>
+					<s n="6" xml:lang="la" type="auto">Oro ergo, ut pater illius esse velis, sancte educes et a lubricitate pravitateque, imo stoliditate iuvenili abstrahas.</s>
+					<s n="7" xml:lang="la" type="auto">Rogabis praeterea meo nomine <persName ref="person81">Grynaeum</persName>, eius meminerit, quod ei<note xml:id="fnb" type="footnote" n="b">ei <hi>anstelle von gestrichenem</hi> cum es[?] <hi>über der Zeile nachgetragen.</hi></note>, dum Tiguri esset<note xml:id="fn4" type="footnote" n="4">Anläßlich der Zürcher Konkordientagung von Ende April /Anfang Mai 1538 (vgl. Stumpf, Abendmahlsstreit 111).</note>, de <persName ref="person84">Rodolpho</persName> suggerebam<note xml:id="fn5" type="footnote" n="5">Bullinger muß mit <persName ref="person81">Grynäus</persName> über die Aufnahme von <persName ref="person84">Gwalther</persName> in sein Haus gesprochen haben; vgl. unten <ref target="file11288">Nr. 1245</ref>, 24-28; 1252, 25-30.</note>, et ut illum sibi habeat commendatum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Recognovi hac hyeme libellos illos meos ante decennium De origine erroris aeditos<note xml:id="fn6" type="footnote" n="6">Zur Neubearbeitung von "De origine erroris libri duo" s. oben <ref target="file#11280">Nr. 1237</ref>, Anm. 7.</note>, imo veluti novos magnis sudoribus<note xml:id="fnc" type="footnote" n="c">magnis sudoribus <hi>am Rande nachgetragen.</hi></note> feci in gratiam studiosorum et in assertionem veritatis, quam pontifitii omnibus modis oppugnant.</s>
+					<s n="8" xml:lang="la" type="auto">Recognovi hac hyeme libellos illos meos ante decennium De origine erroris aeditos<note xml:id="fn6" type="footnote" n="6">Zur Neubearbeitung von "De origine erroris libri duo" s. oben <ref target="file11280">Nr. 1237</ref>, Anm. 7.</note>, imo veluti novos magnis sudoribus<note xml:id="fnc" type="footnote" n="c">magnis sudoribus <hi>am Rande nachgetragen.</hi></note> feci in gratiam studiosorum et in assertionem veritatis, quam pontifitii omnibus modis oppugnant.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Non displicebit, spero, bonis labor noster.</s>
-					<s xml:lang="la" type="auto">Mitto autem tibi et <persName ref="81">Grynaeo</persName> unum exemplar, ut, quos una copulavit charitas, unum munus constringat arctius.</s>
+					<s n="9" xml:lang="la" type="auto">Non displicebit, spero, bonis labor noster.</s>
+					<s n="10" xml:lang="la" type="auto">Mitto autem tibi et <persName ref="person81">Grynaeo</persName> unum exemplar, ut, quos una copulavit charitas, unum munus constringat arctius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si vacabit, legite et, quid iudicetis, significate.</s>
-					<s xml:lang="la" type="auto">Valete in domino.</s>
-					<s xml:lang="la" type="auto">10. martii 1539.</s>
+					<s n="11" xml:lang="la" type="auto">Si vacabit, legite et, quid iudicetis, significate.</s>
+					<s n="12" xml:lang="la" type="auto">Valete in domino.</s>
+					<s n="13" xml:lang="la" type="auto">10. martii 1539.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus vester.</s>
+					<s n="14" xml:lang="la" type="auto">H. Bullingerus vester.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino <persName ref="154">Osvaldo Myconio</persName>, fratri charissimo.</s>
+					<s n="15" xml:lang="la" type="auto">Domino <persName ref="person154">Osvaldo Myconio</persName>, fratri charissimo.</s>
 				</p>
 			</div>
 		</body>

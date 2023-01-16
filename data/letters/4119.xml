@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 437b,1029 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">(z.T. Bullinger) Entwürfe</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 437b,1029 f.</idno>
+						<idno subtype="Hinweis">(z.T. Bullinger) Entwürfe</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents/>
@@ -31,14 +34,17 @@
 				</msDesc>
 				<msDesc type="Regest" subtype="Teilkopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Teilkopie">Ms S 96,29</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">eingereiht 1559</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Teilkopie">Ms S 96,29</idno>
+						<idno subtype="Hinweis">eingereiht 1559</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -47,55 +53,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4119">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 					<date when="1559-11-04" cert="low"><note>Datum unsicher. Vermerk: 1559/60? 61? Nov. 4</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3510" cert="low">
+					<!--
+					<persName ref="person3510" cert="low">
 						<forename cert="low">Friedrich</forename>
 						<surname cert="low">von der Pfalz</surname>
-						<addName type="main">Kurfürst von der Pfalz, Friedrich III. «der Fromme»</addName>
-						<graphic type="portrait" url="portraits/3510_Friedrich_III_der_Fromme.jpg"/>
+						<persName type="main" ref="person8060>Kurfürst von der Pfalz, Friedrich III. «der Fromme»</addName>
+						<graphic type="portrait" url="portraits/3510_der_Fromme_Friedrich_III.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Friedrich_III._(Pfalz)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118535722"/>
 					</persName>
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="low">Räte</name>
-						<place source="#587" cert="low">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person3510" cert="low"/>
+					<personGrp ref="role0" role="Räte"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4120"/>
-					<ref type="prev_chronologically" target="files.xml#4118"/>
-					<ref type="next_correspondence" target="files.xml#4576"/>
-					<ref type="prev_correspondence" target="files.xml#3992"/>
-					<ref type="next_correspondence_request" target="files.xml#4576"/>
-					<ref type="prev_correspondence_request" target="files.xml#3992"/>
-					<ref type="next_correspondence_reaction" target="files.xml#4669"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1849"/>
-					<ref type="next_same_sender" target="files.xml#4122"/>
-					<ref type="prev_same_sender" target="files.xml#4118"/>
-					<ref type="next_same_addressee" target="files.xml#4643"/>
-					<ref type="prev_same_addressee" target="files.xml#2914"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4122"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4118"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4643"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2914"/>
+					<ref type="next_chronologically" target="file4120"/>
+					<ref type="prev_chronologically" target="file4118"/>
+					<ref type="next_correspondence" target="file4576"/>
+					<ref type="prev_correspondence" target="file3992"/>
+					<ref type="next_correspondence_request" target="file4576"/>
+					<ref type="prev_correspondence_request" target="file3992"/>
+					<ref type="next_correspondence_reaction" target="file4669"/>
+					<ref type="prev_correspondence_reaction" target="file1849"/>
+					<ref type="next_same_sender" target="file4122"/>
+					<ref type="prev_same_sender" target="file4118"/>
+					<ref type="next_same_addressee" target="file4643"/>
+					<ref type="prev_same_addressee" target="file2914"/>
+					<ref type="next_with_sender_as_addressee" target="file4122"/>
+					<ref type="prev_with_sender_as_addressee" target="file4118"/>
+					<ref type="next_with_addressee_as_sender" target="file4643"/>
+					<ref type="prev_with_addressee_as_sender" target="file2914"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

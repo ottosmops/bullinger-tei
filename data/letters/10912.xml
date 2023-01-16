@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=872</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=872</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 359,2749</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 359,2749</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,8 +51,8 @@
 							<p xml:id="regest1">
 								Obschon sich Bullinger seiner Sache ohne Zweifel sehr gewissenhaft angenommen hat, befürchtet er einen
 								Mißerfolg und bittet deshalb um Auskunft; wird sich nach einer anderen Aufgabe umsehen müssen, da seine Lage
-								unerträglich ist. Gute Wünsche; Grüße an [<persName ref="228">Hans</persName>]
-								<persName ref="228">Vogler</persName>.
+								unerträglich ist. Gute Wünsche; Grüße an [Hans]
+								<persName ref="person228">Vogler</persName>.
 							</p>
 						</summary>
 					</msContents>
@@ -59,43 +62,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10912">
 				<correspAction type="sent">
-					<persName ref="person#1417" cert="high">
+					<!--
+					<persName ref="person1417" cert="high">
 						<forename cert="high">Leonhard</forename>
 						<surname cert="high">Hospinian</surname>
+						<persName type="main" ref="person7073>Wirth (Hospinian), Leonhard</addName>
+						<ref type="gnd" target="https://d-nb.info/gnd/121204618"/>
 					</persName>
-					<place source="#486" cert="high">
-						<settlement>Stammheim</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.63244 8.79963</geo>
-					</place>
+					-->
+					<persName ref="person1417" cert="high"/>
+					<place source="place486" cert="high"/>
 					<date when="1536-08-02" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10913"/>
-					<ref type="prev_chronologically" target="files.xml#10929"/>
-					<ref type="next_correspondence" target="files.xml#11160"/>
+					<ref type="next_chronologically" target="file10913"/>
+					<ref type="prev_chronologically" target="file10929"/>
+					<ref type="next_correspondence" target="file11160"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#11160"/>
+					<ref type="next_correspondence_request" target="file11160"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11160"/>
+					<ref type="next_same_sender" target="file11160"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10913"/>
-					<ref type="prev_same_addressee" target="files.xml#10909"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11160"/>
+					<ref type="next_same_addressee" target="file10913"/>
+					<ref type="prev_same_addressee" target="file10909"/>
+					<ref type="next_with_sender_as_addressee" target="file11160"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10913"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10909"/>
+					<ref type="next_with_addressee_as_sender" target="file10913"/>
+					<ref type="prev_with_addressee_as_sender" target="file10909"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -114,32 +122,32 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Non dubito, clarissime Bullingere ac patrone singularis, quin pro perspecta mihi tua in me benevolentia negocium meum<note xml:id="fn1" type="footnote" n="1">Über die Angelegenheit wie auch über die Lage <persName ref="108">Hospinians</persName> in jener Zeit ist weiter nichts bekannt. Im Mai des Vorjahres hatte er in <placeName ref="1032">Stein am Rhein</placeName> das Schulmeisteramt für ein Jahr übernommen: vgl. Stadtarchiv Stein a. Rh., Su 17 (<persName ref="108">Hospinian</persName> an Stein a. Rh., 15. 4. 1535) und Bü 73, 84r. (Freundliche Mitteilung von Herrn Lic. phil. Peter Scheck, Stein a. Rh.)</note>, quod tibi pluribus, cum isthic essem, proxime exposui, diligentius eciam egeris, quam unquam abs te petere fuissem ausus.</s>
-					<s xml:lang="la" type="auto">Verum quia nihil adeo de hoc isthinc nobis significatur, misere metuo rem secus, atque expectabamus, evenisse.</s>
-					<s xml:lang="la" type="auto">Quare te maiorem in modum rogo ac plus eciam, quam a me vis, ne graveris ad me tribus saltem verbis perscribere, quemadmodum res haec ceciderit quoque ea sit loco; nam mea ut sciam, maxime interest.</s>
-					<s xml:lang="la" type="auto">Necesse enim habuero (siquidem non successerit, quod moliebamur) hinc abrumpere me spesque alias circumspicere.</s>
-					<s xml:lang="la" type="auto">Qui enim tot laboribus sufficere possim diutius?</s>
-					<s xml:lang="la" type="auto">Leonardus sum isque valde valetudinarius, <foreign xml:lang="el">οὐχ Ἡρακλῆς</foreign>.</s>
-					<s xml:lang="la" type="auto">Dabo profecto operam, ne penes ingratum ista tua beneficia collocasse videaris.</s>
-					<s xml:lang="la" type="auto">Cetera narrabit tibi frater meus<note xml:id="fn2" type="footnote" n="2">Von den Brüdern <persName ref="108">Hospinians</persName> - <persName ref="2524">Jakob</persName>, <persName ref="2519">Adrian</persName>, <persName ref="2525">Joachim</persName> und <persName ref="2521">Fridolin Wirth</persName> (vgl. Alfred <hi>Farner,</hi> Altes und Neues. ein Beitrag zur <placeName ref="1025">Stammheimer</placeName> Reformationsgeschichte, Andelfingen 1899, S. 23-25) - läßt sich keiner mit Bestimmtheit als Überbringer des Briefes ausmachen.</note>.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Non dubito, clarissime Bullingere ac patrone singularis, quin pro perspecta mihi tua in me benevolentia negocium meum<note xml:id="fn1" type="footnote" n="1">Über die Angelegenheit wie auch über die Lage <persName ref="person108">Hospinians</persName> in jener Zeit ist weiter nichts bekannt. Im Mai des Vorjahres hatte er in <placeName ref="place1032">Stein am Rhein</placeName> das Schulmeisteramt für ein Jahr übernommen: vgl. Stadtarchiv Stein a. Rh., Su 17 (<persName ref="person108">Hospinian</persName> an Stein a. Rh., 15. 4. 1535) und Bü 73, 84r. (Freundliche Mitteilung von Herrn Lic. phil. Peter Scheck, Stein a. Rh.)</note>, quod tibi pluribus, cum isthic essem, proxime exposui, diligentius eciam egeris, quam unquam abs te petere fuissem ausus.</s>
+					<s n="3" xml:lang="la" type="auto">Verum quia nihil adeo de hoc isthinc nobis significatur, misere metuo rem secus, atque expectabamus, evenisse.</s>
+					<s n="4" xml:lang="la" type="auto">Quare te maiorem in modum rogo ac plus eciam, quam a me vis, ne graveris ad me tribus saltem verbis perscribere, quemadmodum res haec ceciderit quoque ea sit loco; nam mea ut sciam, maxime interest.</s>
+					<s n="5" xml:lang="la" type="auto">Necesse enim habuero (siquidem non successerit, quod moliebamur) hinc abrumpere me spesque alias circumspicere.</s>
+					<s n="6" xml:lang="la" type="auto">Qui enim tot laboribus sufficere possim diutius?</s>
+					<s n="7" xml:lang="la" type="auto">Leonardus sum isque valde valetudinarius, <foreign xml:lang="el">οὐχ Ἡρακλῆς</foreign>.</s>
+					<s n="8" xml:lang="la" type="auto">Dabo profecto operam, ne penes ingratum ista tua beneficia collocasse videaris.</s>
+					<s n="9" xml:lang="la" type="auto">Cetera narrabit tibi frater meus<note xml:id="fn2" type="footnote" n="2">Von den Brüdern <persName ref="person108">Hospinians</persName> - Jakob, Adrian, Joachim und <persName ref="person2521">Fridolin Wirth</persName> (vgl. Alfred <hi>Farner,</hi> Altes und Neues. ein Beitrag zur <placeName ref="place1025">Stammheimer</placeName> Reformationsgeschichte, Andelfingen 1899, S. 23-25) - läßt sich keiner mit Bestimmtheit als Überbringer des Briefes ausmachen.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">His igitur bene vale, vir optime, teque eum mihi praestare pergas, quaeso, qui fuisti semper.</s>
-					<s xml:lang="la" type="auto">Amanum <persName ref="228">Voglerum</persName><note xml:id="fn3" type="footnote" n="3">Zum Verhältnis zwischen <persName ref="108">Hospinian</persName> und <persName ref="228">Vogler</persName> vgl. HBBW II, S. 38, 13-15 mit Anm. 21.</note>, syncerissimi pectoris virum deque me ampliter promeritum, meis verbis, si fors tibi occurrat, plurimum salvere iubeas, oro.</s>
-					<s xml:lang="la" type="auto">Rursum vale ac <persName ref="108">Hospiniano</persName> tuo pro animi tui arbitrio utere.</s>
+					<s n="10" xml:lang="la" type="auto">His igitur bene vale, vir optime, teque eum mihi praestare pergas, quaeso, qui fuisti semper.</s>
+					<s n="11" xml:lang="la" type="auto">Amanum <persName ref="person228">Voglerum</persName><note xml:id="fn3" type="footnote" n="3">Zum Verhältnis zwischen <persName ref="person108">Hospinian</persName> und <persName ref="person228">Vogler</persName> vgl. HBBW II, S. 38, 13-15 mit Anm. 21.</note>, syncerissimi pectoris virum deque me ampliter promeritum, meis verbis, si fors tibi occurrat, plurimum salvere iubeas, oro.</s>
+					<s n="12" xml:lang="la" type="auto">Rursum vale ac <persName ref="person108">Hospiniano</persName> tuo pro animi tui arbitrio utere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tumultuarie ex Stammia Tigurinorum, postridie calendas augusti anno 1536.</s>
+					<s n="13" xml:lang="la" type="auto">Tumultuarie ex Stammia Tigurinorum, postridie calendas augusti anno 1536.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">L. <persName ref="108">Hospinianus</persName> toto pectore tuus.</s>
+					<s n="14" xml:lang="la" type="auto">L. <persName ref="person108">Hospinianus</persName> toto pectore tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro Henrycho Bullingero, omnis pietatis ac doctrinae Mecoenati<note xml:id="fn4" type="footnote" n="4">Mäzen (vgl. Pauly/Wissowa XIV/1 207-229).</note> unico, domino suo cum primis observando.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
-					<s xml:lang="de" type="auto">Zürich.</s>
+					<s n="15" xml:lang="la" type="auto">Clarissimo viro Henrycho Bullingero, omnis pietatis ac doctrinae Mecoenati<note xml:id="fn4" type="footnote" n="4">Mäzen (vgl. Pauly/Wissowa XIV/1 207-229).</note> unico, domino suo cum primis observando.</s>
+					<s n="16" xml:lang="la" type="auto">Tiguri.</s>
+					<s n="17" xml:lang="de" type="auto">Zürich.</s>
 				</p>
 			</div>
 		</body>

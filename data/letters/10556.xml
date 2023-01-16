@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=520</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=520</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,2</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,2</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,13 +50,13 @@
 						<summary>
 							<p xml:id="regest1">
 								Hat Bullingers Brief erhalten und versucht, das Gewünschte herauszufinden. Weiß von Kaufleuten, daß ein
-								türkischer Heerführer [<persName ref="621">Cheireddin</persName>], genannt
-								<persName ref="621">Barbarossa</persName>, seine Herrschaft über
-								<placeName ref="1098">Tunis</placeName> errichtet hat, wogegen der Kaiser Soldaten mobilisiert;
-								gleichwohl werde der Kaiser im Frühjahr nach <placeName ref="667">Mailand</placeName> kommen.
-								Zwischen <persName ref="1792">Papst <persName ref="1792">Paul</persName> III.</persName> und dem Herzog
-								[<persName ref="686">Francesco Maria</persName> I. della
-								<persName ref="686">Rovere</persName>] von Urbino erhob sich ein Streit, der zum Zündstoff für einen
+								türkischer Heerführer [<persName ref="person621">Cheireddin</persName>], genannt
+								Barbarossa, seine Herrschaft über
+								<placeName ref="place1098">Tunis</placeName> errichtet hat, wogegen der Kaiser Soldaten mobilisiert;
+								gleichwohl werde der Kaiser im Frühjahr nach <placeName ref="place667">Mailand</placeName> kommen.
+								Zwischen <persName ref="person1792">Papst Paul III.</persName> und dem Herzog
+								[Francesco Maria I. della
+								Rovere] von Urbino erhob sich ein Streit, der zum Zündstoff für einen
 								Krieg werden könnte. Hat sonst nichts zu berichten.
 							</p>
 						</summary>
@@ -71,42 +74,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10556">
 				<correspAction type="sent">
-					<persName ref="person#654" cert="high">
+					<!--
+					<persName ref="person654" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Comander</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Comander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118713841"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413826"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person654" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1535-02-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10557"/>
-					<ref type="prev_chronologically" target="files.xml#10555"/>
-					<ref type="next_correspondence" target="files.xml#11092"/>
+					<ref type="next_chronologically" target="file10557"/>
+					<ref type="prev_chronologically" target="file10555"/>
+					<ref type="next_correspondence" target="file11092"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#11092"/>
+					<ref type="next_correspondence_request" target="file11092"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#11508"/>
+					<ref type="next_correspondence_reaction" target="file11508"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11092"/>
+					<ref type="next_same_sender" target="file11092"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10564"/>
-					<ref type="prev_same_addressee" target="files.xml#10550"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11092"/>
+					<ref type="next_same_addressee" target="file10564"/>
+					<ref type="prev_same_addressee" target="file10550"/>
+					<ref type="next_with_sender_as_addressee" target="file11092"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10564"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10550"/>
+					<ref type="next_with_addressee_as_sender" target="file10564"/>
+					<ref type="prev_with_addressee_as_sender" target="file10550"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -115,42 +125,45 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="10556/Autograph/00 E_II_365__fol__2_r_.tif" n="1"/>
+		<graphic url="10556/Autograph/01 E_II_365__fol__2_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Literas tuas<note xml:id="fn2" type="footnote" n="2">Nicht erhalten (vgl. dazu <hi>Jenny,</hi> <persName ref="43">Comander</persName> II, aaO, S. 32).</note>, ornatissime Bullingere, accepi, et ea, que scire desyderas, quanta potui sedulitate perscrutari conatus sum.</s>
+					<s n="2" xml:lang="la" type="auto">Literas tuas<note xml:id="fn2" type="footnote" n="2">Nicht erhalten (vgl. dazu <hi>Jenny,</hi> <persName ref="person43">Comander</persName> II, aaO, S. 32).</note>, ornatissime Bullingere, accepi, et ea, que scire desyderas, quanta potui sedulitate perscrutari conatus sum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex relatione negotiatorum haec habemus, ducem Turcae, Barbarussa<note xml:id="fn3" type="footnote" n="3"><persName ref="621">Cheireddin</persName>, genannt <persName ref="621">Barbarossa</persName>, 1466-1546, von <placeName ref="624">Lesbos</placeName>, islamisierter Grieche, eroberte 1516 zusammen mit seinem Bruder <placeName ref="3">Algerien</placeName>. Nach seines Bruders Tod unterstellte er sich und sein Reich dem türkischen Sultan. Von Nordafrika aus hielt er mit seinen Korsarenzügen die christlichen Küstenländer in steter Unruhe. Im August 1533 wurde er in <placeName ref="564">Konstantinopel</placeName> zum Admiral der türkischen Flotte ernannt. Ein Jahr darauf unterwarf er sich das Sultanat <placeName ref="1098">Tunis</placeName>, das ihm <persName ref="1332">Karl</persName> V. jedoch im Juli 1535 wieder entriß. <persName ref="621">Cheireddin</persName> setzte seine Kriegszüge im <placeName ref="5">Mittelmeer</placeName> in türkischen Diensten fort, bezwang 1538 <persName ref="718">Andrea Doria</persName>, unterstützte 1542 den <persName ref="859">König</persName> von <placeName ref="11">Frankreich</placeName> und war 1543 an der Einnahme von <placeName ref="786">Nizza</placeName> beteiligt. - Lit.: Jean-Louis <hi>Belachemi,</hi> Nous, les frères Barberousse, corsaires et rois d'Alger, Paris 1984; Ernle <hi>Bradford,</hi> The Sultan's Admiral. The Life of <persName ref="621">Barbarossa</persName>, London 1969; Fehmi <hi>Ismail,</hi> in: Contemporaries II 259f.</note> cognominatum, regnum quoddam coepisse eo loco, ubi quondam Chartago fuit;</s>
+					<s n="3" xml:lang="la" type="auto">Ex relatione negotiatorum haec habemus, ducem Turcae, Barbarussa<note xml:id="fn3" type="footnote" n="3"><persName ref="person621">Cheireddin</persName>, genannt Barbarossa, 1466-1546, von <placeName ref="place624">Lesbos</placeName>, islamisierter Grieche, eroberte 1516 zusammen mit seinem Bruder <placeName ref="place3">Algerien</placeName>. Nach seines Bruders Tod unterstellte er sich und sein Reich dem türkischen Sultan. Von Nordafrika aus hielt er mit seinen Korsarenzügen die christlichen Küstenländer in steter Unruhe. Im August 1533 wurde er in <placeName ref="place564">Konstantinopel</placeName> zum Admiral der türkischen Flotte ernannt. Ein Jahr darauf unterwarf er sich das Sultanat <placeName ref="place1098">Tunis</placeName>, das ihm <persName ref="person1332">Karl V.</persName> jedoch im Juli 1535 wieder entriß. <persName ref="person621">Cheireddin</persName> setzte seine Kriegszüge im <placeName ref="place5">Mittelmeer</placeName> in türkischen Diensten fort, bezwang 1538 <persName ref="person718">Andrea Doria</persName>, unterstützte 1542 den König von <placeName ref="place11">Frankreich</placeName> und war 1543 an der Einnahme von <placeName ref="place786">Nizza</placeName> beteiligt. - Lit.: Jean-Louis <hi>Belachemi,</hi> Nous, les frères Barberousse, corsaires et rois d'Alger, Paris 1984; Ernle <hi>Bradford,</hi> The Sultan's Admiral. The Life of Barbarossa, London 1969; Fehmi <hi>Ismail,</hi> in: Contemporaries II 259f.</note> cognominatum, regnum quoddam coepisse eo loco, ubi quondam Chartago fuit;</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="81"/><placeName ref="16">Itali</placeName> Donys<note xml:id="fn4" type="footnote" n="4"><placeName ref="1098">Tunis</placeName>.</note> vocant.</s>
-					<s xml:lang="la" type="auto"><persName ref="1332">Caesar</persName>, ut aiunt, aliquot conscripturus est milites ex <persName ref="1332">Germania</persName> atque eo missurus<note xml:id="fn5" type="footnote" n="5">Der Kaiser sammelte bereits Truppen für seinen Nordafrika-Zug. Am 14. Juni 1535 brach er mit großem Flottenaufgebot von <placeName ref="224">Cagliari</placeName> (Sardinien) auf. Mitte Juli fiel <placeName ref="1098">Tunis</placeName>. Cheireddin zog sich nach <placeName ref="24">Algier</placeName> zurück. Am 22. August kehrte der Kaiser nach <placeName ref="5">Sizilien</placeName> zurück (vgl. <hi>Brandi</hi> I 313-316).</note>.</s>
-					<s xml:lang="la" type="auto">Nihilominus ferunt ipsum venturum ad auras vernas <placeName ref="667">Mediolanum</placeName><note xml:id="fn6" type="footnote" n="6">Der Kaiser scheint in dieser Zeit ein Unternehmen in <placeName ref="16">Italien</placeName> geplant zu haben (vgl. <hi>Brandi</hi> I 312); er blieb dann aber bis zum Aufbruch nach <placeName ref="1098">Tunis</placeName> in <placeName ref="29">Spanien</placeName> (vgl. <hi>Stälin</hi> 572).</note>.</s>
+					<s n="4" xml:lang="la" type="auto"><pb type="edition" next="81"/><placeName ref="place16">Itali</placeName> Donys<note xml:id="fn4" type="footnote" n="4"><placeName ref="place1098">Tunis</placeName>.</note> vocant.</s>
+					<s n="5" xml:lang="la" type="auto"><persName ref="person1332">Caesar</persName>, ut aiunt, aliquot conscripturus est milites ex <persName ref="person1332">Germania</persName> atque eo missurus<note xml:id="fn5" type="footnote" n="5">Der Kaiser sammelte bereits Truppen für seinen Nordafrika-Zug. Am 14. Juni 1535 brach er mit großem Flottenaufgebot von <placeName ref="place224">Cagliari</placeName> (Sardinien) auf. Mitte Juli fiel <placeName ref="place1098">Tunis</placeName>. Cheireddin zog sich nach <placeName ref="place24">Algier</placeName> zurück. Am 22. August kehrte der Kaiser nach <placeName ref="place5">Sizilien</placeName> zurück (vgl. <hi>Brandi</hi> I 313-316).</note>.</s>
+					<s n="6" xml:lang="la" type="auto">Nihilominus ferunt ipsum venturum ad auras vernas <placeName ref="place667">Mediolanum</placeName><note xml:id="fn6" type="footnote" n="6">Der Kaiser scheint in dieser Zeit ein Unternehmen in <placeName ref="place16">Italien</placeName> geplant zu haben (vgl. <hi>Brandi</hi> I 312); er blieb dann aber bis zum Aufbruch nach <placeName ref="place1098">Tunis</placeName> in <placeName ref="place29">Spanien</placeName> (vgl. <hi>Stälin</hi> 572).</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Etiam nonnihil turbarum ortum est inter papam <persName ref="1792">Paulum</persName> 3. et ducem Urbini<note xml:id="fn7" type="footnote" n="7"><persName ref="686">Francesco</persName> <persName ref="2368">Maria</persName> I. della <persName ref="686">Rovere</persName>, gest. 1538.</note>.</s>
-					<s xml:lang="la" type="auto">Cuiusdam principis<note xml:id="fn8" type="footnote" n="8"><persName ref="2368">Giovanni <persName ref="686">Maria</persName> da Varano</persName>, Herzog von Camerino.</note> filia<note xml:id="fn9" type="footnote" n="9"><persName ref="2369">Giulia da Varano</persName>.</note> defuncta sua stirpe tota sola permansit superstes.</s>
-					<s xml:lang="la" type="auto">Illam sanctissimus ambivit filio<note xml:id="fn10" type="footnote" n="10"><persName ref="819">Pier Luigi Farnese</persName>, gest. 1547.</note> suo in coniugem, sed cum tardior esset, dux Urbini illam abduxit ac suo filio in sponsam delegit<note xml:id="fn11" type="footnote" n="11">Nach dem Tod von Herzog <persName ref="2368">Giovanni Maria</persName> von Camerino, 1527, war die damals vierjährige Infantin <persName ref="2369">Giulia</persName> dem ältesten Sohn des Herzogs von Urbino, <persName ref="687">Guidobaldo</persName>, zur Ehe versprochen worden. Die Trauung fand am 12. Oktober 1534 statt. <persName ref="635">Clemens VII.</persName>, der kurz zuvor gestorben war, hatte diese nicht bewilligt, und eine Verfügung dagegen von Alessandro <persName ref="818">Farnese</persName>, dem künftigen <persName ref="1792">Papst</persName>, traf zu spät ein. Das Herzogtum, das sich nun <persName ref="1792">Paul III.</persName> für seinen Sohn, später für seinen Enkel <persName ref="818">Ottavio</persName> zu sichern suchte, wurde ihm schließlich von <persName ref="687">Guidobaldo</persName> gegen eine Geldsumme und andere Gegenleistungen 1539 abgetreten. Vgl. James <hi>Dennistoun,</hi> Memoirs of the Dukes of Urbino, Bd. <persName ref="1792">III.</persName>, London 1851, S. 60-65. 83. 87, und Filippo <hi>U golini,</hi> Storia dei conti e duchi d'Urbino, Bd. II, Florenz 1859, S. 250-252.</note>.</s>
-					<s xml:lang="la" type="auto">Istuc fortassis fomentum belli erit apud ambitiosos illos et pertinaces homines.</s>
+					<s n="7" xml:lang="la" type="auto">Etiam nonnihil turbarum ortum est inter papam <persName ref="person1792">Paulum</persName> 3. et ducem Urbini<note xml:id="fn7" type="footnote" n="7">Francesco Maria I. della Rovere, gest. 1538.</note>.</s>
+					<s n="8" xml:lang="la" type="auto">Cuiusdam principis<note xml:id="fn8" type="footnote" n="8"><persName ref="person2368">Giovanni Maria da Varano</persName>, Herzog von Camerino.</note> filia<note xml:id="fn9" type="footnote" n="9"><persName ref="person2369">Giulia da Varano</persName>.</note> defuncta sua stirpe tota sola permansit superstes.</s>
+					<s n="9" xml:lang="la" type="auto">Illam sanctissimus ambivit filio<note xml:id="fn10" type="footnote" n="10"><persName ref="person819">Pier Luigi Farnese</persName>, gest. 1547.</note> suo in coniugem, sed cum tardior esset, dux Urbini illam abduxit ac suo filio in sponsam delegit<note xml:id="fn11" type="footnote" n="11">Nach dem Tod von Herzog Giovanni Maria von Camerino, 1527, war die damals vierjährige Infantin Giulia dem ältesten Sohn des Herzogs von Urbino, Guidobaldo, zur Ehe versprochen worden. Die Trauung fand am 12. Oktober 1534 statt. <persName ref="person635">Clemens VII.</persName>, der kurz zuvor gestorben war, hatte diese nicht bewilligt, und eine Verfügung dagegen von Alessandro <persName ref="person818">Farnese</persName>, dem künftigen Papst, traf zu spät ein. Das Herzogtum, das sich nun <persName ref="person1792">Paul III.</persName> für seinen Sohn, später für seinen Enkel Ottavio zu sichern suchte, wurde ihm schließlich von Guidobaldo gegen eine Geldsumme und andere Gegenleistungen 1539 abgetreten. Vgl. James <hi>Dennistoun,</hi> Memoirs of the Dukes of Urbino, Bd. III., London 1851, S. 60-65. 83. 87, und Filippo <hi>U golini,</hi> Storia dei conti e duchi d'Urbino, Bd. II, Florenz 1859, S. 250-252.</note>.</s>
+					<s n="10" xml:lang="la" type="auto">Istuc fortassis fomentum belli erit apud ambitiosos illos et pertinaces homines.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nihil praeterea fertur, quod tua referat aut delectet.</s>
+					<s n="11" xml:lang="la" type="auto">Nihil praeterea fertur, quod tua referat aut delectet.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex <placeName ref="243">Curia</placeName> Rhetica, prima februarii 35.</s>
+					<s n="12" xml:lang="la" type="auto">Ex <placeName ref="place243">Curia</placeName> Rhetica, prima februarii 35.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tibi deditus <persName ref="43">Ioannes Comander</persName>.</s>
+					<s n="13" xml:lang="la" type="auto">Tibi deditus <persName ref="person43">Ioannes Comander</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Eximio ac doctissimo viro M. Heinricho Bullingero, Tygurinae ecclesiae antistiti, suo domino observando.</s>
+					<s n="14" xml:lang="la" type="auto">Eximio ac doctissimo viro M. Heinricho Bullingero, Tygurinae ecclesiae antistiti, suo domino observando.</s>
 				</p>
 			</div>
 		</body>

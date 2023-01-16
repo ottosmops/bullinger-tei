@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2005"/>
-				<idno type="ISBN">ISBN 3-290-17339-9</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1514</idno>
+				<idno subtype="ISBN">ISBN 3-290-17339-9</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1514</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 11</title>
+				<title subtype="publication">HBBW XI</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">11</biblScope>
@@ -31,24 +31,27 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 350,485</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 350,485</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
 						<msItem/>
 						<summary>
 							<p xml:id="regest1">
-								<persName ref="60">Farel</persName> wird selbst über seine Mission berichten, für die er beim
+								<persName ref="person60">Farel</persName> wird selbst über seine Mission berichten, für die er beim
 								Zürcher Rat um Unterstützung werben will; Bullinger soll inzwischen durch einen Boten an Vadian die
-								Zustimmung von <placeName ref="1011">St. Gallen</placeName> einholen. Die Sache eilt; wünscht sich,
-								dass ganz <placeName ref="7">Deutschland</placeName> und alle Kirchen die Fürsprache [für die
-								Verfolgten in <placeName ref="11">Frankreich</placeName>] mittragen. Gruß.
+								Zustimmung von <placeName ref="place1011">St. Gallen</placeName> einholen. Die Sache eilt; wünscht sich,
+								dass ganz <placeName ref="place7">Deutschland</placeName> und alle Kirchen die Fürsprache [für die
+								Verfolgten in <placeName ref="place11">Frankreich</placeName>] mittragen. Gruß.
 							</p>
 						</summary>
 					</msContents>
@@ -65,45 +68,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11557">
 				<correspAction type="sent">
-					<persName ref="person#1365" cert="high">
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
-					<date min="1541-05-05" max="1541-05-06" cert="low"/>
+					-->
+					<persName ref="person1365" cert="high"/>
+					<place source="place28" cert="high"/>
+					<date notBefore="1541-05-05" notAfter="1541-05-06" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11558"/>
-					<ref type="prev_chronologically" target="files.xml#11556"/>
-					<ref type="next_correspondence" target="files.xml#11562"/>
-					<ref type="prev_correspondence" target="files.xml#11548"/>
-					<ref type="next_correspondence_request" target="files.xml#11562"/>
-					<ref type="prev_correspondence_request" target="files.xml#11548"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11593"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11378"/>
-					<ref type="next_same_sender" target="files.xml#11562"/>
-					<ref type="prev_same_sender" target="files.xml#11548"/>
-					<ref type="next_same_addressee" target="files.xml#11576"/>
-					<ref type="prev_same_addressee" target="files.xml#11530"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11562"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11548"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11576"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11530"/>
+					<ref type="next_chronologically" target="file11558"/>
+					<ref type="prev_chronologically" target="file11556"/>
+					<ref type="next_correspondence" target="file11562"/>
+					<ref type="prev_correspondence" target="file11548"/>
+					<ref type="next_correspondence_request" target="file11562"/>
+					<ref type="prev_correspondence_request" target="file11548"/>
+					<ref type="next_correspondence_reaction" target="file11593"/>
+					<ref type="prev_correspondence_reaction" target="file11378"/>
+					<ref type="next_same_sender" target="file11562"/>
+					<ref type="prev_same_sender" target="file11548"/>
+					<ref type="next_same_addressee" target="file11576"/>
+					<ref type="prev_same_addressee" target="file11530"/>
+					<ref type="next_with_sender_as_addressee" target="file11562"/>
+					<ref type="prev_with_sender_as_addressee" target="file11548"/>
+					<ref type="next_with_addressee_as_sender" target="file11576"/>
+					<ref type="prev_with_addressee_as_sender" target="file11530"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

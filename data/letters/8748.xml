@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 381,1324</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">Frz. Orig.</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 381,1324</idno>
+						<idno subtype="Hinweis">Frz. Orig.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -38,14 +41,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 381,1325</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">lat. Übersetzung</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 381,1325</idno>
+						<idno subtype="Hinweis">lat. Übersetzung</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -60,64 +66,41 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8748">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#358" cert="high">
-							<settlement>Nîmes</settlement>
-							<district>Metropolitanes Frankreich</district>
-							<country>Frankreich</country>
-							<geo>43.83378 4.35962</geo>
-						</place>
-					</roleName>
-					<place source="#358" cert="high">
-						<settlement>Nîmes</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>43.83378 4.35962</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place358" cert="high"/>
 					<date when="1572-01-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8749"/>
-					<ref type="prev_chronologically" target="files.xml#8747"/>
-					<ref type="next_correspondence" target="files.xml#9120"/>
-					<ref type="prev_correspondence" target="files.xml#8527"/>
-					<ref type="next_correspondence_request" target="files.xml#9120"/>
-					<ref type="prev_correspondence_request" target="files.xml#8527"/>
-					<ref type="next_correspondence_reaction" target="files.xml#9120"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#8527"/>
-					<ref type="next_same_sender" target="files.xml#8797"/>
-					<ref type="prev_same_sender" target="files.xml#8527"/>
-					<ref type="next_same_addressee" target="files.xml#8797"/>
-					<ref type="prev_same_addressee" target="files.xml#8527"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8797"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#8527"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8797"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8527"/>
+					<ref type="next_chronologically" target="file8749"/>
+					<ref type="prev_chronologically" target="file8747"/>
+					<ref type="next_correspondence" target="file9120"/>
+					<ref type="prev_correspondence" target="file8527"/>
+					<ref type="next_correspondence_request" target="file9120"/>
+					<ref type="prev_correspondence_request" target="file8527"/>
+					<ref type="next_correspondence_reaction" target="file9120"/>
+					<ref type="prev_correspondence_reaction" target="file8527"/>
+					<ref type="next_same_sender" target="file8797"/>
+					<ref type="prev_same_sender" target="file8527"/>
+					<ref type="next_same_addressee" target="file8797"/>
+					<ref type="prev_same_addressee" target="file8527"/>
+					<ref type="next_with_sender_as_addressee" target="file8797"/>
+					<ref type="prev_with_sender_as_addressee" target="file8527"/>
+					<ref type="next_with_addressee_as_sender" target="file8797"/>
+					<ref type="prev_with_addressee_as_sender" target="file8527"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="8748/Autograph/00 E_II_381__fol__1324_r_.tif" n="1"/>
+		<graphic url="8748/Autograph/01 E_II_381__fol__1324_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

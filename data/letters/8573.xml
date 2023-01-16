@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 381,1271-1278; 1270r-1282r</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 381,1271-1278; 1270r-1282r</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,13 +47,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 124,68-69</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 124,68-69</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -59,65 +65,87 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8573">
 				<correspAction type="sent">
-					<persName ref="person#993" cert="high">
+					<!--
+					<persName ref="person993" cert="high">
 						<forename cert="high">Tobias</forename>
 						<surname cert="high">Egli</surname>
-						<addName type="main">Egli (Iconius, Götz), Tobias</addName>
+						<persName type="main" ref="person8016>Egli (Iconius, Götz), Tobias</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Tobias_Egli"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089466366"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
-					<date when="1571-06-00" cert="low"><note>Datum unsicher  (Churer Synode vom 13.-16. Juni 1570 gegen Gantner)</note></date>
+					-->
+					<persName ref="person993" cert="high"/>
+					<place source="place98" cert="high"/>
+					<date notBefore="1571-06-01" notAfter="1571-06-12" cert="low"><note>Datum unsicher  (Churer Synode vom 13.-16. Juni 1570 gegen Gantner)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="low">Geistliche</name>
-						<place source="#587" cert="low">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8588"/>
-					<ref type="prev_chronologically" target="files.xml#8572"/>
+					<ref type="next_chronologically" target="file8588"/>
+					<ref type="prev_chronologically" target="file8572"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#8592"/>
-					<ref type="prev_same_sender" target="files.xml#8568"/>
-					<ref type="next_same_addressee" target="files.xml#8588"/>
-					<ref type="prev_same_addressee" target="files.xml#8515"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8592"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#8568"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8588"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8515"/>
+					<ref type="next_same_sender" target="file8592"/>
+					<ref type="prev_same_sender" target="file8568"/>
+					<ref type="next_same_addressee" target="file8588"/>
+					<ref type="prev_same_addressee" target="file8515"/>
+					<ref type="next_with_sender_as_addressee" target="file8592"/>
+					<ref type="prev_with_sender_as_addressee" target="file8568"/>
+					<ref type="next_with_addressee_as_sender" target="file8588"/>
+					<ref type="prev_with_addressee_as_sender" target="file8515"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="8573/Autograph/00 E_II_381__fol__1270_r_.tif" n="1"/>
+		<graphic url="8573/Autograph/01 E_II_381__fol__1270_v_.tif" n="2"/>
+		<graphic url="8573/Autograph/02 E_II_381__fol__1271_r_.tif" n="3"/>
+		<graphic url="8573/Autograph/03 E_II_381__fol__1271_v_.tif" n="4"/>
+		<graphic url="8573/Autograph/04 E_II_381__fol__1272_r_.tif" n="5"/>
+		<graphic url="8573/Autograph/05 E_II_381__fol__1272_v_.tif" n="6"/>
+		<graphic url="8573/Autograph/06 E_II_381__fol__1273_r_.tif" n="7"/>
+		<graphic url="8573/Autograph/07 E_II_381__fol__1273_v_.tif" n="8"/>
+		<graphic url="8573/Autograph/08 E_II_381__fol__1274_r_.tif" n="9"/>
+		<graphic url="8573/Autograph/09 E_II_381__fol__1274_v_.tif" n="10"/>
+		<graphic url="8573/Autograph/10 E_II_381__fol__1275_r_.tif" n="11"/>
+		<graphic url="8573/Autograph/11 E_II_381__fol__1275_v_.tif" n="12"/>
+		<graphic url="8573/Autograph/12 E_II_381__fol__1276_r_.tif" n="13"/>
+		<graphic url="8573/Autograph/13 E_II_381__fol__1276_v_.tif" n="14"/>
+		<graphic url="8573/Autograph/14 E_II_381__fol__1277_r_.tif" n="15"/>
+		<graphic url="8573/Autograph/15 E_II_381__fol__1277_v_.tif" n="16"/>
+		<graphic url="8573/Autograph/16 E_II_381__fol__1278_r_.tif" n="17"/>
+		<graphic url="8573/Autograph/17 E_II_381__fol__1278_v_.tif" n="18"/>
+		<graphic url="8573/Autograph/18 E_II_381__fol__1279_r_.tif" n="19"/>
+		<graphic url="8573/Autograph/19 E_II_381__fol__1279_v_.tif" n="20"/>
+		<graphic url="8573/Autograph/20 E_II_381__fol__1280_r_.tif" n="21"/>
+		<graphic url="8573/Autograph/21 E_II_381__fol__1280_v_.tif" n="22"/>
+		<graphic url="8573/Autograph/22 E_II_381__fol__1281_r_.tif" n="23"/>
+		<graphic url="8573/Autograph/23 E_II_381__fol__1281_v_.tif" n="24"/>
+		<graphic url="8573/Autograph/24 E_II_381__fol__1282_r_.tif" n="25"/>
+		<graphic url="8573/Autograph/25 E_II_381__fol__1282_v_.tif" n="26"/>
+		<graphic url="8573/Autograph/26 E_II_381__fol__1283_r_.tif" n="27"/>
+		<graphic url="8573/Autograph/27 E_II_381__fol__1283_v_.tif" n="28"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

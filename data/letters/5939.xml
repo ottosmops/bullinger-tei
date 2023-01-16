@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6339/183</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#167">Genf</settlement>
-						<institution>Bibliothèque publique et universitaire</institution>
-						<idno type="Autograph">Ms. lat. 120,10</idno>
-						<repository ref="archive#38">
+						<!--
+						<repository ref="archive38">
 							<name>Genf BPU</name>
 							<ref target="http://institutions.ville-geneve.ch/fr/bge/"/>
 						</repository>
+						<settlement ref="place167">Genf</settlement>
+						<institution>Bibliothèque publique et universitaire</institution>
+						-->
+						<repository ref="archive38"/>
+						<idno subtype="Autograph">Ms. lat. 120,10</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -54,46 +57,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5939">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1563-11-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#890" cert="low">
+					<!--
+					<persName ref="person890" cert="low">
 						<forename cert="low">Theodor</forename>
 						<surname cert="low">Beza</surname>
-						<addName type="main">de Bèze (Beza), Théodor</addName>
+						<persName type="main" ref="person8033>de Bèze (Beza), Théodor</addName>
 						<graphic type="portrait" url="portraits/876_Beza_Theodor.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Th%C3%A9odore_de_B%C3%A8ze"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118662864"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11418065"/>
 					</persName>
+					-->
+					<persName ref="person890" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5940"/>
-					<ref type="prev_chronologically" target="files.xml#5938"/>
-					<ref type="next_correspondence" target="files.xml#5943"/>
-					<ref type="prev_correspondence" target="files.xml#5916"/>
-					<ref type="next_correspondence_request" target="files.xml#5943"/>
-					<ref type="prev_correspondence_request" target="files.xml#5908"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5961"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5916"/>
-					<ref type="next_same_sender" target="files.xml#5940"/>
-					<ref type="prev_same_sender" target="files.xml#5937"/>
-					<ref type="next_same_addressee" target="files.xml#5961"/>
-					<ref type="prev_same_addressee" target="files.xml#5916"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5940"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5937"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5961"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5916"/>
+					<ref type="next_chronologically" target="file5940"/>
+					<ref type="prev_chronologically" target="file5938"/>
+					<ref type="next_correspondence" target="file5943"/>
+					<ref type="prev_correspondence" target="file5916"/>
+					<ref type="next_correspondence_request" target="file5943"/>
+					<ref type="prev_correspondence_request" target="file5908"/>
+					<ref type="next_correspondence_reaction" target="file5961"/>
+					<ref type="prev_correspondence_reaction" target="file5916"/>
+					<ref type="next_same_sender" target="file5940"/>
+					<ref type="prev_same_sender" target="file5937"/>
+					<ref type="next_same_addressee" target="file5961"/>
+					<ref type="prev_same_addressee" target="file5916"/>
+					<ref type="next_with_sender_as_addressee" target="file5940"/>
+					<ref type="prev_with_sender_as_addressee" target="file5937"/>
+					<ref type="next_with_addressee_as_sender" target="file5961"/>
+					<ref type="prev_with_addressee_as_sender" target="file5916"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -107,20 +115,20 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Ante omnia salutabis mihi d. Calvinum et excusabis me, quod ei nihil scripsi.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Ante omnia salutabis mihi d. Calvinum et excusabis me, quod ei nihil scripsi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Parco ei; scio, quibus et quantis in horas enecetur et literis et negotiis.</s>
+					<s n="3" xml:lang="la" type="auto">Parco ei; scio, quibus et quantis in horas enecetur et literis et negotiis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Perplacuit eius mihi excusatio; efficiam vero, quantum in me fuerit, ne sit infrugifera, dum libere et confidenter illi affirmare possum aliter habere rem, quam ipse sibi habet persuasum.</s>
+					<s n="4" xml:lang="la" type="auto">Perplacuit eius mihi excusatio; efficiam vero, quantum in me fuerit, ne sit infrugifera, dum libere et confidenter illi affirmare possum aliter habere rem, quam ipse sibi habet persuasum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominum praeterea orabo, ut ipse pro sua clementia atque potentia hoc negotium sic temperet, necubi prava hominum consilia causae optimae noceant.</s>
+					<s n="5" xml:lang="la" type="auto">Dominum praeterea orabo, ut ipse pro sua clementia atque potentia hoc negotium sic temperet, necubi prava hominum consilia causae optimae noceant.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Utrique maximas ago gratias pro ista insigni vestra diligentia, qua soletis ad me, imo ad nos omnes, qui in hisce partibus Helvetiae degimus (optimo enim cuique communico vestra, non tamen citra delectum) mature res Galliae per literas denunciare...</s>
+					<s n="6" xml:lang="la" type="auto">Utrique maximas ago gratias pro ista insigni vestra diligentia, qua soletis ad me, imo ad nos omnes, qui in hisce partibus Helvetiae degimus (optimo enim cuique communico vestra, non tamen citra delectum) mature res Galliae per literas denunciare...</s>
 				</p>
 			</div>
 		</body>

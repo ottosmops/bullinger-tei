@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2006"/>
-				<idno type="ISBN">ISBN 978-3-290-17431-6</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1642</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17431-6</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1642</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 12</title>
+				<title subtype="publication">HBBW XII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">12</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#474">St. Gallen</settlement>
-						<institution>Kantonsbibliothek Vadiana</institution>
-						<idno type="Autograph">Ms 34 (VBS V),197</idno>
-						<repository ref="archive#78">
+						<!--
+						<repository ref="archive78">
 							<name>St. Gallen KB</name>
 							<ref target="https://www.sg.ch/kultur/kantonsbibliothek-vadiana.html"/>
 						</repository>
+						<settlement ref="place474">St. Gallen</settlement>
+						<institution>Kantonsbibliothek Vadiana</institution>
+						-->
+						<repository ref="archive78"/>
+						<idno subtype="Autograph">Ms 34 (VBS V),197</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,11 +49,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Dankt, besonders auch im Namen [<persName ref="180">Diethelm</persName>]
-								<persName ref="180">Röists</persName>, für <persName ref="19">Blarers</persName> Brief und für
+								Dankt, besonders auch im Namen [Diethelm]
+								<persName ref="person180">Röists</persName>, für <persName ref="person19">Blarers</persName> Brief und für
 								dessen Treue gegenüber Zürich und der Zürcher Kirche. Tod seines Sohnes
-								<persName ref="180">Diethelm</persName>, der nun aber alles Elend überwunden hat. Bedauert, dass es
-								keine Gelegenheit gab, <persName ref="2623">Zwicks</persName> Gattin mehr Freundlichkeit zu erweisen.
+								Diethelm, der nun aber alles Elend überwunden hat. Bedauert, dass es
+								keine Gelegenheit gab, <persName ref="person2623">Zwicks</persName> Gattin mehr Freundlichkeit zu erweisen.
 								Grüße.
 							</p>
 						</summary>
@@ -68,46 +71,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11685">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1542-06-30" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#392" cert="high">
+					<!--
+					<persName ref="person392" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
+					-->
+					<persName ref="person392" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11686"/>
-					<ref type="prev_chronologically" target="files.xml#11684"/>
-					<ref type="next_correspondence" target="files.xml#11686"/>
-					<ref type="prev_correspondence" target="files.xml#11682"/>
-					<ref type="next_correspondence_request" target="files.xml#11710"/>
-					<ref type="prev_correspondence_request" target="files.xml#11659"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11686"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11682"/>
-					<ref type="next_same_sender" target="files.xml#11689"/>
-					<ref type="prev_same_sender" target="files.xml#11681"/>
-					<ref type="next_same_addressee" target="files.xml#11686"/>
-					<ref type="prev_same_addressee" target="files.xml#11682"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11689"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11681"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11686"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11682"/>
+					<ref type="next_chronologically" target="file11686"/>
+					<ref type="prev_chronologically" target="file11684"/>
+					<ref type="next_correspondence" target="file11686"/>
+					<ref type="prev_correspondence" target="file11682"/>
+					<ref type="next_correspondence_request" target="file11710"/>
+					<ref type="prev_correspondence_request" target="file11659"/>
+					<ref type="next_correspondence_reaction" target="file11686"/>
+					<ref type="prev_correspondence_reaction" target="file11682"/>
+					<ref type="next_same_sender" target="file11689"/>
+					<ref type="prev_same_sender" target="file11681"/>
+					<ref type="next_same_addressee" target="file11686"/>
+					<ref type="prev_same_addressee" target="file11682"/>
+					<ref type="next_with_sender_as_addressee" target="file11689"/>
+					<ref type="prev_with_sender_as_addressee" target="file11681"/>
+					<ref type="next_with_addressee_as_sender" target="file11686"/>
+					<ref type="prev_with_addressee_as_sender" target="file11682"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -121,32 +128,32 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ingentes tibi gratias non tam meo quam d. <persName ref="180">Röystii</persName><note xml:id="fn1" type="footnote" n="1"><persName ref="180">Diethelm Röist</persName>.</note> nomine ago pro litteris illis tuis<note xml:id="fn2" type="footnote" n="2">Bullinger bezieht sich auf <persName ref="19">Blarers</persName> Brief vom 24. Juni (oben <ref target="file#11682">Nr. 1639</ref>), dessen mutmaßliche Beilage sich ausdrücklich auch an <persName ref="180">Röist</persName> richtete (s. ebd., Z. 35 und 81).</note> et summa illa fide tua in urbem et ecclesiam nostram; dominus rependat tibi.</s>
-					<s xml:lang="la" type="auto">Feceris autem rem longe gratissimam, si ita perrexeris.</s>
+					<s n="2" xml:lang="la" type="auto">Ingentes tibi gratias non tam meo quam d. <persName ref="person180">Röystii</persName><note xml:id="fn1" type="footnote" n="1"><persName ref="person180">Diethelm Röist</persName>.</note> nomine ago pro litteris illis tuis<note xml:id="fn2" type="footnote" n="2">Bullinger bezieht sich auf <persName ref="person19">Blarers</persName> Brief vom 24. Juni (oben <ref target="file11682">Nr. 1639</ref>), dessen mutmaßliche Beilage sich ausdrücklich auch an <persName ref="person180">Röist</persName> richtete (s. ebd., Z. 35 und 81).</note> et summa illa fide tua in urbem et ecclesiam nostram; dominus rependat tibi.</s>
+					<s n="3" xml:lang="la" type="auto">Feceris autem rem longe gratissimam, si ita perrexeris.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hisce diebus sustulit mihi dominus dilectissimum filiolum <persName ref="180">Diethelmum</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="553">Diethelm Bullinger</persName> verstarb am 23. Juni; s. HBD 31, 7f.</note>; verum bene actum est cum infantulo, qui semel multas calamitates vicit.</s>
+					<s n="4" xml:lang="la" type="auto">Hisce diebus sustulit mihi dominus dilectissimum filiolum <persName ref="person180">Diethelmum</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="person553">Diethelm Bullinger</persName> verstarb am 23. Juni; s. HBD 31, 7f.</note>; verum bene actum est cum infantulo, qui semel multas calamitates vicit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Honestissimae matronae Zvicciae<note xml:id="fn4" type="footnote" n="4">Amalia, geb. Muntprat; vgl. oben <ref target="file#11675">Nr. 1632</ref>, 8.</note> cupiebamus aliquid exhibere humanitatis, verum defuit facultas;<note xml:id="fn5" type="footnote" n="5">Vgl. dazu oben <ref target="file#11682">Nr. 1639</ref>, 24f.</note> nam ex animo amamus vos omnes.</s>
+					<s n="5" xml:lang="la" type="auto">Honestissimae matronae Zvicciae<note xml:id="fn4" type="footnote" n="4">Amalia, geb. Muntprat; vgl. oben <ref target="file11675">Nr. 1632</ref>, 8.</note> cupiebamus aliquid exhibere humanitatis, verum defuit facultas;<note xml:id="fn5" type="footnote" n="5">Vgl. dazu oben <ref target="file11682">Nr. 1639</ref>, 24f.</note> nam ex animo amamus vos omnes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="6" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, ultima iunii 1542.</s>
+					<s n="7" xml:lang="la" type="auto">Tiguri, ultima iunii 1542.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salutabis fratrem<note xml:id="fn6" type="footnote" n="6">Thomas <persName ref="19">Blarer</persName>.</note> et consobrinos<note xml:id="fn7" type="footnote" n="7"><persName ref="263">Johannes</persName> und Konrad <persName ref="2623">Zwick</persName>.</note>.</s>
-					<s xml:lang="la" type="auto">H. Bullingerus tuus.</s>
+					<s n="8" xml:lang="la" type="auto">Salutabis fratrem<note xml:id="fn6" type="footnote" n="6">Thomas <persName ref="person19">Blarer</persName>.</note> et consobrinos<note xml:id="fn7" type="footnote" n="7">Johannes und Konrad <persName ref="person2623">Zwick</persName>.</note>.</s>
+					<s n="9" xml:lang="la" type="auto">H. Bullingerus tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Piissimo viro d. <persName ref="19">Ambrosio Blaurero</persName>, antistiti Constantiensi vigilantissimo, suo.</s>
-					<s xml:lang="la" type="auto"><placeName ref="565">Constantz</placeName><note xml:id="fna" type="footnote" n="a"><hi>Vor</hi> Constantz <hi>von <persName ref="19">Blarer</persName> eingefügt:</hi> ultima iunii anno 42.</note>.</s>
+					<s n="10" xml:lang="la" type="auto">Piissimo viro d. <persName ref="person19">Ambrosio Blaurero</persName>, antistiti Constantiensi vigilantissimo, suo.</s>
+					<s n="11" xml:lang="la" type="auto"><placeName ref="place565">Constantz</placeName><note xml:id="fna" type="footnote" n="a"><hi>Vor</hi> Constantz <hi>von <persName ref="person19">Blarer</persName> eingefügt:</hi> ultima iunii anno 42.</note>.</s>
 				</p>
 			</div>
 		</body>

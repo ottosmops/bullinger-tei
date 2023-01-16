@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6195/39</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 377,2392</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 377,2392</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -54,45 +57,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5667">
 				<correspAction type="sent">
-					<persName ref="person#461" cert="low">
+					<!--
+					<persName ref="person461" cert="low">
 						<forename cert="low">Fridolin</forename>
 						<surname cert="low">Brunner</surname>
-						<addName type="main">Brunner (Fonteius), Fridolin</addName>
+						<persName type="main" ref="person8303>Brunner (Fonteius), Fridolin</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Fridolin_Brunner"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/108009265X"/>
 					</persName>
-					<place source="#176" cert="low">
-						<settlement>Glarus</settlement>
-						<district>Glarus</district>
-						<country>Schweiz</country>
-						<geo>47.04057 9.06804</geo>
-					</place>
+					-->
+					<persName ref="person461" cert="low"/>
+					<place source="place176" cert="low"/>
 					<date when="1563-03-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5668"/>
-					<ref type="prev_chronologically" target="files.xml#5666"/>
-					<ref type="next_correspondence" target="files.xml#5698"/>
-					<ref type="prev_correspondence" target="files.xml#5485"/>
-					<ref type="next_correspondence_request" target="files.xml#5698"/>
-					<ref type="prev_correspondence_request" target="files.xml#5485"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5846"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#4363"/>
-					<ref type="next_same_sender" target="files.xml#5698"/>
-					<ref type="prev_same_sender" target="files.xml#5485"/>
-					<ref type="next_same_addressee" target="files.xml#5684"/>
-					<ref type="prev_same_addressee" target="files.xml#5664"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5698"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5485"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5684"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5664"/>
+					<ref type="next_chronologically" target="file5668"/>
+					<ref type="prev_chronologically" target="file5666"/>
+					<ref type="next_correspondence" target="file5698"/>
+					<ref type="prev_correspondence" target="file5485"/>
+					<ref type="next_correspondence_request" target="file5698"/>
+					<ref type="prev_correspondence_request" target="file5485"/>
+					<ref type="next_correspondence_reaction" target="file5846"/>
+					<ref type="prev_correspondence_reaction" target="file4363"/>
+					<ref type="next_same_sender" target="file5698"/>
+					<ref type="prev_same_sender" target="file5485"/>
+					<ref type="next_same_addressee" target="file5684"/>
+					<ref type="prev_same_addressee" target="file5664"/>
+					<ref type="next_with_sender_as_addressee" target="file5698"/>
+					<ref type="prev_with_sender_as_addressee" target="file5485"/>
+					<ref type="next_with_addressee_as_sender" target="file5684"/>
+					<ref type="prev_with_addressee_as_sender" target="file5664"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -101,61 +108,64 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="5667/Autograph/00 E_II_377__fol__2392_r_.tif" n="1"/>
+		<graphic url="5667/Autograph/01 E_II_377__fol__2392_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Pacem et gratiam a domino etc.</s>
+					<s n="1" xml:lang="la" type="auto">Pacem et gratiam a domino etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Accepi literas marcii die 20. una cum libello, quem mihi dono misisti, pro quo tibi ingentes gratias ago, et orabo dominum, ut brevi beneficium recompensandi occasionem praebeat.</s>
+					<s n="2" xml:lang="la" type="auto">Accepi literas marcii die 20. una cum libello, quem mihi dono misisti, pro quo tibi ingentes gratias ago, et orabo dominum, ut brevi beneficium recompensandi occasionem praebeat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Huic munusculo et multis tuis beneficiis me tibi cordi esse et memorem mei semper plus satis intelligo et in amicorum tuorum albo non ultimum esse.</s>
+					<s n="3" xml:lang="la" type="auto">Huic munusculo et multis tuis beneficiis me tibi cordi esse et memorem mei semper plus satis intelligo et in amicorum tuorum albo non ultimum esse.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Literarum tuarum ad me raritatem excusare non necessarium erat, dum singulis septimanis scripta tua consuli Beldio missa legere solo; omnia enim tua mihi communicat.</s>
+					<s n="4" xml:lang="la" type="auto">Literarum tuarum ad me raritatem excusare non necessarium erat, dum singulis septimanis scripta tua consuli Beldio missa legere solo; omnia enim tua mihi communicat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex literis tuis 27. marcii ad nos missis magno perfusus sum gaudio, ex quibus percepi in Gallia pacem restitutam et iam omnia secura et tuta esse.</s>
+					<s n="5" xml:lang="la" type="auto">Ex literis tuis 27. marcii ad nos missis magno perfusus sum gaudio, ex quibus percepi in Gallia pacem restitutam et iam omnia secura et tuta esse.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Utinam hęc omnia in gloriam dei recidant.</s>
+					<s n="6" xml:lang="la" type="auto">Utinam hęc omnia in gloriam dei recidant.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Deo gratię sunt agendę immortales, qui preces piorum non spernit, verum suo tempore ipsos e tyrannorum potestate redimit et hostes in foveam cadere facit, quam piis foderunt<note xml:id="fn1" type="footnote" n="1">Bibelzitat (mehrere Stellen!).</note>.</s>
+					<s n="7" xml:lang="la" type="auto">Deo gratię sunt agendę immortales, qui preces piorum non spernit, verum suo tempore ipsos e tyrannorum potestate redimit et hostes in foveam cadere facit, quam piis foderunt<note xml:id="fn1" type="footnote" n="1">Bibelzitat (mehrere Stellen!).</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Huic sit laus, gloria et potentia in sęculum, amen.</s>
-					<s xml:lang="la" type="auto">Res nostras, qualiter sese habeant non dubito tibi ex Beldio notum; ob id supervacaneum foret de his multa scribere.</s>
+					<s n="8" xml:lang="la" type="auto">Huic sit laus, gloria et potentia in sęculum, amen.</s>
+					<s n="9" xml:lang="la" type="auto">Res nostras, qualiter sese habeant non dubito tibi ex Beldio notum; ob id supervacaneum foret de his multa scribere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hoc unum nunc abs te peto et te volo oratum, ut quam primum nobis mittas verbi ministrum fidelem, qui doctrina et pietate sit praeclarus, cuius fidei ecclesia Bethswandensis committatur.</s>
+					<s n="10" xml:lang="la" type="auto">Hoc unum nunc abs te peto et te volo oratum, ut quam primum nobis mittas verbi ministrum fidelem, qui doctrina et pietate sit praeclarus, cuius fidei ecclesia Bethswandensis committatur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Periculosum est apud nos Christi negotium tractare inter tot hostes; ob id oportet ministrum non solum docterina, verum eciam honesta vitę conversatione ecclesię praelucere; pietas enim si defuerit, bene docta prophana vita destruet.</s>
+					<s n="11" xml:lang="la" type="auto">Periculosum est apud nos Christi negotium tractare inter tot hostes; ob id oportet ministrum non solum docterina, verum eciam honesta vitę conversatione ecclesię praelucere; pietas enim si defuerit, bene docta prophana vita destruet.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Annuatim habebit ex aerario ecclesiastico 80 aureos; amplius stipendium nec ego habeo, sed maximum vectigal parsimonia.</s>
+					<s n="12" xml:lang="la" type="auto">Annuatim habebit ex aerario ecclesiastico 80 aureos; amplius stipendium nec ego habeo, sed maximum vectigal parsimonia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si quem miseris, fac, ne absque tua et magistratus commendatione ad nos veniat; oportet ipsum habere de doctrina et vi[t]a literas testimoniales; alias in ministrum ab ecclesia non susciperetur.</s>
+					<s n="13" xml:lang="la" type="auto">Si quem miseris, fac, ne absque tua et magistratus commendatione ad nos veniat; oportet ipsum habere de doctrina et vi[t]a literas testimoniales; alias in ministrum ab ecclesia non susciperetur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale feliciter, et dominus tibi Nestoreos concedat annos, ut possis diu ecclesię suę prodesse, ut hactenus factum est.</s>
+					<s n="14" xml:lang="la" type="auto">Vale feliciter, et dominus tibi Nestoreos concedat annos, ut possis diu ecclesię suę prodesse, ut hactenus factum est.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Huic sit laus et gloria in perpetuum.</s>
+					<s n="15" xml:lang="la" type="auto">Huic sit laus et gloria in perpetuum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datę 28. marcii 1563.</s>
+					<s n="16" xml:lang="la" type="auto">Datę 28. marcii 1563.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Fridolinus Fonteius tuus, Claronensis ecclesię minister, tui observantissimus.</s>
+					<s n="17" xml:lang="la" type="auto">Fridolinus Fonteius tuus, Claronensis ecclesię minister, tui observantissimus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Amplissimo et venerando viro d. Henricho Bullingero, Tiguri verbi minister, domino suo observandissimo.</s>
+					<s n="18" xml:lang="la" type="auto">Amplissimo et venerando viro d. Henricho Bullingero, Tiguri verbi minister, domino suo observandissimo.</s>
 				</p>
 			</div>
 		</body>

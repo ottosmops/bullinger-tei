@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3065</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3065</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,181–182</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,181–182</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -185,46 +188,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13114">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date min="1547-11-01" max="1547-11-02" cert="low"/>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
+					<date notBefore="1547-11-01" notAfter="1547-11-02" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
+					-->
+					<persName ref="person2234" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13115"/>
-					<ref type="prev_chronologically" target="files.xml#13113"/>
-					<ref type="next_correspondence" target="files.xml#13120"/>
-					<ref type="prev_correspondence" target="files.xml#13106"/>
-					<ref type="next_correspondence_request" target="files.xml#13131"/>
-					<ref type="prev_correspondence_request" target="files.xml#13103"/>
-					<ref type="next_correspondence_reaction" target="files.xml#13120"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#13106"/>
-					<ref type="next_same_sender" target="files.xml#13131"/>
-					<ref type="prev_same_sender" target="files.xml#13111"/>
-					<ref type="next_same_addressee" target="files.xml#13120"/>
-					<ref type="prev_same_addressee" target="files.xml#13106"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13131"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13111"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13120"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13106"/>
+					<ref type="next_chronologically" target="file13115"/>
+					<ref type="prev_chronologically" target="file13113"/>
+					<ref type="next_correspondence" target="file13120"/>
+					<ref type="prev_correspondence" target="file13106"/>
+					<ref type="next_correspondence_request" target="file13131"/>
+					<ref type="prev_correspondence_request" target="file13103"/>
+					<ref type="next_correspondence_reaction" target="file13120"/>
+					<ref type="prev_correspondence_reaction" target="file13106"/>
+					<ref type="next_same_sender" target="file13131"/>
+					<ref type="prev_same_sender" target="file13111"/>
+					<ref type="next_same_addressee" target="file13120"/>
+					<ref type="prev_same_addressee" target="file13106"/>
+					<ref type="next_with_sender_as_addressee" target="file13131"/>
+					<ref type="prev_with_sender_as_addressee" target="file13111"/>
+					<ref type="next_with_addressee_as_sender" target="file13120"/>
+					<ref type="prev_with_addressee_as_sender" target="file13106"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -244,134 +252,134 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Non potui satis mirari ita te, colendissime mi frater, affectum propter deditionem Constantiensium.<note xml:id="fn1" type="footnote" n="1">Anspielung auf die von Myconius am 27. Oktober in <ref target="file#13106">Nr. 3057</ref>,<qv>zl17324-2</qv>, geäußerte Empörung.</note></s>
-					<s xml:lang="la" type="auto">Ergon<note xml:id="fn2" type="footnote" n="2">= Ergone.</note> periit Helvetia, quia Waltzhuͦtum et Louffenberga<note xml:id="fn3" type="footnote" n="3">Waldshut und Laufenburg, damals im vorderösterreichischen, dem König Ferdinand I. unterstellten Gebiet.</note>, vicinae urbes (et fortes sunt!)<note xml:id="fna" type="footnote" n="a"><hi>Klammern ergänzt.</hi></note>, ex quibus praesidia caesaris<note xml:id="fn4" type="footnote" n="4">Karl V.</note> tam facile in Helvetiam possunt irrumpere quam ex Constantia?</s>
-					<s xml:lang="la" type="auto">Constantia non est salus nostra, ergo neque proditio nostra!</s>
-					<s xml:lang="la" type="auto">Deus est salus nostra.<note xml:id="fn5" type="footnote" n="5">Siehe z.B. Ps 62 (Vulg. 61), 2; 79 (Vulg. 78), 9.</note></s>
-					<s xml:lang="la" type="auto">Ac posset nobis Constantia esse pernicies, si per inertiam et metum, nescio quem, aequum et a deo oblatum medium protegendi nos repulissemus.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Non potui satis mirari ita te, colendissime mi frater, affectum propter deditionem Constantiensium.<note xml:id="fn1" type="footnote" n="1">Anspielung auf die von Myconius am 27. Oktober in <ref target="file13106">Nr. 3057</ref>,<qv>zl17324-2</qv>, geäußerte Empörung.</note></s>
+					<s n="3" xml:lang="la" type="auto">Ergon<note xml:id="fn2" type="footnote" n="2">= Ergone.</note> periit Helvetia, quia Waltzhuͦtum et Louffenberga<note xml:id="fn3" type="footnote" n="3">Waldshut und Laufenburg, damals im vorderösterreichischen, dem König Ferdinand I. unterstellten Gebiet.</note>, vicinae urbes (et fortes sunt!)<note xml:id="fna" type="footnote" n="a"><hi>Klammern ergänzt.</hi></note>, ex quibus praesidia caesaris<note xml:id="fn4" type="footnote" n="4">Karl V.</note> tam facile in Helvetiam possunt irrumpere quam ex Constantia?</s>
+					<s n="4" xml:lang="la" type="auto">Constantia non est salus nostra, ergo neque proditio nostra!</s>
+					<s n="5" xml:lang="la" type="auto">Deus est salus nostra.<note xml:id="fn5" type="footnote" n="5">Siehe z.B. Ps 62 (Vulg. 61), 2; 79 (Vulg. 78), 9.</note></s>
+					<s n="6" xml:lang="la" type="auto">Ac posset nobis Constantia esse pernicies, si per inertiam et metum, nescio quem, aequum et a deo oblatum medium protegendi nos repulissemus.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Iam vero nihil a nostris<note xml:id="fn6" type="footnote" n="6">Gemeint ist die Zürcher Obrigkeit.</note> est neglectum!</s>
-					<s xml:lang="la" type="auto">Tentata sunt omnia, sed nihil effectum, non nostra sed aliorum culpa.</s>
-					<s xml:lang="la" type="auto">„Quid si vos,“ ais<note xml:id="fnb" type="footnote" n="b"><hi>Am Rande nachgetragen.</hi></note>, „recepissetis illos in tutelam una cum reliquis aut soli?“</s>
-					<s xml:lang="la" type="auto">Quid, mi Myconi, si non hac via, sed aliis multis animos illorum aggressi sumus?</s>
-					<s xml:lang="la" type="auto">Semel missus est consul <pb type="edition" next="629"/> Habius,<note xml:id="fn7" type="footnote" n="7">Die Reise des Zürcher Bürgermeisters Johannes Haab nach Konstanz kann für die Zeit von November 1546 bis Oktober 1547 anhand von Bullingers Briefwechsel nicht belegt werden.</note> ter in legatione Müllerus triumvir.<note xml:id="fn8" type="footnote" n="8">Zur Bezeichnung des Zürcher Zunftmeisters und Obristmeisters (s. dazu <abbr>HBBW</abbr> XVIII 465, Anm. 11) Georg Müller als "Triumvir" s. <ref target="file#13099">Nr. 3050</ref>, <qv>fn17319-1</qv>. - Müller hatte sich ein erstes Mal am 2. Januar 1547 mit Konrad Zwick in Stein am Rhein getroffen; s. <abbr>HBBW</abbr> XVIII 465f; XIX 76. 80. Am 11. Februar erschien er erneut vor dem Konstanzer Rat; s. <abbr>HBBW</abbr> XIX 276 und Anm. 43; 309. Mitte März hatte er sich ein drittes Mal nach Konstanz begeben, doch wurde er diesmal von den Konstanzern ziemlich enttäuscht; s. aaO, S. 410 und Anm. 85; 415 und Anm. 10; 454 und Anm. 76.</note></s>
-					<s xml:lang="la" type="auto">Commoda tentavimus media.</s>
-					<s xml:lang="la" type="auto">Rogavimus, an velint per nos aut per 4 urbes<note xml:id="fn9" type="footnote" n="9">Die vier protestantischen Städte Basel, Bern, Schaffhausen und Zürich.<zfn>fn17331-5</zfn></note> caussam suam agi apud Helvetios omnes; noluerunt.<note xml:id="fn10" type="footnote" n="10">Im Januar 1547 hatten die Zürcher vergeblich versucht, die 13 Orte davon zu überzeugen, den Konstanzern ihre etwaige Hilfe zuzusagen, falls der Kaiser diese angreifen würde; s. <abbr>HBBW</abbr> XIX 84 und Anm. 17; 133 und Anm. 15. Am 20. Februar erklärte dann Zwick Bullinger, dass die Konstanzer nicht vorhatten, die am 28. Februar beginnende Tagsatzung der Eidgenossen in Baden (wo sich auch kaiserliche Gesandte aufhielten) zu beschicken, um die Entstehung von Gerüchten zu verhindern (derartige Gerüchte hätten nämlich dem Kaiser als Rechtfertigung eines Angriffs gegen Konstanz dienen können). Doch hatte damals Zwick (der zwar für Konstanz einen isolationistischen Kurs zwischen Eidgenossenschaft und Reich verfolgte; s. mehr dazu unten <qv>fn17331-3</qv>) die Zürcher gebeten, sich während der Tagsatzung zugunsten der Konstanzer einzusetzen, falls sie merkten, dass ein solcher Vorstoß bei ihren katholischen Verbündeten auf offene Ohren stoßen würde; s. <abbr>HBBW</abbr> XIX 334f. - Zu den Bemühungen der Konstanzer, im Falle eines kaiserlichen Angriffes die Zusicherung einer militärischen Unterstützung von den Eidgenossen zu erhalten, s. <abbr>Maurer, Übergang</abbr> 22-29.</note></s>
-					<s xml:lang="la" type="auto">Oblata est pecunia 20000 aureorum ea lege numerandorum vel a Tigurinis vel a Bernatibus, simul Basiliensibus et Schaffhusianis, ut intra biennium non reciperent in urbem ullum peregrinum militem.<ptr target="#fnc" type="footnote" n="c"/></s>
-					<s xml:lang="la" type="auto">Pecunias illi<note xml:id="fnc" type="footnote" n="c"><hi>Vermutlich von Myconius unterstrichen.</hi></note> non repulsuros se dixerunt, numero annorum astringi noluerunt.<note xml:id="fnd" type="footnote" n="d"><hi>Myconius notierte dazu am Rande</hi> Poenituit Constantienses. Reliqua dicuntur non vera a domino Gabriele Arnoldo, 8. novembris anno 1547 <hi>(s. dazu unten <qv>fn17331-4</qv>).</hi><zfn>fn17331-1</zfn></note><note xml:id="fn11" type="footnote" n="11">Siehe dazu <abbr>HBBW</abbr> XIX 454, Anm. 76; <ref target="file#13122">Nr. 3073</ref>, <qv>fn17339-5</qv>; <abbr>Maurer, Übergang</abbr> 28f. - Der anlässlich des Schmalkaldischen Krieges aus seiner Herrschaft Rohrenfels vertriebene pfälzische Rentmeister Gabriel Arnold, der laut Myconius (s. oben <qv>fn17331-1</qv>) am 8. November einen Teil der hiesigen Aussagen Bullingers bestritt, hatte sich nach dem Krieg nach Konstanz zurückgezogen, von wo aus er immer wieder Reisen nach Zürich und Basel unternahm; s. <ref target="file#12982">Nr. 2933</ref>,<qv>zl17201-1</qv>; <ref target="file#12984">Nr. 2935</ref>,<qv>zl17193-3</qv>. <qv>zl17193-2</qv>. - Zum Anlass seines Aufenthaltes in Basel s. <ref target="file#13135">Nr. 3086</ref>, <qv>fn17353-1</qv>.<zfn>fn17331-4</zfn></note></s>
-					<s xml:lang="la" type="auto">De foedere<note xml:id="fn12" type="footnote" n="12">Gemeint ist die Aufnahme von Konstanz in die Eidgenossenschaft. - Auch wenn es unter den Konstanzer Ratsherren möglicherweise Befürworter eines Anschlusses an die Eidgenossenschaft gegeben haben wird, befürwortete die Mehrheit der Räte entweder eine gemäßigte, auf das Reich ausgerichtete Politik oder dann wie Zwick und dessen Anhänger einen isolationistischen, d.h. möglichst unabhängigen politischen Kurs zwischen Reich und Eidgenossenschaft, der an die Forderung, auf Gott allein zu vertrauen, gekoppelt war (zu einer ausführlichen Darstellung der damaligen politischen Verhältnisse in Konstanz s. <abbr>Dobras, Ratsregiment</abbr> 64-154, besonders S. 65-69 in Bezug auf Konstanz' Einstellung gegenüber den Eidgenossen, und S. 68 für die Namen derer, die Zwicks Haltung teilten). Zudem muss betont werden, dass die katholischen Orte ebenfalls gegen einen Beitritt von Konstanz zur Eidgenossenschaft waren; s. <abbr>Maurer, Übergang</abbr> 24. - Die Zürcher konnten von ihren Verbündeten nur erreichen, dass diese gegen den Kaiser ziehen würden, falls Letzterer bei einem etwaigen Angriff auf Konstanz ihr Gebiet verletzen würde; s. <abbr>HBBW</abbr> XIX 162 und Anm. 4; 163f,35-41; 407,18-24.<zfn>fn17331-3</zfn></note> frustra disputari dixerunt.</s>
-					<s xml:lang="la" type="auto">Venit Vitodurum<note xml:id="fn13" type="footnote" n="13">Winterthur. - Zu diesem Treffen von etwa Mitte Juli 1547 s. <ref target="file#13004">Nr. 2955</ref>,<qv>zl17221-4</qv>. - Vgl. die vorliegende Stelle mit Bullingers Aussagen in <ref target="file#13111">Nr. 3062</ref>,<qv>zl17330-6</qv>.</note> lega<pb type="edition" next="630"/> tus<note xml:id="fn14" type="footnote" n="14">Sébastien de L'Aubespine, abbé de Bassefontaine.</note> regius.<note xml:id="fn15" type="footnote" n="15">Heinrich II. von Frankreich.</note></s>
-					<s xml:lang="la" type="auto">Egit cum delectis Constantiensibus<note xml:id="fn16" type="footnote" n="16">Sebastian Gaisberg und ein weiterer, uns unbekannter Ratsherr.</note> nomine Galli tantum non coronam promittens, modo ne recipiant militem in detrimentum Helvetiae.</s>
-					<s xml:lang="la" type="auto">Scripserunt regi.<note xml:id="fn17" type="footnote" n="17">Von diesem etwa Mitte Juli 1547 verfassten Brief der Konstanzer an Heinrich II. hatte sich Bullinger eine Kopie angefertigt, und zwar anhand einer Abschrift dieses Briefes, die ihm Ambrosius Blarer nur kurz zur Verfügung stellte; s. <ref target="file#13004">Nr. 2955</ref>,<qv>zl17221-5</qv>. - Die Aussagen, die Bullinger hier über den Brief der Konstanzer macht, entsprechen dessen Inhalt.</note></s>
-					<s xml:lang="la" type="auto">Quid scriptum sit, non nescio, cum habeam apographum: Caesarem se dominum suum fateri clamitant; nolunt scindi ab imperio, etc. (quod tamen nemo poposcerat!).<note xml:id="fne" type="footnote" n="e"><hi>Dieses und das nächste Klammerpaar ergänzt.</hi></note></s>
-					<s xml:lang="la" type="auto">Interim<note xml:id="fn18" type="footnote" n="18">Wahrscheinlich mit der in <ref target="file#13108">Nr. 3059</ref>, <qv>fn17326-1</qv>, Ende Oktober in Zürich belegten Konstanzer Gesandtschaft.</note> pollicentur se nihil in pactione recepturos, quod Helvetiis vicinis sit adversum.</s>
-					<s xml:lang="la" type="auto">Idem heri scriptis ad nos literis<note xml:id="fn19" type="footnote" n="19">Dies wird indirekt in dem am 28. Oktober verfassten Brief der Konstanzer (s. dazu <ref target="file#13111">Nr. 3062</ref>, <qv>fn17330-1</qv>) betont: Sie werden nichts zusagen, das ihr Gewissen verletzen würde oder "sonst beschwarlich wäre" (am Schluss ihres Briefes vom 22. Oktober - s. dazu <ref target="file#13102">Nr. 3053</ref>, <qv>fn17321-1</qv> - waren sie noch ausführlicher). - Das <hi>heri</hi> im Brieftext bezieht sich offensichtlich auf das Empfangsdatum des Konstanzer Briefes, und vermutlich wurde der vorliegende lange Brief schon vor dem 1. November begonnen.</note> testati sunt.</s>
-					<s xml:lang="la" type="auto">Ego vero id facturos nihil dubitarem, modo non essent supplicum loco, sed domini, cui supplices tamen fiunt.</s>
-					<s xml:lang="la" type="auto">Tentavimus ergo omnia.</s>
-					<s xml:lang="la" type="auto">Proinde non nostra culpa se dedunt, et si qui in nos culpam reiiciunt, magna nos afficiunt iniuria!<note xml:id="fn20" type="footnote" n="20">Ein weiteres Indiz dafür, dass die Zürcher damals dazu neigten, die Schuld für das Scheitern der Verhandlungen zwischen den Konstanzern und den Eidgenossen den Ersteren zuzuschieben, findet sich in <abbr>HBBW</abbr> XIX 408,38-42.</note></s>
+					<s n="7" xml:lang="la" type="auto">Iam vero nihil a nostris<note xml:id="fn6" type="footnote" n="6">Gemeint ist die Zürcher Obrigkeit.</note> est neglectum!</s>
+					<s n="8" xml:lang="la" type="auto">Tentata sunt omnia, sed nihil effectum, non nostra sed aliorum culpa.</s>
+					<s n="9" xml:lang="la" type="auto">„Quid si vos,“ ais<note xml:id="fnb" type="footnote" n="b"><hi>Am Rande nachgetragen.</hi></note>, „recepissetis illos in tutelam una cum reliquis aut soli?“</s>
+					<s n="10" xml:lang="la" type="auto">Quid, mi Myconi, si non hac via, sed aliis multis animos illorum aggressi sumus?</s>
+					<s n="11" xml:lang="la" type="auto">Semel missus est consul <pb type="edition" next="629"/> Habius,<note xml:id="fn7" type="footnote" n="7">Die Reise des Zürcher Bürgermeisters Johannes Haab nach Konstanz kann für die Zeit von November 1546 bis Oktober 1547 anhand von Bullingers Briefwechsel nicht belegt werden.</note> ter in legatione Müllerus triumvir.<note xml:id="fn8" type="footnote" n="8">Zur Bezeichnung des Zürcher Zunftmeisters und Obristmeisters (s. dazu <abbr>HBBW</abbr> XVIII 465, Anm. 11) Georg Müller als "Triumvir" s. <ref target="file13099">Nr. 3050</ref>, <qv>fn17319-1</qv>. - Müller hatte sich ein erstes Mal am 2. Januar 1547 mit Konrad Zwick in Stein am Rhein getroffen; s. <abbr>HBBW</abbr> XVIII 465f; XIX 76. 80. Am 11. Februar erschien er erneut vor dem Konstanzer Rat; s. <abbr>HBBW</abbr> XIX 276 und Anm. 43; 309. Mitte März hatte er sich ein drittes Mal nach Konstanz begeben, doch wurde er diesmal von den Konstanzern ziemlich enttäuscht; s. aaO, S. 410 und Anm. 85; 415 und Anm. 10; 454 und Anm. 76.</note></s>
+					<s n="12" xml:lang="la" type="auto">Commoda tentavimus media.</s>
+					<s n="13" xml:lang="la" type="auto">Rogavimus, an velint per nos aut per 4 urbes<note xml:id="fn9" type="footnote" n="9">Die vier protestantischen Städte Basel, Bern, Schaffhausen und Zürich.<zfn>fn17331-5</zfn></note> caussam suam agi apud Helvetios omnes; noluerunt.<note xml:id="fn10" type="footnote" n="10">Im Januar 1547 hatten die Zürcher vergeblich versucht, die 13 Orte davon zu überzeugen, den Konstanzern ihre etwaige Hilfe zuzusagen, falls der Kaiser diese angreifen würde; s. <abbr>HBBW</abbr> XIX 84 und Anm. 17; 133 und Anm. 15. Am 20. Februar erklärte dann Zwick Bullinger, dass die Konstanzer nicht vorhatten, die am 28. Februar beginnende Tagsatzung der Eidgenossen in Baden (wo sich auch kaiserliche Gesandte aufhielten) zu beschicken, um die Entstehung von Gerüchten zu verhindern (derartige Gerüchte hätten nämlich dem Kaiser als Rechtfertigung eines Angriffs gegen Konstanz dienen können). Doch hatte damals Zwick (der zwar für Konstanz einen isolationistischen Kurs zwischen Eidgenossenschaft und Reich verfolgte; s. mehr dazu unten <qv>fn17331-3</qv>) die Zürcher gebeten, sich während der Tagsatzung zugunsten der Konstanzer einzusetzen, falls sie merkten, dass ein solcher Vorstoß bei ihren katholischen Verbündeten auf offene Ohren stoßen würde; s. <abbr>HBBW</abbr> XIX 334f. - Zu den Bemühungen der Konstanzer, im Falle eines kaiserlichen Angriffes die Zusicherung einer militärischen Unterstützung von den Eidgenossen zu erhalten, s. <abbr>Maurer, Übergang</abbr> 22-29.</note></s>
+					<s n="14" xml:lang="la" type="auto">Oblata est pecunia 20000 aureorum ea lege numerandorum vel a Tigurinis vel a Bernatibus, simul Basiliensibus et Schaffhusianis, ut intra biennium non reciperent in urbem ullum peregrinum militem.<ptr target="fnc" type="footnote" n="c"/></s>
+					<s n="15" xml:lang="la" type="auto">Pecunias illi<note xml:id="fnc" type="footnote" n="c"><hi>Vermutlich von Myconius unterstrichen.</hi></note> non repulsuros se dixerunt, numero annorum astringi noluerunt.<note xml:id="fnd" type="footnote" n="d"><hi>Myconius notierte dazu am Rande</hi> Poenituit Constantienses. Reliqua dicuntur non vera a domino Gabriele Arnoldo, 8. novembris anno 1547 <hi>(s. dazu unten <qv>fn17331-4</qv>).</hi><zfn>fn17331-1</zfn></note><note xml:id="fn11" type="footnote" n="11">Siehe dazu <abbr>HBBW</abbr> XIX 454, Anm. 76; <ref target="file13122">Nr. 3073</ref>, <qv>fn17339-5</qv>; <abbr>Maurer, Übergang</abbr> 28f. - Der anlässlich des Schmalkaldischen Krieges aus seiner Herrschaft Rohrenfels vertriebene pfälzische Rentmeister Gabriel Arnold, der laut Myconius (s. oben <qv>fn17331-1</qv>) am 8. November einen Teil der hiesigen Aussagen Bullingers bestritt, hatte sich nach dem Krieg nach Konstanz zurückgezogen, von wo aus er immer wieder Reisen nach Zürich und Basel unternahm; s. <ref target="file12982">Nr. 2933</ref>,<qv>zl17201-1</qv>; <ref target="file12984">Nr. 2935</ref>,<qv>zl17193-3</qv>. <qv>zl17193-2</qv>. - Zum Anlass seines Aufenthaltes in Basel s. <ref target="file13135">Nr. 3086</ref>, <qv>fn17353-1</qv>.<zfn>fn17331-4</zfn></note></s>
+					<s n="16" xml:lang="la" type="auto">De foedere<note xml:id="fn12" type="footnote" n="12">Gemeint ist die Aufnahme von Konstanz in die Eidgenossenschaft. - Auch wenn es unter den Konstanzer Ratsherren möglicherweise Befürworter eines Anschlusses an die Eidgenossenschaft gegeben haben wird, befürwortete die Mehrheit der Räte entweder eine gemäßigte, auf das Reich ausgerichtete Politik oder dann wie Zwick und dessen Anhänger einen isolationistischen, d.h. möglichst unabhängigen politischen Kurs zwischen Reich und Eidgenossenschaft, der an die Forderung, auf Gott allein zu vertrauen, gekoppelt war (zu einer ausführlichen Darstellung der damaligen politischen Verhältnisse in Konstanz s. <abbr>Dobras, Ratsregiment</abbr> 64-154, besonders S. 65-69 in Bezug auf Konstanz' Einstellung gegenüber den Eidgenossen, und S. 68 für die Namen derer, die Zwicks Haltung teilten). Zudem muss betont werden, dass die katholischen Orte ebenfalls gegen einen Beitritt von Konstanz zur Eidgenossenschaft waren; s. <abbr>Maurer, Übergang</abbr> 24. - Die Zürcher konnten von ihren Verbündeten nur erreichen, dass diese gegen den Kaiser ziehen würden, falls Letzterer bei einem etwaigen Angriff auf Konstanz ihr Gebiet verletzen würde; s. <abbr>HBBW</abbr> XIX 162 und Anm. 4; 163f,35-41; 407,18-24.<zfn>fn17331-3</zfn></note> frustra disputari dixerunt.</s>
+					<s n="17" xml:lang="la" type="auto">Venit Vitodurum<note xml:id="fn13" type="footnote" n="13">Winterthur. - Zu diesem Treffen von etwa Mitte Juli 1547 s. <ref target="file13004">Nr. 2955</ref>,<qv>zl17221-4</qv>. - Vgl. die vorliegende Stelle mit Bullingers Aussagen in <ref target="file13111">Nr. 3062</ref>,<qv>zl17330-6</qv>.</note> lega<pb type="edition" next="630"/> tus<note xml:id="fn14" type="footnote" n="14">Sébastien de L'Aubespine, abbé de Bassefontaine.</note> regius.<note xml:id="fn15" type="footnote" n="15">Heinrich II. von Frankreich.</note></s>
+					<s n="18" xml:lang="la" type="auto">Egit cum delectis Constantiensibus<note xml:id="fn16" type="footnote" n="16">Sebastian Gaisberg und ein weiterer, uns unbekannter Ratsherr.</note> nomine Galli tantum non coronam promittens, modo ne recipiant militem in detrimentum Helvetiae.</s>
+					<s n="19" xml:lang="la" type="auto">Scripserunt regi.<note xml:id="fn17" type="footnote" n="17">Von diesem etwa Mitte Juli 1547 verfassten Brief der Konstanzer an Heinrich II. hatte sich Bullinger eine Kopie angefertigt, und zwar anhand einer Abschrift dieses Briefes, die ihm Ambrosius Blarer nur kurz zur Verfügung stellte; s. <ref target="file13004">Nr. 2955</ref>,<qv>zl17221-5</qv>. - Die Aussagen, die Bullinger hier über den Brief der Konstanzer macht, entsprechen dessen Inhalt.</note></s>
+					<s n="20" xml:lang="la" type="auto">Quid scriptum sit, non nescio, cum habeam apographum: Caesarem se dominum suum fateri clamitant; nolunt scindi ab imperio, etc. (quod tamen nemo poposcerat!).<note xml:id="fne" type="footnote" n="e"><hi>Dieses und das nächste Klammerpaar ergänzt.</hi></note></s>
+					<s n="21" xml:lang="la" type="auto">Interim<note xml:id="fn18" type="footnote" n="18">Wahrscheinlich mit der in <ref target="file13108">Nr. 3059</ref>, <qv>fn17326-1</qv>, Ende Oktober in Zürich belegten Konstanzer Gesandtschaft.</note> pollicentur se nihil in pactione recepturos, quod Helvetiis vicinis sit adversum.</s>
+					<s n="22" xml:lang="la" type="auto">Idem heri scriptis ad nos literis<note xml:id="fn19" type="footnote" n="19">Dies wird indirekt in dem am 28. Oktober verfassten Brief der Konstanzer (s. dazu <ref target="file13111">Nr. 3062</ref>, <qv>fn17330-1</qv>) betont: Sie werden nichts zusagen, das ihr Gewissen verletzen würde oder "sonst beschwarlich wäre" (am Schluss ihres Briefes vom 22. Oktober - s. dazu <ref target="file13102">Nr. 3053</ref>, <qv>fn17321-1</qv> - waren sie noch ausführlicher). - Das <hi>heri</hi> im Brieftext bezieht sich offensichtlich auf das Empfangsdatum des Konstanzer Briefes, und vermutlich wurde der vorliegende lange Brief schon vor dem 1. November begonnen.</note> testati sunt.</s>
+					<s n="23" xml:lang="la" type="auto">Ego vero id facturos nihil dubitarem, modo non essent supplicum loco, sed domini, cui supplices tamen fiunt.</s>
+					<s n="24" xml:lang="la" type="auto">Tentavimus ergo omnia.</s>
+					<s n="25" xml:lang="la" type="auto">Proinde non nostra culpa se dedunt, et si qui in nos culpam reiiciunt, magna nos afficiunt iniuria!<note xml:id="fn20" type="footnote" n="20">Ein weiteres Indiz dafür, dass die Zürcher damals dazu neigten, die Schuld für das Scheitern der Verhandlungen zwischen den Konstanzern und den Eidgenossen den Ersteren zuzuschieben, findet sich in <abbr>HBBW</abbr> XIX 408,38-42.</note></s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">„Timetis,“ ais, „ubi<pb type="scan" next="181v."/> non erat timendum, adeo devoti estis Quinque pagicis<note xml:id="fn21" type="footnote" n="21">Die Fünf Orte (die Innerschweizer). - Bezug auf <ref target="file#13106">Nr. 3057</ref>,<qv>zl17324-10</qv>.</note>!“</s>
-					<s xml:lang="la" type="auto">Maliciosi profecto sunt et nihil aliud, qui tibi hoc ingerunt!</s>
-					<s xml:lang="la" type="auto">Quae, obsecro, timoris huius argumenta aediderunt nostri?</s>
-					<s xml:lang="la" type="auto">„Scripsistis nuper literas ad nostros,“ ais, „ex quibus timor ille satis constat.“<note xml:id="fn22" type="footnote" n="22">In <ref target="file#13106">Nr. 3057</ref>,<qv>zl17324-11</qv>.</note></s>
-					<s xml:lang="la" type="auto">Verum remove tu calumniatorem et non habebis argumentum!</s>
-					<s xml:lang="la" type="auto">Ego, quantum video et iudicare possum (coram domino loquor, quae dico), non possum quicquam timoris in nostris deprehendere.</s>
-					<s xml:lang="la" type="auto">Ita loquuntur unanimes omnes: Merentur peccata nostra flagellum, imo et excidium.</s>
-					<s xml:lang="la" type="auto">Si itaque subverterit nos caesar aut alius <pb type="edition" next="631"/> hostis, non est, quod quaeramus caussas.</s>
-					<s xml:lang="la" type="auto">Meruimus excidium.</s>
-					<s xml:lang="la" type="auto">Supplicabimus autem misericordiae eius.<note xml:id="fn23" type="footnote" n="23">dei.</note></s>
-					<s xml:lang="la" type="auto">Quodsi omnino pereundum est, concedat patientiam, concedat fortitudinem, et fortiter occumbemus, nec relinquemus incruentam hosti victoriam.<note xml:id="fn24" type="footnote" n="24">Vgl. <ref target="file#13084">Nr. 3035</ref>,<qv>zl17304-7</qv>; <ref target="file#13089">Nr. 3040</ref>,<qv>zl17309-13</qv>.</note></s>
-					<s xml:lang="la" type="auto">Quod si illi placuerimus, non erit ei difficile vel per paucos servare uxores, liberos, libertatem, patriam.</s>
-					<s xml:lang="la" type="auto">Ita omnes sumus (mihi crede) parati et stamus in procinctu, ut, quoquo vocarit nos dominus, sequamur.</s>
+					<s n="26" xml:lang="la" type="auto">„Timetis,“ ais, „ubi<pb type="scan" next="181v."/> non erat timendum, adeo devoti estis Quinque pagicis<note xml:id="fn21" type="footnote" n="21">Die Fünf Orte (die Innerschweizer). - Bezug auf <ref target="file13106">Nr. 3057</ref>,<qv>zl17324-10</qv>.</note>!“</s>
+					<s n="27" xml:lang="la" type="auto">Maliciosi profecto sunt et nihil aliud, qui tibi hoc ingerunt!</s>
+					<s n="28" xml:lang="la" type="auto">Quae, obsecro, timoris huius argumenta aediderunt nostri?</s>
+					<s n="29" xml:lang="la" type="auto">„Scripsistis nuper literas ad nostros,“ ais, „ex quibus timor ille satis constat.“<note xml:id="fn22" type="footnote" n="22">In <ref target="file13106">Nr. 3057</ref>,<qv>zl17324-11</qv>.</note></s>
+					<s n="30" xml:lang="la" type="auto">Verum remove tu calumniatorem et non habebis argumentum!</s>
+					<s n="31" xml:lang="la" type="auto">Ego, quantum video et iudicare possum (coram domino loquor, quae dico), non possum quicquam timoris in nostris deprehendere.</s>
+					<s n="32" xml:lang="la" type="auto">Ita loquuntur unanimes omnes: Merentur peccata nostra flagellum, imo et excidium.</s>
+					<s n="33" xml:lang="la" type="auto">Si itaque subverterit nos caesar aut alius <pb type="edition" next="631"/> hostis, non est, quod quaeramus caussas.</s>
+					<s n="34" xml:lang="la" type="auto">Meruimus excidium.</s>
+					<s n="35" xml:lang="la" type="auto">Supplicabimus autem misericordiae eius.<note xml:id="fn23" type="footnote" n="23">dei.</note></s>
+					<s n="36" xml:lang="la" type="auto">Quodsi omnino pereundum est, concedat patientiam, concedat fortitudinem, et fortiter occumbemus, nec relinquemus incruentam hosti victoriam.<note xml:id="fn24" type="footnote" n="24">Vgl. <ref target="file13084">Nr. 3035</ref>,<qv>zl17304-7</qv>; <ref target="file13089">Nr. 3040</ref>,<qv>zl17309-13</qv>.</note></s>
+					<s n="37" xml:lang="la" type="auto">Quod si illi placuerimus, non erit ei difficile vel per paucos servare uxores, liberos, libertatem, patriam.</s>
+					<s n="38" xml:lang="la" type="auto">Ita omnes sumus (mihi crede) parati et stamus in procinctu, ut, quoquo vocarit nos dominus, sequamur.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">De Quinque pagicis quid dicis?<note xml:id="fn25" type="footnote" n="25">Bullinger bezieht sich auf Myconius' Aussage in <ref target="file#13106">Nr. 3057</ref>,<qv>zl17324-3</qv>.</note></s>
-					<s xml:lang="la" type="auto">Sunt sane homines plus satis illis<note xml:id="fn26" type="footnote" n="26">Quinque pagicis.</note> devoti, sed minor pars.</s>
-					<s xml:lang="la" type="auto">Non secus atque Basileae, Bernae et aliis in locis huiusmodi homines inveniuntur.</s>
-					<s xml:lang="la" type="auto">Illudne, quod pauci faciunt, omnibus imputari debet?</s>
-					<s xml:lang="la" type="auto">Sunt in Quinque pagicis non pauci, quibus plus fido quam non paucis in urbibus.<note xml:id="fn27" type="footnote" n="27">Siehe dazu oben <qv>fn17331-5</qv>.</note></s>
-					<s xml:lang="la" type="auto">Honeste vivunt, Christo credunt, sub tyrannide vivunt.</s>
-					<s xml:lang="la" type="auto">At, ubi caesar aut alius hostis nos fuerit aggressus, spes est illos facturos suum officium, quamquam nihil spei in illos collocem, sed in deum dumtaxat.<note xml:id="fn28" type="footnote" n="28">Vgl. schon <ref target="file#13033">Nr. 2984</ref>,<qv>zl17249-19</qv>. - Wie Blarer (<abbr>HBBW</abbr> XVIII 186,29-33; 189,12-16; 384,20-24; XIX 215,16-18; 418,3-5; <abbr>Dobras, Ratsregiment</abbr> 143 und Anm. 675), Zwick (<abbr>Dobras, Ratsregiment</abbr> 67 und Anm. 139) und viele andere Zeitgenossen (s. <abbr>HBBW</abbr> XIX 24 und Anm. 69; 292f,29-32; 390,21-23) war Bullinger der Überzeugung, dass diejenigen, die ihr Vertrauen in irdische Mittel setzen, nicht auf Gottes Hilfe zählen dürfen; s. <abbr>HBBW</abbr> XVI 27f.</note></s>
-					<s xml:lang="la" type="auto">Si tamen tales<note xml:id="fn29" type="footnote" n="29">Gemeint sind die Innerschweizer. - Bemerkenswert ist, dass hier Bullingers Beurteilung der Innerschweizer viel positiver ausfällt als in <ref target="file#13111">Nr. 3062</ref>,<qv>zl17330-10</qv>. Allerdings beziehen sich Bullingers Aussagen in <ref target="file#13111">Nr. 3062</ref> eher auf die politischen Drahtzieher der Innerschweiz.<zfn>fn17331-7</zfn></note> venerint, 30 gratiores erunt quam promiscui vulgi 3000.<note xml:id="fn30" type="footnote" n="30">Vgl. dazu Ri 7, 1-22.</note></s>
+					<s n="39" xml:lang="la" type="auto">De Quinque pagicis quid dicis?<note xml:id="fn25" type="footnote" n="25">Bullinger bezieht sich auf Myconius' Aussage in <ref target="file13106">Nr. 3057</ref>,<qv>zl17324-3</qv>.</note></s>
+					<s n="40" xml:lang="la" type="auto">Sunt sane homines plus satis illis<note xml:id="fn26" type="footnote" n="26">Quinque pagicis.</note> devoti, sed minor pars.</s>
+					<s n="41" xml:lang="la" type="auto">Non secus atque Basileae, Bernae et aliis in locis huiusmodi homines inveniuntur.</s>
+					<s n="42" xml:lang="la" type="auto">Illudne, quod pauci faciunt, omnibus imputari debet?</s>
+					<s n="43" xml:lang="la" type="auto">Sunt in Quinque pagicis non pauci, quibus plus fido quam non paucis in urbibus.<note xml:id="fn27" type="footnote" n="27">Siehe dazu oben <qv>fn17331-5</qv>.</note></s>
+					<s n="44" xml:lang="la" type="auto">Honeste vivunt, Christo credunt, sub tyrannide vivunt.</s>
+					<s n="45" xml:lang="la" type="auto">At, ubi caesar aut alius hostis nos fuerit aggressus, spes est illos facturos suum officium, quamquam nihil spei in illos collocem, sed in deum dumtaxat.<note xml:id="fn28" type="footnote" n="28">Vgl. schon <ref target="file13033">Nr. 2984</ref>,<qv>zl17249-19</qv>. - Wie Blarer (<abbr>HBBW</abbr> XVIII 186,29-33; 189,12-16; 384,20-24; XIX 215,16-18; 418,3-5; <abbr>Dobras, Ratsregiment</abbr> 143 und Anm. 675), Zwick (<abbr>Dobras, Ratsregiment</abbr> 67 und Anm. 139) und viele andere Zeitgenossen (s. <abbr>HBBW</abbr> XIX 24 und Anm. 69; 292f,29-32; 390,21-23) war Bullinger der Überzeugung, dass diejenigen, die ihr Vertrauen in irdische Mittel setzen, nicht auf Gottes Hilfe zählen dürfen; s. <abbr>HBBW</abbr> XVI 27f.</note></s>
+					<s n="46" xml:lang="la" type="auto">Si tamen tales<note xml:id="fn29" type="footnote" n="29">Gemeint sind die Innerschweizer. - Bemerkenswert ist, dass hier Bullingers Beurteilung der Innerschweizer viel positiver ausfällt als in <ref target="file13111">Nr. 3062</ref>,<qv>zl17330-10</qv>. Allerdings beziehen sich Bullingers Aussagen in <ref target="file13111">Nr. 3062</ref> eher auf die politischen Drahtzieher der Innerschweiz.<zfn>fn17331-7</zfn></note> venerint, 30 gratiores erunt quam promiscui vulgi 3000.<note xml:id="fn30" type="footnote" n="30">Vgl. dazu Ri 7, 1-22.</note></s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Lucernae sunt aut fuerunt iam diebus aliquot legati caesaris, Galli, pontificis.<note xml:id="fn31" type="footnote" n="31">Paul III. - Zu den Namen aller hier erwähnten Gesandten s. die Anmerkungen zu <ref target="file#13111">Nr. 3062</ref>,<qv>zl17330-7</qv>.</note></s>
-					<s xml:lang="la" type="auto">Petunt nobiscum foedera caesar et Gallus, etc.</s>
-					<s xml:lang="la" type="auto">Nostri<note xml:id="fn32" type="footnote" n="32">Die Zürcher.</note> ergo horrent in hisce postulationibus a comitiis!</s>
-					<s xml:lang="la" type="auto">Scis, quid in iis fiat.<note xml:id="fn33" type="footnote" n="33">Nämlich, dass während solcher Tagsatzungen (in iis [comitiis]) die Befürworter des einen Bündnisses gegen die anderen aufgehetzt würden.</note></s>
-					<s xml:lang="la" type="auto">Ubi tamen per necessitatem omnino vocanda et indicenda sunt,<note xml:id="fn34" type="footnote" n="34">Zu verstehen: Wenn die Tagsatzung unbedingt einberufen und ausgeschrieben werden muss.</note> spero nostros sese defensioni altissimi<note xml:id="fn35" type="footnote" n="35">Gemeint ist Gott. - Bullinger war der Meinung, dass Gott den Seinen verbietet, Bündnisse mit Gottlosen zu schließen; s. z.B. <abbr>HBBW</abbr> XIX 32 und Anm. 129; <ref target="file#13009">Nr. 2960</ref>,<qv>zl17225-6</qv>; <ref target="file#13033">Nr. 2984</ref>,<qv>zl17249-18</qv>.</note> permissuros<note xml:id="fnf" type="footnote" n="f"><hi>In der Vorlage</hi> permissurros.</note> nec se ullo foedere vel caesari <pb type="scan" next="182r."/> vel Gallo coniuncturos.</s>
-					<s xml:lang="la" type="auto">Erunt ex Pagis et Urbibus, qui se volent Gallo, erunt, qui caesari se volent coniungere.</s>
-					<s xml:lang="la" type="auto">Ego utrumque aut alterutrum arbitror periculosum.<note xml:id="fn36" type="footnote" n="36">Vgl. auch Bullingers Überlegungen dazu in <ref target="file#13111">Nr. 3062</ref>,<qv>zl17330-8</qv>.</note></s>
-					<s xml:lang="la" type="auto">Si enim Gallo nos coniunxerimus, sprevimus caesarem; si caesari <pb type="edition" next="632"/> fuerimus confoederati, Gallum spernemus.</s>
-					<s xml:lang="la" type="auto">Neque vero integrum est cum utroque ferire!<note xml:id="fn37" type="footnote" n="37">Gemeint ist: ferire foedus (ein Bündnis eingehen).</note></s>
-					<s xml:lang="la" type="auto">Peccavimus<note xml:id="fn38" type="footnote" n="38">Subjekt sind die Eidgenossen.</note> maxime in foederibus;<note xml:id="fn39" type="footnote" n="39">Bullinger denkt hier u.a. an die "Erbeinung" von 1511 mit dem Reich, sowie an den "Ewigen Frieden" von 1516 und an das "Soldbündnis" von 1521 mit Frankreich; s. <ref target="file#12930">Nr. 2881</ref>, <qv>fn17147-5</qv>; <ref target="file#13025">Nr. 2976</ref>, <qv>fn17242-1</qv>; <ref target="file#13053">Nr. 3004</ref>, <qv>fn17271-1</qv>.</note> peccavimus in societate cum principibus inita<note xml:id="fn40" type="footnote" n="40">Bullinger denkt vermutlich ganz allgemein an alle Bündnisse, die im Laufe der Zeit von den Eidgenossen mit fremden Mächten geschlossen wurden, und vielleicht auch an das "Christliche Verständniß der Städte Zürich, Basel und Straßburg mit Landgraf Philipp von Hessen" vom 18. November 1530, das er in Zusammenhang mit der im Zweiten Kappeler Krieg erlittenen Niederlage gebracht haben könnte. Vielleicht sah er sogar in der Niederlage der Schmalkaldener eine von Gott bekundete Missbilligung des unter den protestantischen Fürsten Deutschlands 1531 geschlossenen Schmalkaldischen Bundes. - Zum "Christlichen Verständniß" s. <abbr>EA</abbr> IV/1b 837 b; 1514-1516 (Vertrag); <abbr>Z</abbr> VI/2 733-740.</note> - quos<note xml:id="fn41" type="footnote" n="41">= nos, quos.</note> dominus liberaverat a principum tyrannide.</s>
-					<s xml:lang="la" type="auto">Adsunt ergo principum legati auro tentantes, num possimus separari et scindi.</s>
-					<s xml:lang="la" type="auto">Dominus servet suam ecclesiam et consoletur electos!</s>
+					<s n="47" xml:lang="la" type="auto">Lucernae sunt aut fuerunt iam diebus aliquot legati caesaris, Galli, pontificis.<note xml:id="fn31" type="footnote" n="31">Paul III. - Zu den Namen aller hier erwähnten Gesandten s. die Anmerkungen zu <ref target="file13111">Nr. 3062</ref>,<qv>zl17330-7</qv>.</note></s>
+					<s n="48" xml:lang="la" type="auto">Petunt nobiscum foedera caesar et Gallus, etc.</s>
+					<s n="49" xml:lang="la" type="auto">Nostri<note xml:id="fn32" type="footnote" n="32">Die Zürcher.</note> ergo horrent in hisce postulationibus a comitiis!</s>
+					<s n="50" xml:lang="la" type="auto">Scis, quid in iis fiat.<note xml:id="fn33" type="footnote" n="33">Nämlich, dass während solcher Tagsatzungen (in iis [comitiis]) die Befürworter des einen Bündnisses gegen die anderen aufgehetzt würden.</note></s>
+					<s n="51" xml:lang="la" type="auto">Ubi tamen per necessitatem omnino vocanda et indicenda sunt,<note xml:id="fn34" type="footnote" n="34">Zu verstehen: Wenn die Tagsatzung unbedingt einberufen und ausgeschrieben werden muss.</note> spero nostros sese defensioni altissimi<note xml:id="fn35" type="footnote" n="35">Gemeint ist Gott. - Bullinger war der Meinung, dass Gott den Seinen verbietet, Bündnisse mit Gottlosen zu schließen; s. z.B. <abbr>HBBW</abbr> XIX 32 und Anm. 129; <ref target="file13009">Nr. 2960</ref>,<qv>zl17225-6</qv>; <ref target="file13033">Nr. 2984</ref>,<qv>zl17249-18</qv>.</note> permissuros<note xml:id="fnf" type="footnote" n="f"><hi>In der Vorlage</hi> permissurros.</note> nec se ullo foedere vel caesari <pb type="scan" next="182r."/> vel Gallo coniuncturos.</s>
+					<s n="52" xml:lang="la" type="auto">Erunt ex Pagis et Urbibus, qui se volent Gallo, erunt, qui caesari se volent coniungere.</s>
+					<s n="53" xml:lang="la" type="auto">Ego utrumque aut alterutrum arbitror periculosum.<note xml:id="fn36" type="footnote" n="36">Vgl. auch Bullingers Überlegungen dazu in <ref target="file13111">Nr. 3062</ref>,<qv>zl17330-8</qv>.</note></s>
+					<s n="54" xml:lang="la" type="auto">Si enim Gallo nos coniunxerimus, sprevimus caesarem; si caesari <pb type="edition" next="632"/> fuerimus confoederati, Gallum spernemus.</s>
+					<s n="55" xml:lang="la" type="auto">Neque vero integrum est cum utroque ferire!<note xml:id="fn37" type="footnote" n="37">Gemeint ist: ferire foedus (ein Bündnis eingehen).</note></s>
+					<s n="56" xml:lang="la" type="auto">Peccavimus<note xml:id="fn38" type="footnote" n="38">Subjekt sind die Eidgenossen.</note> maxime in foederibus;<note xml:id="fn39" type="footnote" n="39">Bullinger denkt hier u.a. an die "Erbeinung" von 1511 mit dem Reich, sowie an den "Ewigen Frieden" von 1516 und an das "Soldbündnis" von 1521 mit Frankreich; s. <ref target="file12930">Nr. 2881</ref>, <qv>fn17147-5</qv>; <ref target="file13025">Nr. 2976</ref>, <qv>fn17242-1</qv>; <ref target="file13053">Nr. 3004</ref>, <qv>fn17271-1</qv>.</note> peccavimus in societate cum principibus inita<note xml:id="fn40" type="footnote" n="40">Bullinger denkt vermutlich ganz allgemein an alle Bündnisse, die im Laufe der Zeit von den Eidgenossen mit fremden Mächten geschlossen wurden, und vielleicht auch an das "Christliche Verständniß der Städte Zürich, Basel und Straßburg mit Landgraf Philipp von Hessen" vom 18. November 1530, das er in Zusammenhang mit der im Zweiten Kappeler Krieg erlittenen Niederlage gebracht haben könnte. Vielleicht sah er sogar in der Niederlage der Schmalkaldener eine von Gott bekundete Missbilligung des unter den protestantischen Fürsten Deutschlands 1531 geschlossenen Schmalkaldischen Bundes. - Zum "Christlichen Verständniß" s. <abbr>EA</abbr> IV/1b 837 b; 1514-1516 (Vertrag); <abbr>Z</abbr> VI/2 733-740.</note> - quos<note xml:id="fn41" type="footnote" n="41">= nos, quos.</note> dominus liberaverat a principum tyrannide.</s>
+					<s n="57" xml:lang="la" type="auto">Adsunt ergo principum legati auro tentantes, num possimus separari et scindi.</s>
+					<s n="58" xml:lang="la" type="auto">Dominus servet suam ecclesiam et consoletur electos!</s>
 				</p>
 			</div>
 			<div xml:id="div6" corresp="regest6">
 				<p>
-					<s xml:lang="la" type="auto">Haec non apud quosvis effudissem.</s>
-					<s xml:lang="la" type="auto">In sinum tuum haec dixi.</s>
-					<s xml:lang="la" type="auto">Obtestor autem per amicitiam nostram, ne de his cuiquam quicquam dixeris!<ptr target="#fng" type="footnote" n="g"/></s>
-					<s xml:lang="la" type="auto">Si sensero te istarum rerum vel tantillum perscribere Argentinam, ego posthac ne literam quidem ad te scripsero!</s>
-					<s xml:lang="la" type="auto">Novimus hic, quales ibi habeamus amicos, B[ucerum] praecipue, ad quem te frequenter scribere aliunde habeo - quod ut liberum permitto ita de his nostris quicquam nolo!</s>
-					<s xml:lang="la" type="auto">Certa est caussa: Non ex odio (non enim odi quemquam deo gratia)<note xml:id="fnh" type="footnote" n="h"><hi>Dieses und die drei nächsten Klammerpaare ergänzt.</hi></note>, sed ex experientia.<note xml:id="fng" type="footnote" n="g"><hi>Dieses und die drei nächsten Klammerpaare ergänzt.</hi></note></s>
+					<s n="59" xml:lang="la" type="auto">Haec non apud quosvis effudissem.</s>
+					<s n="60" xml:lang="la" type="auto">In sinum tuum haec dixi.</s>
+					<s n="61" xml:lang="la" type="auto">Obtestor autem per amicitiam nostram, ne de his cuiquam quicquam dixeris!<ptr target="fng" type="footnote" n="g"/></s>
+					<s n="62" xml:lang="la" type="auto">Si sensero te istarum rerum vel tantillum perscribere Argentinam, ego posthac ne literam quidem ad te scripsero!</s>
+					<s n="63" xml:lang="la" type="auto">Novimus hic, quales ibi habeamus amicos, B[ucerum] praecipue, ad quem te frequenter scribere aliunde habeo - quod ut liberum permitto ita de his nostris quicquam nolo!</s>
+					<s n="64" xml:lang="la" type="auto">Certa est caussa: Non ex odio (non enim odi quemquam deo gratia)<note xml:id="fnh" type="footnote" n="h"><hi>Dieses und die drei nächsten Klammerpaare ergänzt.</hi></note>, sed ex experientia.<note xml:id="fng" type="footnote" n="g"><hi>Dieses und die drei nächsten Klammerpaare ergänzt.</hi></note></s>
 				</p>
 			</div>
 			<div xml:id="div7" corresp="regest7">
 				<p>
-					<s xml:lang="la" type="auto">Recte scribis<note xml:id="fn42" type="footnote" n="42">In <ref target="file#13106">Nr. 3057</ref>,<qv>zl17324-4</qv>.</note> periisse religionem in comitiis Augustanis.</s>
-					<s xml:lang="la" type="auto">Ego enim pridie literas accepi a praestantibus viris,<note xml:id="fn43" type="footnote" n="43">Gemeint ist Georg Frölichs Brief vom 25. Oktober; vgl. <ref target="file#13104">Nr. 3055</ref>,<qv>zl17323-5</qv> - Dass damals Bullinger von "bedeutenden Männern" noch weitere Briefe mit derartigen Aussagen erhalten hätte, kann nicht belegt werden. Vielleicht waren diese Briefe an andere Zürcher gerichtet.</note> qui non tantum desperarunt de religione, sed etiam de libertate.<note xml:id="fn44" type="footnote" n="44">Die Freiheit Deutschlands.</note></s>
-					<s xml:lang="la" type="auto">Metuunt, ne aliquando urbes<note xml:id="fn45" type="footnote" n="45">Nämlich die Reichsstädte, die sich dem Kaiser ergeben hatten.</note> et exactores et praefectos sint accepturae, vel invitae.</s>
+					<s n="65" xml:lang="la" type="auto">Recte scribis<note xml:id="fn42" type="footnote" n="42">In <ref target="file13106">Nr. 3057</ref>,<qv>zl17324-4</qv>.</note> periisse religionem in comitiis Augustanis.</s>
+					<s n="66" xml:lang="la" type="auto">Ego enim pridie literas accepi a praestantibus viris,<note xml:id="fn43" type="footnote" n="43">Gemeint ist Georg Frölichs Brief vom 25. Oktober; vgl. <ref target="file13104">Nr. 3055</ref>,<qv>zl17323-5</qv> - Dass damals Bullinger von "bedeutenden Männern" noch weitere Briefe mit derartigen Aussagen erhalten hätte, kann nicht belegt werden. Vielleicht waren diese Briefe an andere Zürcher gerichtet.</note> qui non tantum desperarunt de religione, sed etiam de libertate.<note xml:id="fn44" type="footnote" n="44">Die Freiheit Deutschlands.</note></s>
+					<s n="67" xml:lang="la" type="auto">Metuunt, ne aliquando urbes<note xml:id="fn45" type="footnote" n="45">Nämlich die Reichsstädte, die sich dem Kaiser ergeben hatten.</note> et exactores et praefectos sint accepturae, vel invitae.</s>
 				</p>
 			</div>
 			<div xml:id="div8" corresp="regest8">
 				<p>
-					<s xml:lang="de" type="auto">Houptman Schnabel von Brägentz<note xml:id="fn46" type="footnote" n="46">Hans Schnabel von Schönstein aus Bregenz.</note> sol obrister vom keyser über 6000 über das gepirg hinyn<note xml:id="fn47" type="footnote" n="47">Zu verstehen: Über die Alpen hinüber nach Italien.</note> geordnet sin<note xml:id="fn48" type="footnote" n="48">geordnet sin: ernannt worden sein.</note>, sampt marchis de Muͦß<note xml:id="fn49" type="footnote" n="49">Markgraf Gian Giacomo de' Medici, Kastellan von Musso.</note> (ist über<pb type="edition" next="633"/> ettlich tusend pferden<note xml:id="fni" type="footnote" n="i"><hi>Am Rande nachgetragen.</hi></note> obrister): Ettlich meinend, in Italiam wider Octavianum<note xml:id="fn50" type="footnote" n="50">Ottavio Farnese, Enkel des Papsts. - Zu den Umständen s. <ref target="file#13065">Nr. 3016</ref>, <qv>fn17284-2</qv>.</note> zuͦ Parma, ettlich, in das Bemond<note xml:id="fn51" type="footnote" n="51">Piemont.</note>, etc.</s>
-					<s xml:lang="la" type="auto">Sic Vadianus.<note xml:id="fn52" type="footnote" n="52">Nämlich in dessen Brief vom 27. Oktober; s. <ref target="file#13107">Nr. 3058</ref>,[5]. - Als mutmaßlichen Bestimmungsort dieses Heeres führt Vadian allerdings nur das Piemont an.</note></s>
+					<s n="68" xml:lang="de" type="auto">Houptman Schnabel von Brägentz<note xml:id="fn46" type="footnote" n="46">Hans Schnabel von Schönstein aus Bregenz.</note> sol obrister vom keyser über 6000 über das gepirg hinyn<note xml:id="fn47" type="footnote" n="47">Zu verstehen: Über die Alpen hinüber nach Italien.</note> geordnet sin<note xml:id="fn48" type="footnote" n="48">geordnet sin: ernannt worden sein.</note>, sampt marchis de Muͦß<note xml:id="fn49" type="footnote" n="49">Markgraf Gian Giacomo de' Medici, Kastellan von Musso.</note> (ist über<pb type="edition" next="633"/> ettlich tusend pferden<note xml:id="fni" type="footnote" n="i"><hi>Am Rande nachgetragen.</hi></note> obrister): Ettlich meinend, in Italiam wider Octavianum<note xml:id="fn50" type="footnote" n="50">Ottavio Farnese, Enkel des Papsts. - Zu den Umständen s. <ref target="file13065">Nr. 3016</ref>, <qv>fn17284-2</qv>.</note> zuͦ Parma, ettlich, in das Bemond<note xml:id="fn51" type="footnote" n="51">Piemont.</note>, etc.</s>
+					<s n="69" xml:lang="la" type="auto">Sic Vadianus.<note xml:id="fn52" type="footnote" n="52">Nämlich in dessen Brief vom 27. Oktober; s. <ref target="file13107">Nr. 3058</ref>,[5]. - Als mutmaßlichen Bestimmungsort dieses Heeres führt Vadian allerdings nur das Piemont an.</note></s>
 				</p>
 			</div>
 			<div xml:id="div9" corresp="regest9">
 				<p>
-					<s xml:lang="la" type="auto">Gaudeo dominum Anglis adesse;<note xml:id="fn53" type="footnote" n="53">Bezug auf Myconius' Mitteilung in <ref target="file#13106">Nr. 3057</ref>,<qv>zl17324-7</qv>.</note> sed interim audio regiam navem a Gallis raptam,<note xml:id="fn54" type="footnote" n="54">Siehe dazu Bullingers Mitteilung an Vadian in <ref target="file#13111">Nr. 3062</ref>,<qv>zl17330-9</qv>.</note> quae res novo bello, nisi restituatur, uberem praebebit materiam.</s>
+					<s n="70" xml:lang="la" type="auto">Gaudeo dominum Anglis adesse;<note xml:id="fn53" type="footnote" n="53">Bezug auf Myconius' Mitteilung in <ref target="file13106">Nr. 3057</ref>,<qv>zl17324-7</qv>.</note> sed interim audio regiam navem a Gallis raptam,<note xml:id="fn54" type="footnote" n="54">Siehe dazu Bullingers Mitteilung an Vadian in <ref target="file13111">Nr. 3062</ref>,<qv>zl17330-9</qv>.</note> quae res novo bello, nisi restituatur, uberem praebebit materiam.</s>
 				</p>
 			</div>
 			<div xml:id="div10" corresp="regest10">
 				<p>
-					<s xml:lang="la" type="auto">Doleo Gallum se eo libidinis genere commaculare,<note xml:id="fn55" type="footnote" n="55">Bezug auf Myconius' Mitteilung in <ref target="file#13106">Nr. 3057</ref>,<qv>zl17324-6</qv>, laut der König Heinrich II. mit derselben Frau (Diana von Poitiers) wie sein Vater, Franz I., sexuellen Verkehr hatte.</note> quod Paulus inter gentes quoque appellavit inominatum.<note xml:id="fn56" type="footnote" n="56">Anspielung auf Eph 5, 3. - In seinen In omnes Apostolicas epistolas commentarii, Zürich 1544 (<abbr>VD16</abbr> B4972), S. 438, unterstreicht Bullinger im Zusammenhang mit diesem Bibelvers, dass laut Paulus die sexuellen Vergehen nicht nur (als Sünde) verboten seien, sondern "vel nominasse turpissimum [est ...]; Germani eadem loquendi forma utentes dicimus: 'Es hat nun nit nammen! Man soll nun nit nemmen [= benennen]!' Id est, tam turpe est, ut ne nominari quidem mereatur, sed praestet memoriam eius omnino esse abolitam."</note></s>
-					<s xml:lang="la" type="auto">Verum oportebit aliquando Galliam et Helvetiam coniungi (utinam vanus sim vates!) et commeritam recipere mercedem.<note xml:id="fn57" type="footnote" n="57">Vgl. Röm 1, 27.</note></s>
-					<s xml:lang="la" type="auto">Sunt enim in Helvetiis, qui sibi persuasum habent Helvetiam a caesare non posse nisi Galli armis defendi.</s>
+					<s n="71" xml:lang="la" type="auto">Doleo Gallum se eo libidinis genere commaculare,<note xml:id="fn55" type="footnote" n="55">Bezug auf Myconius' Mitteilung in <ref target="file13106">Nr. 3057</ref>,<qv>zl17324-6</qv>, laut der König Heinrich II. mit derselben Frau (Diana von Poitiers) wie sein Vater, Franz I., sexuellen Verkehr hatte.</note> quod Paulus inter gentes quoque appellavit inominatum.<note xml:id="fn56" type="footnote" n="56">Anspielung auf Eph 5, 3. - In seinen In omnes Apostolicas epistolas commentarii, Zürich 1544 (<abbr>VD16</abbr> B4972), S. 438, unterstreicht Bullinger im Zusammenhang mit diesem Bibelvers, dass laut Paulus die sexuellen Vergehen nicht nur (als Sünde) verboten seien, sondern "vel nominasse turpissimum [est ...]; Germani eadem loquendi forma utentes dicimus: 'Es hat nun nit nammen! Man soll nun nit nemmen [= benennen]!' Id est, tam turpe est, ut ne nominari quidem mereatur, sed praestet memoriam eius omnino esse abolitam."</note></s>
+					<s n="72" xml:lang="la" type="auto">Verum oportebit aliquando Galliam et Helvetiam coniungi (utinam vanus sim vates!) et commeritam recipere mercedem.<note xml:id="fn57" type="footnote" n="57">Vgl. Röm 1, 27.</note></s>
+					<s n="73" xml:lang="la" type="auto">Sunt enim in Helvetiis, qui sibi persuasum habent Helvetiam a caesare non posse nisi Galli armis defendi.</s>
 				</p>
 			</div>
 			<div xml:id="div11" corresp="regest11">
 				<p>
-					<s xml:lang="la" type="auto">Literas Butlero<note xml:id="fn58" type="footnote" n="58">Der in Konstanz wohnende John Butler. - Siehe dazu <ref target="file#13106">Nr. 3057</ref>,<qv>zl17324-8</qv>.</note> curavi reddi; et habet illas iamiam.</s>
-					<s xml:lang="la" type="auto">Dedi urbis Constantiensis tabellario.<note xml:id="fn59" type="footnote" n="59">Der in <ref target="file#13108">Nr. 3059</ref>, <qv>fn17326-1</qv>, Ende Oktober in Zürich belegte, aber namentlich nicht bekannte Konstanzer Bote.</note></s>
+					<s n="74" xml:lang="la" type="auto">Literas Butlero<note xml:id="fn58" type="footnote" n="58">Der in Konstanz wohnende John Butler. - Siehe dazu <ref target="file13106">Nr. 3057</ref>,<qv>zl17324-8</qv>.</note> curavi reddi; et habet illas iamiam.</s>
+					<s n="75" xml:lang="la" type="auto">Dedi urbis Constantiensis tabellario.<note xml:id="fn59" type="footnote" n="59">Der in <ref target="file13108">Nr. 3059</ref>, <qv>fn17326-1</qv>, Ende Oktober in Zürich belegte, aber namentlich nicht bekannte Konstanzer Bote.</note></s>
 				</p>
 			</div>
 			<div xml:id="div12" corresp="regest12">
 				<p>
-					<s xml:lang="la" type="auto">Bene actum est cum optimo viro Winkeli.<note xml:id="fn60" type="footnote" n="60">Hans Heinrich Winkeli. - Bezug auf <ref target="file#13106">Nr. 3057</ref>,<qv>zl17324-9</qv>.</note></s>
-					<s xml:lang="la" type="auto">Dominus servet nos omnes!</s>
+					<s n="76" xml:lang="la" type="auto">Bene actum est cum optimo viro Winkeli.<note xml:id="fn60" type="footnote" n="60">Hans Heinrich Winkeli. - Bezug auf <ref target="file13106">Nr. 3057</ref>,<qv>zl17324-9</qv>.</note></s>
+					<s n="77" xml:lang="la" type="auto">Dominus servet nos omnes!</s>
 				</p>
 			</div>
 			<div xml:id="div13" corresp="regest13">
 				<p>
-					<s xml:lang="la" type="auto">Vide, quam fuerim prolixus, ne dicas me brevem!</s>
-					<s xml:lang="la" type="auto">Vale aeternum.</s>
-					<s xml:lang="la" type="auto">Tiguri, 1. novembris 1547.</s>
+					<s n="78" xml:lang="la" type="auto">Vide, quam fuerim prolixus, ne dicas me brevem!</s>
+					<s n="79" xml:lang="la" type="auto">Vale aeternum.</s>
+					<s n="80" xml:lang="la" type="auto">Tiguri, 1. novembris 1547.</s>
 				</p>
 				<p>
 					<note type="signature">[Ohne Unterschrift.]</note>
@@ -379,21 +387,21 @@
 			</div>
 			<div xml:id="div14" corresp="regest14">
 				<p>
-					<s xml:lang="la" type="auto"><pb type="scan" next="182v."/>Hodie<note xml:id="fn61" type="footnote" n="61">Zur hier angesprochenen Angelegenheit s. auch <ref target="file#13111">Nr. 3062</ref>,<qv>zl17330-14</qv>.</note> demum conscribuntur comitia Badenam<note xml:id="fn62" type="footnote" n="62">Es kam also zu der von Bullinger oben in Z. <qv>zl17331-6</qv> befürchteten Einberufung von einer Tagsatzung. - Die Tagsatzung sollte in Baden erst am Dienstag den 22. November 1547 beginnen und bis kurz nach dem 29. November dauern; s. <ref target="file#13141">Nr. 3092</ref>, <qv>fn17362-1</qv>. Deren Akten sind in <abbr>EA</abbr> VI/1d 885-891 veröffentlicht.<zfn>fn17331-2</zfn></note> ad 20. huius mensis, si recte memini, nam Svitenses habent, quod omnibus Helvetiis proponere cupiant de Bellizona,<note xml:id="fn63" type="footnote" n="63">Es grassierte damals das Gerücht, dass von Como aus (damals Teil des unter spanischer Kontrolle stehenden Herzogtums Mailand) ein militärischer Anschlag gegen die von den drei Orten Uri, Schwyz und Unterwalden verwaltete gemeinsame Herrschaft (Vogtei) Bellinzona (Bellenz oder Belletz) geplant war - ein Gerücht, das sich schließlich als falsch erwies, und dessentwegen die Repräsentanten des Kaisers in Mailand, Giovanni Angelo Ritio und Giovanni Domenico Panizzone, den Eidgenossen am 15. November ein Schreiben zukommen ließen, in dem den Letzteren vorgeworfen wird, dass sie "den Zusicherungen des Kaisers und Don Fernands [= Ferrante I. Gonzaga, Statthalter von Mailand] so wenig Glauben schenken"; s. <abbr>EA</abbr> IV/1d 878, Nr. 406 zu d; 887 n und 892 n.4, <ref target="file#10444">Nr. 409</ref>. - Die drei betroffenen Orte wollten u.a. bei ihren Verbündeten eine finanzielle Unterstützung beantragen; s. <abbr>EA</abbr> IV/1d 838f, <ref target="file#10416">Nr. 382</ref>; 855f, <ref target="file#10432">Nr. 397</ref>; 858-862, <ref target="file#10434">Nr. 399</ref>f; 869-871, <ref target="file#10437">Nr. 402</ref>f; 887 und 892 zu n 2., <ref target="file#10444">Nr. 409</ref>.<zfn>fn17331-6</zfn></note> etc.<pb type="edition" next="634"/></s>
-					<s xml:lang="de" type="auto">2. novembris.</s>
+					<s n="81" xml:lang="la" type="auto"><pb type="scan" next="182v."/>Hodie<note xml:id="fn61" type="footnote" n="61">Zur hier angesprochenen Angelegenheit s. auch <ref target="file13111">Nr. 3062</ref>,<qv>zl17330-14</qv>.</note> demum conscribuntur comitia Badenam<note xml:id="fn62" type="footnote" n="62">Es kam also zu der von Bullinger oben in Z. <qv>zl17331-6</qv> befürchteten Einberufung von einer Tagsatzung. - Die Tagsatzung sollte in Baden erst am Dienstag den 22. November 1547 beginnen und bis kurz nach dem 29. November dauern; s. <ref target="file13141">Nr. 3092</ref>, <qv>fn17362-1</qv>. Deren Akten sind in <abbr>EA</abbr> VI/1d 885-891 veröffentlicht.<zfn>fn17331-2</zfn></note> ad 20. huius mensis, si recte memini, nam Svitenses habent, quod omnibus Helvetiis proponere cupiant de Bellizona,<note xml:id="fn63" type="footnote" n="63">Es grassierte damals das Gerücht, dass von Como aus (damals Teil des unter spanischer Kontrolle stehenden Herzogtums Mailand) ein militärischer Anschlag gegen die von den drei Orten Uri, Schwyz und Unterwalden verwaltete gemeinsame Herrschaft (Vogtei) Bellinzona (Bellenz oder Belletz) geplant war - ein Gerücht, das sich schließlich als falsch erwies, und dessentwegen die Repräsentanten des Kaisers in Mailand, Giovanni Angelo Ritio und Giovanni Domenico Panizzone, den Eidgenossen am 15. November ein Schreiben zukommen ließen, in dem den Letzteren vorgeworfen wird, dass sie "den Zusicherungen des Kaisers und Don Fernands [= Ferrante I. Gonzaga, Statthalter von Mailand] so wenig Glauben schenken"; s. <abbr>EA</abbr> IV/1d 878, Nr. 406 zu d; 887 n und 892 n.4, <ref target="file10444">Nr. 409</ref>. - Die drei betroffenen Orte wollten u.a. bei ihren Verbündeten eine finanzielle Unterstützung beantragen; s. <abbr>EA</abbr> IV/1d 838f, <ref target="file10416">Nr. 382</ref>; 855f, <ref target="file10432">Nr. 397</ref>; 858-862, <ref target="file10434">Nr. 399</ref>f; 869-871, <ref target="file10437">Nr. 402</ref>f; 887 und 892 zu n 2., <ref target="file10444">Nr. 409</ref>.<zfn>fn17331-6</zfn></note> etc.<pb type="edition" next="634"/></s>
+					<s n="82" xml:lang="de" type="auto">2. novembris.</s>
 				</p>
 			</div>
 			<div xml:id="div15" corresp="regest15">
 				<p>
-					<s xml:lang="de" type="auto">Sy<note xml:id="fn64" type="footnote" n="64">Uri, Schwyz und Unterwalden.</note> habend den zuͦsatz<note xml:id="fn65" type="footnote" n="65">Garnison.</note> umb 21 man gesterckt.</s>
-					<s xml:lang="de" type="auto">Wöllend dem keyser wenig truwen: Also lut ir schryben, etc.</s>
-					<s xml:lang="de" type="auto">Wir söllend gen Belletz hinyn ziehen und unsers hie uß<note xml:id="fn66" type="footnote" n="66">Mit "hie uß" sind die sich nicht wie die Herrschaft Bellinzona im Gebirge befindlichen, sondern hauptsächlich in der Nähe von Seen liegenden benachbarten Vogteien Lugano (Lauis) und Locarno (Luggarus) gemeint, die damals von fast allen Orten der Eidgenossenschaft (daher das "unser") verwaltet wurden.</note> lassen bloß stan.<note xml:id="fn67" type="footnote" n="67">bloß stan: unverteidigt stehen.</note></s>
-					<s xml:lang="de" type="auto">Wenn es sich fuͦgte<note xml:id="fn68" type="footnote" n="68">es sich fuͦgte: es dazu käme.</note>, das sy mitt iren<note xml:id="fn69" type="footnote" n="69">zuͦsatz (ihrer Garnison).</note> nodt (dainn<note xml:id="fn70" type="footnote" n="70">darin.</note> imm pirg<note xml:id="fn71" type="footnote" n="71">Gebirge.</note>) ze schaffen hättind<note xml:id="fn72" type="footnote" n="72">nodt ze schaffen hättind: gezwungen wären, etwas auszurichten [hier in Zusammenhang mit einem etwaigen kaiserlichen Angriff von Mailand aus].</note>, und wir uns hie uß mitt gott alein erweren<note xml:id="fn73" type="footnote" n="73">verteidigen.</note> muͤstind, hätte ich die best hoffnung, die sach wurde wol gan<note xml:id="fn74" type="footnote" n="74">wol gan: gut ausgehen.</note>, etc.</s>
+					<s n="83" xml:lang="de" type="auto">Sy<note xml:id="fn64" type="footnote" n="64">Uri, Schwyz und Unterwalden.</note> habend den zuͦsatz<note xml:id="fn65" type="footnote" n="65">Garnison.</note> umb 21 man gesterckt.</s>
+					<s n="84" xml:lang="de" type="auto">Wöllend dem keyser wenig truwen: Also lut ir schryben, etc.</s>
+					<s n="85" xml:lang="de" type="auto">Wir söllend gen Belletz hinyn ziehen und unsers hie uß<note xml:id="fn66" type="footnote" n="66">Mit "hie uß" sind die sich nicht wie die Herrschaft Bellinzona im Gebirge befindlichen, sondern hauptsächlich in der Nähe von Seen liegenden benachbarten Vogteien Lugano (Lauis) und Locarno (Luggarus) gemeint, die damals von fast allen Orten der Eidgenossenschaft (daher das "unser") verwaltet wurden.</note> lassen bloß stan.<note xml:id="fn67" type="footnote" n="67">bloß stan: unverteidigt stehen.</note></s>
+					<s n="86" xml:lang="de" type="auto">Wenn es sich fuͦgte<note xml:id="fn68" type="footnote" n="68">es sich fuͦgte: es dazu käme.</note>, das sy mitt iren<note xml:id="fn69" type="footnote" n="69">zuͦsatz (ihrer Garnison).</note> nodt (dainn<note xml:id="fn70" type="footnote" n="70">darin.</note> imm pirg<note xml:id="fn71" type="footnote" n="71">Gebirge.</note>) ze schaffen hättind<note xml:id="fn72" type="footnote" n="72">nodt ze schaffen hättind: gezwungen wären, etwas auszurichten [hier in Zusammenhang mit einem etwaigen kaiserlichen Angriff von Mailand aus].</note>, und wir uns hie uß mitt gott alein erweren<note xml:id="fn73" type="footnote" n="73">verteidigen.</note> muͤstind, hätte ich die best hoffnung, die sach wurde wol gan<note xml:id="fn74" type="footnote" n="74">wol gan: gut ausgehen.</note>, etc.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse darunter:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Osvaldo Myconio, Basiliensis ecclesiae fidelissimo ministro, domino et fratri suo semper colendo.</s>
-					<s xml:lang="de" type="auto">Basel.</s>
+					<s n="87" xml:lang="la" type="auto">Clarissimo viro d. Osvaldo Myconio, Basiliensis ecclesiae fidelissimo ministro, domino et fratri suo semper colendo.</s>
+					<s n="88" xml:lang="de" type="auto">Basel.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2019"/>
-				<idno type="ISBN">ISBN 978-3-290-18186-4</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2863</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18186-4</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2863</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 19</title>
+				<title subtype="publication">HBBW XIX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">19</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 338,1453</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 338,1453</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,34 +50,34 @@
 						<summary>
 							<p xml:id="regest1">
 								[1] Nun kommt (wie bereits angekündigt mit dem Brief [nicht erhalten], den
-								<persName ref="19">Blarer</persName> dem Boten [...] Bullingers mitgeben hatte) der Diener [...] von
+								<persName ref="person19">Blarer</persName> dem Boten [...] Bullingers mitgeben hatte) der Diener [...] von
 								Marcell Dietrich von Schankwitz. Er reicht den Antrag [zum Kauf des Schlosses
 								Dübelstein bei den Zürcher Behörden] ein. Bullinger soll sich an
-								<persName ref="19">Blarers</persName> Anweisungen halten, wenn man sich bei ihm erkundigt.
+								<persName ref="person19">Blarers</persName> Anweisungen halten, wenn man sich bei ihm erkundigt.
 								</p>
 								<p xml:id="regest2">
-								[2] Hauptmann [<persName ref="2085">Hans</persName>] <persName ref="2085">Schnabel</persName>
-								[von <persName ref="2085">Schönstein</persName>], der nun in
-								<placeName ref="795">Nürnberg</placeName> ist, soll in der Schlacht [bei
-								<placeName ref="1646">Rochlitz</placeName>] (die der Kurfürst Johann Friedrich von
-								<placeName ref="74">Sachsen</placeName> für sich entschieden hat) einen Arm verloren haben.
+								[2] Hauptmann [Hans] Schnabel
+								[von Schönstein], der nun in
+								<placeName ref="place795">Nürnberg</placeName> ist, soll in der Schlacht [bei
+								<placeName ref="place1646">Rochlitz</placeName>] (die der Kurfürst Johann Friedrich von
+								<placeName ref="place74">Sachsen</placeName> für sich entschieden hat) einen Arm verloren haben.
 								</p>
 								<p xml:id="regest3">
-								[3] Gestern traf ein Schreiben des <placeName ref="565">Konstanzer</placeName> Boten
-								[<persName ref="2085">Hans</persName>] Wolff ein, der am 1. März mit Briefen nach
-								<placeName ref="74">Sachsen</placeName> gesandt wurde. Darin berichtet er, wie er von zwei im
+								[3] Gestern traf ein Schreiben des <placeName ref="place565">Konstanzer</placeName> Boten
+								[Hans] Wolff ein, der am 1. März mit Briefen nach
+								<placeName ref="place74">Sachsen</placeName> gesandt wurde. Darin berichtet er, wie er von zwei im
 								Dienste Maximilians von Egmont, des Grafen von Büren, stehenden Adligen festgenommen wurde und die Briefe
 								(darunter auch die des Sebastian Schertlin) beschlagnahmt wurden. Sie hielten ihn lange gefangen, damit die
-								<placeName ref="565">Konstanzer</placeName> nicht sogleich vom Verlust ihrer Briefe erfahren
+								<placeName ref="place565">Konstanzer</placeName> nicht sogleich vom Verlust ihrer Briefe erfahren
 								würden. Er musste ein hohes Lösegeld von 100 Talern bezahlen. Für den Rat scheint der Verlust der Briefe
 								weniger schlimm als für Schertlin zu sein.
 								</p>
 								<p xml:id="regest4">
-								[4] Bullinger möge für die <placeName ref="565">Konstanzer</placeName> beten. Grüße.
+								[4] Bullinger möge für die <placeName ref="place565">Konstanzer</placeName> beten. Grüße.
 								</p>
 								<p xml:id="regest5">
-								[5] Es sollen sich viele Abgeordnete nach <placeName ref="85">Baden</placeName> [zur Tagsatzung]
-								begeben. In <placeName ref="570">Kreuzlingen</placeName> wirbt man Knechte [für Kaiser Karl V.] an.
+								[5] Es sollen sich viele Abgeordnete nach <placeName ref="place85">Baden</placeName> [zur Tagsatzung]
+								begeben. In <placeName ref="place570">Kreuzlingen</placeName> wirbt man Knechte [für Kaiser Karl V.] an.
 								Der Herr verleihe endlich Frieden!
 							</p>
 						</summary>
@@ -92,46 +95,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12912">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="high">
+					<!--
+					<persName ref="person392" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#257" cert="low">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="high"/>
+					<place source="place257" cert="low"/>
 					<date when="1547-03-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12913"/>
-					<ref type="prev_chronologically" target="files.xml#12911"/>
-					<ref type="next_correspondence" target="files.xml#12930"/>
-					<ref type="prev_correspondence" target="files.xml#12911"/>
-					<ref type="next_correspondence_request" target="files.xml#12935"/>
-					<ref type="prev_correspondence_request" target="files.xml#12911"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12930"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12891"/>
-					<ref type="next_same_sender" target="files.xml#12935"/>
-					<ref type="prev_same_sender" target="files.xml#12911"/>
-					<ref type="next_same_addressee" target="files.xml#12921"/>
-					<ref type="prev_same_addressee" target="files.xml#12906"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12935"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12911"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12921"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12906"/>
+					<ref type="next_chronologically" target="file12913"/>
+					<ref type="prev_chronologically" target="file12911"/>
+					<ref type="next_correspondence" target="file12930"/>
+					<ref type="prev_correspondence" target="file12911"/>
+					<ref type="next_correspondence_request" target="file12935"/>
+					<ref type="prev_correspondence_request" target="file12911"/>
+					<ref type="next_correspondence_reaction" target="file12930"/>
+					<ref type="prev_correspondence_reaction" target="file12891"/>
+					<ref type="next_same_sender" target="file12935"/>
+					<ref type="prev_same_sender" target="file12911"/>
+					<ref type="next_same_addressee" target="file12921"/>
+					<ref type="prev_same_addressee" target="file12906"/>
+					<ref type="next_with_sender_as_addressee" target="file12935"/>
+					<ref type="prev_with_sender_as_addressee" target="file12911"/>
+					<ref type="next_with_addressee_as_sender" target="file12921"/>
+					<ref type="prev_with_addressee_as_sender" target="file12906"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -149,47 +156,47 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Lieber her und getruwester, vertrauwtester bruͦder.</s>
-					<s xml:lang="de" type="auto">Zoͤger<note xml:id="fn1" type="footnote" n="1">Der Briefüberbringer.</note> ist des Marcell Dietrichs knecht<note xml:id="fn2" type="footnote" n="2">Unbekannter Diener von Marcell Dietrich von Schankwitz.</note>, davon ich euch by ewerm botten<note xml:id="fn3" type="footnote" n="3">Unbekannt.</note> geschriben hab<note xml:id="fn4" type="footnote" n="4">Nicht erhalten.</note>, das er den bschaid<note xml:id="fn5" type="footnote" n="5">Antrag (mit dem Dietrich auf <persName ref="1930">Gotthard Richmuts</persName> Offerte. das Schloss Dübelstein von ihm zu kaufen, antwortete); s. <hi>SI</hi> VIII 216. - Siehe dazu <ref target="file#12891">Nr. 2842</ref>,34-37. Offensichtlich hatte sich Schankwitz nach kurzem Zögern (s. <ref target="file#12896">Nr. 2847</ref>,15f) doch noch entschieden, den Kauf zu beantragen.</note> by euch raichen<note xml:id="fn6" type="footnote" n="6">einreichen.</note> werd.</s>
-					<s xml:lang="de" type="auto">Da wellt nun meinem vertrauwen nach anzoͤgung thain<note xml:id="fn7" type="footnote" n="7">tun.</note> aller puncten halber, wie ich euch davon geschriben.</s>
+					<s n="1" xml:lang="de" type="auto">Lieber her und getruwester, vertrauwtester bruͦder.</s>
+					<s n="2" xml:lang="de" type="auto">Zoͤger<note xml:id="fn1" type="footnote" n="1">Der Briefüberbringer.</note> ist des Marcell Dietrichs knecht<note xml:id="fn2" type="footnote" n="2">Unbekannter Diener von Marcell Dietrich von Schankwitz.</note>, davon ich euch by ewerm botten<note xml:id="fn3" type="footnote" n="3">Unbekannt.</note> geschriben hab<note xml:id="fn4" type="footnote" n="4">Nicht erhalten.</note>, das er den bschaid<note xml:id="fn5" type="footnote" n="5">Antrag (mit dem Dietrich auf <persName ref="person1930">Gotthard Richmuts</persName> Offerte. das Schloss Dübelstein von ihm zu kaufen, antwortete); s. <hi>SI</hi> VIII 216. - Siehe dazu <ref target="file12891">Nr. 2842</ref>,34-37. Offensichtlich hatte sich Schankwitz nach kurzem Zögern (s. <ref target="file12896">Nr. 2847</ref>,15f) doch noch entschieden, den Kauf zu beantragen.</note> by euch raichen<note xml:id="fn6" type="footnote" n="6">einreichen.</note> werd.</s>
+					<s n="3" xml:lang="de" type="auto">Da wellt nun meinem vertrauwen nach anzoͤgung thain<note xml:id="fn7" type="footnote" n="7">tun.</note> aller puncten halber, wie ich euch davon geschriben.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="de" type="auto">Sonst haben wir sydher nichts news, dann das hoptman <persName ref="2085">Schnabel</persName><note xml:id="fn8" type="footnote" n="8"><persName ref="2085">Hans Schnabel</persName> d.J. von Schönstem, kaiserlicher Hauptmann.</note> zuͦ Nuͤremberg lige.</s>
-					<s xml:lang="de" type="auto">Habe ain arm gar verloren vom lyb in der ainen schlacht, die der churfurst<note xml:id="fn9" type="footnote" n="9">Johann Friedrich I. von <placeName ref="74">Sachsen</placeName>. - Gemeint ist die Schlacht bei <placeName ref="1646">Rochlitz</placeName>; s. <ref target="file#12881">Nr. 2832</ref>, Anm. 35.</note> erobert hat.</s>
+					<s n="4" xml:lang="de" type="auto">Sonst haben wir sydher nichts news, dann das hoptman <persName ref="person2085">Schnabel</persName><note xml:id="fn8" type="footnote" n="8">Hans Schnabel d.J. von Schönstem, kaiserlicher Hauptmann.</note> zuͦ Nuͤremberg lige.</s>
+					<s n="5" xml:lang="de" type="auto">Habe ain arm gar verloren vom lyb in der ainen schlacht, die der churfurst<note xml:id="fn9" type="footnote" n="9">Johann Friedrich I. von <placeName ref="place74">Sachsen</placeName>. - Gemeint ist die Schlacht bei <placeName ref="place1646">Rochlitz</placeName>; s. <ref target="file12881">Nr. 2832</ref>, Anm. 35.</note> erobert hat.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="de" type="auto">Ouch ist meinen herren ir uberrüter<note xml:id="fn10" type="footnote" n="10">berittener Amtsdiener bzw. Bote; s. <hi>SI</hi> VI 1680.</note>, ainer mytt namen Wolff<note xml:id="fn11" type="footnote" n="11">Vermutlich <persName ref="2085">Hans</persName> Wolff. der in der <placeName ref="565">Konstanzer</placeName> Steuerliste des Jahres 1547 (Steuerbücher der Stadt <placeName ref="565">Konstanz</placeName>, Bd. 3: 1540-1620, bearb. v Peter Rüster, <placeName ref="565">Konstanz</placeName> 1966, S. 53, <ref target="file#11304">Nr. 1261</ref>) bezeugt ist, sowie in: Die Firma Felix und Jakob Grimmel zu <placeName ref="565">Konstanz</placeName> und <placeName ref="697">Memmingen</placeName>. Quellen und Materialien zu einer oberdeutschen Handelsgesellschaft aus der Mitte des 16. Jahrhunderts, hg. von Frank Göttman und Andreas Nutz, Stuttgart 1999, S. 44, wo er vor 1560 als Stadtknecht von <placeName ref="565">Konstanz</placeName> nachgewiesen ist.</note>, den sy <foreign xml:lang="la">prima martii</foreign> mitt brieffen in <placeName ref="74">Sachsen</placeName> geschickt haben, nidergelegt<note xml:id="fn12" type="footnote" n="12">festgenommen.</note> worden von zwayen edelleuten<note xml:id="fn13" type="footnote" n="13">Unbekannt.</note>, dem von Peuren<note xml:id="fn14" type="footnote" n="14">Maximilian von Egmont, Graf von Büren.</note> zuͦgehoͤrig.</s>
-					<s xml:lang="de" type="auto">Habend im all brieff genommen (dann<note xml:id="fn15" type="footnote" n="15">bei welcher Gelegenheit.</note> der Schertle<note xml:id="fn16" type="footnote" n="16">Sebastian Schertlin.</note> hat ouch brieff dabey gehapt)<note xml:id="fna" type="footnote" n="a"><hi>Klammern ergänzt.</hi></note> und inn sydert ye<note xml:id="fn17" type="footnote" n="17">sydert ye: von dann an lange.</note> uffgehalten, damitt man maine, die brieff seyen gefertiget<note xml:id="fn18" type="footnote" n="18">überbracht; s. <hi>SI</hi> I 1003.</note> worden, und man nitt gleych ander moͤchte hinein geschickt haben.</s>
-					<s xml:lang="de" type="auto">Sy habend inn gerantzet.<note xml:id="fn19" type="footnote" n="19">inn gerantzet: Lösegeld von ihm gefordert.</note></s>
-					<s xml:lang="de" type="auto">Kostet inn vyl: Muͦß inen darzuͦ hundert taler geben!</s>
-					<s xml:lang="de" type="auto">Hat necht<note xml:id="fn20" type="footnote" n="20">gestern Abend.</note> minen herren zuͦgeschriben.</s>
-					<s xml:lang="de" type="auto">Allso geht es in der wellt.</s>
-					<s xml:lang="de" type="auto">Ich merck wol, das meinen herren an den brieffen nitt sonders gelegen.<note xml:id="fn21" type="footnote" n="21">Gemeint ist, dass die Ratsherren den Verlust der beschlagnahmten Briefe nicht sonderlich bedauern.</note></s>
-					<s xml:lang="de" type="auto">Aber mit dem Schertle ists etwas fahrlicher<note xml:id="fn22" type="footnote" n="22">gefährlicher (in Bezug auf Schertlins beschlagnahmte Briefe).</note>, doch ouch nitt alls gar boͤß, etc.</s>
+					<s n="6" xml:lang="de" type="auto">Ouch ist meinen herren ir uberrüter<note xml:id="fn10" type="footnote" n="10">berittener Amtsdiener bzw. Bote; s. <hi>SI</hi> VI 1680.</note>, ainer mytt namen Wolff<note xml:id="fn11" type="footnote" n="11">Vermutlich Hans Wolff. der in der <placeName ref="place565">Konstanzer</placeName> Steuerliste des Jahres 1547 (Steuerbücher der Stadt <placeName ref="place565">Konstanz</placeName>, Bd. 3: 1540-1620, bearb. v Peter Rüster, <placeName ref="place565">Konstanz</placeName> 1966, S. 53, <ref target="file11304">Nr. 1261</ref>) bezeugt ist, sowie in: Die Firma Felix und Jakob Grimmel zu <placeName ref="place565">Konstanz</placeName> und <placeName ref="place697">Memmingen</placeName>. Quellen und Materialien zu einer oberdeutschen Handelsgesellschaft aus der Mitte des 16. Jahrhunderts, hg. von Frank Göttman und Andreas Nutz, Stuttgart 1999, S. 44, wo er vor 1560 als Stadtknecht von <placeName ref="place565">Konstanz</placeName> nachgewiesen ist.</note>, den sy <foreign xml:lang="la">prima martii</foreign> mitt brieffen in <placeName ref="place74">Sachsen</placeName> geschickt haben, nidergelegt<note xml:id="fn12" type="footnote" n="12">festgenommen.</note> worden von zwayen edelleuten<note xml:id="fn13" type="footnote" n="13">Unbekannt.</note>, dem von Peuren<note xml:id="fn14" type="footnote" n="14">Maximilian von Egmont, Graf von Büren.</note> zuͦgehoͤrig.</s>
+					<s n="7" xml:lang="de" type="auto">Habend im all brieff genommen (dann<note xml:id="fn15" type="footnote" n="15">bei welcher Gelegenheit.</note> der Schertle<note xml:id="fn16" type="footnote" n="16">Sebastian Schertlin.</note> hat ouch brieff dabey gehapt)<note xml:id="fna" type="footnote" n="a"><hi>Klammern ergänzt.</hi></note> und inn sydert ye<note xml:id="fn17" type="footnote" n="17">sydert ye: von dann an lange.</note> uffgehalten, damitt man maine, die brieff seyen gefertiget<note xml:id="fn18" type="footnote" n="18">überbracht; s. <hi>SI</hi> I 1003.</note> worden, und man nitt gleych ander moͤchte hinein geschickt haben.</s>
+					<s n="8" xml:lang="de" type="auto">Sy habend inn gerantzet.<note xml:id="fn19" type="footnote" n="19">inn gerantzet: Lösegeld von ihm gefordert.</note></s>
+					<s n="9" xml:lang="de" type="auto">Kostet inn vyl: Muͦß inen darzuͦ hundert taler geben!</s>
+					<s n="10" xml:lang="de" type="auto">Hat necht<note xml:id="fn20" type="footnote" n="20">gestern Abend.</note> minen herren zuͦgeschriben.</s>
+					<s n="11" xml:lang="de" type="auto">Allso geht es in der wellt.</s>
+					<s n="12" xml:lang="de" type="auto">Ich merck wol, das meinen herren an den brieffen nitt sonders gelegen.<note xml:id="fn21" type="footnote" n="21">Gemeint ist, dass die Ratsherren den Verlust der beschlagnahmten Briefe nicht sonderlich bedauern.</note></s>
+					<s n="13" xml:lang="de" type="auto">Aber mit dem Schertle ists etwas fahrlicher<note xml:id="fn22" type="footnote" n="22">gefährlicher (in Bezug auf Schertlins beschlagnahmte Briefe).</note>, doch ouch nitt alls gar boͤß, etc.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="de" type="auto">Damitt dem herren gott zytlich und ewig<note xml:id="fn23" type="footnote" n="23">zytlich und ewig: im Diesseits und Jenseits.</note> bevolchen.</s>
-					<s xml:lang="de" type="auto">Den bittend on uffhoͤren fuͤr unß.</s>
-					<s xml:lang="de" type="auto">Gruͤzt die ewern all und seind von den unsern ouch gegruͤzt.</s>
-					<s xml:lang="de" type="auto">Datum den 28. mertz.<pb type="edition" next="457"/></s>
+					<s n="14" xml:lang="de" type="auto">Damitt dem herren gott zytlich und ewig<note xml:id="fn23" type="footnote" n="23">zytlich und ewig: im Diesseits und Jenseits.</note> bevolchen.</s>
+					<s n="15" xml:lang="de" type="auto">Den bittend on uffhoͤren fuͤr unß.</s>
+					<s n="16" xml:lang="de" type="auto">Gruͤzt die ewern all und seind von den unsern ouch gegruͤzt.</s>
+					<s n="17" xml:lang="de" type="auto">Datum den 28. mertz.<pb type="edition" next="457"/></s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="de" type="auto">Man sagt, es seye ain treffelich zuͦryten gen <placeName ref="85">Baden</placeName>.<note xml:id="fn24" type="footnote" n="24">Zu der am 28. März begonnenen Tagsatzung von <placeName ref="85">Baden</placeName> s. <ref target="file#12911">Nr. 2862</ref>, Anm. <hi>58.</hi></note></s>
-					<s xml:lang="de" type="auto">So<note xml:id="fn25" type="footnote" n="25">Auch.</note> gibt man schon gelt ausß den kechten zuͦ Creuzlingen.<note xml:id="fn26" type="footnote" n="26">Vermutlich ist hier von einer Söldneranwerbung für Kaiser Karl V. die Rede; vgl. <hi>EA</hi> IV/1d 798 g.</note></s>
-					<s xml:lang="de" type="auto">Gott verhelff unß ainmal<note xml:id="fn27" type="footnote" n="27">endlich.</note> zum ewigen friden.</s>
-					<s xml:lang="la" type="auto">Amb[rosius] Bl[arer].</s>
+					<s n="18" xml:lang="de" type="auto">Man sagt, es seye ain treffelich zuͦryten gen <placeName ref="place85">Baden</placeName>.<note xml:id="fn24" type="footnote" n="24">Zu der am 28. März begonnenen Tagsatzung von <placeName ref="place85">Baden</placeName> s. <ref target="file12911">Nr. 2862</ref>, Anm. 58.</note></s>
+					<s n="19" xml:lang="de" type="auto">So<note xml:id="fn25" type="footnote" n="25">Auch.</note> gibt man schon gelt ausß den kechten zuͦ Creuzlingen.<note xml:id="fn26" type="footnote" n="26">Vermutlich ist hier von einer Söldneranwerbung für Kaiser Karl V. die Rede; vgl. <hi>EA</hi> IV/1d 798 g.</note></s>
+					<s n="20" xml:lang="de" type="auto">Gott verhelff unß ainmal<note xml:id="fn27" type="footnote" n="27">endlich.</note> zum ewigen friden.</s>
+					<s n="21" xml:lang="la" type="auto">Amb[rosius] Bl[arer].</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite]</note>
-					<s xml:lang="de" type="auto">An maister Hainrich Bullinger zuͦ Zuͤrich.</s>
+					<s n="22" xml:lang="de" type="auto">An maister Hainrich Bullinger zuͦ Zuͤrich.</s>
 				</p>
 			</div>
 		</body>

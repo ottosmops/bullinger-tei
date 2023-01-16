@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms A 44, p.709-710</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms A 44, p.709-710</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -32,59 +35,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9008">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date when="1572-09-00" cert="low"><note>Datum unsicher: 1572 September nach 1.</note></date>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
+					<date notBefore="1572-09-01" notAfter="1572-09-12" cert="low"><note>Datum unsicher: 1572 September nach 1.</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1764" cert="low">
+					<!--
+					<persName ref="person1764" cert="low">
 						<forename cert="low">Johannes</forename>
 						<surname cert="low">Kambli</surname>
-						<addName type="main">Kambli, Johannes (Kleinhans)</addName>
-						<roleName type="title">
-							<name type="plural" ref="role#14" cert="low">Bürgermeister</name>
-							<place source="#587" cert="low">
-								<settlement>Zürich</settlement>
-								<district>Zürich</district>
-								<country>Schweiz</country>
-								<geo>47.370093 8.544054</geo>
-							</place>
-						</roleName>
+						<persName type="main" ref="person8392>Kambli, Johannes (Kleinhans)</addName>
+						<personGrp ref="role28" role="Bürgermeister"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person1764" cert="low"/>
+					<personGrp ref="role28" role="Bürgermeister"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9006"/>
-					<ref type="prev_chronologically" target="files.xml#9005"/>
-					<ref type="next_correspondence" target="files.xml#9928"/>
-					<ref type="prev_correspondence" target="files.xml#4545"/>
-					<ref type="next_correspondence_request" target="files.xml#9928"/>
-					<ref type="prev_correspondence_request" target="files.xml#4545"/>
+					<ref type="next_chronologically" target="file9006"/>
+					<ref type="prev_chronologically" target="file9005"/>
+					<ref type="next_correspondence" target="file9928"/>
+					<ref type="prev_correspondence" target="file4545"/>
+					<ref type="next_correspondence_request" target="file9928"/>
+					<ref type="prev_correspondence_request" target="file4545"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3037"/>
-					<ref type="next_same_sender" target="files.xml#9007"/>
-					<ref type="prev_same_sender" target="files.xml#9005"/>
+					<ref type="prev_correspondence_reaction" target="file3037"/>
+					<ref type="next_same_sender" target="file9007"/>
+					<ref type="prev_same_sender" target="file9005"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#3037"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9007"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9005"/>
+					<ref type="prev_same_addressee" target="file3037"/>
+					<ref type="next_with_sender_as_addressee" target="file9007"/>
+					<ref type="prev_with_sender_as_addressee" target="file9005"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3037"/>
+					<ref type="prev_with_addressee_as_sender" target="file3037"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

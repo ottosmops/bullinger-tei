@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=53</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=53</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20 (Anhang)</title>
+				<title subtype="publication">HBBW XX (Anhang)</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,578v.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,578v.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -64,39 +67,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10082">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<date min="1532-01-00" max="1552-10-00" cert="low"/>
+					-->
+					<persName ref="person495" cert="high"/>
+					<date notBefore="1532-01-01" notAfter="1552-10-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
+					-->
+					<persName ref="person2234" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10091"/>
-					<ref type="prev_chronologically" target="files.xml#10081"/>
-					<ref type="next_correspondence" target="files.xml#10124"/>
+					<ref type="next_chronologically" target="file10091"/>
+					<ref type="prev_chronologically" target="file10081"/>
+					<ref type="next_correspondence" target="file10124"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#10274"/>
+					<ref type="next_correspondence_request" target="file10274"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#10124"/>
+					<ref type="next_correspondence_reaction" target="file10124"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10091"/>
-					<ref type="prev_same_sender" target="files.xml#10078"/>
-					<ref type="next_same_addressee" target="files.xml#10124"/>
+					<ref type="next_same_sender" target="file10091"/>
+					<ref type="prev_same_sender" target="file10078"/>
+					<ref type="next_same_addressee" target="file10124"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10091"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10078"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10124"/>
+					<ref type="next_with_sender_as_addressee" target="file10091"/>
+					<ref type="prev_with_sender_as_addressee" target="file10078"/>
+					<ref type="next_with_addressee_as_sender" target="file10124"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -113,7 +126,7 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Has literas, oro, mi Myconi, quam primum licet et certo Ar[gent]oratum<note xml:id="fnb" type="footnote" n="b">Textverlust durch Papierverlust.</note> perferri cures.</s>
+					<s n="1" xml:lang="la" type="auto">Has literas, oro, mi Myconi, quam primum licet et certo Ar[gent]oratum<note xml:id="fnb" type="footnote" n="b">Textverlust durch Papierverlust.</note> perferri cures.</s>
 				</p>
 				<p>
 					<note type="signature">[Ohne Unterschrift.]</note>

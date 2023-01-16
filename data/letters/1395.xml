@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2566</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 377,2700</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 377,2700</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,14 +47,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 74,84</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">eingeordnet Ende Feb. 1551, mit versch. Datierungs-Erwägungen, Feb./Juni/Ende 1551</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 74,84</idno>
+						<idno subtype="Hinweis">eingeordnet Ende Feb. 1551, mit versch. Datierungs-Erwägungen, Feb./Juni/Ende 1551</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -65,50 +71,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1395">
 				<correspAction type="sent">
-					<persName ref="person#1854" cert="low">
+					<!--
+					<persName ref="person1854" cert="low">
 						<forename cert="low">Erhard</forename>
 						<surname cert="low">von Kunheim</surname>
-						<addName type="main">Kunheim, Erhard</addName>
+						<persName type="main" ref="person1851>Kunheim, Erhard</addName>
 					</persName>
-					<place source="#558" cert="low">
-						<settlement>Wittenberg</settlement>
-						<district>Sachsen-Anhalt</district>
-						<country>Deutschland</country>
-						<geo>51.866667 12.643333</geo>
-					</place>
+					-->
+					<persName ref="person1854" cert="low"/>
+					<place source="place558" cert="low"/>
 					<date when="1551-09-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1396"/>
-					<ref type="prev_chronologically" target="files.xml#1394"/>
+					<ref type="next_chronologically" target="file1396"/>
+					<ref type="prev_chronologically" target="file1394"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#1383"/>
+					<ref type="prev_correspondence" target="file1383"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#1383"/>
+					<ref type="prev_correspondence_request" target="file1383"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#1383"/>
-					<ref type="next_same_addressee" target="files.xml#1399"/>
-					<ref type="prev_same_addressee" target="files.xml#1392"/>
+					<ref type="prev_same_sender" target="file1383"/>
+					<ref type="next_same_addressee" target="file1399"/>
+					<ref type="prev_same_addressee" target="file1392"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1383"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1399"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1392"/>
+					<ref type="prev_with_sender_as_addressee" target="file1383"/>
+					<ref type="next_with_addressee_as_sender" target="file1399"/>
+					<ref type="prev_with_addressee_as_sender" target="file1392"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -118,36 +122,39 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="1395/Autograph/00 E_II_377__fol__2700_r_.tif" n="1"/>
+		<graphic url="1395/Autograph/01 E_II_377__fol__2700_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Qualis nunc sit status horum locorum, pręstantissime d. Bullingere, te ex proximis literis meis, quas ad te scripsi ante dies forte 14, intellexisse non dubito.</s>
-					<s xml:lang="la" type="auto">Nunc vero, etsi nihil habeam, quod tibi significem, tamen nolui hunc tabellarium sine literis meis ad te venire ac obnixe peto, ut hoc ipso nuncio mihi rescribas, et si quid novi excusum est, literis adiungas.</s>
-					<s xml:lang="la" type="auto">Petii antea, ut breviter mihi iudicium tuum de dogmate novi hospitis nostri in Prussia, Osiandri videlicet, communicares, quia non dubito te pleraque scripta eius iam legisse.</s>
-					<s xml:lang="la" type="auto">Idem nunc quoque peto simulque oro, ut epistolam tuam ad Hungaros scriptam, quam diu iam ad me misisti, imprimi cures; quotquot enim viderunt et legerunt eam, nihil magis optant, quam ut in lucem prodeat et nulli non sit communis et familiarissima, hoc praesertim tempore turbulento et periculoso.</s>
-					<s xml:lang="la" type="auto">Id si obtinuero, ita me tibi devinctum reddes, ut nullum habeas magis devinctum magisque cupidum tibi quibuscunque officiis pro facultate gratificandi.</s>
-					<s xml:lang="la" type="auto">Salutabis meo nomine reverenter d. Pellicanum, d. Bybliandrum et d. Lęlium Socinum, quorum responsum toto hoc anno expectavi avidissime.</s>
-					<s xml:lang="la" type="auto">Sed quia nihil accepi, valde cogor dubitare, an etiam literę meę ipsis fuerint gratę.</s>
-					<s xml:lang="la" type="auto">Nihilominus tamen eos ex animo diligo et veneror eisque qualicunque officia mea libens offero.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Qualis nunc sit status horum locorum, pręstantissime d. Bullingere, te ex proximis literis meis, quas ad te scripsi ante dies forte 14, intellexisse non dubito.</s>
+					<s n="3" xml:lang="la" type="auto">Nunc vero, etsi nihil habeam, quod tibi significem, tamen nolui hunc tabellarium sine literis meis ad te venire ac obnixe peto, ut hoc ipso nuncio mihi rescribas, et si quid novi excusum est, literis adiungas.</s>
+					<s n="4" xml:lang="la" type="auto">Petii antea, ut breviter mihi iudicium tuum de dogmate novi hospitis nostri in Prussia, Osiandri videlicet, communicares, quia non dubito te pleraque scripta eius iam legisse.</s>
+					<s n="5" xml:lang="la" type="auto">Idem nunc quoque peto simulque oro, ut epistolam tuam ad Hungaros scriptam, quam diu iam ad me misisti, imprimi cures; quotquot enim viderunt et legerunt eam, nihil magis optant, quam ut in lucem prodeat et nulli non sit communis et familiarissima, hoc praesertim tempore turbulento et periculoso.</s>
+					<s n="6" xml:lang="la" type="auto">Id si obtinuero, ita me tibi devinctum reddes, ut nullum habeas magis devinctum magisque cupidum tibi quibuscunque officiis pro facultate gratificandi.</s>
+					<s n="7" xml:lang="la" type="auto">Salutabis meo nomine reverenter d. Pellicanum, d. Bybliandrum et d. Lęlium Socinum, quorum responsum toto hoc anno expectavi avidissime.</s>
+					<s n="8" xml:lang="la" type="auto">Sed quia nihil accepi, valde cogor dubitare, an etiam literę meę ipsis fuerint gratę.</s>
+					<s n="9" xml:lang="la" type="auto">Nihilominus tamen eos ex animo diligo et veneror eisque qualicunque officia mea libens offero.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Feliciter cum tuis omnibus, vir pręstantissime, vale, me ama et rescribe.</s>
+					<s n="10" xml:lang="la" type="auto">Feliciter cum tuis omnibus, vir pręstantissime, vale, me ama et rescribe.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Erhardus a Künheim.</s>
+					<s n="11" xml:lang="la" type="auto">Tuus Erhardus a Künheim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Rogo vehementer, ut hoc tabellario respondeas, etiamsi non scripseris, tamen, nisi attulerit literis, nuncio non credam.</s>
-					<s xml:lang="la" type="auto">Nisi molestum esset, optarem ex animo, ut et alii scriberent.</s>
+					<s n="12" xml:lang="la" type="auto">Rogo vehementer, ut hoc tabellario respondeas, etiamsi non scripseris, tamen, nisi attulerit literis, nuncio non credam.</s>
+					<s n="13" xml:lang="la" type="auto">Nisi molestum esset, optarem ex animo, ut et alii scriberent.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro eruditione, virtute et pietate excellenti d. Henrico Bullingero, domino suo plurimum observando.</s>
+					<s n="14" xml:lang="la" type="auto">Clarissimo viro eruditione, virtute et pietate excellenti d. Henrico Bullingero, domino suo plurimum observando.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Zürych.</s>
+					<s n="15" xml:lang="de" type="auto">Zürych.</s>
 				</p>
 			</div>
 		</body>

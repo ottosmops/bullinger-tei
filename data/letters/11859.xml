@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2008"/>
-				<idno type="ISBN">ISBN 978-3-290-17459-0</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1813</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17459-0</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1813</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 13</title>
+				<title subtype="publication">HBBW XIII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">13</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 368,463 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 368,463 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -68,51 +71,59 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11859">
 				<correspAction type="sent">
-					<persName ref="person#987" cert="high">
+					<!--
+					<persName ref="person987" cert="high">
 						<forename cert="high">Bartolomeo</forename>
 						<surname cert="high">del Prato</surname>
-						<addName type="main">Del Prato, Bartolomeo</addName>
+						<persName type="main" ref="person8325>Del Prato, Bartolomeo</addName>
 					</persName>
-					<place source="#522" cert="high">
-						<settlement>Venedig</settlement>
-						<district>Veneto</district>
-						<country>Italien</country>
-						<geo>45.43713 12.33265</geo>
-					</place>
+					-->
+					<persName ref="person987" cert="high"/>
+					<place source="place522" cert="high"/>
 					<date when="1543-11-11" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11860"/>
-					<ref type="prev_chronologically" target="files.xml#11858"/>
-					<ref type="next_correspondence" target="files.xml#12923"/>
-					<ref type="prev_correspondence" target="files.xml#11817"/>
-					<ref type="next_correspondence_request" target="files.xml#12923"/>
-					<ref type="prev_correspondence_request" target="files.xml#11817"/>
+					<ref type="next_chronologically" target="file11860"/>
+					<ref type="prev_chronologically" target="file11858"/>
+					<ref type="next_correspondence" target="file12923"/>
+					<ref type="prev_correspondence" target="file11817"/>
+					<ref type="next_correspondence_request" target="file12923"/>
+					<ref type="prev_correspondence_request" target="file11817"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#12923"/>
-					<ref type="prev_same_sender" target="files.xml#11817"/>
-					<ref type="next_same_addressee" target="files.xml#11865"/>
-					<ref type="prev_same_addressee" target="files.xml#11856"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12923"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11817"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11865"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11856"/>
+					<ref type="next_same_sender" target="file12923"/>
+					<ref type="prev_same_sender" target="file11817"/>
+					<ref type="next_same_addressee" target="file11865"/>
+					<ref type="prev_same_addressee" target="file11856"/>
+					<ref type="next_with_sender_as_addressee" target="file12923"/>
+					<ref type="prev_with_sender_as_addressee" target="file11817"/>
+					<ref type="next_with_addressee_as_sender" target="file11865"/>
+					<ref type="prev_with_addressee_as_sender" target="file11856"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="11859/Autograph/00 E_II_368__S__463_.tif" n="1"/>
+		<graphic url="11859/Autograph/01 E_II_368__S__464_.tif" n="2"/>
+		<graphic url="11859/Autograph/02 E_II_368__S__464_a_.tif" n="3"/>
+		<graphic url="11859/Autograph/03 E_II_368__S__464_b_.tif" n="4"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 			<div xml:id="div1" corresp="regest1">

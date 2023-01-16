@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5221/103</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 375,569</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 375,569</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 95,41</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 95,41</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -68,50 +74,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3987">
 				<correspAction type="sent">
-					<persName ref="person#1075" cert="high">
+					<!--
+					<persName ref="person1075" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Fabricius</surname>
-						<addName type="main">Fabricius Montanus (Schmid), Johannes</addName>
+						<persName type="main" ref="person8009>Fabricius Montanus (Schmid), Johannes</addName>
 						<graphic type="portrait" url="portraits/1075_Fabricius_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Fabricius_Montanus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104045698"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414870"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person1075" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1559-06-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3988"/>
-					<ref type="prev_chronologically" target="files.xml#3986"/>
-					<ref type="next_correspondence" target="files.xml#3999"/>
-					<ref type="prev_correspondence" target="files.xml#3983"/>
-					<ref type="next_correspondence_request" target="files.xml#4009"/>
-					<ref type="prev_correspondence_request" target="files.xml#3983"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3999"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3974"/>
-					<ref type="next_same_sender" target="files.xml#4009"/>
-					<ref type="prev_same_sender" target="files.xml#3983"/>
-					<ref type="next_same_addressee" target="files.xml#3992"/>
-					<ref type="prev_same_addressee" target="files.xml#3982"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4009"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3983"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3992"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3982"/>
+					<ref type="next_chronologically" target="file3988"/>
+					<ref type="prev_chronologically" target="file3986"/>
+					<ref type="next_correspondence" target="file3999"/>
+					<ref type="prev_correspondence" target="file3983"/>
+					<ref type="next_correspondence_request" target="file4009"/>
+					<ref type="prev_correspondence_request" target="file3983"/>
+					<ref type="next_correspondence_reaction" target="file3999"/>
+					<ref type="prev_correspondence_reaction" target="file3974"/>
+					<ref type="next_same_sender" target="file4009"/>
+					<ref type="prev_same_sender" target="file3983"/>
+					<ref type="next_same_addressee" target="file3992"/>
+					<ref type="prev_same_addressee" target="file3982"/>
+					<ref type="next_with_sender_as_addressee" target="file4009"/>
+					<ref type="prev_with_sender_as_addressee" target="file3983"/>
+					<ref type="next_with_addressee_as_sender" target="file3992"/>
+					<ref type="prev_with_addressee_as_sender" target="file3982"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -120,46 +128,49 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="3987/Autograph/00 E_II_375__fol__569_r_.tif" n="1"/>
+		<graphic url="3987/Autograph/01 E_II_375__fol__569_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Literae tuae, vir clarissime idemque in Christo pater reverende, non parum me perculerunt: videor enim prospicere maximos motus.</s>
-					<s xml:lang="la" type="auto">Sed solatur me id ipsum, quod te, tunc maxime deus praesto est, cum suis dormitare videtur.</s>
-					<s xml:lang="la" type="auto">Fides etiam christiana palma instar per adversa feliciter eluctatur.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Literae tuae, vir clarissime idemque in Christo pater reverende, non parum me perculerunt: videor enim prospicere maximos motus.</s>
+					<s n="3" xml:lang="la" type="auto">Sed solatur me id ipsum, quod te, tunc maxime deus praesto est, cum suis dormitare videtur.</s>
+					<s n="4" xml:lang="la" type="auto">Fides etiam christiana palma instar per adversa feliciter eluctatur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vivit adhuc, qui in alto sedet, et ridet eorum consilia, quae et dissipat, ut suum stabiliat in aeternum.</s>
-					<s xml:lang="la" type="auto">Coniunx mea mihi officia vestra plena humanitatis et benevolentiae summopere praedicavit.</s>
-					<s xml:lang="la" type="auto">Plus tibi tuisque debeo, quam solvere possim.</s>
+					<s n="5" xml:lang="la" type="auto">Vivit adhuc, qui in alto sedet, et ridet eorum consilia, quae et dissipat, ut suum stabiliat in aeternum.</s>
+					<s n="6" xml:lang="la" type="auto">Coniunx mea mihi officia vestra plena humanitatis et benevolentiae summopere praedicavit.</s>
+					<s n="7" xml:lang="la" type="auto">Plus tibi tuisque debeo, quam solvere possim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Episcopus noster hodie cum suo comitatu profectus est; (a. R. "fart ouch gaan Meerspurg") in via templum dicitur consecrare velle zuͦ Feldkirch uff dem gottsacker etc.</s>
-					<s xml:lang="la" type="auto">Legatus regius et ipse expectat, quando a rege suo evocetur in Galliam; operam dat sedulo, ut videatur catholicus.</s>
-					<s xml:lang="la" type="auto">Mobile mutatur semper cum principe vulgus, nec tamen noster non vult esse, ita ut in illum quadrare possit illud: Vox Iacob, sed manus Esau etc.</s>
+					<s n="8" xml:lang="la" type="auto">Episcopus noster hodie cum suo comitatu profectus est; (a. R. "fart ouch gaan Meerspurg") in via templum dicitur consecrare velle zuͦ Feldkirch uff dem gottsacker etc.</s>
+					<s n="9" xml:lang="la" type="auto">Legatus regius et ipse expectat, quando a rege suo evocetur in Galliam; operam dat sedulo, ut videatur catholicus.</s>
+					<s n="10" xml:lang="la" type="auto">Mobile mutatur semper cum principe vulgus, nec tamen noster non vult esse, ita ut in illum quadrare possit illud: Vox Iacob, sed manus Esau etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Novi nunc plane nihil habemus.</s>
+					<s n="11" xml:lang="la" type="auto">Novi nunc plane nihil habemus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Haec scripsi sero, cum iam redissemus ex Alpibus.</s>
+					<s n="12" xml:lang="la" type="auto">Haec scripsi sero, cum iam redissemus ex Alpibus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Resalutant te nostri omnes.</s>
+					<s n="13" xml:lang="la" type="auto">Resalutant te nostri omnes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, vir clarissime, cum tuis omnibus.</s>
+					<s n="14" xml:lang="la" type="auto">Vale, vir clarissime, cum tuis omnibus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Curiae 10. iunii anno 1559.</s>
+					<s n="15" xml:lang="la" type="auto">Curiae 10. iunii anno 1559.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ioannes Fabritius tui observantissimus.</s>
+					<s n="16" xml:lang="la" type="auto">Ioannes Fabritius tui observantissimus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro eruditione et pietate excellenti, d. Heinrycho Bullingero, ecclesiae Tigurinae antistiti vigilantissimo, d. et patrono suo plurimum colendo.</s>
+					<s n="17" xml:lang="la" type="auto">Clarissimo viro eruditione et pietate excellenti, d. Heinrycho Bullingero, ecclesiae Tigurinae antistiti vigilantissimo, d. et patrono suo plurimum colendo.</s>
 				</p>
 			</div>
 		</body>

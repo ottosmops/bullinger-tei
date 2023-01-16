@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3414</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 366,68</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 366,68</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#28">Basel</settlement>
-						<institution>Universitätsbibliothek</institution>
-						<idno type="Kopie">G 2 I 28a, f. 112v-114v, Nr. XXX</idno>
-						<repository ref="archive#6">
+						<!--
+						<repository ref="archive6">
 							<name>Basel UB</name>
 							<ref target="https://ub.unibas.ch/de"/>
 						</repository>
+						<settlement ref="place28">Basel</settlement>
+						<institution>Universitätsbibliothek</institution>
+						-->
+						<repository ref="archive6"/>
+						<idno subtype="Kopie">G 2 I 28a, f. 112v-114v, Nr. XXX</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -65,13 +71,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 80,230</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 80,230</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -80,51 +89,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2129">
 				<correspAction type="sent">
-					<persName ref="person#745" cert="high">
+					<!--
+					<persName ref="person745" cert="high">
 						<forename cert="high">Coelius Secundus</forename>
 						<surname cert="high">Curio</surname>
-						<addName type="main">Curione, Celio Secondo</addName>
+						<persName type="main" ref="person714>Curione, Celio Secondo</addName>
+						<graphic type="portrait" url="portraits/714_Curione_Celio_Secondo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Celio_Secondo_Curione"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/10407440X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414681"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person745" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1553-12-29" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2130"/>
-					<ref type="prev_chronologically" target="files.xml#2128"/>
-					<ref type="next_correspondence" target="files.xml#2164"/>
-					<ref type="prev_correspondence" target="files.xml#2014"/>
-					<ref type="next_correspondence_request" target="files.xml#2164"/>
-					<ref type="prev_correspondence_request" target="files.xml#1991"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2256"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2014"/>
-					<ref type="next_same_sender" target="files.xml#2164"/>
-					<ref type="prev_same_sender" target="files.xml#1991"/>
-					<ref type="next_same_addressee" target="files.xml#2147"/>
-					<ref type="prev_same_addressee" target="files.xml#2128"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2164"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1991"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2147"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2128"/>
+					<ref type="next_chronologically" target="file2130"/>
+					<ref type="prev_chronologically" target="file2128"/>
+					<ref type="next_correspondence" target="file2164"/>
+					<ref type="prev_correspondence" target="file2014"/>
+					<ref type="next_correspondence_request" target="file2164"/>
+					<ref type="prev_correspondence_request" target="file1991"/>
+					<ref type="next_correspondence_reaction" target="file2256"/>
+					<ref type="prev_correspondence_reaction" target="file2014"/>
+					<ref type="next_same_sender" target="file2164"/>
+					<ref type="prev_same_sender" target="file1991"/>
+					<ref type="next_same_addressee" target="file2147"/>
+					<ref type="prev_same_addressee" target="file2128"/>
+					<ref type="next_with_sender_as_addressee" target="file2164"/>
+					<ref type="prev_with_sender_as_addressee" target="file1991"/>
+					<ref type="next_with_addressee_as_sender" target="file2147"/>
+					<ref type="prev_with_addressee_as_sender" target="file2128"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -143,33 +153,33 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">C[aelius S]ecundus' Curio per Christum Iesum S. D.</s>
+					<s n="1" xml:lang="la" type="auto">C[aelius S]ecundus' Curio per Christum Iesum S. D.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cum Hieronymus Massarius iam medicinae doctor, frater noster in domino charissime, istuc veniret, nolui enim sine meis ad te literis venire; nam tametsi nihil magnopere erat, quod ad te scriberem, tamen vel hoc ipsum scribere malui quam hoc suavissimum inter nos colloquendi munus intermittere, praesertim tecum, cum quo tam libenter, quocunque modo possim, colloquor ut cum nullo libentius.</s>
-					<s xml:lang="la" type="auto">Id facit tuus in me amor et vicissim meus in te, quem augeri indies magis sentio.</s>
-					<s xml:lang="la" type="auto">Tuum erga me amorem magnis et plurimis argumentis declarasti cum alias saepe, tum quum proxime me obviam filiae proficiscentem tum cum ea et genero redeuntem muneribus, congiario, animis quasi ex propinquissimis tuis quempiam excepisti.</s>
-					<s xml:lang="la" type="auto">Meum erga te nullo praeclaro adhuc argumento demonstrare potui; neque enim aut opus habuisti aut periculum facere, quae tua modestia est, voluisti.</s>
-					<s xml:lang="la" type="auto">Quod si facere liberet, invenies hominem non modo studiosissimum atque amantissimum, verum etiam observantissimum tui, praeterea memorem tuorum in se meritorum, fidelem, syncerum atque in primis tibi obsequentem.</s>
-					<s xml:lang="la" type="auto">Id vero pluribus verbis tecum ago, quod videam te quasi studio vitare, ne quid vel mandes mihi vel commendes.</s>
-					<s xml:lang="la" type="auto">Fuit hic filius tuus Henrychus Argentoratum proficiscens; id ego prorsus ignoravi, quod non fecissem, si ei, ut sese mihi ostenderet aut quovis modo se adesse significaret, mandasses.</s>
-					<s xml:lang="la" type="auto">Id, ut tibi ingenue fatear, me non parum moleste habuit.</s>
-					<s xml:lang="la" type="auto">Ubi hoc accepi, me totum ad unguem explorare coepi, num facto aut dicto aut saltem nutu te offendissem aut nostram amicitiam aliquo modo violassem imprudens, et cum nihil invenirem, scrupulum tamen ex animo meo eiicere non poteram neque potero, nisi videro te me meisque rebus omnibus tam uti familiariter et libere, atque ego sum usus tuis.</s>
-					<s xml:lang="la" type="auto">Memini me aliquot ex nostris hominibus tibi commendasse, quos tu omni genere humanitatis es prosecutus.</s>
-					<s xml:lang="la" type="auto">Taceo Horatium meum, quem in Italiam te insalutato atque nisi tuis salutaribus monitis instructum proficisci nolui.</s>
-					<s xml:lang="la" type="auto">Quamobrem, mi charissime atque observandissime frater, oro te atque obsecro, ut, si qua in re nostram veterem amicitiam lesi, quod non studio, sed per imprudentiam fieri potuit, ne id me celes, sed, uti inter amicos et fratres par est, libere aperies, ne forte ulcere celato membrum putrescat.</s>
-					<s xml:lang="la" type="auto">Quod si feceris, tibi omnino satisfacere conabor.</s>
-					<s xml:lang="la" type="auto">Sed his omissis ago tibi gratias de libello itemque de literis, in quibus, quae tibi in nostris De amplitudine regni dei dialogis notanda videbantur, diligenter perscripsisti; nam mihi ansam plura dicendi, corrigendi, mutandi diluendique praebuisti.</s>
-					<s xml:lang="la" type="auto">Itaque me hanc ob caussam tibi plurimum debere fateor.</s>
-					<s xml:lang="la" type="auto">Verum finem facio tibi hic anno scribendi ac deum, Iesu Christi patrem, precor, ut ineuntem iamiam annum tibi, liberis, uxori, propinquis, amicis, ecclesiae urbique vestrę pacatum, fertilem et faustum illucere velit.</s>
-					<s xml:lang="la" type="auto">Uxor mea, liberi omnes et amici atque inprimis Martinus Borrhaus, rector noster, vir certe bonus, te plurimum valere iubent.</s>
-					<s xml:lang="la" type="auto">Vale, mi optime et colendissime frater et tuos tres generos humanissimos et doctissimos una cum coniugibus ipsorum tuaque et reliquis filiis mihi, quaeso, amanter saluta.</s>
-					<s xml:lang="la" type="auto">Basileae quarto calendas ianuarii 1553.</s>
+					<s n="2" xml:lang="la" type="auto">Cum Hieronymus Massarius iam medicinae doctor, frater noster in domino charissime, istuc veniret, nolui enim sine meis ad te literis venire; nam tametsi nihil magnopere erat, quod ad te scriberem, tamen vel hoc ipsum scribere malui quam hoc suavissimum inter nos colloquendi munus intermittere, praesertim tecum, cum quo tam libenter, quocunque modo possim, colloquor ut cum nullo libentius.</s>
+					<s n="3" xml:lang="la" type="auto">Id facit tuus in me amor et vicissim meus in te, quem augeri indies magis sentio.</s>
+					<s n="4" xml:lang="la" type="auto">Tuum erga me amorem magnis et plurimis argumentis declarasti cum alias saepe, tum quum proxime me obviam filiae proficiscentem tum cum ea et genero redeuntem muneribus, congiario, animis quasi ex propinquissimis tuis quempiam excepisti.</s>
+					<s n="5" xml:lang="la" type="auto">Meum erga te nullo praeclaro adhuc argumento demonstrare potui; neque enim aut opus habuisti aut periculum facere, quae tua modestia est, voluisti.</s>
+					<s n="6" xml:lang="la" type="auto">Quod si facere liberet, invenies hominem non modo studiosissimum atque amantissimum, verum etiam observantissimum tui, praeterea memorem tuorum in se meritorum, fidelem, syncerum atque in primis tibi obsequentem.</s>
+					<s n="7" xml:lang="la" type="auto">Id vero pluribus verbis tecum ago, quod videam te quasi studio vitare, ne quid vel mandes mihi vel commendes.</s>
+					<s n="8" xml:lang="la" type="auto">Fuit hic filius tuus Henrychus Argentoratum proficiscens; id ego prorsus ignoravi, quod non fecissem, si ei, ut sese mihi ostenderet aut quovis modo se adesse significaret, mandasses.</s>
+					<s n="9" xml:lang="la" type="auto">Id, ut tibi ingenue fatear, me non parum moleste habuit.</s>
+					<s n="10" xml:lang="la" type="auto">Ubi hoc accepi, me totum ad unguem explorare coepi, num facto aut dicto aut saltem nutu te offendissem aut nostram amicitiam aliquo modo violassem imprudens, et cum nihil invenirem, scrupulum tamen ex animo meo eiicere non poteram neque potero, nisi videro te me meisque rebus omnibus tam uti familiariter et libere, atque ego sum usus tuis.</s>
+					<s n="11" xml:lang="la" type="auto">Memini me aliquot ex nostris hominibus tibi commendasse, quos tu omni genere humanitatis es prosecutus.</s>
+					<s n="12" xml:lang="la" type="auto">Taceo Horatium meum, quem in Italiam te insalutato atque nisi tuis salutaribus monitis instructum proficisci nolui.</s>
+					<s n="13" xml:lang="la" type="auto">Quamobrem, mi charissime atque observandissime frater, oro te atque obsecro, ut, si qua in re nostram veterem amicitiam lesi, quod non studio, sed per imprudentiam fieri potuit, ne id me celes, sed, uti inter amicos et fratres par est, libere aperies, ne forte ulcere celato membrum putrescat.</s>
+					<s n="14" xml:lang="la" type="auto">Quod si feceris, tibi omnino satisfacere conabor.</s>
+					<s n="15" xml:lang="la" type="auto">Sed his omissis ago tibi gratias de libello itemque de literis, in quibus, quae tibi in nostris De amplitudine regni dei dialogis notanda videbantur, diligenter perscripsisti; nam mihi ansam plura dicendi, corrigendi, mutandi diluendique praebuisti.</s>
+					<s n="16" xml:lang="la" type="auto">Itaque me hanc ob caussam tibi plurimum debere fateor.</s>
+					<s n="17" xml:lang="la" type="auto">Verum finem facio tibi hic anno scribendi ac deum, Iesu Christi patrem, precor, ut ineuntem iamiam annum tibi, liberis, uxori, propinquis, amicis, ecclesiae urbique vestrę pacatum, fertilem et faustum illucere velit.</s>
+					<s n="18" xml:lang="la" type="auto">Uxor mea, liberi omnes et amici atque inprimis Martinus Borrhaus, rector noster, vir certe bonus, te plurimum valere iubent.</s>
+					<s n="19" xml:lang="la" type="auto">Vale, mi optime et colendissime frater et tuos tres generos humanissimos et doctissimos una cum coniugibus ipsorum tuaque et reliquis filiis mihi, quaeso, amanter saluta.</s>
+					<s n="20" xml:lang="la" type="auto">Basileae quarto calendas ianuarii 1553.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro domino Henrycho Bullingero, ecclesiae [Tig]urinae antistiti et [pas]tori vigilantissimo, domino et fratri carissimo et observando.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="21" xml:lang="la" type="auto">Clarissimo viro domino Henrycho Bullingero, ecclesiae [Tig]urinae antistiti et [pas]tori vigilantissimo, domino et fratri carissimo et observando.</s>
+					<s n="22" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

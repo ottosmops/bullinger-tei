@@ -7,27 +7,30 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>C.A. Schwetschke</publisher>
-				<pubPlace>Brunsvigae</pubPlace>
-				<date when="1863"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1489</idno>
+				<pubPlace>Braunschweig/Berlin</pubPlace>
+				<date when="1863-1900"/>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1489</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Joannis Calvini - Opera quae supersunt omnia.</title>
-				<biblScope type="author">Cunitz, Edouard; Baum, Johann-Wilhelm; Reuss, Eduard Wilhelm Eugen</biblScope>
+				<title subtype="publication">Opera Calvini</title>
+				<biblScope type="editor">Guilielmus Baum, Eduardus Cunitz, Eduardus Reuss</biblScope>
 				<biblScope type="edition">Corpus Reformatorium</biblScope>
-				<biblScope type="volumes">58</biblScope>
+				<biblScope type="volumes">59</biblScope>
 				<biblScope type="page">183</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 337a,329r.-v.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 337a,329r.-v.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -37,12 +40,12 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Der Wunsch der <placeName ref="398">Genfer</placeName> Kirche, den von ihr vertriebenen
-								<persName ref="39">Calvin</persName> zurückzuholen, ist den Straßburgern bereits [im November] durch
-								eine Gesandtschaft aus <placeName ref="398">Genf</placeName> vorgetragen worden; es ist ihre
-								Pflicht, das Reich Gottes zu fördern, indem sie <persName ref="39">Calvin</persName> an die ihm
-								angemessene Wirkungsstätte - an der Grenze zwischen <placeName ref="7">Deutschland</placeName>
-								und <placeName ref="16">Italien</placeName> - ziehen lassen, so wie einst die Kirche von
+								Der Wunsch der <placeName ref="place398">Genfer</placeName> Kirche, den von ihr vertriebenen
+								<persName ref="person39">Calvin</persName> zurückzuholen, ist den Straßburgern bereits [im November] durch
+								eine Gesandtschaft aus <placeName ref="place398">Genf</placeName> vorgetragen worden; es ist ihre
+								Pflicht, das Reich Gottes zu fördern, indem sie <persName ref="person39">Calvin</persName> an die ihm
+								angemessene Wirkungsstätte - an der Grenze zwischen <placeName ref="place7">Deutschland</placeName>
+								und <placeName ref="place16">Italien</placeName> - ziehen lassen, so wie einst die Kirche von
 								Antiochien Paulus und Barnabas für die Heidenmission freigab; wenn sie dieser Bitte Folge leisten, ist ihnen
 								Gottes Wohlgefallen und Lob bei den Menschen sicher.
 							</p>
@@ -64,75 +67,33 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11532">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#45" cert="high">Lehrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<personGrp ref="role0" role="Lehrer"/>
+					<place source="place587" cert="high"/>
 					<date when="1541-04-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#492" cert="high">
-							<settlement>Strassburg</settlement>
-							<district>Metropolitanes Frankreich</district>
-							<country>Frankreich</country>
-							<geo>48.58392 7.74553</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#45" cert="high">Lehrer</name>
-						<place source="#492" cert="high">
-							<settlement>Strassburg</settlement>
-							<district>Metropolitanes Frankreich</district>
-							<country>Frankreich</country>
-							<geo>48.58392 7.74553</geo>
-						</place>
-					</roleName>
-					<place source="#492" cert="low">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<personGrp ref="role0" role="Lehrer"/>
+					<place source="place492" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11533"/>
-					<ref type="prev_chronologically" target="files.xml#11531"/>
+					<ref type="next_chronologically" target="file11533"/>
+					<ref type="prev_chronologically" target="file11531"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#11116"/>
+					<ref type="prev_correspondence" target="file11116"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#11116"/>
+					<ref type="prev_correspondence_request" target="file11116"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11116"/>
-					<ref type="next_same_sender" target="files.xml#11533"/>
-					<ref type="prev_same_sender" target="files.xml#11531"/>
-					<ref type="next_same_addressee" target="files.xml#11533"/>
-					<ref type="prev_same_addressee" target="files.xml#11531"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11533"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11531"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11533"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11531"/>
+					<ref type="prev_correspondence_reaction" target="file11116"/>
+					<ref type="next_same_sender" target="file11533"/>
+					<ref type="prev_same_sender" target="file11531"/>
+					<ref type="next_same_addressee" target="file11533"/>
+					<ref type="prev_same_addressee" target="file11531"/>
+					<ref type="next_with_sender_as_addressee" target="file11533"/>
+					<ref type="prev_with_sender_as_addressee" target="file11531"/>
+					<ref type="next_with_addressee_as_sender" target="file11533"/>
+					<ref type="prev_with_addressee_as_sender" target="file11531"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -149,40 +110,40 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Fidelissimis doctissimisque pastoribus et doctoribus Argentinensis ecclesiae ministris fratribus in Domino venerandis et dilectis.</s>
+					<s n="1" xml:lang="la" type="auto">Fidelissimis doctissimisque pastoribus et doctoribus Argentinensis ecclesiae ministris fratribus in Domino venerandis et dilectis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a Deo patre per Dominum nostrum Iesum Christum.</s>
-					<s xml:lang="la" type="auto">De Gebennensi ecclesia qualis olim fuerit nostis, fratres in Domino venerandi et dilecti, qui virum clarissimum D. Ioannem Calvinum, ab illa indignissime eiectum, suscepistis et fovistis humanissime, magna cum laude omnium bonorum.</s>
-					<s xml:lang="la" type="auto">Nec ignoratis qualis nunc per Domini gratiam affecta sit.</s>
-					<s xml:lang="la" type="auto">Honestissimam enim ad vos legationem misit, fidelissimum pastorem suum Calvinum revocatum.</s>
-					<s xml:lang="la" type="auto">Dum enim is abest ab ecclesia et quasi in exsilio agit, Dominus ecclesiae illius ingratae res sic temperat, ut palam cernere ac sentire cogatur quales nunc meruerit habere pastores, et quales olim pepulerit.</s>
-					<s xml:lang="la" type="auto">Atque hoc nomine bonitati divinae merito magnas agimus gratias, quae oviculas dispersas et sua sponte in perniciem proruentes recollegit ac revocavit.</s>
-					<s xml:lang="la" type="auto">Debetis autem vos inprimis opus illud Domini, quod coepit, vestro favore prosequi, et vestris consiliis, quo absolvatur, iuvare, id est, omnibus anniti viribus, ut ecclesiae suus reddatur pastor, quem ipsa tot votis tantisque expetit suspiriis, quem denique tam honesta legatione repetiit.</s>
+					<s n="2" xml:lang="la" type="auto">Gratiam et pacem a Deo patre per Dominum nostrum Iesum Christum.</s>
+					<s n="3" xml:lang="la" type="auto">De Gebennensi ecclesia qualis olim fuerit nostis, fratres in Domino venerandi et dilecti, qui virum clarissimum D. Ioannem Calvinum, ab illa indignissime eiectum, suscepistis et fovistis humanissime, magna cum laude omnium bonorum.</s>
+					<s n="4" xml:lang="la" type="auto">Nec ignoratis qualis nunc per Domini gratiam affecta sit.</s>
+					<s n="5" xml:lang="la" type="auto">Honestissimam enim ad vos legationem misit, fidelissimum pastorem suum Calvinum revocatum.</s>
+					<s n="6" xml:lang="la" type="auto">Dum enim is abest ab ecclesia et quasi in exsilio agit, Dominus ecclesiae illius ingratae res sic temperat, ut palam cernere ac sentire cogatur quales nunc meruerit habere pastores, et quales olim pepulerit.</s>
+					<s n="7" xml:lang="la" type="auto">Atque hoc nomine bonitati divinae merito magnas agimus gratias, quae oviculas dispersas et sua sponte in perniciem proruentes recollegit ac revocavit.</s>
+					<s n="8" xml:lang="la" type="auto">Debetis autem vos inprimis opus illud Domini, quod coepit, vestro favore prosequi, et vestris consiliis, quo absolvatur, iuvare, id est, omnibus anniti viribus, ut ecclesiae suus reddatur pastor, quem ipsa tot votis tantisque expetit suspiriis, quem denique tam honesta legatione repetiit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Suadet hoc ipsum vobis iusta illa, qua Deo obstricti estis, obedientia.</s>
-					<s xml:lang="la" type="auto">Nam divinae se opponere vocationi est Deo rebellare: vocantem sequi, obedire.</s>
-					<s xml:lang="la" type="auto">At Calvinum divina vocatione repeti quis neegabit?</s>
+					<s n="9" xml:lang="la" type="auto">Suadet hoc ipsum vobis iusta illa, qua Deo obstricti estis, obedientia.</s>
+					<s n="10" xml:lang="la" type="auto">Nam divinae se opponere vocationi est Deo rebellare: vocantem sequi, obedire.</s>
+					<s n="11" xml:lang="la" type="auto">At Calvinum divina vocatione repeti quis neegabit?</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Poscit hoc ipsum a vobis pietas in Dominum Iesum, cuius regni pomoeria haud dubie proferre cupitis.</s>
-					<s xml:lang="la" type="auto">Proferetis autem latissime, si Calvinum suae ecclesiae restituatis.</s>
-					<s xml:lang="la" type="auto">Novistis Gebennensem ecclesiam in confiniis quasi Germaniae et Italiae sitam esse, unde vir ille, praeclarissimis a Deo ornatus muneribus, aliquot regnorum ecclesiis plus prodesse, et regnum Christi amplius propagare queat, quam si uspiam alias terrarum doceat.</s>
-					<s xml:lang="la" type="auto">Flagitat hoc ipsum a vobis ipsa in fratres caritas christiana, quae Gebennensibus nedum Calvinum, sed vestras ipsorum animas impendere iubet.</s>
-					<s xml:lang="la" type="auto">Urget denique consilia vestra exemplum ecclesiae apostolicae, Antiochenae videlicet, in qua tametsi utiles adeoque necessarii essent <persName ref="1792">Paulus</persName> et Barnabas, quum tamen ipsi vocarentur gentibus praedicatum evangelium, vocationi divinae neutiquam sese opponebat, sed cessit benigne, iuvit amplissime, abeuntesque prosequuta est caritate et orationibus ardentissimis.</s>
-					<s xml:lang="la" type="auto">Hoc ipsum si fide bona et dilectione sincera imitati fueritis, fratres colendissimi, gratiam a Deo reportabitis et ab hominibus mirifice commendabitur pietas atque humanitas vestra.</s>
+					<s n="12" xml:lang="la" type="auto">Poscit hoc ipsum a vobis pietas in Dominum Iesum, cuius regni pomoeria haud dubie proferre cupitis.</s>
+					<s n="13" xml:lang="la" type="auto">Proferetis autem latissime, si Calvinum suae ecclesiae restituatis.</s>
+					<s n="14" xml:lang="la" type="auto">Novistis Gebennensem ecclesiam in confiniis quasi Germaniae et Italiae sitam esse, unde vir ille, praeclarissimis a Deo ornatus muneribus, aliquot regnorum ecclesiis plus prodesse, et regnum Christi amplius propagare queat, quam si uspiam alias terrarum doceat.</s>
+					<s n="15" xml:lang="la" type="auto">Flagitat hoc ipsum a vobis ipsa in fratres caritas christiana, quae Gebennensibus nedum Calvinum, sed vestras ipsorum animas impendere iubet.</s>
+					<s n="16" xml:lang="la" type="auto">Urget denique consilia vestra exemplum ecclesiae apostolicae, Antiochenae videlicet, in qua tametsi utiles adeoque necessarii essent <persName ref="person1792">Paulus</persName> et Barnabas, quum tamen ipsi vocarentur gentibus praedicatum evangelium, vocationi divinae neutiquam sese opponebat, sed cessit benigne, iuvit amplissime, abeuntesque prosequuta est caritate et orationibus ardentissimis.</s>
+					<s n="17" xml:lang="la" type="auto">Hoc ipsum si fide bona et dilectione sincera imitati fueritis, fratres colendissimi, gratiam a Deo reportabitis et ab hominibus mirifice commendabitur pietas atque humanitas vestra.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">His iungimus iam preces nostras, et oramus vos, fratres in Domino dilectissimi, per nomen Domini Iesu, ne periclitanti desitis ecclesiae: oramus per caritatem Domini Iesu ut pastorem suae reddatis ecclesiae.</s>
-					<s xml:lang="la" type="auto">Soli vos, si vultis, potestis illam servare ecclesiam.</s>
-					<s xml:lang="la" type="auto">Si vero vel negaveritis, vel non strenue Calvinum urseritis, miseram in summum discrimen coniicietis.</s>
-					<s xml:lang="la" type="auto">Speramus autem plurimum apud vos valituras, primum quidem tot sanctorum Calvinum repetentium querelas, deinde vero et nostras preces, qui amamus et colimus vos in Domino sincere, qui denique in Argentinensis ecclesiae fratrumque gratiam alacri mente quidvis, si ita res postulet, obiremus.</s>
-					<s xml:lang="la" type="auto">Concedite, quaesumus, Calvinum ecclesiae suae, amate nos, vivite ac valete in Domino nostro Iesu Christo, fratres in Domino venerandi et carissimi.</s>
-					<s xml:lang="la" type="auto">Tiguri, 4. Aprilis 1541.</s>
+					<s n="18" xml:lang="la" type="auto">His iungimus iam preces nostras, et oramus vos, fratres in Domino dilectissimi, per nomen Domini Iesu, ne periclitanti desitis ecclesiae: oramus per caritatem Domini Iesu ut pastorem suae reddatis ecclesiae.</s>
+					<s n="19" xml:lang="la" type="auto">Soli vos, si vultis, potestis illam servare ecclesiam.</s>
+					<s n="20" xml:lang="la" type="auto">Si vero vel negaveritis, vel non strenue Calvinum urseritis, miseram in summum discrimen coniicietis.</s>
+					<s n="21" xml:lang="la" type="auto">Speramus autem plurimum apud vos valituras, primum quidem tot sanctorum Calvinum repetentium querelas, deinde vero et nostras preces, qui amamus et colimus vos in Domino sincere, qui denique in Argentinensis ecclesiae fratrumque gratiam alacri mente quidvis, si ita res postulet, obiremus.</s>
+					<s n="22" xml:lang="la" type="auto">Concedite, quaesumus, Calvinum ecclesiae suae, amate nos, vivite ac valete in Domino nostro Iesu Christo, fratres in Domino venerandi et carissimi.</s>
+					<s n="23" xml:lang="la" type="auto">Tiguri, 4. Aprilis 1541.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pastores et doctores ministri ecclesiae Tigurinae, vestri.</s>
+					<s n="24" xml:lang="la" type="auto">Pastores et doctores ministri ecclesiae Tigurinae, vestri.</s>
 				</p>
 			</div>
 		</body>

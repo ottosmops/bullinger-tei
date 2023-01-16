@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=693</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=693</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,106</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,106</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,8 +49,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Bedauert, daß die Einladung zum Theologenkonvent in <placeName ref="5">Aarau</placeName> zu spät
-								in <placeName ref="121">Bern</placeName> eingetroffen ist, und bittet um erneute Ansetzung der
+								Bedauert, daß die Einladung zum Theologenkonvent in <placeName ref="place5">Aarau</placeName> zu spät
+								in <placeName ref="place121">Bern</placeName> eingetroffen ist, und bittet um erneute Ansetzung der
 								Zusammenkunft.
 							</p>
 						</summary>
@@ -58,51 +61,60 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10731">
 				<correspAction type="sent">
-					<persName ref="person#2263" cert="high">
+					<!--
+					<persName ref="person2263" cert="high">
 						<forename cert="high">Kaspar</forename>
 						<surname cert="high">Megander</surname>
-						<addName type="main">Megander (Großmann), Kaspar</addName>
+						<persName type="main" ref="person8412>Megander (Großmann), Kaspar</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Kaspar_Megander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/12037210X"/>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person2263" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1535-11-30" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1753" cert="high">
+					<!--
+					<persName ref="person1753" cert="high">
 						<forename cert="high">Leo</forename>
 						<surname cert="high">Jud</surname>
 						<graphic type="portrait" url="portraits/1753_Jud_Leo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Leo_Jud"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118558528"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11423330"/>
 					</persName>
-					<persName ref="person#495" cert="high">
+					-->
+					<persName ref="person1753" cert="high"/>
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10732"/>
-					<ref type="prev_chronologically" target="files.xml#10730"/>
-					<ref type="next_correspondence" target="files.xml#10797"/>
-					<ref type="prev_correspondence" target="files.xml#10339"/>
-					<ref type="next_correspondence_request" target="files.xml#10797"/>
-					<ref type="prev_correspondence_request" target="files.xml#10339"/>
+					<ref type="next_chronologically" target="file10732"/>
+					<ref type="prev_chronologically" target="file10730"/>
+					<ref type="next_correspondence" target="file10797"/>
+					<ref type="prev_correspondence" target="file10339"/>
+					<ref type="next_correspondence_request" target="file10797"/>
+					<ref type="prev_correspondence_request" target="file10339"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10797"/>
-					<ref type="prev_same_sender" target="files.xml#10339"/>
-					<ref type="next_same_addressee" target="files.xml#10806"/>
-					<ref type="prev_same_addressee" target="files.xml#10540"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10797"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10339"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10806"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10540"/>
+					<ref type="next_same_sender" target="file10797"/>
+					<ref type="prev_same_sender" target="file10339"/>
+					<ref type="next_same_addressee" target="file10806"/>
+					<ref type="prev_same_addressee" target="file10540"/>
+					<ref type="next_with_sender_as_addressee" target="file10797"/>
+					<ref type="prev_with_sender_as_addressee" target="file10339"/>
+					<ref type="next_with_addressee_as_sender" target="file10806"/>
+					<ref type="prev_with_addressee_as_sender" target="file10540"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -119,26 +131,26 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingeri, charissimi nostri fratris, scripta<note xml:id="fn1" type="footnote" n="1">Nicht erhalten, vgl. oben <ref target="file#10728">Nr. 690</ref>, 1-3.</note> novembris penultima sub noctem accępimus, unde non modico męrore affecti - quod petitis, satisfacere non datum est.</s>
-					<s xml:lang="la" type="auto">In tempore enim dies indicta insinuata si fuisset, per nos nequaquam neglecta foret.</s>
-					<s xml:lang="la" type="auto">Consilium enim habendi conventus, praesertim fratrum in Helvecia Christum profitentium, a nobis summopere probatur; ut fiat, et brevi quidem, obnixe rogamus.</s>
-					<s xml:lang="la" type="auto">Opere precium - quid dico?</s>
-					<s xml:lang="la" type="auto">- e re ecclesiarum nostrarum esse videtur, ut de veritate inter nos conveniat et ad eventum omnem confirmetur.</s>
-					<s xml:lang="la" type="auto">Quin igitur hac vice negotium[?] non successit, fratres charissimi, alia a vobis erit indicenda dies illaque per certum nuncium et in tempore significanda nobis<note xml:id="fna" type="footnote" n="a">nobis <hi>am Rande nachgetragen.</hi></note>.</s>
-					<s xml:lang="la" type="auto">Locus Aroae<note xml:id="fn2" type="footnote" n="2"><placeName ref="5">Aarau</placeName> (Kt. Aargau).</note> ut omnibus fere nobis aptus non displicet.</s>
+					<s n="2" xml:lang="la" type="auto">Bullingeri, charissimi nostri fratris, scripta<note xml:id="fn1" type="footnote" n="1">Nicht erhalten, vgl. oben <ref target="file10728">Nr. 690</ref>, 1-3.</note> novembris penultima sub noctem accępimus, unde non modico męrore affecti - quod petitis, satisfacere non datum est.</s>
+					<s n="3" xml:lang="la" type="auto">In tempore enim dies indicta insinuata si fuisset, per nos nequaquam neglecta foret.</s>
+					<s n="4" xml:lang="la" type="auto">Consilium enim habendi conventus, praesertim fratrum in Helvecia Christum profitentium, a nobis summopere probatur; ut fiat, et brevi quidem, obnixe rogamus.</s>
+					<s n="5" xml:lang="la" type="auto">Opere precium - quid dico?</s>
+					<s n="6" xml:lang="la" type="auto">- e re ecclesiarum nostrarum esse videtur, ut de veritate inter nos conveniat et ad eventum omnem confirmetur.</s>
+					<s n="7" xml:lang="la" type="auto">Quin igitur hac vice negotium[?] non successit, fratres charissimi, alia a vobis erit indicenda dies illaque per certum nuncium et in tempore significanda nobis<note xml:id="fna" type="footnote" n="a">nobis <hi>am Rande nachgetragen.</hi></note>.</s>
+					<s n="8" xml:lang="la" type="auto">Locus Aroae<note xml:id="fn2" type="footnote" n="2"><placeName ref="place5">Aarau</placeName> (Kt. Aargau).</note> ut omnibus fere nobis aptus non displicet.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="121">Bernę</placeName>, ultima novembris anno 35.</s>
+					<s n="9" xml:lang="la" type="auto"><placeName ref="place121">Bernę</placeName>, ultima novembris anno 35.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="145">Megander</persName>, totus ex animo vester.</s>
+					<s n="10" xml:lang="la" type="auto"><persName ref="person145">Megander</persName>, totus ex animo vester.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Leoni, Bullingero Tigurinis, fratribus suis in domino charissimis.</s>
+					<s n="11" xml:lang="la" type="auto">Leoni, Bullingero Tigurinis, fratribus suis in domino charissimis.</s>
 				</p>
 			</div>
 		</body>

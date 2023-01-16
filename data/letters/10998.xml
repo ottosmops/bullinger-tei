@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=956</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=956</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336,179</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336,179</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336,160</idno>
+							<idno subtype="Autograph">E II 336,160</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -49,17 +52,17 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								[Die Pfarrer von <placeName ref="97">Basel</placeName>] haben
-								<persName ref="114">Leo</persName> [<persName ref="114">Jud</persName>] geantwortet und eine
-								Kopie ihres Schreibens an die <placeName ref="121">Berner</placeName> beigelegt;
-								<persName ref="154">Myconius</persName> mißbilligt deren Absicht,
-								<persName ref="28">Bucers</persName> Schriften verbieten zu lassen, aufs schärfste, obwohl er selbst
+								[Die Pfarrer von <placeName ref="place97">Basel</placeName>] haben
+								Leo [<persName ref="person114">Jud</persName>] geantwortet und eine
+								Kopie ihres Schreibens an die <placeName ref="place121">Berner</placeName> beigelegt;
+								<persName ref="person154">Myconius</persName> mißbilligt deren Absicht,
+								<persName ref="person28">Bucers</persName> Schriften verbieten zu lassen, aufs schärfste, obwohl er selbst
 								Grund hätte, sich über dessen "Retraktation" zu beklagen. Schickt eine Abschrift des
-								[<placeName ref="1049">Straßburger</placeName>] Gutachtens [zu den Traktanden des Tags zu
-								<placeName ref="958">Schmalkalden</placeName>]. Hält Bullingers Kritik an
-								<persName ref="263">Zwicks</persName> Vorschlag [einer bedingten Annahme des
-								<placeName ref="70">Augsburger</placeName> Bekenntnisses] für ungerechtfertigt. Bittet ihn,
-								mäßigend auf die Amtsbrüder [in <placeName ref="121">Bern</placeName>] einzuwirken.
+								[<placeName ref="place1049">Straßburger</placeName>] Gutachtens [zu den Traktanden des Tags zu
+								<placeName ref="place958">Schmalkalden</placeName>]. Hält Bullingers Kritik an
+								<persName ref="person263">Zwicks</persName> Vorschlag [einer bedingten Annahme des
+								<placeName ref="place70">Augsburger</placeName> Bekenntnisses] für ungerechtfertigt. Bittet ihn,
+								mäßigend auf die Amtsbrüder [in <placeName ref="place121">Bern</placeName>] einzuwirken.
 							</p>
 						</summary>
 					</msContents>
@@ -69,46 +72,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10998">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1537-02-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10999"/>
-					<ref type="prev_chronologically" target="files.xml#10997"/>
-					<ref type="next_correspondence" target="files.xml#11001"/>
-					<ref type="prev_correspondence" target="files.xml#10989"/>
-					<ref type="next_correspondence_request" target="files.xml#11002"/>
-					<ref type="prev_correspondence_request" target="files.xml#10985"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11001"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10989"/>
-					<ref type="next_same_sender" target="files.xml#11002"/>
-					<ref type="prev_same_sender" target="files.xml#10985"/>
-					<ref type="next_same_addressee" target="files.xml#11000"/>
-					<ref type="prev_same_addressee" target="files.xml#10990"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11002"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10985"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11000"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10990"/>
+					<ref type="next_chronologically" target="file10999"/>
+					<ref type="prev_chronologically" target="file10997"/>
+					<ref type="next_correspondence" target="file11001"/>
+					<ref type="prev_correspondence" target="file10989"/>
+					<ref type="next_correspondence_request" target="file11002"/>
+					<ref type="prev_correspondence_request" target="file10985"/>
+					<ref type="next_correspondence_reaction" target="file11001"/>
+					<ref type="prev_correspondence_reaction" target="file10989"/>
+					<ref type="next_same_sender" target="file11002"/>
+					<ref type="prev_same_sender" target="file10985"/>
+					<ref type="next_same_addressee" target="file11000"/>
+					<ref type="prev_same_addressee" target="file10990"/>
+					<ref type="next_with_sender_as_addressee" target="file11002"/>
+					<ref type="prev_with_sender_as_addressee" target="file10985"/>
+					<ref type="next_with_addressee_as_sender" target="file11000"/>
+					<ref type="prev_with_addressee_as_sender" target="file10990"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -125,48 +133,48 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto"><persName ref="114">Leo</persName> scripsit fratribus, quamobrem ei responsum est ab eisdem<note xml:id="fn1" type="footnote" n="1">Der Brief <persName ref="114">Leo Juds</persName> an die Pfarrer von <placeName ref="97">Basel</placeName> und deren Antwort sind verloren.</note>.</s>
-					<s xml:lang="la" type="auto">Puto, quod et tibi, quę scripsimus, sit praelecturus.</s>
-					<s xml:lang="la" type="auto">Adiecimus, quę misimus proprio nuncio <placeName ref="121">Bernam</placeName><note xml:id="fn2" type="footnote" n="2">Zur angesprochenen Korrespondenz zwischen den Basler und den <placeName ref="121">Berner</placeName> Pfarrern und zum Anlaß ihrer Meinungsverschiedenheiten s. oben <ref target="file#10992">Nr. 950</ref>, 3-15.</note>.</s>
-					<s xml:lang="la" type="auto">Ea causam habent, quod <persName ref="145">Gaspar</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="145">Kaspar Megander</persName>.</note> nunciavit in hoc se esse, ut libri <persName ref="28">Buceri</persName> proscribantur in ditione <placeName ref="121">Bernensi</placeName>.</s>
-					<s xml:lang="la" type="auto">Equidem nihil miserabilius unquam audivi.</s>
-					<s xml:lang="la" type="auto">Si sic animus eorum habet, fratrum inquam, non senatus, ad insaniam ipsos arbitror redactos.</s>
-					<s xml:lang="la" type="auto">Adiuvet nos dominus deus, ne sinat viros hactenus evangelicos ita dementari.</s>
-					<s xml:lang="la" type="auto">Non est, qui posset magis conqueri de <persName ref="28">Buceri</persName> Retractatione<note xml:id="fn4" type="footnote" n="4">Zu <persName ref="28">Bucers</persName> "Retraktationen" s. HBBW VI, S. 368, Anm. 12.</note> quam ego, quod adtinet ad <persName ref="265">Zvinglium</persName>, ad Epistolare<note xml:id="fn5" type="footnote" n="5"><persName ref="28">Bucer</persName> hatte in den "Retraktationen" die Veröffentlichung von Briefen <persName ref="265">Zwinglis</persName> und <persName ref="160">Oekolampads</persName> kritisiert; s. BucerDS VI/1 334-337.</note> et ad clancularia quaedam illic tractata.</s>
-					<s xml:lang="la" type="auto">Absit vero, ut propter ea vel movear, taceo conquerar, dum, quę reliqua sunt, ad veritatem tendunt concordiae.</s>
-					<s xml:lang="la" type="auto">Quid enim illic est, quod confessio nostra<note xml:id="fn6" type="footnote" n="6">Gemeint ist das Erste Helvetische Bekenntnis von 1536 (BSRK 101-109).</note> non habeat aut quod nobis non proposuerit?</s>
-					<s xml:lang="la" type="auto">Et in quod nos non consenserimus, etiam non temere.</s>
-					<s xml:lang="la" type="auto">Verum de his alias.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto"><persName ref="person114">Leo</persName> scripsit fratribus, quamobrem ei responsum est ab eisdem<note xml:id="fn1" type="footnote" n="1">Der Brief <persName ref="person114">Leo Juds</persName> an die Pfarrer von <placeName ref="place97">Basel</placeName> und deren Antwort sind verloren.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Puto, quod et tibi, quę scripsimus, sit praelecturus.</s>
+					<s n="4" xml:lang="la" type="auto">Adiecimus, quę misimus proprio nuncio <placeName ref="place121">Bernam</placeName><note xml:id="fn2" type="footnote" n="2">Zur angesprochenen Korrespondenz zwischen den Basler und den <placeName ref="place121">Berner</placeName> Pfarrern und zum Anlaß ihrer Meinungsverschiedenheiten s. oben <ref target="file10992">Nr. 950</ref>, 3-15.</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Ea causam habent, quod <persName ref="person145">Gaspar</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="person145">Kaspar Megander</persName>.</note> nunciavit in hoc se esse, ut libri <persName ref="person28">Buceri</persName> proscribantur in ditione <placeName ref="place121">Bernensi</placeName>.</s>
+					<s n="6" xml:lang="la" type="auto">Equidem nihil miserabilius unquam audivi.</s>
+					<s n="7" xml:lang="la" type="auto">Si sic animus eorum habet, fratrum inquam, non senatus, ad insaniam ipsos arbitror redactos.</s>
+					<s n="8" xml:lang="la" type="auto">Adiuvet nos dominus deus, ne sinat viros hactenus evangelicos ita dementari.</s>
+					<s n="9" xml:lang="la" type="auto">Non est, qui posset magis conqueri de <persName ref="person28">Buceri</persName> Retractatione<note xml:id="fn4" type="footnote" n="4">Zu <persName ref="person28">Bucers</persName> "Retraktationen" s. HBBW VI, S. 368, Anm. 12.</note> quam ego, quod adtinet ad <persName ref="person265">Zvinglium</persName>, ad Epistolare<note xml:id="fn5" type="footnote" n="5"><persName ref="person28">Bucer</persName> hatte in den "Retraktationen" die Veröffentlichung von Briefen <persName ref="person265">Zwinglis</persName> und <persName ref="person160">Oekolampads</persName> kritisiert; s. BucerDS VI/1 334-337.</note> et ad clancularia quaedam illic tractata.</s>
+					<s n="10" xml:lang="la" type="auto">Absit vero, ut propter ea vel movear, taceo conquerar, dum, quę reliqua sunt, ad veritatem tendunt concordiae.</s>
+					<s n="11" xml:lang="la" type="auto">Quid enim illic est, quod confessio nostra<note xml:id="fn6" type="footnote" n="6">Gemeint ist das Erste Helvetische Bekenntnis von 1536 (BSRK 101-109).</note> non habeat aut quod nobis non proposuerit?</s>
+					<s n="12" xml:lang="la" type="auto">Et in quod nos non consenserimus, etiam non temere.</s>
+					<s n="13" xml:lang="la" type="auto">Verum de his alias.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Consultationem<note xml:id="fn7" type="footnote" n="7">Zum Gutachten, das die <placeName ref="1049">Straßburger</placeName> Theologen im Vorfeld des Tags zu <placeName ref="958">Schmalkalden</placeName> abgefaßt hatten, s. oben <ref target="file#10985">Nr. 943</ref>, 20-22; 947, 191.</note> mitto, quam <persName ref="74">Gastius</persName> meus descripsit sibi.</s>
-					<s xml:lang="la" type="auto">Vides enim, quam hęc pertineant ad libellum<note xml:id="fn8" type="footnote" n="8">Gemeint ist wohl die Liste von Fragen zu den Traktanden des Bundestags (oben <ref target="file#10976">Nr. 934</ref>, 1-35).</note>.</s>
-					<s xml:lang="la" type="auto">Quocirca cave, ne<note xml:id="fnb" type="footnote" n="b">cave, ne <hi>am Rande nachgetragen.</hi></note> vel macula adspergas vel, dum remittis (quod brevi faciendum), non tuto committas.</s>
-					<s xml:lang="la" type="auto">Mihi enim, quod peccasses, foret pensandum.</s>
+					<s n="14" xml:lang="la" type="auto">Consultationem<note xml:id="fn7" type="footnote" n="7">Zum Gutachten, das die <placeName ref="place1049">Straßburger</placeName> Theologen im Vorfeld des Tags zu <placeName ref="place958">Schmalkalden</placeName> abgefaßt hatten, s. oben <ref target="file10985">Nr. 943</ref>, 20-22; 947, 191.</note> mitto, quam <persName ref="person74">Gastius</persName> meus descripsit sibi.</s>
+					<s n="15" xml:lang="la" type="auto">Vides enim, quam hęc pertineant ad libellum<note xml:id="fn8" type="footnote" n="8">Gemeint ist wohl die Liste von Fragen zu den Traktanden des Bundestags (oben <ref target="file10976">Nr. 934</ref>, 1-35).</note>.</s>
+					<s n="16" xml:lang="la" type="auto">Quocirca cave, ne<note xml:id="fnb" type="footnote" n="b">cave, ne <hi>am Rande nachgetragen.</hi></note> vel macula adspergas vel, dum remittis (quod brevi faciendum), non tuto committas.</s>
+					<s n="17" xml:lang="la" type="auto">Mihi enim, quod peccasses, foret pensandum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="78"/>De consilio <persName ref="263">Zviccii</persName><note xml:id="fn9" type="footnote" n="9">Vgl. oben <ref target="file#10989">Nr. 947</ref>, 2-18 mit Anm. 3.</note> peto, ut melius deliberes; erras enim toto coelo<note xml:id="fn10" type="footnote" n="10">Adagia, 1, 1, 49 (LB II 48).</note>, si sic pergere volueris.</s>
-					<s xml:lang="la" type="auto">Hanc libertatem videbis aliquando, quam habeat rationem videlicet.</s>
-					<s xml:lang="la" type="auto">Interim boni consule.</s>
+					<s n="18" xml:lang="la" type="auto"><pb type="edition" next="78"/>De consilio <persName ref="person263">Zviccii</persName><note xml:id="fn9" type="footnote" n="9">Vgl. oben <ref target="file10989">Nr. 947</ref>, 2-18 mit Anm. 3.</note> peto, ut melius deliberes; erras enim toto coelo<note xml:id="fn10" type="footnote" n="10">Adagia, 1, 1, 49 (LB II 48).</note>, si sic pergere volueris.</s>
+					<s n="19" xml:lang="la" type="auto">Hanc libertatem videbis aliquando, quam habeat rationem videlicet.</s>
+					<s n="20" xml:lang="la" type="auto">Interim boni consule.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quęso te, mi Bullingere, ne sinas, quod in te est, fratres tuos sic rapi adfectibus.</s>
-					<s xml:lang="la" type="auto">Veritas, veritas nos ducat, adfectus abeant, quo digni sunt.</s>
+					<s n="21" xml:lang="la" type="auto">Quęso te, mi Bullingere, ne sinas, quod in te est, fratres tuos sic rapi adfectibus.</s>
+					<s n="22" xml:lang="la" type="auto">Veritas, veritas nos ducat, adfectus abeant, quo digni sunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="115">Vale</placeName> semper cum tuis.</s>
-					<s xml:lang="la" type="auto">Pluribus non potui.</s>
+					<s n="23" xml:lang="la" type="auto"><placeName ref="place115">Vale</placeName> semper cum tuis.</s>
+					<s n="24" xml:lang="la" type="auto">Pluribus non potui.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileę</placeName>, 24. februarii anno 37.</s>
+					<s n="25" xml:lang="la" type="auto"><placeName ref="place97">Basileę</placeName>, 24. februarii anno 37.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus <persName ref="154">Myconius</persName>.</s>
+					<s n="26" xml:lang="la" type="auto">Tuus <persName ref="person154">Myconius</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinricho Bullingero, in domino charissimo suo.</s>
+					<s n="27" xml:lang="la" type="auto">Domino Heinricho Bullingero, in domino charissimo suo.</s>
 				</p>
 			</div>
 		</body>

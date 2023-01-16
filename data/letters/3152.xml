@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4511/82</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 368,248</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 368,248</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 89,112</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 89,112</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -61,36 +67,34 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3152">
 				<correspAction type="sent">
-					<persName ref="person#270" cert="high">
+					<!--
+					<persName ref="person270" cert="high">
 						<forename cert="high">Konrad</forename>
 						<surname cert="high">Badius</surname>
-						<addName type="main">Badius (Bade), Konrad</addName>
+						<persName type="main" ref="person8153>Badius (Bade), Konrad</addName>
 					</persName>
-					<place source="#167" cert="high">
-						<settlement>Genf</settlement>
-						<district>Genève</district>
-						<country>Schweiz</country>
-						<geo>46.20222 6.14569</geo>
-					</place>
+					-->
+					<persName ref="person270" cert="high"/>
+					<place source="place167" cert="high"/>
 					<date when="1557-04-18" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3153"/>
-					<ref type="prev_chronologically" target="files.xml#3151"/>
+					<ref type="next_chronologically" target="file3153"/>
+					<ref type="prev_chronologically" target="file3151"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -99,12 +103,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#3179"/>
-					<ref type="prev_same_addressee" target="files.xml#3146"/>
+					<ref type="next_same_addressee" target="file3179"/>
+					<ref type="prev_same_addressee" target="file3146"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3179"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3146"/>
+					<ref type="next_with_addressee_as_sender" target="file3179"/>
+					<ref type="prev_with_addressee_as_sender" target="file3146"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -113,34 +117,37 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="3152/Autograph/00 E_II_368__fol__248_r_.tif" n="1"/>
+		<graphic url="3152/Autograph/01 E_II_368__fol__248_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Laurentius Normandius, Ioannis Calvini, pastoris nostri fidelissimi, non amicus communis solum, sed et pernecessarius, quum de sua ad vos profectione nuper mecum colloqueretur, incidit in mentionem tui, quomodo scilicet non comiter tantum, sed et perurbane a te tuisque symmystis exceptus fuisset, ut semper hospitalissimi amicissimique nostrorum hominum merito existimati fuistis.</s>
-					<s xml:lang="la" type="auto">Percontanti vero mihi, quid nunc operis in manibus tibi esset quamve materiam tractares (quotidianis enim commentationibus exerceri te ex lucubrationibus, quas in lucem emittis, plus satis nota atque testata res est), respondit te arduum, imo intentatum hactenus opus aggressum esse, nempe in abstrusa illa <foreign xml:lang="el"/> oracula non brevem tantum explicationem, sed iustos etiam commentarios edere.</s>
-					<s xml:lang="la" type="auto">Ex quo quum magnam animo meo voluptatem caperem, non tam mea unius quam totius ecclesiae Christi nomine, ad quam laborum vigiliarumque tuarum fructus potissimum pertinet, de illo quaerere coepi, quam brevi futurum speraret, ut tuus ille exoptatissimus foetus in lucem prodiret.</s>
-					<s xml:lang="la" type="auto">"Ego vero", inquit, iam pridem in animo habui ea de re ad dominum Bullingerum scribere, ut, si forte typis hunc suum librum mandare vellet, ad me mitteret, meque curaturum, ut summa diligentia emendatus et elegantibus characteribus excusus emitteretur.</s>
-					<s xml:lang="la" type="auto">Tu igitur, Conrade, si ita faciendum censes, communi utriusque nostrum nomine ad illum scribere poteris, ut ad nos commentarios illos suos mittat nosque curaturos, ut nec sumptui nec diligentiae parcatur, quin castigatissimi et expoliti in lucem exeant, praeter id quod e Latina in nostram linguam convertere animus est, ut nostri homines etiam fruantur tanto et tam excellenti bono."</s>
-					<s xml:lang="la" type="auto">Itaque hanc mihi traditam provinciam haud invitus suscepi.</s>
-					<s xml:lang="la" type="auto">Quod si liberius, imo audacius a me factum tibi videbitur, veniam peto; nam, etiamsi; quod volo, non impetrem, satis tamen hac mea brevi et ineleganti epistola consequutum esse putabo, si in tanti viri notitiam venero, quem merito cum eruditionis tum pietatis nomine et colere et revereri pii omnes debent.</s>
-					<s xml:lang="la" type="auto">Vale in Christo, vir praestantissime.</s>
+					<s n="1" xml:lang="la" type="auto">Laurentius Normandius, Ioannis Calvini, pastoris nostri fidelissimi, non amicus communis solum, sed et pernecessarius, quum de sua ad vos profectione nuper mecum colloqueretur, incidit in mentionem tui, quomodo scilicet non comiter tantum, sed et perurbane a te tuisque symmystis exceptus fuisset, ut semper hospitalissimi amicissimique nostrorum hominum merito existimati fuistis.</s>
+					<s n="2" xml:lang="la" type="auto">Percontanti vero mihi, quid nunc operis in manibus tibi esset quamve materiam tractares (quotidianis enim commentationibus exerceri te ex lucubrationibus, quas in lucem emittis, plus satis nota atque testata res est), respondit te arduum, imo intentatum hactenus opus aggressum esse, nempe in abstrusa illa <foreign xml:lang="el"/> oracula non brevem tantum explicationem, sed iustos etiam commentarios edere.</s>
+					<s n="3" xml:lang="la" type="auto">Ex quo quum magnam animo meo voluptatem caperem, non tam mea unius quam totius ecclesiae Christi nomine, ad quam laborum vigiliarumque tuarum fructus potissimum pertinet, de illo quaerere coepi, quam brevi futurum speraret, ut tuus ille exoptatissimus foetus in lucem prodiret.</s>
+					<s n="4" xml:lang="la" type="auto">"Ego vero", inquit, iam pridem in animo habui ea de re ad dominum Bullingerum scribere, ut, si forte typis hunc suum librum mandare vellet, ad me mitteret, meque curaturum, ut summa diligentia emendatus et elegantibus characteribus excusus emitteretur.</s>
+					<s n="5" xml:lang="la" type="auto">Tu igitur, Conrade, si ita faciendum censes, communi utriusque nostrum nomine ad illum scribere poteris, ut ad nos commentarios illos suos mittat nosque curaturos, ut nec sumptui nec diligentiae parcatur, quin castigatissimi et expoliti in lucem exeant, praeter id quod e Latina in nostram linguam convertere animus est, ut nostri homines etiam fruantur tanto et tam excellenti bono."</s>
+					<s n="6" xml:lang="la" type="auto">Itaque hanc mihi traditam provinciam haud invitus suscepi.</s>
+					<s n="7" xml:lang="la" type="auto">Quod si liberius, imo audacius a me factum tibi videbitur, veniam peto; nam, etiamsi; quod volo, non impetrem, satis tamen hac mea brevi et ineleganti epistola consequutum esse putabo, si in tanti viri notitiam venero, quem merito cum eruditionis tum pietatis nomine et colere et revereri pii omnes debent.</s>
+					<s n="8" xml:lang="la" type="auto">Vale in Christo, vir praestantissime.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Genevae 14. calendas maii 1557.</s>
+					<s n="9" xml:lang="la" type="auto">Genevae 14. calendas maii 1557.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tui observantissimus Conradus Badius, Iodoci Badii Ascensii filius.</s>
+					<s n="10" xml:lang="la" type="auto">Tui observantissimus Conradus Badius, Iodoci Badii Ascensii filius.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Eximio Christi servo d. Henrycho Bullingero, Tigurinensis ecclesiae pastori fidelissimo.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="11" xml:lang="la" type="auto">Eximio Christi servo d. Henrycho Bullingero, Tigurinensis ecclesiae pastori fidelissimo.</s>
+					<s n="12" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 				<p>
 					<note type="remark">[Darunter von Bullingers Hand:]</note>
-					<s xml:lang="la" type="auto">Badius petit Apocalypsim.</s>
+					<s n="13" xml:lang="la" type="auto">Badius petit Apocalypsim.</s>
 				</p>
 			</div>
 		</body>

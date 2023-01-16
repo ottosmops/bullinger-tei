@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#336">München</settlement>
-						<institution>Bayerische Staatsbibliothek</institution>
-						<idno type="Kopie">Clm. 11470a, fo 23-30v</idno>
-						<repository ref="archive#63">
+						<!--
+						<repository ref="archive63">
 							<name>München BStB</name>
-							<note type="Mikrofilm">Schaffhausen StB</note>
 							<ref target="https://www.bsb-muenchen.de/"/>
 						</repository>
+						<settlement ref="place336">München</settlement>
+						<institution>Bayerische Staatsbibliothek</institution>
+						-->
+						<repository ref="archive63"/>
+						<idno subtype="Kopie">Clm. 11470a, fo 23-30v</idno>
+						<idno subtype="Mikrofilm">Schaffhausen StB</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -33,26 +36,32 @@
 				</msDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 97,107</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 97,107</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#336">München</settlement>
-						<institution>Bayerische Staatsbibliothek</institution>
-						<idno type="Kopie">Cgm 1315, 88-102</idno>
-						<repository ref="archive#63">
+						<!--
+						<repository ref="archive63">
 							<name>München BStB</name>
-							<note type="Hinweis">deutsche Übersetzung</note>
 							<ref target="https://www.bsb-muenchen.de/"/>
 						</repository>
+						<settlement ref="place336">München</settlement>
+						<institution>Bayerische Staatsbibliothek</institution>
+						-->
+						<repository ref="archive63"/>
+						<idno subtype="Kopie">Cgm 1315, 88-102</idno>
+						<idno subtype="Hinweis">deutsche Übersetzung</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -61,50 +70,41 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4374">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date when="1560-08-00" cert="low"><note>siehe: 1560 August 19 (= ID 4398)</note></date>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
+					<date notBefore="1560-08-01" notAfter="1560-08-12" cert="low"><note>siehe: 1560 August 19 (= ID 4398)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1872" cert="low">
+					<!--
+					<persName ref="person1872" cert="low">
 						<forename cert="low">Philipp</forename>
 						<surname cert="low">Landgraf von Hessen</surname>
-						<addName type="main">von Hessen, Philipp I. («der Großmütige»)</addName>
-						<graphic type="portrait" url="portraits/8019_von_Hessen_Philipp_I.jpg"/>
+						<persName type="main" ref="person8019>von Hessen, Philipp I. («der Großmütige»)</addName>
+						<graphic type="portrait" url="portraits/1871_von_Hessen_Philipp_I.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Philipp_I._(Hessen)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11859382X"/>
 					</persName>
+					-->
+					<persName ref="person1872" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4429"/>
-					<ref type="prev_chronologically" target="files.xml#4373"/>
-					<ref type="next_correspondence" target="files.xml#4398"/>
+					<ref type="next_chronologically" target="file4429"/>
+					<ref type="prev_chronologically" target="file4373"/>
+					<ref type="next_correspondence" target="file4398"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#4398"/>
+					<ref type="next_correspondence_request" target="file4398"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#4398"/>
-					<ref type="prev_same_sender" target="files.xml#4319"/>
-					<ref type="next_same_addressee" target="files.xml#4421"/>
-					<ref type="prev_same_addressee" target="files.xml#4323"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4398"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4319"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4421"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#4323"/>
-					<ref type="parent" target="files.xml#4398"/>
+					<ref type="next_same_sender" target="file4398"/>
+					<ref type="prev_same_sender" target="file4319"/>
+					<ref type="next_same_addressee" target="file4421"/>
+					<ref type="prev_same_addressee" target="file4323"/>
+					<ref type="next_with_sender_as_addressee" target="file4398"/>
+					<ref type="prev_with_sender_as_addressee" target="file4319"/>
+					<ref type="next_with_addressee_as_sender" target="file4421"/>
+					<ref type="prev_with_addressee_as_sender" target="file4323"/>
+					<ref type="parent" target="file4398"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2896</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2896</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="el">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 367,197</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 367,197</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -97,26 +100,35 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12945">
 				<correspAction type="sent">
-					<persName ref="person#3868" cert="high">
+					<!--
+					<persName ref="person3868" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Vulteius</surname>
-						<addName type="main">Vulteius (Will), Johannes</addName>
+						<persName type="main" ref="person8514>Vulteius (Will), Johannes</addName>
 						<graphic type="portrait" url="portraits/8514_Vultejus_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Vultejus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/117450367"/>
 					</persName>
-					<date min="1547-05-07" max="1548-02-00" cert="low">zwischen 7. Mai und Winter 1547/48</date>
+					-->
+					<persName ref="person3868" cert="high"/>
+					<date notBefore="1547-05-07" notAfter="1548-02-07" cert="low">zwischen 7. Mai und Winter 1547/48</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12946"/>
-					<ref type="prev_chronologically" target="files.xml#12944"/>
+					<ref type="next_chronologically" target="file12946"/>
+					<ref type="prev_chronologically" target="file12944"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -125,12 +137,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#12952"/>
-					<ref type="prev_same_addressee" target="files.xml#12930"/>
+					<ref type="next_same_addressee" target="file12952"/>
+					<ref type="prev_same_addressee" target="file12930"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12952"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12930"/>
+					<ref type="next_with_addressee_as_sender" target="file12952"/>
+					<ref type="prev_with_addressee_as_sender" target="file12930"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -140,53 +152,56 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="12945/Autograph/00 E_II_367__fol__197_r_.tif" n="1"/>
+		<graphic url="12945/Autograph/01 E_II_367__fol__197_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="el">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="el" type="manual">Τῷ θειοτάτῳ καὶ εὐσεβεστάτῳ ἀνδρὶ Ἡνρίκῳ Βουλλιγχέρῳ εὐ πράττειν Ἰωάννης ὁ Ἐθελοντής<note xml:id="fn3" type="footnote" n="3">Wollender. - Gräzisierung von Vulteius' Namen, der ursprünglich Will (bzw. Wöll oder Wöhl) lautete.</note>.</s>
+					<s n="1" xml:lang="el" type="manual">Τῷ θειοτάτῳ καὶ εὐσεβεστάτῳ ἀνδρὶ Ἡνρίκῳ Βουλλιγχέρῳ εὐ πράττειν Ἰωάννης ὁ Ἐθελοντής<note xml:id="fn3" type="footnote" n="3">Wollender. - Gräzisierung von Vulteius' Namen, der ursprünglich Will (bzw. Wöll oder Wöhl) lautete.</note>.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="el" type="manual">Ἐπειδήπερ, ὦ πάντων ἐμοὶ φιλέστατε διδάσκαλε, τῇ χθὲς ἡμέρᾳ τοὺς συνόντας ἡμῖν παρεκάλεσας καὶ περί τινων ἀδικημάτων ὡς εἰκὸς πρὸς ἐκείνους διείλεξαι, γλίχομαι κἀγὼ τούτων ἀκηκοέναι.</s>
-					<s xml:lang="el" type="manual">Πολλὰ θαυμάζω τῶν τοιούτων ἀνθρώπων μοχθερίαν καὶ φαυλότητα ἀεὶ χαιρόντων καὶ ἡσθέντων τῇ τῶν ἄλλων δυστυχίᾳ.</s>
-					<s xml:lang="el" type="manual">Ἔγωγε νὴ τὸν ∆ία<note xml:id="fna" type="footnote" n="a"><foreign xml:lang="el">∆ία</foreign> <hi>fehlt in der Vorlage.</hi></note> οὕτω διάκειμαι· εἰ πικρῶς τινι ἔχω, οὐ τούτου καταψεύδομαι, ἀλλά, εἰ παρὰ τοὺς νόμους τι πράττειν ὁρῶ, χωρὶς τῷ παρόντι εἰς τὸ πρόσωπον λέγω.</s>
-					<s xml:lang="el" type="manual">Τοιαῦτα πέπρακταί σοι, εἰ μὴ βούλει ἀπέχεσθαι τούτων· τῇ βουλῇ ἢ τῷ διδασκάλῳ διασαφηνίσαι δεῖ.</s>
-					<s xml:lang="el" type="manual">Ἀξιῶ δὲ καὶ δέομαί σου μετ' εὐνοίας θεωρεῖν, οὐ γὰρ μεμφόμενός σε ταῦτα λέγω.</s>
-					<s xml:lang="el" type="manual">Καὶ πειθαρχεῖν τοῖς διδασκάλοις καί, ὡς συνελόντι ἁπλῶς εἰπεῖν, ποιεῖν τὰ καθήκοντα· τοῦτο καλῷ κἀγαθῷ ἀνδρὶ πρέπειν οἶμαι καὶ μὴ ὑμῖν<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> <foreign xml:lang="el">ἡμῖν.</foreign></note> ψευδῆ γράφειν καθ' ἡμῶν καὶ ἀσχολίαν σοι<note xml:id="fnc" type="footnote" n="c"><hi>Über der Zeile nachgetragen.</hi></note> παρέχεσθαι.</s>
-					<s xml:lang="el" type="manual">Ἤδη δέ τινες τούτων τὰ ἐναντία πράττουσιν, κρυφίως καὶ λάθρα αἰτιώμενοι ἡμῶν καὶ τὸ μέγιστον περὶ οὐδένων ψευδομένους κατηγοροῦντες ὡς οἱ παῖδες.</s>
-					<s xml:lang="el" type="manual">Βδελυροῦ καὶ ἐξαγίστου ἀνδρὸς ἔργον ἐστὶν ἀληθῶς, ὡς ἐγὼ κρίνω, καὶ τὸ παροίμιον μάρτυρα παρέχομαι· κλέπτης τὸν ἥλιον φεύγει καὶ<pb type="edition" next="185"/> τὴν νύκτα ἀγαπᾷ.</s>
-					<s xml:lang="el" type="manual">Ἐκ τούτων τινῶν δῆλον, ὅτι δύο ἐστὶ γένη ἀνθρώπων.</s>
-					<s xml:lang="el" type="manual">Ἓν μὲν εὐφραίνει τῶν ἄλλων συμφορᾷ καὶ δυσπραξίᾳ καὶ ἐπὶ ταύτῃ ὡς μάλιστα ἐπιγαυροῦται τοὺς φίλους πρὸς ἀλλήλους εἰς ἔχθραν καταστῆσαι.</s>
-					<s xml:lang="el" type="manual">Τοιούτων ἔργον τυγχάνει ὄν<note xml:id="fnd" type="footnote" n="d"><hi>In der Vorlage</hi> <foreign xml:lang="el">ὢν.</foreign></note>, οὓς φύσει μισῶν ὑπάρχω καὶ πάντες ὀλίγου δεῖν<note xml:id="fne" type="footnote" n="e"><hi>In der Vorlage</hi> <foreign xml:lang="el">δεῖ.</foreign></note> φθονοῦσιν καὶ εἰκότως.</s>
-					<s xml:lang="el" type="manual">Εἰσὶ γὰρ ὡς σφήν· τῶν κακῶν αἴτιοι τὰς πόλεις κατασκάπτουσιν, προδόται τῆς πατρίδος γίγνονται, δῶρα δέχοντα[ι] καὶ τὸν θεὸν ἀρνοῦσιν.</s>
-					<s xml:lang="el" type="manual">Θάττερον δ' ἡ ἀρετὴ προτρέπει πράττειν τὰ δέοντα, καὶ φύσει εὐλαβεῖται κακὰ ποιεῖν<note xml:id="fnf" type="footnote" n="f"><hi>Vor</hi> <foreign xml:lang="el">ποιεῖν</foreign> <hi>gestrichenes</hi> <foreign xml:lang="el">πράτ[τειν].</foreign></note>.</s>
-					<s xml:lang="el" type="manual">Τοιούτους ὄντας ἐπαινῶ καὶ ἐγκομιάζομαι.</s>
-					<s xml:lang="el" type="manual">Ὁποτέροις οὖν ἂν αἰσθάνῃ τὰ πραχθέντα συνενεγκόντα, ταῦτα δὴ αἱρούμενος ὀρθῶς βουλεύοις ἄν<note xml:id="fn4" type="footnote" n="4"><hi>Xenophon,</hi> Cyri institutio, 8, 7, 24.</note>.</s>
+					<s n="2" xml:lang="el" type="manual">Ἐπειδήπερ, ὦ πάντων ἐμοὶ φιλέστατε διδάσκαλε, τῇ χθὲς ἡμέρᾳ τοὺς συνόντας ἡμῖν παρεκάλεσας καὶ περί τινων ἀδικημάτων ὡς εἰκὸς πρὸς ἐκείνους διείλεξαι, γλίχομαι κἀγὼ τούτων ἀκηκοέναι.</s>
+					<s n="3" xml:lang="el" type="manual">Πολλὰ θαυμάζω τῶν τοιούτων ἀνθρώπων μοχθερίαν καὶ φαυλότητα ἀεὶ χαιρόντων καὶ ἡσθέντων τῇ τῶν ἄλλων δυστυχίᾳ.</s>
+					<s n="4" xml:lang="el" type="manual">Ἔγωγε νὴ τὸν ∆ία<note xml:id="fna" type="footnote" n="a"><foreign xml:lang="el">∆ία</foreign> <hi>fehlt in der Vorlage.</hi></note> οὕτω διάκειμαι· εἰ πικρῶς τινι ἔχω, οὐ τούτου καταψεύδομαι, ἀλλά, εἰ παρὰ τοὺς νόμους τι πράττειν ὁρῶ, χωρὶς τῷ παρόντι εἰς τὸ πρόσωπον λέγω.</s>
+					<s n="5" xml:lang="el" type="manual">Τοιαῦτα πέπρακταί σοι, εἰ μὴ βούλει ἀπέχεσθαι τούτων· τῇ βουλῇ ἢ τῷ διδασκάλῳ διασαφηνίσαι δεῖ.</s>
+					<s n="6" xml:lang="el" type="manual">Ἀξιῶ δὲ καὶ δέομαί σου μετ' εὐνοίας θεωρεῖν, οὐ γὰρ μεμφόμενός σε ταῦτα λέγω.</s>
+					<s n="7" xml:lang="el" type="manual">Καὶ πειθαρχεῖν τοῖς διδασκάλοις καί, ὡς συνελόντι ἁπλῶς εἰπεῖν, ποιεῖν τὰ καθήκοντα· τοῦτο καλῷ κἀγαθῷ ἀνδρὶ πρέπειν οἶμαι καὶ μὴ ὑμῖν<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> <foreign xml:lang="el">ἡμῖν.</foreign></note> ψευδῆ γράφειν καθ' ἡμῶν καὶ ἀσχολίαν σοι<note xml:id="fnc" type="footnote" n="c"><hi>Über der Zeile nachgetragen.</hi></note> παρέχεσθαι.</s>
+					<s n="8" xml:lang="el" type="manual">Ἤδη δέ τινες τούτων τὰ ἐναντία πράττουσιν, κρυφίως καὶ λάθρα αἰτιώμενοι ἡμῶν καὶ τὸ μέγιστον περὶ οὐδένων ψευδομένους κατηγοροῦντες ὡς οἱ παῖδες.</s>
+					<s n="9" xml:lang="el" type="manual">Βδελυροῦ καὶ ἐξαγίστου ἀνδρὸς ἔργον ἐστὶν ἀληθῶς, ὡς ἐγὼ κρίνω, καὶ τὸ παροίμιον μάρτυρα παρέχομαι· κλέπτης τὸν ἥλιον φεύγει καὶ<pb type="edition" next="185"/> τὴν νύκτα ἀγαπᾷ.</s>
+					<s n="10" xml:lang="el" type="manual">Ἐκ τούτων τινῶν δῆλον, ὅτι δύο ἐστὶ γένη ἀνθρώπων.</s>
+					<s n="11" xml:lang="el" type="manual">Ἓν μὲν εὐφραίνει τῶν ἄλλων συμφορᾷ καὶ δυσπραξίᾳ καὶ ἐπὶ ταύτῃ ὡς μάλιστα ἐπιγαυροῦται τοὺς φίλους πρὸς ἀλλήλους εἰς ἔχθραν καταστῆσαι.</s>
+					<s n="12" xml:lang="el" type="manual">Τοιούτων ἔργον τυγχάνει ὄν<note xml:id="fnd" type="footnote" n="d"><hi>In der Vorlage</hi> <foreign xml:lang="el">ὢν.</foreign></note>, οὓς φύσει μισῶν ὑπάρχω καὶ πάντες ὀλίγου δεῖν<note xml:id="fne" type="footnote" n="e"><hi>In der Vorlage</hi> <foreign xml:lang="el">δεῖ.</foreign></note> φθονοῦσιν καὶ εἰκότως.</s>
+					<s n="13" xml:lang="el" type="manual">Εἰσὶ γὰρ ὡς σφήν· τῶν κακῶν αἴτιοι τὰς πόλεις κατασκάπτουσιν, προδόται τῆς πατρίδος γίγνονται, δῶρα δέχοντα[ι] καὶ τὸν θεὸν ἀρνοῦσιν.</s>
+					<s n="14" xml:lang="el" type="manual">Θάττερον δ' ἡ ἀρετὴ προτρέπει πράττειν τὰ δέοντα, καὶ φύσει εὐλαβεῖται κακὰ ποιεῖν<note xml:id="fnf" type="footnote" n="f"><hi>Vor</hi> <foreign xml:lang="el">ποιεῖν</foreign> <hi>gestrichenes</hi> <foreign xml:lang="el">πράτ[τειν].</foreign></note>.</s>
+					<s n="15" xml:lang="el" type="manual">Τοιούτους ὄντας ἐπαινῶ καὶ ἐγκομιάζομαι.</s>
+					<s n="16" xml:lang="el" type="manual">Ὁποτέροις οὖν ἂν αἰσθάνῃ τὰ πραχθέντα συνενεγκόντα, ταῦτα δὴ αἱρούμενος ὀρθῶς βουλεύοις ἄν<note xml:id="fn4" type="footnote" n="4"><hi>Xenophon,</hi> Cyri institutio, 8, 7, 24.</note>.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="el" type="manual"><pb type="scan" next="197v."/>Ὁμολογῶ μὲν ἐξ ἐμφανοῦς πολλὰ πεποιῆσθαι ὑφ' ἐμοῦ μὴ προσήκοντα<note xml:id="fng" type="footnote" n="g"><hi>In der Vorlage</hi> <foreign xml:lang="el">προήσκοντα.</foreign></note>.</s>
-					<s xml:lang="el" type="manual">Πάντες ἁμαρτάνομεν, καὶ χωρὶς ἁμαρτίας οὐδείς.</s>
-					<s xml:lang="el" type="manual">Ἀλλ' ἴσως λογίσαιτο ἄν τις παρ' ἑαυτῷ, ὅτι χρῶνται παραδείγματι καὶ ὑποδείγματι τῶν ἀλλοδαπῶν καὶ ὡς ἡμεῖς εἰς ἀλλοτριότητα<note xml:id="fnh" type="footnote" n="h"><hi>In der Vorlage</hi> <foreign xml:lang="el">ἀλλότρητα.</foreign></note> κατέστημεν ἐκείνους, ἢν τάχα ἀλλοτριοπραγῶσιν.</s>
-					<s xml:lang="el" type="manual">Πρὸς τοῦτο τοιαῦτα ἀποκρίνομαι, ὅτ' οὐδέποτε εἰς τὸν νοῦν τοιοῦτό τι ἐκπαρέστημεν καὶ ἐπὶ τούτῳ οὐκ ἀφικόμην, ἀλλὰ ζῆν μετὰ τῶν ἄλλων βούλομαι, ὡς οἱ νόμοι κελεύουσιν<note xml:id="fni" type="footnote" n="i"><hi>In der Vorlage</hi> <foreign xml:lang="el">κελεύοσι.</foreign></note> οἱ ὑμέτεροι<note xml:id="fnj" type="footnote" n="j"><hi>In der Vorlage</hi> <foreign xml:lang="el">ἡμέτεροι.</foreign></note>.</s>
-					<s xml:lang="el" type="manual">Εἰ δὲ μή, δίκην δώσω.</s>
-					<s xml:lang="el" type="manual">Τέλος δὲ πολλὰ δεηθῆναί σου βούλομαι δεικνῦναι ἡμῖν συκοφάντην ἐκείνον, καὶ εὑρήσεις πολλὰ ἐψευσμένον καὶ μὴ τολμήσοντα<note xml:id="fnk" type="footnote" n="k"><hi>In der Vorlage</hi> <foreign xml:lang="el">θολμήσοντα.</foreign></note> παρόντων ἡμῶν λέγειν.</s>
-					<s xml:lang="el" type="manual">Πολλὰ ἔτ' ἔχω εἰπεῖν, ἀλλὰ μετὰ ταῦτα περὶ πάντων διαρρήδην πρὸς σὲ διαλέξομαι.</s>
-					<s xml:lang="el" type="manual">Ἀξιῶ σε ταῦτα μετ'<note xml:id="fnl" type="footnote" n="l"><hi>In der Vorlage</hi> <foreign xml:lang="el">μεθ'.</foreign></note> εὐνοίας θεωρεῖν.</s>
-					<s xml:lang="el" type="manual">Ἔρρωσο καὶ διατέλει εὐ διάγων.</s>
+					<s n="17" xml:lang="el" type="manual"><pb type="scan" next="197v."/>Ὁμολογῶ μὲν ἐξ ἐμφανοῦς πολλὰ πεποιῆσθαι ὑφ' ἐμοῦ μὴ προσήκοντα<note xml:id="fng" type="footnote" n="g"><hi>In der Vorlage</hi> <foreign xml:lang="el">προήσκοντα.</foreign></note>.</s>
+					<s n="18" xml:lang="el" type="manual">Πάντες ἁμαρτάνομεν, καὶ χωρὶς ἁμαρτίας οὐδείς.</s>
+					<s n="19" xml:lang="el" type="manual">Ἀλλ' ἴσως λογίσαιτο ἄν τις παρ' ἑαυτῷ, ὅτι χρῶνται παραδείγματι καὶ ὑποδείγματι τῶν ἀλλοδαπῶν καὶ ὡς ἡμεῖς εἰς ἀλλοτριότητα<note xml:id="fnh" type="footnote" n="h"><hi>In der Vorlage</hi> <foreign xml:lang="el">ἀλλότρητα.</foreign></note> κατέστημεν ἐκείνους, ἢν τάχα ἀλλοτριοπραγῶσιν.</s>
+					<s n="20" xml:lang="el" type="manual">Πρὸς τοῦτο τοιαῦτα ἀποκρίνομαι, ὅτ' οὐδέποτε εἰς τὸν νοῦν τοιοῦτό τι ἐκπαρέστημεν καὶ ἐπὶ τούτῳ οὐκ ἀφικόμην, ἀλλὰ ζῆν μετὰ τῶν ἄλλων βούλομαι, ὡς οἱ νόμοι κελεύουσιν<note xml:id="fni" type="footnote" n="i"><hi>In der Vorlage</hi> <foreign xml:lang="el">κελεύοσι.</foreign></note> οἱ ὑμέτεροι<note xml:id="fnj" type="footnote" n="j"><hi>In der Vorlage</hi> <foreign xml:lang="el">ἡμέτεροι.</foreign></note>.</s>
+					<s n="21" xml:lang="el" type="manual">Εἰ δὲ μή, δίκην δώσω.</s>
+					<s n="22" xml:lang="el" type="manual">Τέλος δὲ πολλὰ δεηθῆναί σου βούλομαι δεικνῦναι ἡμῖν συκοφάντην ἐκείνον, καὶ εὑρήσεις πολλὰ ἐψευσμένον καὶ μὴ τολμήσοντα<note xml:id="fnk" type="footnote" n="k"><hi>In der Vorlage</hi> <foreign xml:lang="el">θολμήσοντα.</foreign></note> παρόντων ἡμῶν λέγειν.</s>
+					<s n="23" xml:lang="el" type="manual">Πολλὰ ἔτ' ἔχω εἰπεῖν, ἀλλὰ μετὰ ταῦτα περὶ πάντων διαρρήδην πρὸς σὲ διαλέξομαι.</s>
+					<s n="24" xml:lang="el" type="manual">Ἀξιῶ σε ταῦτα μετ'<note xml:id="fnl" type="footnote" n="l"><hi>In der Vorlage</hi> <foreign xml:lang="el">μεθ'.</foreign></note> εὐνοίας θεωρεῖν.</s>
+					<s n="25" xml:lang="el" type="manual">Ἔρρωσο καὶ διατέλει εὐ διάγων.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="manual">Ioannes Vulteius Hessus.</s>
+					<s n="26" xml:lang="la" type="manual">Ioannes Vulteius Hessus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="manual">Doctissimo atque pientissimo viro Henrico Bullingero, praeceptori suo.</s>
+					<s n="27" xml:lang="la" type="manual">Doctissimo atque pientissimo viro Henrico Bullingero, praeceptori suo.</s>
 				</p>
 			</div>
 		</body>

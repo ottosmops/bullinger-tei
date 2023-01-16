@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3462</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Beilage" subtype="Original" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Original">E II 361,181</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Original">E II 361,181</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -53,13 +56,16 @@
 				</msDesc>
 				<msDesc type="Beilage" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 81,41</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 81,41</idno>
 					</msIdentifier>
 					<history><origin><p><date>18. Jh.</date></p></origin></history>
 					<physDesc>
@@ -71,26 +77,32 @@
 				</msDesc>
 				<msDesc type="Beilage" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#492">Strassburg</settlement>
-						<institution>National- und Universitätsbibliothek</institution>
-						<idno type="Kopie">Ms 0.680 = STB Bd. 21,71</idno>
-						<repository ref="archive#81">
+						<!--
+						<repository ref="archive81">
 							<name>Strassburg BNU</name>
 							<ref target="https://www.bnu.fr/fr"/>
 						</repository>
+						<settlement ref="place492">Strassburg</settlement>
+						<institution>National- und Universitätsbibliothek</institution>
+						-->
+						<repository ref="archive81"/>
+						<idno subtype="Kopie">Ms 0.680 = STB Bd. 21,71</idno>
 					</msIdentifier>
 					<history><origin><p><date>19. Jh.</date></p></origin></history>
 					<physDesc/>
 				</msDesc>
-				<msDesc type="Beilage" subtype="Original" xml:lang="la">
+				<msDesc type="" subtype="Beilage" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Original">E II 361,274</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Beilage">E II 361,274</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -101,15 +113,18 @@
 				</msDesc>
 				<msDesc type="Beilage" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#492">Strassburg</settlement>
-						<institution>Archiv von Sankt-Thomas</institution>
-						<idno type="Kopie">Nr. 139 = Carton 73, p. 89 f (181)</idno>
-						<repository ref="archive#80">
+						<!--
+						<repository ref="archive80">
 							<name>Strassburg AST</name>
-							<note type="Mikrofilm">IRG</note>
-							<note type="Hinweis">irrt. dat.: Januar 22</note>
 							<ref target="https://archives.strasbourg.eu/"/>
 						</repository>
+						<settlement ref="place492">Strassburg</settlement>
+						<institution>Archiv von Sankt-Thomas</institution>
+						-->
+						<repository ref="archive80"/>
+						<idno subtype="Kopie">Nr. 139 = Carton 73, p. 89 f (181)</idno>
+						<idno subtype="Mikrofilm">IRG</idno>
+						<idno subtype="Hinweis">irrt. dat.: Januar 22</idno>
 					</msIdentifier>
 					<history><origin><p><date>19. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -119,51 +134,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2168">
 				<correspAction type="sent">
-					<persName ref="person#1010" cert="high">
+					<!--
+					<persName ref="person1010" cert="high">
 						<forename cert="high">Matthias</forename>
 						<surname cert="high">Erb</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Matthias_Erb"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/100972160"/>
 					</persName>
-					<place source="#411" cert="high">
-						<settlement>Reichenweier</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.16672 7.29707</geo>
-					</place>
+					-->
+					<persName ref="person1010" cert="high"/>
+					<place source="place411" cert="high"/>
 					<date when="1554-01-25" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2169"/>
-					<ref type="prev_chronologically" target="files.xml#2167"/>
-					<ref type="next_correspondence" target="files.xml#13154"/>
-					<ref type="prev_correspondence" target="files.xml#2128"/>
-					<ref type="next_correspondence_request" target="files.xml#13154"/>
-					<ref type="prev_correspondence_request" target="files.xml#2018"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2188"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2128"/>
-					<ref type="next_same_sender" target="files.xml#13154"/>
-					<ref type="prev_same_sender" target="files.xml#2018"/>
-					<ref type="next_same_addressee" target="files.xml#2174"/>
-					<ref type="prev_same_addressee" target="files.xml#2166"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13154"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2018"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2174"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2166"/>
-					<ref type="child" target="files.xml#13154"/>
+					<ref type="next_chronologically" target="file2169"/>
+					<ref type="prev_chronologically" target="file2167"/>
+					<ref type="next_correspondence" target="file13154"/>
+					<ref type="prev_correspondence" target="file2128"/>
+					<ref type="next_correspondence_request" target="file13154"/>
+					<ref type="prev_correspondence_request" target="file2018"/>
+					<ref type="next_correspondence_reaction" target="file2188"/>
+					<ref type="prev_correspondence_reaction" target="file2128"/>
+					<ref type="next_same_sender" target="file13154"/>
+					<ref type="prev_same_sender" target="file2018"/>
+					<ref type="next_same_addressee" target="file2174"/>
+					<ref type="prev_same_addressee" target="file2166"/>
+					<ref type="next_with_sender_as_addressee" target="file13154"/>
+					<ref type="prev_with_sender_as_addressee" target="file2018"/>
+					<ref type="next_with_addressee_as_sender" target="file2174"/>
+					<ref type="prev_with_addressee_as_sender" target="file2166"/>
+					<ref type="child" target="file13154"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -173,51 +187,51 @@
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
 	<facsimile>
-		<graphic url="2168/Autograph/00 E_II_361__fol__181_r_.tif" n="1"/>
-		<graphic url="2168/Autograph/01 E_II_361__fol__181_v_.tif" n="2"/>
+		<graphic url="2168/Original/00 E_II_361__fol__181_r_.tif" n="1"/>
+		<graphic url="2168/Original/01 E_II_361__fol__181_v_.tif" n="2"/>
 	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Gratia et pax a deo patre et domino Ihesu Christo.</s>
+					<s n="1" xml:lang="la" type="auto">Gratia et pax a deo patre et domino Ihesu Christo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Admiraris in tuis ad me literis et quaeris, doctissime Bullingere, qui fiat, quod hactenus meum in scribendo officium intermiserim.</s>
-					<s xml:lang="la" type="auto">Certe non voluntas, sed facultas id prohibuit; cum enim iam per quatuor fere continuos menses febri quartana gravissime occupatus tantos sustinuerim mortiferos dolores laetalesque agones, non solum non scribere quicquam, sed vix etiam palpitare valui.</s>
-					<s xml:lang="la" type="auto">Attamen, ut decet, dum spiro, spero et in Christo Ihesu confisus contendo a benigno deo, ut me in hora bona dissolvere et cum Christo filio suo in aeternum regnare faciat.</s>
-					<s xml:lang="la" type="auto">Interea meam hanc senectutem languide fragilem tum et ecclesiam nostram tuis tuorumque fratrum devotis praetibus commendatam habeto.</s>
+					<s n="2" xml:lang="la" type="auto">Admiraris in tuis ad me literis et quaeris, doctissime Bullingere, qui fiat, quod hactenus meum in scribendo officium intermiserim.</s>
+					<s n="3" xml:lang="la" type="auto">Certe non voluntas, sed facultas id prohibuit; cum enim iam per quatuor fere continuos menses febri quartana gravissime occupatus tantos sustinuerim mortiferos dolores laetalesque agones, non solum non scribere quicquam, sed vix etiam palpitare valui.</s>
+					<s n="4" xml:lang="la" type="auto">Attamen, ut decet, dum spiro, spero et in Christo Ihesu confisus contendo a benigno deo, ut me in hora bona dissolvere et cum Christo filio suo in aeternum regnare faciat.</s>
+					<s n="5" xml:lang="la" type="auto">Interea meam hanc senectutem languide fragilem tum et ecclesiam nostram tuis tuorumque fratrum devotis praetibus commendatam habeto.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quod de Serveto quodam a Sathana dementato scribis, de eius certe nomine vix nobis hactenus quicquam constitit, quo fit, ut de illius impiis dogmatibus plane nihil sciamus; cupimus tamen de iis a te certiores fieri.</s>
-					<s xml:lang="la" type="auto">Principis quoque admiraris silentium.</s>
-					<s xml:lang="la" type="auto">Ille iam Montebelgardii agit et in occupandis illis suis regnis adeo forte tenetur, ut inde scribendo sit rarior; quibus rebus forte compositis ad pristina sua rediturus est exercitia.</s>
+					<s n="6" xml:lang="la" type="auto">Quod de Serveto quodam a Sathana dementato scribis, de eius certe nomine vix nobis hactenus quicquam constitit, quo fit, ut de illius impiis dogmatibus plane nihil sciamus; cupimus tamen de iis a te certiores fieri.</s>
+					<s n="7" xml:lang="la" type="auto">Principis quoque admiraris silentium.</s>
+					<s n="8" xml:lang="la" type="auto">Ille iam Montebelgardii agit et in occupandis illis suis regnis adeo forte tenetur, ut inde scribendo sit rarior; quibus rebus forte compositis ad pristina sua rediturus est exercitia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Libellos De iustificatione a te in lucem editos nullus hactenus ex fratribus vidit; quare, si forte fidelis aliquis bibliopola, qui in nostra regione rarissimi esse solent, hincinde libellos deferet venales, rogamus, ut alicui eorum haec subsignata exemplaria imponeres et ad nos perferri demandares.</s>
-					<s xml:lang="la" type="auto">Quorum pretia si cognoverimus, sine mora numerabuntur.</s>
+					<s n="9" xml:lang="la" type="auto">Libellos De iustificatione a te in lucem editos nullus hactenus ex fratribus vidit; quare, si forte fidelis aliquis bibliopola, qui in nostra regione rarissimi esse solent, hincinde libellos deferet venales, rogamus, ut alicui eorum haec subsignata exemplaria imponeres et ad nos perferri demandares.</s>
+					<s n="10" xml:lang="la" type="auto">Quorum pretia si cognoverimus, sine mora numerabuntur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Item De Iustificatione sex; item breves illas vulgares contiones privatim excusas in libellum colligatas, quibus piam et vere religiosam matronam sum donaturus; item 4 teutsche buͤchlin, hatt einer über den psalmum 50 Miserere gschriben, verteutscht durch Sarcerium.</s>
+					<s n="11" xml:lang="la" type="auto">Item De Iustificatione sex; item breves illas vulgares contiones privatim excusas in libellum colligatas, quibus piam et vere religiosam matronam sum donaturus; item 4 teutsche buͤchlin, hatt einer über den psalmum 50 Miserere gschriben, verteutscht durch Sarcerium.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Status ecclesiae nostrae tutore Christo pristinus est atque sincerus; salva, pura et immutata adhuc omnia.</s>
+					<s n="12" xml:lang="la" type="auto">Status ecclesiae nostrae tutore Christo pristinus est atque sincerus; salva, pura et immutata adhuc omnia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De regno Anglicano horrenda audimus, de quo forte vobis certius quam nobis constabit.</s>
-					<s xml:lang="la" type="auto">Videtur certe Sathan a facie dei egressus esse ad affligendam ecclesiam Christi, quod quidem peccata nostra meruerunt.</s>
-					<s xml:lang="la" type="auto">Novarum rerum praeterea apud nos nihil, cum Argentinae nullus sit, qui inde mecum mutuis agat epistolis.</s>
-					<s xml:lang="la" type="auto">Quod si quid apud vos fuerit, facite, quaeso, nos certiores.</s>
-					<s xml:lang="la" type="auto">Atque adeo in domino nunc valeas, cui et mortem et vitam meam sanctificavi, et non pudefiam in aeternum.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
-					<s xml:lang="la" type="auto">Rychenvillae 8. calendas februarii anno 1554.</s>
-					<s xml:lang="la" type="auto">Salutat et te Ioannes Ulstetterus, pubis nostrę moderator.</s>
+					<s n="13" xml:lang="la" type="auto">De regno Anglicano horrenda audimus, de quo forte vobis certius quam nobis constabit.</s>
+					<s n="14" xml:lang="la" type="auto">Videtur certe Sathan a facie dei egressus esse ad affligendam ecclesiam Christi, quod quidem peccata nostra meruerunt.</s>
+					<s n="15" xml:lang="la" type="auto">Novarum rerum praeterea apud nos nihil, cum Argentinae nullus sit, qui inde mecum mutuis agat epistolis.</s>
+					<s n="16" xml:lang="la" type="auto">Quod si quid apud vos fuerit, facite, quaeso, nos certiores.</s>
+					<s n="17" xml:lang="la" type="auto">Atque adeo in domino nunc valeas, cui et mortem et vitam meam sanctificavi, et non pudefiam in aeternum.</s>
+					<s n="18" xml:lang="la" type="manual">Amen.</s>
+					<s n="19" xml:lang="la" type="auto">Rychenvillae 8. calendas februarii anno 1554.</s>
+					<s n="20" xml:lang="la" type="auto">Salutat et te Ioannes Ulstetterus, pubis nostrę moderator.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Mathias Erbius.</s>
+					<s n="21" xml:lang="la" type="auto">Mathias Erbius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Doctissimo ac pietate celeberrimo domino Heinricho Bullingero, ecclesiastae Tigurino, domino et fratri suo.</s>
+					<s n="22" xml:lang="la" type="auto">Doctissimo ac pietate celeberrimo domino Heinricho Bullingero, ecclesiastae Tigurino, domino et fratri suo.</s>
 				</p>
 			</div>
 		</body>

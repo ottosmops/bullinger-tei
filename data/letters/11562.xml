@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2005"/>
-				<idno type="ISBN">ISBN 3-290-17339-9</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1519</idno>
+				<idno subtype="ISBN">ISBN 3-290-17339-9</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1519</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 11</title>
+				<title subtype="publication">HBBW XI</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">11</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,181</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,181</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,11 +49,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Schickt Bücher, die [<persName ref="228">Hans</persName>]
-								<persName ref="228">Vogler</persName> [d. J.] zurückließ, und fragt sich, wer sich um dessen
-								restliche Habe kümmern wird; hat wegen <persName ref="228">Voglers</persName> Schulden an dessen
-								Vater [<persName ref="228">Hans</persName> d. Ä.] geschrieben. Erkundigt sich nach dem Reichstag [in
-								<placeName ref="880">Regensburg</placeName>].
+								Schickt Bücher, die [Hans]
+								<persName ref="person228">Vogler</persName> [d. J.] zurückließ, und fragt sich, wer sich um dessen
+								restliche Habe kümmern wird; hat wegen <persName ref="person228">Voglers</persName> Schulden an dessen
+								Vater [Hans d. Ä.] geschrieben. Erkundigt sich nach dem Reichstag [in
+								<placeName ref="place880">Regensburg</placeName>].
 							</p>
 						</summary>
 					</msContents>
@@ -60,45 +63,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11562">
 				<correspAction type="sent">
-					<persName ref="person#1365" cert="high">
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
-					<place source="#28" cert="low">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person1365" cert="high"/>
+					<place source="place28" cert="low"/>
 					<date when="1541-05-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11563"/>
-					<ref type="prev_chronologically" target="files.xml#11561"/>
-					<ref type="next_correspondence" target="files.xml#11573"/>
-					<ref type="prev_correspondence" target="files.xml#11557"/>
-					<ref type="next_correspondence_request" target="files.xml#11573"/>
-					<ref type="prev_correspondence_request" target="files.xml#11557"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11593"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11378"/>
-					<ref type="next_same_sender" target="files.xml#11573"/>
-					<ref type="prev_same_sender" target="files.xml#11557"/>
-					<ref type="next_same_addressee" target="files.xml#11576"/>
-					<ref type="prev_same_addressee" target="files.xml#11530"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11573"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11557"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11576"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11530"/>
+					<ref type="next_chronologically" target="file11563"/>
+					<ref type="prev_chronologically" target="file11561"/>
+					<ref type="next_correspondence" target="file11573"/>
+					<ref type="prev_correspondence" target="file11557"/>
+					<ref type="next_correspondence_request" target="file11573"/>
+					<ref type="prev_correspondence_request" target="file11557"/>
+					<ref type="next_correspondence_reaction" target="file11593"/>
+					<ref type="prev_correspondence_reaction" target="file11378"/>
+					<ref type="next_same_sender" target="file11573"/>
+					<ref type="prev_same_sender" target="file11557"/>
+					<ref type="next_same_addressee" target="file11576"/>
+					<ref type="prev_same_addressee" target="file11530"/>
+					<ref type="next_with_sender_as_addressee" target="file11573"/>
+					<ref type="prev_with_sender_as_addressee" target="file11557"/>
+					<ref type="next_with_addressee_as_sender" target="file11576"/>
+					<ref type="prev_with_addressee_as_sender" target="file11530"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -115,26 +123,26 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Reliquit hic <persName ref="228">Voglerus</persName> librum unum et alterum; eos hic cum isto<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> mitto.</s>
-					<s xml:lang="la" type="auto">Vas, in quo est omnis eius suppellex, nemo hactenus aufert; miror, qui fiat.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Reliquit hic <persName ref="person228">Voglerus</persName> librum unum et alterum; eos hic cum isto<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> mitto.</s>
+					<s n="3" xml:lang="la" type="auto">Vas, in quo est omnis eius suppellex, nemo hactenus aufert; miror, qui fiat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sunt quaedam debita perexigua, quae patri nuper scripsi,<note xml:id="fn3" type="footnote" n="3">Der Brief an <persName ref="228">Hans Vogler</persName> d. Ä. ist nicht erhalten.</note> et valde cupiam dissolvi.</s>
+					<s n="4" xml:lang="la" type="auto">Sunt quaedam debita perexigua, quae patri nuper scripsi,<note xml:id="fn3" type="footnote" n="3">Der Brief an <persName ref="person228">Hans Vogler</persName> d. Ä. ist nicht erhalten.</note> et valde cupiam dissolvi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino cum omnibus tuis.</s>
-					<s xml:lang="la" type="auto">14. maii.</s>
+					<s n="5" xml:lang="la" type="auto">Vale in domino cum omnibus tuis.</s>
+					<s n="6" xml:lang="la" type="auto">14. maii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S. <persName ref="81">Grynęus</persName> tuus.</s>
+					<s n="7" xml:lang="la" type="auto">S. <persName ref="person81">Grynęus</persName> tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">A comitiis<note xml:id="fn4" type="footnote" n="4">Gemeint ist zweifellos der Reichstag zu <placeName ref="880">Regensburg</placeName>.</note> si quid habes, imperti.</s>
+					<s n="8" xml:lang="la" type="auto">A comitiis<note xml:id="fn4" type="footnote" n="4">Gemeint ist zweifellos der Reichstag zu <placeName ref="place880">Regensburg</placeName>.</note> si quid habes, imperti.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino H. Bullingero suo, amico.</s>
+					<s n="9" xml:lang="la" type="auto">Domino H. Bullingero suo, amico.</s>
 				</p>
 			</div>
 		</body>

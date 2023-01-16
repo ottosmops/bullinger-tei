@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3024</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3024</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 360,441</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 360,441</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -79,43 +82,46 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13073">
 				<correspAction type="sent">
-					<persName ref="person#2600" cert="high">
+					<!--
+					<persName ref="person2600" cert="high">
 						<forename cert="high">Vincenz</forename>
 						<surname cert="high">Pfister</surname>
 					</persName>
-					<place source="#3" cert="low">
-						<settlement>Aarburg</settlement>
-						<district>Aargau</district>
-						<country>Schweiz</country>
-						<geo>47.32067 7.89986</geo>
-					</place>
+					-->
+					<persName ref="person2600" cert="high"/>
+					<place source="place3" cert="low"/>
 					<date when="1547-09-29" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13074"/>
-					<ref type="prev_chronologically" target="files.xml#13072"/>
-					<ref type="next_correspondence" target="files.xml#2506"/>
+					<ref type="next_chronologically" target="file13074"/>
+					<ref type="prev_chronologically" target="file13072"/>
+					<ref type="next_correspondence" target="file2506"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#2506"/>
+					<ref type="next_correspondence_request" target="file2506"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#2506"/>
+					<ref type="next_same_sender" target="file2506"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#13081"/>
-					<ref type="prev_same_addressee" target="files.xml#13069"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2506"/>
+					<ref type="next_same_addressee" target="file13081"/>
+					<ref type="prev_same_addressee" target="file13069"/>
+					<ref type="next_with_sender_as_addressee" target="file2506"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13081"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13069"/>
+					<ref type="next_with_addressee_as_sender" target="file13081"/>
+					<ref type="prev_with_addressee_as_sender" target="file13069"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -132,33 +138,33 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Min früntlichen gruͦß und willigen dienst zuͦvor, günstiger und lieber herr.</s>
-					<s xml:lang="de" type="auto">Alß<note xml:id="fn2" type="footnote" n="2">Da.</note> ich dan achten<note xml:id="fn3" type="footnote" n="3">annehme.</note>, daß üch filichter<note xml:id="fn4" type="footnote" n="4">vermutlich; s. <abbr>SI</abbr> III 1049.</note> woll zuͦ wüssen sig<note xml:id="fn5" type="footnote" n="5">sei.</note> und ir ettlicher gstaltt<note xml:id="fn6" type="footnote" n="6">ettlicher gstaltt: irgendwie; s. <abbr>Götze</abbr> 71; <abbr>SI</abbr> XI 349f.</note> von herren Pettren<note xml:id="fn7" type="footnote" n="7">Peter Schnyder, von 1542 bis 1545 Stadtprädikant in Zofingen, und seit März 1545 in Aarburg; s. <abbr>HBBW</abbr> XIX 111, Anm. 3.</note> zuͦ Arburg bricht<note xml:id="fn8" type="footnote" n="8">benachrichtigt.</note> sind worden ettlicher händlen halb, so ich mitt ettlichen predicanten zuͦ Zoffingen<note xml:id="fn9" type="footnote" n="9">Johannes Ulrich Göppel und Benedikt Schürmeister, die seit Ende Februar bzw. Ende April 1545 in Zofingen wirkten; s. <abbr>HBBW</abbr> XIX 111f, Anm. 4f.</note> ghept han, nitt von nötten jezmal ze mälden<note xml:id="fn10" type="footnote" n="10">jezmal ze mälden: diesmal auszuführen.</note> (ist aber doch der lest handel derselben predicanten obgmältt<note xml:id="fn11" type="footnote" n="11">obenerwähnten.</note> zum theil an herren Bändicht Schürmeyster bliben<note xml:id="fn12" type="footnote" n="12">ist der lest handel zum theil an Schürmeyster bliben: wurde schließlich Schürmeister zum Hauptverantwortlichen für den letzten Streit erklärt.</note>, där sich zuͦ Bernn mitt dem eydschwuͦr und underschribung bestättigott, nütt anderst ze leren, dan inn loblicher disspothazyon durch gottes wortt erhalten sige)<note xml:id="fna" type="footnote" n="a"><hi>Klammern ergänzt.</hi></note>,<note xml:id="fn13" type="footnote" n="13">Am 5. Januar 1547 unterschrieb Schürmeister im Berner Prädikantenrodel die Zehn Schlussreden der Berner Disputation (Januar 1528); s. Bern StA, B III 21, S. 23, <ref target="file#10180">Nr. 149</ref>.<zfn>fn17292-1</zfn></note> und aber<note xml:id="fn14" type="footnote" n="14">erneut.</note> sich nach disem eidschwuͦr ettwaß spans<note xml:id="fn15" type="footnote" n="15">Streit.</note> erhept zwüschend genantem her Petter und im, abermals ein verthrag<note xml:id="fn16" type="footnote" n="16">Wann es zu dieser Schlichtung zwischen Schnyder und Schürmeister kam, ist unbekannt.</note> gmachtt worden, dän ze halten mitt underschribung sins namens, aber von imme, gmältem Schürmeyster, nitt ghalten.</s>
-					<s xml:lang="de" type="auto">Deshalb sin übersaechung<note xml:id="fn17" type="footnote" n="17">Vergehen; s. <abbr>SI</abbr> VII 548.</note> an min gnädig herren<note xml:id="fn18" type="footnote" n="18">An den Berner Rat.</note> gstält.</s>
+					<s n="1" xml:lang="de" type="auto">Min früntlichen gruͦß und willigen dienst zuͦvor, günstiger und lieber herr.</s>
+					<s n="2" xml:lang="de" type="auto">Alß<note xml:id="fn2" type="footnote" n="2">Da.</note> ich dan achten<note xml:id="fn3" type="footnote" n="3">annehme.</note>, daß üch filichter<note xml:id="fn4" type="footnote" n="4">vermutlich; s. <abbr>SI</abbr> III 1049.</note> woll zuͦ wüssen sig<note xml:id="fn5" type="footnote" n="5">sei.</note> und ir ettlicher gstaltt<note xml:id="fn6" type="footnote" n="6">ettlicher gstaltt: irgendwie; s. <abbr>Götze</abbr> 71; <abbr>SI</abbr> XI 349f.</note> von herren Pettren<note xml:id="fn7" type="footnote" n="7">Peter Schnyder, von 1542 bis 1545 Stadtprädikant in Zofingen, und seit März 1545 in Aarburg; s. <abbr>HBBW</abbr> XIX 111, Anm. 3.</note> zuͦ Arburg bricht<note xml:id="fn8" type="footnote" n="8">benachrichtigt.</note> sind worden ettlicher händlen halb, so ich mitt ettlichen predicanten zuͦ Zoffingen<note xml:id="fn9" type="footnote" n="9">Johannes Ulrich Göppel und Benedikt Schürmeister, die seit Ende Februar bzw. Ende April 1545 in Zofingen wirkten; s. <abbr>HBBW</abbr> XIX 111f, Anm. 4f.</note> ghept han, nitt von nötten jezmal ze mälden<note xml:id="fn10" type="footnote" n="10">jezmal ze mälden: diesmal auszuführen.</note> (ist aber doch der lest handel derselben predicanten obgmältt<note xml:id="fn11" type="footnote" n="11">obenerwähnten.</note> zum theil an herren Bändicht Schürmeyster bliben<note xml:id="fn12" type="footnote" n="12">ist der lest handel zum theil an Schürmeyster bliben: wurde schließlich Schürmeister zum Hauptverantwortlichen für den letzten Streit erklärt.</note>, där sich zuͦ Bernn mitt dem eydschwuͦr und underschribung bestättigott, nütt anderst ze leren, dan inn loblicher disspothazyon durch gottes wortt erhalten sige)<note xml:id="fna" type="footnote" n="a"><hi>Klammern ergänzt.</hi></note>,<note xml:id="fn13" type="footnote" n="13">Am 5. Januar 1547 unterschrieb Schürmeister im Berner Prädikantenrodel die Zehn Schlussreden der Berner Disputation (Januar 1528); s. Bern StA, B III 21, S. 23, <ref target="file10180">Nr. 149</ref>.<zfn>fn17292-1</zfn></note> und aber<note xml:id="fn14" type="footnote" n="14">erneut.</note> sich nach disem eidschwuͦr ettwaß spans<note xml:id="fn15" type="footnote" n="15">Streit.</note> erhept zwüschend genantem her Petter und im, abermals ein verthrag<note xml:id="fn16" type="footnote" n="16">Wann es zu dieser Schlichtung zwischen Schnyder und Schürmeister kam, ist unbekannt.</note> gmachtt worden, dän ze halten mitt underschribung sins namens, aber von imme, gmältem Schürmeyster, nitt ghalten.</s>
+					<s n="3" xml:lang="de" type="auto">Deshalb sin übersaechung<note xml:id="fn17" type="footnote" n="17">Vergehen; s. <abbr>SI</abbr> VII 548.</note> an min gnädig herren<note xml:id="fn18" type="footnote" n="18">An den Berner Rat.</note> gstält.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="de" type="auto">Aber ich hab värnummen, wie das her Bändicht bin<note xml:id="fn19" type="footnote" n="19">bei. - Der Zeitpunkt von Schürmeisters Reise nach Zürich ist unbekannt.</note> üch zuͦ Zürich gsin und ir üch mitt im ärsprachett<note xml:id="fn20" type="footnote" n="20">ausgesprochen (habt).</note> sins gluͦbens und ler halb, und fürnämlich anthräffend das nachtmal unsers herren Jesu Krysty, sin ärlüttrung<note xml:id="fn21" type="footnote" n="21">Erläuterung.</note> hierumb ze gäben, das aber im filichte duͦzmal nitt fugklich gsin ze verantwortten.<note xml:id="fn22" type="footnote" n="22">das aber im [= ihm] filichte duͦzmal nitt fugklich gsin ze verantwortten: dass es ihm aber dazumal [als er in Zürich war] vermutlich nicht angebracht erschien, [seine Haltung] zu rechtfertigen.</note><pb type="edition" next="507"/></s>
-					<s xml:lang="de" type="auto">Hatt mich doch herr Peter zuͦ Arburg zum theil bricht, wie das her Bendicht üch sin lüttrung der worten halb antthräffend das nachtmal<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> nachmal.</note> oder abendtmal des herren Jesu Krysty gschriffttlichen überantwortte, aber mir nitt eygendlichen<note xml:id="fn23" type="footnote" n="23">genau; vgl. <abbr>SI</abbr> I 147f.</note> könden anzeigen, wie oder in welcher gstallt die<note xml:id="fn24" type="footnote" n="24">die Erläuterung. - Schürmeisters Ausführungen sind heute unbekannt, ihre Bewertung aber durch Bullinger entspricht <ref target="file#13088">Nr. 3039</ref> vom 13. Oktober.</note> gäben wärde.</s>
+					<s n="4" xml:lang="de" type="auto">Aber ich hab värnummen, wie das her Bändicht bin<note xml:id="fn19" type="footnote" n="19">bei. - Der Zeitpunkt von Schürmeisters Reise nach Zürich ist unbekannt.</note> üch zuͦ Zürich gsin und ir üch mitt im ärsprachett<note xml:id="fn20" type="footnote" n="20">ausgesprochen (habt).</note> sins gluͦbens und ler halb, und fürnämlich anthräffend das nachtmal unsers herren Jesu Krysty, sin ärlüttrung<note xml:id="fn21" type="footnote" n="21">Erläuterung.</note> hierumb ze gäben, das aber im filichte duͦzmal nitt fugklich gsin ze verantwortten.<note xml:id="fn22" type="footnote" n="22">das aber im [= ihm] filichte duͦzmal nitt fugklich gsin ze verantwortten: dass es ihm aber dazumal [als er in Zürich war] vermutlich nicht angebracht erschien, [seine Haltung] zu rechtfertigen.</note><pb type="edition" next="507"/></s>
+					<s n="5" xml:lang="de" type="auto">Hatt mich doch herr Peter zuͦ Arburg zum theil bricht, wie das her Bendicht üch sin lüttrung der worten halb antthräffend das nachtmal<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> nachmal.</note> oder abendtmal des herren Jesu Krysty gschriffttlichen überantwortte, aber mir nitt eygendlichen<note xml:id="fn23" type="footnote" n="23">genau; vgl. <abbr>SI</abbr> I 147f.</note> könden anzeigen, wie oder in welcher gstallt die<note xml:id="fn24" type="footnote" n="24">die Erläuterung. - Schürmeisters Ausführungen sind heute unbekannt, ihre Bewertung aber durch Bullinger entspricht <ref target="file13088">Nr. 3039</ref> vom 13. Oktober.</note> gäben wärde.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="de" type="auto">Und uff söllichs, lieber her, diewil üch zum theil wol wüssend ist, wie ich deren sachen halb vil mitt inen<note xml:id="fn25" type="footnote" n="25">Mit den beiden Prädikanten.</note> ze handlen han ghan<note xml:id="fn26" type="footnote" n="26">han ghan: gehabt habe.</note>, ist min früntliche bitt an üch, wo äß nitt wider üch wärre,<note xml:id="fn27" type="footnote" n="27">wo äß nitt wider üch wärre: sofern es euch nicht beschwerlich wäre.</note> das ir mir her Bändichs brichts vom abentmal wättend<note xml:id="fn28" type="footnote" n="28">wolltet.</note> in gschrifftt bin<note xml:id="fn29" type="footnote" n="29">durch.</note> her Petter zuͦschicken.</s>
-					<s xml:lang="de" type="auto">Wa<note xml:id="fn30" type="footnote" n="30">Wenn.</note> ich dann söllichs um üwer gnad köndi pschulden und verdienen<note xml:id="fn31" type="footnote" n="31">köndi pschulden und verdienen: vergelten könnte.</note>, wett<note xml:id="fn32" type="footnote" n="32">wollte.</note> ich mitt guͦttem willen und gärnn thuͦn.</s>
+					<s n="6" xml:lang="de" type="auto">Und uff söllichs, lieber her, diewil üch zum theil wol wüssend ist, wie ich deren sachen halb vil mitt inen<note xml:id="fn25" type="footnote" n="25">Mit den beiden Prädikanten.</note> ze handlen han ghan<note xml:id="fn26" type="footnote" n="26">han ghan: gehabt habe.</note>, ist min früntliche bitt an üch, wo äß nitt wider üch wärre,<note xml:id="fn27" type="footnote" n="27">wo äß nitt wider üch wärre: sofern es euch nicht beschwerlich wäre.</note> das ir mir her Bändichs brichts vom abentmal wättend<note xml:id="fn28" type="footnote" n="28">wolltet.</note> in gschrifftt bin<note xml:id="fn29" type="footnote" n="29">durch.</note> her Petter zuͦschicken.</s>
+					<s n="7" xml:lang="de" type="auto">Wa<note xml:id="fn30" type="footnote" n="30">Wenn.</note> ich dann söllichs um üwer gnad köndi pschulden und verdienen<note xml:id="fn31" type="footnote" n="31">köndi pschulden und verdienen: vergelten könnte.</note>, wett<note xml:id="fn32" type="footnote" n="32">wollte.</note> ich mitt guͦttem willen und gärnn thuͦn.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="de" type="auto">Günstiger und lieber herr, ir wellend diß min schriben in guͦtter meinung von mir uffnämen, dan äß im allerbesten<note xml:id="fn33" type="footnote" n="33">im allerbesten: in der besten Absicht.</note> bschächen ist.</s>
-					<s xml:lang="de" type="auto">Hiemitt syend dem allmächtigen gott in sin schuz und schirm befolchen.</s>
-					<s xml:lang="de" type="auto">Gäben uff donstag, an dem 29. thag herbstmanett<note xml:id="fn34" type="footnote" n="34">September.</note> im 1547. jar.</s>
-					<s xml:lang="de" type="auto">Vincenz Pfister, üwer williger diener zuͦ Arburg.</s>
+					<s n="8" xml:lang="de" type="auto">Günstiger und lieber herr, ir wellend diß min schriben in guͦtter meinung von mir uffnämen, dan äß im allerbesten<note xml:id="fn33" type="footnote" n="33">im allerbesten: in der besten Absicht.</note> bschächen ist.</s>
+					<s n="9" xml:lang="de" type="auto">Hiemitt syend dem allmächtigen gott in sin schuz und schirm befolchen.</s>
+					<s n="10" xml:lang="de" type="auto">Gäben uff donstag, an dem 29. thag herbstmanett<note xml:id="fn34" type="footnote" n="34">September.</note> im 1547. jar.</s>
+					<s n="11" xml:lang="de" type="auto">Vincenz Pfister, üwer williger diener zuͦ Arburg.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Ann denn wolgelertten herren Heinrikuß Pullinger, predicant zuͦ Zürich, minem lieben und guͦtten gönner, zuͦ handen.</s>
+					<s n="12" xml:lang="de" type="auto">Ann denn wolgelertten herren Heinrikuß Pullinger, predicant zuͦ Zürich, minem lieben und guͦtten gönner, zuͦ handen.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3086</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3086</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 364,105</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 364,105</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -67,43 +70,46 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13135">
 				<correspAction type="sent">
-					<persName ref="person#182" cert="high">
+					<!--
+					<persName ref="person182" cert="high">
 						<forename cert="high">Gabriel</forename>
 						<surname cert="high">Arnold</surname>
 					</persName>
-					<place source="#257" cert="high">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person182" cert="high"/>
+					<place source="place257" cert="high"/>
 					<date when="1547-12-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13136"/>
-					<ref type="prev_chronologically" target="files.xml#13134"/>
-					<ref type="next_correspondence" target="files.xml#755"/>
+					<ref type="next_chronologically" target="file13136"/>
+					<ref type="prev_chronologically" target="file13134"/>
+					<ref type="next_correspondence" target="file755"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#755"/>
+					<ref type="next_correspondence_request" target="file755"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#755"/>
+					<ref type="next_same_sender" target="file755"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#13145"/>
-					<ref type="prev_same_addressee" target="files.xml#13134"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#755"/>
+					<ref type="next_same_addressee" target="file13145"/>
+					<ref type="prev_same_addressee" target="file13134"/>
+					<ref type="next_with_sender_as_addressee" target="file755"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13145"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13134"/>
+					<ref type="next_with_addressee_as_sender" target="file13145"/>
+					<ref type="prev_with_addressee_as_sender" target="file13134"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,20 +123,20 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Gunstiger und vertrauter, lieber her und frundt, ich kan eur<note xml:id="fna" type="footnote" n="a"><hi>Fehlt in der Vorlage. Ergänzt nach der Schreibweise unten Z. <qv>zl17353-1</qv>.</hi></note> eren vertreulicher weis nit pergen, das diser lakay<note xml:id="fn2" type="footnote" n="2">Unbekannter Diener.</note>, anntworter<note xml:id="fn3" type="footnote" n="3">Überbringer; s. <abbr>Fischer</abbr> I 281.</note> diß briefs, ainen brief<note xml:id="fn4" type="footnote" n="4">In Anbetracht des weiteren Brieftextes war dieser Brief für Arnold bestimmt. Er könnte aus Basel entsandt worden sein, da Arnold sich dort eine Zeitlang aufgehalten hatte; s. <ref target="file#13114">Nr. 3065</ref>, <qv>fn17331-4</qv> (Arnolds Durchreise in Zürich, zurück nach Konstanz, ist am 25. November belegt; s. <ref target="file#13134">Nr. 3085</ref>,<qv>zl17351-4</qv>). Der Brief könnte aber auch von Neuchâtel entsandt worden sein, da die Zürcher Räte einige Tage vor dem 20. November Konrad Zwick rieten, Arnold (der sich damals noch in Basel aufhielt) als Unterhändler bei dem französischen Geschäftsträger Jean Merveilleux (wohnhaft in Neuchâtel) für das Konstanzer Hilfsgesuch einzusetzen, Söldner bei den Eidgenossen oder in den von diesen verwalteten Gebieten anwerben zu dürfen; s. dazu <abbr>EA</abbr> IV/1d 884, <ref target="file#10443">Nr. 408</ref>; <abbr>Maurer, Übergang</abbr> 39.<zfn>fn17353-1</zfn></note> und bevelch gehabt hat, mir denselben zuzebringen.</s>
-					<s xml:lang="de" type="auto">Als er aber in ain dorff nahend bey Zurich hieherwerts kumen, sind im die stifl und der darein genet brief bey nacht gestolen worden.</s>
-					<s xml:lang="de" type="auto">Und wiewol ich nit wais, was daran gelegen,<note xml:id="fn5" type="footnote" n="5">was daran gelegen: wie wichtig die Angelegenheit war.</note> so ist doch bey mir ain große vermuetung (sunderlich bey disen leuffen<note xml:id="fn6" type="footnote" n="6">Zeitläuften.</note>, da der außganng villeicht vil leuten beschwärlich fahlen möcht, etc.)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note>, mit höchstem und fruntlichem vleis bitend, dieweil ich derort<note xml:id="fn7" type="footnote" n="7">dort (in Zürich). - Die Form "derort" ist eine Bildung des 16. Jhs.; s. Eva-Maria <hi>Heinle,</hi> Diachronische Wortbildung unter syntaktischem Aspekt, Heidelberg 2004, S. 190f.</note>, auch den heubteren<note xml:id="fn8" type="footnote" n="8">Stadtoberhäuptern.</note> zu Zurich, nit bekhannt bin, ir wellet von disem poten muntlichen bericht seins verlusts hören und mit ernnst nachfrag haben, auch in gehaim vleis tun laßn, ob die stifl zu hannden gebracht und mir der brief, darinn vernet, zuegeschigkht werden möcht.</s>
-					<s xml:lang="de" type="auto">Was daruber geen wirdet,<note xml:id="fn9" type="footnote" n="9">Was daruber geen wirdet: was für Kosten daraus entstehen würden.</note> soll von mir danngkhperlich bezalt und eur mue<note xml:id="fn10" type="footnote" n="10">Mühe.</note> mit hilff des heren fruntlich verdient<note xml:id="fn11" type="footnote" n="11">vergolten.</note> werden.</s>
+					<s n="1" xml:lang="de" type="auto">Gunstiger und vertrauter, lieber her und frundt, ich kan eur<note xml:id="fna" type="footnote" n="a"><hi>Fehlt in der Vorlage. Ergänzt nach der Schreibweise unten Z. <qv>zl17353-1</qv>.</hi></note> eren vertreulicher weis nit pergen, das diser lakay<note xml:id="fn2" type="footnote" n="2">Unbekannter Diener.</note>, anntworter<note xml:id="fn3" type="footnote" n="3">Überbringer; s. <abbr>Fischer</abbr> I 281.</note> diß briefs, ainen brief<note xml:id="fn4" type="footnote" n="4">In Anbetracht des weiteren Brieftextes war dieser Brief für Arnold bestimmt. Er könnte aus Basel entsandt worden sein, da Arnold sich dort eine Zeitlang aufgehalten hatte; s. <ref target="file13114">Nr. 3065</ref>, <qv>fn17331-4</qv> (Arnolds Durchreise in Zürich, zurück nach Konstanz, ist am 25. November belegt; s. <ref target="file13134">Nr. 3085</ref>,<qv>zl17351-4</qv>). Der Brief könnte aber auch von Neuchâtel entsandt worden sein, da die Zürcher Räte einige Tage vor dem 20. November Konrad Zwick rieten, Arnold (der sich damals noch in Basel aufhielt) als Unterhändler bei dem französischen Geschäftsträger Jean Merveilleux (wohnhaft in Neuchâtel) für das Konstanzer Hilfsgesuch einzusetzen, Söldner bei den Eidgenossen oder in den von diesen verwalteten Gebieten anwerben zu dürfen; s. dazu <abbr>EA</abbr> IV/1d 884, <ref target="file10443">Nr. 408</ref>; <abbr>Maurer, Übergang</abbr> 39.<zfn>fn17353-1</zfn></note> und bevelch gehabt hat, mir denselben zuzebringen.</s>
+					<s n="2" xml:lang="de" type="auto">Als er aber in ain dorff nahend bey Zurich hieherwerts kumen, sind im die stifl und der darein genet brief bey nacht gestolen worden.</s>
+					<s n="3" xml:lang="de" type="auto">Und wiewol ich nit wais, was daran gelegen,<note xml:id="fn5" type="footnote" n="5">was daran gelegen: wie wichtig die Angelegenheit war.</note> so ist doch bey mir ain große vermuetung (sunderlich bey disen leuffen<note xml:id="fn6" type="footnote" n="6">Zeitläuften.</note>, da der außganng villeicht vil leuten beschwärlich fahlen möcht, etc.)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note>, mit höchstem und fruntlichem vleis bitend, dieweil ich derort<note xml:id="fn7" type="footnote" n="7">dort (in Zürich). - Die Form "derort" ist eine Bildung des 16. Jhs.; s. Eva-Maria <hi>Heinle,</hi> Diachronische Wortbildung unter syntaktischem Aspekt, Heidelberg 2004, S. 190f.</note>, auch den heubteren<note xml:id="fn8" type="footnote" n="8">Stadtoberhäuptern.</note> zu Zurich, nit bekhannt bin, ir wellet von disem poten muntlichen bericht seins verlusts hören und mit ernnst nachfrag haben, auch in gehaim vleis tun laßn, ob die stifl zu hannden gebracht und mir der brief, darinn vernet, zuegeschigkht werden möcht.</s>
+					<s n="4" xml:lang="de" type="auto">Was daruber geen wirdet,<note xml:id="fn9" type="footnote" n="9">Was daruber geen wirdet: was für Kosten daraus entstehen würden.</note> soll von mir danngkhperlich bezalt und eur mue<note xml:id="fn10" type="footnote" n="10">Mühe.</note> mit hilff des heren fruntlich verdient<note xml:id="fn11" type="footnote" n="11">vergolten.</note> werden.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="de" type="auto">Datum eilend Costentz, den ersten decembris anno 47.</s>
-					<s xml:lang="de" type="auto">Ewer williger Gabriel Arnoldt.<pb type="edition" next="685"/></s>
+					<s n="5" xml:lang="de" type="auto">Datum eilend Costentz, den ersten decembris anno 47.</s>
+					<s n="6" xml:lang="de" type="auto">Ewer williger Gabriel Arnoldt.<pb type="edition" next="685"/></s>
 				</p>
 				<p>
 					<note>[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Meinem gunstigen und vertrauten, lieben hern und frundt, maister Hainrrichen Pullinger, predicanten im munster zu Zurich.</s>
+					<s n="7" xml:lang="de" type="auto">Meinem gunstigen und vertrauten, lieben hern und frundt, maister Hainrrichen Pullinger, predicanten im munster zu Zurich.</s>
 				</p>
 			</div>
 		</body>

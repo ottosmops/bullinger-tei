@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4214/108</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,426</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,426</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 87,73</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 87,73</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -68,52 +74,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2888">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="high">
+					<!--
+					<persName ref="person392" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#49" cert="high">
-						<settlement>Biel</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>47.13713 7.24608</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="high"/>
+					<place source="place49" cert="high"/>
 					<date when="1556-04-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2889"/>
-					<ref type="prev_chronologically" target="files.xml#2887"/>
-					<ref type="next_correspondence" target="files.xml#2963"/>
-					<ref type="prev_correspondence" target="files.xml#2852"/>
-					<ref type="next_correspondence_request" target="files.xml#2963"/>
-					<ref type="prev_correspondence_request" target="files.xml#2818"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3132"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2852"/>
-					<ref type="next_same_sender" target="files.xml#2963"/>
-					<ref type="prev_same_sender" target="files.xml#2818"/>
-					<ref type="next_same_addressee" target="files.xml#2902"/>
-					<ref type="prev_same_addressee" target="files.xml#2861"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2963"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2818"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2902"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2861"/>
+					<ref type="next_chronologically" target="file2889"/>
+					<ref type="prev_chronologically" target="file2887"/>
+					<ref type="next_correspondence" target="file2963"/>
+					<ref type="prev_correspondence" target="file2852"/>
+					<ref type="next_correspondence_request" target="file2963"/>
+					<ref type="prev_correspondence_request" target="file2818"/>
+					<ref type="next_correspondence_reaction" target="file3132"/>
+					<ref type="prev_correspondence_reaction" target="file2852"/>
+					<ref type="next_same_sender" target="file2963"/>
+					<ref type="prev_same_sender" target="file2818"/>
+					<ref type="next_same_addressee" target="file2902"/>
+					<ref type="prev_same_addressee" target="file2861"/>
+					<ref type="next_with_sender_as_addressee" target="file2963"/>
+					<ref type="prev_with_sender_as_addressee" target="file2818"/>
+					<ref type="next_with_addressee_as_sender" target="file2902"/>
+					<ref type="prev_with_addressee_as_sender" target="file2861"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -132,26 +137,26 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Non possum nunc, ita me ames, quicquam, mi venerande charissimeque B[ullingere], nisi quod mitto scriptum plenum de responsione regis Ferdinandi; aliud, mox ut a te rursum recepi, Basileam misi proxima dominica recepturus et, ut tibi describatur, diligenter curaturus.</s>
-					<s xml:lang="la" type="auto">Addo aliud scriptum, quod nimia mea festinatio nuper reliquum fecit, ne cum altero illo mitteretur.</s>
-					<s xml:lang="la" type="auto">Ignosce per Iesum Christum, quod nihil praeterea scribo; est negocium domesticum, quod valde me torquet, cuius causa multa ut nunc scribam opportet.</s>
-					<s xml:lang="la" type="auto">Gratiam tibi maximam habeo pro amantissimis tuis literis.</s>
-					<s xml:lang="la" type="auto">Efficiam proxima occasione, ut, si nec eruditione nec pietate, prolixitate tamen literarum paria tecum faciam.</s>
-					<s xml:lang="la" type="auto">Ora pro nobis diligenter cum tua domo, quam ut cum omnibus amicis officiose salutes, obnixe te quęso.</s>
-					<s xml:lang="la" type="auto">Fuchsio tuas reddidi, quem etiam de nuncio iam certiorem per adulescentulum feci et scripturum puto.</s>
-					<s xml:lang="la" type="auto">Precaberis pro illo assidue; non potuit impotentem animum sic tranquillare, ut nunc in Christi cęna conviva nobis adesse auderet.</s>
-					<s xml:lang="la" type="auto">Supra modum vicem illius doleo et fore spero, ut domini spiritus istam mentis amaritudinem boni viri rursum charitatis dulcedine suaviter evincat.</s>
-					<s xml:lang="la" type="auto">Bene vale.</s>
+					<s n="1" xml:lang="la" type="auto">Non possum nunc, ita me ames, quicquam, mi venerande charissimeque B[ullingere], nisi quod mitto scriptum plenum de responsione regis Ferdinandi; aliud, mox ut a te rursum recepi, Basileam misi proxima dominica recepturus et, ut tibi describatur, diligenter curaturus.</s>
+					<s n="2" xml:lang="la" type="auto">Addo aliud scriptum, quod nimia mea festinatio nuper reliquum fecit, ne cum altero illo mitteretur.</s>
+					<s n="3" xml:lang="la" type="auto">Ignosce per Iesum Christum, quod nihil praeterea scribo; est negocium domesticum, quod valde me torquet, cuius causa multa ut nunc scribam opportet.</s>
+					<s n="4" xml:lang="la" type="auto">Gratiam tibi maximam habeo pro amantissimis tuis literis.</s>
+					<s n="5" xml:lang="la" type="auto">Efficiam proxima occasione, ut, si nec eruditione nec pietate, prolixitate tamen literarum paria tecum faciam.</s>
+					<s n="6" xml:lang="la" type="auto">Ora pro nobis diligenter cum tua domo, quam ut cum omnibus amicis officiose salutes, obnixe te quęso.</s>
+					<s n="7" xml:lang="la" type="auto">Fuchsio tuas reddidi, quem etiam de nuncio iam certiorem per adulescentulum feci et scripturum puto.</s>
+					<s n="8" xml:lang="la" type="auto">Precaberis pro illo assidue; non potuit impotentem animum sic tranquillare, ut nunc in Christi cęna conviva nobis adesse auderet.</s>
+					<s n="9" xml:lang="la" type="auto">Supra modum vicem illius doleo et fore spero, ut domini spiritus istam mentis amaritudinem boni viri rursum charitatis dulcedine suaviter evincat.</s>
+					<s n="10" xml:lang="la" type="auto">Bene vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Biennę 7. aprilis 1556.</s>
+					<s n="11" xml:lang="la" type="auto">Biennę 7. aprilis 1556.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">T[uus] Ambr[osius] Bl[aurerus].</s>
+					<s n="12" xml:lang="la" type="auto">T[uus] Ambr[osius] Bl[aurerus].</s>
 				</p>
 				<p>
 					<note type="address">[Adresse, auf dem 3. folg. Blatt:]</note>
-					<s xml:lang="la" type="auto">D. H. Bullingero suo.</s>
+					<s n="13" xml:lang="la" type="auto">D. H. Bullingero suo.</s>
 				</p>
 			</div>
 		</body>

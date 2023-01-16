@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6538/174</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 368,289</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 368,289</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,13 +47,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#167">Genf</settlement>
-						<institution>Musée historique de la Réformation</institution>
-						<idno type="Kopie">Herminjard-Dossier 1561-1601, 304</idno>
-						<repository ref="archive#39">
+						<!--
+						<repository ref="archive39">
 							<name>Genf MHR</name>
 							<ref target="https://www.unige.ch/ihr/fr/aide-a-la-recherche/bibliotheque/"/>
 						</repository>
+						<settlement ref="place167">Genf</settlement>
+						<institution>Musée historique de la Réformation</institution>
+						-->
+						<repository ref="archive39"/>
+						<idno subtype="Kopie">Herminjard-Dossier 1561-1601, 304</idno>
 					</msIdentifier>
 					<history><origin><p><date>19. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -60,44 +66,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6282">
 				<correspAction type="sent">
-					<persName ref="person#2042" cert="high">
+					<!--
+					<persName ref="person2042" cert="high">
 						<forename cert="high">Blasius</forename>
 						<surname cert="high">Marcuard</surname>
-						<addName type="main">Marcuard, Blaise</addName>
+						<persName type="main" ref="person2041>Marcuard, Blaise</addName>
 					</persName>
-					<place source="#280" cert="high">
-						<settlement>Lausanne</settlement>
-						<district>Waadt</district>
-						<country>Schweiz</country>
-						<geo>46.516 6.63282</geo>
-					</place>
+					-->
+					<persName ref="person2042" cert="high"/>
+					<place source="place280" cert="high"/>
 					<date when="1564-09-22" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6283"/>
-					<ref type="prev_chronologically" target="files.xml#6281"/>
-					<ref type="next_correspondence" target="files.xml#6424"/>
-					<ref type="prev_correspondence" target="files.xml#6217"/>
-					<ref type="next_correspondence_request" target="files.xml#6424"/>
-					<ref type="prev_correspondence_request" target="files.xml#6217"/>
+					<ref type="next_chronologically" target="file6283"/>
+					<ref type="prev_chronologically" target="file6281"/>
+					<ref type="next_correspondence" target="file6424"/>
+					<ref type="prev_correspondence" target="file6217"/>
+					<ref type="next_correspondence_request" target="file6424"/>
+					<ref type="prev_correspondence_request" target="file6217"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#6424"/>
-					<ref type="prev_same_sender" target="files.xml#6217"/>
-					<ref type="next_same_addressee" target="files.xml#6290"/>
-					<ref type="prev_same_addressee" target="files.xml#6276"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6424"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6217"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6290"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6276"/>
+					<ref type="next_same_sender" target="file6424"/>
+					<ref type="prev_same_sender" target="file6217"/>
+					<ref type="next_same_addressee" target="file6290"/>
+					<ref type="prev_same_addressee" target="file6276"/>
+					<ref type="next_with_sender_as_addressee" target="file6424"/>
+					<ref type="prev_with_sender_as_addressee" target="file6217"/>
+					<ref type="next_with_addressee_as_sender" target="file6290"/>
+					<ref type="prev_with_addressee_as_sender" target="file6276"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -107,49 +116,52 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="6282/Autograph/00 E_II_368__fol__289_r_.tif" n="1"/>
+		<graphic url="6282/Autograph/01 E_II_368__fol__289_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Iacobus Brenvaldus, cui literas ad te Bernam nuper proficiscenti dederam, Bernam non est praetergressus, nunc vero tandem institutum iter ad vos prosequitur.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Iacobus Brenvaldus, cui literas ad te Bernam nuper proficiscenti dederam, Bernam non est praetergressus, nunc vero tandem institutum iter ad vos prosequitur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Erit is viva epistola; vos ex ipso singula quaeque audietis tum de rebus ipsius tum de nostris.</s>
-					<s xml:lang="la" type="auto">Gratissima est simulque utilissima et fructuosa scholae nostrae eius opera.</s>
+					<s n="3" xml:lang="la" type="auto">Erit is viva epistola; vos ex ipso singula quaeque audietis tum de rebus ipsius tum de nostris.</s>
+					<s n="4" xml:lang="la" type="auto">Gratissima est simulque utilissima et fructuosa scholae nostrae eius opera.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominus nos et ipsum ad promovendam nominis sui gloriam foveat.</s>
-					<s xml:lang="la" type="auto">Feres itaque non iniquo animo, pater venerande, si iam pluribus tecum agere non liceat.</s>
+					<s n="5" xml:lang="la" type="auto">Dominus nos et ipsum ad promovendam nominis sui gloriam foveat.</s>
+					<s n="6" xml:lang="la" type="auto">Feres itaque non iniquo animo, pater venerande, si iam pluribus tecum agere non liceat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Socer meus attulit mihi libellum tuum, hoc est, quem tu mihi dono misisti, pro quo ego maximas tibi ago gratias; neque enim gratius quidquam accidere mihi potuisset.</s>
+					<s n="7" xml:lang="la" type="auto">Socer meus attulit mihi libellum tuum, hoc est, quem tu mihi dono misisti, pro quo ego maximas tibi ago gratias; neque enim gratius quidquam accidere mihi potuisset.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sed ego illum legere coepissem, ecce ministri nostri, qui eum mihi e manibus eripiunt et me diligentia invitum antevertunt.</s>
-					<s xml:lang="la" type="auto">Affirmarunt illi rem multo dilucidius quam antehac unquam explicatam esse, quin etiam in eo quaestiones varias eleganter et perspicue solutas.</s>
-					<s xml:lang="la" type="auto">Quapropter illi tibi quoque mecum hoc nomine magnas gratias agunt deumque communibus precibus orant, ut te diu ecclesiae suae incolumem conservet.</s>
-					<s xml:lang="la" type="auto">Pergit interim d. Beza strenue in responsione Brentiana, quam se propediem absoluturum per literas nobis pollicitus est.</s>
-					<s xml:lang="la" type="auto">Vivitur porro hic satis dei beneficio feliciter, adhuc ab omni pestis contagione liberi, Genevae non item; nam illic paulatim serpit.</s>
+					<s n="8" xml:lang="la" type="auto">Sed ego illum legere coepissem, ecce ministri nostri, qui eum mihi e manibus eripiunt et me diligentia invitum antevertunt.</s>
+					<s n="9" xml:lang="la" type="auto">Affirmarunt illi rem multo dilucidius quam antehac unquam explicatam esse, quin etiam in eo quaestiones varias eleganter et perspicue solutas.</s>
+					<s n="10" xml:lang="la" type="auto">Quapropter illi tibi quoque mecum hoc nomine magnas gratias agunt deumque communibus precibus orant, ut te diu ecclesiae suae incolumem conservet.</s>
+					<s n="11" xml:lang="la" type="auto">Pergit interim d. Beza strenue in responsione Brentiana, quam se propediem absoluturum per literas nobis pollicitus est.</s>
+					<s n="12" xml:lang="la" type="auto">Vivitur porro hic satis dei beneficio feliciter, adhuc ab omni pestis contagione liberi, Genevae non item; nam illic paulatim serpit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Deus nostri misereatur.</s>
+					<s n="13" xml:lang="la" type="auto">Deus nostri misereatur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Reliqua, ut dixi, ex d. Brenvaldo.</s>
+					<s n="14" xml:lang="la" type="auto">Reliqua, ut dixi, ex d. Brenvaldo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, pater observande, cum tua familia universa.</s>
+					<s n="15" xml:lang="la" type="auto">Vale, pater observande, cum tua familia universa.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Lausannae <foreign xml:lang="el">αθτοσψεδιαστςσ</foreign> 22. septembris 1564.</s>
-					<s xml:lang="la" type="auto">Tuus si suus Blasius Marcuardus.</s>
+					<s n="16" xml:lang="la" type="auto">Lausannae <foreign xml:lang="el">αθτοσψεδιαστςσ</foreign> 22. septembris 1564.</s>
+					<s n="17" xml:lang="la" type="auto">Tuus si suus Blasius Marcuardus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Clarissimo doctissimoque viro d. Heinricho Bullingero, ecclesiae Tigurinae pastori vigilantissimo, domino meo summa observantia complectendo.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="18" xml:lang="la" type="auto">Clarissimo doctissimoque viro d. Heinricho Bullingero, ecclesiae Tigurinae pastori vigilantissimo, domino meo summa observantia complectendo.</s>
+					<s n="19" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

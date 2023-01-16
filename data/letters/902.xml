@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2006</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,502</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,502</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,13 +54,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 72,171</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 72,171</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -71,50 +77,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/902">
 				<correspAction type="sent">
-					<persName ref="person#153" cert="high">
+					<!--
+					<persName ref="person153" cert="high">
 						<forename cert="high">Balthasar</forename>
 						<surname cert="high">Altieri</surname>
-						<addName type="main">Altieri, Baldassare</addName>
+						<persName type="main" ref="person152>Altieri, Baldassare</addName>
 					</persName>
-					<place source="#150" cert="high">
-						<settlement>Ferrara</settlement>
-						<district>Emilia-Romagna</district>
-						<country>Italien</country>
-						<geo>44.83333 11.61667</geo>
-					</place>
+					-->
+					<persName ref="person153" cert="high"/>
+					<place source="place150" cert="high"/>
 					<date when="1550-05-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#903"/>
-					<ref type="prev_chronologically" target="files.xml#901"/>
+					<ref type="next_chronologically" target="file903"/>
+					<ref type="prev_chronologically" target="file901"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#888"/>
+					<ref type="prev_correspondence" target="file888"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#888"/>
+					<ref type="prev_correspondence_request" target="file888"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#748"/>
+					<ref type="prev_correspondence_reaction" target="file748"/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#888"/>
-					<ref type="next_same_addressee" target="files.xml#918"/>
-					<ref type="prev_same_addressee" target="files.xml#894"/>
+					<ref type="prev_same_sender" target="file888"/>
+					<ref type="next_same_addressee" target="file918"/>
+					<ref type="prev_same_addressee" target="file894"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#888"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#918"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#894"/>
+					<ref type="prev_with_sender_as_addressee" target="file888"/>
+					<ref type="next_with_addressee_as_sender" target="file918"/>
+					<ref type="prev_with_addressee_as_sender" target="file894"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -123,29 +127,32 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="902/Autograph/00 E_II_365__fol__502_r_.tif" n="1"/>
+		<graphic url="902/Autograph/01 E_II_365__fol__502_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Pręstantissime Bulingere.</s>
-					<s xml:lang="la" type="auto">Dum huc proficisc[er]er quorundam fratrum gratia, forte in hospitio Angeli mihi occurrit dominus Marcus Roistus, compatriota tuus.</s>
+					<s n="1" xml:lang="la" type="auto">Pręstantissime Bulingere.</s>
+					<s n="2" xml:lang="la" type="auto">Dum huc proficisc[er]er quorundam fratrum gratia, forte in hospitio Angeli mihi occurrit dominus Marcus Roistus, compatriota tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Is cum mihi dixisset iter se habiturum Venetias versus, efficere non potui pro veteri nostra consuetudine, quin ipsum amicis meis commendarem, ita ut sive pręsens seu absens operam meam, ut debeo, Tigurinis pręstem in eo, quod possum.</s>
-					<s xml:lang="la" type="auto">Vale in domino et reliquos amicos saluta meo nomine.</s>
+					<s n="3" xml:lang="la" type="auto">Is cum mihi dixisset iter se habiturum Venetias versus, efficere non potui pro veteri nostra consuetudine, quin ipsum amicis meis commendarem, ita ut sive pręsens seu absens operam meam, ut debeo, Tigurinis pręstem in eo, quod possum.</s>
+					<s n="4" xml:lang="la" type="auto">Vale in domino et reliquos amicos saluta meo nomine.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum Ferrarię 9. maii 1550.</s>
+					<s n="5" xml:lang="la" type="auto">Datum Ferrarię 9. maii 1550.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tui studiosissimus Balthasar Alterius.</s>
+					<s n="6" xml:lang="la" type="auto">Tui studiosissimus Balthasar Alterius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Doctrina et pietate ornatissimo domino Henrico Bulingero, Tigurinę ecclesię antisti[ti], domino ac fratri semper colendo.</s>
+					<s n="7" xml:lang="la" type="auto">Doctrina et pietate ornatissimo domino Henrico Bulingero, Tigurinę ecclesię antisti[ti], domino ac fratri semper colendo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tigurum.</s>
+					<s n="8" xml:lang="la" type="auto">Tigurum.</s>
 				</p>
 			</div>
 		</body>

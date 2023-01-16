@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4328/222</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 368,244 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 368,244 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,13 +54,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 88,39</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 88,39</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -66,50 +72,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2986">
 				<correspAction type="sent">
-					<persName ref="person#936" cert="high">
+					<!--
+					<persName ref="person936" cert="high">
 						<forename cert="high">Charles</forename>
 						<surname cert="high">Jonvilliers</surname>
-						<addName type="main">Sr. de Jonvilliers (Jonvillaeus, de Joan), Charles</addName>
+						<persName type="main" ref="person8078>Sr. de Jonvilliers (Jonvillaeus, de Joan), Charles</addName>
 					</persName>
-					<place source="#167" cert="high">
-						<settlement>Genf</settlement>
-						<district>Genève</district>
-						<country>Schweiz</country>
-						<geo>46.20222 6.14569</geo>
-					</place>
+					-->
+					<persName ref="person936" cert="high"/>
+					<place source="place167" cert="high"/>
 					<date when="1556-08-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2987"/>
-					<ref type="prev_chronologically" target="files.xml#2985"/>
-					<ref type="next_correspondence" target="files.xml#3063"/>
+					<ref type="next_chronologically" target="file2987"/>
+					<ref type="prev_chronologically" target="file2985"/>
+					<ref type="next_correspondence" target="file3063"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#3063"/>
+					<ref type="next_correspondence_request" target="file3063"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#3063"/>
+					<ref type="next_same_sender" target="file3063"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#2993"/>
-					<ref type="prev_same_addressee" target="files.xml#2976"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3063"/>
+					<ref type="next_same_addressee" target="file2993"/>
+					<ref type="prev_same_addressee" target="file2976"/>
+					<ref type="next_with_sender_as_addressee" target="file3063"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2993"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2976"/>
+					<ref type="next_with_addressee_as_sender" target="file2993"/>
+					<ref type="prev_with_addressee_as_sender" target="file2976"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -119,48 +123,51 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="2986/Autograph/00 E_II_368__S__244_.tif" n="1"/>
+		<graphic url="2986/Autograph/01 E_II_368__S__245_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Facit illa incredibilis tua humanitas, vir ornatissime, qua me alioqui tibi incognitum nuper excepisti, et singularis etiam benevolentia qua me tam facile complexus es, ut nisi omnium ingratissimus haberi et esse velim hanc scribendi opportunitatem nullo modo praeterire possim.</s>
-					<s xml:lang="la" type="auto">Accedit et meum illud promissum, quo abs te discedens merito tibi meam fidem ostrinxi, quum me saepius ad te scripturum recepi.</s>
-					<s xml:lang="la" type="auto">Hoc igitur quidquid est literarum pro tua humanitate boni consules.</s>
-					<s xml:lang="la" type="auto">Vix enim quod scribam occurrit.</s>
-					<s xml:lang="la" type="auto">Nolui tamen apud te nunc tacere.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Facit illa incredibilis tua humanitas, vir ornatissime, qua me alioqui tibi incognitum nuper excepisti, et singularis etiam benevolentia qua me tam facile complexus es, ut nisi omnium ingratissimus haberi et esse velim hanc scribendi opportunitatem nullo modo praeterire possim.</s>
+					<s n="3" xml:lang="la" type="auto">Accedit et meum illud promissum, quo abs te discedens merito tibi meam fidem ostrinxi, quum me saepius ad te scripturum recepi.</s>
+					<s n="4" xml:lang="la" type="auto">Hoc igitur quidquid est literarum pro tua humanitate boni consules.</s>
+					<s n="5" xml:lang="la" type="auto">Vix enim quod scribam occurrit.</s>
+					<s n="6" xml:lang="la" type="auto">Nolui tamen apud te nunc tacere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Unum ut intelligas velim: Carolum tuum ex animo agnoscere et profiteri ingenue, se tibi primum, deinde omnibus tuis collegis et quotquot viri boni agunt Tiguri tantum debere quantum hominem hominibus vix debere fas est.</s>
-					<s xml:lang="la" type="auto">Quod ut re aliqua tester aliquando, utinam mihi a Domino concedatur: sed interim me totum vobis addictum ubique praedicabo.</s>
-					<s xml:lang="la" type="auto">Iam quod ad reditum nostrum attinet scias nos sanos ac salvos a Domino huc reductos fuisse, et quatuor diebus et dimidio sequentis iter confectum idque sine ullo periculo, quod timeri poterat: licet non sine molestis caniculae caloribus, qui nos siti propemodum enecarunt.</s>
-					<s xml:lang="la" type="auto">Literas tuas a me redditas ex responso intelliges: et scriptum illud, quod memoriae causa mihi dederas, nostro Crispino explicatum, qui te plurimum salutat.</s>
-					<s xml:lang="la" type="auto">Ille duo exemplaria Consensionis et utriusque defensionis D. Calvini ad te mihi dedit quae idem D. Calvini ad te mihi dedit quae idem D. Calvinus tibi reddenda cum his literis curavit.</s>
-					<s xml:lang="la" type="auto">Aliud quod addam in praesentia non habeo nisi quod me plurimum tibi et tuis precibus commendo.</s>
-					<s xml:lang="la" type="auto">Omnes amicos qui sunt istic salvos esse cupio.</s>
-					<s xml:lang="la" type="auto">Budaeus mihi charissimus et tui studiosissimus te reverenter et alios omnes salutat.</s>
-					<s xml:lang="la" type="auto">Quod facit etiam Iacobus ille noster, qui mecum apud vos erat.</s>
+					<s n="7" xml:lang="la" type="auto">Unum ut intelligas velim: Carolum tuum ex animo agnoscere et profiteri ingenue, se tibi primum, deinde omnibus tuis collegis et quotquot viri boni agunt Tiguri tantum debere quantum hominem hominibus vix debere fas est.</s>
+					<s n="8" xml:lang="la" type="auto">Quod ut re aliqua tester aliquando, utinam mihi a Domino concedatur: sed interim me totum vobis addictum ubique praedicabo.</s>
+					<s n="9" xml:lang="la" type="auto">Iam quod ad reditum nostrum attinet scias nos sanos ac salvos a Domino huc reductos fuisse, et quatuor diebus et dimidio sequentis iter confectum idque sine ullo periculo, quod timeri poterat: licet non sine molestis caniculae caloribus, qui nos siti propemodum enecarunt.</s>
+					<s n="10" xml:lang="la" type="auto">Literas tuas a me redditas ex responso intelliges: et scriptum illud, quod memoriae causa mihi dederas, nostro Crispino explicatum, qui te plurimum salutat.</s>
+					<s n="11" xml:lang="la" type="auto">Ille duo exemplaria Consensionis et utriusque defensionis D. Calvini ad te mihi dedit quae idem D. Calvini ad te mihi dedit quae idem D. Calvinus tibi reddenda cum his literis curavit.</s>
+					<s n="12" xml:lang="la" type="auto">Aliud quod addam in praesentia non habeo nisi quod me plurimum tibi et tuis precibus commendo.</s>
+					<s n="13" xml:lang="la" type="auto">Omnes amicos qui sunt istic salvos esse cupio.</s>
+					<s n="14" xml:lang="la" type="auto">Budaeus mihi charissimus et tui studiosissimus te reverenter et alios omnes salutat.</s>
+					<s n="15" xml:lang="la" type="auto">Quod facit etiam Iacobus ille noster, qui mecum apud vos erat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, vir ornatissime et mihi perpetuo venerande.</s>
-					<s xml:lang="la" type="auto">Dominus tibi semper adsit tuosque labores benedicat.</s>
+					<s n="16" xml:lang="la" type="auto">Vale, vir ornatissime et mihi perpetuo venerande.</s>
+					<s n="17" xml:lang="la" type="auto">Dominus tibi semper adsit tuosque labores benedicat.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Genevae 18. kalend. Septemb. 1556.</s>
+					<s n="18" xml:lang="de" type="auto">Genevae 18. kalend. Septemb. 1556.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Carolus Ionvillaeus tibi addictissimus.</s>
+					<s n="19" xml:lang="la" type="auto">Carolus Ionvillaeus tibi addictissimus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quum obsignare vellem has literas aderat hic domi nostrae praestantissimus ille ac nobilissimus Marchio a Vico tui amantissimus qui, ut intellexit me eas tibi mittere, pro sua singulari modestia petiit ut suis verbis te salutarem.</s>
-					<s xml:lang="la" type="auto">Id eo libentius me facturum respondi, quod te homini quam optime cupere certo sciam.</s>
-					<s xml:lang="la" type="auto">Accipies igitur eam salutem quam tibi a Domino precatur ex animo.</s>
+					<s n="20" xml:lang="la" type="auto">Quum obsignare vellem has literas aderat hic domi nostrae praestantissimus ille ac nobilissimus Marchio a Vico tui amantissimus qui, ut intellexit me eas tibi mittere, pro sua singulari modestia petiit ut suis verbis te salutarem.</s>
+					<s n="21" xml:lang="la" type="auto">Id eo libentius me facturum respondi, quod te homini quam optime cupere certo sciam.</s>
+					<s n="22" xml:lang="la" type="auto">Accipies igitur eam salutem quam tibi a Domino precatur ex animo.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Ornatissimo viro D. Henrico Bullingero ecclesiae Tigurinae pastori fidelissimo.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="23" xml:lang="la" type="auto">Ornatissimo viro D. Henrico Bullingero ecclesiae Tigurinae pastori fidelissimo.</s>
+					<s n="24" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7060/110</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph (Entwurf)" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph (Entwurf)">E II 369,150</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph (Entwurf)">E II 369,150</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -61,13 +64,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 116,102</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 116,102</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -76,70 +82,72 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7209">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<note type="Person">Gwalther Rudolf</note>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 					<date when="1567-08-26" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1341" cert="low">
+					<!--
+					<persName ref="person1341" cert="low">
 						<forename cert="low">Edmund</forename>
 						<surname cert="low">Grindal</surname>
 						<graphic type="portrait" url="portraits/1341_Grindal_Edmund.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Edmund_Grindal"/>
-						<roleName type="title">
-							<name type="singular" ref="role#10" cert="low">Bischof</name>
-						</roleName>
+						<ref type="gnd" target="https://d-nb.info/gnd/139364749"/>
+						<personGrp ref="role19" role="Bischof"/>
 					</persName>
-					<persName ref="person#1564" cert="high">
+					-->
+					<persName ref="person1341" cert="low"/>
+					<personGrp ref="role19" role="Bischof"/>
+					<!--
+					<persName ref="person1564" cert="high">
 						<forename cert="high">Robert</forename>
 						<surname cert="high">Horn</surname>
-						<addName type="main">Horne (Horn), Robert</addName>
-						<roleName type="title">
-							<name type="singular" ref="role#10" cert="high">Bischof</name>
-							<place source="#553" cert="high">
-								<settlement>Winchester</settlement>
-								<geo>51.06513 -1.3187</geo>
-							</place>
-						</roleName>
+						<persName type="main" ref="person8085>Horne (Horn), Robert</addName>
+						<personGrp ref="role19" role="Bischof"/>
 					</persName>
-					<persName ref="person#2473" cert="high">
+					-->
+					<persName ref="person1564" cert="high"/>
+					<personGrp ref="role19" role="Bischof"/>
+					<!--
+					<persName ref="person2473" cert="high">
 						<forename cert="high">John</forename>
 						<surname cert="high">Parkhurst</surname>
 						<graphic type="portrait" url="portraits/2473_Parkhurst_John.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/John_Parkhurst"/>
-						<roleName type="title">
-							<name type="singular" ref="role#10" cert="high">Bischof</name>
-							<place source="#352" cert="high">
-								<settlement>Norwich</settlement>
-								<geo>52.62783 1.29834</geo>
-							</place>
-						</roleName>
+						<ref type="gnd" target="https://d-nb.info/gnd/119781492"/>
+						<personGrp ref="role19" role="Bischof"/>
 					</persName>
-					<place source="#352" cert="high">
-						<settlement>Norwich</settlement>
-						<geo>52.62783 1.29834</geo>
-					</place>
+					-->
+					<persName ref="person2473" cert="high"/>
+					<personGrp ref="role19" role="Bischof"/>
+					<place source="place352" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7210"/>
-					<ref type="prev_chronologically" target="files.xml#7208"/>
-					<ref type="next_correspondence" target="files.xml#8480"/>
-					<ref type="prev_correspondence" target="files.xml#6773"/>
-					<ref type="next_correspondence_request" target="files.xml#8480"/>
-					<ref type="prev_correspondence_request" target="files.xml#6773"/>
+					<ref type="next_chronologically" target="file7210"/>
+					<ref type="prev_chronologically" target="file7208"/>
+					<ref type="next_correspondence" target="file8480"/>
+					<ref type="prev_correspondence" target="file6773"/>
+					<ref type="next_correspondence_request" target="file8480"/>
+					<ref type="prev_correspondence_request" target="file6773"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#7210"/>
-					<ref type="prev_same_sender" target="files.xml#7204"/>
+					<ref type="next_same_sender" target="file7210"/>
+					<ref type="prev_same_sender" target="file7204"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#7210"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#7204"/>
+					<ref type="next_with_sender_as_addressee" target="file7210"/>
+					<ref type="prev_with_sender_as_addressee" target="file7204"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
@@ -151,40 +159,40 @@
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
 	<facsimile>
-		<graphic url="7209/Autograph/00 E_II_369__fol__150_r_.tif" n="1"/>
-		<graphic url="7209/Autograph/01 E_II_369__fol__150_v_.tif" n="2"/>
+		<graphic url="7209/Autograph (Entwurf)/00 E_II_369__fol__150_r_.tif" n="1"/>
+		<graphic url="7209/Autograph (Entwurf)/01 E_II_369__fol__150_v_.tif" n="2"/>
 	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Reverendi viri, domini colendissimi, et fratres in domino charissimi.</s>
-					<s xml:lang="la" type="auto">Dominus Iesus benedicat vobis, et servet vos ab omni malo!</s>
+					<s n="1" xml:lang="la" type="auto">Reverendi viri, domini colendissimi, et fratres in domino charissimi.</s>
+					<s n="2" xml:lang="la" type="auto">Dominus Iesus benedicat vobis, et servet vos ab omni malo!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quo vehementius favemus vobis, reverendi domini et fratres charissimi, eo dolemus gravius dissidere vos a fratribus aliquot, viris doctis, in Anglia gradu suo deiectis.</s>
-					<s xml:lang="la" type="auto">Atque ideo dilectioni nostrae syncerae dabitis, quod frequentius eadem de re aures vestras obtundimus.</s>
-					<s xml:lang="la" type="auto">Vidimus et accepimus vestram in hac causa excusationem: interim Angli exules ad nos veniunt, qui affirmant Londinensis ecclesiae doctores, nec non aliarum in Anglia ecclesiarum, in Mariana persequtione homines, quorum fide et diligentia ecclesiae Anglicanae in saevissimis istis tempestatibus conservatae sint, nunc pelli; nec pelli tantum, sed gravi etiam persequtione premi, adeoque et in tetros retrudi carceres.</s>
+					<s n="3" xml:lang="la" type="auto">Quo vehementius favemus vobis, reverendi domini et fratres charissimi, eo dolemus gravius dissidere vos a fratribus aliquot, viris doctis, in Anglia gradu suo deiectis.</s>
+					<s n="4" xml:lang="la" type="auto">Atque ideo dilectioni nostrae syncerae dabitis, quod frequentius eadem de re aures vestras obtundimus.</s>
+					<s n="5" xml:lang="la" type="auto">Vidimus et accepimus vestram in hac causa excusationem: interim Angli exules ad nos veniunt, qui affirmant Londinensis ecclesiae doctores, nec non aliarum in Anglia ecclesiarum, in Mariana persequtione homines, quorum fide et diligentia ecclesiae Anglicanae in saevissimis istis tempestatibus conservatae sint, nunc pelli; nec pelli tantum, sed gravi etiam persequtione premi, adeoque et in tetros retrudi carceres.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Addunt plures esse in Hybernia ecclesiarum ministros, qui non aliter sentiant aut faciant quam illi ipsi qui in Anglia sustinent persequtionem; illos autem episcopi sui beneficio et apud regineam maiestatem interventu agere in summa tranquillitate.</s>
-					<s xml:lang="la" type="auto">Unde isti colligunt, si episcopi qui in Anglia sund apud r[egiam] m[aiestatem] etiam intercederent, fore ut et ipsi tranquille sibi commissas possint retinere et gubernare ecclesias: et, quod hac in causa praecipuum est, espicopos non diffiteri meliorem habere causam afflictos et deiectos: nam agnoscere eos ecclesiam rectius constitui et constitutam gubernari sine illis caeremoniis ritibusque et institutis, quam cum illis; adeo ut si ipsismet offeratur optio, malint ipsi sibi ecclesiam deligere sine illis, quam illis oneratam sibi dari.</s>
-					<s xml:lang="la" type="auto">Id quod inde quoque colliquescat manifestissime, quod in regni comitiis non semel espicopi petierint a r[egia] m[aiestate] ut tollantur illa, et purgatior ornatiorque aut minus saltem onerata fiat ecclesia etc.</s>
+					<s n="6" xml:lang="la" type="auto">Addunt plures esse in Hybernia ecclesiarum ministros, qui non aliter sentiant aut faciant quam illi ipsi qui in Anglia sustinent persequtionem; illos autem episcopi sui beneficio et apud regineam maiestatem interventu agere in summa tranquillitate.</s>
+					<s n="7" xml:lang="la" type="auto">Unde isti colligunt, si episcopi qui in Anglia sund apud r[egiam] m[aiestatem] etiam intercederent, fore ut et ipsi tranquille sibi commissas possint retinere et gubernare ecclesias: et, quod hac in causa praecipuum est, espicopos non diffiteri meliorem habere causam afflictos et deiectos: nam agnoscere eos ecclesiam rectius constitui et constitutam gubernari sine illis caeremoniis ritibusque et institutis, quam cum illis; adeo ut si ipsismet offeratur optio, malint ipsi sibi ecclesiam deligere sine illis, quam illis oneratam sibi dari.</s>
+					<s n="8" xml:lang="la" type="auto">Id quod inde quoque colliquescat manifestissime, quod in regni comitiis non semel espicopi petierint a r[egia] m[aiestate] ut tollantur illa, et purgatior ornatiorque aut minus saltem onerata fiat ecclesia etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quae cum ita sint, reverendi domini et fratres charissimi, incitabit vos ipsos haud dubie vestra pietas ad consultandum quomodo fieri possit commode et mature, ut fratribus istis afflictis consulatur, et ne ita gravi persequtione premantur; quin potius r[egiae] maiestatis clementia in regno tolerentur, donaque in ipsis utilia ecclesiae per abdicationem non extinguantur.</s>
-					<s xml:lang="la" type="auto">Non est autem quod multis rationibus aut exemplis vos alioqui peritissimos omnis pietatis et aequitatis urgeamus: tantum hoc oramus per dominum, ut si apud r[egiam] m[aiestatem] afflictis afflictionem vel imminuere vel prorsus adimere potestis, pro christiana charitate illis omnem vestram fidelem impendatis operam; et nostram hanc admonitionem fraternam boni consulatis solitoque amore nos vestri amantissimos prosequi pergatis.</s>
-					<s xml:lang="la" type="auto">Valete, honorandi domini.</s>
+					<s n="9" xml:lang="la" type="auto">Quae cum ita sint, reverendi domini et fratres charissimi, incitabit vos ipsos haud dubie vestra pietas ad consultandum quomodo fieri possit commode et mature, ut fratribus istis afflictis consulatur, et ne ita gravi persequtione premantur; quin potius r[egiae] maiestatis clementia in regno tolerentur, donaque in ipsis utilia ecclesiae per abdicationem non extinguantur.</s>
+					<s n="10" xml:lang="la" type="auto">Non est autem quod multis rationibus aut exemplis vos alioqui peritissimos omnis pietatis et aequitatis urgeamus: tantum hoc oramus per dominum, ut si apud r[egiam] m[aiestatem] afflictis afflictionem vel imminuere vel prorsus adimere potestis, pro christiana charitate illis omnem vestram fidelem impendatis operam; et nostram hanc admonitionem fraternam boni consulatis solitoque amore nos vestri amantissimos prosequi pergatis.</s>
+					<s n="11" xml:lang="la" type="auto">Valete, honorandi domini.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 26. augusti 1567.</s>
+					<s n="12" xml:lang="la" type="auto">Tiguri 26. augusti 1567.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus et Gvaltherus.</s>
+					<s n="13" xml:lang="la" type="auto">Bullingerus et Gvaltherus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse, im Entwurf vorangestellt:]</note>
-					<s xml:lang="la" type="auto">Londoniensi, Wintoniensi<note xml:id="fna" type="footnote" n="a"><hi>So lesen auch J. J. Simler (Zürich ZB, Ms S 116, 102) und Traugott Schieß; Ep. Tig. 2, 99f liest hingegen irrtümlich</hi> Londinen. Wigornien.</note> et Norvicensi episcopis in Anglia<note xml:id="fn1" type="footnote" n="1">Bischof von London war Edmund Grindal, von Winchester Robert Horne (von Worcester Edwin Sandys), von Norwich John Parkhurst.</note>.</s>
+					<s n="14" xml:lang="la" type="auto">Londoniensi, Wintoniensi<note xml:id="fna" type="footnote" n="a"><hi>So lesen auch J. J. Simler (Zürich ZB, Ms S 116, 102) und Traugott Schieß; Ep. Tig. 2, 99f liest hingegen irrtümlich</hi> Londinen. Wigornien.</note> et Norvicensi episcopis in Anglia<note xml:id="fn1" type="footnote" n="1">Bischof von London war Edmund Grindal, von Winchester Robert Horne (von Worcester Edwin Sandys), von Norwich John Parkhurst.</note>.</s>
 				</p>
 			</div>
 		</body>

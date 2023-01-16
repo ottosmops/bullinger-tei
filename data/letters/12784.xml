@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2019"/>
-				<idno type="ISBN">ISBN 978-3-290-18186-4</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2735</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18186-4</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2735</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 19</title>
+				<title subtype="publication">HBBW XIX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">19</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 366,84</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 366,84</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,16 +49,16 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								[1] <persName ref="667">Curione</persName> nutzt die Gelegenheit, seinem Gastgeber Johannes
+								[1] <persName ref="person667">Curione</persName> nutzt die Gelegenheit, seinem Gastgeber Johannes
 								Herwagen, der nach Zürich reist, einen Brief an Bullinger mitzugeben. Bullinger wird erstaunt sein, aber
-								<persName ref="667">Curione</persName> ist in <placeName ref="97">Basel</placeName>, und
+								<persName ref="person667">Curione</persName> ist in <placeName ref="place97">Basel</placeName>, und
 								zwar schon seit einiger Zeit! Hier will er so lange wie möglich wirken. Dabei kann Bullingers Einfluss auf
-								dessen Basler Freunde für <persName ref="667">Curione</persName> nur von Vorteil sein. Bullinger soll
+								dessen Basler Freunde für <persName ref="person667">Curione</persName> nur von Vorteil sein. Bullinger soll
 								ihm weiterhin gewogen bleiben, zumal die Gelehrten der Basler Universität ihn zu schätzen beginnen. Eine
 								Empfehlung Bullingers würde ihn aber noch mehr befördern!
 								</p>
 								<p xml:id="regest2">
-								[2] <persName ref="667">Curione</persName> hat <placeName ref="609">Lausanne</placeName>
+								[2] <persName ref="person667">Curione</persName> hat <placeName ref="place609">Lausanne</placeName>
 								hauptsächlich deshalb verlassen, weil er und seine Frau [Margarita Bianca, geb. Isacchi] das dortige Klima
 								nicht vertragen. Dies hat er ja in seinen Briefen an Bullinger fast immer zum Ausdruck gebracht. Außerdem
 								ist ihm ein großes, kaum erträgliches Unrecht zugefügt worden. Er sucht seinen ganzen Trost bei Christus,
@@ -64,14 +67,14 @@
 								<p xml:id="regest3">
 								[3] Vielleicht später einmal mehr. Die Zeit ist knapp, Herwagen bricht schon auf. Er hat versprochen,
 								Bullinger aufzusuchen und die gesamte Familie grüßen zu lassen.
-								<persName ref="667">Curione</persName> (der Bullingers Unterstützung nie vergessen wird) sagte gerade
+								<persName ref="person667">Curione</persName> (der Bullingers Unterstützung nie vergessen wird) sagte gerade
 								scherzend, Herwagen solle beim Trinken von Bullingers fünfjährigem, goldgelben Wein auf ihn anstoßen,
-								während er in <placeName ref="97">Basel</placeName> in Gedanken mit Bullinger und Herwagen vom Wein
+								während er in <placeName ref="place97">Basel</placeName> in Gedanken mit Bullinger und Herwagen vom Wein
 								des Letzteren trinken werde!
 								</p>
 								<p xml:id="regest4">
 								[4] Gott möge Bullinger, seine Frau Anna [geb. Adlischwyler], ihre Kinder und die Kirche bewahren! Grüße,
-								auch an Theodor Bibliander, <persName ref="165">Konrad Pellikan</persName> und an die anderen
+								auch an Theodor Bibliander, <persName ref="person165">Konrad Pellikan</persName> und an die anderen
 								Gelehrten.
 							</p>
 						</summary>
@@ -82,44 +85,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12784">
 				<correspAction type="sent">
-					<persName ref="person#714" cert="high">
+					<!--
+					<persName ref="person714" cert="high">
 						<forename cert="high">Celio Secondo</forename>
 						<surname cert="high">Curione</surname>
+						<graphic type="portrait" url="portraits/714_Curione_Celio_Secondo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Celio_Secondo_Curione"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/10407440X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414681"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person714" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1547-01-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12785"/>
-					<ref type="prev_chronologically" target="files.xml#12783"/>
-					<ref type="next_correspondence" target="files.xml#12807"/>
-					<ref type="prev_correspondence" target="files.xml#12312"/>
-					<ref type="next_correspondence_request" target="files.xml#12807"/>
-					<ref type="prev_correspondence_request" target="files.xml#12312"/>
-					<ref type="next_correspondence_reaction" target="files.xml#13051"/>
+					<ref type="next_chronologically" target="file12785"/>
+					<ref type="prev_chronologically" target="file12783"/>
+					<ref type="next_correspondence" target="file12807"/>
+					<ref type="prev_correspondence" target="file12312"/>
+					<ref type="next_correspondence_request" target="file12807"/>
+					<ref type="prev_correspondence_request" target="file12312"/>
+					<ref type="next_correspondence_reaction" target="file13051"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#12807"/>
-					<ref type="prev_same_sender" target="files.xml#12312"/>
-					<ref type="next_same_addressee" target="files.xml#12786"/>
-					<ref type="prev_same_addressee" target="files.xml#12781"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12807"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12312"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12786"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12781"/>
+					<ref type="next_same_sender" target="file12807"/>
+					<ref type="prev_same_sender" target="file12312"/>
+					<ref type="next_same_addressee" target="file12786"/>
+					<ref type="prev_same_addressee" target="file12781"/>
+					<ref type="next_with_sender_as_addressee" target="file12807"/>
+					<ref type="prev_with_sender_as_addressee" target="file12312"/>
+					<ref type="next_with_addressee_as_sender" target="file12786"/>
+					<ref type="prev_with_addressee_as_sender" target="file12781"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -136,43 +145,43 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">D. Henrico Bullingero suo S. D. per Christum Iesum.</s>
-					<s xml:lang="la" type="auto">Cum d. Hervagius<note xml:id="fn1" type="footnote" n="1">Der Basler Buchdrucker Johannes Herwagen d.Ä., bei dem <persName ref="667">Curione</persName> Anfang 1547 wohnte; s. <hi>Kutter</hi> 88f.</note>, hospes meus, se velle Tigurum proficisci renuntiaret, doctissime et humanissime Bullingere, nolui committere, ut sine meis ad te literis veniret.</s>
-					<s xml:lang="la" type="auto">At quid dices?</s>
-					<s xml:lang="la" type="auto">Caeliusne <placeName ref="97">Basileae</placeName>?</s>
-					<s xml:lang="la" type="auto">Sic est!</s>
-					<s xml:lang="la" type="auto">Nam dudum hic sum<note xml:id="fn2" type="footnote" n="2"><persName ref="667">Curione</persName> war ungefähr in der zweiten Hälfte November 1546 infolge einer Ausweisung (s. dazu unten Anm. 4) wegen eines Sittendelikts gegen ein junges Mädchen (s. dazu <ref target="file#12807">Nr. 2758</ref>,4-13; <hi>AK</hi> VI 418f, <ref target="file#12963">Nr. 2914</ref>) von <placeName ref="609">Lausanne</placeName> nach <placeName ref="97">Basel</placeName> gekommen. In <placeName ref="97">Basel</placeName> erhielt er im Januar 1547 den Lehrstuhl für Cicero und Rhetorik, den er bis zu seinem Tode am 23./24. November 1569 innehatte; s. <hi>AK</hi> VI 507.</note> et in hac urbe <pb type="edition" next="74"/> mihi constitutum est esse, quamdiu domino visum fuerit et illa<note xml:id="fn3" type="footnote" n="3">illa urbs.</note> meum munus atque officium, quantulumcunque est, non aspernabitur.</s>
-					<s xml:lang="la" type="auto">In qua re te me plurimum apud tuum aliquem hic amicum iuvare posse non ignoro.</s>
-					<s xml:lang="la" type="auto">Quare rogo te, mi humanissime Bullingere, ut, quod coepisti, me fovere et honestare pergas.</s>
-					<s xml:lang="la" type="auto">Nam et incipiunt iam me non aspernari optimi et doctissimi huiusce academię viri; sed, si accedat tua comendatio, non solum currentes incitabis, sed etiam cessantes impelles.</s>
+					<s n="1" xml:lang="la" type="auto">D. Henrico Bullingero suo S. D. per Christum Iesum.</s>
+					<s n="2" xml:lang="la" type="auto">Cum d. Hervagius<note xml:id="fn1" type="footnote" n="1">Der Basler Buchdrucker Johannes Herwagen d.Ä., bei dem <persName ref="person667">Curione</persName> Anfang 1547 wohnte; s. <hi>Kutter</hi> 88f.</note>, hospes meus, se velle Tigurum proficisci renuntiaret, doctissime et humanissime Bullingere, nolui committere, ut sine meis ad te literis veniret.</s>
+					<s n="3" xml:lang="la" type="auto">At quid dices?</s>
+					<s n="4" xml:lang="la" type="auto">Caeliusne <placeName ref="place97">Basileae</placeName>?</s>
+					<s n="5" xml:lang="la" type="auto">Sic est!</s>
+					<s n="6" xml:lang="la" type="auto">Nam dudum hic sum<note xml:id="fn2" type="footnote" n="2"><persName ref="person667">Curione</persName> war ungefähr in der zweiten Hälfte November 1546 infolge einer Ausweisung (s. dazu unten Anm. 4) wegen eines Sittendelikts gegen ein junges Mädchen (s. dazu <ref target="file12807">Nr. 2758</ref>,4-13; <hi>AK</hi> VI 418f, <ref target="file12963">Nr. 2914</ref>) von <placeName ref="place609">Lausanne</placeName> nach <placeName ref="place97">Basel</placeName> gekommen. In <placeName ref="place97">Basel</placeName> erhielt er im Januar 1547 den Lehrstuhl für Cicero und Rhetorik, den er bis zu seinem Tode am 23./24. November 1569 innehatte; s. <hi>AK</hi> VI 507.</note> et in hac urbe <pb type="edition" next="74"/> mihi constitutum est esse, quamdiu domino visum fuerit et illa<note xml:id="fn3" type="footnote" n="3">illa urbs.</note> meum munus atque officium, quantulumcunque est, non aspernabitur.</s>
+					<s n="7" xml:lang="la" type="auto">In qua re te me plurimum apud tuum aliquem hic amicum iuvare posse non ignoro.</s>
+					<s n="8" xml:lang="la" type="auto">Quare rogo te, mi humanissime Bullingere, ut, quod coepisti, me fovere et honestare pergas.</s>
+					<s n="9" xml:lang="la" type="auto">Nam et incipiunt iam me non aspernari optimi et doctissimi huiusce academię viri; sed, si accedat tua comendatio, non solum currentes incitabis, sed etiam cessantes impelles.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Caussae vero, cur <placeName ref="609">Lausanne</placeName> esse amplius nolim,<note xml:id="fn4" type="footnote" n="4">Richtig ist, dass <persName ref="667">Curione</persName> aufgrund seines Vergehens (s. oben Anm. 2) mit einem Beschluss des <placeName ref="121">Berner</placeName> Rates vom 6. November 1546 aus dem <placeName ref="121">Berner</placeName> Territorium und damit aus <placeName ref="609">Lausanne</placeName> ausgewiesen wurde; s. Karine <hi>Crousaz,</hi> L'Académie de <placeName ref="609">Lausanne</placeName> entre humanisme et Réforme (ca. 1537-1560), Leiden/Boston 2012 - Education and Society in the Middle Ages and Renaissance 41, S. 536.</note> multę sunt, sed duę pręcipue: aeris caelique illic intemperies et quędam inclementia mihi meęque valetudini perniciosa (nam memini me vix unquam ad te<note xml:id="fna" type="footnote" n="a"><hi>Über der Zeile nachgetragen.</hi></note> scripsisse, quin meę aut uxoris<note xml:id="fn5" type="footnote" n="5">Margarita Bianca. geb. Isacchi.</note> adversę valetudinis sit facta mentio)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note><note xml:id="fn6" type="footnote" n="6">Siehe etwa Mitteilungen <persName ref="667">Curiones</persName> aus den Jahren 1543 <hi>(HBBW</hi> XIII 326,3-5 und 16-18) und 1544 <hi>(HBBW</hi> XIV 232, 17f).</note>; deinde, quod me magis movit, insignis quędam iniuria est,<note xml:id="fn7" type="footnote" n="7">Siehe dazu oben Anm. 2.</note> quam etiamnum vix ferre aequo animo possum.</s>
-					<s xml:lang="la" type="auto">Verum dominus ille, meus Iesus Christus, quem semper ex animo colui quemque prędicare in mediis etiam periculis nunquam dubitavi, is me nunc etiam consolatur nec destituit, nec destituet unquam.</s>
+					<s n="10" xml:lang="la" type="auto">Caussae vero, cur <placeName ref="place609">Lausanne</placeName> esse amplius nolim,<note xml:id="fn4" type="footnote" n="4">Richtig ist, dass <persName ref="person667">Curione</persName> aufgrund seines Vergehens (s. oben Anm. 2) mit einem Beschluss des <placeName ref="place121">Berner</placeName> Rates vom 6. November 1546 aus dem <placeName ref="place121">Berner</placeName> Territorium und damit aus <placeName ref="place609">Lausanne</placeName> ausgewiesen wurde; s. Karine <hi>Crousaz,</hi> L'Académie de <placeName ref="place609">Lausanne</placeName> entre humanisme et Réforme (ca. 1537-1560), Leiden/Boston 2012 - Education and Society in the Middle Ages and Renaissance 41, S. 536.</note> multę sunt, sed duę pręcipue: aeris caelique illic intemperies et quędam inclementia mihi meęque valetudini perniciosa (nam memini me vix unquam ad te<note xml:id="fna" type="footnote" n="a"><hi>Über der Zeile nachgetragen.</hi></note> scripsisse, quin meę aut uxoris<note xml:id="fn5" type="footnote" n="5">Margarita Bianca. geb. Isacchi.</note> adversę valetudinis sit facta mentio)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note><note xml:id="fn6" type="footnote" n="6">Siehe etwa Mitteilungen <persName ref="person667">Curiones</persName> aus den Jahren 1543 <hi>(HBBW</hi> XIII 326,3-5 und 16-18) und 1544 <hi>(HBBW</hi> XIV 232, 17f).</note>; deinde, quod me magis movit, insignis quędam iniuria est,<note xml:id="fn7" type="footnote" n="7">Siehe dazu oben Anm. 2.</note> quam etiamnum vix ferre aequo animo possum.</s>
+					<s n="11" xml:lang="la" type="auto">Verum dominus ille, meus Iesus Christus, quem semper ex animo colui quemque prędicare in mediis etiam periculis nunquam dubitavi, is me nunc etiam consolatur nec destituit, nec destituet unquam.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Plura fortassis alias.</s>
-					<s xml:lang="la" type="auto">Nunc vix est tempus ista pauca scribendi, quod iamiam noster Hervagius sit profecturus; quem oravi, ut ipsemet te meo nomine inviseret et officiose salutaret cum tota familia.</s>
-					<s xml:lang="la" type="auto">Id quod, qua humanitate est, se facturum esse promisit, presertim cum ultro ipse te salutare omnino constituisset.</s>
-					<s xml:lang="la" type="auto">Ac, cum ego (qui nunquam tuę istius benignitatis ac potius divinę cuiusdam charitatis oblivisci possum)<note xml:id="fn8" type="footnote" n="8">Bezug auf Bullingers Unterstützung von <persName ref="667">Curione</persName> und dessen Familie, als sie 1542 in die Eidgenossenschaft gekommen waren; s. dazu <hi>HBBW</hi> XV 92, Anm. 35.</note> tua erga me totamque meam familiam officia et merita commemorarem apud d. Hervagium, iocans, ut fit, illi mentionem feci illius tui quinquennalis vini, quod ego aureum vinum a colore appellare soleo, rogavique, ut tecum poculum unum hauriret meo nomine, me hic de suo vestro utriusque nomine alterum bibiturum.</s>
-					<s xml:lang="la" type="auto">Sed hoc, ut dixi, ioco.</s>
+					<s n="12" xml:lang="la" type="auto">Plura fortassis alias.</s>
+					<s n="13" xml:lang="la" type="auto">Nunc vix est tempus ista pauca scribendi, quod iamiam noster Hervagius sit profecturus; quem oravi, ut ipsemet te meo nomine inviseret et officiose salutaret cum tota familia.</s>
+					<s n="14" xml:lang="la" type="auto">Id quod, qua humanitate est, se facturum esse promisit, presertim cum ultro ipse te salutare omnino constituisset.</s>
+					<s n="15" xml:lang="la" type="auto">Ac, cum ego (qui nunquam tuę istius benignitatis ac potius divinę cuiusdam charitatis oblivisci possum)<note xml:id="fn8" type="footnote" n="8">Bezug auf Bullingers Unterstützung von <persName ref="person667">Curione</persName> und dessen Familie, als sie 1542 in die Eidgenossenschaft gekommen waren; s. dazu <hi>HBBW</hi> XV 92, Anm. 35.</note> tua erga me totamque meam familiam officia et merita commemorarem apud d. Hervagium, iocans, ut fit, illi mentionem feci illius tui quinquennalis vini, quod ego aureum vinum a colore appellare soleo, rogavique, ut tecum poculum unum hauriret meo nomine, me hic de suo vestro utriusque nomine alterum bibiturum.</s>
+					<s n="16" xml:lang="la" type="auto">Sed hoc, ut dixi, ioco.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Iam nihil est aliud, quod ad te nunc scribere possim, mi dulcissime <persName ref="1816">Henrice</persName><note xml:id="fnc" type="footnote" n="c"><hi>In der Vorlage</hi> Herice.</note>, anime mi, nisi deum pręcor, ut te mihi diu et ecclesie sue servet incolumem cum uxore honestissima<note xml:id="fn9" type="footnote" n="9">Anna, geb. Adlischwyler.</note> et liberis dulcissimis<note xml:id="fn10" type="footnote" n="10">Von Bullingers Kindern lebten zu diesem Zeitpunkt Anna (geb. 1530), Margaretha (1531), Elisabeth (1532), Heinrich (1534), Hans Rudolf (1536), Christoph (1537), Veritas (1543) und Dorothea (1545). - Am 19. Mai 1547 wurde der Sohn Felix geboren (s. <hi>HBD</hi> 35,1-4).</note>, quos omnes <pb type="edition" next="75"/> meo nomine salutabis et una d. Bybliandrum, d. <persName ref="165">Pellicanum</persName>, bonum illum et sanctum senem, et alios doctissimos fratres.</s>
-					<s xml:lang="la" type="auto">Vale per Christum Iesum.</s>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileę</placeName>, calendis ianuarii 1547.</s>
-					<s xml:lang="la" type="auto">Tuus ex animo semper deditissimus <persName ref="667">Caelius</persName> S. C. subscripsit.</s>
+					<s n="17" xml:lang="la" type="auto">Iam nihil est aliud, quod ad te nunc scribere possim, mi dulcissime <persName ref="person1816">Henrice</persName><note xml:id="fnc" type="footnote" n="c"><hi>In der Vorlage</hi> Herice.</note>, anime mi, nisi deum pręcor, ut te mihi diu et ecclesie sue servet incolumem cum uxore honestissima<note xml:id="fn9" type="footnote" n="9">Anna, geb. Adlischwyler.</note> et liberis dulcissimis<note xml:id="fn10" type="footnote" n="10">Von Bullingers Kindern lebten zu diesem Zeitpunkt Anna (geb. 1530), Margaretha (1531), Elisabeth (1532), Heinrich (1534), Hans Rudolf (1536), Christoph (1537), Veritas (1543) und Dorothea (1545). - Am 19. Mai 1547 wurde der Sohn Felix geboren (s. <hi>HBD</hi> 35,1-4).</note>, quos omnes <pb type="edition" next="75"/> meo nomine salutabis et una d. Bybliandrum, d. <persName ref="person165">Pellicanum</persName>, bonum illum et sanctum senem, et alios doctissimos fratres.</s>
+					<s n="18" xml:lang="la" type="auto">Vale per Christum Iesum.</s>
+					<s n="19" xml:lang="la" type="auto"><placeName ref="place97">Basileę</placeName>, calendis ianuarii 1547.</s>
+					<s n="20" xml:lang="la" type="auto">Tuus ex animo semper deditissimus <persName ref="person667">Caelius</persName> S. C. subscripsit.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. <persName ref="1816">Henrico</persName> Bullingero, ecclesię Tigurinę antistiti, tum vigilantissimo, tum omni genere literarum excultissimo, suo observando.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="21" xml:lang="la" type="auto">D. <persName ref="person1816">Henrico</persName> Bullingero, ecclesię Tigurinę antistiti, tum vigilantissimo, tum omni genere literarum excultissimo, suo observando.</s>
+					<s n="22" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

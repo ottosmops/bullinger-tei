@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4566/137</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336,434</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336,434</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 89,195</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 89,195</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -56,52 +62,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3201">
 				<correspAction type="sent">
-					<persName ref="person#3099" cert="high">
+					<!--
+					<persName ref="person3099" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Sulzer</surname>
 						<graphic type="portrait" url="portraits/3099_Sulzer_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Sulzer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118799428"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417120"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person3099" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1557-05-31" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3202"/>
-					<ref type="prev_chronologically" target="files.xml#3200"/>
-					<ref type="next_correspondence" target="files.xml#3207"/>
-					<ref type="prev_correspondence" target="files.xml#3197"/>
-					<ref type="next_correspondence_request" target="files.xml#3207"/>
-					<ref type="prev_correspondence_request" target="files.xml#3197"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3464"/>
+					<ref type="next_chronologically" target="file3202"/>
+					<ref type="prev_chronologically" target="file3200"/>
+					<ref type="next_correspondence" target="file3207"/>
+					<ref type="prev_correspondence" target="file3197"/>
+					<ref type="next_correspondence_request" target="file3207"/>
+					<ref type="prev_correspondence_request" target="file3197"/>
+					<ref type="next_correspondence_reaction" target="file3464"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#3207"/>
-					<ref type="prev_same_sender" target="files.xml#3197"/>
-					<ref type="next_same_addressee" target="files.xml#3213"/>
-					<ref type="prev_same_addressee" target="files.xml#3191"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3207"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3197"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3213"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3191"/>
+					<ref type="next_same_sender" target="file3207"/>
+					<ref type="prev_same_sender" target="file3197"/>
+					<ref type="next_same_addressee" target="file3213"/>
+					<ref type="prev_same_addressee" target="file3191"/>
+					<ref type="next_with_sender_as_addressee" target="file3207"/>
+					<ref type="prev_with_sender_as_addressee" target="file3197"/>
+					<ref type="next_with_addressee_as_sender" target="file3213"/>
+					<ref type="prev_with_addressee_as_sender" target="file3191"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -118,31 +123,31 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Gaudeo legationem ad Gallum procedere, et nisi compertae essent pridem Satanae artes, mirarer profecto vel cogitationem alicui vel in speciem evangelium profitenti incidere posse, ut sanctissimum opus remoraretur, ut in quo dispendii prorsus nihil sit, utut cadat, sed emolumenti plurimum.</s>
-					<s xml:lang="la" type="auto">Bernensem legationem nondum vidi neque vestram licuit adhuc convenire; sed dabo operam, ut conveniam.</s>
-					<s xml:lang="la" type="auto">Anglis nostris addunt Ensisheimenses afflictionem, qui intercipere nituntur venientes per suam ditionem, laturi nimirum Amalekitarum iustum iudicium.</s>
-					<s xml:lang="la" type="auto">Interea ergo deflectere ab itinere coguntur et per marchionis ditionem transitum facere, ut ad nos perveniant.</s>
-					<s xml:lang="la" type="auto">Horribilis est, sed ea consueta impiorum protervia, ut extrema etiam sibi sumant in innocuos et sanctos eorumque ditioni non subditos, nimirum ut probatiores et confirmatiores fiant.</s>
-					<s xml:lang="la" type="auto">Brugenses, quod ipsos attinet, responderunt duabus familiis locum apud ipsos fore, non ultra propter oppidi angustiam.</s>
-					<s xml:lang="la" type="auto">Sed consuli mea quidem sententia rectissime eis posset, si coenobium Kungsfelldense, quod amplius quam dimidia ex parte vacuum est, in habitandum illis concederetur.</s>
-					<s xml:lang="la" type="auto">Verum ea de re capient consilium, quibus adeo laborandum est, ut vel alicubi nidum palantes consequantur.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Gaudeo legationem ad Gallum procedere, et nisi compertae essent pridem Satanae artes, mirarer profecto vel cogitationem alicui vel in speciem evangelium profitenti incidere posse, ut sanctissimum opus remoraretur, ut in quo dispendii prorsus nihil sit, utut cadat, sed emolumenti plurimum.</s>
+					<s n="3" xml:lang="la" type="auto">Bernensem legationem nondum vidi neque vestram licuit adhuc convenire; sed dabo operam, ut conveniam.</s>
+					<s n="4" xml:lang="la" type="auto">Anglis nostris addunt Ensisheimenses afflictionem, qui intercipere nituntur venientes per suam ditionem, laturi nimirum Amalekitarum iustum iudicium.</s>
+					<s n="5" xml:lang="la" type="auto">Interea ergo deflectere ab itinere coguntur et per marchionis ditionem transitum facere, ut ad nos perveniant.</s>
+					<s n="6" xml:lang="la" type="auto">Horribilis est, sed ea consueta impiorum protervia, ut extrema etiam sibi sumant in innocuos et sanctos eorumque ditioni non subditos, nimirum ut probatiores et confirmatiores fiant.</s>
+					<s n="7" xml:lang="la" type="auto">Brugenses, quod ipsos attinet, responderunt duabus familiis locum apud ipsos fore, non ultra propter oppidi angustiam.</s>
+					<s n="8" xml:lang="la" type="auto">Sed consuli mea quidem sententia rectissime eis posset, si coenobium Kungsfelldense, quod amplius quam dimidia ex parte vacuum est, in habitandum illis concederetur.</s>
+					<s n="9" xml:lang="la" type="auto">Verum ea de re capient consilium, quibus adeo laborandum est, ut vel alicubi nidum palantes consequantur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nos pergamus eos precibus seriis ad dominum et et quibuscunque possumus studiis iuvare.</s>
-					<s xml:lang="la" type="auto">Bene vale in Christo Iesu cum uxore et tuis omnibus.</s>
+					<s n="10" xml:lang="la" type="auto">Nos pergamus eos precibus seriis ad dominum et et quibuscunque possumus studiis iuvare.</s>
+					<s n="11" xml:lang="la" type="auto">Bene vale in Christo Iesu cum uxore et tuis omnibus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Basileae pridie calendas iunii anno 1557.</s>
-					<s xml:lang="la" type="auto">Tuus Sulcerus.</s>
+					<s n="12" xml:lang="la" type="auto">Basileae pridie calendas iunii anno 1557.</s>
+					<s n="13" xml:lang="la" type="auto">Tuus Sulcerus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nescio quid mali praesagit mihi animus, quod ne ad diem quidem hanc, qua has scripsi, adesse Bernensem legatum intelligo, male metuens, ne, si emaneat ille, etiam qui adsunt, vester et Scaphusanus, cum nostro impediantur.</s>
-					<s xml:lang="la" type="auto">Sed dabit forsan dominus meliora.</s>
+					<s n="14" xml:lang="la" type="auto">Nescio quid mali praesagit mihi animus, quod ne ad diem quidem hanc, qua has scripsi, adesse Bernensem legatum intelligo, male metuens, ne, si emaneat ille, etiam qui adsunt, vester et Scaphusanus, cum nostro impediantur.</s>
+					<s n="15" xml:lang="la" type="auto">Sed dabit forsan dominus meliora.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Viro praestantissimo domino Heinricho Bullingero, domino et fratri colendissimo et charissimo suo.</s>
+					<s n="16" xml:lang="la" type="auto">Viro praestantissimo domino Heinricho Bullingero, domino et fratri colendissimo et charissimo suo.</s>
 				</p>
 			</div>
 		</body>

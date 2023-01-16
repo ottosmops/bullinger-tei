@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 367,473-476</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 367,473-476</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -34,13 +37,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 130,179</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 130,179</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -49,91 +55,78 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9775">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<note type="Person">namens der Mitgeistlichen</note>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1574-08-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="low">Geistliche</name>
-						<place source="#260" cert="low">
-							<settlement>Krakau</settlement>
-							<district>Kleinpolen</district>
-							<country>Polen</country>
-							<geo>50.06143 19.93658</geo>
-						</place>
-					</roleName>
+					<!--
 					<note type="Adresse">Geistliche der Kirchen in Klein-Polen, Krakau</note>
-					<persName ref="person#1295" cert="low">
+					-->
+					<personGrp ref="role52" role="Geistliche"/>
+					<orgName ref="org38" role="Kirchen"/>"
+					<!--
+					<persName ref="person1295" cert="low">
 						<forename cert="low">Pawel</forename>
 						<surname cert="low">Gilowski</surname>
-						<addName type="main">Gilowski, Pawel (Paul)</addName>
-						<roleName type="title">
-							<name type="singular" ref="role#26" cert="low">Geistlicher</name>
-							<place source="#260" cert="low">
-								<settlement>Krakau</settlement>
-								<district>Kleinpolen</district>
-								<country>Polen</country>
-								<geo>50.06143 19.93658</geo>
-							</place>
-						</roleName>
+						<persName type="main" ref="person8010>Gilowski, Pawel (Paul)</addName>
+						<personGrp ref="role51" role="Geistlicher"/>
 					</persName>
-					<persName ref="person#7963" cert="low">
+					-->
+					<persName ref="person1295" cert="low"/>
+					<personGrp ref="role51" role="Geistlicher"/>
+					<!--
+					<persName ref="person7963" cert="low">
 						<forename cert="low">Andrzej</forename>
 						<surname cert="low">Praimowski</surname>
-						<addName type="main">Prazmowski, Andreas (Andrej)</addName>
-						<roleName type="title">
-							<name type="singular" ref="role#26" cert="low">Geistlicher</name>
-							<place source="#260" cert="low">
-								<settlement>Krakau</settlement>
-								<district>Kleinpolen</district>
-								<country>Polen</country>
-								<geo>50.06143 19.93658</geo>
-							</place>
-						</roleName>
+						<persName type="main" ref="person8025>Prazmowski, Andreas (Andrej)</addName>
+						<personGrp ref="role51" role="Geistlicher"/>
 					</persName>
-					<place source="#260" cert="low">
-						<settlement>Krakau</settlement>
-						<district>Kleinpolen</district>
-						<country>Polen</country>
-						<geo>50.06143 19.93658</geo>
-					</place>
+					-->
+					<persName ref="person7963" cert="low"/>
+					<personGrp ref="role51" role="Geistlicher"/>
+					<place source="place260" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9776"/>
-					<ref type="prev_chronologically" target="files.xml#9774"/>
+					<ref type="next_chronologically" target="file9776"/>
+					<ref type="prev_chronologically" target="file9774"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#7195"/>
+					<ref type="prev_correspondence" target="file7195"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#7195"/>
+					<ref type="prev_correspondence_request" target="file7195"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2131"/>
-					<ref type="next_same_sender" target="files.xml#9780"/>
-					<ref type="prev_same_sender" target="files.xml#9774"/>
-					<ref type="next_same_addressee" target="files.xml#9979"/>
-					<ref type="prev_same_addressee" target="files.xml#8851"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9780"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9774"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9979"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8851"/>
+					<ref type="prev_correspondence_reaction" target="file2131"/>
+					<ref type="next_same_sender" target="file9780"/>
+					<ref type="prev_same_sender" target="file9774"/>
+					<ref type="next_same_addressee" target="file9979"/>
+					<ref type="prev_same_addressee" target="file8851"/>
+					<ref type="next_with_sender_as_addressee" target="file9780"/>
+					<ref type="prev_with_sender_as_addressee" target="file9774"/>
+					<ref type="next_with_addressee_as_sender" target="file9979"/>
+					<ref type="prev_with_addressee_as_sender" target="file8851"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="9775/Autograph/00 E_II_367__S__473_.tif" n="1"/>
+		<graphic url="9775/Autograph/01 E_II_367__S__474_.tif" n="2"/>
+		<graphic url="9775/Autograph/02 E_II_367__S__475_.tif" n="3"/>
+		<graphic url="9775/Autograph/03 E_II_367__S__476_.tif" n="4"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

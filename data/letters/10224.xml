@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1983"/>
-				<idno type="ISBN">ISBN 3-290-11531-3</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=193</idno>
+				<idno subtype="ISBN">ISBN 3-290-11531-3</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=193</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 3</title>
+				<title subtype="publication">HBBW III</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">3</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 33,47</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 33,47</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,7 +49,7 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Bei <persName ref="154">Myconius</persName> in <placeName ref="97">Basel</placeName> warten
+								Bei <persName ref="person154">Myconius</persName> in <placeName ref="place97">Basel</placeName> warten
 								sie besseres Reisewetter ab. Sie bitten Bullinger, ihnen ein Empfehlungsschreiben des Zürcher Rates zu
 								verschaffen, um in größerer Sicherheit reisen zu können.
 							</p>
@@ -65,52 +68,62 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10224">
 				<correspAction type="sent">
-					<persName ref="person#1286" cert="high">
+					<!--
+					<persName ref="person1286" cert="high">
 						<forename cert="high">Konrad</forename>
 						<surname cert="high">Gessner</surname>
-						<addName type="main">Geßner, Konrad</addName>
+						<persName type="main" ref="person1283>Geßner, Konrad</addName>
 						<graphic type="portrait" url="portraits/1283_Gessner_Conrad.jpg"/>
-						<ref type="wikipedia" target="https://en.wikipedia.org/wiki/Conrad_Gessner"/>
+						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Conrad_Gessner"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118694413"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11438405"/>
 					</persName>
-					<persName ref="person#1214" cert="high">
+					-->
+					<persName ref="person1286" cert="high"/>
+					<!--
+					<persName ref="person1214" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Fries</surname>
 						<graphic type="portrait" url="portraits/1214_Fries_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Fries"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/120538520"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11463641"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person1214" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1533-02-25" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10226"/>
-					<ref type="prev_chronologically" target="files.xml#10223"/>
-					<ref type="next_correspondence" target="files.xml#10407"/>
+					<ref type="next_chronologically" target="file10226"/>
+					<ref type="prev_chronologically" target="file10223"/>
+					<ref type="next_correspondence" target="file10407"/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#10407"/>
+					<ref type="next_correspondence_reaction" target="file10407"/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10228"/>
-					<ref type="prev_same_addressee" target="files.xml#10217"/>
+					<ref type="next_same_addressee" target="file10228"/>
+					<ref type="prev_same_addressee" target="file10217"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10228"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10217"/>
+					<ref type="next_with_addressee_as_sender" target="file10228"/>
+					<ref type="prev_with_addressee_as_sender" target="file10217"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -124,28 +137,28 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Optimo et integerrimo viro M. Henrico Bullingero, mecaenati charissimo.</s>
+					<s n="1" xml:lang="la" type="auto">Optimo et integerrimo viro M. Henrico Bullingero, mecaenati charissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Impediunt nos ab itinere<note xml:id="fn3" type="footnote" n="3"><persName ref="79">Geßner</persName> und <persName ref="69">Fries</persName> befanden sich auf dem Weg nach <placeName ref="165">Bourges</placeName>.</note> nives, pluvia et ventorum vis.</s>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileae</placeName> apud <persName ref="154">Myconium</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="69">Fries</persName> und <persName ref="79">Geßner</persName> waren in einem Brief <persName ref="165">Pellikans</persName> vom 19. Februar 1533 an <persName ref="154">Myconius</persName> empfohlen worden (Zürich StA, E II 358, 98).</note> sine sumtu moramur sudum coelum et tempestatem mitiorem expectantes.</s>
-					<s xml:lang="la" type="auto">Nivibus obrutae sunt viae omnes, montes praesertim, per quos nulla itinera nunc patent.</s>
-					<s xml:lang="la" type="auto">Maxime tamen omnium nos detinet, quod Gallos et alios quosdam itineris comites<note xml:id="fn5" type="footnote" n="5">Unbekannt.</note> facturos brevi hic invenimus.</s>
-					<s xml:lang="la" type="auto">Tuam humanitatem rogamus literas nobis a senatu poscat Tigurinos nos esse et a Tigurino senatu propter studia ablegatos.</s>
-					<s xml:lang="la" type="auto">Ita enim docti plerique consuluerunt, quo nobis tutioribus esse liceat.</s>
-					<s xml:lang="la" type="auto">Ne nos negligas etiam atque etiam oramus<note xml:id="fnb" type="footnote" n="b">roga <hi>durchgestrichen und ora darübergeschrieben.</hi></note> poscimusque.</s>
-					<s xml:lang="la" type="auto">Si dederis operam, facile impetrabis.</s>
-					<s xml:lang="la" type="auto">Literis nos acceptis<note xml:id="fn6" type="footnote" n="6">Nach Aussage von <persName ref="122">Konrad Klauser</persName> haben <persName ref="79">Geßner</persName> und <persName ref="69">Fries</persName> die gewünschten Empfehlungsschreiben offenbar erhalten (s. unten S. 77, 5). Auffindbar sind sie jedoch nicht mehr.</note> quamprimum cum comitibus maturabimus iter.</s>
+					<s n="2" xml:lang="la" type="auto">S.</s>
+					<s n="3" xml:lang="la" type="auto">Impediunt nos ab itinere<note xml:id="fn3" type="footnote" n="3"><persName ref="person79">Geßner</persName> und <persName ref="person69">Fries</persName> befanden sich auf dem Weg nach <placeName ref="place165">Bourges</placeName>.</note> nives, pluvia et ventorum vis.</s>
+					<s n="4" xml:lang="la" type="auto"><placeName ref="place97">Basileae</placeName> apud <persName ref="person154">Myconium</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="person69">Fries</persName> und <persName ref="person79">Geßner</persName> waren in einem Brief <persName ref="person165">Pellikans</persName> vom 19. Februar 1533 an <persName ref="person154">Myconius</persName> empfohlen worden (Zürich StA, E II 358, 98).</note> sine sumtu moramur sudum coelum et tempestatem mitiorem expectantes.</s>
+					<s n="5" xml:lang="la" type="auto">Nivibus obrutae sunt viae omnes, montes praesertim, per quos nulla itinera nunc patent.</s>
+					<s n="6" xml:lang="la" type="auto">Maxime tamen omnium nos detinet, quod Gallos et alios quosdam itineris comites<note xml:id="fn5" type="footnote" n="5">Unbekannt.</note> facturos brevi hic invenimus.</s>
+					<s n="7" xml:lang="la" type="auto">Tuam humanitatem rogamus literas nobis a senatu poscat Tigurinos nos esse et a Tigurino senatu propter studia ablegatos.</s>
+					<s n="8" xml:lang="la" type="auto">Ita enim docti plerique consuluerunt, quo nobis tutioribus esse liceat.</s>
+					<s n="9" xml:lang="la" type="auto">Ne nos negligas etiam atque etiam oramus<note xml:id="fnb" type="footnote" n="b">roga <hi>durchgestrichen und ora darübergeschrieben.</hi></note> poscimusque.</s>
+					<s n="10" xml:lang="la" type="auto">Si dederis operam, facile impetrabis.</s>
+					<s n="11" xml:lang="la" type="auto">Literis nos acceptis<note xml:id="fn6" type="footnote" n="6">Nach Aussage von <persName ref="person122">Konrad Klauser</persName> haben <persName ref="person79">Geßner</persName> und <persName ref="person69">Fries</persName> die gewünschten Empfehlungsschreiben offenbar erhalten (s. unten S. 77, 5). Auffindbar sind sie jedoch nicht mehr.</note> quamprimum cum comitibus maturabimus iter.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale et nos tibi commendatos habe.</s>
+					<s n="12" xml:lang="la" type="auto">Vale et nos tibi commendatos habe.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileae</placeName> in aedibus <persName ref="154">Myconii</persName>, februarii 25.</s>
+					<s n="13" xml:lang="la" type="auto"><placeName ref="place97">Basileae</placeName> in aedibus <persName ref="person154">Myconii</persName>, februarii 25.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="69">Ioannes</persName> Frisius et C. <persName ref="79">Gesnerus</persName> tui toti.</s>
+					<s n="14" xml:lang="la" type="auto">Ioannes Frisius et C. <persName ref="person79">Gesnerus</persName> tui toti.</s>
 				</p>
 			</div>
 		</body>

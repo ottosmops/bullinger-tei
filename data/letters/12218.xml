@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2013"/>
-				<idno type="ISBN">ISBN 978-3-290-17664-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2171</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17664-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2171</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 15</title>
+				<title subtype="publication">HBBW XV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">15</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#28">Basel</settlement>
-						<institution>Universitätsbibliothek</institution>
-						<idno type="Autograph">Ms Ki. Ar. 25c, Nr. 52, f. 70r.</idno>
-						<repository ref="archive#6">
+						<!--
+						<repository ref="archive6">
 							<name>Basel UB</name>
 							<ref target="https://ub.unibas.ch/de"/>
 						</repository>
+						<settlement ref="place28">Basel</settlement>
+						<institution>Universitätsbibliothek</institution>
+						-->
+						<repository ref="archive6"/>
+						<idno subtype="Autograph">Ms Ki. Ar. 25c, Nr. 52, f. 70r.</idno>
 						<altIdentifier>
-							<idno type="Autograph">Ms Ki. Ar. 25c, Nr. 50, f. 70r.</idno>
+							<idno subtype="Autograph">Ms Ki. Ar. 25c, Nr. 50, f. 70r.</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -49,20 +52,20 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Bullinger ist sehr besorgt, da er aus <persName ref="57">Erbs</persName> Brief
-								[<ref target="file#12196">Nr. 2149</ref>] entnehmen musste, dass dieser seine zu Ostern über einen Bruder
-								[...] via <placeName ref="97">Basel</placeName> veranlasste Sendung mit
-								<persName ref="57">Erbs</persName> Widmungsbrief zu [Bullingers] „Resurrectio“ nicht erhalten hat. -
+								Bullinger ist sehr besorgt, da er aus <persName ref="person57">Erbs</persName> Brief
+								[<ref target="file12196">Nr. 2149</ref>] entnehmen musste, dass dieser seine zu Ostern über einen Bruder
+								[...] via <placeName ref="place97">Basel</placeName> veranlasste Sendung mit
+								<persName ref="person57">Erbs</persName> Widmungsbrief zu [Bullingers] „Resurrectio“ nicht erhalten hat. -
 								Im beigefügten Begleitschreiben [nicht erhalten] hat Bullinger erklärt, warum Froschauer die Schrift nicht
 								gedruckt hat und Bullinger sie so lange bei sich behielt. Froschauer machte ihm nämlich immer wieder
 								Hoffnung auf einen Druck, um schließlich zugeben zu müssen, dass er, von Geschäften überhäuft, sie nicht
-								drucken könne. So sandte Bullinger die Druckvorlagen an <persName ref="57">Erb</persName> zurück,
-								damit dieser sie in <placeName ref="97">Basel</placeName> bei
-								[<persName ref="240">Bartholomäus</persName>] <persName ref="240">Westheimer</persName> oder
+								drucken könne. So sandte Bullinger die Druckvorlagen an <persName ref="person57">Erb</persName> zurück,
+								damit dieser sie in <placeName ref="place97">Basel</placeName> bei
+								[Bartholomäus] <persName ref="person240">Westheimer</persName> oder
 								einem anderen drucken lassen könne. Auch wenn Bullinger an diesem Verlust nicht schuld ist, bittet er doch
 								um Entschuldigung. Sollte er die Vorlagen (um die er sich nun bemühen wird) zurückerhalten, wird er sie
-								<persName ref="57">Erb</persName> senden. - Er empfiehlt den vielversprechenden jungen Überbringer
-								Gerold Meyer [von Knonau d.J.] aus gutem Elternhaus. <persName ref="57">Erb</persName> soll ihm ein
+								<persName ref="person57">Erb</persName> senden. - Er empfiehlt den vielversprechenden jungen Überbringer
+								Gerold Meyer [von Knonau d.J.] aus gutem Elternhaus. <persName ref="person57">Erb</persName> soll ihm ein
 								Vater sein, ihn ermahnen und die [Zürcher] benachrichtigen, falls der Junge von der rechten Bahn abkommen
 								sollte.
 							</p>
@@ -74,44 +77,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12218">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1545-06-03" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1010" cert="high">
+					<!--
+					<persName ref="person1010" cert="high">
 						<forename cert="high">Matthias</forename>
 						<surname cert="high">Erb</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Matthias_Erb"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/100972160"/>
 					</persName>
+					-->
+					<persName ref="person1010" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12219"/>
-					<ref type="prev_chronologically" target="files.xml#12217"/>
-					<ref type="next_correspondence" target="files.xml#12246"/>
-					<ref type="prev_correspondence" target="files.xml#12196"/>
-					<ref type="next_correspondence_request" target="files.xml#12246"/>
-					<ref type="prev_correspondence_request" target="files.xml#12015"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12260"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12196"/>
-					<ref type="next_same_sender" target="files.xml#12219"/>
-					<ref type="prev_same_sender" target="files.xml#12217"/>
-					<ref type="next_same_addressee" target="files.xml#12260"/>
-					<ref type="prev_same_addressee" target="files.xml#12196"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12219"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12217"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12260"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12196"/>
+					<ref type="next_chronologically" target="file12219"/>
+					<ref type="prev_chronologically" target="file12217"/>
+					<ref type="next_correspondence" target="file12246"/>
+					<ref type="prev_correspondence" target="file12196"/>
+					<ref type="next_correspondence_request" target="file12246"/>
+					<ref type="prev_correspondence_request" target="file12015"/>
+					<ref type="next_correspondence_reaction" target="file12260"/>
+					<ref type="prev_correspondence_reaction" target="file12196"/>
+					<ref type="next_same_sender" target="file12219"/>
+					<ref type="prev_same_sender" target="file12217"/>
+					<ref type="next_same_addressee" target="file12260"/>
+					<ref type="prev_same_addressee" target="file12196"/>
+					<ref type="next_with_sender_as_addressee" target="file12219"/>
+					<ref type="prev_with_sender_as_addressee" target="file12217"/>
+					<ref type="next_with_addressee_as_sender" target="file12260"/>
+					<ref type="prev_with_addressee_as_sender" target="file12196"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -125,45 +132,45 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vix dixero, charissime mi <persName ref="57">Erbi</persName>, quam male me habeat et angat liber ille tuus, hoc est epistola dedicatoria<note xml:id="fn1" type="footnote" n="1"><persName ref="57">Erbs</persName> Widmungsbrief zum von ihm geplanten lateinischen Sonderdruck von Bullingers "Resurrectio"; s. oben <ref target="file#12196">Nr. 2149</ref>, Anm. 26. - Die Widmungsepistel richtete sich an Sigismund Stier und Oswald Fürstenlob.</note> et partitio libri de resurrectione<note xml:id="fn2" type="footnote" n="2">Aus <persName ref="57">Erbs</persName> Brief vom 30. April 1545 (oben <ref target="file#12196">Nr. 2149</ref>) konnte Bullinger entnehmen, dass <persName ref="57">Erb</persName> seine Sendung von Anfang April (s. unten Z. 4) nicht erhalten hatte.</note>.</s>
-					<s xml:lang="la" type="auto">Hunc enim per fratrem quendam<note xml:id="fn3" type="footnote" n="3">Unbekannt und Teil einer Gruppe; s. unten Z. 16.</note> circa paschae festum<note xml:id="fn4" type="footnote" n="4">D.h. um den 5. April <hi>1545.</hi></note> <placeName ref="97">Basilaeam</placeName> ablegavi, ratus inde tuto et brevi ad te perferendum.</s>
-					<s xml:lang="la" type="auto">Nunc vero ex literis tuis<note xml:id="fn5" type="footnote" n="5">Oben Nr.2149.</note> intelligo nihildum te accepisse.</s>
-					<s xml:lang="la" type="auto">Suspicor ergo interiisse laborem utilem et pium.</s>
-					<s xml:lang="la" type="auto">Verum diligentius adhuc perquiram<note xml:id="fn6" type="footnote" n="6">Bullinger konnte die Vorlagen vordem 19. Juli 1545 zurückerhalten; s. unten <ref target="file#12246">Nr. 2199</ref>.</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Vix dixero, charissime mi <persName ref="person57">Erbi</persName>, quam male me habeat et angat liber ille tuus, hoc est epistola dedicatoria<note xml:id="fn1" type="footnote" n="1"><persName ref="person57">Erbs</persName> Widmungsbrief zum von ihm geplanten lateinischen Sonderdruck von Bullingers "Resurrectio"; s. oben <ref target="file12196">Nr. 2149</ref>, Anm. 26. - Die Widmungsepistel richtete sich an Sigismund Stier und Oswald Fürstenlob.</note> et partitio libri de resurrectione<note xml:id="fn2" type="footnote" n="2">Aus <persName ref="person57">Erbs</persName> Brief vom 30. April 1545 (oben <ref target="file12196">Nr. 2149</ref>) konnte Bullinger entnehmen, dass <persName ref="person57">Erb</persName> seine Sendung von Anfang April (s. unten Z. 4) nicht erhalten hatte.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Hunc enim per fratrem quendam<note xml:id="fn3" type="footnote" n="3">Unbekannt und Teil einer Gruppe; s. unten Z. 16.</note> circa paschae festum<note xml:id="fn4" type="footnote" n="4">D.h. um den 5. April 1545.</note> <placeName ref="place97">Basilaeam</placeName> ablegavi, ratus inde tuto et brevi ad te perferendum.</s>
+					<s n="4" xml:lang="la" type="auto">Nunc vero ex literis tuis<note xml:id="fn5" type="footnote" n="5">Oben Nr.2149.</note> intelligo nihildum te accepisse.</s>
+					<s n="5" xml:lang="la" type="auto">Suspicor ergo interiisse laborem utilem et pium.</s>
+					<s n="6" xml:lang="la" type="auto">Verum diligentius adhuc perquiram<note xml:id="fn6" type="footnote" n="6">Bullinger konnte die Vorlagen vordem 19. Juli 1545 zurückerhalten; s. unten <ref target="file12246">Nr. 2199</ref>.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Exposui tibi literis additis<note xml:id="fn7" type="footnote" n="7">Im nicht erhaltenen Begleitbrief zu Bullingers Sendung.</note>, quid obstiterit, quo minus typis excuderit Froschouerus, cur tam diu retinuerim.</s>
-					<s xml:lang="la" type="auto">Nam in diem faciebat mihi spem imprimendi, tandem mole negotiorum adopertus sancte asseverabat se non posse praelo excudere.</s>
-					<s xml:lang="la" type="auto">Et, quamquam non admodum patienti animo responsionem susciperem, quia tamen videbam hominem negotiis, uti quaerebatur, coopertum, boni consului, ac tibi remittendum putavi in tempore, uti <placeName ref="97">Basilęae</placeName> apud <persName ref="240">Westheymerum</persName> aut alium curares mature imprimi.</s>
-					<s xml:lang="la" type="auto">Iam vero praeter<pb type="edition" next="349"/> spem experior te nondum recepisse quicquam.</s>
-					<s xml:lang="la" type="auto">At revera culpa haec in me non haeret, sed in illis, quibus credidi literas; attamen culpam deprecor quam possum humilime.</s>
-					<s xml:lang="la" type="auto">Quamprimum vero rescivero, qua fide aut perfidia usi sint, qui susceperunt, receperoque librum, bona fide mittam.</s>
-					<s xml:lang="la" type="auto">Interim, cum aliud non possum, dolore prosequar infortunium illud.</s>
+					<s n="7" xml:lang="la" type="auto">Exposui tibi literis additis<note xml:id="fn7" type="footnote" n="7">Im nicht erhaltenen Begleitbrief zu Bullingers Sendung.</note>, quid obstiterit, quo minus typis excuderit Froschouerus, cur tam diu retinuerim.</s>
+					<s n="8" xml:lang="la" type="auto">Nam in diem faciebat mihi spem imprimendi, tandem mole negotiorum adopertus sancte asseverabat se non posse praelo excudere.</s>
+					<s n="9" xml:lang="la" type="auto">Et, quamquam non admodum patienti animo responsionem susciperem, quia tamen videbam hominem negotiis, uti quaerebatur, coopertum, boni consului, ac tibi remittendum putavi in tempore, uti <placeName ref="place97">Basilęae</placeName> apud <persName ref="person240">Westheymerum</persName> aut alium curares mature imprimi.</s>
+					<s n="10" xml:lang="la" type="auto">Iam vero praeter<pb type="edition" next="349"/> spem experior te nondum recepisse quicquam.</s>
+					<s n="11" xml:lang="la" type="auto">At revera culpa haec in me non haeret, sed in illis, quibus credidi literas; attamen culpam deprecor quam possum humilime.</s>
+					<s n="12" xml:lang="la" type="auto">Quamprimum vero rescivero, qua fide aut perfidia usi sint, qui susceperunt, receperoque librum, bona fide mittam.</s>
+					<s n="13" xml:lang="la" type="auto">Interim, cum aliud non possum, dolore prosequar infortunium illud.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Qui has tibi offert, est Geroldus Meyer,<note xml:id="fn8" type="footnote" n="8">Gerold Meyer von Knonau d.J.</note> honestissimis natus parentibus,<note xml:id="fn9" type="footnote" n="9">Die Eltern von Gerold Meyer von Knonau d.J. waren Gerold Meyer von Knonau d.Ä. und Küngold Dietschi; s. Genealogisches Handbuch zur Schweizer Geschichte, Bd. 3: Niederer Adel und Patriziat, Zürich 1908/1916, S. 182.</note> maximę spei iuvenis.</s>
-					<s xml:lang="la" type="auto">Hunc tuae fidei commendo tanquam patri filium.</s>
+					<s n="14" xml:lang="la" type="auto">Qui has tibi offert, est Geroldus Meyer,<note xml:id="fn8" type="footnote" n="8">Gerold Meyer von Knonau d.J.</note> honestissimis natus parentibus,<note xml:id="fn9" type="footnote" n="9">Die Eltern von Gerold Meyer von Knonau d.J. waren Gerold Meyer von Knonau d.Ä. und Küngold Dietschi; s. Genealogisches Handbuch zur Schweizer Geschichte, Bd. 3: Niederer Adel und Patriziat, Zürich 1908/1916, S. 182.</note> maximę spei iuvenis.</s>
+					<s n="15" xml:lang="la" type="auto">Hunc tuae fidei commendo tanquam patri filium.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quod huic impenderis, mihi impensum putabo.</s>
-					<s xml:lang="la" type="auto">Mone illum fideliter, et, sicubi pro iuvenili aetate exorbitare videris, mature ad nos scribito.</s>
+					<s n="16" xml:lang="la" type="auto">Quod huic impenderis, mihi impensum putabo.</s>
+					<s n="17" xml:lang="la" type="auto">Mone illum fideliter, et, sicubi pro iuvenili aetate exorbitare videris, mature ad nos scribito.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ego vicissim totus tuus ero ac sum.</s>
-					<s xml:lang="la" type="auto">Ama me in Christo.</s>
-					<s xml:lang="la" type="auto">Vive et vale.</s>
-					<s xml:lang="la" type="auto">Festinantissime.</s>
-					<s xml:lang="la" type="auto">Tiguri, 3. iunii 1545.</s>
+					<s n="18" xml:lang="la" type="auto">Ego vicissim totus tuus ero ac sum.</s>
+					<s n="19" xml:lang="la" type="auto">Ama me in Christo.</s>
+					<s n="20" xml:lang="la" type="auto">Vive et vale.</s>
+					<s n="21" xml:lang="la" type="auto">Festinantissime.</s>
+					<s n="22" xml:lang="la" type="auto">Tiguri, 3. iunii 1545.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus.</s>
+					<s n="23" xml:lang="la" type="auto">H. Bullingerus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Praestantissimo viro d. Matthiae <persName ref="57">Erbio</persName>, Richenvillae Christi et ecclesiae ministro, fratri charissimo suo.</s>
+					<s n="24" xml:lang="la" type="auto">Praestantissimo viro d. Matthiae <persName ref="person57">Erbio</persName>, Richenvillae Christi et ecclesiae ministro, fratri charissimo suo.</s>
 				</p>
 			</div>
 		</body>

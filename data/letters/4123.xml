@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5323/205</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 366,294</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 366,294</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 96,41</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 96,41</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -68,51 +74,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4123">
 				<correspAction type="sent">
-					<persName ref="person#1571" cert="high">
+					<!--
+					<persName ref="person1571" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Hospinian</surname>
-						<addName type="main">Hospinian (Wirth), Johannes</addName>
+						<persName type="main" ref="person8384>Hospinian (Wirth), Johannes</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Hospinianus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/137636849"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person1571" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1559-11-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4124"/>
-					<ref type="prev_chronologically" target="files.xml#4122"/>
-					<ref type="next_correspondence" target="files.xml#4159"/>
-					<ref type="prev_correspondence" target="files.xml#3691"/>
-					<ref type="next_correspondence_request" target="files.xml#4159"/>
-					<ref type="prev_correspondence_request" target="files.xml#3691"/>
-					<ref type="next_correspondence_reaction" target="files.xml#4306"/>
+					<ref type="next_chronologically" target="file4124"/>
+					<ref type="prev_chronologically" target="file4122"/>
+					<ref type="next_correspondence" target="file4159"/>
+					<ref type="prev_correspondence" target="file3691"/>
+					<ref type="next_correspondence_request" target="file4159"/>
+					<ref type="prev_correspondence_request" target="file3691"/>
+					<ref type="next_correspondence_reaction" target="file4306"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#4159"/>
-					<ref type="prev_same_sender" target="files.xml#3691"/>
-					<ref type="next_same_addressee" target="files.xml#4133"/>
-					<ref type="prev_same_addressee" target="files.xml#4122"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4159"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3691"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4133"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#4122"/>
+					<ref type="next_same_sender" target="file4159"/>
+					<ref type="prev_same_sender" target="file3691"/>
+					<ref type="next_same_addressee" target="file4133"/>
+					<ref type="prev_same_addressee" target="file4122"/>
+					<ref type="next_with_sender_as_addressee" target="file4159"/>
+					<ref type="prev_with_sender_as_addressee" target="file3691"/>
+					<ref type="next_with_addressee_as_sender" target="file4133"/>
+					<ref type="prev_with_addressee_as_sender" target="file4122"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -130,34 +135,34 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Reddita nobis est, d. Iungio et mihi, superioribus diebus epistola tua, d. Bullingere colendissime, in qua commendas nobis vestrates (aut nostrates potius) adolescentes e Marpurgensi academia revocatos, ut apud nos in cepto studiorum curriculo progrediantur, quibus de frugali victu et bona disciplina custodiaque prospiciamus.</s>
-					<s xml:lang="la" type="auto">Quod ad me attinet, polliceor tibi totique scholae atque ecclesiae vestrae non in hac modo re, sed in aliis quoque, in quibus prodesse ac inservire vobis potuero sine omni laborum et occupationum exceptione opellam meam.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Reddita nobis est, d. Iungio et mihi, superioribus diebus epistola tua, d. Bullingere colendissime, in qua commendas nobis vestrates (aut nostrates potius) adolescentes e Marpurgensi academia revocatos, ut apud nos in cepto studiorum curriculo progrediantur, quibus de frugali victu et bona disciplina custodiaque prospiciamus.</s>
+					<s n="3" xml:lang="la" type="auto">Quod ad me attinet, polliceor tibi totique scholae atque ecclesiae vestrae non in hac modo re, sed in aliis quoque, in quibus prodesse ac inservire vobis potuero sine omni laborum et occupationum exceptione opellam meam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Idem fecit aut faciet propediem d. Iungius, frater noster.</s>
+					<s n="4" xml:lang="la" type="auto">Idem fecit aut faciet propediem d. Iungius, frater noster.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Contulimus inter nos consilia, quemadmodum optime videretur adolescentibus fore consultum, et fuit ambobus eadem sententia; sunt enim nobis certae rationes, cur putemus e re ipsorum vix fore, ut hoc tempore in collegio vivant.</s>
-					<s xml:lang="la" type="auto">Quare statuimus, quoniam liberum nobis facitis, eis, ubi ad nos applicuerint, alibi hospitium procurare et iam haberemus fortassis, si nobis constitisset, quantum pro mensa solvere possent.</s>
+					<s n="5" xml:lang="la" type="auto">Contulimus inter nos consilia, quemadmodum optime videretur adolescentibus fore consultum, et fuit ambobus eadem sententia; sunt enim nobis certae rationes, cur putemus e re ipsorum vix fore, ut hoc tempore in collegio vivant.</s>
+					<s n="6" xml:lang="la" type="auto">Quare statuimus, quoniam liberum nobis facitis, eis, ubi ad nos applicuerint, alibi hospitium procurare et iam haberemus fortassis, si nobis constitisset, quantum pro mensa solvere possent.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hoc quia nos latet, nihil potuimus certi concludere; dabimus tamen operam (deo auxiliante), ut ita cum eis agamus, ut intelligatis commendationem vestram apud nos summum pondus obtinere nosque ab ore vestro pependisse.</s>
-					<s xml:lang="la" type="auto">Quodsi adolescentes, ut non dubitamus, nobis obtemperarint, in spem erigimur fore, ut apud nos in studiis humanitatis et pietatis proficiant.</s>
-					<s xml:lang="la" type="auto">Faxit deus optimus et maximus, ut spes illo nos non frustretur.</s>
+					<s n="7" xml:lang="la" type="auto">Hoc quia nos latet, nihil potuimus certi concludere; dabimus tamen operam (deo auxiliante), ut ita cum eis agamus, ut intelligatis commendationem vestram apud nos summum pondus obtinere nosque ab ore vestro pependisse.</s>
+					<s n="8" xml:lang="la" type="auto">Quodsi adolescentes, ut non dubitamus, nobis obtemperarint, in spem erigimur fore, ut apud nos in studiis humanitatis et pietatis proficiant.</s>
+					<s n="9" xml:lang="la" type="auto">Faxit deus optimus et maximus, ut spes illo nos non frustretur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cui sit gloria et imperium in secula seculorum.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="10" xml:lang="la" type="auto">Cui sit gloria et imperium in secula seculorum.</s>
+					<s n="11" xml:lang="la" type="manual">Amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino foelicissime una cum omnibus tuis, quos salvos esse cupio.</s>
-					<s xml:lang="la" type="auto">Basileae 14. novembris anno humanae salutis 1559.</s>
+					<s n="12" xml:lang="la" type="auto">Vale in domino foelicissime una cum omnibus tuis, quos salvos esse cupio.</s>
+					<s n="13" xml:lang="la" type="auto">Basileae 14. novembris anno humanae salutis 1559.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus ex animo totus Iohannes Hospinianus.</s>
-					<s xml:lang="la" type="auto">Sacrarum profanarumque literarum longe scientissimo viro d. m. Heinricho Bullingero, Tigurinae ecclesiae episcopo vigilantissimo, domino et fratri suo in Christo colendissimo.</s>
-					<s xml:lang="de" type="auto">Zürich.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus ex animo totus Iohannes Hospinianus.</s>
+					<s n="15" xml:lang="la" type="auto">Sacrarum profanarumque literarum longe scientissimo viro d. m. Heinricho Bullingero, Tigurinae ecclesiae episcopo vigilantissimo, domino et fratri suo in Christo colendissimo.</s>
+					<s n="16" xml:lang="de" type="auto">Zürich.</s>
 				</p>
 			</div>
 		</body>

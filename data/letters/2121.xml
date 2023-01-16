@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3404</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 369,122</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 369,122</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -58,13 +61,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 80,217</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 80,217</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -78,50 +84,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2121">
 				<correspAction type="sent">
-					<persName ref="person#2064" cert="high">
+					<!--
+					<persName ref="person2064" cert="high">
 						<forename cert="high">Hieronymus</forename>
 						<surname cert="high">Massarius</surname>
-						<addName type="main">Massari (Massurius), Girolamo</addName>
+						<persName type="main" ref="person8222>Massari (Massurius), Girolamo</addName>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2064" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1553-12-21" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2122"/>
-					<ref type="prev_chronologically" target="files.xml#2120"/>
+					<ref type="next_chronologically" target="file2122"/>
+					<ref type="prev_chronologically" target="file2120"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#1367"/>
+					<ref type="prev_correspondence" target="file1367"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#1367"/>
+					<ref type="prev_correspondence_request" target="file1367"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#1367"/>
-					<ref type="next_same_addressee" target="files.xml#2128"/>
-					<ref type="prev_same_addressee" target="files.xml#2120"/>
+					<ref type="prev_same_sender" target="file1367"/>
+					<ref type="next_same_addressee" target="file2128"/>
+					<ref type="prev_same_addressee" target="file2120"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1367"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2128"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2120"/>
+					<ref type="prev_with_sender_as_addressee" target="file1367"/>
+					<ref type="next_with_addressee_as_sender" target="file2128"/>
+					<ref type="prev_with_addressee_as_sender" target="file2120"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -138,30 +142,30 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Diebus praeteritis Argentorati fui, filium tuum vidi, allocutus sum, interrogavi etiam quomodo valeret, quam societatem haberet.</s>
-					<s xml:lang="la" type="auto">Saepe dominum Zanchum alloquitur, et ab eo omnia bona de adolescente illo intellexi: cumque abire vellem, indicavi me Tigurum venturum, et literas eius allaturum, si quas mihi daret.</s>
-					<s xml:lang="la" type="auto">Has igitur mihi dedit, et una consecravit ut si Basileae nuncium invenirem, eas ad te per ipsum mitterem, (ego enim Bernam prius iturum me indicavi quam Tigurum venirem:) mitto igitur illas.</s>
-					<s xml:lang="la" type="auto">Infra quatriduum Bernam abibo; ubi cum per duos tresve dies fuero, recta Tigurum veniam, ut omnium vestrum dulcissima consuetudine per aliquot dies fruar: de his hactenus.</s>
-					<s xml:lang="la" type="auto">D. Petrus Martyr, dominus Zanchus te plurimum salutabant.</s>
-					<s xml:lang="la" type="auto">De Anglia nihil boni auditur: per literas accepimus, piissimum archiepiscopum Cantuariensem patibulo primum adiudicatum, deinde ut in quatuor partes tanquam maiestatis proditor secaretur.</s>
-					<s xml:lang="la" type="auto">Damnati item fuerunt omnes ducis Nortumbriae filii, item filii ducis de Suffolt, una cum Ioanna ipsa quae in reginam ellecta fuerat.</s>
-					<s xml:lang="la" type="auto">Sed num de aliquo horum sit sumptum adhuc suplicium, nihil certi intelleximus.</s>
-					<s xml:lang="la" type="auto">Pridie quam Argentorato abirem, capsae d. Petri Martyris omnes, deo favente, sunt advectae; speroque illum a dominis iterum conditionem honestissimam habiturum.</s>
-					<s xml:lang="la" type="auto">Domum conduxerat, illamque indies varia supellectili instruebat, expectans auxilium atque vocationem domini.</s>
-					<s xml:lang="la" type="auto">Singulis diebus habebantur publicae preces pro ecclesia Anglicana; certumque est reginam Mariam sororem Caesaris Caletum petere, quo etiam impiissima Angliae Iezabela ventura est: omnes asserunt, matrimonium factum esse intra Hyspaniae regem et Iezabelam; quod etsi per leges pontificias fieri non licebat, fertur pontificem consensisse, cum hac tamen conditione, ut ipse pontifex iterum in supremum Anglicanę ecclesiae caput recipiatur: precandum igitur assidue est pro misera illa atque fere perdita ecclesia.</s>
-					<s xml:lang="la" type="auto">Vale et me ames dominumque Gvalterum meo nomine, obsecro, salutes.</s>
+					<s n="1" xml:lang="la" type="auto">Diebus praeteritis Argentorati fui, filium tuum vidi, allocutus sum, interrogavi etiam quomodo valeret, quam societatem haberet.</s>
+					<s n="2" xml:lang="la" type="auto">Saepe dominum Zanchum alloquitur, et ab eo omnia bona de adolescente illo intellexi: cumque abire vellem, indicavi me Tigurum venturum, et literas eius allaturum, si quas mihi daret.</s>
+					<s n="3" xml:lang="la" type="auto">Has igitur mihi dedit, et una consecravit ut si Basileae nuncium invenirem, eas ad te per ipsum mitterem, (ego enim Bernam prius iturum me indicavi quam Tigurum venirem:) mitto igitur illas.</s>
+					<s n="4" xml:lang="la" type="auto">Infra quatriduum Bernam abibo; ubi cum per duos tresve dies fuero, recta Tigurum veniam, ut omnium vestrum dulcissima consuetudine per aliquot dies fruar: de his hactenus.</s>
+					<s n="5" xml:lang="la" type="auto">D. Petrus Martyr, dominus Zanchus te plurimum salutabant.</s>
+					<s n="6" xml:lang="la" type="auto">De Anglia nihil boni auditur: per literas accepimus, piissimum archiepiscopum Cantuariensem patibulo primum adiudicatum, deinde ut in quatuor partes tanquam maiestatis proditor secaretur.</s>
+					<s n="7" xml:lang="la" type="auto">Damnati item fuerunt omnes ducis Nortumbriae filii, item filii ducis de Suffolt, una cum Ioanna ipsa quae in reginam ellecta fuerat.</s>
+					<s n="8" xml:lang="la" type="auto">Sed num de aliquo horum sit sumptum adhuc suplicium, nihil certi intelleximus.</s>
+					<s n="9" xml:lang="la" type="auto">Pridie quam Argentorato abirem, capsae d. Petri Martyris omnes, deo favente, sunt advectae; speroque illum a dominis iterum conditionem honestissimam habiturum.</s>
+					<s n="10" xml:lang="la" type="auto">Domum conduxerat, illamque indies varia supellectili instruebat, expectans auxilium atque vocationem domini.</s>
+					<s n="11" xml:lang="la" type="auto">Singulis diebus habebantur publicae preces pro ecclesia Anglicana; certumque est reginam Mariam sororem Caesaris Caletum petere, quo etiam impiissima Angliae Iezabela ventura est: omnes asserunt, matrimonium factum esse intra Hyspaniae regem et Iezabelam; quod etsi per leges pontificias fieri non licebat, fertur pontificem consensisse, cum hac tamen conditione, ut ipse pontifex iterum in supremum Anglicanę ecclesiae caput recipiatur: precandum igitur assidue est pro misera illa atque fere perdita ecclesia.</s>
+					<s n="12" xml:lang="la" type="auto">Vale et me ames dominumque Gvalterum meo nomine, obsecro, salutes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Basileae die 21. decembris 1553.</s>
+					<s n="13" xml:lang="la" type="auto">Basileae die 21. decembris 1553.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus ex animo Hieronymus Massarius.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus ex animo Hieronymus Massarius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo domino Henrycho Bullingero, ecclesiae Tigurinae pastori vigilantissimo.</s>
+					<s n="15" xml:lang="la" type="auto">Clarissimo domino Henrycho Bullingero, ecclesiae Tigurinae pastori vigilantissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="16" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7697/90</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 62,7</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 62,7</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,50 +47,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8655">
 				<correspAction type="sent">
-					<persName ref="person#185" cert="high">
+					<!--
+					<persName ref="person185" cert="high">
 						<forename cert="high">Benedikt</forename>
 						<surname cert="high">Avetius</surname>
-						<addName type="main">Marti (Aretius), Benedikt</addName>
+						<persName type="main" ref="person8092>Marti (Aretius), Benedikt</addName>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person185" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1571-08-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8656"/>
-					<ref type="prev_chronologically" target="files.xml#8654"/>
-					<ref type="next_correspondence" target="files.xml#8665"/>
-					<ref type="prev_correspondence" target="files.xml#8481"/>
-					<ref type="next_correspondence_request" target="files.xml#8665"/>
-					<ref type="prev_correspondence_request" target="files.xml#8481"/>
+					<ref type="next_chronologically" target="file8656"/>
+					<ref type="prev_chronologically" target="file8654"/>
+					<ref type="next_correspondence" target="file8665"/>
+					<ref type="prev_correspondence" target="file8481"/>
+					<ref type="next_correspondence_request" target="file8665"/>
+					<ref type="prev_correspondence_request" target="file8481"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3806"/>
-					<ref type="next_same_sender" target="files.xml#8665"/>
-					<ref type="prev_same_sender" target="files.xml#8481"/>
-					<ref type="next_same_addressee" target="files.xml#8663"/>
-					<ref type="prev_same_addressee" target="files.xml#8654"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8665"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#8481"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8663"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8654"/>
+					<ref type="prev_correspondence_reaction" target="file3806"/>
+					<ref type="next_same_sender" target="file8665"/>
+					<ref type="prev_same_sender" target="file8481"/>
+					<ref type="next_same_addressee" target="file8663"/>
+					<ref type="prev_same_addressee" target="file8654"/>
+					<ref type="next_with_sender_as_addressee" target="file8665"/>
+					<ref type="prev_with_sender_as_addressee" target="file8481"/>
+					<ref type="next_with_addressee_as_sender" target="file8663"/>
+					<ref type="prev_with_addressee_as_sender" target="file8654"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -104,29 +105,29 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Cum ex Palatinatu redirem, statueram certis de causis Tigurum transire; verum cum praeter spem diutius hinc inde hererem, mutato consilio domum contendendum fuit.</s>
-					<s xml:lang="la" type="auto">Itaque literas, quas a bonis viris Heidelbergae acceperam, domum reversus recta d. Hallero tradidi, ut ad te transmitteret.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Cum ex Palatinatu redirem, statueram certis de causis Tigurum transire; verum cum praeter spem diutius hinc inde hererem, mutato consilio domum contendendum fuit.</s>
+					<s n="3" xml:lang="la" type="auto">Itaque literas, quas a bonis viris Heidelbergae acceperam, domum reversus recta d. Hallero tradidi, ut ad te transmitteret.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Interim me iterum collegi et recordor me apud ornatissimum virum Erastum vidisse responsum de excommunicatione postremum, quo d. Bezae respondit; id cupiebam describi mihi; sed respondebat a vobis me commodius id obtinere posse.</s>
-					<s xml:lang="la" type="auto">Rogo igitur, vir honorande, ut illius mihi detur copia; legam enim et quidem avidissime mox ad vos remissurus.</s>
-					<s xml:lang="la" type="auto">Scripta haec Italica dedit mihi d. generosus comes Odoardus Thyeneus, quo vobis communicarem, quae non erant ad manus, cum nuper literas d. Hallero darem.</s>
+					<s n="4" xml:lang="la" type="auto">Interim me iterum collegi et recordor me apud ornatissimum virum Erastum vidisse responsum de excommunicatione postremum, quo d. Bezae respondit; id cupiebam describi mihi; sed respondebat a vobis me commodius id obtinere posse.</s>
+					<s n="5" xml:lang="la" type="auto">Rogo igitur, vir honorande, ut illius mihi detur copia; legam enim et quidem avidissime mox ad vos remissurus.</s>
+					<s n="6" xml:lang="la" type="auto">Scripta haec Italica dedit mihi d. generosus comes Odoardus Thyeneus, quo vobis communicarem, quae non erant ad manus, cum nuper literas d. Hallero darem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="7" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bernę 1571. 28. augusti.</s>
+					<s n="8" xml:lang="la" type="auto">Bernę 1571. 28. augusti.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">T[otus] t[uus] B[enedictus] Aretius.</s>
+					<s n="9" xml:lang="la" type="auto">T[otus] t[uus] B[enedictus] Aretius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Henricho Bullingero, s[acrae]theologiae sincero doctori et interpreti, domino suo honorando.</s>
+					<s n="10" xml:lang="la" type="auto">Clarissimo viro d. Henricho Bullingero, s[acrae]theologiae sincero doctori et interpreti, domino suo honorando.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri<note xml:id="fna" type="footnote" n="a">[Darunter von Bullingers Hand:] "Misi d. Erasti scriptum librum de Excommunicatione 8. septembris per cursorem publicum Ieremiam Gachnang 1571."</note>.</s>
+					<s n="11" xml:lang="la" type="auto">Tiguri<note xml:id="fna" type="footnote" n="a">[Darunter von Bullingers Hand:] "Misi d. Erasti scriptum librum de Excommunicatione 8. septembris per cursorem publicum Ieremiam Gachnang 1571."</note>.</s>
 				</p>
 			</div>
 		</body>

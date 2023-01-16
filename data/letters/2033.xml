@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3310</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,116</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,116</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 80,114</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 80,114</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -61,36 +67,34 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2033">
 				<correspAction type="sent">
-					<persName ref="person#8001" cert="high">
+					<!--
+					<persName ref="person8001" cert="high">
 						<forename cert="high">Faberius</forename>
 						<surname cert="high">Schmid</surname>
-						<addName type="main">Schmid (Faber), Johannes</addName>
+						<persName type="main" ref="person8008>Schmid (Faber), Johannes</addName>
 					</persName>
-					<place source="#279" cert="high">
-						<settlement>Lauingen</settlement>
-						<district>Bayern</district>
-						<country>Deutschland</country>
-						<geo>48.56775 10.42706</geo>
-					</place>
+					-->
+					<persName ref="person8001" cert="high"/>
+					<place source="place279" cert="high"/>
 					<date when="1553-10-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2034"/>
-					<ref type="prev_chronologically" target="files.xml#2032"/>
+					<ref type="next_chronologically" target="file2034"/>
+					<ref type="prev_chronologically" target="file2032"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -99,12 +103,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#2035"/>
-					<ref type="prev_same_addressee" target="files.xml#2032"/>
+					<ref type="next_same_addressee" target="file2035"/>
+					<ref type="prev_same_addressee" target="file2032"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2035"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2032"/>
+					<ref type="next_with_addressee_as_sender" target="file2035"/>
+					<ref type="prev_with_addressee_as_sender" target="file2032"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -121,25 +125,25 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Gratia tecum et pax a deo per Christum, dominum et mediatorem nostum.</s>
+					<s n="1" xml:lang="la" type="auto">Gratia tecum et pax a deo per Christum, dominum et mediatorem nostum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Reverende vir atque amice in domino charissime, reddidit mihi epistolam abs te scriptam una cum literario quodam munusculo m. Laurentius Agricola, communis amicus noster.</s>
+					<s n="2" xml:lang="la" type="auto">Reverende vir atque amice in domino charissime, reddidit mihi epistolam abs te scriptam una cum literario quodam munusculo m. Laurentius Agricola, communis amicus noster.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Qui quidem cum antea pio quodam studio tuam illam insignem et maxime memorabilem pietatem summa coniunctam humanitate praedixisset, vehementer te amare cępi; nunc vero, cum tu ipse quoque in summis occupationibus ad me, hominem nulla nec notitia nec familiaritate devinctum non solum scribere, sed ultro quoque tuam amicitiam offerre dignatus sis, multo ardentiore animo istam tuam humanitatem amplector et observo.</s>
-					<s xml:lang="la" type="auto">Atque utinam ut occasio aut facultas adesset, qua vicissim me m erga te studium et amorem declarare possem.</s>
+					<s n="3" xml:lang="la" type="auto">Qui quidem cum antea pio quodam studio tuam illam insignem et maxime memorabilem pietatem summa coniunctam humanitate praedixisset, vehementer te amare cępi; nunc vero, cum tu ipse quoque in summis occupationibus ad me, hominem nulla nec notitia nec familiaritate devinctum non solum scribere, sed ultro quoque tuam amicitiam offerre dignatus sis, multo ardentiore animo istam tuam humanitatem amplector et observo.</s>
+					<s n="4" xml:lang="la" type="auto">Atque utinam ut occasio aut facultas adesset, qua vicissim me m erga te studium et amorem declarare possem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Verum quoniam haec in praesentia denegata est, memoriam et voluntatem gratificandi cupidam semper retinebo atque Christum, dominum nostrum regnantem a dexteris dei rogabo, ut spiritu suo sancto pectus tuum regere et ad propagandam regni sui gloriam et veritatem illustrare confirmareque velit.</s>
-					<s xml:lang="la" type="auto">His in domino foeliciter vale.</s>
-					<s xml:lang="la" type="auto">Ex Lauginga nono die mensis octobris anno 53.</s>
+					<s n="5" xml:lang="la" type="auto">Verum quoniam haec in praesentia denegata est, memoriam et voluntatem gratificandi cupidam semper retinebo atque Christum, dominum nostrum regnantem a dexteris dei rogabo, ut spiritu suo sancto pectus tuum regere et ad propagandam regni sui gloriam et veritatem illustrare confirmareque velit.</s>
+					<s n="6" xml:lang="la" type="auto">His in domino foeliciter vale.</s>
+					<s n="7" xml:lang="la" type="auto">Ex Lauginga nono die mensis octobris anno 53.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ioannes Faberius d., ecclesiae Christi, quae ibidem est, minister.</s>
+					<s n="8" xml:lang="la" type="auto">Ioannes Faberius d., ecclesiae Christi, quae ibidem est, minister.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Reverendo viro eximia pietate ac doctrina praedito d. Heinricho Bullingero, ecclesiae Tigurinae antistiti dignissimo, domino ac fratri suo in Christo carissimo.</s>
+					<s n="9" xml:lang="la" type="auto">Reverendo viro eximia pietate ac doctrina praedito d. Heinricho Bullingero, ecclesiae Tigurinae antistiti dignissimo, domino ac fratri suo in Christo carissimo.</s>
 				</p>
 			</div>
 		</body>

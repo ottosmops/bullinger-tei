@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#441">Schaffhausen</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">Abschriften 4/6 p. 523 f.</idno>
-						<repository ref="archive#76">
+						<!--
+						<repository ref="archive76">
 							<name>Schaffhausen StA</name>
-							<note type="Xeroxkopie">IRG</note>
 							<ref target="https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Regierung/Staatskanzlei/Staatsarchiv-3936-DE.html"/>
 						</repository>
+						<settlement ref="place441">Schaffhausen</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive76"/>
+						<idno subtype="Kopie">Abschriften 4/6 p. 523 f.</idno>
+						<idno subtype="Xeroxkopie">IRG</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -35,68 +38,64 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6718">
 				<correspAction type="sent">
-					<persName ref="person#1381" cert="high">
+					<!--
+					<persName ref="person1381" cert="high">
 						<forename cert="high">Rudolf</forename>
 						<surname cert="high">Gwalther</surname>
-						<addName type="main">Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
+						<persName type="main" ref="person8011>Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
 						<note type="Person">im Namen der Geistlichen</note>
 						<graphic type="portrait" url="portraits/1381_Gwalther_Rudolf.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Rudolf_Gwalther"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11854392X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11522600"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person1381" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1566-03-11" cert="low"><note>Tag unsicher  (oder ev. 2. März ??)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1309" cert="high">
+					<!--
+					<persName ref="person1309" cert="high">
 						<forename cert="high">Sebastian</forename>
 						<surname cert="high">Grübel</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Sebastian_Gr%C3%BCbel"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11969087X"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11422484"/>
 					</persName>
-					<persName ref="person#2340" cert="high">
+					-->
+					<persName ref="person1309" cert="high"/>
+					<!--
+					<persName ref="person2340" cert="high">
 						<forename cert="high">Blasius</forename>
 						<surname cert="high">Öchsli</surname>
 					</persName>
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#441" cert="high">
-							<settlement>Schaffhausen</settlement>
-							<district>Schaffhausen</district>
-							<country>Schweiz</country>
-							<geo>47.69732 8.63493</geo>
-						</place>
-					</roleName>
+					-->
+					<persName ref="person2340" cert="high"/>
+					<!--
 					<note type="Adresse">übrige Geistliche von Schaffhausen</note>
-					<place source="#441" cert="high">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					-->
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place441" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6719"/>
-					<ref type="prev_chronologically" target="files.xml#6717"/>
+					<ref type="next_chronologically" target="file6719"/>
+					<ref type="prev_chronologically" target="file6717"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#6710"/>
+					<ref type="prev_correspondence" target="file6710"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#6710"/>
+					<ref type="prev_correspondence_request" target="file6710"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#6840"/>
-					<ref type="prev_same_sender" target="files.xml#6710"/>
+					<ref type="next_same_sender" target="file6840"/>
+					<ref type="prev_same_sender" target="file6710"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#2029"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6840"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6710"/>
+					<ref type="prev_same_addressee" target="file2029"/>
+					<ref type="next_with_sender_as_addressee" target="file6840"/>
+					<ref type="prev_with_sender_as_addressee" target="file6710"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2029"/>
-					<ref type="child" target="files.xml#6710"/>
+					<ref type="prev_with_addressee_as_sender" target="file2029"/>
+					<ref type="child" target="file6710"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

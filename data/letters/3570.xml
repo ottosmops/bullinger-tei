@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4972/81</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 366,54</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 366,54</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#28">Basel</settlement>
-						<institution>Universitätsbibliothek</institution>
-						<idno type="Kopie">G 2 I 28a, f. 97-98, Nr. XXXXI</idno>
-						<repository ref="archive#6">
+						<!--
+						<repository ref="archive6">
 							<name>Basel UB</name>
 							<ref target="https://ub.unibas.ch/de"/>
 						</repository>
+						<settlement ref="place28">Basel</settlement>
+						<institution>Universitätsbibliothek</institution>
+						-->
+						<repository ref="archive6"/>
+						<idno subtype="Kopie">G 2 I 28a, f. 97-98, Nr. XXXXI</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -65,13 +71,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 92,43</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 92,43</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -80,51 +89,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3570">
 				<correspAction type="sent">
-					<persName ref="person#745" cert="high">
+					<!--
+					<persName ref="person745" cert="high">
 						<forename cert="high">Coelius Secundus</forename>
 						<surname cert="high">Curio</surname>
-						<addName type="main">Curione, Celio Secondo</addName>
+						<persName type="main" ref="person714>Curione, Celio Secondo</addName>
+						<graphic type="portrait" url="portraits/714_Curione_Celio_Secondo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Celio_Secondo_Curione"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/10407440X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414681"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person745" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1558-04-18" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3571"/>
-					<ref type="prev_chronologically" target="files.xml#3569"/>
-					<ref type="next_correspondence" target="files.xml#3845"/>
-					<ref type="prev_correspondence" target="files.xml#3240"/>
-					<ref type="next_correspondence_request" target="files.xml#3845"/>
-					<ref type="prev_correspondence_request" target="files.xml#3230"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5476"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3240"/>
-					<ref type="next_same_sender" target="files.xml#3845"/>
-					<ref type="prev_same_sender" target="files.xml#3230"/>
-					<ref type="next_same_addressee" target="files.xml#3574"/>
-					<ref type="prev_same_addressee" target="files.xml#3558"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3845"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3230"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3574"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3558"/>
+					<ref type="next_chronologically" target="file3571"/>
+					<ref type="prev_chronologically" target="file3569"/>
+					<ref type="next_correspondence" target="file3845"/>
+					<ref type="prev_correspondence" target="file3240"/>
+					<ref type="next_correspondence_request" target="file3845"/>
+					<ref type="prev_correspondence_request" target="file3230"/>
+					<ref type="next_correspondence_reaction" target="file5476"/>
+					<ref type="prev_correspondence_reaction" target="file3240"/>
+					<ref type="next_same_sender" target="file3845"/>
+					<ref type="prev_same_sender" target="file3230"/>
+					<ref type="next_same_addressee" target="file3574"/>
+					<ref type="prev_same_addressee" target="file3558"/>
+					<ref type="next_with_sender_as_addressee" target="file3845"/>
+					<ref type="prev_with_sender_as_addressee" target="file3230"/>
+					<ref type="next_with_addressee_as_sender" target="file3574"/>
+					<ref type="prev_with_addressee_as_sender" target="file3558"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -141,29 +151,29 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">C[aelius] S[ecundus] C[urio] per Christum Iesum.</s>
+					<s n="1" xml:lang="la" type="auto">C[aelius] S[ecundus] C[urio] per Christum Iesum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S. P. D.</s>
-					<s xml:lang="la" type="auto">Sermonem De coena domini, clarissime simul et charissime Bullingere, postridie paschę accepi; nam audio, antequam mihi redderetur, a quodam diu retentum fuisse.</s>
-					<s xml:lang="la" type="auto">Legi et probo, quid dico probo, imo totis ulmis accipio tibique gratias ago, quod video te in me amando perseverare nullisque absterreri vocibus et sermunculis ab amicitia nostra veteri conservanda.</s>
-					<s xml:lang="la" type="auto">Quodsi ego rarius idem erga te facio neque negligentiae neque amoris parvitati ascribes, sed reverentiae potius erga te meae et pudori, deinde etiam occupationibus tuis gravissimis et innumeris, quibus scio te in isto tuo amplissimo et sanctissimo munere pene obrui.</s>
-					<s xml:lang="la" type="auto">Amo enim te et observo memoriamque tuam apud me tuis maximis meritis immortalem conservo.</s>
-					<s xml:lang="la" type="auto">Quare et de te, de uxore sanctissima, de liberis et propinquis, qui [quͦi] et quam prospere agant, ubicunque terrarum sint, nosse aveo.</s>
-					<s xml:lang="la" type="auto">Facies igitur mihi rem longe gratissimam, si me de his certiorem feceris, praesertim de iis, qui peregre adhuc degunt in Germania Poloniave, ecquid studeant, proficiant, quod studiorum genus, si fas est, sequantur.</s>
-					<s xml:lang="la" type="auto">Hic nihil aliud est novi, nisi quod opinio illa, de qua alias, sensim gliscit iisdem, qui alias, procurantibus.</s>
-					<s xml:lang="la" type="auto">Principiis obsta, inquit ille; sero medicina paratur<note xml:id="fn1" type="footnote" n="1"><hi>Ovid,</hi> Remedium amoris 91(f?) (Otto 287, Nr. 1470).</note>; id sentimus aliquando.</s>
-					<s xml:lang="la" type="auto">Vale et mihi meeque uxoris nomine tuam tuosque omnes saluta amantissime.</s>
+					<s n="2" xml:lang="la" type="auto">S. P. D.</s>
+					<s n="3" xml:lang="la" type="auto">Sermonem De coena domini, clarissime simul et charissime Bullingere, postridie paschę accepi; nam audio, antequam mihi redderetur, a quodam diu retentum fuisse.</s>
+					<s n="4" xml:lang="la" type="auto">Legi et probo, quid dico probo, imo totis ulmis accipio tibique gratias ago, quod video te in me amando perseverare nullisque absterreri vocibus et sermunculis ab amicitia nostra veteri conservanda.</s>
+					<s n="5" xml:lang="la" type="auto">Quodsi ego rarius idem erga te facio neque negligentiae neque amoris parvitati ascribes, sed reverentiae potius erga te meae et pudori, deinde etiam occupationibus tuis gravissimis et innumeris, quibus scio te in isto tuo amplissimo et sanctissimo munere pene obrui.</s>
+					<s n="6" xml:lang="la" type="auto">Amo enim te et observo memoriamque tuam apud me tuis maximis meritis immortalem conservo.</s>
+					<s n="7" xml:lang="la" type="auto">Quare et de te, de uxore sanctissima, de liberis et propinquis, qui [quͦi] et quam prospere agant, ubicunque terrarum sint, nosse aveo.</s>
+					<s n="8" xml:lang="la" type="auto">Facies igitur mihi rem longe gratissimam, si me de his certiorem feceris, praesertim de iis, qui peregre adhuc degunt in Germania Poloniave, ecquid studeant, proficiant, quod studiorum genus, si fas est, sequantur.</s>
+					<s n="9" xml:lang="la" type="auto">Hic nihil aliud est novi, nisi quod opinio illa, de qua alias, sensim gliscit iisdem, qui alias, procurantibus.</s>
+					<s n="10" xml:lang="la" type="auto">Principiis obsta, inquit ille; sero medicina paratur<note xml:id="fn1" type="footnote" n="1"><hi>Ovid,</hi> Remedium amoris 91(f?) (Otto 287, Nr. 1470).</note>; id sentimus aliquando.</s>
+					<s n="11" xml:lang="la" type="auto">Vale et mihi meeque uxoris nomine tuam tuosque omnes saluta amantissime.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Basileae 14. calendas maii 1558.</s>
+					<s n="12" xml:lang="la" type="auto">Basileae 14. calendas maii 1558.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus qui semper C[aelius] S[ecundus] subscripsit.</s>
+					<s n="13" xml:lang="la" type="auto">Tuus qui semper C[aelius] S[ecundus] subscripsit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo atque optimo viro d. Hey[nricho] Bullingero, ecclesiae Ti[gurinae] antistiti vigilantissimo, suo domino colendissimo.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="14" xml:lang="la" type="auto">Clarissimo atque optimo viro d. Hey[nricho] Bullingero, ecclesiae Ti[gurinae] antistiti vigilantissimo, suo domino colendissimo.</s>
+					<s n="15" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

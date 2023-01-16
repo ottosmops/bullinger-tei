@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5692/27</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 368,437</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 368,437</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,13 +47,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 199,53</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 199,53</idno>
 					</msIdentifier>
 					<history><origin><p><date>18. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -60,49 +66,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4652">
 				<correspAction type="sent">
-					<persName ref="person#629" cert="low">
+					<!--
+					<persName ref="person629" cert="low">
 						<forename cert="low">Matthieu</forename>
 						<surname cert="low">Coignet d.Ä.</surname>
 					</persName>
-					<place source="#468" cert="low">
-						<settlement>Solothurn</settlement>
-						<district>Solothurn</district>
-						<country>Schweiz</country>
-						<geo>47.20791 7.53714</geo>
-					</place>
+					-->
+					<persName ref="person629" cert="low"/>
+					<place source="place468" cert="low"/>
 					<date when="1561-02-05" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4653"/>
-					<ref type="prev_chronologically" target="files.xml#4651"/>
-					<ref type="next_correspondence" target="files.xml#4660"/>
-					<ref type="prev_correspondence" target="files.xml#4646"/>
-					<ref type="next_correspondence_request" target="files.xml#4660"/>
-					<ref type="prev_correspondence_request" target="files.xml#4646"/>
+					<ref type="next_chronologically" target="file4653"/>
+					<ref type="prev_chronologically" target="file4651"/>
+					<ref type="next_correspondence" target="file4660"/>
+					<ref type="prev_correspondence" target="file4646"/>
+					<ref type="next_correspondence_request" target="file4660"/>
+					<ref type="prev_correspondence_request" target="file4646"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#4458"/>
-					<ref type="next_same_sender" target="files.xml#4660"/>
-					<ref type="prev_same_sender" target="files.xml#4646"/>
-					<ref type="next_same_addressee" target="files.xml#4657"/>
-					<ref type="prev_same_addressee" target="files.xml#4649"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4660"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4646"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4657"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#4649"/>
+					<ref type="prev_correspondence_reaction" target="file4458"/>
+					<ref type="next_same_sender" target="file4660"/>
+					<ref type="prev_same_sender" target="file4646"/>
+					<ref type="next_same_addressee" target="file4657"/>
+					<ref type="prev_same_addressee" target="file4649"/>
+					<ref type="next_with_sender_as_addressee" target="file4660"/>
+					<ref type="prev_with_sender_as_addressee" target="file4646"/>
+					<ref type="next_with_addressee_as_sender" target="file4657"/>
+					<ref type="prev_with_addressee_as_sender" target="file4649"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -111,46 +115,49 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="4652/Autograph/00 E_II_368__fol__437_r_.tif" n="1"/>
+		<graphic url="4652/Autograph/01 E_II_368__fol__437_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Heri recepi literas, quas ad te mitto, cum libello, quem ipse devoravi.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Heri recepi literas, quas ad te mitto, cum libello, quem ipse devoravi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nuper ad te scripsi me existimare optimam occasionem Genevensibus oblatam ex regiis literis, qua se a calumniis purgent.</s>
-					<s xml:lang="la" type="auto">Sabaudie legatus hic triduo mansit, sperat senatum amplissimum Tigurinum sequuturum, quod Quinquepagici cum eo transegerunt.</s>
-					<s xml:lang="la" type="auto">Maturius expendet omnia.</s>
+					<s n="3" xml:lang="la" type="auto">Nuper ad te scripsi me existimare optimam occasionem Genevensibus oblatam ex regiis literis, qua se a calumniis purgent.</s>
+					<s n="4" xml:lang="la" type="auto">Sabaudie legatus hic triduo mansit, sperat senatum amplissimum Tigurinum sequuturum, quod Quinquepagici cum eo transegerunt.</s>
+					<s n="5" xml:lang="la" type="auto">Maturius expendet omnia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ea de re alias pluribus.</s>
+					<s n="6" xml:lang="la" type="auto">Ea de re alias pluribus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Per me non stabit, quominus honestissimum, salutare, christianum et utile foedus fiat inter amplissimum se[natum] Tigurinum et Francie coronam, quod pene necessarium quis iudicare posset graves ob causas, quas in praesens taceo.</s>
-					<s xml:lang="la" type="auto">Ante dietam proximam te invisam.</s>
+					<s n="7" xml:lang="la" type="auto">Per me non stabit, quominus honestissimum, salutare, christianum et utile foedus fiat inter amplissimum se[natum] Tigurinum et Francie coronam, quod pene necessarium quis iudicare posset graves ob causas, quas in praesens taceo.</s>
+					<s n="8" xml:lang="la" type="auto">Ante dietam proximam te invisam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nunc quando non occurrit, quod scribam aliud, finem faciam te orans, ut salutes d. d. Martirem, Galterum, generum et amicos alios cum senatu amplissimo.</s>
+					<s n="9" xml:lang="la" type="auto">Nunc quando non occurrit, quod scribam aliud, finem faciam te orans, ut salutes d. d. Martirem, Galterum, generum et amicos alios cum senatu amplissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bene vale.</s>
+					<s n="10" xml:lang="la" type="auto">Bene vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Solut[uri] 5. februarii.</s>
+					<s n="11" xml:lang="la" type="auto">Solut[uri] 5. februarii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus ex animo.</s>
+					<s n="12" xml:lang="la" type="auto">Tuus ex animo.</s>
 				</p>
 				<p>
 					<note>[von anderer Hand:]</note>
-					<s xml:lang="la" type="auto">Domino Henrico Bullinghero, ecclesiae Tigurinae pastori vigilantissimo.</s>
-					<s xml:lang="la" type="auto">Tigury.</s>
+					<s n="13" xml:lang="la" type="auto">Domino Henrico Bullinghero, ecclesiae Tigurinae pastori vigilantissimo.</s>
+					<s n="14" xml:lang="la" type="auto">Tigury.</s>
 				</p>
 				<p>
 					<note>[daneben von Bullingers Hand:]</note>
-					<s xml:lang="la" type="auto">D. Matthaei Coignetii, legati regis literae.</s>
+					<s n="15" xml:lang="la" type="auto">D. Matthaei Coignetii, legati regis literae.</s>
 				</p>
 			</div>
 		</body>

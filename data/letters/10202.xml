@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1983"/>
-				<idno type="ISBN">ISBN 3-290-11531-3</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=171</idno>
+				<idno subtype="ISBN">ISBN 3-290-11531-3</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=171</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 3</title>
+				<title subtype="publication">HBBW III</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">3</biblScope>
@@ -31,14 +31,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 32,74</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Konzept?</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 32,74</idno>
+						<idno subtype="Hinweis">Konzept?</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,12 +50,12 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Antwortet auf <persName ref="28">Bucers</persName> Brief [<ref target="file#10200">Nr. 169</ref>] und
-								äußert sich zu dessen Kritik an <persName ref="114">Leo Jud</persName>. Die Zürcher sind Brüder der
-								<placeName ref="1049">Straßburger</placeName> wie auch
-								<persName ref="138">Luthers</persName>, wenn dieser nur guten Willen zeigen wollte. Bullinger legt
+								Antwortet auf <persName ref="person28">Bucers</persName> Brief [<ref target="file10200">Nr. 169</ref>] und
+								äußert sich zu dessen Kritik an <persName ref="person114">Leo Jud</persName>. Die Zürcher sind Brüder der
+								<placeName ref="place1049">Straßburger</placeName> wie auch
+								<persName ref="person138">Luthers</persName>, wenn dieser nur guten Willen zeigen wollte. Bullinger legt
 								nochmals die Zürcher Abendmahlsauffassung dar. Gilt Cyrill als Zeuge für
-								<persName ref="138">Luthers</persName> Standpunkt, so führt Bullinger Tertullian an, dem sich auch
+								<persName ref="person138">Luthers</persName> Standpunkt, so führt Bullinger Tertullian an, dem sich auch
 								andere Kirchenväter angeschlossen haben. Die Zürcher haben es nicht verdient, von den Lutheranern als
 								Deuteler und Schwärmer bezeichnet zu werden.
 							</p>
@@ -64,46 +67,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10202">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1533-01-05" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#467" cert="high">
+					<!--
+					<persName ref="person467" cert="high">
 						<forename cert="high">Martin</forename>
 						<surname cert="high">Bucer</surname>
 						<graphic type="portrait" url="portraits/467_Bucer_Martinus.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Martin_Bucer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118516507"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11483585"/>
 					</persName>
+					-->
+					<persName ref="person467" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10203"/>
-					<ref type="prev_chronologically" target="files.xml#10201"/>
-					<ref type="next_correspondence" target="files.xml#10207"/>
-					<ref type="prev_correspondence" target="files.xml#10200"/>
-					<ref type="next_correspondence_request" target="files.xml#10501"/>
-					<ref type="prev_correspondence_request" target="files.xml#10140"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10207"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10200"/>
-					<ref type="next_same_sender" target="files.xml#10217"/>
-					<ref type="prev_same_sender" target="files.xml#10173"/>
-					<ref type="next_same_addressee" target="files.xml#10207"/>
-					<ref type="prev_same_addressee" target="files.xml#10200"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10217"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10173"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10207"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10200"/>
+					<ref type="next_chronologically" target="file10203"/>
+					<ref type="prev_chronologically" target="file10201"/>
+					<ref type="next_correspondence" target="file10207"/>
+					<ref type="prev_correspondence" target="file10200"/>
+					<ref type="next_correspondence_request" target="file10501"/>
+					<ref type="prev_correspondence_request" target="file10140"/>
+					<ref type="next_correspondence_reaction" target="file10207"/>
+					<ref type="prev_correspondence_reaction" target="file10200"/>
+					<ref type="next_same_sender" target="file10217"/>
+					<ref type="prev_same_sender" target="file10173"/>
+					<ref type="next_same_addressee" target="file10207"/>
+					<ref type="prev_same_addressee" target="file10200"/>
+					<ref type="next_with_sender_as_addressee" target="file10217"/>
+					<ref type="prev_with_sender_as_addressee" target="file10173"/>
+					<ref type="next_with_addressee_as_sender" target="file10207"/>
+					<ref type="prev_with_addressee_as_sender" target="file10200"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,21 +124,21 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Petis<note xml:id="fn2" type="footnote" n="2"><persName ref="28">Bucer</persName> hatte sich kritisch über <persName ref="114">Leo Jud</persName> geäußert, der ohne Grund einen neuen Streit zu suchen scheine (oben S. 28, 28-31).</note> a me responsionem, <persName ref="28">Bucere</persName> doctissime, quod <persName ref="114">Leo</persName> nimis sit spinosus, sed vereor, ne senticosus ipse quoque videar, si placidum Leonis ingenium iudicaveris asperum.</s>
-					<s xml:lang="la" type="auto">Piget me prorsus altercationis istius, sed placet, quod ipse rerum istarum pertesus tandem subdis<note xml:id="fn3" type="footnote" n="3">Bullinger spielt an auf <persName ref="28">Bucers</persName> Feststellung, die Meinungsverschiedenheiten zwischen Zürich und <placeName ref="1049">Straßburg</placeName> in der Abendmahlsfrage sollten nicht weiter schriftlich ausgetragen werden (oben S. 28, 10f).</note>: fratres sumus, nihil de hac re amplius.</s>
-					<s xml:lang="la" type="auto">Sumus enim et nos fratres vestri, imo et <persName ref="138">Lutheri</persName>, si velit.</s>
-					<s xml:lang="la" type="auto">Quis enim unquam pistorium panem cum Eggio vocavit eucharistiam<note xml:id="fn4" type="footnote" n="4"><persName ref="737">Johannes Eck</persName> hatte in seiner «Repulsio articulorum Zwinglii», 1530, der Antwort auf <persName ref="265">Zwinglis</persName> «Fidei ratio», dem Reformator vorgeworfen: «Cum pro sacratissimo Iesu salvatoris nostri corpore et sanguine, ecclesiis suis nonnisi pistorium panem exhibuit» (S IV 20). Erst noch 1532 hatte Bullinger in seiner «Antwort auf Johann <persName ref="805">Fabris</persName> Trostbüchlein» (HBBibl I 35) den Ausdruck «Beckenbrot» abgelehnt (f. A 5r.).</note>?</s>
-					<s xml:lang="la" type="auto">Quis unquam nudum panem dixit?</s>
-					<s xml:lang="la" type="auto">Panem negavimus esse corpus Christi, idque non omni prorsus modo, sed substantialiter, naturaliter, corporaliter, localiter.</s>
-					<s xml:lang="la" type="auto">Fatemur enim sacrum panem symbolum esse, mysterium et sacramentum.</s>
-					<s xml:lang="la" type="auto">Porro sacramentum est sacrae rei signum.</s>
-					<s xml:lang="la" type="auto">Iam si apud <persName ref="138">Lutherum</persName> tantum valet unicus <persName ref="670">Cyrillus</persName><note xml:id="fn5" type="footnote" n="5">Bullinger bezieht sich auf ein in <persName ref="28">Bucers</persName> Brief angeführtes Zitat des <persName ref="670">Cyrill von Alexandrien</persName> (oben S. 28, 15f).</note>, inter vetustos recentior, qui fit, ut nos non defendat vetustioris et eruditioris, <persName ref="2287">Tertulliani</persName> videlicet, expositio, qui haec verba Christi «Hoc est corpus meum» sic exposuit: «Hoc est figura corporis»<note xml:id="fn6" type="footnote" n="6"><persName ref="2287">Tertullian</persName>, Adversus Marcionem IV, 40, 3 (CChr I/1 656). Die Stelle war schon von <persName ref="160">Oekolampad</persName> in «De genuina verborum Domini expositione», 1525, als Zeugnis für die zwinglianische Abendmahlsauffassung angeführt worden; vgl. auch oben S. 30, 23.</note>.</s>
-					<s xml:lang="la" type="auto">Quem postea sequuti <persName ref="1173">Hieronymus</persName>, <persName ref="371">Augustinus</persName> et <persName ref="315">Ambrosius</persName> significandi voce frequentissime usi sunt.</s>
-					<s xml:lang="la" type="auto">Quid ergo nos commeruimus, quod ab istis significastae, deuteler, schwermeri vocamur?</s>
-					<s xml:lang="la" type="auto">Si tanta est <persName ref="670">Cyrilli</persName> autoritas, ut voce «corporaliter» iure utatur <persName ref="138">Lutherus</persName>, sic ergo nos scripturis et patribus nixi tenemus et docemus, cumque tu fatearis: fratres sumus, apologia non opus.</s>
-					<s xml:lang="la" type="auto">Non detulimus, sed lectae tuae literae a fratribus quibusdam.</s>
-					<s xml:lang="la" type="auto">Sed verbum non amplius ullum.</s>
-					<s xml:lang="la" type="auto">Doceat <persName ref="138">Lutherus</persName>, sinat nos nostris uti, frater sit, fratres praestabimus.</s>
+					<s n="1" xml:lang="la" type="auto">Petis<note xml:id="fn2" type="footnote" n="2"><persName ref="person28">Bucer</persName> hatte sich kritisch über <persName ref="person114">Leo Jud</persName> geäußert, der ohne Grund einen neuen Streit zu suchen scheine (oben S. 28, 28-31).</note> a me responsionem, <persName ref="person28">Bucere</persName> doctissime, quod <persName ref="person114">Leo</persName> nimis sit spinosus, sed vereor, ne senticosus ipse quoque videar, si placidum Leonis ingenium iudicaveris asperum.</s>
+					<s n="2" xml:lang="la" type="auto">Piget me prorsus altercationis istius, sed placet, quod ipse rerum istarum pertesus tandem subdis<note xml:id="fn3" type="footnote" n="3">Bullinger spielt an auf <persName ref="person28">Bucers</persName> Feststellung, die Meinungsverschiedenheiten zwischen Zürich und <placeName ref="place1049">Straßburg</placeName> in der Abendmahlsfrage sollten nicht weiter schriftlich ausgetragen werden (oben S. 28, 10f).</note>: fratres sumus, nihil de hac re amplius.</s>
+					<s n="3" xml:lang="la" type="auto">Sumus enim et nos fratres vestri, imo et <persName ref="person138">Lutheri</persName>, si velit.</s>
+					<s n="4" xml:lang="la" type="auto">Quis enim unquam pistorium panem cum Eggio vocavit eucharistiam<note xml:id="fn4" type="footnote" n="4"><persName ref="person737">Johannes Eck</persName> hatte in seiner «Repulsio articulorum Zwinglii», 1530, der Antwort auf <persName ref="person265">Zwinglis</persName> «Fidei ratio», dem Reformator vorgeworfen: «Cum pro sacratissimo Iesu salvatoris nostri corpore et sanguine, ecclesiis suis nonnisi pistorium panem exhibuit» (S IV 20). Erst noch 1532 hatte Bullinger in seiner «Antwort auf Johann <persName ref="person805">Fabris</persName> Trostbüchlein» (HBBibl I 35) den Ausdruck «Beckenbrot» abgelehnt (f. A 5r.).</note>?</s>
+					<s n="5" xml:lang="la" type="auto">Quis unquam nudum panem dixit?</s>
+					<s n="6" xml:lang="la" type="auto">Panem negavimus esse corpus Christi, idque non omni prorsus modo, sed substantialiter, naturaliter, corporaliter, localiter.</s>
+					<s n="7" xml:lang="la" type="auto">Fatemur enim sacrum panem symbolum esse, mysterium et sacramentum.</s>
+					<s n="8" xml:lang="la" type="auto">Porro sacramentum est sacrae rei signum.</s>
+					<s n="9" xml:lang="la" type="auto">Iam si apud <persName ref="person138">Lutherum</persName> tantum valet unicus <persName ref="person670">Cyrillus</persName><note xml:id="fn5" type="footnote" n="5">Bullinger bezieht sich auf ein in <persName ref="person28">Bucers</persName> Brief angeführtes Zitat des <persName ref="person670">Cyrill von Alexandrien</persName> (oben S. 28, 15f).</note>, inter vetustos recentior, qui fit, ut nos non defendat vetustioris et eruditioris, <persName ref="person2287">Tertulliani</persName> videlicet, expositio, qui haec verba Christi «Hoc est corpus meum» sic exposuit: «Hoc est figura corporis»<note xml:id="fn6" type="footnote" n="6"><persName ref="person2287">Tertullian</persName>, Adversus Marcionem IV, 40, 3 (CChr I/1 656). Die Stelle war schon von <persName ref="person160">Oekolampad</persName> in «De genuina verborum Domini expositione», 1525, als Zeugnis für die zwinglianische Abendmahlsauffassung angeführt worden; vgl. auch oben S. 30, 23.</note>.</s>
+					<s n="10" xml:lang="la" type="auto">Quem postea sequuti <persName ref="person1173">Hieronymus</persName>, <persName ref="person371">Augustinus</persName> et <persName ref="person315">Ambrosius</persName> significandi voce frequentissime usi sunt.</s>
+					<s n="11" xml:lang="la" type="auto">Quid ergo nos commeruimus, quod ab istis significastae, deuteler, schwermeri vocamur?</s>
+					<s n="12" xml:lang="la" type="auto">Si tanta est <persName ref="person670">Cyrilli</persName> autoritas, ut voce «corporaliter» iure utatur <persName ref="person138">Lutherus</persName>, sic ergo nos scripturis et patribus nixi tenemus et docemus, cumque tu fatearis: fratres sumus, apologia non opus.</s>
+					<s n="13" xml:lang="la" type="auto">Non detulimus, sed lectae tuae literae a fratribus quibusdam.</s>
+					<s n="14" xml:lang="la" type="auto">Sed verbum non amplius ullum.</s>
+					<s n="15" xml:lang="la" type="auto">Doceat <persName ref="person138">Lutherus</persName>, sinat nos nostris uti, frater sit, fratres praestabimus.</s>
 				</p>
 				<p>
 					<note type="signature">[Ohne Unterschrift und Adresse.]</note>

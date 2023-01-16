@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3453</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 62,512 f.</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 62,512 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 81,31</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 81,31</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -68,53 +74,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2162">
 				<correspAction type="sent">
-					<persName ref="person#3338" cert="high">
+					<!--
+					<persName ref="person3338" cert="high">
 						<forename cert="high">Petrus Paulus</forename>
 						<surname cert="high">Vergerius</surname>
-						<addName type="main">Vergerio, Pier Paolo</addName>
+						<persName type="main" ref="person3375>Vergerio, Pier Paolo</addName>
 						<graphic type="portrait" url="portraits/3375_Vergerio_Pietro_Paolo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Pietro_Paolo_Vergerio"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118768077"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417291"/>
 					</persName>
-					<place source="#512" cert="high">
-						<settlement>Tübingen</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>48.52266 9.05222</geo>
-					</place>
+					-->
+					<persName ref="person3338" cert="high"/>
+					<place source="place512" cert="high"/>
 					<date when="1554-01-16" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2163"/>
-					<ref type="prev_chronologically" target="files.xml#2161"/>
-					<ref type="next_correspondence" target="files.xml#2186"/>
-					<ref type="prev_correspondence" target="files.xml#2159"/>
-					<ref type="next_correspondence_request" target="files.xml#2186"/>
-					<ref type="prev_correspondence_request" target="files.xml#2159"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3237"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1884"/>
-					<ref type="next_same_sender" target="files.xml#2186"/>
-					<ref type="prev_same_sender" target="files.xml#2159"/>
-					<ref type="next_same_addressee" target="files.xml#2166"/>
-					<ref type="prev_same_addressee" target="files.xml#2151"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2186"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2159"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2166"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2151"/>
+					<ref type="next_chronologically" target="file2163"/>
+					<ref type="prev_chronologically" target="file2161"/>
+					<ref type="next_correspondence" target="file2186"/>
+					<ref type="prev_correspondence" target="file2159"/>
+					<ref type="next_correspondence_request" target="file2186"/>
+					<ref type="prev_correspondence_request" target="file2159"/>
+					<ref type="next_correspondence_reaction" target="file3237"/>
+					<ref type="prev_correspondence_reaction" target="file1884"/>
+					<ref type="next_same_sender" target="file2186"/>
+					<ref type="prev_same_sender" target="file2159"/>
+					<ref type="next_same_addressee" target="file2166"/>
+					<ref type="prev_same_addressee" target="file2151"/>
+					<ref type="next_with_sender_as_addressee" target="file2186"/>
+					<ref type="prev_with_sender_as_addressee" target="file2159"/>
+					<ref type="next_with_addressee_as_sender" target="file2166"/>
+					<ref type="prev_with_addressee_as_sender" target="file2151"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -133,50 +138,50 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Clarissime Bullingere, non est, quod timeas, si vides ingentem fascem allatum adhuc a certo nuncio, quasi putes me velle toto hoc anno perseverare et te talibus molestiis obruere.</s>
-					<s xml:lang="la" type="auto">Ne timeas, inquam; nam hunc propterea mitto, ut te et me simul liberem, quemadmodum ex aliis literis, quae sunt in fasce insertae, poteris videre.</s>
-					<s xml:lang="la" type="auto">Ad itaque te remitto.</s>
+					<s n="1" xml:lang="la" type="auto">Clarissime Bullingere, non est, quod timeas, si vides ingentem fascem allatum adhuc a certo nuncio, quasi putes me velle toto hoc anno perseverare et te talibus molestiis obruere.</s>
+					<s n="2" xml:lang="la" type="auto">Ne timeas, inquam; nam hunc propterea mitto, ut te et me simul liberem, quemadmodum ex aliis literis, quae sunt in fasce insertae, poteris videre.</s>
+					<s n="3" xml:lang="la" type="auto">Ad itaque te remitto.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pararam libros ante quatuor dies et speraram me quendam nuncium habiturum; at non successit, et proprium hunc putavi conducendum, ut tanto citius me liberarem.</s>
-					<s xml:lang="la" type="auto">Oro te, quando mittes ad legatos meas has, adde verbulum te per proprium nuncium eas a me accepisse; quin aliud te oro atque obtestor, ut iubeas utrisque literis superaddi alium papirum cum inscriptione Germanica; nam extimesco, ne alias intercipiantur.</s>
-					<s xml:lang="la" type="auto">Fecissem hoc ego; sed iam consignavi nec libenter rursum aperio.</s>
+					<s n="4" xml:lang="la" type="auto">Pararam libros ante quatuor dies et speraram me quendam nuncium habiturum; at non successit, et proprium hunc putavi conducendum, ut tanto citius me liberarem.</s>
+					<s n="5" xml:lang="la" type="auto">Oro te, quando mittes ad legatos meas has, adde verbulum te per proprium nuncium eas a me accepisse; quin aliud te oro atque obtestor, ut iubeas utrisque literis superaddi alium papirum cum inscriptione Germanica; nam extimesco, ne alias intercipiantur.</s>
+					<s n="6" xml:lang="la" type="auto">Fecissem hoc ego; sed iam consignavi nec libenter rursum aperio.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quanto magis cogito et versor cum prudentibus viris, tanto magis timeo nunc Germaniae propter alias, quas ad te in aliis his coniunctis dixi causas.</s>
-					<s xml:lang="la" type="auto">Altera est, quod omnes videntur statuisse velle pati et dissimulare, dum Caesar vivit, altera vero, quod is largitionibus nunc omnia conturbabit magis quam unquam antea, si Angliae regnum, id est fontem quendam auri, filio paraverit, nisi forte velimus existimare defuturos in Germania, qui se corrumpi sinant.</s>
+					<s n="7" xml:lang="la" type="auto">Quanto magis cogito et versor cum prudentibus viris, tanto magis timeo nunc Germaniae propter alias, quas ad te in aliis his coniunctis dixi causas.</s>
+					<s n="8" xml:lang="la" type="auto">Altera est, quod omnes videntur statuisse velle pati et dissimulare, dum Caesar vivit, altera vero, quod is largitionibus nunc omnia conturbabit magis quam unquam antea, si Angliae regnum, id est fontem quendam auri, filio paraverit, nisi forte velimus existimare defuturos in Germania, qui se corrumpi sinant.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Utinam viderimus novum aliquid et fidele foedus pro communi libertate tuenda, ac nisi hoc fiat, ego quidem multa mala video impendere.</s>
-					<s xml:lang="la" type="auto">Sed et nostra peccata hoc merentur et desidia in tam bona causa promovenda.</s>
-					<s xml:lang="la" type="auto">Parce, domine, parce peccatis nostris et negligentiae nostrae.</s>
+					<s n="9" xml:lang="la" type="auto">Utinam viderimus novum aliquid et fidele foedus pro communi libertate tuenda, ac nisi hoc fiat, ego quidem multa mala video impendere.</s>
+					<s n="10" xml:lang="la" type="auto">Sed et nostra peccata hoc merentur et desidia in tam bona causa promovenda.</s>
+					<s n="11" xml:lang="la" type="auto">Parce, domine, parce peccatis nostris et negligentiae nostrae.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Henrice Bullingere, vix crederes, quam pauci apparent, qui vere possint dicere: Zelus domus tuae comedit me.</s>
-					<s xml:lang="la" type="auto">At deus e caelis mittat spiritum suum, qui nos calfaciat et acce[n]dat per Christum, dominum nostrum.</s>
-					<s xml:lang="la" type="auto">Sine me hoc speciatim dicere (quod penes te habeto) nullum prorsus hactenus novi, qui nostram de sacramento eucharistiae sententiam non impugnet quadam veluti rabie.</s>
-					<s xml:lang="la" type="auto">Hoc hoc dolendum est, non solum eos discordare a nobis, sed amaro zelo discordare.</s>
-					<s xml:lang="la" type="auto">Ille ille, ad quem Sulc[erus]de fals crimine scripsit, nosti quem dico, quem ego quidem aliquando speravi consentire nobiscum, dissentit, inquam, et zelo amaro dissentit.</s>
-					<s xml:lang="la" type="auto">Quum nullum dixi, proprie sum locutus; quid opus est verbis?</s>
-					<s xml:lang="la" type="auto">et quum habeam nunc tam certum nuncium, volui deplorare haec tecum et in tuum sinum amanter effundere, sed in tuum unius.</s>
+					<s n="12" xml:lang="la" type="auto">Henrice Bullingere, vix crederes, quam pauci apparent, qui vere possint dicere: Zelus domus tuae comedit me.</s>
+					<s n="13" xml:lang="la" type="auto">At deus e caelis mittat spiritum suum, qui nos calfaciat et acce[n]dat per Christum, dominum nostrum.</s>
+					<s n="14" xml:lang="la" type="auto">Sine me hoc speciatim dicere (quod penes te habeto) nullum prorsus hactenus novi, qui nostram de sacramento eucharistiae sententiam non impugnet quadam veluti rabie.</s>
+					<s n="15" xml:lang="la" type="auto">Hoc hoc dolendum est, non solum eos discordare a nobis, sed amaro zelo discordare.</s>
+					<s n="16" xml:lang="la" type="auto">Ille ille, ad quem Sulc[erus]de fals crimine scripsit, nosti quem dico, quem ego quidem aliquando speravi consentire nobiscum, dissentit, inquam, et zelo amaro dissentit.</s>
+					<s n="17" xml:lang="la" type="auto">Quum nullum dixi, proprie sum locutus; quid opus est verbis?</s>
+					<s n="18" xml:lang="la" type="auto">et quum habeam nunc tam certum nuncium, volui deplorare haec tecum et in tuum sinum amanter effundere, sed in tuum unius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nuncius nihil habet, istic quod agat, sed tantum ut tuum chyrographum ad me afferat, quo possim esse certus fascem tibi fuisse redditum; nam scio te mox literas ad duos illos amicos mis[s]urum caute et prudenter, et spero fore, ne tibi sim futurus valde porro molestus hoc nomine, atque ignosce, si hactenus tua sancta studia aliquando meis literis et nunciis interturbavi.</s>
-					<s xml:lang="la" type="auto">Tu certe non es talis, cui bonas horas neque ego neque aliud quispiam debeat suffurari, et ego quidem non suffurabor amplius, ut spero.</s>
-					<s xml:lang="la" type="auto">Vale et salve et adiuva me tuis precibus apud dominum deum nostrum.</s>
-					<s xml:lang="la" type="auto">Tubingae 16. ianuarii 1554.</s>
+					<s n="19" xml:lang="la" type="auto">Nuncius nihil habet, istic quod agat, sed tantum ut tuum chyrographum ad me afferat, quo possim esse certus fascem tibi fuisse redditum; nam scio te mox literas ad duos illos amicos mis[s]urum caute et prudenter, et spero fore, ne tibi sim futurus valde porro molestus hoc nomine, atque ignosce, si hactenus tua sancta studia aliquando meis literis et nunciis interturbavi.</s>
+					<s n="20" xml:lang="la" type="auto">Tu certe non es talis, cui bonas horas neque ego neque aliud quispiam debeat suffurari, et ego quidem non suffurabor amplius, ut spero.</s>
+					<s n="21" xml:lang="la" type="auto">Vale et salve et adiuva me tuis precibus apud dominum deum nostrum.</s>
+					<s n="22" xml:lang="la" type="auto">Tubingae 16. ianuarii 1554.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vergerius.</s>
+					<s n="23" xml:lang="la" type="auto">Vergerius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si forte nuncius istic haereret, scribe quam diu haeserit; est omnino genus hoc hominum parum veridicum.</s>
+					<s n="24" xml:lang="la" type="auto">Si forte nuncius istic haereret, scribe quam diu haeserit; est omnino genus hoc hominum parum veridicum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">[C]larissimo viro domino Henrico Bullingero, pastori Tigurinae ecclesiae, fratri honorando.</s>
+					<s n="25" xml:lang="la" type="auto">[C]larissimo viro domino Henrico Bullingero, pastori Tigurinae ecclesiae, fratri honorando.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="26" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

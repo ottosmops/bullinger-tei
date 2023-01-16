@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms B 217,225 f.</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">= Anlage p. 1-2</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms B 217,225 f.</idno>
+						<idno subtype="Hinweis">= Anlage p. 1-2</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -41,41 +44,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/784">
 				<correspAction type="sent">
-					<persName ref="person#1118" cert="low">
+					<!--
+					<persName ref="person1118" cert="low">
 						<forename cert="low">Wilhelm</forename>
 						<surname cert="low">Farel</surname>
-						<addName type="main">Farel, Guillaume</addName>
+						<persName type="main" ref="person1049>Farel, Guillaume</addName>
 						<graphic type="portrait" url="portraits/1049_Farel_Guillaume.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Guillaume_Farel"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118531948"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11418641"/>
 					</persName>
-					<date when="1550-01-00" cert="low">ca. Januar 1550<note type="Datum">siehe: [1555 Januar ca. 4] (= ID 2522)</note></date>
+					-->
+					<persName ref="person1118" cert="low"/>
+					<date notBefore="1550-01-01" notAfter="1550-01-12" cert="low">ca. Januar 1550<note type="Datum">siehe: [1555 Januar ca. 4] (= ID 2522)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#790"/>
-					<ref type="prev_chronologically" target="files.xml#789"/>
-					<ref type="next_correspondence" target="files.xml#2306"/>
-					<ref type="prev_correspondence" target="files.xml#760"/>
-					<ref type="next_correspondence_request" target="files.xml#2306"/>
-					<ref type="prev_correspondence_request" target="files.xml#760"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2781"/>
+					<ref type="next_chronologically" target="file790"/>
+					<ref type="prev_chronologically" target="file789"/>
+					<ref type="next_correspondence" target="file2306"/>
+					<ref type="prev_correspondence" target="file760"/>
+					<ref type="next_correspondence_request" target="file2306"/>
+					<ref type="prev_correspondence_request" target="file760"/>
+					<ref type="next_correspondence_reaction" target="file2781"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#2306"/>
-					<ref type="prev_same_sender" target="files.xml#760"/>
-					<ref type="next_same_addressee" target="files.xml#798"/>
-					<ref type="prev_same_addressee" target="files.xml#761"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2306"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#760"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#798"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#761"/>
-					<ref type="parent" target="files.xml#2522"/>
+					<ref type="next_same_sender" target="file2306"/>
+					<ref type="prev_same_sender" target="file760"/>
+					<ref type="next_same_addressee" target="file798"/>
+					<ref type="prev_same_addressee" target="file761"/>
+					<ref type="next_with_sender_as_addressee" target="file2306"/>
+					<ref type="prev_with_sender_as_addressee" target="file760"/>
+					<ref type="next_with_addressee_as_sender" target="file798"/>
+					<ref type="prev_with_addressee_as_sender" target="file761"/>
+					<ref type="parent" target="file2522"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

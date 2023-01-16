@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=316</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=316</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,28</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,28</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,7 +50,7 @@
 						<summary>
 							<p xml:id="regest1">
 								Der Überbringer ist zuverlässig. Die Zürcher Abgeordneten wurden vor ihrer Abreise zur Tagsatzung (vom 15
-								.Januar) ermahnt, alle Vorschläge der Basler oder <placeName ref="121">Berner</placeName>
+								.Januar) ermahnt, alle Vorschläge der Basler oder <placeName ref="place121">Berner</placeName>
 								treuherzig entgegenzunehmen. Hofft, daß sich eine feste Freundschaft entwickelt, wenn sich die Basler durch
 								feindliche Lügen nicht abschrecken lassen! Bittet um Nachrichten vom Ausland.
 							</p>
@@ -59,46 +62,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10347">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1534-01-17" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
+					-->
+					<persName ref="person2234" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10348"/>
-					<ref type="prev_chronologically" target="files.xml#10346"/>
-					<ref type="next_correspondence" target="files.xml#10349"/>
-					<ref type="prev_correspondence" target="files.xml#10345"/>
-					<ref type="next_correspondence_request" target="files.xml#10349"/>
-					<ref type="prev_correspondence_request" target="files.xml#10341"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10350"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10345"/>
-					<ref type="next_same_sender" target="files.xml#10349"/>
-					<ref type="prev_same_sender" target="files.xml#10344"/>
-					<ref type="next_same_addressee" target="files.xml#10350"/>
-					<ref type="prev_same_addressee" target="files.xml#10345"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10349"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10344"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10350"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10345"/>
+					<ref type="next_chronologically" target="file10348"/>
+					<ref type="prev_chronologically" target="file10346"/>
+					<ref type="next_correspondence" target="file10349"/>
+					<ref type="prev_correspondence" target="file10345"/>
+					<ref type="next_correspondence_request" target="file10349"/>
+					<ref type="prev_correspondence_request" target="file10341"/>
+					<ref type="next_correspondence_reaction" target="file10350"/>
+					<ref type="prev_correspondence_reaction" target="file10345"/>
+					<ref type="next_same_sender" target="file10349"/>
+					<ref type="prev_same_sender" target="file10344"/>
+					<ref type="next_same_addressee" target="file10350"/>
+					<ref type="prev_same_addressee" target="file10345"/>
+					<ref type="next_with_sender_as_addressee" target="file10349"/>
+					<ref type="prev_with_sender_as_addressee" target="file10344"/>
+					<ref type="next_with_addressee_as_sender" target="file10350"/>
+					<ref type="prev_with_addressee_as_sender" target="file10345"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -115,31 +123,31 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Fidelis est hic vir<note xml:id="fn1" type="footnote" n="1">Der Überbringer des Briefes ist nicht bekannt.</note>, amicus noster singularis, cui tuto potes concredere, si quid habes.</s>
+					<s n="2" xml:lang="la" type="auto">Fidelis est hic vir<note xml:id="fn1" type="footnote" n="1">Der Überbringer des Briefes ist nicht bekannt.</note>, amicus noster singularis, cui tuto potes concredere, si quid habes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nostri legatis<note xml:id="fn2" type="footnote" n="2">Die Zürcher Abgeordneten an der Tagsatzung zu <placeName ref="85">Baden</placeName> vom 15. Januar 1534 waren <persName ref="87">Johannes Haab</persName> und <persName ref="1720">Kaspar Nasal</persName>, s. EA IV/IC 259.</note> Badenam ablegatis diligenter commiserunt, fideliter excipiant, si quid vel tui vel <placeName ref="121">Bernates</placeName> obtulerint<note xml:id="fn3" type="footnote" n="3">Bullinger wiederholt hier den zürcherischen Standpunkt, wie er nach dem Vermittlungsversuch der Basler Ende Dezember 1533 formuliert wurde: Zürich werde eine abwartende Haltung gegenüber <placeName ref="121">Bern</placeName> einnehmen, doch jedes Anzeichen zur Aussöhnung positiv beantworten, s. oben S. 37, 46-57 und HBBW III 277; vgl. EA IV/IC 236f; <hi>Rudolf,</hi> Aussöhnungsversuch 516.</note>.</s>
-					<s xml:lang="la" type="auto">Spero amicitiam firmam inter eos coalituram, modo vestri non cessent quorundam impiorum fraude deterriti.</s>
+					<s n="3" xml:lang="la" type="auto">Nostri legatis<note xml:id="fn2" type="footnote" n="2">Die Zürcher Abgeordneten an der Tagsatzung zu <placeName ref="place85">Baden</placeName> vom 15. Januar 1534 waren <persName ref="person87">Johannes Haab</persName> und <persName ref="person1720">Kaspar Nasal</persName>, s. EA IV/IC 259.</note> Badenam ablegatis diligenter commiserunt, fideliter excipiant, si quid vel tui vel <placeName ref="place121">Bernates</placeName> obtulerint<note xml:id="fn3" type="footnote" n="3">Bullinger wiederholt hier den zürcherischen Standpunkt, wie er nach dem Vermittlungsversuch der Basler Ende Dezember 1533 formuliert wurde: Zürich werde eine abwartende Haltung gegenüber <placeName ref="place121">Bern</placeName> einnehmen, doch jedes Anzeichen zur Aussöhnung positiv beantworten, s. oben S. 37, 46-57 und HBBW III 277; vgl. EA IV/IC 236f; <hi>Rudolf,</hi> Aussöhnungsversuch 516.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Spero amicitiam firmam inter eos coalituram, modo vestri non cessent quorundam impiorum fraude deterriti.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nostrae res alias non male habent.</s>
-					<s xml:lang="la" type="auto">Tu si quid ab <placeName ref="1049">Argentorato</placeName> aut <placeName ref="70">Augusta</placeName> certi habes aut a Gallo aut Cervino cornu<note xml:id="fn4" type="footnote" n="4"><placeName ref="100">Württemberg</placeName>; Bullinger spielt auf das Wappen des Herzogtums mit den drei Hirschgeweihen an.</note>, indica, si modo scire refert.</s>
+					<s n="5" xml:lang="la" type="auto">Nostrae res alias non male habent.</s>
+					<s n="6" xml:lang="la" type="auto">Tu si quid ab <placeName ref="place1049">Argentorato</placeName> aut <placeName ref="place70">Augusta</placeName> certi habes aut a Gallo aut Cervino cornu<note xml:id="fn4" type="footnote" n="4"><placeName ref="place100">Württemberg</placeName>; Bullinger spielt auf das Wappen des Herzogtums mit den drei Hirschgeweihen an.</note>, indica, si modo scire refert.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale nostri in precibus tuis memor.</s>
+					<s n="7" xml:lang="la" type="auto">Vale nostri in precibus tuis memor.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, 17. ianuarii 1534.</s>
+					<s n="8" xml:lang="la" type="auto">Tiguri, 17. ianuarii 1534.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus H. Bullingerus.</s>
+					<s n="9" xml:lang="la" type="auto">Tuus H. Bullingerus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino <persName ref="154">Osvaldo Myconio</persName> <placeName ref="97">Basileiensium</placeName> antistiti vigilantissimo, fratri charissimo.</s>
+					<s n="10" xml:lang="la" type="auto">Domino <persName ref="person154">Osvaldo Myconio</persName> <placeName ref="place97">Basileiensium</placeName> antistiti vigilantissimo, fratri charissimo.</s>
 				</p>
 			</div>
 		</body>

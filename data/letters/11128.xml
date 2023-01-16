@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1085</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1085</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 39,989</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 39,989</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,7 +49,7 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Schickt die in <placeName ref="1205">Wittenberg</placeName> soeben herausgegebenen fünf
+								Schickt die in <placeName ref="place1205">Wittenberg</placeName> soeben herausgegebenen fünf
 								Thesenverzeichnisse; wird sich gerne weiter erkenntlich zeigen. Grüße.
 							</p>
 						</summary>
@@ -57,44 +60,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11128">
 				<correspAction type="sent">
-					<persName ref="person#3875" cert="high">
+					<!--
+					<persName ref="person3875" cert="high">
 						<forename cert="high">Otto</forename>
 						<surname cert="high">Werdmüller</surname>
-						<addName type="main">Werdmüller (Myliander), Otto</addName>
+						<persName type="main" ref="person8459>Werdmüller (Myliander), Otto</addName>
 					</persName>
-					<place source="#558" cert="high">
-						<settlement>Wittenberg</settlement>
-						<district>Sachsen-Anhalt</district>
-						<country>Deutschland</country>
-						<geo>51.866667 12.643333</geo>
-					</place>
+					-->
+					<persName ref="person3875" cert="high"/>
+					<place source="place558" cert="high"/>
 					<date when="1537-12-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11129"/>
-					<ref type="prev_chronologically" target="files.xml#11127"/>
-					<ref type="next_correspondence" target="files.xml#11265"/>
-					<ref type="prev_correspondence" target="files.xml#10650"/>
-					<ref type="next_correspondence_request" target="files.xml#11265"/>
-					<ref type="prev_correspondence_request" target="files.xml#10650"/>
+					<ref type="next_chronologically" target="file11129"/>
+					<ref type="prev_chronologically" target="file11127"/>
+					<ref type="next_correspondence" target="file11265"/>
+					<ref type="prev_correspondence" target="file10650"/>
+					<ref type="next_correspondence_request" target="file11265"/>
+					<ref type="prev_correspondence_request" target="file10650"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11265"/>
-					<ref type="prev_same_sender" target="files.xml#10650"/>
-					<ref type="next_same_addressee" target="files.xml#11137"/>
-					<ref type="prev_same_addressee" target="files.xml#11121"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11265"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10650"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11137"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11121"/>
+					<ref type="next_same_sender" target="file11265"/>
+					<ref type="prev_same_sender" target="file10650"/>
+					<ref type="next_same_addressee" target="file11137"/>
+					<ref type="prev_same_addressee" target="file11121"/>
+					<ref type="next_with_sender_as_addressee" target="file11265"/>
+					<ref type="prev_with_sender_as_addressee" target="file10650"/>
+					<ref type="next_with_addressee_as_sender" target="file11137"/>
+					<ref type="prev_with_addressee_as_sender" target="file11121"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -108,23 +114,23 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S. P.</s>
-					<s xml:lang="la" type="auto">Nunc primum apud nos aeditae sunt hae quinque tabulae propositionum<note xml:id="fn1" type="footnote" n="1">Die Drucke, die dem Brief beigegeben waren, konnten nicht identifiziert werden.</note>, quas tibi mittere volui, quia gratas fore sperabam, nec vero in his leviculis solum, sed in qua re cunque potero, tibi lubentissime gratificabor.</s>
-					<s xml:lang="la" type="auto">Propediem plura scribam.</s>
+					<s n="1" xml:lang="la" type="auto">S. P.</s>
+					<s n="2" xml:lang="la" type="auto">Nunc primum apud nos aeditae sunt hae quinque tabulae propositionum<note xml:id="fn1" type="footnote" n="1">Die Drucke, die dem Brief beigegeben waren, konnten nicht identifiziert werden.</note>, quas tibi mittere volui, quia gratas fore sperabam, nec vero in his leviculis solum, sed in qua re cunque potero, tibi lubentissime gratificabor.</s>
+					<s n="3" xml:lang="la" type="auto">Propediem plura scribam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Interim optime vale.</s>
-					<s xml:lang="la" type="auto">Salvam cupio totam familiam tuam, deinde d. <persName ref="165">Pellicanum</persName>, <persName ref="14">Theodorum</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="14">Theodor Bibliander</persName>.</note>, Ammanium, <persName ref="644">Collinum</persName>, praeceptores nostros humanissimos.</s>
+					<s n="4" xml:lang="la" type="auto">Interim optime vale.</s>
+					<s n="5" xml:lang="la" type="auto">Salvam cupio totam familiam tuam, deinde d. <persName ref="person165">Pellicanum</persName>, <persName ref="person14">Theodorum</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="person14">Theodor Bibliander</persName>.</note>, Ammanium, <persName ref="person644">Collinum</persName>, praeceptores nostros humanissimos.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="1205">Vitebergae</placeName> 1537, 28. decembris.</s>
+					<s n="6" xml:lang="la" type="auto"><placeName ref="place1205">Vitebergae</placeName> 1537, 28. decembris.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="238">Otho</persName>, tibi obsequentissimus<note xml:id="fna" type="footnote" n="a"><hi>Darunter von der Hand <persName ref="318">Johann</persName> Heinrich Hottingers</hi> Werdmyllerus.</note>.</s>
+					<s n="7" xml:lang="la" type="auto"><persName ref="person238">Otho</persName>, tibi obsequentissimus<note xml:id="fna" type="footnote" n="a"><hi>Darunter von der Hand Johann Heinrich Hottingers</hi> Werdmyllerus.</note>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Vigilantissimo verbi ministro d. Henrico Bullingero, patri suo plurimum colendo.</s>
+					<s n="8" xml:lang="la" type="auto">Vigilantissimo verbi ministro d. Henrico Bullingero, patri suo plurimum colendo.</s>
 				</p>
 			</div>
 		</body>

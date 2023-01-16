@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=571</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=571</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,66</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,66</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,9 +49,9 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Hat von dem in Zürich in Gewahrsam genommenen [<persName ref="533">Uli</persName> Bruder] schon
+								Hat von dem in Zürich in Gewahrsam genommenen [Uli Bruder] schon
 								früher nichts Gutes vernommen. Warnt vor der vom Kaiser ausgehenden Gefahr für die Freiheit
-								<placeName ref="7">Deutschlands</placeName>.
+								<placeName ref="place7">Deutschlands</placeName>.
 							</p>
 						</summary>
 					</msContents>
@@ -58,46 +61,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10609">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1535-04-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10610"/>
-					<ref type="prev_chronologically" target="files.xml#10608"/>
-					<ref type="next_correspondence" target="files.xml#10619"/>
-					<ref type="prev_correspondence" target="files.xml#10608"/>
-					<ref type="next_correspondence_request" target="files.xml#10621"/>
-					<ref type="prev_correspondence_request" target="files.xml#10608"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10619"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10607"/>
-					<ref type="next_same_sender" target="files.xml#10621"/>
-					<ref type="prev_same_sender" target="files.xml#10608"/>
-					<ref type="next_same_addressee" target="files.xml#10619"/>
-					<ref type="prev_same_addressee" target="files.xml#10607"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10621"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10608"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10619"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10607"/>
+					<ref type="next_chronologically" target="file10610"/>
+					<ref type="prev_chronologically" target="file10608"/>
+					<ref type="next_correspondence" target="file10619"/>
+					<ref type="prev_correspondence" target="file10608"/>
+					<ref type="next_correspondence_request" target="file10621"/>
+					<ref type="prev_correspondence_request" target="file10608"/>
+					<ref type="next_correspondence_reaction" target="file10619"/>
+					<ref type="prev_correspondence_reaction" target="file10607"/>
+					<ref type="next_same_sender" target="file10621"/>
+					<ref type="prev_same_sender" target="file10608"/>
+					<ref type="next_same_addressee" target="file10619"/>
+					<ref type="prev_same_addressee" target="file10607"/>
+					<ref type="next_with_sender_as_addressee" target="file10621"/>
+					<ref type="prev_with_sender_as_addressee" target="file10608"/>
+					<ref type="next_with_addressee_as_sender" target="file10619"/>
+					<ref type="prev_with_addressee_as_sender" target="file10607"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -114,39 +122,39 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Nugas putavi, quod serium esse nunc ex literis tuis<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file#10607">Nr. 569</ref>.</note> intelligo - de tumultu loquor.</s>
-					<s xml:lang="la" type="auto">Habent in vinculis tui, quem si recte examinabunt, audient nimirum, quod nosse proderit.</s>
-					<s xml:lang="la" type="auto">Nomen<note xml:id="fn2" type="footnote" n="2"><persName ref="533">Uli</persName> Bruder.</note> est mihi notum, ut de quo nihil unquam quicquam audierim boni.</s>
-					<s xml:lang="la" type="auto">Miror, quod nomen sit alteri<note xml:id="fn3" type="footnote" n="3">Gemeint ist wohl der in Zug inhaftierte <persName ref="394">Jakob Baumann</persName> (s. oben <ref target="file#10607">Nr. 569</ref>, Anm. 8); in Bullingers Brief war allerdings nur von <persName ref="533">Uli</persName> Bruder die Rede.</note>.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Nugas putavi, quod serium esse nunc ex literis tuis<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file10607">Nr. 569</ref>.</note> intelligo - de tumultu loquor.</s>
+					<s n="3" xml:lang="la" type="auto">Habent in vinculis tui, quem si recte examinabunt, audient nimirum, quod nosse proderit.</s>
+					<s n="4" xml:lang="la" type="auto">Nomen<note xml:id="fn2" type="footnote" n="2">Uli Bruder.</note> est mihi notum, ut de quo nihil unquam quicquam audierim boni.</s>
+					<s n="5" xml:lang="la" type="auto">Miror, quod nomen sit alteri<note xml:id="fn3" type="footnote" n="3">Gemeint ist wohl der in Zug inhaftierte <persName ref="person394">Jakob Baumann</persName> (s. oben <ref target="file10607">Nr. 569</ref>, Anm. 8); in Bullingers Brief war allerdings nur von Uli Bruder die Rede.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De Gallo<note xml:id="fn4" type="footnote" n="4"><persName ref="859">Franz</persName> I.</note> sentis pessime et iure quidem, de caesare<note xml:id="fn5" type="footnote" n="5"><persName ref="1332">Karl</persName> V.</note> melius, qui si maneret, ut fuit hactenus, aeque sentirem et ego.</s>
-					<s xml:lang="la" type="auto">Verum audi et iudica: Ambit uterque<pb type="edition" next="196"/>Germanos et serio profecto.</s>
-					<s xml:lang="la" type="auto">Quos si in amiciciam pellexerit Gallus, nihil erit aliud, manebit sui iuris <persName ref="1332">Germania</persName>.</s>
-					<s xml:lang="la" type="auto">Sin caesar Germanos obtinuerit, tentabit constituere monarchiam in toto orbe christiano.</s>
-					<s xml:lang="la" type="auto">Quod dum intelligit nobilitas, in dubio est, utro nam se inclinet, imo dolet, quod timet de libertate germanica.</s>
-					<s xml:lang="la" type="auto">Haec non ex me, sed ex nobili quodam viro et evangelico<note xml:id="fn6" type="footnote" n="6">Unbekannt.</note> nudius tertius animadverti, cui res germanicę sunt admodum curae.</s>
-					<s xml:lang="la" type="auto">Hisce pene verbis loquebatur: "Si victus fuerit Gallus, constat <placeName ref="29">Hispanum</placeName> tentaturum esse libertatem nostram haud aliter, quam coepit in <persName ref="1332">Germania</persName> Inferiore.</s>
-					<s xml:lang="la" type="auto">Absit a <persName ref="146">Germanis</persName>, ut hoc oneris subeant, quod parat iste."</s>
-					<s xml:lang="la" type="auto">Coniecit hic me in dubium, ut nesciam fere e duobus malis eligere.</s>
-					<s xml:lang="la" type="auto">Haec tibi, ut videas, quę sint huius temporis pericula.</s>
+					<s n="6" xml:lang="la" type="auto">De Gallo<note xml:id="fn4" type="footnote" n="4"><persName ref="person859">Franz I.</persName></note> sentis pessime et iure quidem, de caesare<note xml:id="fn5" type="footnote" n="5"><persName ref="person1332">Karl V.</persName></note> melius, qui si maneret, ut fuit hactenus, aeque sentirem et ego.</s>
+					<s n="7" xml:lang="la" type="auto">Verum audi et iudica: Ambit uterque<pb type="edition" next="196"/>Germanos et serio profecto.</s>
+					<s n="8" xml:lang="la" type="auto">Quos si in amiciciam pellexerit Gallus, nihil erit aliud, manebit sui iuris <persName ref="person1332">Germania</persName>.</s>
+					<s n="9" xml:lang="la" type="auto">Sin caesar Germanos obtinuerit, tentabit constituere monarchiam in toto orbe christiano.</s>
+					<s n="10" xml:lang="la" type="auto">Quod dum intelligit nobilitas, in dubio est, utro nam se inclinet, imo dolet, quod timet de libertate germanica.</s>
+					<s n="11" xml:lang="la" type="auto">Haec non ex me, sed ex nobili quodam viro et evangelico<note xml:id="fn6" type="footnote" n="6">Unbekannt.</note> nudius tertius animadverti, cui res germanicę sunt admodum curae.</s>
+					<s n="12" xml:lang="la" type="auto">Hisce pene verbis loquebatur: "Si victus fuerit Gallus, constat <placeName ref="place29">Hispanum</placeName> tentaturum esse libertatem nostram haud aliter, quam coepit in <persName ref="person1332">Germania</persName> Inferiore.</s>
+					<s n="13" xml:lang="la" type="auto">Absit a <persName ref="person146">Germanis</persName>, ut hoc oneris subeant, quod parat iste."</s>
+					<s n="14" xml:lang="la" type="auto">Coniecit hic me in dubium, ut nesciam fere e duobus malis eligere.</s>
+					<s n="15" xml:lang="la" type="auto">Haec tibi, ut videas, quę sint huius temporis pericula.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De quo in fine scribis<note xml:id="fn7" type="footnote" n="7">Siehe oben <ref target="file#10607">Nr. 569</ref>, 26f.</note>, alias respondebo.</s>
+					<s n="16" xml:lang="la" type="auto">De quo in fine scribis<note xml:id="fn7" type="footnote" n="7">Siehe oben <ref target="file10607">Nr. 569</ref>, 26f.</note>, alias respondebo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="17" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileae</placeName>, 9. aprilis anno 35.</s>
+					<s n="18" xml:lang="la" type="auto"><placeName ref="place97">Basileae</placeName>, 9. aprilis anno 35.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">O. <persName ref="154">Myconius</persName> tuus.</s>
+					<s n="19" xml:lang="la" type="auto">O. <persName ref="person154">Myconius</persName> tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der, Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinricho Bullingero, domino et fratri percolendo suo.</s>
+					<s n="20" xml:lang="la" type="auto">Domino Heinricho Bullingero, domino et fratri percolendo suo.</s>
 				</p>
 			</div>
 		</body>

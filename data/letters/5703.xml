@@ -6,15 +6,19 @@
 				<title subtype="file">[Matthias Erb] / Rappoltsweiler AN [Heinrich Bullinger] / Zürich, [25. April 1563]</title>
 			</titleStmt>
 			<sourceDesc>
-				<msDesc type="Nachschrift" subtype="Autograph" xml:lang="">
+				<msDesc type="Beilage" subtype="Original" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 338,1644-1645</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Original">E II 338,1644-1645</idno>
+						<idno subtype="Hinweis">Nur PS von Erbs Hand</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -31,51 +35,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5703">
 				<correspAction type="sent">
-					<persName ref="person#1010" cert="low">
+					<!--
+					<persName ref="person1010" cert="low">
 						<forename cert="low">Matthias</forename>
 						<surname cert="low">Erb</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Matthias_Erb"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/100972160"/>
 					</persName>
-					<place source="#405" cert="low">
-						<settlement>Rappoltsweiler</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.1951 7.31938</geo>
-					</place>
+					-->
+					<persName ref="person1010" cert="low"/>
+					<place source="place405" cert="low"/>
 					<date when="1563-04-25" cert="low"><note>Datum unsicher: «1563 nach April 25.»; vielleicht Beilage zu 1563 Mai 22. ? (= ID 5740)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5704"/>
-					<ref type="prev_chronologically" target="files.xml#5702"/>
-					<ref type="next_correspondence" target="files.xml#5740"/>
-					<ref type="prev_correspondence" target="files.xml#5692"/>
-					<ref type="next_correspondence_request" target="files.xml#5740"/>
-					<ref type="prev_correspondence_request" target="files.xml#5692"/>
-					<ref type="next_correspondence_reaction" target="files.xml#6005"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3460"/>
-					<ref type="next_same_sender" target="files.xml#5740"/>
-					<ref type="prev_same_sender" target="files.xml#5692"/>
-					<ref type="next_same_addressee" target="files.xml#5707"/>
-					<ref type="prev_same_addressee" target="files.xml#5700"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5740"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5692"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5707"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5700"/>
-					<ref type="parent" target="files.xml#5740"/>
+					<ref type="next_chronologically" target="file5704"/>
+					<ref type="prev_chronologically" target="file5702"/>
+					<ref type="next_correspondence" target="file5740"/>
+					<ref type="prev_correspondence" target="file5692"/>
+					<ref type="next_correspondence_request" target="file5740"/>
+					<ref type="prev_correspondence_request" target="file5692"/>
+					<ref type="next_correspondence_reaction" target="file6005"/>
+					<ref type="prev_correspondence_reaction" target="file3460"/>
+					<ref type="next_same_sender" target="file5740"/>
+					<ref type="prev_same_sender" target="file5692"/>
+					<ref type="next_same_addressee" target="file5707"/>
+					<ref type="prev_same_addressee" target="file5700"/>
+					<ref type="next_with_sender_as_addressee" target="file5740"/>
+					<ref type="prev_with_sender_as_addressee" target="file5692"/>
+					<ref type="next_with_addressee_as_sender" target="file5707"/>
+					<ref type="prev_with_addressee_as_sender" target="file5700"/>
+					<ref type="parent" target="file5740"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
@@ -83,10 +86,10 @@
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
 	<facsimile>
-		<graphic url="5703/Autograph/00 E_II_338__fol__1644_r_.tif" n="1"/>
-		<graphic url="5703/Autograph/01 E_II_338__fol__1644_v_.tif" n="2"/>
-		<graphic url="5703/Autograph/02 E_II_338__fol__1645_r_.tif" n="3"/>
-		<graphic url="5703/Autograph/03 E_II_338__fol__1645_v_.tif" n="4"/>
+		<graphic url="5703/Original/00 E_II_338__fol__1644_r_.tif" n="1"/>
+		<graphic url="5703/Original/01 E_II_338__fol__1644_v_.tif" n="2"/>
+		<graphic url="5703/Original/02 E_II_338__fol__1645_r_.tif" n="3"/>
+		<graphic url="5703/Original/03 E_II_338__fol__1645_v_.tif" n="4"/>
 	</facsimile>
 	<text xml:lang="">
 		<body>

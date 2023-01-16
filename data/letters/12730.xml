@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2017"/>
-				<idno type="ISBN">ISBN 078-3-290-17889-5547</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2683</idno>
+				<idno subtype="ISBN">ISBN 078-3-290-17889-5547</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2683</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 18</title>
+				<title subtype="publication">HBBW XVIII</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">18</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336a,278</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336a,278</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336a,262</idno>
+							<idno subtype="Autograph">E II 336a,262</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -50,32 +53,32 @@
 						<summary>
 							<p xml:id="regest1">
 								[1] Wieso meint denn Bullinger, durch häufiges Briefeschreiben seine Zeit zu verschwenden? Es gibt doch
-								nichts Nützlicheres, wie <persName ref="154">Myconius</persName> ihm beweisen wird, wenn er wieder
+								nichts Nützlicheres, wie <persName ref="person154">Myconius</persName> ihm beweisen wird, wenn er wieder
 								mehr Zeit hat.
 								</p>
 								<p xml:id="regest2">
 								[2] Ein katholischer Pfarrer [...] aus
-								<placeName ref="367">Freiburg</placeName> [i. Br.?], der
+								<placeName ref="place367">Freiburg</placeName> [i. Br.?], der
 								aus Italien kam, wurde in
-								<placeName ref="97">Basel</placeName> nach Neuigkeiten gefragt und erzählte, dass dort alles ruhig
+								<placeName ref="place97">Basel</placeName> nach Neuigkeiten gefragt und erzählte, dass dort alles ruhig
 								wäre. Papst [Paul III.] soll für Kaiser [Karl V.] 2000 Reiter ausgesandt haben, die aber in
-								<placeName ref="837">Parma</placeName> und den umliegenden Orten zurückgeblieben sind, nachdem
+								<placeName ref="place837">Parma</placeName> und den umliegenden Orten zurückgeblieben sind, nachdem
 								bekannt wurde, dass der Kaiser ins Winterlager gezogen sei.
 								</p>
 								<p xml:id="regest3">
-								[3] Das Fehlverhalten von <persName ref="1912">Jakob Reinhart</persName> ist eine Schande für die
+								[3] Das Fehlverhalten von <persName ref="person1912">Jakob Reinhart</persName> ist eine Schande für die
 								ganze Eidgenossenschaft!
 								</p>
 								<p xml:id="regest4">
 								[4] Die schlimme, wirklich kaum zu glaubende Nachricht über Herzog Moritz [von
-								<placeName ref="74">Sachsen</placeName>] deutet man so, als habe dieser Kursachsen nur zum Zweck
-								der Verteidigung [gegen <placeName ref="11">Böhmen</placeName>] besetzt und nicht, um seinen
+								<placeName ref="place74">Sachsen</placeName>] deutet man so, als habe dieser Kursachsen nur zum Zweck
+								der Verteidigung [gegen <placeName ref="place11">Böhmen</placeName>] besetzt und nicht, um seinen
 								Anspruch auf dieses Territorium geltend zu machen. Über den Inhalt [des Schreibens], das der Zürcher Bote
 								[Anton Esche] dem Basler [Rat] brachte, ist nichts bekannt. Der Bote selbst konnte nichts darüber berichten.
 								</p>
 								<p xml:id="regest5">
 								[5] Angeblich sind der französische [König Franz I.] und der Papst aus gewichtigen Gründen zerstritten.
-								Doch weiß <persName ref="154">Myconius</persName> nichts Näheres darüber.
+								Doch weiß <persName ref="person154">Myconius</persName> nichts Näheres darüber.
 								</p>
 								<p xml:id="regest6">
 								[6] Nur wenige glauben, dass der schwerkranke Kaiser noch am Leben sei. Wenn er sich den Soldaten zeigt,
@@ -84,7 +87,7 @@
 								nach seinem Willen. Möge der Herr ihn zerschmettern!
 								</p>
 								<p xml:id="regest7">
-								[7] Gruß, auch an Gwalther. <persName ref="154">Myconius</persName> muss zum Abendessen.
+								[7] Gruß, auch an Gwalther. <persName ref="person154">Myconius</persName> muss zum Abendessen.
 							</p>
 						</summary>
 					</msContents>
@@ -94,46 +97,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12730">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1546-11-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12731"/>
-					<ref type="prev_chronologically" target="files.xml#12729"/>
-					<ref type="next_correspondence" target="files.xml#12738"/>
-					<ref type="prev_correspondence" target="files.xml#12729"/>
-					<ref type="next_correspondence_request" target="files.xml#12738"/>
-					<ref type="prev_correspondence_request" target="files.xml#12729"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12742"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12706"/>
-					<ref type="next_same_sender" target="files.xml#12738"/>
-					<ref type="prev_same_sender" target="files.xml#12729"/>
-					<ref type="next_same_addressee" target="files.xml#12734"/>
-					<ref type="prev_same_addressee" target="files.xml#12722"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12738"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12729"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12734"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12722"/>
+					<ref type="next_chronologically" target="file12731"/>
+					<ref type="prev_chronologically" target="file12729"/>
+					<ref type="next_correspondence" target="file12738"/>
+					<ref type="prev_correspondence" target="file12729"/>
+					<ref type="next_correspondence_request" target="file12738"/>
+					<ref type="prev_correspondence_request" target="file12729"/>
+					<ref type="next_correspondence_reaction" target="file12742"/>
+					<ref type="prev_correspondence_reaction" target="file12706"/>
+					<ref type="next_same_sender" target="file12738"/>
+					<ref type="prev_same_sender" target="file12729"/>
+					<ref type="next_same_addressee" target="file12734"/>
+					<ref type="prev_same_addressee" target="file12722"/>
+					<ref type="next_with_sender_as_addressee" target="file12738"/>
+					<ref type="prev_with_sender_as_addressee" target="file12729"/>
+					<ref type="next_with_addressee_as_sender" target="file12734"/>
+					<ref type="prev_with_addressee_as_sender" target="file12722"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -151,57 +159,57 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Nescio, quid velis, dum scribis vereri te, ne perdas laborem tam frequenter scribendo.<note xml:id="fn1" type="footnote" n="1">Bullinger wird sich in einem nicht erhaltenen Brief beklagt haben, dass all sein Briefeschreiben umsonst sei. Und <persName ref="154">Myconius</persName> sah dabei offensichtlich keinen Zusammenhang mit dem vorhergehenden (ebenfalls nicht erhaltenen) Brief Bullingers, in dem dieser die Befürchtung geäußert hatte, dass vielleicht seine Briefe dem Empfänger nicht zugestellt würden; s. <ref target="file#12729">Nr. 2682</ref>,1-3.</note></s>
-					<s xml:lang="la" type="auto">Crede mihi, nihil facere posses utilius.</s>
-					<s xml:lang="la" type="auto">Causas narrabo, dum erit ocium, nam nunc nihil est minus.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Nescio, quid velis, dum scribis vereri te, ne perdas laborem tam frequenter scribendo.<note xml:id="fn1" type="footnote" n="1">Bullinger wird sich in einem nicht erhaltenen Brief beklagt haben, dass all sein Briefeschreiben umsonst sei. Und <persName ref="person154">Myconius</persName> sah dabei offensichtlich keinen Zusammenhang mit dem vorhergehenden (ebenfalls nicht erhaltenen) Brief Bullingers, in dem dieser die Befürchtung geäußert hatte, dass vielleicht seine Briefe dem Empfänger nicht zugestellt würden; s. <ref target="file12729">Nr. 2682</ref>,1-3.</note></s>
+					<s n="3" xml:lang="la" type="auto">Crede mihi, nihil facere posses utilius.</s>
+					<s n="4" xml:lang="la" type="auto">Causas narrabo, dum erit ocium, nam nunc nihil est minus.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Venit huc pfaffus <placeName ref="367">Friburgensis</placeName><note xml:id="fn2" type="footnote" n="2">Unbekannt. - Er lebte wahrscheinlich in <placeName ref="367"><placeName ref="368">Freiburg i</placeName></placeName>. Br., was für einen aus Italien kommenden Reisenden die Durchreise durch <placeName ref="97">Basel</placeName> gut erklären würde.</note> ex <placeName ref="16">Italia</placeName>.</s>
-					<s xml:lang="la" type="auto">Rogatus, quid ferat, respondit omnia illic esse pacatissima; duo milia equitum a papa<note xml:id="fn3" type="footnote" n="3">Paul III.</note> missa restitisse <placeName ref="837">Parmę</placeName><note xml:id="fn4" type="footnote" n="4"><placeName ref="837">Parma</placeName> (Prov. <placeName ref="837">Parma</placeName>, I). - Paul III. versuchte damals, die Herschaft von <placeName ref="837">Parma</placeName> vom Herzogtum <placeName ref="667">Mailand</placeName> (das Karl V. beanspruchte) zu trennen und seinem illegitimen Sohn <persName ref="819">Pier Luigi Farnese</persName> (1503- 1547) zu übertragen.</note> et in cęteris civitatibus circumiacentibus audito, quod cęsar<note xml:id="fn5" type="footnote" n="5">Karl V.</note> abiisset in hyberna.</s>
+					<s n="5" xml:lang="la" type="auto">Venit huc pfaffus <placeName ref="place367">Friburgensis</placeName><note xml:id="fn2" type="footnote" n="2">Unbekannt. - Er lebte wahrscheinlich in <placeName ref="place367">Freiburg i. Br.</placeName>, was für einen aus Italien kommenden Reisenden die Durchreise durch <placeName ref="place97">Basel</placeName> gut erklären würde.</note> ex <placeName ref="place16">Italia</placeName>.</s>
+					<s n="6" xml:lang="la" type="auto">Rogatus, quid ferat, respondit omnia illic esse pacatissima; duo milia equitum a papa<note xml:id="fn3" type="footnote" n="3">Paul III.</note> missa restitisse <placeName ref="place837">Parmę</placeName><note xml:id="fn4" type="footnote" n="4"><placeName ref="place837">Parma</placeName> (Prov. <placeName ref="place837">Parma</placeName>, I). - Paul III. versuchte damals, die Herschaft von <placeName ref="place837">Parma</placeName> vom Herzogtum <placeName ref="place667">Mailand</placeName> (das Karl V. beanspruchte) zu trennen und seinem illegitimen Sohn <persName ref="person819">Pier Luigi Farnese</persName> (1503-1547) zu übertragen.</note> et in cęteris civitatibus circumiacentibus audito, quod cęsar<note xml:id="fn5" type="footnote" n="5">Karl V.</note> abiisset in hyberna.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Miramur de Iacobo <persName ref="1912">Reinharto</persName>, quod improbius egit.<note xml:id="fn6" type="footnote" n="6"><persName ref="1912">Jakob Reinhart</persName>, der im Schmalkaldischen Krieg als Zürcher Söldnerführer diente (s. <hi>HBBW</hi> XVII 344, Anm. 31), war schon Anfang Oktober negativ aufgefallen; s. <ref target="file#12659">Nr. 2612</ref>,16-25.</note></s>
-					<s xml:lang="la" type="auto">Maculam omnibus Helvetiis inurit.<pb type="edition" next="297"/></s>
+					<s n="7" xml:lang="la" type="auto">Miramur de <persName ref="person1912">Iacobo Reinharto</persName>, quod improbius egit.<note xml:id="fn6" type="footnote" n="6"><persName ref="person1912">Jakob Reinhart</persName>, der im Schmalkaldischen Krieg als Zürcher Söldnerführer diente (s. <hi>HBBW</hi> XVII 344, Anm. 31), war schon Anfang Oktober negativ aufgefallen; s. <ref target="file12659">Nr. 2612</ref>,16-25.</note></s>
+					<s n="8" xml:lang="la" type="auto">Maculam omnibus Helvetiis inurit.<pb type="edition" next="297"/></s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">De duce Mauricio<note xml:id="fn7" type="footnote" n="7">Moritz von <placeName ref="74">Sachsen</placeName>.</note> adeo dolet omnibus, ut vix credere, quę dicuntur, valeant.</s>
-					<s xml:lang="la" type="auto">In hoc sunt: occupasse, ut defendat, non ut vendicet, Saxoniam.<note xml:id="fn8" type="footnote" n="8">Vgl. auch <ref target="file#12724">Nr. 2677</ref>,26-30.</note></s>
-					<s xml:lang="la" type="auto">Nescimus adhuc, quid vester<note xml:id="fn9" type="footnote" n="9">Der Zürcher Bote "Anthoni Esche", der am 18. November entweder noch in <placeName ref="97">Basel</placeName> oder schon in Zürich zurück war; s. Zürich StA, F III 32, Seckelamtsrechnungen 1546/47, S. 62 der Ausgabenabteilung für laufende Boten.</note> adtulerit.</s>
-					<s xml:lang="la" type="auto">Nec ipse interrogantibus respondere quicquam potuit quam „ignoro.“</s>
+					<s n="9" xml:lang="la" type="auto">De duce Mauricio<note xml:id="fn7" type="footnote" n="7">Moritz von <placeName ref="place74">Sachsen</placeName>.</note> adeo dolet omnibus, ut vix credere, quę dicuntur, valeant.</s>
+					<s n="10" xml:lang="la" type="auto">In hoc sunt: occupasse, ut defendat, non ut vendicet, Saxoniam.<note xml:id="fn8" type="footnote" n="8">Vgl. auch <ref target="file12724">Nr. 2677</ref>,26-30.</note></s>
+					<s n="11" xml:lang="la" type="auto">Nescimus adhuc, quid vester<note xml:id="fn9" type="footnote" n="9">Der Zürcher Bote "Anthoni Esche", der am 18. November entweder noch in <placeName ref="place97">Basel</placeName> oder schon in Zürich zurück war; s. Zürich StA, F III 32, Seckelamtsrechnungen 1546/47, S. 62 der Ausgabenabteilung für laufende Boten.</note> adtulerit.</s>
+					<s n="12" xml:lang="la" type="auto">Nec ipse interrogantibus respondere quicquam potuit quam „ignoro.“</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Gallum<note xml:id="fn10" type="footnote" n="10">Franz I. - Ein Gerücht.</note> aiunt dissidere cum papa propter causas efficaces, quas tamen etiamnum nescio.</s>
+					<s n="13" xml:lang="la" type="auto">Gallum<note xml:id="fn10" type="footnote" n="10">Franz I. - Ein Gerücht.</note> aiunt dissidere cum papa propter causas efficaces, quas tamen etiamnum nescio.</s>
 				</p>
 			</div>
 			<div xml:id="div6" corresp="regest6">
 				<p>
-					<s xml:lang="la" type="auto">Cęsarem esse in vivis pauci sunt, qui credant, quod, si quę imago inter milites adparet cęsarem referens, putant esse spectrum.</s>
-					<s xml:lang="la" type="auto">Propter morbos gravissimos, quibus certo laborat,<note xml:id="fn11" type="footnote" n="11">Zu den Krankheiten des Kaisers s. schon <hi>HBBW</hi> XVI 177,19f; 196;33f; 206,13; 351,9.</note> sic colligunt.</s>
-					<s xml:lang="la" type="auto">Et profecto mirum est, quod in cadavere isto animus est tam ambitiosus, imo et infractus.</s>
-					<s xml:lang="la" type="auto">Novit cavere sibi, quicquid accidat suis.</s>
-					<s xml:lang="la" type="auto">Homines enim bestiis videtur aequare, imo pendere aliquanto vilius, modo suo satisfiat animo.</s>
-					<s xml:lang="la" type="auto">Dominus frangat ipsum!<note xml:id="fn12" type="footnote" n="12">Vgl. Ps 110 (Vulg. 109), 5.</note></s>
+					<s n="14" xml:lang="la" type="auto">Cęsarem esse in vivis pauci sunt, qui credant, quod, si quę imago inter milites adparet cęsarem referens, putant esse spectrum.</s>
+					<s n="15" xml:lang="la" type="auto">Propter morbos gravissimos, quibus certo laborat,<note xml:id="fn11" type="footnote" n="11">Zu den Krankheiten des Kaisers s. schon <hi>HBBW</hi> XVI 177,19f; 196;33f; 206,13; 351,9.</note> sic colligunt.</s>
+					<s n="16" xml:lang="la" type="auto">Et profecto mirum est, quod in cadavere isto animus est tam ambitiosus, imo et infractus.</s>
+					<s n="17" xml:lang="la" type="auto">Novit cavere sibi, quicquid accidat suis.</s>
+					<s n="18" xml:lang="la" type="auto">Homines enim bestiis videtur aequare, imo pendere aliquanto vilius, modo suo satisfiat animo.</s>
+					<s n="19" xml:lang="la" type="auto">Dominus frangat ipsum!<note xml:id="fn12" type="footnote" n="12">Vgl. Ps 110 (Vulg. 109), 5.</note></s>
 				</p>
 			</div>
 			<div xml:id="div7" corresp="regest7">
 				<p>
-					<s xml:lang="la" type="auto">Vale in Christo cum tuis et Gvalthero.</s>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileę</placeName>, mox ante cęnam, 19. novembris anno 1546.</s>
-					<s xml:lang="la" type="auto">Tuus Os. Myc.</s>
+					<s n="20" xml:lang="la" type="auto">Vale in Christo cum tuis et Gvalthero.</s>
+					<s n="21" xml:lang="la" type="auto"><placeName ref="place97">Basileę</placeName>, mox ante cęnam, 19. novembris anno 1546.</s>
+					<s n="22" xml:lang="la" type="auto">Tuus Os. Myc.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Heinricho Bullingero, victo doctissimo piissimoque, domino suo in Christo venerando.</s>
-					<s xml:lang="de" type="auto">Zurich.</s>
+					<s n="23" xml:lang="la" type="auto">D. Heinricho Bullingero, victo doctissimo piissimoque, domino suo in Christo venerando.</s>
+					<s n="24" xml:lang="de" type="auto">Zurich.</s>
 				</p>
 			</div>
 		</body>

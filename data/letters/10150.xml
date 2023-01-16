@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1982"/>
-				<idno type="ISBN">ISBN 3-290-11467-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=119</idno>
+				<idno subtype="ISBN">ISBN 3-290-11467-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=119</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 2</title>
+				<title subtype="publication">HBBW II</title>
 				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">2</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#555">Winterthur</settlement>
-						<institution>Stadtbibliothek</institution>
-						<idno type="Kopie">Ms 4 ° 196,mittlerer Teil, p. 15 f.</idno>
-						<repository ref="archive#88">
+						<!--
+						<repository ref="archive88">
 							<name>Winterthur StB</name>
 							<ref target="https://stadt.winterthur.ch/bibliotheken-winterthur"/>
 						</repository>
+						<settlement ref="place555">Winterthur</settlement>
+						<institution>Stadtbibliothek</institution>
+						-->
+						<repository ref="archive88"/>
+						<idno subtype="Kopie">Ms 4 ° 196,mittlerer Teil, p. 15 f.</idno>
 					</msIdentifier>
 					<history><origin><p><date>19. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -48,8 +51,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Beklagt die Undankbarkeit Zürichs gegenüber dem toten <persName ref="265">Zwingli</persName>. Rühmt
-								<persName ref="265">Zwinglis</persName> Qualitäten überschwenglich.
+								Beklagt die Undankbarkeit Zürichs gegenüber dem toten <persName ref="person265">Zwingli</persName>. Rühmt
+								<persName ref="person265">Zwinglis</persName> Qualitäten überschwenglich.
 							</p>
 						</summary>
 					</msContents>
@@ -66,53 +69,62 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10150">
 				<correspAction type="sent">
-					<persName ref="person#1286" cert="high">
+					<!--
+					<persName ref="person1286" cert="high">
 						<forename cert="high">Konrad</forename>
 						<surname cert="high">Gessner</surname>
-						<addName type="main">Geßner, Konrad</addName>
+						<persName type="main" ref="person1283>Geßner, Konrad</addName>
 						<graphic type="portrait" url="portraits/1283_Gessner_Conrad.jpg"/>
-						<ref type="wikipedia" target="https://en.wikipedia.org/wiki/Conrad_Gessner"/>
+						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Conrad_Gessner"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118694413"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11438405"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person1286" cert="high"/>
+					<place source="place492" cert="high"/>
 					<date when="1532-08-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<persName ref="person#341" cert="high">
+					-->
+					<persName ref="person495" cert="high"/>
+					<!--
+					<persName ref="person341" cert="high">
 						<forename cert="high">Theodor</forename>
 						<surname cert="high">Bibliander</surname>
-						<addName type="main">Bibliander (Buchmann), Theodor</addName>
+						<persName type="main" ref="person8171>Bibliander (Buchmann), Theodor</addName>
 						<graphic type="portrait" url="portraits/341_Bibliander_Theodor.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Theodor_Bibliander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/116170638"/>
 					</persName>
+					-->
+					<persName ref="person341" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10151"/>
-					<ref type="prev_chronologically" target="files.xml#10149"/>
+					<ref type="next_chronologically" target="file10151"/>
+					<ref type="prev_chronologically" target="file10149"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#10149"/>
+					<ref type="prev_correspondence" target="file10149"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#10149"/>
+					<ref type="prev_correspondence_request" target="file10149"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10175"/>
-					<ref type="prev_same_sender" target="files.xml#10149"/>
-					<ref type="next_same_addressee" target="files.xml#10250"/>
-					<ref type="prev_same_addressee" target="files.xml#10041"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10175"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10149"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10250"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10041"/>
+					<ref type="next_same_sender" target="file10175"/>
+					<ref type="prev_same_sender" target="file10149"/>
+					<ref type="next_same_addressee" target="file10250"/>
+					<ref type="prev_same_addressee" target="file10041"/>
+					<ref type="next_with_sender_as_addressee" target="file10175"/>
+					<ref type="prev_with_sender_as_addressee" target="file10149"/>
+					<ref type="next_with_addressee_as_sender" target="file10250"/>
+					<ref type="prev_with_addressee_as_sender" target="file10041"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -127,28 +139,28 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Doctissimis, clarissimis et integerrimis viris Henrico Bullingero et <persName ref="14">Theodoro Bibliandro</persName>, Tiguri munus <persName ref="265">Huldrychi Zwinglii</persName>, herois invictissimi, sustinentibus, praeceptoribus et patronis colendis, <persName ref="79">Conradus Gessnerus</persName> salutem.</s>
+					<s n="1" xml:lang="la" type="auto">Doctissimis, clarissimis et integerrimis viris Henrico Bullingero et <persName ref="person14">Theodoro Bibliandro</persName>, Tiguri munus <persName ref="person265">Huldrychi Zwinglii</persName>, herois invictissimi, sustinentibus, praeceptoribus et patronis colendis, <persName ref="person79">Conradus Gessnerus</persName> salutem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quotiescumque animo meo, praeceptores reverendi, summam illam nostrae aetatis ingratitudinem<note xml:id="fn3" type="footnote" n="3">Gemeint ist die massive Kritik an <persName ref="265">Zwingli</persName>, wie sie auf der Zürcher Landschaft und teilweise auch in der Stadt nach dem Zweiten Kappelerkrieg laut wurde.</note> volutare coepero, dictu mirum, quanto mens mea dolore tota inuratur.</s>
-					<s xml:lang="la" type="auto">«Tam rara in amicitiis fides, tam parata oblivio mortuorum», ut Plinii<note xml:id="fn4" type="footnote" n="4"><persName ref="1853">Plinius</persName>, Epistulae VI, 10,5.</note> verbis utar.</s>
-					<s xml:lang="la" type="auto">Neque enim ullus est nostrorum, qui vel unico verbulo gratum aperiat animum erga strenuissimum illum heroem, patriae patrem lucemque orbis terrarum <persName ref="265">Huldrychum Zwinglium</persName>, in cuius vestigiis (quod toti Tigurinorum reipublicae feliciter cadat) vos quoque nunc insistitis.</s>
-					<s xml:lang="la" type="auto">Heroem merito appello, utpote quem nulla unquam vis, nullae minae,<pb type="scan" next="||16"/> nullae insidiae, nulla denique invidia a vero et honesto labefecerit.</s>
-					<s xml:lang="la" type="auto">Itaque non solum verbis laudari, verum etiam auro, ebore, argento parioque marmore<note xml:id="fn5" type="footnote" n="5">Der auf der griechischen Insel <placeName ref="838">Paros</placeName> gewonnene Marmor war wegen seiner reinen Qualität berühmt und in der antiken Literatur öfters erwähnt, s. Nachträge zu A. Otto, Sprichwörter und sprichwörtliche Redensarten der Römer, eingeleitet und mit einem Register hg. v. Reinhard Häußler, Darmstadt 1968, <hi>S.</hi> 185.</note> effingi dignissimus erit.</s>
-					<s xml:lang="la" type="auto">Ille, inquam, heros, vir solius laudis, perfectae cumulataeque<note xml:id="fnb" type="footnote" n="b"><hi>in der Vorlage irrtümlich</hi> camulataeque.</note> virtutis, cum apud exteras gentes summo honore<pb type="edition" next="174"/> celebretur, apud nos tamen solos, de quibus maxime omnium bene meritus est, iacet.</s>
-					<s xml:lang="la" type="auto">Nullus ei honor, reverentia nulla, nulla prorsus beneficiorum ei gratia habetur.</s>
+					<s n="2" xml:lang="la" type="auto">Quotiescumque animo meo, praeceptores reverendi, summam illam nostrae aetatis ingratitudinem<note xml:id="fn3" type="footnote" n="3">Gemeint ist die massive Kritik an <persName ref="person265">Zwingli</persName>, wie sie auf der Zürcher Landschaft und teilweise auch in der Stadt nach dem Zweiten Kappelerkrieg laut wurde.</note> volutare coepero, dictu mirum, quanto mens mea dolore tota inuratur.</s>
+					<s n="3" xml:lang="la" type="auto">«Tam rara in amicitiis fides, tam parata oblivio mortuorum», ut Plinii<note xml:id="fn4" type="footnote" n="4">Plinius, Epistulae VI, 10,5.</note> verbis utar.</s>
+					<s n="4" xml:lang="la" type="auto">Neque enim ullus est nostrorum, qui vel unico verbulo gratum aperiat animum erga strenuissimum illum heroem, patriae patrem lucemque orbis terrarum <persName ref="person265">Huldrychum Zwinglium</persName>, in cuius vestigiis (quod toti Tigurinorum reipublicae feliciter cadat) vos quoque nunc insistitis.</s>
+					<s n="5" xml:lang="la" type="auto">Heroem merito appello, utpote quem nulla unquam vis, nullae minae,<pb type="scan" next="||16"/> nullae insidiae, nulla denique invidia a vero et honesto labefecerit.</s>
+					<s n="6" xml:lang="la" type="auto">Itaque non solum verbis laudari, verum etiam auro, ebore, argento parioque marmore<note xml:id="fn5" type="footnote" n="5">Der auf der griechischen Insel <placeName ref="place838">Paros</placeName> gewonnene Marmor war wegen seiner reinen Qualität berühmt und in der antiken Literatur öfters erwähnt, s. Nachträge zu A. Otto, Sprichwörter und sprichwörtliche Redensarten der Römer, eingeleitet und mit einem Register hg. v. Reinhard Häußler, Darmstadt 1968, <hi>S.</hi> 185.</note> effingi dignissimus erit.</s>
+					<s n="7" xml:lang="la" type="auto">Ille, inquam, heros, vir solius laudis, perfectae cumulataeque<note xml:id="fnb" type="footnote" n="b"><hi>in der Vorlage irrtümlich</hi> camulataeque.</note> virtutis, cum apud exteras gentes summo honore<pb type="edition" next="174"/> celebretur, apud nos tamen solos, de quibus maxime omnium bene meritus est, iacet.</s>
+					<s n="8" xml:lang="la" type="auto">Nullus ei honor, reverentia nulla, nulla prorsus beneficiorum ei gratia habetur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Illud est, quod doleo, quod me maxime mordet <foreign xml:lang="el">φίλον τετιημένος ἦτορ</foreign><note xml:id="fn6" type="footnote" n="6"><persName ref="1215">Homer</persName>, Odyssee 1,114.</note>.</s>
-					<s xml:lang="la" type="auto">Eius enim cum<note xml:id="fnc" type="footnote" n="c"><hi>in der Vorlage irrtümlich</hi> tum.</note> saltem audio nomen, vox mea fletu debilitatur, mensque tota dolore impeditur.</s>
-					<s xml:lang="la" type="auto">Ferrei ille profecto, immo impii fuerit animi, quem tanta totius reipublicae christianae clades non moverit.</s>
-					<s xml:lang="la" type="auto">Virum enim amisimus, cui similis nostro seculo nemo fuit, dicere priori religio est<note xml:id="fn7" type="footnote" n="7">Man scheut sich zu sagen, in der vorigen Epoche.</note>.</s>
-					<s xml:lang="la" type="auto">Ille enim in omni virtute facile princeps, eruditus, utilia miscens honestis, iura, iudicia, leges edoctus et arma, Christi ecclesiae non minori iustitia quam fortitudine praefuit vir intelligentia magna, veritate maiori, fide maxima praeditus.</s>
-					<s xml:lang="la" type="auto">Cui exiguum vitae curriculum natura circumscripsit, immensum glorie.</s>
-					<s xml:lang="la" type="auto">Quam sane quanto minus ambiit, tanto magis illam vivam et perpetuam habiturus est apud omnes fideles.</s>
+					<s n="9" xml:lang="la" type="auto">Illud est, quod doleo, quod me maxime mordet <foreign xml:lang="el">φίλον τετιημένος ἦτορ</foreign><note xml:id="fn6" type="footnote" n="6"><persName ref="person1215">Homer</persName>, Odyssee 1,114.</note>.</s>
+					<s n="10" xml:lang="la" type="auto">Eius enim cum<note xml:id="fnc" type="footnote" n="c"><hi>in der Vorlage irrtümlich</hi> tum.</note> saltem audio nomen, vox mea fletu debilitatur, mensque tota dolore impeditur.</s>
+					<s n="11" xml:lang="la" type="auto">Ferrei ille profecto, immo impii fuerit animi, quem tanta totius reipublicae christianae clades non moverit.</s>
+					<s n="12" xml:lang="la" type="auto">Virum enim amisimus, cui similis nostro seculo nemo fuit, dicere priori religio est<note xml:id="fn7" type="footnote" n="7">Man scheut sich zu sagen, in der vorigen Epoche.</note>.</s>
+					<s n="13" xml:lang="la" type="auto">Ille enim in omni virtute facile princeps, eruditus, utilia miscens honestis, iura, iudicia, leges edoctus et arma, Christi ecclesiae non minori iustitia quam fortitudine praefuit vir intelligentia magna, veritate maiori, fide maxima praeditus.</s>
+					<s n="14" xml:lang="la" type="auto">Cui exiguum vitae curriculum natura circumscripsit, immensum glorie.</s>
+					<s n="15" xml:lang="la" type="auto">Quam sane quanto minus ambiit, tanto magis illam vivam et perpetuam habiturus est apud omnes fideles.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Argentinae in aedibus D. <persName ref="40">Wolfgangi Fabricii</persName> Capitonis, 10. augusti anno 1532.</s>
+					<s n="16" xml:lang="la" type="auto">Argentinae in aedibus D. <persName ref="person40">Wolfgangi Fabricii</persName> Capitonis, 10. augusti anno 1532.</s>
 				</p>
 			</div>
 		</body>

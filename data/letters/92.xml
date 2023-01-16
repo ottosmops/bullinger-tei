@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">834</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,572 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,572 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,14 +51,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 66,138</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">dat.: ca. 10. April 1548</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 66,138</idno>
+						<idno subtype="Hinweis">dat.: ca. 10. April 1548</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -64,52 +70,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/92">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="low">
+					<!--
+					<persName ref="person392" cert="low">
 						<forename cert="low">Ambrosius</forename>
 						<surname cert="low">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#257" cert="low">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="low"/>
+					<place source="place257" cert="low"/>
 					<date when="1548-04-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#93"/>
-					<ref type="prev_chronologically" target="files.xml#91"/>
-					<ref type="next_correspondence" target="files.xml#93"/>
-					<ref type="prev_correspondence" target="files.xml#91"/>
-					<ref type="next_correspondence_request" target="files.xml#93"/>
-					<ref type="prev_correspondence_request" target="files.xml#91"/>
-					<ref type="next_correspondence_reaction" target="files.xml#311"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#13134"/>
-					<ref type="next_same_sender" target="files.xml#93"/>
-					<ref type="prev_same_sender" target="files.xml#91"/>
-					<ref type="next_same_addressee" target="files.xml#94"/>
-					<ref type="prev_same_addressee" target="files.xml#71"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#93"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#91"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#94"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#71"/>
+					<ref type="next_chronologically" target="file93"/>
+					<ref type="prev_chronologically" target="file91"/>
+					<ref type="next_correspondence" target="file93"/>
+					<ref type="prev_correspondence" target="file91"/>
+					<ref type="next_correspondence_request" target="file93"/>
+					<ref type="prev_correspondence_request" target="file91"/>
+					<ref type="next_correspondence_reaction" target="file311"/>
+					<ref type="prev_correspondence_reaction" target="file13134"/>
+					<ref type="next_same_sender" target="file93"/>
+					<ref type="prev_same_sender" target="file91"/>
+					<ref type="next_same_addressee" target="file94"/>
+					<ref type="prev_same_addressee" target="file71"/>
+					<ref type="next_with_sender_as_addressee" target="file93"/>
+					<ref type="prev_with_sender_as_addressee" target="file91"/>
+					<ref type="next_with_addressee_as_sender" target="file94"/>
+					<ref type="prev_with_addressee_as_sender" target="file71"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -119,52 +124,55 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="92/Autograph/00 E_II_357__S__573_.tif" n="1"/>
+		<graphic url="92/Autograph/01 E_II_357__S__572_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Ego vero minus nunc quicquam te dignum habeo, mi venerande simul et charissime Bullingere, quod scribere ad te liceat.</s>
-					<s xml:lang="la" type="auto">Pro christiana tua pro nobis sollicitudine gratias habemus maximas; quamquam autem vestra quoque pericula non adeo multum nostris sunt leviora, non sunt tamen perinde praesentia.</s>
-					<s xml:lang="la" type="auto">Dominus faxit, ut perpetuo a vobis quam longissime absint.</s>
-					<s xml:lang="la" type="auto">Nostri nondum sunt ad Caesarem abmandati; legatorum nomina hęc sunt: Thomas Blaurerus consul, Petrus Labiardus tribunus et Hieronymus Hürusius, qui superiori ęstate vobiscum fuit ac nescio qua iniuria a nonnullis lacessitus, quibus tamen minime (quod tu ad me scribebas) cessit impune.</s>
-					<s xml:lang="la" type="auto">Adulescens est propemodum, verum Latine et Gręce non mediocriter doctus, praeterea Italicam et alias nonnullas linguas probe callet.</s>
-					<s xml:lang="la" type="auto">Puto profecturos intra proximum octiduum.</s>
-					<s xml:lang="la" type="auto">Tu dominum cum ecclesia Christi, quę istic est, diligenter interpella, ut illos bonis suis angelis, deinde etiam spiritu consilii sui comitetur detque ipsis os et sapientiam, ut gratiam inveniant in conspectu principis istius, qui omnium clementissimus videri cupit.</s>
-					<s xml:lang="la" type="auto">Gravissima planeque importabilia onera capitibus nostris imminent; sed fortissimus deus Zebaoth omnia ista vel tollere vel pluma quoque leviora reddere poterit; faciat, quod bonum est in oculis suis, modo nomina nostra de vitę libro non expungat.</s>
-					<s xml:lang="la" type="auto">Breve et umbraticum est, quod hic vivimus, ut etiam per omnia mundi istius mala fortiter nobis ad verę ęternęque vitę felicitatem eluctandum sit.</s>
-					<s xml:lang="la" type="auto">Interim tamen nihil absque illo possumus, qui unus omnia potest; is nos per illum, cui omnem potestatem dedit, in cęlo et in terra, omnibus adversariis nostris a dextris et sinistris superiores (stat enim firmissima fiducia) reddat.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Ego vero minus nunc quicquam te dignum habeo, mi venerande simul et charissime Bullingere, quod scribere ad te liceat.</s>
+					<s n="3" xml:lang="la" type="auto">Pro christiana tua pro nobis sollicitudine gratias habemus maximas; quamquam autem vestra quoque pericula non adeo multum nostris sunt leviora, non sunt tamen perinde praesentia.</s>
+					<s n="4" xml:lang="la" type="auto">Dominus faxit, ut perpetuo a vobis quam longissime absint.</s>
+					<s n="5" xml:lang="la" type="auto">Nostri nondum sunt ad Caesarem abmandati; legatorum nomina hęc sunt: Thomas Blaurerus consul, Petrus Labiardus tribunus et Hieronymus Hürusius, qui superiori ęstate vobiscum fuit ac nescio qua iniuria a nonnullis lacessitus, quibus tamen minime (quod tu ad me scribebas) cessit impune.</s>
+					<s n="6" xml:lang="la" type="auto">Adulescens est propemodum, verum Latine et Gręce non mediocriter doctus, praeterea Italicam et alias nonnullas linguas probe callet.</s>
+					<s n="7" xml:lang="la" type="auto">Puto profecturos intra proximum octiduum.</s>
+					<s n="8" xml:lang="la" type="auto">Tu dominum cum ecclesia Christi, quę istic est, diligenter interpella, ut illos bonis suis angelis, deinde etiam spiritu consilii sui comitetur detque ipsis os et sapientiam, ut gratiam inveniant in conspectu principis istius, qui omnium clementissimus videri cupit.</s>
+					<s n="9" xml:lang="la" type="auto">Gravissima planeque importabilia onera capitibus nostris imminent; sed fortissimus deus Zebaoth omnia ista vel tollere vel pluma quoque leviora reddere poterit; faciat, quod bonum est in oculis suis, modo nomina nostra de vitę libro non expungat.</s>
+					<s n="10" xml:lang="la" type="auto">Breve et umbraticum est, quod hic vivimus, ut etiam per omnia mundi istius mala fortiter nobis ad verę ęternęque vitę felicitatem eluctandum sit.</s>
+					<s n="11" xml:lang="la" type="auto">Interim tamen nihil absque illo possumus, qui unus omnia potest; is nos per illum, cui omnem potestatem dedit, in cęlo et in terra, omnibus adversariis nostris a dextris et sinistris superiores (stat enim firmissima fiducia) reddat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Caesaris conatus quales sint, ex iis, quę hactenus gessit, qui paulo prudentiores sunt, facile coniiciunt.</s>
-					<s xml:lang="la" type="auto">Verum dominus est, qui ubi vult, principum consilia et populorum cogitationes reprobat.</s>
-					<s xml:lang="la" type="auto">Quę tu de iis scribis, valde mihi verisimilia fiunt.</s>
-					<s xml:lang="la" type="auto">Gallum sic dissimulare istam crudelissimam adversus Christi membra tyrannidem in suo regno sicque connivere ad impiissimas hasce blasphemias servatoris Christi, quas impurissimi isti inquisitores hęreticae pravitatis tanta confidentia evomunt, certissimum illi excidium portendit.</s>
-					<s xml:lang="la" type="auto">Quo minus vobis cum illo auxiliaria adversus quoslibet foedera iungenda sunt, si non una cum ipso perire vultis.</s>
-					<s xml:lang="la" type="auto">Qui vestram vobis libertatem absque Gallo dedit, hanc quoque absque illo haud dubie conservabit.</s>
-					<s xml:lang="la" type="auto">Experimur, proh dolor, quotidie, quo malorum multos secum trahat ista principum plus quam insana regnandi libido et impie pertinax studium pomeria sua quam latissime per fas et nefas proferendi, quodque hoc magis subinde in alios ferociunt, quo maiores ex multorum secum foederibus vires se collegisse existimant.</s>
-					<s xml:lang="la" type="auto">Proinde, si sapitis, vetere illo non inhonesto foedere contenti a novis istis sanctissime abstinebitis, id quod tuis tu, qua vales authoritate pariter et eloquentia, non multo negocio persuadebis.</s>
+					<s n="12" xml:lang="la" type="auto">Caesaris conatus quales sint, ex iis, quę hactenus gessit, qui paulo prudentiores sunt, facile coniiciunt.</s>
+					<s n="13" xml:lang="la" type="auto">Verum dominus est, qui ubi vult, principum consilia et populorum cogitationes reprobat.</s>
+					<s n="14" xml:lang="la" type="auto">Quę tu de iis scribis, valde mihi verisimilia fiunt.</s>
+					<s n="15" xml:lang="la" type="auto">Gallum sic dissimulare istam crudelissimam adversus Christi membra tyrannidem in suo regno sicque connivere ad impiissimas hasce blasphemias servatoris Christi, quas impurissimi isti inquisitores hęreticae pravitatis tanta confidentia evomunt, certissimum illi excidium portendit.</s>
+					<s n="16" xml:lang="la" type="auto">Quo minus vobis cum illo auxiliaria adversus quoslibet foedera iungenda sunt, si non una cum ipso perire vultis.</s>
+					<s n="17" xml:lang="la" type="auto">Qui vestram vobis libertatem absque Gallo dedit, hanc quoque absque illo haud dubie conservabit.</s>
+					<s n="18" xml:lang="la" type="auto">Experimur, proh dolor, quotidie, quo malorum multos secum trahat ista principum plus quam insana regnandi libido et impie pertinax studium pomeria sua quam latissime per fas et nefas proferendi, quodque hoc magis subinde in alios ferociunt, quo maiores ex multorum secum foederibus vires se collegisse existimant.</s>
+					<s n="19" xml:lang="la" type="auto">Proinde, si sapitis, vetere illo non inhonesto foedere contenti a novis istis sanctissime abstinebitis, id quod tuis tu, qua vales authoritate pariter et eloquentia, non multo negocio persuadebis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nos nostris apud dominum piis votis, quod unum possumus, dignos hosce christiano episcopo conatus diligenter iuvabimus.</s>
-					<s xml:lang="la" type="auto">Quę de incomparabili viro D. Ioanne a Lasco scribis et Phrysię ecclesiis, supra modum me in domino exhilararunt; is doctissimo et optimo ministro cuo cęlesti incremento propicius ac dextre adsit, ut habeat, unde identidem lętetur videns, dominum, quod plantat et rigat, larga sua benedictione ad maturum provehere furctum.</s>
-					<s xml:lang="la" type="auto">Precemur sedulo, ut Christus gratię suę verbo magnum ubique ostium aperiat, ut aliorum gratitudine sarciatur, quod infelix Germania fastidio et ingratitudine adversus preciosissimum hunc thesaurum magno suo exitio peccat, utque reliquias illas, quantulęcunque sunt, et vere pusillum gregem sub alas misericordię suę congregatum cęteris proditoribus in testimonium iustę suę damnationis benigne conservet.</s>
-					<s xml:lang="de" type="auto">Amen, amen.</s>
+					<s n="20" xml:lang="la" type="auto">Nos nostris apud dominum piis votis, quod unum possumus, dignos hosce christiano episcopo conatus diligenter iuvabimus.</s>
+					<s n="21" xml:lang="la" type="auto">Quę de incomparabili viro D. Ioanne a Lasco scribis et Phrysię ecclesiis, supra modum me in domino exhilararunt; is doctissimo et optimo ministro cuo cęlesti incremento propicius ac dextre adsit, ut habeat, unde identidem lętetur videns, dominum, quod plantat et rigat, larga sua benedictione ad maturum provehere furctum.</s>
+					<s n="22" xml:lang="la" type="auto">Precemur sedulo, ut Christus gratię suę verbo magnum ubique ostium aperiat, ut aliorum gratitudine sarciatur, quod infelix Germania fastidio et ingratitudine adversus preciosissimum hunc thesaurum magno suo exitio peccat, utque reliquias illas, quantulęcunque sunt, et vere pusillum gregem sub alas misericordię suę congregatum cęteris proditoribus in testimonium iustę suę damnationis benigne conservet.</s>
+					<s n="23" xml:lang="de" type="auto">Amen, amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quod adulescentulorum nostratium caussam apud Wolphium tanta fide et diligentia tantaque felicitate egeris, non video unde nobis suffecturum sit, ut dignas tibi gratias agamus; adnitemur tamen pro nostra virili, ut aliquando et huic et innumeris aliis tuis beneficiis, si non, quantum debemus et volumus, tamen quantum satis videri poterit ad animum non ingratum testandum, respondeamus.</s>
+					<s n="24" xml:lang="la" type="auto">Quod adulescentulorum nostratium caussam apud Wolphium tanta fide et diligentia tantaque felicitate egeris, non video unde nobis suffecturum sit, ut dignas tibi gratias agamus; adnitemur tamen pro nostra virili, ut aliquando et huic et innumeris aliis tuis beneficiis, si non, quantum debemus et volumus, tamen quantum satis videri poterit ad animum non ingratum testandum, respondeamus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Wolphii nostri literas iam accepi, sed rescribere nihil possum; satis nunc erit, si ex te resciscat mihi ea omnia, que scripsit, vehementer probari.</s>
-					<s xml:lang="la" type="auto">Propediem istis aderunt adulescentes.</s>
+					<s n="25" xml:lang="la" type="auto">Wolphii nostri literas iam accepi, sed rescribere nihil possum; satis nunc erit, si ex te resciscat mihi ea omnia, que scripsit, vehementer probari.</s>
+					<s n="26" xml:lang="la" type="auto">Propediem istis aderunt adulescentes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quando vero Augustinus habitat et non unam solum ob caussam secubare convenit pueros, Gvaltherus nepos meus in Roͤstii ędibus proxime Wolphii ędes cubabit tantisper, dum commodior Wolphio domus contingat.</s>
+					<s n="27" xml:lang="la" type="auto">Quando vero Augustinus habitat et non unam solum ob caussam secubare convenit pueros, Gvaltherus nepos meus in Roͤstii ędibus proxime Wolphii ędes cubabit tantisper, dum commodior Wolphio domus contingat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pecunia illi iam, quemadmodum postulat, mittetur.</s>
-					<s xml:lang="la" type="auto">Tu doctissimum et optimum virum mea vice diligenter et officiose saluta, inprimis tuam domum cum omnibus administris tuis in domino cęterisque amicis et fratribus.</s>
+					<s n="28" xml:lang="la" type="auto">Pecunia illi iam, quemadmodum postulat, mittetur.</s>
+					<s n="29" xml:lang="la" type="auto">Tu doctissimum et optimum virum mea vice diligenter et officiose saluta, inprimis tuam domum cum omnibus administris tuis in domino cęterisque amicis et fratribus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse fehlt.]</note>

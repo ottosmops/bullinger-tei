@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5277/159</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Beilage" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 378,1772</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 378,1772</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,14 +51,17 @@
 				</msDesc>
 				<msDesc type="Beilage" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 95,169</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">als Beilage zu 18. Sept. 1559</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 95,169</idno>
+						<idno subtype="Hinweis">als Beilage zu 18. Sept. 1559</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -69,52 +75,54 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4069">
 				<correspAction type="sent">
-					<persName ref="person#1075" cert="low">
+					<!--
+					<persName ref="person1075" cert="low">
 						<forename cert="low">Johannes</forename>
 						<surname cert="low">Fabricius</surname>
-						<addName type="main">Fabricius Montanus (Schmid), Johannes</addName>
+						<persName type="main" ref="person8009>Fabricius Montanus (Schmid), Johannes</addName>
 						<graphic type="portrait" url="portraits/1075_Fabricius_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Fabricius_Montanus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104045698"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414870"/>
 					</persName>
-					<place source="#98" cert="low">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person1075" cert="low"/>
+					<place source="place98" cert="low"/>
 					<date when="1559-09-04" cert="low"><note>Beilage (zu: 1559 September 4.) (= ID 4068) (gemäss Schiess)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4070"/>
-					<ref type="prev_chronologically" target="files.xml#4068"/>
-					<ref type="next_correspondence" target="files.xml#4083"/>
-					<ref type="prev_correspondence" target="files.xml#4068"/>
-					<ref type="next_correspondence_request" target="files.xml#4083"/>
-					<ref type="prev_correspondence_request" target="files.xml#4068"/>
-					<ref type="next_correspondence_reaction" target="files.xml#4087"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#4058"/>
-					<ref type="next_same_sender" target="files.xml#4083"/>
-					<ref type="prev_same_sender" target="files.xml#4068"/>
-					<ref type="next_same_addressee" target="files.xml#4076"/>
-					<ref type="prev_same_addressee" target="files.xml#4062"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4083"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4068"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4076"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#4062"/>
-					<ref type="child" target="files.xml#4068"/>
-					<ref type="parent" target="files.xml#4068"/>
+					<ref type="next_chronologically" target="file4070"/>
+					<ref type="prev_chronologically" target="file4068"/>
+					<ref type="next_correspondence" target="file4083"/>
+					<ref type="prev_correspondence" target="file4068"/>
+					<ref type="next_correspondence_request" target="file4083"/>
+					<ref type="prev_correspondence_request" target="file4068"/>
+					<ref type="next_correspondence_reaction" target="file4087"/>
+					<ref type="prev_correspondence_reaction" target="file4058"/>
+					<ref type="next_same_sender" target="file4083"/>
+					<ref type="prev_same_sender" target="file4068"/>
+					<ref type="next_same_addressee" target="file4076"/>
+					<ref type="prev_same_addressee" target="file4062"/>
+					<ref type="next_with_sender_as_addressee" target="file4083"/>
+					<ref type="prev_with_sender_as_addressee" target="file4068"/>
+					<ref type="next_with_addressee_as_sender" target="file4076"/>
+					<ref type="prev_with_addressee_as_sender" target="file4062"/>
+					<ref type="child" target="file4068"/>
+					<ref type="parent" target="file4068"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -132,9 +140,9 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Cum literas consignassem, haec insuper comperi: Illa signa, quae scripsi detenta esse et remissa in Pedemontem, nunc denuo dimissa sunt, forte quod novus rex omnia foederis capita rata habeat.</s>
-					<s xml:lang="de" type="auto">Jetz mitwoch hat die straal<note xml:id="fn1" type="footnote" n="1">Blitz.</note> im Thumläschk 46 rinder uff eim huffen ersteckt; dan die rinder sind zuͦsamen geloffen, als das wätter angangen ist.</s>
-					<s xml:lang="la" type="auto">Gregorius Carlin hoc vesperi pro certo affirmavit pontificem mortuum.</s>
+					<s n="1" xml:lang="la" type="auto">Cum literas consignassem, haec insuper comperi: Illa signa, quae scripsi detenta esse et remissa in Pedemontem, nunc denuo dimissa sunt, forte quod novus rex omnia foederis capita rata habeat.</s>
+					<s n="2" xml:lang="de" type="auto">Jetz mitwoch hat die straal<note xml:id="fn1" type="footnote" n="1">Blitz.</note> im Thumläschk 46 rinder uff eim huffen ersteckt; dan die rinder sind zuͦsamen geloffen, als das wätter angangen ist.</s>
+					<s n="3" xml:lang="la" type="auto">Gregorius Carlin hoc vesperi pro certo affirmavit pontificem mortuum.</s>
 				</p>
 				<p>
 					<note type="date">[Datum, Unterschrift und Adresse fehlen.]</note>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=772</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=772</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336a,355r-v</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336a,355r-v</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336a,341 f.</idno>
+							<idno subtype="Autograph">E II 336a,341 f.</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -49,21 +52,21 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Konnte über wichtige Ereignisse wie den Tod <persName ref="90">Berchtold</persName>
-								[<persName ref="90">Hallers</persName>] nicht früher berichten, da er überraschend nach
-								<placeName ref="1049">Straßburg</placeName> entsandt wurde, um [als dessen Nachfolger]
-								<persName ref="1647">Sebastian</persName> [<persName ref="1647">Meyer</persName>] zu berufen.
+								Konnte über wichtige Ereignisse wie den Tod Berchtold
+								[<persName ref="person90">Hallers</persName>] nicht früher berichten, da er überraschend nach
+								<placeName ref="place1049">Straßburg</placeName> entsandt wurde, um [als dessen Nachfolger]
+								Sebastian [<persName ref="person1647">Meyer</persName>] zu berufen.
 								Obwohl sich der hochgelehrte Theologe wegen seines Alters und wegen seiner Ehefrau, die ihn auch zum Weggang
-								aus <placeName ref="70">Augsburg</placeName> veranlaßt hat, nicht langfristig verpflichten will,
-								wurde Leonhard <persName ref="221">Tremp</persName> unterdessen beauftragt, ihn nach
-								<placeName ref="121">Bern</placeName> zu holen. <persName ref="145">Megander</persName>, der
+								aus <placeName ref="place70">Augsburg</placeName> veranlaßt hat, nicht langfristig verpflichten will,
+								wurde Leonhard <persName ref="person221">Tremp</persName> unterdessen beauftragt, ihn nach
+								<placeName ref="place121">Bern</placeName> zu holen. <persName ref="person145">Megander</persName>, der
 								an Rücktritt dachte, weil die Entscheidung ohne ihn getroffen wurde, scheint auf Bullingers und anderer
-								Zureden hin eingelenkt zu haben. Die Festnahme der [<placeName ref="83">Solothurner</placeName>
-								"Banditen" <persName ref="1948">Hans</persName> und <persName ref="1950">Rudolf</persName>]
-								<persName ref="1948">Roggenbach</persName> auf bernischem Gebiet hat
-								<placeName ref="121">Bern</placeName> in eine schwierige Lage gebracht. Kann nicht ausführlicher
+								Zureden hin eingelenkt zu haben. Die Festnahme der [<placeName ref="place83">Solothurner</placeName>
+								"Banditen" Hans und Rudolf]
+								<persName ref="person1948">Roggenbach</persName> auf bernischem Gebiet hat
+								<placeName ref="place121">Bern</placeName> in eine schwierige Lage gebracht. Kann nicht ausführlicher
 								schreiben, da der Bote bald aufbricht. Hat Bullingers Briefe an
-								<persName ref="90">Berchtold</persName> [<persName ref="90">Haller</persName>] teils
+								Berchtold [<persName ref="person90">Haller</persName>] teils
 								verbrannt, teils in Verwahrung genommen. Ist bereit, öfter zu schreiben. Bittet um Nachsicht.
 							</p>
 						</summary>
@@ -74,46 +77,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10810">
 				<correspAction type="sent">
-					<persName ref="person#3099" cert="high">
+					<!--
+					<persName ref="person3099" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Sulzer</surname>
 						<graphic type="portrait" url="portraits/3099_Sulzer_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Sulzer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118799428"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417120"/>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person3099" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1536-03-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10811"/>
-					<ref type="prev_chronologically" target="files.xml#10809"/>
-					<ref type="next_correspondence" target="files.xml#10846"/>
-					<ref type="prev_correspondence" target="files.xml#10782"/>
-					<ref type="next_correspondence_request" target="files.xml#10846"/>
-					<ref type="prev_correspondence_request" target="files.xml#10782"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3464"/>
+					<ref type="next_chronologically" target="file10811"/>
+					<ref type="prev_chronologically" target="file10809"/>
+					<ref type="next_correspondence" target="file10846"/>
+					<ref type="prev_correspondence" target="file10782"/>
+					<ref type="next_correspondence_request" target="file10846"/>
+					<ref type="prev_correspondence_request" target="file10782"/>
+					<ref type="next_correspondence_reaction" target="file3464"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10846"/>
-					<ref type="prev_same_sender" target="files.xml#10782"/>
-					<ref type="next_same_addressee" target="files.xml#10822"/>
-					<ref type="prev_same_addressee" target="files.xml#10809"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10846"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10782"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10822"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10809"/>
+					<ref type="next_same_sender" target="file10846"/>
+					<ref type="prev_same_sender" target="file10782"/>
+					<ref type="next_same_addressee" target="file10822"/>
+					<ref type="prev_same_addressee" target="file10809"/>
+					<ref type="next_with_sender_as_addressee" target="file10846"/>
+					<ref type="prev_with_sender_as_addressee" target="file10782"/>
+					<ref type="next_with_addressee_as_sender" target="file10822"/>
+					<ref type="prev_with_addressee_as_sender" target="file10809"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -124,58 +131,55 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile>
-		<graphic url="10810/Autograph/00 E_II_336__fol__355_r_.tif" n="1"/>
-		<graphic url="10810/Autograph/01 E_II_336__fol__355_v_.tif" n="2"/>
-	</facsimile>
+	<facsimile/>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Silentium meum tam diuturnum miraris indubie, charissime et observandissime mi Bullingere, hoc praesertim tempore, quod, si ullum unquam, materiam<note xml:id="fna" type="footnote" n="a"><hi>nach</hi> materiam <hi>gestrichenes</hi> scribendi.</note> cuicunque scripturo abunde suppeditat.</s>
-					<s xml:lang="la" type="auto">Nam et piissimi <persName ref="90">Berchtoldi</persName> patris obitus<note xml:id="fn2" type="footnote" n="2">Zum Tod <persName ref="90">Berchtold Hallers</persName> am 25. Februar 1536 s. oben <ref target="file#10762">Nr. 724</ref>, Anm. 8.</note> et variae rerum nostrarum vices etc. vel maxime desidiae indormient[is]<note xml:id="fnb" type="footnote" n="b"><hi>Endung undeutlich korrigiert.</hi></note> excitare calamum possint, ut, quorum ex aequo omnium interest scire, ea significare nemo gravetur.</s>
-					<s xml:lang="la" type="auto">Caeterum, quo id minus licuerit mihi, in causa est a<note xml:id="fnc" type="footnote" n="c"><hi>a über gestrichenem</hi> qu.</note> magistratu nostro iniuncta Argentinam legatio<note xml:id="fn3" type="footnote" n="3"><persName ref="213">Sulzer</persName> wurde am 28. Februar mit einem Schreiben an <persName ref="40">Capito</persName> und <persName ref="28">Bucer</persName> (<placeName ref="121">Bern</placeName> StA, A III 24, S. 208f) nach <placeName ref="1049">Straßburg</placeName> gesandt, um <persName ref="1647">Sebastian Meyer</persName> als Nachfolger <persName ref="90">Hallers</persName> zu gewinnen. Dieser erklärte sich bereit, zur Probe für ein halbes Jahr nach <placeName ref="121">Bern</placeName> zu kommen. Vgl. [Samuel <hi>Scheurer],</hi> Leben Doctor <persName ref="1647">Sebastian Meyers</persName>, Von Neustatt am Rhein, Deß Ersten ordenlichen Predigers in <placeName ref="121">Bern</placeName>, [<placeName ref="121">Bern</placeName>] 1740. - [Bernerisches Mausoleum] 2, S. 216f; Adolf <hi>Fluri,</hi> Die bernische Schulordnung von 1548, in: Mitteilungen der Gesellschaft für deutsche Erziehungs- und Schulgeschichte XI, 1901, S. 184; unten Z. 14-32.</note>, quam ita festinanter et improviso suscipere adactus sum, ut vix accingendi<note xml:id="fnd" type="footnote" n="d"><hi>vor</hi> accingendi <hi>gestrichenes</hi> para.</note> ad iter mihi spacium esset, nedum, ut institueram et quod avebam maxime, scribere copiose tibi<note xml:id="fne" type="footnote" n="e">tibi <hi>über gestrichenem</hi> et.</note> diligenterque omnia possem.</s>
-					<s xml:lang="la" type="auto">Alioquin, mi Bullingere, tam non sum aut negligens aut immemor tui, qui non et hac et alia quacunque occasione gratum facere tibi velim.</s>
-					<s xml:lang="la" type="auto">Quamobrem domum reversus nihil habui prius, quam ut primo quoque tabellario de rebus omnibus te facerem certiorem.<pb type="edition" next="189"/></s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Silentium meum tam diuturnum miraris indubie, charissime et observandissime mi Bullingere, hoc praesertim tempore, quod, si ullum unquam, materiam<note xml:id="fna" type="footnote" n="a"><hi>nach</hi> materiam <hi>gestrichenes</hi> scribendi.</note> cuicunque scripturo abunde suppeditat.</s>
+					<s n="3" xml:lang="la" type="auto">Nam et piissimi <persName ref="person90">Berchtoldi</persName> patris obitus<note xml:id="fn2" type="footnote" n="2">Zum Tod <persName ref="person90">Berchtold Hallers</persName> am 25. Februar 1536 s. oben <ref target="file10762">Nr. 724</ref>, Anm. 8.</note> et variae rerum nostrarum vices etc. vel maxime desidiae indormient[is]<note xml:id="fnb" type="footnote" n="b"><hi>Endung undeutlich korrigiert.</hi></note> excitare calamum possint, ut, quorum ex aequo omnium interest scire, ea significare nemo gravetur.</s>
+					<s n="4" xml:lang="la" type="auto">Caeterum, quo id minus licuerit mihi, in causa est a<note xml:id="fnc" type="footnote" n="c"><hi>a über gestrichenem</hi> qu.</note> magistratu nostro iniuncta Argentinam legatio<note xml:id="fn3" type="footnote" n="3"><persName ref="person213">Sulzer</persName> wurde am 28. Februar mit einem Schreiben an <persName ref="person40">Capito</persName> und <persName ref="person28">Bucer</persName> (<placeName ref="place121">Bern</placeName> StA, A III 24, S. 208f) nach <placeName ref="place1049">Straßburg</placeName> gesandt, um <persName ref="person1647">Sebastian Meyer</persName> als Nachfolger <persName ref="person90">Hallers</persName> zu gewinnen. Dieser erklärte sich bereit, zur Probe für ein halbes Jahr nach <placeName ref="place121">Bern</placeName> zu kommen. Vgl. [Samuel <hi>Scheurer],</hi> Leben Doctor <persName ref="person1647">Sebastian Meyers</persName>, Von Neustatt am Rhein, Deß Ersten ordenlichen Predigers in <placeName ref="place121">Bern</placeName>, [<placeName ref="place121">Bern</placeName>] 1740. - [Bernerisches Mausoleum] 2, S. 216f; Adolf <hi>Fluri,</hi> Die bernische Schulordnung von 1548, in: Mitteilungen der Gesellschaft für deutsche Erziehungs- und Schulgeschichte XI, 1901, S. 184; unten Z. 14-32.</note>, quam ita festinanter et improviso suscipere adactus sum, ut vix accingendi<note xml:id="fnd" type="footnote" n="d"><hi>vor</hi> accingendi <hi>gestrichenes</hi> para.</note> ad iter mihi spacium esset, nedum, ut institueram et quod avebam maxime, scribere copiose tibi<note xml:id="fne" type="footnote" n="e">tibi <hi>über gestrichenem</hi> et.</note> diligenterque omnia possem.</s>
+					<s n="5" xml:lang="la" type="auto">Alioquin, mi Bullingere, tam non sum aut negligens aut immemor tui, qui non et hac et alia quacunque occasione gratum facere tibi velim.</s>
+					<s n="6" xml:lang="la" type="auto">Quamobrem domum reversus nihil habui prius, quam ut primo quoque tabellario de rebus omnibus te facerem certiorem.<pb type="edition" next="189"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ante omnia vero, ne nescias, quid Argentinae vel egerim vel effecerim: Ad <persName ref="1647">Sebastianum</persName> vocandum missus impetravi quidem, qui huc se ad tempus concessurum receperit.</s>
-					<s xml:lang="la" type="auto">Verum an herere perpetuo hic possit obireque conditionem aetate tam provecta laboribusque attritus senex admodum dubitat, praesertim obstante uxor<note xml:id="fnf" type="footnote" n="f"><hi>nach</hi> uxore <hi>gestrichenes</hi> que.</note><note xml:id="fn4" type="footnote" n="4">Nicht namentlich bekannt.</note> plane simplice et stulta, que et deserendi ecclesiam <placeName ref="70">Augustanam</placeName> ei<note xml:id="fng" type="footnote" n="g">ei <hi>über der Zeile nachgetragen.</hi></note> causa extitit<note xml:id="fn5" type="footnote" n="5"><persName ref="1647">Meyer</persName> hatte <placeName ref="70">Augsburg</placeName> im September 1535 nach rund vierjähriger Tätigkeit verlassen; über die Gründe seines Weggangs ist nichts Sicheres bekannt (vgl. <hi>Roth</hi> II 194).</note>.</s>
-					<s xml:lang="la" type="auto">Verum utcunque habeat, Leonardus <persName ref="221">Tremp</persName> amandatus est, ut<note xml:id="fnh" type="footnote" n="h"><hi>nach</hi> ut <hi>ein gestrichenes Zeichen.</hi></note> eum advocet<note xml:id="fn6" type="footnote" n="6">Vgl. den diesbezüglichen Ratsbeschluß (<placeName ref="121">Bern</placeName> StA, A II 126, S. 9) und das Werbungsschreiben <placeName ref="121">Berns</placeName> an <placeName ref="1049">Straßburg</placeName> vom 16. März, das von <persName ref="221">Lienhard Tremp</persName> überbracht wurde (<placeName ref="121">Bern</placeName> StA, A III 24, S. 225f; gedruckt: <hi>Scheurer,</hi> aaO, S. 217-219).</note>, virum <foreign xml:lang="el">θεολογώτατον</foreign>, prudentem ac vere pium, nisi omnium, qui ipsum norunt, testimoniis fallor, ut mihi spes sit<note xml:id="fni" type="footnote" n="i"><hi>nach</hi> sit <hi>gestrichenes</hi> si.</note> propter praeclaras animi dotes et veterem notitiam<note xml:id="fn7" type="footnote" n="7">Bereits zwischen 1521 und 1524 hatte <persName ref="1647">Meyer</persName> in <placeName ref="121">Bern</placeName> gewirkt; vgl. HBBW III, S. 152f, Anm. 9.</note> et autoritatem ecclesiae nostrae utilissimum pastorem futurum, si per corporis ac domestica incommoda consistere possit - nisi fortasse <persName ref="145">Megander</persName> obturbare instituat humana aliqua affectione impulsus, quod tamen pro ipsius vel prudentia vel pietate minime facturum arbitror, quippe qui ipse etiam in electionem consenserit, a qua prius nonnihil abhorrere videbatur, non tam quod improbaret <persName ref="1647">Sebastiani</persName> vel eruditionem vel industriam, quam quod se spretum doleret, cum ad eiusmodi consilium non adhibitus esset, unde vel ut insigni iniuria affectus abitum est meditatus, ut nosti tu<note xml:id="fnk" type="footnote" n="k">tu <hi>über der Zeile nachgetragen.</hi></note>, quem haec minime celasse non ignoro<note xml:id="fn8" type="footnote" n="8">Siehe <persName ref="145">Meganders</persName> Brief an <persName ref="114">Leo Jud</persName> und Bullinger vom 6. März, oben <ref target="file#10797">Nr. 759</ref>. Von der Absicht, <placeName ref="121">Bern</placeName> zu verlassen, ist dort allerdings nicht die Rede, vgl. aber unten <ref target="file#10876">Nr. 837</ref>, 7-23; 860, 2-7.</note>.</s>
-					<s xml:lang="la" type="auto">Ceterum ei cogitationi ita dextere et tuis et aliorum literis<note xml:id="fn9" type="footnote" n="9">Bullingers Antwort an <persName ref="145">Megander</persName> ist nicht erhalten.</note> est occursum, ut nihil tale amplius inducturum sperem.</s>
+					<s n="7" xml:lang="la" type="auto">Ante omnia vero, ne nescias, quid Argentinae vel egerim vel effecerim: Ad <persName ref="person1647">Sebastianum</persName> vocandum missus impetravi quidem, qui huc se ad tempus concessurum receperit.</s>
+					<s n="8" xml:lang="la" type="auto">Verum an herere perpetuo hic possit obireque conditionem aetate tam provecta laboribusque attritus senex admodum dubitat, praesertim obstante uxor<note xml:id="fnf" type="footnote" n="f"><hi>nach</hi> uxore <hi>gestrichenes</hi> que.</note><note xml:id="fn4" type="footnote" n="4">Nicht namentlich bekannt.</note> plane simplice et stulta, que et deserendi ecclesiam <placeName ref="place70">Augustanam</placeName> ei<note xml:id="fng" type="footnote" n="g">ei <hi>über der Zeile nachgetragen.</hi></note> causa extitit<note xml:id="fn5" type="footnote" n="5"><persName ref="person1647">Meyer</persName> hatte <placeName ref="place70">Augsburg</placeName> im September 1535 nach rund vierjähriger Tätigkeit verlassen; über die Gründe seines Weggangs ist nichts Sicheres bekannt (vgl. <hi>Roth</hi> II 194).</note>.</s>
+					<s n="9" xml:lang="la" type="auto">Verum utcunque habeat, Leonardus <persName ref="person221">Tremp</persName> amandatus est, ut<note xml:id="fnh" type="footnote" n="h"><hi>nach</hi> ut <hi>ein gestrichenes Zeichen.</hi></note> eum advocet<note xml:id="fn6" type="footnote" n="6">Vgl. den diesbezüglichen Ratsbeschluß (<placeName ref="place121">Bern</placeName> StA, A II 126, S. 9) und das Werbungsschreiben <placeName ref="place121">Berns</placeName> an <placeName ref="place1049">Straßburg</placeName> vom 16. März, das von <persName ref="person221">Lienhard Tremp</persName> überbracht wurde (<placeName ref="place121">Bern</placeName> StA, A III 24, S. 225f; gedruckt: <hi>Scheurer,</hi> aaO, S. 217-219).</note>, virum <foreign xml:lang="el">θεολογώτατον</foreign>, prudentem ac vere pium, nisi omnium, qui ipsum norunt, testimoniis fallor, ut mihi spes sit<note xml:id="fni" type="footnote" n="i"><hi>nach</hi> sit <hi>gestrichenes</hi> si.</note> propter praeclaras animi dotes et veterem notitiam<note xml:id="fn7" type="footnote" n="7">Bereits zwischen 1521 und 1524 hatte <persName ref="person1647">Meyer</persName> in <placeName ref="place121">Bern</placeName> gewirkt; vgl. HBBW III, S. 152f, Anm. 9.</note> et autoritatem ecclesiae nostrae utilissimum pastorem futurum, si per corporis ac domestica incommoda consistere possit - nisi fortasse <persName ref="person145">Megander</persName> obturbare instituat humana aliqua affectione impulsus, quod tamen pro ipsius vel prudentia vel pietate minime facturum arbitror, quippe qui ipse etiam in electionem consenserit, a qua prius nonnihil abhorrere videbatur, non tam quod improbaret <persName ref="person1647">Sebastiani</persName> vel eruditionem vel industriam, quam quod se spretum doleret, cum ad eiusmodi consilium non adhibitus esset, unde vel ut insigni iniuria affectus abitum est meditatus, ut nosti tu<note xml:id="fnk" type="footnote" n="k">tu <hi>über der Zeile nachgetragen.</hi></note>, quem haec minime celasse non ignoro<note xml:id="fn8" type="footnote" n="8">Siehe <persName ref="person145">Meganders</persName> Brief an <persName ref="person114">Leo Jud</persName> und Bullinger vom 6. März, oben <ref target="file10797">Nr. 759</ref>. Von der Absicht, <placeName ref="place121">Bern</placeName> zu verlassen, ist dort allerdings nicht die Rede, vgl. aber unten <ref target="file10876">Nr. 837</ref>, 7-23; 860, 2-7.</note>.</s>
+					<s n="10" xml:lang="la" type="auto">Ceterum ei cogitationi ita dextere et tuis et aliorum literis<note xml:id="fn9" type="footnote" n="9">Bullingers Antwort an <persName ref="person145">Megander</persName> ist nicht erhalten.</note> est occursum, ut nihil tale amplius inducturum sperem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si nescis: Roggenbachii<note xml:id="fn10" type="footnote" n="10"><persName ref="1948">Hans</persName> und <persName ref="1950">Rudolf Roggenbach</persName>, die Führer der wegen ihres Glaubens aus <placeName ref="83">Solothurn</placeName> vertriebenen Protestanten, die seit August 1535 gewaltsam für ihre Rehabilitierung kämpften, waren kurz vor dem 21. März zusammen mit ihren Gefährten auf bernischem Gebiet festgenommen worden; vgl. EA IV/1c 662f, Nr. 3.</note> capti sunt in ditione nostra<note xml:id="fnl" type="footnote" n="l"><hi>nach</hi> nostra <hi>undeutliche Korrekturen.</hi></note> non mediocrem turbam<note xml:id="fnm" type="footnote" n="m"><hi>nach</hi> turbam <hi>ein gestrichenes Zeichen.</hi></note> hoc periculosissimo tempore nobis<note xml:id="fnn" type="footnote" n="n">nobis <hi>undeutlich korrigiert, davor gestrichenes</hi> inter.</note> concitaturi, nisi peculiari quadam ratione velut <foreign xml:lang="el">ἀπὸ μηχανῆς</foreign><note xml:id="fn11" type="footnote" n="11">gleichsam als "deus ex machina"; vgl. Adagia, 1, 1, 68 (LB II 52f).</note> nos respiciat dominus.</s>
-					<s xml:lang="la" type="auto">Ex una enim parte obstant fędera, quo minus liberari, ex alia conscientia, quo minus iuxta pristina <placeName ref="121">Helvetiorum</placeName> pacta<pb type="scan" next="||342"/> de his statui et iudicari possit, nec medium facile ullum adparet, quo succurri huic tantum non rei deploratae possit citra ingentem<note xml:id="fno" type="footnote" n="o"><hi>vor</hi> ingentem <hi>gestrichenes</hi> publicum.</note> motum<pb type="edition" next="190"/>Helvetiae nostrae.</s>
-					<s xml:lang="la" type="auto">Sed de his plura posthac.</s>
-					<s xml:lang="la" type="auto">Nunc enim non licuit amplius, cum noctu iam iam dimittendum nuncium<note xml:id="fn12" type="footnote" n="12">Ein Zürcher Bote namens <placeName ref="1227">Zeller</placeName>; vgl. unten <ref target="file#10846">Nr. 807</ref>, 5-17.</note> a vestris legatis<note xml:id="fn13" type="footnote" n="13">Hans <persName ref="87">Haab</persName> und <persName ref="1350">Balthasar Keller</persName>; vgl. EA IV/1c 661-664.</note> primum mihi per Tigurinum meum puerum<note xml:id="fn14" type="footnote" n="14"><persName ref="1966">Heinrich Rubli</persName>; vgl. unten <ref target="file#10846">Nr. 807</ref>, 9-11.</note> significaretur.</s>
+					<s n="11" xml:lang="la" type="auto">Si nescis: <persName ref="person1948">Roggenbachii</persName><note xml:id="fn10" type="footnote" n="10">Hans und <persName ref="person1950">Rudolf Roggenbach</persName>, die Führer der wegen ihres Glaubens aus <placeName ref="place83">Solothurn</placeName> vertriebenen Protestanten, die seit August 1535 gewaltsam für ihre Rehabilitierung kämpften, waren kurz vor dem 21. März zusammen mit ihren Gefährten auf bernischem Gebiet festgenommen worden; vgl. EA IV/1c 662f, Nr. 3.</note> capti sunt in ditione nostra<note xml:id="fnl" type="footnote" n="l"><hi>nach</hi> nostra <hi>undeutliche Korrekturen.</hi></note> non mediocrem turbam<note xml:id="fnm" type="footnote" n="m"><hi>nach</hi> turbam <hi>ein gestrichenes Zeichen.</hi></note> hoc periculosissimo tempore nobis<note xml:id="fnn" type="footnote" n="n">nobis <hi>undeutlich korrigiert, davor gestrichenes</hi> inter.</note> concitaturi, nisi peculiari quadam ratione velut <foreign xml:lang="el">ἀπὸ μηχανῆς</foreign><note xml:id="fn11" type="footnote" n="11">gleichsam als "deus ex machina"; vgl. Adagia, 1, 1, 68 (LB II 52f).</note> nos respiciat dominus.</s>
+					<s n="12" xml:lang="la" type="auto">Ex una enim parte obstant fędera, quo minus liberari, ex alia conscientia, quo minus iuxta pristina <placeName ref="place121">Helvetiorum</placeName> pacta<pb type="scan" next="||342"/> de his statui et iudicari possit, nec medium facile ullum adparet, quo succurri huic tantum non rei deploratae possit citra ingentem<note xml:id="fno" type="footnote" n="o"><hi>vor</hi> ingentem <hi>gestrichenes</hi> publicum.</note> motum<pb type="edition" next="190"/>Helvetiae nostrae.</s>
+					<s n="13" xml:lang="la" type="auto">Sed de his plura posthac.</s>
+					<s n="14" xml:lang="la" type="auto">Nunc enim non licuit amplius, cum noctu iam iam dimittendum nuncium<note xml:id="fn12" type="footnote" n="12">Ein Zürcher Bote namens <placeName ref="place1227">Zeller</placeName>; vgl. unten <ref target="file10846">Nr. 807</ref>, 5-17.</note> a vestris legatis<note xml:id="fn13" type="footnote" n="13">Hans <persName ref="person87">Haab</persName> und <persName ref="person1350">Balthasar Keller</persName>; vgl. EA IV/1c 661-664.</note> primum mihi per Tigurinum meum puerum<note xml:id="fn14" type="footnote" n="14"><persName ref="person1966">Heinrich Rubli</persName>; vgl. unten <ref target="file10846">Nr. 807</ref>, 9-11.</note> significaretur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bene vale, charissime frater, et me impensissime te amantem redama.</s>
+					<s n="15" xml:lang="la" type="auto">Bene vale, charissime frater, et me impensissime te amantem redama.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ber[nae], 23. martii 1535<note xml:id="fnp" type="footnote" n="p"><hi>irrtümlich statt 1536; vgl. Anm. 1.</hi></note>.</s>
+					<s n="16" xml:lang="de" type="auto">Ber[nae], 23. martii 1535<note xml:id="fnp" type="footnote" n="p"><hi>irrtümlich statt 1536; vgl. Anm. 1.</hi></note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuas literas ad <persName ref="90">Berchtoldum</persName><note xml:id="fnq" type="footnote" n="q">ad Berchtoldum <hi>über der Zeile nachgetragen.</hi></note> partim combussi, partim mihi reservavi; tantum securum te esse iubeo, quod eas attinet.</s>
+					<s n="17" xml:lang="la" type="auto">Tuas literas ad <persName ref="person90">Berchtoldum</persName><note xml:id="fnq" type="footnote" n="q">ad Berchtoldum <hi>über der Zeile nachgetragen.</hi></note> partim combussi, partim mihi reservavi; tantum securum te esse iubeo, quod eas attinet.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si gratum me tibi facere intellexero interpellationibus crebris, egregie vanis de rebus te fatigabo et turbabo.</s>
+					<s n="18" xml:lang="la" type="auto">Si gratum me tibi facere intellexero interpellationibus crebris, egregie vanis de rebus te fatigabo et turbabo.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ir gsechend wol, das ich geylt hab<note xml:id="fn15" type="footnote" n="15">Etwa ab Z. 19 ist der Brief auffallend flüchtig geschrieben.</note>; dorum zürnend nütt.</s>
+					<s n="19" xml:lang="de" type="auto">Ir gsechend wol, das ich geylt hab<note xml:id="fn15" type="footnote" n="15">Etwa ab Z. 19 ist der Brief auffallend flüchtig geschrieben.</note>; dorum zürnend nütt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus ex animo totus</s>
+					<s n="20" xml:lang="la" type="auto">Tuus ex animo totus</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="213">Simon Sultzerus</persName>.</s>
+					<s n="21" xml:lang="la" type="auto"><persName ref="person213">Simon Sultzerus</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse darunter:]</note>
-					<s xml:lang="la" type="auto">Ornatissimo viro d. <persName ref="1966">Heinricho</persName> Bullingero, ecclesiae Tigurinae antistiti vigilantissimo, patrono suo observandissimo.</s>
-					<s xml:lang="de" type="auto">An Meister <persName ref="1966">Heinrich</persName> Bullinge[r, pred]icant<note xml:id="fnr" type="footnote" n="r"><hi>Die Adresse wurde teilweise auf den heute nicht mehr erhaltenen Verschlußstreifen geschrieben.</hi></note> zuͦ Zürich [am groß]en<note xml:id="fns" type="footnote" n="s"><hi>Die Adresse wurde teilweise auf den heute nicht mehr erhaltenen Verschlußstreifen geschrieben.</hi></note> münster.</s>
+					<s n="22" xml:lang="la" type="auto">Ornatissimo viro d. Heinricho Bullingero, ecclesiae Tigurinae antistiti vigilantissimo, patrono suo observandissimo.</s>
+					<s n="23" xml:lang="de" type="auto">An Meister Heinrich Bullinge[r, pred]icant<note xml:id="fnr" type="footnote" n="r"><hi>Die Adresse wurde teilweise auf den heute nicht mehr erhaltenen Verschlußstreifen geschrieben.</hi></note> zuͦ Zürich [am groß]en<note xml:id="fns" type="footnote" n="s"><hi>Die Adresse wurde teilweise auf den heute nicht mehr erhaltenen Verschlußstreifen geschrieben.</hi></note> münster.</s>
 				</p>
 			</div>
 		</body>

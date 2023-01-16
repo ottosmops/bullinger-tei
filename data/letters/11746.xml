@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2006"/>
-				<idno type="ISBN">ISBN 978-3-290-17431-6</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1701</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17431-6</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1701</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 12</title>
+				<title subtype="publication">HBBW XII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">12</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 368,228</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 368,228</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,21 +50,21 @@
 						<summary>
 							<p xml:id="regest1">
 								Nimmt Bezug auf eine Unterredung [vom November] über einen Freund
-								<persName ref="667">Curiones</persName>, der seinen Bruder zum Erlernen der deutschen Sprache nach
+								<persName ref="person667">Curiones</persName>, der seinen Bruder zum Erlernen der deutschen Sprache nach
 								Zürich schicken will; bittet Bullinger um Auswahl eines geeigneten Hausvaters und um diesbezügliche
-								Nachricht an den Tiraner Rechtsanwalt <persName ref="64">Martin</persName> a Pergula; falls keine
+								Nachricht an den Tiraner Rechtsanwalt Martin a Pergula; falls keine
 								Boten zur Verfügung stehen, soll der Brief zur Weiterleitung an
-								<persName ref="43">Johannes Comander</persName> oder [<persName ref="21">Johannes</persName>]
-								<persName ref="21">Blasius</persName> in <placeName ref="243">Chur</placeName> gesandt
+								<persName ref="person43">Johannes Comander</persName> oder [Johannes]
+								<persName ref="person21">Blasius</persName> in <placeName ref="place243">Chur</placeName> gesandt
 								werden; es besteht auch die Möglichkeit, diese Angelegenheit über Camillo [Renato] abzuwickeln. Grüße, auch
-								an [<persName ref="165">Konrad</persName>] <persName ref="165">Pellikan</persName>,
-								[<persName ref="145">Kaspar</persName>] <persName ref="145">Megander</persName>,
-								[<persName ref="14">Theodor</persName>] <persName ref="14">Bibliander</persName> und
-								[<persName ref="84">Rudolf</persName>] <persName ref="84">Gwalther</persName>; zusammen mit
-								seiner Frau [Margarita Bianca Isacchi] lässt <persName ref="667">Curione</persName> auch Grüße an
+								an [Konrad] <persName ref="person165">Pellikan</persName>,
+								[Kaspar] <persName ref="person145">Megander</persName>,
+								[Theodor] <persName ref="person14">Bibliander</persName> und
+								[Rudolf] <persName ref="person84">Gwalther</persName>; zusammen mit
+								seiner Frau [Margarita Bianca Isacchi] lässt <persName ref="person667">Curione</persName> auch Grüße an
 								Bullingers Frau [Anna] und die Kinder ausrichten; auch die Lausanner Pfarrer, insbesondere
-								[<persName ref="227">Pierre</persName>] <persName ref="227">Viret</persName> und [Béat] Comte,
-								lassen grüßen. Bittet, diesen Brief dem Schreiben nach <placeName ref="1836">Tirano</placeName>
+								[Pierre] <persName ref="person227">Viret</persName> und [Béat] Comte,
+								lassen grüßen. Bittet, diesen Brief dem Schreiben nach <placeName ref="place1836">Tirano</placeName>
 								beizulegen.
 							</p>
 						</summary>
@@ -72,44 +75,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11746">
 				<correspAction type="sent">
-					<persName ref="person#714" cert="high">
+					<!--
+					<persName ref="person714" cert="high">
 						<forename cert="high">Celio Secondo</forename>
 						<surname cert="high">Curione</surname>
+						<graphic type="portrait" url="portraits/714_Curione_Celio_Secondo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Celio_Secondo_Curione"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/10407440X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414681"/>
 					</persName>
-					<place source="#280" cert="high">
-						<settlement>Lausanne</settlement>
-						<district>Waadt</district>
-						<country>Schweiz</country>
-						<geo>46.516 6.63282</geo>
-					</place>
+					-->
+					<persName ref="person714" cert="high"/>
+					<place source="place280" cert="high"/>
 					<date when="1542-12-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11747"/>
-					<ref type="prev_chronologically" target="files.xml#11745"/>
-					<ref type="next_correspondence" target="files.xml#11772"/>
+					<ref type="next_chronologically" target="file11747"/>
+					<ref type="prev_chronologically" target="file11745"/>
+					<ref type="next_correspondence" target="file11772"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#11772"/>
+					<ref type="next_correspondence_request" target="file11772"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#13051"/>
+					<ref type="next_correspondence_reaction" target="file13051"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11772"/>
+					<ref type="next_same_sender" target="file11772"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#11747"/>
-					<ref type="prev_same_addressee" target="files.xml#11743"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11772"/>
+					<ref type="next_same_addressee" target="file11747"/>
+					<ref type="prev_same_addressee" target="file11743"/>
+					<ref type="next_with_sender_as_addressee" target="file11772"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11747"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11743"/>
+					<ref type="next_with_addressee_as_sender" target="file11747"/>
+					<ref type="prev_with_addressee_as_sender" target="file11743"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -118,55 +127,58 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="11746/Autograph/00 E_II_368__fol__228_r_.tif" n="1"/>
+		<graphic url="11746/Autograph/01 E_II_368__fol__228_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Coelius <persName ref="667">Secundus Curio</persName> s[alutem] p[lurimam] d[icit] per Christum Iesum.</s>
+					<s n="1" xml:lang="la" type="auto">Coelius <persName ref="person667">Secundus Curio</persName> s[alutem] p[lurimam] d[icit] per Christum Iesum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quamquam tua erga me humanitas seu pietas potius tanta fuit<note xml:id="fna" type="footnote" n="a">fuit <hi>über gestrichenem</hi> sit.</note>, ut bene longa epistola tibi gratiae agendę forent, his tamen literis nihil amplius ad scribendum sumam, quam quod nobis amicorum caussa curandum erat.</s>
+					<s n="2" xml:lang="la" type="auto">Quamquam tua erga me humanitas seu pietas potius tanta fuit<note xml:id="fna" type="footnote" n="a">fuit <hi>über gestrichenem</hi> sit.</note>, ut bene longa epistola tibi gratiae agendę forent, his tamen literis nihil amplius ad scribendum sumam, quam quod nobis amicorum caussa curandum erat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Alias vero etiam referendi gratiam fortassis facultas suppetet, nedum gratias<note xml:id="fnb" type="footnote" n="b">gratias <hi>über der Zeile eingefügt.</hi></note> agendi.</s>
+					<s n="3" xml:lang="la" type="auto">Alias vero etiam referendi gratiam fortassis facultas suppetet, nedum gratias<note xml:id="fnb" type="footnote" n="b">gratias <hi>über der Zeile eingefügt.</hi></note> agendi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Meministi, credo, cum essemus apud te,<note xml:id="fn1" type="footnote" n="1"><persName ref="667">Curione</persName> bezieht sich wohl auf seinen Aufenthalt in Zürich im November, vgl. <ref target="file#11737">Nr. 1692</ref>.</note> me tibi narrasse de quodam amico<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note>, qui fratrem suum Tigurum mittere vellet cum discendae Germanicae linguae tum aliarum bonarum rerum gratia.</s>
-					<s xml:lang="la" type="auto">Sed nescio quae negotia nos ab ea cura ad se transtulerunt, ita ut nihil de ea re certi<note xml:id="fnc" type="footnote" n="c">certi <hi>über der Zeile eingefügt.</hi></note> inter nos constitutum sit.</s>
-					<s xml:lang="la" type="auto">Nunc, quod omissum fuit, sarcire paro.</s>
-					<s xml:lang="la" type="auto">Igitur rogo, ut aliquem seligere<note xml:id="fn3" type="footnote" n="3">Zu ergänzen ist "velis" o. ä.</note> bonum et doctum virum, dein etiam mercatorem aut negotiorum plenum, apud quem is adolescens agat, et cum utroque de precio et conditione convenire.</s>
+					<s n="4" xml:lang="la" type="auto">Meministi, credo, cum essemus apud te,<note xml:id="fn1" type="footnote" n="1"><persName ref="person667">Curione</persName> bezieht sich wohl auf seinen Aufenthalt in Zürich im November, vgl. <ref target="file11737">Nr. 1692</ref>.</note> me tibi narrasse de quodam amico<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note>, qui fratrem suum Tigurum mittere vellet cum discendae Germanicae linguae tum aliarum bonarum rerum gratia.</s>
+					<s n="5" xml:lang="la" type="auto">Sed nescio quae negotia nos ab ea cura ad se transtulerunt, ita ut nihil de ea re certi<note xml:id="fnc" type="footnote" n="c">certi <hi>über der Zeile eingefügt.</hi></note> inter nos constitutum sit.</s>
+					<s n="6" xml:lang="la" type="auto">Nunc, quod omissum fuit, sarcire paro.</s>
+					<s n="7" xml:lang="la" type="auto">Igitur rogo, ut aliquem seligere<note xml:id="fn3" type="footnote" n="3">Zu ergänzen ist "velis" o. ä.</note> bonum et doctum virum, dein etiam mercatorem aut negotiorum plenum, apud quem is adolescens agat, et cum utroque de precio et conditione convenire.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quod ubi feceris meo nomine, si placet, ad d. Martinum a Pergula<note xml:id="fn4" type="footnote" n="4">Der Rechtsanwalt Dr. Martin a Pergula (della Pergola) in <placeName ref="1836">Tirano</placeName> (Prov. Sondrio, Italien) war eine wichtige Schaltstelle für Bullingers Briefverkehr mit den Bündner Südtälern, vgl. <placeName ref="24">Graubünden</placeName>, Korr. II 415. 419. 421-423; III 184f.</note> iurisconsultum Tiranum literas mittes, quae de toto eo negotio eum certiorem faciant.</s>
-					<s xml:lang="la" type="auto">Occurrent certe, qui literas ferant; sin minus, <placeName ref="243">Curiam</placeName> ad d. Io[annem] <persName ref="43">Comandrum</persName> aut <persName ref="21">Blasium</persName>, ministros, eas mittere poteris additis ad horum alterum, ut Tirani in Valle Telina<note xml:id="fn5" type="footnote" n="5"><placeName ref="94">Veltlin</placeName>.</note> reddendas curent, quatuor verbis<note xml:id="fn6" type="footnote" n="6">Ob Bullinger entsprechende Schritte unternahm, ist nicht bekannt.</note>.</s>
-					<s xml:lang="la" type="auto">Hanc rem te omnino curare sedulo opus est, ni meam fidem in discrimen et meipsum in infamiam adduci velis, qui haec ipsa praestare sum pollicitus, quae tamen obrutus negotiis, curis<note xml:id="fnd" type="footnote" n="d"><hi>Vor</hi> curis <hi>gestrichenes</hi> et.</note> et molestiis innumeris non praestiti.</s>
-					<s xml:lang="la" type="auto">Quod ut<note xml:id="fne" type="footnote" n="e"><hi>Vor</hi> ut <hi>gestrichenes</hi> un[?].</note> huic<note xml:id="fnf" type="footnote" n="f">huic <hi>über der Zeile eingefügt.</hi></note> meae negligentiae (ut etiam me ipsum ingenue accusem) tuae opera, studio et diligentia succurras, te etiam atque etiam rogo.</s>
+					<s n="8" xml:lang="la" type="auto">Quod ubi feceris meo nomine, si placet, ad d. Martinum a Pergula<note xml:id="fn4" type="footnote" n="4">Der Rechtsanwalt Dr. Martin a Pergula (della Pergola) in <placeName ref="place1836">Tirano</placeName> (Prov. Sondrio, Italien) war eine wichtige Schaltstelle für Bullingers Briefverkehr mit den Bündner Südtälern, vgl. <placeName ref="place24">Graubünden</placeName>, Korr. II 415. 419. 421-423; III 184f.</note> iurisconsultum Tiranum literas mittes, quae de toto eo negotio eum certiorem faciant.</s>
+					<s n="9" xml:lang="la" type="auto">Occurrent certe, qui literas ferant; sin minus, <placeName ref="place243">Curiam</placeName> ad d. Io[annem] <persName ref="person43">Comandrum</persName> aut <persName ref="person21">Blasium</persName>, ministros, eas mittere poteris additis ad horum alterum, ut Tirani in Valle Telina<note xml:id="fn5" type="footnote" n="5"><placeName ref="place94">Veltlin</placeName>.</note> reddendas curent, quatuor verbis<note xml:id="fn6" type="footnote" n="6">Ob Bullinger entsprechende Schritte unternahm, ist nicht bekannt.</note>.</s>
+					<s n="10" xml:lang="la" type="auto">Hanc rem te omnino curare sedulo opus est, ni meam fidem in discrimen et meipsum in infamiam adduci velis, qui haec ipsa praestare sum pollicitus, quae tamen obrutus negotiis, curis<note xml:id="fnd" type="footnote" n="d"><hi>Vor</hi> curis <hi>gestrichenes</hi> et.</note> et molestiis innumeris non praestiti.</s>
+					<s n="11" xml:lang="la" type="auto">Quod ut<note xml:id="fne" type="footnote" n="e"><hi>Vor</hi> ut <hi>gestrichenes</hi> un[?].</note> huic<note xml:id="fnf" type="footnote" n="f">huic <hi>über der Zeile eingefügt.</hi></note> meae negligentiae (ut etiam me ipsum ingenue accusem) tuae opera, studio et diligentia succurras, te etiam atque etiam rogo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Caeterum ad Camilum<note xml:id="fn7" type="footnote" n="7">Gemeint ist Camillo Renato, vgl. <persName ref="667">Curione</persName> an Bullinger, [4. März 1543], Zürich StA, E II 366, 88.</note> quoque, cuius tibi<note xml:id="fng" type="footnote" n="g"><hi>Vor</hi> tibi <hi>gestrichenes</hi> a.</note> literas<note xml:id="fn8" type="footnote" n="8">Oben <ref target="file#11733">Nr. 1688</ref>.</note> redidi, rescribere eadem opera aliquid poteris.</s>
-					<s xml:lang="la" type="auto">Hic enim Tirani agit, et facile d. Martinus ei literas tuas reddet.</s>
-					<s xml:lang="la" type="auto">Solaberis enim virum et literis et religione pręstantem et tui praesertim amantissimum.</s>
-					<s xml:lang="la" type="auto">Quae scripsi, quo celerius fient, eo gratiora erunt.</s>
-					<s xml:lang="la" type="auto">Ipse scripsissem, si certi aliquid scribere possem; sed cum non possim, ipse conficies et nos apud d. Martinum excusabis.</s>
+					<s n="12" xml:lang="la" type="auto">Caeterum ad Camilum<note xml:id="fn7" type="footnote" n="7">Gemeint ist Camillo Renato, vgl. <persName ref="person667">Curione</persName> an Bullinger, [4. März 1543], Zürich StA, E II 366, 88.</note> quoque, cuius tibi<note xml:id="fng" type="footnote" n="g"><hi>Vor</hi> tibi <hi>gestrichenes</hi> a.</note> literas<note xml:id="fn8" type="footnote" n="8">Oben <ref target="file11733">Nr. 1688</ref>.</note> redidi, rescribere eadem opera aliquid poteris.</s>
+					<s n="13" xml:lang="la" type="auto">Hic enim Tirani agit, et facile d. Martinus ei literas tuas reddet.</s>
+					<s n="14" xml:lang="la" type="auto">Solaberis enim virum et literis et religione pręstantem et tui praesertim amantissimum.</s>
+					<s n="15" xml:lang="la" type="auto">Quae scripsi, quo celerius fient, eo gratiora erunt.</s>
+					<s n="16" xml:lang="la" type="auto">Ipse scripsissem, si certi aliquid scribere possem; sed cum non possim, ipse conficies et nos apud d. Martinum excusabis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale per Christum Iesum et nostro nomine eximios doctores <persName ref="165">Pellicanum</persName>, <persName ref="145">Megandrum</persName>, <persName ref="14">Bibliandrum</persName>, <persName ref="84">Gvalterum</persName> et reliquos salvere iubebis.</s>
-					<s xml:lang="la" type="auto">Uxorem<pb type="edition" next="271"/> tuam<note xml:id="fn9" type="footnote" n="9">Anna, geb. Adlischwyler.</note> officii et caritatis plenam meo et uxoris meae<note xml:id="fn10" type="footnote" n="10">Margarita Bianca Isacchi.</note> nomine officiose diligenterque, adde etiam amanter salutabis, liberos<note xml:id="fn11" type="footnote" n="11">Zu Bullingers Kindern s. oben <ref target="file#11701">Nr. 1658</ref>, Anm. 27.</note> dulcissimos de sua erga nostros suavitate, gratia et officiis amabis<note xml:id="fnh" type="footnote" n="h"><hi>Vor</hi> amabis <hi>gestrichenes Wort.</hi></note>.</s>
-					<s xml:lang="la" type="auto">Ego meipsum tibi et tuis dedo, qui, quicquid sum, debeo.</s>
-					<s xml:lang="la" type="auto">Vale et salve.</s>
-					<s xml:lang="la" type="auto">Salutant vos fratres et ministri, qui nobiscum sunt, praecipue <persName ref="227">Viretus</persName> et Comes<note xml:id="fn12" type="footnote" n="12">Béat Comte.</note>.</s>
+					<s n="17" xml:lang="la" type="auto">Vale per Christum Iesum et nostro nomine eximios doctores <persName ref="person165">Pellicanum</persName>, <persName ref="person145">Megandrum</persName>, <persName ref="person14">Bibliandrum</persName>, <persName ref="person84">Gvalterum</persName> et reliquos salvere iubebis.</s>
+					<s n="18" xml:lang="la" type="auto">Uxorem<pb type="edition" next="271"/> tuam<note xml:id="fn9" type="footnote" n="9">Anna, geb. Adlischwyler.</note> officii et caritatis plenam meo et uxoris meae<note xml:id="fn10" type="footnote" n="10">Margarita Bianca Isacchi.</note> nomine officiose diligenterque, adde etiam amanter salutabis, liberos<note xml:id="fn11" type="footnote" n="11">Zu Bullingers Kindern s. oben <ref target="file11701">Nr. 1658</ref>, Anm. 27.</note> dulcissimos de sua erga nostros suavitate, gratia et officiis amabis<note xml:id="fnh" type="footnote" n="h"><hi>Vor</hi> amabis <hi>gestrichenes Wort.</hi></note>.</s>
+					<s n="19" xml:lang="la" type="auto">Ego meipsum tibi et tuis dedo, qui, quicquid sum, debeo.</s>
+					<s n="20" xml:lang="la" type="auto">Vale et salve.</s>
+					<s n="21" xml:lang="la" type="auto">Salutant vos fratres et ministri, qui nobiscum sunt, praecipue <persName ref="person227">Viretus</persName> et Comes<note xml:id="fn12" type="footnote" n="12">Béat Comte.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="609">Lausannae</placeName>, quarto idus decembris 1542.</s>
+					<s n="22" xml:lang="la" type="auto"><placeName ref="place609">Lausannae</placeName>, quarto idus decembris 1542.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Una cum tuis hasce quoque his annexas ad d.<note xml:id="fni" type="footnote" n="i">d. <hi>über der Zeile eingefügt.</hi></note> Camilum aut ad d. Martinum cum<note xml:id="fnk" type="footnote" n="k">cum <hi>über der Zeile eingefügt.</hi></note> tuis adligabis diligenter et mihi ignosces, qui tot et tanta tibi onera imponam.</s>
+					<s n="23" xml:lang="la" type="auto">Una cum tuis hasce quoque his annexas ad d.<note xml:id="fni" type="footnote" n="i">d. <hi>über der Zeile eingefügt.</hi></note> Camilum aut ad d. Martinum cum<note xml:id="fnk" type="footnote" n="k">cum <hi>über der Zeile eingefügt.</hi></note> tuis adligabis diligenter et mihi ignosces, qui tot et tanta tibi onera imponam.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Henrico Bulingero, ecclesiae Tigurinae antistiti, fratri in Christo venerando.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="24" xml:lang="la" type="auto">D. Henrico Bulingero, ecclesiae Tigurinae antistiti, fratri in Christo venerando.</s>
+					<s n="25" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

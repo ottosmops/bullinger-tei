@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2003"/>
-				<idno type="ISBN">ISBN 3-290-17265-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1343</idno>
+				<idno subtype="ISBN">ISBN 3-290-17265-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1343</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 10</title>
+				<title subtype="publication">HBBW X</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">10</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 337,311</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 337,311</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,7 +50,7 @@
 						<summary>
 							<p xml:id="regest1">
 								Steht vor einem Dilemma, da ihm die Zürcher [von der Annahme des Doktorgrades] abraten, während ihn die
-								<placeName ref="121">Berner</placeName> und <placeName ref="1049">Straßburger</placeName>
+								<placeName ref="place121">Berner</placeName> und <placeName ref="place1049">Straßburger</placeName>
 								zum Nachgeben drängen; er wird zwar den Titel auf keinen Fall annehmen, wäre aber eventuell bereit, sich
 								durch Handauflegung zum kirchlichen Lehramt beauftragen zu lassen, und bittet Bullinger, dies auch seinen
 								Kollegen mitzuteilen. Dankt für ihren Trost und ihre Hilfszusage. Sein Vorschlag soll vertraulich bleiben,
@@ -65,14 +68,17 @@
 				</msDesc>
 				<msDesc type="" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 342,97</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">Kopie von HBs Hand</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 342,97</idno>
+						<idno subtype="Hinweis">Kopie von HBs Hand</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -81,45 +87,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11386">
 				<correspAction type="sent">
-					<persName ref="person#1365" cert="high">
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person1365" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1540-01-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11387"/>
-					<ref type="prev_chronologically" target="files.xml#11385"/>
-					<ref type="next_correspondence" target="files.xml#11418"/>
-					<ref type="prev_correspondence" target="files.xml#11378"/>
-					<ref type="next_correspondence_request" target="files.xml#11418"/>
-					<ref type="prev_correspondence_request" target="files.xml#11369"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11593"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11378"/>
-					<ref type="next_same_sender" target="files.xml#11393"/>
-					<ref type="prev_same_sender" target="files.xml#11375"/>
-					<ref type="next_same_addressee" target="files.xml#11389"/>
-					<ref type="prev_same_addressee" target="files.xml#11378"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11393"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11375"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11389"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11378"/>
+					<ref type="next_chronologically" target="file11387"/>
+					<ref type="prev_chronologically" target="file11385"/>
+					<ref type="next_correspondence" target="file11418"/>
+					<ref type="prev_correspondence" target="file11378"/>
+					<ref type="next_correspondence_request" target="file11418"/>
+					<ref type="prev_correspondence_request" target="file11369"/>
+					<ref type="next_correspondence_reaction" target="file11593"/>
+					<ref type="prev_correspondence_reaction" target="file11378"/>
+					<ref type="next_same_sender" target="file11393"/>
+					<ref type="prev_same_sender" target="file11375"/>
+					<ref type="next_same_addressee" target="file11389"/>
+					<ref type="prev_same_addressee" target="file11378"/>
+					<ref type="next_with_sender_as_addressee" target="file11393"/>
+					<ref type="prev_with_sender_as_addressee" target="file11375"/>
+					<ref type="next_with_addressee_as_sender" target="file11389"/>
+					<ref type="prev_with_addressee_as_sender" target="file11378"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -131,48 +142,46 @@
 	<facsimile>
 		<graphic url="11386/Autograph/00 E_II_337__fol__311_r_.tif" n="1"/>
 		<graphic url="11386/Autograph/01 E_II_337__fol__311_v_.tif" n="2"/>
-		<graphic url="11386/Autograph/02 E_II_342__fol__97_r_.tif" n="3"/>
-		<graphic url="11386/Autograph/03 E_II_342__fol__97_v_.tif" n="4"/>
 	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Miser sum iam bis; non solum enim non possum adversariis iam, sed nec amicis satisfacere.</s>
-					<s xml:lang="la" type="auto">Quam valde vos me inde revocatis<note xml:id="fn2" type="footnote" n="2">Die Zürcher Theologen hatten <persName ref="81">Grynäus</persName> geraten, die Annahme des Doktorgrades weiterhin zu verweigern; s. HBBW IX, <ref target="file#11381">Nr. 1338</ref>.</note>, tam valde me eo impellunt utrique <placeName ref="121">Bernates</placeName><note xml:id="fn3" type="footnote" n="3">Die Stellungnahme der <placeName ref="121">Berner</placeName> ist nicht erhalten.</note> et Argentinenses fratres<note xml:id="fn4" type="footnote" n="4">Im Namen der <placeName ref="1049">Straßburger</placeName> Pfarrer hatte <persName ref="9">Bedrot</persName> am 12. Dezember Myconius, <persName ref="11">Bertschi</persName> und <persName ref="74">Gast</persName> dazu aufgerufen, <persName ref="81">Grynäus</persName> umzustimmen; s. Zürich ZB, Ms F 80, 34r.-36v.</note>.</s>
-					<s xml:lang="la" type="auto">Quid faciam, Bullingere?</s>
-					<s xml:lang="la" type="auto">Nihil, arbitror, omnino, ne iam etiam vos incipiam ledere.</s>
-					<s xml:lang="la" type="auto">Tamen via opus est et faciendum aliquid est.</s>
-					<s xml:lang="la" type="auto">Utinam sint iudicia ecclesię sic constituta, qualiter olim fuerunt; liceret sine rixa, si quis error ortus est, communi bonorum sententia rem explicare.</s>
-					<s xml:lang="la" type="auto">Nunc ait alius, alius negat, cęteri astant dubii, quorsum res evadat<note xml:id="fnb" type="footnote" n="b"><hi>vielleicht als</hi> evadet <hi>zu lesen.</hi></note>, boni non sine dolore, mali non sine lętitia.</s>
-					<s xml:lang="la" type="auto">Ipse si meo<note xml:id="fn5" type="footnote" n="5">zu ergänzen ist iudicio, arbitrio o. ä.</note> in hac re solus unusque permitto, vides, quomodo me gravem<note xml:id="fn6" type="footnote" n="6">Vgl. HBBW IX. S. 254, 9-15.</note>.</s>
-					<s xml:lang="la" type="auto">Sed utcunque est res, hunc titulum papisticum et larvam hanc certum est nullo pacto admittere.</s>
-					<s xml:lang="la" type="auto">Ut aliquid autem faciam ac ut ne dicar solus ego esse, qui ne authoritate quidem totius reipublicae moveatur, ne synodo et coetu ecclesiae, manuum impositione, ritu moreque apostolico<note xml:id="fn7" type="footnote" n="7">Bullinger hatte bereits 1535 im gleichen Zusammenhang auf die apostolische Weise der Beauftragung zum kirchlichen Dienst hingewiesen; s. HBBW V, S. 59f, 21-48.</note> notari designarique non papae, sed ecclesiae doctor patiar, idque non ullius doctoris aut papae aut episcopi, sed pastoris nostri authoritate.</s>
-					<s xml:lang="la" type="auto">Atque id est, quod permittere de me bonis volo, non amplius.</s>
-					<s xml:lang="la" type="auto">Qua re si potest hęc tolli dissentio, bene est; si<pb type="edition" next="24"/> non potest, sat scio me authorem dissentionis non esse, sed sathanae titulos<note xml:id="fnc" type="footnote" n="c"><hi>Endungen undeutlich korrigiert (aus</hi> sa- thanam titulis?).</note>.</s>
-					<s xml:lang="la" type="auto">Hęc velim tibi et per te fratribus omnibus significare, ut si consilium hoc probetis, via inventa videatur, quomodo consuli rebus possit, et ea quidem recta et legitima et ab omni ostentatione et pompa infelici aliena.</s>
+					<s n="1" xml:lang="la" type="auto">Miser sum iam bis; non solum enim non possum adversariis iam, sed nec amicis satisfacere.</s>
+					<s n="2" xml:lang="la" type="auto">Quam valde vos me inde revocatis<note xml:id="fn2" type="footnote" n="2">Die Zürcher Theologen hatten <persName ref="person81">Grynäus</persName> geraten, die Annahme des Doktorgrades weiterhin zu verweigern; s. HBBW IX, <ref target="file11381">Nr. 1338</ref>.</note>, tam valde me eo impellunt utrique <placeName ref="place121">Bernates</placeName><note xml:id="fn3" type="footnote" n="3">Die Stellungnahme der <placeName ref="place121">Berner</placeName> ist nicht erhalten.</note> et Argentinenses fratres<note xml:id="fn4" type="footnote" n="4">Im Namen der <placeName ref="place1049">Straßburger</placeName> Pfarrer hatte <persName ref="person9">Bedrot</persName> am 12. Dezember Myconius, <persName ref="person11">Bertschi</persName> und <persName ref="person74">Gast</persName> dazu aufgerufen, <persName ref="person81">Grynäus</persName> umzustimmen; s. Zürich ZB, Ms F 80, 34r.-36v.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Quid faciam, Bullingere?</s>
+					<s n="4" xml:lang="la" type="auto">Nihil, arbitror, omnino, ne iam etiam vos incipiam ledere.</s>
+					<s n="5" xml:lang="la" type="auto">Tamen via opus est et faciendum aliquid est.</s>
+					<s n="6" xml:lang="la" type="auto">Utinam sint iudicia ecclesię sic constituta, qualiter olim fuerunt; liceret sine rixa, si quis error ortus est, communi bonorum sententia rem explicare.</s>
+					<s n="7" xml:lang="la" type="auto">Nunc ait alius, alius negat, cęteri astant dubii, quorsum res evadat<note xml:id="fnb" type="footnote" n="b"><hi>vielleicht als</hi> evadet <hi>zu lesen.</hi></note>, boni non sine dolore, mali non sine lętitia.</s>
+					<s n="8" xml:lang="la" type="auto">Ipse si meo<note xml:id="fn5" type="footnote" n="5">zu ergänzen ist iudicio, arbitrio o. ä.</note> in hac re solus unusque permitto, vides, quomodo me gravem<note xml:id="fn6" type="footnote" n="6">Vgl. HBBW IX. S. 254, 9-15.</note>.</s>
+					<s n="9" xml:lang="la" type="auto">Sed utcunque est res, hunc titulum papisticum et larvam hanc certum est nullo pacto admittere.</s>
+					<s n="10" xml:lang="la" type="auto">Ut aliquid autem faciam ac ut ne dicar solus ego esse, qui ne authoritate quidem totius reipublicae moveatur, ne synodo et coetu ecclesiae, manuum impositione, ritu moreque apostolico<note xml:id="fn7" type="footnote" n="7">Bullinger hatte bereits 1535 im gleichen Zusammenhang auf die apostolische Weise der Beauftragung zum kirchlichen Dienst hingewiesen; s. HBBW V, S. 59f, 21-48.</note> notari designarique non papae, sed ecclesiae doctor patiar, idque non ullius doctoris aut papae aut episcopi, sed pastoris nostri authoritate.</s>
+					<s n="11" xml:lang="la" type="auto">Atque id est, quod permittere de me bonis volo, non amplius.</s>
+					<s n="12" xml:lang="la" type="auto">Qua re si potest hęc tolli dissentio, bene est; si<pb type="edition" next="24"/> non potest, sat scio me authorem dissentionis non esse, sed sathanae titulos<note xml:id="fnc" type="footnote" n="c"><hi>Endungen undeutlich korrigiert (aus</hi> sa- thanam titulis?).</note>.</s>
+					<s n="13" xml:lang="la" type="auto">Hęc velim tibi et per te fratribus omnibus significare, ut si consilium hoc probetis, via inventa videatur, quomodo consuli rebus possit, et ea quidem recta et legitima et ab omni ostentatione et pompa infelici aliena.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cęterum honestissimę omnium vestrum consolationi et invitationi<note xml:id="fn8" type="footnote" n="8">Vgl. bes. HBBW IX, s. 274, 98-101.</note> maximas habeo gratias.</s>
-					<s xml:lang="la" type="auto">Agnosco genuinam in vobis charitatem et spiritum Christi.</s>
-					<s xml:lang="la" type="auto">Dominus nos in sua sancta voluntate conservet.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="14" xml:lang="la" type="auto">Cęterum honestissimę omnium vestrum consolationi et invitationi<note xml:id="fn8" type="footnote" n="8">Vgl. bes. HBBW IX, s. 274, 98-101.</note> maximas habeo gratias.</s>
+					<s n="15" xml:lang="la" type="auto">Agnosco genuinam in vobis charitatem et spiritum Christi.</s>
+					<s n="16" xml:lang="la" type="auto">Dominus nos in sua sancta voluntate conservet.</s>
+					<s n="17" xml:lang="la" type="manual">Amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S. <persName ref="81">Grynęus</persName> vester frater in domino.</s>
+					<s n="18" xml:lang="la" type="auto">S. <persName ref="person81">Grynęus</persName> vester frater in domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valete.</s>
+					<s n="19" xml:lang="la" type="auto">Valete.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Calendis ianuarii.</s>
+					<s n="20" xml:lang="la" type="auto">Calendis ianuarii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De hoc meo consilio nulli dicetis; vellem enim et hanc necessitatem effugere, si possem.</s>
+					<s n="21" xml:lang="la" type="auto">De hoc meo consilio nulli dicetis; vellem enim et hanc necessitatem effugere, si possem.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">H[enrico] Bulingero, fratri charissimo in domino.</s>
+					<s n="22" xml:lang="la" type="auto">H[enrico] Bulingero, fratri charissimo in domino.</s>
 				</p>
 			</div>
 		</body>

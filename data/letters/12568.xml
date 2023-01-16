@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2015"/>
-				<idno type="ISBN">ISBN 978-3-290-17782-9</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2521</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17782-9</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2521</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 17</title>
+				<title subtype="publication">HBBW XVII</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">17</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336a,258</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336a,258</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336a,240</idno>
+							<idno subtype="Autograph">E II 336a,240</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -49,16 +52,16 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Entweder hat sich <persName ref="154">Myconius</persName> bei seiner Mitteilung [in Brief
-								<ref target="file#12555">Nr. 2508</ref>] über die <placeName ref="1049">Straßburger</placeName>
-								missverständlich ausgedrückt, oder Bullinger hat <persName ref="154">Myconius</persName>’ Aussagen
+								Entweder hat sich <persName ref="person154">Myconius</persName> bei seiner Mitteilung [in Brief
+								<ref target="file12555">Nr. 2508</ref>] über die <placeName ref="place1049">Straßburger</placeName>
+								missverständlich ausgedrückt, oder Bullinger hat <persName ref="person154">Myconius</persName>’ Aussagen
 								falsch aufgefasst. Zu bedauern ist, dass einige [Personen in der Eidgenossenschaft] leider so tun, als ginge
 								sie der Krieg nichts an, obwohl er doch alle betrifft! Fest steht, dass [die Schmalkaldener] die
 								Schweizer [Söldner] schätzen und diese nicht gerne ziehen lassen
 								werden, auch wenn (so scheint es) Herzog [Ulrich] von Württemberg dies fordert.
 								</p>
 								<p xml:id="regest2">
-								- Wenn er dürfte, würde <persName ref="154">Myconius</persName> alle Gesandten des Antichristen
+								- Wenn er dürfte, würde <persName ref="person154">Myconius</persName> alle Gesandten des Antichristen
 								[Papst Paul III.] in der Schweiz umbringen. Sie stiften nämlich
 								nur Unheil und gefährden die [eidgenössischen] Bünde. Die Drohung, man müsse [Kaiser] Karl V. helfen, wurde
 								vermutlich von einigen Eidgenossen erdichtet, als könnte man dadurch Eidgenossen zurückhalten, die den
@@ -70,14 +73,14 @@
 								meint, dass die [Schmalkaldener] sie nicht lange halten können. Vorsicht ist also geboten!
 								</p>
 								<p xml:id="regest4">
-								- <persName ref="154">Myconius</persName> hat [Rudolf] Gwalther um Informationen über die
-								<placeName ref="795">Nürnberger</placeName> gebeten. Er konnte diese nie leiden. Auch
-								<persName ref="265">Zwingli</persName> hat sie wegen ihrer Geschwätzigkeit und Frechheit gehasst.
+								- <persName ref="person154">Myconius</persName> hat [Rudolf] Gwalther um Informationen über die
+								<placeName ref="place795">Nürnberger</placeName> gebeten. Er konnte diese nie leiden. Auch
+								<persName ref="person265">Zwingli</persName> hat sie wegen ihrer Geschwätzigkeit und Frechheit gehasst.
 								</p>
 								<p xml:id="regest5">
-								- <persName ref="154">Myconius</persName> hat schon gestern geschrieben
-								[<ref target="file#12566">Nr. 2519</ref>]. An [Rudolf] Gwalther sendet er [nun] Nachrichten über den Kölner
-								[Erzbischof <persName ref="2488">Hermann von Wied</persName>].
+								- <persName ref="person154">Myconius</persName> hat schon gestern geschrieben
+								[<ref target="file12566">Nr. 2519</ref>]. An [Rudolf] Gwalther sendet er [nun] Nachrichten über den Kölner
+								[Erzbischof <persName ref="person2488">Hermann von Wied</persName>].
 							</p>
 						</summary>
 					</msContents>
@@ -87,46 +90,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12568">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1546-07-31" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12569"/>
-					<ref type="prev_chronologically" target="files.xml#12567"/>
-					<ref type="next_correspondence" target="files.xml#12576"/>
-					<ref type="prev_correspondence" target="files.xml#12566"/>
-					<ref type="next_correspondence_request" target="files.xml#12576"/>
-					<ref type="prev_correspondence_request" target="files.xml#12566"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12620"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12563"/>
-					<ref type="next_same_sender" target="files.xml#12576"/>
-					<ref type="prev_same_sender" target="files.xml#12566"/>
-					<ref type="next_same_addressee" target="files.xml#12582"/>
-					<ref type="prev_same_addressee" target="files.xml#12564"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12576"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12566"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12582"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12564"/>
+					<ref type="next_chronologically" target="file12569"/>
+					<ref type="prev_chronologically" target="file12567"/>
+					<ref type="next_correspondence" target="file12576"/>
+					<ref type="prev_correspondence" target="file12566"/>
+					<ref type="next_correspondence_request" target="file12576"/>
+					<ref type="prev_correspondence_request" target="file12566"/>
+					<ref type="next_correspondence_reaction" target="file12620"/>
+					<ref type="prev_correspondence_reaction" target="file12563"/>
+					<ref type="next_same_sender" target="file12576"/>
+					<ref type="prev_same_sender" target="file12566"/>
+					<ref type="next_same_addressee" target="file12582"/>
+					<ref type="prev_same_addressee" target="file12564"/>
+					<ref type="next_with_sender_as_addressee" target="file12576"/>
+					<ref type="prev_with_sender_as_addressee" target="file12566"/>
+					<ref type="next_with_addressee_as_sender" target="file12582"/>
+					<ref type="prev_with_addressee_as_sender" target="file12564"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -144,46 +152,46 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">De Argentinensibus vel ego obscurius scripsi, vel a te, quę scripsi,<note xml:id="fn1" type="footnote" n="1">In Brief <ref target="file#12555">Nr. 2508</ref>,3-7. Dies hatte Bullingers bissigen Kommentar in <ref target="file#12563">Nr. 2516</ref>,1f, zur Folge, und erklärt wiederum vorliegenden Schlichtungsversuch.</note> non recte accipiuntur.</s>
-					<s xml:lang="la" type="auto">Nam a bonis sunt illa velut per querelam dicta, quod, cum res presentis belli sit communis etiam nobis, quidam<note xml:id="fn2" type="footnote" n="2">Vgl. schon <ref target="file#12555">Nr. 2508</ref>,32f.</note> sic agant, tanquam ad ipsos non pertineat.</s>
-					<s xml:lang="la" type="auto">Habent<note xml:id="fn3" type="footnote" n="3">Die Schmalkaldener.</note> Helvetios secum et eos certe in precio, nec facile sunt ipsos dimissuri, quamvis id petat, ut audio, dux Wirtenbergensis<note xml:id="fn4" type="footnote" n="4">Herzog Ulrich von Württemberg.</note>.</s>
-					<s xml:lang="la" type="auto">Nisi vero tabelliones haberent ius suum et securitatem eundi ac redeundi quocunque mittuntur, equidem, quos mittit antichristus,<note xml:id="fn5" type="footnote" n="5"><persName ref="154">Myconius</persName> denkt z.B. an den von Papst Paul III. in die Eidgenossenschaft gesandten Nuntius Girolamo Franco sowie an dessen Begleiter Albert Rosin.</note> necarem omnes!</s>
-					<s xml:lang="la" type="auto">Nihil etenim agunt in Helvetiis, nisi ut mala seminent et diremptos sic<pb type="edition" next="263"/> retineant.</s>
-					<s xml:lang="la" type="auto">Quę res quid tandem aliud feret quam interitum foederis nostri<note xml:id="fn6" type="footnote" n="6">Die eidgenössischen Eide.</note>?</s>
-					<s xml:lang="la" type="auto">Arbitrantur boni viri minas<note xml:id="fn7" type="footnote" n="7">Wohl die Drohung, Kaiser Karl V. würde die Eidgenossen strafen, wenn diese die bereits nach Deutschland gezogenen eidgenössischen Söldner nicht abrufen und ihn nicht unterstützen.</note> de auxiliando Carolo confictas, imo suggestas ab aliquo nostratium<note xml:id="fn8" type="footnote" n="8">Nämlich von den Befürwortern der Abberufung aller eidgenössischen Söldner; s. dazu die Verweise in <ref target="file#12552">Nr. 2505</ref>, Anm. 48.</note> - si terror queat retinere domi, qui alioqui exeunt ad Civitates<note xml:id="fn9" type="footnote" n="9">Gemeint sind die süddeutschen Städte des Schmalkaldischen Bundes.</note>.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">De Argentinensibus vel ego obscurius scripsi, vel a te, quę scripsi,<note xml:id="fn1" type="footnote" n="1">In Brief <ref target="file12555">Nr. 2508</ref>,3-7. Dies hatte Bullingers bissigen Kommentar in <ref target="file12563">Nr. 2516</ref>,1f, zur Folge, und erklärt wiederum vorliegenden Schlichtungsversuch.</note> non recte accipiuntur.</s>
+					<s n="3" xml:lang="la" type="auto">Nam a bonis sunt illa velut per querelam dicta, quod, cum res presentis belli sit communis etiam nobis, quidam<note xml:id="fn2" type="footnote" n="2">Vgl. schon <ref target="file12555">Nr. 2508</ref>,32f.</note> sic agant, tanquam ad ipsos non pertineat.</s>
+					<s n="4" xml:lang="la" type="auto">Habent<note xml:id="fn3" type="footnote" n="3">Die Schmalkaldener.</note> Helvetios secum et eos certe in precio, nec facile sunt ipsos dimissuri, quamvis id petat, ut audio, dux Wirtenbergensis<note xml:id="fn4" type="footnote" n="4">Herzog Ulrich von Württemberg.</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Nisi vero tabelliones haberent ius suum et securitatem eundi ac redeundi quocunque mittuntur, equidem, quos mittit antichristus,<note xml:id="fn5" type="footnote" n="5"><persName ref="person154">Myconius</persName> denkt z.B. an den von Papst Paul III. in die Eidgenossenschaft gesandten Nuntius Girolamo Franco sowie an dessen Begleiter Albert Rosin.</note> necarem omnes!</s>
+					<s n="6" xml:lang="la" type="auto">Nihil etenim agunt in Helvetiis, nisi ut mala seminent et diremptos sic<pb type="edition" next="263"/> retineant.</s>
+					<s n="7" xml:lang="la" type="auto">Quę res quid tandem aliud feret quam interitum foederis nostri<note xml:id="fn6" type="footnote" n="6">Die eidgenössischen Eide.</note>?</s>
+					<s n="8" xml:lang="la" type="auto">Arbitrantur boni viri minas<note xml:id="fn7" type="footnote" n="7">Wohl die Drohung, Kaiser Karl V. würde die Eidgenossen strafen, wenn diese die bereits nach Deutschland gezogenen eidgenössischen Söldner nicht abrufen und ihn nicht unterstützen.</note> de auxiliando Carolo confictas, imo suggestas ab aliquo nostratium<note xml:id="fn8" type="footnote" n="8">Nämlich von den Befürwortern der Abberufung aller eidgenössischen Söldner; s. dazu die Verweise in <ref target="file12552">Nr. 2505</ref>, Anm. 48.</note> - si terror queat retinere domi, qui alioqui exeunt ad Civitates<note xml:id="fn9" type="footnote" n="9">Gemeint sind die süddeutschen Städte des Schmalkaldischen Bundes.</note>.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Carolus persuasus est nostros non alio modo concurrere nunc, quam evenit anno 25. in tumultu rusticano<note xml:id="fn10" type="footnote" n="10">Im Bauernkrieg.</note>.</s>
-					<s xml:lang="la" type="auto">Quamobrem, dum adcurrunt veredarii nunciantes hoc captum, illud occupatum, etc., ridet his verbis:</s> 
-					<s xml:lang="de" type="manual">„Si sollents nit lang behalten; es gschach imm burenkrieg ouch also.“</s>
-					<s xml:lang="la" type="auto">Diligenter est itaque videndum, ne quid fiat temere vel securius, quam decet - id quod tamen erit futurum, cum dominum ex oculis non dimiserimus.</s>
+					<s n="9" xml:lang="la" type="auto">Carolus persuasus est nostros non alio modo concurrere nunc, quam evenit anno 25. in tumultu rusticano<note xml:id="fn10" type="footnote" n="10">Im Bauernkrieg.</note>.</s>
+					<s n="10" xml:lang="la" type="auto">Quamobrem, dum adcurrunt veredarii nunciantes hoc captum, illud occupatum, etc., ridet his verbis:</s> 
+					<s n="11" xml:lang="de" type="manual">„Si sollents nit lang behalten; es gschach imm burenkrieg ouch also.“</s>
+					<s n="12" xml:lang="la" type="auto">Diligenter est itaque videndum, ne quid fiat temere vel securius, quam decet - id quod tamen erit futurum, cum dominum ex oculis non dimiserimus.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Rogavi Gvaltherum,<note xml:id="fn11" type="footnote" n="11">In einem nicht erhaltenen, auch unten Z. 23f erwähnten Brief <persName ref="154">Myconius</persName>'.</note> ut scribat, si quid habet de Nurenbergensibus.</s>
-					<s xml:lang="la" type="auto">Nihil unquam illis hominibus tribuere potui<note xml:id="fn12" type="footnote" n="12">Vgl. <ref target="file#12548">Nr. 2501</ref>,3-5.</note>.</s>
-					<s xml:lang="la" type="auto">Et <persName ref="265">Zvinglius</persName> pię memorię semper habuit exosos ob loquacitatem<note xml:id="fn13" type="footnote" n="13">Vgl. z.B. <hi>Z</hi> IX 128,32: 538,15-17.</note> et insolentiam, qua sibi tribuebant primas in evangelio, cum tamen nil nisi de hoc garrirent.</s>
+					<s n="13" xml:lang="la" type="auto">Rogavi Gvaltherum,<note xml:id="fn11" type="footnote" n="11">In einem nicht erhaltenen, auch unten Z. 23f erwähnten Brief <persName ref="person154">Myconius</persName>'.</note> ut scribat, si quid habet de Nurenbergensibus.</s>
+					<s n="14" xml:lang="la" type="auto">Nihil unquam illis hominibus tribuere potui<note xml:id="fn12" type="footnote" n="12">Vgl. <ref target="file12548">Nr. 2501</ref>,3-5.</note>.</s>
+					<s n="15" xml:lang="la" type="auto">Et <persName ref="person265">Zvinglius</persName> pię memorię semper habuit exosos ob loquacitatem<note xml:id="fn13" type="footnote" n="13">Vgl. z.B. <hi>Z</hi> IX 128,32: 538,15-17.</note> et insolentiam, qua sibi tribuebant primas in evangelio, cum tamen nil nisi de hoc garrirent.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Vale in Christo cum domo tua.</s>
-					<s xml:lang="la" type="auto">Heri scripsi<note xml:id="fn14" type="footnote" n="14">Mit <ref target="file#12566">Nr. 2519</ref>.</note> reliqua.</s>
-					<s xml:lang="la" type="auto">De Coloniensi<note xml:id="fn15" type="footnote" n="15">Erzbischof <persName ref="2488">Hermann von Wied</persName>.</note> commisi Gvalthero.</s>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileę</placeName> raptim, ultima iulii anno 1546.</s>
+					<s n="16" xml:lang="la" type="auto">Vale in Christo cum domo tua.</s>
+					<s n="17" xml:lang="la" type="auto">Heri scripsi<note xml:id="fn14" type="footnote" n="14">Mit <ref target="file12566">Nr. 2519</ref>.</note> reliqua.</s>
+					<s n="18" xml:lang="la" type="auto">De Coloniensi<note xml:id="fn15" type="footnote" n="15">Erzbischof <persName ref="person2488">Hermann von Wied</persName>.</note> commisi Gvalthero.</s>
+					<s n="19" xml:lang="la" type="auto"><placeName ref="place97">Basileę</placeName> raptim, ultima iulii anno 1546.</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Tuus Os. <persName ref="154">Myconius</persName>.</s>
+					<s n="20" xml:lang="la" type="auto">Tuus Os. <persName ref="person154">Myconius</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Heinricho Bullingero doctissimo, in domino suo.</s>
+					<s n="21" xml:lang="la" type="auto">D. Heinricho Bullingero doctissimo, in domino suo.</s>
 				</p>
 			</div>
 		</body>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4414/308</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 371,683</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 371,683</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 88,150</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 88,150</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -61,50 +67,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3058">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1556-12-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1810" cert="low">
+					<!--
+					<persName ref="person1810" cert="low">
 						<forename cert="low">Konrad</forename>
 						<surname cert="low">Klauser</surname>
-						<addName type="main">Klauser (Clauser), Konrad</addName>
+						<persName type="main" ref="person8398>Klauser (Clauser), Konrad</addName>
 					</persName>
-					<place source="#69" cert="low">
-						<settlement>Brugg</settlement>
-						<district>Aargau</district>
-						<country>Schweiz</country>
-						<geo>47.47776 8.17798</geo>
-					</place>
+					-->
+					<persName ref="person1810" cert="low"/>
+					<place source="place69" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3059"/>
-					<ref type="prev_chronologically" target="files.xml#3057"/>
+					<ref type="next_chronologically" target="file3059"/>
+					<ref type="prev_chronologically" target="file3057"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#10226"/>
+					<ref type="prev_correspondence" target="file10226"/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10226"/>
-					<ref type="next_same_sender" target="files.xml#3062"/>
-					<ref type="prev_same_sender" target="files.xml#3048"/>
+					<ref type="prev_correspondence_reaction" target="file10226"/>
+					<ref type="next_same_sender" target="file3062"/>
+					<ref type="prev_same_sender" target="file3048"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#10226"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3062"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3048"/>
+					<ref type="prev_same_addressee" target="file10226"/>
+					<ref type="next_with_sender_as_addressee" target="file3062"/>
+					<ref type="prev_with_sender_as_addressee" target="file3048"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10226"/>
+					<ref type="prev_with_addressee_as_sender" target="file10226"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -121,41 +125,41 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">D. Conrado Clausero, ludi literarii magistro apud Brugas, S.</s>
+					<s n="1" xml:lang="la" type="auto">D. Conrado Clausero, ludi literarii magistro apud Brugas, S.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">D. Cum non uni mihi scripseris, Clausere, sed alios quoque concionatores, symmystas meos, causae, quam agis apud me per literas, involveris, non potui non iis quoque tuas communicare literas.</s>
-					<s xml:lang="la" type="auto">Nunquam hi vel tuis vel aliorum delatoribus nimis patulas prębuere aures.</s>
-					<s xml:lang="la" type="auto">immerito ergo non eius vitii accusas, quod omnes cau foedissimum exhorremus scientes nec leviter nec quibuslibet esse credendum.</s>
-					<s xml:lang="la" type="auto">Caeterum nemo fuit, qui te vel detulerit apud nos vel accusaverit, neque nostrum quisquam vel te vel tua apud quenquam detulit vel accusavit, tantum abest, ut miris palam convitiis scripta tua exagitaverit.</s>
-					<s xml:lang="la" type="auto">Dispice ergo Clausere, quis benignas aures oblatoribus prębeat, expende, qualibus animis excipere poteramus, quod cum eo nos coniungis, quem tu Ischarioten et proditorem tuum identidem appellitas.</s>
+					<s n="2" xml:lang="la" type="auto">D. Cum non uni mihi scripseris, Clausere, sed alios quoque concionatores, symmystas meos, causae, quam agis apud me per literas, involveris, non potui non iis quoque tuas communicare literas.</s>
+					<s n="3" xml:lang="la" type="auto">Nunquam hi vel tuis vel aliorum delatoribus nimis patulas prębuere aures.</s>
+					<s n="4" xml:lang="la" type="auto">immerito ergo non eius vitii accusas, quod omnes cau foedissimum exhorremus scientes nec leviter nec quibuslibet esse credendum.</s>
+					<s n="5" xml:lang="la" type="auto">Caeterum nemo fuit, qui te vel detulerit apud nos vel accusaverit, neque nostrum quisquam vel te vel tua apud quenquam detulit vel accusavit, tantum abest, ut miris palam convitiis scripta tua exagitaverit.</s>
+					<s n="6" xml:lang="la" type="auto">Dispice ergo Clausere, quis benignas aures oblatoribus prębeat, expende, qualibus animis excipere poteramus, quod cum eo nos coniungis, quem tu Ischarioten et proditorem tuum identidem appellitas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quid tibi cum d. Petro Sarctorio [Peter Schnyder] negocii sit, ignoramus penitus ideoque illud nec accusare nec excusare debemus.</s>
-					<s xml:lang="la" type="auto">Hactenus d. Petrum ut fratrem fidelemque ecclesiae ministrum dolemusque ex animo ita os?</s>
-					<s xml:lang="la" type="auto">disiunctos, imo odiose commissos esse, quos alioqui amicissime coniunctos esse oportuerat, minimeque arbitramur d. Petrum nos eius rei facere authores, quam tu illi impingis, quasi nobis impulsoribus fecerit, quod ipsum fecisse ais.</s>
-					<s xml:lang="la" type="auto">Aliquot nostrum librum tuum nunquam viderunt, qui viderunt et nonnulla in ipso degustarunt verius quam legerunt, nullis impetiverunt convitiis, nisi illud tibi convitium videatur, quod ego, ne quid animo hic dissimulem, nullo convitiandi animo dixi, invidere me tibi, quod tam multis de militia, professione a te alienissima disserueris, apud Sualbachios [Die Widmungsvorrede der Chalcondylas-Übers. von 1556 ist an Adam u. Otto Georg von Schwalbach gerichtet] rei militaris peritissimos, ne forte censores operarum nostrarum illud in te retorqueant, quod Cicero [Cic. de orat, Z, 75] author est Hannibalem in Phormionem peripateticum, et quod malim, si bellum inferri Turcis oporteat, reliquas bello claras gentes Germanis coniungi quam Germanos solos cum hoste potentissimo committi.</s>
-					<s xml:lang="la" type="auto">Proinde nullus nostrum ullam tibi irrogavit iniuriam, unde multo consultius acerbas illas tuas retinuisses literas nec cum amicis tuis beneficisque egisses veluti cum hostibus et male de te meritis.</s>
+					<s n="7" xml:lang="la" type="auto">Quid tibi cum d. Petro Sarctorio [Peter Schnyder] negocii sit, ignoramus penitus ideoque illud nec accusare nec excusare debemus.</s>
+					<s n="8" xml:lang="la" type="auto">Hactenus d. Petrum ut fratrem fidelemque ecclesiae ministrum dolemusque ex animo ita os?</s>
+					<s n="9" xml:lang="la" type="auto">disiunctos, imo odiose commissos esse, quos alioqui amicissime coniunctos esse oportuerat, minimeque arbitramur d. Petrum nos eius rei facere authores, quam tu illi impingis, quasi nobis impulsoribus fecerit, quod ipsum fecisse ais.</s>
+					<s n="10" xml:lang="la" type="auto">Aliquot nostrum librum tuum nunquam viderunt, qui viderunt et nonnulla in ipso degustarunt verius quam legerunt, nullis impetiverunt convitiis, nisi illud tibi convitium videatur, quod ego, ne quid animo hic dissimulem, nullo convitiandi animo dixi, invidere me tibi, quod tam multis de militia, professione a te alienissima disserueris, apud Sualbachios [Die Widmungsvorrede der Chalcondylas-Übers. von 1556 ist an Adam u. Otto Georg von Schwalbach gerichtet] rei militaris peritissimos, ne forte censores operarum nostrarum illud in te retorqueant, quod Cicero [Cic. de orat, Z, 75] author est Hannibalem in Phormionem peripateticum, et quod malim, si bellum inferri Turcis oporteat, reliquas bello claras gentes Germanis coniungi quam Germanos solos cum hoste potentissimo committi.</s>
+					<s n="11" xml:lang="la" type="auto">Proinde nullus nostrum ullam tibi irrogavit iniuriam, unde multo consultius acerbas illas tuas retinuisses literas nec cum amicis tuis beneficisque egisses veluti cum hostibus et male de te meritis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Scis iam, Clausere, quod scire expetebas tantopere et quod sic satis pro imperio sub finem literarum tuarum subiungebas: "Proinde fac, sciam et quam primum; nisi id fiat et vos mihi purgaveris, accusabo vos" etc.</s>
-					<s xml:lang="la" type="auto">Quin potius fac tu magis, ut nos sciamus, qua re peccaverimus aut peccemus in usu facultatum ecclesiasticarum.</s>
-					<s xml:lang="la" type="auto">Minaris enim te venturum Tigurum et nos coram senatu Tigurino accusaturum et, si non admittaris, ostensurum publice, quomodo nos ecclesiastę Tigurini plęrique bonis ecclesiasticis utamur.</s>
-					<s xml:lang="la" type="auto">Hoc quidem dudum facere te oportuerat.</s>
+					<s n="12" xml:lang="la" type="auto">Scis iam, Clausere, quod scire expetebas tantopere et quod sic satis pro imperio sub finem literarum tuarum subiungebas: "Proinde fac, sciam et quam primum; nisi id fiat et vos mihi purgaveris, accusabo vos" etc.</s>
+					<s n="13" xml:lang="la" type="auto">Quin potius fac tu magis, ut nos sciamus, qua re peccaverimus aut peccemus in usu facultatum ecclesiasticarum.</s>
+					<s n="14" xml:lang="la" type="auto">Minaris enim te venturum Tigurum et nos coram senatu Tigurino accusaturum et, si non admittaris, ostensurum publice, quomodo nos ecclesiastę Tigurini plęrique bonis ecclesiasticis utamur.</s>
+					<s n="15" xml:lang="la" type="auto">Hoc quidem dudum facere te oportuerat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nos tamen ne nunc quidem quicquam hic detrectamus.</s>
-					<s xml:lang="la" type="auto">Hactenus nihil sane huius neque a te, utpote amico et fratre nostro, neque a quoquam alio, ut qui nobis in hac causa bene conscii sumus, expectavimus.</s>
-					<s xml:lang="la" type="auto">Quia vero tua sponte, non provocatus a nobis, nulla nostra culpa, nullo nostro merito te ad certamen hoc offers, liberum tibi facimus, ut vel apud senatum amplissimum Tigurinae urbis, dominos nostros colendissimos, vel per colloquium libere nobiscum agas; benigne enim te audiemus et conferemus candide.</s>
+					<s n="16" xml:lang="la" type="auto">Nos tamen ne nunc quidem quicquam hic detrectamus.</s>
+					<s n="17" xml:lang="la" type="auto">Hactenus nihil sane huius neque a te, utpote amico et fratre nostro, neque a quoquam alio, ut qui nobis in hac causa bene conscii sumus, expectavimus.</s>
+					<s n="18" xml:lang="la" type="auto">Quia vero tua sponte, non provocatus a nobis, nulla nostra culpa, nullo nostro merito te ad certamen hoc offers, liberum tibi facimus, ut vel apud senatum amplissimum Tigurinae urbis, dominos nostros colendissimos, vel per colloquium libere nobiscum agas; benigne enim te audiemus et conferemus candide.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="19" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 4. decembris anno domini 1556.</s>
+					<s n="20" xml:lang="la" type="auto">Tiguri 4. decembris anno domini 1556.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus omnium Tigurinae urbis concionatorum nomine.</s>
+					<s n="21" xml:lang="la" type="auto">H. Bullingerus omnium Tigurinae urbis concionatorum nomine.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse: vgl. oben?]</note>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5957/45</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 367,139</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 367,139</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,13 +54,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 103,177</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 103,177</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -66,44 +72,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5229">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1562-03-16" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#705" cert="high">
+					<!--
+					<persName ref="person705" cert="high">
 						<forename cert="high">Felix</forename>
 						<surname cert="high">Cruciger</surname>
-						<addName type="main">Cruciger (Krzyzak), Felix</addName>
+						<persName type="main" ref="person8318>Cruciger (Krzyzak), Felix</addName>
 					</persName>
+					-->
+					<persName ref="person705" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5230"/>
-					<ref type="prev_chronologically" target="files.xml#5228"/>
+					<ref type="next_chronologically" target="file5230"/>
+					<ref type="prev_chronologically" target="file5228"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#4997"/>
+					<ref type="prev_correspondence" target="file4997"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#4997"/>
+					<ref type="prev_correspondence_request" target="file4997"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2912"/>
-					<ref type="next_same_sender" target="files.xml#5233"/>
-					<ref type="prev_same_sender" target="files.xml#5219"/>
+					<ref type="prev_correspondence_reaction" target="file2912"/>
+					<ref type="next_same_sender" target="file5233"/>
+					<ref type="prev_same_sender" target="file5219"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#4944"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5233"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5219"/>
+					<ref type="prev_same_addressee" target="file4944"/>
+					<ref type="next_with_sender_as_addressee" target="file5233"/>
+					<ref type="prev_with_sender_as_addressee" target="file5219"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#4944"/>
+					<ref type="prev_with_addressee_as_sender" target="file4944"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -112,37 +121,40 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="5229/Autograph/00 E_II_367__S__139_.tif" n="1"/>
+		<graphic url="5229/Autograph/01 E_II_367__S__139_a_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Literas tuas, vir ornatissime, ac seniorum ecclesiae Polonicae, reverendorum dominorum et fratrum meorum colendissimorum, datas Cracoviae 13. decembris mature satis accepi ac intellexi ex iis suspicari vos patere aures nostras delatoribus atque adeo et d. Martinum Czechorium ad nos fortassis detulisse quaedam.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Literas tuas, vir ornatissime, ac seniorum ecclesiae Polonicae, reverendorum dominorum et fratrum meorum colendissimorum, datas Cracoviae 13. decembris mature satis accepi ac intellexi ex iis suspicari vos patere aures nostras delatoribus atque adeo et d. Martinum Czechorium ad nos fortassis detulisse quaedam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">At iubeo hic sequros esse vos.</s>
+					<s n="3" xml:lang="la" type="auto">At iubeo hic sequros esse vos.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Martinus ille, vir bonus, quantum ego intellegere potui, ne verbo quidem minimo quenquam apud vos vituperavit, ecclesias ille Polonicas commendavit.</s>
-					<s xml:lang="la" type="auto">Verum est etiam accepisse me tunc literas a temet ipso subscriptas, optime Crucigere.</s>
-					<s xml:lang="la" type="auto">In his nihil est, quod a quoquam accusari possit, imo ut omnibus appareat, quales illę fuerint, et ne qui suspicentur alia ad me perscripta esse, quam re vera sunt, curavi epistolam transscribi a Polono quodam eandemque hic mitto, ut omnes palam videant nihil eese in illa epistola, cuius quenquam suppudere oporteat.</s>
-					<s xml:lang="la" type="auto">Ac miror vehementer, quo consilio postremis literis tantopere urgeant viri boni priores scriptas ad me a circumventis, cum nihil insit literis illis falsi.</s>
+					<s n="4" xml:lang="la" type="auto">Martinus ille, vir bonus, quantum ego intellegere potui, ne verbo quidem minimo quenquam apud vos vituperavit, ecclesias ille Polonicas commendavit.</s>
+					<s n="5" xml:lang="la" type="auto">Verum est etiam accepisse me tunc literas a temet ipso subscriptas, optime Crucigere.</s>
+					<s n="6" xml:lang="la" type="auto">In his nihil est, quod a quoquam accusari possit, imo ut omnibus appareat, quales illę fuerint, et ne qui suspicentur alia ad me perscripta esse, quam re vera sunt, curavi epistolam transscribi a Polono quodam eandemque hic mitto, ut omnes palam videant nihil eese in illa epistola, cuius quenquam suppudere oporteat.</s>
+					<s n="7" xml:lang="la" type="auto">Ac miror vehementer, quo consilio postremis literis tantopere urgeant viri boni priores scriptas ad me a circumventis, cum nihil insit literis illis falsi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si confessionem factam in posterioribus literis vere et syncere, ut credo, approbatis, priorem factam in literis prioribus improbare non potestis; quodsi una et eadem est mens utriusque, non video, cur tam solicite ad me scribere debueretis.</s>
-					<s xml:lang="la" type="auto">Cavete, fratres, cavete, ne per suspiciones dissidia inter vos excitentur; sed este concordes in syncera fide et caritate.</s>
-					<s xml:lang="la" type="auto">Dominus Iesus benedicat vobis et servet vos omnes!</s>
-					<s xml:lang="la" type="auto">Si qua in re vobis omnibus inservire possum, vester ero totus.</s>
+					<s n="8" xml:lang="la" type="auto">Si confessionem factam in posterioribus literis vere et syncere, ut credo, approbatis, priorem factam in literis prioribus improbare non potestis; quodsi una et eadem est mens utriusque, non video, cur tam solicite ad me scribere debueretis.</s>
+					<s n="9" xml:lang="la" type="auto">Cavete, fratres, cavete, ne per suspiciones dissidia inter vos excitentur; sed este concordes in syncera fide et caritate.</s>
+					<s n="10" xml:lang="la" type="auto">Dominus Iesus benedicat vobis et servet vos omnes!</s>
+					<s n="11" xml:lang="la" type="auto">Si qua in re vobis omnibus inservire possum, vester ero totus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Orate pro nobis dominum.</s>
+					<s n="12" xml:lang="la" type="auto">Orate pro nobis dominum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 16. martii 1562.</s>
+					<s n="13" xml:lang="la" type="auto">Tiguri 16. martii 1562.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Heinrychus Bullingerus, Tigurinae ecclesiae minister.</s>
+					<s n="14" xml:lang="la" type="auto">Heinrychus Bullingerus, Tigurinae ecclesiae minister.</s>
 				</p>
 				<p>
 					<note>[Abschrift von anderer Hand auf d. 3. Seite des Briefes an Cruciger etc. v. 13. Dez. 1561.]</note>

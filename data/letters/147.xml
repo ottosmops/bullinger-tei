@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">910</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,754</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,754</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,14 +54,17 @@
 				</msDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 66,229</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">dat.: Ende Mai 1548</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 66,229</idno>
+						<idno subtype="Hinweis">dat.: Ende Mai 1548</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -67,53 +73,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/147">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="low">
+					<!--
+					<persName ref="person392" cert="low">
 						<forename cert="low">Ambrosius</forename>
 						<surname cert="low">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#257" cert="low">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="low"/>
+					<place source="place257" cert="low"/>
 					<date when="1548-06-04" cert="low"><note>Beilage zu: 1548 Juni 4. (= ID 146); Datum der ersten Beilage unsicher</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#148"/>
-					<ref type="prev_chronologically" target="files.xml#146"/>
-					<ref type="next_correspondence" target="files.xml#148"/>
-					<ref type="prev_correspondence" target="files.xml#146"/>
-					<ref type="next_correspondence_request" target="files.xml#148"/>
-					<ref type="prev_correspondence_request" target="files.xml#146"/>
-					<ref type="next_correspondence_reaction" target="files.xml#311"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#13134"/>
-					<ref type="next_same_sender" target="files.xml#148"/>
-					<ref type="prev_same_sender" target="files.xml#146"/>
-					<ref type="next_same_addressee" target="files.xml#162"/>
-					<ref type="prev_same_addressee" target="files.xml#135"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#148"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#146"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#162"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#135"/>
-					<ref type="parent" target="files.xml#146"/>
+					<ref type="next_chronologically" target="file148"/>
+					<ref type="prev_chronologically" target="file146"/>
+					<ref type="next_correspondence" target="file148"/>
+					<ref type="prev_correspondence" target="file146"/>
+					<ref type="next_correspondence_request" target="file148"/>
+					<ref type="prev_correspondence_request" target="file146"/>
+					<ref type="next_correspondence_reaction" target="file311"/>
+					<ref type="prev_correspondence_reaction" target="file13134"/>
+					<ref type="next_same_sender" target="file148"/>
+					<ref type="prev_same_sender" target="file146"/>
+					<ref type="next_same_addressee" target="file162"/>
+					<ref type="prev_same_addressee" target="file135"/>
+					<ref type="next_with_sender_as_addressee" target="file148"/>
+					<ref type="prev_with_sender_as_addressee" target="file146"/>
+					<ref type="next_with_addressee_as_sender" target="file162"/>
+					<ref type="prev_with_addressee_as_sender" target="file135"/>
+					<ref type="parent" target="file146"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -123,38 +128,41 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="147/Autograph/00 E_II_357__fol__754_r_.tif" n="1"/>
+		<graphic url="147/Autograph/01 E_II_357__fol__754_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="de">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Auff 15. Maii hat kai[serlich] m[ajesta]t an ir herberg das Interim in beysein des königs und desselbigen son publicieren lassen, welchs gmainklich allso angenommen worden, ausgenomen das der margraff Hans von Brandenburg, des churfursten bruͦder, und hertzog Mauritz von Zwybrucken darwider protestiert und damitt den kaiser hart erzurnt habend.</s>
-					<s xml:lang="de" type="auto">Hertzog Mauritz hat ouch nitt bewilligen wellen, sonder gesagt, er hab seiner landtschafft verhaissen, sy by der relygion beleyben ze lassen etc.</s>
-					<s xml:lang="de" type="auto">Hertzog Ulrichs räth sollend darein ouch nitt bewilligt haben.</s>
-					<s xml:lang="de" type="auto">Die stett habend ain uffzugig antwurt geben, daruff kai[serlich] m[ajesta]t gesagt: sy versech sich, die stett werden ir m[ajesta]t kainen eintrag thain; daruff beschreiben sy yetz ainander, sich zuͦ entschliessen, was sy thain wellen.</s>
+					<s n="1" xml:lang="de" type="auto">Auff 15. Maii hat kai[serlich] m[ajesta]t an ir herberg das Interim in beysein des königs und desselbigen son publicieren lassen, welchs gmainklich allso angenommen worden, ausgenomen das der margraff Hans von Brandenburg, des churfursten bruͦder, und hertzog Mauritz von Zwybrucken darwider protestiert und damitt den kaiser hart erzurnt habend.</s>
+					<s n="2" xml:lang="de" type="auto">Hertzog Mauritz hat ouch nitt bewilligen wellen, sonder gesagt, er hab seiner landtschafft verhaissen, sy by der relygion beleyben ze lassen etc.</s>
+					<s n="3" xml:lang="de" type="auto">Hertzog Ulrichs räth sollend darein ouch nitt bewilligt haben.</s>
+					<s n="4" xml:lang="de" type="auto">Die stett habend ain uffzugig antwurt geben, daruff kai[serlich] m[ajesta]t gesagt: sy versech sich, die stett werden ir m[ajesta]t kainen eintrag thain; daruff beschreiben sy yetz ainander, sich zuͦ entschliessen, was sy thain wellen.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Es hat kai[serlich] m[ajesta]t ain treffeliche summa gellt an die stend begert; die sölle allso zuͦ ainem vorrath behalten werden, ob sich in kunfftig zeyt widerum in teutscher oder anderen nationen unruͦ zuͦtruͤg, das man etwas an der hand hette.</s>
+					<s n="5" xml:lang="de" type="auto">Es hat kai[serlich] m[ajesta]t ain treffeliche summa gellt an die stend begert; die sölle allso zuͦ ainem vorrath behalten werden, ob sich in kunfftig zeyt widerum in teutscher oder anderen nationen unruͦ zuͦtruͤg, das man etwas an der hand hette.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Der von Lyer ist verrytten zum landtgrauffen und anderschwahin etc. alls man achtet, ouch von des Interims wegen.</s>
-					<s xml:lang="de" type="auto">Hellt mans darfuͤr, wa er und der churfurst in diß Interim nitt bewilligind, werdind sy nymmer ledig.</s>
-					<s xml:lang="de" type="auto">Die niderösterreychischen land habend by den stenden angehalten um bauwung ettlicher vestinen und auch ettlicher besatzung.</s>
-					<s xml:lang="de" type="auto">Mitt denen zuͦ Prem wirt gehandelt gleych wie ouch mitt uns uff offnung und restitution; was weyter folgen, wirt die zeyt zuͦ erkennen geben.</s>
+					<s n="6" xml:lang="de" type="auto">Der von Lyer ist verrytten zum landtgrauffen und anderschwahin etc. alls man achtet, ouch von des Interims wegen.</s>
+					<s n="7" xml:lang="de" type="auto">Hellt mans darfuͤr, wa er und der churfurst in diß Interim nitt bewilligind, werdind sy nymmer ledig.</s>
+					<s n="8" xml:lang="de" type="auto">Die niderösterreychischen land habend by den stenden angehalten um bauwung ettlicher vestinen und auch ettlicher besatzung.</s>
+					<s n="9" xml:lang="de" type="auto">Mitt denen zuͦ Prem wirt gehandelt gleych wie ouch mitt uns uff offnung und restitution; was weyter folgen, wirt die zeyt zuͦ erkennen geben.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Dis ist meinen herren von iren gesandten geschriben worden.</s>
-					<s xml:lang="de" type="auto">Was ich euch yederzeyt allso schreib, mögt ir eweren herren allweg ouch lesen lassen, ist mir von meynen herren, den gehaimen, allso zuͦgelassen, es were dann, das ich euch etwa dabey anzögte, das ir ain sach in vertrauwen bey euch beleyben sollten lassen.</s>
-					<s xml:lang="de" type="auto">Bittend on underlaß sampt ewer kirchen fuͤr uns.</s>
+					<s n="10" xml:lang="de" type="auto">Dis ist meinen herren von iren gesandten geschriben worden.</s>
+					<s n="11" xml:lang="de" type="auto">Was ich euch yederzeyt allso schreib, mögt ir eweren herren allweg ouch lesen lassen, ist mir von meynen herren, den gehaimen, allso zuͦgelassen, es were dann, das ich euch etwa dabey anzögte, das ir ain sach in vertrauwen bey euch beleyben sollten lassen.</s>
+					<s n="12" xml:lang="de" type="auto">Bittend on underlaß sampt ewer kirchen fuͤr uns.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">[Separater Zette:] Es wirt euch der uberrüter ain ledle zuͦstellen; das wellt sampt den brieffen gen Klota schicken dem vogt.</s>
-					<s xml:lang="de" type="auto">Wa ir aber nitt bald bottschafft ze haben wissen, so schickts dem Marcell selbs gen Ror by aigner bottschafft.</s>
+					<s n="13" xml:lang="de" type="auto">[Separater Zette:] Es wirt euch der uberrüter ain ledle zuͦstellen; das wellt sampt den brieffen gen Klota schicken dem vogt.</s>
+					<s n="14" xml:lang="de" type="auto">Wa ir aber nitt bald bottschafft ze haben wissen, so schickts dem Marcell selbs gen Ror by aigner bottschafft.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si fieri ulla ratione potest, fac, mox Interim describatur; refert enim nostra, ut quamprimum remittatur; fiet autem istuc facile, si quinque aut sex adulescentes operas describendi inter se partiantur; tunc enim duabus aut tribus horis nullo negocio omnia absolverint.</s>
-					<s xml:lang="la" type="auto">Ego, nisi tam certus fuisset nuncius, hic describi curassem post dies aliquot tibi missurus exemplum.</s>
-					<s xml:lang="la" type="auto">Sed quum prioribus literis significaris te istuc valde desyderare, nolui diutius differre etc.</s>
+					<s n="15" xml:lang="la" type="auto">Si fieri ulla ratione potest, fac, mox Interim describatur; refert enim nostra, ut quamprimum remittatur; fiet autem istuc facile, si quinque aut sex adulescentes operas describendi inter se partiantur; tunc enim duabus aut tribus horis nullo negocio omnia absolverint.</s>
+					<s n="16" xml:lang="la" type="auto">Ego, nisi tam certus fuisset nuncius, hic describi curassem post dies aliquot tibi missurus exemplum.</s>
+					<s n="17" xml:lang="la" type="auto">Sed quum prioribus literis significaris te istuc valde desyderare, nolui diutius differre etc.</s>
 				</p>
 				<p>
 					<note type="signature">[Ohne Unterschrift.]</note>

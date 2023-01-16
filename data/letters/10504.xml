@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=469</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=469</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 368,514</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 368,514</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,11 +49,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Welches die Absicht des französischen <persName ref="859">Königs</persName> in bezug auf die
-								Situation der Kirche ist, hat Bullinger früher schon von du <persName ref="50">Bellay</persName>
+								Welches die Absicht des französischen Königs in bezug auf die
+								Situation der Kirche ist, hat Bullinger früher schon von du Bellay
 								erfahren. Es gibt Hoffnung, daß in der Religionsangelegenheit Einigkeit erreicht wird. Du
-								<persName ref="50">Bellay</persName> scheint es gut,
-								<persName ref="41">Ulrich Chelius</persName> nach Zürich zu entsenden, der weitere Ratschläge
+								Bellay scheint es gut,
+								<persName ref="person41">Ulrich Chelius</persName> nach Zürich zu entsenden, der weitere Ratschläge
 								übermitteln wird.
 							</p>
 						</summary>
@@ -68,36 +71,43 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10504">
 				<correspAction type="sent">
-					<persName ref="person#2298" cert="high">
+					<!--
+					<persName ref="person2298" cert="high">
 						<forename cert="high">Guillaume</forename>
 						<surname cert="high">Du Bellay, Seigneur de Langey</surname>
 					</persName>
-					<place source="#378" cert="high">
-						<settlement>Paris</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.8566 2.35166</geo>
-					</place>
+					-->
+					<persName ref="person2298" cert="high"/>
+					<place source="place378" cert="high"/>
 					<date when="1534-10-31" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2508" cert="high">
+					<!--
+					<persName ref="person2508" cert="high">
 						<forename cert="high">Konrad</forename>
 						<surname cert="high">Pellikan</surname>
-						<addName type="main">Pellikan (Kürschner), Konrad</addName>
+						<persName type="main" ref="person8127>Pellikan (Kürschner), Konrad</addName>
 						<graphic type="portrait" url="portraits/2514_Pelikan_Konrad.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Konrad_Pellikan"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118739867"/>
 					</persName>
-					<persName ref="person#495" cert="high">
+					-->
+					<persName ref="person2508" cert="high"/>
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10505"/>
-					<ref type="prev_chronologically" target="files.xml#10503"/>
+					<ref type="next_chronologically" target="file10505"/>
+					<ref type="prev_chronologically" target="file10503"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -106,12 +116,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10515"/>
-					<ref type="prev_same_addressee" target="files.xml#10366"/>
+					<ref type="next_same_addressee" target="file10515"/>
+					<ref type="prev_same_addressee" target="file10366"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10515"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10366"/>
+					<ref type="next_with_addressee_as_sender" target="file10515"/>
+					<ref type="prev_with_addressee_as_sender" target="file10366"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -120,30 +130,33 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="10504/Autograph/00 E_II_368__S__514_.tif" n="1"/>
+		<graphic url="10504/Autograph/01 E_II_368__S__515_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S. D. quae sit regis mei<note xml:id="fn1" type="footnote" n="1"><persName ref="859">König Franz</persName> I. von <placeName ref="11">Frankreich</placeName>.</note> circa statum ecclesię componendum mens, sensus, animus et cogitatio, antea quidem ex me audivistis<note xml:id="fn2" type="footnote" n="2">Wohl anläßlich von du <persName ref="50">Bellays</persName> Besuch in Zürich im Mai 1534, s. Bullingers Bericht an <persName ref="154">Myconius</persName>, oben S. 179f, 27-53, und an <persName ref="226">Vadian</persName>, oben S. 183, 2-17. Der Sondergesandte des französischen <persName ref="859">Königs</persName> propagierte in Zürich die Idee einer Vereinigung der deutschen Protestanten mit <placeName ref="11">Frankreich</placeName>, wobei er an einem Ausgleich zwischen Lutheranern und Zwinglianern interessiert war, sowie den Gedanken der Einberufung eines allgemeinen Konzils zur Überwindung der kirchlichen Spaltung, s. noch <hi>Zürcher</hi> 57.</note>.</s>
-					<s xml:lang="la" type="auto">Res ipsa etiam brevi fidem est factura, neque non haud<note xml:id="fna" type="footnote" n="a">haud <hi>übergeschrieben.</hi></note> parvus illi stimulus est additus aut spes potius iniecta conficiendi ex bonorum sententia negocii, quod ex verbis vestris<note xml:id="fn3" type="footnote" n="3">Zu Bullingers und <persName ref="165">Pellikans</persName> zurückhaltender Antwort auf du <persName ref="50">Bellays</persName> Vorschläge s. oben S. 179f, 33-45 und 183, 10-17.</note> illum docuerim multa tempus, multa vestrum aliquot consilium mollivisse, quę ut duriora nostris videbantur, ita sarciendę unitati moram afferebant.</s>
-					<s xml:lang="la" type="auto">Interim mihi et re ipsa fore visum est, si hunc ad vos D. <persName ref="265">Ulricum</persName> Chęlium<note xml:id="fn4" type="footnote" n="4"><persName ref="41">Ulrich Chelius</persName> (Geiger), gest. 1561, stammte aus <placeName ref="849">Pforzheim</placeName>, studierte in <placeName ref="1205">Wittenberg</placeName> und war Famulus des <persName ref="1787">Paracelsus</persName>. Seit 1529 ist er als Stadtarzt in <placeName ref="83">Solothurn</placeName> nachweisbar, wo er auch als Leibarzt des französischen Gesandten de <persName ref="487">Boisrigaut</persName> wirkte. Als Anhänger des evangelischen Glaubens verließ er <placeName ref="83">Solothurn</placeName> offenbar nach dem Scheitern der Reformation im Herbst 1533 und ging nach <placeName ref="1049">Straßburg</placeName>. Von dort aus war er als Agent der beiden Brüder <persName ref="724">Jean</persName> und <persName ref="50">Guillaume</persName> du <persName ref="50">Bellay</persName> tätig. Im Auftrag von <placeName ref="1049">Straßburg</placeName> unternahm er wiederholt diplomatische Missionen, war 1539 als Gesandter am kaiserlichen Hof in <placeName ref="29">Spanien</placeName>, 1541 am Reichstag in <placeName ref="880">Regensburg</placeName>, 1542 an jenem in <placeName ref="1001">Speyer</placeName>. Dabei brachte ihn seine fortgesetzte Tatigkeit für die Interessen <placeName ref="11">Frankreichs</placeName> immer wieder in Konflikt mit den Parteigängern des Kaisers. 1555 wurde er Leibarzt des Kurfürsten <persName ref="884">Friedrich</persName> von der <persName ref="884">Pfalz</persName>. Unter dem Pseudonym «Petermann» korrespondierte er mit <placeName ref="97">Basels</placeName> Bürgermeister <persName ref="1642">Bernhard Meyer</persName>. - Lit.: ASchweizerRef II 1854; PC IV/I 37. 165. 229f. 712. 719 und Reg.; Oekolampad BA II 1006, Anm. 3; Handschriftenproben des sechzehnten Jahrhunderts nach <placeName ref="1049">Straßburger</placeName> Originalen, hg. v. Johannes Ficker und Otto Winckelmann, Bd. I, <placeName ref="1049">Straßburg</placeName> 1902, S. 25; Z XI 220, Anm. 11; Felix Platter, Tagebuch (Lebensbeschreibung) 1536-1567, hg. v. Valentin Lötscher, <placeName ref="97">Basel</placeName>-Stuttgart 1976. - Basler Chroniken 10, S. 218, Anm. 552.</note> dimitterem<note xml:id="fn5" type="footnote" n="5">Der hier angekündigte Besuch von <persName ref="41">Chelius</persName> in Zürich fand am 17. Januar 1535 statt, s. <hi>Seidel</hi> 78f.</note>, qui et nonnullorum super eo negocio consilia et cogitationes<pb type="edition" next="388"/> vobis communicet et ad eandem vos adhortetur curam, quę maxime omnium, etiam omnium esse debet.</s>
+					<s n="1" xml:lang="la" type="auto">S. D. quae sit regis mei<note xml:id="fn1" type="footnote" n="1">König <persName ref="person859">Franz I.</persName> von <placeName ref="place11">Frankreich</placeName>.</note> circa statum ecclesię componendum mens, sensus, animus et cogitatio, antea quidem ex me audivistis<note xml:id="fn2" type="footnote" n="2">Wohl anläßlich von du Bellays Besuch in Zürich im Mai 1534, s. Bullingers Bericht an <persName ref="person154">Myconius</persName>, oben S. 179f, 27-53, und an <persName ref="person226">Vadian</persName>, oben S. 183, 2-17. Der Sondergesandte des französischen Königs propagierte in Zürich die Idee einer Vereinigung der deutschen Protestanten mit <placeName ref="place11">Frankreich</placeName>, wobei er an einem Ausgleich zwischen Lutheranern und Zwinglianern interessiert war, sowie den Gedanken der Einberufung eines allgemeinen Konzils zur Überwindung der kirchlichen Spaltung, s. noch <hi>Zürcher</hi> 57.</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Res ipsa etiam brevi fidem est factura, neque non haud<note xml:id="fna" type="footnote" n="a">haud <hi>übergeschrieben.</hi></note> parvus illi stimulus est additus aut spes potius iniecta conficiendi ex bonorum sententia negocii, quod ex verbis vestris<note xml:id="fn3" type="footnote" n="3">Zu Bullingers und <persName ref="person165">Pellikans</persName> zurückhaltender Antwort auf du Bellays Vorschläge s. oben S. 179f, 33-45 und 183, 10-17.</note> illum docuerim multa tempus, multa vestrum aliquot consilium mollivisse, quę ut duriora nostris videbantur, ita sarciendę unitati moram afferebant.</s>
+					<s n="3" xml:lang="la" type="auto">Interim mihi et re ipsa fore visum est, si hunc ad vos D. <persName ref="person265">Ulricum</persName> Chęlium<note xml:id="fn4" type="footnote" n="4"><persName ref="person41">Ulrich Chelius</persName> (Geiger), gest. 1561, stammte aus <placeName ref="place849">Pforzheim</placeName>, studierte in <placeName ref="place1205">Wittenberg</placeName> und war Famulus des <persName ref="person1787">Paracelsus</persName>. Seit 1529 ist er als Stadtarzt in <placeName ref="place83">Solothurn</placeName> nachweisbar, wo er auch als Leibarzt des französischen Gesandten de <persName ref="person487">Boisrigaut</persName> wirkte. Als Anhänger des evangelischen Glaubens verließ er <placeName ref="place83">Solothurn</placeName> offenbar nach dem Scheitern der Reformation im Herbst 1533 und ging nach <placeName ref="place1049">Straßburg</placeName>. Von dort aus war er als Agent der beiden Brüder Jean und Guillaume du Bellay tätig. Im Auftrag von <placeName ref="place1049">Straßburg</placeName> unternahm er wiederholt diplomatische Missionen, war 1539 als Gesandter am kaiserlichen Hof in <placeName ref="place29">Spanien</placeName>, 1541 am Reichstag in <placeName ref="place880">Regensburg</placeName>, 1542 an jenem in <placeName ref="place1001">Speyer</placeName>. Dabei brachte ihn seine fortgesetzte Tatigkeit für die Interessen <placeName ref="place11">Frankreichs</placeName> immer wieder in Konflikt mit den Parteigängern des Kaisers. 1555 wurde er Leibarzt des Kurfürsten Friedrich von der Pfalz. Unter dem Pseudonym «Petermann» korrespondierte er mit <placeName ref="place97">Basels</placeName> Bürgermeister Bernhard <persName ref="person1642">Meyer</persName>. - Lit.: ASchweizerRef II 1854; PC IV/I 37. 165. 229f. 712. 719 und Reg.; Oekolampad BA II 1006, Anm. 3; Handschriftenproben des sechzehnten Jahrhunderts nach <placeName ref="place1049">Straßburger</placeName> Originalen, hg. v. Johannes Ficker und Otto Winckelmann, Bd. I, <placeName ref="place1049">Straßburg</placeName> 1902, S. 25; Z XI 220, Anm. 11; Felix Platter, Tagebuch (Lebensbeschreibung) 1536-1567, hg. v. Valentin Lötscher, <placeName ref="place97">Basel</placeName>-Stuttgart 1976. - Basler Chroniken 10, S. 218, Anm. 552.</note> dimitterem<note xml:id="fn5" type="footnote" n="5">Der hier angekündigte Besuch von <persName ref="person41">Chelius</persName> in Zürich fand am 17. Januar 1535 statt, s. <hi>Seidel</hi> 78f.</note>, qui et nonnullorum super eo negocio consilia et cogitationes<pb type="edition" next="388"/> vobis communicet et ad eandem vos adhortetur curam, quę maxime omnium, etiam omnium esse debet.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valete.</s>
+					<s n="4" xml:lang="la" type="auto">Valete.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex Lutęcia <placeName ref="836">Parisiorum</placeName>, pridie calendas novembris 1534.</s>
+					<s n="5" xml:lang="la" type="auto">Ex Lutęcia <placeName ref="place836">Parisiorum</placeName>, pridie calendas novembris 1534.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vobis ex animo deditissimus</s>
+					<s n="6" xml:lang="la" type="auto">Vobis ex animo deditissimus</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="50">Gulielmus Bellaius</persName>.</s>
+					<s n="7" xml:lang="la" type="auto"><persName ref="person50">Gulielmus Bellaius</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Eruditissimis viris d. d. Corrado [!] <persName ref="165">Pellicano</persName> et Henrico Bullingero<note xml:id="fnb" type="footnote" n="b"><hi>darunter von Bullingers Hand:</hi> Guil. Bellaius, Langii dominus.</note>.</s>
+					<s n="8" xml:lang="la" type="auto">Eruditissimis viris d. d. Corrado [!] <persName ref="person165">Pellicano</persName> et Henrico Bullingero<note xml:id="fnb" type="footnote" n="b"><hi>darunter von Bullingers Hand:</hi> Guil. Bellaius, Langii dominus.</note>.</s>
 				</p>
 			</div>
 		</body>

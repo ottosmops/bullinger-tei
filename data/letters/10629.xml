@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=591</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=591</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 313,8r</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 313,8r</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,11 +50,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								<persName ref="923">Hans Füßli</persName>, der an einem Zweitagefieber leidet, ist nicht in
-								Lebensgefahr; sollte er dennoch sterben, wird Bullinger an <persName ref="211">Stumpfs</persName>
-								Brief [<ref target="file#10628">Nr. 590</ref>] denken. Hat <persName ref="1776">Georg Ottlis</persName>
-								Aufzeichnung erhalten und wird für <persName ref="211">Stumpf</persName> die Schlacht [am
-								<placeName ref="435">Gubel</placeName>] darstellen; sollte er nicht dazu kommen, wird er ihm die
+								<persName ref="person923">Hans Füßli</persName>, der an einem Zweitagefieber leidet, ist nicht in
+								Lebensgefahr; sollte er dennoch sterben, wird Bullinger an <persName ref="person211">Stumpfs</persName>
+								Brief [<ref target="file10628">Nr. 590</ref>] denken. Hat <persName ref="person1776">Georg Ottlis</persName>
+								Aufzeichnung erhalten und wird für <persName ref="person211">Stumpf</persName> die Schlacht [am
+								<placeName ref="place435">Gubel</placeName>] darstellen; sollte er nicht dazu kommen, wird er ihm die
 								Unterlagen überlassen.
 							</p>
 						</summary>
@@ -69,45 +72,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10629">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1535-06-11" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3067" cert="high">
+					<!--
+					<persName ref="person3067" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Stumpf</surname>
 						<graphic type="portrait" url="portraits/3066_Stumpf_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Stumpf"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118757555"/>
 					</persName>
+					-->
+					<persName ref="person3067" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10630"/>
-					<ref type="prev_chronologically" target="files.xml#10628"/>
-					<ref type="next_correspondence" target="files.xml#10657"/>
-					<ref type="prev_correspondence" target="files.xml#10628"/>
-					<ref type="next_correspondence_request" target="files.xml#10658"/>
-					<ref type="prev_correspondence_request" target="files.xml#10536"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10657"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10628"/>
-					<ref type="next_same_sender" target="files.xml#10632"/>
-					<ref type="prev_same_sender" target="files.xml#10619"/>
-					<ref type="next_same_addressee" target="files.xml#10657"/>
-					<ref type="prev_same_addressee" target="files.xml#10628"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10632"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10619"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10657"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10628"/>
+					<ref type="next_chronologically" target="file10630"/>
+					<ref type="prev_chronologically" target="file10628"/>
+					<ref type="next_correspondence" target="file10657"/>
+					<ref type="prev_correspondence" target="file10628"/>
+					<ref type="next_correspondence_request" target="file10658"/>
+					<ref type="prev_correspondence_request" target="file10536"/>
+					<ref type="next_correspondence_reaction" target="file10657"/>
+					<ref type="prev_correspondence_reaction" target="file10628"/>
+					<ref type="next_same_sender" target="file10632"/>
+					<ref type="prev_same_sender" target="file10619"/>
+					<ref type="next_same_addressee" target="file10657"/>
+					<ref type="prev_same_addressee" target="file10628"/>
+					<ref type="next_with_sender_as_addressee" target="file10632"/>
+					<ref type="prev_with_sender_as_addressee" target="file10619"/>
+					<ref type="next_with_addressee_as_sender" target="file10657"/>
+					<ref type="prev_with_addressee_as_sender" target="file10628"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -121,28 +128,28 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Heinricus Bullingerus <persName ref="211">Ioanni Stumpfio</persName> suo<note xml:id="fna" type="footnote" n="a"><hi>Von</hi> Heinricus <hi>bis</hi> suo <hi>mit roter Tinte geschrieben, von <persName ref="211">Stumpfs</persName> Hand.</hi></note>.</s>
+					<s n="1" xml:lang="la" type="auto">Heinricus Bullingerus <persName ref="person211">Ioanni Stumpfio</persName> suo<note xml:id="fna" type="footnote" n="a"><hi>Von</hi> Heinricus <hi>bis</hi> suo <hi>mit roter Tinte geschrieben, von <persName ref="person211">Stumpfs</persName> Hand.</hi></note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem etc.</s>
+					<s n="2" xml:lang="la" type="auto">Gratiam et pacem etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Recte valet <persName ref="923">Füeßlius</persName><note xml:id="fnb" type="footnote" n="b"><hi>von <persName ref="211">Stumpf</persName> am Rande:</hi> <persName ref="923">Ioannes Füßli</persName>, civis Tigurinus.</note><note xml:id="fn1" type="footnote" n="1"><persName ref="923">Hans Füßli</persName>.</note>, charissimus frater, sequundana modo febri obnoxius nonnihil laborat.</s>
-					<s xml:lang="la" type="auto">De vita non est periculum.</s>
-					<s xml:lang="la" type="auto">Ac si vocaretur a domino, memor ero literarum tuarum<note xml:id="fn2" type="footnote" n="2"><persName ref="211">Johannes Stumpf</persName> an Bullinger, 9. Juni 1535 (oben <ref target="file#10628">Nr. 590</ref>).</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Recte valet <persName ref="person923">Füeßlius</persName><note xml:id="fnb" type="footnote" n="b"><hi>von <persName ref="person211">Stumpf</persName> am Rande:</hi> Ioannes <persName ref="person923">Füßli</persName>, civis Tigurinus.</note><note xml:id="fn1" type="footnote" n="1"><persName ref="person923">Hans Füßli</persName>.</note>, charissimus frater, sequundana modo febri obnoxius nonnihil laborat.</s>
+					<s n="4" xml:lang="la" type="auto">De vita non est periculum.</s>
+					<s n="5" xml:lang="la" type="auto">Ac si vocaretur a domino, memor ero literarum tuarum<note xml:id="fn2" type="footnote" n="2"><persName ref="person211">Johannes Stumpf</persName> an Bullinger, 9. Juni 1535 (oben <ref target="file10628">Nr. 590</ref>).</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Georgius Ottelius scriptam historiam<note xml:id="fn3" type="footnote" n="3">Zu <persName ref="1776">Georg Ottlis</persName> Bericht über die Schlacht am <placeName ref="435">Gubel</placeName> vgl. ebd., Z. 14-17 und Anm. 10.</note> mihi ante mensem propemodum tradidit.</s>
-					<s xml:lang="la" type="auto">Perscrutatus sum etiam ipse quaedam a parte adversa.</s>
-					<s xml:lang="la" type="auto">Conor ipse tibi faciem eius pugnae delineare.</s>
-					<s xml:lang="la" type="auto">Negotia hactenus prohibuere.</s>
-					<s xml:lang="la" type="auto">Ubi non potero brevi absolvere, fragmenta mittam, ex quibus tu sarcias omnia.</s>
+					<s n="6" xml:lang="la" type="auto">Georgius Ottelius scriptam historiam<note xml:id="fn3" type="footnote" n="3">Zu <persName ref="person1776">Georg Ottlis</persName> Bericht über die Schlacht am <placeName ref="place435">Gubel</placeName> vgl. ebd., Z. 14-17 und Anm. 10.</note> mihi ante mensem propemodum tradidit.</s>
+					<s n="7" xml:lang="la" type="auto">Perscrutatus sum etiam ipse quaedam a parte adversa.</s>
+					<s n="8" xml:lang="la" type="auto">Conor ipse tibi faciem eius pugnae delineare.</s>
+					<s n="9" xml:lang="la" type="auto">Negotia hactenus prohibuere.</s>
+					<s n="10" xml:lang="la" type="auto">Ubi non potero brevi absolvere, fragmenta mittam, ex quibus tu sarcias omnia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valebis, charissime frater.</s>
+					<s n="11" xml:lang="la" type="auto">Valebis, charissime frater.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">11. iunii 1535.</s>
+					<s n="12" xml:lang="la" type="auto">11. iunii 1535.</s>
 				</p>
 			</div>
 		</body>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2444</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,375</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,375</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 75,20</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 75,20</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -68,52 +74,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1279">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="low">
+					<!--
+					<persName ref="person392" cert="low">
 						<forename cert="low">Ambrosius</forename>
 						<surname cert="low">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#555" cert="low">
-						<settlement>Winterthur</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.50564 8.72413</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="low"/>
+					<place source="place555" cert="low"/>
 					<date when="1551-05-11" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1280"/>
-					<ref type="prev_chronologically" target="files.xml#1278"/>
-					<ref type="next_correspondence" target="files.xml#1281"/>
-					<ref type="prev_correspondence" target="files.xml#1274"/>
-					<ref type="next_correspondence_request" target="files.xml#1281"/>
-					<ref type="prev_correspondence_request" target="files.xml#1274"/>
-					<ref type="next_correspondence_reaction" target="files.xml#1410"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1135"/>
-					<ref type="next_same_sender" target="files.xml#1281"/>
-					<ref type="prev_same_sender" target="files.xml#1274"/>
-					<ref type="next_same_addressee" target="files.xml#1284"/>
-					<ref type="prev_same_addressee" target="files.xml#1277"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1281"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1274"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1284"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1277"/>
+					<ref type="next_chronologically" target="file1280"/>
+					<ref type="prev_chronologically" target="file1278"/>
+					<ref type="next_correspondence" target="file1281"/>
+					<ref type="prev_correspondence" target="file1274"/>
+					<ref type="next_correspondence_request" target="file1281"/>
+					<ref type="prev_correspondence_request" target="file1274"/>
+					<ref type="next_correspondence_reaction" target="file1410"/>
+					<ref type="prev_correspondence_reaction" target="file1135"/>
+					<ref type="next_same_sender" target="file1281"/>
+					<ref type="prev_same_sender" target="file1274"/>
+					<ref type="next_same_addressee" target="file1284"/>
+					<ref type="prev_same_addressee" target="file1277"/>
+					<ref type="next_with_sender_as_addressee" target="file1281"/>
+					<ref type="prev_with_sender_as_addressee" target="file1274"/>
+					<ref type="next_with_addressee_as_sender" target="file1284"/>
+					<ref type="prev_with_addressee_as_sender" target="file1277"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -131,33 +136,33 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Mitto ad te responsionem qualemcumque meam ad quaestionem illam, quam nosti; eam rogo ut remittas; nam ut describerem omnino non vacavit.</s>
-					<s xml:lang="la" type="auto">Nudiusquintus habere me putabam, qui istuc hinc abiret; sed ille mutato consilio alio deflexit.</s>
-					<s xml:lang="la" type="auto">De Cęsare, quę hodie ab amico quodam insigni accepi, ad te mitto.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Mitto ad te responsionem qualemcumque meam ad quaestionem illam, quam nosti; eam rogo ut remittas; nam ut describerem omnino non vacavit.</s>
+					<s n="3" xml:lang="la" type="auto">Nudiusquintus habere me putabam, qui istuc hinc abiret; sed ille mutato consilio alio deflexit.</s>
+					<s n="4" xml:lang="la" type="auto">De Cęsare, quę hodie ab amico quodam insigni accepi, ad te mitto.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Fuit mecum egregius quidam pictor Augustensis, qui C[aesarem] subinde libere accedit, quod opera et artificio ipsius multum se oblectare soleat Carolus.</s>
-					<s xml:lang="la" type="auto">Is constantissime ac multis asseverat fieri nulla ratione posse, ut ultra mensem unum atque alterum spiritum ducat; quo verisimilius iam mihi fit, quod hic amicus ad me scribit.</s>
+					<s n="5" xml:lang="la" type="auto">Fuit mecum egregius quidam pictor Augustensis, qui C[aesarem] subinde libere accedit, quod opera et artificio ipsius multum se oblectare soleat Carolus.</s>
+					<s n="6" xml:lang="la" type="auto">Is constantissime ac multis asseverat fieri nulla ratione posse, ut ultra mensem unum atque alterum spiritum ducat; quo verisimilius iam mihi fit, quod hic amicus ad me scribit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Philippum longiores constituto moras nectere Augustę, quod pater animam iam agere putetur.</s>
-					<s xml:lang="la" type="auto">Dominus illum a Romano ad cęleste regnum clementer transferat, id quod cum omnium bonorum bona gratia fecerit!</s>
-					<s xml:lang="de" type="auto">Verlich im gott ain guͦte, fröliche himelfart!</s>
-					<s xml:lang="de" type="auto">Ich wellt danecht nitt, das in der teuffel hinfuͤrte.</s>
+					<s n="7" xml:lang="la" type="auto">Philippum longiores constituto moras nectere Augustę, quod pater animam iam agere putetur.</s>
+					<s n="8" xml:lang="la" type="auto">Dominus illum a Romano ad cęleste regnum clementer transferat, id quod cum omnium bonorum bona gratia fecerit!</s>
+					<s n="9" xml:lang="de" type="auto">Verlich im gott ain guͦte, fröliche himelfart!</s>
+					<s n="10" xml:lang="de" type="auto">Ich wellt danecht nitt, das in der teuffel hinfuͤrte.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tu ora pro nobis diligenter.</s>
-					<s xml:lang="la" type="auto">Adest hic adolescens praeter meam expectationem, qui multum festinat.</s>
-					<s xml:lang="la" type="auto">Literas, quas misisti, per pictorem illum ad Welserum nostrum dedi.</s>
-					<s xml:lang="la" type="auto">Bene vale iterum atque iterum.</s>
-					<s xml:lang="la" type="auto">11. maii 1551.</s>
+					<s n="11" xml:lang="la" type="auto">Tu ora pro nobis diligenter.</s>
+					<s n="12" xml:lang="la" type="auto">Adest hic adolescens praeter meam expectationem, qui multum festinat.</s>
+					<s n="13" xml:lang="la" type="auto">Literas, quas misisti, per pictorem illum ad Welserum nostrum dedi.</s>
+					<s n="14" xml:lang="la" type="auto">Bene vale iterum atque iterum.</s>
+					<s n="15" xml:lang="la" type="auto">11. maii 1551.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">T[uus] Ambr[osius] Bl[aurerus].</s>
+					<s n="16" xml:lang="la" type="auto">T[uus] Ambr[osius] Bl[aurerus].</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">An herrn Bullinger zuͦ Zurich.</s>
+					<s n="17" xml:lang="de" type="auto">An herrn Bullinger zuͦ Zurich.</s>
 				</p>
 			</div>
 		</body>

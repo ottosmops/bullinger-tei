@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#492">Strassburg</settlement>
-						<institution>Sammlung Thesaurus Baumianus</institution>
-						<idno type="Kopie">STB Bd. XLIX 67* ABB</idno>
-						<repository ref="archive#83">
+						<!--
+						<repository ref="archive83">
 							<name>Strassburg STB</name>
-							<note type="Hinweis">* Nur Verweis auf die Überlieferung in Basel UB [Auflösung der verwirrlichen Bemerkung durch StA] [Internat]</note>
 							<ref target="https://archive.org/details/thesaurusbaumian00fickuoft"/>
 						</repository>
+						<settlement ref="place492">Strassburg</settlement>
+						<institution>Sammlung Thesaurus Baumianus</institution>
+						-->
+						<repository ref="archive83"/>
+						<idno subtype="Kopie">STB Bd. XLIX 67* ABB</idno>
+						<idno subtype="Hinweis">* Nur Verweis auf die Überlieferung in Basel UB [Auflösung der verwirrlichen Bemerkung durch StA] [Internat]</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents/>
@@ -25,14 +28,17 @@
 				</msDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#28">Basel</settlement>
-						<institution>Universitätsbibliothek</institution>
-						<idno type="Kopie">GI 18.1, fo 40</idno>
-						<repository ref="archive#6">
+						<!--
+						<repository ref="archive6">
 							<name>Basel UB</name>
-							<note type="Hinweis">= 1549 Juli 31.</note>
 							<ref target="https://ub.unibas.ch/de"/>
 						</repository>
+						<settlement ref="place28">Basel</settlement>
+						<institution>Universitätsbibliothek</institution>
+						-->
+						<repository ref="archive6"/>
+						<idno subtype="Kopie">GI 18.1, fo 40</idno>
+						<idno subtype="Hinweis">= 1549 Juli 31.</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -41,46 +47,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/391">
 				<correspAction type="sent">
-					<persName ref="person#3012" cert="low">
+					<!--
+					<persName ref="person3012" cert="low">
 						<forename cert="low">Laelius</forename>
 						<surname cert="low">Sozin</surname>
-						<addName type="main">Sozzini (Socinus), Lelio</addName>
+						<persName type="main" ref="person8101>Sozzini (Socinus), Lelio</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Lelio_Sozzini"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118615823"/>
 					</persName>
-					<place source="#28" cert="low">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
-					<date when="1549-00-00" cert="low"><note>siehe: 31. Juli 1549 (= ID 611)</note></date>
+					-->
+					<persName ref="person3012" cert="low"/>
+					<place source="place28" cert="low"/>
+					<date notBefore="1549-01-01" notAfter="1549-12-12" cert="low"><note>siehe: 31. Juli 1549 (= ID 611)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#392"/>
-					<ref type="prev_chronologically" target="files.xml#390"/>
-					<ref type="next_correspondence" target="files.xml#582"/>
+					<ref type="next_chronologically" target="file392"/>
+					<ref type="prev_chronologically" target="file390"/>
+					<ref type="next_correspondence" target="file582"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#582"/>
+					<ref type="next_correspondence_request" target="file582"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#1530"/>
+					<ref type="next_correspondence_reaction" target="file1530"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#392"/>
+					<ref type="next_same_sender" target="file392"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#397"/>
-					<ref type="prev_same_addressee" target="files.xml#387"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#392"/>
+					<ref type="next_same_addressee" target="file397"/>
+					<ref type="prev_same_addressee" target="file387"/>
+					<ref type="next_with_sender_as_addressee" target="file392"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#397"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#387"/>
-					<ref type="parent" target="files.xml#611"/>
+					<ref type="next_with_addressee_as_sender" target="file397"/>
+					<ref type="prev_with_addressee_as_sender" target="file387"/>
+					<ref type="parent" target="file611"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

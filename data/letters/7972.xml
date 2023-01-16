@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7410/64</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 377,2461</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 377,2461</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -57,45 +60,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7972">
 				<correspAction type="sent">
-					<persName ref="person#726" cert="high">
+					<!--
+					<persName ref="person726" cert="high">
 						<forename cert="high">Coelius Secundus</forename>
 						<surname cert="high">Curione</surname>
-						<addName type="main">Curione, Celio Secondo</addName>
+						<persName type="main" ref="person714>Curione, Celio Secondo</addName>
+						<graphic type="portrait" url="portraits/714_Curione_Celio_Secondo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Celio_Secondo_Curione"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/10407440X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414681"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person726" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1569-08-22" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7973"/>
-					<ref type="prev_chronologically" target="files.xml#7971"/>
+					<ref type="next_chronologically" target="file7973"/>
+					<ref type="prev_chronologically" target="file7971"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#7937"/>
+					<ref type="prev_correspondence" target="file7937"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#7937"/>
+					<ref type="prev_correspondence_request" target="file7937"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5554"/>
+					<ref type="prev_correspondence_reaction" target="file5554"/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#7937"/>
-					<ref type="next_same_addressee" target="files.xml#7976"/>
-					<ref type="prev_same_addressee" target="files.xml#7971"/>
+					<ref type="prev_same_sender" target="file7937"/>
+					<ref type="next_same_addressee" target="file7976"/>
+					<ref type="prev_same_addressee" target="file7971"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#7937"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#7976"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#7971"/>
+					<ref type="prev_with_sender_as_addressee" target="file7937"/>
+					<ref type="next_with_addressee_as_sender" target="file7976"/>
+					<ref type="prev_with_addressee_as_sender" target="file7971"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -104,43 +113,46 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="7972/Autograph/00 E_II_377__fol__2461_r_.tif" n="1"/>
+		<graphic url="7972/Autograph/01 E_II_377__fol__2461_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">C[oelius] S[ecundus] C[urio] S. D. Tuae me literae.</s>
-					<s xml:lang="la" type="auto">domine et frater observande, vehementer recrearunt, quod ex eis cognovi te per dei gratiam pristinae valetudini restitutum.</s>
+					<s n="1" xml:lang="la" type="auto">C[oelius] S[ecundus] C[urio] S. D. Tuae me literae.</s>
+					<s n="2" xml:lang="la" type="auto">domine et frater observande, vehementer recrearunt, quod ex eis cognovi te per dei gratiam pristinae valetudini restitutum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Gratum etiam fuit, quod de tua aetate, quae nihil fere abest a mea, mihi perscripsisti.</s>
-					<s xml:lang="la" type="auto">Deum oro, ut eam ad sui sancti nominis gloriam et ecclesiae salutem (nam talibus hoc tempore in tanta rerum omnium perturbatione opus est) diutissime tueatur.</s>
-					<s xml:lang="la" type="auto">De negotio quod egisti, nobis omnibus gratissimum fuit.</s>
-					<s xml:lang="la" type="auto">Itaque tibi ego pro omnibus gratias quantas possum maximas [ago] et gaudeo pios homines sensisse meam commendationem apud te ut nec Rami nostri apud clarissimum virum d. Rodolphum Gvalterum haud leve pondus habuisse.</s>
-					<s xml:lang="la" type="auto">Quid autem Bernae post sit actum, non dubito a d. Halero te certiorem esse factum.</s>
-					<s xml:lang="la" type="auto">Equidem discrucior, cum video quosdam homines eosque primas in ecclesia tenentes id unum studere, ut Zvinglii atque Oecolampadii sanctam memoriam oblivione obruant sempiterna.</s>
-					<s xml:lang="la" type="auto">Verum enim vero, ut tu recte scribis, dominus brevi pastores fraudulentos disperdet.</s>
-					<s xml:lang="la" type="auto">Conandum tamen iis, qui autoritate in ecclesia pollent, uti eorum artibus obviam eatur.</s>
-					<s xml:lang="la" type="auto">Sed de his sapienti satis.</s>
-					<s xml:lang="la" type="auto">Petrum Ramum, virum tum pietate tum eruditione praestantem, quem tam officiose salutari iubebas, vides; cuius congressum tibi iucundissimum fore non dubito, a quo utpote nostrorum hominum iam peritissimum multa audies, quae scire operae precium fuerit; itaque plura non addam.</s>
+					<s n="3" xml:lang="la" type="auto">Gratum etiam fuit, quod de tua aetate, quae nihil fere abest a mea, mihi perscripsisti.</s>
+					<s n="4" xml:lang="la" type="auto">Deum oro, ut eam ad sui sancti nominis gloriam et ecclesiae salutem (nam talibus hoc tempore in tanta rerum omnium perturbatione opus est) diutissime tueatur.</s>
+					<s n="5" xml:lang="la" type="auto">De negotio quod egisti, nobis omnibus gratissimum fuit.</s>
+					<s n="6" xml:lang="la" type="auto">Itaque tibi ego pro omnibus gratias quantas possum maximas [ago] et gaudeo pios homines sensisse meam commendationem apud te ut nec Rami nostri apud clarissimum virum d. Rodolphum Gvalterum haud leve pondus habuisse.</s>
+					<s n="7" xml:lang="la" type="auto">Quid autem Bernae post sit actum, non dubito a d. Halero te certiorem esse factum.</s>
+					<s n="8" xml:lang="la" type="auto">Equidem discrucior, cum video quosdam homines eosque primas in ecclesia tenentes id unum studere, ut Zvinglii atque Oecolampadii sanctam memoriam oblivione obruant sempiterna.</s>
+					<s n="9" xml:lang="la" type="auto">Verum enim vero, ut tu recte scribis, dominus brevi pastores fraudulentos disperdet.</s>
+					<s n="10" xml:lang="la" type="auto">Conandum tamen iis, qui autoritate in ecclesia pollent, uti eorum artibus obviam eatur.</s>
+					<s n="11" xml:lang="la" type="auto">Sed de his sapienti satis.</s>
+					<s n="12" xml:lang="la" type="auto">Petrum Ramum, virum tum pietate tum eruditione praestantem, quem tam officiose salutari iubebas, vides; cuius congressum tibi iucundissimum fore non dubito, a quo utpote nostrorum hominum iam peritissimum multa audies, quae scire operae precium fuerit; itaque plura non addam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, mi colendissime domine et frater longe carissime, cum tuis omnibus, quos vere amo quibusque omnia felicia a domino precor.</s>
+					<s n="13" xml:lang="la" type="auto">Vale, mi colendissime domine et frater longe carissime, cum tuis omnibus, quos vere amo quibusque omnia felicia a domino precor.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hic die 6. augusti hora quarta et sesqui matutina terrę concussionem sensimus, quae etsi caussas habet naturales, vereor tamen, ne quid portendat, quod quidem precandum est, ut deus in suam gloriam vertat.</s>
+					<s n="14" xml:lang="la" type="auto">Hic die 6. augusti hora quarta et sesqui matutina terrę concussionem sensimus, quae etsi caussas habet naturales, vereor tamen, ne quid portendat, quod quidem precandum est, ut deus in suam gloriam vertat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, mi patrone colendissime et frater amantissime.</s>
-					<s xml:lang="la" type="auto">Quodsi ad me rescripseris, quod quidem tuo commodo fiat, vide ut nobis literae fideliter reddentur simulque significabis, an meum epistolium repente exaratum, quo tibi de Eblingeri Milusiani pastoris interitu significabam, acceperis, quod per quendam vestratem paganum ministrum misi.</s>
-					<s xml:lang="la" type="auto">Iterum vale Basileae die 22. augusti 1569.</s>
+					<s n="15" xml:lang="la" type="auto">Vale, mi patrone colendissime et frater amantissime.</s>
+					<s n="16" xml:lang="la" type="auto">Quodsi ad me rescripseris, quod quidem tuo commodo fiat, vide ut nobis literae fideliter reddentur simulque significabis, an meum epistolium repente exaratum, quo tibi de Eblingeri Milusiani pastoris interitu significabam, acceperis, quod per quendam vestratem paganum ministrum misi.</s>
+					<s n="17" xml:lang="la" type="auto">Iterum vale Basileae die 22. augusti 1569.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">C[oelius] S[ecundus] Curio, ex animo tuus [subscripsit].</s>
-					<s xml:lang="la" type="auto">Clarissimo ecclesiae Tigurinae antistiti domino Henricho Bullingero, [domino] et fratri colendissimo.</s>
+					<s n="18" xml:lang="la" type="auto">C[oelius] S[ecundus] Curio, ex animo tuus [subscripsit].</s>
+					<s n="19" xml:lang="la" type="auto">Clarissimo ecclesiae Tigurinae antistiti domino Henricho Bullingero, [domino] et fratri colendissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="20" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

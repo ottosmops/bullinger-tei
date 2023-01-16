@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4161/55</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 346,191</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 346,191</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,46 +50,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2844">
 				<correspAction type="sent">
-					<persName ref="person#1218" cert="high">
+					<!--
+					<persName ref="person1218" cert="high">
 						<forename cert="high">Georg</forename>
 						<surname cert="high">Frölich</surname>
-						<addName type="main">Frölich (Laetus), Georg</addName>
-						<ref type="wikipedia" target="https://www.deutsche-biographie.de/sfz17760.html"/>
+						<persName type="main" ref="person8354>Frölich (Laetus), Georg</addName>
 					</persName>
+					-->
+					<persName ref="person1218" cert="high"/>
 					<date when="1556-03-03" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2845"/>
-					<ref type="prev_chronologically" target="files.xml#2843"/>
-					<ref type="next_correspondence" target="files.xml#2899"/>
-					<ref type="prev_correspondence" target="files.xml#2843"/>
-					<ref type="next_correspondence_request" target="files.xml#2899"/>
-					<ref type="prev_correspondence_request" target="files.xml#2843"/>
+					<ref type="next_chronologically" target="file2845"/>
+					<ref type="prev_chronologically" target="file2843"/>
+					<ref type="next_correspondence" target="file2899"/>
+					<ref type="prev_correspondence" target="file2843"/>
+					<ref type="next_correspondence_request" target="file2899"/>
+					<ref type="prev_correspondence_request" target="file2843"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12511"/>
-					<ref type="next_same_sender" target="files.xml#2899"/>
-					<ref type="prev_same_sender" target="files.xml#2843"/>
-					<ref type="next_same_addressee" target="files.xml#2852"/>
-					<ref type="prev_same_addressee" target="files.xml#2841"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2899"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2843"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2852"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2841"/>
-					<ref type="parent" target="files.xml#2843"/>
+					<ref type="prev_correspondence_reaction" target="file12511"/>
+					<ref type="next_same_sender" target="file2899"/>
+					<ref type="prev_same_sender" target="file2843"/>
+					<ref type="next_same_addressee" target="file2852"/>
+					<ref type="prev_same_addressee" target="file2841"/>
+					<ref type="next_with_sender_as_addressee" target="file2899"/>
+					<ref type="prev_with_sender_as_addressee" target="file2843"/>
+					<ref type="next_with_addressee_as_sender" target="file2852"/>
+					<ref type="prev_with_addressee_as_sender" target="file2841"/>
+					<ref type="parent" target="file2843"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -103,13 +108,13 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Libellus Bertrami de sacramento corporis etc.</s>
-					<s xml:lang="la" type="auto">Christi mihi plurimum commendatur.</s>
-					<s xml:lang="la" type="auto">Quem si potes tam populari quam Latina ad me des lingu, oro; conabor quippe aliquid contra sacramentarios, qui ex sacramentis res sacramentorum faciunt.</s>
-					<s xml:lang="la" type="auto">Si contingeret lucrari principem nostrum, plurimum me effecisse existimarem.</s>
+					<s n="1" xml:lang="la" type="auto">Libellus Bertrami de sacramento corporis etc.</s>
+					<s n="2" xml:lang="la" type="auto">Christi mihi plurimum commendatur.</s>
+					<s n="3" xml:lang="la" type="auto">Quem si potes tam populari quam Latina ad me des lingu, oro; conabor quippe aliquid contra sacramentarios, qui ex sacramentis res sacramentorum faciunt.</s>
+					<s n="4" xml:lang="la" type="auto">Si contingeret lucrari principem nostrum, plurimum me effecisse existimarem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ego pro exemplaribus tibi satisfacturus sum.</s>
+					<s n="5" xml:lang="la" type="auto">Ego pro exemplaribus tibi satisfacturus sum.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse fehlt.]</note>

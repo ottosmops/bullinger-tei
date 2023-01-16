@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3056</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3056</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 360,427 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 360,427 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -101,7 +104,7 @@
 								</p>
 								<p xml:id="regest7">
 								[7] Dem vorliegenden Schreiben sind zwei weitere Briefe beigelegt. Der eine Brief
-								[<ref target="file#13098">Nr. 3049</ref>] ist von einem frommen und belesenen Franzosen [Jean Hotot], der sich
+								[<ref target="file13098">Nr. 3049</ref>] ist von einem frommen und belesenen Franzosen [Jean Hotot], der sich
 								derzeit in Bern aufhält, nachdem er einige Monate in Zürich bei Georg Rubli verbracht hat. Rubli hätte ihm
 								seine Sachen nachschicken sollen, doch sind diese immer noch nicht in Bern eingetroffen. Bullinger soll
 								dafür sorgen, dass der Franzose sobald wie möglich sein Gepäck erhält. Der andere Brief [nicht erhalten] ist
@@ -129,13 +132,16 @@
 				</msDesc>
 				<msDesc type="Beilage" subtype="Beilage" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Beilage">E II 360,419 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Beilage">E II 360,419 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -144,45 +150,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13105">
 				<correspAction type="sent">
-					<persName ref="person#1804" cert="high">
+					<!--
+					<persName ref="person1804" cert="high">
 						<forename cert="high">Jodocus</forename>
 						<surname cert="high">Kilchmeyer</surname>
 						<graphic type="portrait" url="portraits/1804_Kilchmeyer_Jodocus.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Jodocus_Kilchmeyer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089363095"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415743"/>
 					</persName>
-					<place source="#41" cert="low">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
-					<date min="1547-10-25" max="1547-10-31" cert="low"/>
+					-->
+					<persName ref="person1804" cert="high"/>
+					<place source="place41" cert="low"/>
+					<date notBefore="1547-10-25" notAfter="1547-10-31" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13106"/>
-					<ref type="prev_chronologically" target="files.xml#13104"/>
-					<ref type="next_correspondence" target="files.xml#27"/>
-					<ref type="prev_correspondence" target="files.xml#13085"/>
-					<ref type="next_correspondence_request" target="files.xml#27"/>
-					<ref type="prev_correspondence_request" target="files.xml#13085"/>
+					<ref type="next_chronologically" target="file13106"/>
+					<ref type="prev_chronologically" target="file13104"/>
+					<ref type="next_correspondence" target="file27"/>
+					<ref type="prev_correspondence" target="file13085"/>
+					<ref type="next_correspondence_request" target="file27"/>
+					<ref type="prev_correspondence_request" target="file13085"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#27"/>
-					<ref type="prev_same_sender" target="files.xml#13085"/>
-					<ref type="next_same_addressee" target="files.xml#13111"/>
-					<ref type="prev_same_addressee" target="files.xml#13103"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#27"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13085"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13111"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13103"/>
+					<ref type="next_same_sender" target="file27"/>
+					<ref type="prev_same_sender" target="file13085"/>
+					<ref type="next_same_addressee" target="file13111"/>
+					<ref type="prev_same_addressee" target="file13103"/>
+					<ref type="next_with_sender_as_addressee" target="file27"/>
+					<ref type="prev_with_sender_as_addressee" target="file13085"/>
+					<ref type="next_with_addressee_as_sender" target="file13111"/>
+					<ref type="prev_with_addressee_as_sender" target="file13103"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -192,91 +203,92 @@
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
 	<facsimile>
-		<graphic url="13105/Autograph/00 E_II_360__S__420_.tif" n="1"/>
-		<graphic url="13105/Autograph/01 E_II_360__S__427_.tif" n="2"/>
-		<graphic url="13105/Autograph/02 E_II_360__S__428_.tif" n="3"/>
+		<graphic url="13105/Autograph/00 E_II_360__S__427_.tif" n="1"/>
+		<graphic url="13105/Autograph/01 E_II_360__S__428_.tif" n="2"/>
+		<graphic url="13105/Autograph/02 E_II_360__S__419_.tif" n="3"/>
+		<graphic url="13105/Autograph/03 E_II_360__S__420_.tif" n="4"/>
 	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salutem et pacem.</s>
-					<s xml:lang="la" type="auto">Reprehendis me, doctissime vir et confrater charissime, in literis tuis novissimis<note xml:id="fn4" type="footnote" n="4">Nicht erhalten.</note> velut in rescribendo admodum negligentem, in quo sane rectius ageres, si non cum negotiorum moles tumque tabellionum me absolveret festinata ac repentina abitio.</s>
-					<s xml:lang="la" type="auto">Ut igitur tuum erit omnia boni consulere inque melius declinare, ita te obsecro, ne uspiam a scribendo, monendo, confortando ac denique instituendo me cesses, neque tarditatem meam remorari te atque deterrere sinas, negligentię, quod plane occupationum est, adscribens.</s>
-					<s xml:lang="la" type="auto">Hoc autem ne facias, arbitror tanto magis esse tuarum parcium<note xml:id="fn5" type="footnote" n="5">= partium.</note>, quanto clarius constet tua me opera et studio in illos, quos nunc sustineo, sudores, senem iam<note xml:id="fn6" type="footnote" n="6">Siehe dazu <ref target="file#13085">Nr. 3036</ref>, <qv>fn17305-3</qv>.</note> et ferme corporis viribus exhaustum, compulsum esse,<note xml:id="fn7" type="footnote" n="7">Kilchmeyer war widerwillig nach Bern gegangen; s. <abbr>HBBW</abbr> XVII 457, Anm. 5.</note> cum antea nunquam tibi visus fuerim dignus intra moenia Tigurina vel infimam occupare condictionem.<note xml:id="fn8" type="footnote" n="8">Ehe Kilchmeyer nach Bern entsandt wurde, hatte er 15 Jahre als Pfarrer im etwa 7 km südlich von Zürich gelegenen Küsnacht gewirkt.</note></s>
-					<s xml:lang="la" type="auto">Vide, quo me rapiat impaci<pb type="edition" next="592"/> encia senem!</s>
-					<s xml:lang="la" type="auto">Sed parce, quaeso.</s>
-					<s xml:lang="la" type="auto">Scio enim per labores ad requiem et gloriam veram iter esse,<note xml:id="fn9" type="footnote" n="9">Vgl. Apg 14, 22.</note> nec ingnavis<note xml:id="fn10" type="footnote" n="10">= ignavis.</note> ardua et periculosa committi, teque omnia nimio zęlo, promovendę publicę salutis gratia fecisse, non quantum possum perpendens, sed quantum patrię nostrę salus exigat.</s>
-					<s xml:lang="la" type="auto">Verum de hoc satis.</s>
+					<s n="1" xml:lang="la" type="auto">Salutem et pacem.</s>
+					<s n="2" xml:lang="la" type="auto">Reprehendis me, doctissime vir et confrater charissime, in literis tuis novissimis<note xml:id="fn4" type="footnote" n="4">Nicht erhalten.</note> velut in rescribendo admodum negligentem, in quo sane rectius ageres, si non cum negotiorum moles tumque tabellionum me absolveret festinata ac repentina abitio.</s>
+					<s n="3" xml:lang="la" type="auto">Ut igitur tuum erit omnia boni consulere inque melius declinare, ita te obsecro, ne uspiam a scribendo, monendo, confortando ac denique instituendo me cesses, neque tarditatem meam remorari te atque deterrere sinas, negligentię, quod plane occupationum est, adscribens.</s>
+					<s n="4" xml:lang="la" type="auto">Hoc autem ne facias, arbitror tanto magis esse tuarum parcium<note xml:id="fn5" type="footnote" n="5">= partium.</note>, quanto clarius constet tua me opera et studio in illos, quos nunc sustineo, sudores, senem iam<note xml:id="fn6" type="footnote" n="6">Siehe dazu <ref target="file13085">Nr. 3036</ref>, <qv>fn17305-3</qv>.</note> et ferme corporis viribus exhaustum, compulsum esse,<note xml:id="fn7" type="footnote" n="7">Kilchmeyer war widerwillig nach Bern gegangen; s. <abbr>HBBW</abbr> XVII 457, Anm. 5.</note> cum antea nunquam tibi visus fuerim dignus intra moenia Tigurina vel infimam occupare condictionem.<note xml:id="fn8" type="footnote" n="8">Ehe Kilchmeyer nach Bern entsandt wurde, hatte er 15 Jahre als Pfarrer im etwa 7 km südlich von Zürich gelegenen Küsnacht gewirkt.</note></s>
+					<s n="5" xml:lang="la" type="auto">Vide, quo me rapiat impa-<pb type="edition" next="592"/>ciencia senem!</s>
+					<s n="6" xml:lang="la" type="auto">Sed parce, quaeso.</s>
+					<s n="7" xml:lang="la" type="auto">Scio enim per labores ad requiem et gloriam veram iter esse,<note xml:id="fn9" type="footnote" n="9">Vgl. Apg 14, 22.</note> nec ingnavis<note xml:id="fn10" type="footnote" n="10">= ignavis.</note> ardua et periculosa committi, teque omnia nimio zęlo, promovendę publicę salutis gratia fecisse, non quantum possum perpendens, sed quantum patrię nostrę salus exigat.</s>
+					<s n="8" xml:lang="la" type="auto">Verum de hoc satis.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Ut Bernam abiturus,<note xml:id="fn11" type="footnote" n="11">Kilchmeyer hatte sich Ende Oktober 1546 nach Bern begeben.</note> in inclyto senatu Tigurino contestatus sum me rediturum quoque, nisi dominus exercituum<note xml:id="fn12" type="footnote" n="12">Zum Ausdruck <hi>dominus exercituum</hi> s. <ref target="file#12973">Nr. 2924</ref>, <qv>fn17189-5</qv>.</note> aliud iusserit.</s>
-					<s xml:lang="la" type="auto">Ita et constitui mecum ad imminentem aestatem<note xml:id="fn13" type="footnote" n="13">Gemeint ist der Sommer 1547.</note> Bernam relinquere ac Tigurum applicare; id quod nuper<note xml:id="fn14" type="footnote" n="14">Mitte August 1547; vgl. <ref target="file#13035">Nr. 2986</ref>,<qv>zl17377-4</qv>.</note> (in urbe Tigurina cum quibusdam Bernatibus aliquot dies agens)<note xml:id="fna" type="footnote" n="a"><hi>Dieses und alle darauffolgenden Klammerpaare ergänzt.</hi></note> consulibus<note xml:id="fn15" type="footnote" n="15">Hans Rudolf Lavater und Johannes Haab.</note> aperui atque propositum meum ab imo ad summum usque exposui.</s>
-					<s xml:lang="la" type="auto">Tractavi eciam cum Lavatero nonnihil de d. Ioanne Hallero, ut is in locum meum collocaretur, quem scimus omnes doctum esse, fortem, pium atque constantem et ad huiusmodi onera ferenda maxime idoneum.</s>
+					<s n="9" xml:lang="la" type="auto">Ut Bernam abiturus,<note xml:id="fn11" type="footnote" n="11">Kilchmeyer hatte sich Ende Oktober 1546 nach Bern begeben.</note> in inclyto senatu Tigurino contestatus sum me rediturum quoque, nisi dominus exercituum<note xml:id="fn12" type="footnote" n="12">Zum Ausdruck <hi>dominus exercituum</hi> s. <ref target="file12973">Nr. 2924</ref>, <qv>fn17189-5</qv>.</note> aliud iusserit.</s>
+					<s n="10" xml:lang="la" type="auto">Ita et constitui mecum ad imminentem aestatem<note xml:id="fn13" type="footnote" n="13">Gemeint ist der Sommer 1547.</note> Bernam relinquere ac Tigurum applicare; id quod nuper<note xml:id="fn14" type="footnote" n="14">Mitte August 1547; vgl. <ref target="file13035">Nr. 2986</ref>,<qv>zl17377-4</qv>.</note> (in urbe Tigurina cum quibusdam Bernatibus aliquot dies agens)<note xml:id="fna" type="footnote" n="a"><hi>Dieses und alle darauffolgenden Klammerpaare ergänzt.</hi></note> consulibus<note xml:id="fn15" type="footnote" n="15">Hans Rudolf Lavater und Johannes Haab.</note> aperui atque propositum meum ab imo ad summum usque exposui.</s>
+					<s n="11" xml:lang="la" type="auto">Tractavi eciam cum Lavatero nonnihil de d. Ioanne Hallero, ut is in locum meum collocaretur, quem scimus omnes doctum esse, fortem, pium atque constantem et ad huiusmodi onera ferenda maxime idoneum.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Pariter et Bernę quibusdam primatibus d. Hallerum ita commendavi (tacito tamen meo proposito), ut in senatu super eo quęstio facta sit, nec desistam negotium hoc movere, donec vocetur,<note xml:id="fn16" type="footnote" n="16">Der Berner Rat hatte sich dafür schon am 9. Oktober entschieden; s. <ref target="file#13085">Nr. 3036</ref>,<qv>zl17305-1</qv>. Zu einem entsprechenden Schreiben an die Zürcher kam es aber erst später; s. <ref target="file#12986">Nr. 2937</ref>, <qv>fn17204-3</qv>.</note> aut ipse intelligam planis verbis frustra me causam illam agitare.</s>
-					<s xml:lang="la" type="auto">Ita enim mihi vel a cunabulis magnę spei futurus visus est,<note xml:id="fn17" type="footnote" n="17">Kilchmeyer scheint eine engere Beziehung mit Hallers Familie gepflegt zu haben. Hallers Vater, Johannes d.Ä., wirkte seit Ende Juni 1527 in Zürich (s. Samuel <hi>Scheurer,</hi> Nachricht von dem Leben und Verrichtungen Joh. Hallers, in: Bernerisches Mausoleum, 6. Stück, Bern 1743, S. 451), während der Luzerner Kilchmeyer (der schon 1521 Zwingli kennen gelernt hatte) noch nicht im Zürcher Gebiet wirkte. Erst am 20. März 1529 heiratete er im Großmünster von Zürich (wo Haller d.Ä. zwischen Ende August 1525 und September 1528 als Helfer gewirkt hatte, ehe er nach Bülach entsandt wurde; s. <hi>Scheurer</hi>, op. cit., S. 449; <abbr>AZürcherRef</abbr> 643, <ref target="file#11535">Nr. 1492</ref>) die Zürcherin Magdalena Eng (Zürich StadtA, VIII.C.1, <abbr>EDB</abbr> 213), mit der er schon seit etwa 1522 eine Beziehung hatte. Seit Ende 1530 oder 1531 wirkte Kilchmeyer in Rapperswil (St. Gallen), am anderen Ende des Zürichsees, als Pfarrer. Im Oktober 1531 konnte er im Zweiten Kappelerkrieg von dort entkommen, während Haller d.Ä. im Krieg umkam. - Laut <hi>Scheurer,</hi> op. cit., S. 453f, soll der im Januar 1523 geborene Haller d.J. sich schon sehr früh als begabt erwiesen haben: "Fleißig und eifrig war er [Haller d.Ä.] auch in Unterweisung seines eigenen älteren Sohns Johannsen, fienge die Sprachen mit ihm an ob [= bei] Erlernung des Gebätts des Herrn in teutscher, hebreischer, griechischer und lateinischer Sprachen. Der junge Johannes konnte diß bald. Darüber lehrte ihn der Vatter allerley trefliche Sinngedichte (Epigrammata), auserlesene Kernsprüche, schönste Auszüg und Bluhmen von gebundenen [= Verse schreibenden] und ungebundenen Scribenten. Dise mußte der knab denen Freunden seines Vatters, so ihme etwa kamen, ein Besuch abzustatten, hersagen, die sich offt darob verwunderten und erfreuten."</note> ut sepe ei in faciem dixerim, successorem meum fore in Kußnach.</s>
-					<s xml:lang="la" type="auto">Quid, si spem Bernam intellexisset?<pb type="edition" next="593"/></s>
+					<s n="12" xml:lang="la" type="auto">Pariter et Bernę quibusdam primatibus d. Hallerum ita commendavi (tacito tamen meo proposito), ut in senatu super eo quęstio facta sit, nec desistam negotium hoc movere, donec vocetur,<note xml:id="fn16" type="footnote" n="16">Der Berner Rat hatte sich dafür schon am 9. Oktober entschieden; s. <ref target="file13085">Nr. 3036</ref>,<qv>zl17305-1</qv>. Zu einem entsprechenden Schreiben an die Zürcher kam es aber erst später; s. <ref target="file12986">Nr. 2937</ref>, <qv>fn17204-3</qv>.</note> aut ipse intelligam planis verbis frustra me causam illam agitare.</s>
+					<s n="13" xml:lang="la" type="auto">Ita enim mihi vel a cunabulis magnę spei futurus visus est,<note xml:id="fn17" type="footnote" n="17">Kilchmeyer scheint eine engere Beziehung mit Hallers Familie gepflegt zu haben. Hallers Vater, Johannes d.Ä., wirkte seit Ende Juni 1527 in Zürich (s. Samuel <hi>Scheurer,</hi> Nachricht von dem Leben und Verrichtungen Joh. Hallers, in: Bernerisches Mausoleum, 6. Stück, Bern 1743, S. 451), während der Luzerner Kilchmeyer (der schon 1521 Zwingli kennen gelernt hatte) noch nicht im Zürcher Gebiet wirkte. Erst am 20. März 1529 heiratete er im Großmünster von Zürich (wo Haller d.Ä. zwischen Ende August 1525 und September 1528 als Helfer gewirkt hatte, ehe er nach Bülach entsandt wurde; s. <hi>Scheurer</hi>, op. cit., S. 449; <abbr>AZürcherRef</abbr> 643, <ref target="file11535">Nr. 1492</ref>) die Zürcherin Magdalena Eng (Zürich StadtA, VIII.C.1, <abbr>EDB</abbr> 213), mit der er schon seit etwa 1522 eine Beziehung hatte. Seit Ende 1530 oder 1531 wirkte Kilchmeyer in Rapperswil (St. Gallen), am anderen Ende des Zürichsees, als Pfarrer. Im Oktober 1531 konnte er im Zweiten Kappelerkrieg von dort entkommen, während Haller d.Ä. im Krieg umkam. - Laut <hi>Scheurer,</hi> op. cit., S. 453f, soll der im Januar 1523 geborene Haller d.J. sich schon sehr früh als begabt erwiesen haben: "Fleißig und eifrig war er [Haller d.Ä.] auch in Unterweisung seines eigenen älteren Sohns Johannsen, fienge die Sprachen mit ihm an ob [= bei] Erlernung des Gebätts des Herrn in teutscher, hebreischer, griechischer und lateinischer Sprachen. Der junge Johannes konnte diß bald. Darüber lehrte ihn der Vatter allerley trefliche Sinngedichte (Epigrammata), auserlesene Kernsprüche, schönste Auszüg und Bluhmen von gebundenen [= Verse schreibenden] und ungebundenen Scribenten. Dise mußte der knab denen Freunden seines Vatters, so ihme etwa kamen, ein Besuch abzustatten, hersagen, die sich offt darob verwunderten und erfreuten."</note> ut sepe ei in faciem dixerim, successorem meum fore in Kußnach.</s>
+					<s n="14" xml:lang="la" type="auto">Quid, si spem Bernam intellexisset?<pb type="edition" next="593"/></s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Ubi nunc sit, ignoro: Augustę vel Tiguri, inter vivos vel inferos?<note xml:id="fn18" type="footnote" n="18">Haller war am 12. oder 13. Oktober nach Zürich zurückgekehrt; s. <ref target="file#13066">Nr. 3017</ref>, <qv>fn17285-4</qv>. - Siehe ferner unten Z. <qv>zl17329-10</qv>.</note></s>
-					<s xml:lang="la" type="auto">Verum ubicunque tandem existat, optime ei pręcatum esse volo, teque oro, ut proximis literis<note xml:id="fn19" type="footnote" n="19">Nicht erhalten.</note> cerciorem me facias de illo, operam tuam in hoc impensurus, ut ipse Bernam mittatur, patriam suam<note xml:id="fn20" type="footnote" n="20">Siehe dazu <ref target="file#13085">Nr. 3036</ref>, <qv>fn17305-1</qv>.</note> (ut viri boni est) exculturus, me vero Tigurum recipiat, ubi nihil exopto, quod claris et magnis ingeniis debetur, sed tantum minimam (quę intra civitatis muros esse potest) conditionem.</s>
-					<s xml:lang="la" type="auto">Parvo salario contentus ero, et ob hoc ditissimus.<note xml:id="fn21" type="footnote" n="21">Vgl. <abbr>Wander</abbr> V 189, Nr. 13.</note></s>
-					<s xml:lang="la" type="auto">Nunquam magna quaesivi, sed (ut de me sancte iactem)<note xml:id="fn22" type="footnote" n="22">Vgl. 1Kor 1, 31; 2Kor 10, 17.</note> possidens abieci maxima hilarique animo reliqui;<note xml:id="fn23" type="footnote" n="23">Vgl. 1Kor 7, 30; Phil 3, 7f.</note> neque propter hoc quicquam mihi defuit, quod vitę huius necessitas atque dignitas eciam requirit.</s>
-					<s xml:lang="la" type="auto">Summa: licet dominus per me, servum suum inutilem,<note xml:id="fn24" type="footnote" n="24">Lk 17, 10.</note> sermonem vitę<note xml:id="fn25" type="footnote" n="25">Phil 2, 16.</note> quamplurimum foecundet, tamen fortioris erit<note xml:id="fn26" type="footnote" n="26">Zu verstehen: Es ist die Aufgabe eines Stärkeren.</note> atque doctioris, qui, quam nunc invitus sustineo, subeat functionem.</s>
+					<s n="15" xml:lang="la" type="auto">Ubi nunc sit, ignoro: Augustę vel Tiguri, inter vivos vel inferos?<note xml:id="fn18" type="footnote" n="18">Haller war am 12. oder 13. Oktober nach Zürich zurückgekehrt; s. <ref target="file13066">Nr. 3017</ref>, <qv>fn17285-4</qv>. - Siehe ferner unten Z. <qv>zl17329-10</qv>.</note></s>
+					<s n="16" xml:lang="la" type="auto">Verum ubicunque tandem existat, optime ei pręcatum esse volo, teque oro, ut proximis literis<note xml:id="fn19" type="footnote" n="19">Nicht erhalten.</note> cerciorem me facias de illo, operam tuam in hoc impensurus, ut ipse Bernam mittatur, patriam suam<note xml:id="fn20" type="footnote" n="20">Siehe dazu <ref target="file13085">Nr. 3036</ref>, <qv>fn17305-1</qv>.</note> (ut viri boni est) exculturus, me vero Tigurum recipiat, ubi nihil exopto, quod claris et magnis ingeniis debetur, sed tantum minimam (quę intra civitatis muros esse potest) conditionem.</s>
+					<s n="17" xml:lang="la" type="auto">Parvo salario contentus ero, et ob hoc ditissimus.<note xml:id="fn21" type="footnote" n="21">Vgl. <abbr>Wander</abbr> V 189, Nr. 13.</note></s>
+					<s n="18" xml:lang="la" type="auto">Nunquam magna quaesivi, sed (ut de me sancte iactem)<note xml:id="fn22" type="footnote" n="22">Vgl. 1Kor 1, 31; 2Kor 10, 17.</note> possidens abieci maxima hilarique animo reliqui;<note xml:id="fn23" type="footnote" n="23">Vgl. 1Kor 7, 30; Phil 3, 7f.</note> neque propter hoc quicquam mihi defuit, quod vitę huius necessitas atque dignitas eciam requirit.</s>
+					<s n="19" xml:lang="la" type="auto">Summa: licet dominus per me, servum suum inutilem,<note xml:id="fn24" type="footnote" n="24">Lk 17, 10.</note> sermonem vitę<note xml:id="fn25" type="footnote" n="25">Phil 2, 16.</note> quamplurimum foecundet, tamen fortioris erit<note xml:id="fn26" type="footnote" n="26">Zu verstehen: Es ist die Aufgabe eines Stärkeren.</note> atque doctioris, qui, quam nunc invitus sustineo, subeat functionem.</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Scripsi hęc 25. octobris putans tunc, quem nactus fueram, nuncium<note xml:id="fn27" type="footnote" n="27">Vermutlich auch schon hier der unten in Z. <qv>zl17329-12</qv> und Z. <qv>zl17329-8</qv> erwähnte Luzius Tscharner.</note> abiturum; quod ubi factum non est, literas infectas reliqui, alia vice, ubi se obtulisset occasio, paratus illas conficere tibique mittere.</s>
-					<s xml:lang="la" type="auto">Atque ita demum 30. die octobris inopinato apparuit tabellarius Tigurinus<note xml:id="fn28" type="footnote" n="28">Wohl Melchior Schlosser, der um diese Zeit nach Freiburg i. Üe. und Solothurn entsandt worden war, und demnach durch Bern gereist sein wird; s. Zürich StA, F III 32, Seckelamtsrechnungen 1547/48, "Laufende Boten", S. 53.</note>, cui libentissime eas dedissem, sed tum conficere quidem illas propter conciones publicas minime licuit.<note xml:id="fn29" type="footnote" n="29">Der 30. Oktober war ein Sonntag.</note></s>
-					<s xml:lang="la" type="auto">Distuli ergo in sequentem diem, quo factus quietior paulo illas confeci tibique ferendas eximio viro Lucio Tscharnero Rheto<note xml:id="fn30" type="footnote" n="30">Luzius Tscharner (1481-1562), ein Bekannter von Zwingli. Aus unten Z. <qv>zl17329-8</qv> geht hervor, dass er in Bern lebte und demzufolge nicht mit dem in Johannes Travers' Brief <ref target="file#13091">Nr. 3042</ref> vom 16. Oktober erwähnten Bündner Beamten identisch sein kann. - Tscharner hatte im Sommer 1525 die Bernerin Margaretha von Wattenwyl (eine ehemalige Nonne des Klosters Königsfelden) geehelicht, die im Witwenstand am 23. Dezember 1564 (und nicht 1546) ein Testament verfasste und vermutlich nicht allzu lange danach verstarb. - Tscharners Umzug nach Bern ist nicht bereits 1526, sondern erst in den 1530er Jahren anzusetzen: Vermutlich kurz nachdem er am 7. September 1530 die Herrschaft Reichenbach im Kandertal (in der Berner Landschaft) erworben hatte. - Lit.: Bern StA, Urkunden C I a, F Varia I, unter Reichenbach; <abbr>LL</abbr> XVIII 315; <abbr>HBLS</abbr> VII 70; <abbr>Z</abbr> VIII 49, Anm. 1; 549, Anm. 1; <abbr>HBBW</abbr> VII 68, Anm. 5; <abbr>Pf-Bern</abbr> 103; Wilhelm <hi>Jenny,</hi> Johannes Comander. Lebensgeschichte des Reformators der Stadt Chur, Bd. 1, Zürich 1969, S. 240. 267f.</note> commisi, ita tamen, ut de Hallero nihil mutarim in eis<note xml:id="fn31" type="footnote" n="31">Nämlich in den oben Z. <qv>zl17329-9</qv> gemachten Aussagen.</note>, cuius condictionem <pb type="edition" next="594"/> supra me ignorare dixeram.</s>
-					<s xml:lang="la" type="auto">Nunc vero et vivere et in <pb type="scan" next="428"/> patria<note xml:id="fnb" type="footnote" n="b"><hi>Davor ein überflüssiges</hi> in.</note> esse (laus deo!) tabellarius me edocuit et certificavit; id quod plane mihi tanto gratius fuit, quanto nunc spero facilius me voti compotem fieri, ut videlicet in locum meum surrogetur, mihi vero aliqua cędat intra Tiguri muros condictio.</s>
-					<s xml:lang="la" type="auto">Quod ob id commodius posse fieri arbitror, quod eciam audio d. Buchterum terrę valedixisse,<note xml:id="fn32" type="footnote" n="32">Heinrich Buchter war am 15. Oktober gestorben; s. <ref target="file#13090">Nr. 3041</ref>, <qv>fn17311-1</qv>. - Kilchmeyer hoffte also, dessen Nachfolger zu werden, während andere dafür vielmehr Haller in Betracht zogen; s. <ref target="file#13103">Nr. 3054</ref>,<qv>zl17322-2</qv>.</note> meque posse<note xml:id="fnc" type="footnote" n="c"><hi>Am Rande nachgetragen.</hi></note> opera tua, Bibliandri et aliorum citra negotium in angulum aliquem promoveri ex animo spero.</s>
+					<s n="20" xml:lang="la" type="auto">Scripsi hęc 25. octobris putans tunc, quem nactus fueram, nuncium<note xml:id="fn27" type="footnote" n="27">Vermutlich auch schon hier der unten in Z. <qv>zl17329-12</qv> und Z. <qv>zl17329-8</qv> erwähnte Luzius Tscharner.</note> abiturum; quod ubi factum non est, literas infectas reliqui, alia vice, ubi se obtulisset occasio, paratus illas conficere tibique mittere.</s>
+					<s n="21" xml:lang="la" type="auto">Atque ita demum 30. die octobris inopinato apparuit tabellarius Tigurinus<note xml:id="fn28" type="footnote" n="28">Wohl Melchior Schlosser, der um diese Zeit nach Freiburg i. Üe. und Solothurn entsandt worden war, und demnach durch Bern gereist sein wird; s. Zürich StA, F III 32, Seckelamtsrechnungen 1547/48, "Laufende Boten", S. 53.</note>, cui libentissime eas dedissem, sed tum conficere quidem illas propter conciones publicas minime licuit.<note xml:id="fn29" type="footnote" n="29">Der 30. Oktober war ein Sonntag.</note></s>
+					<s n="22" xml:lang="la" type="auto">Distuli ergo in sequentem diem, quo factus quietior paulo illas confeci tibique ferendas eximio viro Lucio Tscharnero Rheto<note xml:id="fn30" type="footnote" n="30">Luzius Tscharner (1481-1562), ein Bekannter von Zwingli. Aus unten Z. <qv>zl17329-8</qv> geht hervor, dass er in Bern lebte und demzufolge nicht mit dem in Johannes Travers' Brief <ref target="file13091">Nr. 3042</ref> vom 16. Oktober erwähnten Bündner Beamten identisch sein kann. - Tscharner hatte im Sommer 1525 die Bernerin Margaretha von Wattenwyl (eine ehemalige Nonne des Klosters Königsfelden) geehelicht, die im Witwenstand am 23. Dezember 1564 (und nicht 1546) ein Testament verfasste und vermutlich nicht allzu lange danach verstarb. - Tscharners Umzug nach Bern ist nicht bereits 1526, sondern erst in den 1530er Jahren anzusetzen: Vermutlich kurz nachdem er am 7. September 1530 die Herrschaft Reichenbach im Kandertal (in der Berner Landschaft) erworben hatte. - Lit.: Bern StA, Urkunden C I a, F Varia I, unter Reichenbach; <abbr>LL</abbr> XVIII 315; <abbr>HBLS</abbr> VII 70; <abbr>Z</abbr> VIII 49, Anm. 1; 549, Anm. 1; <abbr>HBBW</abbr> VII 68, Anm. 5; <abbr>Pf-Bern</abbr> 103; Wilhelm <hi>Jenny,</hi> Johannes Comander. Lebensgeschichte des Reformators der Stadt Chur, Bd. 1, Zürich 1969, S. 240. 267f.</note> commisi, ita tamen, ut de Hallero nihil mutarim in eis<note xml:id="fn31" type="footnote" n="31">Nämlich in den oben Z. <qv>zl17329-9</qv> gemachten Aussagen.</note>, cuius condictionem <pb type="edition" next="594"/> supra me ignorare dixeram.</s>
+					<s n="23" xml:lang="la" type="auto">Nunc vero et vivere et in <pb type="scan" next="428"/> patria<note xml:id="fnb" type="footnote" n="b"><hi>Davor ein überflüssiges</hi> in.</note> esse (laus deo!) tabellarius me edocuit et certificavit; id quod plane mihi tanto gratius fuit, quanto nunc spero facilius me voti compotem fieri, ut videlicet in locum meum surrogetur, mihi vero aliqua cędat intra Tiguri muros condictio.</s>
+					<s n="24" xml:lang="la" type="auto">Quod ob id commodius posse fieri arbitror, quod eciam audio d. Buchterum terrę valedixisse,<note xml:id="fn32" type="footnote" n="32">Heinrich Buchter war am 15. Oktober gestorben; s. <ref target="file13090">Nr. 3041</ref>, <qv>fn17311-1</qv>. - Kilchmeyer hoffte also, dessen Nachfolger zu werden, während andere dafür vielmehr Haller in Betracht zogen; s. <ref target="file13103">Nr. 3054</ref>,<qv>zl17322-2</qv>.</note> meque posse<note xml:id="fnc" type="footnote" n="c"><hi>Am Rande nachgetragen.</hi></note> opera tua, Bibliandri et aliorum citra negotium in angulum aliquem promoveri ex animo spero.</s>
 				</p>
 			</div>
 			<div xml:id="div6" corresp="regest6">
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino et Frisio nostro dic nomine meo salutes plurimas, deinde apud nos spem quidem nullam esse, ut libri eius vendibiles in bibliothecam nostram recipiantur.<note xml:id="fn33" type="footnote" n="33">Johannes Fries versuchte schon seit November 1546, einen Teil der von ihm einige Jahre zuvor erworbenen Bibliothek des Werner Steiner (gest. 1542) zu verkaufen, um vielleicht damit den Umbau seines neubezogenen Wohnhauses (s. <abbr>HBBW</abbr> XVIII 343, Anm. 27) z.T. finanzieren zu können; s. ad loc. cit., S. 43 und <ref target="file#12744">Nr. 2697</ref>. 2716. 2719. - Aus vorliegender Stelle wird deutlich, dass der Verkauf dieser Bücher an den jungen Johannes von Ulm (vor 1529-1580) trotz Bullingers Vermittlung Ende 1547 nicht zustande kam und demnach unsere in <abbr>HBBW</abbr> XVIII 343, Anm. 26, geäußerte Vermutung nicht zutreffend war. - Die Entstehungszeit der Berner Stadtbibliothek (der "Libery der Hohen Schule") ist zwischen 1528 und 1535 anzusetzen; s. Hans A. <hi>Michel,</hi> Das wissenschaftliche Bibliothekswesen Berns vom Mittelalter bis zur Gegenwart, Bern 1985, S. 178.</note></s>
-					<s xml:lang="la" type="auto">Pręterea libellum d. Lorencii Agricolę De bellicis rebus<note xml:id="fn34" type="footnote" n="34">Hier liegt die älteste Anspielung auf die Schrift "Stratagemata rerum bellicarum" vor, an der Lorenz Meyer (Agricola) während Jahren weiterarbeiten sollte. Im Februar 1554 ist belegt, dass er davon eine für Kurfürst Ottheinrich bestimmte Übersetzung ins Deutsche anzuregen versuchte. In seiner Appendix Bibliothecae Gesneri, Zürich 1555 (<abbr>VD16</abbr> G1702), f. 75r., berichtet Josias Simler: "Laurentius Agricola Vitoduranus scripsit libros aliquot de re militari, impressos ni fallor." Allerdings scheint es damals nicht zu einem Druck gekommen zu sein, da diese Schrift, die immerhin aus "aliquot libris" bestand, im <abbr>VD16</abbr> nicht zu finden ist. Am 15. Mai 1556 erfährt man in einem Brief Meyers an Ottheinrich, dass seine Schrift "der kriegskampffstucken" aus "dry gwaltigen Büecher" bestand, und er diese für den Kurfürsten selbst ins Deutsche übersetzt hatte; s. Reinhard H. <hi>Seitz</hi> unter Mitarbeit von Rainer <hi>Henrich,</hi> Neue Forschungen zu Caspar Amman (OESA), seinen Werken und seiner Bibliothek. Mit der Caspar-Amman-Biographie des M. Laurentius Agricola von 1563, in: Jb. des Historischen Vereins Dillingen an der Donau 109, 2008, S. 102 und Anm. 148; S. 108f. - 1547 wird Meyer die Handschrift seines Werkes Kilchmeyer wohl nur geliehen haben.</note> summa fide mihi allatum esse.</s>
+					<s n="25" xml:lang="la" type="auto">Vale in domino et Frisio nostro dic nomine meo salutes plurimas, deinde apud nos spem quidem nullam esse, ut libri eius vendibiles in bibliothecam nostram recipiantur.<note xml:id="fn33" type="footnote" n="33">Johannes Fries versuchte schon seit November 1546, einen Teil der von ihm einige Jahre zuvor erworbenen Bibliothek des Werner Steiner (gest. 1542) zu verkaufen, um vielleicht damit den Umbau seines neubezogenen Wohnhauses (s. <abbr>HBBW</abbr> XVIII 343, Anm. 27) z.T. finanzieren zu können; s. ad loc. cit., S. 43 und <ref target="file12744">Nr. 2697</ref>. 2716. 2719. - Aus vorliegender Stelle wird deutlich, dass der Verkauf dieser Bücher an den jungen Johannes von Ulm (vor 1529-1580) trotz Bullingers Vermittlung Ende 1547 nicht zustande kam und demnach unsere in <abbr>HBBW</abbr> XVIII 343, Anm. 26, geäußerte Vermutung nicht zutreffend war. - Die Entstehungszeit der Berner Stadtbibliothek (der "Libery der Hohen Schule") ist zwischen 1528 und 1535 anzusetzen; s. Hans A. <hi>Michel,</hi> Das wissenschaftliche Bibliothekswesen Berns vom Mittelalter bis zur Gegenwart, Bern 1985, S. 178.</note></s>
+					<s n="26" xml:lang="la" type="auto">Pręterea libellum d. Lorencii Agricolę De bellicis rebus<note xml:id="fn34" type="footnote" n="34">Hier liegt die älteste Anspielung auf die Schrift "Stratagemata rerum bellicarum" vor, an der Lorenz Meyer (Agricola) während Jahren weiterarbeiten sollte. Im Februar 1554 ist belegt, dass er davon eine für Kurfürst Ottheinrich bestimmte Übersetzung ins Deutsche anzuregen versuchte. In seiner Appendix Bibliothecae Gesneri, Zürich 1555 (<abbr>VD16</abbr> G1702), f. 75r., berichtet Josias Simler: "Laurentius Agricola Vitoduranus scripsit libros aliquot de re militari, impressos ni fallor." Allerdings scheint es damals nicht zu einem Druck gekommen zu sein, da diese Schrift, die immerhin aus "aliquot libris" bestand, im <abbr>VD16</abbr> nicht zu finden ist. Am 15. Mai 1556 erfährt man in einem Brief Meyers an Ottheinrich, dass seine Schrift "der kriegskampffstucken" aus "dry gwaltigen Büecher" bestand, und er diese für den Kurfürsten selbst ins Deutsche übersetzt hatte; s. Reinhard H. <hi>Seitz</hi> unter Mitarbeit von Rainer <hi>Henrich,</hi> Neue Forschungen zu Caspar Amman (OESA), seinen Werken und seiner Bibliothek. Mit der Caspar-Amman-Biographie des M. Laurentius Agricola von 1563, in: Jb. des Historischen Vereins Dillingen an der Donau 109, 2008, S. 102 und Anm. 148; S. 108f. - 1547 wird Meyer die Handschrift seines Werkes Kilchmeyer wohl nur geliehen haben.</note> summa fide mihi allatum esse.</s>
 				</p>
 			</div>
 			<div xml:id="div7" corresp="regest7">
 				<p>
-					<s xml:lang="la" type="auto">Literis meis alię duę coniunctę sunt, quarum unae Galli cuiusdam<note xml:id="fn35" type="footnote" n="35">Gemeint ist Jean de Hotot und sein letzter von ihm bekannter Brief an Bullinger vom 21. Oktober (<ref target="file#13098">Nr. 3049</ref>).</note> est<note xml:id="fn36" type="footnote" n="36"><hi>Literae</hi> (Plural) mit der Bedeutung von Brief (Singular) erklärt hier das stilwidrige <hi>est</hi>. - Die merkwürdige, aber belegte Konstruktion <hi>unae literae</hi> lässt sich anhand von <abbr>Stotz</abbr> IV 291f, Nr. 37.12, erklären.</note> nunc apud nos morantis, qui superioribus mensibus Tiguri fuit apud Georgi<pb type="edition" next="595"/> um Rubli<note xml:id="fn37" type="footnote" n="37">Georg Rubli, Sohn des am 11. Oktober 1531 bei Kappel gefallenen Heinrich Rubli. Von Juni 1540 bis Mai 1544 Studium in Kappel. Im September 1544 in Lausanne als Schüler nachgewiesen. Dezember 1546 Trauung in Zürich. 1548 Konstaffel. 1549 Achtzehner. 1559 Pfleger des Sankt-Georg-Klosters in Stein am Rhein, wo er am 13. April 1562 starb. - Lit.: Zürich StA, E I 17, Nr. 5, f. 5v.; Carl <hi>Keller-Escher</hi>, Promptuarium genealogicum, Bd. 6 (Zürich ZB, Ms Z II 6), f. 685r.; <abbr>HBRG</abbr> I 96; Ein Reisebericht des Chronisten Johannes Stumpf aus dem Jahr 1544, hg. v. Hermann Escher, in: Quellen zur Schweizer Geschichte, Bd. 6, Basel 1884, S. 275f; Zürich StadtA, VIII.C.15, <abbr>EDB</abbr> 75; <abbr>LL</abbr> XVII 559.</note>, cui sarcinas suas commendavit, quo per illum post discessum suum Bernam mitterentur, quas tamen hactenus non vidit, ut a me petiit, hęc tibi significarem.</s>
-					<s xml:lang="la" type="auto">Ita nomine Galli (pius enim et doctus vir est) oro, ut cures sarcinas suas, quamprimum fieri potest, habeat.<note xml:id="fn38" type="footnote" n="38">Vgl. <ref target="file#13074">Nr. 3025</ref>,<qv>zl17294-2</qv>; <ref target="file#13098">Nr. 3049</ref>,<qv>zl17318-1</qv>; und unten Z. <qv>zl17329-3</qv>.</note></s>
-					<s xml:lang="la" type="auto">Alterę literę cuiusdam sunt apud nos in agro concionatoris<note xml:id="fn39" type="footnote" n="39">Kaspar Seidensticker, der kurz zuvor Prediger in Thunstetten geworden war; s. <ref target="file#13089">Nr. 3040</ref>, <qv>fn17309-1</qv>.</note>, qui operam tuam propriis literis<note xml:id="fn40" type="footnote" n="40">Nicht erhalten.</note> implorat, ut pecuniam inclusam literis Constantiam pertinentibus<note xml:id="fn41" type="footnote" n="41">Ambrosius Blarer und Jakob Funcklin; s. <ref target="file#13089">Nr. 3040</ref>,<qv>zl17309-5</qv>.</note> in suum locum, quomodo te docebit manus eius, perferri cures.</s>
+					<s n="27" xml:lang="la" type="auto">Literis meis alię duę coniunctę sunt, quarum unae Galli cuiusdam<note xml:id="fn35" type="footnote" n="35">Gemeint ist Jean de Hotot und sein letzter von ihm bekannter Brief an Bullinger vom 21. Oktober (<ref target="file13098">Nr. 3049</ref>).</note> est<note xml:id="fn36" type="footnote" n="36"><hi>Literae</hi> (Plural) mit der Bedeutung von Brief (Singular) erklärt hier das stilwidrige <hi>est</hi>. - Die merkwürdige, aber belegte Konstruktion <hi>unae literae</hi> lässt sich anhand von <abbr>Stotz</abbr> IV 291f, Nr. 37.12, erklären.</note> nunc apud nos morantis, qui superioribus mensibus Tiguri fuit apud Geor-<pb type="edition" next="595"/>gium Rubli<note xml:id="fn37" type="footnote" n="37">Georg Rubli, Sohn des am 11. Oktober 1531 bei Kappel gefallenen Heinrich Rubli. Von Juni 1540 bis Mai 1544 Studium in Kappel. Im September 1544 in Lausanne als Schüler nachgewiesen. Dezember 1546 Trauung in Zürich. 1548 Konstaffel. 1549 Achtzehner. 1559 Pfleger des Sankt-Georg-Klosters in Stein am Rhein, wo er am 13. April 1562 starb. - Lit.: Zürich StA, E I 17, Nr. 5, f. 5v.; Carl <hi>Keller-Escher</hi>, Promptuarium genealogicum, Bd. 6 (Zürich ZB, Ms Z II 6), f. 685r.; <abbr>HBRG</abbr> I 96; Ein Reisebericht des Chronisten Johannes Stumpf aus dem Jahr 1544, hg. v. Hermann Escher, in: Quellen zur Schweizer Geschichte, Bd. 6, Basel 1884, S. 275f; Zürich StadtA, VIII.C.15, <abbr>EDB</abbr> 75; <abbr>LL</abbr> XVII 559.</note>, cui sarcinas suas commendavit, quo per illum post discessum suum Bernam mitterentur, quas tamen hactenus non vidit, ut a me petiit, hęc tibi significarem.</s>
+					<s n="28" xml:lang="la" type="auto">Ita nomine Galli (pius enim et doctus vir est) oro, ut cures sarcinas suas, quamprimum fieri potest, habeat.<note xml:id="fn38" type="footnote" n="38">Vgl. <ref target="file13074">Nr. 3025</ref>,<qv>zl17294-2</qv>; <ref target="file13098">Nr. 3049</ref>,<qv>zl17318-1</qv>; und unten Z. <qv>zl17329-3</qv>.</note></s>
+					<s n="29" xml:lang="la" type="auto">Alterę literę cuiusdam sunt apud nos in agro concionatoris<note xml:id="fn39" type="footnote" n="39">Kaspar Seidensticker, der kurz zuvor Prediger in Thunstetten geworden war; s. <ref target="file13089">Nr. 3040</ref>, <qv>fn17309-1</qv>.</note>, qui operam tuam propriis literis<note xml:id="fn40" type="footnote" n="40">Nicht erhalten.</note> implorat, ut pecuniam inclusam literis Constantiam pertinentibus<note xml:id="fn41" type="footnote" n="41">Ambrosius Blarer und Jakob Funcklin; s. <ref target="file13089">Nr. 3040</ref>,<qv>zl17309-5</qv>.</note> in suum locum, quomodo te docebit manus eius, perferri cures.</s>
 				</p>
 			</div>
 			<div xml:id="div8" corresp="regest8">
 				<p>
-					<s xml:lang="la" type="auto">Iterum vale.</s>
-					<s xml:lang="la" type="auto">Datum Bernę, 31. octobris.</s>
-					<s xml:lang="la" type="auto">Salutabis nomine meo d. Gwaltherum, Bibliandrum, Pellicanum, Ammianum<note xml:id="fnd" type="footnote" n="d"><hi>In der Vorlage</hi> Ammianu.</note><note xml:id="fn42" type="footnote" n="42">Der Zürcher Schulherr Johann Jakob Ammann.</note>, Collinum<note xml:id="fn43" type="footnote" n="43">Der Griechischlehrer Rudolf Collin.</note> fratresque omnes una cum uxore tua<note xml:id="fn44" type="footnote" n="44">Anna, geb. Adlischwyler.</note>, fratre tuo d. Ioanne et familia omnis.</s>
-					<s xml:lang="la" type="manual">1547.</s>
-					<s xml:lang="la" type="auto">I. Kilchmeyer, tuus semper.<pb type="scan" next="419"/></s>
+					<s n="30" xml:lang="la" type="auto">Iterum vale.</s>
+					<s n="31" xml:lang="la" type="auto">Datum Bernę, 31. octobris.</s>
+					<s n="32" xml:lang="la" type="auto">Salutabis nomine meo d. Gwaltherum, Bibliandrum, Pellicanum, Ammianum<note xml:id="fnd" type="footnote" n="d"><hi>In der Vorlage</hi> Ammianu.</note><note xml:id="fn42" type="footnote" n="42">Der Zürcher Schulherr Johann Jakob Ammann.</note>, Collinum<note xml:id="fn43" type="footnote" n="43">Der Griechischlehrer Rudolf Collin.</note> fratresque omnes una cum uxore tua<note xml:id="fn44" type="footnote" n="44">Anna, geb. Adlischwyler.</note>, fratre tuo d. Ioanne et familia omnis.</s>
+					<s n="33" xml:lang="la" type="manual">1547.</s>
+					<s n="34" xml:lang="la" type="auto">I. Kilchmeyer, tuus semper.<pb type="scan" next="419"/></s>
 				</p>
 			</div>
 			<div xml:id="div9" corresp="regest9">
 				<p>
 					<note>[Beilage:]<note xml:id="fne" type="footnote" n="e"><hi>Diese Beilage wurde von Kilchmeyer auf einem kleinen Papierstück verfasst, das später auf die innere leergebliebene Seite des Blattes aufgeklebt wurde, auf dem Kilchmeyer die Adresse angebracht hatte. Eine spätere Hand fügte darüber die Angabe</hi> Ad pag. 428 <hi>hinzu.</hi></note></note>
-					<s xml:lang="la" type="auto">Confectis literis et paratis omnibus noluit Lucius Tscharnerus, ut constituerat, proficisci, quapropter literas pecuniam continentes et ad Constanciam pertinentes non mitto, ut litterę meę sonant,<note xml:id="fn45" type="footnote" n="45">Oben in Z. <qv>zl17329-12</qv> und Z. <qv>zl17329-4</qv>.</note> sed paenes me retinui, donec Lucius descendat, idque hac causa, quod concionator ille, qui pecunias mittit Constanciam, Lucio Tscharnero rem suam apud te exequendam commendavit.<note xml:id="fn46" type="footnote" n="46">Am 23. November verdankte Ambrosius Blarer die späte Rückerstattung des ihm und Konrad Zwick von Kaspar Seidensticker geschuldeten Geldes; s. <ref target="file#13132">Nr. 3083</ref>,<qv>zl17349-4</qv>. Blarers Ausführungen lassen vermuten, dass er dabei auf einen nicht mehr erhaltenen Brief Bullingers reagierte, der zwingend vor Blarers Brief verfasst wurde. Angesichts der Beförderungsdauer eines Briefes zwischen Zürich und Konstanz muss Bullinger Seidenstickers Brief noch vor dem 22. November von Luzius Tscharner erhalten haben.<zfn>fn17329-1</zfn></note><pb type="edition" next="596"/></s>
+					<s n="35" xml:lang="la" type="auto">Confectis literis et paratis omnibus noluit Lucius Tscharnerus, ut constituerat, proficisci, quapropter literas pecuniam continentes et ad Constanciam pertinentes non mitto, ut litterę meę sonant,<note xml:id="fn45" type="footnote" n="45">Oben in Z. <qv>zl17329-12</qv> und Z. <qv>zl17329-4</qv>.</note> sed paenes me retinui, donec Lucius descendat, idque hac causa, quod concionator ille, qui pecunias mittit Constanciam, Lucio Tscharnero rem suam apud te exequendam commendavit.<note xml:id="fn46" type="footnote" n="46">Am 23. November verdankte Ambrosius Blarer die späte Rückerstattung des ihm und Konrad Zwick von Kaspar Seidensticker geschuldeten Geldes; s. <ref target="file13132">Nr. 3083</ref>,<qv>zl17349-4</qv>. Blarers Ausführungen lassen vermuten, dass er dabei auf einen nicht mehr erhaltenen Brief Bullingers reagierte, der zwingend vor Blarers Brief verfasst wurde. Angesichts der Beförderungsdauer eines Briefes zwischen Zürich und Konstanz muss Bullinger Seidenstickers Brief noch vor dem 22. November von Luzius Tscharner erhalten haben.<zfn>fn17329-1</zfn></note><pb type="edition" next="596"/></s>
 				</p>
 			</div>
 			<div xml:id="div10" corresp="regest10">
 				<p>
-					<s xml:lang="la" type="auto">Quod de Gallo illo scripsi,<note xml:id="fn47" type="footnote" n="47">Oben in Z. <qv>zl17329-2</qv>.</note> qui nuper apud vos, nunc per aliquot dies Bernę egit, de sarcinis eius mittendis cura Rubli, civis Tigurini, primo die novembris frustra scriptum esse apparuit, propterea quod eo die Gallus literas accepit sarcinas suas Solodori esse (idque iam in terciam septimanam), unde illas ad se vehi curabit actis vobis omnibus gratiis.<note xml:id="fnf" type="footnote" n="f"><hi>In der Vorlage:</hi> gratias.</note></s>
+					<s n="36" xml:lang="la" type="auto">Quod de Gallo illo scripsi,<note xml:id="fn47" type="footnote" n="47">Oben in Z. <qv>zl17329-2</qv>.</note> qui nuper apud vos, nunc per aliquot dies Bernę egit, de sarcinis eius mittendis cura Rubli, civis Tigurini, primo die novembris frustra scriptum esse apparuit, propterea quod eo die Gallus literas accepit sarcinas suas Solodori esse (idque iam in terciam septimanam), unde illas ad se vehi curabit actis vobis omnibus gratiis.<note xml:id="fnf" type="footnote" n="f"><hi>In der Vorlage:</hi> gratias.</note></s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf S. 420:]</note>
-					<s xml:lang="la" type="auto">Celeberrimo atque doctissimo viro d. m. Heinricho Bullingero, Tiguri apud pręposituram<note xml:id="fn48" type="footnote" n="48">Das Großmünsterstift.</note> pastori vigilantissimo, suo in domino confratri et simmystę perpetuo colendo.</s>
+					<s n="37" xml:lang="la" type="auto">Celeberrimo atque doctissimo viro d. m. Heinricho Bullingero, Tiguri apud pręposituram<note xml:id="fn48" type="footnote" n="48">Das Großmünsterstift.</note> pastori vigilantissimo, suo in domino confratri et simmystę perpetuo colendo.</s>
 				</p>
 			</div>
 		</body>

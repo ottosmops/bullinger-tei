@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Widmung" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 72,124</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Druck</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 72,124</idno>
+						<idno subtype="Hinweis">Druck</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -53,42 +56,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/851">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<date when="1550-03-00" cert="low"/>
+					-->
+					<persName ref="person495" cert="high"/>
+					<date notBefore="1550-03-01" notAfter="1550-03-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3207" cert="high">
+					<!--
+					<persName ref="person3207" cert="high">
 						<forename cert="high">Eduard VI.</forename>
 						<surname cert="high">König von England (Tudor)</surname>
 						<graphic type="portrait" url="portraits/3207_Tudor_Edward.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Eduard_VI."/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118687891"/>
 					</persName>
-					<place source="#830" cert="high">
-						<country>England</country>
-					</place>
+					-->
+					<persName ref="person3207" cert="high"/>
+					<place source="place830" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#852"/>
-					<ref type="prev_chronologically" target="files.xml#850"/>
-					<ref type="next_correspondence" target="files.xml#856"/>
+					<ref type="next_chronologically" target="file852"/>
+					<ref type="prev_chronologically" target="file850"/>
+					<ref type="next_correspondence" target="file856"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#856"/>
+					<ref type="next_correspondence_request" target="file856"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#855"/>
-					<ref type="prev_same_sender" target="files.xml#827"/>
+					<ref type="next_same_sender" target="file855"/>
+					<ref type="prev_same_sender" target="file827"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#715"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#855"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#827"/>
+					<ref type="prev_same_addressee" target="file715"/>
+					<ref type="next_with_sender_as_addressee" target="file855"/>
+					<ref type="prev_with_sender_as_addressee" target="file827"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#715"/>
+					<ref type="prev_with_addressee_as_sender" target="file715"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

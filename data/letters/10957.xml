@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=915</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=915</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#257">Konstanz</settlement>
-						<institution>Stadtarchiv</institution>
-						<idno type="Kopie">Ref. A. Fasc. 10, 298 r, Nr.67a</idno>
-						<repository ref="archive#48">
+						<!--
+						<repository ref="archive48">
 							<name>Konstanz SA</name>
 							<ref target="https://www.konstanz.de/start/kultur+_+freizeit/stadtarchiv.html"/>
 						</repository>
+						<settlement ref="place257">Konstanz</settlement>
+						<institution>Stadtarchiv</institution>
+						-->
+						<repository ref="archive48"/>
+						<idno subtype="Kopie">Ref. A. Fasc. 10, 298 r, Nr.67a</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,8 +50,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								[Die <placeName ref="565">Konstanzer</placeName> Pfarrer]
-								senden den Entwurf eines an <persName ref="138">Luther</persName> gerichteten Briefes und bitten um
+								[Die <placeName ref="place565">Konstanzer</placeName> Pfarrer]
+								senden den Entwurf eines an <persName ref="person138">Luther</persName> gerichteten Briefes und bitten um
 								Stellungnahme; die darin enthaltenen Unklarheiten wurden der in Aussicht stehenden Konkordie zuliebe in Kauf
 								genommen.
 							</p>
@@ -60,72 +63,81 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10957">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#257" cert="high">
-							<settlement>Konstanz</settlement>
-							<district>Baden-Württemberg</district>
-							<country>Deutschland</country>
-							<geo>47.6633 9.1759</geo>
-						</place>
-					</roleName>
-					<place source="#257" cert="high">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person4079" cert="high"/>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<place source="place257" cert="high"/>
 					<date when="1536-11-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<persName ref="person#1753" cert="high">
+					-->
+					<persName ref="person495" cert="high"/>
+					<!--
+					<persName ref="person1753" cert="high">
 						<forename cert="high">Leo</forename>
 						<surname cert="high">Jud</surname>
 						<graphic type="portrait" url="portraits/1753_Jud_Leo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Leo_Jud"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118558528"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11423330"/>
 					</persName>
-					<persName ref="person#2508" cert="high">
+					-->
+					<persName ref="person1753" cert="high"/>
+					<!--
+					<persName ref="person2508" cert="high">
 						<forename cert="high">Konrad</forename>
 						<surname cert="high">Pellikan</surname>
-						<addName type="main">Pellikan (Kürschner), Konrad</addName>
+						<persName type="main" ref="person8127>Pellikan (Kürschner), Konrad</addName>
 						<graphic type="portrait" url="portraits/2514_Pelikan_Konrad.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Konrad_Pellikan"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118739867"/>
 					</persName>
-					<persName ref="person#341" cert="high">
+					-->
+					<persName ref="person2508" cert="high"/>
+					<!--
+					<persName ref="person341" cert="high">
 						<forename cert="high">Theodor</forename>
 						<surname cert="high">Bibliander</surname>
-						<addName type="main">Bibliander (Buchmann), Theodor</addName>
+						<persName type="main" ref="person8171>Bibliander (Buchmann), Theodor</addName>
 						<graphic type="portrait" url="portraits/341_Bibliander_Theodor.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Theodor_Bibliander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/116170638"/>
 					</persName>
+					-->
+					<persName ref="person341" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10958"/>
-					<ref type="prev_chronologically" target="files.xml#10956"/>
-					<ref type="next_correspondence" target="files.xml#10992"/>
+					<ref type="next_chronologically" target="file10958"/>
+					<ref type="prev_chronologically" target="file10956"/>
+					<ref type="next_correspondence" target="file10992"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#10992"/>
+					<ref type="next_correspondence_request" target="file10992"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10992"/>
-					<ref type="prev_same_sender" target="files.xml#10919"/>
+					<ref type="next_same_sender" target="file10992"/>
+					<ref type="prev_same_sender" target="file10919"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10992"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10919"/>
+					<ref type="next_with_sender_as_addressee" target="file10992"/>
+					<ref type="prev_with_sender_as_addressee" target="file10919"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
@@ -141,31 +153,31 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Tigurinis, 24. novembris.</s>
+					<s n="1" xml:lang="la" type="auto">Tigurinis, 24. novembris.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">En, observandissimi et charissimi omnium fratres, magistratus nostri assensu proprio tabellario isto<note xml:id="fn5" type="footnote" n="5">Unbekannt.</note> ad vos mittimus, quicquid tandem ecclesia nostra <persName ref="138">Luthero</persName> scribere et respondere statuit<note xml:id="fn6" type="footnote" n="6">Der nach Zürich gesandte Entwurf des Schreibens von <placeName ref="565">Konstanz</placeName> an <persName ref="138">Luther</persName> findet sich in Zürich ZB, Ms T 106, Nr. 22, und tragt Bullingers Vermerk: "Varia de concordiae negotio et quaedam Constantien[sium] de concordia et reponsione Luthero danda". Die Ausfertigung vom 30. Dezember 1536 ist gedruckt in: WA Briefwechsel XII 224-235, Nr. 4266.</note>.</s>
-					<s xml:lang="la" type="auto">Petimus autem a vobis coniunctissimis nobis fratribus, hoc ipsum responsum nostrum diligenter legatis et relegatis, deinde significetis, quid fatiendum videatur.</s>
-					<s xml:lang="la" type="auto">Sic enim nos urget conscientia nostra, ne scilicet quid temere a nobis.</s>
-					<s xml:lang="la" type="auto">Cavete vero, ne<note xml:id="fna" type="footnote" n="a">ne <hi>über der Zeile nachgetragen.</hi></note> quid sinistri in mentem vobis veniat.</s>
-					<s xml:lang="la" type="auto">Testamur enim dominum coram vobis vestrum iuditium<pb type="edition" next="473"/> non nisi conscientiis nostris usui futurum.</s>
-					<s xml:lang="la" type="auto">Et plane nichil aliud cause est, cur istud extorqueamus, quam ut bonorum iuditio intelligamus, certane sint et vera, que daturi simus semel, ut semper data sint.</s>
-					<s xml:lang="la" type="auto">Nos satis dilucide expressimus nostram mentem.</s>
-					<s xml:lang="la" type="auto">Ceterum, curia hec non nobis, sed aliis sit exprimenda, cupimus charitatis intuitu nichil negligere.</s>
-					<s xml:lang="la" type="auto">Cum autem veritati et Christo primas debeamus, obstruendum est, ne quid cum illius offensa demus.</s>
-					<s xml:lang="la" type="auto">Itaque dedimus operam, ut quam proxime imitaremur <persName ref="138">Luthero</persName> acceptas locutiones, id quod extorsit concordie desyderium.</s>
-					<s xml:lang="la" type="auto">Rursus obstitit veritas, quo minus dederimus omnino.</s>
-					<s xml:lang="la" type="auto">Sed, o deus, quam dolet nobis in tam miseram infelicitatem nos incedisse, ut, cum verba propter exprimendam mentem sint inventa, iam vix satis mentis sit<note xml:id="fnb" type="footnote" n="b">sit <hi>über der Zeile nachgetragen.</hi></note> ad exprimenda verba.</s>
-					<s xml:lang="la" type="auto">Atque utinam<note xml:id="fnc" type="footnote" n="c">utinam <hi>zuerst gestrichen, dann wiederholt.</hi></note> non piaculum sit apertum esse!</s>
-					<s xml:lang="la" type="auto">Et<note xml:id="fnd" type="footnote" n="d">Et <hi>aus</hi> At <hi>korrigiert.</hi></note> certe, quicquid in nostra responsione non est clarum, nostra culpa non accidit.</s>
-					<s xml:lang="la" type="auto">Nam studuimus dicere<note xml:id="fne" type="footnote" n="e">dicere <hi>über der Zeile nachgetragen.</hi></note> quedam obscurius et coegimus nos ipsos preter morem nostrum ad obscuritatem quandam, idque, ne videamur pro charitatis et concordię praesentis rationibus parum propitii.</s>
-					<s xml:lang="la" type="auto">Observate vos singula et sententias et verba, ut, siquid uspiam occurrat dignum, quod vel addatur vel tollatur, moneatis libere.</s>
-					<s xml:lang="la" type="auto">Apud nos stat<note xml:id="fnf" type="footnote" n="f"><hi>vor</hi> stat <hi>gestrichenes</hi> statt.</note> sententia firma, salvo semper spiritus dei calculo.</s>
-					<s xml:lang="la" type="auto">Quo minus autem fallamur nostro<note xml:id="fng" type="footnote" n="g">nostro <hi>über gestrichenem</hi> vestro.</note> iuditio, subiicimus hec nostra etiam<note xml:id="fnh" type="footnote" n="h">nostra etiam <hi>am Rande nachgetragen.</hi></note> vestrę censurae.</s>
-					<s xml:lang="la" type="auto">Et scimus vos pro summa vestra benevolentia nobis non defuturos.</s>
-					<s xml:lang="la" type="auto">Crescet autem spes nostra vestro opitulatu.</s>
-					<s xml:lang="la" type="auto">Conciliavit nos hactenus<note xml:id="fni" type="footnote" n="i"><hi>vor</hi> hactenus <hi>gestrichenes</hi> Christus.</note> amor Christi.</s>
-					<s xml:lang="la" type="auto">Itaque optamus, ut hec amicitia non sit<note xml:id="fnk" type="footnote" n="k"><hi>vor</hi> sit <hi>ein gestrichenes, unleserbares Wort.</hi></note> temporaria, sed perpetua.</s>
+					<s n="2" xml:lang="la" type="auto">En, observandissimi et charissimi omnium fratres, magistratus nostri assensu proprio tabellario isto<note xml:id="fn5" type="footnote" n="5">Unbekannt.</note> ad vos mittimus, quicquid tandem ecclesia nostra <persName ref="person138">Luthero</persName> scribere et respondere statuit<note xml:id="fn6" type="footnote" n="6">Der nach Zürich gesandte Entwurf des Schreibens von <placeName ref="place565">Konstanz</placeName> an <persName ref="person138">Luther</persName> findet sich in Zürich ZB, Ms T 106, Nr. 22, und tragt Bullingers Vermerk: "Varia de concordiae negotio et quaedam Constantien[sium] de concordia et reponsione Luthero danda". Die Ausfertigung vom 30. Dezember 1536 ist gedruckt in: WA Briefwechsel XII 224-235, Nr. 4266.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Petimus autem a vobis coniunctissimis nobis fratribus, hoc ipsum responsum nostrum diligenter legatis et relegatis, deinde significetis, quid fatiendum videatur.</s>
+					<s n="4" xml:lang="la" type="auto">Sic enim nos urget conscientia nostra, ne scilicet quid temere a nobis.</s>
+					<s n="5" xml:lang="la" type="auto">Cavete vero, ne<note xml:id="fna" type="footnote" n="a">ne <hi>über der Zeile nachgetragen.</hi></note> quid sinistri in mentem vobis veniat.</s>
+					<s n="6" xml:lang="la" type="auto">Testamur enim dominum coram vobis vestrum iuditium<pb type="edition" next="473"/> non nisi conscientiis nostris usui futurum.</s>
+					<s n="7" xml:lang="la" type="auto">Et plane nichil aliud cause est, cur istud extorqueamus, quam ut bonorum iuditio intelligamus, certane sint et vera, que daturi simus semel, ut semper data sint.</s>
+					<s n="8" xml:lang="la" type="auto">Nos satis dilucide expressimus nostram mentem.</s>
+					<s n="9" xml:lang="la" type="auto">Ceterum, curia hec non nobis, sed aliis sit exprimenda, cupimus charitatis intuitu nichil negligere.</s>
+					<s n="10" xml:lang="la" type="auto">Cum autem veritati et Christo primas debeamus, obstruendum est, ne quid cum illius offensa demus.</s>
+					<s n="11" xml:lang="la" type="auto">Itaque dedimus operam, ut quam proxime imitaremur <persName ref="person138">Luthero</persName> acceptas locutiones, id quod extorsit concordie desyderium.</s>
+					<s n="12" xml:lang="la" type="auto">Rursus obstitit veritas, quo minus dederimus omnino.</s>
+					<s n="13" xml:lang="la" type="auto">Sed, o deus, quam dolet nobis in tam miseram infelicitatem nos incedisse, ut, cum verba propter exprimendam mentem sint inventa, iam vix satis mentis sit<note xml:id="fnb" type="footnote" n="b">sit <hi>über der Zeile nachgetragen.</hi></note> ad exprimenda verba.</s>
+					<s n="14" xml:lang="la" type="auto">Atque utinam<note xml:id="fnc" type="footnote" n="c">utinam <hi>zuerst gestrichen, dann wiederholt.</hi></note> non piaculum sit apertum esse!</s>
+					<s n="15" xml:lang="la" type="auto">Et<note xml:id="fnd" type="footnote" n="d">Et <hi>aus</hi> At <hi>korrigiert.</hi></note> certe, quicquid in nostra responsione non est clarum, nostra culpa non accidit.</s>
+					<s n="16" xml:lang="la" type="auto">Nam studuimus dicere<note xml:id="fne" type="footnote" n="e">dicere <hi>über der Zeile nachgetragen.</hi></note> quedam obscurius et coegimus nos ipsos preter morem nostrum ad obscuritatem quandam, idque, ne videamur pro charitatis et concordię praesentis rationibus parum propitii.</s>
+					<s n="17" xml:lang="la" type="auto">Observate vos singula et sententias et verba, ut, siquid uspiam occurrat dignum, quod vel addatur vel tollatur, moneatis libere.</s>
+					<s n="18" xml:lang="la" type="auto">Apud nos stat<note xml:id="fnf" type="footnote" n="f"><hi>vor</hi> stat <hi>gestrichenes</hi> statt.</note> sententia firma, salvo semper spiritus dei calculo.</s>
+					<s n="19" xml:lang="la" type="auto">Quo minus autem fallamur nostro<note xml:id="fng" type="footnote" n="g">nostro <hi>über gestrichenem</hi> vestro.</note> iuditio, subiicimus hec nostra etiam<note xml:id="fnh" type="footnote" n="h">nostra etiam <hi>am Rande nachgetragen.</hi></note> vestrę censurae.</s>
+					<s n="20" xml:lang="la" type="auto">Et scimus vos pro summa vestra benevolentia nobis non defuturos.</s>
+					<s n="21" xml:lang="la" type="auto">Crescet autem spes nostra vestro opitulatu.</s>
+					<s n="22" xml:lang="la" type="auto">Conciliavit nos hactenus<note xml:id="fni" type="footnote" n="i"><hi>vor</hi> hactenus <hi>gestrichenes</hi> Christus.</note> amor Christi.</s>
+					<s n="23" xml:lang="la" type="auto">Itaque optamus, ut hec amicitia non sit<note xml:id="fnk" type="footnote" n="k"><hi>vor</hi> sit <hi>ein gestrichenes, unleserbares Wort.</hi></note> temporaria, sed perpetua.</s>
 				</p>
 			</div>
 		</body>

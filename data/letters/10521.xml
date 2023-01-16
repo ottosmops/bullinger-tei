@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=485</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=485</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,49</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,49</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,14 +49,14 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Erwartet Bullingers Antwort auf seinen letzten Brief [<ref target="file#10512">Nr. 476</ref>]. Wegen des
-								zürcherischen Bekenntnisses [<ref target="file#10518">Nr. 482</ref>] wurden die prominentesten Amtsbrüder aus
-								den ländlichen Kapiteln <placeName ref="121">Berns</placeName> einberufen. Ohne ihr und des
+								Erwartet Bullingers Antwort auf seinen letzten Brief [<ref target="file10512">Nr. 476</ref>]. Wegen des
+								zürcherischen Bekenntnisses [<ref target="file10518">Nr. 482</ref>] wurden die prominentesten Amtsbrüder aus
+								den ländlichen Kapiteln <placeName ref="place121">Berns</placeName> einberufen. Ohne ihr und des
 								Magistrates Einverständnis wollen die Stadtberner nichts tun. Auch die Zürcher sollten ihre Landpfarrer
-								miteinbeziehen, da <persName ref="138">Luther</persName> nach einer Einigung alle Länder mit seinem
+								miteinbeziehen, da <persName ref="person138">Luther</persName> nach einer Einigung alle Länder mit seinem
 								Siegesgeschrei erfüllen wird. Den Beschluß wird Bullinger bald erhalten. Versichert Bullinger seiner
 								Freundschaft und bittet um die Zusendung von dessen Kommentar zum 2. Korintherbrief.
-								[<persName ref="525">Otto</persName>] <persName ref="525">Brunfels</persName> ist gestorben.
+								[Otto] <persName ref="person525">Brunfels</persName> ist gestorben.
 								Grüße.
 							</p>
 						</summary>
@@ -64,43 +67,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10521">
 				<correspAction type="sent">
-					<persName ref="person#1391" cert="high">
+					<!--
+					<persName ref="person1391" cert="high">
 						<forename cert="high">Berchtold</forename>
 						<surname cert="high">Haller</surname>
+						<graphic type="portrait" url="portraits/1391_Haller_Berchtold.jpg"/>
+						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Berchtold_Haller"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104180536"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413862"/>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person1391" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1534-12-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10522"/>
-					<ref type="prev_chronologically" target="files.xml#10520"/>
-					<ref type="next_correspondence" target="files.xml#10522"/>
-					<ref type="prev_correspondence" target="files.xml#10512"/>
-					<ref type="next_correspondence_request" target="files.xml#10522"/>
-					<ref type="prev_correspondence_request" target="files.xml#10512"/>
+					<ref type="next_chronologically" target="file10522"/>
+					<ref type="prev_chronologically" target="file10520"/>
+					<ref type="next_correspondence" target="file10522"/>
+					<ref type="prev_correspondence" target="file10512"/>
+					<ref type="next_correspondence_request" target="file10522"/>
+					<ref type="prev_correspondence_request" target="file10512"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10217"/>
-					<ref type="next_same_sender" target="files.xml#10522"/>
-					<ref type="prev_same_sender" target="files.xml#10512"/>
-					<ref type="next_same_addressee" target="files.xml#10528"/>
-					<ref type="prev_same_addressee" target="files.xml#10502"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10522"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10512"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10528"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10502"/>
+					<ref type="prev_correspondence_reaction" target="file10217"/>
+					<ref type="next_same_sender" target="file10522"/>
+					<ref type="prev_same_sender" target="file10512"/>
+					<ref type="next_same_addressee" target="file10528"/>
+					<ref type="prev_same_addressee" target="file10502"/>
+					<ref type="next_with_sender_as_addressee" target="file10522"/>
+					<ref type="prev_with_sender_as_addressee" target="file10512"/>
+					<ref type="next_with_addressee_as_sender" target="file10528"/>
+					<ref type="prev_with_addressee_as_sender" target="file10502"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,32 +127,32 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Ad literas proximas<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file#10512">Nr. 476</ref>.</note> cum non responderis, charissime Heinrice, responsum expectare non desino.</s>
-					<s xml:lang="la" type="auto">Caeterum, quod ad confessionem vestram de eucharistia<note xml:id="fn2" type="footnote" n="2">Gemeint ist das zürcherische Abendmahlsbekenntnis vom Dezember 1534 (<ref target="file#10518">Nr. 482</ref>).</note> pertinet, convocavimus ex agro nostro fratres<note xml:id="fn3" type="footnote" n="3">Namentlich nicht bekannt. Zur Organisation der <placeName ref="121">Berner</placeName> Kirche während der Reformation s. <hi>Guggisberg</hi> 154-156.</note> cuiusque capituli potiores - 14 habet <placeName ref="121">Bernensis</placeName> ager<note xml:id="fna" type="footnote" n="a"><hi>Von</hi> 14 <hi>bis</hi> ager <hi>am Rande nachgetragen.</hi></note> -, absque quorum consensu, immo et magistratus ecclesiarum nomine nobis nihil penitus agendum censuimus.</s>
-					<s xml:lang="la" type="auto">Nescimus vero, num vos soli apud Tigurum absque iis, quos habetis in agro, arduum hoc onus suscępturi sitis.</s>
-					<s xml:lang="la" type="auto">Videbitis nimirum, ubi Luterus vestram apprehenderit confessionem, utcumque eam vel implicaveritis vel explicatam tradideritis, quanto cum triumpho et victorię encomio totum sit orbem repleturus.</s>
-					<s xml:lang="la" type="auto">Sed de his proxime.</s>
-					<s xml:lang="la" type="auto">Quam primum a fratribus deliberatum fuerit, vestra cum nostris ad vos mittemus.</s>
-					<s xml:lang="la" type="auto">Interim perpetuo curabis, utcumque libertatem aut potius ignorantiam meam hac in re prodidero, firma maneat, constans et perpetua inter nos amicicia, quam nisi dudum perspectissimam teneres, non facile sinum cordis mei aperuisses.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Ad literas proximas<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file10512">Nr. 476</ref>.</note> cum non responderis, charissime Heinrice, responsum expectare non desino.</s>
+					<s n="3" xml:lang="la" type="auto">Caeterum, quod ad confessionem vestram de eucharistia<note xml:id="fn2" type="footnote" n="2">Gemeint ist das zürcherische Abendmahlsbekenntnis vom Dezember 1534 (<ref target="file10518">Nr. 482</ref>).</note> pertinet, convocavimus ex agro nostro fratres<note xml:id="fn3" type="footnote" n="3">Namentlich nicht bekannt. Zur Organisation der <placeName ref="place121">Berner</placeName> Kirche während der Reformation s. <hi>Guggisberg</hi> 154-156.</note> cuiusque capituli potiores - 14 habet <placeName ref="place121">Bernensis</placeName> ager<note xml:id="fna" type="footnote" n="a"><hi>Von</hi> 14 <hi>bis</hi> ager <hi>am Rande nachgetragen.</hi></note> -, absque quorum consensu, immo et magistratus ecclesiarum nomine nobis nihil penitus agendum censuimus.</s>
+					<s n="4" xml:lang="la" type="auto">Nescimus vero, num vos soli apud Tigurum absque iis, quos habetis in agro, arduum hoc onus suscępturi sitis.</s>
+					<s n="5" xml:lang="la" type="auto">Videbitis nimirum, ubi Luterus vestram apprehenderit confessionem, utcumque eam vel implicaveritis vel explicatam tradideritis, quanto cum triumpho et victorię encomio totum sit orbem repleturus.</s>
+					<s n="6" xml:lang="la" type="auto">Sed de his proxime.</s>
+					<s n="7" xml:lang="la" type="auto">Quam primum a fratribus deliberatum fuerit, vestra cum nostris ad vos mittemus.</s>
+					<s n="8" xml:lang="la" type="auto">Interim perpetuo curabis, utcumque libertatem aut potius ignorantiam meam hac in re prodidero, firma maneat, constans et perpetua inter nos amicicia, quam nisi dudum perspectissimam teneres, non facile sinum cordis mei aperuisses.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si quae fuerint excusa in 2. Corinth.<note xml:id="fn4" type="footnote" n="4">Bullingers «Commentarius in posteriorem Pauli ad Corinthios epistolam» erschien im März 1535 (HBBibl I 71).</note>, vel nuncius<note xml:id="fn5" type="footnote" n="5">Unbekannt.</note> ille vel <persName ref="891">Christophorus</persName><note xml:id="fn6" type="footnote" n="6"><persName ref="891">Christoph Froschauer</persName>.</note>, quem ad ferias natalicias expectamus, adferat.</s>
-					<s xml:lang="la" type="auto"><persName ref="525">Brunfelsius</persName> e vivis migravit.</s>
-					<s xml:lang="la" type="auto">Salutabis symmistas, uxorem<note xml:id="fn7" type="footnote" n="7"><persName ref="32">Anna Bullinger</persName>, geb. Adlischwyler.</note> et familiam.</s>
+					<s n="9" xml:lang="la" type="auto">Si quae fuerint excusa in 2. Corinth.<note xml:id="fn4" type="footnote" n="4">Bullingers «Commentarius in posteriorem Pauli ad Corinthios epistolam» erschien im März 1535 (HBBibl I 71).</note>, vel nuncius<note xml:id="fn5" type="footnote" n="5">Unbekannt.</note> ille vel <persName ref="person891">Christophorus</persName><note xml:id="fn6" type="footnote" n="6"><persName ref="person891">Christoph Froschauer</persName>.</note>, quem ad ferias natalicias expectamus, adferat.</s>
+					<s n="10" xml:lang="la" type="auto"><persName ref="person525">Brunfelsius</persName> e vivis migravit.</s>
+					<s n="11" xml:lang="la" type="auto">Salutabis symmistas, uxorem<note xml:id="fn7" type="footnote" n="7"><persName ref="person32">Anna Bullinger</persName>, geb. Adlischwyler.</note> et familiam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="12" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">10. decembris anno 34.</s>
+					<s n="13" xml:lang="la" type="auto">10. decembris anno 34.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus, quantulus est, Bercht. Hall.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus, quantulus est, Bercht. Hall.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Heinrico Bullingero, ecclesiastę Tigurino pietate et eruditione ornatissimo, fratri suo.</s>
+					<s n="15" xml:lang="la" type="auto">Heinrico Bullingero, ecclesiastę Tigurino pietate et eruditione ornatissimo, fratri suo.</s>
 				</p>
 			</div>
 		</body>

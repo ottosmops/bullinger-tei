@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2011"/>
-				<idno type="ISBN">ISBN 978-3-290-17565-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1937</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17565-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1937</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 14</title>
+				<title subtype="publication">HBBW XIV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Henrich, Rainer; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">14</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 366,251</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 366,251</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,20 +50,20 @@
 						<summary>
 							<p xml:id="regest1">
 								Vermisst im Verzeichnis der [zur Aufnahme in die lateinische Gesamtausgabe vorgesehenen] Werke Zwinglis die
-								[1536] in <placeName ref="97">Basel</placeName> gedruckten Briefe; schlägt vor, auch die Akten der
-								<placeName ref="121">Berner</placeName> Disputation [von 1528] aufzunehmen, und erkundigt sich, ob
-								Zwinglis Brief an [<persName ref="162">Andreas</persName>]
-								<persName ref="162">Osiander</persName> [d.Ä.] [vom 6. Mai 1527] nicht mit abgedruckt wird. Basler
+								[1536] in <placeName ref="place97">Basel</placeName> gedruckten Briefe; schlägt vor, auch die Akten der
+								<placeName ref="place121">Berner</placeName> Disputation [von 1528] aufzunehmen, und erkundigt sich, ob
+								Zwinglis Brief an [Andreas]
+								<persName ref="person162">Osiander</persName> [d.Ä.] [vom 6. Mai 1527] nicht mit abgedruckt wird. Basler
 								[Söldner] schwimmen nachts durch den Rhein, um die Wachen zu umgehen; drei vorübergehend verschwundene
-								Hauptleute halten sich jetzt in <placeName ref="283">Dornach</placeName> auf und wurden vom Rat
+								Hauptleute halten sich jetzt in <placeName ref="place283">Dornach</placeName> auf und wurden vom Rat
 								erfolglos zurückgemahnt; über 1000 ungehorsame Basler sollen aus Stadt und Land entwichen sein, und was die
 								Zürcher tun werden, lässt sich aus den Gerüchten erschließen; die Landsknechte kehren zurück, da ihnen der
 								Weg zum französischen [König Franz I.] versperrt ist. Vom Überfall auf den Nürnberger Gesandten [Hieronymus
-								Baumgärtner] auf dem Heimweg vom Reichstag zu <placeName ref="1001">Speyer</placeName> wird
-								Bullinger gehört haben; über die Täter ist <persName ref="74">Gast</persName> nichts bekannt. Ein
-								Bote aus <placeName ref="1205">Wittenberg</placeName>, der zu Himmelfahrt [22. Mai] in Breslau war,
-								wusste nichts von der Ankunft des türkischen [<persName ref="2269">Sultans</persName>
-								<persName ref="2269">Suleiman</persName> I.]. Grüße.
+								Baumgärtner] auf dem Heimweg vom Reichstag zu <placeName ref="place1001">Speyer</placeName> wird
+								Bullinger gehört haben; über die Täter ist <persName ref="person74">Gast</persName> nichts bekannt. Ein
+								Bote aus <placeName ref="place1205">Wittenberg</placeName>, der zu Himmelfahrt [22. Mai] in Breslau war,
+								wusste nichts von der Ankunft des türkischen [Sultans
+								<persName ref="person2269">Suleiman I.</persName>]. Grüße.
 							</p>
 						</summary>
 					</msContents>
@@ -70,44 +73,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11984">
 				<correspAction type="sent">
-					<persName ref="person#1278" cert="high">
+					<!--
+					<persName ref="person1278" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Gast</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Gast"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/122090284"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415086"/>
 					</persName>
-					<place source="#28" cert="low">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person1278" cert="high"/>
+					<place source="place28" cert="low"/>
 					<date when="1544-06-25" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11985"/>
-					<ref type="prev_chronologically" target="files.xml#11983"/>
-					<ref type="next_correspondence" target="files.xml#11987"/>
-					<ref type="prev_correspondence" target="files.xml#11970"/>
-					<ref type="next_correspondence_request" target="files.xml#11987"/>
-					<ref type="prev_correspondence_request" target="files.xml#11970"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12899"/>
+					<ref type="next_chronologically" target="file11985"/>
+					<ref type="prev_chronologically" target="file11983"/>
+					<ref type="next_correspondence" target="file11987"/>
+					<ref type="prev_correspondence" target="file11970"/>
+					<ref type="next_correspondence_request" target="file11987"/>
+					<ref type="prev_correspondence_request" target="file11970"/>
+					<ref type="next_correspondence_reaction" target="file12899"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11987"/>
-					<ref type="prev_same_sender" target="files.xml#11970"/>
-					<ref type="next_same_addressee" target="files.xml#11988"/>
-					<ref type="prev_same_addressee" target="files.xml#11981"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11987"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11970"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11988"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11981"/>
+					<ref type="next_same_sender" target="file11987"/>
+					<ref type="prev_same_sender" target="file11970"/>
+					<ref type="next_same_addressee" target="file11988"/>
+					<ref type="prev_same_addressee" target="file11981"/>
+					<ref type="next_with_sender_as_addressee" target="file11987"/>
+					<ref type="prev_with_sender_as_addressee" target="file11970"/>
+					<ref type="next_with_addressee_as_sender" target="file11988"/>
+					<ref type="prev_with_addressee_as_sender" target="file11981"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -125,40 +133,40 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Catalogum librorum Zvinglii accepi<note xml:id="fn1" type="footnote" n="1">Wie aus der Fortsetzung hervorgeht, hatte Bullinger offenbar das Inhaltsverzeichnis der in Vorbereitung befindlichen lateinischen Gesamtausgabe der Werke Zwinglis an <persName ref="74">Gast</persName> übersandt; s. oben <ref target="file#11919">Nr. 1873</ref>, 9-11 mit Anm. 4; 1886, 5-13.</note> nec epistolas <placeName ref="97">Basileę</placeName> excusas<note xml:id="fn2" type="footnote" n="2">Gemeint sind "Ioannis Oecolampadii et Huldrici Zvinglii epistolarum libri quatuor", <placeName ref="97">Basel</placeName>, Thomas Platter und <persName ref="1471">Balthasar Lasius</persName>, März 1536 (<persName ref="160">Oekolampad</persName>-Bibliographie, <ref target="file#10213">Nr. 182</ref>; VD 16 O 319).</note> illic reperio; annon et illas adiicietis operi tam sancto?</s>
-					<s xml:lang="la" type="auto">Quid, si etiam adderetis, quę pius vir disputavit in <placeName ref="121">Bernensi</placeName> disputatione<note xml:id="fn3" type="footnote" n="3">Die Akten der <placeName ref="121">Berner</placeName> Disputation waren 1528 bei Christoph Froschauer in Zürich erschienen; s. BZD C 142-144. Die Voten Zwinglis sind ediert in Z VI/I 235-432, <ref target="file#10143">Nr. 113</ref>. - Man ging damals kaum auf <persName ref="74">Gasts</persName> Vorschläge ein. Erst in der Gesamtausgabe von 1581 (BZD C 984) wurden dem ersten Band einige "Epistolae selectiores" beigefügt. In der 1544 und 1545 von Gwalther bearbeiteten Ausgabe sind nur vereinzelte Briefe aus den "Oecolampadii et Zvinglii epistolarum libri quatuor" übernommen worden und ein einziger Brief nach einer Handschrift, nämlich Zwinglis Brief an [den Rat von Nürnberg], 2. Juli 1526 ("Opera Zwinglii", Bd. 2, Zürich, Christoph Froschauer, 1544/1545, Bl. 295v.-297v.; Z VIII 634-642, <ref target="file#10536">Nr. 500</ref>). - Wir danken Herrn Kurt Jakob Rüetschi für freundliche Auskunft.</note>?</s>
-					<s xml:lang="la" type="auto">Certe multa egregia dicta, sententias graves illic licet invenire.</s>
-					<s xml:lang="la" type="auto">Quid, si tota <placeName ref="121">Bernensis</placeName> disputatio iis adiungeretur tomis?</s>
-					<s xml:lang="la" type="auto">Meo iudicio res egregia, ecclesiae utilis ac aedificationi inserviens.</s>
-					<s xml:lang="la" type="auto">Non addituri<note xml:id="fna" type="footnote" n="a">addituri <hi>korrigiert aus</hi> addetis.</note> estis epistolam ad <persName ref="162">Osiandrum</persName> scriptam<note xml:id="fn4" type="footnote" n="4">Der Brief Zwinglis an <persName ref="162">Andreas Osiander</persName> vom 6. Mai 1527 (Z IX 127-130, <ref target="file#10655">Nr. 617</ref>; Osiander GA II 513-517, Nr. 87) wurde von Osiander 1527 samt einer ausführlichen Erwiderung veröffentlicht (VD 16 Z 836). Er ist auch in der oben Anm. 2 erwähnten Briefausgabe enthalten (bes. auf f. 128r.-129r.), nicht jedoch in der Werkausgabe von 1544/45.</note>?<pb type="edition" next="300"/></s>
-					<s xml:lang="la" type="auto">Nostri insaniunt omnino contra magistratus voluntatem<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> voluptatem.</note>, contra iusiurandum: Noctu tranant per Rheni flumen, quum in portis omnibus custodia habeatur, ne egredi possint.</s>
-					<s xml:lang="la" type="auto">Capitanei tres<note xml:id="fn5" type="footnote" n="5">Am 3. Mai warnte der Rat die Hauptleute Fridli Blarer, Rudolf Kessler und Asimus [Erasmus] Goldschmid davor, Basler Untertanen anzuwerben; s. Basel StA, Missiven B4, S. 179f.</note> ex civibus diu latuerunt in angulis, iam tandem emerserunt; sunt in pago <placeName ref="283">Dornach</placeName>.</s>
-					<s xml:lang="la" type="auto">Noster senatus misit ad illos literas ac revocavit omnes, sed frustra;<note xml:id="fn6" type="footnote" n="6">Am 2. Juni wurde allen Ämtern das Reislaufverbot in Erinnerung gerufen, und am 4. Juni wurde der Vogt zu <placeName ref="283">Dornach</placeName> aufgefordert, die dort versammelten Hauptleute und Truppen vor den herumstreifenden vorderösterreichischen Reisigen zu warnen; s. ebd., S. 180f bzw. 184f.</note> <foreign xml:lang="de">sy wellent dem teufel entgegen gon.</foreign></s>
-					<s xml:lang="la" type="auto">Omnia spectant eo, ut tandem pereamus, quum nulla omnino sit obedientia, nullus dei timor.</s>
-					<s xml:lang="la" type="auto">Seditiones gliscunt passim; aiunt plus quam 1000 aufugisse tam ex civitate quam ex agro nostro.</s>
-					<s xml:lang="la" type="auto">Quid vester populus sit facturus, fere olfacio ex communi rumore.</s>
-					<s xml:lang="la" type="auto">Lantzknechti redeunt ad nos, quia nullum aditum habent accedendi<note xml:id="fnc" type="footnote" n="c">accedendi <hi>über der Zeile nachgetragen.</hi></note> ad Gallum<note xml:id="fn7" type="footnote" n="7">König Franz I.</note>; loca omnia sunt custodita, accedere eum non possunt.</s>
-					<s xml:lang="la" type="auto">Sic profundit ingentem pecunię summam.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Catalogum librorum Zvinglii accepi<note xml:id="fn1" type="footnote" n="1">Wie aus der Fortsetzung hervorgeht, hatte Bullinger offenbar das Inhaltsverzeichnis der in Vorbereitung befindlichen lateinischen Gesamtausgabe der Werke Zwinglis an <persName ref="person74">Gast</persName> übersandt; s. oben <ref target="file11919">Nr. 1873</ref>, 9-11 mit Anm. 4; 1886, 5-13.</note> nec epistolas <placeName ref="place97">Basileę</placeName> excusas<note xml:id="fn2" type="footnote" n="2">Gemeint sind "Ioannis Oecolampadii et Huldrici Zvinglii epistolarum libri quatuor", <placeName ref="place97">Basel</placeName>, Thomas Platter und <persName ref="person1471">Balthasar Lasius</persName>, März 1536 (<persName ref="person160">Oekolampad</persName>-Bibliographie, <ref target="file10213">Nr. 182</ref>; VD 16 O 319).</note> illic reperio; annon et illas adiicietis operi tam sancto?</s>
+					<s n="3" xml:lang="la" type="auto">Quid, si etiam adderetis, quę pius vir disputavit in <placeName ref="place121">Bernensi</placeName> disputatione<note xml:id="fn3" type="footnote" n="3">Die Akten der <placeName ref="place121">Berner</placeName> Disputation waren 1528 bei Christoph Froschauer in Zürich erschienen; s. BZD C 142-144. Die Voten Zwinglis sind ediert in Z VI/I 235-432, <ref target="file10143">Nr. 113</ref>. - Man ging damals kaum auf <persName ref="person74">Gasts</persName> Vorschläge ein. Erst in der Gesamtausgabe von 1581 (BZD C 984) wurden dem ersten Band einige "Epistolae selectiores" beigefügt. In der 1544 und 1545 von Gwalther bearbeiteten Ausgabe sind nur vereinzelte Briefe aus den "Oecolampadii et Zvinglii epistolarum libri quatuor" übernommen worden und ein einziger Brief nach einer Handschrift, nämlich Zwinglis Brief an [den Rat von Nürnberg], 2. Juli 1526 ("Opera Zwinglii", Bd. 2, Zürich, Christoph Froschauer, 1544/1545, Bl. 295v.-297v.; Z VIII 634-642, <ref target="file10536">Nr. 500</ref>). - Wir danken Herrn Kurt Jakob Rüetschi für freundliche Auskunft.</note>?</s>
+					<s n="4" xml:lang="la" type="auto">Certe multa egregia dicta, sententias graves illic licet invenire.</s>
+					<s n="5" xml:lang="la" type="auto">Quid, si tota <placeName ref="place121">Bernensis</placeName> disputatio iis adiungeretur tomis?</s>
+					<s n="6" xml:lang="la" type="auto">Meo iudicio res egregia, ecclesiae utilis ac aedificationi inserviens.</s>
+					<s n="7" xml:lang="la" type="auto">Non addituri<note xml:id="fna" type="footnote" n="a">addituri <hi>korrigiert aus</hi> addetis.</note> estis epistolam ad <persName ref="person162">Osiandrum</persName> scriptam<note xml:id="fn4" type="footnote" n="4">Der Brief Zwinglis an <persName ref="person162">Andreas Osiander</persName> vom 6. Mai 1527 (Z IX 127-130, <ref target="file10655">Nr. 617</ref>; Osiander GA II 513-517, Nr. 87) wurde von Osiander 1527 samt einer ausführlichen Erwiderung veröffentlicht (VD 16 Z 836). Er ist auch in der oben Anm. 2 erwähnten Briefausgabe enthalten (bes. auf f. 128r.-129r.), nicht jedoch in der Werkausgabe von 1544/45.</note>?<pb type="edition" next="300"/></s>
+					<s n="8" xml:lang="la" type="auto">Nostri insaniunt omnino contra magistratus voluntatem<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> voluptatem.</note>, contra iusiurandum: Noctu tranant per Rheni flumen, quum in portis omnibus custodia habeatur, ne egredi possint.</s>
+					<s n="9" xml:lang="la" type="auto">Capitanei tres<note xml:id="fn5" type="footnote" n="5">Am 3. Mai warnte der Rat die Hauptleute Fridli Blarer, Rudolf Kessler und Asimus [Erasmus] Goldschmid davor, Basler Untertanen anzuwerben; s. Basel StA, Missiven B4, S. 179f.</note> ex civibus diu latuerunt in angulis, iam tandem emerserunt; sunt in pago <placeName ref="place283">Dornach</placeName>.</s>
+					<s n="10" xml:lang="la" type="auto">Noster senatus misit ad illos literas ac revocavit omnes, sed frustra;<note xml:id="fn6" type="footnote" n="6">Am 2. Juni wurde allen Ämtern das Reislaufverbot in Erinnerung gerufen, und am 4. Juni wurde der Vogt zu <placeName ref="place283">Dornach</placeName> aufgefordert, die dort versammelten Hauptleute und Truppen vor den herumstreifenden vorderösterreichischen Reisigen zu warnen; s. ebd., S. 180f bzw. 184f.</note> <foreign xml:lang="de">sy wellent dem teufel entgegen gon.</foreign></s>
+					<s n="11" xml:lang="la" type="auto">Omnia spectant eo, ut tandem pereamus, quum nulla omnino sit obedientia, nullus dei timor.</s>
+					<s n="12" xml:lang="la" type="auto">Seditiones gliscunt passim; aiunt plus quam 1000 aufugisse tam ex civitate quam ex agro nostro.</s>
+					<s n="13" xml:lang="la" type="auto">Quid vester populus sit facturus, fere olfacio ex communi rumore.</s>
+					<s n="14" xml:lang="la" type="auto">Lantzknechti redeunt ad nos, quia nullum aditum habent accedendi<note xml:id="fnc" type="footnote" n="c">accedendi <hi>über der Zeile nachgetragen.</hi></note> ad Gallum<note xml:id="fn7" type="footnote" n="7">König Franz I.</note>; loca omnia sunt custodita, accedere eum non possunt.</s>
+					<s n="15" xml:lang="la" type="auto">Sic profundit ingentem pecunię summam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nosti absque dubio legatum Nerobergensem<note xml:id="fn8" type="footnote" n="8">Der Ratsherr und Kirchenpfleger Hieronymus Baumgärtner (1498-1565) aus dem <placeName ref="795">Nürnberger</placeName> Patriziat; s. ADB II 168f; NDB I 664f.</note> esse captum<note xml:id="fnd" type="footnote" n="d"><hi>Vor</hi> captum <hi>ein irrtümlich nicht gestrichenes a.</hi></note> a comitiis <placeName ref="1001">Spirensibus</placeName> redeuntem,<note xml:id="fn9" type="footnote" n="9">Baumgärtner wurde am 31. Mai bei <placeName ref="1724">Treschklingen</placeName> (Kr. Heilbronn, Baden-Württemberg) wegen alter Streitigkeiten des schwäbischen Bundes mit <placeName ref="795">Nürnberg</placeName> durch den Reichsritter Albrecht von Rosenberg überfallen und verschleppt; s. WA Briefwechsel X 604; PC III 515f mit Anm. 5; RTA JR XV/4 1987f (mit Anm. 5) und 2006; Stefan <hi>Mühlhofer,</hi> Die Politik der fränkischen Reichsstände auf den Reichstagen von 1521-1555, Husum 2006. - Historische Studien 487, S. 155-166. Erst nach 14 Monaten, am 21. August 1545, wurde Baumgärtner gegen ein hohes Lösegeld freigelassen; s. den eigenhändigen Bericht über seine Gefangenschaft, hg. v. Hermann Wilhelm Caselmann, in: Jahresbericht des historischen Vereins von Mittelfranken, Bd. 33, 1865, S. 103-123.</note> servum unum<note xml:id="fn10" type="footnote" n="10">Die vier Begleiter Baumgartners (s. RTA JR XV/4 2006) sind nicht namentlich bekannt.</note> occisum atque semivivum relictum, puerum vulneratum, quem cum legato abduxerunt equites.</s>
-					<s xml:lang="la" type="auto">Qui nam illi sint, non potui expiscari.</s>
-					<s xml:lang="la" type="auto">Hoc est<note xml:id="fne" type="footnote" n="e">est <hi>über der Zeile nachgetragen.</hi></note> publicam fidem et caesaream servare!</s>
-					<s xml:lang="la" type="auto">Tabellio Vittenbergensis<note xml:id="fn11" type="footnote" n="11">Unbekannt.</note> iis diebus apud nos fuit, qui ne verbum quidem de Turcę<note xml:id="fn12" type="footnote" n="12"><persName ref="2269">Sultan Suleiman</persName> I.</note> adventu audivit, quum domi esset; qui dixit se die ascensionis domini<note xml:id="fn13" type="footnote" n="13">22. Mai 1544.</note> <placeName ref="180">Vratislaviae</placeName><note xml:id="fn14" type="footnote" n="14">in Breslau.</note> fuisse.</s>
+					<s n="16" xml:lang="la" type="auto">Nosti absque dubio legatum Nerobergensem<note xml:id="fn8" type="footnote" n="8">Der Ratsherr und Kirchenpfleger Hieronymus Baumgärtner (1498-1565) aus dem <placeName ref="place795">Nürnberger</placeName> Patriziat; s. ADB II 168f; NDB I 664f.</note> esse captum<note xml:id="fnd" type="footnote" n="d"><hi>Vor</hi> captum <hi>ein irrtümlich nicht gestrichenes a.</hi></note> a comitiis <placeName ref="place1001">Spirensibus</placeName> redeuntem,<note xml:id="fn9" type="footnote" n="9">Baumgärtner wurde am 31. Mai bei <placeName ref="place1724">Treschklingen</placeName> (Kr. Heilbronn, Baden-Württemberg) wegen alter Streitigkeiten des schwäbischen Bundes mit <placeName ref="place795">Nürnberg</placeName> durch den Reichsritter Albrecht von Rosenberg überfallen und verschleppt; s. WA Briefwechsel X 604; PC III 515f mit Anm. 5; RTA JR XV/4 1987f (mit Anm. 5) und 2006; Stefan <hi>Mühlhofer,</hi> Die Politik der fränkischen Reichsstände auf den Reichstagen von 1521-1555, Husum 2006. - Historische Studien 487, S. 155-166. Erst nach 14 Monaten, am 21. August 1545, wurde Baumgärtner gegen ein hohes Lösegeld freigelassen; s. den eigenhändigen Bericht über seine Gefangenschaft, hg. v. Hermann Wilhelm Caselmann, in: Jahresbericht des historischen Vereins von Mittelfranken, Bd. 33, 1865, S. 103-123.</note> servum unum<note xml:id="fn10" type="footnote" n="10">Die vier Begleiter Baumgartners (s. RTA JR XV/4 2006) sind nicht namentlich bekannt.</note> occisum atque semivivum relictum, puerum vulneratum, quem cum legato abduxerunt equites.</s>
+					<s n="17" xml:lang="la" type="auto">Qui nam illi sint, non potui expiscari.</s>
+					<s n="18" xml:lang="la" type="auto">Hoc est<note xml:id="fne" type="footnote" n="e">est <hi>über der Zeile nachgetragen.</hi></note> publicam fidem et caesaream servare!</s>
+					<s n="19" xml:lang="la" type="auto">Tabellio Vittenbergensis<note xml:id="fn11" type="footnote" n="11">Unbekannt.</note> iis diebus apud nos fuit, qui ne verbum quidem de Turcę<note xml:id="fn12" type="footnote" n="12">Sultan <persName ref="person2269">Suleiman I.</persName></note> adventu audivit, quum domi esset; qui dixit se die ascensionis domini<note xml:id="fn13" type="footnote" n="13">22. Mai 1544.</note> <placeName ref="place180">Vratislaviae</placeName><note xml:id="fn14" type="footnote" n="14">in Breslau.</note> fuisse.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino.</s>
-					<s xml:lang="la" type="auto">25. iunii 1544.<pb type="edition" next="301"/></s>
+					<s n="20" xml:lang="la" type="auto">Vale in domino.</s>
+					<s n="21" xml:lang="la" type="auto">25. iunii 1544.<pb type="edition" next="301"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Theodorum<note xml:id="fn15" type="footnote" n="15">Theodor Bibliander.</note> et Gvaltherum<note xml:id="fn16" type="footnote" n="16">Rudolf Gwalther.</note> cum Frisio<note xml:id="fn17" type="footnote" n="17"><persName ref="69">Johannes Fries</persName>.</note> salutabis nomine meo.</s>
-					<s xml:lang="la" type="auto">Tuus <persName ref="74">Gastius</persName>.</s>
+					<s n="22" xml:lang="la" type="auto">Theodorum<note xml:id="fn15" type="footnote" n="15">Theodor Bibliander.</note> et Gvaltherum<note xml:id="fn16" type="footnote" n="16">Rudolf Gwalther.</note> cum Frisio<note xml:id="fn17" type="footnote" n="17"><persName ref="person69">Johannes Fries</persName>.</note> salutabis nomine meo.</s>
+					<s n="23" xml:lang="la" type="auto">Tuus <persName ref="person74">Gastius</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Heinrycho Bullingero, ecclesiae Tigurinę pastori vigilantissimo etc.</s>
-					<s xml:lang="de" type="auto">Zu Zurich.</s>
+					<s n="24" xml:lang="la" type="auto">D. Heinrycho Bullingero, ecclesiae Tigurinę pastori vigilantissimo etc.</s>
+					<s n="25" xml:lang="de" type="auto">Zu Zurich.</s>
 				</p>
 			</div>
 		</body>

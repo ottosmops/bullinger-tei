@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2000"/>
-				<idno type="ISBN">ISBN 3-290-17211-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1158</idno>
+				<idno subtype="ISBN">ISBN 3-290-17211-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1158</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 8</title>
+				<title subtype="publication">HBBW VIII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">8</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,87</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,87</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,8 +49,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Empfiehlt [<persName ref="84">Rudolf Gwalther</persName>] und bittet,
-								<persName ref="81">Grynäus</persName> an sein Versprechen zu erinnern.
+								Empfiehlt [<persName ref="person84">Rudolf Gwalther</persName>] und bittet,
+								<persName ref="person81">Grynäus</persName> an sein Versprechen zu erinnern.
 							</p>
 						</summary>
 					</msContents>
@@ -57,46 +60,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11201">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="low"/>
 					<date when="1538-08-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
+					-->
+					<persName ref="person2234" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11202"/>
-					<ref type="prev_chronologically" target="files.xml#11200"/>
-					<ref type="next_correspondence" target="files.xml#11205"/>
-					<ref type="prev_correspondence" target="files.xml#11195"/>
-					<ref type="next_correspondence_request" target="files.xml#11233"/>
-					<ref type="prev_correspondence_request" target="files.xml#11193"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11205"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11195"/>
-					<ref type="next_same_sender" target="files.xml#11208"/>
-					<ref type="prev_same_sender" target="files.xml#11193"/>
-					<ref type="next_same_addressee" target="files.xml#11205"/>
-					<ref type="prev_same_addressee" target="files.xml#11195"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11208"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11193"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11205"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11195"/>
+					<ref type="next_chronologically" target="file11202"/>
+					<ref type="prev_chronologically" target="file11200"/>
+					<ref type="next_correspondence" target="file11205"/>
+					<ref type="prev_correspondence" target="file11195"/>
+					<ref type="next_correspondence_request" target="file11233"/>
+					<ref type="prev_correspondence_request" target="file11193"/>
+					<ref type="next_correspondence_reaction" target="file11205"/>
+					<ref type="prev_correspondence_reaction" target="file11195"/>
+					<ref type="next_same_sender" target="file11208"/>
+					<ref type="prev_same_sender" target="file11193"/>
+					<ref type="next_same_addressee" target="file11205"/>
+					<ref type="prev_same_addressee" target="file11195"/>
+					<ref type="next_with_sender_as_addressee" target="file11208"/>
+					<ref type="prev_with_sender_as_addressee" target="file11193"/>
+					<ref type="next_with_addressee_as_sender" target="file11205"/>
+					<ref type="prev_with_addressee_as_sender" target="file11195"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -113,26 +121,26 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Venit ad te, <persName ref="154">Myconi</persName> mi, puer<note xml:id="fn1" type="footnote" n="1"><persName ref="84">Rudolf Gwalther</persName>; vgl. oben <ref target="file#11195">Nr. 1152</ref>, 5-10.</note> ille meus adeoque et filius, quem, obsecro, sub disciplinam et fidem tuam suscipere velis et per omnia cum eo agere, ac si tuus esset.</s>
-					<s xml:lang="la" type="auto">Amo eum propter animi dotes et integritatem animi.</s>
-					<s xml:lang="la" type="auto">Proinde mihi putabis impensum, quicquid isti impenderis.</s>
-					<s xml:lang="la" type="auto"><persName ref="81">Grynaeum</persName> quoque nomine meo orabis, ut eorum suo tempore meminerit, quae de puero hoc ad me perscripsit<note xml:id="fn2" type="footnote" n="2">Siehe oben <ref target="file#11189">Nr. 1146</ref>, 1-10.</note>.</s>
-					<s xml:lang="la" type="auto">Quod si quid illi ad usus necessarios mutuo dederis, ego rependam.</s>
-					<s xml:lang="la" type="auto">Reliqua ipse explicabit.</s>
+					<s n="2" xml:lang="la" type="auto">Venit ad te, <persName ref="person154">Myconi</persName> mi, puer<note xml:id="fn1" type="footnote" n="1"><persName ref="person84">Rudolf Gwalther</persName>; vgl. oben <ref target="file11195">Nr. 1152</ref>, 5-10.</note> ille meus adeoque et filius, quem, obsecro, sub disciplinam et fidem tuam suscipere velis et per omnia cum eo agere, ac si tuus esset.</s>
+					<s n="3" xml:lang="la" type="auto">Amo eum propter animi dotes et integritatem animi.</s>
+					<s n="4" xml:lang="la" type="auto">Proinde mihi putabis impensum, quicquid isti impenderis.</s>
+					<s n="5" xml:lang="la" type="auto"><persName ref="person81">Grynaeum</persName> quoque nomine meo orabis, ut eorum suo tempore meminerit, quae de puero hoc ad me perscripsit<note xml:id="fn2" type="footnote" n="2">Siehe oben <ref target="file11189">Nr. 1146</ref>, 1-10.</note>.</s>
+					<s n="6" xml:lang="la" type="auto">Quod si quid illi ad usus necessarios mutuo dederis, ego rependam.</s>
+					<s n="7" xml:lang="la" type="auto">Reliqua ipse explicabit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale et me ama.<pb type="edition" next="193"/></s>
-					<s xml:lang="la" type="auto">12. augusti anno 1538.</s>
+					<s n="8" xml:lang="la" type="auto">Vale et me ama.<pb type="edition" next="193"/></s>
+					<s n="9" xml:lang="la" type="auto">12. augusti anno 1538.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus tuus.</s>
+					<s n="10" xml:lang="la" type="auto">H. Bullingerus tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino <persName ref="154">Osvaldo Myconio</persName>, plane suo.</s>
+					<s n="11" xml:lang="la" type="auto">Domino <persName ref="person154">Osvaldo Myconio</persName>, plane suo.</s>
 				</p>
 			</div>
 		</body>

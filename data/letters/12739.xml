@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2017"/>
-				<idno type="ISBN">ISBN 078-3-290-17889-5547</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2692</idno>
+				<idno subtype="ISBN">ISBN 078-3-290-17889-5547</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2692</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 18</title>
+				<title subtype="publication">HBBW XVIII</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">18</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336a,279</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336a,279</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336a,263</idno>
+							<idno subtype="Autograph">E II 336a,263</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -49,23 +52,23 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								[1] <persName ref="154">Myconius</persName> hätte Bullingers Schreiben besser verstanden, wenn
+								[1] <persName ref="person154">Myconius</persName> hätte Bullingers Schreiben besser verstanden, wenn
 								dieser die Lage der jeweils erwähnten Orte näher beschreiben würde. Wo liegt denn
-								<placeName ref="1302">Ballmertshofen</placeName>? <persName ref="154">Myconius</persName>
+								<placeName ref="place1302">Ballmertshofen</placeName>? <persName ref="person154">Myconius</persName>
 								weiß es nicht. Bullinger möge dies freundlich aufnehmen.
 								</p>
 								<p xml:id="regest2">
 								[2] Schön, dass Bullinger mit seinen traurigen Mitteilungen auch Trost spendet! Mit der Zeit wird sich
-								<persName ref="154">Myconius</persName> immer bewusster, dass der Gläubige ohne Christus nichts
+								<persName ref="person154">Myconius</persName> immer bewusster, dass der Gläubige ohne Christus nichts
 								vermag! Auch David wusste das. Denn wann immer er von ganzem Herzen zu Gott schrie, vertraute er auf Gott
 								allein. Jedoch ist dies gar nicht so einfach, wie ein jeder Fromme aus eigener Erfahrung weiß! Sobald man
 								etwas erreicht hat, verzichtet man nicht so schnell darauf. Doch muss man dies tun, sonst siegt der Feind!
 								</p>
 								<p xml:id="regest3">
-								[3] <persName ref="154">Myconius</persName> wollte schon lange nach den Predigern der Fürsten
+								[3] <persName ref="person154">Myconius</persName> wollte schon lange nach den Predigern der Fürsten
 								[Johann Friedrich von Sachsen und Philipp von Hessen] fragen, denn mit ihren Predigten üben jene einen
 								großen Einfluss auf die Kriegsführer der beiden Heere aus. Sie werden Bullinger wohl kennen, doch
-								<persName ref="154">Myconius</persName> hat noch nie gehört, dass einer von ihnen an Bullinger
+								<persName ref="person154">Myconius</persName> hat noch nie gehört, dass einer von ihnen an Bullinger
 								geschrieben hätte. Bullinger möge diese Neugier verzeihen.
 								</p>
 								<p xml:id="regest4">
@@ -74,7 +77,7 @@
 								die [Protestanten] Gott für sich, können sie nur siegen!
 								</p>
 								<p xml:id="regest5">
-								[5] Gruß, auch an all diejenigen, die <persName ref="154">Myconius</persName> grüßen ließen.
+								[5] Gruß, auch an all diejenigen, die <persName ref="person154">Myconius</persName> grüßen ließen.
 							</p>
 						</summary>
 					</msContents>
@@ -84,46 +87,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12739">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1546-11-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12740"/>
-					<ref type="prev_chronologically" target="files.xml#12738"/>
-					<ref type="next_correspondence" target="files.xml#12742"/>
-					<ref type="prev_correspondence" target="files.xml#12738"/>
-					<ref type="next_correspondence_request" target="files.xml#12749"/>
-					<ref type="prev_correspondence_request" target="files.xml#12738"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12742"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12706"/>
-					<ref type="next_same_sender" target="files.xml#12749"/>
-					<ref type="prev_same_sender" target="files.xml#12738"/>
-					<ref type="next_same_addressee" target="files.xml#12740"/>
-					<ref type="prev_same_addressee" target="files.xml#12734"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12749"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12738"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12740"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12734"/>
+					<ref type="next_chronologically" target="file12740"/>
+					<ref type="prev_chronologically" target="file12738"/>
+					<ref type="next_correspondence" target="file12742"/>
+					<ref type="prev_correspondence" target="file12738"/>
+					<ref type="next_correspondence_request" target="file12749"/>
+					<ref type="prev_correspondence_request" target="file12738"/>
+					<ref type="next_correspondence_reaction" target="file12742"/>
+					<ref type="prev_correspondence_reaction" target="file12706"/>
+					<ref type="next_same_sender" target="file12749"/>
+					<ref type="prev_same_sender" target="file12738"/>
+					<ref type="next_same_addressee" target="file12740"/>
+					<ref type="prev_same_addressee" target="file12734"/>
+					<ref type="next_with_sender_as_addressee" target="file12749"/>
+					<ref type="prev_with_sender_as_addressee" target="file12738"/>
+					<ref type="next_with_addressee_as_sender" target="file12740"/>
+					<ref type="prev_with_addressee_as_sender" target="file12734"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -142,51 +150,51 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Si in tuis<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note> illud tantum adderes, ubi locorum nomina scribis, pagus est iuxta oppidum hoc vel illud, seu oppidum a fluvio vel civitate aliqua nominatiore sic distans, clariora mihi redderentur tua omnia.<note xml:id="fn2" type="footnote" n="2"><persName ref="154">Myconius</persName> hatte Bullinger schon früher um Erläuterungen zu den in seinen Briefen genannten Ortsnamen gebeten; s. <hi>HBBW XVII</hi> 417,8-11.</note></s>
-					<s xml:lang="la" type="auto">Ubi sit Baltershofen<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage folgt wiederholt</hi> ubi sit.</note><note xml:id="fn3" type="footnote" n="3">Gemeint ist <placeName ref="1302">Ballmertshofen</placeName> (Lkr. Heidenheim; Baden-Württemberg), wo kurz zuvor das kaiserliche Heer gelagert hatte; vgl. <ref target="file#12731">Nr. 2684</ref>, Anm. <hi>5.</hi></note>, ignoro.</s>
-					<s xml:lang="la" type="auto">Boni consulito, mi venerande Bullingere, has meas ineptias.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Si in tuis<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note> illud tantum adderes, ubi locorum nomina scribis, pagus est iuxta oppidum hoc vel illud, seu oppidum a fluvio vel civitate aliqua nominatiore sic distans, clariora mihi redderentur tua omnia.<note xml:id="fn2" type="footnote" n="2"><persName ref="person154">Myconius</persName> hatte Bullinger schon früher um Erläuterungen zu den in seinen Briefen genannten Ortsnamen gebeten; s. <hi>HBBW XVII</hi> 417,8-11.</note></s>
+					<s n="3" xml:lang="la" type="auto">Ubi sit Baltershofen<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage folgt wiederholt</hi> ubi sit.</note><note xml:id="fn3" type="footnote" n="3">Gemeint ist <placeName ref="place1302">Ballmertshofen</placeName> (Lkr. Heidenheim; Baden-Württemberg), wo kurz zuvor das kaiserliche Heer gelagert hatte; vgl. <ref target="file12731">Nr. 2684</ref>, Anm. 5.</note>, ignoro.</s>
+					<s n="4" xml:lang="la" type="auto">Boni consulito, mi venerande Bullingere, has meas ineptias.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Dum scribis tristia illa, pulchre consolaris in domino.</s>
-					<s xml:lang="la" type="auto">Et ego magis magisque, quam dominum esse oporteat in cordibus suorum solidius, experior, ut recte dixerit Christus: „Sine me nihil potestis facere.“<note xml:id="fn4" type="footnote" n="4">Joh 15, 5.</note></s>
-					<s xml:lang="la" type="auto">Quamobrem et David illud intelligens subinde clamavit<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> clamant.</note> ex toto corde, ex tota anima<note xml:id="fnc" type="footnote" n="c"><hi>Am Rande nachgetragen.</hi></note>, nemini fidens nisi domino soli.<note xml:id="fn5" type="footnote" n="5">Vgl. z.B. Ps 62 (Vulg. 61).</note></s>
-					<s xml:lang="la" type="auto">Quam vero id sit difficile, experiuntur pii, qui dum suam operam in rem collocant illam seu aliam et successit ex voto; bone deus, quam difficulter caro patitur se sua (quam putat)<note xml:id="fnd" type="footnote" n="d"><hi>Klammern ergänzt.</hi></note> laude spoliari!</s>
-					<s xml:lang="la" type="auto">Age!</s>
-					<s xml:lang="la" type="auto">Sic fieri oportet, ut omnis fiducia sit sita in domino, vel hostes pręvalebunt.<pb type="edition" next="329"/></s>
+					<s n="5" xml:lang="la" type="auto">Dum scribis tristia illa, pulchre consolaris in domino.</s>
+					<s n="6" xml:lang="la" type="auto">Et ego magis magisque, quam dominum esse oporteat in cordibus suorum solidius, experior, ut recte dixerit Christus: „Sine me nihil potestis facere.“<note xml:id="fn4" type="footnote" n="4">Joh 15, 5.</note></s>
+					<s n="7" xml:lang="la" type="auto">Quamobrem et David illud intelligens subinde clamavit<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> clamant.</note> ex toto corde, ex tota anima<note xml:id="fnc" type="footnote" n="c"><hi>Am Rande nachgetragen.</hi></note>, nemini fidens nisi domino soli.<note xml:id="fn5" type="footnote" n="5">Vgl. z.B. Ps 62 (Vulg. 61).</note></s>
+					<s n="8" xml:lang="la" type="auto">Quam vero id sit difficile, experiuntur pii, qui dum suam operam in rem collocant illam seu aliam et successit ex voto; bone deus, quam difficulter caro patitur se sua (quam putat)<note xml:id="fnd" type="footnote" n="d"><hi>Klammern ergänzt.</hi></note> laude spoliari!</s>
+					<s n="9" xml:lang="la" type="auto">Age!</s>
+					<s n="10" xml:lang="la" type="auto">Sic fieri oportet, ut omnis fiducia sit sita in domino, vel hostes pręvalebunt.<pb type="edition" next="329"/></s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Olim te rogare volui, quosnam habeant principes<note xml:id="fn6" type="footnote" n="6">Kurfürst Johann Friedrich I. von Sachsen und Landgraf Philipp von Hessen.</note> concionatores<note xml:id="fn7" type="footnote" n="7">Als Feldprediger des Landgrafen diente Theobald Thamer (der Bullinger damals tatsächlich geschrieben hatte; s. <ref target="file#12694">Nr. 2647</ref>). Feldprediger im kurfürstlichen Heer war Johannes Aurifaber (geb. 1519 in <placeName ref="1169">Weimar</placeName>, gest. 1575 in <placeName ref="327">Erfurt</placeName>); s. <hi>TRE</hi> IV 752.</note> et qualem observent in praedicando modum.</s>
-					<s xml:lang="la" type="auto">Mihi videtur enim dexteros praedicatores, et qui dominum ex oculis nunquam dimittunt, multa posse inter exercituum summates.</s>
-					<s xml:lang="la" type="auto">Norunt te, si qui sunt, et tamen hactenus non intellexi, quenquam illorum ad te aliquando scripsisse.</s>
-					<s xml:lang="la" type="auto">Stultum, quod dico.</s>
-					<s xml:lang="la" type="auto">Attamen miror, ut res habeat.</s>
+					<s n="11" xml:lang="la" type="auto">Olim te rogare volui, quosnam habeant principes<note xml:id="fn6" type="footnote" n="6">Kurfürst Johann Friedrich I. von Sachsen und Landgraf Philipp von Hessen.</note> concionatores<note xml:id="fn7" type="footnote" n="7">Als Feldprediger des Landgrafen diente Theobald Thamer (der Bullinger damals tatsächlich geschrieben hatte; s. <ref target="file12694">Nr. 2647</ref>). Feldprediger im kurfürstlichen Heer war Johannes Aurifaber (geb. 1519 in <placeName ref="place1169">Weimar</placeName>, gest. 1575 in <placeName ref="place327">Erfurt</placeName>); s. <hi>TRE</hi> IV 752.</note> et qualem observent in praedicando modum.</s>
+					<s n="12" xml:lang="la" type="auto">Mihi videtur enim dexteros praedicatores, et qui dominum ex oculis nunquam dimittunt, multa posse inter exercituum summates.</s>
+					<s n="13" xml:lang="la" type="auto">Norunt te, si qui sunt, et tamen hactenus non intellexi, quenquam illorum ad te aliquando scripsisse.</s>
+					<s n="14" xml:lang="la" type="auto">Stultum, quod dico.</s>
+					<s n="15" xml:lang="la" type="auto">Attamen miror, ut res habeat.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">De cęsare<note xml:id="fn8" type="footnote" n="8">Karl V.</note> infelici miror, undenam sint felicia ista (id est felicitatem prae se ferentia)<note xml:id="fne" type="footnote" n="e"><hi>Klammern ergänzt.</hi></note> consilia, nisi forsitan sint ex aliis.</s>
-					<s xml:lang="la" type="auto">Habet Hispanos plus satis astutos, interim tamen <foreign xml:lang="el">ἄθεος</foreign><note xml:id="fn9" type="footnote" n="9">gottlos. -Subjekt ist der Kaiser.</note>!</s>
-					<s xml:lang="la" type="auto">Quamobrem consilia sunt humana atque ideo neutiquam solida.<note xml:id="fn10" type="footnote" n="10">Vgl. z.B. Hi 5, 121; Ps 33 (Vulg. 32), 10; Spr 16, 1; 19, 21; Jes 8, 10.</note></s>
-					<s xml:lang="la" type="auto">Si nos habemus deum, vincemus!<note xml:id="fn11" type="footnote" n="11">Vgl. Jer 1, 19; 15, 20.</note></s>
+					<s n="16" xml:lang="la" type="auto">De cęsare<note xml:id="fn8" type="footnote" n="8">Karl V.</note> infelici miror, undenam sint felicia ista (id est felicitatem prae se ferentia)<note xml:id="fne" type="footnote" n="e"><hi>Klammern ergänzt.</hi></note> consilia, nisi forsitan sint ex aliis.</s>
+					<s n="17" xml:lang="la" type="auto">Habet Hispanos plus satis astutos, interim tamen <foreign xml:lang="el">ἄθεος</foreign><note xml:id="fn9" type="footnote" n="9">gottlos. -Subjekt ist der Kaiser.</note>!</s>
+					<s n="18" xml:lang="la" type="auto">Quamobrem consilia sunt humana atque ideo neutiquam solida.<note xml:id="fn10" type="footnote" n="10">Vgl. z.B. Hi 5, 121; Ps 33 (Vulg. 32), 10; Spr 16, 1; 19, 21; Jes 8, 10.</note></s>
+					<s n="19" xml:lang="la" type="auto">Si nos habemus deum, vincemus!<note xml:id="fn11" type="footnote" n="11">Vgl. Jer 1, 19; 15, 20.</note></s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Vale in Christo.</s>
-					<s xml:lang="la" type="auto">Resalutabis in domino omnes, qui me salutarunt.</s>
-					<s xml:lang="la" type="auto">Oremus dominum ex corde et fide, ut tueatur verbum suum.</s>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileę</placeName>, 24. novembris anno 1546.</s>
-					<s xml:lang="la" type="auto">Tuus Os. My.</s>
+					<s n="20" xml:lang="la" type="auto">Vale in Christo.</s>
+					<s n="21" xml:lang="la" type="auto">Resalutabis in domino omnes, qui me salutarunt.</s>
+					<s n="22" xml:lang="la" type="auto">Oremus dominum ex corde et fide, ut tueatur verbum suum.</s>
+					<s n="23" xml:lang="la" type="auto"><placeName ref="place97">Basileę</placeName>, 24. novembris anno 1546.</s>
+					<s n="24" xml:lang="la" type="auto">Tuus Os. My.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Heinricho Bullingero, in Christo venerando suo.</s>
-					<s xml:lang="de" type="auto">Zü[r]ich.<note xml:id="fnf" type="footnote" n="f"><hi>Textverlust bei Entfernung des Siegels.</hi></note></s>
+					<s n="25" xml:lang="la" type="auto">D. Heinricho Bullingero, in Christo venerando suo.</s>
+					<s n="26" xml:lang="de" type="auto">Zü[r]ich.<note xml:id="fnf" type="footnote" n="f"><hi>Textverlust bei Entfernung des Siegels.</hi></note></s>
 				</p>
 			</div>
 		</body>

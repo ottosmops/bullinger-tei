@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1874</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 335,2172</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 335,2172</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 72,16</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 72,16</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -65,13 +71,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#124">Dublin</settlement>
-						<institution>Trinity Collge</institution>
-						<idno type="Kopie">Ms 1158, fo 8v-9r</idno>
-						<repository ref="archive#31">
+						<!--
+						<repository ref="archive31">
 							<name>Dublin TC</name>
 							<ref target="https://www.tcd.ie/library/"/>
 						</repository>
+						<settlement ref="place124">Dublin</settlement>
+						<institution>Trinity Collge</institution>
+						-->
+						<repository ref="archive31"/>
+						<idno subtype="Kopie">Ms 1158, fo 8v-9r</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -80,36 +89,34 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/808">
 				<correspAction type="sent">
-					<persName ref="person#958" cert="high">
+					<!--
+					<persName ref="person958" cert="high">
 						<forename cert="high">Johannes Andreas</forename>
 						<surname cert="high">de Ugonibus</surname>
-						<addName type="main">Ugoni (de Ugonibus), Giovanni Andrea</addName>
+						<persName type="main" ref="person8289>Ugoni (de Ugonibus), Giovanni Andrea</addName>
 					</persName>
-					<place source="#84" cert="high">
-						<settlement>Calcinato</settlement>
-						<district>Lombardei</district>
-						<country>Italien</country>
-						<geo>45.45739 10.40949</geo>
-					</place>
+					-->
+					<persName ref="person958" cert="high"/>
+					<place source="place84" cert="high"/>
 					<date when="1550-01-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#809"/>
-					<ref type="prev_chronologically" target="files.xml#807"/>
+					<ref type="next_chronologically" target="file809"/>
+					<ref type="prev_chronologically" target="file807"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -118,12 +125,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#827"/>
-					<ref type="prev_same_addressee" target="files.xml#799"/>
+					<ref type="next_same_addressee" target="file827"/>
+					<ref type="prev_same_addressee" target="file799"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#827"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#799"/>
+					<ref type="next_with_addressee_as_sender" target="file827"/>
+					<ref type="prev_with_addressee_as_sender" target="file799"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -142,22 +149,22 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Pium et humanum esse arbitror, pręstantissime Bulingere, a calumnia inocentem eximere et delatorum temeritati vel perfidie quoquomodo occurrere, ne a mendacio veritas, ab impietate pietas, ab improbis boni opprimantur.</s>
+					<s n="1" xml:lang="la" type="auto">Pium et humanum esse arbitror, pręstantissime Bulingere, a calumnia inocentem eximere et delatorum temeritati vel perfidie quoquomodo occurrere, ne a mendacio veritas, ab impietate pietas, ab improbis boni opprimantur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ego posteaquam Balthasarem Alterium pro fratre agnovi, nihil vidi vel audivi de ipso, quod esset a vera pietate alienum aut innocentię vitę contrarium, immo fateor ingenue me in Italia adhuc vidisse neminem, qui maiori cura, opera, diligentia, labore evangelii propagandi studium exercuerit nec qui graviora pericula ob hanc causam adierit.</s>
-					<s xml:lang="la" type="auto">Deus faciat, ut tam bonus Christi procurator nobis restituatur, tametsi impiorum improbitas pro virili agat, ut vir iste ultra Sauromathas eiiciatur.</s>
-					<s xml:lang="la" type="auto">Ex literis tuis vidi, quas non sine męrore perlegi, quam acerbe falsi fratres eum persequantur obiicientes uxorem ipsius ab illo aufugisse, quod falsissimum est; nam ego fidem facio ambo hac cum puero transisse ac una mecum integrum quatrimestre mansisse, donec ex Florentia literę redderentur tutum illis accessum affirmantes; sed modo sunt in oppidulo huic propinquo, ubi vitam agunt cum omni pietate.</s>
-					<s xml:lang="la" type="auto">De bigamia quod addunt, alteram iuste dimissam adulteri causa sępe audivi.</s>
-					<s xml:lang="la" type="auto">Nolite igitur credere, quę delatores isti tam falso retulerunt, sed boni consulite et hunc fratrem amate meque etiam uti velitis, si qua in re gratificari vobis possum.</s>
-					<s xml:lang="la" type="auto">Valete in domino semper et pro nobis orate.</s>
+					<s n="2" xml:lang="la" type="auto">Ego posteaquam Balthasarem Alterium pro fratre agnovi, nihil vidi vel audivi de ipso, quod esset a vera pietate alienum aut innocentię vitę contrarium, immo fateor ingenue me in Italia adhuc vidisse neminem, qui maiori cura, opera, diligentia, labore evangelii propagandi studium exercuerit nec qui graviora pericula ob hanc causam adierit.</s>
+					<s n="3" xml:lang="la" type="auto">Deus faciat, ut tam bonus Christi procurator nobis restituatur, tametsi impiorum improbitas pro virili agat, ut vir iste ultra Sauromathas eiiciatur.</s>
+					<s n="4" xml:lang="la" type="auto">Ex literis tuis vidi, quas non sine męrore perlegi, quam acerbe falsi fratres eum persequantur obiicientes uxorem ipsius ab illo aufugisse, quod falsissimum est; nam ego fidem facio ambo hac cum puero transisse ac una mecum integrum quatrimestre mansisse, donec ex Florentia literę redderentur tutum illis accessum affirmantes; sed modo sunt in oppidulo huic propinquo, ubi vitam agunt cum omni pietate.</s>
+					<s n="5" xml:lang="la" type="auto">De bigamia quod addunt, alteram iuste dimissam adulteri causa sępe audivi.</s>
+					<s n="6" xml:lang="la" type="auto">Nolite igitur credere, quę delatores isti tam falso retulerunt, sed boni consulite et hunc fratrem amate meque etiam uti velitis, si qua in re gratificari vobis possum.</s>
+					<s n="7" xml:lang="la" type="auto">Valete in domino semper et pro nobis orate.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum Calcinarum(?) idibus ianuariis 1550.</s>
-					<s xml:lang="la" type="auto">Vestrę charitati studiosissimus Io[annes] Andreas de Ugonibus.</s>
+					<s n="8" xml:lang="la" type="auto">Datum Calcinarum(?) idibus ianuariis 1550.</s>
+					<s n="9" xml:lang="la" type="auto">Vestrę charitati studiosissimus Io[annes] Andreas de Ugonibus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Integerrimo ac doctissimo Christi ministro domino Henryco Bulingero ceterisque ęcclesię Tigurinę membris, dominis observandis.</s>
+					<s n="10" xml:lang="la" type="auto">Integerrimo ac doctissimo Christi ministro domino Henryco Bulingero ceterisque ęcclesię Tigurinę membris, dominis observandis.</s>
 				</p>
 			</div>
 		</body>

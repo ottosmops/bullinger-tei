@@ -8,15 +8,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#260">Krakau</settlement>
-						<institution>Jagiellonische Bibliothek</institution>
-						<idno type="Autograph">asc. ms. Pr. St. Bibl. Nr. 62</idno>
-						<repository ref="archive#51">
+						<!--
+						<repository ref="archive51">
 							<name>Krakau BJ</name>
-							<note type="Mikrofilm">IRG</note>
-							<note type="Hinweis">Berlin, ehem. kgl. Bibl., jetzt (1985) Krakau BJ</note>
 							<ref target="https://bj.uj.edu.pl/"/>
 						</repository>
+						<settlement ref="place260">Krakau</settlement>
+						<institution>Jagiellonische Bibliothek</institution>
+						-->
+						<repository ref="archive51"/>
+						<idno subtype="Autograph">asc. ms. Pr. St. Bibl. Nr. 62</idno>
+						<idno subtype="Mikrofilm">IRG</idno>
+						<idno subtype="Hinweis">Berlin, ehem. kgl. Bibl., jetzt (1985) Krakau BJ</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -42,53 +45,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8195">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1570-03-02" cert="low"><note>Tag unsicher  (oder 29.??)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3722" cert="low">
+					<!--
+					<persName ref="person3722" cert="low">
 						<forename cert="low">Ludwig</forename>
 						<surname cert="low">von Sayn zu Wittgenstein der Ältere</surname>
-						<addName type="main">von Wittgenstein (Sayn-Wittgenstein), Ludwig</addName>
+						<persName type="main" ref="person8030>von Wittgenstein (Sayn-Wittgenstein), Ludwig</addName>
 						<graphic type="portrait" url="portraits/3722_von_Sayn_Ludwig.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ludwig_I._(Wittgenstein)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/132988054"/>
 					</persName>
-					<place source="#38" cert="low">
-						<settlement>Berleburg</settlement>
-						<district>Hessen</district>
-						<country>Deutschland</country>
-						<geo>51.05224 8.39227</geo>
-					</place>
+					-->
+					<persName ref="person3722" cert="low"/>
+					<place source="place38" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8196"/>
-					<ref type="prev_chronologically" target="files.xml#8194"/>
-					<ref type="next_correspondence" target="files.xml#8211"/>
-					<ref type="prev_correspondence" target="files.xml#7956"/>
-					<ref type="next_correspondence_request" target="files.xml#8224"/>
-					<ref type="prev_correspondence_request" target="files.xml#7956"/>
-					<ref type="next_correspondence_reaction" target="files.xml#8211"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#7815"/>
-					<ref type="next_same_sender" target="files.xml#8198"/>
-					<ref type="prev_same_sender" target="files.xml#8194"/>
-					<ref type="next_same_addressee" target="files.xml#8211"/>
-					<ref type="prev_same_addressee" target="files.xml#7816"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8198"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#8194"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8211"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#7816"/>
-					<ref type="child" target="files.xml#8224"/>
+					<ref type="next_chronologically" target="file8196"/>
+					<ref type="prev_chronologically" target="file8194"/>
+					<ref type="next_correspondence" target="file8211"/>
+					<ref type="prev_correspondence" target="file7956"/>
+					<ref type="next_correspondence_request" target="file8224"/>
+					<ref type="prev_correspondence_request" target="file7956"/>
+					<ref type="next_correspondence_reaction" target="file8211"/>
+					<ref type="prev_correspondence_reaction" target="file7815"/>
+					<ref type="next_same_sender" target="file8198"/>
+					<ref type="prev_same_sender" target="file8194"/>
+					<ref type="next_same_addressee" target="file8211"/>
+					<ref type="prev_same_addressee" target="file7816"/>
+					<ref type="next_with_sender_as_addressee" target="file8198"/>
+					<ref type="prev_with_sender_as_addressee" target="file8194"/>
+					<ref type="next_with_addressee_as_sender" target="file8211"/>
+					<ref type="prev_with_addressee_as_sender" target="file7816"/>
+					<ref type="child" target="file8224"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

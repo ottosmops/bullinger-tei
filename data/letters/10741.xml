@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=703</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=703</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,49</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,49</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,14 +49,14 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Hat <persName ref="154">Myconius</persName>' Brief [oben <ref target="file#10736">Nr. 698</ref>] durch
-								den Bruder von F[ranz] <persName ref="1448">Lambert</persName> am gleichen Tag erhalten, an dem
-								[<persName ref="65">Hans</persName>] <persName ref="65">Rudolf</persName>
-								<persName ref="65">Frey</persName> die Zustimmung des Zürcher Rats [zum geplanten Konvent] erlangt
-								hat. Möchte die <placeName ref="1049">Straßburger</placeName> erst gegen Ende der Beratungen
+								Hat <persName ref="person154">Myconius</persName>' Brief [oben <ref target="file10736">Nr. 698</ref>] durch
+								den Bruder von F[ranz] <persName ref="person1448">Lambert</persName> am gleichen Tag erhalten, an dem
+								[Hans] Rudolf
+								<persName ref="person65">Frey</persName> die Zustimmung des Zürcher Rats [zum geplanten Konvent] erlangt
+								hat. Möchte die <placeName ref="place1049">Straßburger</placeName> erst gegen Ende der Beratungen
 								zulassen, da er nutzloses Gerede und Streit befürchtet und die von ihnen vertretene Auffassung von der
 								Vergegenwärtigung Christi kraft der Amtsgewalt ablehnt. Wünscht als St. Galler Delegaten
-								<persName ref="226">Vadian</persName>. Billigt die [in <placeName ref="5">Aarau</placeName>
+								<persName ref="person226">Vadian</persName>. Billigt die [in <placeName ref="place5">Aarau</placeName>
 								verabschiedete] Abendmahlsformel.
 							</p>
 						</summary>
@@ -64,46 +67,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10741">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1535-12-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
+					-->
+					<persName ref="person2234" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10742"/>
-					<ref type="prev_chronologically" target="files.xml#10740"/>
-					<ref type="next_correspondence" target="files.xml#10751"/>
-					<ref type="prev_correspondence" target="files.xml#10740"/>
-					<ref type="next_correspondence_request" target="files.xml#10769"/>
-					<ref type="prev_correspondence_request" target="files.xml#10694"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10751"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10740"/>
-					<ref type="next_same_sender" target="files.xml#10745"/>
-					<ref type="prev_same_sender" target="files.xml#10735"/>
-					<ref type="next_same_addressee" target="files.xml#10751"/>
-					<ref type="prev_same_addressee" target="files.xml#10740"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10745"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10735"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10751"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10740"/>
+					<ref type="next_chronologically" target="file10742"/>
+					<ref type="prev_chronologically" target="file10740"/>
+					<ref type="next_correspondence" target="file10751"/>
+					<ref type="prev_correspondence" target="file10740"/>
+					<ref type="next_correspondence_request" target="file10769"/>
+					<ref type="prev_correspondence_request" target="file10694"/>
+					<ref type="next_correspondence_reaction" target="file10751"/>
+					<ref type="prev_correspondence_reaction" target="file10740"/>
+					<ref type="next_same_sender" target="file10745"/>
+					<ref type="prev_same_sender" target="file10735"/>
+					<ref type="next_same_addressee" target="file10751"/>
+					<ref type="prev_same_addressee" target="file10740"/>
+					<ref type="next_with_sender_as_addressee" target="file10745"/>
+					<ref type="prev_with_sender_as_addressee" target="file10735"/>
+					<ref type="next_with_addressee_as_sender" target="file10751"/>
+					<ref type="prev_with_addressee_as_sender" target="file10740"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -121,49 +129,49 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Commodum et in tempore mihi tuas, vir ornatissime et charissime, literas<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file#10736">Nr. 698</ref>.</note> attulit frater ille F[rancisci] <persName ref="1448">Lamberti</persName><note xml:id="fn2" type="footnote" n="2">Siehe ebd., Z. 24-27 mit Anm. <hi>6f.</hi></note>; nam eodem die Rodolphus ille Phrigius, vir integerrimus et fidelissimus, legatione sua functus, quae petiit a senatu nostro, impetravit<note xml:id="fn3" type="footnote" n="3"><persName ref="65">Hans Rudolf Frey</persName> war zu Verhandlungen über die geplante Zusammenkunft von Vertretern schweizerischer evangelischer Kirchen nach Zürich gekommen, vgl. EA IV/1c <hi>598</hi> und oben <ref target="file#10739">Nr. 701</ref>, 10-32.</note>.</s>
-					<s xml:lang="la" type="auto">Conveniemus ergo, ubi nostratibus fuerit visum.</s>
-					<s xml:lang="la" type="auto">Verum nolim ego primo conventui interesse <placeName ref="1049">Argentoratenses</placeName><note xml:id="fn4" type="footnote" n="4"><persName ref="28">Bucer</persName> und <persName ref="40">Capito</persName>.</note>.</s>
-					<s xml:lang="la" type="auto">Non odi homines, deum testor, neque illorum execror aut detrecto colloquium, in praesenti modo nolim istos nostro interesse colloquio.</s>
-					<s xml:lang="la" type="auto">Nosti, quanta illi utantur verborum turba, quantis ambagibus.</s>
-					<s xml:lang="la" type="auto">Audivimus semel <persName ref="28">Bucerum</persName> apud nos de re, quae paucis exponi potuisset, aliquot horis disputare<note xml:id="fn5" type="footnote" n="5">Gemeint ist die Rede, die <persName ref="28">Bucer</persName> am 7. Mai 1533 vor dem Zürcher Rat gehalten hat; vgl. HBRG III 347.</note>.</s>
-					<s xml:lang="la" type="auto">Futurum ergo est, ut totos dies rebus interim infectis disserturi sint, si illos admiserimus in colloquium.</s>
-					<s xml:lang="de" type="auto">Und wirt nüt anders druß dann ein wild gehäck<note xml:id="fn6" type="footnote" n="6">Durcheinander (SI II 1114).</note>.</s>
-					<s xml:lang="la" type="auto">Concident et nostrorum animi, ubi istorum audierint mitigationes.</s>
-					<s xml:lang="la" type="auto">Invenient apud vestrates et nostrates, imo et apud <placeName ref="121">Bernates</placeName>, quibus mitigatio rerum omnium placeat.</s>
-					<s xml:lang="la" type="auto">Quid fiet?</s>
-					<s xml:lang="la" type="auto">Committentur nostri, omnisque plebs acclamabit nobis hoc epiphonematis: "Seducimur a pfaffis istis", "dissentiunt inter sese".</s>
-					<s xml:lang="la" type="auto">Caeterum si nos, quibus una est confessio<note xml:id="fn7" type="footnote" n="7">Bullinger denkt wohl an die Unterzeichner des Zürcher Abendmahlsbekenntnisses vom Dezember 1534 (HBBW IV, <ref target="file#10518">Nr. 482</ref>).</note>, primum inter nos conspiremus sancte conscribamusque dogmatum et rituum capita simplicia et plana, demum in colloquium <placeName ref="1049">Argentoratenses</placeName> admittere fuerit tutum, in colloquium, inquam, cui literati modo intersint.</s>
-					<s xml:lang="la" type="auto">Tu iam expende negotium.</s>
-					<s xml:lang="la" type="auto">Nam quod isti per minsterii verbi potestatem praesentiam Christi supernaturalem fulcire volunt, probare non possum nec probabo unquam.</s>
-					<s xml:lang="la" type="auto">Indicabitis vos diem in tempore, vocabitis nominatim<pb type="edition" next="478"/><persName ref="226">Vadianum</persName>.</s>
-					<s xml:lang="la" type="auto">Nisi enim vocatus et nominatus fuerit<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> fuerit <hi>gestrichenes</hi> venerit.</note>, alium mittent.</s>
-					<s xml:lang="la" type="auto">Plura de his Phrigius.</s>
+					<s n="2" xml:lang="la" type="auto">Commodum et in tempore mihi tuas, vir ornatissime et charissime, literas<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file10736">Nr. 698</ref>.</note> attulit frater ille F[rancisci] <persName ref="person1448">Lamberti</persName><note xml:id="fn2" type="footnote" n="2">Siehe ebd., Z. 24-27 mit Anm. 6f.</note>; nam eodem die Rodolphus ille Phrigius, vir integerrimus et fidelissimus, legatione sua functus, quae petiit a senatu nostro, impetravit<note xml:id="fn3" type="footnote" n="3"><persName ref="person65">Hans Rudolf Frey</persName> war zu Verhandlungen über die geplante Zusammenkunft von Vertretern schweizerischer evangelischer Kirchen nach Zürich gekommen, vgl. EA IV/1c 598 und oben <ref target="file10739">Nr. 701</ref>, 10-32.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Conveniemus ergo, ubi nostratibus fuerit visum.</s>
+					<s n="4" xml:lang="la" type="auto">Verum nolim ego primo conventui interesse <placeName ref="place1049">Argentoratenses</placeName><note xml:id="fn4" type="footnote" n="4"><persName ref="person28">Bucer</persName> und <persName ref="person40">Capito</persName>.</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Non odi homines, deum testor, neque illorum execror aut detrecto colloquium, in praesenti modo nolim istos nostro interesse colloquio.</s>
+					<s n="6" xml:lang="la" type="auto">Nosti, quanta illi utantur verborum turba, quantis ambagibus.</s>
+					<s n="7" xml:lang="la" type="auto">Audivimus semel <persName ref="person28">Bucerum</persName> apud nos de re, quae paucis exponi potuisset, aliquot horis disputare<note xml:id="fn5" type="footnote" n="5">Gemeint ist die Rede, die <persName ref="person28">Bucer</persName> am 7. Mai 1533 vor dem Zürcher Rat gehalten hat; vgl. HBRG III 347.</note>.</s>
+					<s n="8" xml:lang="la" type="auto">Futurum ergo est, ut totos dies rebus interim infectis disserturi sint, si illos admiserimus in colloquium.</s>
+					<s n="9" xml:lang="de" type="auto">Und wirt nüt anders druß dann ein wild gehäck<note xml:id="fn6" type="footnote" n="6">Durcheinander (SI II 1114).</note>.</s>
+					<s n="10" xml:lang="la" type="auto">Concident et nostrorum animi, ubi istorum audierint mitigationes.</s>
+					<s n="11" xml:lang="la" type="auto">Invenient apud vestrates et nostrates, imo et apud <placeName ref="place121">Bernates</placeName>, quibus mitigatio rerum omnium placeat.</s>
+					<s n="12" xml:lang="la" type="auto">Quid fiet?</s>
+					<s n="13" xml:lang="la" type="auto">Committentur nostri, omnisque plebs acclamabit nobis hoc epiphonematis: "Seducimur a pfaffis istis", "dissentiunt inter sese".</s>
+					<s n="14" xml:lang="la" type="auto">Caeterum si nos, quibus una est confessio<note xml:id="fn7" type="footnote" n="7">Bullinger denkt wohl an die Unterzeichner des Zürcher Abendmahlsbekenntnisses vom Dezember 1534 (HBBW IV, <ref target="file10518">Nr. 482</ref>).</note>, primum inter nos conspiremus sancte conscribamusque dogmatum et rituum capita simplicia et plana, demum in colloquium <placeName ref="place1049">Argentoratenses</placeName> admittere fuerit tutum, in colloquium, inquam, cui literati modo intersint.</s>
+					<s n="15" xml:lang="la" type="auto">Tu iam expende negotium.</s>
+					<s n="16" xml:lang="la" type="auto">Nam quod isti per minsterii verbi potestatem praesentiam Christi supernaturalem fulcire volunt, probare non possum nec probabo unquam.</s>
+					<s n="17" xml:lang="la" type="auto">Indicabitis vos diem in tempore, vocabitis nominatim<pb type="edition" next="478"/><persName ref="person226">Vadianum</persName>.</s>
+					<s n="18" xml:lang="la" type="auto">Nisi enim vocatus et nominatus fuerit<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> fuerit <hi>gestrichenes</hi> venerit.</note>, alium mittent.</s>
+					<s n="19" xml:lang="la" type="auto">Plura de his Phrigius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Confessio illa<note xml:id="fn8" type="footnote" n="8">Nämlich die Abendmahlsformel, auf die sich Zürcher und Basler Theologen am 1. Dezember 1535 in <placeName ref="5">Aarau</placeName> geeinigt hatten; vgl. oben <ref target="file#10736">Nr. 698</ref>, Anm. 2.</note> non displicet.</s>
-					<s xml:lang="la" type="auto">Placent, quae a vobis prodeunt.</s>
-					<s xml:lang="la" type="auto">Nosti, quo in te et <persName ref="81">Gryneum</persName> animo praeditus sim.</s>
+					<s n="20" xml:lang="la" type="auto">Confessio illa<note xml:id="fn8" type="footnote" n="8">Nämlich die Abendmahlsformel, auf die sich Zürcher und Basler Theologen am 1. Dezember 1535 in <placeName ref="place5">Aarau</placeName> geeinigt hatten; vgl. oben <ref target="file10736">Nr. 698</ref>, Anm. 2.</note> non displicet.</s>
+					<s n="21" xml:lang="la" type="auto">Placent, quae a vobis prodeunt.</s>
+					<s n="22" xml:lang="la" type="auto">Nosti, quo in te et <persName ref="person81">Gryneum</persName> animo praeditus sim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valebis.</s>
-					<s xml:lang="la" type="auto">Legatus festinat.</s>
+					<s n="23" xml:lang="la" type="auto">Valebis.</s>
+					<s n="24" xml:lang="la" type="auto">Legatus festinat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">19. decembris 1535.</s>
+					<s n="25" xml:lang="la" type="auto">19. decembris 1535.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="81">Gryneum</persName> salutabis, reliquos item.</s>
+					<s n="26" xml:lang="la" type="auto"><persName ref="person81">Gryneum</persName> salutabis, reliquos item.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bull. tuus.</s>
+					<s n="27" xml:lang="la" type="auto">H. Bull. tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino <persName ref="154">Myconio</persName> suo.</s>
+					<s n="28" xml:lang="la" type="auto">Domino <persName ref="person154">Myconio</persName> suo.</s>
 				</p>
 			</div>
 		</body>

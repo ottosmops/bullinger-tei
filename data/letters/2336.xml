@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Hinweis" subtype="Original" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Original">A 350.1</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">sub datae</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Original">A 350.1</idno>
+						<idno subtype="Hinweis">sub datae</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -37,38 +40,20 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2336">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#21" cert="high">Evangelikaner</name>
-						<place source="#294" cert="high">
-							<settlement>Locarno</settlement>
-							<district>Tessin</district>
-							<country>Schweiz</country>
-							<geo>46.17086 8.79953</geo>
-						</place>
-					</roleName>
-					<place source="#294" cert="high">
-						<settlement>Locarno</settlement>
-						<district>Tessin</district>
-						<country>Schweiz</country>
-						<geo>46.17086 8.79953</geo>
-					</place>
+					<personGrp ref="role42" role="Evangelikaner"/>
+					<place source="place294" cert="high"/>
 					<date when="1554-07-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#21" cert="low">Evangelikaner</name>
-						<place source="#891" cert="low">
-							<settlement>die Städte der Eidgenossenschaft</settlement>
-						</place>
-					</roleName>
+					<!--
 					<note type="Adresse">alle Evangelischen Städte der Eidgenossenschaft</note>
-					<place source="#891" cert="low">
-						<settlement>die Städte der Eidgenossenschaft</settlement>
-					</place>
+					-->
+					<personGrp ref="role42" role="Evangelikaner"/>
+					<place source="place891" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2337"/>
-					<ref type="prev_chronologically" target="files.xml#2335"/>
+					<ref type="next_chronologically" target="file2337"/>
+					<ref type="prev_chronologically" target="file2335"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>

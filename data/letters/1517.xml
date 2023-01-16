@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3015</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 360,185</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 360,185</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,14 +44,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 78,132</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">ca. 20. Okt. 1552</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 78,132</idno>
+						<idno subtype="Hinweis">ca. 20. Okt. 1552</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -57,52 +63,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1517">
 				<correspAction type="sent">
-					<persName ref="person#2229" cert="high">
+					<!--
+					<persName ref="person2229" cert="high">
 						<forename cert="high">Wolfgang</forename>
 						<surname cert="high">Musculus</surname>
-						<addName type="main">Musculus (Müsli, Meuslin), Wolfgang</addName>
-						<graphic type="portrait" url="portraits/2229_Wolfgang_Musculus_(Herzog).png"/>
+						<persName type="main" ref="person8417>Musculus (Müsli, Meuslin), Wolfgang</addName>
+						<graphic type="portrait" url="portraits/2229_Musculus_Wolfgang.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Wolfgang_Musculus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11948370X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413916"/>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
-					<date min="1552-10-10" max="1552-10-20" cert="low"/>
+					-->
+					<persName ref="person2229" cert="high"/>
+					<place source="place41" cert="high"/>
+					<date notBefore="1552-10-10" notAfter="1552-10-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1739"/>
-					<ref type="prev_chronologically" target="files.xml#1738"/>
-					<ref type="next_correspondence" target="files.xml#1765"/>
-					<ref type="prev_correspondence" target="files.xml#1723"/>
-					<ref type="next_correspondence_request" target="files.xml#1765"/>
-					<ref type="prev_correspondence_request" target="files.xml#1723"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5206"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#190"/>
-					<ref type="next_same_sender" target="files.xml#1765"/>
-					<ref type="prev_same_sender" target="files.xml#1723"/>
-					<ref type="next_same_addressee" target="files.xml#1741"/>
-					<ref type="prev_same_addressee" target="files.xml#1720"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1765"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1723"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1741"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1720"/>
+					<ref type="next_chronologically" target="file1739"/>
+					<ref type="prev_chronologically" target="file1738"/>
+					<ref type="next_correspondence" target="file1765"/>
+					<ref type="prev_correspondence" target="file1723"/>
+					<ref type="next_correspondence_request" target="file1765"/>
+					<ref type="prev_correspondence_request" target="file1723"/>
+					<ref type="next_correspondence_reaction" target="file5206"/>
+					<ref type="prev_correspondence_reaction" target="file190"/>
+					<ref type="next_same_sender" target="file1765"/>
+					<ref type="prev_same_sender" target="file1723"/>
+					<ref type="next_same_addressee" target="file1741"/>
+					<ref type="prev_same_addressee" target="file1720"/>
+					<ref type="next_with_sender_as_addressee" target="file1765"/>
+					<ref type="prev_with_sender_as_addressee" target="file1723"/>
+					<ref type="next_with_addressee_as_sender" target="file1741"/>
+					<ref type="prev_with_addressee_as_sender" target="file1720"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -119,34 +125,34 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Spero vos isthic, compater in domino charissime, recte valere omnes.</s>
-					<s xml:lang="la" type="auto">Nostrae civitati vicina tota peste corrupta nescio quid mali minantur.</s>
-					<s xml:lang="la" type="auto">Scatent omnia vitę depravatae corruptelis, quare mirum non est, quod subinde flagello dei invisimur.</s>
-					<s xml:lang="la" type="auto">Basilienses atra lues admodum infestat ac quotidie multos absumit.</s>
-					<s xml:lang="la" type="auto">Septimana praeterita migravit ex hoc saeculo Myconius noster, vir pius ac veteranus Christi minister.</s>
-					<s xml:lang="la" type="auto">De Iodoco nostro audisti iam antea.</s>
-					<s xml:lang="la" type="auto">Migrant ex hac vita plurimi, quorum ministeriis diu adiuta fuit ecclesia Christi; quibus utinam succedant, etsi non potiores, pares saltem ac priorum curriculo ex aequo respondentes.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Spero vos isthic, compater in domino charissime, recte valere omnes.</s>
+					<s n="3" xml:lang="la" type="auto">Nostrae civitati vicina tota peste corrupta nescio quid mali minantur.</s>
+					<s n="4" xml:lang="la" type="auto">Scatent omnia vitę depravatae corruptelis, quare mirum non est, quod subinde flagello dei invisimur.</s>
+					<s n="5" xml:lang="la" type="auto">Basilienses atra lues admodum infestat ac quotidie multos absumit.</s>
+					<s n="6" xml:lang="la" type="auto">Septimana praeterita migravit ex hoc saeculo Myconius noster, vir pius ac veteranus Christi minister.</s>
+					<s n="7" xml:lang="la" type="auto">De Iodoco nostro audisti iam antea.</s>
+					<s n="8" xml:lang="la" type="auto">Migrant ex hac vita plurimi, quorum ministeriis diu adiuta fuit ecclesia Christi; quibus utinam succedant, etsi non potiores, pares saltem ac priorum curriculo ex aequo respondentes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quas hic inclusas reperis, Ambrosii nostri sunt; misit eas ad me ante octiduum, ut, quamprimum possem, mitterem Augustam.</s>
-					<s xml:lang="la" type="auto">Quoniam vero nec est ad manum quisquam nec sperare possum, ut brevi certus aliquis homo detur, cui illas concedam, visum est eas tuae curae committere, ut per te Sangallum ad amicum aliquem mittantur, cuius opera tabellario frequenter Augustam eunti tradantur.</s>
-					<s xml:lang="la" type="auto">Scio te in gratiam Ambrosii nostri officium hoc haud gravatim subiturum.</s>
+					<s n="9" xml:lang="la" type="auto">Quas hic inclusas reperis, Ambrosii nostri sunt; misit eas ad me ante octiduum, ut, quamprimum possem, mitterem Augustam.</s>
+					<s n="10" xml:lang="la" type="auto">Quoniam vero nec est ad manum quisquam nec sperare possum, ut brevi certus aliquis homo detur, cui illas concedam, visum est eas tuae curae committere, ut per te Sangallum ad amicum aliquem mittantur, cuius opera tabellario frequenter Augustam eunti tradantur.</s>
+					<s n="11" xml:lang="la" type="auto">Scio te in gratiam Ambrosii nostri officium hoc haud gravatim subiturum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De bellicis motibus, quos forsan imminens hyems brevi compescet, ne gry quidem ad nos adfertur, neque de rebus Hungariae quicquam post cladem nuper acceptam audimus.</s>
-					<s xml:lang="la" type="auto">Si quid harum rerum habes, quaeso communices.</s>
-					<s xml:lang="la" type="auto">Gastius noster solebat subinde nova utcunque audita scribere; post illius obitum nemo est Basileę, qui pari studio res auditu perceptas communicet.</s>
-					<s xml:lang="la" type="auto">Optime vale, compater in domino charissime.</s>
-					<s xml:lang="la" type="auto">Salutem tuis omnibus; salutant te mei omnes, uxor ac liberi.</s>
-					<s xml:lang="la" type="auto">Bernae 1552.</s>
+					<s n="12" xml:lang="la" type="auto">De bellicis motibus, quos forsan imminens hyems brevi compescet, ne gry quidem ad nos adfertur, neque de rebus Hungariae quicquam post cladem nuper acceptam audimus.</s>
+					<s n="13" xml:lang="la" type="auto">Si quid harum rerum habes, quaeso communices.</s>
+					<s n="14" xml:lang="la" type="auto">Gastius noster solebat subinde nova utcunque audita scribere; post illius obitum nemo est Basileę, qui pari studio res auditu perceptas communicet.</s>
+					<s n="15" xml:lang="la" type="auto">Optime vale, compater in domino charissime.</s>
+					<s n="16" xml:lang="la" type="auto">Salutem tuis omnibus; salutant te mei omnes, uxor ac liberi.</s>
+					<s n="17" xml:lang="la" type="auto">Bernae 1552.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">W[olfgangus] Musc[ulus], compater tuus in domino.</s>
-					<s xml:lang="la" type="auto">Clarissimo viro m. Heinrycho Bullingero, Tigurinae ecclesiae antistiti, compatri suo charissimo.</s>
+					<s n="18" xml:lang="la" type="auto">W[olfgangus] Musc[ulus], compater tuus in domino.</s>
+					<s n="19" xml:lang="la" type="auto">Clarissimo viro m. Heinrycho Bullingero, Tigurinae ecclesiae antistiti, compatri suo charissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="20" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

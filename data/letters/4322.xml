@@ -8,15 +8,18 @@
 			<sourceDesc>
 				<msDesc type="Hinweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#396">Prag</settlement>
-						<institution>Staats-Zentralarchiv</institution>
-						<idno type="Kopie">AUF IX 272v-273r</idno>
-						<repository ref="archive#75">
+						<!--
+						<repository ref="archive75">
 							<name>Prag StUA</name>
-							<note type="Mikrofilm">IRG</note>
-							<note type="Hinweis">Umgebung des D.G. Jablonsky, früher Herrnhut</note>
 							<ref target="https://www.nacr.cz/en/"/>
 						</repository>
+						<settlement ref="place396">Prag</settlement>
+						<institution>Staats-Zentralarchiv</institution>
+						-->
+						<repository ref="archive75"/>
+						<idno subtype="Kopie">AUF IX 272v-273r</idno>
+						<idno subtype="Mikrofilm">IRG</idno>
+						<idno subtype="Hinweis">Umgebung des D.G. Jablonsky, früher Herrnhut</idno>
 					</msIdentifier>
 					<history><origin><p><date>18./19. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -36,40 +39,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4322">
 				<correspAction type="sent">
-					<persName ref="person#503" cert="low">
+					<!--
+					<persName ref="person503" cert="low">
 						<forename cert="low">s.n.</forename>
 						<surname cert="low">Bullinger</surname>
-						<addName type="main">Bullinger, Heinrich</addName>
+						<persName type="main" ref="person495>Bullinger, Heinrich</addName>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person503" cert="low"/>
 					<date when="1560-06-20" cert="low"><note>Hinweis (kein eigentlicher Brief)  Datum unsicher  [1560 um Juni (20.?)]</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#15" cert="low">Brüder</name>
-					</roleName>
+					<!--
 					<note type="Adresse">Böhmische Brüder</note>
-					<persName ref="person#7904" cert="low">
+					-->
+					<personGrp ref="role30" role="Brüder"/>
+					<!--
+					<persName ref="person7904" cert="low">
 						<forename cert="low">Herbert</forename>
 						<surname cert="low">Petrus</surname>
 					</persName>
+					-->
+					<persName ref="person7904" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4323"/>
-					<ref type="prev_chronologically" target="files.xml#4321"/>
+					<ref type="next_chronologically" target="file4323"/>
+					<ref type="prev_chronologically" target="file4321"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#4324"/>
-					<ref type="prev_same_sender" target="files.xml#4314"/>
+					<ref type="next_same_sender" target="file4324"/>
+					<ref type="prev_same_sender" target="file4314"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4324"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4314"/>
+					<ref type="next_with_sender_as_addressee" target="file4324"/>
+					<ref type="prev_with_sender_as_addressee" target="file4314"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>

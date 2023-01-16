@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Hinweis" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356a,857</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356a,857</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents/>
@@ -35,52 +38,27 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7833">
 				<correspAction type="sent">
-					<persName ref="person#3101" cert="low">
+					<!--
+					<persName ref="person3101" cert="low">
 						<forename cert="low">Johannes</forename>
 						<surname cert="low">Sylvanus</surname>
 						<graphic type="portrait" url="portraits/3101_Sylvanus_Johann.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Sylvanus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/130679682"/>
 					</persName>
+					-->
+					<persName ref="person3101" cert="low"/>
 					<date when="1569-04-01" cert="low"><note>Hinweis</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#14" cert="low">Bürgermeister</name>
-						<place source="#587" cert="low">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="low">Räte</name>
-						<place source="#587" cert="low">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<orgName type="institution">
-						<name type="singular" ref="org#19" cert="low">Kirche</name>
-						<place source="#587" cert="low">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</orgName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role28" role="Bürgermeister"/>
+					<personGrp ref="role0" role="Räte"/>
+					<orgName ref="org37" role="Kirche"/>"
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7834"/>
-					<ref type="prev_chronologically" target="files.xml#7832"/>
+					<ref type="next_chronologically" target="file7834"/>
+					<ref type="prev_chronologically" target="file7832"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -89,19 +67,21 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#8851"/>
-					<ref type="prev_same_addressee" target="files.xml#5369"/>
+					<ref type="next_same_addressee" target="file8851"/>
+					<ref type="prev_same_addressee" target="file5369"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8851"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5369"/>
+					<ref type="next_with_addressee_as_sender" target="file8851"/>
+					<ref type="prev_with_addressee_as_sender" target="file5369"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="7833/Autograph/00 E_II_356__fol__857_r_.tif" n="1"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

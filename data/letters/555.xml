@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1525</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,72</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,72</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,25 +44,31 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 70,110</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 70,110</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#124">Dublin</settlement>
-						<institution>Trinity Collge</institution>
-						<idno type="Kopie">Ms 1158, fo 30</idno>
-						<repository ref="archive#31">
+						<!--
+						<repository ref="archive31">
 							<name>Dublin TC</name>
 							<ref target="https://www.tcd.ie/library/"/>
 						</repository>
+						<settlement ref="place124">Dublin</settlement>
+						<institution>Trinity Collge</institution>
+						-->
+						<repository ref="archive31"/>
+						<idno subtype="Kopie">Ms 1158, fo 30</idno>
 					</msIdentifier>
 					<history><origin><p><date>18. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -69,32 +78,33 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/555">
 				<correspAction type="sent">
-					<persName ref="person#917" cert="high">
+					<!--
+					<persName ref="person917" cert="high">
 						<forename cert="high">Hieronymus</forename>
 						<surname cert="high">de Carraria</surname>
 					</persName>
-					<place source="#312" cert="high">
-						<settlement>Martiliasi</settlement>
-					</place>
+					-->
+					<persName ref="person917" cert="high"/>
+					<place source="place312" cert="high"/>
 					<date when="1549-06-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#556"/>
-					<ref type="prev_chronologically" target="files.xml#553"/>
+					<ref type="next_chronologically" target="file556"/>
+					<ref type="prev_chronologically" target="file553"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -103,12 +113,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#572"/>
-					<ref type="prev_same_addressee" target="files.xml#546"/>
+					<ref type="next_same_addressee" target="file572"/>
+					<ref type="prev_same_addressee" target="file546"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#572"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#546"/>
+					<ref type="next_with_addressee_as_sender" target="file572"/>
+					<ref type="prev_with_addressee_as_sender" target="file546"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,25 +127,28 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="555/Autograph/00 E_II_365__fol__72_r_.tif" n="1"/>
+		<graphic url="555/Autograph/01 E_II_365__fol__72_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Pacem et gratiam fideique augmentum per dominum Iesum H[ieronymus] Carr[aria] H[einricho] B[ullingero] precatur Nulle me, observande Heinriche, ut ad te scriberem, promovebat occasio.</s>
-					<s xml:lang="la" type="auto">Sed cum gravis ille et pietate et eruditione Augustinus Mainardus, Clavenensis ecclesiae minister ex Retorum fratribus, de non levi negotio quarta decima Ma-i ad me suas dedisset, hiis imposuit, quod, si tali negotio responderem, nostras tibi dirrigendas curarem, ut pro tua erga illum familiaritate vel.</s>
-					<s xml:lang="la" type="auto">D. Comandro vel Blasio, Curiensis ecclesiae ministris deferendas fideliter comendares, qua de re alterius nomine, quem tibi et familiarem et carum existimo, nostras comendare [h]aud temere visum fuit.</s>
-					<s xml:lang="la" type="auto">Non est igitur, ut tuam officiosam humanitatem pluribus promoveam, cum tanto viro gratificari studiosior esse possis, quam existimem.</s>
-					<s xml:lang="la" type="auto">Vale, mi[h]i observande Heinriche, in domino Iesu, quem toto animo deprecor, ut te fortissimum evangelice veritatis propugnaculum, in ut te fortissimum evangelice veritatis propugnaculum, in illius adversarios conterendos magis atque magis corroboret et vita lungevum servet, que[m]<note type="misc">qui?</note> pro me oratione pulsa cum gratia domini nostri Iesu Christi, amen.</s>
+					<s n="1" xml:lang="la" type="auto">Pacem et gratiam fideique augmentum per dominum Iesum H[ieronymus] Carr[aria] H[einricho] B[ullingero] precatur Nulle me, observande Heinriche, ut ad te scriberem, promovebat occasio.</s>
+					<s n="2" xml:lang="la" type="auto">Sed cum gravis ille et pietate et eruditione Augustinus Mainardus, Clavenensis ecclesiae minister ex Retorum fratribus, de non levi negotio quarta decima Ma-i ad me suas dedisset, hiis imposuit, quod, si tali negotio responderem, nostras tibi dirrigendas curarem, ut pro tua erga illum familiaritate vel.</s>
+					<s n="3" xml:lang="la" type="auto">D. Comandro vel Blasio, Curiensis ecclesiae ministris deferendas fideliter comendares, qua de re alterius nomine, quem tibi et familiarem et carum existimo, nostras comendare [h]aud temere visum fuit.</s>
+					<s n="4" xml:lang="la" type="auto">Non est igitur, ut tuam officiosam humanitatem pluribus promoveam, cum tanto viro gratificari studiosior esse possis, quam existimem.</s>
+					<s n="5" xml:lang="la" type="auto">Vale, mi[h]i observande Heinriche, in domino Iesu, quem toto animo deprecor, ut te fortissimum evangelice veritatis propugnaculum, in ut te fortissimum evangelice veritatis propugnaculum, in illius adversarios conterendos magis atque magis corroboret et vita lungevum servet, que[m]<note type="misc">qui?</note> pro me oratione pulsa cum gratia domini nostri Iesu Christi, amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum Martisiasi 15. mensis Iunii 1549.</s>
-					<s xml:lang="la" type="auto">Hieronymus Carraria Taurinensis ex fratribus classis Tononiensis, tibi deditissimus.</s>
+					<s n="6" xml:lang="la" type="auto">Datum Martisiasi 15. mensis Iunii 1549.</s>
+					<s n="7" xml:lang="la" type="auto">Hieronymus Carraria Taurinensis ex fratribus classis Tononiensis, tibi deditissimus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">[P]reclaro tum pietate tum eruditione domino Heinricho Bullingero, Tug[u]rinensis ecclesiae pastori vigilantissimo et sincerissimo, nostro observando.</s>
-					<s xml:lang="la" type="auto">Tuguri.</s>
+					<s n="8" xml:lang="la" type="auto">[P]reclaro tum pietate tum eruditione domino Heinricho Bullingero, Tug[u]rinensis ecclesiae pastori vigilantissimo et sincerissimo, nostro observando.</s>
+					<s n="9" xml:lang="la" type="auto">Tuguri.</s>
 				</p>
 			</div>
 		</body>

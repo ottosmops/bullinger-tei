@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2017"/>
-				<idno type="ISBN">ISBN 078-3-290-17889-5547</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2623</idno>
+				<idno subtype="ISBN">ISBN 078-3-290-17889-5547</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2623</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 18</title>
+				<title subtype="publication">HBBW XVIII</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">18</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 361,158</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 361,158</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,8 +49,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								[1] <persName ref="57">Erb</persName> begegnete dem Jungen [Johannes
-								<persName ref="114">Jud</persName>], der schon vor zwei Jahren in Reichenweier war und nun, zur Zeit
+								[1] <persName ref="person57">Erb</persName> begegnete dem Jungen [Johannes
+								<persName ref="person114">Jud</persName>], der schon vor zwei Jahren in Reichenweier war und nun, zur Zeit
 								der Weinlese, in Begleitung des Schulmeisters [Laurentius Montanus] aus Mülhausen kam. Er ist begabt und
 								wird wohl der Kirche eines Tages von Nutzen sein.
 								</p>
@@ -59,12 +62,12 @@
 								</p>
 								<p xml:id="regest3">
 								[3] Vorgestern [kam] ein Brief des Grafen [Georg von Württemberg-Mömpelgard]: Der Kaiser habe sich bei
-								Nacht aus seiner Verschanzung [bei <placeName ref="1551">Marxheim</placeName>] in Richtung
-								<placeName ref="794">Nördlingen</placeName> herausbewegt, sei aber kaum vorangekommen. Die
+								Nacht aus seiner Verschanzung [bei <placeName ref="place1551">Marxheim</placeName>] in Richtung
+								<placeName ref="place794">Nördlingen</placeName> herausbewegt, sei aber kaum vorangekommen. Die
 								Schmalkaldener sind zwar nicht so lebhaft wie die treulosen Spanier, haben sich jedoch unverzüglich bei
-								<placeName ref="794">Nördlingen</placeName> in Schlachtordnung aufgestellt. Der verschlagene Kaiser
+								<placeName ref="place794">Nördlingen</placeName> in Schlachtordnung aufgestellt. Der verschlagene Kaiser
 								schlich sich aber durch den Wald wieder in seine gewohnte Verschanzung bei
-								<placeName ref="279">Donauwörth</placeName> zurück. Alle bangen vor der Zukunft.
+								<placeName ref="place279">Donauwörth</placeName> zurück. Alle bangen vor der Zukunft.
 								</p>
 								<p xml:id="regest4">
 								[4] Vielleicht hat Bullinger von dem verräterischen Anschlag auf Sebastian Schertlin gehört. Gott sei Dank
@@ -82,44 +85,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12670">
 				<correspAction type="sent">
-					<persName ref="person#1010" cert="high">
+					<!--
+					<persName ref="person1010" cert="high">
 						<forename cert="high">Matthias</forename>
 						<surname cert="high">Erb</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Matthias_Erb"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/100972160"/>
 					</persName>
-					<place source="#411" cert="high">
-						<settlement>Reichenweier</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.16672 7.29707</geo>
-					</place>
+					-->
+					<persName ref="person1010" cert="high"/>
+					<place source="place411" cert="high"/>
 					<date when="1546-10-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12671"/>
-					<ref type="prev_chronologically" target="files.xml#12669"/>
-					<ref type="next_correspondence" target="files.xml#12689"/>
-					<ref type="prev_correspondence" target="files.xml#12627"/>
-					<ref type="next_correspondence_request" target="files.xml#13014"/>
-					<ref type="prev_correspondence_request" target="files.xml#12627"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12689"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12471"/>
-					<ref type="next_same_sender" target="files.xml#13014"/>
-					<ref type="prev_same_sender" target="files.xml#12627"/>
-					<ref type="next_same_addressee" target="files.xml#12689"/>
-					<ref type="prev_same_addressee" target="files.xml#12654"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13014"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12627"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12689"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12654"/>
+					<ref type="next_chronologically" target="file12671"/>
+					<ref type="prev_chronologically" target="file12669"/>
+					<ref type="next_correspondence" target="file12689"/>
+					<ref type="prev_correspondence" target="file12627"/>
+					<ref type="next_correspondence_request" target="file13014"/>
+					<ref type="prev_correspondence_request" target="file12627"/>
+					<ref type="next_correspondence_reaction" target="file12689"/>
+					<ref type="prev_correspondence_reaction" target="file12471"/>
+					<ref type="next_same_sender" target="file13014"/>
+					<ref type="prev_same_sender" target="file12627"/>
+					<ref type="next_same_addressee" target="file12689"/>
+					<ref type="prev_same_addressee" target="file12654"/>
+					<ref type="next_with_sender_as_addressee" target="file13014"/>
+					<ref type="prev_with_sender_as_addressee" target="file12627"/>
+					<ref type="next_with_addressee_as_sender" target="file12689"/>
+					<ref type="prev_with_addressee_as_sender" target="file12654"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -137,48 +144,48 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratia domini tecum.</s>
-					<s xml:lang="la" type="auto">Puer ille<note xml:id="fn1" type="footnote" n="1">Aus Bullingers Antwort an <persName ref="57">Erb</persName> vom 25. Oktober (s. <ref target="file#12689">Nr. 2642</ref>,6-8) geht hervor, dass der Junge ein Kirchenstipendium in Zürich bezog. Da dieser ferner einen Bezug zum <placeName ref="16">Elsass</placeName> gehabt haben müsste, zumal <persName ref="57">Erb</persName> im vorliegenden Brief berichtet, dass er ihm schon vor zwei Jahren begegnet sei, und da es sich nicht um Johannes Fabritius (<persName ref="188">Schmid</persName>) Montanus (von <placeName ref="116">Bergheim</placeName>) handeln kann, weil dieser damals in <placeName ref="74">Sachsen</placeName> unterwegs war (s. <hi>HBBW</hi> XVII 428, Anm. 59), wird es sich hier um dessen Cousin Johannes <persName ref="114">Jud</persName> gehandelt haben, der tatsächlich 1544 das <placeName ref="16">Elsass</placeName> besucht und dabei <persName ref="57">Erb</persName> angetroffen hatte (s. <hi>HBBW</hi> XIV 264f, Anm. 2) und 1546 tatsächlich noch ein Stipendium in Zürich innehatte; s. Zürich StA, G II 39.2, Schulausgaben der Jahre 1546/47, unter "Crucis" (14. September 1546) und "Lucie" (13. Dezember).</note>, qui ante biennium apud nos fuit, per nostrum paedotribam<note xml:id="fn2" type="footnote" n="2">Schulmeister; s. <hi>Hoven</hi> 380. - Laurentius Montanus; s. <hi>HBBW</hi> XIV 307f, Anm. 1; XV 439, Anm. 17.</note> ex Mylhusio adductus, me hac vindemia convenit.</s>
-					<s xml:lang="la" type="auto">Quem nolui ad te redire sine litteris.</s>
-					<s xml:lang="la" type="auto">Est enim meo iuditio ingenii foelicissimi, profuturus olim, ni<note xml:id="fna" type="footnote" n="a"><hi>Über der Zeile nachgetragen.</hi></note> fallat omnium expectationem, ecclesiis.</s>
-					<s xml:lang="la" type="auto">Quem tibi (hoc, quod ipse facis)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note> commendatum velim.</s>
+					<s n="1" xml:lang="la" type="auto">Gratia domini tecum.</s>
+					<s n="2" xml:lang="la" type="auto">Puer ille<note xml:id="fn1" type="footnote" n="1">Aus Bullingers Antwort an <persName ref="person57">Erb</persName> vom 25. Oktober (s. <ref target="file12689">Nr. 2642</ref>,6-8) geht hervor, dass der Junge ein Kirchenstipendium in Zürich bezog. Da dieser ferner einen Bezug zum <placeName ref="place16">Elsass</placeName> gehabt haben müsste, zumal <persName ref="person57">Erb</persName> im vorliegenden Brief berichtet, dass er ihm schon vor zwei Jahren begegnet sei, und da es sich nicht um Johannes Fabritius (<persName ref="person188">Schmid</persName>) Montanus (von <placeName ref="place116">Bergheim</placeName>) handeln kann, weil dieser damals in <placeName ref="place74">Sachsen</placeName> unterwegs war (s. <hi>HBBW</hi> XVII 428, Anm. 59), wird es sich hier um dessen Cousin Johannes <persName ref="person114">Jud</persName> gehandelt haben, der tatsächlich 1544 das <placeName ref="place16">Elsass</placeName> besucht und dabei <persName ref="person57">Erb</persName> angetroffen hatte (s. <hi>HBBW</hi> XIV 264f, Anm. 2) und 1546 tatsächlich noch ein Stipendium in Zürich innehatte; s. Zürich StA, G II 39.2, Schulausgaben der Jahre 1546/47, unter "Crucis" (14. September 1546) und "Lucie" (13. Dezember).</note>, qui ante biennium apud nos fuit, per nostrum paedotribam<note xml:id="fn2" type="footnote" n="2">Schulmeister; s. <hi>Hoven</hi> 380. - Laurentius Montanus; s. <hi>HBBW</hi> XIV 307f, Anm. 1; XV 439, Anm. 17.</note> ex Mylhusio adductus, me hac vindemia convenit.</s>
+					<s n="3" xml:lang="la" type="auto">Quem nolui ad te redire sine litteris.</s>
+					<s n="4" xml:lang="la" type="auto">Est enim meo iuditio ingenii foelicissimi, profuturus olim, ni<note xml:id="fna" type="footnote" n="a"><hi>Über der Zeile nachgetragen.</hi></note> fallat omnium expectationem, ecclesiis.</s>
+					<s n="5" xml:lang="la" type="auto">Quem tibi (hoc, quod ipse facis)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note> commendatum velim.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">De nostris rebus hęc: Bene valemus quidem adhuc corpore; verum quantum animo novit dominus, adeo multi in pręsenti cruce offenduntur, maxime vicini<note xml:id="fn3" type="footnote" n="3">Die katholischen Nachbarn des vorderösterreichischen Gebiets in der Nähe der Herrschaft Reichenweier.</note> grandia minitantes.</s>
-					<s xml:lang="la" type="auto">Nos vero illorum minas et caesaris<note xml:id="fn4" type="footnote" n="4">Karl V.</note> (si modo caesar dicendus est) iniqua consilia iuxta facimus.<note xml:id="fn5" type="footnote" n="5">Vgl. Hi <hi>5,</hi> 12; Ps 33 (Vulg. 32), 10; 37 (Vulg. 36), 12-17.</note></s>
-					<s xml:lang="la" type="auto">Si deus nobiscum, quis contra nos?<note xml:id="fn6" type="footnote" n="6">Röm 8,31.</note></s>
-					<s xml:lang="la" type="auto">Dominus protector vitę nostrę; a quo trepidandum?<note xml:id="fn7" type="footnote" n="7">Ps 27 (Vulg. 26), 1.</note></s>
-					<s xml:lang="la" type="auto">Capilli capitis numerati sunt.<note xml:id="fn8" type="footnote" n="8">Mt 10, 30; Lk 12, 7.</note></s>
-					<s xml:lang="la" type="auto">Multis certe adficimur contumeliis, maioribus impetimur convitiis, at dominus olim erit vindicta,<note xml:id="fn9" type="footnote" n="9">Vgl. z.B. Ps 140 (Vulg. 139), 13.</note> etc.</s>
+					<s n="6" xml:lang="la" type="auto">De nostris rebus hęc: Bene valemus quidem adhuc corpore; verum quantum animo novit dominus, adeo multi in pręsenti cruce offenduntur, maxime vicini<note xml:id="fn3" type="footnote" n="3">Die katholischen Nachbarn des vorderösterreichischen Gebiets in der Nähe der Herrschaft Reichenweier.</note> grandia minitantes.</s>
+					<s n="7" xml:lang="la" type="auto">Nos vero illorum minas et caesaris<note xml:id="fn4" type="footnote" n="4">Karl V.</note> (si modo caesar dicendus est) iniqua consilia iuxta facimus.<note xml:id="fn5" type="footnote" n="5">Vgl. Hi 5, 12; Ps 33 (Vulg. 32), 10; 37 (Vulg. 36), 12-17.</note></s>
+					<s n="8" xml:lang="la" type="auto">Si deus nobiscum, quis contra nos?<note xml:id="fn6" type="footnote" n="6">Röm 8,31.</note></s>
+					<s n="9" xml:lang="la" type="auto">Dominus protector vitę nostrę; a quo trepidandum?<note xml:id="fn7" type="footnote" n="7">Ps 27 (Vulg. 26), 1.</note></s>
+					<s n="10" xml:lang="la" type="auto">Capilli capitis numerati sunt.<note xml:id="fn8" type="footnote" n="8">Mt 10, 30; Lk 12, 7.</note></s>
+					<s n="11" xml:lang="la" type="auto">Multis certe adficimur contumeliis, maioribus impetimur convitiis, at dominus olim erit vindicta,<note xml:id="fn9" type="footnote" n="9">Vgl. z.B. Ps 140 (Vulg. 139), 13.</note> etc.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Nudiustercius scripsit<note xml:id="fn10" type="footnote" n="10">Gemeint ist hiermit nicht das Abfassungsdatum, sondern das Empfangsdaturn des Briefes; vgl. unten Anm. 17.</note> princeps noster<note xml:id="fn11" type="footnote" n="11">Georg von <placeName ref="100">Württemberg</placeName>-Mömpelgard.</note> hęc ex castris: Caesarem noctu ex munitione<note xml:id="fn12" type="footnote" n="12">Verschanzung, vorteilhafte Stellung; vgl. <ref target="file#12662">Nr. 2615</ref>,15-19. -Zur Sache s. <ref target="file#12654">Nr. 2607</ref>, Anm. 31; <ref target="file#12659">Nr. 2612</ref>,59-64; <ref target="file#12660">Nr. 2613</ref>,27- 44; <ref target="file#12663">Nr. 2616</ref>,39-44.</note> sua promovisse Callipedis<note xml:id="fn13" type="footnote" n="13">Anspielung auf den griechischen Läufer Kallippides, der sich ständig bewegte, aber nicht vorankam; s. <hi>Adagia</hi> 1, 6, 43 <hi>(ASD</hi> II/2 70-72, <ref target="file#10579">Nr. 543</ref>).</note> more versus Nordlingam, idque Hispanicis technis.</s>
-					<s xml:lang="la" type="auto">Verum nostri, qui, tametsi non sint admodum agiles ut fidefragi<note xml:id="fn14" type="footnote" n="14">treuebrecherisch, treulos; s. <hi>Du Cange</hi> II 491.</note> illi Hispani, incunctanter suos promoventes<note xml:id="fnc" type="footnote" n="c"><hi>Nach gestrichenem</hi> trajicientes.</note> apud Nortlingam acie instructa confligere cupiverunt.</s>
-					<s xml:lang="la" type="auto">Sed<pb type="scan" next="158v."/> versipellis ille<note xml:id="fn15" type="footnote" n="15">Der Kaiser; vgl. <hi>HBBW</hi> XVII 200,20; 246,8.</note> per densissima <pb type="edition" next="128"/> nemorum latibula oberrans tandem in assuetum rediit speleum<note xml:id="fn16" type="footnote" n="16">Gemeint ist <placeName ref="1551">Marxheim</placeName>, wo sich der Kaiser bis zum 2. Oktober aufhielt; s. <ref target="file#12654">Nr. 2607</ref>, Anm. 31. Allerdings handelt es sich dabei um eine unrichtige Vermutung, denn der Kaiser kam in der Nacht vom 10. auf den 11. Oktober an die Riedlinger Seen; s. <hi>Schüz, Donaufeldzug</hi> 68.</note>, non procul a Donenwerda.</s>
-					<s xml:lang="la" type="auto">Quid futurum sit, omnes anxii expectant,<note xml:id="fn17" type="footnote" n="17">Die hier gemachten Angaben erlauben es, den Brief des Grafen Georg auf den 11. Oktober zu datieren, nämlich als man noch nicht wusste, wohin sich der Kaiser begeben hatte; s. <hi>Schüz, Donaufeldzug</hi> 68.</note> etc.</s>
+					<s n="12" xml:lang="la" type="auto">Nudiustercius scripsit<note xml:id="fn10" type="footnote" n="10">Gemeint ist hiermit nicht das Abfassungsdatum, sondern das Empfangsdaturn des Briefes; vgl. unten Anm. 17.</note> princeps noster<note xml:id="fn11" type="footnote" n="11">Georg von Württemberg-Mömpelgard.</note> hęc ex castris: Caesarem noctu ex munitione<note xml:id="fn12" type="footnote" n="12">Verschanzung, vorteilhafte Stellung; vgl. <ref target="file12662">Nr. 2615</ref>,15-19. -Zur Sache s. <ref target="file12654">Nr. 2607</ref>, Anm. 31; <ref target="file12659">Nr. 2612</ref>,59-64; <ref target="file12660">Nr. 2613</ref>,27- 44; <ref target="file12663">Nr. 2616</ref>,39-44.</note> sua promovisse Callipedis<note xml:id="fn13" type="footnote" n="13">Anspielung auf den griechischen Läufer Kallippides, der sich ständig bewegte, aber nicht vorankam; s. <hi>Adagia</hi> 1, 6, 43 <hi>(ASD</hi> II/2 70-72, <ref target="file10579">Nr. 543</ref>).</note> more versus Nordlingam, idque Hispanicis technis.</s>
+					<s n="13" xml:lang="la" type="auto">Verum nostri, qui, tametsi non sint admodum agiles ut fidefragi<note xml:id="fn14" type="footnote" n="14">treuebrecherisch, treulos; s. <hi>Du Cange</hi> II 491.</note> illi Hispani, incunctanter suos promoventes<note xml:id="fnc" type="footnote" n="c"><hi>Nach gestrichenem</hi> trajicientes.</note> apud Nortlingam acie instructa confligere cupiverunt.</s>
+					<s n="14" xml:lang="la" type="auto">Sed<pb type="scan" next="158v."/> versipellis ille<note xml:id="fn15" type="footnote" n="15">Der Kaiser; vgl. <hi>HBBW</hi> XVII 200,20; 246,8.</note> per densissima <pb type="edition" next="128"/> nemorum latibula oberrans tandem in assuetum rediit speleum<note xml:id="fn16" type="footnote" n="16">Gemeint ist <placeName ref="place1551">Marxheim</placeName>, wo sich der Kaiser bis zum 2. Oktober aufhielt; s. <ref target="file12654">Nr. 2607</ref>, Anm. 31. Allerdings handelt es sich dabei um eine unrichtige Vermutung, denn der Kaiser kam in der Nacht vom 10. auf den 11. Oktober an die Riedlinger Seen; s. <hi>Schüz, Donaufeldzug</hi> 68.</note>, non procul a Donenwerda.</s>
+					<s n="15" xml:lang="la" type="auto">Quid futurum sit, omnes anxii expectant,<note xml:id="fn17" type="footnote" n="17">Die hier gemachten Angaben erlauben es, den Brief des Grafen Georg auf den 11. Oktober zu datieren, nämlich als man noch nicht wusste, wohin sich der Kaiser begeben hatte; s. <hi>Schüz, Donaufeldzug</hi> 68.</note> etc.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">De Sebastiano Schertlin nosti forte, ut quorundam proditorum<note xml:id="fn18" type="footnote" n="18">Gemeint sind der Lindauer Pantaleon Ebner und der Bregenzer Wolfgang Kant,: s. <ref target="file#12654">Nr. 2607</ref>, Anm. 6 und Anm. 9.</note> gladiis sit impetitus, etc., sed dei gratia servatus.</s>
-					<s xml:lang="la" type="auto">Referuntur pleraque alia, sed incerta.</s>
-					<s xml:lang="la" type="auto">Alias plura forte, dum vacarit.</s>
+					<s n="16" xml:lang="la" type="auto">De Sebastiano Schertlin nosti forte, ut quorundam proditorum<note xml:id="fn18" type="footnote" n="18">Gemeint sind der Lindauer Pantaleon Ebner und der Bregenzer Wolfgang Kant,: s. <ref target="file12654">Nr. 2607</ref>, Anm. 6 und Anm. 9.</note> gladiis sit impetitus, etc., sed dei gratia servatus.</s>
+					<s n="17" xml:lang="la" type="auto">Referuntur pleraque alia, sed incerta.</s>
+					<s n="18" xml:lang="la" type="auto">Alias plura forte, dum vacarit.</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Valebis igitur, vir in domino integerrime, et ora dominum iugiter pro nobis, etc.</s>
-					<s xml:lang="la" type="auto">Raptim, Richenvillę<note xml:id="fnd" type="footnote" n="d"><hi>Am Rande nachgetragen.</hi></note> ad lucernam<note xml:id="fn19" type="footnote" n="19">ad lucernam: bei Kerzenlicht (d.h. nachts); vgl. <hi>König</hi> 674.</note> 14. die octobris 1546.</s>
-					<s xml:lang="la" type="auto">Tuus <persName ref="57">Erbius</persName>.</s>
+					<s n="19" xml:lang="la" type="auto">Valebis igitur, vir in domino integerrime, et ora dominum iugiter pro nobis, etc.</s>
+					<s n="20" xml:lang="la" type="auto">Raptim, Richenvillę<note xml:id="fnd" type="footnote" n="d"><hi>Am Rande nachgetragen.</hi></note> ad lucernam<note xml:id="fn19" type="footnote" n="19">ad lucernam: bei Kerzenlicht (d.h. nachts); vgl. <hi>König</hi> 674.</note> 14. die octobris 1546.</s>
+					<s n="21" xml:lang="la" type="auto">Tuus <persName ref="person57">Erbius</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse darunter:]</note>
-					<s xml:lang="la" type="auto">Eximio viro pietate et doctrina d. Henrhito<note xml:id="fne" type="footnote" n="e"><hi>Fehlerhaft aus</hi> Hencho <hi>korrigiert.</hi></note> Bullingero, Tigurinorum antistiti vigilantissimo, etc.</s>
-					<s xml:lang="de" type="auto">Zurch.</s>
+					<s n="22" xml:lang="la" type="auto">Eximio viro pietate et doctrina d. Henrhito<note xml:id="fne" type="footnote" n="e"><hi>Fehlerhaft aus</hi> Hencho <hi>korrigiert.</hi></note> Bullingero, Tigurinorum antistiti vigilantissimo, etc.</s>
+					<s n="23" xml:lang="de" type="auto">Zurch.</s>
 				</p>
 			</div>
 		</body>

@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Hinweis" subtype="Original" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Original">A 222.1, Nr. 36</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Original">A 222.1, Nr. 36</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -29,13 +32,16 @@
 				</msDesc>
 				<msDesc type="Hinweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 71,129</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 71,129</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -46,13 +52,16 @@
 				</msDesc>
 				<msDesc type="Hinweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 71,201</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 71,201</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -61,67 +70,30 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/715">
 				<correspAction type="sent">
-					<persName ref="person#3207" cert="high">
+					<!--
+					<persName ref="person3207" cert="high">
 						<forename cert="high">Eduard VI.</forename>
 						<surname cert="high">König von England (Tudor)</surname>
 						<note type="Person">Verfasser: Vannes Peter</note>
 						<graphic type="portrait" url="portraits/3207_Tudor_Edward.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Eduard_VI."/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118687891"/>
 					</persName>
-					<place source="#542" cert="high">
-						<settlement>Westminster</settlement>
-						<country>England</country>
-						<geo>51.49937 -0.12846</geo>
-					</place>
+					-->
+					<persName ref="person3207" cert="high"/>
+					<place source="place542" cert="high"/>
 					<date when="1549-10-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#14" cert="high">Bürgermeister</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="high">Räte</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="singular" ref="role#65" cert="high">Schultheiss</name>
-						<place source="#41" cert="high">
-							<settlement>Bern</settlement>
-							<district>Bern</district>
-							<country>Schweiz</country>
-							<geo>46.94809 7.44744</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="high">Räte</name>
-						<place source="#41" cert="high">
-							<settlement>Bern</settlement>
-							<district>Bern</district>
-							<country>Schweiz</country>
-							<geo>46.94809 7.44744</geo>
-						</place>
-					</roleName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					<personGrp ref="role28" role="Bürgermeister"/>
+					<personGrp ref="role0" role="Räte"/>
+					<personGrp ref="role0" role="Schultheiss"/>
+					<personGrp ref="role0" role="Räte"/>
+					<place source="place41" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#716"/>
-					<ref type="prev_chronologically" target="files.xml#714"/>
+					<ref type="next_chronologically" target="file716"/>
+					<ref type="prev_chronologically" target="file714"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>

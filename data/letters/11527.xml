@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2005"/>
-				<idno type="ISBN">ISBN 3-290-17339-9</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1484</idno>
+				<idno subtype="ISBN">ISBN 3-290-17339-9</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1484</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 11</title>
+				<title subtype="publication">HBBW XI</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">11</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,208</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,208</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,18 +49,18 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Verweist bezüglich des Charakters von [<persName ref="228">Hans</persName>]
-								<persName ref="228">Vogler</persName> [d. J.] auf einen Brief von
-								<persName ref="154">Myconius</persName> an <persName ref="14">Theodor</persName>
-								[<persName ref="14">Bibliander</persName>] sowie auf <persName ref="228">Voglers</persName>
-								Vater [<persName ref="228">Hans</persName> d. Ä.], schildert die Unbeständigkeit des jungen Mannes
+								Verweist bezüglich des Charakters von [Hans]
+								<persName ref="person228">Vogler</persName> [d. J.] auf einen Brief von
+								<persName ref="person154">Myconius</persName> an Theodor
+								[<persName ref="person14">Bibliander</persName>] sowie auf <persName ref="person228">Voglers</persName>
+								Vater [Hans d. Ä.], schildert die Unbeständigkeit des jungen Mannes
 								und macht Vorschläge für seine Erziehung; bedauert, dass er nicht rechtzeitig Einfluss nehmen konnte.
-								<persName ref="14">Bibliander</persName> lässt sich keinen Freundschaftsdienst gefallen. Was
-								<persName ref="28">Bucer</persName> aus <placeName ref="880">Regensburg</placeName> schrieb,
-								teilt <persName ref="154">Myconius</persName> mit. [<persName ref="28">Martin</persName>]
-								<persName ref="64">Frecht</persName> lässt <persName ref="114">Leo</persName>
-								[<persName ref="114">Jud</persName>] bitten, dem kranken
-								[<persName ref="433">Bernhard</persName>] <persName ref="433">Besserer</persName> zu
+								<persName ref="person14">Bibliander</persName> lässt sich keinen Freundschaftsdienst gefallen. Was
+								<persName ref="person28">Bucer</persName> aus <placeName ref="place880">Regensburg</placeName> schrieb,
+								teilt <persName ref="person154">Myconius</persName> mit. [Martin]
+								<persName ref="person64">Frecht</persName> lässt Leo
+								[<persName ref="person114">Jud</persName>] bitten, dem kranken
+								[Bernhard] <persName ref="person433">Besserer</persName> zu
 								schreiben.
 							</p>
 						</summary>
@@ -68,45 +71,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11527">
 				<correspAction type="sent">
-					<persName ref="person#1365" cert="high">
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
-					<place source="#28" cert="low">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person1365" cert="high"/>
+					<place source="place28" cert="low"/>
 					<date when="1541-03-31" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11528"/>
-					<ref type="prev_chronologically" target="files.xml#11526"/>
-					<ref type="next_correspondence" target="files.xml#11529"/>
-					<ref type="prev_correspondence" target="files.xml#11502"/>
-					<ref type="next_correspondence_request" target="files.xml#11529"/>
-					<ref type="prev_correspondence_request" target="files.xml#11502"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11593"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11378"/>
-					<ref type="next_same_sender" target="files.xml#11529"/>
-					<ref type="prev_same_sender" target="files.xml#11512"/>
-					<ref type="next_same_addressee" target="files.xml#11530"/>
-					<ref type="prev_same_addressee" target="files.xml#11522"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11529"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11512"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11530"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11522"/>
+					<ref type="next_chronologically" target="file11528"/>
+					<ref type="prev_chronologically" target="file11526"/>
+					<ref type="next_correspondence" target="file11529"/>
+					<ref type="prev_correspondence" target="file11502"/>
+					<ref type="next_correspondence_request" target="file11529"/>
+					<ref type="prev_correspondence_request" target="file11502"/>
+					<ref type="next_correspondence_reaction" target="file11593"/>
+					<ref type="prev_correspondence_reaction" target="file11378"/>
+					<ref type="next_same_sender" target="file11529"/>
+					<ref type="prev_same_sender" target="file11512"/>
+					<ref type="next_same_addressee" target="file11530"/>
+					<ref type="prev_same_addressee" target="file11522"/>
+					<ref type="next_with_sender_as_addressee" target="file11529"/>
+					<ref type="prev_with_sender_as_addressee" target="file11512"/>
+					<ref type="next_with_addressee_as_sender" target="file11530"/>
+					<ref type="prev_with_addressee_as_sender" target="file11522"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -123,44 +131,44 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto"><persName ref="228">Vogleri</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="228">Hans Vogler</persName> d. J. (vgl. auch unten <ref target="file#11529">Nr. 1486</ref>, 1-8. 14f u. ö.).</note> ingenium quale esset, satis ostenderat <persName ref="14">Theodoro</persName> nostro <persName ref="154">Myconius</persName>,<note xml:id="fn3" type="footnote" n="3"><persName ref="154">Myconius</persName>' Brief an <persName ref="14">Theodor Bibliander</persName> ist nicht erhalten.</note> itaque ex illo poteras scire omnia; ad hęc pater<note xml:id="fn4" type="footnote" n="4"><persName ref="228">Hans Vogler</persName> d. Ä.</note> ipse iampridem advertit, quale sit, ut me post illum tibi de hoc dicere sit supervacuum.</s>
-					<s xml:lang="la" type="auto">Tamen, quia iterum postulas, dicam, quod sentio: Est ob flexibilitatem nimiam nimium incertum; ut enim omnia potest percipere momento propemodum, ita potest nusquam consistere, sed quicquid tulit praesens animi impetus, hoc sequitur.</s>
-					<s xml:lang="la" type="auto">Itaque custode eget certo, perpetuo et firmo, eget etiam non[?] omnigenarum et novarum artium exercitatione, sed certarum et graviorum, quarum congressu discet animi incertitudinem propemodum instar harundinis mobilem.</s>
-					<s xml:lang="la" type="auto">Etiam<note xml:id="fna" type="footnote" n="a"><hi>Kann auch als</hi> Nam <hi>gelesen werden.</hi></note> hoc in eo malum est, quod non credit nec advertit monentem.</s>
-					<s xml:lang="la" type="auto">Porro qua maxime in re sit exercendus postea, meum iudicium patri dixi.</s>
-					<s xml:lang="la" type="auto">Non obiicerem artem novam; erit ea nova materia patrem fallendi.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto"><persName ref="person228">Vogleri</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="person228">Hans Vogler</persName> d. J. (vgl. auch unten <ref target="file11529">Nr. 1486</ref>, 1-8. 14f u. ö.).</note> ingenium quale esset, satis ostenderat <persName ref="person14">Theodoro</persName> nostro <persName ref="person154">Myconius</persName>,<note xml:id="fn3" type="footnote" n="3"><persName ref="person154">Myconius</persName>' Brief an <persName ref="person14">Theodor Bibliander</persName> ist nicht erhalten.</note> itaque ex illo poteras scire omnia; ad hęc pater<note xml:id="fn4" type="footnote" n="4"><persName ref="person228">Hans Vogler</persName> d. Ä.</note> ipse iampridem advertit, quale sit, ut me post illum tibi de hoc dicere sit supervacuum.</s>
+					<s n="3" xml:lang="la" type="auto">Tamen, quia iterum postulas, dicam, quod sentio: Est ob flexibilitatem nimiam nimium incertum; ut enim omnia potest percipere momento propemodum, ita potest nusquam consistere, sed quicquid tulit praesens animi impetus, hoc sequitur.</s>
+					<s n="4" xml:lang="la" type="auto">Itaque custode eget certo, perpetuo et firmo, eget etiam non[?] omnigenarum et novarum artium exercitatione, sed certarum et graviorum, quarum congressu discet animi incertitudinem propemodum instar harundinis mobilem.</s>
+					<s n="5" xml:lang="la" type="auto">Etiam<note xml:id="fna" type="footnote" n="a"><hi>Kann auch als</hi> Nam <hi>gelesen werden.</hi></note> hoc in eo malum est, quod non credit nec advertit monentem.</s>
+					<s n="6" xml:lang="la" type="auto">Porro qua maxime in re sit exercendus postea, meum iudicium patri dixi.</s>
+					<s n="7" xml:lang="la" type="auto">Non obiicerem artem novam; erit ea nova materia patrem fallendi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sed in iis studiis, in quibus coepit bene, cogerem progredi, nec diversum hic argumentum, sed unum idemque praescriberem tantisper, dum in eo se intelligeret profecisse, et simul de moribus, de constantia, de fide, de veritate certa praecepta quottidie in certis et illustribus exemplis meditanda proponerem et illorum contrarium aeque illustribus exemplis declararem.</s>
-					<s xml:lang="la" type="auto">Hęc disciplina si illum revocare non potest et continere, ad stivam alligarem toto biennio.</s>
-					<s xml:lang="la" type="auto">Hęc de illo paucis.</s>
-					<s xml:lang="la" type="auto">Utinam tantum mihi vel pater vel is, qui eum ad me adduxit, <persName ref="108">Hospinianus</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="108">Leonhard Hospinian</persName>, zu dieser Zeit Schulmeister in <placeName ref="884">Reichenweier</placeName> (vgl. Amerbach, Korr. V 225-227. 235).</note>, dixisset de eius ingenio, quantum ego nunc tibi; potuissem curare iuvenem melius, quanquam me absente<note xml:id="fn6" type="footnote" n="6"><persName ref="81">Grynäus</persName> war Ende Oktober 1540 zum Religionsgespräch nach <placeName ref="1214">Worms</placeName> gereist und Ende Januar 1541 zurückgekehrt; vgl. HBBW X, S. 176, Anm. 1, bzw. oben <ref target="file#11499">Nr. 1456</ref>.</note> fere plurimum deliquit.<pb type="edition" next="118"/></s>
+					<s n="8" xml:lang="la" type="auto">Sed in iis studiis, in quibus coepit bene, cogerem progredi, nec diversum hic argumentum, sed unum idemque praescriberem tantisper, dum in eo se intelligeret profecisse, et simul de moribus, de constantia, de fide, de veritate certa praecepta quottidie in certis et illustribus exemplis meditanda proponerem et illorum contrarium aeque illustribus exemplis declararem.</s>
+					<s n="9" xml:lang="la" type="auto">Hęc disciplina si illum revocare non potest et continere, ad stivam alligarem toto biennio.</s>
+					<s n="10" xml:lang="la" type="auto">Hęc de illo paucis.</s>
+					<s n="11" xml:lang="la" type="auto">Utinam tantum mihi vel pater vel is, qui eum ad me adduxit, <persName ref="person108">Hospinianus</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="person108">Leonhard Hospinian</persName>, zu dieser Zeit Schulmeister in <placeName ref="place884">Reichenweier</placeName> (vgl. Amerbach, Korr. V 225-227. 235).</note>, dixisset de eius ingenio, quantum ego nunc tibi; potuissem curare iuvenem melius, quanquam me absente<note xml:id="fn6" type="footnote" n="6"><persName ref="person81">Grynäus</persName> war Ende Oktober 1540 zum Religionsgespräch nach <placeName ref="place1214">Worms</placeName> gereist und Ende Januar 1541 zurückgekehrt; vgl. HBBW X, S. 176, Anm. 1, bzw. oben <ref target="file11499">Nr. 1456</ref>.</note> fere plurimum deliquit.<pb type="edition" next="118"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Video <persName ref="14">Theodorum</persName> nihil ex me beneficii admittere; quid beneficii dicam?</s>
-					<s xml:lang="la" type="auto">Etiam non leve indicium benevolentis erga se animi fert itaque omni<note xml:id="fnb" type="footnote" n="b"><hi>Vor</hi> omni <hi>gestrichenes</hi> nih.</note> me officio humanitatis excludit.</s>
+					<s n="12" xml:lang="la" type="auto">Video <persName ref="person14">Theodorum</persName> nihil ex me beneficii admittere; quid beneficii dicam?</s>
+					<s n="13" xml:lang="la" type="auto">Etiam non leve indicium benevolentis erga se animi fert itaque omni<note xml:id="fnb" type="footnote" n="b"><hi>Vor</hi> omni <hi>gestrichenes</hi> nih.</note> me officio humanitatis excludit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nova, quae <placeName ref="880">Ratispona</placeName> ad nos <persName ref="28">Bucerus</persName> scribit, habes hic per <persName ref="154">Myconium</persName><note xml:id="fn7" type="footnote" n="7">Vgl. unten <ref target="file#11528">Nr. 1485</ref>, 1 mit Anm. 1.</note>.</s>
-					<s xml:lang="la" type="auto">Hęc allata sunt hodie.</s>
-					<s xml:lang="la" type="auto">Itaque videre licet, hii homines quantam reipublicę curam gerant.</s>
+					<s n="14" xml:lang="la" type="auto">Nova, quae <placeName ref="place880">Ratispona</placeName> ad nos <persName ref="person28">Bucerus</persName> scribit, habes hic per <persName ref="person154">Myconium</persName><note xml:id="fn7" type="footnote" n="7">Vgl. unten <ref target="file11528">Nr. 1485</ref>, 1 mit Anm. 1.</note>.</s>
+					<s n="15" xml:lang="la" type="auto">Hęc allata sunt hodie.</s>
+					<s n="16" xml:lang="la" type="auto">Itaque videre licet, hii homines quantam reipublicę curam gerant.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino.</s>
-					<s xml:lang="la" type="auto">Leonem<note xml:id="fn8" type="footnote" n="8"><persName ref="114">Leo Jud</persName>.</note> orabis, ut ad <persName ref="433">Bessererum</persName><note xml:id="fn9" type="footnote" n="9"><persName ref="433">Bernhard Besserer</persName>, vgl. die in der folgenden Anm. genannten Briefe.</note> <placeName ref="1113">Ulmensem</placeName> Hartman[?], qui graviter decumbit, scribat diligenter et virum optimum literis consoletur; hoc <persName ref="64">Frechtus</persName> orat<note xml:id="fn10" type="footnote" n="10">Ein entsprechender Brief <persName ref="64">Frechts</persName> liegt nicht vor; seine Bitte erreichte <persName ref="81">Grynäus</persName> durch Vermittlung <persName ref="9">Jakob Bedrots</persName> (s. dessen Brief an <persName ref="81">Grynäus</persName> vom 21. März in Zürich StA, E II 350, 425f; vgl. auch Bedrots Brief an Bullinger vom 20. April, unten <ref target="file#11545">Nr. 1502</ref>).</note>.</s>
-					<s xml:lang="la" type="auto">Vale iterum.</s>
+					<s n="17" xml:lang="la" type="auto">Vale in domino.</s>
+					<s n="18" xml:lang="la" type="auto">Leonem<note xml:id="fn8" type="footnote" n="8"><persName ref="person114">Leo Jud</persName>.</note> orabis, ut ad <persName ref="person433">Bessererum</persName><note xml:id="fn9" type="footnote" n="9"><persName ref="person433">Bernhard Besserer</persName>, vgl. die in der folgenden Anm. genannten Briefe.</note> <placeName ref="place1113">Ulmensem</placeName> Hartman[?], qui graviter decumbit, scribat diligenter et virum optimum literis consoletur; hoc <persName ref="person64">Frechtus</persName> orat<note xml:id="fn10" type="footnote" n="10">Ein entsprechender Brief <persName ref="person64">Frechts</persName> liegt nicht vor; seine Bitte erreichte <persName ref="person81">Grynäus</persName> durch Vermittlung <persName ref="person9">Jakob Bedrots</persName> (s. dessen Brief an <persName ref="person81">Grynäus</persName> vom 21. März in Zürich StA, E II 350, 425f; vgl. auch Bedrots Brief an Bullinger vom 20. April, unten <ref target="file11545">Nr. 1502</ref>).</note>.</s>
+					<s n="19" xml:lang="la" type="auto">Vale iterum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ultima marcii.</s>
+					<s n="20" xml:lang="la" type="auto">Ultima marcii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S. <persName ref="81">Grynęus</persName> tuus.</s>
+					<s n="21" xml:lang="la" type="auto">S. <persName ref="person81">Grynęus</persName> tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinricho Bullingero, fratri colendissimo suo.</s>
-					<s xml:lang="la" type="auto">Tyguri.</s>
+					<s n="22" xml:lang="la" type="auto">Domino Heinricho Bullingero, fratri colendissimo suo.</s>
+					<s n="23" xml:lang="la" type="auto">Tyguri.</s>
 				</p>
 			</div>
 		</body>

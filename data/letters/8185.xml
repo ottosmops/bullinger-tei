@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7479/27</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms S 40,321</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms S 40,321</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,31 +50,36 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8185">
 				<correspAction type="sent">
-					<persName ref="person#3730" cert="high">
+					<!--
+					<persName ref="person3730" cert="high">
 						<forename cert="high">Lazarus</forename>
 						<surname cert="high">von Schwendi</surname>
 						<note type="Person">= Kienzheim im Elsaß</note>
 						<graphic type="portrait" url="portraits/3730_von_Schwendi_Lazarus.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Lazarus_von_Schwendi"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118760130"/>
 					</persName>
-					<place source="#265" cert="high">
-						<settlement>Kienzheim</settlement>
-						<country>Frankreich</country>
-						<geo>48.13658 7.287245</geo>
-					</place>
+					-->
+					<persName ref="person3730" cert="high"/>
+					<place source="place265" cert="high"/>
 					<date when="1570-02-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8186"/>
-					<ref type="prev_chronologically" target="files.xml#8184"/>
+					<ref type="next_chronologically" target="file8186"/>
+					<ref type="prev_chronologically" target="file8184"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -80,12 +88,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#8187"/>
-					<ref type="prev_same_addressee" target="files.xml#8182"/>
+					<ref type="next_same_addressee" target="file8187"/>
+					<ref type="prev_same_addressee" target="file8182"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8187"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8182"/>
+					<ref type="next_with_addressee_as_sender" target="file8187"/>
+					<ref type="prev_with_addressee_as_sender" target="file8182"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -103,35 +111,35 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Doctissime vir, binas hoc mane literas vestras accepi de 19. et 22. huius.</s>
-					<s xml:lang="la" type="auto">Responsum regis hic vobis mito.</s>
-					<s xml:lang="la" type="auto">Dux Lotaringiae et alii pacem futuram dicunt et secundum istas conditiones.</s>
-					<s xml:lang="la" type="auto">Multi quibusvis secuturam arbitrantur praeter utriusque partis necessitates.</s>
-					<s xml:lang="la" type="auto">Non desunt veteres hostes, qui rupta omnia vellent et plenam tandem Hugenotorum omnium extirpationem pollicentur.</s>
-					<s xml:lang="la" type="auto">Multa ex utraque parte indigna commituntur, quae postea animos magis exasperant et calamitates augent.</s>
-					<s xml:lang="la" type="auto">Misericordia dei istis sola mederi poterit, cum demerita nostra talia non sint, quae diutius suum iudicium tollerare possint<note type="margin">dazu a.R.: quod?</note>.</s>
-					<s xml:lang="la" type="auto">De Mauris Hispani sibi certam victoriam pollicentur, quam illis exopto.</s>
-					<s xml:lang="la" type="auto">Turcica classis Cypro minari dicitur, quanquam mihi non sit dubium Turcos sine auxilio Mauros non relicturos.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Doctissime vir, binas hoc mane literas vestras accepi de 19. et 22. huius.</s>
+					<s n="3" xml:lang="la" type="auto">Responsum regis hic vobis mito.</s>
+					<s n="4" xml:lang="la" type="auto">Dux Lotaringiae et alii pacem futuram dicunt et secundum istas conditiones.</s>
+					<s n="5" xml:lang="la" type="auto">Multi quibusvis secuturam arbitrantur praeter utriusque partis necessitates.</s>
+					<s n="6" xml:lang="la" type="auto">Non desunt veteres hostes, qui rupta omnia vellent et plenam tandem Hugenotorum omnium extirpationem pollicentur.</s>
+					<s n="7" xml:lang="la" type="auto">Multa ex utraque parte indigna commituntur, quae postea animos magis exasperant et calamitates augent.</s>
+					<s n="8" xml:lang="la" type="auto">Misericordia dei istis sola mederi poterit, cum demerita nostra talia non sint, quae diutius suum iudicium tollerare possint<note type="margin">dazu a.R.: quod?</note>.</s>
+					<s n="9" xml:lang="la" type="auto">De Mauris Hispani sibi certam victoriam pollicentur, quam illis exopto.</s>
+					<s n="10" xml:lang="la" type="auto">Turcica classis Cypro minari dicitur, quanquam mihi non sit dubium Turcos sine auxilio Mauros non relicturos.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De Erico duce dudum, quod scribitis, intellexi et credo equites suos progressuros in Galliam, si opus sit.</s>
-					<s xml:lang="la" type="auto">Sed interim invigilandum est, ne quid detrimenti respublica capiat<note xml:id="fn1" type="footnote" n="1">Vgl. Cicero, "Videant consules, ne ...".</note>.</s>
-					<s xml:lang="la" type="auto">Guilielmum ducem pecuniam ex Gallia expectare ferebant pro conductu suorum equitum.</s>
+					<s n="11" xml:lang="la" type="auto">De Erico duce dudum, quod scribitis, intellexi et credo equites suos progressuros in Galliam, si opus sit.</s>
+					<s n="12" xml:lang="la" type="auto">Sed interim invigilandum est, ne quid detrimenti respublica capiat<note xml:id="fn1" type="footnote" n="1">Vgl. Cicero, "Videant consules, ne ...".</note>.</s>
+					<s n="13" xml:lang="la" type="auto">Guilielmum ducem pecuniam ex Gallia expectare ferebant pro conductu suorum equitum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hugnoti frustra pro auxiliis laborare hactenus visi sunt, et sane difficile illis erit sustinere bellum hac aestate, si novis copiis non fuerint instructi.</s>
+					<s n="14" xml:lang="la" type="auto">Hugnoti frustra pro auxiliis laborare hactenus visi sunt, et sane difficile illis erit sustinere bellum hac aestate, si novis copiis non fuerint instructi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dieta ad mensem maium procedet ad Renum / Reinum, ut puto.</s>
-					<s xml:lang="la" type="auto">De reliquo vos rogo, ut etiam ex Franckfordio ad me scribere velitis; ego non ero ingratus.</s>
-					<s xml:lang="la" type="auto">Et vos feliciter valere exopto.</s>
+					<s n="15" xml:lang="la" type="auto">Dieta ad mensem maium procedet ad Renum / Reinum, ut puto.</s>
+					<s n="16" xml:lang="la" type="auto">De reliquo vos rogo, ut etiam ex Franckfordio ad me scribere velitis; ego non ero ingratus.</s>
+					<s n="17" xml:lang="la" type="auto">Et vos feliciter valere exopto.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ex Kuensheim 24. februarii anno 70.</s>
+					<s n="18" xml:lang="de" type="auto">Ex Kuensheim 24. februarii anno 70.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vester bonus amicus Lazarus de Svendi scripsit.</s>
+					<s n="19" xml:lang="la" type="auto">Vester bonus amicus Lazarus de Svendi scripsit.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse fehlt; jedenfalls nicht an Bullinger.]</note>

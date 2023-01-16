@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2006"/>
-				<idno type="ISBN">ISBN 978-3-290-17431-6</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1695</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17431-6</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1695</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 12</title>
+				<title subtype="publication">HBBW XII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">12</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 313,11r.</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 313,11r.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,12 +50,12 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Ist begeistert von <persName ref="211">Stumpfs</persName> Entwurf einer [historischtopographischen] Beschreibung des Zürcher Gebietes;
-								<persName ref="211">Stumpf</persName> soll mit seiner Arbeit weiterfahren; legt [diesbezügliches] Material bei,<pb type="edition" next="255"/>
-								das <persName ref="211">Stumpf</persName> nach Gebrauch zurücksenden soll; will <persName ref="211">Stumpfs</persName> Vorhaben im Rahmen seiner Möglichkeiten
-								unterstützen; begrüßt die Einteilung [des geplanten Werks] in dreizehn Bücher; <persName ref="211">Stumpf</persName> soll gemäß seinem Plan
-								fortfahren; Bullinger erwartet den <placeName ref="7">Deutschland</placeName> betreffenden Teil
-								und weitere fertig gestellte Passagen; er studiert jeweils mit Freude, was <persName ref="211">Stumpf</persName> ihm zusendet.
+								Ist begeistert von <persName ref="person211">Stumpfs</persName> Entwurf einer [historischtopographischen] Beschreibung des Zürcher Gebietes;
+								<persName ref="person211">Stumpf</persName> soll mit seiner Arbeit weiterfahren; legt [diesbezügliches] Material bei,<pb type="edition" next="255"/>
+								das <persName ref="person211">Stumpf</persName> nach Gebrauch zurücksenden soll; will <persName ref="person211">Stumpfs</persName> Vorhaben im Rahmen seiner Möglichkeiten
+								unterstützen; begrüßt die Einteilung [des geplanten Werks] in dreizehn Bücher; <persName ref="person211">Stumpf</persName> soll gemäß seinem Plan
+								fortfahren; Bullinger erwartet den <placeName ref="place7">Deutschland</placeName> betreffenden Teil
+								und weitere fertig gestellte Passagen; er studiert jeweils mit Freude, was <persName ref="person211">Stumpf</persName> ihm zusendet.
 							</p>
 						</summary>
 					</msContents>
@@ -62,45 +65,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11740">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1542-11-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3067" cert="high">
+					<!--
+					<persName ref="person3067" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Stumpf</surname>
 						<graphic type="portrait" url="portraits/3066_Stumpf_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Stumpf"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118757555"/>
 					</persName>
+					-->
+					<persName ref="person3067" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11741"/>
-					<ref type="prev_chronologically" target="files.xml#11739"/>
-					<ref type="next_correspondence" target="files.xml#11855"/>
-					<ref type="prev_correspondence" target="files.xml#11522"/>
-					<ref type="next_correspondence_request" target="files.xml#11855"/>
-					<ref type="prev_correspondence_request" target="files.xml#11522"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12715"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11338"/>
-					<ref type="next_same_sender" target="files.xml#11743"/>
-					<ref type="prev_same_sender" target="files.xml#11730"/>
-					<ref type="next_same_addressee" target="files.xml#12715"/>
-					<ref type="prev_same_addressee" target="files.xml#11338"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11743"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11730"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12715"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11338"/>
+					<ref type="next_chronologically" target="file11741"/>
+					<ref type="prev_chronologically" target="file11739"/>
+					<ref type="next_correspondence" target="file11855"/>
+					<ref type="prev_correspondence" target="file11522"/>
+					<ref type="next_correspondence_request" target="file11855"/>
+					<ref type="prev_correspondence_request" target="file11522"/>
+					<ref type="next_correspondence_reaction" target="file12715"/>
+					<ref type="prev_correspondence_reaction" target="file11338"/>
+					<ref type="next_same_sender" target="file11743"/>
+					<ref type="prev_same_sender" target="file11730"/>
+					<ref type="next_same_addressee" target="file12715"/>
+					<ref type="prev_same_addressee" target="file11338"/>
+					<ref type="next_with_sender_as_addressee" target="file11743"/>
+					<ref type="prev_with_sender_as_addressee" target="file11730"/>
+					<ref type="next_with_addressee_as_sender" target="file12715"/>
+					<ref type="prev_with_addressee_as_sender" target="file11338"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -114,29 +121,29 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus Stumphio.</s>
+					<s n="1" xml:lang="la" type="auto">H. Bullingerus Stumphio.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem etc.</s>
+					<s n="2" xml:lang="la" type="auto">Gratiam et pacem etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Expectas, quomodo placeant, quae exarasti de agro Tigurino<note xml:id="fn1" type="footnote" n="1">Es handelt sich um einen Entwurf, der im Zusammenhang mit <persName ref="211">Stumpfs</persName> Arbeit an einer historisch-topographischen Beschreibung der Eidgenossenschaft entstand, die schließlich 1547/48 bei Christoph Froschauer als "Gemeiner loblicher eydgnoschafft stetten, landen und völckeren chronickwirdiger thaaten beschreybung [...]" (BZD C 376) erschien. Vgl. Gerald <hi>Strauss,</hi> The Production of Johann <persName ref="211">Stumpf</persName>'s Description of the Swiss Confederation, in: Medievalia et Humanistica XII, 1958, S. 104-122 (Nachdruck in: <hi>ders.,</hi> Enacting the Reformation in Germany. Essay on institution and reception, Ashgate 1993, Teil III).</note>?</s>
-					<s xml:lang="la" type="auto">Ita, ut nihil supra.</s>
-					<s xml:lang="la" type="auto">Sed nolo quicquam dicere coram et faciem<note xml:id="fna" type="footnote" n="a">Sc. in faciem.</note> laudare amicum charissimum.</s>
-					<s xml:lang="la" type="auto">Oro, ut pergas.</s>
-					<s xml:lang="la" type="auto">Adieci quaedam, quae invenies; iis, ubi fueris<note xml:id="fnb" type="footnote" n="b"><hi>Vor</hi> fueris <hi>gestrichenes</hi> frueris.</note> usus, remittas<note xml:id="fn2" type="footnote" n="2">Bullinger und <persName ref="211">Stumpf</persName> ließen sich regelmäßig gegenseitig historisches Material zukommen, vgl. im Zusammenhang mit <persName ref="211">Stumpfs</persName> Arbeit an einer Reformationsgeschichte in den Jahren 1535/36 Christian <hi>Moser,</hi> Heinrich Bullinger's Efforts to Document the Zurich Reformation. History as Legacy, in: Architect of Reformation. An Introduction to Heinrich Bullinger, 1504-1575, hg. von Bruce Gordon und Emidio Campi, Grand Rapids, Mich. 2004. -Texts and Studies in Reformation and Post-Reformation Thought, S. 208-210.</note>.</s>
-					<s xml:lang="la" type="auto">Cupio enim ex animo institutum tuum promovere, ne dum iuvare.</s>
-					<s xml:lang="la" type="auto">Nec parcam laboribus ac sumptibus meae quidem tenuitati congruentibus etc.</s>
-					<s xml:lang="la" type="auto">Digestio 13 librorum videtur plus habitura lucis, gratiae, evidentiae<note xml:id="fn3" type="footnote" n="3"><persName ref="211">Stumpf</persName> hielt an seiner Einteilung in dreizehn Bücher fest, wie der Druck des Jahres 1547/48 zeigt.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Expectas, quomodo placeant, quae exarasti de agro Tigurino<note xml:id="fn1" type="footnote" n="1">Es handelt sich um einen Entwurf, der im Zusammenhang mit <persName ref="person211">Stumpfs</persName> Arbeit an einer historisch-topographischen Beschreibung der Eidgenossenschaft entstand, die schließlich 1547/48 bei Christoph Froschauer als "Gemeiner loblicher eydgnoschafft stetten, landen und völckeren chronickwirdiger thaaten beschreybung [...]" (BZD C 376) erschien. Vgl. Gerald <hi>Strauss,</hi> The Production of Johann <persName ref="person211">Stumpf</persName>'s Description of the Swiss Confederation, in: Medievalia et Humanistica XII, 1958, S. 104-122 (Nachdruck in: <hi>ders.,</hi> Enacting the Reformation in Germany. Essay on institution and reception, Ashgate 1993, Teil III).</note>?</s>
+					<s n="4" xml:lang="la" type="auto">Ita, ut nihil supra.</s>
+					<s n="5" xml:lang="la" type="auto">Sed nolo quicquam dicere coram et faciem<note xml:id="fna" type="footnote" n="a">Sc. in faciem.</note> laudare amicum charissimum.</s>
+					<s n="6" xml:lang="la" type="auto">Oro, ut pergas.</s>
+					<s n="7" xml:lang="la" type="auto">Adieci quaedam, quae invenies; iis, ubi fueris<note xml:id="fnb" type="footnote" n="b"><hi>Vor</hi> fueris <hi>gestrichenes</hi> frueris.</note> usus, remittas<note xml:id="fn2" type="footnote" n="2">Bullinger und <persName ref="person211">Stumpf</persName> ließen sich regelmäßig gegenseitig historisches Material zukommen, vgl. im Zusammenhang mit <persName ref="person211">Stumpfs</persName> Arbeit an einer Reformationsgeschichte in den Jahren 1535/36 Christian <hi>Moser,</hi> Heinrich Bullinger's Efforts to Document the Zurich Reformation. History as Legacy, in: Architect of Reformation. An Introduction to Heinrich Bullinger, 1504-1575, hg. von Bruce Gordon und Emidio Campi, Grand Rapids, Mich. 2004. -Texts and Studies in Reformation and Post-Reformation Thought, S. 208-210.</note>.</s>
+					<s n="8" xml:lang="la" type="auto">Cupio enim ex animo institutum tuum promovere, ne dum iuvare.</s>
+					<s n="9" xml:lang="la" type="auto">Nec parcam laboribus ac sumptibus meae quidem tenuitati congruentibus etc.</s>
+					<s n="10" xml:lang="la" type="auto">Digestio 13 librorum videtur plus habitura lucis, gratiae, evidentiae<note xml:id="fn3" type="footnote" n="3"><persName ref="person211">Stumpf</persName> hielt an seiner Einteilung in dreizehn Bücher fest, wie der Druck des Jahres 1547/48 zeigt.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Proinde perge eum sequi ordinem, quem instituis.</s>
-					<s xml:lang="la" type="auto">Expecto tuam Germaniam<note xml:id="fn4" type="footnote" n="4">Im Druck des Jahres 1547/48 handelt das zweite Buch von <placeName ref="7">Deutschland</placeName>.</note> et quae absolvisti.</s>
-					<s xml:lang="la" type="auto">Mira cum voluptate illa lego, quae mittis.</s>
+					<s n="11" xml:lang="la" type="auto">Proinde perge eum sequi ordinem, quem instituis.</s>
+					<s n="12" xml:lang="la" type="auto">Expecto tuam Germaniam<note xml:id="fn4" type="footnote" n="4">Im Druck des Jahres 1547/48 handelt das zweite Buch von <placeName ref="place7">Deutschland</placeName>.</note> et quae absolvisti.</s>
+					<s n="13" xml:lang="la" type="auto">Mira cum voluptate illa lego, quae mittis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominus servet te una cum uxore<note xml:id="fn5" type="footnote" n="5"><persName ref="2253">Regula</persName>, geb. Brennwald.</note> incolumem<note xml:id="fnc" type="footnote" n="c">incolumem <hi>mit dünnerer Feder und wohl von anderer Hand am Rande nachgetragen.</hi></note>.</s>
-					<s xml:lang="la" type="auto">Tiguri, 24. novembris 1542.</s>
+					<s n="14" xml:lang="la" type="auto">Dominus servet te una cum uxore<note xml:id="fn5" type="footnote" n="5">Regula, geb. Brennwald.</note> incolumem<note xml:id="fnc" type="footnote" n="c">incolumem <hi>mit dünnerer Feder und wohl von anderer Hand am Rande nachgetragen.</hi></note>.</s>
+					<s n="15" xml:lang="la" type="auto">Tiguri, 24. novembris 1542.</s>
 				</p>
 			</div>
 		</body>

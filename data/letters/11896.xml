@@ -9,10 +9,10 @@
 				<publisher>Basler Buch- und Antiquariatshandlung</publisher>
 				<pubPlace>Basel</pubPlace>
 				<date when="1904"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1850</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1850</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Bullingers Korrespondenz mit den Graubündnern</title>
+				<title subtype="publication">Graubünden, Korr.</title>
 				<biblScope type="author">Bullinger, H.; Schiess, T.</biblScope>
 				<biblScope type="edition">Bullingers Korrespondenz mit den Graubündnern</biblScope>
 				<biblScope type="page">60</biblScope>
@@ -20,13 +20,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343a,297</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343a,297</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -39,7 +42,7 @@
 								drohender Armut, seit ihm vor sechs Jahren wegen seiner Kritik an den Pensionenempfängern das Jahresgehalt
 								um 33 Gulden gekürzt wurde; nachdem ihm inzwischen eine Erhöhung um 20 Gulden zugestanden wurde, will er nun
 								bis zu seinem nahen Tod ausharren.<pb type="edition" next="102"/> Sein Kollege
-								[<persName ref="21">Johannes Blasius</persName>] will wegen eines erlittenen Unrechts sein Amt
+								[<persName ref="person21">Johannes Blasius</persName>] will wegen eines erlittenen Unrechts sein Amt
 								aufgeben und wird mündlich darüber berichten; Bullinger soll ihn von diesem Schritt abhalten.
 							</p>
 						</summary>
@@ -60,42 +63,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11896">
 				<correspAction type="sent">
-					<persName ref="person#654" cert="high">
+					<!--
+					<persName ref="person654" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Comander</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Comander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118713841"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413826"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person654" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1544-02-18" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11897"/>
-					<ref type="prev_chronologically" target="files.xml#11895"/>
-					<ref type="next_correspondence" target="files.xml#11926"/>
-					<ref type="prev_correspondence" target="files.xml#11879"/>
-					<ref type="next_correspondence_request" target="files.xml#11926"/>
-					<ref type="prev_correspondence_request" target="files.xml#11879"/>
+					<ref type="next_chronologically" target="file11897"/>
+					<ref type="prev_chronologically" target="file11895"/>
+					<ref type="next_correspondence" target="file11926"/>
+					<ref type="prev_correspondence" target="file11879"/>
+					<ref type="next_correspondence_request" target="file11926"/>
+					<ref type="prev_correspondence_request" target="file11879"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11508"/>
-					<ref type="next_same_sender" target="files.xml#11926"/>
-					<ref type="prev_same_sender" target="files.xml#11879"/>
-					<ref type="next_same_addressee" target="files.xml#11898"/>
-					<ref type="prev_same_addressee" target="files.xml#11888"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11926"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11879"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11898"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11888"/>
+					<ref type="prev_correspondence_reaction" target="file11508"/>
+					<ref type="next_same_sender" target="file11926"/>
+					<ref type="prev_same_sender" target="file11879"/>
+					<ref type="next_same_addressee" target="file11898"/>
+					<ref type="prev_same_addressee" target="file11888"/>
+					<ref type="next_with_sender_as_addressee" target="file11926"/>
+					<ref type="prev_with_sender_as_addressee" target="file11879"/>
+					<ref type="next_with_addressee_as_sender" target="file11898"/>
+					<ref type="prev_with_addressee_as_sender" target="file11888"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -112,25 +122,25 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Graciam et misericordiam a Domino.</s>
-					<s xml:lang="la" type="auto">Literas humanitatis tuae, quamvis non suo tempore redditas, accepi, carissime Bullingere, quibus me hortaris, ne officio sive vocationi meae renuntiem et ne oviculas Christi curae meae concreditas temere deseram.</s>
-					<s xml:lang="la" type="auto">De his multis verbis esset agendum; sed vires mihi non sunt, nec ad scribendum prae aegritudine capitis aptus sum.</s>
-					<s xml:lang="la" type="auto">Haec igitur prima caussa est, quod huic vocationi deinceps penitus impar sum, effoetus fere omnibus viribus; nam curis et laboribus referta vires meas longe superat.</s>
-					<s xml:lang="la" type="auto">Alia caussa: ante annos sex, quum me pensionariis nebulonibus opponerem pro concione, prout officium meum exigebat, illorum rabiem in me concitaveram, ut de sacerdotiolo meo, quod alias exile erat et tenue, in singulos annos 33 aureos Renenses decerperent.</s>
-					<s xml:lang="la" type="auto">Ego hucusque toleravi iniuriam hanc; sed interim, quantum decerpserunt, tantum de meis et uxoris me bonis assuere coactus sum, adeo ut, si diutius ferendum fuisset, liberi mei post obitum meum ad mendicitatem redacti exularent.</s>
-					<s xml:lang="la" type="auto">Tamen antequam molirer quippiam, senatui paupertatem meam et propositum meum indicavi, qui auctarium 20 aureos in singulos annos addiderunt.</s>
-					<s xml:lang="la" type="auto">Ego, his contentus et quia tumbae proximus, diem Domini in vocatione hac expectabo.</s>
-					<s xml:lang="la" type="auto">Caeterum collega meus, frater dilectissimus, gravi affectus iniuria, ut tibi coram expositurus est, indeque offensus, ut renuntiare proposuerit et in animo suo firmiter statuerit.</s>
-					<s xml:lang="la" type="auto">Rogo igitur atque obsecro charitatem tuam, ut illum dehorteris et a proposito suo, quantum potueris, absterreas; nam ego, nisi Deus meliorem valetudinem daturus sit, quasi defunctus reputandus sum, et ipso recedente ecclesia in totum destituta esset.</s>
-					<s xml:lang="la" type="auto">Cetera ipse tecum enarrabit.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">Ex Rhetiae Curia, 18. Februarii 44.</s>
+					<s n="1" xml:lang="la" type="auto">Graciam et misericordiam a Domino.</s>
+					<s n="2" xml:lang="la" type="auto">Literas humanitatis tuae, quamvis non suo tempore redditas, accepi, carissime Bullingere, quibus me hortaris, ne officio sive vocationi meae renuntiem et ne oviculas Christi curae meae concreditas temere deseram.</s>
+					<s n="3" xml:lang="la" type="auto">De his multis verbis esset agendum; sed vires mihi non sunt, nec ad scribendum prae aegritudine capitis aptus sum.</s>
+					<s n="4" xml:lang="la" type="auto">Haec igitur prima caussa est, quod huic vocationi deinceps penitus impar sum, effoetus fere omnibus viribus; nam curis et laboribus referta vires meas longe superat.</s>
+					<s n="5" xml:lang="la" type="auto">Alia caussa: ante annos sex, quum me pensionariis nebulonibus opponerem pro concione, prout officium meum exigebat, illorum rabiem in me concitaveram, ut de sacerdotiolo meo, quod alias exile erat et tenue, in singulos annos 33 aureos Renenses decerperent.</s>
+					<s n="6" xml:lang="la" type="auto">Ego hucusque toleravi iniuriam hanc; sed interim, quantum decerpserunt, tantum de meis et uxoris me bonis assuere coactus sum, adeo ut, si diutius ferendum fuisset, liberi mei post obitum meum ad mendicitatem redacti exularent.</s>
+					<s n="7" xml:lang="la" type="auto">Tamen antequam molirer quippiam, senatui paupertatem meam et propositum meum indicavi, qui auctarium 20 aureos in singulos annos addiderunt.</s>
+					<s n="8" xml:lang="la" type="auto">Ego, his contentus et quia tumbae proximus, diem Domini in vocatione hac expectabo.</s>
+					<s n="9" xml:lang="la" type="auto">Caeterum collega meus, frater dilectissimus, gravi affectus iniuria, ut tibi coram expositurus est, indeque offensus, ut renuntiare proposuerit et in animo suo firmiter statuerit.</s>
+					<s n="10" xml:lang="la" type="auto">Rogo igitur atque obsecro charitatem tuam, ut illum dehorteris et a proposito suo, quantum potueris, absterreas; nam ego, nisi Deus meliorem valetudinem daturus sit, quasi defunctus reputandus sum, et ipso recedente ecclesia in totum destituta esset.</s>
+					<s n="11" xml:lang="la" type="auto">Cetera ipse tecum enarrabit.</s>
+					<s n="12" xml:lang="la" type="auto">Vale.</s>
+					<s n="13" xml:lang="la" type="auto">Ex Rhetiae Curia, 18. Februarii 44.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Ioannes Comander.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus Ioannes Comander.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pio et docto Tigurinae urbis antistiti magistro Heinricho Bullingero, fratri suo in Domino charissimo.</s>
+					<s n="15" xml:lang="la" type="auto">Pio et docto Tigurinae urbis antistiti magistro Heinricho Bullingero, fratri suo in Domino charissimo.</s>
 				</p>
 			</div>
 		</body>

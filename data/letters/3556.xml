@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,970 ff.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,970 ff.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -25,14 +28,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 92,12</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Mitte; Regest</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 92,12</idno>
+						<idno subtype="Hinweis">Mitte; Regest</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -46,57 +52,60 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3556">
 				<correspAction type="sent">
-					<persName ref="person#4121" cert="high">
+					<!--
+					<persName ref="person4121" cert="high">
 						<forename cert="high">Hieronymus</forename>
 						<surname cert="high">zum Lamm</surname>
-						<addName type="main">Zum Lamb (Agninus), Hieronymus</addName>
+						<persName type="main" ref="person9697>Zum Lamb (Agninus), Hieronymus</addName>
 					</persName>
-					<place source="#157" cert="high">
-						<settlement>Frankfurt am Main</settlement>
-						<district>Hessen</district>
-						<country>Deutschland</country>
-						<geo>50.110922 8.682126</geo>
-					</place>
+					-->
+					<persName ref="person4121" cert="high"/>
+					<place source="place157" cert="high"/>
 					<date when="1558-04-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3557"/>
-					<ref type="prev_chronologically" target="files.xml#3555"/>
-					<ref type="next_correspondence" target="files.xml#3710"/>
-					<ref type="prev_correspondence" target="files.xml#3319"/>
-					<ref type="next_correspondence_request" target="files.xml#3710"/>
-					<ref type="prev_correspondence_request" target="files.xml#3319"/>
+					<ref type="next_chronologically" target="file3557"/>
+					<ref type="prev_chronologically" target="file3555"/>
+					<ref type="next_correspondence" target="file3710"/>
+					<ref type="prev_correspondence" target="file3319"/>
+					<ref type="next_correspondence_request" target="file3710"/>
+					<ref type="prev_correspondence_request" target="file3319"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#3710"/>
-					<ref type="prev_same_sender" target="files.xml#3319"/>
-					<ref type="next_same_addressee" target="files.xml#3558"/>
-					<ref type="prev_same_addressee" target="files.xml#3552"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3710"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3319"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3558"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3552"/>
+					<ref type="next_same_sender" target="file3710"/>
+					<ref type="prev_same_sender" target="file3319"/>
+					<ref type="next_same_addressee" target="file3558"/>
+					<ref type="prev_same_addressee" target="file3552"/>
+					<ref type="next_with_sender_as_addressee" target="file3710"/>
+					<ref type="prev_with_sender_as_addressee" target="file3319"/>
+					<ref type="next_with_addressee_as_sender" target="file3558"/>
+					<ref type="prev_with_addressee_as_sender" target="file3552"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="3556/Autograph/00 E_II_356__S__970_.tif" n="1"/>
+		<graphic url="3556/Autograph/01 E_II_356__S__971_.tif" n="2"/>
+		<graphic url="3556/Autograph/02 E_II_356__S__972_.tif" n="3"/>
+		<graphic url="3556/Autograph/03 E_II_356__S__973_.tif" n="4"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

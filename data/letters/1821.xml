@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3067</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,123 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,123 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -79,13 +82,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#124">Dublin</settlement>
-						<institution>Trinity Collge</institution>
-						<idno type="Kopie">Ms 1158, fo 40r-v</idno>
-						<repository ref="archive#31">
+						<!--
+						<repository ref="archive31">
 							<name>Dublin TC</name>
 							<ref target="https://www.tcd.ie/library/"/>
 						</repository>
+						<settlement ref="place124">Dublin</settlement>
+						<institution>Trinity Collge</institution>
+						-->
+						<repository ref="archive31"/>
+						<idno subtype="Kopie">Ms 1158, fo 40r-v</idno>
 					</msIdentifier>
 					<history><origin><p><date>18. Jh.</date></p></origin></history>
 					<physDesc>
@@ -97,13 +103,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 79,46</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 79,46</idno>
 					</msIdentifier>
 					<history><origin><p><date>18. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -113,54 +122,61 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1821">
 				<correspAction type="sent">
-					<persName ref="person#1262" cert="high">
+					<!--
+					<persName ref="person1262" cert="high">
 						<forename cert="high">Philipp</forename>
 						<surname cert="high">Gallicius</surname>
-						<addName type="main">Gallicius (Saluz), Philipp</addName>
+						<persName type="main" ref="person8359>Gallicius (Saluz), Philipp</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Philipp_Gallicius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/134007832"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415068"/>
 					</persName>
-					<persName ref="person#654" cert="high">
+					-->
+					<persName ref="person1262" cert="high"/>
+					<!--
+					<persName ref="person654" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Comander</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Comander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118713841"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413826"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person654" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1553-03-06" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1822"/>
-					<ref type="prev_chronologically" target="files.xml#1820"/>
-					<ref type="next_correspondence" target="files.xml#1854"/>
-					<ref type="prev_correspondence" target="files.xml#1792"/>
-					<ref type="next_correspondence_request" target="files.xml#1854"/>
-					<ref type="prev_correspondence_request" target="files.xml#1792"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3425"/>
+					<ref type="next_chronologically" target="file1822"/>
+					<ref type="prev_chronologically" target="file1820"/>
+					<ref type="next_correspondence" target="file1854"/>
+					<ref type="prev_correspondence" target="file1792"/>
+					<ref type="next_correspondence_request" target="file1854"/>
+					<ref type="prev_correspondence_request" target="file1792"/>
+					<ref type="next_correspondence_reaction" target="file3425"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#1854"/>
-					<ref type="prev_same_sender" target="files.xml#1792"/>
-					<ref type="next_same_addressee" target="files.xml#1823"/>
-					<ref type="prev_same_addressee" target="files.xml#1820"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1854"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1792"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1823"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1820"/>
+					<ref type="next_same_sender" target="file1854"/>
+					<ref type="prev_same_sender" target="file1792"/>
+					<ref type="next_same_addressee" target="file1823"/>
+					<ref type="prev_same_addressee" target="file1820"/>
+					<ref type="next_with_sender_as_addressee" target="file1854"/>
+					<ref type="prev_with_sender_as_addressee" target="file1792"/>
+					<ref type="next_with_addressee_as_sender" target="file1823"/>
+					<ref type="prev_with_addressee_as_sender" target="file1820"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -169,42 +185,45 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="1821/Autograph/00 E_II_365__S__123_.tif" n="1"/>
+		<graphic url="1821/Autograph/01 E_II_365__S__124_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Literas tuas accepimus, vir humanissime, quibus Vergerio rescribis ac nobis conquerens de perniciosa nostrorum tenacitate.</s>
-					<s xml:lang="la" type="auto">Certe crudeliter in se ipsos sunt avari, dum bonis pastoribus carere malunt quam numerare, quibus illi possint vivere.</s>
-					<s xml:lang="la" type="auto">Proh hominum ingratitudinem!</s>
-					<s xml:lang="la" type="auto">quibus olim pro mendaciis centum aureorum coronatorum liberaliter dabant, iis nunc pro veritate, quam praedicant, maligne persolvunt viginti.</s>
-					<s xml:lang="la" type="auto">Nos quidem hoc ipsum clamamus ubique et, quibuscumque possumus modis et quotiescunque datur, omnibus inculcamus fore propediem, ut neque concionatores neque missatores sint habituri; sed surdo, quod dicitur, narramus fabulam.</s>
-					<s xml:lang="la" type="auto">Mittunt quidem nonnulli liberos suos in scholam, sed ut discant legere possintque raciones suas scribere; paucissimi sunt, qui liberos in bonis artibus cupiant erudiri.</s>
-					<s xml:lang="la" type="auto">Nos tamen monere communitates nostras non desinemus.</s>
-					<s xml:lang="la" type="auto">Haec et ante tibi dicta repetimus, quod nunc alia, quae scribamus, prorsus nulla habeamus, tu tamen velis tibi responderi aliquid.</s>
-					<s xml:lang="la" type="auto">- Paravimus synodi nostrae instituta quaedam, quibus vehementer Vergerius et Itali apud nos refragantur.</s>
-					<s xml:lang="la" type="auto">Fratres nostrates omnes rogant, ut legas et, si quid emendandum putes, moneas.</s>
-					<s xml:lang="la" type="auto">Nos nunc temporis non mittimus illa ad te, parcentes nimirum valetudini tuae, quod plene fortassis nondum revalueris; mittemus tamen, quam primum intellexerimus te robustiorem factum.</s>
-					<s xml:lang="la" type="auto">Ne tamen deterrearis magnitudine libelli.</s>
-					<s xml:lang="la" type="auto">Opellam diei unius vix sibi deposcunt; duabus enim horis poteris totum perlegere, imo minore spacio.</s>
-					<s xml:lang="la" type="auto">- Vergerii literas statim, ut accepi abs te, misi ad Ioannem Traversium, qui illi redderet una cum aliis, quas nos Vergerio in auxilium contra papistas scripsimus.</s>
-					<s xml:lang="la" type="auto">Secesserat enim Vergerius in Ingadinam ex Valle Tellina, homo certe plus satis vehemens nostro iudicio; ita enim timemus.</s>
-					<s xml:lang="la" type="auto">Tu interim vale in domino Iesu, vir humanissime, nosque redamare perge.</s>
-					<s xml:lang="la" type="auto">Datum Curiae, die 6. marcii anni 1553.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Literas tuas accepimus, vir humanissime, quibus Vergerio rescribis ac nobis conquerens de perniciosa nostrorum tenacitate.</s>
+					<s n="3" xml:lang="la" type="auto">Certe crudeliter in se ipsos sunt avari, dum bonis pastoribus carere malunt quam numerare, quibus illi possint vivere.</s>
+					<s n="4" xml:lang="la" type="auto">Proh hominum ingratitudinem!</s>
+					<s n="5" xml:lang="la" type="auto">quibus olim pro mendaciis centum aureorum coronatorum liberaliter dabant, iis nunc pro veritate, quam praedicant, maligne persolvunt viginti.</s>
+					<s n="6" xml:lang="la" type="auto">Nos quidem hoc ipsum clamamus ubique et, quibuscumque possumus modis et quotiescunque datur, omnibus inculcamus fore propediem, ut neque concionatores neque missatores sint habituri; sed surdo, quod dicitur, narramus fabulam.</s>
+					<s n="7" xml:lang="la" type="auto">Mittunt quidem nonnulli liberos suos in scholam, sed ut discant legere possintque raciones suas scribere; paucissimi sunt, qui liberos in bonis artibus cupiant erudiri.</s>
+					<s n="8" xml:lang="la" type="auto">Nos tamen monere communitates nostras non desinemus.</s>
+					<s n="9" xml:lang="la" type="auto">Haec et ante tibi dicta repetimus, quod nunc alia, quae scribamus, prorsus nulla habeamus, tu tamen velis tibi responderi aliquid.</s>
+					<s n="10" xml:lang="la" type="auto">- Paravimus synodi nostrae instituta quaedam, quibus vehementer Vergerius et Itali apud nos refragantur.</s>
+					<s n="11" xml:lang="la" type="auto">Fratres nostrates omnes rogant, ut legas et, si quid emendandum putes, moneas.</s>
+					<s n="12" xml:lang="la" type="auto">Nos nunc temporis non mittimus illa ad te, parcentes nimirum valetudini tuae, quod plene fortassis nondum revalueris; mittemus tamen, quam primum intellexerimus te robustiorem factum.</s>
+					<s n="13" xml:lang="la" type="auto">Ne tamen deterrearis magnitudine libelli.</s>
+					<s n="14" xml:lang="la" type="auto">Opellam diei unius vix sibi deposcunt; duabus enim horis poteris totum perlegere, imo minore spacio.</s>
+					<s n="15" xml:lang="la" type="auto">- Vergerii literas statim, ut accepi abs te, misi ad Ioannem Traversium, qui illi redderet una cum aliis, quas nos Vergerio in auxilium contra papistas scripsimus.</s>
+					<s n="16" xml:lang="la" type="auto">Secesserat enim Vergerius in Ingadinam ex Valle Tellina, homo certe plus satis vehemens nostro iudicio; ita enim timemus.</s>
+					<s n="17" xml:lang="la" type="auto">Tu interim vale in domino Iesu, vir humanissime, nosque redamare perge.</s>
+					<s n="18" xml:lang="la" type="auto">Datum Curiae, die 6. marcii anni 1553.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuae integritatis toti Iohannes Comander, Philippus Gallicius.</s>
+					<s n="19" xml:lang="la" type="auto">Tuae integritatis toti Iohannes Comander, Philippus Gallicius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Has cum scripsissemus literas, nunciatur certo legatum regis Gallorum hic, d. Ioannem Iacobi Castilioneum, mortuum esse, et certe mort[uus est].</s>
-					<s xml:lang="la" type="auto">Aiunt cras ductum iri ex urbe nostra in castrum suum sepultum.</s>
+					<s n="20" xml:lang="la" type="auto">Has cum scripsissemus literas, nunciatur certo legatum regis Gallorum hic, d. Ioannem Iacobi Castilioneum, mortuum esse, et certe mort[uus est].</s>
+					<s n="21" xml:lang="la" type="auto">Aiunt cras ductum iri ex urbe nostra in castrum suum sepultum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vere magno viro d. Heinricho Bullingero, domino ac fratri suo colendissimo.</s>
+					<s n="22" xml:lang="la" type="auto">Vere magno viro d. Heinricho Bullingero, domino ac fratri suo colendissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="23" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

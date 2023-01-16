@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1983"/>
-				<idno type="ISBN">ISBN 3-290-11531-3</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=195</idno>
+				<idno subtype="ISBN">ISBN 3-290-11531-3</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=195</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 3</title>
+				<title subtype="publication">HBBW III</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">3</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 340,195</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 340,195</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,8 +50,8 @@
 						<summary>
 							<p xml:id="regest1">
 								Wünscht im Hinblick auf sein auswärtiges Studium ein Empfehlungsschreiben Zürichs, wie das andere vor ihm
-								auch erhalten haben. <persName ref="121">Christoph</persName>
-								[<persName ref="121">Klauser</persName>] will sich auch für ihn verwenden.
+								auch erhalten haben. Christoph
+								[<persName ref="person121">Klauser</persName>] will sich auch für ihn verwenden.
 							</p>
 						</summary>
 					</msContents>
@@ -58,44 +61,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10226">
 				<correspAction type="sent">
-					<persName ref="person#1810" cert="high">
+					<!--
+					<persName ref="person1810" cert="high">
 						<forename cert="high">Konrad</forename>
 						<surname cert="high">Klauser</surname>
-						<addName type="main">Klauser (Clauser), Konrad</addName>
+						<persName type="main" ref="person8398>Klauser (Clauser), Konrad</addName>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person1810" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1533-03-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10227"/>
-					<ref type="prev_chronologically" target="files.xml#10224"/>
-					<ref type="next_correspondence" target="files.xml#3058"/>
+					<ref type="next_chronologically" target="file10227"/>
+					<ref type="prev_chronologically" target="file10224"/>
+					<ref type="next_correspondence" target="file3058"/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#3058"/>
+					<ref type="next_correspondence_reaction" target="file3058"/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10228"/>
-					<ref type="prev_same_addressee" target="files.xml#10217"/>
+					<ref type="next_same_addressee" target="file10228"/>
+					<ref type="prev_same_addressee" target="file10217"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10228"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10217"/>
+					<ref type="next_with_addressee_as_sender" target="file10228"/>
+					<ref type="prev_with_addressee_as_sender" target="file10217"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -112,26 +118,26 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Novi tua, vir excellentissime, negotia.</s>
-					<s xml:lang="la" type="auto">Ne igitur tibi impedimento essem, statui hisce literis meam tibi declarare voluntatem.</s>
-					<s xml:lang="la" type="auto">Moris est, ut abeuntibus literas detis, quibus se Tiguro venire vestrisque sumptibus foveri dimissi testari possunt.</s>
-					<s xml:lang="la" type="auto">Me hinc ad proximam angariam<note xml:id="fn3" type="footnote" n="3">Es kann nur die Quatember im März gemeint sein, da <persName ref="121">Klauser</persName> sich noch vor dem 30. April 1533 in <placeName ref="97">Basel</placeName> immatrikulierte (<placeName ref="97">Basel</placeName>, Matrikel II 2).</note> mittetis.</s>
-					<s xml:lang="la" type="auto">Peto igitur, vir praestantissime, tales et mihi praeparentur<pb type="edition" next="77"/> literae.</s>
-					<s xml:lang="la" type="auto">Habuerunt huiusmodi literas Frysius et <persName ref="122">Conradus</persName><note xml:id="fn4" type="footnote" n="4">Siehe oben Anm. 2.</note>, habet et <persName ref="238">Otho</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="238">Otto Werdmüller</persName>, der Anfang 1533 nach <placeName ref="97">Basel</placeName> ging, war von Bullinger an <persName ref="154">Myconius</persName> empfohlen worden, s. HBBW II 288, 1f.</note>, ni fallor.</s>
-					<s xml:lang="la" type="auto">Cupit scire d. Doctor Christophorus<note xml:id="fn6" type="footnote" n="6"><persName ref="121">Christoph Klauser</persName>, gest. 1552, stammte aus einer Zürcher Apotheker-Familie, 1520 Mitglied des Großen Rats, seit 1531 Zürcher Stadtarzt. Wie er mit <persName ref="122">Konrad Klauser</persName> verwandt war, ließ sich nicht ermitteln. - Lit.: G[ustav]A[dolf] <hi>Wehrli,</hi> Der Zürcher Stadtarzt Dr. Christoph Clauser und seine Stellung zur Reformation der Heilkunde im XVI. Jahrhundert, Nebst Faksimileausgabe seiner Harnschrift und seiner Kalender, Zürich 1924. -Veröffentlichungen der schweizerischen Gesellschaft für Geschichte der Medizin und der Naturwissenschaften, Bd. 2.</note>, quae regio sive quod oppidum mihi sint adeunda, ut et ipse scribat<note xml:id="fn7" type="footnote" n="7">Nichts Diesbezügliches bekannt.</note>, si cognatus cognato quid literis prodesse valeat.</s>
-					<s xml:lang="la" type="auto">Habes, vir venerande, breviter rem omnem.</s>
-					<s xml:lang="la" type="auto">Tu, si commodum est, responde solummodo per <persName ref="84">Gualtherum</persName><note xml:id="fn8" type="footnote" n="8">Wahrscheinlich <persName ref="84">Rudolf Gwalther</persName> (Walther, Walthard, Gualtherus), 1519-1586, aus Zürich, von Geburt an Halbwaise. Er war 1528 Schüler Bullingers in <placeName ref="534">Kappel</placeName>, wurde von diesem 1532 in sein Haus in Zürich aufgenommen und reiste 1537 in dessen Auftrag nach <placeName ref="9">England</placeName>, worüber er einen Reisebericht verfaßte (hg. v. Paul Boesch in: Zwa VIII 433-471). Vom Herbst 1538 bis zum Frühjahr 1541 studierte er als Zürcher Stipendiat in <placeName ref="97">Basel</placeName>, <placeName ref="1049">Straßburg</placeName>, <placeName ref="609">Lausanne</placeName> und <placeName ref="672">Marburg</placeName>. Mit den hessischen Theologen konnte er 1541 den <placeName ref="880">Regensburger</placeName> Reichstag besuchen. Kurze Zeit war er Provisor (Hilfslehrer) an der Großmünsterschule und gleichzeitig Prädikant zu <placeName ref="963">Schwamendingen</placeName> bei Zürich, 1542 wurde er als Nachfolger <persName ref="114">Leo Juds</persName> Pfarrer zu St. <persName ref="124">Peter</persName> in Zürich. Seit 1547 war er Dekan des Zürichseekapitels. 1566 verhandelte er mit <placeName ref="943">Schaffhausen</placeName>, <placeName ref="97">Basel</placeName> und <placeName ref="738">Mülhausen</placeName> (Elsaß) über den Beitritt zum Zweiten Helvetischen Bekenntnis. <persName ref="1061">Gwalther</persName> entwickelte sich zu einem bedeutenden Prediger und zum engsten Mitarbeiter Bullingers, der ihn in seinem Testament zum Nachfolger vorschlug. Vom 3. Oktober 1575 bis zum plötzlichen Schwinden seiner Kräfte im Juli 1584 - formell blieb er Antistes bis im Dezember 1585 - predigte er im Großmünster, leitete die Zürcher Kirche, unterstützte verfolgte Glaubensgenossen aus <placeName ref="11">Frankreich</placeName> und in der Pfalz und verteidigte die zwinglische Lehre des christlichen Glaubens gegen die Verfasser des lutherischen Konkordienwerkes. Als Vertreter des Staatskirchentums gewann er Einfluß auf <placeName ref="9">England</placeName>. In Fragen der Kirchenleitung tolerant, war er trotz abweichender Ansichten mit <persName ref="445">Beza</persName> in <placeName ref="398">Genf</placeName> freundschaftlich verbunden. In erster Ehe war er mit <persName ref="1062">Regula</persName> <persName ref="265">Zwingli</persName> (gest. 1565), der Tochter des Reformators, in zweiter Ehe mit <persName ref="1061">Anna</persName> Blarer, der Tochter von <persName ref="20">Thomas Blarer</persName>, verheiratet. <persName ref="1061">Gwalthers</persName> Werk umfaßt Dichtung (Nabal, viele Epitaphe u. a.), Übersetzungen und Ausgaben (Biblia sacrosancta 1543 [zusammen mit Jud, <persName ref="165">Pellikan</persName>, <persName ref="14">Bibliander</persName> und <persName ref="124">Kolin</persName>], Opera Zvinglii 1544/45, Theodoreti de providentia sermones 1546, Der Psalter 1558 u. a.) sowie neben deutschen Predigten (berühmt und in viele Sprachen übersetzt: Der Endtchrist 1546) vor allem lateinische Homilien zu allen Evangelien, Apostelgeschichte, Römer-, Korinther- und Galaterbriefen und den zwölf kleinen Propheten. Nach seinem Tod wurden die Predigtkonzepte zu Esther, Jesaja, Ps 1-94 und dem ganzen Neuen Testament (ohne Offenbarung) als «Archetypi homiliarum» veröffentlicht. Viele Briefe von und an Bullinger sind erhalten. -Lit.: <persName ref="1061">Gwalthers</persName> «Nabal». Ein Zürcher Drama aus dem 16. Jahrhundert, hg. und übers. v. Sandro Giovanoli, Bonn 1979. -Studien zur Germanistik, Anglistik und Komparatistik, Bd. 83; HBD, Reg.; Heinrich <hi>Wolf;</hi> Vorrede zu <persName ref="1061">Gwalthers</persName> «In Hesterae historiam homiliarum sylvae vel archetypi», 1587; Georg <persName ref="644">Rudolf</persName> <hi>Zimmermann,</hi> Die Zürcher Kirche nach der Reihenfolge ihrer Antistes, 2. Bd., Zürich 1878, S. 73-103; Helmut <hi>Kressner,</hi> Schweizer Ursprünge des anglikanischen Staatskirchentums, Gütersloh 1953. -SVRG 170, S. 73-98; Sandro <hi>Giovanoli,</hi> Form und Funktion des Schuldramas im 16. Jahrhundert. Eine Untersuchung zu <persName ref="84">Rudolf Gwalthers</persName> «Nabal», Bonn 1980. - Studien zur Germanistik, Anglistik und Komparatistik, Bd. 101; LL IX 360-365 (mit Werkverzeichnis); Emil <hi>Egli,</hi> in: RE VII 222f; HBLS IV 26; Kurt <hi>Guggisberg,</hi> in: NDB VII 360f.</note>, vel horam constitue, qua te accedam, tibi opportunam.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Novi tua, vir excellentissime, negotia.</s>
+					<s n="3" xml:lang="la" type="auto">Ne igitur tibi impedimento essem, statui hisce literis meam tibi declarare voluntatem.</s>
+					<s n="4" xml:lang="la" type="auto">Moris est, ut abeuntibus literas detis, quibus se Tiguro venire vestrisque sumptibus foveri dimissi testari possunt.</s>
+					<s n="5" xml:lang="la" type="auto">Me hinc ad proximam angariam<note xml:id="fn3" type="footnote" n="3">Es kann nur die Quatember im März gemeint sein, da <persName ref="person121">Klauser</persName> sich noch vor dem 30. April 1533 in <placeName ref="place97">Basel</placeName> immatrikulierte (<placeName ref="place97">Basel</placeName>, Matrikel II 2).</note> mittetis.</s>
+					<s n="6" xml:lang="la" type="auto">Peto igitur, vir praestantissime, tales et mihi praeparentur<pb type="edition" next="77"/> literae.</s>
+					<s n="7" xml:lang="la" type="auto">Habuerunt huiusmodi literas Frysius et <persName ref="person122">Conradus</persName><note xml:id="fn4" type="footnote" n="4">Siehe oben Anm. 2.</note>, habet et <persName ref="person238">Otho</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="person238">Otto Werdmüller</persName>, der Anfang 1533 nach <placeName ref="place97">Basel</placeName> ging, war von Bullinger an <persName ref="person154">Myconius</persName> empfohlen worden, s. HBBW II 288, 1f.</note>, ni fallor.</s>
+					<s n="8" xml:lang="la" type="auto">Cupit scire d. Doctor Christophorus<note xml:id="fn6" type="footnote" n="6"><persName ref="person121">Christoph Klauser</persName>, gest. 1552, stammte aus einer Zürcher Apotheker-Familie, 1520 Mitglied des Großen Rats, seit 1531 Zürcher Stadtarzt. Wie er mit <persName ref="person122">Konrad Klauser</persName> verwandt war, ließ sich nicht ermitteln. - Lit.: G[ustav]A[dolf] <hi>Wehrli,</hi> Der Zürcher Stadtarzt Dr. Christoph Clauser und seine Stellung zur Reformation der Heilkunde im XVI. Jahrhundert, Nebst Faksimileausgabe seiner Harnschrift und seiner Kalender, Zürich 1924. -Veröffentlichungen der schweizerischen Gesellschaft für Geschichte der Medizin und der Naturwissenschaften, Bd. 2.</note>, quae regio sive quod oppidum mihi sint adeunda, ut et ipse scribat<note xml:id="fn7" type="footnote" n="7">Nichts Diesbezügliches bekannt.</note>, si cognatus cognato quid literis prodesse valeat.</s>
+					<s n="9" xml:lang="la" type="auto">Habes, vir venerande, breviter rem omnem.</s>
+					<s n="10" xml:lang="la" type="auto">Tu, si commodum est, responde solummodo per <persName ref="person1061">Gualtherum</persName><note xml:id="fn8" type="footnote" n="8">Wahrscheinlich <persName ref="person84">Rudolf Gwalther</persName> (Walther, Walthard, Gualtherus), 1519-1586, aus Zürich, von Geburt an Halbwaise. Er war 1528 Schüler Bullingers in <placeName ref="place534">Kappel</placeName>, wurde von diesem 1532 in sein Haus in Zürich aufgenommen und reiste 1537 in dessen Auftrag nach <placeName ref="place9">England</placeName>, worüber er einen Reisebericht verfaßte (hg. v. Paul Boesch in: Zwa VIII 433-471). Vom Herbst 1538 bis zum Frühjahr 1541 studierte er als Zürcher Stipendiat in <placeName ref="place97">Basel</placeName>, <placeName ref="place1049">Straßburg</placeName>, <placeName ref="place609">Lausanne</placeName> und <placeName ref="place672">Marburg</placeName>. Mit den hessischen Theologen konnte er 1541 den <placeName ref="place880">Regensburger</placeName> Reichstag besuchen. Kurze Zeit war er Provisor (Hilfslehrer) an der Großmünsterschule und gleichzeitig Prädikant zu <placeName ref="place963">Schwamendingen</placeName> bei Zürich, 1542 wurde er als Nachfolger <persName ref="person114">Leo Juds</persName> Pfarrer zu St. Peter in Zürich. Seit 1547 war er Dekan des Zürichseekapitels. 1566 verhandelte er mit <placeName ref="place943">Schaffhausen</placeName>, <placeName ref="place97">Basel</placeName> und <placeName ref="place738">Mülhausen</placeName> (Elsaß) über den Beitritt zum Zweiten Helvetischen Bekenntnis. <persName ref="person1061">Gwalther</persName> entwickelte sich zu einem bedeutenden Prediger und zum engsten Mitarbeiter Bullingers, der ihn in seinem Testament zum Nachfolger vorschlug. Vom 3. Oktober 1575 bis zum plötzlichen Schwinden seiner Kräfte im Juli 1584 - formell blieb er Antistes bis im Dezember 1585 - predigte er im Großmünster, leitete die Zürcher Kirche, unterstützte verfolgte Glaubensgenossen aus <placeName ref="place11">Frankreich</placeName> und in der Pfalz und verteidigte die zwinglische Lehre des christlichen Glaubens gegen die Verfasser des lutherischen Konkordienwerkes. Als Vertreter des Staatskirchentums gewann er Einfluß auf <placeName ref="place9">England</placeName>. In Fragen der Kirchenleitung tolerant, war er trotz abweichender Ansichten mit <persName ref="person445">Beza</persName> in <placeName ref="place398">Genf</placeName> freundschaftlich verbunden. In erster Ehe war er mit Regula <persName ref="person265">Zwingli</persName> (gest. 1565), der Tochter des Reformators, in zweiter Ehe mit Anna Blarer, der Tochter von <persName ref="person20">Thomas Blarer</persName>, verheiratet. <persName ref="person1061">Gwalthers</persName> Werk umfaßt Dichtung (Nabal, viele Epitaphe u. a.), Übersetzungen und Ausgaben (Biblia sacrosancta 1543 [zusammen mit Jud, <persName ref="person165">Pellikan</persName>, <persName ref="person14">Bibliander</persName> und <persName ref="person124">Kolin</persName>], Opera Zvinglii 1544/45, Theodoreti de providentia sermones 1546, Der Psalter 1558 u. a.) sowie neben deutschen Predigten (berühmt und in viele Sprachen übersetzt: Der Endtchrist 1546) vor allem lateinische Homilien zu allen Evangelien, Apostelgeschichte, Römer-, Korinther- und Galaterbriefen und den zwölf kleinen Propheten. Nach seinem Tod wurden die Predigtkonzepte zu Esther, Jesaja, Ps 1-94 und dem ganzen Neuen Testament (ohne Offenbarung) als «Archetypi homiliarum» veröffentlicht. Viele Briefe von und an Bullinger sind erhalten. - Lit.: <persName ref="person1061">Gwalthers</persName> «Nabal». Ein Zürcher Drama aus dem 16. Jahrhundert, hg. und übers. v. Sandro Giovanoli, Bonn 1979. -Studien zur Germanistik, Anglistik und Komparatistik, Bd. 83; HBD, Reg.; Heinrich <hi>Wolf;</hi> Vorrede zu <persName ref="person1061">Gwalthers</persName> «In Hesterae historiam homiliarum sylvae vel archetypi», 1587; Georg Rudolf <hi>Zimmermann,</hi> Die Zürcher Kirche nach der Reihenfolge ihrer Antistes, 2. Bd., Zürich 1878, S. 73-103; Helmut <hi>Kressner,</hi> Schweizer Ursprünge des anglikanischen Staatskirchentums, Gütersloh 1953. -SVRG 170, S. 73-98; Sandro <hi>Giovanoli,</hi> Form und Funktion des Schuldramas im 16. Jahrhundert. Eine Untersuchung zu <persName ref="person84">Rudolf Gwalthers</persName> «Nabal», Bonn 1980. - Studien zur Germanistik, Anglistik und Komparatistik, Bd. 101; LL IX 360-365 (mit Werkverzeichnis); Emil <hi>Egli,</hi> in: RE VII 222f; HBLS IV 26; Kurt <hi>Guggisberg,</hi> in: NDB VII 360f.</note>, vel horam constitue, qua te accedam, tibi opportunam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale foelix semper cum tuis.</s>
+					<s n="11" xml:lang="la" type="auto">Vale foelix semper cum tuis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="122">Conradus Clauserus</persName> iunior, ex animo, si pateris, tuus.<pb type="edition" next="78"/></s>
+					<s n="12" xml:lang="la" type="auto"><persName ref="person122">Conradus Clauserus</persName> iunior, ex animo, si pateris, tuus.<pb type="edition" next="78"/></s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Eximio viro d. M. Heinricho Bullingero, patrono suo plurimum observando.</s>
+					<s n="13" xml:lang="la" type="auto">Eximio viro d. M. Heinricho Bullingero, patrono suo plurimum observando.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2895</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2895</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 62,361</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 62,361</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -69,45 +72,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12944">
 				<correspAction type="sent">
-					<persName ref="person#1884" cert="high">
+					<!--
+					<persName ref="person1884" cert="high">
 						<forename cert="high">Ludwig</forename>
 						<surname cert="high">Lavater</surname>
 						<graphic type="portrait" url="portraits/1884_Lavater_Ludwig.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ludwig_Lavater"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/100182747"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415968"/>
 					</persName>
-					<place source="#491" cert="high">
-						<settlement>Straßburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.584614 7.7507127</geo>
-					</place>
+					-->
+					<persName ref="person1884" cert="high"/>
+					<place source="place491" cert="high"/>
 					<date when="1547-05-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12945"/>
-					<ref type="prev_chronologically" target="files.xml#12943"/>
-					<ref type="next_correspondence" target="files.xml#22"/>
-					<ref type="prev_correspondence" target="files.xml#12919"/>
-					<ref type="next_correspondence_request" target="files.xml#22"/>
-					<ref type="prev_correspondence_request" target="files.xml#12919"/>
+					<ref type="next_chronologically" target="file12945"/>
+					<ref type="prev_chronologically" target="file12943"/>
+					<ref type="next_correspondence" target="file22"/>
+					<ref type="prev_correspondence" target="file12919"/>
+					<ref type="next_correspondence_request" target="file22"/>
+					<ref type="prev_correspondence_request" target="file12919"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12604"/>
-					<ref type="next_same_sender" target="files.xml#22"/>
-					<ref type="prev_same_sender" target="files.xml#12919"/>
-					<ref type="next_same_addressee" target="files.xml#12952"/>
-					<ref type="prev_same_addressee" target="files.xml#12930"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#22"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12919"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12952"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12930"/>
+					<ref type="prev_correspondence_reaction" target="file12604"/>
+					<ref type="next_same_sender" target="file22"/>
+					<ref type="prev_same_sender" target="file12919"/>
+					<ref type="next_same_addressee" target="file12952"/>
+					<ref type="prev_same_addressee" target="file12930"/>
+					<ref type="next_with_sender_as_addressee" target="file22"/>
+					<ref type="prev_with_sender_as_addressee" target="file12919"/>
+					<ref type="next_with_addressee_as_sender" target="file12952"/>
+					<ref type="prev_with_addressee_as_sender" target="file12930"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -125,35 +133,35 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S. D. P.</s>
-					<s xml:lang="la" type="auto">Accepi tuas literas<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note>, reverende pater, quibus in patriam revocor,<note xml:id="fn2" type="footnote" n="2">Lavater studierte seit Oktober 1545 in Straßburg; s. <abbr>HBBW</abbr> XV 576f, Anm. 23.</note> cum in sequentem diem tabellarii<note xml:id="fn3" type="footnote" n="3">Wohl die Zürcher Überbringer von Bullingers Brief, die bei ihrer Rückkehr mit Lavater hätten zurückreisen sollen und stattdessen mit der Übermittlung vorliegender Nachricht beauftragt wurden.<zfn>fn17162-1</zfn></note> essent abituri.</s>
-					<s xml:lang="la" type="auto">Sed in tanta festinatione me illis comitem adiungere non potui, veritus, ne librorum sarcina relinqueretur!</s>
-					<s xml:lang="la" type="auto">Praeterea et alia quaedam negotia curanda erant.</s>
-					<s xml:lang="la" type="auto">Illorum quidem comitatus mihi fuisset iucundissimus.</s>
-					<s xml:lang="la" type="auto">Sunt enim honesti et docti iuvenes.</s>
-					<s xml:lang="la" type="auto">Novi enim ipsos, quamvis forte ego illis notus non sim.</s>
-					<s xml:lang="la" type="auto">Quare, quod factum est, velim vos boni consulere.</s>
-					<s xml:lang="la" type="auto">Sic volente patre<note xml:id="fn4" type="footnote" n="4">Bürgermeister Hans Rudolf Lavater.</note> non possum eius consilia improbare.</s>
-					<s xml:lang="la" type="auto">Quamprimum commode licebit, me Tigurum conferam.</s>
+					<s n="1" xml:lang="la" type="auto">S. D. P.</s>
+					<s n="2" xml:lang="la" type="auto">Accepi tuas literas<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note>, reverende pater, quibus in patriam revocor,<note xml:id="fn2" type="footnote" n="2">Lavater studierte seit Oktober 1545 in Straßburg; s. <abbr>HBBW</abbr> XV 576f, Anm. 23.</note> cum in sequentem diem tabellarii<note xml:id="fn3" type="footnote" n="3">Wohl die Zürcher Überbringer von Bullingers Brief, die bei ihrer Rückkehr mit Lavater hätten zurückreisen sollen und stattdessen mit der Übermittlung vorliegender Nachricht beauftragt wurden.<zfn>fn17162-1</zfn></note> essent abituri.</s>
+					<s n="3" xml:lang="la" type="auto">Sed in tanta festinatione me illis comitem adiungere non potui, veritus, ne librorum sarcina relinqueretur!</s>
+					<s n="4" xml:lang="la" type="auto">Praeterea et alia quaedam negotia curanda erant.</s>
+					<s n="5" xml:lang="la" type="auto">Illorum quidem comitatus mihi fuisset iucundissimus.</s>
+					<s n="6" xml:lang="la" type="auto">Sunt enim honesti et docti iuvenes.</s>
+					<s n="7" xml:lang="la" type="auto">Novi enim ipsos, quamvis forte ego illis notus non sim.</s>
+					<s n="8" xml:lang="la" type="auto">Quare, quod factum est, velim vos boni consulere.</s>
+					<s n="9" xml:lang="la" type="auto">Sic volente patre<note xml:id="fn4" type="footnote" n="4">Bürgermeister Hans Rudolf Lavater.</note> non possum eius consilia improbare.</s>
+					<s n="10" xml:lang="la" type="auto">Quamprimum commode licebit, me Tigurum conferam.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Quae nova apud nos sint, partim ex illis iuvenibus, partim ex me poteris cognoscere.</s>
-					<s xml:lang="la" type="auto">Haec paucis significare volui, ut me literas accepisse intelligas, et ne adversa valetudine aut inobedientia quadam impeditum me illis non adiunxisse arbitreris.</s>
+					<s n="11" xml:lang="la" type="auto">Quae nova apud nos sint, partim ex illis iuvenibus, partim ex me poteris cognoscere.</s>
+					<s n="12" xml:lang="la" type="auto">Haec paucis significare volui, ut me literas accepisse intelligas, et ne adversa valetudine aut inobedientia quadam impeditum me illis non adiunxisse arbitreris.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">Parentes<note xml:id="fn5" type="footnote" n="5">Die Mutter war Anna Lavater, geb. Röichli.</note> tuamque familiam meo nomine salutare ne dedigneris.</s>
-					<s xml:lang="la" type="auto">Argentinae, 4. nonarum maii anno 47.</s>
-					<s xml:lang="la" type="auto">Tuus ex animo Ludovicus Lavatherus.</s>
+					<s n="13" xml:lang="la" type="auto">Vale.</s>
+					<s n="14" xml:lang="la" type="auto">Parentes<note xml:id="fn5" type="footnote" n="5">Die Mutter war Anna Lavater, geb. Röichli.</note> tuamque familiam meo nomine salutare ne dedigneris.</s>
+					<s n="15" xml:lang="la" type="auto">Argentinae, 4. nonarum maii anno 47.</s>
+					<s n="16" xml:lang="la" type="auto">Tuus ex animo Ludovicus Lavatherus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Humanissimo viro Henrico Bullingero, ministro ecclesię Tigurinę fidelissimo, mecaenati suo.</s>
-					<s xml:lang="de" type="auto">Zürich.<note xml:id="fn6" type="footnote" n="6">Zu den Überbringern des vorliegenden Briefes s. oben <qv>fn17162-1</qv>.</note></s>
+					<s n="17" xml:lang="la" type="auto">Humanissimo viro Henrico Bullingero, ministro ecclesię Tigurinę fidelissimo, mecaenati suo.</s>
+					<s n="18" xml:lang="de" type="auto">Zürich.<note xml:id="fn6" type="footnote" n="6">Zu den Überbringern des vorliegenden Briefes s. oben <qv>fn17162-1</qv>.</note></s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1036</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1036</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 361,107</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 361,107</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,7 +49,7 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Schickt ihm, wie versprochen, wenigstens einen Gruß. In <placeName ref="577">Köln</placeName>
+								Schickt ihm, wie versprochen, wenigstens einen Gruß. In <placeName ref="place577">Köln</placeName>
 								zeichnet sich noch keine Erneuerung des kirchlichen Lebens ab. Bittet um Nachsicht für sein Schreiben und
 								bietet seine Dienste an.
 							</p>
@@ -58,44 +61,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11078">
 				<correspAction type="sent">
-					<persName ref="person#391" cert="high">
+					<!--
+					<persName ref="person391" cert="high">
 						<forename cert="high">Dietrich</forename>
 						<surname cert="high">Bitter</surname>
-						<addName type="main">Bitter (von Wipperford), Dietrich</addName>
+						<persName type="main" ref="person8175>Bitter (von Wipperford), Dietrich</addName>
 					</persName>
-					<place source="#267" cert="high">
-						<settlement>Köln</settlement>
-						<district>Nordrhein-Westfalen</district>
-						<country>Deutschland</country>
-						<geo>50.93333 6.95</geo>
-					</place>
+					-->
+					<persName ref="person391" cert="high"/>
+					<place source="place267" cert="high"/>
 					<date when="1537-08-31" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11079"/>
-					<ref type="prev_chronologically" target="files.xml#11077"/>
-					<ref type="next_correspondence" target="files.xml#2366"/>
-					<ref type="prev_correspondence" target="files.xml#11038"/>
-					<ref type="next_correspondence_request" target="files.xml#2366"/>
-					<ref type="prev_correspondence_request" target="files.xml#11038"/>
+					<ref type="next_chronologically" target="file11079"/>
+					<ref type="prev_chronologically" target="file11077"/>
+					<ref type="next_correspondence" target="file2366"/>
+					<ref type="prev_correspondence" target="file11038"/>
+					<ref type="next_correspondence_request" target="file2366"/>
+					<ref type="prev_correspondence_request" target="file11038"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#2366"/>
-					<ref type="prev_same_sender" target="files.xml#11038"/>
-					<ref type="next_same_addressee" target="files.xml#11079"/>
-					<ref type="prev_same_addressee" target="files.xml#11073"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2366"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11038"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11079"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11073"/>
+					<ref type="next_same_sender" target="file2366"/>
+					<ref type="prev_same_sender" target="file11038"/>
+					<ref type="next_same_addressee" target="file11079"/>
+					<ref type="prev_same_addressee" target="file11073"/>
+					<ref type="next_with_sender_as_addressee" target="file2366"/>
+					<ref type="prev_with_sender_as_addressee" target="file11038"/>
+					<ref type="next_with_addressee_as_sender" target="file11079"/>
+					<ref type="prev_with_addressee_as_sender" target="file11073"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -113,34 +119,34 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Mynen fruntwillighen dienst, liebster Heinrice.</s>
-					<s xml:lang="de" type="auto">Ich bin sampt den mynen noch in guder gesontheit.</s>
-					<s xml:lang="de" type="auto">Des gleichen hoffen ich du ouch siest.</s>
-					<s xml:lang="de" type="manual">Wythers<pb type="edition" next="228"/> weiß ich dyr sonders neit<note xml:id="fn1" type="footnote" n="1">nichts Besonderes.</note> zo schryben, dan myner verheissong nachtzokhommen (ich will ummerdair<note xml:id="fn2" type="footnote" n="2">immerdar.</note> schryben, solte<note xml:id="fna" type="footnote" n="a">solte <hi>vom Schreiber korrigiert aus</hi> solten.</note> ich ouch nichts dan "vale" schriben)<note xml:id="fn3" type="footnote" n="3">Vgl. HBBW IV, S. 297f, 7-12.</note>.</s>
+					<s n="1" xml:lang="de" type="auto">Mynen fruntwillighen dienst, liebster Heinrice.</s>
+					<s n="2" xml:lang="de" type="auto">Ich bin sampt den mynen noch in guder gesontheit.</s>
+					<s n="3" xml:lang="de" type="auto">Des gleichen hoffen ich du ouch siest.</s>
+					<s n="4" xml:lang="de" type="manual">Wythers<pb type="edition" next="228"/> weiß ich dyr sonders neit<note xml:id="fn1" type="footnote" n="1">nichts Besonderes.</note> zo schryben, dan myner verheissong nachtzokhommen (ich will ummerdair<note xml:id="fn2" type="footnote" n="2">immerdar.</note> schryben, solte<note xml:id="fna" type="footnote" n="a">solte <hi>vom Schreiber korrigiert aus</hi> solten.</note> ich ouch nichts dan "vale" schriben)<note xml:id="fn3" type="footnote" n="3">Vgl. HBBW IV, S. 297f, 7-12.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">So wiß, das es zo Collen noch in alter herkomst und gewonheit bliebt.</s>
-					<s xml:lang="de" type="auto">Sy keren sich<note xml:id="fn4" type="footnote" n="4">machen sich.</note> noch zertziet<note xml:id="fn5" type="footnote" n="5">zur Zeit.</note> an gheine veranderongh, es sy in lere ader<note xml:id="fn6" type="footnote" n="6">oder.</note> ceremonien.</s>
-					<s xml:lang="de" type="auto">Der gytz dominert<note xml:id="fn7" type="footnote" n="7">dominiert.</note> noch uber uyß.</s>
-					<s xml:lang="de" type="auto">Und wan schoin das evangelion luther dair gethain word<note xml:id="fn8" type="footnote" n="8">lauter ausgelegt wird.</note>, wie sich etliche oper sulchs roemen<note xml:id="fn9" type="footnote" n="9">dessen rühmen.</note>, sonder<note xml:id="fn10" type="footnote" n="10">ohne.</note> besserongh unsers sundighen wandels weer des evangelii frucht noch gar kleyn.</s>
+					<s n="5" xml:lang="de" type="auto">So wiß, das es zo Collen noch in alter herkomst und gewonheit bliebt.</s>
+					<s n="6" xml:lang="de" type="auto">Sy keren sich<note xml:id="fn4" type="footnote" n="4">machen sich.</note> noch zertziet<note xml:id="fn5" type="footnote" n="5">zur Zeit.</note> an gheine veranderongh, es sy in lere ader<note xml:id="fn6" type="footnote" n="6">oder.</note> ceremonien.</s>
+					<s n="7" xml:lang="de" type="auto">Der gytz dominert<note xml:id="fn7" type="footnote" n="7">dominiert.</note> noch uber uyß.</s>
+					<s n="8" xml:lang="de" type="auto">Und wan schoin das evangelion luther dair gethain word<note xml:id="fn8" type="footnote" n="8">lauter ausgelegt wird.</note>, wie sich etliche oper sulchs roemen<note xml:id="fn9" type="footnote" n="9">dessen rühmen.</note>, sonder<note xml:id="fn10" type="footnote" n="10">ohne.</note> besserongh unsers sundighen wandels weer des evangelii frucht noch gar kleyn.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Halt myr diß myn kintsche schrybongh<note xml:id="fn11" type="footnote" n="11">meine kindliche Schreibweise.</note> zo gute und biß<note xml:id="fn12" type="footnote" n="12">sei.</note> neit unser alder fruntschaff ungedenck, sonder, was myr im schryven mangelt, verfullen<note xml:id="fn13" type="footnote" n="13">erfülle, verwirkliche.</note>, nachdem dyr der almechtiger das zo folforn<note xml:id="fn14" type="footnote" n="14">zu vollführen.</note> vergont und gebenn hait.</s>
+					<s n="9" xml:lang="de" type="auto">Halt myr diß myn kintsche schrybongh<note xml:id="fn11" type="footnote" n="11">meine kindliche Schreibweise.</note> zo gute und biß<note xml:id="fn12" type="footnote" n="12">sei.</note> neit unser alder fruntschaff ungedenck, sonder, was myr im schryven mangelt, verfullen<note xml:id="fn13" type="footnote" n="13">erfülle, verwirkliche.</note>, nachdem dyr der almechtiger das zo folforn<note xml:id="fn14" type="footnote" n="14">zu vollführen.</note> vergont und gebenn hait.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Hy mit diß maell dem almechtighen befoelenn.</s>
-					<s xml:lang="de" type="auto">Und wüst ich hie tzo lande wat seltzams<note xml:id="fn15" type="footnote" n="15">etwas Besonderes.</note> dyr ader dynem gemahell<note xml:id="fn16" type="footnote" n="16">Anna, geb. Adlischwyler.</note> angenem<note xml:id="fnb" type="footnote" n="b"><hi>in der Vorlage</hi> angemem <hi>oder</hi> angeniem.</note> mochte synn, wolte ich inne<note xml:id="fnc" type="footnote" n="c"><hi>vielleicht als</hi> ime <hi>zu lesen.</hi></note> bedacht syn.</s>
+					<s n="10" xml:lang="de" type="auto">Hy mit diß maell dem almechtighen befoelenn.</s>
+					<s n="11" xml:lang="de" type="auto">Und wüst ich hie tzo lande wat seltzams<note xml:id="fn15" type="footnote" n="15">etwas Besonderes.</note> dyr ader dynem gemahell<note xml:id="fn16" type="footnote" n="16">Anna, geb. Adlischwyler.</note> angenem<note xml:id="fnb" type="footnote" n="b"><hi>in der Vorlage</hi> angemem <hi>oder</hi> angeniem.</note> mochte synn, wolte ich inne<note xml:id="fnc" type="footnote" n="c"><hi>vielleicht als</hi> ime <hi>zu lesen.</hi></note> bedacht syn.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum anno etc. 37, ultima augusti.</s>
+					<s n="12" xml:lang="la" type="auto">Datum anno etc. 37, ultima augusti.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Diderich <persName ref="18">Bitter</persName>, dyn gunstigher.</s>
+					<s n="13" xml:lang="de" type="auto">Diderich <persName ref="person18">Bitter</persName>, dyn gunstigher.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Dem ersamenn, uberauß geleirthenn Meister Heynrichen Bullingher, mynem geliebten freundt, zo handen.</s>
-					<s xml:lang="de" type="auto">Gen Zürich.</s>
+					<s n="14" xml:lang="de" type="auto">Dem ersamenn, uberauß geleirthenn Meister Heynrichen Bullingher, mynem geliebten freundt, zo handen.</s>
+					<s n="15" xml:lang="de" type="auto">Gen Zürich.</s>
 				</p>
 			</div>
 		</body>

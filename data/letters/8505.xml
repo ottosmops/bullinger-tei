@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 346,567 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">Kopie?</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 346,567 f.</idno>
+						<idno subtype="Hinweis">Kopie?</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -32,67 +35,33 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8505">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#55" cert="high">Professoren</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date when="1571-03-00" cert="low"/>
+					<personGrp ref="role52" role="Geistliche"/>
+					<personGrp ref="role0" role="Professoren"/>
+					<place source="place587" cert="high"/>
+					<date notBefore="1571-03-01" notAfter="1571-03-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<orgName type="institution">
-						<name type="singular" ref="org#25" cert="high">Synode</name>
-						<place source="#274" cert="high">
-							<settlement>Rochelles</settlement>
-							<district>Metropolitanes Frankreich</district>
-							<country>Frankreich</country>
-							<geo>47.3323 7.12409</geo>
-						</place>
-					</orgName>
-					<place source="#274" cert="high">
-						<settlement>Rochelles</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>47.3323 7.12409</geo>
-					</place>
+					<orgName ref="org49" role="Synode"/>"
+					<place source="place274" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8506"/>
-					<ref type="prev_chronologically" target="files.xml#8504"/>
-					<ref type="next_correspondence" target="files.xml#8513"/>
+					<ref type="next_chronologically" target="file8506"/>
+					<ref type="prev_chronologically" target="file8504"/>
+					<ref type="next_correspondence" target="file8513"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#8513"/>
+					<ref type="next_correspondence_request" target="file8513"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#8513"/>
-					<ref type="prev_same_sender" target="files.xml#6704"/>
+					<ref type="next_same_sender" target="file8513"/>
+					<ref type="prev_same_sender" target="file6704"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#5440"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8513"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6704"/>
+					<ref type="prev_same_addressee" target="file5440"/>
+					<ref type="next_with_sender_as_addressee" target="file8513"/>
+					<ref type="prev_with_sender_as_addressee" target="file6704"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5440"/>
-					<ref type="parent" target="files.xml#8515"/>
+					<ref type="prev_with_addressee_as_sender" target="file5440"/>
+					<ref type="parent" target="file8515"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

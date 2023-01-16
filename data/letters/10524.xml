@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=488</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=488</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 364,7</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 364,7</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,9 +49,9 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Auf <persName ref="28">Bucers</persName> drittes Mahnen wiederholt
-								<persName ref="263">Zwick</persName> eindringlich die Einladung an die Zürcher zur
-								[<placeName ref="565">Konstanzer</placeName>] Zusammenkunft und will die andern bis zu Bullingers
+								Auf <persName ref="person28">Bucers</persName> drittes Mahnen wiederholt
+								<persName ref="person263">Zwick</persName> eindringlich die Einladung an die Zürcher zur
+								[<placeName ref="place565">Konstanzer</placeName>] Zusammenkunft und will die andern bis zu Bullingers
 								Kommen hinhalten. Bei ihm sollen Bullinger und seine Begleiter einkehren.
 							</p>
 						</summary>
@@ -59,45 +62,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10524">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<place source="#257" cert="high">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person4079" cert="high"/>
+					<place source="place257" cert="high"/>
 					<date when="1534-12-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10525"/>
-					<ref type="prev_chronologically" target="files.xml#10523"/>
-					<ref type="next_correspondence" target="files.xml#10544"/>
-					<ref type="prev_correspondence" target="files.xml#10520"/>
-					<ref type="next_correspondence_request" target="files.xml#10544"/>
-					<ref type="prev_correspondence_request" target="files.xml#10520"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10599"/>
+					<ref type="next_chronologically" target="file10525"/>
+					<ref type="prev_chronologically" target="file10523"/>
+					<ref type="next_correspondence" target="file10544"/>
+					<ref type="prev_correspondence" target="file10520"/>
+					<ref type="next_correspondence_request" target="file10544"/>
+					<ref type="prev_correspondence_request" target="file10520"/>
+					<ref type="next_correspondence_reaction" target="file10599"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10544"/>
-					<ref type="prev_same_sender" target="files.xml#10520"/>
-					<ref type="next_same_addressee" target="files.xml#10528"/>
-					<ref type="prev_same_addressee" target="files.xml#10502"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10544"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10520"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10528"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10502"/>
+					<ref type="next_same_sender" target="file10544"/>
+					<ref type="prev_same_sender" target="file10520"/>
+					<ref type="next_same_addressee" target="file10528"/>
+					<ref type="prev_same_addressee" target="file10502"/>
+					<ref type="next_with_sender_as_addressee" target="file10544"/>
+					<ref type="prev_with_sender_as_addressee" target="file10520"/>
+					<ref type="next_with_addressee_as_sender" target="file10528"/>
+					<ref type="prev_with_addressee_as_sender" target="file10502"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -111,37 +118,37 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salve.</s>
+					<s n="1" xml:lang="la" type="auto">Salve.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Iam tertio ad me scribit <persName ref="28">Bucerus</persName><note xml:id="fn1" type="footnote" n="1">Erhalten ist nur der dritte dieser Briefe vom 12. Dezember [1534] aus <placeName ref="697">Memmingen</placeName> («in abwesen sinem bruoder Conratt Zwygken»). Autograph: Zürich StA, E II 348, 393.</note>, ne quid praetermittam in te convocando.</s>
-					<s xml:lang="la" type="auto">Advenire enim se cum quibusdam bonis doctisque fratribus, idque tua potissimum causa<note xml:id="fn2" type="footnote" n="2"><persName ref="28">Bucer</persName> an <persName ref="263">Johannes Zwick</persName> (s. Anm. 1): «Sed, mi frater, cum ad vos venimus Helvetiorum caussa, nihil omittite, quo adsit Bullingerus et <persName ref="114">Leo</persName>» [<persName ref="114">Jud</persName>]. <persName ref="64">Frecht</persName>, <persName ref="1647">Sebastian</persName> [<persName ref="1647">Meyer</persName>] und Vertreter aus <placeName ref="544">Kempten</placeName> werden auch kommen. Vgl. dazu oben S. 412, Anm. 9 und unten S. 456, Anm. 16.</note>.</s>
-					<s xml:lang="la" type="auto">Ergo, ut omnem fidem meam apud <persName ref="28">Bucerum</persName> liberem, alterum hic tabellionem<note xml:id="fn3" type="footnote" n="3">Unbekannt.</note> mitto literis <persName ref="28">Buceri</persName> additis<note xml:id="fn4" type="footnote" n="4"><persName ref="28">Bucers</persName> Brief (Anm. 1) ist deshalb in Zürich erhalten.</note>.</s>
-					<s xml:lang="la" type="auto">Quibus cum Leone<note xml:id="fn5" type="footnote" n="5"><persName ref="114">Leo Jud</persName>.</note> et <persName ref="165">Pellicano</persName> lectis - nam iis nunc non datur rescribere - facite, quod decet.</s>
-					<s xml:lang="la" type="auto">Praestaret forsan facie quoque se invicem novisse fratres.</s>
-					<s xml:lang="la" type="auto">Proinde ex aliis etiam causis profutura esset tua pręsentia quam sacramenti.</s>
-					<s xml:lang="la" type="auto">Quodsi vero uno aut altero die tardior adfuturus es, tamen per<note xml:id="fna" type="footnote" n="a">per <hi>am Rande nachgetragen.</hi></note> tabellionem hunc fac sciam.</s>
-					<s xml:lang="la" type="auto">Curabo enim, ut moram apud nos faciant boni viri, donec tu quoque<note xml:id="fnb" type="footnote" n="b">tu quoque <hi>am Rande nachgetragen.</hi></note> commode possis ad nos venire<note xml:id="fn6" type="footnote" n="6"><persName ref="263">Zwick</persName> kann so schreiben, weil <persName ref="28">Bucer</persName> ihm mitgeteilt hat (vgl. Anm. 1), daß er in <placeName ref="697">Memmingen</placeName> noch zurückgehalten werde, dann rasch über <placeName ref="520">Isny</placeName> reise und bei schlechtem Wind [während der Segelfahrt auf dem <placeName ref="1">Bodensee</placeName> von <placeName ref="636">Lindau</placeName> aus] statt am vereinbarten Dienstag [15. Dezember] erst am Tag darauf [in <placeName ref="565">Konstanz</placeName>] eintreffen könne. Entgegen früheren Ankündigungen (s. oben S. 412, 15. 432, 8) begann die <placeName ref="565">Konstanzer</placeName> Zusammenkunft denn auch erst am 16. Dezember, vgl. unten S. 455, Anm. 12.</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Iam tertio ad me scribit <persName ref="person28">Bucerus</persName><note xml:id="fn1" type="footnote" n="1">Erhalten ist nur der dritte dieser Briefe vom 12. Dezember [1534] aus <placeName ref="place697">Memmingen</placeName> («in abwesen sinem bruoder Conratt Zwygken»). Autograph: Zürich StA, E II 348, 393.</note>, ne quid praetermittam in te convocando.</s>
+					<s n="3" xml:lang="la" type="auto">Advenire enim se cum quibusdam bonis doctisque fratribus, idque tua potissimum causa<note xml:id="fn2" type="footnote" n="2"><persName ref="person28">Bucer</persName> an <persName ref="person263">Johannes Zwick</persName> (s. Anm. 1): «Sed, mi frater, cum ad vos venimus Helvetiorum caussa, nihil omittite, quo adsit Bullingerus et Leo» [<persName ref="person114">Jud</persName>]. <persName ref="person64">Frecht</persName>, Sebastian [<persName ref="person1647">Meyer</persName>] und Vertreter aus <placeName ref="place544">Kempten</placeName> werden auch kommen. Vgl. dazu oben S. 412, Anm. 9 und unten S. 456, Anm. 16.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Ergo, ut omnem fidem meam apud <persName ref="person28">Bucerum</persName> liberem, alterum hic tabellionem<note xml:id="fn3" type="footnote" n="3">Unbekannt.</note> mitto literis <persName ref="person28">Buceri</persName> additis<note xml:id="fn4" type="footnote" n="4"><persName ref="person28">Bucers</persName> Brief (Anm. 1) ist deshalb in Zürich erhalten.</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Quibus cum Leone<note xml:id="fn5" type="footnote" n="5"><persName ref="person114">Leo Jud</persName>.</note> et <persName ref="person165">Pellicano</persName> lectis - nam iis nunc non datur rescribere - facite, quod decet.</s>
+					<s n="6" xml:lang="la" type="auto">Praestaret forsan facie quoque se invicem novisse fratres.</s>
+					<s n="7" xml:lang="la" type="auto">Proinde ex aliis etiam causis profutura esset tua pręsentia quam sacramenti.</s>
+					<s n="8" xml:lang="la" type="auto">Quodsi vero uno aut altero die tardior adfuturus es, tamen per<note xml:id="fna" type="footnote" n="a">per <hi>am Rande nachgetragen.</hi></note> tabellionem hunc fac sciam.</s>
+					<s n="9" xml:lang="la" type="auto">Curabo enim, ut moram apud nos faciant boni viri, donec tu quoque<note xml:id="fnb" type="footnote" n="b">tu quoque <hi>am Rande nachgetragen.</hi></note> commode possis ad nos venire<note xml:id="fn6" type="footnote" n="6"><persName ref="person263">Zwick</persName> kann so schreiben, weil <persName ref="person28">Bucer</persName> ihm mitgeteilt hat (vgl. Anm. 1), daß er in <placeName ref="place697">Memmingen</placeName> noch zurückgehalten werde, dann rasch über <placeName ref="place520">Isny</placeName> reise und bei schlechtem Wind [während der Segelfahrt auf dem <placeName ref="place1">Bodensee</placeName> von <placeName ref="place636">Lindau</placeName> aus] statt am vereinbarten Dienstag [15. Dezember] erst am Tag darauf [in <placeName ref="place565">Konstanz</placeName>] eintreffen könne. Entgegen früheren Ankündigungen (s. oben S. 412, 15. 432, 8) begann die <placeName ref="place565">Konstanzer</placeName> Zusammenkunft denn auch erst am 16. Dezember, vgl. unten S. 455, Anm. 12.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ora vero dominum ex toto pectore, ut quod tentat <persName ref="28">Bucerus</persName> ad communem evangelii profectum, spiritu sancto autore quam felicissime succedat.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="10" xml:lang="la" type="auto">Ora vero dominum ex toto pectore, ut quod tentat <persName ref="person28">Bucerus</persName> ad communem evangelii profectum, spiritu sancto autore quam felicissime succedat.</s>
+					<s n="11" xml:lang="la" type="manual">Amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="12" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Raptim, 15. decembris 1534.</s>
+					<s n="13" xml:lang="la" type="auto">Raptim, 15. decembris 1534.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Io. Zwik.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus Io. Zwik.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Omnino apud me divertas, quibuscumque comitibus sis advolaturus.</s>
+					<s n="15" xml:lang="la" type="auto">Omnino apud me divertas, quibuscumque comitibus sis advolaturus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite des folgenden, unbezeichneten Blattes:]</note>
-					<s xml:lang="la" type="auto">Ornatissimo viro d. Hainricho Bullingero, antistiti Tigurinae ecclesiae vigilantissimo.</s>
+					<s n="16" xml:lang="la" type="auto">Ornatissimo viro d. Hainricho Bullingero, antistiti Tigurinae ecclesiae vigilantissimo.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2000"/>
-				<idno type="ISBN">ISBN 3-290-17211-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1175</idno>
+				<idno subtype="ISBN">ISBN 3-290-17211-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1175</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 8</title>
+				<title subtype="publication">HBBW VIII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">8</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,192</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,192</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,8 +51,8 @@
 							<p xml:id="regest1">
 								Dankt für eine Hochzeitsgabe. Die Pflege der Freundschaft ist in dieser Zeit besonders wichtig, damit die
 								Kirche der Welt auch in Zukunft Trost bringen kann. Bittet,
-								<persName ref="1880">Ptolemäus</persName>’ [„Almagest“] an
-								<persName ref="226">Vadian</persName> weiterzuleiten.
+								<persName ref="person1880">Ptolemäus</persName>’ [„Almagest“] an
+								<persName ref="person226">Vadian</persName> weiterzuleiten.
 							</p>
 						</summary>
 					</msContents>
@@ -59,39 +62,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11218">
 				<correspAction type="sent">
-					<persName ref="person#1365" cert="high">
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
-					<date when="1538-09-00" cert="low">nach Mitte September 1538</date>
+					-->
+					<persName ref="person1365" cert="high"/>
+					<date notBefore="1538-09-01" notAfter="1538-09-12" cert="low">nach Mitte September 1538</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11211"/>
-					<ref type="prev_chronologically" target="files.xml#11210"/>
-					<ref type="next_correspondence" target="files.xml#11215"/>
-					<ref type="prev_correspondence" target="files.xml#11190"/>
-					<ref type="next_correspondence_request" target="files.xml#11215"/>
-					<ref type="prev_correspondence_request" target="files.xml#11190"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11310"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11161"/>
-					<ref type="next_same_sender" target="files.xml#11215"/>
-					<ref type="prev_same_sender" target="files.xml#11210"/>
-					<ref type="next_same_addressee" target="files.xml#11211"/>
-					<ref type="prev_same_addressee" target="files.xml#11208"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11215"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11210"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11211"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11208"/>
+					<ref type="next_chronologically" target="file11211"/>
+					<ref type="prev_chronologically" target="file11210"/>
+					<ref type="next_correspondence" target="file11215"/>
+					<ref type="prev_correspondence" target="file11190"/>
+					<ref type="next_correspondence_request" target="file11215"/>
+					<ref type="prev_correspondence_request" target="file11190"/>
+					<ref type="next_correspondence_reaction" target="file11310"/>
+					<ref type="prev_correspondence_reaction" target="file11161"/>
+					<ref type="next_same_sender" target="file11215"/>
+					<ref type="prev_same_sender" target="file11210"/>
+					<ref type="next_same_addressee" target="file11211"/>
+					<ref type="prev_same_addressee" target="file11208"/>
+					<ref type="next_with_sender_as_addressee" target="file11215"/>
+					<ref type="prev_with_sender_as_addressee" target="file11210"/>
+					<ref type="next_with_addressee_as_sender" target="file11211"/>
+					<ref type="prev_with_addressee_as_sender" target="file11208"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -109,36 +122,36 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Bene, mi Bullingere charissime, facis, cum studiis bonorum sanctam tuam sanctificationem addis, quo meum matrimonium auspicatius ac domino deo nostro gratum magis reddas.</s>
-					<s xml:lang="la" type="auto">Gratias ago tibi in domino Christo.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Bene, mi Bullingere charissime, facis, cum studiis bonorum sanctam tuam sanctificationem addis, quo meum matrimonium auspicatius ac domino deo nostro gratum magis reddas.</s>
+					<s n="3" xml:lang="la" type="auto">Gratias ago tibi in domino Christo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nullum esse scio meo cordi gratum magis officium quam piorum virorum in meis institutis consiliis conspirationem.</s>
-					<s xml:lang="la" type="auto">Illud vero perhumaniter facis, cum ita <foreign xml:lang="el">µνηµόσυνον</foreign> conformas doctrinę, ut extare eius memoriam perpetuam apud nos velis.</s>
-					<s xml:lang="la" type="auto">Laudo institutum<note xml:id="fna" type="footnote" n="a"><hi>vielleicht als</hi> industriam <hi>zu lesen.</hi></note>, amo humanitatem.</s>
-					<s xml:lang="la" type="auto">Dominus Christus in veras vereque tanto sponso<note xml:id="fnb" type="footnote" n="b"><hi>vor</hi> sponso <hi>gestrichenes</hi> di[?].</note> dignas flammas corda nostra sancto suo spiritu exuscitet.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="4" xml:lang="la" type="auto">Nullum esse scio meo cordi gratum magis officium quam piorum virorum in meis institutis consiliis conspirationem.</s>
+					<s n="5" xml:lang="la" type="auto">Illud vero perhumaniter facis, cum ita <foreign xml:lang="el">µνηµόσυνον</foreign> conformas doctrinę, ut extare eius memoriam perpetuam apud nos velis.</s>
+					<s n="6" xml:lang="la" type="auto">Laudo institutum<note xml:id="fna" type="footnote" n="a"><hi>vielleicht als</hi> industriam <hi>zu lesen.</hi></note>, amo humanitatem.</s>
+					<s n="7" xml:lang="la" type="auto">Dominus Christus in veras vereque tanto sponso<note xml:id="fnb" type="footnote" n="b"><hi>vor</hi> sponso <hi>gestrichenes</hi> di[?].</note> dignas flammas corda nostra sancto suo spiritu exuscitet.</s>
+					<s n="8" xml:lang="la" type="manual">Amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De amicitię nostrę conservatione dabis sic operam, ut solitus es.</s>
-					<s xml:lang="la" type="auto">Certe tempus hoc nec vulgares animos nec parva ingenia nec levia consilia requirit, quomodo eam ecclesiam, quam tradidit nobis Christus, velimus non solum conservare, sed sic tradere posteris, ut et captivo terrarum orbi possit adferre solacium.</s>
-					<s xml:lang="la" type="auto">Summa solidissimaque pręstantium omnium virorum consensione ad eam est opus, mi Bullingere, frater charissime.</s>
-					<s xml:lang="la" type="auto">Oro dominum Christum<note xml:id="fnc" type="footnote" n="c"><hi>in der Vorlage</hi> XPN.</note>, omnis consilii et consolacionis et charitatis fontem, ut nos sobrie in lucida ipsius veritate arctissime devinctos teneat.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="9" xml:lang="la" type="auto">De amicitię nostrę conservatione dabis sic operam, ut solitus es.</s>
+					<s n="10" xml:lang="la" type="auto">Certe tempus hoc nec vulgares animos nec parva ingenia nec levia consilia requirit, quomodo eam ecclesiam, quam tradidit nobis Christus, velimus non solum conservare, sed sic tradere posteris, ut et captivo terrarum orbi possit adferre solacium.</s>
+					<s n="11" xml:lang="la" type="auto">Summa solidissimaque pręstantium omnium virorum consensione ad eam est opus, mi Bullingere, frater charissime.</s>
+					<s n="12" xml:lang="la" type="auto">Oro dominum Christum<note xml:id="fnc" type="footnote" n="c"><hi>in der Vorlage</hi> XPN.</note>, omnis consilii et consolacionis et charitatis fontem, ut nos sobrie in lucida ipsius veritate arctissime devinctos teneat.</s>
+					<s n="13" xml:lang="la" type="manual">Amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Saluta omnes istic mihi charissimos fratres.</s>
-					<s xml:lang="la" type="auto"><persName ref="81">Gryneus</persName> tuus.</s>
+					<s n="14" xml:lang="la" type="auto">Saluta omnes istic mihi charissimos fratres.</s>
+					<s n="15" xml:lang="la" type="auto"><persName ref="person81">Gryneus</persName> tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hunc librum Ptolomęi<note xml:id="fn2" type="footnote" n="2">Gemeint ist die 1538 bei <persName ref="2430">Johann Walder</persName> in <placeName ref="97">Basel</placeName> erschienene griechische Ausgabe des "Almagest" von <persName ref="1880">Claudius Ptolemäus</persName>, dem berühmten Astronomen des 2. Jahrhunderts n. Chr., zu der <persName ref="81">Grynäus</persName> eine Widmungsvorrede verfaßt hatte (VD 16, P 5200). Zum Exemplar, das <persName ref="81">Grynäus</persName> <persName ref="226">Vadian</persName> schenkte, s. Verena Schenker-Frei, Bibliotheca Vadiani, St. Gallen 1973. - <persName ref="226">Vadian</persName>-Studien 9, S. 118f, <ref target="file#10403">Nr. 371</ref> (vgl. auch oben Anm. 1).</note> obsecro, ut ad <persName ref="226">Vadianum</persName> meo nomine mittas.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="16" xml:lang="la" type="auto">Hunc librum Ptolomęi<note xml:id="fn2" type="footnote" n="2">Gemeint ist die 1538 bei <persName ref="person2430">Johann Walder</persName> in <placeName ref="place97">Basel</placeName> erschienene griechische Ausgabe des "Almagest" von <persName ref="person1880">Claudius Ptolemäus</persName>, dem berühmten Astronomen des 2. Jahrhunderts n. Chr., zu der <persName ref="person81">Grynäus</persName> eine Widmungsvorrede verfaßt hatte (VD 16, P 5200). Zum Exemplar, das <persName ref="person81">Grynäus</persName> <persName ref="person226">Vadian</persName> schenkte, s. Verena Schenker-Frei, Bibliotheca Vadiani, St. Gallen 1973. - <persName ref="person226">Vadian</persName>-Studien 9, S. 118f, <ref target="file10403">Nr. 371</ref> (vgl. auch oben Anm. 1).</note> obsecro, ut ad <persName ref="person226">Vadianum</persName> meo nomine mittas.</s>
+					<s n="17" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Viro clarissimo Henrycho Bullingero, fratri colendissimo.</s>
-					<s xml:lang="la" type="auto">Tyguri.</s>
+					<s n="18" xml:lang="la" type="auto">Viro clarissimo Henrycho Bullingero, fratri colendissimo.</s>
+					<s n="19" xml:lang="la" type="auto">Tyguri.</s>
 				</p>
 			</div>
 		</body>

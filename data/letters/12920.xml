@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2871</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2871</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343a,351a</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343a,351a</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -66,38 +69,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12920">
 				<correspAction type="sent">
-					<persName ref="person#396" cert="high">
+					<!--
+					<persName ref="person396" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Blasius</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Blasius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089451822"/>
 					</persName>
-					<date min="1547-03-15" max="1547-04-15" cert="low">Ende März / Anfang April 1547</date>
+					-->
+					<persName ref="person396" cert="high"/>
+					<date notBefore="1547-03-15" notAfter="1547-04-15" cert="low">Ende März / Anfang April 1547</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12895"/>
-					<ref type="prev_chronologically" target="files.xml#12894"/>
-					<ref type="next_correspondence" target="files.xml#12981"/>
-					<ref type="prev_correspondence" target="files.xml#12461"/>
-					<ref type="next_correspondence_request" target="files.xml#12981"/>
-					<ref type="prev_correspondence_request" target="files.xml#12461"/>
+					<ref type="next_chronologically" target="file12895"/>
+					<ref type="prev_chronologically" target="file12894"/>
+					<ref type="next_correspondence" target="file12981"/>
+					<ref type="prev_correspondence" target="file12461"/>
+					<ref type="next_correspondence_request" target="file12981"/>
+					<ref type="prev_correspondence_request" target="file12461"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#12981"/>
-					<ref type="prev_same_sender" target="files.xml#12461"/>
-					<ref type="next_same_addressee" target="files.xml#12899"/>
-					<ref type="prev_same_addressee" target="files.xml#12891"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12981"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12461"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12899"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12891"/>
+					<ref type="next_same_sender" target="file12981"/>
+					<ref type="prev_same_sender" target="file12461"/>
+					<ref type="next_same_addressee" target="file12899"/>
+					<ref type="prev_same_addressee" target="file12891"/>
+					<ref type="next_with_sender_as_addressee" target="file12981"/>
+					<ref type="prev_with_sender_as_addressee" target="file12461"/>
+					<ref type="next_with_addressee_as_sender" target="file12899"/>
+					<ref type="prev_with_addressee_as_sender" target="file12891"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -115,18 +127,18 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Wie ich disen brieff bschlossen, würdt ich bericht gloubwürdig, wie in disen tagen 7000 Taliener gen Meyland komen söllendt, den negsten durch Venediger land uff Triendt zu ziehen, und würdt dapy ouch anzeigt, die Venediger werdent ynen den paas<note xml:id="fn5" type="footnote" n="5">Durchgang; s. <abbr>SI</abbr> IV 1655.</note> abschlahn.</s>
-					<s xml:lang="de" type="auto">Würdt diser tagen noch eigentlicher von Meyland durch specht<note xml:id="fn6" type="footnote" n="6">Kundschafter; s. <abbr>SI</abbr> X 45.</note> und kaupflüdt komen, wil ich üch eigentlich berichten.</s>
+					<s n="1" xml:lang="de" type="auto">Wie ich disen brieff bschlossen, würdt ich bericht gloubwürdig, wie in disen tagen 7000 Taliener gen Meyland komen söllendt, den negsten durch Venediger land uff Triendt zu ziehen, und würdt dapy ouch anzeigt, die Venediger werdent ynen den paas<note xml:id="fn5" type="footnote" n="5">Durchgang; s. <abbr>SI</abbr> IV 1655.</note> abschlahn.</s>
+					<s n="2" xml:lang="de" type="auto">Würdt diser tagen noch eigentlicher von Meyland durch specht<note xml:id="fn6" type="footnote" n="6">Kundschafter; s. <abbr>SI</abbr> X 45.</note> und kaupflüdt komen, wil ich üch eigentlich berichten.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale per d[ominum], etc.</s>
+					<s n="3" xml:lang="la" type="auto">Vale per d[ominum], etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Blas. tuus.</s>
+					<s n="4" xml:lang="la" type="auto">Blas. tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Herrn meister H. Bullinger zu eignerer handt.</s>
+					<s n="5" xml:lang="de" type="auto">Herrn meister H. Bullinger zu eignerer handt.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2011"/>
-				<idno type="ISBN">ISBN 978-3-290-17565-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1864</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17565-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1864</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 14</title>
+				<title subtype="publication">HBBW XIV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Henrich, Rainer; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">14</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 360,375</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 360,375</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,16 +49,16 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Hat das von Bullinger übersandte Bündel für <persName ref="667">Celio</persName>
-								[<persName ref="667">Secondo Curione</persName>] einem
+								Hat das von Bullinger übersandte Bündel für Celio
+								[Secondo <persName ref="person667">Curione</persName>] einem
 								Lausanner mitgegeben. Der Vicomte [Franc¸ois von Luxemburg], der im Herzogtum
-								<placeName ref="75">Savoyen</placeName> an zweitoberster Stelle steht und mit
-								<persName ref="1330">Herzog</persName> [<persName ref="1330">Karl</persName>
-								<persName ref="1330">III.</persName>] verwandt ist, hat in
-								<placeName ref="121">Bern</placeName> die Rückgabe von
-								<placeName ref="1136">Vevey</placeName> und <placeName ref="1712">Ternier</placeName>
+								<placeName ref="place75">Savoyen</placeName> an zweitoberster Stelle steht und mit
+								Herzog [Karl
+								III.] verwandt ist, hat in
+								<placeName ref="place121">Bern</placeName> die Rückgabe von
+								<placeName ref="place1136">Vevey</placeName> und <placeName ref="place1712">Ternier</placeName>
 								unter Anerkennung der bernischen Oberhoheit gefordert; man hat ihn auf später vertröstet, da man mit dem
-								<persName ref="1330">Herzog</persName> noch im Krieg stehe, ist sich aber einig, dass man so mächtige
+								Herzog noch im Krieg stehe, ist sich aber einig, dass man so mächtige
 								Vasallen fremder Fürsten, die unserer Religion und Freiheit abgeneigt sind, ausschließen will. Grüße.
 							</p>
 						</summary>
@@ -66,43 +69,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11910">
 				<correspAction type="sent">
-					<persName ref="person#3700" cert="high">
+					<!--
+					<persName ref="person3700" cert="high">
 						<forename cert="high">Eberhard</forename>
 						<surname cert="high">von Rümlang</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089804970"/>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person3700" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1544-03-11" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11911"/>
-					<ref type="prev_chronologically" target="files.xml#11909"/>
-					<ref type="next_correspondence" target="files.xml#12036"/>
-					<ref type="prev_correspondence" target="files.xml#11900"/>
-					<ref type="next_correspondence_request" target="files.xml#12036"/>
-					<ref type="prev_correspondence_request" target="files.xml#11900"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12087"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11888"/>
-					<ref type="next_same_sender" target="files.xml#12036"/>
-					<ref type="prev_same_sender" target="files.xml#11900"/>
-					<ref type="next_same_addressee" target="files.xml#11915"/>
-					<ref type="prev_same_addressee" target="files.xml#11907"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12036"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11900"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11915"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11907"/>
+					<ref type="next_chronologically" target="file11911"/>
+					<ref type="prev_chronologically" target="file11909"/>
+					<ref type="next_correspondence" target="file12036"/>
+					<ref type="prev_correspondence" target="file11900"/>
+					<ref type="next_correspondence_request" target="file12036"/>
+					<ref type="prev_correspondence_request" target="file11900"/>
+					<ref type="next_correspondence_reaction" target="file12087"/>
+					<ref type="prev_correspondence_reaction" target="file11888"/>
+					<ref type="next_same_sender" target="file12036"/>
+					<ref type="prev_same_sender" target="file11900"/>
+					<ref type="next_same_addressee" target="file11915"/>
+					<ref type="prev_same_addressee" target="file11907"/>
+					<ref type="next_with_sender_as_addressee" target="file12036"/>
+					<ref type="prev_with_sender_as_addressee" target="file11900"/>
+					<ref type="next_with_addressee_as_sender" target="file11915"/>
+					<ref type="prev_with_addressee_as_sender" target="file11907"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -120,32 +127,32 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Fasciculum, quem funiculis convolutum misisti, commisi cuidam Lausanensi<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note> ad <persName ref="667">Coelium</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="667">Celio Secondo Curione</persName>.</note> perferendum;<note xml:id="fn3" type="footnote" n="3">Zu Bullingers Sendung s. oben <ref target="file#11887">Nr. 1841</ref>, 230f mit Anm. 69. -Die für Béat Comte bestimmte Schrift Bullingers gegen Cochläus (s. unten <ref target="file#11956">Nr. 1909</ref>), die Ende Februar erschienen war (s. oben <ref target="file#11904">Nr. 1858</ref>, Anm. 1) ist offensichtlich hier nicht gemeint.</note> confido ipsum hoc satis fideliter exequuturum etc.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Fasciculum, quem funiculis convolutum misisti, commisi cuidam Lausanensi<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note> ad <persName ref="person667">Coelium</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="person667">Celio Secondo Curione</persName>.</note> perferendum;<note xml:id="fn3" type="footnote" n="3">Zu Bullingers Sendung s. oben <ref target="file11887">Nr. 1841</ref>, 230f mit Anm. 69. -Die für Béat Comte bestimmte Schrift Bullingers gegen Cochläus (s. unten <ref target="file11956">Nr. 1909</ref>), die Ende Februar erschienen war (s. oben <ref target="file11904">Nr. 1858</ref>, Anm. 1) ist offensichtlich hier nicht gemeint.</note> confido ipsum hoc satis fideliter exequuturum etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Adfuit vicecomes<note xml:id="fn4" type="footnote" n="4">François II. von Luxemburg, Vicomte von Martigues, Sohn von François I. von Luxemburg-Martigues und Louise von <placeName ref="75">Savoyen</placeName>, 1534 als Generalgouverneur von <placeName ref="75">Savoyen</placeName> nachweisbar, hatte durch den bernischen Feldzug von 1536 seine Herrschaften und Einkünfte in der Waadt sowie im Genevois und im <persName ref="617">Chablais</persName> verloren. Am 13. Februar 1544 machte er seine Forderungen persönlich vor dem <placeName ref="121">Berner</placeName> Rat geltend. 1547 erhielt er <placeName ref="1310">Belmont</placeName>, <placeName ref="1712">Ternier</placeName> und <placeName ref="1136">Vevey</placeName> unter einigen Vorbehalten zurück. Er starb 1553. -Lit.: Olivier <hi>Dessemontet,</hi> Les Luxembourg-Martigues, seigneurs au Pays de Vaud 1487-1558, in: Schweizerische Zeitschrift für Geschichte IV/1, 1954, S. 88-123.</note>, quem vulgo dicimus visconten, qui secundus est a duce <placeName ref="75">Sabaudiensi</placeName><note xml:id="fn5" type="footnote" n="5"><persName ref="1330">Herzog Karl III.</persName> von <placeName ref="75">Savoyen</placeName>.</note> illique consanguinitate coniunctus, qui restitui sibi iura censusque suos in <placeName ref="1136">Viviaco</placeName><note xml:id="fn6" type="footnote" n="6"><placeName ref="1136">Vevey</placeName> (Kt. Waadt).</note> et Dernie<note xml:id="fn7" type="footnote" n="7"><placeName ref="1712">Ternier</placeName> bei <placeName ref="1005">Saint</placeName>-Julien-en-Genevois (Dép. Haute-Savoie).</note> postulavit idque ea causa, quod nullam belli exacti culpam habuerit neque unquam quicquam hostile adversus <placeName ref="121">Bernates</placeName> gesserit; cupere itaque se in nostra esse gratia et illorum locorum nomine posthac <placeName ref="121">Bernatibus</placeName> omnia prestiturum, quę antea duci tanquam superiori suo debuerit.</s>
-					<s xml:lang="la" type="auto">Et quamvis hęc petitio non usquequaque iniqua sit visa, ut quę <placeName ref="121">Bernatibus</placeName> nihil dominii in homines et ad expeditiones bellicas nec item in illis plantatę religionis detraheret, quod census duntaxat et dominia inferiora attineret, tamen suspensum est negotium et sic illi responsum datum: nos adhuc in aperto bello esse cum duce <placeName ref="75">Sabaudiensi</placeName> nec cum illo reconciliatos; nemini itaque nos quicquam reddituros, et si conciliati cum duce fuerimus, nos deinde, quod commodum videatur, facturos.</s>
-					<s xml:lang="la" type="auto">Sic abiit.</s>
+					<s n="3" xml:lang="la" type="auto">Adfuit vicecomes<note xml:id="fn4" type="footnote" n="4">François II. von Luxemburg, Vicomte von Martigues, Sohn von François I. von Luxemburg-Martigues und Louise von <placeName ref="place75">Savoyen</placeName>, 1534 als Generalgouverneur von <placeName ref="place75">Savoyen</placeName> nachweisbar, hatte durch den bernischen Feldzug von 1536 seine Herrschaften und Einkünfte in der Waadt sowie im Genevois und im <persName ref="person617">Chablais</persName> verloren. Am 13. Februar 1544 machte er seine Forderungen persönlich vor dem <placeName ref="place121">Berner</placeName> Rat geltend. 1547 erhielt er <placeName ref="place1310">Belmont</placeName>, <placeName ref="place1712">Ternier</placeName> und <placeName ref="place1136">Vevey</placeName> unter einigen Vorbehalten zurück. Er starb 1553. - Lit.: Olivier <hi>Dessemontet,</hi> Les Luxembourg-Martigues, seigneurs au Pays de Vaud 1487-1558, in: Schweizerische Zeitschrift für Geschichte IV/1, 1954, S. 88-123.</note>, quem vulgo dicimus visconten, qui secundus est a duce <placeName ref="place75">Sabaudiensi</placeName><note xml:id="fn5" type="footnote" n="5">Herzog <persName ref="person1330">Karl III.</persName> von <placeName ref="place75">Savoyen</placeName>.</note> illique consanguinitate coniunctus, qui restitui sibi iura censusque suos in <placeName ref="place1136">Viviaco</placeName><note xml:id="fn6" type="footnote" n="6"><placeName ref="place1136">Vevey</placeName> (Kt. Waadt).</note> et Dernie<note xml:id="fn7" type="footnote" n="7"><placeName ref="place1712">Ternier</placeName> bei <placeName ref="place1005">Saint</placeName>-Julien-en-Genevois (Dép. Haute-Savoie).</note> postulavit idque ea causa, quod nullam belli exacti culpam habuerit neque unquam quicquam hostile adversus <placeName ref="place121">Bernates</placeName> gesserit; cupere itaque se in nostra esse gratia et illorum locorum nomine posthac <placeName ref="place121">Bernatibus</placeName> omnia prestiturum, quę antea duci tanquam superiori suo debuerit.</s>
+					<s n="4" xml:lang="la" type="auto">Et quamvis hęc petitio non usquequaque iniqua sit visa, ut quę <placeName ref="place121">Bernatibus</placeName> nihil dominii in homines et ad expeditiones bellicas nec item in illis plantatę religionis detraheret, quod census duntaxat et dominia inferiora attineret, tamen suspensum est negotium et sic illi responsum datum: nos adhuc in aperto bello esse cum duce <placeName ref="place75">Sabaudiensi</placeName> nec cum illo reconciliatos; nemini itaque nos quicquam reddituros, et si conciliati cum duce fuerimus, nos deinde, quod commodum videatur, facturos.</s>
+					<s n="5" xml:lang="la" type="auto">Sic abiit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Constat inter nos excludendos esse, qui tam potentes sunt in principum aulis, quod contagio nociva in subditos inde serpat, ut qui nec religioni<note xml:id="fna" type="footnote" n="a"><hi>Am Wortanfang gestrichenes</hi> n.</note> nostrę nec libertati nostrę faveant.</s>
+					<s n="6" xml:lang="la" type="auto">Constat inter nos excludendos esse, qui tam potentes sunt in principum aulis, quod contagio nociva in subditos inde serpat, ut qui nec religioni<note xml:id="fna" type="footnote" n="a"><hi>Am Wortanfang gestrichenes</hi> n.</note> nostrę nec libertati nostrę faveant.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale cum omnibus doctis, quos omnes meo nomine salutatos cupio, et tu rursus cum uxore<note xml:id="fn8" type="footnote" n="8">Anna, geb. Adlischwyler.</note>, liberis<note xml:id="fn9" type="footnote" n="9">Zu Bullingers Kindern s. oben <ref target="file#11884">Nr. 1838</ref>, Anm. 19.</note> universaque familia optime vale meque commendatum habeto.</s>
+					<s n="7" xml:lang="la" type="auto">Vale cum omnibus doctis, quos omnes meo nomine salutatos cupio, et tu rursus cum uxore<note xml:id="fn8" type="footnote" n="8">Anna, geb. Adlischwyler.</note>, liberis<note xml:id="fn9" type="footnote" n="9">Zu Bullingers Kindern s. oben <ref target="file11884">Nr. 1838</ref>, Anm. 19.</note> universaque familia optime vale meque commendatum habeto.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum <placeName ref="121">Bernę</placeName>, 11. martii anno 44.</s>
+					<s n="8" xml:lang="la" type="auto">Datum <placeName ref="place121">Bernę</placeName>, 11. martii anno 44.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex animo tuus Eberart a</s>
+					<s n="9" xml:lang="la" type="auto">Ex animo tuus Eberart a</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto"><persName ref="182">Rumlang</persName>.</s>
+					<s n="10" xml:lang="de" type="auto"><persName ref="person182">Rumlang</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Spectatissimo, ornatissimo ac integerrimo viro d. Heinricho Bullingero, ecclesiastę primario Tiguri, suo patrono semper observando.</s>
+					<s n="11" xml:lang="la" type="auto">Spectatissimo, ornatissimo ac integerrimo viro d. Heinricho Bullingero, ecclesiastę primario Tiguri, suo patrono semper observando.</s>
 				</p>
 			</div>
 		</body>

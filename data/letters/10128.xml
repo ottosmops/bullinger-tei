@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1982"/>
-				<idno type="ISBN">ISBN 3-290-11467-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=99</idno>
+				<idno subtype="ISBN">ISBN 3-290-11467-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=99</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 2</title>
+				<title subtype="publication">HBBW II</title>
 				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">2</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 337,48</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 337,48</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,8 +49,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								In <placeName ref="121">Bern</placeName> wird das Gerücht verbreitet, Zürich wolle die
-								französische Allianz bald erneuern. <persName ref="145">Megander</persName> warnt davor.
+								In <placeName ref="place121">Bern</placeName> wird das Gerücht verbreitet, Zürich wolle die
+								französische Allianz bald erneuern. <persName ref="person145">Megander</persName> warnt davor.
 							</p>
 						</summary>
 					</msContents>
@@ -57,55 +60,67 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10128">
 				<correspAction type="sent">
-					<persName ref="person#2263" cert="high">
+					<!--
+					<persName ref="person2263" cert="high">
 						<forename cert="high">Kaspar</forename>
 						<surname cert="high">Megander</surname>
-						<addName type="main">Megander (Großmann), Kaspar</addName>
+						<persName type="main" ref="person8412>Megander (Großmann), Kaspar</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Kaspar_Megander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/12037210X"/>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person2263" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1532-05-25" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1753" cert="high">
+					<!--
+					<persName ref="person1753" cert="high">
 						<forename cert="high">Leo</forename>
 						<surname cert="high">Jud</surname>
 						<graphic type="portrait" url="portraits/1753_Jud_Leo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Leo_Jud"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118558528"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11423330"/>
 					</persName>
-					<persName ref="person#495" cert="high">
+					-->
+					<persName ref="person1753" cert="high"/>
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<persName ref="person#2838" cert="high">
+					-->
+					<persName ref="person495" cert="high"/>
+					<!--
+					<persName ref="person2838" cert="high">
 						<forename cert="high">Erasmus</forename>
 						<surname cert="high">Schmid</surname>
-						<addName type="main">Schmid (Fabricius), Erasmus</addName>
+						<persName type="main" ref="person8437>Schmid (Fabricius), Erasmus</addName>
 					</persName>
+					-->
+					<persName ref="person2838" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10137"/>
-					<ref type="prev_chronologically" target="files.xml#10127"/>
-					<ref type="next_correspondence" target="files.xml#10167"/>
+					<ref type="next_chronologically" target="file10137"/>
+					<ref type="prev_chronologically" target="file10127"/>
+					<ref type="next_correspondence" target="file10167"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#10167"/>
+					<ref type="next_correspondence_request" target="file10167"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10167"/>
-					<ref type="prev_same_sender" target="files.xml#10113"/>
-					<ref type="next_same_addressee" target="files.xml#11892"/>
+					<ref type="next_same_sender" target="file10167"/>
+					<ref type="prev_same_sender" target="file10113"/>
+					<ref type="next_same_addressee" target="file11892"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10167"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10113"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11892"/>
+					<ref type="next_with_sender_as_addressee" target="file10167"/>
+					<ref type="prev_with_sender_as_addressee" target="file10113"/>
+					<ref type="next_with_addressee_as_sender" target="file11892"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -124,29 +139,29 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quem non omnium ecclesiarum solicitudo torquet, fratres charissimi, modo pii, fidi et iuxta Christi comendacionem ministri vigiles<note xml:id="fn1" type="footnote" n="1">Siehe Mt 24,42ff par. 25,1ff.</note> et prudentes dici velimus?</s>
-					<s xml:lang="la" type="auto">Qum igitur malorum omnium fomentum <foreign xml:lang="el">καὶ ῥίζαν</foreign><note xml:id="fn2" type="footnote" n="2">Vgl. 1 Tim 6,10.</note> ecclesias nostras tentare video, principum inquam corrupcionem, ut res apud nos sese habeat, vobis indicare nequaquam defatigor.</s>
-					<s xml:lang="la" type="auto">Aurum gallicum in urbe nostra publice sese iactare non veretur Tigurum intra dierum paucorum spacium rege cum Fran[cisco]<note xml:id="fn3" type="footnote" n="3"><persName ref="859">Franz</persName> I. von <placeName ref="11">Frankreich</placeName>.</note> foedus iterum et fecisse et firmasse<note xml:id="fn4" type="footnote" n="4">Vgl. oben S. 124,7-12.</note>.</s>
-					<s xml:lang="la" type="auto">Etsi non dubitemus mendacia esse aperta (longe enim alia a Tiguro sancto et syncero nobis promittimus quam stulticiam, ne dicam facinus hoc nephandum), est tamen modus is et unicum medium, quo nobis idem persuadere nititur.</s>
-					<s xml:lang="la" type="auto">Conetur quidem, sed incassum, id quod certe ex deo vobis promittere possum.</s>
-					<s xml:lang="la" type="auto">Quare, charissimi fratres, si quis diversum de nostris apud vos ogganit aut iactat, ne credatis soliciteque studete, ne locum apud vos belli homines isti habeant, qui patrię nostrę neque utiles neque honesti sunt.</s>
-					<s xml:lang="la" type="auto">Caeterum res ecclesiae nostrę sanctissima est atque adeo sancta, ut nihil sit, quod in ea desyderarem.</s>
+					<s n="2" xml:lang="la" type="auto">Quem non omnium ecclesiarum solicitudo torquet, fratres charissimi, modo pii, fidi et iuxta Christi comendacionem ministri vigiles<note xml:id="fn1" type="footnote" n="1">Siehe Mt 24,42ff par. 25,1ff.</note> et prudentes dici velimus?</s>
+					<s n="3" xml:lang="la" type="auto">Qum igitur malorum omnium fomentum <foreign xml:lang="el">καὶ ῥίζαν</foreign><note xml:id="fn2" type="footnote" n="2">Vgl. 1 Tim 6,10.</note> ecclesias nostras tentare video, principum inquam corrupcionem, ut res apud nos sese habeat, vobis indicare nequaquam defatigor.</s>
+					<s n="4" xml:lang="la" type="auto">Aurum gallicum in urbe nostra publice sese iactare non veretur Tigurum intra dierum paucorum spacium rege cum Fran[cisco]<note xml:id="fn3" type="footnote" n="3"><persName ref="person859">Franz I.</persName> von <placeName ref="place11">Frankreich</placeName>.</note> foedus iterum et fecisse et firmasse<note xml:id="fn4" type="footnote" n="4">Vgl. oben S. 124,7-12.</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Etsi non dubitemus mendacia esse aperta (longe enim alia a Tiguro sancto et syncero nobis promittimus quam stulticiam, ne dicam facinus hoc nephandum), est tamen modus is et unicum medium, quo nobis idem persuadere nititur.</s>
+					<s n="6" xml:lang="la" type="auto">Conetur quidem, sed incassum, id quod certe ex deo vobis promittere possum.</s>
+					<s n="7" xml:lang="la" type="auto">Quare, charissimi fratres, si quis diversum de nostris apud vos ogganit aut iactat, ne credatis soliciteque studete, ne locum apud vos belli homines isti habeant, qui patrię nostrę neque utiles neque honesti sunt.</s>
+					<s n="8" xml:lang="la" type="auto">Caeterum res ecclesiae nostrę sanctissima est atque adeo sancta, ut nihil sit, quod in ea desyderarem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valete, fratres charissimi.</s>
+					<s n="9" xml:lang="la" type="auto">Valete, fratres charissimi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="121">Bernę</placeName>, 25. maii anno 32.</s>
+					<s n="10" xml:lang="la" type="auto"><placeName ref="place121">Bernę</placeName>, 25. maii anno 32.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">C. Megand., ex animo vester.</s>
+					<s n="11" xml:lang="la" type="auto">C. Megand., ex animo vester.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Tiguri verbi ministris Leoni <persName ref="114">Jud</persName>, H. Bulling, et Erasmo <persName ref="188">Fabricio</persName>, fratribus suis charissimis.</s>
+					<s n="12" xml:lang="la" type="auto">Tiguri verbi ministris Leoni <persName ref="person114">Jud</persName>, H. Bulling, et <persName ref="person188">Erasmo Fabricio</persName>, fratribus suis charissimis.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1983"/>
-				<idno type="ISBN">ISBN 3-290-11531-3</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=290</idno>
+				<idno subtype="ISBN">ISBN 3-290-11531-3</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=290</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 3</title>
+				<title subtype="publication">HBBW III</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">3</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 348,424</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 348,424</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,10 +50,10 @@
 						<summary>
 							<p xml:id="regest1">
 								Hofft, die Einigkeit der Reformierten bleibe bestehen, gegen die Satan nichts ausrichtet. Zweifelt nicht,
-								daß Gott den Bernern beistehen wird. Hofft das Beste für <persName ref="114">Leo</persName>
-								<persName ref="114">Jud</persName>, der Anfechtungen ausgesetzt ist. Nachrichten über die
-								Verhältnisse in <placeName ref="276">Dinkelsbühl</placeName> und
-								<placeName ref="744">Münster</placeName>.
+								daß Gott den Bernern beistehen wird. Hofft das Beste für Leo
+								<persName ref="person114">Jud</persName>, der Anfechtungen ausgesetzt ist. Nachrichten über die
+								Verhältnisse in <placeName ref="place276">Dinkelsbühl</placeName> und
+								<placeName ref="place744">Münster</placeName>.
 							</p>
 						</summary>
 					</msContents>
@@ -60,46 +63,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10321">
 				<correspAction type="sent">
-					<persName ref="person#467" cert="high">
+					<!--
+					<persName ref="person467" cert="high">
 						<forename cert="high">Martin</forename>
 						<surname cert="high">Bucer</surname>
 						<graphic type="portrait" url="portraits/467_Bucer_Martinus.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Martin_Bucer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118516507"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11483585"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person467" cert="high"/>
+					<place source="place492" cert="high"/>
 					<date when="1533-11-30" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10322"/>
-					<ref type="prev_chronologically" target="files.xml#10320"/>
-					<ref type="next_correspondence" target="files.xml#10385"/>
-					<ref type="prev_correspondence" target="files.xml#10311"/>
-					<ref type="next_correspondence_request" target="files.xml#10385"/>
-					<ref type="prev_correspondence_request" target="files.xml#10311"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10501"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10202"/>
-					<ref type="next_same_sender" target="files.xml#10385"/>
-					<ref type="prev_same_sender" target="files.xml#10311"/>
-					<ref type="next_same_addressee" target="files.xml#10324"/>
-					<ref type="prev_same_addressee" target="files.xml#10318"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10385"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10311"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10324"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10318"/>
+					<ref type="next_chronologically" target="file10322"/>
+					<ref type="prev_chronologically" target="file10320"/>
+					<ref type="next_correspondence" target="file10385"/>
+					<ref type="prev_correspondence" target="file10311"/>
+					<ref type="next_correspondence_request" target="file10385"/>
+					<ref type="prev_correspondence_request" target="file10311"/>
+					<ref type="next_correspondence_reaction" target="file10501"/>
+					<ref type="prev_correspondence_reaction" target="file10202"/>
+					<ref type="next_same_sender" target="file10385"/>
+					<ref type="prev_same_sender" target="file10311"/>
+					<ref type="next_same_addressee" target="file10324"/>
+					<ref type="prev_same_addressee" target="file10318"/>
+					<ref type="next_with_sender_as_addressee" target="file10385"/>
+					<ref type="prev_with_sender_as_addressee" target="file10311"/>
+					<ref type="next_with_addressee_as_sender" target="file10324"/>
+					<ref type="prev_with_addressee_as_sender" target="file10318"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,48 +124,48 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salve in domino.</s>
+					<s n="1" xml:lang="la" type="auto">Salve in domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Iterum videmus, quam nolit dominus extra ordinaria via suum negocium provehi<note xml:id="fn2" type="footnote" n="2"><persName ref="28">Bucers</persName> Anspielung gilt dem mißlungenen Versuch, Ende Oktober 1533 in <placeName ref="83">Solothurn</placeName> dem reformierten Glauben mit Gewalt zum Durchbruch zu verhelfen; vgl. den Brief <persName ref="28">Bucers</persName> an <persName ref="19">Ambrosius Blarer</persName> vom 30. November 1533 (<persName ref="474">Blarer</persName> BW I 444), wo diese Ereignisse mit ähnlichen Worten kommentiert werden.</note>.</s>
-					<s xml:lang="la" type="auto">Sed utinam dominus illum a vestris satanam depellat, qui persuadet a societate sanctorum, quibus in domino volunt iuncti esse, tantopere abhorrere.</s>
-					<s xml:lang="la" type="auto">Videt se coniunctos non posse frangere.</s>
-					<s xml:lang="la" type="auto">Laborat igitur, ut disiungat.</s>
-					<s xml:lang="la" type="auto">O senatum vestrum, quam non videtur sui similis<note xml:id="fn3" type="footnote" n="3"><persName ref="28">Bucer</persName> äußert dies wohl im Hinblick auf Zürichs Zurückhaltung bei der Unterstützung <placeName ref="121">Berns</placeName> im Zusammenhang mit den <placeName ref="83">Solothurner</placeName> Unruhen; dazu s. oben S. 225, 32-35 und Anm. 25.</note>.</s>
-					<s xml:lang="la" type="auto">Sed etiam si omnes <placeName ref="121">Bernates</placeName> deserant, ita video illis dominum dedisse vel unum consulem<note xml:id="fn4" type="footnote" n="4"><persName ref="233">Hans Jakob von Wattenwyl</persName>.</note>, verum Davidem, verum Iecheziam<note xml:id="fn5" type="footnote" n="5">Einen Jechezias bzw. Jecheziah gibt es nicht. Jecheziel oder Jahasiel war einer der Helden in Davids Heer (s. 1Chr 12, 4). Wahrscheinlich meint <persName ref="28">Bucer</persName> jedoch Ezechias (Hiskia, vgl. 2Kön 18-20; 2Chr 29-32; Jes 36-39), der wiederholt als Herrscher mit positiven Eigenschaften aufgeführt wird (HBBW I 153, 16. II 182, 38 u. ö.); s. noch J. J. Simlers Kopie (Zürich ZB, Ms S 34, Nr 123), in welcher der Name als «Ezechiam» wiedergegeben ist.</note>, ut non dubitem illis dominum egregie adfuturum.</s>
-					<s xml:lang="la" type="auto">Oremus dominum, ut adsit omnibus!</s>
+					<s n="2" xml:lang="la" type="auto">Iterum videmus, quam nolit dominus extra ordinaria via suum negocium provehi<note xml:id="fn2" type="footnote" n="2"><persName ref="person28">Bucers</persName> Anspielung gilt dem mißlungenen Versuch, Ende Oktober 1533 in <placeName ref="place83">Solothurn</placeName> dem reformierten Glauben mit Gewalt zum Durchbruch zu verhelfen; vgl. den Brief <persName ref="person28">Bucers</persName> an <persName ref="person19">Ambrosius Blarer</persName> vom 30. November 1533 (Blarer BW I 444), wo diese Ereignisse mit ähnlichen Worten kommentiert werden.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Sed utinam dominus illum a vestris satanam depellat, qui persuadet a societate sanctorum, quibus in domino volunt iuncti esse, tantopere abhorrere.</s>
+					<s n="4" xml:lang="la" type="auto">Videt se coniunctos non posse frangere.</s>
+					<s n="5" xml:lang="la" type="auto">Laborat igitur, ut disiungat.</s>
+					<s n="6" xml:lang="la" type="auto">O senatum vestrum, quam non videtur sui similis<note xml:id="fn3" type="footnote" n="3"><persName ref="person28">Bucer</persName> äußert dies wohl im Hinblick auf Zürichs Zurückhaltung bei der Unterstützung <placeName ref="place121">Berns</placeName> im Zusammenhang mit den <placeName ref="place83">Solothurner</placeName> Unruhen; dazu s. oben S. 225, 32-35 und Anm. 25.</note>.</s>
+					<s n="7" xml:lang="la" type="auto">Sed etiam si omnes <placeName ref="place121">Bernates</placeName> deserant, ita video illis dominum dedisse vel unum consulem<note xml:id="fn4" type="footnote" n="4"><persName ref="person233">Hans Jakob von Wattenwyl</persName>.</note>, verum Davidem, verum Iecheziam<note xml:id="fn5" type="footnote" n="5">Einen Jechezias bzw. Jecheziah gibt es nicht. Jecheziel oder Jahasiel war einer der Helden in Davids Heer (s. 1Chr 12, 4). Wahrscheinlich meint <persName ref="person28">Bucer</persName> jedoch Ezechias (Hiskia, vgl. 2Kön 18-20; 2Chr 29-32; Jes 36-39), der wiederholt als Herrscher mit positiven Eigenschaften aufgeführt wird (HBBW I 153, 16. II 182, 38 u. ö.); s. noch J. J. Simlers Kopie (Zürich ZB, Ms S 34, Nr 123), in welcher der Name als «Ezechiam» wiedergegeben ist.</note>, ut non dubitem illis dominum egregie adfuturum.</s>
+					<s n="8" xml:lang="la" type="auto">Oremus dominum, ut adsit omnibus!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De Leone optime spero.</s>
-					<s xml:lang="la" type="auto">Est nunc in tentatione<note xml:id="fn6" type="footnote" n="6"><persName ref="28">Bucer</persName> spielt an auf den Einfluß <persName ref="2122">Schwenckfelds</persName> auf <persName ref="114">Leo Jud</persName>. Am 30. November schrieb <persName ref="28">Bucer</persName> auch an Jud (Original von der Hand <persName ref="2231">Simon Steiners</persName> mit autographer Unterschrift <persName ref="28">Bucers</persName> in Zürich StA, E II 347, 39-42; Teildruck: QGT VIII 215-217), um ihn von <persName ref="2122">Schwenckfelds</persName> Gedanken v. a. betreffend das Verhältnis zwischen Obrigkeit und Kirche abzubringen; s. auch Juds diesbezüglichen Briefwechsel mit Bullinger, unten <ref target="file#10331">Nr. 300</ref> und 301.</note>.</s>
-					<s xml:lang="la" type="auto">Recipiet se.</s>
+					<s n="9" xml:lang="la" type="auto">De Leone optime spero.</s>
+					<s n="10" xml:lang="la" type="auto">Est nunc in tentatione<note xml:id="fn6" type="footnote" n="6"><persName ref="person28">Bucer</persName> spielt an auf den Einfluß <persName ref="person2122">Schwenckfelds</persName> auf <persName ref="person114">Leo Jud</persName>. Am 30. November schrieb <persName ref="person28">Bucer</persName> auch an Jud (Original von der Hand <persName ref="person2231">Simon Steiners</persName> mit autographer Unterschrift <persName ref="person28">Bucers</persName> in Zürich StA, E II 347, 39-42; Teildruck: QGT VIII 215-217), um ihn <persName ref="person2122">von Schwenckfelds</persName> Gedanken v. a. betreffend das Verhältnis zwischen Obrigkeit und Kirche abzubringen; s. auch Juds diesbezüglichen Briefwechsel mit Bullinger, unten <ref target="file10331">Nr. 300</ref> und 301.</note>.</s>
+					<s n="11" xml:lang="la" type="auto">Recipiet se.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="12" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dinckelspuhel accesit [!] evangelio tota, etsi lutherano<note xml:id="fn7" type="footnote" n="7">Der Rat der Reichsstadt <placeName ref="276">Dinkelsbühl</placeName> hatte am 18. September 1533 beschlossen, einen evangelischen Pfarrer zu berufen. Die Wahl, der am 1. November vom Rat zugestimmt wurde, fiel auf den Lutheraner <persName ref="2559">Bernhard Wurzelmann</persName>. Dieser zog etwa am 19. Dezember in <placeName ref="276">Dinkelsbühl</placeName> ein; s. Christian <hi>Bürckstümmer,</hi> Geschichte der Reformation und Gegenreformation in der ehemaligen freien Reichsstadt <placeName ref="276">Dinkelsbühl</placeName> (1524-1648), I. Teil, Leipzig 1914. - SVRG 115/116, S. 69-72.</note>.</s>
-					<s xml:lang="la" type="auto">Monasterium tumultuatur misere<note xml:id="fn8" type="footnote" n="8">Im Laufe des Sommers 1533 war in <placeName ref="744">Münster</placeName> i. W. der Einfluß der Täufer und ihres Wortführers <persName ref="1960">Bernhard Rothmann</persName> immer stärker geworden. Dagegen versuchten die Lutheraner, v. a. <persName ref="2560">Johann</persName> van der <persName ref="2560">Wyck</persName> (von der Wieck), anzukämpfen. Ein am 7. und 8. August abgehaltenes Religionsgespräch führte nicht zur Einigung. Auch die darauffolgenden Bemühungen des Rates, die täuferisch gesinnten Prädikanten aus <placeName ref="744">Münster</placeName> auszuweisen, mißlangen. Auf Bitten van der <persName ref="2560">Wycks</persName> sandte <persName ref="169">Philipp von Hessen</persName> Anfang November zwei Prediger nach <placeName ref="744">Münster</placeName> mit dem Auftrag, eine evangelische Kirchenordnung aufzurichten. Diese wurde Ende November vom Rat in Kraft gesetzt. Viel stärker beachtet wurde jedoch das zur selben Zeit veröffentlichte «Bekenntnis von beiden Sakramenten», die ganz im täuferischen Geiste abgefaßte Rechtfertigungsschrift Rothmanns. In <placeName ref="1049">Straßburg</placeName> war man durch van der <persName ref="2560">Wyck</persName>, der mit <persName ref="233">Jakob</persName> <persName ref="2255">Sturm</persName> befreundet war, über die Vorgänge gut unterrichtet; s. Ludwig <hi>Keller,</hi> Geschichte der Wiedertäufer und ihres Reichs zu <placeName ref="744">Münster</placeName>, <placeName ref="744">Münster</placeName> i. W. 1880, S. 117-121; Die Schriften <persName ref="1960">Bernhard Rothmanns</persName>, bearb. v. Robert Stupperich, <placeName ref="744">Münster</placeName> i. W. 1970. - Veröffentlichungen der historischen Kommission Westfalens XXXII, S. XVf; BucerDS V 111f.</note>.</s>
-					<s xml:lang="la" type="auto">Cui consulimus magno labore<note xml:id="fn9" type="footnote" n="9">Nach dem Religionsgespräch vom 7. und 8. August hatte van der <persName ref="2560">Wyck</persName> <persName ref="233">Jakob</persName> <persName ref="2255">Sturm</persName> um Unterstützung im Kampf gegen die Täufer gebeten. <persName ref="2255">Sturm</persName> trug die Bitte am 11. November dem <placeName ref="1049">Straßburger</placeName> Rat vor. <persName ref="28">Bucer</persName> arbeitete während des ganzen Monats an einem Sendschreiben an <persName ref="1960">Rothmann</persName>, das im Dezember unter dem Titel «Quid de baptismate infantium ... sentiendum» (Bibliographia Bucerana, Nr. 42) gedruckt wurde. Gleichzeitig mit dem Sendschreiben begann <persName ref="28">Bucer</persName> offenbar auch mit der Planung und Niederschrift der den Münsterern gewidmeten Schrift «Bericht auss der Heyligen Geschrift» (s. BucerDS V 111-115).</note>.</s>
+					<s n="13" xml:lang="la" type="auto">Dinckelspuhel accesit [!] evangelio tota, etsi lutherano<note xml:id="fn7" type="footnote" n="7">Der Rat der Reichsstadt <placeName ref="place276">Dinkelsbühl</placeName> hatte am 18. September 1533 beschlossen, einen evangelischen Pfarrer zu berufen. Die Wahl, der am 1. November vom Rat zugestimmt wurde, fiel auf den Lutheraner <persName ref="person2559">Bernhard Wurzelmann</persName>. Dieser zog etwa am 19. Dezember in <placeName ref="place276">Dinkelsbühl</placeName> ein; s. Christian <hi>Bürckstümmer,</hi> Geschichte der Reformation und Gegenreformation in der ehemaligen freien Reichsstadt <placeName ref="place276">Dinkelsbühl</placeName> (1524-1648), I. Teil, Leipzig 1914. - SVRG 115/116, S. 69-72.</note>.</s>
+					<s n="14" xml:lang="la" type="auto">Monasterium tumultuatur misere<note xml:id="fn8" type="footnote" n="8">Im Laufe des Sommers 1533 war in <placeName ref="place744">Münster i. W.</placeName> der Einfluß der Täufer und ihres Wortführers <persName ref="person1960">Bernhard Rothmann</persName> immer stärker geworden. Dagegen versuchten die Lutheraner, v. a. Johann van der <persName ref="person2560">Wyck</persName> (von der Wieck), anzukämpfen. Ein am 7. und 8. August abgehaltenes Religionsgespräch führte nicht zur Einigung. Auch die darauffolgenden Bemühungen des Rates, die täuferisch gesinnten Prädikanten aus Münster auszuweisen, mißlangen. Auf Bitten van der <persName ref="person2560">Wycks</persName> sandte Philipp von Hessen Anfang November zwei Prediger nach Münster mit dem Auftrag, eine evangelische Kirchenordnung aufzurichten. Diese wurde Ende November vom Rat in Kraft gesetzt. Viel stärker beachtet wurde jedoch das zur selben Zeit veröffentlichte «Bekenntnis von beiden Sakramenten», die ganz im täuferischen Geiste abgefaßte Rechtfertigungsschrift Rothmanns. In <placeName ref="place1049">Straßburg</placeName> war man durch van der <persName ref="person2560">Wyck</persName>, der mit Jakob Sturm befreundet war, über die Vorgänge gut unterrichtet; s. Ludwig <hi>Keller,</hi> Geschichte der Wiedertäufer und ihres Reichs zu Münster, <placeName ref="place744">Münster i. W.</placeName> 1880, S. 117-121; Die Schriften <persName ref="person1960">Bernhard Rothmanns</persName>, bearb. v. Robert Stupperich, <placeName ref="place744">Münster i. W.</placeName> 1970. - Veröffentlichungen der historischen Kommission Westfalens XXXII, S. XVf; BucerDS V 111f.</note>.</s>
+					<s n="15" xml:lang="la" type="auto">Cui consulimus magno labore<note xml:id="fn9" type="footnote" n="9">Nach dem Religionsgespräch vom 7. und 8. August hatte van der <persName ref="person2560">Wyck</persName> Jakob Sturm um Unterstützung im Kampf gegen die Täufer gebeten. Sturm trug die Bitte am 11. November dem <placeName ref="place1049">Straßburger</placeName> Rat vor. <persName ref="person28">Bucer</persName> arbeitete während des ganzen Monats an einem Sendschreiben an <persName ref="person1960">Rothmann</persName>, das im Dezember unter dem Titel «Quid de baptismate infantium ... sentiendum» (Bibliographia Bucerana, Nr. 42) gedruckt wurde. Gleichzeitig mit dem Sendschreiben begann <persName ref="person28">Bucer</persName> offenbar auch mit der Planung und Niederschrift der den Münsterern gewidmeten Schrift «Bericht auss der Heyligen Geschrift» (s. BucerDS V 111-115).</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="237"/>Saluta optimum Pelicanum, cui alias rescribam.</s>
-					<s xml:lang="la" type="auto">Nunc vere non licet.</s>
-					<s xml:lang="la" type="auto">De caesaris adventu nihil.</s>
-					<s xml:lang="la" type="auto">Quid papa cum Franco<note xml:id="fn10" type="footnote" n="10">Gemeint sind die Verhandlungen und Abmachungen zwischen <persName ref="635">Clemens VII.</persName> und <persName ref="859">Franz</persName> I. während des <persName ref="635">Papst</persName>-Besuches in <placeName ref="677">Marseille</placeName> vom 11. Oktober bis zum 12. November 1533 aus Anlaß der Hochzeit von <persName ref="1618">Katharina von Medici</persName> und <persName ref="1143">Herzog Heinrich von Orléans</persName> (s. oben S. 234, Anm. 43).</note>, nondum erupit.</s>
-					<s xml:lang="la" type="auto">Christus nobis rex est.</s>
-					<s xml:lang="la" type="auto">In eo aeternum vincemus.</s>
+					<s n="16" xml:lang="la" type="auto"><pb type="edition" next="237"/>Saluta optimum Pelicanum, cui alias rescribam.</s>
+					<s n="17" xml:lang="la" type="auto">Nunc vere non licet.</s>
+					<s n="18" xml:lang="la" type="auto">De caesaris adventu nihil.</s>
+					<s n="19" xml:lang="la" type="auto">Quid papa cum Franco<note xml:id="fn10" type="footnote" n="10">Gemeint sind die Verhandlungen und Abmachungen zwischen <persName ref="person635">Clemens VII.</persName> und <persName ref="person859">Franz I.</persName> während des Papst-Besuches in <placeName ref="place677">Marseille</placeName> vom 11. Oktober bis zum 12. November 1533 aus Anlaß der Hochzeit von <persName ref="person1618">Katharina von Medici</persName> und Herzog <persName ref="person1143">Heinrich</persName> von Orléans (s. oben S. 234, Anm. 43).</note>, nondum erupit.</s>
+					<s n="20" xml:lang="la" type="auto">Christus nobis rex est.</s>
+					<s n="21" xml:lang="la" type="auto">In eo aeternum vincemus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pridie calendas decembris.</s>
+					<s n="22" xml:lang="la" type="auto">Pridie calendas decembris.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">M. B. tuus.</s>
+					<s n="23" xml:lang="la" type="auto">M. B. tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Viro pientissimo Heylrycho Bullingero, evangelistae Tigurino, fratri observando.</s>
-					<s xml:lang="de" type="auto">Zürich.</s>
+					<s n="24" xml:lang="la" type="auto">Viro pientissimo Heylrycho Bullingero, evangelistae Tigurino, fratri observando.</s>
+					<s n="25" xml:lang="de" type="auto">Zürich.</s>
 				</p>
 			</div>
 		</body>

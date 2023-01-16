@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2380</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 361,119</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 361,119</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,14 +51,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 74,148</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">eingeordnet: Anfang April 1551</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 74,148</idno>
+						<idno subtype="Hinweis">eingeordnet: Anfang April 1551</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -66,14 +72,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Teilkopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#555">Winterthur</settlement>
-						<institution>Stadtbibliothek</institution>
-						<idno type="Teilkopie">Ms 4r 197,92</idno>
-						<repository ref="archive#88">
+						<!--
+						<repository ref="archive88">
 							<name>Winterthur StB</name>
-							<note type="Hinweis">«25.» März 1558</note>
 							<ref target="https://stadt.winterthur.ch/bibliotheken-winterthur"/>
 						</repository>
+						<settlement ref="place555">Winterthur</settlement>
+						<institution>Stadtbibliothek</institution>
+						-->
+						<repository ref="archive88"/>
+						<idno subtype="Teilkopie">Ms 4r 197,92</idno>
+						<idno subtype="Hinweis">«25.» März 1558</idno>
 					</msIdentifier>
 					<history><origin><p><date>19. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -89,51 +98,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1225">
 				<correspAction type="sent">
-					<persName ref="person#357" cert="high">
+					<!--
+					<persName ref="person357" cert="high">
 						<forename cert="high">Johann</forename>
 						<surname cert="high">Birckmann der Ältere</surname>
-						<addName type="main">Birckmann, Johann</addName>
+						<persName type="main" ref="person380>Birckmann, Johann</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johann_Birckmann"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11962219X"/>
 					</persName>
-					<place source="#157" cert="high">
-						<settlement>Frankfurt am Main</settlement>
-						<district>Hessen</district>
-						<country>Deutschland</country>
-						<geo>50.110922 8.682126</geo>
-					</place>
+					-->
+					<persName ref="person357" cert="high"/>
+					<place source="place157" cert="high"/>
 					<date when="1551-03-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1226"/>
-					<ref type="prev_chronologically" target="files.xml#1224"/>
-					<ref type="next_correspondence" target="files.xml#1302"/>
-					<ref type="prev_correspondence" target="files.xml#1028"/>
-					<ref type="next_correspondence_request" target="files.xml#1302"/>
-					<ref type="prev_correspondence_request" target="files.xml#1028"/>
+					<ref type="next_chronologically" target="file1226"/>
+					<ref type="prev_chronologically" target="file1224"/>
+					<ref type="next_correspondence" target="file1302"/>
+					<ref type="prev_correspondence" target="file1028"/>
+					<ref type="next_correspondence_request" target="file1302"/>
+					<ref type="prev_correspondence_request" target="file1028"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#1302"/>
-					<ref type="prev_same_sender" target="files.xml#1028"/>
-					<ref type="next_same_addressee" target="files.xml#1232"/>
-					<ref type="prev_same_addressee" target="files.xml#1221"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1302"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1028"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1232"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1221"/>
+					<ref type="next_same_sender" target="file1302"/>
+					<ref type="prev_same_sender" target="file1028"/>
+					<ref type="next_same_addressee" target="file1232"/>
+					<ref type="prev_same_addressee" target="file1221"/>
+					<ref type="next_with_sender_as_addressee" target="file1302"/>
+					<ref type="prev_with_sender_as_addressee" target="file1028"/>
+					<ref type="next_with_addressee_as_sender" target="file1232"/>
+					<ref type="prev_with_addressee_as_sender" target="file1221"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -150,44 +158,44 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">successit mihi negotium meum, quemadmodum ex d. Froschoueri relatione fusius intelliges.</s>
-					<s xml:lang="la" type="auto">De Floriani negotiis non potuit mihi d. a Lasco referre neque quicquam ab illo audivi.</s>
+					<s n="1" xml:lang="la" type="auto">successit mihi negotium meum, quemadmodum ex d. Froschoueri relatione fusius intelliges.</s>
+					<s n="2" xml:lang="la" type="auto">De Floriani negotiis non potuit mihi d. a Lasco referre neque quicquam ab illo audivi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Invisam nostrum principem tuis literis, consolabitur iis.</s>
-					<s xml:lang="la" type="auto">Ante 14 dies obiit senior frater, qui fuit Monasteriensis episcopus, qui sine ulla pompa sepeliri voluit summaque constantia ad dominum migravit.</s>
-					<s xml:lang="la" type="auto">Ago gratias pro libro mutuae consensionis.</s>
-					<s xml:lang="la" type="auto">Valde urget d. Petrus Martyr aeditionem commentariorum in suis ad me literis statim post Froschoueri abitum acceptis una cum praefatione hisce inclusa.</s>
+					<s n="3" xml:lang="la" type="auto">Invisam nostrum principem tuis literis, consolabitur iis.</s>
+					<s n="4" xml:lang="la" type="auto">Ante 14 dies obiit senior frater, qui fuit Monasteriensis episcopus, qui sine ulla pompa sepeliri voluit summaque constantia ad dominum migravit.</s>
+					<s n="5" xml:lang="la" type="auto">Ago gratias pro libro mutuae consensionis.</s>
+					<s n="6" xml:lang="la" type="auto">Valde urget d. Petrus Martyr aeditionem commentariorum in suis ad me literis statim post Froschoueri abitum acceptis una cum praefatione hisce inclusa.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Admoneatur Froschouerus, ut maturet aeditionem chartasque post mensem imprimendas et impressas unam ex singulis transmittat.</s>
+					<s n="7" xml:lang="la" type="auto">Admoneatur Froschouerus, ut maturet aeditionem chartasque post mensem imprimendas et impressas unam ex singulis transmittat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Brabanti silent, Phrisia indies magis erumpit.</s>
-					<s xml:lang="la" type="auto">D. Caesarius ante festa natalitia ad dominum migravit constantissima fide et gratia.</s>
-					<s xml:lang="la" type="auto">Habeo penes me varia carmina ab illo scripta, prima occasione ad te mittam; si tibi visum fuerit, imprimantur.</s>
-					<s xml:lang="la" type="auto">Literas bona fide Aembdam curabo deo volente.</s>
+					<s n="8" xml:lang="la" type="auto">Brabanti silent, Phrisia indies magis erumpit.</s>
+					<s n="9" xml:lang="la" type="auto">D. Caesarius ante festa natalitia ad dominum migravit constantissima fide et gratia.</s>
+					<s n="10" xml:lang="la" type="auto">Habeo penes me varia carmina ab illo scripta, prima occasione ad te mittam; si tibi visum fuerit, imprimantur.</s>
+					<s n="11" xml:lang="la" type="auto">Literas bona fide Aembdam curabo deo volente.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Negotium d. Hoperi credo te accepisse.</s>
-					<s xml:lang="la" type="auto">D. Bucerus quoque ex hoc seculo ante mensem migravit.</s>
+					<s n="12" xml:lang="la" type="auto">Negotium d. Hoperi credo te accepisse.</s>
+					<s n="13" xml:lang="la" type="auto">D. Bucerus quoque ex hoc seculo ante mensem migravit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De Magdeburgensibus varia narrantur; si sunt vera, apertum est non ex humana industria, sed brachio divino omnia fieri.</s>
+					<s n="14" xml:lang="la" type="auto">De Magdeburgensibus varia narrantur; si sunt vera, apertum est non ex humana industria, sed brachio divino omnia fieri.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Gropperus, qui iam est archidiaconus Coloniensis, valde vehemens est in sua visitatione, an ex syncero vel fiet corde, ignoro; tamen negotium illud ex voto non succedit semper.</s>
-					<s xml:lang="la" type="auto">Queso, saluta omnes mihi amicos.</s>
-					<s xml:lang="la" type="auto">Quod Echtius noster d. Gesnero non respondit, non mea culpa factum est; obstant variae occupationes.</s>
-					<s xml:lang="la" type="auto">Interim tamen d. Gesneri negotium non negligitur.</s>
-					<s xml:lang="la" type="auto">Si forte scripseris ad d. Cantuariensem vel ad magnates, optarem mentionem fieri bibliorum Anglicorum tuaque commendatione aedatur magis.</s>
-					<s xml:lang="la" type="auto">Vale, mi colendissime d. Bullingere et me pro tuo utere.</s>
-					<s xml:lang="la" type="auto">D. Iesus servet te incolumem.</s>
+					<s n="15" xml:lang="la" type="auto">Gropperus, qui iam est archidiaconus Coloniensis, valde vehemens est in sua visitatione, an ex syncero vel fiet corde, ignoro; tamen negotium illud ex voto non succedit semper.</s>
+					<s n="16" xml:lang="la" type="auto">Queso, saluta omnes mihi amicos.</s>
+					<s n="17" xml:lang="la" type="auto">Quod Echtius noster d. Gesnero non respondit, non mea culpa factum est; obstant variae occupationes.</s>
+					<s n="18" xml:lang="la" type="auto">Interim tamen d. Gesneri negotium non negligitur.</s>
+					<s n="19" xml:lang="la" type="auto">Si forte scripseris ad d. Cantuariensem vel ad magnates, optarem mentionem fieri bibliorum Anglicorum tuaque commendatione aedatur magis.</s>
+					<s n="20" xml:lang="la" type="auto">Vale, mi colendissime d. Bullingere et me pro tuo utere.</s>
+					<s n="21" xml:lang="la" type="auto">D. Iesus servet te incolumem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus ex animo addictissimus Iohannes Byrchmannus senior.</s>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Henrico Bullingero, domino et amico colendissimo.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="22" xml:lang="la" type="auto">Tuus ex animo addictissimus Iohannes Byrchmannus senior.</s>
+					<s n="23" xml:lang="la" type="auto">Clarissimo viro d. Henrico Bullingero, domino et amico colendissimo.</s>
+					<s n="24" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

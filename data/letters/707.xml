@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1752</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 368,524</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 368,524</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,13 +54,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 71,118</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 71,118</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -66,50 +72,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/707">
 				<correspAction type="sent">
-					<persName ref="person#2620" cert="low">
+					<!--
+					<persName ref="person2620" cert="low">
 						<forename cert="low">Guillaume</forename>
 						<surname cert="low">Plancius</surname>
-						<addName type="main">Plançon, Guillaume</addName>
+						<persName type="main" ref="person2616>Plançon, Guillaume</addName>
 					</persName>
-					<place source="#301" cert="low">
-						<settlement>Lyon</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>45.75888 4.84139</geo>
-					</place>
+					-->
+					<persName ref="person2620" cert="low"/>
+					<place source="place301" cert="low"/>
 					<date when="1549-10-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#708"/>
-					<ref type="prev_chronologically" target="files.xml#706"/>
+					<ref type="next_chronologically" target="file708"/>
+					<ref type="prev_chronologically" target="file706"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#535"/>
+					<ref type="prev_correspondence" target="file535"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#535"/>
+					<ref type="prev_correspondence_request" target="file535"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#535"/>
-					<ref type="next_same_addressee" target="files.xml#725"/>
-					<ref type="prev_same_addressee" target="files.xml#700"/>
+					<ref type="prev_same_sender" target="file535"/>
+					<ref type="next_same_addressee" target="file725"/>
+					<ref type="prev_same_addressee" target="file700"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#535"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#725"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#700"/>
+					<ref type="prev_with_sender_as_addressee" target="file535"/>
+					<ref type="next_with_addressee_as_sender" target="file725"/>
+					<ref type="prev_with_addressee_as_sender" target="file700"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -118,32 +122,35 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="707/Autograph/00 E_II_368__fol__524_r_.tif" n="1"/>
+		<graphic url="707/Autograph/01 E_II_368__fol__524_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">H[enrico] Bulingero Plancius S. Quantum tibi debeam, prestantissime domine, oratione comprehendere non possum; nam pręter humanitatem et benevolentiam, quam mihi pręstitisti, etiam domi tuę convivio acceptum laute et amanter tractasti et, quod maximi beneficii loco habeo, libros utendos dedisti, et quo magis animum tuum erga me ostenderes, etiam tuas delicias, id est libros a te scriptos totamque studiorum tuorum rationem aperuisti.</s>
-					<s xml:lang="la" type="auto">Verum quando vetus dictum est, cui multum debeas, ei plurimum velle debere, rogabo, ut et hoc beneficii in me conferre velis, ut eum, qui has tibi reddidit literas, et optimum virum et tui studiosissimum, si quid tua ope indigebit, adiuves.</s>
-					<s xml:lang="la" type="auto">Isthuc deduxit iuvenes duos optima indole preditos, filios Silvarii Lugdumensis.</s>
-					<s xml:lang="la" type="auto">Is, quia vir est bonus et religionis purioris amator maximus et ei vestram rempublicam valde laudavi, maluit isthuc liberos suos mittere quam quoquam alio totius Gallię.</s>
-					<s xml:lang="la" type="auto">Doctrinam enim i anem nec luce evangelii allustratam repudiat.</s>
-					<s xml:lang="la" type="auto">Utinam autem ipse, ut erat animus, ad vos redire potuissem!</s>
-					<s xml:lang="la" type="auto">Nulla, mihi crede, terra mihi verior patria visa est quam Tigurina plaga; nullibi gentium esse me mallem.</s>
+					<s n="1" xml:lang="la" type="auto">H[enrico] Bulingero Plancius S. Quantum tibi debeam, prestantissime domine, oratione comprehendere non possum; nam pręter humanitatem et benevolentiam, quam mihi pręstitisti, etiam domi tuę convivio acceptum laute et amanter tractasti et, quod maximi beneficii loco habeo, libros utendos dedisti, et quo magis animum tuum erga me ostenderes, etiam tuas delicias, id est libros a te scriptos totamque studiorum tuorum rationem aperuisti.</s>
+					<s n="2" xml:lang="la" type="auto">Verum quando vetus dictum est, cui multum debeas, ei plurimum velle debere, rogabo, ut et hoc beneficii in me conferre velis, ut eum, qui has tibi reddidit literas, et optimum virum et tui studiosissimum, si quid tua ope indigebit, adiuves.</s>
+					<s n="3" xml:lang="la" type="auto">Isthuc deduxit iuvenes duos optima indole preditos, filios Silvarii Lugdumensis.</s>
+					<s n="4" xml:lang="la" type="auto">Is, quia vir est bonus et religionis purioris amator maximus et ei vestram rempublicam valde laudavi, maluit isthuc liberos suos mittere quam quoquam alio totius Gallię.</s>
+					<s n="5" xml:lang="la" type="auto">Doctrinam enim i anem nec luce evangelii allustratam repudiat.</s>
+					<s n="6" xml:lang="la" type="auto">Utinam autem ipse, ut erat animus, ad vos redire potuissem!</s>
+					<s n="7" xml:lang="la" type="auto">Nulla, mihi crede, terra mihi verior patria visa est quam Tigurina plaga; nullibi gentium esse me mallem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sordet iam mihi Gallia et displicet.</s>
-					<s xml:lang="la" type="auto">Pater coelestis per Iesum Christum mihi det, ut captivitate hac Babylonica et servitute Aegyptiaca liberer, amen.</s>
-					<s xml:lang="la" type="auto">Si quid literarum a domino Floriano<note xml:id="fna" type="footnote" n="a">Florian Susliga</note> accepisti, pergratum erit, si, et ubi nunc sit et posthac futurus est, scripseris.</s>
-					<s xml:lang="la" type="auto">Rogo deum patrem, vir doctissime, ut per Iesum Christum, dominum nostrum, te quam diutissime incolumem suę ecclesię servet.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="8" xml:lang="la" type="auto">Sordet iam mihi Gallia et displicet.</s>
+					<s n="9" xml:lang="la" type="auto">Pater coelestis per Iesum Christum mihi det, ut captivitate hac Babylonica et servitute Aegyptiaca liberer, amen.</s>
+					<s n="10" xml:lang="la" type="auto">Si quid literarum a domino Floriano<note xml:id="fna" type="footnote" n="a">Florian Susliga</note> accepisti, pergratum erit, si, et ubi nunc sit et posthac futurus est, scripseris.</s>
+					<s n="11" xml:lang="la" type="auto">Rogo deum patrem, vir doctissime, ut per Iesum Christum, dominum nostrum, te quam diutissime incolumem suę ecclesię servet.</s>
+					<s n="12" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Lugduno 3. idus octobris 1549.</s>
+					<s n="13" xml:lang="la" type="auto">Lugduno 3. idus octobris 1549.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Domino Bulingero, clarissimo viro, Tigurinę ecclesię antistiti et primario ecclesiaste<note xml:id="fn1" type="footnote" n="1">Dan. v. Bullingers Hand: "Guilhelmus Plancius, Gallus."</note>.</s>
+					<s n="14" xml:lang="la" type="auto">Domino Bulingero, clarissimo viro, Tigurinę ecclesię antistiti et primario ecclesiaste<note xml:id="fn1" type="footnote" n="1">Dan. v. Bullingers Hand: "Guilhelmus Plancius, Gallus."</note>.</s>
 				</p>
 			</div>
 		</body>

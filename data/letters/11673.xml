@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2006"/>
-				<idno type="ISBN">ISBN 978-3-290-17431-6</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1630</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17431-6</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1630</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 12</title>
+				<title subtype="publication">HBBW XII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">12</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343a,240</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343a,240</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,19 +49,19 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Dankt Gott für Bullingers Genesung, bleibt aber besorgt um <persName ref="114">Leo</persName>
-								[<persName ref="114">Jud</persName>], [<persName ref="165">Konrad</persName>]
-								<persName ref="165">Pellikan</persName> und <persName ref="14">Theodor</persName>
-								[<persName ref="14">Bibliander</persName>]. Ist beunruhigt über Pläne für eine engere Verbindung der
-								Eidgenossen mit dem französischen [<persName ref="859">König</persName>
-								<persName ref="859">Franz</persName> I.], die angeblich aufgekommen sind, nachdem [die in
-								<placeName ref="1001">Speyer</placeName> versammelten Reichsstände] die Eidgenossen zur Beteiligung
-								am Türkenfeldzug aufgefordert und dem <persName ref="859">König</persName> gedroht haben; befürchtet
+								Dankt Gott für Bullingers Genesung, bleibt aber besorgt um Leo
+								[<persName ref="person114">Jud</persName>], [Konrad]
+								<persName ref="person165">Pellikan</persName> und Theodor
+								[<persName ref="person14">Bibliander</persName>]. Ist beunruhigt über Pläne für eine engere Verbindung der
+								Eidgenossen mit dem französischen [König
+								<persName ref="person859">Franz I.</persName>], die angeblich aufgekommen sind, nachdem [die in
+								<placeName ref="place1001">Speyer</placeName> versammelten Reichsstände] die Eidgenossen zur Beteiligung
+								am Türkenfeldzug aufgefordert und dem König gedroht haben; befürchtet
 								erneute Spannungen unter den Eidgenossen oder die uneingeschränkte Rückkehr des Pensionenwesens. Nach einem
 								Sieg über die Türken wären die Evangelischen gar in ihrer Existenz bedroht, doch diese Sorgen sind verfrüht,
 								solange die Tagsatzung noch nicht stattgefunden hat. Will sich trotzdem mit Bullinger darüber austauschen
 								und meint, eine Teilnahme am Feldzug auf eigene Kosten könnten die Eidgenossen ohne Weiteres ablehnen,
-								während die von den <placeName ref="51">Fünf Orten</placeName> bereits nach <placeName ref="11">Frankreich</placeName>
+								während die von <placeName ref="place51">den Fünf Orten</placeName> bereits nach <placeName ref="place11">Frankreich</placeName>
 								entsandten Söldner nur schwer zurückgerufen werden könnten, besonders angesichts der französischen Antwort
 								auf das Schreiben der Kaiserlichen; hat allerdings die umlaufenden Abschriften selbst noch nicht gesehen.
 								Grüße.
@@ -71,46 +74,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11673">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1542-05-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11674"/>
-					<ref type="prev_chronologically" target="files.xml#11672"/>
-					<ref type="next_correspondence" target="files.xml#11674"/>
-					<ref type="prev_correspondence" target="files.xml#11669"/>
-					<ref type="next_correspondence_request" target="files.xml#11674"/>
-					<ref type="prev_correspondence_request" target="files.xml#11669"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11876"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11664"/>
-					<ref type="next_same_sender" target="files.xml#11674"/>
-					<ref type="prev_same_sender" target="files.xml#11669"/>
-					<ref type="next_same_addressee" target="files.xml#11677"/>
-					<ref type="prev_same_addressee" target="files.xml#11664"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11674"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11669"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11677"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11664"/>
+					<ref type="next_chronologically" target="file11674"/>
+					<ref type="prev_chronologically" target="file11672"/>
+					<ref type="next_correspondence" target="file11674"/>
+					<ref type="prev_correspondence" target="file11669"/>
+					<ref type="next_correspondence_request" target="file11674"/>
+					<ref type="prev_correspondence_request" target="file11669"/>
+					<ref type="next_correspondence_reaction" target="file11876"/>
+					<ref type="prev_correspondence_reaction" target="file11664"/>
+					<ref type="next_same_sender" target="file11674"/>
+					<ref type="prev_same_sender" target="file11669"/>
+					<ref type="next_same_addressee" target="file11677"/>
+					<ref type="prev_same_addressee" target="file11664"/>
+					<ref type="next_with_sender_as_addressee" target="file11674"/>
+					<ref type="prev_with_sender_as_addressee" target="file11669"/>
+					<ref type="next_with_addressee_as_sender" target="file11677"/>
+					<ref type="prev_with_addressee_as_sender" target="file11664"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -127,63 +135,63 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Qui has reddit<note xml:id="fn1" type="footnote" n="1">Gemeint ist vielleicht der im Brief vom folgenden Tag (unten <ref target="file#11674">Nr. 1631</ref>) erwähnte <persName ref="1886">Quirinus von Leiden</persName>.</note>, nunciavit esse restitutum te<note xml:id="fn2" type="footnote" n="2">Zur Erkrankung Bullingers und seiner Kollegen vgl. oben <ref target="file#11664">Nr. 1621</ref>, 4-13; 1626, 1-17.</note>.</s>
-					<s xml:lang="la" type="auto">Ago gratias domino et rogo, ut te servet deinceps incolumem semper.</s>
-					<s xml:lang="la" type="auto">Leonem<note xml:id="fn3" type="footnote" n="3"><persName ref="114">Leo Jud</persName>.</note> dixit nondum recte valere, quod doleo, cum nihil aliud possim.</s>
-					<s xml:lang="la" type="auto"><persName ref="165">Pellicanus</persName> ultimo dum scripsit<note xml:id="fn4" type="footnote" n="4"><persName ref="154">Myconius</persName> bezieht sich auf den Brief <persName ref="165">Pellikans</persName> vom 4. April (Zürich StA, E II 358, 132).</note>, nihil questus est; nunc audio et ipsum non bene se habere.</s>
-					<s xml:lang="la" type="auto"><persName ref="14">Theodori</persName> vicem<note xml:id="fn5" type="footnote" n="5">Zu <persName ref="14">Theodor Biblianders</persName> <persName ref="1886">Leiden</persName> vgl. die oben Anm. 2 und 4 genannten Briefe.</note> iniquissime fero, quod huius ętatis vir<note xml:id="fn6" type="footnote" n="6"><persName ref="14">Bibliander</persName> wurde 1505 oder 1506 geboren; s. Kurt Jakob <hi>Rüetschi,</hi> Bildgedichte Rudolf Gwalthers. Eine Quelle für Nachweis und Datierung von Zürcher Kunstwerken, in: Von Cyprian zu Walzenprägung. Streiflichter auf Zürcher Geist und Kultur der Bullingerzeit. Prof. Dr. Rudolf Schnyder zum 70. Geburtstag, hg. v. Hans Ulrich Bächtold, Zug 2001. -Studien und Texte zur Bullingerzeit 2, S. 164f.</note> doloribus vexatur haud decentibus.</s>
-					<s xml:lang="la" type="auto">Utinam ipse propter studia intempestiva et immensos labores sibiipsi non esset causa!</s>
-					<s xml:lang="la" type="auto">Dolet mihi, quod non patitur se admoneri.</s>
-					<s xml:lang="la" type="auto">Dominus misericordię sinum in omnes excutiat benigniter, quęso.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Qui has reddit<note xml:id="fn1" type="footnote" n="1">Gemeint ist vielleicht der im Brief vom folgenden Tag (unten <ref target="file11674">Nr. 1631</ref>) erwähnte <persName ref="person1886">Quirinus von Leiden</persName>.</note>, nunciavit esse restitutum te<note xml:id="fn2" type="footnote" n="2">Zur Erkrankung Bullingers und seiner Kollegen vgl. oben <ref target="file11664">Nr. 1621</ref>, 4-13; 1626, 1-17.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Ago gratias domino et rogo, ut te servet deinceps incolumem semper.</s>
+					<s n="4" xml:lang="la" type="auto">Leonem<note xml:id="fn3" type="footnote" n="3"><persName ref="person114">Leo Jud</persName>.</note> dixit nondum recte valere, quod doleo, cum nihil aliud possim.</s>
+					<s n="5" xml:lang="la" type="auto"><persName ref="person165">Pellicanus</persName> ultimo dum scripsit<note xml:id="fn4" type="footnote" n="4"><persName ref="person154">Myconius</persName> bezieht sich auf den Brief <persName ref="person165">Pellikans</persName> vom 4. April (Zürich StA, E II 358, 132).</note>, nihil questus est; nunc audio et ipsum non bene se habere.</s>
+					<s n="6" xml:lang="la" type="auto"><persName ref="person14">Theodori</persName> vicem<note xml:id="fn5" type="footnote" n="5">Zu <persName ref="person14">Theodor Biblianders</persName> Leiden vgl. die oben Anm. 2 und 4 genannten Briefe.</note> iniquissime fero, quod huius ętatis vir<note xml:id="fn6" type="footnote" n="6"><persName ref="person14">Bibliander</persName> wurde 1505 oder 1506 geboren; s. Kurt Jakob <hi>Rüetschi,</hi> Bildgedichte Rudolf Gwalthers. Eine Quelle für Nachweis und Datierung von Zürcher Kunstwerken, in: Von Cyprian zu Walzenprägung. Streiflichter auf Zürcher Geist und Kultur der Bullingerzeit. Prof. Dr. Rudolf Schnyder zum 70. Geburtstag, hg. v. Hans Ulrich Bächtold, Zug 2001. -Studien und Texte zur Bullingerzeit 2, S. 164f.</note> doloribus vexatur haud decentibus.</s>
+					<s n="7" xml:lang="la" type="auto">Utinam ipse propter studia intempestiva et immensos labores sibiipsi non esset causa!</s>
+					<s n="8" xml:lang="la" type="auto">Dolet mihi, quod non patitur se admoneri.</s>
+					<s n="9" xml:lang="la" type="auto">Dominus misericordię sinum in omnes excutiat benigniter, quęso.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Noctem ego duxi insomnem, quod rumore ad aures meas pervenerat, unde verebar vel dissensionem maiorem inter <placeName ref="196">Helvetios</placeName> orituram vel pensiones, quas vocamus, tandem redituras ad omnes.</s>
-					<s xml:lang="la" type="auto">Occasio hinc erat: Veniebat vir nobilis<note xml:id="fn7" type="footnote" n="7">Unbekannt.</note> ad me exponens se accepisse literas ab imperii primatibus scriptas ad <placeName ref="196">Helvetios</placeName><note xml:id="fn8" type="footnote" n="8">Vgl. unten Anm. 13.</note> plaenas comminationibus, nisi probarent se hac tempestate<pb type="edition" next="86"/> contra Turcam<note xml:id="fn9" type="footnote" n="9"><persName ref="2269">Sultan Suleiman</persName> I.</note> esse christianos.</s>
-					<s xml:lang="la" type="auto">Privatorum quorundam consultationem mox fuisse: Melius igitur erit, ut omnes redeamus ad Gallum<note xml:id="fn10" type="footnote" n="10"><persName ref="859">König Franz</persName> I. von <placeName ref="11">Frankreich</placeName>.</note>, postquam et is a Germanię proceribus gravissimis minis, nisi nomini christianissimi<note xml:id="fn11" type="footnote" n="11">Gemeint ist der Titel "rex christianissimus" (vgl. HBBW XI, S. 137, Anm. 10).</note> satisfaciat, petitus est<note xml:id="fn12" type="footnote" n="12">Das bereits Mitte März abgefasste Schreiben der Reichsstände an die vorzeitig abgereisten französischen Gesandten (RTA JR XII/2 871-873, <ref target="file#10197">Nr. 166</ref>) wurde <persName ref="859">König Franz</persName> I. mit Begleitschreiben vom 11. April (RTA JR XII/2 882, <ref target="file#10200">Nr. 169</ref>) zugestellt.</note>.</s>
-					<s xml:lang="la" type="auto">Hanc consultationem tractandam in his comitiis, quę nunc esse audio<note xml:id="fn13" type="footnote" n="13">Bereits an der <placeName ref="85">Badener</placeName> Tagsatzung vom 17. April hatte eine Gesandtschaft <persName ref="859">König</persName> Ferdinands und der in <placeName ref="1001">Speyer</placeName> versammelten Reichsstände die Eidgenossen aufgefordert, sich am geplanten Türkenfeldzug zu beteiligen (s. EA IV/1d 130f e5. k. 134f zu k; RTA JR XII/1 417. 428. 433). Das Ansinnen wurde an der Tagsatzung vom 15. Mai abgelehnt (s. EA IV/1d 143f g. 145 zu g).</note>.</s>
-					<s xml:lang="la" type="auto">Ego mox cogitavi: Si nostri persistent ut hactenus, reliqui vero consilium coeptum conabuntur persequi<note xml:id="fna" type="footnote" n="a"><hi>Korrigiert aus</hi> prosequi.</note>, actum est de concordię specie, quę ad tempus adparuit<note xml:id="fn14" type="footnote" n="14">Vgl. besonders HBBW X, S. 193f, 54-75.</note>.</s>
-					<s xml:lang="la" type="auto">Si consultatio placebit, periit evangelium, et nihil malorum non expectandum est.</s>
-					<s xml:lang="la" type="auto">Domino enim pugnante contra Turcam pro Germanis et victoria adepta, dabit insolentia consilium in nostrum exitium.</s>
+					<s n="10" xml:lang="la" type="auto">Noctem ego duxi insomnem, quod rumore ad aures meas pervenerat, unde verebar vel dissensionem maiorem inter <placeName ref="place196">Helvetios</placeName> orituram vel pensiones, quas vocamus, tandem redituras ad omnes.</s>
+					<s n="11" xml:lang="la" type="auto">Occasio hinc erat: Veniebat vir nobilis<note xml:id="fn7" type="footnote" n="7">Unbekannt.</note> ad me exponens se accepisse literas ab imperii primatibus scriptas ad <placeName ref="place196">Helvetios</placeName><note xml:id="fn8" type="footnote" n="8">Vgl. unten Anm. 13.</note> plaenas comminationibus, nisi probarent se hac tempestate<pb type="edition" next="86"/> contra Turcam<note xml:id="fn9" type="footnote" n="9">Sultan <persName ref="person2269">Suleiman I.</persName></note> esse christianos.</s>
+					<s n="12" xml:lang="la" type="auto">Privatorum quorundam consultationem mox fuisse: Melius igitur erit, ut omnes redeamus ad Gallum<note xml:id="fn10" type="footnote" n="10">König <persName ref="person859">Franz I.</persName> von <placeName ref="place11">Frankreich</placeName>.</note>, postquam et is a Germanię proceribus gravissimis minis, nisi nomini christianissimi<note xml:id="fn11" type="footnote" n="11">Gemeint ist der Titel "rex christianissimus" (vgl. HBBW XI, S. 137, Anm. 10).</note> satisfaciat, petitus est<note xml:id="fn12" type="footnote" n="12">Das bereits Mitte März abgefasste Schreiben der Reichsstände an die vorzeitig abgereisten französischen Gesandten (RTA JR XII/2 871-873, <ref target="file10197">Nr. 166</ref>) wurde König <persName ref="person859">Franz I.</persName> mit Begleitschreiben vom 11. April (RTA JR XII/2 882, <ref target="file10200">Nr. 169</ref>) zugestellt.</note>.</s>
+					<s n="13" xml:lang="la" type="auto">Hanc consultationem tractandam in his comitiis, quę nunc esse audio<note xml:id="fn13" type="footnote" n="13">Bereits an der <placeName ref="place85">Badener</placeName> Tagsatzung vom 17. April hatte eine Gesandtschaft König Ferdinands und der in <placeName ref="place1001">Speyer</placeName> versammelten Reichsstände die Eidgenossen aufgefordert, sich am geplanten Türkenfeldzug zu beteiligen (s. EA IV/1d 130f e5. k. 134f zu k; RTA JR XII/1 417. 428. 433). Das Ansinnen wurde an der Tagsatzung vom 15. Mai abgelehnt (s. EA IV/1d 143f g. 145 zu g).</note>.</s>
+					<s n="14" xml:lang="la" type="auto">Ego mox cogitavi: Si nostri persistent ut hactenus, reliqui vero consilium coeptum conabuntur persequi<note xml:id="fna" type="footnote" n="a"><hi>Korrigiert aus</hi> prosequi.</note>, actum est de concordię specie, quę ad tempus adparuit<note xml:id="fn14" type="footnote" n="14">Vgl. besonders HBBW X, S. 193f, 54-75.</note>.</s>
+					<s n="15" xml:lang="la" type="auto">Si consultatio placebit, periit evangelium, et nihil malorum non expectandum est.</s>
+					<s n="16" xml:lang="la" type="auto">Domino enim pugnante contra Turcam pro Germanis et victoria adepta, dabit insolentia consilium in nostrum exitium.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ita sum anxius factus, donec inciderunt comitia, ex quibus intelligenda primum erant, quę tantopere me cruciabant.</s>
-					<s xml:lang="la" type="auto">Arguebam itaque meipsum de intempestiva illa divexatione, postquam incertum esset, quod per rumorem ad me fuerat delatum.</s>
+					<s n="17" xml:lang="la" type="auto">Ita sum anxius factus, donec inciderunt comitia, ex quibus intelligenda primum erant, quę tantopere me cruciabant.</s>
+					<s n="18" xml:lang="la" type="auto">Arguebam itaque meipsum de intempestiva illa divexatione, postquam incertum esset, quod per rumorem ad me fuerat delatum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nihilominus tamen hunc meum cruciatum non potui te celare, tum ut intelligeres curam, quam habeo de patria, magis autem de evangelio, tum ut, si quid esset tibi cognitum illa de re, me faceres certiorem, sive consolareris sive cruciares amplius.</s>
-					<s xml:lang="la" type="auto">Mihi videtur cęsarianis, quicquid petant, facile responderi<note xml:id="fnb" type="footnote" n="b">-ri <hi>über der Zeile nachgetragen.</hi></note> posse, praesertim a christianis<note xml:id="fn15" type="footnote" n="15">D. h. den evangelischen.</note> <placeName ref="196">Helvetiis</placeName>.</s>
-					<s xml:lang="la" type="auto">At priusquam dicam, quid sit in<note xml:id="fnc" type="footnote" n="c">in <hi>über der Zeile nachgetragen.</hi></note> animo, audiam te.</s>
-					<s xml:lang="la" type="auto">Imo dicam, quod sentio: Simul proficisci non possumus, si propriis sumptibus esset proficiscendum.</s>
-					<s xml:lang="la" type="auto">Interea tamen quieti erimus et precibus pro virili occurremus Turcę.</s>
-					<s xml:lang="la" type="auto">Quodsi stipendium dare quis promitteret, facturi essemus, quod pios et fortes in domino decet.</s>
-					<s xml:lang="la" type="auto">Ergo si nemo dabit quicquam, quis nos coget?</s>
-					<s xml:lang="la" type="auto">Aut quis iniquius ferat, quod facere non possumus?</s>
-					<s xml:lang="la" type="auto">Verum interea Quinquepagici miserunt milites, audio, ad Gallum<note xml:id="fn16" type="footnote" n="16">Einige katholische Orte hatten die von <placeName ref="11">Frankreich</placeName> gewünschte Anwerbung zusätzlicher Truppen erlaubt oder zumindest toleriert, s. EA IV/1d 117 d.</note>.</s>
-					<s xml:lang="la" type="auto">Quid hic facies?</s>
-					<s xml:lang="la" type="auto">Revocabo eos domum inobedientibus minitans omnia dura et inferens contemptoribus.</s>
-					<s xml:lang="la" type="auto">Sed hoc fieri non posse facile persuadeor ingenia illorum considerans, quę ipse sic nosti, ut verbis non sit opus<note xml:id="fn17" type="footnote" n="17">Zwar drängten Zürich, <placeName ref="121">Bern</placeName> und <placeName ref="97">Basel</placeName> an der Tagsatzung auf Unterbindung des Reislaufens, doch konnte in dieser Frage keine Einigkeit erzielt werden (s. bes. EA IV/1d 131 I. 142f d. 144 h).</note>.</s>
-					<s xml:lang="la" type="auto">Pertinaciores erunt, postquam videbunt (et forsitan iampridem viderunt),<pb type="edition" next="87"/> qualiter Gallus literis cęsarianorum respondeat; circumferuntur enim Latine et Germanice<note xml:id="fn18" type="footnote" n="18"><persName ref="154">Myconius</persName> bezieht sich wohl auf das Rechtfertigungsschreiben des französischen <persName ref="859">Königs</persName> vom 14. April (RTA JR XII/2 883-885, <ref target="file#10201">Nr. 170</ref>), das er auch in seinem Brief an Vadian vom selben Tag kurz zusammenfasst (s. Vadian BW VI 126f). Der vom <persName ref="859">König</persName> veranlasste französisch-deutsche Druck dieser Schrift ist verschollen.</note> (quamvis mihi videre nondum licuerit).</s>
-					<s xml:lang="la" type="auto">Sic agit Gallus hic, ut apud fautores suos vicerit.</s>
-					<s xml:lang="la" type="auto">Curabo, si possibile, ut habeam.</s>
-					<s xml:lang="la" type="auto">In his angustiis equidem includor, et quis praeter dominum me liberabit?</s>
-					<s xml:lang="la" type="auto">Non est apud nos, cum quo verbum faciam.</s>
-					<s xml:lang="la" type="auto">Quicquid est igitur, premo et deum rogo, ut nos liberet a malo.</s>
-					<s xml:lang="la" type="auto">Boni consulas, quod humeris tuis hoc oneris simul ferendum impono; vix aliter ferre potui.</s>
+					<s n="19" xml:lang="la" type="auto">Nihilominus tamen hunc meum cruciatum non potui te celare, tum ut intelligeres curam, quam habeo de patria, magis autem de evangelio, tum ut, si quid esset tibi cognitum illa de re, me faceres certiorem, sive consolareris sive cruciares amplius.</s>
+					<s n="20" xml:lang="la" type="auto">Mihi videtur cęsarianis, quicquid petant, facile responderi<note xml:id="fnb" type="footnote" n="b">-ri <hi>über der Zeile nachgetragen.</hi></note> posse, praesertim a christianis<note xml:id="fn15" type="footnote" n="15">D. h. den evangelischen.</note> <placeName ref="place196">Helvetiis</placeName>.</s>
+					<s n="21" xml:lang="la" type="auto">At priusquam dicam, quid sit in<note xml:id="fnc" type="footnote" n="c">in <hi>über der Zeile nachgetragen.</hi></note> animo, audiam te.</s>
+					<s n="22" xml:lang="la" type="auto">Imo dicam, quod sentio: Simul proficisci non possumus, si propriis sumptibus esset proficiscendum.</s>
+					<s n="23" xml:lang="la" type="auto">Interea tamen quieti erimus et precibus pro virili occurremus Turcę.</s>
+					<s n="24" xml:lang="la" type="auto">Quodsi stipendium dare quis promitteret, facturi essemus, quod pios et fortes in domino decet.</s>
+					<s n="25" xml:lang="la" type="auto">Ergo si nemo dabit quicquam, quis nos coget?</s>
+					<s n="26" xml:lang="la" type="auto">Aut quis iniquius ferat, quod facere non possumus?</s>
+					<s n="27" xml:lang="la" type="auto">Verum interea Quinquepagici miserunt milites, audio, ad Gallum<note xml:id="fn16" type="footnote" n="16">Einige katholische Orte hatten die von <placeName ref="place11">Frankreich</placeName> gewünschte Anwerbung zusätzlicher Truppen erlaubt oder zumindest toleriert, s. EA IV/1d 117 d.</note>.</s>
+					<s n="28" xml:lang="la" type="auto">Quid hic facies?</s>
+					<s n="29" xml:lang="la" type="auto">Revocabo eos domum inobedientibus minitans omnia dura et inferens contemptoribus.</s>
+					<s n="30" xml:lang="la" type="auto">Sed hoc fieri non posse facile persuadeor ingenia illorum considerans, quę ipse sic nosti, ut verbis non sit opus<note xml:id="fn17" type="footnote" n="17">Zwar drängten Zürich, <placeName ref="place121">Bern</placeName> und <placeName ref="place97">Basel</placeName> an der Tagsatzung auf Unterbindung des Reislaufens, doch konnte in dieser Frage keine Einigkeit erzielt werden (s. bes. EA IV/1d 131 I. 142f d. 144 h).</note>.</s>
+					<s n="31" xml:lang="la" type="auto">Pertinaciores erunt, postquam videbunt (et forsitan iampridem viderunt),<pb type="edition" next="87"/> qualiter Gallus literis cęsarianorum respondeat; circumferuntur enim Latine et Germanice<note xml:id="fn18" type="footnote" n="18"><persName ref="person154">Myconius</persName> bezieht sich wohl auf das Rechtfertigungsschreiben des französischen Königs vom 14. April (RTA JR XII/2 883-885, <ref target="file10201">Nr. 170</ref>), das er auch in seinem Brief an Vadian vom selben Tag kurz zusammenfasst (s. Vadian BW VI 126f). Der vom König veranlasste französisch-deutsche Druck dieser Schrift ist verschollen.</note> (quamvis mihi videre nondum licuerit).</s>
+					<s n="32" xml:lang="la" type="auto">Sic agit Gallus hic, ut apud fautores suos vicerit.</s>
+					<s n="33" xml:lang="la" type="auto">Curabo, si possibile, ut habeam.</s>
+					<s n="34" xml:lang="la" type="auto">In his angustiis equidem includor, et quis praeter dominum me liberabit?</s>
+					<s n="35" xml:lang="la" type="auto">Non est apud nos, cum quo verbum faciam.</s>
+					<s n="36" xml:lang="la" type="auto">Quicquid est igitur, premo et deum rogo, ut nos liberet a malo.</s>
+					<s n="37" xml:lang="la" type="auto">Boni consulas, quod humeris tuis hoc oneris simul ferendum impono; vix aliter ferre potui.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale cum tuis in domino et <persName ref="14">Theodorum</persName> admoneto, quod facis, se sibi et nobis servet.</s>
-					<s xml:lang="la" type="auto">Salutabis nomine meo fratres omnes.</s>
+					<s n="38" xml:lang="la" type="auto">Vale cum tuis in domino et <persName ref="person14">Theodorum</persName> admoneto, quod facis, se sibi et nobis servet.</s>
+					<s n="39" xml:lang="la" type="auto">Salutabis nomine meo fratres omnes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileę</placeName>, 14. maii anno 1542.</s>
+					<s n="40" xml:lang="la" type="auto"><placeName ref="place97">Basileę</placeName>, 14. maii anno 1542.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Os. <persName ref="154">Myconius</persName> tuus.</s>
+					<s n="41" xml:lang="la" type="auto">Os. <persName ref="person154">Myconius</persName> tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinricho Bullingero doctissimo piissimoque, fratri in domino cum primis suspiciendo.</s>
+					<s n="42" xml:lang="la" type="auto">Domino Heinricho Bullingero doctissimo piissimoque, fratri in domino cum primis suspiciendo.</s>
 				</p>
 			</div>
 		</body>

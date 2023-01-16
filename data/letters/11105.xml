@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1062</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1062</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#28">Basel</settlement>
-						<institution>Universitätsbibliothek</institution>
-						<idno type="Autograph">Fr. Gr. II 9, Nr.81</idno>
-						<repository ref="archive#6">
+						<!--
+						<repository ref="archive6">
 							<name>Basel UB</name>
 							<ref target="https://ub.unibas.ch/de"/>
 						</repository>
+						<settlement ref="place28">Basel</settlement>
+						<institution>Universitätsbibliothek</institution>
+						-->
+						<repository ref="archive6"/>
+						<idno subtype="Autograph">Fr. Gr. II 9, Nr.81</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,20 +49,20 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								B[artholomäus] <persName ref="240">Westheimer</persName> wird
-								<persName ref="172">Platter</persName> den von Bullinger für die
-								<persName ref="1738">Nizolius</persName>-Ausgabe geschuldeten Gulden bezahlt haben. Möchte die
-								<persName ref="2142">Sedulius</persName>-Fragmente zurückhaben, falls sie keiner drucken will.
-								Schickt <persName ref="631">Walter von Châtillons</persName> Werk über
-								<persName ref="304">Alexander</persName> d. Gr.; sollte es gedruckt werden, wünscht sich Bullinger 4
+								B[artholomäus] <persName ref="person240">Westheimer</persName> wird
+								<persName ref="person172">Platter</persName> den von Bullinger für die
+								<persName ref="person1738">Nizolius</persName>-Ausgabe geschuldeten Gulden bezahlt haben. Möchte die
+								<persName ref="person2142">Sedulius</persName>-Fragmente zurückhaben, falls sie keiner drucken will.
+								Schickt <persName ref="person631">Walter von Châtillons</persName> Werk über
+								Alexander d. Gr.; sollte es gedruckt werden, wünscht sich Bullinger 4
 								Gratisexemplare für die Vermittler [der Handschrift]. Hat von
-								<persName ref="318">Johann <persName ref="318">Jakob</persName> Ammann</persName> erfahren, daß
-								<persName ref="172">Platter</persName> <persName ref="265">Zwinglis</persName> Neues Testament
-								sehen möchte; überläßt dies <persName ref="172">Platter</persName> zum privaten Gebrauch mit der
+								<persName ref="person318">Johann Jakob Ammann</persName> erfahren, daß
+								<persName ref="person172">Platter</persName> <persName ref="person265">Zwinglis</persName> Neues Testament
+								sehen möchte; überläßt dies <persName ref="person172">Platter</persName> zum privaten Gebrauch mit der
 								Bitte um baldige Rücksendung; denn es ist Bullinger teuer. Bittet um die Beschaffung des Werks von
-								<persName ref="575">Hermann von dem Busche</persName> über die alleinige Autorität der [heiligen]
-								Schriften; hat davon auch [<persName ref="74">Johannes</persName>]
-								<persName ref="74">Gast</persName> geschrieben.
+								<persName ref="person575">Hermann von dem Busche</persName> über die alleinige Autorität der [heiligen]
+								Schriften; hat davon auch [Johannes]
+								<persName ref="person74">Gast</persName> geschrieben.
 							</p>
 						</summary>
 					</msContents>
@@ -69,43 +72,46 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11105">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1537-11-03" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2458" cert="high">
+					<!--
+					<persName ref="person2458" cert="high">
 						<forename cert="high">Thomas</forename>
 						<surname cert="high">Platter</surname>
-						<addName type="main">Platter (Blater), Thomas</addName>
+						<persName type="main" ref="person8425>Platter (Blater), Thomas</addName>
 					</persName>
+					-->
+					<persName ref="person2458" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11106"/>
-					<ref type="prev_chronologically" target="files.xml#11104"/>
-					<ref type="next_correspondence" target="files.xml#11188"/>
-					<ref type="prev_correspondence" target="files.xml#10883"/>
+					<ref type="next_chronologically" target="file11106"/>
+					<ref type="prev_chronologically" target="file11104"/>
+					<ref type="next_correspondence" target="file11188"/>
+					<ref type="prev_correspondence" target="file10883"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#10883"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11188"/>
+					<ref type="prev_correspondence_request" target="file10883"/>
+					<ref type="next_correspondence_reaction" target="file11188"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11106"/>
-					<ref type="prev_same_sender" target="files.xml#11103"/>
-					<ref type="next_same_addressee" target="files.xml#11188"/>
+					<ref type="next_same_sender" target="file11106"/>
+					<ref type="prev_same_sender" target="file11103"/>
+					<ref type="next_same_addressee" target="file11188"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11106"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11103"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11188"/>
+					<ref type="next_with_sender_as_addressee" target="file11106"/>
+					<ref type="prev_with_sender_as_addressee" target="file11103"/>
+					<ref type="next_with_addressee_as_sender" target="file11188"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -121,49 +127,49 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Aureum florinum, quem tibi debeo, Blattere optime, pro <persName ref="1738">Mario Nizolio</persName><note xml:id="fn1" type="footnote" n="1"><persName ref="1738">Marius Nizolius</persName>, Observationes in M. T. Ciceronem ..., <placeName ref="97">Basel</placeName> (<persName ref="1471">Balthasar Lasius</persName> und <persName ref="172">Thomas Platter</persName>) 1536.</note> numeravit, opinor, tibi B. <persName ref="240">Westheymerus</persName>.</s>
-					<s xml:lang="la" type="auto">Ab hoc enim maximopere<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> maxiopere.</note> hoc petieram.</s>
-					<s xml:lang="la" type="auto">Quod si nondum recipisti, fac sciam, et ne dubites te brevi accepturum.</s>
+					<s n="2" xml:lang="la" type="auto">Aureum florinum, quem tibi debeo, Blattere optime, pro <persName ref="person1738">Mario Nizolio</persName><note xml:id="fn1" type="footnote" n="1"><persName ref="person1738">Marius Nizolius</persName>, Observationes in M. T. Ciceronem ..., <placeName ref="place97">Basel</placeName> (<persName ref="person1471">Balthasar Lasius</persName> und <persName ref="person172">Thomas Platter</persName>) 1536.</note> numeravit, opinor, tibi B. <persName ref="person240">Westheymerus</persName>.</s>
+					<s n="3" xml:lang="la" type="auto">Ab hoc enim maximopere<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> maxiopere.</note> hoc petieram.</s>
+					<s n="4" xml:lang="la" type="auto">Quod si nondum recipisti, fac sciam, et ne dubites te brevi accepturum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="2142">Sedulii</persName> vero fragmenta, quae tibi ante annum misi<note xml:id="fn2" type="footnote" n="2">Siehe HBBW VI, S. 330, 2-6, mit Anm. 1.</note>, remittes, nisi aliquando typis authorem venustissimum libeat excudere.</s>
+					<s n="5" xml:lang="la" type="auto"><persName ref="person2142">Sedulii</persName> vero fragmenta, quae tibi ante annum misi<note xml:id="fn2" type="footnote" n="2">Siehe HBBW VI, S. 330, 2-6, mit Anm. 1.</note>, remittes, nisi aliquando typis authorem venustissimum libeat excudere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">In praesenti mitto tibi Alexandri<note xml:id="fnb" type="footnote" n="b">Alexandri <hi>in Majuskeln.</hi></note> magni vitam heroico carmine descriptam, opera <persName ref="84">Gvalteri</persName> cuiusdam Insulani episcopi<note xml:id="fn3" type="footnote" n="3">Gemeint ist die gereimte Lebensbeschreibung <persName ref="304">Alexanders</persName> d. Gr. durch Gualterus de Castellione. Es handelt sich wohl um die kleinformatige, 75 Blätter umfassende Handschrift aus der Bibliothek des Großmünsterstiftes, die jetzt in Zürich ZB, Ms Car C 168, liegt. <persName ref="172">Platter</persName> gab sie an <persName ref="143">Gregor Mangolt</persName> weiter (vgl. <persName ref="84">Rudolf Gwalther</persName> an Bullinger, 26. April 1539, Zürich StA, E II 359, 2781). Moderne wissenschaftliche Edition: Galten de Castellione Alexandreis, hg. v. Marvin L[eonard] Colker, Padua 1978. - Zu <persName ref="631">Walter von Châtillon</persName> (Gualterus ab Insulis), aus <placeName ref="635">Lille</placeName>, der in der Kanzlei des englischen Königs, in <placeName ref="906">Rom</placeName> und in <placeName ref="11">Frankreich</placeName> tätig gewesen war, einem der bedeutendsten Dichter des 12. Jahrhunderts, vgl. Helga <hi>Philipp-Schauwecker,</hi> in: LThK<ptr target="#fn2" type="footnote" n="2"/> X 947f.</note>.</s>
-					<s xml:lang="la" type="auto">Quod si nous hunc excudere, bona fide remitte.</s>
-					<s xml:lang="la" type="auto">Si vero typis descripseris, age 4 mihi exemplaria donato, ut illis<note xml:id="fn4" type="footnote" n="4">Unbekannt.</note> dem, quorum opera authorem hunc accepi.</s>
-					<s xml:lang="la" type="auto">Desider[at autem]<note xml:id="fnc" type="footnote" n="c"><hi>Textverlust wegen Beschädigung des Papiers.</hi></note> lunam calcotypi huius incuria.</s>
-					<s xml:lang="la" type="auto">Habetis isthic apud vos plurimos, qui librum castigare possunt.</s>
+					<s n="6" xml:lang="la" type="auto">In praesenti mitto tibi Alexandri<note xml:id="fnb" type="footnote" n="b">Alexandri <hi>in Majuskeln.</hi></note> magni vitam heroico carmine descriptam, opera <persName ref="person84">Gvalteri</persName> cuiusdam Insulani episcopi<note xml:id="fn3" type="footnote" n="3">Gemeint ist die gereimte Lebensbeschreibung Alexanders d. Gr. durch Gualterus de Castellione. Es handelt sich wohl um die kleinformatige, 75 Blätter umfassende Handschrift aus der Bibliothek des Großmünsterstiftes, die jetzt in Zürich ZB, Ms Car C 168, liegt. <persName ref="person172">Platter</persName> gab sie an <persName ref="person143">Gregor Mangolt</persName> weiter (vgl. <persName ref="person84">Rudolf Gwalther</persName> an Bullinger, 26. April 1539, Zürich StA, E II 359, 2781). Moderne wissenschaftliche Edition: Galten de Castellione Alexandreis, hg. v. Marvin L[eonard] Colker, Padua 1978. - Zu <persName ref="person631">Walter von Châtillon</persName> (Gualterus ab Insulis), aus <placeName ref="place635">Lille</placeName>, der in der Kanzlei des englischen Königs, in <placeName ref="place906">Rom</placeName> und in <placeName ref="place11">Frankreich</placeName> tätig gewesen war, einem der bedeutendsten Dichter des 12. Jahrhunderts, vgl. Helga <hi>Philipp-Schauwecker,</hi> in: LThK<note type="sup">2</note> X 947f.</note>.</s>
+					<s n="7" xml:lang="la" type="auto">Quod si nous hunc excudere, bona fide remitte.</s>
+					<s n="8" xml:lang="la" type="auto">Si vero typis descripseris, age 4 mihi exemplaria donato, ut illis<note xml:id="fn4" type="footnote" n="4">Unbekannt.</note> dem, quorum opera authorem hunc accepi.</s>
+					<s n="9" xml:lang="la" type="auto">Desider[at autem]<note xml:id="fnc" type="footnote" n="c"><hi>Textverlust wegen Beschädigung des Papiers.</hi></note> lunam calcotypi huius incuria.</s>
+					<s n="10" xml:lang="la" type="auto">Habetis isthic apud vos plurimos, qui librum castigare possunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="292"/>Praeterea retulit ad me clarissimus vir<note xml:id="fnd" type="footnote" n="d"><hi>Erstes</hi> e <hi>vom Schreiber korrigiert aus</hi> con.</note>.</s>
-					<s xml:lang="la" type="auto"><persName ref="318">Ioannes Iacobus Ammianus</persName>, frater charissimus, quam efflictim cupias videre sanctę memoriae d. H[uldrychi] <persName ref="265">Zvinglii</persName> exemplum novi testamenti<note xml:id="fn5" type="footnote" n="5">Gemeint sind wohl die von <persName ref="265">Zwingli</persName> im Jahr 1517 aus dem Novum Instrumentum des <persName ref="779">Erasmus</persName> abgeschriebenen Paulusbriefe, die sich noch bis 1634 im Besitz von <persName ref="265">Zwinglis</persName> Nachfahren befanden (vgl. Z XII/I 10f). Standort heute: Zürich ZB, RP 15.</note>; quod interponas fidem tuam, brevi fore nobis restituendum, quodque nolis istud manibus committere formulariorum, sed ipse velis eo uti private et conferre cum aliis exemplis d. Hac ergo lege et fide meum tibi trado, non daturus alioqui, si scirem hunc in alias perventurum manus quam tuas.</s>
-					<s xml:lang="la" type="auto">Nec facile cuiquam alii credidissem.</s>
-					<s xml:lang="la" type="auto">Nam apud me in summo habetur praetio idque ob causas quamplurimas.</s>
-					<s xml:lang="la" type="auto">Proinde curabis, ut fidem tuam, de qua nihil ambigo in hac re, experiar.</s>
+					<s n="11" xml:lang="la" type="auto"><pb type="edition" next="292"/>Praeterea retulit ad me clarissimus vir<note xml:id="fnd" type="footnote" n="d"><hi>Erstes</hi> e <hi>vom Schreiber korrigiert aus</hi> con.</note>.</s>
+					<s n="12" xml:lang="la" type="auto"><persName ref="person318">Ioannes Iacobus Ammianus</persName>, frater charissimus, quam efflictim cupias videre sanctę memoriae d. H[uldrychi] <persName ref="person265">Zvinglii</persName> exemplum novi testamenti<note xml:id="fn5" type="footnote" n="5">Gemeint sind wohl die von <persName ref="person265">Zwingli</persName> im Jahr 1517 aus dem Novum Instrumentum des <persName ref="person779">Erasmus</persName> abgeschriebenen Paulusbriefe, die sich noch bis 1634 im Besitz von <persName ref="person265">Zwinglis</persName> Nachfahren befanden (vgl. Z XII/I 10f). Standort heute: Zürich ZB, RP 15.</note>; quod interponas fidem tuam, brevi fore nobis restituendum, quodque nolis istud manibus committere formulariorum, sed ipse velis eo uti private et conferre cum aliis exemplis d. Hac ergo lege et fide meum tibi trado, non daturus alioqui, si scirem hunc in alias perventurum manus quam tuas.</s>
+					<s n="13" xml:lang="la" type="auto">Nec facile cuiquam alii credidissem.</s>
+					<s n="14" xml:lang="la" type="auto">Nam apud me in summo habetur praetio idque ob causas quamplurimas.</s>
+					<s n="15" xml:lang="la" type="auto">Proinde curabis, ut fidem tuam, de qua nihil ambigo in hac re, experiar.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Scripsit <persName ref="575">Hermannus Buschius</persName><note xml:id="fn6" type="footnote" n="6"><persName ref="575">Hermann von dem Busche</persName> (Hermannus Buschius), aus <placeName ref="99">Westfalen</placeName>, geb. um 1468, gest. 1534, war nach langer Wanderzeit und Lehrtätigkeit in zahlreichen Städten <placeName ref="7">Deutschlands</placeName> - u. a. als Rektor der Lateinschule in <placeName ref="1185">Wesel</placeName> - ab 1527 Professor an der Universität <placeName ref="672">Marburg</placeName>. Der Humanist von dem Busche, von 1515 an mit <persName ref="779">Erasmus</persName> befreundet, trat als Schriftsteller - sein bekanntestes Werk, Valium humanitatis, erschien 1518 - und als Dichter in Erscheinung. Um die Zeit des <placeName ref="1214">Wormser</placeName> Reichstages 1521 wandte er sich dem Huttenkreis und danach zunehmend der lutherischen Bewegung zu. - Lit.: Hermann Joseph <hi>Liessem,</hi> <persName ref="575">Hermann von dem Busche</persName>. Sein Leben und seine Schriften, in: Programm des Kaiser-Wilhelm-Gymnasiums zu Köln 1884-1889. 1905-908, Reprint Nieuwkoop 1965; Ilse <hi>Guenther,</hi> in: Contemporaries I 233f; Peter <hi>Walter,</hi> in: LThK<ptr target="#fn3" type="footnote" n="3"/> II 819.</note> libros duos de singulari scripturarum authoritate<note xml:id="fn7" type="footnote" n="7"><persName ref="575">Hermann von dem Busche</persName>, De singulari auctoritate veteris et novi testamenti, sacrorum, ecclesiasticorumque testimoniorum libri II, <placeName ref="672">Marburg</placeName> (<persName ref="1924">Franz Rhode</persName>) 1529.</note>.</s>
-					<s xml:lang="la" type="auto">Hos ego mihi a te vellem comparari<note xml:id="fne" type="footnote" n="e"><hi>in der Vorlage</hi> compararari.</note>.</s>
-					<s xml:lang="la" type="auto">Praecium solverem bona fide.</s>
-					<s xml:lang="la" type="auto">De illis scripsi et <persName ref="74">Gastio</persName><note xml:id="fn8" type="footnote" n="8">Brief nicht erhalten.</note>.</s>
+					<s n="16" xml:lang="la" type="auto">Scripsit <persName ref="person575">Hermannus Buschius</persName><note xml:id="fn6" type="footnote" n="6"><persName ref="person575">Hermann von dem Busche</persName> (Hermannus Buschius), aus <placeName ref="place99">Westfalen</placeName>, geb. um 1468, gest. 1534, war nach langer Wanderzeit und Lehrtätigkeit in zahlreichen Städten <placeName ref="place7">Deutschlands</placeName> - u. a. als Rektor der Lateinschule in <placeName ref="place1185">Wesel</placeName> - ab 1527 Professor an der Universität <placeName ref="place672">Marburg</placeName>. Der Humanist von dem Busche, von 1515 an mit <persName ref="person779">Erasmus</persName> befreundet, trat als Schriftsteller - sein bekanntestes Werk, Valium humanitatis, erschien 1518 - und als Dichter in Erscheinung. Um die Zeit des <placeName ref="place1214">Wormser</placeName> Reichstages 1521 wandte er sich dem Huttenkreis und danach zunehmend der lutherischen Bewegung zu. - Lit.: Hermann Joseph <hi>Liessem,</hi> <persName ref="person575">Hermann von dem Busche</persName>. Sein Leben und seine Schriften, in: Programm des Kaiser-Wilhelm-Gymnasiums zu Köln 1884-1889. 1905-908, Reprint Nieuwkoop 1965; Ilse <hi>Guenther,</hi> in: Contemporaries I 233f; Peter <hi>Walter,</hi> in: LThK<note type="sup">3</note> II 819.</note> libros duos de singulari scripturarum authoritate<note xml:id="fn7" type="footnote" n="7"><persName ref="person575">Hermann von dem Busche</persName>, De singulari auctoritate veteris et novi testamenti, sacrorum, ecclesiasticorumque testimoniorum libri II, <placeName ref="place672">Marburg</placeName> (<persName ref="person1924">Franz Rhode</persName>) 1529.</note>.</s>
+					<s n="17" xml:lang="la" type="auto">Hos ego mihi a te vellem comparari<note xml:id="fne" type="footnote" n="e"><hi>in der Vorlage</hi> compararari.</note>.</s>
+					<s n="18" xml:lang="la" type="auto">Praecium solverem bona fide.</s>
+					<s n="19" xml:lang="la" type="auto">De illis scripsi et <persName ref="person74">Gastio</persName><note xml:id="fn8" type="footnote" n="8">Brief nicht erhalten.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale et me ama, optime Blattere.</s>
+					<s n="20" xml:lang="la" type="auto">Vale et me ama, optime Blattere.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">3. novembris 1537.</s>
+					<s n="21" xml:lang="de" type="auto">3. novembris 1537.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus tuus.</s>
+					<s n="22" xml:lang="la" type="auto">H. Bullingerus tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Industrio viro Thomae Blattero, typographo <placeName ref="97">Basileiensi</placeName>, amico singulari.</s>
-					<s xml:lang="de" type="auto">B[asel]<note xml:id="fnf" type="footnote" n="f"><hi>Bei der Entsiegelung beschädigt.</hi></note>.</s>
+					<s n="23" xml:lang="la" type="auto">Industrio viro Thomae Blattero, typographo <placeName ref="place97">Basileiensi</placeName>, amico singulari.</s>
+					<s n="24" xml:lang="de" type="auto">B[asel]<note xml:id="fnf" type="footnote" n="f"><hi>Bei der Entsiegelung beschädigt.</hi></note>.</s>
 				</p>
 			</div>
 		</body>

@@ -12,26 +12,29 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4227/121</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 369,41d</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 369,41d</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 369,38</idno>
+							<idno subtype="Autograph">E II 369,38</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -62,14 +65,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 87,101</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Verweis auf Burnets Druck</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 87,101</idno>
+						<idno subtype="Hinweis">Verweis auf Burnets Druck</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -80,14 +86,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 87,102</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Kopie</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 87,102</idno>
+						<idno subtype="Hinweis">Kopie</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -96,55 +105,54 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2898">
 				<correspAction type="sent">
-					<persName ref="person#2788" cert="low">
+					<!--
+					<persName ref="person2788" cert="low">
 						<forename cert="low">Francis</forename>
 						<surname cert="low">Russel</surname>
-						<addName type="main">Russel, 2nd Earl of Bedford Francis, Francis</addName>
+						<persName type="main" ref="person8026>Russel, 2nd Earl of Bedford Francis, Francis</addName>
 						<note type="Person">earl of Bedford // Alias: Franciscus Bedford</note>
-						<graphic type="portrait" url="portraits/8026_Bedford_Earl of.jpg"/>
+						<graphic type="portrait" url="portraits/8026_of_Bedford_Earl.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Earl_of_Bedford"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/139323724"/>
 					</persName>
-					<place source="#522" cert="low">
-						<settlement>Venedig</settlement>
-						<district>Veneto</district>
-						<country>Italien</country>
-						<geo>45.43713 12.33265</geo>
-					</place>
+					-->
+					<persName ref="person2788" cert="low"/>
+					<place source="place522" cert="low"/>
 					<date when="1556-04-26" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2899"/>
-					<ref type="prev_chronologically" target="files.xml#2897"/>
-					<ref type="next_correspondence" target="files.xml#3163"/>
+					<ref type="next_chronologically" target="file2899"/>
+					<ref type="prev_chronologically" target="file2897"/>
+					<ref type="next_correspondence" target="file3163"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#3163"/>
+					<ref type="next_correspondence_request" target="file3163"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#6901"/>
+					<ref type="next_correspondence_reaction" target="file6901"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#3163"/>
+					<ref type="next_same_sender" target="file3163"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#2902"/>
-					<ref type="prev_same_addressee" target="files.xml#2861"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3163"/>
+					<ref type="next_same_addressee" target="file2902"/>
+					<ref type="prev_same_addressee" target="file2861"/>
+					<ref type="next_with_sender_as_addressee" target="file3163"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2902"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2861"/>
-					<ref type="child" target="files.xml#3163"/>
-					<ref type="child" target="files.xml#3174"/>
+					<ref type="next_with_addressee_as_sender" target="file2902"/>
+					<ref type="prev_with_addressee_as_sender" target="file2861"/>
+					<ref type="child" target="file3163"/>
+					<ref type="child" target="file3174"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -153,30 +161,35 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="2898/Autograph/00 E_II_369__fol__41_d_1_r_.tif" n="1"/>
+		<graphic url="2898/Autograph/01 E_II_369__fol__41_d_1_v_.tif" n="2"/>
+		<graphic url="2898/Autograph/02 E_II_369__fol__41_d_2_r_.tif" n="3"/>
+		<graphic url="2898/Autograph/03 E_II_369__fol__41_d_2_v_.tif" n="4"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Cum meus in te amor singularis et perppetua observantia, qua te semper religionis causa sim prosequutus, tum tua erga me incredibilis humanitas multis modis a me perspecta, cum Tiguri fuerim, (Bullingere doctissime), fecerunt, ut hasce literas, animi erga te mei pignus certissimum, et veluti tabulas obsignatas mei in te perpetui amoris quas extare volui, huic adolescenti ad te darem: in quibus ita tibi gratias ago propter tuam humanitatem, ut etiam me tibi relaturum pollicear, si qua in re tibi unquam gratificari queam.</s>
-					<s xml:lang="la" type="auto">Atque haec ita a me dicta velim accipias, non sicut homines, qui hodie verborum quandam speciem inducunt et officiosam formam, magis id adeo ut videantur, quam quod esse velint id quod prae se ferant; sed potius ut ab animo syncero et prorsus tibi devinctissimo profecta certissimum tibi perusadeas.</s>
-					<s xml:lang="la" type="auto">Itaque si quid tua causa unquam facere possim (quod quam exiguum sit, non ignoro), illud tamen quantulumcunque erit, tuum erit totum.</s>
-					<s xml:lang="la" type="auto">Sed de hoc satis, et fortasse superque; presertim etiam quum adhuc mihi statutum sit (si alia non intervenerint, quae incoeptum iter alio avertere possint), ut vos obiter invisam, in Angliam reversuro, ubi id viva voce confirmaro, quod hic nudis verbis solummodo declarare possum.</s>
-					<s xml:lang="la" type="auto">Iuvenis, qui has literas perfert, mihi nunciavit de obitu Conradi Pellicani, (quem honoris causa nomino;) quod ut audivi, sane quam pro eo ac debui graviter molesteque tuli, non tam sua quam ecclesiae universae causa.</s>
-					<s xml:lang="la" type="auto">Is enim huius vitae curriculum in curis, vigiliis, assiduis studiis, literatis hominibus promovendis, gloriosissime confecit; ac denique moriendo, quemadmodum vivebat, ad meliorem vitam in coelum translatus est: at illa multum desiderabit plurimis nominibus virum absolutissimum.</s>
-					<s xml:lang="la" type="auto">Itaque, ut illius causa laetor, ita huius vicem non possum non magnopere dolere.</s>
-					<s xml:lang="la" type="auto">At huius moestitiae causam tui (ut spero et opto) praesentia facile mitigabit, quem ecclesiae bonisque omnibus diu incolumem deus optimus maximus per suam misericordiam esse velit.</s>
+					<s n="1" xml:lang="la" type="auto">Cum meus in te amor singularis et perppetua observantia, qua te semper religionis causa sim prosequutus, tum tua erga me incredibilis humanitas multis modis a me perspecta, cum Tiguri fuerim, (Bullingere doctissime), fecerunt, ut hasce literas, animi erga te mei pignus certissimum, et veluti tabulas obsignatas mei in te perpetui amoris quas extare volui, huic adolescenti ad te darem: in quibus ita tibi gratias ago propter tuam humanitatem, ut etiam me tibi relaturum pollicear, si qua in re tibi unquam gratificari queam.</s>
+					<s n="2" xml:lang="la" type="auto">Atque haec ita a me dicta velim accipias, non sicut homines, qui hodie verborum quandam speciem inducunt et officiosam formam, magis id adeo ut videantur, quam quod esse velint id quod prae se ferant; sed potius ut ab animo syncero et prorsus tibi devinctissimo profecta certissimum tibi perusadeas.</s>
+					<s n="3" xml:lang="la" type="auto">Itaque si quid tua causa unquam facere possim (quod quam exiguum sit, non ignoro), illud tamen quantulumcunque erit, tuum erit totum.</s>
+					<s n="4" xml:lang="la" type="auto">Sed de hoc satis, et fortasse superque; presertim etiam quum adhuc mihi statutum sit (si alia non intervenerint, quae incoeptum iter alio avertere possint), ut vos obiter invisam, in Angliam reversuro, ubi id viva voce confirmaro, quod hic nudis verbis solummodo declarare possum.</s>
+					<s n="5" xml:lang="la" type="auto">Iuvenis, qui has literas perfert, mihi nunciavit de obitu Conradi Pellicani, (quem honoris causa nomino;) quod ut audivi, sane quam pro eo ac debui graviter molesteque tuli, non tam sua quam ecclesiae universae causa.</s>
+					<s n="6" xml:lang="la" type="auto">Is enim huius vitae curriculum in curis, vigiliis, assiduis studiis, literatis hominibus promovendis, gloriosissime confecit; ac denique moriendo, quemadmodum vivebat, ad meliorem vitam in coelum translatus est: at illa multum desiderabit plurimis nominibus virum absolutissimum.</s>
+					<s n="7" xml:lang="la" type="auto">Itaque, ut illius causa laetor, ita huius vicem non possum non magnopere dolere.</s>
+					<s n="8" xml:lang="la" type="auto">At huius moestitiae causam tui (ut spero et opto) praesentia facile mitigabit, quem ecclesiae bonisque omnibus diu incolumem deus optimus maximus per suam misericordiam esse velit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Venetiis, 6to calend. maias, Tui nominis studiosissimus, F. Bedford.</s>
+					<s n="9" xml:lang="la" type="auto">Venetiis, 6to calend. maias, Tui nominis studiosissimus, F. Bedford.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Doctissimo viro domino Bullingero, sacrae theologiae professori eximio, Tiguri, tradantur l[iterae].</s>
+					<s n="10" xml:lang="la" type="auto">Doctissimo viro domino Bullingero, sacrae theologiae professori eximio, Tiguri, tradantur l[iterae].</s>
 				</p>
 				<p>
 					<note>[Darunter von Bullingers Hand:]</note>
-					<s xml:lang="la" type="auto">Illustrissimi principis d. Francisci Russelli, comitis Bedfordiensis, Angli, literae ex urbe Venetorum scriptae mense maio anno 1556.</s>
+					<s n="11" xml:lang="la" type="auto">Illustrissimi principis d. Francisci Russelli, comitis Bedfordiensis, Angli, literae ex urbe Venetorum scriptae mense maio anno 1556.</s>
 				</p>
 			</div>
 		</body>

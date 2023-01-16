@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3498</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 338,1501-1503</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 338,1501-1503</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,13 +54,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 81,88</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 81,88</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -71,64 +77,71 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2207">
 				<correspAction type="sent">
-					<persName ref="person#3972" cert="high">
+					<!--
+					<persName ref="person3972" cert="high">
 						<forename cert="high">Bapt. Johannes</forename>
 						<surname cert="high">Wisamer</surname>
-						<addName type="main">Wisamer, Baptist Johannes</addName>
+						<persName type="main" ref="person3971>Wisamer, Baptist Johannes</addName>
 					</persName>
-					<place source="#204" cert="high">
-						<settlement>Hamburg</settlement>
-						<district>Hamburg</district>
-						<country>Deutschland</country>
-						<geo>53.55073 9.99302</geo>
-					</place>
+					-->
+					<persName ref="person3972" cert="high"/>
+					<place source="place204" cert="high"/>
 					<date when="1554-02-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<persName ref="person#341" cert="high">
+					-->
+					<persName ref="person495" cert="high"/>
+					<!--
+					<persName ref="person341" cert="high">
 						<forename cert="high">Theodor</forename>
 						<surname cert="high">Bibliander</surname>
-						<addName type="main">Bibliander (Buchmann), Theodor</addName>
+						<persName type="main" ref="person8171>Bibliander (Buchmann), Theodor</addName>
 						<graphic type="portrait" url="portraits/341_Bibliander_Theodor.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Theodor_Bibliander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/116170638"/>
 					</persName>
-					<persName ref="person#1381" cert="high">
+					-->
+					<persName ref="person341" cert="high"/>
+					<!--
+					<persName ref="person1381" cert="high">
 						<forename cert="high">Rudolf</forename>
 						<surname cert="high">Gwalther</surname>
-						<addName type="main">Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
+						<persName type="main" ref="person8011>Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
 						<graphic type="portrait" url="portraits/1381_Gwalther_Rudolf.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Rudolf_Gwalther"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11854392X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11522600"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person1381" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2208"/>
-					<ref type="prev_chronologically" target="files.xml#2206"/>
+					<ref type="next_chronologically" target="file2208"/>
+					<ref type="prev_chronologically" target="file2206"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#1967"/>
+					<ref type="prev_correspondence" target="file1967"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#1967"/>
+					<ref type="prev_correspondence_request" target="file1967"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#2563"/>
-					<ref type="prev_same_sender" target="files.xml#1967"/>
-					<ref type="next_same_addressee" target="files.xml#4441"/>
-					<ref type="prev_same_addressee" target="files.xml#11892"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2563"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1967"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4441"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11892"/>
+					<ref type="next_same_sender" target="file2563"/>
+					<ref type="prev_same_sender" target="file1967"/>
+					<ref type="next_same_addressee" target="file4441"/>
+					<ref type="prev_same_addressee" target="file11892"/>
+					<ref type="next_with_sender_as_addressee" target="file2563"/>
+					<ref type="prev_with_sender_as_addressee" target="file1967"/>
+					<ref type="next_with_addressee_as_sender" target="file4441"/>
+					<ref type="prev_with_addressee_as_sender" target="file11892"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -149,20 +162,20 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Salvete.</s>
-					<s xml:lang="la" type="auto">Quas ad humanitates vestras dedi literas postridie Barptolomaei anno etc. 53., ornatissimi viri, interceptas timeo, non quod eximii aliquid in eis perierit, sed ne mihi accersant periculum.</s>
-					<s xml:lang="la" type="auto">Rescripserunt enim amici a Francofurdia vas quidem, in quo pannus Delphicus, secius, quam expediebat, post nundinas advenisse; de literis autem, quas ab Hamburga Antwerpiam (quod illo tempore apud nos periclitabantur peregrinantes) transmisi atque inde Francofurdiam deferendas curavi, prorsus nihil indicarunt; eas itaque nunc denuo mitto, quae tales fuerunt: "Non vos ignorare puto" etc. - "apud dominum commendate" (s. 1553 august 25.)</s>
-					<s xml:lang="la" type="auto">Quod vero in superioribus literis in dedicatione vestrarum operarum consultor fui non satis circumspectus, veniam deprecor contrarium expertus in Anglicana nunc exulante ecclesia, et quam sit verum illud Davidis: Nolite confidere in principibus [Ps 146, 3 (145, 2 Vulg.)] etc.</s>
-					<s xml:lang="la" type="auto">Quid vero nostrates theologi contra vos scripserint, vobis dudum innotuisse non dubito; quorum primas tenet Westphalus, non postremus infernalium svermerorum totique ferme ecclesiae suae invisus, cuius templum S. Katharinae nisi optimum haberet organum, nunquam pene eo rudiente non esset vacuum, cuius suorumque similium improbitas si quid meretur responsi aut festivi aut salsi, id totum remittatur ad procacem puerum illum appendicis dialogi, qui non erubescit, ita ut vestri libri nihil scommatum, nihil argutiarum aut quicquam omnino, quod non summam gravitatem vestra dignam ecclesia redoleant.</s>
-					<s xml:lang="la" type="auto">Puer vero ingenuus si quid liberius dicendo peccaverit, a praeceptore potest corrigi atque pro decoro personę dignari venia.</s>
-					<s xml:lang="la" type="auto">Dialogum vero si non vestro nomine placuerit, edere potestis nomine Arbogasti amici ignoti aut alias quoquo vobis usum fuerit nomine.</s>
-					<s xml:lang="la" type="auto">Valete.</s>
+					<s n="1" xml:lang="la" type="auto">Salvete.</s>
+					<s n="2" xml:lang="la" type="auto">Quas ad humanitates vestras dedi literas postridie Barptolomaei anno etc. 53., ornatissimi viri, interceptas timeo, non quod eximii aliquid in eis perierit, sed ne mihi accersant periculum.</s>
+					<s n="3" xml:lang="la" type="auto">Rescripserunt enim amici a Francofurdia vas quidem, in quo pannus Delphicus, secius, quam expediebat, post nundinas advenisse; de literis autem, quas ab Hamburga Antwerpiam (quod illo tempore apud nos periclitabantur peregrinantes) transmisi atque inde Francofurdiam deferendas curavi, prorsus nihil indicarunt; eas itaque nunc denuo mitto, quae tales fuerunt: "Non vos ignorare puto" etc. - "apud dominum commendate" (s. 1553 august 25.)</s>
+					<s n="4" xml:lang="la" type="auto">Quod vero in superioribus literis in dedicatione vestrarum operarum consultor fui non satis circumspectus, veniam deprecor contrarium expertus in Anglicana nunc exulante ecclesia, et quam sit verum illud Davidis: Nolite confidere in principibus [Ps 146, 3 (145, 2 Vulg.)] etc.</s>
+					<s n="5" xml:lang="la" type="auto">Quid vero nostrates theologi contra vos scripserint, vobis dudum innotuisse non dubito; quorum primas tenet Westphalus, non postremus infernalium svermerorum totique ferme ecclesiae suae invisus, cuius templum S. Katharinae nisi optimum haberet organum, nunquam pene eo rudiente non esset vacuum, cuius suorumque similium improbitas si quid meretur responsi aut festivi aut salsi, id totum remittatur ad procacem puerum illum appendicis dialogi, qui non erubescit, ita ut vestri libri nihil scommatum, nihil argutiarum aut quicquam omnino, quod non summam gravitatem vestra dignam ecclesia redoleant.</s>
+					<s n="6" xml:lang="la" type="auto">Puer vero ingenuus si quid liberius dicendo peccaverit, a praeceptore potest corrigi atque pro decoro personę dignari venia.</s>
+					<s n="7" xml:lang="la" type="auto">Dialogum vero si non vestro nomine placuerit, edere potestis nomine Arbogasti amici ignoti aut alias quoquo vobis usum fuerit nomine.</s>
+					<s n="8" xml:lang="la" type="auto">Valete.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex Hamburga 28. februarii anno etc. 54.</s>
-					<s xml:lang="la" type="auto">Vester et ecclesiae vestrae devotus cliens Baptista Iohannes Wisamerus subscripsit.</s>
-					<s xml:lang="la" type="auto">Potest et puer fingi in dialogo, tanquam ex Italia venerit, ubi nomen Baptistarum est valde frequens ac usitatum.</s>
-					<s xml:lang="la" type="auto">Praestantissimis piisque viris ac fidelibus Tigurinae ecclesiae pastoribus doctoribusque d. d. Heinricho Bulingero, Theodoro Bibliandro ac Rodolpho Gvaltero, dominis et patronis suis observandissimis.</s>
+					<s n="9" xml:lang="la" type="auto">Ex Hamburga 28. februarii anno etc. 54.</s>
+					<s n="10" xml:lang="la" type="auto">Vester et ecclesiae vestrae devotus cliens Baptista Iohannes Wisamerus subscripsit.</s>
+					<s n="11" xml:lang="la" type="auto">Potest et puer fingi in dialogo, tanquam ex Italia venerit, ubi nomen Baptistarum est valde frequens ac usitatum.</s>
+					<s n="12" xml:lang="la" type="auto">Praestantissimis piisque viris ac fidelibus Tigurinae ecclesiae pastoribus doctoribusque d. d. Heinricho Bulingero, Theodoro Bibliandro ac Rodolpho Gvaltero, dominis et patronis suis observandissimis.</s>
 				</p>
 			</div>
 		</body>

@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Beilage" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,371 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,371 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -28,13 +31,16 @@
 				</msDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#124">Dublin</settlement>
-						<institution>Trinity Collge</institution>
-						<idno type="Kopie">Ms 1158, fo 61 f.</idno>
-						<repository ref="archive#31">
+						<!--
+						<repository ref="archive31">
 							<name>Dublin TC</name>
 							<ref target="https://www.tcd.ie/library/"/>
 						</repository>
+						<settlement ref="place124">Dublin</settlement>
+						<institution>Trinity Collge</institution>
+						-->
+						<repository ref="archive31"/>
+						<idno subtype="Kopie">Ms 1158, fo 61 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -43,60 +49,61 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9642">
 				<correspAction type="sent">
-					<persName ref="person#1906" cert="high">
+					<!--
+					<persName ref="person1906" cert="high">
 						<forename cert="high">Scipio</forename>
 						<surname cert="high">Lentulo</surname>
-						<addName type="main">Lentolo (Lentulus), Scipione</addName>
+						<persName type="main" ref="person8089>Lentolo (Lentulus), Scipione</addName>
 						<note type="Person">Neue Zeitung aus Rom</note>
 					</persName>
-					<place source="#425" cert="high">
-						<settlement>Rom</settlement>
-						<district>Lazio</district>
-						<country>Italien</country>
-						<geo>41.88333 12.4833</geo>
-					</place>
+					-->
+					<persName ref="person1906" cert="high"/>
+					<place source="place425" cert="high"/>
 					<date when="1574-04-17" cert="low"><note>wahrscheinlich Beilage zu: 1574 Mai 13. (= ID 9669)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9643"/>
-					<ref type="prev_chronologically" target="files.xml#9641"/>
-					<ref type="next_correspondence" target="files.xml#9647"/>
-					<ref type="prev_correspondence" target="files.xml#9534"/>
-					<ref type="next_correspondence_request" target="files.xml#9647"/>
-					<ref type="prev_correspondence_request" target="files.xml#9344"/>
+					<ref type="next_chronologically" target="file9643"/>
+					<ref type="prev_chronologically" target="file9641"/>
+					<ref type="next_correspondence" target="file9647"/>
+					<ref type="prev_correspondence" target="file9534"/>
+					<ref type="next_correspondence_request" target="file9647"/>
+					<ref type="prev_correspondence_request" target="file9344"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#9534"/>
-					<ref type="next_same_sender" target="files.xml#9647"/>
-					<ref type="prev_same_sender" target="files.xml#9344"/>
-					<ref type="next_same_addressee" target="files.xml#9645"/>
-					<ref type="prev_same_addressee" target="files.xml#9639"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9647"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9344"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9645"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#9639"/>
-					<ref type="child" target="files.xml#9656"/>
-					<ref type="parent" target="files.xml#9669"/>
+					<ref type="prev_correspondence_reaction" target="file9534"/>
+					<ref type="next_same_sender" target="file9647"/>
+					<ref type="prev_same_sender" target="file9344"/>
+					<ref type="next_same_addressee" target="file9645"/>
+					<ref type="prev_same_addressee" target="file9639"/>
+					<ref type="next_with_sender_as_addressee" target="file9647"/>
+					<ref type="prev_with_sender_as_addressee" target="file9344"/>
+					<ref type="next_with_addressee_as_sender" target="file9645"/>
+					<ref type="prev_with_addressee_as_sender" target="file9639"/>
+					<ref type="child" target="file9656"/>
+					<ref type="parent" target="file9669"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="9642/Autograph/00 E_II_365__S__371_.tif" n="1"/>
+		<graphic url="9642/Autograph/01 E_II_365__S__372_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

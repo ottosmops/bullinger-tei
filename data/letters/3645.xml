@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,874 ff.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,874 ff.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -32,13 +35,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 92,154</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 92,154</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -52,59 +58,64 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3645">
 				<correspAction type="sent">
-					<persName ref="person#771" cert="high">
+					<!--
+					<persName ref="person771" cert="high">
 						<forename cert="high">Petrus</forename>
 						<surname cert="high">Dasypodius</surname>
-						<addName type="main">Dasypodius (Hasenfratz), Petrus</addName>
+						<persName type="main" ref="person8320>Dasypodius (Hasenfratz), Petrus</addName>
 						<graphic type="portrait" url="portraits/763_Dasypodius_Petrus.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Petrus_Dasypodius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118523856"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11421746"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person771" cert="high"/>
+					<place source="place492" cert="high"/>
 					<date when="1558-07-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3646"/>
-					<ref type="prev_chronologically" target="files.xml#3644"/>
-					<ref type="next_correspondence" target="files.xml#3782"/>
-					<ref type="prev_correspondence" target="files.xml#3084"/>
-					<ref type="next_correspondence_request" target="files.xml#3782"/>
-					<ref type="prev_correspondence_request" target="files.xml#3084"/>
+					<ref type="next_chronologically" target="file3646"/>
+					<ref type="prev_chronologically" target="file3644"/>
+					<ref type="next_correspondence" target="file3782"/>
+					<ref type="prev_correspondence" target="file3084"/>
+					<ref type="next_correspondence_request" target="file3782"/>
+					<ref type="prev_correspondence_request" target="file3084"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#3782"/>
-					<ref type="prev_same_sender" target="files.xml#3084"/>
-					<ref type="next_same_addressee" target="files.xml#3647"/>
-					<ref type="prev_same_addressee" target="files.xml#3642"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3782"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3084"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3647"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3642"/>
+					<ref type="next_same_sender" target="file3782"/>
+					<ref type="prev_same_sender" target="file3084"/>
+					<ref type="next_same_addressee" target="file3647"/>
+					<ref type="prev_same_addressee" target="file3642"/>
+					<ref type="next_with_sender_as_addressee" target="file3782"/>
+					<ref type="prev_with_sender_as_addressee" target="file3084"/>
+					<ref type="next_with_addressee_as_sender" target="file3647"/>
+					<ref type="prev_with_addressee_as_sender" target="file3642"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="3645/Autograph/00 E_II_356__S__874_.tif" n="1"/>
+		<graphic url="3645/Autograph/01 E_II_356__S__875_.tif" n="2"/>
+		<graphic url="3645/Autograph/02 E_II_356__S__876_.tif" n="3"/>
+		<graphic url="3645/Autograph/03 E_II_356__S__876_a_.tif" n="4"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

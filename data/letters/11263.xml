@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2002"/>
-				<idno type="ISBN">ISBN 3-290-17220-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1220</idno>
+				<idno subtype="ISBN">ISBN 3-290-17220-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1220</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 9</title>
+				<title subtype="publication">HBBW IX</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">9</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 364,55</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 364,55</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,18 +49,18 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Grüße. Hofft, daß <persName ref="59">Euander</persName> trotz Schwierigkeiten in
-								<placeName ref="544">Kempten</placeName> bleibt. <persName ref="28">Bucer</persName> ist aus
-								<placeName ref="26">Hessen</placeName> und <placeName ref="74">Sachsen</placeName>
-								zurück; Näheres ist noch nicht bekannt. <persName ref="263">Zwick</persName> hat den von
-								<persName ref="114">Leo</persName> [<persName ref="114">Jud</persName>] empfohlenen
-								<persName ref="20">Thomas</persName> [...] von <placeName ref="656">Löwen</placeName> noch
-								nicht gesehen. Daß es <persName ref="379">Michael</persName>
-								[<persName ref="379">Back</persName>?] in <placeName ref="35">Österreich</placeName> gut
-								geht, bestätigt auch [<persName ref="1425">Balthasar</persName> von]
-								<persName ref="1425">Kuenring</persName>, doch die Ausbreitung des Evangeliums wird durch die Fürsten
-								behindert. Bittet, die Nachricht über <persName ref="379">Michael</persName> auch
-								<persName ref="114">Leo</persName> [<persName ref="114">Jud</persName>] mitzuteilen.
+								Grüße. Hofft, daß <persName ref="person59">Euander</persName> trotz Schwierigkeiten in
+								<placeName ref="place544">Kempten</placeName> bleibt. <persName ref="person28">Bucer</persName> ist aus
+								<placeName ref="place26">Hessen</placeName> und <placeName ref="place74">Sachsen</placeName>
+								zurück; Näheres ist noch nicht bekannt. <persName ref="person263">Zwick</persName> hat den von
+								Leo [<persName ref="person114">Jud</persName>] empfohlenen
+								Thomas [...] von <placeName ref="place656">Löwen</placeName> noch
+								nicht gesehen. Daß es Michael
+								[<persName ref="person379">Back</persName>?] in <placeName ref="place35">Österreich</placeName> gut
+								geht, bestätigt auch [Balthasar von]
+								<persName ref="person1425">Kuenring</persName>, doch die Ausbreitung des Evangeliums wird durch die Fürsten
+								behindert. Bittet, die Nachricht über Michael auch
+								Leo [<persName ref="person114">Jud</persName>] mitzuteilen.
 							</p>
 						</summary>
 					</msContents>
@@ -67,45 +70,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11263">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<place source="#257" cert="low">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person4079" cert="high"/>
+					<place source="place257" cert="low"/>
 					<date when="1539-01-27" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11264"/>
-					<ref type="prev_chronologically" target="files.xml#11262"/>
-					<ref type="next_correspondence" target="files.xml#11289"/>
-					<ref type="prev_correspondence" target="files.xml#11257"/>
-					<ref type="next_correspondence_request" target="files.xml#11289"/>
-					<ref type="prev_correspondence_request" target="files.xml#11257"/>
+					<ref type="next_chronologically" target="file11264"/>
+					<ref type="prev_chronologically" target="file11262"/>
+					<ref type="next_correspondence" target="file11289"/>
+					<ref type="prev_correspondence" target="file11257"/>
+					<ref type="next_correspondence_request" target="file11289"/>
+					<ref type="prev_correspondence_request" target="file11257"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10990"/>
-					<ref type="next_same_sender" target="files.xml#11289"/>
-					<ref type="prev_same_sender" target="files.xml#11257"/>
-					<ref type="next_same_addressee" target="files.xml#11268"/>
-					<ref type="prev_same_addressee" target="files.xml#11259"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11289"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11257"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11268"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11259"/>
+					<ref type="prev_correspondence_reaction" target="file10990"/>
+					<ref type="next_same_sender" target="file11289"/>
+					<ref type="prev_same_sender" target="file11257"/>
+					<ref type="next_same_addressee" target="file11268"/>
+					<ref type="prev_same_addressee" target="file11259"/>
+					<ref type="next_with_sender_as_addressee" target="file11289"/>
+					<ref type="prev_with_sender_as_addressee" target="file11257"/>
+					<ref type="next_with_addressee_as_sender" target="file11268"/>
+					<ref type="prev_with_addressee_as_sender" target="file11259"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -119,42 +126,42 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salus et pax Christi.</s>
+					<s n="1" xml:lang="la" type="auto">Salus et pax Christi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nec mihi est, quod praeter salutationem ad te scribam<note xml:id="fn1" type="footnote" n="1">Bullingers Brief, auf den <persName ref="263">Zwick</persName> antwortet, ist verloren.</note>; est autem salutatio ista communis fratrum omnium, praecipue <persName ref="19">Ambrosii</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="19">Ambrosius Blarer</persName>.</note>, Cuͦnradi<note xml:id="fn3" type="footnote" n="3"><persName ref="264">Konrad Zwick</persName>.</note>, Thomae<note xml:id="fn4" type="footnote" n="4"><persName ref="20">Thomas Blarer</persName>.</note> consulis nostri.</s>
-					<s xml:lang="la" type="auto">Omnes cupiunt, ut valeas.</s>
+					<s n="2" xml:lang="la" type="auto">Nec mihi est, quod praeter salutationem ad te scribam<note xml:id="fn1" type="footnote" n="1">Bullingers Brief, auf den <persName ref="person263">Zwick</persName> antwortet, ist verloren.</note>; est autem salutatio ista communis fratrum omnium, praecipue <persName ref="person19">Ambrosii</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="person19">Ambrosius Blarer</persName>.</note>, Cuͦnradi<note xml:id="fn3" type="footnote" n="3"><persName ref="person264">Konrad Zwick</persName>.</note>, Thomae<note xml:id="fn4" type="footnote" n="4"><persName ref="person20">Thomas Blarer</persName>.</note> consulis nostri.</s>
+					<s n="3" xml:lang="la" type="auto">Omnes cupiunt, ut valeas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dudum audivi <persName ref="59">Euandrum</persName> non mansurum Campoduni; causam<note xml:id="fn5" type="footnote" n="5"><persName ref="59">Euanders</persName> Stellung in <placeName ref="544">Kempten</placeName> war durch den Streit der Pfarrer über die Abendmahlslehre bedroht; vgl. unten <ref target="file#11289">Nr. 1246</ref>, 15f mit Anm. 6.</note> non audivi nisi iam ex te, et facile crediderim bonum virum isthac permoveri, nec tamen vellem Campodunensem scolam illo privari.<pb type="edition" next="44"/></s>
+					<s n="4" xml:lang="la" type="auto">Dudum audivi <persName ref="person59">Euandrum</persName> non mansurum Campoduni; causam<note xml:id="fn5" type="footnote" n="5"><persName ref="person59">Euanders</persName> Stellung in <placeName ref="place544">Kempten</placeName> war durch den Streit der Pfarrer über die Abendmahlslehre bedroht; vgl. unten <ref target="file11289">Nr. 1246</ref>, 15f mit Anm. 6.</note> non audivi nisi iam ex te, et facile crediderim bonum virum isthac permoveri, nec tamen vellem Campodunensem scolam illo privari.<pb type="edition" next="44"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="28">Bucerus</persName> ex Hassia et Saxonia his diebus rediit<note xml:id="fn6" type="footnote" n="6">Vgl. oben <ref target="file#11260">Nr. 1217</ref>, 31f.</note>; quid novi adferat secum, non habemus etiamnum<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> etiam nun.</note>.</s>
+					<s n="5" xml:lang="la" type="auto"><persName ref="person28">Bucerus</persName> ex Hassia et Saxonia his diebus rediit<note xml:id="fn6" type="footnote" n="6">Vgl. oben <ref target="file11260">Nr. 1217</ref>, 31f.</note>; quid novi adferat secum, non habemus etiamnum<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> etiam nun.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="114">Leo</persName><note xml:id="fn7" type="footnote" n="7"><persName ref="114">Leo Jud</persName>.</note> nuper michi commendavit Thomam<note xml:id="fn8" type="footnote" n="8">Wohl ein Student; er hielt sich mehrere Monate bei <persName ref="263">Zwick</persName> auf und reiste anschließend nach Wittenberg, wo er sich im November 1540 immatrikulierte; s. Vadian BW V 564; Wittenberg, Matrikel I 188.</note> quendam <placeName ref="656">Lovaniensem</placeName>; sed nusquam vidi hominem.</s>
+					<s n="6" xml:lang="la" type="auto"><persName ref="person114">Leo</persName><note xml:id="fn7" type="footnote" n="7"><persName ref="person114">Leo Jud</persName>.</note> nuper michi commendavit Thomam<note xml:id="fn8" type="footnote" n="8">Wohl ein Student; er hielt sich mehrere Monate bei <persName ref="person263">Zwick</persName> auf und reiste anschließend nach Wittenberg, wo er sich im November 1540 immatrikulierte; s. Vadian BW V 564; Wittenberg, Matrikel I 188.</note> quendam <placeName ref="place656">Lovaniensem</placeName>; sed nusquam vidi hominem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De <persName ref="379">Michaele</persName><note xml:id="fn9" type="footnote" n="9">Gemeint ist vielleicht <persName ref="379">Michael Back</persName>; vgl. HBBW VI, S. 356f, Anm. 1.</note> meo nuper scripsi<note xml:id="fn10" type="footnote" n="10">Ein entsprechender Brief <persName ref="263">Zwicks</persName> ist nicht vorhanden.</note> illum in<note xml:id="fnb" type="footnote" n="b"><hi>vor</hi> in <hi>gestrichenes</hi> au.</note> <placeName ref="35">Austria</placeName> bene habere; interim etiam Khienringius<note xml:id="fn11" type="footnote" n="11"><persName ref="1425">Balthasar von Kuenring</persName>.</note> idem scribit<note xml:id="fn12" type="footnote" n="12">Auch dieser Brief ist nicht erhalten.</note>.</s>
-					<s xml:lang="la" type="auto">De profectu autem evangelii quid sperandum, cum reges et principes istud persequantur?</s>
-					<s xml:lang="la" type="auto">Sed quid dico, quasi vero regnum Christi non proficiat cęsaribus invitis!</s>
+					<s n="7" xml:lang="la" type="auto">De <persName ref="person379">Michaele</persName><note xml:id="fn9" type="footnote" n="9">Gemeint ist vielleicht <persName ref="person379">Michael Back</persName>; vgl. HBBW VI, S. 356f, Anm. 1.</note> meo nuper scripsi<note xml:id="fn10" type="footnote" n="10">Ein entsprechender Brief <persName ref="person263">Zwicks</persName> ist nicht vorhanden.</note> illum in<note xml:id="fnb" type="footnote" n="b"><hi>vor</hi> in <hi>gestrichenes</hi> au.</note> <placeName ref="place35">Austria</placeName> bene habere; interim etiam Khienringius<note xml:id="fn11" type="footnote" n="11"><persName ref="person1425">Balthasar von Kuenring</persName>.</note> idem scribit<note xml:id="fn12" type="footnote" n="12">Auch dieser Brief ist nicht erhalten.</note>.</s>
+					<s n="8" xml:lang="la" type="auto">De profectu autem evangelii quid sperandum, cum reges et principes istud persequantur?</s>
+					<s n="9" xml:lang="la" type="auto">Sed quid dico, quasi vero regnum Christi non proficiat cęsaribus invitis!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sed vale cum tota domo.</s>
-					<s xml:lang="la" type="auto">27. ianuarii 1539.</s>
+					<s n="10" xml:lang="la" type="auto">Sed vale cum tota domo.</s>
+					<s n="11" xml:lang="la" type="auto">27. ianuarii 1539.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Leonem salutabis multis modis meo nomine et fac eum certiorem eius, quod hic de <persName ref="379">Michaele</persName> scripsi.</s>
+					<s n="12" xml:lang="la" type="auto">Leonem salutabis multis modis meo nomine et fac eum certiorem eius, quod hic de <persName ref="person379">Michaele</persName> scripsi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Io. <persName ref="263">Zvick</persName>.</s>
+					<s n="13" xml:lang="la" type="auto">Tuus <persName ref="person263">Io. Zvick</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Hainricho Bullingero, fratrum charissimo.</s>
+					<s n="14" xml:lang="la" type="auto">Domino Hainricho Bullingero, fratrum charissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="15" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=851</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=851</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 441,141</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 441,141</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 441,136</idno>
+							<idno subtype="Autograph">E II 441,136</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -49,16 +52,16 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								<persName ref="133">Lieb</persName> und einige seiner Kollegen schicken
-								<persName ref="1430">Johannes Kym</persName>, Pfarrer in
-								<placeName ref="493">Homburg</placeName>, dem der Gerichtsherr
-								[<persName ref="1131">Niklaus <persName ref="1131">Friedrich</persName> von Heidenheim</persName>] Schwierigkeiten macht, mit der
-								Bitte uni Hilfe zu Bullinger; <persName ref="1430">Kym</persName> hat zur evangelischen Wahrheit gefunden, nachdem er einst als eifriger
-								Katholik gewirkt hatte. Pfarrer <persName ref="1430">Johannes</persName>
-								[<persName ref="1686">Muntprat</persName>?] in <placeName ref="643">Lommis</placeName>, der
+								<persName ref="person133">Lieb</persName> und einige seiner Kollegen schicken
+								<persName ref="person1430">Johannes Kym</persName>, Pfarrer in
+								<placeName ref="place493">Homburg</placeName>, dem der Gerichtsherr
+								[<persName ref="person1131">Niklaus Friedrich von Heidenheim</persName>] Schwierigkeiten macht, mit der
+								Bitte uni Hilfe zu Bullinger; <persName ref="person1430">Kym</persName> hat zur evangelischen Wahrheit gefunden, nachdem er einst als eifriger
+								Katholik gewirkt hatte. Pfarrer Johannes
+								[<persName ref="person1686">Muntprat</persName>?] in <placeName ref="place643">Lommis</placeName>, der
 								vom Zürcher Rat ein Empfehlungsschreiben an seine Kollatoren wünschte, ist nach
-								<placeName ref="891">Rheineck</placeName> berufen worden. Grüße, besonders auch von
-								<persName ref="123">Andreas Klinger</persName>, der den Brief siegelte.
+								<placeName ref="place891">Rheineck</placeName> berufen worden. Grüße, besonders auch von
+								<persName ref="person123">Andreas Klinger</persName>, der den Brief siegelte.
 							</p>
 						</summary>
 					</msContents>
@@ -68,54 +71,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10890">
 				<correspAction type="sent">
-					<persName ref="person#1867" cert="high">
+					<!--
+					<persName ref="person1867" cert="high">
 						<forename cert="high">Ulrich</forename>
 						<surname cert="high">Lieb</surname>
-						<addName type="main">Lieb (Amantius), Ulrich (Huldrych)</addName>
+						<persName type="main" ref="person8483>Lieb (Amantius), Ulrich (Huldrych)</addName>
 						<note type="Person">im Namen des Steckborner Kapitels</note>
 					</persName>
-					<orgName type="institution">
-						<name type="singular" ref="org#15" cert="high">Kapitel</name>
-						<place source="#487" cert="high">
-							<settlement>Steckborn</settlement>
-							<district>Thurgau</district>
-							<country>Schweiz</country>
-							<geo>47.669045 8.9822282</geo>
-						</place>
-					</orgName>
-					<place source="#487" cert="high">
-						<settlement>Steckborn</settlement>
-						<district>Thurgau</district>
-						<country>Schweiz</country>
-						<geo>47.669045 8.9822282</geo>
-					</place>
+					-->
+					<persName ref="person1867" cert="high"/>
+					<orgName ref="org29" role="Kapitel"/>"
+					<place source="place487" cert="high"/>
 					<date when="1536-06-21" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10891"/>
-					<ref type="prev_chronologically" target="files.xml#10889"/>
+					<ref type="next_chronologically" target="file10891"/>
+					<ref type="prev_chronologically" target="file10889"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#10732"/>
+					<ref type="prev_correspondence" target="file10732"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#10732"/>
+					<ref type="prev_correspondence_request" target="file10732"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11020"/>
-					<ref type="prev_same_sender" target="files.xml#10732"/>
-					<ref type="next_same_addressee" target="files.xml#10902"/>
-					<ref type="prev_same_addressee" target="files.xml#10883"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11020"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10732"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10902"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10883"/>
+					<ref type="next_same_sender" target="file11020"/>
+					<ref type="prev_same_sender" target="file10732"/>
+					<ref type="next_same_addressee" target="file10902"/>
+					<ref type="prev_same_addressee" target="file10883"/>
+					<ref type="next_with_sender_as_addressee" target="file11020"/>
+					<ref type="prev_with_sender_as_addressee" target="file10732"/>
+					<ref type="next_with_addressee_as_sender" target="file10902"/>
+					<ref type="prev_with_addressee_as_sender" target="file10883"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -124,36 +122,39 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="10890/Autograph/00 E_II_441__fol__141_r_.tif" n="1"/>
+		<graphic url="10890/Autograph/01 E_II_441__fol__141_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratia et pax tecum, prestantissime vir.</s>
+					<s n="1" xml:lang="la" type="auto">Gratia et pax tecum, prestantissime vir.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tua humanitate freti hactenus, quotquot evangelium predicamus in agro Thurgeo, si quid controversie acciderit, ad te tanquam ad asilum quoddam accurrimus deprecantes, ut pro tua prudentia singulari et consilia prestes et adminicula.</s>
-					<s xml:lang="la" type="auto">Unde et hic literarum lator <persName ref="1430">Ioannes</persName> Khym, Helvetie nostre alumnus, in Honberg parrochus<note xml:id="fn2" type="footnote" n="2"><persName ref="1430">Johannes Kym</persName>, offenbar einst eidgenössischer Stipendiat in <placeName ref="11">Frankreich</placeName>, wirkte als Pfarrer in <placeName ref="493">Homburg</placeName> (Kt. <placeName ref="87">Thurgau</placeName>). Er war von seinem Gerichtsherrn wegen landfriedenswidriger Äußerungen auf der Kanzel beim Landvogt verklagt worden; am 3. Juli 1536 stimmte er einem Vergleich zu, der ihn verpflichtete, die Pfarrei nach Ablauf eines Jahres zu verlassen. - Lit.: Sulzberger 88.</note>, homo omnes pu ac sinceri pastoris numeros supplens, per me et alios capituli nostri<note xml:id="fn3" type="footnote" n="3">des Steckborner Kapitels.</note> circumadiacentes fratres ad te delegatus est, quem benigne exaudias, tractes ac tibi comendatum habeas, comuni voto precamur omnes, qui omnem suam molestiam, instantiam, quam cum suo domicello<note xml:id="fn4" type="footnote" n="4">Gerichtsherr in <placeName ref="493">Homburg</placeName> war zu dieser Zeit <persName ref="1131">Niklaus Friedrich von Heidenheim</persName> zu Klingenberg (vgl. HBLS IV 117).</note> iam a renascentis evangelii tempore, presertim a concussa pacis nostre constitutione<note xml:id="fn5" type="footnote" n="5">Zum <placeName ref="534">Kappeler</placeName> Landfrieden von 1531 s. oben <ref target="file#10755">Nr. 717</ref>, Anm. 15.</note>, habuit, oretenus ipse ac cum instructione exponet.</s>
-					<s xml:lang="la" type="auto">Certe dum mundo Studebat et papatui sacerdotioso, ab omnibus vicinis nobilibus et prelatis minim in modum exosculatus erat, exercitatus eorum venationibus, tumultuationibus ac comessationibus; quamprimum autem exorta evangelice veritatis luce missam reliquit<note xml:id="fna" type="footnote" n="a"><hi>nach</hi> reliquit <hi>folgt irrtümlich noch ein</hi> missam.</note> ac nomen Christo dedit, tanto impensis oderunt, et non minim, cum Christo nulla sit Conventio cum Belial<note xml:id="fn6" type="footnote" n="6">Vgl. 2Kor 6, 15.</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Tua humanitate freti hactenus, quotquot evangelium predicamus in agro Thurgeo, si quid controversie acciderit, ad te tanquam ad asilum quoddam accurrimus deprecantes, ut pro tua prudentia singulari et consilia prestes et adminicula.</s>
+					<s n="3" xml:lang="la" type="auto">Unde et hic literarum lator <persName ref="person1430">Ioannes</persName> Khym, Helvetie nostre alumnus, in Honberg parrochus<note xml:id="fn2" type="footnote" n="2"><persName ref="person1430">Johannes Kym</persName>, offenbar einst eidgenössischer Stipendiat in <placeName ref="place11">Frankreich</placeName>, wirkte als Pfarrer in <placeName ref="place493">Homburg</placeName> (Kt. <placeName ref="place87">Thurgau</placeName>). Er war von seinem Gerichtsherrn wegen landfriedenswidriger Äußerungen auf der Kanzel beim Landvogt verklagt worden; am 3. Juli 1536 stimmte er einem Vergleich zu, der ihn verpflichtete, die Pfarrei nach Ablauf eines Jahres zu verlassen. - Lit.: Sulzberger 88.</note>, homo omnes pu ac sinceri pastoris numeros supplens, per me et alios capituli nostri<note xml:id="fn3" type="footnote" n="3">des Steckborner Kapitels.</note> circumadiacentes fratres ad te delegatus est, quem benigne exaudias, tractes ac tibi comendatum habeas, comuni voto precamur omnes, qui omnem suam molestiam, instantiam, quam cum suo domicello<note xml:id="fn4" type="footnote" n="4">Gerichtsherr in <placeName ref="place493">Homburg</placeName> war zu dieser Zeit <persName ref="person1131">Niklaus Friedrich von Heidenheim</persName> zu Klingenberg (vgl. HBLS IV 117).</note> iam a renascentis evangelii tempore, presertim a concussa pacis nostre constitutione<note xml:id="fn5" type="footnote" n="5">Zum <placeName ref="place534">Kappeler</placeName> Landfrieden von 1531 s. oben <ref target="file10755">Nr. 717</ref>, Anm. 15.</note>, habuit, oretenus ipse ac cum instructione exponet.</s>
+					<s n="4" xml:lang="la" type="auto">Certe dum mundo Studebat et papatui sacerdotioso, ab omnibus vicinis nobilibus et prelatis minim in modum exosculatus erat, exercitatus eorum venationibus, tumultuationibus ac comessationibus; quamprimum autem exorta evangelice veritatis luce missam reliquit<note xml:id="fna" type="footnote" n="a"><hi>nach</hi> reliquit <hi>folgt irrtümlich noch ein</hi> missam.</note> ac nomen Christo dedit, tanto impensis oderunt, et non minim, cum Christo nulla sit Conventio cum Belial<note xml:id="fn6" type="footnote" n="6">Vgl. 2Kor 6, 15.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ceterum <persName ref="1430">Ioannes</persName><note xml:id="fn7" type="footnote" n="7">Wahrscheinlich <persName ref="1686">Johannes Muntprat</persName> (s. Sulzberger 64).</note>, frater ex <placeName ref="643">Lommis</placeName>, qui peracta sinodo<note xml:id="fn8" type="footnote" n="8">Die Zürcher Frühjahrssynode hatte am 9. Mai 1536 stattgefunden.</note> te obtestatus est pro literis comendaticiis a senatu vestro ad collatores suos, qui vocantur "die<pb type="edition" next="343"/>Montbraten"<note xml:id="fn9" type="footnote" n="9">Die Muntprat von Spiegelberg (vgl. HBLS V 208). Ob eine Empfehlung erteilt wurde, ist nicht bekannt.</note>, ulterius non indiget; vocatus enim est ad Rineck<note xml:id="fn10" type="footnote" n="10"><placeName ref="891">Rheineck</placeName> (Kt. St. Gallen).</note>, egregium Christi ministerium, per meam et <persName ref="156">Martini</persName> Mötili inductionem.</s>
+					<s n="5" xml:lang="la" type="auto">Ceterum Ioannes<note xml:id="fn7" type="footnote" n="7">Wahrscheinlich <persName ref="person1686">Johannes Muntprat</persName> (s. Sulzberger 64).</note>, frater ex <placeName ref="place643">Lommis</placeName>, qui peracta sinodo<note xml:id="fn8" type="footnote" n="8">Die Zürcher Frühjahrssynode hatte am 9. Mai 1536 stattgefunden.</note> te obtestatus est pro literis comendaticiis a senatu vestro ad collatores suos, qui vocantur "die<pb type="edition" next="343"/>Montbraten"<note xml:id="fn9" type="footnote" n="9">Die Muntprat von Spiegelberg (vgl. HBLS V 208). Ob eine Empfehlung erteilt wurde, ist nicht bekannt.</note>, ulterius non indiget; vocatus enim est ad Rineck<note xml:id="fn10" type="footnote" n="10"><placeName ref="place891">Rheineck</placeName> (Kt. St. Gallen).</note>, egregium Christi ministerium, per meam et <persName ref="person156">Martini</persName> Mötili inductionem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="6" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">21. iunii.</s>
+					<s n="7" xml:lang="la" type="auto">21. iunii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salutant te omnes fratres ac te nobis et ecclesie tue diu incolumem precantur, precipue autem <persName ref="123">Andreas</persName> Clinger in Mulhaim<note xml:id="fn11" type="footnote" n="11"><persName ref="123">Andreas Klinger</persName> (Klingler), der den vorliegenden Brief - wohl als Dekan des Steckborner Kapitels - siegelte, führte 1528 in <placeName ref="739">Müllheim</placeName> (Kt. Thurgau) die Reformation durch. 1530 wurde sein kärgliches Einkommen erhöht, und der Lehensherr, Abt <persName ref="1390">Markus von Knöringen</persName>, errichtete ein neues Pfarrhaus, das allerdings im Jahre 1541 abbrannte. Ein Beschluß des Landgerichtes im Jahre 1532, Klinger abzusetzen, wurde nicht ausgeführt. 1553 tauschte er sein Pfarramt mit demjenigen <persName ref="1570">Georg Manharts</persName> in <placeName ref="1104">Tägerwilen</placeName> (Kt. Thurgau). Klinger war 1539 Mitunterzeichner eines Briefes an Bullinger. - Lit.: Zürich StA, A 314, Nr.3, 17r.; RsQ I/1 2956. 2979. 3274; <hi>Knittel,</hi> Reformation 230f; <hi>Knittel,</hi> Kirche 48. 129; Sulzberger 93. 148. keinen Niederschlag (vgl. Zürich StA, E II 1, 201-211).</note>, qui nostro omnium nomine pro functione sua literas has capituli sigillo obsignavit.</s>
+					<s n="8" xml:lang="la" type="auto">Salutant te omnes fratres ac te nobis et ecclesie tue diu incolumem precantur, precipue autem <persName ref="person123">Andreas Clinger</persName> in Mulhaim<note xml:id="fn11" type="footnote" n="11"><persName ref="person123">Andreas Klinger</persName> (Klingler), der den vorliegenden Brief - wohl als Dekan des Steckborner Kapitels - siegelte, führte 1528 in <placeName ref="place739">Müllheim</placeName> (Kt. Thurgau) die Reformation durch. 1530 wurde sein kärgliches Einkommen erhöht, und der Lehensherr, Abt <persName ref="person1390">Markus von Knöringen</persName>, errichtete ein neues Pfarrhaus, das allerdings im Jahre 1541 abbrannte. Ein Beschluß des Landgerichtes im Jahre 1532, Klinger abzusetzen, wurde nicht ausgeführt. 1553 tauschte er sein Pfarramt mit demjenigen <persName ref="person1570">Georg Manharts</persName> in <placeName ref="place1104">Tägerwilen</placeName> (Kt. Thurgau). Klinger war 1539 Mitunterzeichner eines Briefes an Bullinger. - Lit.: Zürich StA, A 314, Nr.3, 17r.; RsQ I/1 2956. 2979. 3274; <hi>Knittel,</hi> Reformation 230f; <hi>Knittel,</hi> Kirche 48. 129; Sulzberger 93. 148. keinen Niederschlag (vgl. Zürich StA, E II 1, 201-211).</note>, qui nostro omnium nomine pro functione sua literas has capituli sigillo obsignavit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Huldrichus <persName ref="133">Amantius</persName> tui observantissimus in Wigeltingen.</s>
+					<s n="9" xml:lang="la" type="auto"><persName ref="person133">Huldrichus Amantius</persName> tui observantissimus in Wigeltingen.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo ecclesie Turicensis pastori M. Hainricho Bullingero, domino suo ac patrono observandissimo.</s>
+					<s n="10" xml:lang="la" type="auto">Clarissimo ecclesie Turicensis pastori M. Hainricho Bullingero, domino suo ac patrono observandissimo.</s>
 				</p>
 			</div>
 		</body>

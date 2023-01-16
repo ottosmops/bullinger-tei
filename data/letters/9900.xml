@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms S 131,200</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Undatierter Entwurf Bullingers; ohne Abs., ohne Empf.</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms S 131,200</idno>
+						<idno subtype="Hinweis">Undatierter Entwurf Bullingers; ohne Abs., ohne Empf.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -37,15 +40,18 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#441">Schaffhausen</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">Abschriften 4/6, p. 496-501</idno>
-						<repository ref="archive#76">
+						<!--
+						<repository ref="archive76">
 							<name>Schaffhausen StA</name>
-							<note type="Xeroxkopie">IRG</note>
-							<note type="Hinweis">mit Datum, Absender und Adresse</note>
 							<ref target="https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Regierung/Staatskanzlei/Staatsarchiv-3936-DE.html"/>
 						</repository>
+						<settlement ref="place441">Schaffhausen</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive76"/>
+						<idno subtype="Kopie">Abschriften 4/6, p. 496-501</idno>
+						<idno subtype="Xeroxkopie">IRG</idno>
+						<idno subtype="Hinweis">mit Datum, Absender und Adresse</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -57,13 +63,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#441">Schaffhausen</settlement>
-						<institution>Stadtbibliothek</institution>
-						<idno type="Kopie">Min. 127, 31-36</idno>
-						<repository ref="archive#77">
+						<!--
+						<repository ref="archive77">
 							<name>Schaffhausen StB</name>
 							<ref target="https://bibliotheken-schaffhausen.ch/digitale-bibliothek/online-katalog/"/>
 						</repository>
+						<settlement ref="place441">Schaffhausen</settlement>
+						<institution>Stadtbibliothek</institution>
+						-->
+						<repository ref="archive77"/>
+						<idno subtype="Kopie">Min. 127, 31-36</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -72,58 +81,34 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9900">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="low">Geistliche</name>
-						<place source="#587" cert="low">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date min="1575-02-22" max="1575-02-25" cert="low"/>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="low"/>
+					<date notBefore="1575-02-22" notAfter="1575-02-25" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#40" cert="low">Kirchenräte</name>
-						<place source="#210" cert="low">
-							<settlement>Heidelberg</settlement>
-							<district>Baden-Württemberg</district>
-							<country>Deutschland</country>
-							<geo>49.41222 8.71</geo>
-						</place>
-					</roleName>
+					<!--
 					<note type="Adresse">Kirchenräte der Niedern Kur-Pfalz, Heidelberg</note>
-					<place source="#210" cert="low">
-						<settlement>Heidelberg</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>49.41222 8.71</geo>
-					</place>
+					-->
+					<personGrp ref="role0" role="Kirchenräte"/>
+					<place source="place210" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9901"/>
-					<ref type="prev_chronologically" target="files.xml#9899"/>
+					<ref type="next_chronologically" target="file9901"/>
+					<ref type="prev_chronologically" target="file9899"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#9981"/>
-					<ref type="prev_same_sender" target="files.xml#9514"/>
+					<ref type="next_same_sender" target="file9981"/>
+					<ref type="prev_same_sender" target="file9514"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#9871"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9981"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9514"/>
+					<ref type="prev_same_addressee" target="file9871"/>
+					<ref type="next_with_sender_as_addressee" target="file9981"/>
+					<ref type="prev_with_sender_as_addressee" target="file9514"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#9871"/>
+					<ref type="prev_with_addressee_as_sender" target="file9871"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

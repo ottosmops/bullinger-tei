@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2000"/>
-				<idno type="ISBN">ISBN 3-290-17211-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1142</idno>
+				<idno subtype="ISBN">ISBN 3-290-17211-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1142</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 8</title>
+				<title subtype="publication">HBBW VIII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">8</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 346,104</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 346,104</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,9 +49,9 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Es gibt wenig zu schreiben, da <persName ref="28">Bucer</persName> sich ruhig hält;
-								<persName ref="263">Zwick</persName> hofft, daß der Streit nicht erneut ausbricht. Empfiehlt einen
-								jüdischen Konvertiten [<persName ref="276">Michael Adam</persName>]. Grüße.
+								Es gibt wenig zu schreiben, da <persName ref="person28">Bucer</persName> sich ruhig hält;
+								<persName ref="person263">Zwick</persName> hofft, daß der Streit nicht erneut ausbricht. Empfiehlt einen
+								jüdischen Konvertiten [<persName ref="person276">Michael Adam</persName>]. Grüße.
 							</p>
 						</summary>
 					</msContents>
@@ -58,45 +61,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11185">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<place source="#257" cert="low">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person4079" cert="high"/>
+					<place source="place257" cert="low"/>
 					<date when="1538-07-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11186"/>
-					<ref type="prev_chronologically" target="files.xml#11190"/>
-					<ref type="next_correspondence" target="files.xml#11191"/>
-					<ref type="prev_correspondence" target="files.xml#11184"/>
-					<ref type="next_correspondence_request" target="files.xml#11191"/>
-					<ref type="prev_correspondence_request" target="files.xml#11184"/>
+					<ref type="next_chronologically" target="file11186"/>
+					<ref type="prev_chronologically" target="file11190"/>
+					<ref type="next_correspondence" target="file11191"/>
+					<ref type="prev_correspondence" target="file11184"/>
+					<ref type="next_correspondence_request" target="file11191"/>
+					<ref type="prev_correspondence_request" target="file11184"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10990"/>
-					<ref type="next_same_sender" target="files.xml#11191"/>
-					<ref type="prev_same_sender" target="files.xml#11184"/>
-					<ref type="next_same_addressee" target="files.xml#11193"/>
-					<ref type="prev_same_addressee" target="files.xml#11181"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11191"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11184"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11193"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11181"/>
+					<ref type="prev_correspondence_reaction" target="file10990"/>
+					<ref type="next_same_sender" target="file11191"/>
+					<ref type="prev_same_sender" target="file11184"/>
+					<ref type="next_same_addressee" target="file11193"/>
+					<ref type="prev_same_addressee" target="file11181"/>
+					<ref type="next_with_sender_as_addressee" target="file11191"/>
+					<ref type="prev_with_sender_as_addressee" target="file11184"/>
+					<ref type="next_with_addressee_as_sender" target="file11193"/>
+					<ref type="prev_with_addressee_as_sender" target="file11181"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -113,26 +120,26 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salus.</s>
+					<s n="1" xml:lang="la" type="auto">Salus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Video nullam nobis occasionem superesse scribendi invicem, ubi <persName ref="28">Bucerus</persName> cepit non nihil quiescere, et felix est certe istud silentium.</s>
-					<s xml:lang="la" type="auto">Utinam nulla occasione in miseras contentiones istas reincidamus!</s>
+					<s n="2" xml:lang="la" type="auto">Video nullam nobis occasionem superesse scribendi invicem, ubi <persName ref="person28">Bucerus</persName> cepit non nihil quiescere, et felix est certe istud silentium.</s>
+					<s n="3" xml:lang="la" type="auto">Utinam nulla occasione in miseras contentiones istas reincidamus!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ego vero nihil aliud habeo, quod scribam, nisi quod de Hebręo<note xml:id="fn1" type="footnote" n="1"><persName ref="276">Michael Adam</persName>, ein jüdischer Konvertit aus <placeName ref="569">Krakau</placeName>, gest. nach 1549, kam im Juli 1538 aus <placeName ref="1049">Straßburg</placeName> über <placeName ref="565">Konstanz</placeName> in Pellikans Haus. Da seine Berufung an die von <persName ref="263">Zwick</persName> in <placeName ref="565">Konstanz</placeName> geplante Schule scheiterte, blieb er in Zürich, unterstützte Pellikan bei seinen Talmudstudien und half <persName ref="114">Jud</persName> bei der Revision der deutschen Bibel. 1539 heiratete er eine Zürcherin; er soll auch das Bürgerrecht erhalten haben, im Bürgerbuch fehlt jedoch sein Name. 1540 besuchte er <persName ref="810">Paul Fagius</persName> in <placeName ref="520">Isny</placeName>, mit dem er schon länger bekannt war; mit ihm gab er 1543/44 in <placeName ref="565">Konstanz</placeName> eine jüdisch-deutsche Übersetzung von Teilen der hebräischen Bibel heraus. In Zürich erschienen 1545/46 zwei von ihm aus dem Hebräischen ins Jüdisch-Deutsche übersetzte Werke (BZD C 352f). 1548 teilt John Burcher aus <placeName ref="1049">Straßburg</placeName> Bullinger mit, daß Adam geliehenes Geld verspielt habe (s. Epistolae Tigurinae bzw. Original Letters, <ref target="file#10328">Nr. 297</ref>), und 1549 mußte er in Basel wegen versuchten Diebstahls Urfehde schwören (s. Basel StA, Ratsbücher O 8, 122v.). Noch 1551 erwähnt Bibliander eine mit Adam getroffene Abmachung, doch dürfte diese schon einige Zeit zurückgelegen haben ("pactus fuerat"; vgl. Blarer BW III 136). - Lit.: Christoph <hi>Zürcher,</hi> <persName ref="165">Konrad Pellikans</persName> Wirken in Zürich 1526-1556, Zürich 1975. - ZBRG IV, S. 169-174; HBLS I 96.</note> scripsi <persName ref="165">Pellicano</persName><note xml:id="fn2" type="footnote" n="2">Der Brief an <persName ref="165">Pellikan</persName> ist nicht erhalten.</note>, quem etiam tibi commendo.</s>
-					<s xml:lang="la" type="auto">Nisi enim me totus fallat, in fide Christi integer est.<pb type="edition" next="157"/></s>
+					<s n="4" xml:lang="la" type="auto">Ego vero nihil aliud habeo, quod scribam, nisi quod de Hebręo<note xml:id="fn1" type="footnote" n="1"><persName ref="person276">Michael Adam</persName>, ein jüdischer Konvertit aus <placeName ref="place569">Krakau</placeName>, gest. nach 1549, kam im Juli 1538 aus <placeName ref="place1049">Straßburg</placeName> über <placeName ref="place565">Konstanz</placeName> in Pellikans Haus. Da seine Berufung an die von <persName ref="person263">Zwick</persName> in <placeName ref="place565">Konstanz</placeName> geplante Schule scheiterte, blieb er in Zürich, unterstützte Pellikan bei seinen Talmudstudien und half <persName ref="person114">Jud</persName> bei der Revision der deutschen Bibel. 1539 heiratete er eine Zürcherin; er soll auch das Bürgerrecht erhalten haben, im Bürgerbuch fehlt jedoch sein Name. 1540 besuchte er <persName ref="person810">Paul Fagius</persName> in <placeName ref="place520">Isny</placeName>, mit dem er schon länger bekannt war; mit ihm gab er 1543/44 in <placeName ref="place565">Konstanz</placeName> eine jüdisch-deutsche Übersetzung von Teilen der hebräischen Bibel heraus. In Zürich erschienen 1545/46 zwei von ihm aus dem Hebräischen ins Jüdisch-Deutsche übersetzte Werke (BZD C 352f). 1548 teilt John Burcher aus <placeName ref="place1049">Straßburg</placeName> Bullinger mit, daß Adam geliehenes Geld verspielt habe (s. Epistolae Tigurinae bzw. Original Letters, <ref target="file10328">Nr. 297</ref>), und 1549 mußte er in Basel wegen versuchten Diebstahls Urfehde schwören (s. Basel StA, Ratsbücher O 8, 122v.). Noch 1551 erwähnt Bibliander eine mit Adam getroffene Abmachung, doch dürfte diese schon einige Zeit zurückgelegen haben ("pactus fuerat"; vgl. Blarer BW III 136). - Lit.: Christoph <hi>Zürcher,</hi> <persName ref="person165">Konrad Pellikans</persName> Wirken in Zürich 1526-1556, Zürich 1975. - ZBRG IV, S. 169-174; HBLS I 96.</note> scripsi <persName ref="person165">Pellicano</persName><note xml:id="fn2" type="footnote" n="2">Der Brief an <persName ref="person165">Pellikan</persName> ist nicht erhalten.</note>, quem etiam tibi commendo.</s>
+					<s n="5" xml:lang="la" type="auto">Nisi enim me totus fallat, in fide Christi integer est.<pb type="edition" next="157"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale perpetua salute cum matre<note xml:id="fn3" type="footnote" n="3">Anna, geb. Wiederkehr.</note>, uxore<note xml:id="fn4" type="footnote" n="4">Anna, geb. Adlischwyler.</note>, liberis<note xml:id="fn5" type="footnote" n="5">Siehe oben <ref target="file#11149">Nr. 1106</ref>, Anm. 11.</note> et bonis omnibus.</s>
-					<s xml:lang="la" type="auto">7. iulii 1538.</s>
+					<s n="6" xml:lang="la" type="auto">Vale perpetua salute cum matre<note xml:id="fn3" type="footnote" n="3">Anna, geb. Wiederkehr.</note>, uxore<note xml:id="fn4" type="footnote" n="4">Anna, geb. Adlischwyler.</note>, liberis<note xml:id="fn5" type="footnote" n="5">Siehe oben <ref target="file11149">Nr. 1106</ref>, Anm. 11.</note> et bonis omnibus.</s>
+					<s n="7" xml:lang="la" type="auto">7. iulii 1538.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Io. <persName ref="263">Zvick</persName>.</s>
+					<s n="8" xml:lang="la" type="auto">Tuus <persName ref="person263">Io. Zvick</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Hainricho Bullingero, mihi in domino fratri charissimo.</s>
+					<s n="9" xml:lang="la" type="auto">Domino Hainricho Bullingero, mihi in domino fratri charissimo.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2006"/>
-				<idno type="ISBN">ISBN 978-3-290-17431-6</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1691</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17431-6</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1691</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 12</title>
+				<title subtype="publication">HBBW XII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">12</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 437,149a v. , Beilage: 147r.-149v.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 437,149a v. , Beilage: 147r.-149v.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,7 +50,7 @@
 						<summary>
 							<p xml:id="regest1">
 								Übersendet das von Bullinger gewünschte Material [zur Geschichte des Klosters und der Schule
-								<placeName ref="534">Kappel</placeName>], wobei er nur das Jahr [der Übergabe des Klosters an den
+								<placeName ref="place534">Kappel</placeName>], wobei er nur das Jahr [der Übergabe des Klosters an den
 								Zürcher Rat], nicht aber den Monat angeben kann, da damals mit dem Rat in Treu und Glauben gehandelt worden
 								war und keine Aufzeichnungen gemacht wurden.
 							</p>
@@ -66,44 +69,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11736">
 				<correspAction type="sent">
-					<persName ref="person#2982" cert="high">
+					<!--
+					<persName ref="person2982" cert="high">
 						<forename cert="high">Peter</forename>
 						<surname cert="high">Simler</surname>
-						<addName type="main">Simler (Simmler), Peter</addName>
+						<persName type="main" ref="person8443>Simler (Simmler), Peter</addName>
 					</persName>
-					<place source="#242" cert="low">
-						<settlement>Kappel am Albis</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.2288482 8.5251335</geo>
-					</place>
+					-->
+					<persName ref="person2982" cert="high"/>
+					<place source="place242" cert="low"/>
 					<date when="1542-11-18" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11737"/>
-					<ref type="prev_chronologically" target="files.xml#11735"/>
-					<ref type="next_correspondence" target="files.xml#12425"/>
-					<ref type="prev_correspondence" target="files.xml#11277"/>
-					<ref type="next_correspondence_request" target="files.xml#12425"/>
-					<ref type="prev_correspondence_request" target="files.xml#10900"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12651"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11277"/>
-					<ref type="next_same_sender" target="files.xml#12425"/>
-					<ref type="prev_same_sender" target="files.xml#10900"/>
-					<ref type="next_same_addressee" target="files.xml#11740"/>
-					<ref type="prev_same_addressee" target="files.xml#11730"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12425"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10900"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11740"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11730"/>
+					<ref type="next_chronologically" target="file11737"/>
+					<ref type="prev_chronologically" target="file11735"/>
+					<ref type="next_correspondence" target="file12425"/>
+					<ref type="prev_correspondence" target="file11277"/>
+					<ref type="next_correspondence_request" target="file12425"/>
+					<ref type="prev_correspondence_request" target="file10900"/>
+					<ref type="next_correspondence_reaction" target="file12651"/>
+					<ref type="prev_correspondence_reaction" target="file11277"/>
+					<ref type="next_same_sender" target="file12425"/>
+					<ref type="prev_same_sender" target="file10900"/>
+					<ref type="next_same_addressee" target="file11740"/>
+					<ref type="prev_same_addressee" target="file11730"/>
+					<ref type="next_with_sender_as_addressee" target="file12425"/>
+					<ref type="prev_with_sender_as_addressee" target="file10900"/>
+					<ref type="next_with_addressee_as_sender" target="file11740"/>
+					<ref type="prev_with_addressee_as_sender" target="file11730"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,16 +123,16 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Lieber her gfatter<note xml:id="fn2" type="footnote" n="2">Bullinger war Pate von <persName ref="200">Peter Simlers</persName> Sohn <persName ref="2177">Josias</persName>, vgl. HBBW I 53, Anm. 2.</note>, ich schick üch hie ingschrifft das, so ir begert hannd;<note xml:id="fn3" type="footnote" n="3">Bei dem von <persName ref="200">Simler</persName> übermittelten Material (Zürich StA, E II 437, 147r.-149v.) handelt es sich um Aufzeichnungen zur Geschichte des Klosters und der Schule <placeName ref="534">Kappel</placeName> 1508-1542, die Bullinger wohl im Zusammenhang mit der Schulpolitik des Rates angefordert hatte, die schließlich 1550 zur Aufhebung der Schule in <placeName ref="534">Kappel</placeName> führte. Vgl. <hi>Bächtold,</hi> Bullinger vor dem Rat 205-211.</note> doch so heiter<note xml:id="fn4" type="footnote" n="4">klar.</note> nit, wie ir begärent.</s>
-					<s xml:lang="de" type="auto">Ir hannd allein das jar, in dem minen heren das kloster ist über geben, den monat aber nit.</s>
-					<s xml:lang="de" type="auto">Wir hands am anfang nit uffzeichnot, sonnder einfaltig als die wol trüwenden<note xml:id="fn5" type="footnote" n="5">einfach in gutem Vertrauen.</note> mitt unsern heren gehandlet.</s>
-					<s xml:lang="de" type="auto">Manglent ir etwas wyter, so lassent michs wüssen; was überflyssig<note xml:id="fn6" type="footnote" n="6">überflüssig.</note> ist, thuͦnd dannen.</s>
+					<s n="1" xml:lang="de" type="auto">Lieber her gfatter<note xml:id="fn2" type="footnote" n="2">Bullinger war Pate von <persName ref="person200">Peter Simlers</persName> Sohn Josias, vgl. HBBW I 53, Anm. 2.</note>, ich schick üch hie ingschrifft das, so ir begert hannd;<note xml:id="fn3" type="footnote" n="3">Bei dem von <persName ref="person200">Simler</persName> übermittelten Material (Zürich StA, E II 437, 147r.-149v.) handelt es sich um Aufzeichnungen zur Geschichte des Klosters und der Schule <placeName ref="place534">Kappel</placeName> 1508-1542, die Bullinger wohl im Zusammenhang mit der Schulpolitik des Rates angefordert hatte, die schließlich 1550 zur Aufhebung der Schule in <placeName ref="place534">Kappel</placeName> führte. Vgl. <hi>Bächtold,</hi> Bullinger vor dem Rat 205-211.</note> doch so heiter<note xml:id="fn4" type="footnote" n="4">klar.</note> nit, wie ir begärent.</s>
+					<s n="2" xml:lang="de" type="auto">Ir hannd allein das jar, in dem minen heren das kloster ist über geben, den monat aber nit.</s>
+					<s n="3" xml:lang="de" type="auto">Wir hands am anfang nit uffzeichnot, sonnder einfaltig als die wol trüwenden<note xml:id="fn5" type="footnote" n="5">einfach in gutem Vertrauen.</note> mitt unsern heren gehandlet.</s>
+					<s n="4" xml:lang="de" type="auto">Manglent ir etwas wyter, so lassent michs wüssen; was überflyssig<note xml:id="fn6" type="footnote" n="6">überflüssig.</note> ist, thuͦnd dannen.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Damit sinnd gott bevolchen.</s>
+					<s n="5" xml:lang="de" type="auto">Damit sinnd gott bevolchen.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum 18. novembris 1542.<pb type="scan" next="147r.-149v."/></s>
+					<s n="6" xml:lang="de" type="auto">Datum 18. novembris 1542.<pb type="scan" next="147r.-149v."/></s>
 				</p>
 				<p>
 					<note type="address">[Ohne Adresse.]</note>

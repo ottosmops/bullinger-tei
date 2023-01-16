@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2013"/>
-				<idno type="ISBN">ISBN 978-3-290-17664-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2258</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17664-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2258</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 15</title>
+				<title subtype="publication">HBBW XV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">15</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E I 4.1, Nr. 1, 1</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E I 4.1, Nr. 1, 1</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -64,40 +67,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12305">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<date min="1545-09-00" max="1545-11-00" cert="low">Herbst 1545</date>
+					-->
+					<persName ref="person495" cert="high"/>
+					<date notBefore="1545-09-01" notAfter="1545-11-12" cert="low">Herbst 1545</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1381" cert="high">
+					<!--
+					<persName ref="person1381" cert="high">
 						<forename cert="high">Rudolf</forename>
 						<surname cert="high">Gwalther</surname>
-						<addName type="main">Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
+						<persName type="main" ref="person8011>Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
 						<graphic type="portrait" url="portraits/1381_Gwalther_Rudolf.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Rudolf_Gwalther"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11854392X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11522600"/>
 					</persName>
+					-->
+					<persName ref="person1381" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12281"/>
-					<ref type="prev_chronologically" target="files.xml#12279"/>
-					<ref type="next_correspondence" target="files.xml#3"/>
-					<ref type="prev_correspondence" target="files.xml#11997"/>
-					<ref type="next_correspondence_request" target="files.xml#3"/>
-					<ref type="prev_correspondence_request" target="files.xml#11576"/>
-					<ref type="next_correspondence_reaction" target="files.xml#1032"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11997"/>
-					<ref type="next_same_sender" target="files.xml#12282"/>
-					<ref type="prev_same_sender" target="files.xml#12273"/>
-					<ref type="next_same_addressee" target="files.xml#1032"/>
-					<ref type="prev_same_addressee" target="files.xml#11997"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12282"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12273"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1032"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11997"/>
+					<ref type="next_chronologically" target="file12281"/>
+					<ref type="prev_chronologically" target="file12279"/>
+					<ref type="next_correspondence" target="file3"/>
+					<ref type="prev_correspondence" target="file11997"/>
+					<ref type="next_correspondence_request" target="file3"/>
+					<ref type="prev_correspondence_request" target="file11576"/>
+					<ref type="next_correspondence_reaction" target="file1032"/>
+					<ref type="prev_correspondence_reaction" target="file11997"/>
+					<ref type="next_same_sender" target="file12282"/>
+					<ref type="prev_same_sender" target="file12273"/>
+					<ref type="next_same_addressee" target="file1032"/>
+					<ref type="prev_same_addressee" target="file11997"/>
+					<ref type="next_with_sender_as_addressee" target="file12282"/>
+					<ref type="prev_with_sender_as_addressee" target="file12273"/>
+					<ref type="next_with_addressee_as_sender" target="file1032"/>
+					<ref type="prev_with_addressee_as_sender" target="file11997"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -112,36 +125,36 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Quaeso amicum, hoc distichon adhuc mihi pares, quam primum vacabit.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Quaeso amicum, hoc distichon adhuc mihi pares, quam primum vacabit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Rem facies gratissimam.</s>
+					<s n="3" xml:lang="la" type="auto">Rem facies gratissimam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valebis.</s>
+					<s n="4" xml:lang="la" type="auto">Valebis.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto"><pb type="scan" next="v."/>Nitt volgen gott, macht arme lüt, Gotts wort darff unsers hebens<note xml:id="fn3" type="footnote" n="3">darff unsers hebens: bedarf unserer Stütze.</note> nüt.</s>
+					<s n="5" xml:lang="de" type="auto"><pb type="scan" next="v."/>Nitt volgen gott, macht arme lüt, Gotts wort darff unsers hebens<note xml:id="fn3" type="footnote" n="3">darff unsers hebens: bedarf unserer Stütze.</note> nüt.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Oza<note xml:id="fn4" type="footnote" n="4">Ussa.</note> ruͤrt die pundts laden an und fallt.</s>
-					<s xml:lang="la" type="auto">2. Sam. 6 [6-8].</s>
-					<s xml:lang="de" type="auto">Nadab und Abihu<note xml:id="fn5" type="footnote" n="5">Zwei Söhne Aarons.</note> oppfferend froͤmbd fhür und verbrünnend.</s>
-					<s xml:lang="la" type="auto">Levit. 10 [1-5].</s>
+					<s n="6" xml:lang="de" type="auto">Oza<note xml:id="fn4" type="footnote" n="4">Ussa.</note> ruͤrt die pundts laden an und fallt.</s>
+					<s n="7" xml:lang="la" type="auto">2. Sam. 6 [6-8].</s>
+					<s n="8" xml:lang="de" type="auto">Nadab und Abihu<note xml:id="fn5" type="footnote" n="5">Zwei Söhne Aarons.</note> oppfferend froͤmbd fhür und verbrünnend.</s>
+					<s n="9" xml:lang="la" type="auto">Levit. 10 [1-5].</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ottho, <persName ref="251">Wolff</persName>, <persName ref="2608">Zingg</persName><note xml:id="fn6" type="footnote" n="6">Die Wappen und Namen von <persName ref="238">Otto</persName> Werd-müller <persName ref="251">Johannes Wolf</persName> und <persName ref="2608">Ulrich Zingg</persName> mit der Jahresangabe <hi>1545</hi> befinden sich auf dem von ihnen dem Großmünsterpfarrhaus gestifteten Glasbild. Darüber steht das hier unten angeführte lateinische Distichon, welches Gwalther als Antwort auf Bullingers Bitte verfasste. -Das Glasbild befindet sich heute im Schweizerischen Landesmuseum Zürich (Sig.: AG 1169); Abbildung in: Jenny <hi>Schneider,</hi> Glasgemälde. Katalog der Sammlung des Schweizerischen Landesmuseums Zürich, Bd. 1, Stäfa (Kt. Zürich)[1971], <ref target="file#10268">Nr. 237</ref>.- Ein Großhans Thomann zugeschriebener Scheibenriss von 1559 befindet sich in München, Staatliche Graphische Sammlung, Inv.-Nr. <hi>40514;</hi> Abbildung in: Zürcher Kunst nach der Reformation. Hans Asper und seine Zeit, Zürich 1981, S. 110, Nr. 92. - Die abgebildeten Szenen wie auch das Distichon verstehen sich als Kritik am Messopfer.</note>.</s>
+					<s n="10" xml:lang="de" type="auto">Ottho, <persName ref="person251">Wolff</persName>, <persName ref="person2608">Zingg</persName><note xml:id="fn6" type="footnote" n="6">Die Wappen und Namen von <persName ref="person238">Otto Werdmüller</persName> <persName ref="person251">Johannes Wolf</persName> und <persName ref="person2608">Ulrich Zingg</persName> mit der Jahresangabe 1545 befinden sich auf dem von ihnen dem Großmünsterpfarrhaus gestifteten Glasbild. Darüber steht das hier unten angeführte lateinische Distichon, welches Gwalther als Antwort auf Bullingers Bitte verfasste. -Das Glasbild befindet sich heute im Schweizerischen Landesmuseum Zürich (Sig.: AG 1169); Abbildung in: Jenny <hi>Schneider,</hi> Glasgemälde. Katalog der Sammlung des Schweizerischen Landesmuseums Zürich, Bd. 1, Stäfa (Kt. Zürich)[1971], <ref target="file10268">Nr. 237</ref>.- Ein Großhans Thomann zugeschriebener Scheibenriss von 1559 befindet sich in München, Staatliche Graphische Sammlung, Inv.-Nr. 40514; Abbildung in: Zürcher Kunst nach der Reformation. Hans Asper und seine Zeit, Zürich 1981, S. 110, Nr. 92. - Die abgebildeten Szenen wie auch das Distichon verstehen sich als Kritik am Messopfer.</note>.</s>
 				</p>
 				<p>
 					<note type="address">[Ohne Adresse.]</note>
 				</p>
 				<p>
 					<note type="PS">[Darunter von Gwalthers Hand:]</note>
-					<s xml:lang="la" type="auto"><pb type="edition" next="566"/>Quid domini iuvat, ah miseri, contemnere verbum?</s>
+					<s n="11" xml:lang="la" type="auto"><pb type="edition" next="566"/>Quid domini iuvat, ah miseri, contemnere verbum?</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Viribus a vestris non petit illud opem<note xml:id="fn7" type="footnote" n="7">Das Distichon findet sich auch in Gwalthers Gedichtsammlung 1542-1582 (Zürich ZB, Ms D 152, 66v.).</note>.</s>
+					<s n="12" xml:lang="la" type="auto">Viribus a vestris non petit illud opem<note xml:id="fn7" type="footnote" n="7">Das Distichon findet sich auch in Gwalthers Gedichtsammlung 1542-1582 (Zürich ZB, Ms D 152, 66v.).</note>.</s>
 				</p>
 			</div>
 		</body>

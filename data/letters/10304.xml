@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1983"/>
-				<idno type="ISBN">ISBN 3-290-11531-3</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=273</idno>
+				<idno subtype="ISBN">ISBN 3-290-11531-3</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=273</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 3</title>
+				<title subtype="publication">HBBW III</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">3</biblScope>
@@ -31,14 +31,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 341,3521</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">zeitgenössische Abschrift</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 341,3521</idno>
+						<idno subtype="Hinweis">zeitgenössische Abschrift</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -49,7 +52,7 @@
 							<p xml:id="regest1">
 								Lobt das Festhalten der Zürcher an ihrem Glauben. Widrigkeiten, die sie darum zu erdulden haben, sind
 								Züchtigungen Gottes. Sie sollen dem Gotteswort weiterhin treu bleiben, Gott wird sie dafür reichlich
-								belohnen. Er, <persName ref="169">Philipp</persName>, will ihnen nach bestem Können mit Rat und Tat
+								belohnen. Er, Philipp, will ihnen nach bestem Können mit Rat und Tat
 								beistehen.
 							</p>
 						</summary>
@@ -70,52 +73,59 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10304">
 				<correspAction type="sent">
-					<persName ref="person#1871" cert="high">
+					<!--
+					<persName ref="person1871" cert="high">
 						<forename cert="high">Philipp</forename>
 						<surname cert="high">von Hessen</surname>
-						<addName type="main">von Hessen, Philipp I. («der Großmütige»)</addName>
-						<graphic type="portrait" url="portraits/8019_von_Hessen_Philipp_I.jpg"/>
+						<persName type="main" ref="person8019>von Hessen, Philipp I. («der Großmütige»)</addName>
+						<graphic type="portrait" url="portraits/1871_von_Hessen_Philipp_I.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Philipp_I._(Hessen)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11859382X"/>
 					</persName>
-					<place source="#244" cert="high">
-						<settlement>Kassel</settlement>
-						<district>Hessen</district>
-						<country>Deutschland</country>
-						<geo>51.31667 9.5</geo>
-					</place>
+					-->
+					<persName ref="person1871" cert="high"/>
+					<place source="place244" cert="high"/>
 					<date when="1533-10-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<persName ref="person#1888" cert="high">
+					-->
+					<persName ref="person495" cert="high"/>
+					<!--
+					<persName ref="person1888" cert="high">
 						<forename cert="high">Hans Rudolf</forename>
 						<surname cert="high">Lavater</surname>
-						<graphic type="portrait" url="portraits/1888_Lavater_Hans.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Hans_Lavater"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/139619453"/>
 					</persName>
+					-->
+					<persName ref="person1888" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10305"/>
-					<ref type="prev_chronologically" target="files.xml#10303"/>
-					<ref type="next_correspondence" target="files.xml#10366"/>
+					<ref type="next_chronologically" target="file10305"/>
+					<ref type="prev_chronologically" target="file10303"/>
+					<ref type="next_correspondence" target="file10366"/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#10366"/>
+					<ref type="next_correspondence_reaction" target="file10366"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#12185"/>
-					<ref type="prev_same_sender" target="files.xml#10165"/>
-					<ref type="next_same_addressee" target="files.xml#10366"/>
-					<ref type="prev_same_addressee" target="files.xml#10254"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12185"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10165"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10366"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10254"/>
+					<ref type="next_same_sender" target="file12185"/>
+					<ref type="prev_same_sender" target="file10165"/>
+					<ref type="next_same_addressee" target="file10366"/>
+					<ref type="prev_same_addressee" target="file10254"/>
+					<ref type="next_with_sender_as_addressee" target="file12185"/>
+					<ref type="prev_with_sender_as_addressee" target="file10165"/>
+					<ref type="next_with_addressee_as_sender" target="file10366"/>
+					<ref type="prev_with_addressee_as_sender" target="file10254"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -133,27 +143,27 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto"><persName ref="169">Philippus</persName> von gottes gnaden landgrafs zu <persName ref="169">Hessen</persName>, grasse zu Catzenelenbogen etc.</s>
+					<s n="1" xml:lang="de" type="auto"><persName ref="person169">Philippus</persName> von gottes gnaden landgrafs zu <persName ref="person169">Hessen</persName>, grasse zu Catzenelenbogen etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Unnseren gnedigen gruß zuvor, erberen lieben besunder etc.</s>
+					<s n="2" xml:lang="de" type="auto">Unnseren gnedigen gruß zuvor, erberen lieben besunder etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Wir habend vernomen, das ir<note xml:id="fn1" type="footnote" n="1">Nämlich: Kirche und Staat Zürich.</note> nach getreuwlich unnd fleißlich am wort gottes hangend unnd darby standhafft bleiben syend, daselbs auch treuwlich treibet<note xml:id="fn2" type="footnote" n="2">betreibt, fördert (Grimm XI/I 2 53).</note> unnd fürdret, unnd das haben wir seer gern gehört<note xml:id="fn3" type="footnote" n="3">Woher diese Information stammte, ist ungewiß, vgl. Reformationsbündnisse 107, Anm. 1.</note>.</s>
-					<s xml:lang="de" type="auto">Als aber ir darneben auch deshalben in anfechtung unnd widerwillen<note xml:id="fn4" type="footnote" n="4">Ungemach, Unannehmlichkeit (Grimm XIV/I 2 1390).</note> komen<note xml:id="fn5" type="footnote" n="5">Gemeint ist sicherlich der Mandatstreit; dazu s. oben S. 35, Anm. 11. 100, Anm. 4. 113, Anm. 12.</note>, achten wir, das der herr üch als die sinen heimgesuͦcht unnd das ze üwerem besten gethon habe, demnach gesagt ist, das «die der herr liebet, die züchtiget er» [Hebr 12, 6].</s>
-					<s xml:lang="de" type="auto">Und darumb ist unnser gnedig begäre, wie dan wir auch zuͦ üch guͦter zuͦversicht sind, ir wellend am gottes wort unnd evangelio unverdrossen unnd bestendenklichen bleiben unnd beharren, dem herren vertruwen, der wirt das alles zuͦ siner zit zum besten keren unnd euch reichlich mit sinen gnaden belonen.</s>
-					<s xml:lang="de" type="auto">Und was dan wir noch unserem vermügen üch geradten unnd heissen mogen, daß, unnd üch ze gnaden, seint wir geneigt.</s>
-					<s xml:lang="de" type="auto">Welches wir üch allso gedenklichen [!]<note xml:id="fn6" type="footnote" n="6">Sollte wahrscheinlich heißen: gnädiglich.</note> wolten zuͦ erkennen geben.</s>
+					<s n="3" xml:lang="de" type="auto">Wir habend vernomen, das ir<note xml:id="fn1" type="footnote" n="1">Nämlich: Kirche und Staat Zürich.</note> nach getreuwlich unnd fleißlich am wort gottes hangend unnd darby standhafft bleiben syend, daselbs auch treuwlich treibet<note xml:id="fn2" type="footnote" n="2">betreibt, fördert (Grimm XI/I 2 53).</note> unnd fürdret, unnd das haben wir seer gern gehört<note xml:id="fn3" type="footnote" n="3">Woher diese Information stammte, ist ungewiß, vgl. Reformationsbündnisse 107, Anm. 1.</note>.</s>
+					<s n="4" xml:lang="de" type="auto">Als aber ir darneben auch deshalben in anfechtung unnd widerwillen<note xml:id="fn4" type="footnote" n="4">Ungemach, Unannehmlichkeit (Grimm XIV/I 2 1390).</note> komen<note xml:id="fn5" type="footnote" n="5">Gemeint ist sicherlich der Mandatstreit; dazu s. oben S. 35, Anm. 11. 100, Anm. 4. 113, Anm. 12.</note>, achten wir, das der herr üch als die sinen heimgesuͦcht unnd das ze üwerem besten gethon habe, demnach gesagt ist, das «die der herr liebet, die züchtiget er» [Hebr 12, 6].</s>
+					<s n="5" xml:lang="de" type="auto">Und darumb ist unnser gnedig begäre, wie dan wir auch zuͦ üch guͦter zuͦversicht sind, ir wellend am gottes wort unnd evangelio unverdrossen unnd bestendenklichen bleiben unnd beharren, dem herren vertruwen, der wirt das alles zuͦ siner zit zum besten keren unnd euch reichlich mit sinen gnaden belonen.</s>
+					<s n="6" xml:lang="de" type="auto">Und was dan wir noch unserem vermügen üch geradten unnd heissen mogen, daß, unnd üch ze gnaden, seint wir geneigt.</s>
+					<s n="7" xml:lang="de" type="auto">Welches wir üch allso gedenklichen [!]<note xml:id="fn6" type="footnote" n="6">Sollte wahrscheinlich heißen: gnädiglich.</note> wolten zuͦ erkennen geben.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum in unnser stadt <placeName ref="537">Cassel</placeName>, mitwuchens noch Dionisii anno etc. 33.</s>
+					<s n="8" xml:lang="de" type="auto">Datum in unnser stadt <placeName ref="place537">Cassel</placeName>, mitwuchens noch Dionisii anno etc. 33.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="169">Philippus</persName> L. z. <persName ref="169">Hessen</persName> etc. sst.</s>
+					<s n="9" xml:lang="la" type="auto"><persName ref="person169">Philippus</persName> L. z. <persName ref="person169">Hessen</persName> etc. sst.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse über dem Brieftext:]</note>
-					<s xml:lang="de" type="auto">Dem erbaren wißen lieben besunderen M. Heinrichen Bullinger, prädicanten zum grossenmünster zuͦ Zürich, unnd <persName ref="132">Hansen</persName> Ruͦdolff Lavather, jetz vogt zuͦ Kiburg.</s>
+					<s n="10" xml:lang="de" type="auto">Dem erbaren wißen lieben besunderen M. Heinrichen Bullinger, prädicanten zum grossenmünster zuͦ Zürich, unnd <persName ref="person132">Hansen</persName> Ruͦdolff Lavather, jetz vogt zuͦ Kiburg.</s>
 				</p>
 			</div>
 		</body>

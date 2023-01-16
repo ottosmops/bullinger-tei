@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1982"/>
-				<idno type="ISBN">ISBN 3-290-11467-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=66</idno>
+				<idno subtype="ISBN">ISBN 3-290-11467-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=66</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 2</title>
+				<title subtype="publication">HBBW II</title>
 				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">2</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 361,33/1.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 361,33/1.</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc><p>leicht beschädigt</p></objectDesc>
@@ -60,45 +63,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10095">
 				<correspAction type="sent">
-					<persName ref="person#2943" cert="high">
+					<!--
+					<persName ref="person2943" cert="high">
 						<forename cert="high">Gervasius</forename>
 						<surname cert="high">Schuler</surname>
-						<addName type="main">Schuler (Scholasticus), Gervasius</addName>
+						<persName type="main" ref="person8440>Schuler (Scholasticus), Gervasius</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Gervasius_Schuler"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/130955264"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2943" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1532-02-21" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10096"/>
-					<ref type="prev_chronologically" target="files.xml#10094"/>
-					<ref type="next_correspondence" target="files.xml#10109"/>
-					<ref type="prev_correspondence" target="files.xml#10087"/>
-					<ref type="next_correspondence_request" target="files.xml#10109"/>
-					<ref type="prev_correspondence_request" target="files.xml#10087"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12408"/>
+					<ref type="next_chronologically" target="file10096"/>
+					<ref type="prev_chronologically" target="file10094"/>
+					<ref type="next_correspondence" target="file10109"/>
+					<ref type="prev_correspondence" target="file10087"/>
+					<ref type="next_correspondence_request" target="file10109"/>
+					<ref type="prev_correspondence_request" target="file10087"/>
+					<ref type="next_correspondence_reaction" target="file12408"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10109"/>
-					<ref type="prev_same_sender" target="files.xml#10087"/>
-					<ref type="next_same_addressee" target="files.xml#10103"/>
-					<ref type="prev_same_addressee" target="files.xml#10090"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10109"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10087"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10103"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10090"/>
+					<ref type="next_same_sender" target="file10109"/>
+					<ref type="prev_same_sender" target="file10087"/>
+					<ref type="next_same_addressee" target="file10103"/>
+					<ref type="prev_same_addressee" target="file10090"/>
+					<ref type="next_with_sender_as_addressee" target="file10109"/>
+					<ref type="prev_with_sender_as_addressee" target="file10087"/>
+					<ref type="next_with_addressee_as_sender" target="file10103"/>
+					<ref type="prev_with_addressee_as_sender" target="file10090"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,28 +123,28 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Epistolam<note xml:id="fn1" type="footnote" n="1">Gemeint ist wahrscheinlich <persName ref="160">Oekolampads</persName> Antwort (<persName ref="160">Oekolampad</persName> BA II 925 a) auf Bullingers Ausführungen über die Exkommunikation im Schreiben an <persName ref="90">Haller</persName> vom 6. Juli 1531 (HBBW I Nr. 39), das <persName ref="195">Schuler</persName> bereits in Nr. 58 erwähnt hatte (oben S. 35, 6ff). Diese Vermutung äußert schon J. J. Simler in seiner Abschrift des vorliegenden Briefes (Zürich ZB, Ms S 31, Nr. 52).</note>, quam litteris<note xml:id="fn2" type="footnote" n="2">Nicht erhalten.</note> exposcebas, nuncii inportunitas, tum laborum meorum assiduitas in causa fuit ne mitterem.</s>
-					<s xml:lang="la" type="auto">Proximo tamen nunctio voti te compotem reddere volo epistola satis prolixa, que exscribendo opera opus habet.</s>
-					<s xml:lang="la" type="auto">Sed ut polliceor, praestabo.</s>
+					<s n="2" xml:lang="la" type="auto">Epistolam<note xml:id="fn1" type="footnote" n="1">Gemeint ist wahrscheinlich <persName ref="person160">Oekolampads</persName> Antwort (<persName ref="person160">Oekolampad</persName> BA II 925 a) auf Bullingers Ausführungen über die Exkommunikation im Schreiben an <persName ref="person90">Haller</persName> vom 6. Juli 1531 (HBBW I Nr. 39), das <persName ref="person195">Schuler</persName> bereits in Nr. 58 erwähnt hatte (oben S. 35, 6ff). Diese Vermutung äußert schon J. J. Simler in seiner Abschrift des vorliegenden Briefes (Zürich ZB, Ms S 31, Nr. 52).</note>, quam litteris<note xml:id="fn2" type="footnote" n="2">Nicht erhalten.</note> exposcebas, nuncii inportunitas, tum laborum meorum assiduitas in causa fuit ne mitterem.</s>
+					<s n="3" xml:lang="la" type="auto">Proximo tamen nunctio voti te compotem reddere volo epistola satis prolixa, que exscribendo opera opus habet.</s>
+					<s n="4" xml:lang="la" type="auto">Sed ut polliceor, praestabo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino et <persName ref="195">Gervasium</persName> pristino studio prosequere.</s>
+					<s n="5" xml:lang="la" type="auto">Vale in domino et <persName ref="person195">Gervasium</persName> pristino studio prosequere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum vicesima prima februarii anno 1532.</s>
+					<s n="6" xml:lang="la" type="auto">Datum vicesima prima februarii anno 1532.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Grüß mir von hertzen din hußfrow<note xml:id="fn3" type="footnote" n="3"><persName ref="32">Anna Bullinger</persName>, geb. Adlischwyler.</note>, myner triebßal ein trüwe mittlyde[rin]<note xml:id="fna" type="footnote" n="a"><hi>Loch im Papier infolge der Öffnung des Siegels: das Ende des Wortes fehlt.</hi></note>.</s>
+					<s n="7" xml:lang="de" type="auto">Grüß mir von hertzen din hußfrow<note xml:id="fn3" type="footnote" n="3"><persName ref="person32">Anna Bullinger</persName>, geb. Adlischwyler.</note>, myner triebßal ein trüwe mittlyde[rin]<note xml:id="fna" type="footnote" n="a"><hi>Loch im Papier infolge der Öffnung des Siegels: das Ende des Wortes fehlt.</hi></note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="195">Gervasius</persName> Scolasticus.</s>
+					<s n="8" xml:lang="la" type="auto"><persName ref="person195">Gervasius</persName> Scolasticus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Plane docto ac pio viro Heynricho Bullingero, domino primum observando.</s>
+					<s n="9" xml:lang="la" type="auto">Plane docto ac pio viro Heynricho Bullingero, domino primum observando.</s>
 				</p>
 			</div>
 		</body>

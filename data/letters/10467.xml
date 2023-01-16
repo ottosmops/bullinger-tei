@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=432</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=432</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 362,30</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 362,30</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,11 +49,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Schickt Bullinger die Abschrift eines Schreibens von [<persName ref="19">Ambrosius</persName>]
-								<persName ref="19">Blarer</persName> an <persName ref="36">Benedikt</persName>
-								<persName ref="36">Burgauer</persName>, das den Wortlaut der im Beisein des
-								<persName ref="224">Herzogs</persName> [<persName ref="224">Ulrich</persName> von
-								<persName ref="224">Württemberg</persName>] zustande gekommenen Einigungsformel enthält. Bittet um
+								Schickt Bullinger die Abschrift eines Schreibens von [Ambrosius]
+								<persName ref="person19">Blarer</persName> an Benedikt
+								<persName ref="person36">Burgauer</persName>, das den Wortlaut der im Beisein des
+								Herzogs [<persName ref="person224">Ulrich</persName> von
+								Württemberg] zustande gekommenen Einigungsformel enthält. Bittet um
 								Bullingers Meinung darüber.
 							</p>
 						</summary>
@@ -61,43 +64,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10467">
 				<correspAction type="sent">
-					<persName ref="person#2810" cert="high">
+					<!--
+					<persName ref="person2810" cert="high">
 						<forename cert="high">Erasmus</forename>
 						<surname cert="high">Ritter</surname>
+						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Erasmus_Ritter_(Theologe)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/137993781"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11416562"/>
 					</persName>
-					<place source="#441" cert="high">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					-->
+					<persName ref="person2810" cert="high"/>
+					<place source="place441" cert="high"/>
 					<date when="1534-09-02" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10468"/>
-					<ref type="prev_chronologically" target="files.xml#10466"/>
-					<ref type="next_correspondence" target="files.xml#10687"/>
-					<ref type="prev_correspondence" target="files.xml#10433"/>
-					<ref type="next_correspondence_request" target="files.xml#10687"/>
-					<ref type="prev_correspondence_request" target="files.xml#10433"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10867"/>
+					<ref type="next_chronologically" target="file10468"/>
+					<ref type="prev_chronologically" target="file10466"/>
+					<ref type="next_correspondence" target="file10687"/>
+					<ref type="prev_correspondence" target="file10433"/>
+					<ref type="next_correspondence_request" target="file10687"/>
+					<ref type="prev_correspondence_request" target="file10433"/>
+					<ref type="next_correspondence_reaction" target="file10867"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10526"/>
-					<ref type="prev_same_sender" target="files.xml#10433"/>
-					<ref type="next_same_addressee" target="files.xml#10468"/>
-					<ref type="prev_same_addressee" target="files.xml#10464"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10526"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10433"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10468"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10464"/>
+					<ref type="next_same_sender" target="file10526"/>
+					<ref type="prev_same_sender" target="file10433"/>
+					<ref type="next_same_addressee" target="file10468"/>
+					<ref type="prev_same_addressee" target="file10464"/>
+					<ref type="next_with_sender_as_addressee" target="file10526"/>
+					<ref type="prev_with_sender_as_addressee" target="file10433"/>
+					<ref type="next_with_addressee_as_sender" target="file10468"/>
+					<ref type="prev_with_addressee_as_sender" target="file10464"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -106,28 +115,31 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="10467/Autograph/00 E_II_362__S__30_.tif" n="1"/>
+		<graphic url="10467/Autograph/01 E_II_362__S__31_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gracia et pax a deo per Iesum Christum.</s>
+					<s n="1" xml:lang="la" type="auto">Gracia et pax a deo per Iesum Christum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Mitto ad te exemplar, quod optima fide ab epistola manu <persName ref="19">Blaureri</persName> scripta excerpsi, quam hiis diebus ad <persName ref="36">Benedictum</persName> Burgoverum dedit<note xml:id="fn1" type="footnote" n="1"><persName ref="19">Ambrosius Blarers</persName> Brief an <persName ref="36">Burgauer</persName> ist in <placeName ref="1050">Stuttgart</placeName> am 27. August 1534 datiert. Die Abschrift <persName ref="176">Ritters</persName> befindet sich in Zürich StA, E II 360, 281 und ist abgedruckt in Blarer BW I 529. Eine weitere Kopie des Blarer-Briefes von der Hand <persName ref="184">Christoph Schappelers</persName> befindet sich in St. Gallen, Kantonsbibliothek (Vadiana), Ms 32, 215.</note>, ex qua sentenciam suam de cena dominica<note xml:id="fn2" type="footnote" n="2">Zur <placeName ref="1050">Stuttgarter</placeName> Einigungsformel zwischen <persName ref="19">Blarer</persName> und <persName ref="2087">Schnepf</persName> s. oben S. 291f, 3-6 und 279, Anm. 47.</note>, quam coram principe<note xml:id="fn3" type="footnote" n="3"><persName ref="224">Herzog Ulrich von Württemberg</persName>.</note> fassus est, liquido ac certissime cognoscere potes, deinde etiam, quid te ceterosque deceat, veritati scilicet periclitanti humeros supponere.</s>
+					<s n="2" xml:lang="la" type="auto">Mitto ad te exemplar, quod optima fide ab epistola manu <persName ref="person19">Blaureri</persName> scripta excerpsi, quam hiis diebus ad <persName ref="person36">Benedictum</persName> Burgoverum dedit<note xml:id="fn1" type="footnote" n="1"><persName ref="person19">Ambrosius Blarers</persName> Brief an <persName ref="person36">Burgauer</persName> ist in <placeName ref="place1050">Stuttgart</placeName> am 27. August 1534 datiert. Die Abschrift <persName ref="person176">Ritters</persName> befindet sich in Zürich StA, E II 360, 281 und ist abgedruckt in Blarer BW I 529. Eine weitere Kopie des Blarer-Briefes von der Hand <persName ref="person184">Christoph Schappelers</persName> befindet sich in St. Gallen, Kantonsbibliothek (Vadiana), Ms 32, 215.</note>, ex qua sentenciam suam de cena dominica<note xml:id="fn2" type="footnote" n="2">Zur <placeName ref="place1050">Stuttgarter</placeName> Einigungsformel zwischen <persName ref="person19">Blarer</persName> und <persName ref="person2087">Schnepf</persName> s. oben S. 291f, 3-6 und 279, Anm. 47.</note>, quam coram principe<note xml:id="fn3" type="footnote" n="3">Herzog <persName ref="person224">Ulrich</persName> von Württemberg.</note> fassus est, liquido ac certissime cognoscere potes, deinde etiam, quid te ceterosque deceat, veritati scilicet periclitanti humeros supponere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale et animum tuum super hac re michi indicato<note xml:id="fn4" type="footnote" n="4">Eine diesbezügliche Äußerung Bullingers gegenüber <persName ref="176">Ritter</persName> ist nicht erhalten. Am 27. August hatte er in einem Brief an <persName ref="226">Vadian</persName> seine Zweifel an der Einigungsformel signalisiert, von der er nur neuen Streit befürchtete, s. oben S. 292, 6-8.</note>, oro.</s>
+					<s n="3" xml:lang="la" type="auto">Vale et animum tuum super hac re michi indicato<note xml:id="fn4" type="footnote" n="4">Eine diesbezügliche Äußerung Bullingers gegenüber <persName ref="person176">Ritter</persName> ist nicht erhalten. Am 27. August hatte er in einem Brief an <persName ref="person226">Vadian</persName> seine Zweifel an der Einigungsformel signalisiert, von der er nur neuen Streit befürchtete, s. oben S. 292, 6-8.</note>, oro.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex <placeName ref="943">Scaphusia</placeName>, 2. septembris 1534.</s>
+					<s n="4" xml:lang="la" type="auto">Ex <placeName ref="place943">Scaphusia</placeName>, 2. septembris 1534.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="176">Erasmus Ritter</persName>, ex animo tuus.</s>
+					<s n="5" xml:lang="la" type="auto"><persName ref="person176">Erasmus Ritter</persName>, ex animo tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Et pio et docto M. Heinrichio Bullingero apud Tigurum Christi evangelium adnunctianti, fratri observando.</s>
+					<s n="6" xml:lang="la" type="auto">Et pio et docto M. Heinrichio Bullingero apud Tigurum Christi evangelium adnunctianti, fratri observando.</s>
 				</p>
 			</div>
 		</body>

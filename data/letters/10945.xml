@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=903</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=903</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 62,259</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 62,259</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,10 +50,10 @@
 						<summary>
 							<p xml:id="regest1">
 								Kann wegen der Lausanner Disputation erst jetzt schreiben. Die Beurteilung der
-								[<placeName ref="1205">Wittenberger</placeName>] Artikel durch die
-								<placeName ref="121">Berner</placeName> Synode, an der auch
-								<persName ref="39">Calvin</persName>, [<persName ref="602">Pierre</persName>]
-								<persName ref="602">Caroli</persName> und <persName ref="1564">Thomas Malingre</persName>
+								[<placeName ref="place1205">Wittenberger</placeName>] Artikel durch die
+								<placeName ref="place121">Berner</placeName> Synode, an der auch
+								<persName ref="person39">Calvin</persName>, [Pierre]
+								<persName ref="person602">Caroli</persName> und <persName ref="person1564">Thomas Malingre</persName>
 								teilgenommen haben, geht aus der beiliegenden Schrift hervor; da eine Spaltung gefährlich wäre, hat man [die
 								Konkordie] zwar nicht verworfen, doch wird sie ausdrücklich nur im Rahmen der von den Straßburgern gegebenen
 								Interpretation gebilligt.
@@ -70,51 +73,60 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10945">
 				<correspAction type="sent">
-					<persName ref="person#2263" cert="high">
+					<!--
+					<persName ref="person2263" cert="high">
 						<forename cert="high">Kaspar</forename>
 						<surname cert="high">Megander</surname>
-						<addName type="main">Megander (Großmann), Kaspar</addName>
+						<persName type="main" ref="person8412>Megander (Großmann), Kaspar</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Kaspar_Megander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/12037210X"/>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person2263" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1536-10-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1753" cert="high">
+					<!--
+					<persName ref="person1753" cert="high">
 						<forename cert="high">Leo</forename>
 						<surname cert="high">Jud</surname>
 						<graphic type="portrait" url="portraits/1753_Jud_Leo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Leo_Jud"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118558528"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11423330"/>
 					</persName>
-					<persName ref="person#495" cert="high">
+					-->
+					<persName ref="person1753" cert="high"/>
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10946"/>
-					<ref type="prev_chronologically" target="files.xml#10944"/>
-					<ref type="next_correspondence" target="files.xml#10960"/>
-					<ref type="prev_correspondence" target="files.xml#10876"/>
-					<ref type="next_correspondence_request" target="files.xml#10960"/>
-					<ref type="prev_correspondence_request" target="files.xml#10876"/>
+					<ref type="next_chronologically" target="file10946"/>
+					<ref type="prev_chronologically" target="file10944"/>
+					<ref type="next_correspondence" target="file10960"/>
+					<ref type="prev_correspondence" target="file10876"/>
+					<ref type="next_correspondence_request" target="file10960"/>
+					<ref type="prev_correspondence_request" target="file10876"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10960"/>
-					<ref type="prev_same_sender" target="files.xml#10876"/>
-					<ref type="next_same_addressee" target="files.xml#11615"/>
-					<ref type="prev_same_addressee" target="files.xml#10894"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10960"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10876"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11615"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10894"/>
+					<ref type="next_same_sender" target="file10960"/>
+					<ref type="prev_same_sender" target="file10876"/>
+					<ref type="next_same_addressee" target="file11615"/>
+					<ref type="prev_same_addressee" target="file10894"/>
+					<ref type="next_with_sender_as_addressee" target="file10960"/>
+					<ref type="prev_with_sender_as_addressee" target="file10876"/>
+					<ref type="next_with_addressee_as_sender" target="file11615"/>
+					<ref type="prev_with_addressee_as_sender" target="file10894"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -130,36 +142,36 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quod tardius scribo, fratres charissimi, ne egre feratis, plurimum rogo.</s>
-					<s xml:lang="la" type="auto">Non enim citius, nisi inabsoluto negocio, vobis scribere potui.</s>
-					<s xml:lang="la" type="auto">Disputacione <placeName ref="609">Lausannensi</placeName><note xml:id="fn1" type="footnote" n="1">Zur Lausanner Disputation, die vom 1. bis zum 8. Oktober dauerte, s. La Dispute de <placeName ref="609">Lausanne</placeName> (1536). La théologie réformée après Zwingli et avant <persName ref="39">Calvin</persName>. Textes du Colloque international sur la Dispute de <placeName ref="609">Lausanne</placeName> (29 septembre-1 er octobre 1986), réunis par Eric Junod, <placeName ref="609">Lausanne</placeName> 1988. -Bibliothèque historique vaudoise No 90.</note>, quę foelicissime successit, dies consumavi ac contrivi duodecim.</s>
+					<s n="2" xml:lang="la" type="auto">Quod tardius scribo, fratres charissimi, ne egre feratis, plurimum rogo.</s>
+					<s n="3" xml:lang="la" type="auto">Non enim citius, nisi inabsoluto negocio, vobis scribere potui.</s>
+					<s n="4" xml:lang="la" type="auto">Disputacione <placeName ref="place609">Lausannensi</placeName><note xml:id="fn1" type="footnote" n="1">Zur Lausanner Disputation, die vom 1. bis zum 8. Oktober dauerte, s. La Dispute de <placeName ref="place609">Lausanne</placeName> (1536). La théologie réformée après Zwingli et avant <persName ref="person39">Calvin</persName>. Textes du Colloque international sur la Dispute de <placeName ref="place609">Lausanne</placeName> (29 septembre-1 er octobre 1986), réunis par Eric Junod, <placeName ref="place609">Lausanne</placeName> 1988. -Bibliothèque historique vaudoise No 90.</note>, quę foelicissime successit, dies consumavi ac contrivi duodecim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Huius mensis decimo sexto noctu synodus nostra parochorum numero trecentorum, quatuor minus, coacta est.</s>
-					<s xml:lang="la" type="auto">Inter quos erant viii linguę Gallicę aliquot doctissimi, <persName ref="39">Calvinus</persName> videlicet, doctor <persName ref="602">Carolus</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="602">Pierre Caroli</persName>, geb. um 1480, gest. 1550(?), von <placeName ref="918">Rozay</placeName>-en-Brie (Dép. Seine-et-Marne), 1520 an der Sorbonne zum Doktor der Theologie promoviert, gehorte zum Kreis um Lefèvre d'Etaples und war am Reformversuch in der Diözese <placeName ref="686">Meaux</placeName> beteiligt. Als er wegen Häresie angeklagt wurde, fand er Zuflucht bei <persName ref="1584">Königin Margareta von Navarra</persName>, doch nach der "Affaire des placards" mußte er 1535 nach <placeName ref="398">Genf</placeName> fliehen. Im Herbst dieses Jahres immatrikulierte er sich in <placeName ref="97">Basel</placeName>, und 1536 wurde er Pfarrer in <placeName ref="764">Neuenburg</placeName>. An der Basler Tagung vorn 24./25. September 1536 muß er Bullinger begegnet sein. Gleich darauf nahm er an der Lausanner Disputation teil. Am 19. Oktober wurde er in <placeName ref="121">Bern</placeName> zum Pfarrer von <placeName ref="609">Lausanne</placeName> ernannt, wo es jedoch wegen seines hochfahrenden Auftretens bald zum Konflikt kam. Als er die <placeName ref="398">Genfer</placeName> Reformatoren des Arianismus beschuldigte, wurde er 1537 abgesetzt, worauf er sich in <placeName ref="653">Lyon</placeName> wieder der katholischen Kirche zuwandte. 1539 kehrte er in die <placeName ref="28">Schweiz</placeName> zurück und söhnte sich mit seinen Gegnern aus, doch bereits 1540 befand er sich wieder in <persName ref="1632">Metz</persName>, von wo aus er bis 1545 gegen die Reformation polemisierte. Sein späteres Schicksal ist unbekannt. - Lit.: Eduard <hi>Bähler,</hi> Petrus Caroli und <persName ref="39">Johannes Calvin</persName>. Ein Beitrag zur Geschichte und Kultur der Reformationszeit, in: Jahrbuch für Schweizerische Geschichte 29, 1904, S. 39-168; James K. <hi>Farge,</hi> Biographical Register of Paris Doctors of Theology, 1500-1536, Toronto 1980. - Subsidia mediaevalia 10, S. 65-71, Nr. 78; HBLS II 496.</note>, <persName ref="1564">Thomas</persName> Malingius<note xml:id="fn3" type="footnote" n="3"><persName ref="1564">Thomas Malingre</persName> (Pseudonym: Mathieu Gramelin), gest. 1572, Sohn eines Adligen von <placeName ref="722">Morvillers</placeName>-Saint-Saturnin (Dép. Somme), hatte bereits um 1527 als Dominikaner in <placeName ref="154">Blois</placeName> gegen die Messe gepredigt, bevor er um 1533 nach <placeName ref="764">Neuenburg</placeName> kam. Von hier zog er 1536 als Feldprediger in die Waadt, wo er Pfarrer und 1537 erster Dekan von Yverdon wurde und bald als Gegner <persName ref="39">Calvins</persName> in Erscheinung trat. Nach seiner Absetzung wegen Trunkenheit (1545) wirkte er ab 1546 in Aubonne und ab 1556 nochmals in Yverdon. Bedeutung erlangte er vor allem durch sein literarisches Schaffen; unter anderem verfaßte er Lieder sowie ein allegorisches Stück über die "Krankheit der Christenheit". - Lit.: Con. des réformateurs, besonders IV 46, Anm. 5, und VIII 202f, Anm. 1; CO X-XV, Reg.; Eduard <hi>Bähler,</hi> Jean Le Comté de la Croix. Ein Beitrag zur Reformationsgeschichte der Westschweiz, Biel 1895, S. 38, Anm. 1; Henri <hi>Vuilleumier,</hi> Histoire de l'Eglise réformée du Pays de Vaud sous le régime Bernois, Bd. I, <placeName ref="609">Lausanne</placeName> 1927, S. 453-463; HBLS V 7.</note> et<pb type="edition" next="442"/> quidam alii.</s>
-					<s xml:lang="la" type="auto">De Lutherana confessione<note xml:id="fn4" type="footnote" n="4"><persName ref="145">Megander</persName> bezieht sich auf die <placeName ref="1205">Wittenberger</placeName> Konkordie (BucerDS VI/1 114-134).</note> synodus hec nostra quid sentiat, quoque modo articuli eorundemque <persName ref="28">Buceri</persName> exposicio<note xml:id="fn5" type="footnote" n="5">Gemeint ist der Vortrag der <placeName ref="1049">Straßburger</placeName> an der Basler Tagung vom 24./25. September (BucerDS VI/I 227-239).</note> eidem probetur, presens hoc nostrum scriptum<note xml:id="fn6" type="footnote" n="6">"Actorum conventus Basiliensis et totius generalis synodi Bernensis descriptio nobilibus, venerandis et integris dominis suis, praetori ac senatui urbis Bernensis, a praedicta synodo exhibita", Zürich StA, E II 448, 1r.-3r. (am Ende ein von <persName ref="175">Rhellikan</persName> verfaßtes Gebet); Abschrift von Bullingers Hand: ebd., E II 337, 192v.-193v. (anschließend auf f. 194r.: "Articuli doctoris Lutheri et suorum ad postulata Bernensium adornati"). Eine offenbar für den Zürcher Rat angefertigte Abschrift und zwei verschiedene deutsche Übersetzungen finden sich in Zürich StA, E I 1. 2b. Eine dieser beiden Übersetzungen wurde von <persName ref="114">Leo Jud</persName> verfasst (eigenhändiger Entwurf: Zürich ZB, Ms S 41, 131; Abschrift Bullingers: ebd., Ms F 80, 205r.-206r). Eine weitere deutsche Übersetzung ist teilweise gedruckt in: <hi>Bizer,</hi> Abendmahlsstreit 162, Anm. 1.</note> testatur.</s>
-					<s xml:lang="la" type="auto">Quod a senatu populoque nostro hac, qua vobis transmittimus, forma receptum est.</s>
-					<s xml:lang="la" type="auto">Et certe, nisi parum studiosi alendae concordię visi fuissemus, <persName ref="138">Lutheri</persName> confessio a synodo nostra tota reiecta fuisset idque propter crebras ambiguitates.</s>
-					<s xml:lang="la" type="auto">Spectandum enim nobis, quemadmodum fideliter quidam<note xml:id="fn7" type="footnote" n="7">Unbekannt.</note> admonuit, ne nos Helveticę ecclesię segregemur ac partiamur.</s>
-					<s xml:lang="la" type="auto">Quod si, de religione actum esse idem adfirmat.</s>
-					<s xml:lang="la" type="auto">Non dubito, quam quod nostram responsionem, nisi pacis amans et studiosus esse non velit, <persName ref="138">Lutherus</persName> non aversurus sit.</s>
-					<s xml:lang="la" type="auto">Cui vero rei responsione nostra innitamur, facile vobis patere puto, videlicet fratrum <placeName ref="1049">Argentoratensium</placeName> vel explicacioni vel coram factae contestacioni de <persName ref="138">Luthero</persName>.</s>
-					<s xml:lang="la" type="auto">Qui si sensum hunc suum minus[?] esse adseruerit, negocii nobis nihil fuit cum <persName ref="138">Luthero</persName> et confessione eius.</s>
-					<s xml:lang="la" type="auto">Atque ita extra periculum.</s>
-					<s xml:lang="la" type="auto">Haec vobis paucis signifficare volumus, fratres charissimi, nosque plurimum commendare.</s>
+					<s n="5" xml:lang="la" type="auto">Huius mensis decimo sexto noctu synodus nostra parochorum numero trecentorum, quatuor minus, coacta est.</s>
+					<s n="6" xml:lang="la" type="auto">Inter quos erant viii linguę Gallicę aliquot doctissimi, <persName ref="person39">Calvinus</persName> videlicet, doctor <persName ref="person602">Carolus</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="person602">Pierre Caroli</persName>, geb. um 1480, gest. 1550(?), von <placeName ref="place918">Rozay</placeName>-en-Brie (Dép. Seine-et-Marne), 1520 an der Sorbonne zum Doktor der Theologie promoviert, gehorte zum Kreis um Lefèvre d'Etaples und war am Reformversuch in der Diözese <placeName ref="place686">Meaux</placeName> beteiligt. Als er wegen Häresie angeklagt wurde, fand er Zuflucht bei Königin <persName ref="person1584">Margareta</persName> von Navarra, doch nach der "Affaire des placards" mußte er 1535 nach <placeName ref="place398">Genf</placeName> fliehen. Im Herbst dieses Jahres immatrikulierte er sich in <placeName ref="place97">Basel</placeName>, und 1536 wurde er Pfarrer in <placeName ref="place764">Neuenburg</placeName>. An der Basler Tagung vorn 24./25. September 1536 muß er Bullinger begegnet sein. Gleich darauf nahm er an der Lausanner Disputation teil. Am 19. Oktober wurde er in <placeName ref="place121">Bern</placeName> zum Pfarrer von <placeName ref="place609">Lausanne</placeName> ernannt, wo es jedoch wegen seines hochfahrenden Auftretens bald zum Konflikt kam. Als er die <placeName ref="place398">Genfer</placeName> Reformatoren des Arianismus beschuldigte, wurde er 1537 abgesetzt, worauf er sich in <placeName ref="place653">Lyon</placeName> wieder der katholischen Kirche zuwandte. 1539 kehrte er in die <placeName ref="place28">Schweiz</placeName> zurück und söhnte sich mit seinen Gegnern aus, doch bereits 1540 befand er sich wieder in <persName ref="person1632">Metz</persName>, von wo aus er bis 1545 gegen die Reformation polemisierte. Sein späteres Schicksal ist unbekannt. - Lit.: Eduard <hi>Bähler,</hi> Petrus Caroli und <persName ref="person39">Johannes Calvin</persName>. Ein Beitrag zur Geschichte und Kultur der Reformationszeit, in: Jahrbuch für Schweizerische Geschichte 29, 1904, S. 39-168; James K. <hi>Farge,</hi> Biographical Register of Paris Doctors of Theology, 1500-1536, Toronto 1980. - Subsidia mediaevalia 10, S. 65-71, Nr. 78; HBLS II 496.</note>, <persName ref="person1564">Thomas</persName> Malingius<note xml:id="fn3" type="footnote" n="3"><persName ref="person1564">Thomas Malingre</persName> (Pseudonym: Mathieu Gramelin), gest. 1572, Sohn eines Adligen von <placeName ref="place722">Morvillers</placeName>-Saint-Saturnin (Dép. Somme), hatte bereits um 1527 als Dominikaner in <placeName ref="place154">Blois</placeName> gegen die Messe gepredigt, bevor er um 1533 nach <placeName ref="place764">Neuenburg</placeName> kam. Von hier zog er 1536 als Feldprediger in die Waadt, wo er Pfarrer und 1537 erster Dekan von Yverdon wurde und bald als Gegner <persName ref="person39">Calvins</persName> in Erscheinung trat. Nach seiner Absetzung wegen Trunkenheit (1545) wirkte er ab 1546 in Aubonne und ab 1556 nochmals in Yverdon. Bedeutung erlangte er vor allem durch sein literarisches Schaffen; unter anderem verfaßte er Lieder sowie ein allegorisches Stück über die "Krankheit der Christenheit". - Lit.: Con. des réformateurs, besonders IV 46, Anm. 5, und VIII 202f, Anm. 1; CO X-XV, Reg.; Eduard <hi>Bähler,</hi> Jean Le Comté de la Croix. Ein Beitrag zur Reformationsgeschichte der Westschweiz, Biel 1895, S. 38, Anm. 1; Henri <hi>Vuilleumier,</hi> Histoire de l'Eglise réformée du Pays de Vaud sous le régime Bernois, Bd. I, <placeName ref="place609">Lausanne</placeName> 1927, S. 453-463; HBLS V 7.</note> et<pb type="edition" next="442"/> quidam alii.</s>
+					<s n="7" xml:lang="la" type="auto">De Lutherana confessione<note xml:id="fn4" type="footnote" n="4"><persName ref="person145">Megander</persName> bezieht sich auf die <placeName ref="place1205">Wittenberger</placeName> Konkordie (BucerDS VI/1 114-134).</note> synodus hec nostra quid sentiat, quoque modo articuli eorundemque <persName ref="person28">Buceri</persName> exposicio<note xml:id="fn5" type="footnote" n="5">Gemeint ist der Vortrag der <placeName ref="place1049">Straßburger</placeName> an der Basler Tagung vom 24./25. September (BucerDS VI/1 227-239).</note> eidem probetur, presens hoc nostrum scriptum<note xml:id="fn6" type="footnote" n="6">"Actorum conventus Basiliensis et totius generalis synodi Bernensis descriptio nobilibus, venerandis et integris dominis suis, praetori ac senatui urbis Bernensis, a praedicta synodo exhibita", Zürich StA, E II 448, 1r.-3r. (am Ende ein von <persName ref="person175">Rhellikan</persName> verfaßtes Gebet); Abschrift von Bullingers Hand: ebd., E II 337, 192v.-193v. (anschließend auf f. 194r.: "Articuli doctoris Lutheri et suorum ad postulata Bernensium adornati"). Eine offenbar für den Zürcher Rat angefertigte Abschrift und zwei verschiedene deutsche Übersetzungen finden sich in Zürich StA, E I 1. 2b. Eine dieser beiden Übersetzungen wurde von <persName ref="person114">Leo Jud</persName> verfasst (eigenhändiger Entwurf: Zürich ZB, Ms S 41, 131; Abschrift Bullingers: ebd., Ms F 80, 205r.-206r). Eine weitere deutsche Übersetzung ist teilweise gedruckt in: <hi>Bizer,</hi> Abendmahlsstreit 162, Anm. 1.</note> testatur.</s>
+					<s n="8" xml:lang="la" type="auto">Quod a senatu populoque nostro hac, qua vobis transmittimus, forma receptum est.</s>
+					<s n="9" xml:lang="la" type="auto">Et certe, nisi parum studiosi alendae concordię visi fuissemus, <persName ref="person138">Lutheri</persName> confessio a synodo nostra tota reiecta fuisset idque propter crebras ambiguitates.</s>
+					<s n="10" xml:lang="la" type="auto">Spectandum enim nobis, quemadmodum fideliter quidam<note xml:id="fn7" type="footnote" n="7">Unbekannt.</note> admonuit, ne nos Helveticę ecclesię segregemur ac partiamur.</s>
+					<s n="11" xml:lang="la" type="auto">Quod si, de religione actum esse idem adfirmat.</s>
+					<s n="12" xml:lang="la" type="auto">Non dubito, quam quod nostram responsionem, nisi pacis amans et studiosus esse non velit, <persName ref="person138">Lutherus</persName> non aversurus sit.</s>
+					<s n="13" xml:lang="la" type="auto">Cui vero rei responsione nostra innitamur, facile vobis patere puto, videlicet fratrum <placeName ref="place1049">Argentoratensium</placeName> vel explicacioni vel coram factae contestacioni de <persName ref="person138">Luthero</persName>.</s>
+					<s n="14" xml:lang="la" type="auto">Qui si sensum hunc suum minus[?] esse adseruerit, negocii nobis nihil fuit cum <persName ref="person138">Luthero</persName> et confessione eius.</s>
+					<s n="15" xml:lang="la" type="auto">Atque ita extra periculum.</s>
+					<s n="16" xml:lang="la" type="auto">Haec vobis paucis signifficare volumus, fratres charissimi, nosque plurimum commendare.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="121">Bernę</placeName>, 20. octobris anno 36.</s>
+					<s n="17" xml:lang="la" type="auto"><placeName ref="place121">Bernę</placeName>, 20. octobris anno 36.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Megand. ex animo vester.</s>
+					<s n="18" xml:lang="la" type="auto">Megand. ex animo vester.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Leoni<note xml:id="fn8" type="footnote" n="8"><persName ref="114">Leo Jud</persName>.</note> ac Bullingero, fratribus suis in domino omnium charissimis.</s>
+					<s n="19" xml:lang="la" type="auto">Leoni<note xml:id="fn8" type="footnote" n="8"><persName ref="person114">Leo Jud</persName>.</note> ac Bullingero, fratribus suis in domino omnium charissimis.</s>
 				</p>
 			</div>
 		</body>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1049</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 345,375</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 345,375</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 67,181</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 67,181</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -56,70 +62,56 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/243">
 				<correspAction type="sent">
-					<persName ref="person#2318" cert="high">
+					<!--
+					<persName ref="person2318" cert="high">
 						<forename cert="high">Thomas</forename>
 						<surname cert="high">Naogeorgus</surname>
-						<addName type="main">Naogeorg (Kirchmayer, Hecalius), Thomas</addName>
+						<persName type="main" ref="person8124>Naogeorg (Kirchmayer, Hecalius), Thomas</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Thomas_Naogeorg"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118785656"/>
 					</persName>
-					<place source="#245" cert="high">
-						<settlement>Kaufbeuren</settlement>
-						<district>Bayern</district>
-						<country>Deutschland</country>
-						<geo>47.88238 10.62192</geo>
-					</place>
+					-->
+					<persName ref="person2318" cert="high"/>
+					<place source="place245" cert="high"/>
 					<date when="1548-08-26" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
-						<roleName type="title">
-							<name type="singular" ref="role#26" cert="high">Geistlicher</name>
-							<place source="#587" cert="high">
-								<settlement>Zürich</settlement>
-								<district>Zürich</district>
-								<country>Schweiz</country>
-								<geo>47.370093 8.544054</geo>
-							</place>
-						</roleName>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
+						<personGrp ref="role51" role="Geistlicher"/>
 					</persName>
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
+					-->
+					<persName ref="person495" cert="high"/>
+					<personGrp ref="role51" role="Geistlicher"/>
+					<!--
 					<note type="Adresse">und andere Geistliche von Zürich</note>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#244"/>
-					<ref type="prev_chronologically" target="files.xml#242"/>
+					<ref type="next_chronologically" target="file244"/>
+					<ref type="prev_chronologically" target="file242"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#366"/>
-					<ref type="prev_same_sender" target="files.xml#13083"/>
-					<ref type="next_same_addressee" target="files.xml#1034"/>
-					<ref type="prev_same_addressee" target="files.xml#12794"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#366"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13083"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1034"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12794"/>
+					<ref type="next_same_sender" target="file366"/>
+					<ref type="prev_same_sender" target="file13083"/>
+					<ref type="next_same_addressee" target="file1034"/>
+					<ref type="prev_same_addressee" target="file12794"/>
+					<ref type="next_with_sender_as_addressee" target="file366"/>
+					<ref type="prev_with_sender_as_addressee" target="file13083"/>
+					<ref type="next_with_addressee_as_sender" target="file1034"/>
+					<ref type="prev_with_addressee_as_sender" target="file12794"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -137,29 +129,29 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Non vos praeterit, doctissimi viri et domini mei observandi, quanta iam nos in his regionibus verbum domini annunciantes tempestas invaserit et oppresserit quodque civitates imperiales ad papismum redire coactae sint.</s>
-					<s xml:lang="la" type="auto">Qua de re multa scribere non est tutum.</s>
-					<s xml:lang="la" type="auto">Quumque fere omnes caeterae civitates papismum invitę receperint, sola Kaufpüra et prima et non invita missam aliasque papisticas ceremonias doctrinamque instituit amplexaque est meque a docendi munere removit et dimisit.</s>
-					<s xml:lang="la" type="auto">Porro quum parvulum in me dei donum ipsasque literas non libenter omnino deserere velim neque mihi in his regionibus amplius locum superesse intelligam, ad vos confugio consilium auxiliumque rogans, ut, si quem istic aut alibi docendi locum evangelii aut ludum literarium publicum vacare nostis, mihi ob christianam dilectionem propsicere dignemini.</s>
-					<s xml:lang="la" type="auto">Nihil sum recusaturus, modo Christo atque literis operam dare possim.</s>
-					<s xml:lang="la" type="auto">Rescribite mihi igitur, quaeso, quid super hac re apud vos spei sit, et simul, an mihi istuc cum sarcinis et familia commigrare liceat hospiciumque interea parari et conduci possit.</s>
-					<s xml:lang="la" type="auto">Quod si in praesentia nihil est loci, rogo tamen, si unquam posthac aliquid vacaverit, in eo mihi adiutores et fautores sitis idque hic hęrenti aliquantisper misso meis expensis tabellario significetis.</s>
-					<s xml:lang="la" type="auto">Eam ego vestram operam, quibuscumque potero officiis, studiosissime promerebor neque committam, ut me quisquam ingratitudinis merito accusare possit.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Non vos praeterit, doctissimi viri et domini mei observandi, quanta iam nos in his regionibus verbum domini annunciantes tempestas invaserit et oppresserit quodque civitates imperiales ad papismum redire coactae sint.</s>
+					<s n="3" xml:lang="la" type="auto">Qua de re multa scribere non est tutum.</s>
+					<s n="4" xml:lang="la" type="auto">Quumque fere omnes caeterae civitates papismum invitę receperint, sola Kaufpüra et prima et non invita missam aliasque papisticas ceremonias doctrinamque instituit amplexaque est meque a docendi munere removit et dimisit.</s>
+					<s n="5" xml:lang="la" type="auto">Porro quum parvulum in me dei donum ipsasque literas non libenter omnino deserere velim neque mihi in his regionibus amplius locum superesse intelligam, ad vos confugio consilium auxiliumque rogans, ut, si quem istic aut alibi docendi locum evangelii aut ludum literarium publicum vacare nostis, mihi ob christianam dilectionem propsicere dignemini.</s>
+					<s n="6" xml:lang="la" type="auto">Nihil sum recusaturus, modo Christo atque literis operam dare possim.</s>
+					<s n="7" xml:lang="la" type="auto">Rescribite mihi igitur, quaeso, quid super hac re apud vos spei sit, et simul, an mihi istuc cum sarcinis et familia commigrare liceat hospiciumque interea parari et conduci possit.</s>
+					<s n="8" xml:lang="la" type="auto">Quod si in praesentia nihil est loci, rogo tamen, si unquam posthac aliquid vacaverit, in eo mihi adiutores et fautores sitis idque hic hęrenti aliquantisper misso meis expensis tabellario significetis.</s>
+					<s n="9" xml:lang="la" type="auto">Eam ego vestram operam, quibuscumque potero officiis, studiosissime promerebor neque committam, ut me quisquam ingratitudinis merito accusare possit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bene valete, domini mei colendissime, et rescribite.</s>
-					<s xml:lang="la" type="auto">Datum Kaufpurae 26. Augusti 1548.</s>
+					<s n="10" xml:lang="la" type="auto">Bene valete, domini mei colendissime, et rescribite.</s>
+					<s n="11" xml:lang="la" type="auto">Datum Kaufpurae 26. Augusti 1548.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">M. Thomas Naogeorgus</s>
+					<s n="12" xml:lang="la" type="auto">M. Thomas Naogeorgus</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Pietate et eruditione praestantissimis viris et dominis D. Henrico Bullingero aliisque ecclesiae Tigurinae doctoribus et ministris, dominis suis plurimum observandis.</s>
+					<s n="13" xml:lang="la" type="auto">Pietate et eruditione praestantissimis viris et dominis D. Henrico Bullingero aliisque ecclesiae Tigurinae doctoribus et ministris, dominis suis plurimum observandis.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Zürich</s>
+					<s n="14" xml:lang="de" type="auto">Zürich</s>
 				</p>
 			</div>
 		</body>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3343</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 359,2899</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 359,2899</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,14 +44,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 80,153</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">nur Regest</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 80,153</idno>
+						<idno subtype="Hinweis">nur Regest</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -62,65 +68,31 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2065">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#65" cert="low">Schultheissen</name>
-						<place source="#555" cert="low">
-							<settlement>Winterthur</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.50564 8.72413</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="low">Räte</name>
-						<place source="#555" cert="low">
-							<settlement>Winterthur</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.50564 8.72413</geo>
-						</place>
-					</roleName>
-					<place source="#555" cert="low">
-						<settlement>Winterthur</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.50564 8.72413</geo>
-					</place>
+					<personGrp ref="role0" role="Schultheissen"/>
+					<personGrp ref="role0" role="Räte"/>
+					<place source="place555" cert="low"/>
 					<date when="1553-11-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#22" cert="high">Examinatoren</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role44" role="Examinatoren"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2066"/>
-					<ref type="prev_chronologically" target="files.xml#2064"/>
-					<ref type="next_correspondence" target="files.xml#3059"/>
+					<ref type="next_chronologically" target="file2066"/>
+					<ref type="prev_chronologically" target="file2064"/>
+					<ref type="next_correspondence" target="file3059"/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#3059"/>
+					<ref type="next_correspondence_reaction" target="file3059"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#2914"/>
-					<ref type="prev_same_sender" target="files.xml#2020"/>
-					<ref type="next_same_addressee" target="files.xml#3059"/>
+					<ref type="next_same_sender" target="file2914"/>
+					<ref type="prev_same_sender" target="file2020"/>
+					<ref type="next_same_addressee" target="file3059"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2914"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2020"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3059"/>
+					<ref type="next_with_sender_as_addressee" target="file2914"/>
+					<ref type="prev_with_sender_as_addressee" target="file2020"/>
+					<ref type="next_with_addressee_as_sender" target="file3059"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -140,16 +112,16 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Wolgelerten, wyrdigen, fromen, fürsichtigen, wysen, insonders gnedygen, lieben heren.</s>
-					<s xml:lang="de" type="auto">Uch sige unser früntlich gruͦs, geneygten, undertenigen, willigen dienst sampt was wir eren, liebs und guͦts vermöchten, zevor.</s>
-					<s xml:lang="de" type="auto">Gnedigen, lieben heren, wir haben Emanuell Koffman, zeyger dis brieffs, verschyner tagen zuͦ einem profyssor angenomen und darnebent unser armen lüthen der sondersiechen kylchen zuͦ versechen, bevolchen.</s>
-					<s xml:lang="de" type="auto">Dyewill er aber sins könens von üch noch nit examiniert worden, habend wir ime in bevelch geben, sich vor üwer ersam wißheit der gstaldt dar zestellen, mitt undertenigem pyt hienebent, den guten jungen man in günstigem bevelch ze haben.</s>
-					<s xml:lang="de" type="auto">Das stat uns in aller undertänigkeith umb e[wer] e[rsam] w[ißheit] zu beschulden.</s>
-					<s xml:lang="de" type="auto">Datum 7. tag wintermonat anno etc. 1553.</s>
+					<s n="1" xml:lang="de" type="auto">Wolgelerten, wyrdigen, fromen, fürsichtigen, wysen, insonders gnedygen, lieben heren.</s>
+					<s n="2" xml:lang="de" type="auto">Uch sige unser früntlich gruͦs, geneygten, undertenigen, willigen dienst sampt was wir eren, liebs und guͦts vermöchten, zevor.</s>
+					<s n="3" xml:lang="de" type="auto">Gnedigen, lieben heren, wir haben Emanuell Koffman, zeyger dis brieffs, verschyner tagen zuͦ einem profyssor angenomen und darnebent unser armen lüthen der sondersiechen kylchen zuͦ versechen, bevolchen.</s>
+					<s n="4" xml:lang="de" type="auto">Dyewill er aber sins könens von üch noch nit examiniert worden, habend wir ime in bevelch geben, sich vor üwer ersam wißheit der gstaldt dar zestellen, mitt undertenigem pyt hienebent, den guten jungen man in günstigem bevelch ze haben.</s>
+					<s n="5" xml:lang="de" type="auto">Das stat uns in aller undertänigkeith umb e[wer] e[rsam] w[ißheit] zu beschulden.</s>
+					<s n="6" xml:lang="de" type="auto">Datum 7. tag wintermonat anno etc. 1553.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Schultheis und rath der sta[d]t Winterthur.</s>
-					<s xml:lang="de" type="auto">Den wolgelerten, wyrdigen, fromen, fürsichtigen, wysen gemeiner versamlung sampt und sonders des examens der stat Zürich, unsern gnedigen, lieben herenn.</s>
+					<s n="7" xml:lang="de" type="auto">Schultheis und rath der sta[d]t Winterthur.</s>
+					<s n="8" xml:lang="de" type="auto">Den wolgelerten, wyrdigen, fromen, fürsichtigen, wysen gemeiner versamlung sampt und sonders des examens der stat Zürich, unsern gnedigen, lieben herenn.</s>
 				</p>
 			</div>
 		</body>

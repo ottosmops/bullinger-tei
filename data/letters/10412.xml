@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=378</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=378</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,26</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,26</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,17 +49,17 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								<persName ref="50">Guillaume</persName> [du <persName ref="50">Bellay</persName>, Seigneur]
-								de Langey, der Gesandte des französischen <persName ref="859">Königs</persName>, besprach sich in
+								Guillaume [du Bellay, Seigneur]
+								de Langey, der Gesandte des französischen Königs, besprach sich in
 								Zürich mit den Theologen und bat um ein Gutachten zur Wiederherstellung des Kirchenfriedens. Dieses wurde
 								versprochen, aber darin werde man von der Schrift und der Lehre in nichts weichen; man wolle mit der
 								Wahrheit der Einheit nützen. Bullinger befürchtet, daß das [diplomatische] Unternehmen nur dazu diene, die
-								Deutschen dem [französischen] <persName ref="859">König</persName> geneigt zu machen. Hat erst
-								Gerüchte über den Sieg der Fürsten [<persName ref="169">Philipp</persName> und
-								<persName ref="224">Ulrich</persName>] und wünscht genauere Nachrichten darüber sowie über
-								<persName ref="345">Sebastian</persName> [<persName ref="345">Appenzeller</persName>] und die
-								Pensionenempfänger. Grüße. Sollte <persName ref="832">Ferdinand</persName> unterlegen sein, geht es
-								wohl auch dem Abt von <placeName ref="1011">St. Gallen</placeName> nicht mehr so gut.
+								Deutschen dem [französischen] König geneigt zu machen. Hat erst
+								Gerüchte über den Sieg der Fürsten [Philipp und
+								<persName ref="person224">Ulrich</persName>] und wünscht genauere Nachrichten darüber sowie über
+								Sebastian [<persName ref="person345">Appenzeller</persName>] und die
+								Pensionenempfänger. Grüße. Sollte Ferdinand unterlegen sein, geht es
+								wohl auch dem Abt von <placeName ref="place1011">St. Gallen</placeName> nicht mehr so gut.
 							</p>
 						</summary>
 					</msContents>
@@ -73,46 +76,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10412">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1534-05-21" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
+					-->
+					<persName ref="person3306" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10413"/>
-					<ref type="prev_chronologically" target="files.xml#10411"/>
-					<ref type="next_correspondence" target="files.xml#10454"/>
-					<ref type="prev_correspondence" target="files.xml#10408"/>
-					<ref type="next_correspondence_request" target="files.xml#10464"/>
-					<ref type="prev_correspondence_request" target="files.xml#10396"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10454"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10408"/>
-					<ref type="next_same_sender" target="files.xml#10421"/>
-					<ref type="prev_same_sender" target="files.xml#10409"/>
-					<ref type="next_same_addressee" target="files.xml#10454"/>
-					<ref type="prev_same_addressee" target="files.xml#10408"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10421"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10409"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10454"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10408"/>
+					<ref type="next_chronologically" target="file10413"/>
+					<ref type="prev_chronologically" target="file10411"/>
+					<ref type="next_correspondence" target="file10454"/>
+					<ref type="prev_correspondence" target="file10408"/>
+					<ref type="next_correspondence_request" target="file10464"/>
+					<ref type="prev_correspondence_request" target="file10396"/>
+					<ref type="next_correspondence_reaction" target="file10454"/>
+					<ref type="prev_correspondence_reaction" target="file10408"/>
+					<ref type="next_same_sender" target="file10421"/>
+					<ref type="prev_same_sender" target="file10409"/>
+					<ref type="next_same_addressee" target="file10454"/>
+					<ref type="prev_same_addressee" target="file10408"/>
+					<ref type="next_with_sender_as_addressee" target="file10421"/>
+					<ref type="prev_with_sender_as_addressee" target="file10409"/>
+					<ref type="next_with_addressee_as_sender" target="file10454"/>
+					<ref type="prev_with_addressee_as_sender" target="file10408"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -130,40 +137,40 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Guilelmus a Lange<note xml:id="fn1" type="footnote" n="1"><persName ref="50">Guillaume</persName> du <persName ref="50">Bellay</persName>, Seigneur de Langey.</note>, legatus et orator regis Gallorum<note xml:id="fn2" type="footnote" n="2"><persName ref="859">Franz</persName> I.</note> quo de tu nuper scribebas<note xml:id="fn3" type="footnote" n="3">Oben <ref target="file#10408">Nr. 375</ref>.</note>, Tigurum non multos ante dies venit, nos in colloquium evocavit<note xml:id="fn4" type="footnote" n="4">Vgl. oben S. 179, 27-52.</note> et prorsus eadem illa nobiscum contulit, quae tecum.</s>
-					<s xml:lang="la" type="auto">Vir est ingenii amoenissimi, eloquens, prudens, versutus et doctus<note xml:id="fn5" type="footnote" n="5">Dieses Urteil Bullingers über du <persName ref="50">Bellay</persName> und teilweise die folgenden Zeilen (bis Z. 17) finden sich u. a. zitiert bei Corr. des réformateurs III 181, Anm. 1 und <hi>Bourrilly,</hi> <persName ref="50">Guillaume</persName> du <persName ref="50">Bellay</persName> 176, Anm. 3.</note> et de quo mihi optima quaeque pollicerer, si non suspicio mihi fuisset oborta illum vel aliud regis nomine intendere, quam ipsa hominis verba instructissima sane prae se ferant, vel duabus hunc sellis sedere<note xml:id="fn6" type="footnote" n="6">Vgl. Adagia 1, 7, 2 (LB II 262f F-A); Otto 315f, Nr. 1621.</note>.</s>
-					<s xml:lang="la" type="auto">Petiit a nobis, ut scriptis mandaremus, quod pro sarcienda pace ecclesiae nobis optimum videretur et in quibus nos esse vel infirmorum gratia cedere vellemus.</s>
-					<s xml:lang="la" type="auto">Polliciti sumus id nos facturos aliquando<note xml:id="fn7" type="footnote" n="7">Bullinger übergab die Stellungnahme der Zürcher erst am 17. Januar 1535 (Original: Paris Bibliothèque Nationale, Ms Dupuy 424, f. 53r.-54v.) dem Agenten du <persName ref="50">Bellays</persName>, <persName ref="41">Ulrich Chelius</persName> (Geiger), s. <hi>Seidel</hi> 79. 82-87 (mit Korrekturen zur ältern Lit.); vgl. ferner auch 14f. 126. Bei <hi>Pestalozzi</hi> 272f steht irrtümlich <persName ref="727">Wilhelm</persName> du <persName ref="727">Cange</persName> für de Langey.</note>, sed paucissima adeoque nulla fore<note xml:id="fna" type="footnote" n="a">adeoque nulla fore <hi>am Rande nachgetragen an Stelle eines gestrichenen</hi> esse.</note> in, quibus possimus a receptis vel dogmatis [ve]l moribus [ec]clesiasticis<note xml:id="fnb" type="footnote" n="b">[ve]l moribus [ec]clesiasticis <hi>am Rande nachgetragen, Rand im engen Einband nicht zugänglich.</hi></note> vel tantillum cedere.</s>
-					<s xml:lang="la" type="auto">Interim tamen nos nihil non facturos, sed<note xml:id="fnc" type="footnote" n="c">sed <hi>über gestrichenem</hi> attamen.</note> salva veritate quod modo videatur paci concordiaeque vel aliquid prodesse.</s>
-					<s xml:lang="la" type="auto">Vereor ego totum hoc negotium in hoc subornatum esse ab hominibus astutissimis<note xml:id="fn8" type="footnote" n="8">Gemeint sind französische Räte.</note>, ut hac arte Germanorum animos regi suo adornent, quo paratiores promptioresque inveniant, cum Germanorum opera fuerit opus etc.</s>
+					<s n="2" xml:lang="la" type="auto">Guilelmus a Lange<note xml:id="fn1" type="footnote" n="1">Guillaume du Bellay, Seigneur de Langey.</note>, legatus et orator regis Gallorum<note xml:id="fn2" type="footnote" n="2"><persName ref="person859">Franz I.</persName></note> quo de tu nuper scribebas<note xml:id="fn3" type="footnote" n="3">Oben <ref target="file10408">Nr. 375</ref>.</note>, Tigurum non multos ante dies venit, nos in colloquium evocavit<note xml:id="fn4" type="footnote" n="4">Vgl. oben S. 179, 27-52.</note> et prorsus eadem illa nobiscum contulit, quae tecum.</s>
+					<s n="3" xml:lang="la" type="auto">Vir est ingenii amoenissimi, eloquens, prudens, versutus et doctus<note xml:id="fn5" type="footnote" n="5">Dieses Urteil Bullingers über du Bellay und teilweise die folgenden Zeilen (bis Z. 17) finden sich u. a. zitiert bei Corr. des réformateurs III 181, Anm. 1 und <hi>Bourrilly,</hi> Guillaume du Bellay 176, Anm. 3.</note> et de quo mihi optima quaeque pollicerer, si non suspicio mihi fuisset oborta illum vel aliud regis nomine intendere, quam ipsa hominis verba instructissima sane prae se ferant, vel duabus hunc sellis sedere<note xml:id="fn6" type="footnote" n="6">Vgl. Adagia 1, 7, 2 (LB II 262f F-A); Otto 315f, Nr. 1621.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Petiit a nobis, ut scriptis mandaremus, quod pro sarcienda pace ecclesiae nobis optimum videretur et in quibus nos esse vel infirmorum gratia cedere vellemus.</s>
+					<s n="5" xml:lang="la" type="auto">Polliciti sumus id nos facturos aliquando<note xml:id="fn7" type="footnote" n="7">Bullinger übergab die Stellungnahme der Zürcher erst am 17. Januar 1535 (Original: Paris Bibliothèque Nationale, Ms Dupuy 424, f. 53r.-54v.) dem Agenten du Bellays, <persName ref="person41">Ulrich Chelius</persName> (Geiger), s. <hi>Seidel</hi> 79. 82-87 (mit Korrekturen zur ältern Lit.); vgl. ferner auch 14f. 126. Bei <hi>Pestalozzi</hi> 272f steht irrtümlich Wilhelm du Cange für de Langey.</note>, sed paucissima adeoque nulla fore<note xml:id="fna" type="footnote" n="a">adeoque nulla fore <hi>am Rande nachgetragen an Stelle eines gestrichenen</hi> esse.</note> in, quibus possimus a receptis vel dogmatis [ve]l moribus [ec]clesiasticis<note xml:id="fnb" type="footnote" n="b">[ve]l moribus [ec]clesiasticis <hi>am Rande nachgetragen, Rand im engen Einband nicht zugänglich.</hi></note> vel tantillum cedere.</s>
+					<s n="6" xml:lang="la" type="auto">Interim tamen nos nihil non facturos, sed<note xml:id="fnc" type="footnote" n="c">sed <hi>über gestrichenem</hi> attamen.</note> salva veritate quod modo videatur paci concordiaeque vel aliquid prodesse.</s>
+					<s n="7" xml:lang="la" type="auto">Vereor ego totum hoc negotium in hoc subornatum esse ab hominibus astutissimis<note xml:id="fn8" type="footnote" n="8">Gemeint sind französische Räte.</note>, ut hac arte Germanorum animos regi suo adornent, quo paratiores promptioresque inveniant, cum Germanorum opera fuerit opus etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quo autem turbulentiora<note xml:id="fnd" type="footnote" n="d"><hi>vor</hi> turbulentiora <hi>gestrichen</hi> omnia.</note> sunt omnia hoc magis ardeo literarum tuarum desyderio.</s>
-					<s xml:lang="la" type="auto">De victoria ducum<note xml:id="fn9" type="footnote" n="9"><persName ref="169">Landgraf Philipp von Hessen</persName> und <persName ref="224">Herzog Ulrich von Württemberg</persName> hatten am 12./13. Mai 1534 die österreichischen Truppen bei <placeName ref="606">Lauffen</placeName> und <placeName ref="552">Kirchheim am Neckar</placeName> besiegt, s. <hi>Wille</hi> 179-182.</note> quaedam audivi, sed quid in re sit, nondum<pb type="edition" next="184"/> liquido didici.</s>
-					<s xml:lang="la" type="auto">Scio autem te istarum rerum omnium esse peritissimum.</s>
-					<s xml:lang="la" type="auto">Orarem igitur, ni negotiis adobrutum magis obruere puderet, aliquot verbis annotares, quid actum sit, quinam ea clade - si modo vera sunt, quae fama circumferuntur - perierint, an princeps<note xml:id="fn10" type="footnote" n="10"><persName ref="224">Herzog Ulrich</persName>.</note> patriam<note xml:id="fn11" type="footnote" n="11"><placeName ref="100">Württemberg</placeName>.</note> recuperarit aut quid viri boni ominentur.</s>
-					<s xml:lang="la" type="auto">Hac re nihil poteris hodie scribere gratius.</s>
-					<s xml:lang="la" type="auto">Sed de <persName ref="345">Sebastiano</persName><note xml:id="fn12" type="footnote" n="12">Gemeint ist <persName ref="345">Sebastian Appenzeller</persName> (vgl. unten S. 192, 38f), Sohn des St. Galler Stadtschreibers <persName ref="342">Konrad Appenzeller</persName>. Sebastian immatrikulierte sich 1505 in <placeName ref="617">Leipzig</placeName>, war 1512-1523 Schreiber der <placeName ref="28">Schweizer</placeName> Garde zu <placeName ref="906">Rom</placeName>, erhielt vom Papst 1520 die Leutpriesterei <placeName ref="112">Berg</placeName> (Kt. <placeName ref="1011">St. Gallen</placeName>), welche bereits vergeben war; die Tagsatzung riet zu einem Vergleich. Nach seiner Rückkehr 1523 wurde er entschiedener Anhänger <persName ref="265">Zwinglis</persName> und <persName ref="226">Vadians</persName>, mit dem er verwandt war und Briefe wechselte. Er heiratete die (dem Namen nach unbekannte) Nichte der ehemaligen Fraumünster-Äbtissin <persName ref="2607">Katharina von Zimmern</persName> (Z VIII 204. 295; <persName ref="226">Vadian</persName> BW III 80. 106; vgl. VI 839). Er diente häufig als Gesandter und als Briefbote und vermittelte dabei Nachrichten, letztmals im Sommer 1538. - Lit.: Z VIII. IX. XI Reg.; <persName ref="226">Vadian</persName> BW III-VI Reg.; EA III/2, S. 1242; EA IV/Ia, S. 615. 625. 656; Kessler, Sabbata 404, 2. 586; <hi>Staerkle</hi> 253, <ref target="file#10536">Nr. 500</ref>; in HBLS I 403 scheinen zwei verschiedene Appenzeller vermengt worden zu sein.</note> et pensionariis<note xml:id="fn13" type="footnote" n="13">Welches die Pensionenempfänger im einzelnen waren und ob <persName ref="342">Appenzeller</persName> dazu gehörte, ließ sich nicht ermitteln. Du <persName ref="50">Bellay</persName> konnte nach der Tagsatzung vom 5. Mai 100000 écus an die Orte verteilen lassen, s. <hi>Rott,</hi> Représentation Diplomatique I 398; <hi>Bourrilly,</hi> <persName ref="50">Guillaume</persName> du <persName ref="50">Bellay</persName> 169.</note> quid?</s>
+					<s n="8" xml:lang="la" type="auto">Quo autem turbulentiora<note xml:id="fnd" type="footnote" n="d"><hi>vor</hi> turbulentiora <hi>gestrichen</hi> omnia.</note> sunt omnia hoc magis ardeo literarum tuarum desyderio.</s>
+					<s n="9" xml:lang="la" type="auto">De victoria ducum<note xml:id="fn9" type="footnote" n="9">Landgraf Philipp von Hessen und Herzog <persName ref="person224">Ulrich</persName> von Württemberg hatten am 12./13. Mai 1534 die österreichischen Truppen bei <placeName ref="place606">Lauffen</placeName> und <placeName ref="place552">Kirchheim am Neckar</placeName> besiegt, s. <hi>Wille</hi> 179-182.</note> quaedam audivi, sed quid in re sit, nondum<pb type="edition" next="184"/> liquido didici.</s>
+					<s n="10" xml:lang="la" type="auto">Scio autem te istarum rerum omnium esse peritissimum.</s>
+					<s n="11" xml:lang="la" type="auto">Orarem igitur, ni negotiis adobrutum magis obruere puderet, aliquot verbis annotares, quid actum sit, quinam ea clade - si modo vera sunt, quae fama circumferuntur - perierint, an princeps<note xml:id="fn10" type="footnote" n="10">Herzog <persName ref="person224">Ulrich</persName>.</note> patriam<note xml:id="fn11" type="footnote" n="11"><placeName ref="place100">Württemberg</placeName>.</note> recuperarit aut quid viri boni ominentur.</s>
+					<s n="12" xml:lang="la" type="auto">Hac re nihil poteris hodie scribere gratius.</s>
+					<s n="13" xml:lang="la" type="auto">Sed de <persName ref="person345">Sebastiano</persName><note xml:id="fn12" type="footnote" n="12">Gemeint ist <persName ref="person345">Sebastian Appenzeller</persName> (vgl. unten S. 192, 38f), Sohn des St. Galler Stadtschreibers <persName ref="person342">Konrad Appenzeller</persName>. Sebastian immatrikulierte sich 1505 in <placeName ref="place617">Leipzig</placeName>, war 1512-1523 Schreiber der <placeName ref="place28">Schweizer</placeName> Garde zu <placeName ref="place906">Rom</placeName>, erhielt vom Papst 1520 die Leutpriesterei <placeName ref="place112">Berg</placeName> (Kt. <placeName ref="place1011">St. Gallen</placeName>), welche bereits vergeben war; die Tagsatzung riet zu einem Vergleich. Nach seiner Rückkehr 1523 wurde er entschiedener Anhänger <persName ref="person265">Zwinglis</persName> und <persName ref="person226">Vadians</persName>, mit dem er verwandt war und Briefe wechselte. Er heiratete die (dem Namen nach unbekannte) Nichte der ehemaligen Fraumünster-Äbtissin <persName ref="person2607">Katharina von Zimmern</persName> (Z VIII 204. 295; <persName ref="person226">Vadian</persName> BW III 80. 106; vgl. VI 839). Er diente häufig als Gesandter und als Briefbote und vermittelte dabei Nachrichten, letztmals im Sommer 1538. - Lit.: Z VIII. IX. XI Reg.; <persName ref="person226">Vadian</persName> BW III-VI Reg.; EA III/2, S. 1242; EA IV/Ia, S. 615. 625. 656; Kessler, Sabbata 404, 2. 586; <hi>Staerkle</hi> 253, <ref target="file10536">Nr. 500</ref>; in HBLS I 403 scheinen zwei verschiedene Appenzeller vermengt worden zu sein.</note> et pensionariis<note xml:id="fn13" type="footnote" n="13">Welches die Pensionenempfänger im einzelnen waren und ob <persName ref="person342">Appenzeller</persName> dazu gehörte, ließ sich nicht ermitteln. <persName ref="person50">Du Bellay</persName> konnte nach der Tagsatzung vom 5. Mai 100000 écus an die Orte verteilen lassen, s. <hi>Rott,</hi> Représentation Diplomatique I 398; <hi>Bourrilly,</hi> Guillaume du Bellay 169.</note> quid?</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">Salvum volo <persName ref="228">Voglerum</persName>, <persName ref="2249">Studerum</persName> etc.</s>
+					<s n="14" xml:lang="la" type="auto">Vale.</s>
+					<s n="15" xml:lang="la" type="auto">Salvum volo <persName ref="person228">Voglerum</persName>, <persName ref="person2249">Studerum</persName> etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">21. maii 1534.</s>
+					<s n="16" xml:lang="de" type="auto">21. maii 1534.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. tuus.</s>
+					<s n="17" xml:lang="la" type="auto">H. tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ist neiswas<note xml:id="fn14" type="footnote" n="14">etwas (SI IV 808).</note> daran, das der <persName ref="832">Ferdinand</persName> übel gelitten<note xml:id="fn15" type="footnote" n="15">Anspielung auf die Bullinger erst gerüchteweise bekannte Niederlage der österreichischen Truppen am 13. Mai (vgl. oben Z. 19f).</note>, wie söllte dann Antronius vester<note xml:id="fn16" type="footnote" n="16">Abschätzige Bezeichnung für den St. Galler Abt <persName ref="463">Diethelm Blarer von Wartensee</persName> (vgl. HBBW II 88, Anm. 3. 263, Anm. 6), der auf Grund des für ihn günstigen <hi><placeName ref="1196">Wiler</placeName> Vertrags vom</hi> 28. Februar 1532 <hi>sicher im</hi> Kloster leben und <hi>in</hi> den äbtischen Gebieten die Gegenreformation vorantreiben konnte, vgl. <hi>Näf</hi> <persName ref="226">Vadian</persName> II 346-351. 481f.</note> so warm<note xml:id="fn17" type="footnote" n="17">behaglich, sicher, ruhig (Grimm XIII 2028. 2040).</note> sitzen?</s>
+					<s n="18" xml:lang="de" type="auto">Ist neiswas<note xml:id="fn14" type="footnote" n="14">etwas (SI IV 808).</note> daran, das der <persName ref="person832">Ferdinand</persName> übel gelitten<note xml:id="fn15" type="footnote" n="15">Anspielung auf die Bullinger erst gerüchteweise bekannte Niederlage der österreichischen Truppen am 13. Mai (vgl. oben Z. 19f).</note>, wie söllte dann Antronius vester<note xml:id="fn16" type="footnote" n="16">Abschätzige Bezeichnung für den St. Galler Abt <persName ref="person463">Diethelm Blarer von Wartensee</persName> (vgl. HBBW II 88, Anm. 3. 263, Anm. 6), der auf Grund des für ihn günstigen <hi><placeName ref="place1196">Wiler</placeName> Vertrags vom</hi> 28. Februar 1532 <hi>sicher im</hi> Kloster leben und <hi>in</hi> den äbtischen Gebieten die Gegenreformation vorantreiben konnte, vgl. <hi>Näf</hi> <persName ref="person226">Vadian</persName> II 346-351. 481f.</note> so warm<note xml:id="fn17" type="footnote" n="17">behaglich, sicher, ruhig (Grimm XIII 2028. 2040).</note> sitzen?</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Doctori Ioachimo <persName ref="226">Vadiano</persName>, Sangallensi proconsuli prudentissimo, domino suo imprimis observando.</s>
+					<s n="19" xml:lang="la" type="auto">Doctori <persName ref="person226">Ioachimo Vadiano</persName>, Sangallensi proconsuli prudentissimo, domino suo imprimis observando.</s>
 				</p>
 			</div>
 		</body>

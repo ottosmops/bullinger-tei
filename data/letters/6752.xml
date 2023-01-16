@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6817/68</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 9</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 9</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -52,45 +55,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6752">
 				<correspAction type="sent">
-					<persName ref="person#405" cert="low">
+					<!--
+					<persName ref="person405" cert="low">
 						<forename cert="low">Thomas</forename>
 						<surname cert="low">Blarer</surname>
-						<addName type="main">Blarer (Blaurer) d.Ä., Thomas</addName>
+						<persName type="main" ref="person8178>Blarer (Blaurer) d.J., Thomas</addName>
 						<note type="Person">[Ober- / Neu-Girsberg (seit 1869) Ebersberg] ob Kreuzlingen-Emmishofen</note>
-						<graphic type="portrait" url="portraits/405_Blarer_Thomas.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Thomas_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/120270234"/>
 					</persName>
-					<place source="#193" cert="low">
-						<settlement>Girsberg</settlement>
-						<geo>47.646108 9.149001</geo>
-					</place>
+					-->
+					<persName ref="person405" cert="low"/>
+					<place source="place193" cert="low"/>
 					<date when="1566-04-08" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6753"/>
-					<ref type="prev_chronologically" target="files.xml#6751"/>
-					<ref type="next_correspondence" target="files.xml#6759"/>
-					<ref type="prev_correspondence" target="files.xml#4703"/>
-					<ref type="next_correspondence_request" target="files.xml#6759"/>
-					<ref type="prev_correspondence_request" target="files.xml#4703"/>
+					<ref type="next_chronologically" target="file6753"/>
+					<ref type="prev_chronologically" target="file6751"/>
+					<ref type="next_correspondence" target="file6759"/>
+					<ref type="prev_correspondence" target="file4703"/>
+					<ref type="next_correspondence_request" target="file6759"/>
+					<ref type="prev_correspondence_request" target="file4703"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1919"/>
-					<ref type="next_same_sender" target="files.xml#6759"/>
-					<ref type="prev_same_sender" target="files.xml#4703"/>
-					<ref type="next_same_addressee" target="files.xml#6761"/>
-					<ref type="prev_same_addressee" target="files.xml#6750"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6759"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4703"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6761"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6750"/>
+					<ref type="prev_correspondence_reaction" target="file1919"/>
+					<ref type="next_same_sender" target="file6759"/>
+					<ref type="prev_same_sender" target="file4703"/>
+					<ref type="next_same_addressee" target="file6761"/>
+					<ref type="prev_same_addressee" target="file6750"/>
+					<ref type="next_with_sender_as_addressee" target="file6759"/>
+					<ref type="prev_with_sender_as_addressee" target="file4703"/>
+					<ref type="next_with_addressee_as_sender" target="file6761"/>
+					<ref type="prev_with_addressee_as_sender" target="file6750"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -110,36 +118,36 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Günstiger, lieber herr und vertrauter freund!</s>
-					<s xml:lang="de" type="auto">Die christliche werbung, die ihr auf bitte eures schwagers, meines lieben herrn und alten freundes Rudolf Gvalther (Waltherus) bei mir um meine tochter Anna vorzubringen übernommen habt, nehme ich mit großem wohlgefallen auf und betrachte sie als eine gnädige schickung gottes.</s>
-					<s xml:lang="de" type="auto">Nachdem nun euer schwager meine eheliche tochter Anna von meiner ersten hausfrau Margareta Ehinger zur ehe begehrt und ich ihre geneigtheit erfahren habe, bitte ich euch als von gott geordneten vermittler, euerem schwager, soviel meine zustimmung betrifft, zu erwidern, daß ich und meine hausfrau uns die werbung gefallen lassen und sie als gnadenreiche göttliche fügung aufnehmen, auch vertrauen, wenn sie zum erwünschten ziel führt, unser künftiger tochtermann an unserer tochter freude haben und nichts zu bereuen haben; denn sie hat... stets gehorsam und willfährig gezeigt.</s>
-					<s xml:lang="de" type="auto">Wir hegen deshalb auch keine besorgnis wegen gütlicher verständigung über die hürotsverglichung.</s>
-					<s xml:lang="de" type="auto">Da ihr aber mit recht für gut erachtet, daß wir uns über diese heurottsberedung zuvor schriftlich vergleichen, finde ich herrn Walthers anerbieten von brautrock, gürtel etc. völlig genügend; ferner ist billig, daß sie in ihrer sonstigen kleidung und ehrbaren wandel sich seinem amt und willen gemäß halte.</s>
-					<s xml:lang="de" type="auto">Als morgengabe ist bei uns brauch, den töchtern 200 fl. auszusetzen; weil man aber bei... vielleicht nicht so hoch geht, so will ich nichts neues begehren, sondern bitte die summe euerem brauch zu ermäßigen, auch 100 gulden oder wie es ihm unbeschwerlich ist.</s>
-					<s xml:lang="de" type="auto">Sie selbst wird ihm 400 fl. mütterliches erbe zubringen, in 2 jahresfristen bar oder "an hablicher gult" in Zürich zu erlegen und bis dahin zu verzinsen; dünkt ihm das zu lange, so stelle ich es ihm anheim.</s>
-					<s xml:lang="de" type="auto">Ich gäbe gern mehr, muß aber meine kinder gleich halten.</s>
-					<s xml:lang="de" type="auto">Von meiner hinterlassenschaft soll sie aber, nachdem meine beiderseitigen kinder für ihr mütterliches erbe ausgerichtet sind, gleichberechtigter erbe sein, außer falls ich meinen söhnen etwas voraus zuwendete, wie auch ihm seinem sohn gegenüber nach euerem schreiben vorbehalten ist.</s>
-					<s xml:lang="de" type="auto">Was ihr weiter durch erbschaft oder sonst zufällt, soll sie ihm auch zubringen und er sie um ihr zugebrachtes gut versorgen.</s>
-					<s xml:lang="de" type="auto">Was die erbschaft seiner vorigen kinder betrifft, ist zwar bei uns brauch, daß zuerst die kinder einander und darnach die eltern das zuletztgestorbene kind beerben; doch wollen wir uns dem erbrecht der stadt Zürich unterziehen.</s>
-					<s xml:lang="de" type="auto">Was aber, falls meine tochter vor ihm sterben sollte, ohne kinder zu hinterlassen, er von ihr, oder was sie, falls er mit hinterlassung von kindern oder kindeskindern vor ihr stürbe, von ihm erben solle, mag er, da nach seiner ansicht der dritt... oft missverstand bringt und ein gewisses besser wäre, bestimmen und nach billigkeit festsetzen.</s>
-					<s xml:lang="de" type="auto">Wie im andern fall, wenn sie oder er kinder aus ihr zurückließen, das überlebende die hinterlassenschaft übernehmen und wie die teilung mit den kindern gehalten werden solle, nachdem sie je ihr mütterliches gut voraus genommen haben, und das ihnen vorbehalten sein solle, einander in zukunft mehr zu vermachen, besonders meiner tochter eine herberge und etwas hausrat, falls sie zur witwe werden sollte, das alles in einen hürotts... zu bringen, versteht er am besten.</s>
-					<s xml:lang="de" type="auto">Deshalb lasse ich ihn auch darum ersuchen; sobald mir dann derselbe zukommt, will ich meine und meiner tochter freunde davon unterrichten, doch ohne verzögerung und hoffe auf guten ausgang.</s>
+					<s n="1" xml:lang="de" type="auto">Günstiger, lieber herr und vertrauter freund!</s>
+					<s n="2" xml:lang="de" type="auto">Die christliche werbung, die ihr auf bitte eures schwagers, meines lieben herrn und alten freundes Rudolf Gvalther (Waltherus) bei mir um meine tochter Anna vorzubringen übernommen habt, nehme ich mit großem wohlgefallen auf und betrachte sie als eine gnädige schickung gottes.</s>
+					<s n="3" xml:lang="de" type="auto">Nachdem nun euer schwager meine eheliche tochter Anna von meiner ersten hausfrau Margareta Ehinger zur ehe begehrt und ich ihre geneigtheit erfahren habe, bitte ich euch als von gott geordneten vermittler, euerem schwager, soviel meine zustimmung betrifft, zu erwidern, daß ich und meine hausfrau uns die werbung gefallen lassen und sie als gnadenreiche göttliche fügung aufnehmen, auch vertrauen, wenn sie zum erwünschten ziel führt, unser künftiger tochtermann an unserer tochter freude haben und nichts zu bereuen haben; denn sie hat... stets gehorsam und willfährig gezeigt.</s>
+					<s n="4" xml:lang="de" type="auto">Wir hegen deshalb auch keine besorgnis wegen gütlicher verständigung über die hürotsverglichung.</s>
+					<s n="5" xml:lang="de" type="auto">Da ihr aber mit recht für gut erachtet, daß wir uns über diese heurottsberedung zuvor schriftlich vergleichen, finde ich herrn Walthers anerbieten von brautrock, gürtel etc. völlig genügend; ferner ist billig, daß sie in ihrer sonstigen kleidung und ehrbaren wandel sich seinem amt und willen gemäß halte.</s>
+					<s n="6" xml:lang="de" type="auto">Als morgengabe ist bei uns brauch, den töchtern 200 fl. auszusetzen; weil man aber bei... vielleicht nicht so hoch geht, so will ich nichts neues begehren, sondern bitte die summe euerem brauch zu ermäßigen, auch 100 gulden oder wie es ihm unbeschwerlich ist.</s>
+					<s n="7" xml:lang="de" type="auto">Sie selbst wird ihm 400 fl. mütterliches erbe zubringen, in 2 jahresfristen bar oder "an hablicher gult" in Zürich zu erlegen und bis dahin zu verzinsen; dünkt ihm das zu lange, so stelle ich es ihm anheim.</s>
+					<s n="8" xml:lang="de" type="auto">Ich gäbe gern mehr, muß aber meine kinder gleich halten.</s>
+					<s n="9" xml:lang="de" type="auto">Von meiner hinterlassenschaft soll sie aber, nachdem meine beiderseitigen kinder für ihr mütterliches erbe ausgerichtet sind, gleichberechtigter erbe sein, außer falls ich meinen söhnen etwas voraus zuwendete, wie auch ihm seinem sohn gegenüber nach euerem schreiben vorbehalten ist.</s>
+					<s n="10" xml:lang="de" type="auto">Was ihr weiter durch erbschaft oder sonst zufällt, soll sie ihm auch zubringen und er sie um ihr zugebrachtes gut versorgen.</s>
+					<s n="11" xml:lang="de" type="auto">Was die erbschaft seiner vorigen kinder betrifft, ist zwar bei uns brauch, daß zuerst die kinder einander und darnach die eltern das zuletztgestorbene kind beerben; doch wollen wir uns dem erbrecht der stadt Zürich unterziehen.</s>
+					<s n="12" xml:lang="de" type="auto">Was aber, falls meine tochter vor ihm sterben sollte, ohne kinder zu hinterlassen, er von ihr, oder was sie, falls er mit hinterlassung von kindern oder kindeskindern vor ihr stürbe, von ihm erben solle, mag er, da nach seiner ansicht der dritt... oft missverstand bringt und ein gewisses besser wäre, bestimmen und nach billigkeit festsetzen.</s>
+					<s n="13" xml:lang="de" type="auto">Wie im andern fall, wenn sie oder er kinder aus ihr zurückließen, das überlebende die hinterlassenschaft übernehmen und wie die teilung mit den kindern gehalten werden solle, nachdem sie je ihr mütterliches gut voraus genommen haben, und das ihnen vorbehalten sein solle, einander in zukunft mehr zu vermachen, besonders meiner tochter eine herberge und etwas hausrat, falls sie zur witwe werden sollte, das alles in einen hürotts... zu bringen, versteht er am besten.</s>
+					<s n="14" xml:lang="de" type="auto">Deshalb lasse ich ihn auch darum ersuchen; sobald mir dann derselbe zukommt, will ich meine und meiner tochter freunde davon unterrichten, doch ohne verzögerung und hoffe auf guten ausgang.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Meine hausfrau und kinder grußen wieder und wünschen euch alles gute von gott, wie ihr auch euerem schwager und den andern angehörigen von mir und den meinen ausrichten möget.</s>
+					<s n="15" xml:lang="de" type="auto">Meine hausfrau und kinder grußen wieder und wünschen euch alles gute von gott, wie ihr auch euerem schwager und den andern angehörigen von mir und den meinen ausrichten möget.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Euer schreiben erhielt ich durch Mörikofer erst sontags 7. april erhalten und habe ihm einen schneider aus meinen nachbarn mitgegeben, um euere antwort in empfang zu nehmen.</s>
+					<s n="16" xml:lang="de" type="auto">Euer schreiben erhielt ich durch Mörikofer erst sontags 7. april erhalten und habe ihm einen schneider aus meinen nachbarn mitgegeben, um euere antwort in empfang zu nehmen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum montag den 8. aprilis 1566.</s>
+					<s n="17" xml:lang="la" type="auto">Datum montag den 8. aprilis 1566.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">E. E. W. Thomas Blarer.</s>
+					<s n="18" xml:lang="la" type="auto">E. E. W. Thomas Blarer.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Wann und wo die heirat, falls sie zu stande kommt, aufgerichtet und versprochen werden soll, stelle ich euch anheim; mir schiene Winterthur am gelegensten, oder es könnte, falls er es wünscht, die investitur mitt der besiglung und zuͦsamenversprechung glich vor hochzyt und kirchgang alles zuͦ Zürich volendet werden, damitt ouch zyt und cost erspart wurde.</s>
-					<s xml:lang="de" type="auto">Die hochzyt wurde mins thails nitt vyl... und leut haben.</s>
+					<s n="19" xml:lang="de" type="auto">Wann und wo die heirat, falls sie zu stande kommt, aufgerichtet und versprochen werden soll, stelle ich euch anheim; mir schiene Winterthur am gelegensten, oder es könnte, falls er es wünscht, die investitur mitt der besiglung und zuͦsamenversprechung glich vor hochzyt und kirchgang alles zuͦ Zürich volendet werden, damitt ouch zyt und cost erspart wurde.</s>
+					<s n="20" xml:lang="de" type="auto">Die hochzyt wurde mins thails nitt vyl... und leut haben.</s>
 				</p>
 			</div>
 		</body>

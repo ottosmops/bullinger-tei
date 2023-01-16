@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1860</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 340,204</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 340,204</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 72,10</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 72,10</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -61,49 +67,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/800">
 				<correspAction type="sent">
-					<persName ref="person#345" cert="high">
+					<!--
+					<persName ref="person345" cert="high">
 						<forename cert="high">Jakob</forename>
 						<surname cert="high">Bindschedler</surname>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person345" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1550-01-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#801"/>
-					<ref type="prev_chronologically" target="files.xml#799"/>
+					<ref type="next_chronologically" target="file801"/>
+					<ref type="prev_chronologically" target="file799"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#699"/>
+					<ref type="prev_correspondence" target="file699"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#699"/>
+					<ref type="prev_correspondence_request" target="file699"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#699"/>
-					<ref type="next_same_addressee" target="files.xml#827"/>
-					<ref type="prev_same_addressee" target="files.xml#799"/>
+					<ref type="prev_same_sender" target="file699"/>
+					<ref type="next_same_addressee" target="file827"/>
+					<ref type="prev_same_addressee" target="file799"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#699"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#827"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#799"/>
+					<ref type="prev_with_sender_as_addressee" target="file699"/>
+					<ref type="next_with_addressee_as_sender" target="file827"/>
+					<ref type="prev_with_addressee_as_sender" target="file799"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -120,27 +124,27 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Nisi mihi tua erga me benevolentia animusque paternus ex proximis ad me datis literis satis constaret, haudquaquam denuo incomptis meis et ineruditis literis tuas perturbare aures aggrederer.</s>
-					<s xml:lang="la" type="auto">Sed cum de tua humanitate nihil dubitem amplius, alacri et sereno vultu pennam manu capesso ac primum quidem, ut debeo, immortales tibi habeo gratias, quod me literis tuis invisere non dedignatus sis, qui, ut ingenue de me fatear, haud dignum tuarum tabellarum aspectu frui censebam.</s>
-					<s xml:lang="la" type="auto">Sed has instar thesauri preciosissimi usque, dum spiritus rexerit artus<note xml:id="fn1" type="footnote" n="1">Vgl. Vergil, Aeneis, 4, 336.</note>, servabo neque nullus e pectoris scrinio auferre conabitur; tanta enim animi voluptate legi, relegi, ut non mihi Croesi opes allatas exoptarem, praesertim tam arduis refertae adhortationibus existentes, ut non mirum esset, quin prorsus vero a tramite aberrantem viam in rectam introducerent.</s>
-					<s xml:lang="la" type="auto">Deinde etiam non minus grates tibi persolvere possum pro laboribus, quos mea causa in vocando parente insumpsisti, cum de adversa valetudine certior eras factus, quam tamen nonnihil mitigatam esse laetor superisque perpetuo supplices, quod hoc fuerint contenti flagello, fundam preces.</s>
-					<s xml:lang="la" type="auto">Unde vero istum contraxerim morbum, mihi plane non constat, nisi quod genus phlegmatis quoddam cerebrum violasse opinor; dolore enim capitis interdum adhuc laboro; sed sanescere aiunt fieri motu... medici.</s>
-					<s xml:lang="la" type="auto">Ea vero, quae interim neglexi, maiori cum studio et diligentia resarciam neque diem aliquem imitando Appellem pictorem vacuum praeterire permittam dictumque aureum Catonis sequar: "Ne quis dies per incuriam diffluat inanis" ac bonam de me conceptam spem fallam et criminique negligentiae aut ingratitudinis obnoxius ac reus fiam, qua turpiorem homini notam inprimi non posse credo.</s>
-					<s xml:lang="la" type="auto">Te vero plurimum testor, ne in prospiciendo mihi deesse velis, cuius tamen hactenus egregia specimina edidisti, ut nihil haesitem; tuo enim iudicio et voluntati me penitus subiicio et, quemcunque tuleris calculum, feram atque sic hanc meam epistolam, quae eruditionis parum, voluptatis in se minimum complectitur, hilari vultu menteque benigno suscipere velis plurimum rogo.</s>
-					<s xml:lang="la" type="auto">Vale, patrone colende.</s>
-					<s xml:lang="la" type="auto">Bernae 5. idus ianuarii 1550.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Nisi mihi tua erga me benevolentia animusque paternus ex proximis ad me datis literis satis constaret, haudquaquam denuo incomptis meis et ineruditis literis tuas perturbare aures aggrederer.</s>
+					<s n="3" xml:lang="la" type="auto">Sed cum de tua humanitate nihil dubitem amplius, alacri et sereno vultu pennam manu capesso ac primum quidem, ut debeo, immortales tibi habeo gratias, quod me literis tuis invisere non dedignatus sis, qui, ut ingenue de me fatear, haud dignum tuarum tabellarum aspectu frui censebam.</s>
+					<s n="4" xml:lang="la" type="auto">Sed has instar thesauri preciosissimi usque, dum spiritus rexerit artus<note xml:id="fn1" type="footnote" n="1">Vgl. Vergil, Aeneis, 4, 336.</note>, servabo neque nullus e pectoris scrinio auferre conabitur; tanta enim animi voluptate legi, relegi, ut non mihi Croesi opes allatas exoptarem, praesertim tam arduis refertae adhortationibus existentes, ut non mirum esset, quin prorsus vero a tramite aberrantem viam in rectam introducerent.</s>
+					<s n="5" xml:lang="la" type="auto">Deinde etiam non minus grates tibi persolvere possum pro laboribus, quos mea causa in vocando parente insumpsisti, cum de adversa valetudine certior eras factus, quam tamen nonnihil mitigatam esse laetor superisque perpetuo supplices, quod hoc fuerint contenti flagello, fundam preces.</s>
+					<s n="6" xml:lang="la" type="auto">Unde vero istum contraxerim morbum, mihi plane non constat, nisi quod genus phlegmatis quoddam cerebrum violasse opinor; dolore enim capitis interdum adhuc laboro; sed sanescere aiunt fieri motu... medici.</s>
+					<s n="7" xml:lang="la" type="auto">Ea vero, quae interim neglexi, maiori cum studio et diligentia resarciam neque diem aliquem imitando Appellem pictorem vacuum praeterire permittam dictumque aureum Catonis sequar: "Ne quis dies per incuriam diffluat inanis" ac bonam de me conceptam spem fallam et criminique negligentiae aut ingratitudinis obnoxius ac reus fiam, qua turpiorem homini notam inprimi non posse credo.</s>
+					<s n="8" xml:lang="la" type="auto">Te vero plurimum testor, ne in prospiciendo mihi deesse velis, cuius tamen hactenus egregia specimina edidisti, ut nihil haesitem; tuo enim iudicio et voluntati me penitus subiicio et, quemcunque tuleris calculum, feram atque sic hanc meam epistolam, quae eruditionis parum, voluptatis in se minimum complectitur, hilari vultu menteque benigno suscipere velis plurimum rogo.</s>
+					<s n="9" xml:lang="la" type="auto">Vale, patrone colende.</s>
+					<s n="10" xml:lang="la" type="auto">Bernae 5. idus ianuarii 1550.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Iacobus Bindschedlerus, tui studiosissimus.</s>
-					<s xml:lang="la" type="auto">Omnia qui regnat calamum, mare, sydera, terram, Incolumen[m?] servet tempora multa precor.</s>
+					<s n="11" xml:lang="la" type="auto">Iacobus Bindschedlerus, tui studiosissimus.</s>
+					<s n="12" xml:lang="la" type="auto">Omnia qui regnat calamum, mare, sydera, terram, Incolumen[m?] servet tempora multa precor.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Omnia qui nutrit terris quod nascitur udis Annum foeliciter terminet ille tibi.</s>
+					<s n="13" xml:lang="la" type="auto">Omnia qui nutrit terris quod nascitur udis Annum foeliciter terminet ille tibi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Heinricho Bullingero, patrono suo colendissimo.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="14" xml:lang="la" type="auto">Clarissimo viro d. Heinricho Bullingero, patrono suo colendissimo.</s>
+					<s n="15" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

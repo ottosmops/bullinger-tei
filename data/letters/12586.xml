@@ -9,28 +9,31 @@
 				<publisher>(nicht publiziert)</publisher>
 				<pubPlace>(Zürich)</pubPlace>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2539</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2539</idno>
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">323</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#474">St. Gallen</settlement>
-						<institution>Kantonsbibliothek Vadiana</institution>
-						<idno type="Autograph">Ms 35 (VBS VI),179</idno>
-						<repository ref="archive#78">
+						<!--
+						<repository ref="archive78">
 							<name>St. Gallen KB</name>
 							<ref target="https://www.sg.ch/kultur/kantonsbibliothek-vadiana.html"/>
 						</repository>
+						<settlement ref="place474">St. Gallen</settlement>
+						<institution>Kantonsbibliothek Vadiana</institution>
+						-->
+						<repository ref="archive78"/>
+						<idno subtype="Autograph">Ms 35 (VBS VI),179</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -39,16 +42,16 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Auch wenn der Zürcher Rat die aus <placeName ref="565">Konstanz</placeName> kommenden Nachrichten
+								Auch wenn der Zürcher Rat die aus <placeName ref="place565">Konstanz</placeName> kommenden Nachrichten
 								dem St. Galler Rat stets fleißig übermittelt, will Bullinger berichten, was ihm Hartmann von Hallwyl
-								brieflich [mit <ref target="file#12585">Nr. 2538</ref>] mitteilen ließ, nachdem dieser von seinem Besuch beim
-								Landgrafen [Philipp von Hessen] wieder nach <placeName ref="121">Bern</placeName> zurückgekehrt
+								brieflich [mit <ref target="file12585">Nr. 2538</ref>] mitteilen ließ, nachdem dieser von seinem Besuch beim
+								Landgrafen [Philipp von Hessen] wieder nach <placeName ref="place121">Bern</placeName> zurückgekehrt
 								war.
 								</p>
 								<p xml:id="regest2">
-								- Hallwyl verließ <placeName ref="279">Donauwörth</placeName> am 10. August. An diesem Tag aber
+								- Hallwyl verließ <placeName ref="place279">Donauwörth</placeName> am 10. August. An diesem Tag aber
 								speiste er noch mit dem Landgrafen, welcher während des Gesprächs ehrenvoll von
-								<persName ref="265">Zwingli</persName> sprach. Er ließ auch Bullinger grüßen, bat diesen, die
+								<persName ref="person265">Zwingli</persName> sprach. Er ließ auch Bullinger grüßen, bat diesen, die
 								[Zürcher] Kirchen zum Gebet aufzurufen und seinen Behörden mitzuteilen, dass der Krieg religiöse Gründe hat
 								und nicht etwa auf politischen Ungehorsam zurückzuführen sei.
 								</p>
@@ -57,7 +60,7 @@
 								und große Geschütze, 116 Fähnlein und etwa 8000 Kavalleristen. Die [Schmalkaldener] haben dem Kaiser [Karl
 								V.] mittels eines Herolds [...] öffentlich den Krieg erklärt. Ihre Truppen, unter denen gute Sitten
 								herrschen sollen, sind am 10. August aufgebrochen. Der Kaiser soll sich bei
-								<placeName ref="594">Landshut</placeName> aufhalten und ein 30000 Mann starkes Heer besitzen.
+								<placeName ref="place594">Landshut</placeName> aufhalten und ein 30000 Mann starkes Heer besitzen.
 								Während des Gesprächs betonte der Landgraf, dass er bereit sei, für Christus das Volk vom Antichristen zu
 								befreien und dabei alles, auch sein Leben, aufs Spiel zu setzen.
 								</p>
@@ -68,7 +71,7 @@
 								</p>
 								<p xml:id="regest5">
 								- Heute schreibt Bullinger das Vorwort zu seinem Lukaskommentar. Das Werk wird in einigen Tagen erhältlich
-								sein.<note xml:id="fn1" type="footnote" n="1">Siehe dazu <ref target="file#12592">Nr. 2545</ref>, Anm. 2.</note>
+								sein.<note xml:id="fn1" type="footnote" n="1">Siehe dazu <ref target="file12592">Nr. 2545</ref>, Anm. 2.</note>
 							</p>
 						</summary>
 					</msContents>
@@ -85,46 +88,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12586">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1546-08-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
+					-->
+					<persName ref="person3306" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12587"/>
-					<ref type="prev_chronologically" target="files.xml#12585"/>
-					<ref type="next_correspondence" target="files.xml#12591"/>
-					<ref type="prev_correspondence" target="files.xml#12564"/>
-					<ref type="next_correspondence_request" target="files.xml#12591"/>
-					<ref type="prev_correspondence_request" target="files.xml#12564"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12761"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12458"/>
-					<ref type="next_same_sender" target="files.xml#12590"/>
-					<ref type="prev_same_sender" target="files.xml#12582"/>
-					<ref type="next_same_addressee" target="files.xml#12761"/>
-					<ref type="prev_same_addressee" target="files.xml#12458"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12590"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12582"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12761"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12458"/>
+					<ref type="next_chronologically" target="file12587"/>
+					<ref type="prev_chronologically" target="file12585"/>
+					<ref type="next_correspondence" target="file12591"/>
+					<ref type="prev_correspondence" target="file12564"/>
+					<ref type="next_correspondence_request" target="file12591"/>
+					<ref type="prev_correspondence_request" target="file12564"/>
+					<ref type="next_correspondence_reaction" target="file12761"/>
+					<ref type="prev_correspondence_reaction" target="file12458"/>
+					<ref type="next_same_sender" target="file12590"/>
+					<ref type="prev_same_sender" target="file12582"/>
+					<ref type="next_same_addressee" target="file12761"/>
+					<ref type="prev_same_addressee" target="file12458"/>
+					<ref type="next_with_sender_as_addressee" target="file12590"/>
+					<ref type="prev_with_sender_as_addressee" target="file12582"/>
+					<ref type="next_with_addressee_as_sender" target="file12761"/>
+					<ref type="prev_with_addressee_as_sender" target="file12458"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -139,57 +146,57 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quamquam magistratus diligenter vobis communicet, quae accipit a <placeName ref="565">Constantia</placeName>, volui tamen ego tuae humanitati ea quoque communicare, quae 17. augusti rediens a lantgravio<note xml:id="fn2" type="footnote" n="2">Philipp von Hessen.</note>, Hartmannus a Hallwyl, vir vere nobilis, ad me perscribi curavit<note xml:id="fn3" type="footnote" n="3">Oben Nr. 000 [<persName ref="88">Hemmann Haberer</persName>, 17. August].</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Quamquam magistratus diligenter vobis communicet, quae accipit a <placeName ref="place565">Constantia</placeName>, volui tamen ego tuae humanitati ea quoque communicare, quae 17. augusti rediens a lantgravio<note xml:id="fn2" type="footnote" n="2">Philipp von Hessen.</note>, Hartmannus a Hallwyl, vir vere nobilis, ad me perscribi curavit<note xml:id="fn3" type="footnote" n="3">Oben Nr. 000 [<persName ref="person88">Hemmann Haberer</persName>, 17. August].</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">10. augusti ist er von Tonawerd<note xml:id="fn4" type="footnote" n="4"><placeName ref="279">Donauwörth</placeName>.</note> verrytten widerumb heym uff <placeName ref="121">Bernn</placeName>.</s>
-					<s xml:lang="de" type="auto">Des tags hatt er gässen mitt dem lantgraven under sim zelt.</s>
-					<s xml:lang="de" type="auto">Der hatt vil von <persName ref="265">Zwynglin</persName> mitt Hallwyl geredt, vil gevragt und Zwinglium geruͤmpt, mich heyssen gruͤssen und das ich wölle vermanen die kylch, gott anzeruͤffen umb gnad, und min herren<note xml:id="fn5" type="footnote" n="5">Rat.</note> ze berichten, das es dem keysser<note xml:id="fn6" type="footnote" n="6">Karl V.</note> umb die religion und monarchy ze thuͦn sye, nitt umb den unghorsam etc.</s>
+					<s n="3" xml:lang="de" type="auto">10. augusti ist er von Tonawerd<note xml:id="fn4" type="footnote" n="4"><placeName ref="place279">Donauwörth</placeName>.</note> verrytten widerumb heym uff <placeName ref="place121">Bernn</placeName>.</s>
+					<s n="4" xml:lang="de" type="auto">Des tags hatt er gässen mitt dem lantgraven under sim zelt.</s>
+					<s n="5" xml:lang="de" type="auto">Der hatt vil von <persName ref="person265">Zwynglin</persName> mitt Hallwyl geredt, vil gevragt und Zwinglium geruͤmpt, mich heyssen gruͤssen und das ich wölle vermanen die kylch, gott anzeruͤffen umb gnad, und min herren<note xml:id="fn5" type="footnote" n="5">Rat.</note> ze berichten, das es dem keysser<note xml:id="fn6" type="footnote" n="6">Karl V.</note> umb die religion und monarchy ze thuͦn sye, nitt umb den unghorsam etc.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="de" type="auto">Hallwyl sagt und last schryben von einer wunderbaren rüstung, derglychen nie bald xin: 120 stuck klein und groß uff rederen, 116 fenli, in die 8000 zuͦ roß; schön, wolgerüst volck.</s>
-					<s xml:lang="de" type="auto">Sy habend dem keyser dappffer abgesagt und im die absag mitt einem trummeter zuͦgesandt.</s>
-					<s xml:lang="de" type="auto">10. augusti sind sy uff in anzogen.</s>
-					<s xml:lang="de" type="auto">Er sol sich gen <placeName ref="594">Lantzhuͦt</placeName> lägeren, in die 30000 starck sin.</s>
-					<s xml:lang="de" type="auto">Lantgraff sagt, er habe an dem krieg ze gwünnen, nüt ze verlieren; dann gwünn er, so sye er Christi und siner kylchen; verlür er, so sterbe er Christo und siner kylchen, und sye die ansprach nüt des minder Christi, sampt dem krieg; dann er sin läben daran binden, das volck uß des Entchristen<note xml:id="fna" type="footnote" n="a"><hi>Vorlage:</hi> Entschristen.</note> gwallt ze ledigen oder sterben.</s>
-					<s xml:lang="de" type="auto">Gott gäb im gnad.</s>
+					<s n="6" xml:lang="de" type="auto">Hallwyl sagt und last schryben von einer wunderbaren rüstung, derglychen nie bald xin: 120 stuck klein und groß uff rederen, 116 fenli, in die 8000 zuͦ roß; schön, wolgerüst volck.</s>
+					<s n="7" xml:lang="de" type="auto">Sy habend dem keyser dappffer abgesagt und im die absag mitt einem trummeter zuͦgesandt.</s>
+					<s n="8" xml:lang="de" type="auto">10. augusti sind sy uff in anzogen.</s>
+					<s n="9" xml:lang="de" type="auto">Er sol sich gen <placeName ref="place594">Lantzhuͦt</placeName> lägeren, in die 30000 starck sin.</s>
+					<s n="10" xml:lang="de" type="auto">Lantgraff sagt, er habe an dem krieg ze gwünnen, nüt ze verlieren; dann gwünn er, so sye er Christi und siner kylchen; verlür er, so sterbe er Christo und siner kylchen, und sye die ansprach nüt des minder Christi, sampt dem krieg; dann er sin läben daran binden, das volck uß des Entchristen<note xml:id="fna" type="footnote" n="a"><hi>Vorlage:</hi> Entschristen.</note> gwallt ze ledigen oder sterben.</s>
+					<s n="11" xml:lang="de" type="auto">Gott gäb im gnad.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="de" type="auto">Hallwyl sagt, das weder zuͦtrincken noch schwerren by inen sye, sunder wachen, ernst und bätten.</s>
-					<s xml:lang="la" type="auto">Haec habui.</s>
+					<s n="12" xml:lang="de" type="auto">Hallwyl sagt, das weder zuͦtrincken noch schwerren by inen sye, sunder wachen, ernst und bätten.</s>
+					<s n="13" xml:lang="la" type="auto">Haec habui.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Omnia tamen copiosius disces ex literis magistratus nostri.</s>
-					<s xml:lang="la" type="auto">De tuo pertinaci silentio non possum satis mirari.</s>
-					<s xml:lang="la" type="auto">Rumpe ergo moras et silentium ac scribe amico tui observantissimo.</s>
+					<s n="14" xml:lang="la" type="auto">Omnia tamen copiosius disces ex literis magistratus nostri.</s>
+					<s n="15" xml:lang="la" type="auto">De tuo pertinaci silentio non possum satis mirari.</s>
+					<s n="16" xml:lang="la" type="auto">Rumpe ergo moras et silentium ac scribe amico tui observantissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valebis.</s>
+					<s n="17" xml:lang="la" type="auto">Valebis.</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Scribo hodie praefationem in 9 libros com[m]entariorum in evangelium secundum Lucam<note xml:id="fn7" type="footnote" n="7">HBBibl I 173.</note>, qui his diebus prodibunt.</s>
+					<s n="18" xml:lang="la" type="auto">Scribo hodie praefationem in 9 libros com[m]entariorum in evangelium secundum Lucam<note xml:id="fn7" type="footnote" n="7">HBBibl I 173.</note>, qui his diebus prodibunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, 20. augusti 1546.</s>
+					<s n="19" xml:lang="la" type="auto">Tiguri, 20. augusti 1546.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus tuus.</s>
+					<s n="20" xml:lang="la" type="auto">Bullingerus tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro d. d[octori] Ioachimo Vadiano, consuli Sangallensi dignissimo, domino suo semper colendo.</s>
-					<s xml:lang="la" type="auto">Sangallen.</s>
+					<s n="21" xml:lang="la" type="auto">Clarissimo viro d. d[octori] Ioachimo Vadiano, consuli Sangallensi dignissimo, domino suo semper colendo.</s>
+					<s n="22" xml:lang="la" type="auto">Sangallen.</s>
 				</p>
 			</div>
 		</body>

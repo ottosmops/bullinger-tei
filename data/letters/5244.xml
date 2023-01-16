@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5968/56</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 80,193-194, Nr. 114</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 80,193-194, Nr. 114</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -61,13 +64,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 104,17</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 104,17</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -76,29 +82,36 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5244">
 				<correspAction type="sent">
-					<persName ref="person#474" cert="low">
+					<!--
+					<persName ref="person474" cert="low">
 						<forename cert="low">Jean</forename>
 						<surname cert="low">Budé</surname>
-						<addName type="main">Budé, Sr. de Vérace (Veratius), Jean</addName>
-						<graphic type="portrait" url="portraits/8305_Budé_Jean.jpg"/>
+						<persName type="main" ref="person8305>Budé, Sr. de Vérace (Veratius), Jean</addName>
+						<graphic type="portrait" url="portraits/8305_Bude_Jean.jpg"/>
 						<ref type="wikipedia" target="https://en.wikipedia.org/wiki/Jean_Bud%C3%A9"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/121044262"/>
 					</persName>
-					<place source="#912" cert="low">
-						<settlement>am Rhein in Deutschland</settlement>
-					</place>
+					-->
+					<persName ref="person474" cert="low"/>
+					<place source="place912" cert="low"/>
 					<date when="1562-03-29" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5245"/>
-					<ref type="prev_chronologically" target="files.xml#5243"/>
+					<ref type="next_chronologically" target="file5245"/>
+					<ref type="prev_chronologically" target="file5243"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -107,12 +120,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#5245"/>
-					<ref type="prev_same_addressee" target="files.xml#5242"/>
+					<ref type="next_same_addressee" target="file5245"/>
+					<ref type="prev_same_addressee" target="file5242"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5245"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5242"/>
+					<ref type="next_with_addressee_as_sender" target="file5245"/>
+					<ref type="prev_with_addressee_as_sender" target="file5242"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -131,49 +144,49 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Ex literis nostri Bezae intelliges, qualis sit ecclesiarum nostratium status; earum exemplum ad te mitto.</s>
-					<s xml:lang="la" type="auto">In quibus tametsi pauca quaedam sunt, quae alterius sunt negotii, tamen integras de verbo ad verbum describendas curavi et manu mea subscripsi.</s>
-					<s xml:lang="la" type="auto">Quum autem eas vix intelligere possis, nisi historiam ipsam teneas, eam volo tibi narrare.</s>
-					<s xml:lang="la" type="auto">Oppidum quoddam est in finibus Campaniae Joinvillae vicinum nomine Wassei, ubi Christus ecclesiam collegerat ad mille et quingentos, qui regis edicto freti (quo conventus omnes fidelium sacros in fidem suam recipit) secure conveniebant ad verbum audiendum et preces suas fundendas.</s>
-					<s xml:lang="la" type="auto">Guysianus, qui in illa regione tum erat, quum sciret inermes et nihil sibi metuentes subito impetu facile posse opprimi, copias suas tanquam alio tendens armavit, quos praemisit, qui pistoletis terrorem incuterent; ipse mox subsequutus est.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Ex literis nostri Bezae intelliges, qualis sit ecclesiarum nostratium status; earum exemplum ad te mitto.</s>
+					<s n="3" xml:lang="la" type="auto">In quibus tametsi pauca quaedam sunt, quae alterius sunt negotii, tamen integras de verbo ad verbum describendas curavi et manu mea subscripsi.</s>
+					<s n="4" xml:lang="la" type="auto">Quum autem eas vix intelligere possis, nisi historiam ipsam teneas, eam volo tibi narrare.</s>
+					<s n="5" xml:lang="la" type="auto">Oppidum quoddam est in finibus Campaniae Joinvillae vicinum nomine Wassei, ubi Christus ecclesiam collegerat ad mille et quingentos, qui regis edicto freti (quo conventus omnes fidelium sacros in fidem suam recipit) secure conveniebant ad verbum audiendum et preces suas fundendas.</s>
+					<s n="6" xml:lang="la" type="auto">Guysianus, qui in illa regione tum erat, quum sciret inermes et nihil sibi metuentes subito impetu facile posse opprimi, copias suas tanquam alio tendens armavit, quos praemisit, qui pistoletis terrorem incuterent; ipse mox subsequutus est.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Accidit, quod speraverat, ut inermes et imparatos deprehenderet; tantum enim ad doctrinam et preces intenti erant.</s>
-					<s xml:lang="la" type="auto">Occisi sunt in ipso conventu plures centum et quinquaginta, ducenti vulnerati; reliqui fuga sibi consuluerunt.</s>
-					<s xml:lang="la" type="auto">Mox ad praedam concursum est, expilatae domus tanquam parta de hostibus victoria.</s>
-					<s xml:lang="la" type="auto">Qui elapsi erant, statim venerunt Lutetiam et a Beza mox ad regem deducti sunt, qui conquestus de tam atroci et barbara saevitia simpliciter omnium nomine postulavit, ne rex pateretur innoxium sanguinem fundi.</s>
+					<s n="7" xml:lang="la" type="auto">Accidit, quod speraverat, ut inermes et imparatos deprehenderet; tantum enim ad doctrinam et preces intenti erant.</s>
+					<s n="8" xml:lang="la" type="auto">Occisi sunt in ipso conventu plures centum et quinquaginta, ducenti vulnerati; reliqui fuga sibi consuluerunt.</s>
+					<s n="9" xml:lang="la" type="auto">Mox ad praedam concursum est, expilatae domus tanquam parta de hostibus victoria.</s>
+					<s n="10" xml:lang="la" type="auto">Qui elapsi erant, statim venerunt Lutetiam et a Beza mox ad regem deducti sunt, qui conquestus de tam atroci et barbara saevitia simpliciter omnium nomine postulavit, ne rex pateretur innoxium sanguinem fundi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Rex Navarrae ibi tum Guysiani patrocinium suscepit; decreta tamen est inquisitio.</s>
-					<s xml:lang="la" type="auto">Haec est historia, de qua in literis suis agit d. Beza, quas alioquin vix intellexisses.</s>
+					<s n="11" xml:lang="la" type="auto">Rex Navarrae ibi tum Guysiani patrocinium suscepit; decreta tamen est inquisitio.</s>
+					<s n="12" xml:lang="la" type="auto">Haec est historia, de qua in literis suis agit d. Beza, quas alioquin vix intellexisses.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex qua, mi domine, facile perspicis non modo, quo in periculo versentur innoxii homines et pii, ni statim importunorum hominum audaciae ac furori obviam eatur.</s>
-					<s xml:lang="la" type="auto">Quod ad reginam matrem atque adeo ad regem ipsum attinet, facile est ex edicto nuper promulgato iudicare, quum officiariis suis omnibus mandet rex, ne patiantur iniuriam pati sacros coetus, quos in fidem et patrocinium suum recipit, modo a tumultu et armis abstineant nostri.</s>
+					<s n="13" xml:lang="la" type="auto">Ex qua, mi domine, facile perspicis non modo, quo in periculo versentur innoxii homines et pii, ni statim importunorum hominum audaciae ac furori obviam eatur.</s>
+					<s n="14" xml:lang="la" type="auto">Quod ad reginam matrem atque adeo ad regem ipsum attinet, facile est ex edicto nuper promulgato iudicare, quum officiariis suis omnibus mandet rex, ne patiantur iniuriam pati sacros coetus, quos in fidem et patrocinium suum recipit, modo a tumultu et armis abstineant nostri.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sed vides ex Bezae literis ut regina sibi et filio suo metuat ab audacia hostium, ne scilicet sibi regem vendicent, ac sub eius nomine summam rerum ad se trahant.</s>
-					<s xml:lang="la" type="auto">Optandum est ut illustrissimi Cantones, quibus cordi est regnum Christi, intelligant ista ac tametsi tu pro tua prudentia facile iudicare possis quid consilii capiendum sit, mihi tamen et bonis omnibus videtur nulla re melius posse comprimi rabiem et amentiae plenum consilium quam si intelligant tyranni isti non deesse fortissimos viros et potentes principes qui regem non modo per legatos suos rogent ne cedat hominum amentium furori in negotio tam serio, nempe in quo coniuncta est ecclesiae salus cum eius autoritate regia, sed etiam, si opus sit, auxilium offerant.</s>
-					<s xml:lang="la" type="auto">Ego tibi, vir clarissime, non do consilium, sed animum, non meum, sed fidelium omnium aperio.</s>
-					<s xml:lang="la" type="auto">Utinam per otium Calvino nostro licuisset de his rebus ad te scribere, sed nec otium fuit, et biduo ante discessum scripserat ad te.</s>
-					<s xml:lang="la" type="auto">Iussit tamen ut ex itinere te certiorem quam primum faceremus et literarum Bezae exemplar mitteremus.</s>
-					<s xml:lang="la" type="auto">Nam vix capto consilio dimissi sumus ut his de rebus clarissimos principes certiores faciamus, quos Heidelbergae iam convenisse audivimus.</s>
-					<s xml:lang="la" type="auto">Te etiam atque etiam rogo ut primo quoque tempore ad d. Calvinum scribas sententiam tuam, a quo tibi multam dico salutem, et a Ionvillaeo fratre, ad quem si scripseris, statum ecclesiarum tibi perscribet diligentissime, nam absente me ad eum omnia Lutetia scribentur.</s>
+					<s n="15" xml:lang="la" type="auto">Sed vides ex Bezae literis ut regina sibi et filio suo metuat ab audacia hostium, ne scilicet sibi regem vendicent, ac sub eius nomine summam rerum ad se trahant.</s>
+					<s n="16" xml:lang="la" type="auto">Optandum est ut illustrissimi Cantones, quibus cordi est regnum Christi, intelligant ista ac tametsi tu pro tua prudentia facile iudicare possis quid consilii capiendum sit, mihi tamen et bonis omnibus videtur nulla re melius posse comprimi rabiem et amentiae plenum consilium quam si intelligant tyranni isti non deesse fortissimos viros et potentes principes qui regem non modo per legatos suos rogent ne cedat hominum amentium furori in negotio tam serio, nempe in quo coniuncta est ecclesiae salus cum eius autoritate regia, sed etiam, si opus sit, auxilium offerant.</s>
+					<s n="17" xml:lang="la" type="auto">Ego tibi, vir clarissime, non do consilium, sed animum, non meum, sed fidelium omnium aperio.</s>
+					<s n="18" xml:lang="la" type="auto">Utinam per otium Calvino nostro licuisset de his rebus ad te scribere, sed nec otium fuit, et biduo ante discessum scripserat ad te.</s>
+					<s n="19" xml:lang="la" type="auto">Iussit tamen ut ex itinere te certiorem quam primum faceremus et literarum Bezae exemplar mitteremus.</s>
+					<s n="20" xml:lang="la" type="auto">Nam vix capto consilio dimissi sumus ut his de rebus clarissimos principes certiores faciamus, quos Heidelbergae iam convenisse audivimus.</s>
+					<s n="21" xml:lang="la" type="auto">Te etiam atque etiam rogo ut primo quoque tempore ad d. Calvinum scribas sententiam tuam, a quo tibi multam dico salutem, et a Ionvillaeo fratre, ad quem si scripseris, statum ecclesiarum tibi perscribet diligentissime, nam absente me ad eum omnia Lutetia scribentur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bene vale, vir mihi in primis colendissime.</s>
-					<s xml:lang="la" type="auto">Salutabis nomine meo officiosissime omnes pios fratres qui istic sunt.</s>
-					<s xml:lang="la" type="auto">29. martii 1562.</s>
+					<s n="22" xml:lang="la" type="auto">Bene vale, vir mihi in primis colendissime.</s>
+					<s n="23" xml:lang="la" type="auto">Salutabis nomine meo officiosissime omnes pios fratres qui istic sunt.</s>
+					<s n="24" xml:lang="la" type="auto">29. martii 1562.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuae humanitatis observantissimus Ioannes Budaeus.</s>
+					<s n="25" xml:lang="la" type="auto">Tuae humanitatis observantissimus Ioannes Budaeus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Eximio Christi servo et pastori ecclesiae Tigurinae vigilantissimo d. Henrico Bullingero, domino et amico meo colendissimo.</s>
+					<s n="26" xml:lang="la" type="auto">Eximio Christi servo et pastori ecclesiae Tigurinae vigilantissimo d. Henrico Bullingero, domino et amico meo colendissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="27" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

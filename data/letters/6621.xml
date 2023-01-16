@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 371,1030 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">Genf MHR, Archives Trouchin 1, fo 79-80</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 371,1030 f.</idno>
+						<idno subtype="Hinweis">Genf MHR, Archives Trouchin 1, fo 79-80</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -34,13 +37,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 112,155</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 112,155</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -49,66 +55,46 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6621">
 				<correspAction type="sent">
-					<persName ref="person#1381" cert="high">
+					<!--
+					<persName ref="person1381" cert="high">
 						<forename cert="high">Rudolf</forename>
 						<surname cert="high">Gwalther</surname>
-						<addName type="main">Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
+						<persName type="main" ref="person8011>Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
 						<graphic type="portrait" url="portraits/1381_Gwalther_Rudolf.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Rudolf_Gwalther"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11854392X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11522600"/>
 					</persName>
 					<note type="Adresse">Rudolf Gwalther im Namen der Züricher Kirche</note>
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person1381" cert="high"/>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
 					<date when="1565-12-27" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#167" cert="high">
-							<settlement>Genf</settlement>
-							<district>Genève</district>
-							<country>Schweiz</country>
-							<geo>46.20222 6.14569</geo>
-						</place>
-					</roleName>
-					<place source="#167" cert="high">
-						<settlement>Genf</settlement>
-						<district>Genève</district>
-						<country>Schweiz</country>
-						<geo>46.20222 6.14569</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<orgName ref="org41" role="Pastorenkompanie"/>"
+					<place source="place167" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6622"/>
-					<ref type="prev_chronologically" target="files.xml#6620"/>
-					<ref type="next_correspondence" target="files.xml#9999"/>
+					<ref type="next_chronologically" target="file6622"/>
+					<ref type="prev_chronologically" target="file6620"/>
+					<ref type="next_correspondence" target="file9999"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#9999"/>
+					<ref type="next_correspondence_request" target="file9999"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#6703"/>
-					<ref type="prev_same_sender" target="files.xml#4446"/>
-					<ref type="next_same_addressee" target="files.xml#6632"/>
-					<ref type="prev_same_addressee" target="files.xml#6463"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6703"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4446"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6632"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6463"/>
-					<ref type="child" target="files.xml#6622"/>
+					<ref type="next_same_sender" target="file6703"/>
+					<ref type="prev_same_sender" target="file4446"/>
+					<ref type="next_same_addressee" target="file6632"/>
+					<ref type="prev_same_addressee" target="file6463"/>
+					<ref type="next_with_sender_as_addressee" target="file6703"/>
+					<ref type="prev_with_sender_as_addressee" target="file4446"/>
+					<ref type="next_with_addressee_as_sender" target="file6632"/>
+					<ref type="prev_with_addressee_as_sender" target="file6463"/>
+					<ref type="child" target="file6622"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

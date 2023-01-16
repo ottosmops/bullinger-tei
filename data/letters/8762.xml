@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 362,117</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 362,117</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -28,14 +31,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#441">Schaffhausen</settlement>
-						<institution>Stadtbibliothek</institution>
-						<idno type="Kopie">Min. 125, 29-31, Nr. 4=7 Cartogr.</idno>
-						<repository ref="archive#77">
+						<!--
+						<repository ref="archive77">
 							<name>Schaffhausen StB</name>
-							<note type="Hinweis">dat.: 1. Febr. 72</note>
 							<ref target="https://bibliotheken-schaffhausen.ch/digitale-bibliothek/online-katalog/"/>
 						</repository>
+						<settlement ref="place441">Schaffhausen</settlement>
+						<institution>Stadtbibliothek</institution>
+						-->
+						<repository ref="archive77"/>
+						<idno subtype="Kopie">Min. 125, 29-31, Nr. 4=7 Cartogr.</idno>
+						<idno subtype="Hinweis">dat.: 1. Febr. 72</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -44,59 +50,63 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8762">
 				<correspAction type="sent">
-					<persName ref="person#3243" cert="low">
+					<!--
+					<persName ref="person3243" cert="low">
 						<forename cert="low">Johann Konrad</forename>
 						<surname cert="low">Ulmer</surname>
-						<addName type="main">Ulmer (ab Ulmis), Johann Konrad</addName>
-						<graphic type="portrait" url="portraits/3243_Johann_Conrad_Ulmer.jpg"/>
+						<persName type="main" ref="person8109>Ulmer (ab Ulmis), Johann Konrad</addName>
+						<graphic type="portrait" url="portraits/3243_Ulmer_Johann_Conrad.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johann_Konrad_Ulmer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/120341913"/>
 					</persName>
-					<place source="#441" cert="low">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					-->
+					<persName ref="person3243" cert="low"/>
+					<place source="place441" cert="low"/>
 					<date when="1572-02-01" cert="low"><note>Datum unsicher  (1572 zwischen Januar 30. und Februar 8.)  [Februar 1.]</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8763"/>
-					<ref type="prev_chronologically" target="files.xml#8761"/>
-					<ref type="next_correspondence" target="files.xml#8767"/>
-					<ref type="prev_correspondence" target="files.xml#8757"/>
-					<ref type="next_correspondence_request" target="files.xml#8777"/>
-					<ref type="prev_correspondence_request" target="files.xml#8754"/>
-					<ref type="next_correspondence_reaction" target="files.xml#8767"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#8757"/>
-					<ref type="next_same_sender" target="files.xml#8777"/>
-					<ref type="prev_same_sender" target="files.xml#8754"/>
-					<ref type="next_same_addressee" target="files.xml#8764"/>
-					<ref type="prev_same_addressee" target="files.xml#8761"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8777"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#8754"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8764"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8761"/>
+					<ref type="next_chronologically" target="file8763"/>
+					<ref type="prev_chronologically" target="file8761"/>
+					<ref type="next_correspondence" target="file8767"/>
+					<ref type="prev_correspondence" target="file8757"/>
+					<ref type="next_correspondence_request" target="file8777"/>
+					<ref type="prev_correspondence_request" target="file8754"/>
+					<ref type="next_correspondence_reaction" target="file8767"/>
+					<ref type="prev_correspondence_reaction" target="file8757"/>
+					<ref type="next_same_sender" target="file8777"/>
+					<ref type="prev_same_sender" target="file8754"/>
+					<ref type="next_same_addressee" target="file8764"/>
+					<ref type="prev_same_addressee" target="file8761"/>
+					<ref type="next_with_sender_as_addressee" target="file8777"/>
+					<ref type="prev_with_sender_as_addressee" target="file8754"/>
+					<ref type="next_with_addressee_as_sender" target="file8764"/>
+					<ref type="prev_with_addressee_as_sender" target="file8761"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="8762/Autograph/00 E_II_362__fol__117_r_.tif" n="1"/>
+		<graphic url="8762/Autograph/01 E_II_362__fol__117_v_.tif" n="2"/>
+		<graphic url="8762/Autograph/02 E_II_362__fol__117_a_v_.tif" n="3"/>
+		<graphic url="8762/Autograph/03 E_II_362__fol__117_a_r_.tif" n="4"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

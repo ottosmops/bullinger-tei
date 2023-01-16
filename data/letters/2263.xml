@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3565</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,530</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,530</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 81,165</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 81,165</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -68,54 +74,61 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2263">
 				<correspAction type="sent">
-					<persName ref="person#654" cert="high">
+					<!--
+					<persName ref="person654" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Comander</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Comander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118713841"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413826"/>
 					</persName>
-					<persName ref="person#1262" cert="high">
+					-->
+					<persName ref="person654" cert="high"/>
+					<!--
+					<persName ref="person1262" cert="high">
 						<forename cert="high">Philipp</forename>
 						<surname cert="high">Gallicius</surname>
-						<addName type="main">Gallicius (Saluz), Philipp</addName>
+						<persName type="main" ref="person8359>Gallicius (Saluz), Philipp</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Philipp_Gallicius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/134007832"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415068"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person1262" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1554-04-16" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2264"/>
-					<ref type="prev_chronologically" target="files.xml#2262"/>
-					<ref type="next_correspondence" target="files.xml#2393"/>
-					<ref type="prev_correspondence" target="files.xml#2102"/>
-					<ref type="next_correspondence_request" target="files.xml#2393"/>
-					<ref type="prev_correspondence_request" target="files.xml#2102"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3425"/>
+					<ref type="next_chronologically" target="file2264"/>
+					<ref type="prev_chronologically" target="file2262"/>
+					<ref type="next_correspondence" target="file2393"/>
+					<ref type="prev_correspondence" target="file2102"/>
+					<ref type="next_correspondence_request" target="file2393"/>
+					<ref type="prev_correspondence_request" target="file2102"/>
+					<ref type="next_correspondence_reaction" target="file3425"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#2393"/>
-					<ref type="prev_same_sender" target="files.xml#2102"/>
-					<ref type="next_same_addressee" target="files.xml#2269"/>
-					<ref type="prev_same_addressee" target="files.xml#2256"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2393"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2102"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2269"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2256"/>
+					<ref type="next_same_sender" target="file2393"/>
+					<ref type="prev_same_sender" target="file2102"/>
+					<ref type="next_same_addressee" target="file2269"/>
+					<ref type="prev_same_addressee" target="file2256"/>
+					<ref type="next_with_sender_as_addressee" target="file2393"/>
+					<ref type="prev_with_sender_as_addressee" target="file2102"/>
+					<ref type="next_with_addressee_as_sender" target="file2269"/>
+					<ref type="prev_with_addressee_as_sender" target="file2256"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -125,37 +138,40 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="2263/Autograph/00 E_II_365__fol__530_r_.tif" n="1"/>
+		<graphic url="2263/Autograph/01 E_II_365__fol__530_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Literas tuas novissimas accepi, meis inclusas ad d. Baionensem scriptas; illi fideliter eadem hora sunt redditae, scribae quidem ipsius; nam ipse Davasii erat in comiciis.</s>
-					<s xml:lang="la" type="auto">Foedera nostra milites illi concesserunt, si quidem illos velit iuxta convencionem ac pacta inter nos et regem.</s>
-					<s xml:lang="la" type="auto">Cunctatur illos abducere; nam illi sapientes nostri annuerunt, eciamsi Helvecii nondum annuerint; tam obsequentes sumus illi.</s>
-					<s xml:lang="la" type="auto">Vetus tamen dictum est: auro loquente nihil pollet quaevis oracio.</s>
-					<s xml:lang="la" type="auto">In ecclesia nostra ambo dehortati sumus mortales a milicia, quicquid dicant, qui illibenter audiunt; ambo autem claris et multis verbis id egimus, alter eciam nostrum tota concione id docuit, praeterea nihil.</s>
-					<s xml:lang="la" type="auto">Hoc pro certo tenemus: non habiturum regem Gallorum tot Retos (quatuor milia peciit), nisi ampliorem solucionem fecerit quam hactenus.</s>
-					<s xml:lang="la" type="auto">Ex Italia pro certo audimus ab omnibus, qui illinc veniunt, Strozam multos Hispanorum demisisse horco, sunt, qui dicant milium aliquot, multos eciam primorum Caesaris captos ab illo et hoc gestum Senae.</s>
-					<s xml:lang="la" type="auto">Sunt, qui dicant et in Pedemontana regione passos esse Caesareanos.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Literas tuas novissimas accepi, meis inclusas ad d. Baionensem scriptas; illi fideliter eadem hora sunt redditae, scribae quidem ipsius; nam ipse Davasii erat in comiciis.</s>
+					<s n="3" xml:lang="la" type="auto">Foedera nostra milites illi concesserunt, si quidem illos velit iuxta convencionem ac pacta inter nos et regem.</s>
+					<s n="4" xml:lang="la" type="auto">Cunctatur illos abducere; nam illi sapientes nostri annuerunt, eciamsi Helvecii nondum annuerint; tam obsequentes sumus illi.</s>
+					<s n="5" xml:lang="la" type="auto">Vetus tamen dictum est: auro loquente nihil pollet quaevis oracio.</s>
+					<s n="6" xml:lang="la" type="auto">In ecclesia nostra ambo dehortati sumus mortales a milicia, quicquid dicant, qui illibenter audiunt; ambo autem claris et multis verbis id egimus, alter eciam nostrum tota concione id docuit, praeterea nihil.</s>
+					<s n="7" xml:lang="la" type="auto">Hoc pro certo tenemus: non habiturum regem Gallorum tot Retos (quatuor milia peciit), nisi ampliorem solucionem fecerit quam hactenus.</s>
+					<s n="8" xml:lang="la" type="auto">Ex Italia pro certo audimus ab omnibus, qui illinc veniunt, Strozam multos Hispanorum demisisse horco, sunt, qui dicant milium aliquot, multos eciam primorum Caesaris captos ab illo et hoc gestum Senae.</s>
+					<s n="9" xml:lang="la" type="auto">Sunt, qui dicant et in Pedemontana regione passos esse Caesareanos.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Caetera apud nos in statu priore suoque sunt.</s>
-					<s xml:lang="la" type="auto">Vale, virorum integerrime, et nos redama.</s>
-					<s xml:lang="la" type="auto">Salutant te Tschernerus, Haimius, ita enim me iussit scribere, Pontisella; praeterea fratres ecclesiastae, quorum nomina adscribere inpraesenciarum supersedemus, tibi felicia omnia precantur.</s>
+					<s n="10" xml:lang="la" type="auto">Caetera apud nos in statu priore suoque sunt.</s>
+					<s n="11" xml:lang="la" type="auto">Vale, virorum integerrime, et nos redama.</s>
+					<s n="12" xml:lang="la" type="auto">Salutant te Tschernerus, Haimius, ita enim me iussit scribere, Pontisella; praeterea fratres ecclesiastae, quorum nomina adscribere inpraesenciarum supersedemus, tibi felicia omnia precantur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex Curia, die 16. aprilis anni 1554.</s>
+					<s n="13" xml:lang="la" type="auto">Ex Curia, die 16. aprilis anni 1554.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuae humanitatis Ioannes Comander et Philippus Gallicius.</s>
+					<s n="14" xml:lang="la" type="auto">Tuae humanitatis Ioannes Comander et Philippus Gallicius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vere magno viro d. Heinrycho Bullingero, Tigurino ecclesiastae, domino suo colendissimo.</s>
+					<s n="15" xml:lang="la" type="auto">Vere magno viro d. Heinrycho Bullingero, Tigurino ecclesiastae, domino suo colendissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Zürich.</s>
+					<s n="16" xml:lang="de" type="auto">Zürich.</s>
 				</p>
 			</div>
 		</body>

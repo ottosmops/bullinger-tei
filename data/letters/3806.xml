@@ -8,15 +8,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#41">Bern</settlement>
-						<institution>Burgerbibliothek</institution>
-						<idno type="Autograph">Cod. A 30, Nr. 2</idno>
-						<repository ref="archive#12">
+						<!--
+						<repository ref="archive12">
 							<name>Bern BB</name>
-							<note type="Xeroxkopie">IRG</note>
-							<note type="Hinweis">ehem. StadtB</note>
 							<ref target="https://www.burgerbib.ch/de"/>
 						</repository>
+						<settlement ref="place41">Bern</settlement>
+						<institution>Burgerbibliothek</institution>
+						-->
+						<repository ref="archive12"/>
+						<idno subtype="Autograph">Cod. A 30, Nr. 2</idno>
+						<idno subtype="Xeroxkopie">IRG</idno>
+						<idno subtype="Hinweis">ehem. StadtB</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -31,14 +34,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 93,173</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">liest 27. oder 29. Dez. 1558</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 93,173</idno>
+						<idno subtype="Hinweis">liest 27. oder 29. Dez. 1558</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -52,49 +58,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3806">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date min="1558-12-23" max="1558-12-29" cert="low"><note>Tag unsicher  1558 Dezember 23. (?) *  (21./27./29.?)</note></date>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
+					<date notBefore="1558-12-23" notAfter="1558-12-29" cert="low"><note>Tag unsicher  1558 Dezember 23. (?) *  (21./27./29.?)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2044" cert="high">
+					<!--
+					<persName ref="person2044" cert="high">
 						<forename cert="high">Benedikt</forename>
 						<surname cert="high">Marti</surname>
-						<addName type="main">Marti (Aretius), Benedikt</addName>
+						<persName type="main" ref="person8092>Marti (Aretius), Benedikt</addName>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person2044" cert="high"/>
+					<place source="place41" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3807"/>
-					<ref type="prev_chronologically" target="files.xml#3804"/>
-					<ref type="next_correspondence" target="files.xml#3884"/>
+					<ref type="next_chronologically" target="file3807"/>
+					<ref type="prev_chronologically" target="file3804"/>
+					<ref type="next_correspondence" target="file3884"/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#3884"/>
+					<ref type="next_correspondence_reaction" target="file3884"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#3813"/>
-					<ref type="prev_same_sender" target="files.xml#3797"/>
-					<ref type="next_same_addressee" target="files.xml#3884"/>
+					<ref type="next_same_sender" target="file3813"/>
+					<ref type="prev_same_sender" target="file3797"/>
+					<ref type="next_same_addressee" target="file3884"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3813"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3797"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3884"/>
+					<ref type="next_with_sender_as_addressee" target="file3813"/>
+					<ref type="prev_with_sender_as_addressee" target="file3797"/>
+					<ref type="next_with_addressee_as_sender" target="file3884"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>

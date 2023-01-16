@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#558">Wittenberg</settlement>
-						<institution>Lutherhalle</institution>
-						<idno type="Autograph">156/167</idno>
-						<repository ref="archive#90">
+						<!--
+						<repository ref="archive90">
 							<name>Wittenberg LH</name>
-							<note type="Xeroxkopie">IRG</note>
 							<ref target="https://www.clio-online.de/organization/id/organization-12292"/>
 						</repository>
+						<settlement ref="place558">Wittenberg</settlement>
+						<institution>Lutherhalle</institution>
+						-->
+						<repository ref="archive90"/>
+						<idno subtype="Autograph">156/167</idno>
+						<idno subtype="Xeroxkopie">IRG</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -32,64 +35,43 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3992">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<note type="Person">Verord. Examinatoren</note>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 					<date when="1559-06-14" cert="low"><note>Fürschlag</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#14" cert="low">Bürgermeister</name>
-						<place source="#587" cert="low">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="low">Räte</name>
-						<place source="#587" cert="low">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role28" role="Bürgermeister"/>
+					<personGrp ref="role0" role="Räte"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3993"/>
-					<ref type="prev_chronologically" target="files.xml#3991"/>
-					<ref type="next_correspondence" target="files.xml#4119"/>
-					<ref type="prev_correspondence" target="files.xml#3454"/>
-					<ref type="next_correspondence_request" target="files.xml#4119"/>
-					<ref type="prev_correspondence_request" target="files.xml#3454"/>
-					<ref type="next_correspondence_reaction" target="files.xml#4669"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1849"/>
-					<ref type="next_same_sender" target="files.xml#3999"/>
-					<ref type="prev_same_sender" target="files.xml#3982"/>
-					<ref type="next_same_addressee" target="files.xml#4643"/>
-					<ref type="prev_same_addressee" target="files.xml#2914"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3999"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3982"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4643"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2914"/>
+					<ref type="next_chronologically" target="file3993"/>
+					<ref type="prev_chronologically" target="file3991"/>
+					<ref type="next_correspondence" target="file4119"/>
+					<ref type="prev_correspondence" target="file3454"/>
+					<ref type="next_correspondence_request" target="file4119"/>
+					<ref type="prev_correspondence_request" target="file3454"/>
+					<ref type="next_correspondence_reaction" target="file4669"/>
+					<ref type="prev_correspondence_reaction" target="file1849"/>
+					<ref type="next_same_sender" target="file3999"/>
+					<ref type="prev_same_sender" target="file3982"/>
+					<ref type="next_same_addressee" target="file4643"/>
+					<ref type="prev_same_addressee" target="file2914"/>
+					<ref type="next_with_sender_as_addressee" target="file3999"/>
+					<ref type="prev_with_sender_as_addressee" target="file3982"/>
+					<ref type="next_with_addressee_as_sender" target="file4643"/>
+					<ref type="prev_with_addressee_as_sender" target="file2914"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

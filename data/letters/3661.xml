@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Widmung" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 92,179</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Druck</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 92,179</idno>
+						<idno subtype="Hinweis">Druck</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -45,46 +48,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3661">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date when="1558-08-00" cert="low"><note>Datum unsicher  kein Tag</note></date>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
+					<date notBefore="1558-08-01" notAfter="1558-08-12" cert="low"><note>Datum unsicher  kein Tag</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2665" cert="low">
+					<!--
+					<persName ref="person2665" cert="low">
 						<forename cert="low">Nikolaus</forename>
 						<surname cert="low">Radziwill</surname>
-						<addName type="main">Radziwill (Mikolaj Czarny, Graf von Olyka), Nikolaus</addName>
+						<persName type="main" ref="person8117>Radziwill (Mikolaj Czarny, Graf von Olyka), Nikolaus</addName>
 					</persName>
-					<place source="#908" cert="low">
-						<settlement>Wilna oder Brest</settlement>
-					</place>
+					-->
+					<persName ref="person2665" cert="low"/>
+					<place source="place908" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3662"/>
-					<ref type="prev_chronologically" target="files.xml#3660"/>
-					<ref type="next_correspondence" target="files.xml#3828"/>
-					<ref type="prev_correspondence" target="files.xml#3397"/>
-					<ref type="next_correspondence_request" target="files.xml#3828"/>
-					<ref type="prev_correspondence_request" target="files.xml#3397"/>
-					<ref type="next_correspondence_reaction" target="files.xml#4871"/>
+					<ref type="next_chronologically" target="file3662"/>
+					<ref type="prev_chronologically" target="file3660"/>
+					<ref type="next_correspondence" target="file3828"/>
+					<ref type="prev_correspondence" target="file3397"/>
+					<ref type="next_correspondence_request" target="file3828"/>
+					<ref type="prev_correspondence_request" target="file3397"/>
+					<ref type="next_correspondence_reaction" target="file4871"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#3671"/>
-					<ref type="prev_same_sender" target="files.xml#3654"/>
-					<ref type="next_same_addressee" target="files.xml#4871"/>
+					<ref type="next_same_sender" target="file3671"/>
+					<ref type="prev_same_sender" target="file3654"/>
+					<ref type="next_same_addressee" target="file4871"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3671"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3654"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4871"/>
+					<ref type="next_with_sender_as_addressee" target="file3671"/>
+					<ref type="prev_with_sender_as_addressee" target="file3654"/>
+					<ref type="next_with_addressee_as_sender" target="file4871"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>

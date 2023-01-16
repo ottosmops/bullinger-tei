@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2008"/>
-				<idno type="ISBN">ISBN 978-3-290-17459-0</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1737</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17459-0</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1737</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 13</title>
+				<title subtype="publication">HBBW XIII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">13</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 361,151</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 361,151</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,10 +50,10 @@
 						<summary>
 							<p xml:id="regest1">
 								Hat [Hans] Vogler geschrieben, der die Nachrichten - über deren Wahrheitsgehalt
-								<persName ref="57">Erb</persName> im Unklaren ist - vielleicht Bullinger zukommen lassen wird; bittet
-								ihn, sie nur mit Vorsicht weiterzugeben. <placeName ref="7">Deutschland</placeName> ist in
+								<persName ref="person57">Erb</persName> im Unklaren ist - vielleicht Bullinger zukommen lassen wird; bittet
+								ihn, sie nur mit Vorsicht weiterzugeben. <placeName ref="place7">Deutschland</placeName> ist in
 								Unruhe; man rüstet zum Krieg, doch auch das Evangelium wird stärker;
-								<persName ref="57">Erb</persName> hofft, dass sich die Kriegführenden gegenseitig neutralisieren.
+								<persName ref="person57">Erb</persName> hofft, dass sich die Kriegführenden gegenseitig neutralisieren.
 								Grüße. Bitte um gegenseitige Fürbitte.
 							</p>
 						</summary>
@@ -61,44 +64,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11782">
 				<correspAction type="sent">
-					<persName ref="person#1010" cert="high">
+					<!--
+					<persName ref="person1010" cert="high">
 						<forename cert="high">Matthias</forename>
 						<surname cert="high">Erb</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Matthias_Erb"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/100972160"/>
 					</persName>
-					<place source="#411" cert="high">
-						<settlement>Reichenweier</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.16672 7.29707</geo>
-					</place>
+					-->
+					<persName ref="person1010" cert="high"/>
+					<place source="place411" cert="high"/>
 					<date when="1543-04-03" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11783"/>
-					<ref type="prev_chronologically" target="files.xml#11781"/>
-					<ref type="next_correspondence" target="files.xml#11839"/>
-					<ref type="prev_correspondence" target="files.xml#11627"/>
-					<ref type="next_correspondence_request" target="files.xml#11852"/>
-					<ref type="prev_correspondence_request" target="files.xml#11621"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11839"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11627"/>
-					<ref type="next_same_sender" target="files.xml#11852"/>
-					<ref type="prev_same_sender" target="files.xml#11621"/>
-					<ref type="next_same_addressee" target="files.xml#11795"/>
-					<ref type="prev_same_addressee" target="files.xml#11778"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11852"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11621"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11795"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11778"/>
+					<ref type="next_chronologically" target="file11783"/>
+					<ref type="prev_chronologically" target="file11781"/>
+					<ref type="next_correspondence" target="file11839"/>
+					<ref type="prev_correspondence" target="file11627"/>
+					<ref type="next_correspondence_request" target="file11852"/>
+					<ref type="prev_correspondence_request" target="file11621"/>
+					<ref type="next_correspondence_reaction" target="file11839"/>
+					<ref type="prev_correspondence_reaction" target="file11627"/>
+					<ref type="next_same_sender" target="file11852"/>
+					<ref type="prev_same_sender" target="file11621"/>
+					<ref type="next_same_addressee" target="file11795"/>
+					<ref type="prev_same_addressee" target="file11778"/>
+					<ref type="next_with_sender_as_addressee" target="file11852"/>
+					<ref type="prev_with_sender_as_addressee" target="file11621"/>
+					<ref type="next_with_addressee_as_sender" target="file11795"/>
+					<ref type="prev_with_addressee_as_sender" target="file11778"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,32 +123,32 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S. frater in domino charissime.</s>
+					<s n="1" xml:lang="la" type="auto">S. frater in domino charissime.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Scripsi multis Voglero<note xml:id="fn1" type="footnote" n="1">Hans Vogler d. A.</note> nostro, veteri amico<note xml:id="fn2" type="footnote" n="2">Vogler hatte bis 1541 als Stadtschaffner in <placeName ref="884">Reichenweier</placeName> gewirkt; vgl. HBBW XI 337, Anm. 5.</note>, cuius beneficentię plurimum debeo, de statu meo et ecclesię<note xml:id="fn3" type="footnote" n="3"><persName ref="57">Erbs</persName> Brief an Vogler ist nicht erhalten.</note>.</s>
-					<s xml:lang="la" type="auto">Adtexui nova, quę apud nos passim dissipantur, at quam vera, ignoro; ut enim mundus instabilis est, ita et fama apud nos (mobilior quovis euro<note xml:id="fn4" type="footnote" n="4">Südostwind, vgl. <persName ref="2382">Vergil</persName>, Aeneis, 8, 223; 12, 733; <persName ref="1222">Horaz</persName>, Carmina, 2, 16,24 ("ocior euro") u. a.</note>) mentiendo vires acquirit<note xml:id="fn5" type="footnote" n="5">Vgl. <persName ref="2382">Vergil</persName>, Aeneis, 4, 174f ("... viresque adquirit eundo"); TPMA IV 392 ("Quamuis mentitur, crescit eundo tamen").</note>.</s>
-					<s xml:lang="la" type="auto">Quę tibi forte legenda<note xml:id="fna" type="footnote" n="a"><hi>Vor</hi> legenda <hi>gestrichenes</hi> tibi.</note> exhibebit.</s>
-					<s xml:lang="la" type="auto">Oro, ut soles, pro tua singulari prudentia omnia boni consulas, tum iis communices, qui mihi vel nugigeruli vel vani hominis notam non possint inurere etc.</s>
+					<s n="2" xml:lang="la" type="auto">Scripsi multis Voglero<note xml:id="fn1" type="footnote" n="1">Hans Vogler d. A.</note> nostro, veteri amico<note xml:id="fn2" type="footnote" n="2">Vogler hatte bis 1541 als Stadtschaffner in <placeName ref="place884">Reichenweier</placeName> gewirkt; vgl. HBBW XI 337, Anm. 5.</note>, cuius beneficentię plurimum debeo, de statu meo et ecclesię<note xml:id="fn3" type="footnote" n="3"><persName ref="person57">Erbs</persName> Brief an Vogler ist nicht erhalten.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Adtexui nova, quę apud nos passim dissipantur, at quam vera, ignoro; ut enim mundus instabilis est, ita et fama apud nos (mobilior quovis euro<note xml:id="fn4" type="footnote" n="4">Südostwind, vgl. <persName ref="person2382">Vergil</persName>, Aeneis, 8, 223; 12, 733; <persName ref="person1222">Horaz</persName>, Carmina, 2, 16,24 ("ocior euro") u. a.</note>) mentiendo vires acquirit<note xml:id="fn5" type="footnote" n="5">Vgl. <persName ref="person2382">Vergil</persName>, Aeneis, 4, 174f ("... viresque adquirit eundo"); TPMA IV 392 ("Quamuis mentitur, crescit eundo tamen").</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Quę tibi forte legenda<note xml:id="fna" type="footnote" n="a"><hi>Vor</hi> legenda <hi>gestrichenes</hi> tibi.</note> exhibebit.</s>
+					<s n="5" xml:lang="la" type="auto">Oro, ut soles, pro tua singulari prudentia omnia boni consulas, tum iis communices, qui mihi vel nugigeruli vel vani hominis notam non possint inurere etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Video trepidare Germaniam cum principibus et civitatibus adeo, ut plurimi sint fere in expeditione.</s>
-					<s xml:lang="la" type="auto">Nec tamen Christus inter istos tumultus silet, sed evangelium eius fortius exerit vires.</s>
-					<s xml:lang="la" type="auto">Minantur alius alii grandia et fere excidium, sed spero, <foreign xml:lang="de">es soll ein schwert das ander in der scheiden behalten<note xml:id="fn6" type="footnote" n="6">Vgl. Wander IV 467, Nr. 32.</note>.</foreign></s>
+					<s n="6" xml:lang="la" type="auto">Video trepidare Germaniam cum principibus et civitatibus adeo, ut plurimi sint fere in expeditione.</s>
+					<s n="7" xml:lang="la" type="auto">Nec tamen Christus inter istos tumultus silet, sed evangelium eius fortius exerit vires.</s>
+					<s n="8" xml:lang="la" type="auto">Minantur alius alii grandia et fere excidium, sed spero, <foreign xml:lang="de">es soll ein schwert das ander in der scheiden behalten<note xml:id="fn6" type="footnote" n="6">Vgl. Wander IV 467, Nr. 32.</note>.</foreign></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valebis salubriter cum ecclesia et fratribus tuis, quos nominatim salutabis, inprimis <persName ref="188">Erasmum</persName><note xml:id="fn7" type="footnote" n="7"><persName ref="188">Erasmus Schmid</persName> (Fabritius).</note>, <persName ref="145">Megandrum</persName> meum, <persName ref="165">Pellicanum</persName> etc.</s>
+					<s n="9" xml:lang="la" type="auto">Valebis salubriter cum ecclesia et fratribus tuis, quos nominatim salutabis, inprimis <persName ref="person188">Erasmum</persName><note xml:id="fn7" type="footnote" n="7"><persName ref="person188">Erasmus Schmid</persName> (Fabritius).</note>, <persName ref="person145">Megandrum</persName> meum, <persName ref="person165">Pellicanum</persName> etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Raptim, Richenvillae, 3. die aprilis anno 1543.</s>
-					<s xml:lang="la" type="auto">Ora dominum pro me, quod itidem pro te fatiam, frater in domino charissime.</s>
+					<s n="10" xml:lang="la" type="auto">Raptim, Richenvillae, 3. die aprilis anno 1543.</s>
+					<s n="11" xml:lang="la" type="auto">Ora dominum pro me, quod itidem pro te fatiam, frater in domino charissime.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Mathias <persName ref="57">Erbius</persName>.</s>
+					<s n="12" xml:lang="la" type="auto">Mathias <persName ref="person57">Erbius</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Viro pietate et doctrina eximio d. Henricho Bullingero, apud Tigurinos ecclesiastę vigilantissimo, fratri suo charissimo.</s>
+					<s n="13" xml:lang="la" type="auto">Viro pietate et doctrina eximio d. Henricho Bullingero, apud Tigurinos ecclesiastę vigilantissimo, fratri suo charissimo.</s>
 				</p>
 			</div>
 		</body>

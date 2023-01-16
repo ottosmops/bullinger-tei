@@ -8,14 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms Briefe 2° «Turpilius»</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">S. 1-2: Brief; S. 3-19: Gutachten; S. 20: leer</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms Briefe 2° «Turpilius», S. 1-2</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc><p>rechts unten durch Mäusefrass beschädigt</p></objectDesc>
@@ -31,46 +33,63 @@
 						<note type="Absender">Alias: Turpilius Alias: Zollicovensis Nicolaus</note>
 					</additional>
 				</msDesc>
+				<msDesc type="Gutachten" subtype="Autograph" xml:lang="">
+					<msIdentifier>
+						<!--
+						<repository ref="archive96">
+							<name>Zürich ZB</name>
+							<ref target="https://www.zb.uzh.ch/de/"/>
+						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms Briefe 2°"Turpilius", S. 3-19</idno>
+						<idno subtype="Hinweis">S. 20: leer</idno>
+					</msIdentifier>
+					<physDesc/>
+				</msDesc>
 			</sourceDesc>
 		</fileDesc>
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7713">
 				<correspAction type="sent">
-					<persName ref="person#3996" cert="high">
+					<!--
+					<persName ref="person3996" cert="high">
 						<forename cert="high">Klaus</forename>
 						<surname cert="high">Wüst</surname>
-						<addName type="main">Wüest (Turpilius), Nikolaus (Klaus)</addName>
+						<persName type="main" ref="person8291>Wüest (Turpilius), Nikolaus (Klaus)</addName>
 					</persName>
-					<persName ref="person#4003" cert="high">
+					-->
+					<persName ref="person3996" cert="high"/>
+					<!--
+					<persName ref="person4003" cert="high">
 						<forename cert="high">Nicolaus</forename>
 						<surname cert="high">Zollicovensis</surname>
-						<addName type="main">Wüest (Turpilius), Nikolaus (Klaus)</addName>
+						<persName type="main" ref="person8291>Wüest (Turpilius), Nikolaus (Klaus)</addName>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person4003" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1568-12-20" cert="low"><note>(+ Gutachen Dez. 29.)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7714"/>
-					<ref type="prev_chronologically" target="files.xml#7712"/>
+					<ref type="next_chronologically" target="file7714"/>
+					<ref type="prev_chronologically" target="file7712"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -79,20 +98,23 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#7719"/>
-					<ref type="prev_same_addressee" target="files.xml#7711"/>
+					<ref type="next_same_addressee" target="file7719"/>
+					<ref type="prev_same_addressee" target="file7711"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#7719"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#7711"/>
-					<ref type="child" target="files.xml#7720"/>
+					<ref type="next_with_addressee_as_sender" target="file7719"/>
+					<ref type="prev_with_addressee_as_sender" target="file7711"/>
+					<ref type="child" target="file7720"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="7713/Autograph/00 Ms Briefe fol, Turpilius 1.1_00001.tif" n="1"/>
+		<graphic url="7713/Autograph/01 Ms Briefe fol, Turpilius 1.1_00002.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7388/42</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms S 120,47</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms S 120,47</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,13 +54,16 @@
 				</msDesc>
 				<msDesc type="" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms F 40,478</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms F 40,478</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -66,44 +72,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7902">
 				<correspAction type="sent">
-					<persName ref="person#3708" cert="high">
+					<!--
+					<persName ref="person3708" cert="high">
 						<forename cert="high">Herkules</forename>
 						<surname cert="high">Salis</surname>
-						<addName type="main">Salis (a Salicibus), Hercules</addName>
+						<persName type="main" ref="person8093>Salis (a Salicibus), Hercules</addName>
 					</persName>
-					<place source="#93" cert="high">
-						<settlement>Chiavenna</settlement>
-						<district>Lombardei</district>
-						<country>Italien</country>
-						<geo>46.32063 9.39816</geo>
-					</place>
+					-->
+					<persName ref="person3708" cert="high"/>
+					<place source="place93" cert="high"/>
 					<date when="1569-06-06" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7903"/>
-					<ref type="prev_chronologically" target="files.xml#7901"/>
-					<ref type="next_correspondence" target="files.xml#8408"/>
-					<ref type="prev_correspondence" target="files.xml#7087"/>
-					<ref type="next_correspondence_request" target="files.xml#8408"/>
-					<ref type="prev_correspondence_request" target="files.xml#7087"/>
+					<ref type="next_chronologically" target="file7903"/>
+					<ref type="prev_chronologically" target="file7901"/>
+					<ref type="next_correspondence" target="file8408"/>
+					<ref type="prev_correspondence" target="file7087"/>
+					<ref type="next_correspondence_request" target="file8408"/>
+					<ref type="prev_correspondence_request" target="file7087"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#8408"/>
-					<ref type="prev_same_sender" target="files.xml#7734"/>
-					<ref type="next_same_addressee" target="files.xml#7912"/>
-					<ref type="prev_same_addressee" target="files.xml#7885"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8408"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#7734"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#7912"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#7885"/>
+					<ref type="next_same_sender" target="file8408"/>
+					<ref type="prev_same_sender" target="file7734"/>
+					<ref type="next_same_addressee" target="file7912"/>
+					<ref type="prev_same_addressee" target="file7885"/>
+					<ref type="next_with_sender_as_addressee" target="file8408"/>
+					<ref type="prev_with_sender_as_addressee" target="file7734"/>
+					<ref type="next_with_addressee_as_sender" target="file7912"/>
+					<ref type="prev_with_addressee_as_sender" target="file7885"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -113,25 +122,23 @@
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
 	<facsimile>
-		<graphic url="7902/Autograph/00 Ms_F_40_478_00001.tif" n="1"/>
-		<graphic url="7902/Autograph/01 Ms_F_40_478_00002.tif" n="2"/>
-		<graphic url="7902/Autograph/02 Ms_S_120_47_00001.tif" n="3"/>
-		<graphic url="7902/Autograph/03 Ms_S_120_47_00002.tif" n="4"/>
+		<graphic url="7902/Autograph/00 Ms_S_120_47_00001.tif" n="1"/>
+		<graphic url="7902/Autograph/01 Ms_S_120_47_00002.tif" n="2"/>
 	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
 					<note type="regest">Er klagt über unerträgliche Tyrannei des Papstes.</note>
-					<s xml:lang="la" type="auto">Ausus est ipsius inquisitor praeterita hyeme d. Ioannem Antonium a Piro, nepotem meum, Bononiae negotia sua gerentem capere captumque menses aliquot vinctum asservare eumque immeritum, utpote qui nihil dixerit aut fecerit in ea urbe contra paparum decreta.</s>
-					<s xml:lang="la" type="auto">In illis vinculis praeter durissima, quae passus est ab impurissimis illis Daemonicanis, fecit iacturam bis mille et trecentorum coronatorum:</s>
+					<s n="1" xml:lang="la" type="auto">Ausus est ipsius inquisitor praeterita hyeme d. Ioannem Antonium a Piro, nepotem meum, Bononiae negotia sua gerentem capere captumque menses aliquot vinctum asservare eumque immeritum, utpote qui nihil dixerit aut fecerit in ea urbe contra paparum decreta.</s>
+					<s n="2" xml:lang="la" type="auto">In illis vinculis praeter durissima, quae passus est ab impurissimis illis Daemonicanis, fecit iacturam bis mille et trecentorum coronatorum:</s>
 				</p>
 				<p>
 					<note type="regest">Näheres kann der Bruder, Baptista a Piro, berichten, den zu fördern Salis dringend bittet. Neue Nachrichten fehlen:</note>
-					<s xml:lang="la" type="auto">... praeter quae vulgo feruntur de milite a pontifice in Gallias misso.</s>
+					<s n="3" xml:lang="la" type="auto">... praeter quae vulgo feruntur de milite a pontifice in Gallias misso.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Claven[n]ae, die 6. iunii 1569.</s>
+					<s n="4" xml:lang="la" type="auto">Claven[n]ae, die 6. iunii 1569.</s>
 				</p>
 			</div>
 		</body>

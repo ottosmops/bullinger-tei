@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#2">Aarau</settlement>
-						<institution>Stadtarchiv</institution>
-						<idno type="Autograph">II. 558,2</idno>
-						<repository ref="archive#1">
+						<!--
+						<repository ref="archive1">
 							<name>Aarau Stadtarchiv</name>
 							<ref target="https://www.aarau.ch/kultur-freizeit/kultur/stadtarchiv.html/183"/>
 						</repository>
+						<settlement ref="place2">Aarau</settlement>
+						<institution>Stadtarchiv</institution>
+						-->
+						<repository ref="archive1"/>
+						<idno subtype="Autograph">II. 558,2</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -22,7 +25,7 @@
 						<summary>
 							<p xml:id="regest1">
 								[1] Zu Beginn möchte Bullinger dem Aarauer Rat sein Wohlwollen und seine Hilfsbereitschaft bekunden. Er hat
-								dessen Brief [HBBW XIV, <ref target="file#11944">Nr. 1898</ref>, vom 23. April 1544] mit den Fragen zu
+								dessen Brief [HBBW XIV, <ref target="file11944">Nr. 1898</ref>, vom 23. April 1544] mit den Fragen zu
 								Johannes Haller<note xml:id="fn3" type="footnote" n="3">Dieser war damals in Illnau (Kt. Zürich) als Pfarrer tätig.</note> erhalten. Da ihm daran gelegen ist, den Aarauern und im Allgemeinen Gottes Kirche
 								dienlich zu sein und mit gutem Rat beizustehen, ist hierzu Folgendes zu sagen:
 								</p>
@@ -64,63 +67,42 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11946">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1544-04-25" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#65" cert="high">Schultheissen</name>
-						<place source="#2" cert="high">
-							<settlement>Aarau</settlement>
-							<district>Aargau</district>
-							<country>Schweiz</country>
-							<geo>47.39254 8.04422</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="high">Räte</name>
-						<place source="#2" cert="high">
-							<settlement>Aarau</settlement>
-							<district>Aargau</district>
-							<country>Schweiz</country>
-							<geo>47.39254 8.04422</geo>
-						</place>
-					</roleName>
-					<place source="#2" cert="low">
-						<settlement>Aarau</settlement>
-						<district>Aargau</district>
-						<country>Schweiz</country>
-						<geo>47.39254 8.04422</geo>
-					</place>
+					<personGrp ref="role0" role="Schultheissen"/>
+					<personGrp ref="role0" role="Räte"/>
+					<place source="place2" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11948"/>
-					<ref type="prev_chronologically" target="files.xml#11947"/>
-					<ref type="next_correspondence" target="files.xml#12022"/>
-					<ref type="prev_correspondence" target="files.xml#11944"/>
-					<ref type="next_correspondence_request" target="files.xml#12145"/>
-					<ref type="prev_correspondence_request" target="files.xml#11798"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12022"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11944"/>
-					<ref type="next_same_sender" target="files.xml#11952"/>
-					<ref type="prev_same_sender" target="files.xml#11942"/>
-					<ref type="next_same_addressee" target="files.xml#11949"/>
-					<ref type="prev_same_addressee" target="files.xml#11944"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11952"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11942"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11949"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11944"/>
+					<ref type="next_chronologically" target="file11948"/>
+					<ref type="prev_chronologically" target="file11947"/>
+					<ref type="next_correspondence" target="file12022"/>
+					<ref type="prev_correspondence" target="file11944"/>
+					<ref type="next_correspondence_request" target="file12145"/>
+					<ref type="prev_correspondence_request" target="file11798"/>
+					<ref type="next_correspondence_reaction" target="file12022"/>
+					<ref type="prev_correspondence_reaction" target="file11944"/>
+					<ref type="next_same_sender" target="file11952"/>
+					<ref type="prev_same_sender" target="file11942"/>
+					<ref type="next_same_addressee" target="file11949"/>
+					<ref type="prev_same_addressee" target="file11944"/>
+					<ref type="next_with_sender_as_addressee" target="file11952"/>
+					<ref type="prev_with_sender_as_addressee" target="file11942"/>
+					<ref type="next_with_addressee_as_sender" target="file11949"/>
+					<ref type="prev_with_addressee_as_sender" target="file11944"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

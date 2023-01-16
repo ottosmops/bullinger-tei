@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7467/15</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="fr">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 40,163-164</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 40,163-164</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,25 +49,31 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="fr">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 121,105</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 121,105</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
 				<msDesc type="Brief" subtype="Übersetzung" xml:lang="fr">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Übersetzung">E I 25.8, f. 264</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Übersetzung">E I 25.8, f. 264</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -79,57 +88,60 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8152">
 				<correspAction type="sent">
-					<persName ref="person#3048" cert="low">
+					<!--
+					<persName ref="person3048" cert="low">
 						<forename cert="low">Guillaume</forename>
 						<surname cert="low">Stuart</surname>
 						<note type="Person">Sieur (baron) de Vézines</note>
 					</persName>
-					<place source="#28" cert="low">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person3048" cert="low"/>
+					<place source="place28" cert="low"/>
 					<date when="1570-01-27" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<persName ref="person#1381" cert="high">
+					-->
+					<persName ref="person495" cert="high"/>
+					<!--
+					<persName ref="person1381" cert="high">
 						<forename cert="high">Rudolf</forename>
 						<surname cert="high">Gwalther</surname>
-						<addName type="main">Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
+						<persName type="main" ref="person8011>Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
 						<graphic type="portrait" url="portraits/1381_Gwalther_Rudolf.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Rudolf_Gwalther"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11854392X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11522600"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person1381" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8154"/>
-					<ref type="prev_chronologically" target="files.xml#8151"/>
+					<ref type="next_chronologically" target="file8154"/>
+					<ref type="prev_chronologically" target="file8151"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#7999"/>
+					<ref type="prev_correspondence" target="file7999"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#7999"/>
+					<ref type="prev_correspondence_request" target="file7999"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#7999"/>
-					<ref type="next_same_addressee" target="files.xml#8588"/>
-					<ref type="prev_same_addressee" target="files.xml#7926"/>
+					<ref type="prev_same_sender" target="file7999"/>
+					<ref type="next_same_addressee" target="file8588"/>
+					<ref type="prev_same_addressee" target="file7926"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#7999"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8588"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#7926"/>
+					<ref type="prev_with_sender_as_addressee" target="file7999"/>
+					<ref type="next_with_addressee_as_sender" target="file8588"/>
+					<ref type="prev_with_addressee_as_sender" target="file7926"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -146,29 +158,29 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="fr" type="manual">Messieurs, j'envoye ce porteur per devers vous pour entendre de vos bonnes nouvelles des quelles vous me feres part sil vous plaist.</s>
-					<s xml:lang="fr" type="manual">Vous pourres entendre ce que portent les lettres que je cris par luy a monsieur le bourgmaistre.</s>
+					<s n="1" xml:lang="fr" type="manual">Messieurs, j'envoye ce porteur per devers vous pour entendre de vos bonnes nouvelles des quelles vous me feres part sil vous plaist.</s>
+					<s n="2" xml:lang="fr" type="manual">Vous pourres entendre ce que portent les lettres que je cris par luy a monsieur le bourgmaistre.</s>
 				</p>
 				<p>
-					<s xml:lang="fr" type="manual">Quant aux nouvelles de pardeca je ne scay auttre chose sinon que le jeune Lausac et labbe de Bourmeyen sont en Allemagne, qui solicittent davoir huiet mille reitters et grand nombre de lansquenet.</s>
-					<s xml:lang="fr" type="manual">On met tout lordre que on peutt d empescher cella et semble bien que sy ceste levee est empechee et que on face debvoir dempescher celles des Souysses que nous avons la paix en France, car le roy a casse ses Italiens et de nouveau a casse troys regimendz de ses reitters tellement que leur dernier effort gist en ce secours nouveau destrangers quilz cherchent a ceste heure.</s>
-					<s xml:lang="fr" type="manual">Dieu nous face la grace a tous d'employer fidellement nostre talent en cest en nos vous suppliant messieurs voulloir servir de soliteurs aux eglises de France en tous lieux ou vous penseres que vostre labeur pourra servir vous asseurant quil ne peult jamais estre mieux employe en cest endroiet vous presentere mes humbles recommandations a vos bonnes graces et prieres comme de ma part je prie dieu Messieurs faire valloir vostre ministere a la gloire de son nom et salut de son eglise vous donnant tres heureuse et bonne vie.</s>
+					<s n="3" xml:lang="fr" type="manual">Quant aux nouvelles de pardeca je ne scay auttre chose sinon que le jeune Lausac et labbe de Bourmeyen sont en Allemagne, qui solicittent davoir huiet mille reitters et grand nombre de lansquenet.</s>
+					<s n="4" xml:lang="fr" type="manual">On met tout lordre que on peutt d empescher cella et semble bien que sy ceste levee est empechee et que on face debvoir dempescher celles des Souysses que nous avons la paix en France, car le roy a casse ses Italiens et de nouveau a casse troys regimendz de ses reitters tellement que leur dernier effort gist en ce secours nouveau destrangers quilz cherchent a ceste heure.</s>
+					<s n="5" xml:lang="fr" type="manual">Dieu nous face la grace a tous d'employer fidellement nostre talent en cest en nos vous suppliant messieurs voulloir servir de soliteurs aux eglises de France en tous lieux ou vous penseres que vostre labeur pourra servir vous asseurant quil ne peult jamais estre mieux employe en cest endroiet vous presentere mes humbles recommandations a vos bonnes graces et prieres comme de ma part je prie dieu Messieurs faire valloir vostre ministere a la gloire de son nom et salut de son eglise vous donnant tres heureuse et bonne vie.</s>
 				</p>
 				<p>
-					<s xml:lang="fr" type="manual">De Basle ce 27 de janvier.</s>
+					<s n="6" xml:lang="fr" type="manual">De Basle ce 27 de janvier.</s>
 				</p>
 				<p>
-					<s xml:lang="fr" type="manual">Messieurs je vous prie mavertir sy il se doibt bien tost tenir quelque jornęe les messieurs des Ligues.</s>
+					<s n="7" xml:lang="fr" type="manual">Messieurs je vous prie mavertir sy il se doibt bien tost tenir quelque jornęe les messieurs des Ligues.</s>
 				</p>
 				<p>
-					<s xml:lang="fr" type="manual">Vostre obeissant amy et bon frere Vezines.</s>
+					<s n="8" xml:lang="fr" type="manual">Vostre obeissant amy et bon frere Vezines.</s>
 				</p>
 				<p>
-					<s xml:lang="fr" type="manual">Messieurs messieurs Bullinger et Galter, ministres de la parolle de dieu a Zurich.</s>
+					<s n="9" xml:lang="fr" type="manual">Messieurs messieurs Bullinger et Galter, ministres de la parolle de dieu a Zurich.</s>
 				</p>
 				<p>
 					<note>[Darüber von Gwalthers Hand:]</note>
-					<s xml:lang="fr" type="manual">Le baron de Vezines.</s>
+					<s n="10" xml:lang="fr" type="manual">Le baron de Vezines.</s>
 				</p>
 			</div>
 		</body>

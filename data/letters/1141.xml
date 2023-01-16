@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2291</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,332</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,332</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 74,13</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 74,13</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -63,52 +69,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1141">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="low">
+					<!--
+					<persName ref="person392" cert="low">
 						<forename cert="low">Ambrosius</forename>
 						<surname cert="low">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#555" cert="low">
-						<settlement>Winterthur</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.50564 8.72413</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="low"/>
+					<place source="place555" cert="low"/>
 					<date when="1551-01-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1142"/>
-					<ref type="prev_chronologically" target="files.xml#1140"/>
-					<ref type="next_correspondence" target="files.xml#1151"/>
-					<ref type="prev_correspondence" target="files.xml#1139"/>
-					<ref type="next_correspondence_request" target="files.xml#1151"/>
-					<ref type="prev_correspondence_request" target="files.xml#1139"/>
-					<ref type="next_correspondence_reaction" target="files.xml#1410"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1135"/>
-					<ref type="next_same_sender" target="files.xml#1151"/>
-					<ref type="prev_same_sender" target="files.xml#1139"/>
-					<ref type="next_same_addressee" target="files.xml#1157"/>
-					<ref type="prev_same_addressee" target="files.xml#1138"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1151"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1139"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1157"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1138"/>
+					<ref type="next_chronologically" target="file1142"/>
+					<ref type="prev_chronologically" target="file1140"/>
+					<ref type="next_correspondence" target="file1151"/>
+					<ref type="prev_correspondence" target="file1139"/>
+					<ref type="next_correspondence_request" target="file1151"/>
+					<ref type="prev_correspondence_request" target="file1139"/>
+					<ref type="next_correspondence_reaction" target="file1410"/>
+					<ref type="prev_correspondence_reaction" target="file1135"/>
+					<ref type="next_same_sender" target="file1151"/>
+					<ref type="prev_same_sender" target="file1139"/>
+					<ref type="next_same_addressee" target="file1157"/>
+					<ref type="prev_same_addressee" target="file1138"/>
+					<ref type="next_with_sender_as_addressee" target="file1151"/>
+					<ref type="prev_with_sender_as_addressee" target="file1139"/>
+					<ref type="next_with_addressee_as_sender" target="file1157"/>
+					<ref type="prev_with_addressee_as_sender" target="file1138"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -126,38 +131,38 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Furgeliepter herr und bruͦder.</s>
-					<s xml:lang="de" type="auto">Zöger ist gar ain guͦter, frommer, stiller junger mann, ain zeyt, diewyl ich hie gewont, provisor gewesen, darnach durch mich gen Bischoffzell, die schuͦl zuͦ verwalten, geförderet worden, allda er sich dann byß anher treffelich wol gehalten, allso das er von allen frommen ain guͦt wort und lob hat, wie ich dann deß guͦte globwirdige schrifftliche kuntschafft hab.</s>
+					<s n="1" xml:lang="de" type="auto">Furgeliepter herr und bruͦder.</s>
+					<s n="2" xml:lang="de" type="auto">Zöger ist gar ain guͦter, frommer, stiller junger mann, ain zeyt, diewyl ich hie gewont, provisor gewesen, darnach durch mich gen Bischoffzell, die schuͦl zuͦ verwalten, geförderet worden, allda er sich dann byß anher treffelich wol gehalten, allso das er von allen frommen ain guͦt wort und lob hat, wie ich dann deß guͦte globwirdige schrifftliche kuntschafft hab.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Nun aber ist im kurtz verschiner zeyt sein vatter gestorben, der dann ain pfarrer gewesen zuͦ N., ist mir abgefallen, da die von Wynterthur die pfarr zuͦ verlichen haben; der hat nichts dann ongefar 300 tl schulden, ain arme husfrauwen und ettliche kind verlassen, deren zway noch by der muͦtter sind und gar nichts noch (jugend halber) konnend, das sy sich nehren möchten.</s>
-					<s xml:lang="de" type="auto">Sechend die underthon gern, das die pfarr dem jungen, zögern, gelichen wurde, damitt die muͦtter ouch allso im hus belyben und die schuld mitt der zyt bezalt werden möchte, des sich dann der guͦt jung begeben hat, im fal da die von Wynterthur ime die pfarr lychen wurden.</s>
+					<s n="3" xml:lang="de" type="auto">Nun aber ist im kurtz verschiner zeyt sein vatter gestorben, der dann ain pfarrer gewesen zuͦ N., ist mir abgefallen, da die von Wynterthur die pfarr zuͦ verlichen haben; der hat nichts dann ongefar 300 tl schulden, ain arme husfrauwen und ettliche kind verlassen, deren zway noch by der muͦtter sind und gar nichts noch (jugend halber) konnend, das sy sich nehren möchten.</s>
+					<s n="4" xml:lang="de" type="auto">Sechend die underthon gern, das die pfarr dem jungen, zögern, gelichen wurde, damitt die muͦtter ouch allso im hus belyben und die schuld mitt der zyt bezalt werden möchte, des sich dann der guͦt jung begeben hat, im fal da die von Wynterthur ime die pfarr lychen wurden.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Derhalb er dann yetzund zuͦ euch zeucht, das er sich examinieren lasse, ob es gott fuͤgen wellte, das ime die von Wynterthur lychind, das er dann allain von der muͦtter und geschwusterigen wegen begert, unnd damitt er den abgestorbenen vatter by den ehren behalten und die schulden uslöschen möchte.</s>
-					<s xml:lang="de" type="auto">Derhalb will ich euch hiemitt denselbigen zum besten bevolchen haben; dann er nach allem menschlichen urtail ain frommer, guͦter mensch ist.</s>
-					<s xml:lang="de" type="auto">Es ist sonst ainer vorhanden, ain Kooffman von geschlecht, hat vyl fründ hie; der wirt vyllicht fuͤrziechen.</s>
-					<s xml:lang="de" type="auto">Er will sich auch zuͦ Zuͤrch examinieren lassen oder hats thon.</s>
-					<s xml:lang="de" type="auto">Zöger wirt ewer hilff wol bedorffen, ob vyllicht seiner jungen bruͤder ainer in den haffen oder in das muͦß kommen möchte etc.; es were wol angelegt.</s>
-					<s xml:lang="de" type="auto">Thaind das best und helfft den armen vatterlosen kinden von gottes willen.</s>
+					<s n="5" xml:lang="de" type="auto">Derhalb er dann yetzund zuͦ euch zeucht, das er sich examinieren lasse, ob es gott fuͤgen wellte, das ime die von Wynterthur lychind, das er dann allain von der muͦtter und geschwusterigen wegen begert, unnd damitt er den abgestorbenen vatter by den ehren behalten und die schulden uslöschen möchte.</s>
+					<s n="6" xml:lang="de" type="auto">Derhalb will ich euch hiemitt denselbigen zum besten bevolchen haben; dann er nach allem menschlichen urtail ain frommer, guͦter mensch ist.</s>
+					<s n="7" xml:lang="de" type="auto">Es ist sonst ainer vorhanden, ain Kooffman von geschlecht, hat vyl fründ hie; der wirt vyllicht fuͤrziechen.</s>
+					<s n="8" xml:lang="de" type="auto">Er will sich auch zuͦ Zuͤrch examinieren lassen oder hats thon.</s>
+					<s n="9" xml:lang="de" type="auto">Zöger wirt ewer hilff wol bedorffen, ob vyllicht seiner jungen bruͤder ainer in den haffen oder in das muͦß kommen möchte etc.; es were wol angelegt.</s>
+					<s n="10" xml:lang="de" type="auto">Thaind das best und helfft den armen vatterlosen kinden von gottes willen.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Sonst hab ich gar nichts neuws dann ain schriben von Lyndauw, das es alles voller kriegsgschray by inen und die alten kriegsleut all bestellt seyen, das sy sich nitt versprechind; wa auß aber, möge man noch nitt wissen, dann das die vermuͦtung by yederman, es seye wider Magdenburg.</s>
+					<s n="11" xml:lang="de" type="auto">Sonst hab ich gar nichts neuws dann ain schriben von Lyndauw, das es alles voller kriegsgschray by inen und die alten kriegsleut all bestellt seyen, das sy sich nitt versprechind; wa auß aber, möge man noch nitt wissen, dann das die vermuͦtung by yederman, es seye wider Magdenburg.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Gott lasß sy nitt zuͦ schanden werden um seines grossen nammens willen!</s>
-					<s xml:lang="de" type="auto">Dem sind bevolchen.</s>
-					<s xml:lang="de" type="auto">Bittend fuͤr mich und die mynen sampt den eweren.</s>
-					<s xml:lang="de" type="auto">Datum den 7. tag jenners anno 1551.</s>
+					<s n="12" xml:lang="de" type="auto">Gott lasß sy nitt zuͦ schanden werden um seines grossen nammens willen!</s>
+					<s n="13" xml:lang="de" type="auto">Dem sind bevolchen.</s>
+					<s n="14" xml:lang="de" type="auto">Bittend fuͤr mich und die mynen sampt den eweren.</s>
+					<s n="15" xml:lang="de" type="auto">Datum den 7. tag jenners anno 1551.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">T[uus] Amb[rosius] Bl[aurerus].</s>
+					<s n="16" xml:lang="la" type="auto">T[uus] Amb[rosius] Bl[aurerus].</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Summo viro d. Heinricho Bullingero, amico incomparabili.</s>
+					<s n="17" xml:lang="la" type="auto">Summo viro d. Heinricho Bullingero, amico incomparabili.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="18" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

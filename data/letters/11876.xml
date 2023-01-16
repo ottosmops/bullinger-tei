@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2008"/>
-				<idno type="ISBN">ISBN 978-3-290-17459-0</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1830</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17459-0</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1830</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 13</title>
+				<title subtype="publication">HBBW XIII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">13</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,120</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,120</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,8 +51,8 @@
 							<p xml:id="regest1">
 								Alexander Rischachers Sohn [Martin?] ist eingetroffen und wird Unterstützung aus dem Almosen erhalten; sein
 								Kostgeber war allerdings nicht bereit, ihn für weniger als 10 Gulden pro Jahr zu beherbergen. Bullinger hat
-								keine Nachricht vom Reichstag zu <placeName ref="1001">Speyer</placeName> und hofft, von
-								<persName ref="154">Myconius</persName> darüber zu erfahren; man wird versuchen, die Wahrheit zu
+								keine Nachricht vom Reichstag zu <placeName ref="place1001">Speyer</placeName> und hofft, von
+								<persName ref="person154">Myconius</persName> darüber zu erfahren; man wird versuchen, die Wahrheit zu
 								unterdrücken, doch wir haben nichts zu fürchten, solange wir an der Hl. Schrift als einziger Richtschnur
 								festhalten. Hat keine Neuigkeiten zu berichten. Grüße. Hat den Brief von Gebhard [Kuster?] erhalten und an
 								dessen Vater geschrieben.
@@ -62,46 +65,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11876">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1543-12-27" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
+					-->
+					<persName ref="person2234" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11877"/>
-					<ref type="prev_chronologically" target="files.xml#11875"/>
-					<ref type="next_correspondence" target="files.xml#11881"/>
-					<ref type="prev_correspondence" target="files.xml#11874"/>
-					<ref type="next_correspondence_request" target="files.xml#11898"/>
-					<ref type="prev_correspondence_request" target="files.xml#11664"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11881"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11874"/>
-					<ref type="next_same_sender" target="files.xml#11888"/>
-					<ref type="prev_same_sender" target="files.xml#11872"/>
-					<ref type="next_same_addressee" target="files.xml#11881"/>
-					<ref type="prev_same_addressee" target="files.xml#11874"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11888"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11872"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11881"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11874"/>
+					<ref type="next_chronologically" target="file11877"/>
+					<ref type="prev_chronologically" target="file11875"/>
+					<ref type="next_correspondence" target="file11881"/>
+					<ref type="prev_correspondence" target="file11874"/>
+					<ref type="next_correspondence_request" target="file11898"/>
+					<ref type="prev_correspondence_request" target="file11664"/>
+					<ref type="next_correspondence_reaction" target="file11881"/>
+					<ref type="prev_correspondence_reaction" target="file11874"/>
+					<ref type="next_same_sender" target="file11888"/>
+					<ref type="prev_same_sender" target="file11872"/>
+					<ref type="next_same_addressee" target="file11881"/>
+					<ref type="prev_same_addressee" target="file11874"/>
+					<ref type="next_with_sender_as_addressee" target="file11888"/>
+					<ref type="prev_with_sender_as_addressee" target="file11872"/>
+					<ref type="next_with_addressee_as_sender" target="file11881"/>
+					<ref type="prev_with_addressee_as_sender" target="file11874"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -119,51 +127,51 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Venit tandem Ryschacheri filius<note xml:id="fn2" type="footnote" n="2">Zum Sohn von Alexander Rischacher (Martin?) vgl. oben <ref target="file#11850">Nr. 1804</ref>, 1-20; 1823, 1-9.</note> receptusque est in numerum stipendiariorum eleemosynae.</s>
-					<s xml:lang="la" type="auto">Venit autem postera die ab eo, quo tibi de eo scripseram<note xml:id="fn3" type="footnote" n="3">Bullingers Brief ist nicht erhalten.</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Venit tandem Ryschacheri filius<note xml:id="fn2" type="footnote" n="2">Zum Sohn von Alexander Rischacher (Martin?) vgl. oben <ref target="file11850">Nr. 1804</ref>, 1-20; 1823, 1-9.</note> receptusque est in numerum stipendiariorum eleemosynae.</s>
+					<s n="3" xml:lang="la" type="auto">Venit autem postera die ab eo, quo tibi de eo scripseram<note xml:id="fn3" type="footnote" n="3">Bullingers Brief ist nicht erhalten.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Omnem quidem movi lapidem<note xml:id="fn4" type="footnote" n="4">Adagia, 1, 4, 30 (LB II 161f).</note> apud hospitem<note xml:id="fn5" type="footnote" n="5">Unbekannt.</note>, si possem impetrare, ut 8 dumtaxat in annum aureos acciperet, sicuti et, priusquam adveniret, tentaram; sed ille minore precio illum recipere noluit nisi 10 fl.</s>
-					<s xml:lang="la" type="auto">Caussabatur omnium rerum caritatem.</s>
-					<s xml:lang="la" type="auto">Pollicebatur item splendide.</s>
-					<s xml:lang="la" type="auto">Ego itaque homini confisus conditionem recepi, id quod d. Alexandro indicabis, quem et salutabis una cum d. <persName ref="11">Marco</persName><note xml:id="fn6" type="footnote" n="6"><persName ref="11">Markus Bertschi</persName>.</note> quam familiarissime.</s>
+					<s n="4" xml:lang="la" type="auto">Omnem quidem movi lapidem<note xml:id="fn4" type="footnote" n="4">Adagia, 1, 4, 30 (LB II 161f).</note> apud hospitem<note xml:id="fn5" type="footnote" n="5">Unbekannt.</note>, si possem impetrare, ut 8 dumtaxat in annum aureos acciperet, sicuti et, priusquam adveniret, tentaram; sed ille minore precio illum recipere noluit nisi 10 fl.</s>
+					<s n="5" xml:lang="la" type="auto">Caussabatur omnium rerum caritatem.</s>
+					<s n="6" xml:lang="la" type="auto">Pollicebatur item splendide.</s>
+					<s n="7" xml:lang="la" type="auto">Ego itaque homini confisus conditionem recepi, id quod d. Alexandro indicabis, quem et salutabis una cum d. <persName ref="person11">Marco</persName><note xml:id="fn6" type="footnote" n="6"><persName ref="person11">Markus Bertschi</persName>.</note> quam familiarissime.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De comitiis <placeName ref="1001">Spirensibus</placeName><note xml:id="fn7" type="footnote" n="7">Vgl. oben <ref target="file#11874">Nr. 1828</ref>, 1-6.</note> magnum et perseverans est apud nos silentium.</s>
-					<s xml:lang="la" type="auto">Expectamus, quid tu nobis sis narraturus.</s>
-					<s xml:lang="la" type="auto">Ubi coierint, sat scio nil aliud tractaturos nisi de opprimenda veritate.</s>
-					<s xml:lang="la" type="auto">Scio itaque dominum cogitare de opprimendis suis hostibus.</s>
-					<s xml:lang="la" type="auto">Quod si interim patiendum aliquid fuerit in perituro alioqui corpusculo, aequi bonique consulo; expecto enim spe firmissima resurrectionem iustorum.</s>
-					<s xml:lang="la" type="auto">Opus tu putas certitudine doctrinae<note xml:id="fn8" type="footnote" n="8">Vgl. oben <ref target="file#11874">Nr. 1828</ref>, 9f.</note> et recte quidem.</s>
-					<s xml:lang="la" type="auto">Atqui certitudo nulla stabilior quam canonicę scripturae; quae cum pro nobis faciat et res nostras fulciat, adeo hic sequrus sum, ut dumtaxat orem dominum, ne sinat aberrare ab hac regula certissima et auscultare iis, qui conciliationibus frigidis pessimeque cohaerentibus adversariis spem faciunt fore, ut pergamus aliquando recipere, quae non solidis ostendi possunt scripturis.</s>
-					<s xml:lang="la" type="auto">Conveniunt quidem reges, et principes statuunt sese contra deum et Christum eius; qui autem in coelis est, deridet eos<note xml:id="fn9" type="footnote" n="9">Vgl. Ps 2, 2. 4.</note>.</s>
-					<s xml:lang="la" type="auto">Oremus, ne propter inobedientiam nostram nos puniat per impios dominus.</s>
+					<s n="8" xml:lang="la" type="auto">De comitiis <placeName ref="place1001">Spirensibus</placeName><note xml:id="fn7" type="footnote" n="7">Vgl. oben <ref target="file11874">Nr. 1828</ref>, 1-6.</note> magnum et perseverans est apud nos silentium.</s>
+					<s n="9" xml:lang="la" type="auto">Expectamus, quid tu nobis sis narraturus.</s>
+					<s n="10" xml:lang="la" type="auto">Ubi coierint, sat scio nil aliud tractaturos nisi de opprimenda veritate.</s>
+					<s n="11" xml:lang="la" type="auto">Scio itaque dominum cogitare de opprimendis suis hostibus.</s>
+					<s n="12" xml:lang="la" type="auto">Quod si interim patiendum aliquid fuerit in perituro alioqui corpusculo, aequi bonique consulo; expecto enim spe firmissima resurrectionem iustorum.</s>
+					<s n="13" xml:lang="la" type="auto">Opus tu putas certitudine doctrinae<note xml:id="fn8" type="footnote" n="8">Vgl. oben <ref target="file11874">Nr. 1828</ref>, 9f.</note> et recte quidem.</s>
+					<s n="14" xml:lang="la" type="auto">Atqui certitudo nulla stabilior quam canonicę scripturae; quae cum pro nobis faciat et res nostras fulciat, adeo hic sequrus sum, ut dumtaxat orem dominum, ne sinat aberrare ab hac regula certissima et auscultare iis, qui conciliationibus frigidis pessimeque cohaerentibus adversariis spem faciunt fore, ut pergamus aliquando recipere, quae non solidis ostendi possunt scripturis.</s>
+					<s n="15" xml:lang="la" type="auto">Conveniunt quidem reges, et principes statuunt sese contra deum et Christum eius; qui autem in coelis est, deridet eos<note xml:id="fn9" type="footnote" n="9">Vgl. Ps 2, 2. 4.</note>.</s>
+					<s n="16" xml:lang="la" type="auto">Oremus, ne propter inobedientiam nostram nos puniat per impios dominus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nova non habeo ulla.</s>
+					<s n="17" xml:lang="la" type="auto">Nova non habeo ulla.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Leodigarium<note xml:id="fn10" type="footnote" n="10"><persName ref="1185">Leodegar Hirsgarter</persName> aus <placeName ref="1202">Winterthur</placeName>.</note> una cum Tigurinis<note xml:id="fn11" type="footnote" n="11">Gemeint sind die in <placeName ref="97">Basel</placeName> studierenden Zürcher.</note> studiose tibi commendo.</s>
+					<s n="18" xml:lang="la" type="auto">Leodigarium<note xml:id="fn10" type="footnote" n="10"><persName ref="person1185">Leodegar Hirsgarter</persName> aus <placeName ref="place1202">Winterthur</placeName>.</note> una cum Tigurinis<note xml:id="fn11" type="footnote" n="11">Gemeint sind die in <placeName ref="place97">Basel</placeName> studierenden Zürcher.</note> studiose tibi commendo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="19" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, 27. decembris anno a nato domino 1544.</s>
+					<s n="20" xml:lang="la" type="auto">Tiguri, 27. decembris anno a nato domino 1544.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus tuus.</s>
+					<s n="21" xml:lang="la" type="auto">H. Bullingerus tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Gebhardi<note xml:id="fn12" type="footnote" n="12">Die Rede ist vermutlich von Gebhard Kuster (Custor) aus <placeName ref="1202">Winterthur</placeName>, der sich am 25. März 1543 in <placeName ref="97">Basel</placeName> immatrikuliert hatte; s. <placeName ref="97">Basel</placeName>, Matrikel II 33, Nr. 54.</note> literas accepi ac patri<note xml:id="fn13" type="footnote" n="13">Unbekannt.</note>, sicut postulavit, scripsi fideliter<note xml:id="fn14" type="footnote" n="14">Die erwähnten Briefe sind nicht erhalten.</note>.</s>
+					<s n="22" xml:lang="la" type="auto">Gebhardi<note xml:id="fn12" type="footnote" n="12">Die Rede ist vermutlich von Gebhard Kuster (Custor) aus <placeName ref="place1202">Winterthur</placeName>, der sich am 25. März 1543 in <placeName ref="place97">Basel</placeName> immatrikuliert hatte; s. <placeName ref="place97">Basel</placeName>, Matrikel II 33, Nr. 54.</note> literas accepi ac patri<note xml:id="fn13" type="footnote" n="13">Unbekannt.</note>, sicut postulavit, scripsi fideliter<note xml:id="fn14" type="footnote" n="14">Die erwähnten Briefe sind nicht erhalten.</note>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. <persName ref="154">Osvaldo Myconio</persName>, charissimo suo fratri.</s>
-					<s xml:lang="de" type="auto"><placeName ref="97">Basel</placeName>.</s>
+					<s n="23" xml:lang="la" type="auto">D. <persName ref="person154">Osvaldo Myconio</persName>, charissimo suo fratri.</s>
+					<s n="24" xml:lang="de" type="auto"><placeName ref="place97">Basel</placeName>.</s>
 				</p>
 			</div>
 		</body>

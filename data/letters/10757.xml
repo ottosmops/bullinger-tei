@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=719</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=719</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Teilkopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Teilkopie">Ms S 40,25</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Teilkopie">Ms S 40,25</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,8 +50,8 @@
 						<summary>
 							<p xml:id="regest1">
 								Kann bezüglich einer Zusammenkunft noch nichts versprechen. Dankt für die Schriften
-								<persName ref="146">Melanchthons</persName>, möchte aber nicht Stellung dazu nehmen. Ist sich im
-								unklaren über die von <persName ref="40">Capito</persName> angestrebte Neuordnung der Kirche und
+								<persName ref="person146">Melanchthons</persName>, möchte aber nicht Stellung dazu nehmen. Ist sich im
+								unklaren über die von <persName ref="person40">Capito</persName> angestrebte Neuordnung der Kirche und
 								wendet sich gegen eine Konkordie mit den Katholiken, da gegenseitige Anerkennung ausgeschlossen ist und das
 								Reich Christi auch ohne eine solche Übereinkunft wächst.
 							</p>
@@ -67,45 +70,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10757">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1536-01-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#578" cert="high">
+					<!--
+					<persName ref="person578" cert="high">
 						<forename cert="high">Wolfgang</forename>
 						<surname cert="high">Capito</surname>
+						<persName type="main" ref="person5565>Köpffel, Wolfgang</addName>
 						<graphic type="portrait" url="portraits/578_Capito_Wolfgang.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Wolfgang_Capito"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118518968"/>
 					</persName>
+					-->
+					<persName ref="person578" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10758"/>
-					<ref type="prev_chronologically" target="files.xml#10756"/>
-					<ref type="next_correspondence" target="files.xml#10766"/>
-					<ref type="prev_correspondence" target="files.xml#10710"/>
+					<ref type="next_chronologically" target="file10758"/>
+					<ref type="prev_chronologically" target="file10756"/>
+					<ref type="next_correspondence" target="file10766"/>
+					<ref type="prev_correspondence" target="file10710"/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#10766"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10710"/>
-					<ref type="next_same_sender" target="files.xml#10769"/>
-					<ref type="prev_same_sender" target="files.xml#10756"/>
-					<ref type="next_same_addressee" target="files.xml#10766"/>
-					<ref type="prev_same_addressee" target="files.xml#10710"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10769"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10756"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10766"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10710"/>
+					<ref type="next_correspondence_reaction" target="file10766"/>
+					<ref type="prev_correspondence_reaction" target="file10710"/>
+					<ref type="next_same_sender" target="file10769"/>
+					<ref type="prev_same_sender" target="file10756"/>
+					<ref type="next_same_addressee" target="file10766"/>
+					<ref type="prev_same_addressee" target="file10710"/>
+					<ref type="next_with_sender_as_addressee" target="file10769"/>
+					<ref type="prev_with_sender_as_addressee" target="file10756"/>
+					<ref type="next_with_addressee_as_sender" target="file10766"/>
+					<ref type="prev_with_addressee_as_sender" target="file10710"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -119,29 +127,29 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De conventu<note xml:id="fn2" type="footnote" n="2">Zum Drängen <persName ref="40">Capitos</persName> auf eine Zusammenkunft vergleiche zuletzt HBBW V, S. 415, 21-25.</note> in praesenti, observande <persName ref="40">Capito</persName>, nil certi<note xml:id="fnb" type="footnote" n="b">certi <hi>korrigiert aus</hi> certe.</note> polliceri possum.</s>
-					<s xml:lang="la" type="auto">Negotium ad multos pertinet, ego privatas modo epistolas scribo.</s>
-					<s xml:lang="la" type="auto">Habebitis fortasse certiorem brevi responsionem.</s>
-					<s xml:lang="la" type="auto">Verum nihil polliceor, ne spe mea frustratus inconstantiae postea insimuler.</s>
+					<s n="2" xml:lang="la" type="auto">De conventu<note xml:id="fn2" type="footnote" n="2">Zum Drängen <persName ref="person40">Capitos</persName> auf eine Zusammenkunft vergleiche zuletzt HBBW V, S. 415, 21-25.</note> in praesenti, observande <persName ref="person40">Capito</persName>, nil certi<note xml:id="fnb" type="footnote" n="b">certi <hi>korrigiert aus</hi> certe.</note> polliceri possum.</s>
+					<s n="3" xml:lang="la" type="auto">Negotium ad multos pertinet, ego privatas modo epistolas scribo.</s>
+					<s n="4" xml:lang="la" type="auto">Habebitis fortasse certiorem brevi responsionem.</s>
+					<s n="5" xml:lang="la" type="auto">Verum nihil polliceor, ne spe mea frustratus inconstantiae postea insimuler.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pro libellis <persName ref="146">Philippi</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="40">Capito</persName> hatte Bullinger am 18. Oktober 1535 zwei Schriften <persName ref="146">Melanchthons</persName> zugesandt; vgl. HBBW V, S. 396, 46; 417, 19.</note> maximas tibi gratias ago.</s>
-					<s xml:lang="la" type="auto">Hos cum nondum legerim cum iudicio, nil pronuncio; cursim perlegi.</s>
-					<s xml:lang="la" type="auto">Disco autem indies circumspectius pronuntiare.</s>
+					<s n="6" xml:lang="la" type="auto">Pro libellis <persName ref="person146">Philippi</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="person40">Capito</persName> hatte Bullinger am 18. Oktober 1535 zwei Schriften <persName ref="person146">Melanchthons</persName> zugesandt; vgl. HBBW V, S. 396, 46; 417, 19.</note> maximas tibi gratias ago.</s>
+					<s n="7" xml:lang="la" type="auto">Hos cum nondum legerim cum iudicio, nil pronuncio; cursim perlegi.</s>
+					<s n="8" xml:lang="la" type="auto">Disco autem indies circumspectius pronuntiare.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De oeconomia ecclesiastica constituenda non intelligo, quid velis<note xml:id="fn4" type="footnote" n="4">Bullinger bezieht sich auf eine ihm von <persName ref="154">Myconius</persName> mitgeteilte Äusserung <persName ref="40">Capitos</persName>, wonach über die Kirchenordnung und über Zugeständnisse an die Katholiken verhandelt werden musse; s. oben <ref target="file#10751">Nr. 713</ref>, 14-18 und unten <ref target="file#10759">Nr. 721</ref>, 7-10.</note>.</s>
-					<s xml:lang="la" type="auto">De concordia cum pontificiis ineunda non placet consilium.</s>
-					<s xml:lang="la" type="auto">Isti non recipient nos neque tales sunt, ut nobis recipi possint.</s>
-					<s xml:lang="la" type="auto">Monarchia pontificis antichristi regnum est.</s>
-					<s xml:lang="la" type="auto">Missis perdunt<note xml:id="fnc" type="footnote" n="c">perdunt <hi>korrigiert aus</hi> produnt.</note> sanguinem et redemptionem Christi, invertunt institutionem Christi.</s>
-					<s xml:lang="la" type="auto">Idolis abutuntur ad idololatriam.</s>
-					<s xml:lang="la" type="auto">Divorum cultus est Christi et dei contemptus.</s>
-					<s xml:lang="la" type="auto">At in his non recipient ullam moderationem neque nobis liberum permittent ita de istis loqui et docere ut hactenus.</s>
-					<s xml:lang="la" type="auto">Crevit hactenus sine talibus concordiis regnum Christi, crescet porro multo validius, nisi nos tales esse velimus, quales fuimus hactenus.</s>
+					<s n="9" xml:lang="la" type="auto">De oeconomia ecclesiastica constituenda non intelligo, quid velis<note xml:id="fn4" type="footnote" n="4">Bullinger bezieht sich auf eine ihm von <persName ref="person154">Myconius</persName> mitgeteilte Äusserung <persName ref="person40">Capitos</persName>, wonach über die Kirchenordnung und über Zugeständnisse an die Katholiken verhandelt werden musse; s. oben <ref target="file10751">Nr. 713</ref>, 14-18 und unten <ref target="file10759">Nr. 721</ref>, 7-10.</note>.</s>
+					<s n="10" xml:lang="la" type="auto">De concordia cum pontificiis ineunda non placet consilium.</s>
+					<s n="11" xml:lang="la" type="auto">Isti non recipient nos neque tales sunt, ut nobis recipi possint.</s>
+					<s n="12" xml:lang="la" type="auto">Monarchia pontificis antichristi regnum est.</s>
+					<s n="13" xml:lang="la" type="auto">Missis perdunt<note xml:id="fnc" type="footnote" n="c">perdunt <hi>korrigiert aus</hi> produnt.</note> sanguinem et redemptionem Christi, invertunt institutionem Christi.</s>
+					<s n="14" xml:lang="la" type="auto">Idolis abutuntur ad idololatriam.</s>
+					<s n="15" xml:lang="la" type="auto">Divorum cultus est Christi et dei contemptus.</s>
+					<s n="16" xml:lang="la" type="auto">At in his non recipient ullam moderationem neque nobis liberum permittent ita de istis loqui et docere ut hactenus.</s>
+					<s n="17" xml:lang="la" type="auto">Crevit hactenus sine talibus concordiis regnum Christi, crescet porro multo validius, nisi nos tales esse velimus, quales fuimus hactenus.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2011"/>
-				<idno type="ISBN">ISBN 978-3-290-17565-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1967</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17565-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1967</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 14</title>
+				<title subtype="publication">HBBW XIV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Henrich, Rainer; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">14</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 366,109</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 366,109</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,7 +51,7 @@
 							<p xml:id="regest1">
 								Dankt für die zugeschickten Büchlein [Bullingers]; das deutsche [„Hoffnung der Glöubigen“] wird Luther
 								trotz schriftgemäßer Argumentation verärgern, das lateinische [„Antiquissima fides“] will
-								<persName ref="74">Gast</persName> durch den Bruder von Gilbert Cousin an diesen übersenden. [Thomas]
+								<persName ref="person74">Gast</persName> durch den Bruder von Gilbert Cousin an diesen übersenden. [Thomas]
 								Platter ist von den Deputaten und dem Rat zum Schulmeister der Münsterschule gewählt [eigentlich: bestätigt]
 								worden, obwohl ihm der [Magister-]Titel fehlt, und das „Magisterlein“ [Markus Hopper] ist bereits nicht mehr
 								im Amt; die Vertreter der Universität sind empört, doch der Rat beginnt, ihren Hochmut zu durchschauen.
@@ -61,38 +64,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12014">
 				<correspAction type="sent">
-					<persName ref="person#1278" cert="high">
+					<!--
+					<persName ref="person1278" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Gast</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Gast"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/122090284"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415086"/>
 					</persName>
-					<date min="1544-09-01" max="1544-09-15" cert="low">Erste Hälfte September 1544</date>
+					-->
+					<persName ref="person1278" cert="high"/>
+					<date notBefore="1544-09-01" notAfter="1544-09-15" cert="low">Erste Hälfte September 1544</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12015"/>
-					<ref type="prev_chronologically" target="files.xml#4166"/>
-					<ref type="next_correspondence" target="files.xml#12021"/>
-					<ref type="prev_correspondence" target="files.xml#11998"/>
-					<ref type="next_correspondence_request" target="files.xml#12021"/>
-					<ref type="prev_correspondence_request" target="files.xml#11998"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12899"/>
+					<ref type="next_chronologically" target="file12015"/>
+					<ref type="prev_chronologically" target="file4166"/>
+					<ref type="next_correspondence" target="file12021"/>
+					<ref type="prev_correspondence" target="file11998"/>
+					<ref type="next_correspondence_request" target="file12021"/>
+					<ref type="prev_correspondence_request" target="file11998"/>
+					<ref type="next_correspondence_reaction" target="file12899"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#12021"/>
-					<ref type="prev_same_sender" target="files.xml#11998"/>
-					<ref type="next_same_addressee" target="files.xml#12015"/>
-					<ref type="prev_same_addressee" target="files.xml#12010"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12021"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11998"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12015"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12010"/>
+					<ref type="next_same_sender" target="file12021"/>
+					<ref type="prev_same_sender" target="file11998"/>
+					<ref type="next_same_addressee" target="file12015"/>
+					<ref type="prev_same_addressee" target="file12010"/>
+					<ref type="next_with_sender_as_addressee" target="file12021"/>
+					<ref type="prev_with_sender_as_addressee" target="file11998"/>
+					<ref type="next_with_addressee_as_sender" target="file12015"/>
+					<ref type="prev_with_addressee_as_sender" target="file12010"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -110,25 +123,25 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Ago tibi immensas gratias pro libellis missis.</s>
-					<s xml:lang="la" type="auto">Germanico libello<note xml:id="fn2" type="footnote" n="2">Die Rede ist wohl von Bullingers Schrift "Hoffnung der Glöubigen"; s. oben <ref target="file#12000">Nr. 1953</ref>, Anm. 9.</note> Lutherum exacerbabis; nam mihi non videtur tecum consentire in omnibus, etsi christianissime tu omnia dicas et scripturis argumenta tua stabilias.</s>
-					<s xml:lang="la" type="auto">Libellum Cognato<note xml:id="fn3" type="footnote" n="3">Gilbert Cousin.</note> Latinum<note xml:id="fn4" type="footnote" n="4">Gemeint ist vermutlich die ebenfalls im August 1544 unter dem Titel "Antiquissima fides" erschienene lateinische Übersetzung von Bullingers "Der alte Glaube"; s. oben <ref target="file#12006">Nr. 1959</ref>, Anm. 13.</note> mittam; nam in singulos dies illius fratrem<note xml:id="fn5" type="footnote" n="5">Zum Bruder von Gilbert Cousin s. oben <ref target="file#11998">Nr. 1951</ref>, Anm. 3.</note> expecto, qui ad me scripsit se hac hebdomada adfuturum.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Ago tibi immensas gratias pro libellis missis.</s>
+					<s n="3" xml:lang="la" type="auto">Germanico libello<note xml:id="fn2" type="footnote" n="2">Die Rede ist wohl von Bullingers Schrift "Hoffnung der Glöubigen"; s. oben <ref target="file12000">Nr. 1953</ref>, Anm. 9.</note> Lutherum exacerbabis; nam mihi non videtur tecum consentire in omnibus, etsi christianissime tu omnia dicas et scripturis argumenta tua stabilias.</s>
+					<s n="4" xml:lang="la" type="auto">Libellum Cognato<note xml:id="fn3" type="footnote" n="3">Gilbert Cousin.</note> Latinum<note xml:id="fn4" type="footnote" n="4">Gemeint ist vermutlich die ebenfalls im August 1544 unter dem Titel "Antiquissima fides" erschienene lateinische Übersetzung von Bullingers "Der alte Glaube"; s. oben <ref target="file12006">Nr. 1959</ref>, Anm. 13.</note> mittam; nam in singulos dies illius fratrem<note xml:id="fn5" type="footnote" n="5">Zum Bruder von Gilbert Cousin s. oben <ref target="file11998">Nr. 1951</ref>, Anm. 3.</note> expecto, qui ad me scripsit se hac hebdomada adfuturum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Blatterus in ludimagistrum summi templi electus est,<note xml:id="fn6" type="footnote" n="6">Thomas Platter setzt seinen Amtsantritt als Schulmeister an der Münsterschule "auf Burg" auf Fronfasten Crucis 1541 und berichtet in seinen Aufzeichnungen, wie er dafür angeworben wurde (s. Thomas Platter, Lebensbeschreibung, hg. v. Alfred Hartmann, 3. Aufl. <placeName ref="97">Basel</placeName> 2006, S. 130f). Vom Winter 1541 bis zum Herbst 1544 versah jedoch Markus Hopper dieses Amt; Platter kann es demnach erst auf Fronfasten Crucis 1544 angetreten haben; s. Theophil <hi>Burckhardt-Biedermann,</hi> Geschichte des Gymnasiums zu <placeName ref="97">Basel</placeName>, <placeName ref="97">Basel</placeName> 1889, S. 240f (Anm. 1 zu S. 35); Platter, aaO, S. 176f (Anm. zuS. 130).</note> non ab academicis nostris, quia caret fastuoso titulo,<note xml:id="fn7" type="footnote" n="7">Platter weigerte sich, den für das Schulmeisteramt verlangten Magistergrad zu erwerben; s. Platter, aaO, S. 132.</note> sed a deputatis<note xml:id="fn8" type="footnote" n="8">Oberster Deputat war zu diesem Zeitpunkt <persName ref="65">Hans Rudolf Frey</persName>; s. Platter, aaO, S. 130; HBBW IX 33, Anm. 4.</note> et a senatu approbatus.<pb type="edition" next="355"/></s>
-					<s xml:lang="la" type="auto">Magistellus<note xml:id="fn9" type="footnote" n="9">Magister Markus Hopper, Schulmeister auf Burg von 1541 bis 1544; s. Platter, aaO. S. 176f (Anm. zu S. 130); Amerbach, Korr. VI 429f.</note> iam suo defungitur officio.</s>
-					<s xml:lang="la" type="auto">Frendent dentibus universales<note xml:id="fn10" type="footnote" n="10">D.h. die Vertreter der Universität.</note> nostri, conantur impedire istud institutum, sed nihil deo volente efficient.</s>
-					<s xml:lang="la" type="auto">Iam apparet, cuius gratia titulos affectarint: quo asininam ruditatem commodius tegerent.</s>
-					<s xml:lang="la" type="auto">Erit, neque dubito, mutatio harum rerum nunquam sperata; nam senatus olfacit illorum technas.</s>
+					<s n="5" xml:lang="la" type="auto">Blatterus in ludimagistrum summi templi electus est,<note xml:id="fn6" type="footnote" n="6">Thomas Platter setzt seinen Amtsantritt als Schulmeister an der Münsterschule "auf Burg" auf Fronfasten Crucis 1541 und berichtet in seinen Aufzeichnungen, wie er dafür angeworben wurde (s. Thomas Platter, Lebensbeschreibung, hg. v. Alfred Hartmann, 3. Aufl. <placeName ref="place97">Basel</placeName> 2006, S. 130f). Vom Winter 1541 bis zum Herbst 1544 versah jedoch Markus Hopper dieses Amt; Platter kann es demnach erst auf Fronfasten Crucis 1544 angetreten haben; s. Theophil <hi>Burckhardt-Biedermann,</hi> Geschichte des Gymnasiums zu <placeName ref="place97">Basel</placeName>, <placeName ref="place97">Basel</placeName> 1889, S. 240f (Anm. 1 zu S. 35); Platter, aaO, S. 176f (Anm. zuS. 130).</note> non ab academicis nostris, quia caret fastuoso titulo,<note xml:id="fn7" type="footnote" n="7">Platter weigerte sich, den für das Schulmeisteramt verlangten Magistergrad zu erwerben; s. Platter, aaO, S. 132.</note> sed a deputatis<note xml:id="fn8" type="footnote" n="8">Oberster Deputat war zu diesem Zeitpunkt Hans Rudolf Frey; s. Platter, aaO, S. 130; HBBW IX 33, Anm. 4.</note> et a senatu approbatus.<pb type="edition" next="355"/></s>
+					<s n="6" xml:lang="la" type="auto">Magistellus<note xml:id="fn9" type="footnote" n="9">Magister Markus Hopper, Schulmeister auf Burg von 1541 bis 1544; s. Platter, aaO. S. 176f (Anm. zu S. 130); Amerbach, Korr. VI 429f.</note> iam suo defungitur officio.</s>
+					<s n="7" xml:lang="la" type="auto">Frendent dentibus universales<note xml:id="fn10" type="footnote" n="10">D.h. die Vertreter der Universität.</note> nostri, conantur impedire istud institutum, sed nihil deo volente efficient.</s>
+					<s n="8" xml:lang="la" type="auto">Iam apparet, cuius gratia titulos affectarint: quo asininam ruditatem commodius tegerent.</s>
+					<s n="9" xml:lang="la" type="auto">Erit, neque dubito, mutatio harum rerum nunquam sperata; nam senatus olfacit illorum technas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino.</s>
+					<s n="10" xml:lang="la" type="auto">Vale in domino.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Henrycho Bullingero, optimo amico.</s>
-					<s xml:lang="de" type="auto">Zurich.</s>
+					<s n="11" xml:lang="la" type="auto">D. Henrycho Bullingero, optimo amico.</s>
+					<s n="12" xml:lang="de" type="auto">Zurich.</s>
 				</p>
 			</div>
 		</body>

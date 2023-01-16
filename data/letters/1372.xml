@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2542</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,444</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,444</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,13 +54,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 75,138</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 75,138</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -71,49 +77,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1372">
 				<correspAction type="sent">
-					<persName ref="person#505" cert="high">
+					<!--
+					<persName ref="person505" cert="high">
 						<forename cert="high">John</forename>
 						<surname cert="high">Burcher</surname>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person505" cert="high"/>
+					<place source="place492" cert="high"/>
 					<date when="1551-08-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1373"/>
-					<ref type="prev_chronologically" target="files.xml#1376"/>
-					<ref type="next_correspondence" target="files.xml#1539"/>
-					<ref type="prev_correspondence" target="files.xml#1365"/>
-					<ref type="next_correspondence_request" target="files.xml#1539"/>
-					<ref type="prev_correspondence_request" target="files.xml#1365"/>
+					<ref type="next_chronologically" target="file1373"/>
+					<ref type="prev_chronologically" target="file1376"/>
+					<ref type="next_correspondence" target="file1539"/>
+					<ref type="prev_correspondence" target="file1365"/>
+					<ref type="next_correspondence_request" target="file1539"/>
+					<ref type="prev_correspondence_request" target="file1365"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#572"/>
-					<ref type="next_same_sender" target="files.xml#1539"/>
-					<ref type="prev_same_sender" target="files.xml#1365"/>
-					<ref type="next_same_addressee" target="files.xml#1378"/>
-					<ref type="prev_same_addressee" target="files.xml#1352"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1539"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1365"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1378"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1352"/>
+					<ref type="prev_correspondence_reaction" target="file572"/>
+					<ref type="next_same_sender" target="file1539"/>
+					<ref type="prev_same_sender" target="file1365"/>
+					<ref type="next_same_addressee" target="file1378"/>
+					<ref type="prev_same_addressee" target="file1352"/>
+					<ref type="next_with_sender_as_addressee" target="file1539"/>
+					<ref type="prev_with_sender_as_addressee" target="file1365"/>
+					<ref type="next_with_addressee_as_sender" target="file1378"/>
+					<ref type="prev_with_addressee_as_sender" target="file1352"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -130,42 +134,42 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Argentinae 10. augusti 1553.</s>
+					<s n="1" xml:lang="la" type="auto">Argentinae 10. augusti 1553.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S. P.</s>
-					<s xml:lang="la" type="auto">Quod optarem proximis literis, Bullingere amicissime, en mitto ad te, d. P[etri] Martyris disputationem et libellum de eucharistia.</s>
-					<s xml:lang="la" type="auto">Nolui te fraudare tanta laetitia diutius, nescio tamen, an forsan antea acceperis; quodsi acceperis, functus tamen sum officio meo.</s>
-					<s xml:lang="la" type="auto">Viri undequaque doctissimi laudabis diligentiam et labores.</s>
-					<s xml:lang="la" type="auto">Acriter dimicatum est cum hominibus acutis nimium et perversis; palman tamen tulit, quod certe omnibus bonis gaudio maximo est.</s>
-					<s xml:lang="la" type="auto">Simili si posset Cantabrigia ornari viro, quam foelicissima foret Anglia nostra!</s>
-					<s xml:lang="la" type="auto">Optant nonnulli primi ordinis in Anglia viri Musculum eius loco substitui; renuit tamen ipse, ut audio, conditionem.</s>
-					<s xml:lang="la" type="auto">Ausim tamen ipse promittere, ut si velit hoc munus obire, non minorem apud regem bonosque omnes assequuturum gratiam quam ipse Bucerus, neque tam perverse doctos Cantabrigiae atque Oxoniis d. Petrus inveniet.</s>
-					<s xml:lang="la" type="auto">Suspecti enim semper erant huius academiae alumni haereseos, ut vocant, apud veteres doctos et indoctos, quo facile iudicare posses horum studia synceriora Oxoniensibus semper fuisse; inde enim eruperunt Coxei, Hoperi et, quem primo loco nominari debui, Cranmeri caeterique id genus doctissimi viri, neque est, cur tam ab hac vocatione horreat; honestius enim est regno quam civitati subvenire.</s>
-					<s xml:lang="la" type="auto">Quare omni dubio humano abiecto officium meo iuditio christiani faceret, si toties vocatus tandem acquiesceret; quodsi non fecerit, vix suspicionem pusillanimi et minus strenui aufugiet.</s>
-					<s xml:lang="la" type="auto">Quod superest, non dubito, quin tu cum viro acturus sis; si posset persuaderi, fac sciam; curabo, ut ei provideretur de viatico, et quae praeterea necessaria sunt.</s>
-					<s xml:lang="la" type="auto">Uxorem et liberos salvos cupio.</s>
+					<s n="2" xml:lang="la" type="auto">S. P.</s>
+					<s n="3" xml:lang="la" type="auto">Quod optarem proximis literis, Bullingere amicissime, en mitto ad te, d. P[etri] Martyris disputationem et libellum de eucharistia.</s>
+					<s n="4" xml:lang="la" type="auto">Nolui te fraudare tanta laetitia diutius, nescio tamen, an forsan antea acceperis; quodsi acceperis, functus tamen sum officio meo.</s>
+					<s n="5" xml:lang="la" type="auto">Viri undequaque doctissimi laudabis diligentiam et labores.</s>
+					<s n="6" xml:lang="la" type="auto">Acriter dimicatum est cum hominibus acutis nimium et perversis; palman tamen tulit, quod certe omnibus bonis gaudio maximo est.</s>
+					<s n="7" xml:lang="la" type="auto">Simili si posset Cantabrigia ornari viro, quam foelicissima foret Anglia nostra!</s>
+					<s n="8" xml:lang="la" type="auto">Optant nonnulli primi ordinis in Anglia viri Musculum eius loco substitui; renuit tamen ipse, ut audio, conditionem.</s>
+					<s n="9" xml:lang="la" type="auto">Ausim tamen ipse promittere, ut si velit hoc munus obire, non minorem apud regem bonosque omnes assequuturum gratiam quam ipse Bucerus, neque tam perverse doctos Cantabrigiae atque Oxoniis d. Petrus inveniet.</s>
+					<s n="10" xml:lang="la" type="auto">Suspecti enim semper erant huius academiae alumni haereseos, ut vocant, apud veteres doctos et indoctos, quo facile iudicare posses horum studia synceriora Oxoniensibus semper fuisse; inde enim eruperunt Coxei, Hoperi et, quem primo loco nominari debui, Cranmeri caeterique id genus doctissimi viri, neque est, cur tam ab hac vocatione horreat; honestius enim est regno quam civitati subvenire.</s>
+					<s n="11" xml:lang="la" type="auto">Quare omni dubio humano abiecto officium meo iuditio christiani faceret, si toties vocatus tandem acquiesceret; quodsi non fecerit, vix suspicionem pusillanimi et minus strenui aufugiet.</s>
+					<s n="12" xml:lang="la" type="auto">Quod superest, non dubito, quin tu cum viro acturus sis; si posset persuaderi, fac sciam; curabo, ut ei provideretur de viatico, et quae praeterea necessaria sunt.</s>
+					<s n="13" xml:lang="la" type="auto">Uxorem et liberos salvos cupio.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Saluta amicos omnes.</s>
-					<s xml:lang="la" type="auto">Bene vale.</s>
-					<s xml:lang="la" type="auto">Nova proximis ante triduum hinc ad Valentinum Nußboum missis omnia commemoravi, quae scirem, nec interea quicquam accidit.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="14" xml:lang="la" type="auto">Saluta amicos omnes.</s>
+					<s n="15" xml:lang="la" type="auto">Bene vale.</s>
+					<s n="16" xml:lang="la" type="auto">Nova proximis ante triduum hinc ad Valentinum Nußboum missis omnia commemoravi, quae scirem, nec interea quicquam accidit.</s>
+					<s n="17" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">I[oannes] B[urcherus] tuus totus.</s>
+					<s n="18" xml:lang="la" type="auto">I[oannes] B[urcherus] tuus totus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Libellum tuum, quo respondisti calumniis ultimis Lutheri, cum adiuncto eiusdem calumniae libello cuperem quam avide.</s>
+					<s n="19" xml:lang="la" type="auto">Libellum tuum, quo respondisti calumniis ultimis Lutheri, cum adiuncto eiusdem calumniae libello cuperem quam avide.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sunt, qui habent responsum tuum, sed carent libello Lutheri; quare coniunctum utrumque vellem, quo possent et calumniae erroresque Lutheri vestrumque responsum cerni.</s>
+					<s n="20" xml:lang="la" type="auto">Sunt, qui habent responsum tuum, sed carent libello Lutheri; quare coniunctum utrumque vellem, quo possent et calumniae erroresque Lutheri vestrumque responsum cerni.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">D. H. Bullingero, amico charo.</s>
+					<s n="21" xml:lang="la" type="auto">D. H. Bullingero, amico charo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="22" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

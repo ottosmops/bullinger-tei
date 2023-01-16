@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">8328/98</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 377,2581</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 377,2581</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,14 +54,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#296">London</settlement>
-						<institution>Lambeth Palace Library</institution>
-						<idno type="Kopie">Ms 2010 fo 92r (Nr. 60)</idno>
-						<repository ref="archive#58">
+						<!--
+						<repository ref="archive58">
 							<name>London LPL</name>
-							<note type="Hinweis">Ref. 48 IRG</note>
 							<ref target="https://lambethpalacelibrary.org/"/>
 						</repository>
+						<settlement ref="place296">London</settlement>
+						<institution>Lambeth Palace Library</institution>
+						-->
+						<repository ref="archive58"/>
+						<idno subtype="Kopie">Ms 2010 fo 92r (Nr. 60)</idno>
+						<idno subtype="Hinweis">Ref. 48 IRG</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -67,43 +73,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9770">
 				<correspAction type="sent">
-					<persName ref="person#2867" cert="high">
+					<!--
+					<persName ref="person2867" cert="high">
 						<forename cert="high">Edwin</forename>
 						<surname cert="high">Sandys</surname>
 						<graphic type="portrait" url="portraits/2867_Sandys_Edwin.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Edwin_Sandys"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/120649802"/>
 					</persName>
-					<place source="#164" cert="high">
-						<settlement>Fulham</settlement>
-						<geo>51.48026 -0.1993</geo>
-					</place>
+					-->
+					<persName ref="person2867" cert="high"/>
+					<place source="place164" cert="high"/>
 					<date when="1574-08-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9771"/>
-					<ref type="prev_chronologically" target="files.xml#9769"/>
+					<ref type="next_chronologically" target="file9771"/>
+					<ref type="prev_chronologically" target="file9769"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#9593"/>
+					<ref type="prev_correspondence" target="file9593"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#9424"/>
+					<ref type="prev_correspondence_request" target="file9424"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#9593"/>
+					<ref type="prev_correspondence_reaction" target="file9593"/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#9424"/>
-					<ref type="next_same_addressee" target="files.xml#9771"/>
-					<ref type="prev_same_addressee" target="files.xml#9767"/>
+					<ref type="prev_same_sender" target="file9424"/>
+					<ref type="next_same_addressee" target="file9771"/>
+					<ref type="prev_same_addressee" target="file9767"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9424"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9771"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#9767"/>
+					<ref type="prev_with_sender_as_addressee" target="file9424"/>
+					<ref type="next_with_addressee_as_sender" target="file9771"/>
+					<ref type="prev_with_addressee_as_sender" target="file9767"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -112,38 +124,41 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="9770/Autograph/00 E_II_377__fol__2581_r_.tif" n="1"/>
+		<graphic url="9770/Autograph/01 E_II_377__fol__2581_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Salutem plurimam in Christo, colendissime vir et venerande pater!</s>
+					<s n="1" xml:lang="la" type="auto">Salutem plurimam in Christo, colendissime vir et venerande pater!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quod tam diligenter tamque amanter ad me scribere voluisti, quam maximas habeo tibi gratias.</s>
-					<s xml:lang="la" type="auto">Gratius quippe nihil mihi esse potuisset, quam tuam de nostris controversiis intelligere sententiam.</s>
-					<s xml:lang="la" type="auto">Quid autem ipse sentis de toto negotio, plenissime scribis; video et amplector.</s>
-					<s xml:lang="la" type="auto">Ego autem spero, novum hoc aedificium novae disciplinae brevi sua mole ruiturum, quando constat multos nostratium iamdudum eius pertaesos esse, qui prius illud admirabantur; et qui vehementissimi esse videbantur ad stabiliendam hanc novam fabricationem, iam quasi mutata sententia cęperunt mirum in modum frigescere.</s>
-					<s xml:lang="la" type="auto">Dominus det ut, sublatis omnibus dissidiis et contentionibus, idem omnes loquamur et sentiamus secundum Iesum Christum, et ut unanimiter uno ore glorificemus deum et patrem domini nostri Iesu Christi!</s>
+					<s n="2" xml:lang="la" type="auto">Quod tam diligenter tamque amanter ad me scribere voluisti, quam maximas habeo tibi gratias.</s>
+					<s n="3" xml:lang="la" type="auto">Gratius quippe nihil mihi esse potuisset, quam tuam de nostris controversiis intelligere sententiam.</s>
+					<s n="4" xml:lang="la" type="auto">Quid autem ipse sentis de toto negotio, plenissime scribis; video et amplector.</s>
+					<s n="5" xml:lang="la" type="auto">Ego autem spero, novum hoc aedificium novae disciplinae brevi sua mole ruiturum, quando constat multos nostratium iamdudum eius pertaesos esse, qui prius illud admirabantur; et qui vehementissimi esse videbantur ad stabiliendam hanc novam fabricationem, iam quasi mutata sententia cęperunt mirum in modum frigescere.</s>
+					<s n="6" xml:lang="la" type="auto">Dominus det ut, sublatis omnibus dissidiis et contentionibus, idem omnes loquamur et sentiamus secundum Iesum Christum, et ut unanimiter uno ore glorificemus deum et patrem domini nostri Iesu Christi!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De rebus Anglicanis nolo ad te scribere, quia pius et doctus hic adolescens, qui has ad te perfert literas, de omnibus certiorem te reddet.</s>
+					<s n="7" xml:lang="la" type="auto">De rebus Anglicanis nolo ad te scribere, quia pius et doctus hic adolescens, qui has ad te perfert literas, de omnibus certiorem te reddet.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Primum pannum, quem ad te misi, piratae Flushingenses interceperunt; secundum mittendum curavi, quem audio ad tuas pervenisse manus.</s>
+					<s n="8" xml:lang="la" type="auto">Primum pannum, quem ad te misi, piratae Flushingenses interceperunt; secundum mittendum curavi, quem audio ad tuas pervenisse manus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bene vale, vir colendissime, et ut precibus tuis me deo commendatum habeas, plurimum rogo.</s>
-					<s xml:lang="la" type="auto">Raptim.</s>
+					<s n="9" xml:lang="la" type="auto">Bene vale, vir colendissime, et ut precibus tuis me deo commendatum habeas, plurimum rogo.</s>
+					<s n="10" xml:lang="la" type="auto">Raptim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Fulhamiae in Anglia, augusti 9, 1574.</s>
+					<s n="11" xml:lang="la" type="auto">Fulhamiae in Anglia, augusti 9, 1574.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus in Christo frater, et tui amantissimus, Edwinus Sandus, episcopus London.</s>
+					<s n="12" xml:lang="la" type="auto">Tuus in Christo frater, et tui amantissimus, Edwinus Sandus, episcopus London.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Viro colendissimo et fratri suo charissimo, domino Henrico Bullingero, ecclesiae Tigurinae pastori vigilantissimo in Helvetia.</s>
+					<s n="13" xml:lang="la" type="auto">Viro colendissimo et fratri suo charissimo, domino Henrico Bullingero, ecclesiae Tigurinae pastori vigilantissimo in Helvetia.</s>
 				</p>
 			</div>
 		</body>

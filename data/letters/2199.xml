@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3489</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 335,2257 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 335,2257 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -69,13 +72,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 81,79</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 81,79</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -89,52 +95,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2199">
 				<correspAction type="sent">
-					<persName ref="person#3412" cert="high">
+					<!--
+					<persName ref="person3412" cert="high">
 						<forename cert="high">Petrus Martyr</forename>
 						<surname cert="high">Vermigli</surname>
-						<addName type="main">Vermigli (Vermilius), Peter Martyr (Pietro Martire)</addName>
+						<persName type="main" ref="person8111>Vermigli (Vermilius), Peter Martyr (Pietro Martire)</addName>
 						<graphic type="portrait" url="portraits/3410_Vermigli_Pietro.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Peter_Martyr_Vermigli"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118768123"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person3412" cert="high"/>
+					<place source="place492" cert="high"/>
 					<date when="1554-02-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2200"/>
-					<ref type="prev_chronologically" target="files.xml#2198"/>
-					<ref type="next_correspondence" target="files.xml#2220"/>
-					<ref type="prev_correspondence" target="files.xml#2167"/>
-					<ref type="next_correspondence_request" target="files.xml#2220"/>
-					<ref type="prev_correspondence_request" target="files.xml#2167"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2908"/>
+					<ref type="next_chronologically" target="file2200"/>
+					<ref type="prev_chronologically" target="file2198"/>
+					<ref type="next_correspondence" target="file2220"/>
+					<ref type="prev_correspondence" target="file2167"/>
+					<ref type="next_correspondence_request" target="file2220"/>
+					<ref type="prev_correspondence_request" target="file2167"/>
+					<ref type="next_correspondence_reaction" target="file2908"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#2220"/>
-					<ref type="prev_same_sender" target="files.xml#2167"/>
-					<ref type="next_same_addressee" target="files.xml#2209"/>
-					<ref type="prev_same_addressee" target="files.xml#2198"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2220"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2167"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2209"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2198"/>
+					<ref type="next_same_sender" target="file2220"/>
+					<ref type="prev_same_sender" target="file2167"/>
+					<ref type="next_same_addressee" target="file2209"/>
+					<ref type="prev_same_addressee" target="file2198"/>
+					<ref type="next_with_sender_as_addressee" target="file2220"/>
+					<ref type="prev_with_sender_as_addressee" target="file2167"/>
+					<ref type="next_with_addressee_as_sender" target="file2209"/>
+					<ref type="prev_with_addressee_as_sender" target="file2198"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -154,52 +159,52 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Binis tuis iam ad me scripsisti, vir clarissime, ut si quid haberem de optimo viro atque charissimo in Christo fratre domino a Lasco,<note type="margin">a.R.: Alasco/A lasc.</note> tibi statim significarem, neque te paterer ignorare quę ad nos de rebus Anglicis afferrentur.</s>
-					<s xml:lang="la" type="auto">Quare cum habeam quę de his nuntiem, ut ea iam nunc ad te scriberem differendum non censui.</s>
-					<s xml:lang="la" type="auto">Iverat noster a Lasco, quemadmodum significaveram, cum suis peregrinis in Daniam; sed ibi satis male, ne barbare dixerim, fuit acceptus; non quidem, ut existimo, culpa regis, at doctorum et ministrorum ecclesię, quorum denique concionibus et impulsu ex illo regno cum suis eiectus est.</s>
-					<s xml:lang="la" type="auto">Nec dubites illos homines rei sacramentarię causa nos habere deteriori loco quam papistas.</s>
-					<s xml:lang="la" type="auto">Cęterum deus, qui nunquam suos deserit, curavit ut ille vir dei cum suis omnibus in Phrysia summo exciperetur honore; ubi princeps illa processit eis obviam, largissimis eleemosynis recreavit, curavitque ut Hendę duas liceret haberi peregrinorum ecclesias, unam sane Anglicam, alteram vero Gallicam.</s>
-					<s xml:lang="la" type="auto">Sed ibi ferme per omnia loca error Suencheldii crudelissime grassatur.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Binis tuis iam ad me scripsisti, vir clarissime, ut si quid haberem de optimo viro atque charissimo in Christo fratre domino a Lasco,<note type="margin">a.R.: Alasco/A lasc.</note> tibi statim significarem, neque te paterer ignorare quę ad nos de rebus Anglicis afferrentur.</s>
+					<s n="3" xml:lang="la" type="auto">Quare cum habeam quę de his nuntiem, ut ea iam nunc ad te scriberem differendum non censui.</s>
+					<s n="4" xml:lang="la" type="auto">Iverat noster a Lasco, quemadmodum significaveram, cum suis peregrinis in Daniam; sed ibi satis male, ne barbare dixerim, fuit acceptus; non quidem, ut existimo, culpa regis, at doctorum et ministrorum ecclesię, quorum denique concionibus et impulsu ex illo regno cum suis eiectus est.</s>
+					<s n="5" xml:lang="la" type="auto">Nec dubites illos homines rei sacramentarię causa nos habere deteriori loco quam papistas.</s>
+					<s n="6" xml:lang="la" type="auto">Cęterum deus, qui nunquam suos deserit, curavit ut ille vir dei cum suis omnibus in Phrysia summo exciperetur honore; ubi princeps illa processit eis obviam, largissimis eleemosynis recreavit, curavitque ut Hendę duas liceret haberi peregrinorum ecclesias, unam sane Anglicam, alteram vero Gallicam.</s>
+					<s n="7" xml:lang="la" type="auto">Sed ibi ferme per omnia loca error Suencheldii crudelissime grassatur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hęc de fratre nostro domino a Lasco: nunc de Anglia.</s>
-					<s xml:lang="la" type="auto">Infensus adeo est populus reginę, pręsertim ob Hispanicum matrimonium, ut in validam conspirationem eruperit.</s>
-					<s xml:lang="la" type="auto">Exercitus iam est collectus viginti millium citra equites; occuparunt universum Cantium una cum illius regionis Cantianę portubus, ac naves tormentis bellicis expoliarunt, quibus nunc in castris utuntur.</s>
-					<s xml:lang="la" type="auto">Preterea ducem sibi delegerunt, non solum strenuum, sed rei militaris peritissimum: progressi iam sunt usque Londinum: Vinthoniensis domum obtinent, neque multum distant ab ędibus domini Cantuariensis, quę sunt ad Lambeth.</s>
+					<s n="8" xml:lang="la" type="auto">Hęc de fratre nostro domino a Lasco: nunc de Anglia.</s>
+					<s n="9" xml:lang="la" type="auto">Infensus adeo est populus reginę, pręsertim ob Hispanicum matrimonium, ut in validam conspirationem eruperit.</s>
+					<s n="10" xml:lang="la" type="auto">Exercitus iam est collectus viginti millium citra equites; occuparunt universum Cantium una cum illius regionis Cantianę portubus, ac naves tormentis bellicis expoliarunt, quibus nunc in castris utuntur.</s>
+					<s n="11" xml:lang="la" type="auto">Preterea ducem sibi delegerunt, non solum strenuum, sed rei militaris peritissimum: progressi iam sunt usque Londinum: Vinthoniensis domum obtinent, neque multum distant ab ędibus domini Cantuariensis, quę sunt ad Lambeth.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Londini portas, cum venissent ad pontem, invenerunt clausas; non sane quod Londinenses a sensu istorum armorum abhorreant, sed timuerunt ne diriperentur vel a regina vel ab exercitu coniuratorum.</s>
-					<s xml:lang="la" type="auto">Qui sunt in castris tria petunt a regina: primum ut rex deligatur Anglici sanguinis: alterum, ut religio quę vigebat sub Eduardo nunc quoque valeat: tertium, ut pascua communia quę a potentioribus iam fuerunt usurpata restituantur.</s>
-					<s xml:lang="la" type="auto">Et obsides petunt, ut ista serventur, episcopum Vinthoniensem et dominum Paggetum.</s>
+					<s n="12" xml:lang="la" type="auto">Londini portas, cum venissent ad pontem, invenerunt clausas; non sane quod Londinenses a sensu istorum armorum abhorreant, sed timuerunt ne diriperentur vel a regina vel ab exercitu coniuratorum.</s>
+					<s n="13" xml:lang="la" type="auto">Qui sunt in castris tria petunt a regina: primum ut rex deligatur Anglici sanguinis: alterum, ut religio quę vigebat sub Eduardo nunc quoque valeat: tertium, ut pascua communia quę a potentioribus iam fuerunt usurpata restituantur.</s>
+					<s n="14" xml:lang="la" type="auto">Et obsides petunt, ut ista serventur, episcopum Vinthoniensem et dominum Paggetum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Atque in hac sua expeditione bene magnum numerum sacrificorum suspenderunt.</s>
-					<s xml:lang="la" type="auto">Civitas Londinensis est in magno periculo: quę si diriperetur, quod avertat dominus<note type="margin">a.R.: .. us. deus?</note>, non possent illi mercatores naufragium facere quin secum infinitorum quodammodo calamitatem traherent.</s>
-					<s xml:lang="la" type="auto">Scribitur pręterea imperator Antverpię omnia bona mercatorum Anglię prohibuisse, ne distraherentur vel alio transferrentur.</s>
-					<s xml:lang="la" type="auto">Ad nos huc superioribus diebus permulti iuvenes Angli venerunt, partim Oxonienses, partim Cantabrigienses, quos hic alent in litteris multi pii mercatores, ut si quando illi regno deus religionis pristinum statum restituere dignatus fuerit, ecclesię Anglicanę usui esse possint.</s>
-					<s xml:lang="la" type="auto">Hęc habui quę scriberem.</s>
+					<s n="15" xml:lang="la" type="auto">Atque in hac sua expeditione bene magnum numerum sacrificorum suspenderunt.</s>
+					<s n="16" xml:lang="la" type="auto">Civitas Londinensis est in magno periculo: quę si diriperetur, quod avertat dominus<note type="margin">a.R.: .. us. deus?</note>, non possent illi mercatores naufragium facere quin secum infinitorum quodammodo calamitatem traherent.</s>
+					<s n="17" xml:lang="la" type="auto">Scribitur pręterea imperator Antverpię omnia bona mercatorum Anglię prohibuisse, ne distraherentur vel alio transferrentur.</s>
+					<s n="18" xml:lang="la" type="auto">Ad nos huc superioribus diebus permulti iuvenes Angli venerunt, partim Oxonienses, partim Cantabrigienses, quos hic alent in litteris multi pii mercatores, ut si quando illi regno deus religionis pristinum statum restituere dignatus fuerit, ecclesię Anglicanę usui esse possint.</s>
+					<s n="19" xml:lang="la" type="auto">Hęc habui quę scriberem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Deus te incolumem diutissime servet!</s>
-					<s xml:lang="la" type="auto">Salutat te d. Zancus.</s>
-					<s xml:lang="la" type="auto">Ego vero meo nomine salutem omnibus vestris symmystis dici cupio.</s>
-					<s xml:lang="de" type="auto">24. febr. 1554.</s>
-					<s xml:lang="la" type="auto">Argentinę.</s>
+					<s n="20" xml:lang="la" type="auto">Deus te incolumem diutissime servet!</s>
+					<s n="21" xml:lang="la" type="auto">Salutat te d. Zancus.</s>
+					<s n="22" xml:lang="la" type="auto">Ego vero meo nomine salutem omnibus vestris symmystis dici cupio.</s>
+					<s n="23" xml:lang="de" type="auto">24. febr. 1554.</s>
+					<s n="24" xml:lang="la" type="auto">Argentinę.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus in domino Petrus Martyr.</s>
+					<s n="25" xml:lang="la" type="auto">Tuus in domino Petrus Martyr.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Alia sunt quę postea de rebus Anglicis accepimus, quę non arbitror opus esse ut scribam, siquidem omnia cognoscere poteris de isto bono viro, qui has meas tibi est redditurus.</s>
+					<s n="26" xml:lang="la" type="auto">Alia sunt quę postea de rebus Anglicis accepimus, quę non arbitror opus esse ut scribam, siquidem omnia cognoscere poteris de isto bono viro, qui has meas tibi est redditurus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Eum scito Anglum esse nostrę doctrinę studiosissimum, quique illam concionando magnis laboribus et summa industria tuebatur et propugnabat.</s>
-					<s xml:lang="la" type="auto">Nunc vero cum tam difficilia tempora inciderint, ut molestiam animi leniat, sicut vides, peregrinatur, invisendo ecclesias quas prę cęteris bene institutas arbitratur: quare ipsum tibi etiam atque etiam commendo.</s>
+					<s n="27" xml:lang="la" type="auto">Eum scito Anglum esse nostrę doctrinę studiosissimum, quique illam concionando magnis laboribus et summa industria tuebatur et propugnabat.</s>
+					<s n="28" xml:lang="la" type="auto">Nunc vero cum tam difficilia tempora inciderint, ut molestiam animi leniat, sicut vides, peregrinatur, invisendo ecclesias quas prę cęteris bene institutas arbitratur: quare ipsum tibi etiam atque etiam commendo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro domino Heynricho Bulyngero, ecclesię Tigurinę ministro fidelissimo atque mihi multis nominibus observando.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="29" xml:lang="la" type="auto">Clarissimo viro domino Heynricho Bulyngero, ecclesię Tigurinę ministro fidelissimo atque mihi multis nominibus observando.</s>
+					<s n="30" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 350,165 ff.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 350,165 ff.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -33,14 +36,17 @@
 				</msDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 342, 507 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">Exemplar für Egli</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 342, 507 f.</idno>
+						<idno subtype="Hinweis">Exemplar für Egli</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -49,41 +55,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6978">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<date when="1567-00-00" cert="low"><note>Datum unsicher  Neue Zeitungen  (1567 Frühling)  [vielleicht Beilage zu: B an Egli, 1567 Mai 18.] (= ID 7106)</note></date>
+					-->
+					<persName ref="person495" cert="low"/>
+					<date notBefore="1567-01-01" notAfter="1567-12-12" cert="low"><note>Datum unsicher  Neue Zeitungen  (1567 Frühling)  [vielleicht Beilage zu: B an Egli, 1567 Mai 18.] (= ID 7106)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#993" cert="low">
+					<!--
+					<persName ref="person993" cert="low">
 						<forename cert="low">Tobias</forename>
 						<surname cert="low">Egli</surname>
-						<addName type="main">Egli (Iconius, Götz), Tobias</addName>
+						<persName type="main" ref="person8016>Egli (Iconius, Götz), Tobias</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Tobias_Egli"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089466366"/>
 					</persName>
+					-->
+					<persName ref="person993" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6979"/>
-					<ref type="prev_chronologically" target="files.xml#6976"/>
-					<ref type="next_correspondence" target="files.xml#6985"/>
-					<ref type="prev_correspondence" target="files.xml#6976"/>
-					<ref type="next_correspondence_request" target="files.xml#6993"/>
-					<ref type="prev_correspondence_request" target="files.xml#6976"/>
-					<ref type="next_correspondence_reaction" target="files.xml#6985"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#6964"/>
-					<ref type="next_same_sender" target="files.xml#6989"/>
-					<ref type="prev_same_sender" target="files.xml#6976"/>
-					<ref type="next_same_addressee" target="files.xml#6985"/>
-					<ref type="prev_same_addressee" target="files.xml#6964"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6989"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6976"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6985"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6964"/>
-					<ref type="child" target="files.xml#7106"/>
-					<ref type="parent" target="files.xml#7106"/>
+					<ref type="next_chronologically" target="file6979"/>
+					<ref type="prev_chronologically" target="file6976"/>
+					<ref type="next_correspondence" target="file6985"/>
+					<ref type="prev_correspondence" target="file6976"/>
+					<ref type="next_correspondence_request" target="file6993"/>
+					<ref type="prev_correspondence_request" target="file6976"/>
+					<ref type="next_correspondence_reaction" target="file6985"/>
+					<ref type="prev_correspondence_reaction" target="file6964"/>
+					<ref type="next_same_sender" target="file6989"/>
+					<ref type="prev_same_sender" target="file6976"/>
+					<ref type="next_same_addressee" target="file6985"/>
+					<ref type="prev_same_addressee" target="file6964"/>
+					<ref type="next_with_sender_as_addressee" target="file6989"/>
+					<ref type="prev_with_sender_as_addressee" target="file6976"/>
+					<ref type="next_with_addressee_as_sender" target="file6985"/>
+					<ref type="prev_with_addressee_as_sender" target="file6964"/>
+					<ref type="child" target="file7106"/>
+					<ref type="parent" target="file7106"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

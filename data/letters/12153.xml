@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2013"/>
-				<idno type="ISBN">ISBN 978-3-290-17664-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2106</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17664-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2106</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 15</title>
+				<title subtype="publication">HBBW XV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">15</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#28">Basel</settlement>
-						<institution>Universitätsbibliothek</institution>
-						<idno type="Autograph">Fr. Gr. Ms II 9, Nr. 82</idno>
-						<repository ref="archive#6">
+						<!--
+						<repository ref="archive6">
 							<name>Basel UB</name>
 							<ref target="https://ub.unibas.ch/de"/>
 						</repository>
+						<settlement ref="place28">Basel</settlement>
+						<institution>Universitätsbibliothek</institution>
+						-->
+						<repository ref="archive6"/>
+						<idno subtype="Autograph">Fr. Gr. Ms II 9, Nr. 82</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,29 +50,32 @@
 						<summary>
 							<p xml:id="regest1">
 								Bullinger schickt die [„Orthodoxa Tigurinae ecclesiae confessio“], die
-								<persName ref="138">Luthers</persName> [„Kurtz bekentnis“] beantwortet. Borrhaus wird gesehen haben,
-								wie <persName ref="138">Luther</persName> in seiner Schrift
-								<persName ref="160">Johannes Oekolampad</persName>, Zwingli,
+								<persName ref="person138">Luthers</persName> [„Kurtz bekentnis“] beantwortet. Borrhaus wird gesehen haben,
+								wie <persName ref="person138">Luther</persName> in seiner Schrift
+								<persName ref="person160">Johannes Oekolampad</persName>, Zwingli,
 								die Zürcher und die [eidgenössischen] Kirchen der Ketzerei beschuldigt hat. Dies konnte nicht schweigend
 								hingenommen werden, wenngleich [den Zürchern] die [innerprotestantischen] Streitigkeiten missfallen.
 								Bullinger hofft, dass [den Baslern die Zürcher] Antwort nicht unmäßig erscheint, und bittet um etwaige
 								Kritik. Diejenigen, die Borrhaus über die Sakramente gehört haben, loben ihn, weil er diesen nicht allzuviel
 								Bedeutung beimisst. - Bullinger möchte von Borrhaus als Freund angenommen werden. - Grüße von
-								<persName ref="165">Pellikan</persName>, Bibliander, Megander, Gwalther und von den Übrigen.
+								<persName ref="person165">Pellikan</persName>, Bibliander, Megander, Gwalther und von den Übrigen.
 							</p>
 						</summary>
 					</msContents>
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 346,145r.-v.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">Fortführung von Josias Simler</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 346,145r.-v.</idno>
+						<idno subtype="Hinweis">Fortführung von Josias Simler</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -78,45 +84,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12153">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1545-03-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#437" cert="high">
+					<!--
+					<persName ref="person437" cert="high">
 						<forename cert="high">Martin</forename>
 						<surname cert="high">Borrhaus</surname>
-						<addName type="main">Borrhaus (Cellarius), Martin</addName>
+						<persName type="main" ref="person8298>Borrhaus (Cellarius), Martin</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Martin_Borrhaus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118513729"/>
 					</persName>
+					-->
+					<persName ref="person437" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12154"/>
-					<ref type="prev_chronologically" target="files.xml#12152"/>
-					<ref type="next_correspondence" target="files.xml#12161"/>
-					<ref type="prev_correspondence" target="files.xml#11972"/>
-					<ref type="next_correspondence_request" target="files.xml#12320"/>
+					<ref type="next_chronologically" target="file12154"/>
+					<ref type="prev_chronologically" target="file12152"/>
+					<ref type="next_correspondence" target="file12161"/>
+					<ref type="prev_correspondence" target="file11972"/>
+					<ref type="next_correspondence_request" target="file12320"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#12161"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11972"/>
-					<ref type="next_same_sender" target="files.xml#12154"/>
-					<ref type="prev_same_sender" target="files.xml#12152"/>
-					<ref type="next_same_addressee" target="files.xml#12161"/>
-					<ref type="prev_same_addressee" target="files.xml#11972"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12154"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12152"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12161"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11972"/>
+					<ref type="next_correspondence_reaction" target="file12161"/>
+					<ref type="prev_correspondence_reaction" target="file11972"/>
+					<ref type="next_same_sender" target="file12154"/>
+					<ref type="prev_same_sender" target="file12152"/>
+					<ref type="next_same_addressee" target="file12161"/>
+					<ref type="prev_same_addressee" target="file11972"/>
+					<ref type="next_with_sender_as_addressee" target="file12154"/>
+					<ref type="prev_with_sender_as_addressee" target="file12152"/>
+					<ref type="next_with_addressee_as_sender" target="file12161"/>
+					<ref type="prev_with_addressee_as_sender" target="file11972"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -131,38 +141,38 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Mitto tuae humanitati, vir clarissime, exemplum nostrae confessionis et responsionis<note xml:id="fn1" type="footnote" n="1">Die "Orthodoxa Tigurinae ecclesiae confessio"; s. oben <ref target="file#12108">Nr. 2061</ref>, Anm. 9.</note> editae contra condemnationem et calumnias <persName ref="138">Lutheri</persName>.</s>
-					<s xml:lang="la" type="auto">Vidisti, opinor, quae ille contra inclytae <placeName ref="97">Basiliensis</placeName> ecclesiae fidelem pastorem d. <persName ref="160">Ioannem Oecolampadium</persName>, contra Zvinglium, contra Tigurinos et contra ecclesias, quibus ministramus, scripsit<note xml:id="fnc" type="footnote" n="c">scripsit <hi>in der Ausfertigung am Rande nachgetragen.</hi></note>,<note xml:id="fn2" type="footnote" n="2"><persName ref="138">Luthers</persName> "Kurtz bekentnis"; s. oben <ref target="file#12108">Nr. 2061</ref>, Anm. 7.</note> quomodo vivos et mortuos innocentesque ecclesias infando haereseos crimine aspergat.</s>
-					<s xml:lang="la" type="auto">Non potuimus nos ista omnia taciti dissimulare.</s>
-					<s xml:lang="la" type="auto">Displicent quidem nobis non parum concertationes et rixae in ecclesia Christi.</s>
-					<s xml:lang="la" type="auto">Verum salva sanctorum innocentia, incolumi veritate integrisque rebus nostris quomodo, quaeso, ad tam dira et atrocia nobis intentata crimina tacere potuimus?</s>
-					<s xml:lang="la" type="auto">Lege, quaeso, si per negotia licet, quae respondimus.</s>
-					<s xml:lang="la" type="auto">Videmur vobis non immodeste egisse.</s>
-					<s xml:lang="la" type="auto">Caeterum, si quid peccatum videbitur, libenter a te, fratre nostro, audiemus.</s>
-					<s xml:lang="la" type="auto">Speramus autem te nobis, imo veritati, si quando poscat necessitas, non defuturum.</s>
-					<s xml:lang="la" type="auto">Nam qui te norunt et aliquando de sacramentis disserentem audierunt, laudarunt tuam integritatem, ut qui illis nimium non tribuas.</s>
+					<s n="2" xml:lang="la" type="auto">Mitto tuae humanitati, vir clarissime, exemplum nostrae confessionis et responsionis<note xml:id="fn1" type="footnote" n="1">Die "Orthodoxa Tigurinae ecclesiae confessio"; s. oben <ref target="file12108">Nr. 2061</ref>, Anm. 9.</note> editae contra condemnationem et calumnias <persName ref="person138">Lutheri</persName>.</s>
+					<s n="3" xml:lang="la" type="auto">Vidisti, opinor, quae ille contra inclytae <placeName ref="place97">Basiliensis</placeName> ecclesiae fidelem pastorem d. <persName ref="person160">Ioannem Oecolampadium</persName>, contra Zvinglium, contra Tigurinos et contra ecclesias, quibus ministramus, scripsit<note xml:id="fnc" type="footnote" n="c">scripsit <hi>in der Ausfertigung am Rande nachgetragen.</hi></note>,<note xml:id="fn2" type="footnote" n="2"><persName ref="person138">Luthers</persName> "Kurtz bekentnis"; s. oben <ref target="file12108">Nr. 2061</ref>, Anm. 7.</note> quomodo vivos et mortuos innocentesque ecclesias infando haereseos crimine aspergat.</s>
+					<s n="4" xml:lang="la" type="auto">Non potuimus nos ista omnia taciti dissimulare.</s>
+					<s n="5" xml:lang="la" type="auto">Displicent quidem nobis non parum concertationes et rixae in ecclesia Christi.</s>
+					<s n="6" xml:lang="la" type="auto">Verum salva sanctorum innocentia, incolumi veritate integrisque rebus nostris quomodo, quaeso, ad tam dira et atrocia nobis intentata crimina tacere potuimus?</s>
+					<s n="7" xml:lang="la" type="auto">Lege, quaeso, si per negotia licet, quae respondimus.</s>
+					<s n="8" xml:lang="la" type="auto">Videmur vobis non immodeste egisse.</s>
+					<s n="9" xml:lang="la" type="auto">Caeterum, si quid peccatum videbitur, libenter a te, fratre nostro, audiemus.</s>
+					<s n="10" xml:lang="la" type="auto">Speramus autem te nobis, imo veritati, si quando poscat necessitas, non defuturum.</s>
+					<s n="11" xml:lang="la" type="auto">Nam qui te norunt et aliquando de sacramentis disserentem audierunt, laudarunt tuam integritatem, ut qui illis nimium non tribuas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hac praeterea occasione cupio me in amicitiam et in album amicorum tuorum insinuare, ac oro, ut me tui studiosum, nisi indignus videar, pro<pb type="edition" next="180"/> amico velis agnoscere.</s>
-					<s xml:lang="la" type="auto">Ego te amo et ita me geram, ne amicitiae pactae unquam poeniteat<note xml:id="fn3" type="footnote" n="3">Borrhaus geht in seiner Antwort (unten <ref target="file#12161">Nr. 2114</ref>) darauf nicht expressis verbis ein.</note>.</s>
+					<s n="12" xml:lang="la" type="auto">Hac praeterea occasione cupio me in amicitiam et in album amicorum tuorum insinuare, ac oro, ut me tui studiosum, nisi indignus videar, pro<pb type="edition" next="180"/> amico velis agnoscere.</s>
+					<s n="13" xml:lang="la" type="auto">Ego te amo et ita me geram, ne amicitiae pactae unquam poeniteat<note xml:id="fn3" type="footnote" n="3">Borrhaus geht in seiner Antwort (unten <ref target="file12161">Nr. 2114</ref>) darauf nicht expressis verbis ein.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, vir doctissime.</s>
-					<s xml:lang="la" type="auto">Salutant te d. <persName ref="165">Pellicanus</persName>, Bibliander, Megander, Gvaltherus et caeteri.</s>
+					<s n="14" xml:lang="la" type="auto">Vale, vir doctissime.</s>
+					<s n="15" xml:lang="la" type="auto">Salutant te d. <persName ref="person165">Pellicanus</persName>, Bibliander, Megander, Gvaltherus et caeteri.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, 14. martii anno 1545.</s>
+					<s n="16" xml:lang="la" type="auto">Tiguri, 14. martii anno 1545.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus tuus.</s>
+					<s n="17" xml:lang="la" type="auto">H. Bullingerus tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]<note xml:id="fnd" type="footnote" n="d"><hi>In der Abschrift als Überschrift vorangestellt.</hi></note></note>
-					<s xml:lang="la" type="auto">Clarissimo viro d. <persName ref="138">Martino</persName> Cellario, amico et fratri colendo.</s>
-					<s xml:lang="de" type="auto"><placeName ref="97">Basel</placeName>.</s>
+					<s n="18" xml:lang="la" type="auto">Clarissimo viro d. <persName ref="person138">Martino</persName> Cellario, amico et fratri colendo.</s>
+					<s n="19" xml:lang="de" type="auto"><placeName ref="place97">Basel</placeName>.</s>
 				</p>
 			</div>
 		</body>

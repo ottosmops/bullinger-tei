@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3291</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 361,300</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 361,300</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 80,50</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 80,50</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -61,49 +67,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2019">
 				<correspAction type="sent">
-					<persName ref="person#3902" cert="high">
+					<!--
+					<persName ref="person3902" cert="high">
 						<forename cert="high">Wolfgang</forename>
 						<surname cert="high">Waidner</surname>
 					</persName>
-					<place source="#569" cert="high">
-						<settlement>Worms</settlement>
-						<district>Rheinland-Pfalz</district>
-						<country>Deutschland</country>
-						<geo>49.63278 8.35916</geo>
-					</place>
+					-->
+					<persName ref="person3902" cert="high"/>
+					<place source="place569" cert="high"/>
 					<date when="1553-09-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2014"/>
-					<ref type="prev_chronologically" target="files.xml#2018"/>
-					<ref type="next_correspondence" target="files.xml#2208"/>
-					<ref type="prev_correspondence" target="files.xml#2002"/>
-					<ref type="next_correspondence_request" target="files.xml#2208"/>
-					<ref type="prev_correspondence_request" target="files.xml#2002"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2539"/>
+					<ref type="next_chronologically" target="file2014"/>
+					<ref type="prev_chronologically" target="file2018"/>
+					<ref type="next_correspondence" target="file2208"/>
+					<ref type="prev_correspondence" target="file2002"/>
+					<ref type="next_correspondence_request" target="file2208"/>
+					<ref type="prev_correspondence_request" target="file2002"/>
+					<ref type="next_correspondence_reaction" target="file2539"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#2208"/>
-					<ref type="prev_same_sender" target="files.xml#2002"/>
-					<ref type="next_same_addressee" target="files.xml#2014"/>
-					<ref type="prev_same_addressee" target="files.xml#2012"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2208"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2002"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2014"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2012"/>
+					<ref type="next_same_sender" target="file2208"/>
+					<ref type="prev_same_sender" target="file2002"/>
+					<ref type="next_same_addressee" target="file2014"/>
+					<ref type="prev_same_addressee" target="file2012"/>
+					<ref type="next_with_sender_as_addressee" target="file2208"/>
+					<ref type="prev_with_sender_as_addressee" target="file2002"/>
+					<ref type="next_with_addressee_as_sender" target="file2014"/>
+					<ref type="prev_with_addressee_as_sender" target="file2012"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -120,31 +124,31 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Pecuniam (in Christo Iesu aeternum colende Bullingere mihi) ut superiore anno primum humanitati tuae ex nuperis etiam vernis nundinis ordini amplissimi vestri senatus per literas pollicitus ad incipientes hasce autumnales nundinas mox Francofurtum misi ad virum multis nominibus mihi charissimum d. Hieronymum Agninum iurisconsultum addito mandato, ut Froschovero vel cuicunque alteri nomine clarissimi senatus vestri recepturo eam numeraret.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Pecuniam (in Christo Iesu aeternum colende Bullingere mihi) ut superiore anno primum humanitati tuae ex nuperis etiam vernis nundinis ordini amplissimi vestri senatus per literas pollicitus ad incipientes hasce autumnales nundinas mox Francofurtum misi ad virum multis nominibus mihi charissimum d. Hieronymum Agninum iurisconsultum addito mandato, ut Froschovero vel cuicunque alteri nomine clarissimi senatus vestri recepturo eam numeraret.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Supervenit postea cum literis ad me tuis ipse Froschoverus, ex quibus atque etiam ex ore eius intellexi eum illum esse, qui in mandatis hoc habeat.</s>
-					<s xml:lang="la" type="auto">Gavisus sum plurimum; nam eum hominem ob synceritatem animi amare coepi et iam in oculis habere.</s>
-					<s xml:lang="la" type="auto">Huic igitur qualemqualem praebenti de receptis syngrapham assignabit perferendam ad vos una cum literis Francofurtum cum ad te atque Gvalterum tum ad sanctissimum senatum vestrum praemissis.</s>
-					<s xml:lang="la" type="auto">Ecce his ex animi mei sententia expeditis altera, postquam Froschoverus a me Francofurtum versus discessit, subito me adversa valetudo, non laetalis, sic ut addere prioribus illis scriptis meis in praesentiarum amplius nihil possim, labente subinde calamo ex tremula manu, nisi hoc unum, quasi repetendo, nam in praemissis Francofurtum eius rei quoque commemini, ut sanctissimum senatum vestrum iubeas meo nomine esse salvum et praeterea securum de transmittendis huc obligatoriis usque ad nundinas vernales supervenientis quinquagesimi quarti anni.</s>
-					<s xml:lang="la" type="auto">Si inter vivos repertus tum, satis cito, sin defunctus, testamentarii mei (inter quos supra nominatus d. Hieronymus Agninus vel praecipuus) significabunt per literas tibi; tu porro oretenus senatui, quid de illis constituerim, ubi aut quomodo servandae, donec et defuncta mea coniuge ad vos remittantur una cum ultimi mei elegii vel autographa vel authentico saltem exemplari.</s>
-					<s xml:lang="la" type="auto">Interim, aeternum amande Bullingere, per viscera Iesu Christi, cui fideliter inservis totusque consecratus es, etiam eciamque te oro, ut intercedere pro me apud deum sanctissimis precibus tuis digneris, ut det misero mihi in vera Christi, unigeniti sui ac servatoris nostri unici fide foeliciter hinc migrare idque sensibus integris ac mente bene in Christo composita et sana; mirum enim, quam pluribus hoc hodie apud nos ob capitis immensos dolores negetur.</s>
-					<s xml:lang="la" type="auto">Idem una tecum pro me facere non dedignabitur, ut spero, Gvalterus, iuxta spiritum vere tuus filius, et caeteri deo amabiles, tui symmistae, per te admoniti.</s>
-					<s xml:lang="la" type="auto">Si ab aegritudine, in quam repente lapsus, volente ac iuvante Christo (hoc enim totum in manus eius prompta et benevola mente resigno) reconvaluero, agam literis vobiscum iterum; sin minus, hae erunt forte postremae, utcunque laetius animo hinc evolaturus, postquam de millenis illis, quantum ad me, negotium nunc perfectum, cui apud vos benedicat deus, item universis vobis totique suae apud vos ecclesiae.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
-					<s xml:lang="la" type="auto">Datae Wormatiae ad Rhenum 19. septembris anno etc. 53.</s>
+					<s n="3" xml:lang="la" type="auto">Supervenit postea cum literis ad me tuis ipse Froschoverus, ex quibus atque etiam ex ore eius intellexi eum illum esse, qui in mandatis hoc habeat.</s>
+					<s n="4" xml:lang="la" type="auto">Gavisus sum plurimum; nam eum hominem ob synceritatem animi amare coepi et iam in oculis habere.</s>
+					<s n="5" xml:lang="la" type="auto">Huic igitur qualemqualem praebenti de receptis syngrapham assignabit perferendam ad vos una cum literis Francofurtum cum ad te atque Gvalterum tum ad sanctissimum senatum vestrum praemissis.</s>
+					<s n="6" xml:lang="la" type="auto">Ecce his ex animi mei sententia expeditis altera, postquam Froschoverus a me Francofurtum versus discessit, subito me adversa valetudo, non laetalis, sic ut addere prioribus illis scriptis meis in praesentiarum amplius nihil possim, labente subinde calamo ex tremula manu, nisi hoc unum, quasi repetendo, nam in praemissis Francofurtum eius rei quoque commemini, ut sanctissimum senatum vestrum iubeas meo nomine esse salvum et praeterea securum de transmittendis huc obligatoriis usque ad nundinas vernales supervenientis quinquagesimi quarti anni.</s>
+					<s n="7" xml:lang="la" type="auto">Si inter vivos repertus tum, satis cito, sin defunctus, testamentarii mei (inter quos supra nominatus d. Hieronymus Agninus vel praecipuus) significabunt per literas tibi; tu porro oretenus senatui, quid de illis constituerim, ubi aut quomodo servandae, donec et defuncta mea coniuge ad vos remittantur una cum ultimi mei elegii vel autographa vel authentico saltem exemplari.</s>
+					<s n="8" xml:lang="la" type="auto">Interim, aeternum amande Bullingere, per viscera Iesu Christi, cui fideliter inservis totusque consecratus es, etiam eciamque te oro, ut intercedere pro me apud deum sanctissimis precibus tuis digneris, ut det misero mihi in vera Christi, unigeniti sui ac servatoris nostri unici fide foeliciter hinc migrare idque sensibus integris ac mente bene in Christo composita et sana; mirum enim, quam pluribus hoc hodie apud nos ob capitis immensos dolores negetur.</s>
+					<s n="9" xml:lang="la" type="auto">Idem una tecum pro me facere non dedignabitur, ut spero, Gvalterus, iuxta spiritum vere tuus filius, et caeteri deo amabiles, tui symmistae, per te admoniti.</s>
+					<s n="10" xml:lang="la" type="auto">Si ab aegritudine, in quam repente lapsus, volente ac iuvante Christo (hoc enim totum in manus eius prompta et benevola mente resigno) reconvaluero, agam literis vobiscum iterum; sin minus, hae erunt forte postremae, utcunque laetius animo hinc evolaturus, postquam de millenis illis, quantum ad me, negotium nunc perfectum, cui apud vos benedicat deus, item universis vobis totique suae apud vos ecclesiae.</s>
+					<s n="11" xml:lang="la" type="manual">Amen.</s>
+					<s n="12" xml:lang="la" type="auto">Datae Wormatiae ad Rhenum 19. septembris anno etc. 53.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pietatis tuae amantissimus doctissimusque Gvolphangus Waidnerus.</s>
+					<s n="13" xml:lang="la" type="auto">Pietatis tuae amantissimus doctissimusque Gvolphangus Waidnerus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro d. d. Heinrycho Bullingero, sanctissimae ecclesiae Christi Tigurinae deo amabili episcopo, domino suo colendissimo et in divinis paedagogo, domino<note type="margin">a.R.: viell. ymo?</note> patri aeternum amando.</s>
+					<s n="14" xml:lang="la" type="auto">Clarissimo viro d. d. Heinrycho Bullingero, sanctissimae ecclesiae Christi Tigurinae deo amabili episcopo, domino suo colendissimo et in divinis paedagogo, domino<note type="margin">a.R.: viell. ymo?</note> patri aeternum amando.</s>
 				</p>
 				<p>
 					<note>[Darunter von Bull. s Hand:]</note>
-					<s xml:lang="la" type="auto">In morbo scriptae, cum forte putaret se moriturum et has fore ultimas.</s>
-					<s xml:lang="la" type="auto">Septembri 1553.</s>
+					<s n="15" xml:lang="la" type="auto">In morbo scriptae, cum forte putaret se moriturum et has fore ultimas.</s>
+					<s n="16" xml:lang="la" type="auto">Septembri 1553.</s>
 				</p>
 			</div>
 		</body>

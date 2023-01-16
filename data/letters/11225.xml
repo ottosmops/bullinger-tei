@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2000"/>
-				<idno type="ISBN">ISBN 3-290-17211-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1182</idno>
+				<idno subtype="ISBN">ISBN 3-290-17211-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1182</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 8</title>
+				<title subtype="publication">HBBW VIII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">8</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 346,107</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 346,107</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,11 +50,11 @@
 						<summary>
 							<p xml:id="regest1">
 								Hat brieflich vernommen, die Konkordie werde behindert, und erkundigt sich, ob wohl die Zürcher gemeint
-								seien; weiß nur, daß sie die <placeName ref="1049">Straßburger</placeName> nicht zufriedengestellt
-								haben. Der seit fünf Jahren in <placeName ref="688">Meersburg</placeName> inhaftierte [Geistliche]
+								seien; weiß nur, daß sie die <placeName ref="place1049">Straßburger</placeName> nicht zufriedengestellt
+								haben. Der seit fünf Jahren in <placeName ref="place688">Meersburg</placeName> inhaftierte [Geistliche]
 								hat sich unter dem Einfluß seiner Verwandten von seiner Frau losgesagt und auf die Messe geschworen.
-								<persName ref="1562">Joachim</persName> [<persName ref="1562">Maler</persName>] wird
-								berichten, wie es in <placeName ref="565">Konstanz</placeName> steht.
+								Joachim [<persName ref="person1562">Maler</persName>] wird
+								berichten, wie es in <placeName ref="place565">Konstanz</placeName> steht.
 							</p>
 						</summary>
 					</msContents>
@@ -61,45 +64,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11225">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<place source="#257" cert="low">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person4079" cert="high"/>
+					<place source="place257" cert="low"/>
 					<date when="1538-09-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11226"/>
-					<ref type="prev_chronologically" target="files.xml#11224"/>
-					<ref type="next_correspondence" target="files.xml#11240"/>
-					<ref type="prev_correspondence" target="files.xml#11216"/>
-					<ref type="next_correspondence_request" target="files.xml#11240"/>
-					<ref type="prev_correspondence_request" target="files.xml#11216"/>
+					<ref type="next_chronologically" target="file11226"/>
+					<ref type="prev_chronologically" target="file11224"/>
+					<ref type="next_correspondence" target="file11240"/>
+					<ref type="prev_correspondence" target="file11216"/>
+					<ref type="next_correspondence_request" target="file11240"/>
+					<ref type="prev_correspondence_request" target="file11216"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10990"/>
-					<ref type="next_same_sender" target="files.xml#11240"/>
-					<ref type="prev_same_sender" target="files.xml#11216"/>
-					<ref type="next_same_addressee" target="files.xml#11230"/>
-					<ref type="prev_same_addressee" target="files.xml#11223"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11240"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11216"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11230"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11223"/>
+					<ref type="prev_correspondence_reaction" target="file10990"/>
+					<ref type="next_same_sender" target="file11240"/>
+					<ref type="prev_same_sender" target="file11216"/>
+					<ref type="next_same_addressee" target="file11230"/>
+					<ref type="prev_same_addressee" target="file11223"/>
+					<ref type="next_with_sender_as_addressee" target="file11240"/>
+					<ref type="prev_with_sender_as_addressee" target="file11216"/>
+					<ref type="next_with_addressee_as_sender" target="file11230"/>
+					<ref type="prev_with_addressee_as_sender" target="file11223"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,31 +124,31 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salus et pax Christi.</s>
+					<s n="1" xml:lang="la" type="auto">Salus et pax Christi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Scribit ad me quidam bonus vir<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note> iterum atque iterum turbari concordiam; quis culpam aut causam praestet huius periculosae difficultatis, unum deum nosse.</s>
-					<s xml:lang="la" type="auto">Quoniam vero iam diu apud nos nihil auditum est de hoc negotio, miror, an fortassis vos Tigurinos notare voluerit.</s>
-					<s xml:lang="la" type="auto">Unum hoc scio, <placeName ref="1049">Argentoratensibus</placeName> per vos non satisfieri.</s>
+					<s n="2" xml:lang="la" type="auto">Scribit ad me quidam bonus vir<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note> iterum atque iterum turbari concordiam; quis culpam aut causam praestet huius periculosae difficultatis, unum deum nosse.</s>
+					<s n="3" xml:lang="la" type="auto">Quoniam vero iam diu apud nos nihil auditum est de hoc negotio, miror, an fortassis vos Tigurinos notare voluerit.</s>
+					<s n="4" xml:lang="la" type="auto">Unum hoc scio, <placeName ref="place1049">Argentoratensibus</placeName> per vos non satisfieri.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Deinde captivus ille<note xml:id="fn2" type="footnote" n="2">Nicht namentlich bekannt; vgl. HBBW V, S. 223, 32f mit Anm. 16; VI 55, 14-16.</note>, qui quinquennio Merspurgi fuit in carcere, emissus est, sed impiissimis conditionibus, in quas cognatorum et consanguiniorum blanditiis victus consensit.</s>
-					<s xml:lang="la" type="auto">Abiuravit enim uxorem et ab ea papistico more absolutus est, deinde vero in missam iuravit datis sponsoribus, qui ducentos aureos pendant, nisi stet sententiae.</s>
-					<s xml:lang="la" type="auto">Quam horrendum est, mi Bullingere, ferre crucem<note xml:id="fn3" type="footnote" n="3">Vgl. Mt 10, 38 par und 16, 24 par.</note> tanto tempore fortiter (nam primo mense sic poterat liberari) et tandem bonis verbis misere admodum et periculose deiici!</s>
+					<s n="5" xml:lang="la" type="auto">Deinde captivus ille<note xml:id="fn2" type="footnote" n="2">Nicht namentlich bekannt; vgl. HBBW V, S. 223, 32f mit Anm. 16; VI 55, 14-16.</note>, qui quinquennio Merspurgi fuit in carcere, emissus est, sed impiissimis conditionibus, in quas cognatorum et consanguiniorum blanditiis victus consensit.</s>
+					<s n="6" xml:lang="la" type="auto">Abiuravit enim uxorem et ab ea papistico more absolutus est, deinde vero in missam iuravit datis sponsoribus, qui ducentos aureos pendant, nisi stet sententiae.</s>
+					<s n="7" xml:lang="la" type="auto">Quam horrendum est, mi Bullingere, ferre crucem<note xml:id="fn3" type="footnote" n="3">Vgl. Mt 10, 38 par und 16, 24 par.</note> tanto tempore fortiter (nam primo mense sic poterat liberari) et tandem bonis verbis misere admodum et periculose deiici!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ut res apud nos habeant, ex viva epistola <persName ref="1562">Ioachimo</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="1562">Joachim Maler</persName>.</note> nostro sciscitari potes.</s>
+					<s n="8" xml:lang="la" type="auto">Ut res apud nos habeant, ex viva epistola <persName ref="person1562">Ioachimo</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="person1562">Joachim Maler</persName>.</note> nostro sciscitari potes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale cum tota domo et bonis omnibus.</s>
-					<s xml:lang="de" type="auto">28. septembris 1538.</s>
+					<s n="9" xml:lang="la" type="auto">Vale cum tota domo et bonis omnibus.</s>
+					<s n="10" xml:lang="de" type="auto">28. septembris 1538.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Io. <persName ref="263">Zwick</persName>.</s>
+					<s n="11" xml:lang="la" type="auto">Tuus <persName ref="person263">Io. Zwick</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Hainrico Bullingero.</s>
+					<s n="12" xml:lang="la" type="auto">Domino Hainrico Bullingero.</s>
 				</p>
 			</div>
 		</body>

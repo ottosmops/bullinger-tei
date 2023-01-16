@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=920</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=920</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 347,64</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 347,64</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,11 +49,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Empfiehlt einen in <placeName ref="1049">Straßburg</placeName> eingebürgerten Glaubensflüchtling
-								aus <placeName ref="652">Luzern</placeName>. Die
-								<placeName ref="1049">Straßburger</placeName> wissen den Einsatz Bullingers für die Konkordie zu
+								Empfiehlt einen in <placeName ref="place1049">Straßburg</placeName> eingebürgerten Glaubensflüchtling
+								aus <placeName ref="place652">Luzern</placeName>. Die
+								<placeName ref="place1049">Straßburger</placeName> wissen den Einsatz Bullingers für die Konkordie zu
 								schätzen und werden sich bemühen, bei den Wittenbergern und den Fürsten Verständnis für die Zurückhaltung
-								[der <placeName ref="28">Schweizer</placeName>] zu wecken. Grüße.
+								[der <placeName ref="place28">Schweizer</placeName>] zu wecken. Grüße.
 							</p>
 						</summary>
 					</msContents>
@@ -67,45 +70,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10962">
 				<correspAction type="sent">
-					<persName ref="person#578" cert="high">
+					<!--
+					<persName ref="person578" cert="high">
 						<forename cert="high">Wolfgang</forename>
 						<surname cert="high">Capito</surname>
+						<persName type="main" ref="person5565>Köpffel, Wolfgang</addName>
 						<graphic type="portrait" url="portraits/578_Capito_Wolfgang.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Wolfgang_Capito"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118518968"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person578" cert="high"/>
+					<place source="place492" cert="high"/>
 					<date when="1536-11-30" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10963"/>
-					<ref type="prev_chronologically" target="files.xml#10961"/>
-					<ref type="next_correspondence" target="files.xml#11029"/>
-					<ref type="prev_correspondence" target="files.xml#10841"/>
-					<ref type="next_correspondence_request" target="files.xml#11029"/>
-					<ref type="prev_correspondence_request" target="files.xml#10841"/>
+					<ref type="next_chronologically" target="file10963"/>
+					<ref type="prev_chronologically" target="file10961"/>
+					<ref type="next_correspondence" target="file11029"/>
+					<ref type="prev_correspondence" target="file10841"/>
+					<ref type="next_correspondence_request" target="file11029"/>
+					<ref type="prev_correspondence_request" target="file10841"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10757"/>
-					<ref type="next_same_sender" target="files.xml#11029"/>
-					<ref type="prev_same_sender" target="files.xml#10841"/>
-					<ref type="next_same_addressee" target="files.xml#10967"/>
-					<ref type="prev_same_addressee" target="files.xml#10958"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11029"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10841"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10967"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10958"/>
+					<ref type="prev_correspondence_reaction" target="file10757"/>
+					<ref type="next_same_sender" target="file11029"/>
+					<ref type="prev_same_sender" target="file10841"/>
+					<ref type="next_same_addressee" target="file10967"/>
+					<ref type="prev_same_addressee" target="file10958"/>
+					<ref type="next_with_sender_as_addressee" target="file11029"/>
+					<ref type="prev_with_sender_as_addressee" target="file10841"/>
+					<ref type="next_with_addressee_as_sender" target="file10967"/>
+					<ref type="prev_with_addressee_as_sender" target="file10958"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -122,32 +130,32 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Qui has perferendas accepit<note xml:id="fn1" type="footnote" n="1">Der Briefüberbringer ist unbekannt.</note>, nunc est civis Argentinę, vir tui valde observans.</s>
-					<s xml:lang="la" type="auto">Dicit se initio praedicationis <persName ref="265">Zvinglii</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="265">Zwingli</persName> predigte vom 1. Januar 1519 an in Zürich, s. HBRG I 12f.</note>, si recte memini, aut certe sub primum bellum patrium<note xml:id="fn3" type="footnote" n="3">Gemeint ist der Erste Kappelerkrieg vom Juni 1529, s. HBLS IV 455.</note> factum extorrem a <placeName ref="652">Lucerna</placeName> propter causam communem.</s>
-					<s xml:lang="la" type="auto">Eum, oro, juves.</s>
-					<s xml:lang="la" type="auto">A <persName ref="154">Myconio</persName> causam omnem intelliges<note xml:id="fn4" type="footnote" n="4">Ein entsprechendes Schreiben von <persName ref="154">Myconius</persName> ist nicht bekannt.</note>.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Qui has perferendas accepit<note xml:id="fn1" type="footnote" n="1">Der Briefüberbringer ist unbekannt.</note>, nunc est civis Argentinę, vir tui valde observans.</s>
+					<s n="3" xml:lang="la" type="auto">Dicit se initio praedicationis <persName ref="person265">Zvinglii</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="person265">Zwingli</persName> predigte vom 1. Januar 1519 an in Zürich, s. HBRG I 12f.</note>, si recte memini, aut certe sub primum bellum patrium<note xml:id="fn3" type="footnote" n="3">Gemeint ist der Erste Kappelerkrieg vom Juni 1529, s. HBLS IV 455.</note> factum extorrem a <placeName ref="place652">Lucerna</placeName> propter causam communem.</s>
+					<s n="4" xml:lang="la" type="auto">Eum, oro, juves.</s>
+					<s n="5" xml:lang="la" type="auto">A <persName ref="person154">Myconio</persName> causam omnem intelliges<note xml:id="fn4" type="footnote" n="4">Ein entsprechendes Schreiben von <persName ref="person154">Myconius</persName> ist nicht bekannt.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="480"/>Age vero, mi Bullingere, quanto testimonio quidam apud nos prędicant tuam diligentiam et studium in concordia ecclesiarum reparanda!</s>
-					<s xml:lang="la" type="auto">Idem et <persName ref="28">Bucerus</persName> agnoscit.</s>
-					<s xml:lang="la" type="auto">Nos adhuc bona spes tenet.</s>
-					<s xml:lang="la" type="auto">Nam operam dabimus, ut Witenbergenses et principes intelligant, quam plene veritatem agnoscatis et quam minime contemnendus metus ab articulis<note xml:id="fn5" type="footnote" n="5">Gemeint ist die <placeName ref="1205">Wittenberger</placeName> Konkordie (BucerDS VI/I 114-134).</note> recipiendis vos remoretur.</s>
-					<s xml:lang="la" type="auto">Omnia synceriter et ut in oculis domini admoliemur.</s>
+					<s n="6" xml:lang="la" type="auto"><pb type="edition" next="480"/>Age vero, mi Bullingere, quanto testimonio quidam apud nos prędicant tuam diligentiam et studium in concordia ecclesiarum reparanda!</s>
+					<s n="7" xml:lang="la" type="auto">Idem et <persName ref="person28">Bucerus</persName> agnoscit.</s>
+					<s n="8" xml:lang="la" type="auto">Nos adhuc bona spes tenet.</s>
+					<s n="9" xml:lang="la" type="auto">Nam operam dabimus, ut Witenbergenses et principes intelligant, quam plene veritatem agnoscatis et quam minime contemnendus metus ab articulis<note xml:id="fn5" type="footnote" n="5">Gemeint ist die <placeName ref="place1205">Wittenberger</placeName> Konkordie (BucerDS VI/1 114-134).</note> recipiendis vos remoretur.</s>
+					<s n="10" xml:lang="la" type="auto">Omnia synceriter et ut in oculis domini admoliemur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale felicissime.</s>
-					<s xml:lang="la" type="auto">Leonem<note xml:id="fn6" type="footnote" n="6"><persName ref="114">Leo Jud</persName>.</note>, <persName ref="14">Bibliandrum</persName>, <persName ref="165">Pellicanum</persName> nostrum, amicos omnes salvere plurimum opto.</s>
+					<s n="11" xml:lang="la" type="auto">Vale felicissime.</s>
+					<s n="12" xml:lang="la" type="auto">Leonem<note xml:id="fn6" type="footnote" n="6"><persName ref="person114">Leo Jud</persName>.</note>, <persName ref="person14">Bibliandrum</persName>, <persName ref="person165">Pellicanum</persName> nostrum, amicos omnes salvere plurimum opto.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Argen[torati]30. novembris anno 1536.</s>
+					<s n="13" xml:lang="la" type="auto">Argen[torati]30. novembris anno 1536.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">V. <persName ref="40">Capito</persName> tuus.</s>
+					<s n="14" xml:lang="la" type="auto">V. <persName ref="person40">Capito</persName> tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo d. Henrico Bullingero, pastori Tigurino, sibi in domino observando.</s>
+					<s n="15" xml:lang="la" type="auto">Clarissimo d. Henrico Bullingero, pastori Tigurino, sibi in domino observando.</s>
 				</p>
 			</div>
 		</body>

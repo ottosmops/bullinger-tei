@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=636</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=636</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph (Kopie)" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph (Kopie)">E II 346,47</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph (Kopie)">E II 346,47</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -50,9 +53,9 @@
 								Hat sich zum Schreiben entschlossen, obwohl er weiß, daß die [Zürcher] bei den [Wittenbergern] in
 								schlechtem Ruf stehen. Sendet zum Beweis der Schriftgemäßheit ihrer Lehre seinen Kommentar zu vier
 								Paulusbriefen und bekräftigt die Übereinstimmung in den Glaubensgrundsätzen. Grüßt
-								<persName ref="138">Luther</persName>, dessen freundliche Äußerung ihm
-								<persName ref="2012">Gereon</persName> [<persName ref="2012">Sailer</persName>] durch
-								[<persName ref="40">Capito</persName>] übermitteln ließ. Bittet um Antwort.
+								<persName ref="person138">Luther</persName>, dessen freundliche Äußerung ihm
+								Gereon [<persName ref="person2012">Sailer</persName>] durch
+								[<persName ref="person40">Capito</persName>] übermitteln ließ. Bittet um Antwort.
 							</p>
 						</summary>
 					</msContents>
@@ -72,44 +75,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10674">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1535-08-31" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2095" cert="high">
+					<!--
+					<persName ref="person2095" cert="high">
 						<forename cert="high">Philipp</forename>
 						<surname cert="high">Melanchthon</surname>
 						<graphic type="portrait" url="portraits/2095_Melanchthon_Philipp.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Philipp_Melanchthon"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118580485"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11484197"/>
 					</persName>
+					-->
+					<persName ref="person2095" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10675"/>
-					<ref type="prev_chronologically" target="files.xml#10673"/>
-					<ref type="next_correspondence" target="files.xml#10924"/>
+					<ref type="next_chronologically" target="file10675"/>
+					<ref type="prev_chronologically" target="file10673"/>
+					<ref type="next_correspondence" target="file10924"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#10924"/>
+					<ref type="next_correspondence_request" target="file10924"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#11927"/>
+					<ref type="next_correspondence_reaction" target="file11927"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10675"/>
-					<ref type="prev_same_sender" target="files.xml#10662"/>
-					<ref type="next_same_addressee" target="files.xml#11927"/>
+					<ref type="next_same_sender" target="file10675"/>
+					<ref type="prev_same_sender" target="file10662"/>
+					<ref type="next_same_addressee" target="file11927"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10675"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10662"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11927"/>
+					<ref type="next_with_sender_as_addressee" target="file10675"/>
+					<ref type="prev_with_sender_as_addressee" target="file10662"/>
+					<ref type="next_with_addressee_as_sender" target="file11927"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -120,43 +128,43 @@
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
 	<facsimile>
-		<graphic url="10674/Kopie/00 E_II_346__fol__47_r_.tif" n="1"/>
-		<graphic url="10674/Kopie/01 E_II_346__fol__47_v_.tif" n="2"/>
+		<graphic url="10674/Autograph (Kopie)/00 E_II_346__fol__47_r_.tif" n="1"/>
+		<graphic url="10674/Autograph (Kopie)/01 E_II_346__fol__47_v_.tif" n="2"/>
 	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Miraris forsan, doctissime <persName ref="146">Melanchton</persName>, quae mea sit impudentia, qui ausim meis te compellare literis.</s>
-					<s xml:lang="la" type="auto">Verum humanitas illa tua, quam optimi quique in te praedicant, fecit, ut, quod annis ab hinc aliquot tentabam, auderem tandem literas ad te scribere agrestes.</s>
-					<s xml:lang="la" type="auto">Scio, proh dolor, quam male audiamus<pb type="edition" next="336"/> apud vos, verum non deterruit sinistra de nobis concepta suspitio.</s>
-					<s xml:lang="la" type="auto">Nisi enim omnia scripta tua fallant, non poteris non amplecti nos pura charitate, ubi didicens nos recte et secundum scripturas divinas sentire de authoritate scripturae sanctę, de deo trino et uno, de Christo vero deo et homine, de iustificatione et remissione peccatorum, de fide et operibus, de lege et peccato, de sacramentis, ecclesia, ritibus sacris, de provehendis et tradendis literis deque policia sancta.</s>
-					<s xml:lang="la" type="auto">Habes autem specimen harum rerum in hisce commentariis nostris, quos in 4 Pauli epistolas conscripsimus<note xml:id="fn2" type="footnote" n="2">Bullinger, "Commentarii in epistolas Pauli ad Galatas, Ephesios, Philippenses et Colossenses" (HBBibl I 72).</note>, quos et tuae humanitati pro munere offerimus per Jesum Christum dominum et redemptorem nostrum obsecrantes, ut munus hoc qualecunque a latore suscipias, deinde quorumvis delationibus minime credas.</s>
-					<s xml:lang="la" type="auto">Profecto tales non sumus, quales vobis pingimur: dei, sacramentorum, bonarum literarum politicarumque legum et omnium Lutheranorum iurati hostes.</s>
-					<s xml:lang="la" type="auto">Vere enim et ex animo Iesum Christum amamus, religionem veram, literas bonas, honestas et sacras policiamque iustam vel animarum nostrarum dispendio provehere et una<note xml:id="fnb" type="footnote" n="b">una <hi>übergeschrieben.</hi></note> vobiscum confirmare cupimus.</s>
-					<s xml:lang="la" type="auto">Ne igitur dei, religionis, publicae honestatis vestrique amantissimos repudiatis.</s>
-					<s xml:lang="la" type="auto">Nam et ipsi vobiscum eiusdem Christi domini membra ac ministri sumus.</s>
+					<s n="2" xml:lang="la" type="auto">Miraris forsan, doctissime <persName ref="person146">Melanchton</persName>, quae mea sit impudentia, qui ausim meis te compellare literis.</s>
+					<s n="3" xml:lang="la" type="auto">Verum humanitas illa tua, quam optimi quique in te praedicant, fecit, ut, quod annis ab hinc aliquot tentabam, auderem tandem literas ad te scribere agrestes.</s>
+					<s n="4" xml:lang="la" type="auto">Scio, proh dolor, quam male audiamus<pb type="edition" next="336"/> apud vos, verum non deterruit sinistra de nobis concepta suspitio.</s>
+					<s n="5" xml:lang="la" type="auto">Nisi enim omnia scripta tua fallant, non poteris non amplecti nos pura charitate, ubi didicens nos recte et secundum scripturas divinas sentire de authoritate scripturae sanctę, de deo trino et uno, de Christo vero deo et homine, de iustificatione et remissione peccatorum, de fide et operibus, de lege et peccato, de sacramentis, ecclesia, ritibus sacris, de provehendis et tradendis literis deque policia sancta.</s>
+					<s n="6" xml:lang="la" type="auto">Habes autem specimen harum rerum in hisce commentariis nostris, quos in 4 Pauli epistolas conscripsimus<note xml:id="fn2" type="footnote" n="2">Bullinger, "Commentarii in epistolas Pauli ad Galatas, Ephesios, Philippenses et Colossenses" (HBBibl I 72).</note>, quos et tuae humanitati pro munere offerimus per Jesum Christum dominum et redemptorem nostrum obsecrantes, ut munus hoc qualecunque a latore suscipias, deinde quorumvis delationibus minime credas.</s>
+					<s n="7" xml:lang="la" type="auto">Profecto tales non sumus, quales vobis pingimur: dei, sacramentorum, bonarum literarum politicarumque legum et omnium Lutheranorum iurati hostes.</s>
+					<s n="8" xml:lang="la" type="auto">Vere enim et ex animo Iesum Christum amamus, religionem veram, literas bonas, honestas et sacras policiamque iustam vel animarum nostrarum dispendio provehere et una<note xml:id="fnb" type="footnote" n="b">una <hi>übergeschrieben.</hi></note> vobiscum confirmare cupimus.</s>
+					<s n="9" xml:lang="la" type="auto">Ne igitur dei, religionis, publicae honestatis vestrique amantissimos repudiatis.</s>
+					<s n="10" xml:lang="la" type="auto">Nam et ipsi vobiscum eiusdem Christi domini membra ac ministri sumus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salvum volo D. <persName ref="138">Martinum Lutherum</persName>, de quo nobis per internuncios retulit D. Gerion<note xml:id="fn3" type="footnote" n="3"><persName ref="2012">Gereon Sailer</persName>.</note>, <placeName ref="70">Augustanorum</placeName> legatus, quam amice nostri fecerit mentionem<note xml:id="fn4" type="footnote" n="4">Kurz vor der Abfassung dieses Briefes war Bullinger durch <persName ref="40">Capito</persName> über die Verhandlungen <persName ref="2012">Gereon Sailers</persName> in <placeName ref="1205">Wittenberg</placeName> unterrichtet worden, s. unten <ref target="file#10675">Nr. 637</ref>, 7. <persName ref="154">Myconius</persName> teilte Bullinger am 28. September unter Berufung auf <persName ref="40">Capito</persName> mit, <persName ref="138">Luther</persName> habe den Wunsch geäußert, Bullinger möge ihm schreiben; s. unten <ref target="file#10690">Nr. 652</ref>, 15f. Vgl. auch unten <ref target="file#10685">Nr. 647</ref>, 15.</note>.</s>
-					<s xml:lang="la" type="auto">Deus pacis et concordiae det omnibus nobis, ut omni simultate et pravis suspicionibus depositis concordibus votis domini nostri Iesu Christi gloriam contra antichristi pompam provehamus.</s>
-					<s xml:lang="la" type="auto">Fiat, fiat!</s>
+					<s n="11" xml:lang="la" type="auto">Salvum volo D. <persName ref="person138">Martinum Lutherum</persName>, de quo nobis per internuncios retulit D. Gerion<note xml:id="fn3" type="footnote" n="3"><persName ref="person2012">Gereon Sailer</persName>.</note>, <placeName ref="place70">Augustanorum</placeName> legatus, quam amice nostri fecerit mentionem<note xml:id="fn4" type="footnote" n="4">Kurz vor der Abfassung dieses Briefes war Bullinger durch <persName ref="person40">Capito</persName> über die Verhandlungen <persName ref="person2012">Gereon Sailers</persName> in <placeName ref="place1205">Wittenberg</placeName> unterrichtet worden, s. unten <ref target="file10675">Nr. 637</ref>, 7. <persName ref="person154">Myconius</persName> teilte Bullinger am 28. September unter Berufung auf <persName ref="person40">Capito</persName> mit, <persName ref="person138">Luther</persName> habe den Wunsch geäußert, Bullinger möge ihm schreiben; s. unten <ref target="file10690">Nr. 652</ref>, 15f. Vgl. auch unten <ref target="file10685">Nr. 647</ref>, 15.</note>.</s>
+					<s n="12" xml:lang="la" type="auto">Deus pacis et concordiae det omnibus nobis, ut omni simultate et pravis suspicionibus depositis concordibus votis domini nostri Iesu Christi gloriam contra antichristi pompam provehamus.</s>
+					<s n="13" xml:lang="la" type="auto">Fiat, fiat!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, 31. augusti 1535.</s>
+					<s n="14" xml:lang="la" type="auto">Tiguri, 31. augusti 1535.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si quid apud te valet Christi charitas, obsecro rescribe<note xml:id="fn5" type="footnote" n="5">Die (nicht erhaltene) Antwort <persName ref="146">Melanchthons</persName> erfolgte am 1. Juli 1536, vgl. <persName ref="146">Melanchthon</persName> BW, Regesten II 260, <ref target="file#11804">Nr. 1758</ref>.</note>, mi frater in domino plurimum observande.</s>
+					<s n="15" xml:lang="la" type="auto">Si quid apud te valet Christi charitas, obsecro rescribe<note xml:id="fn5" type="footnote" n="5">Die (nicht erhaltene) Antwort <persName ref="person146">Melanchthons</persName> erfolgte am 1. Juli 1536, vgl. <persName ref="person146">Melanchthon</persName> BW, Regesten II 260, <ref target="file11804">Nr. 1758</ref>.</note>, mi frater in domino plurimum observande.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hein. Bull., Tigurinae ecclesiae minister, tuus ex animo.</s>
+					<s n="16" xml:lang="la" type="auto">Hein. Bull., Tigurinae ecclesiae minister, tuus ex animo.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse<note xml:id="fn6" type="footnote" n="6">Vgl. Anm. a.</note> auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino <persName ref="154">Osvaldo Myconio</persName>, fratri charissimo.</s>
+					<s n="17" xml:lang="la" type="auto">Domino <persName ref="person154">Osvaldo Myconio</persName>, fratri charissimo.</s>
 				</p>
 			</div>
 		</body>

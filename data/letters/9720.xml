@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">8302/72</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,251</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,251</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,51 +50,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9720">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date min="1574-06-25" max="1574-09-18" cert="low">25. Juni / 18. September 1574</date>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
+					<date notBefore="1574-06-25" notAfter="1574-09-18" cert="low">25. Juni / 18. September 1574</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1774" cert="high">
+					<!--
+					<persName ref="person1774" cert="high">
 						<forename cert="high">Georg</forename>
 						<surname cert="high">Keller</surname>
-						<addName type="main">Keller (Cellarius), Georg</addName>
+						<persName type="main" ref="person8395>Keller (Cellarius), Georg</addName>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person1774" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9721"/>
-					<ref type="prev_chronologically" target="files.xml#9719"/>
+					<ref type="next_chronologically" target="file9721"/>
+					<ref type="prev_chronologically" target="file9719"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#9149"/>
+					<ref type="prev_correspondence" target="file9149"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#9149"/>
+					<ref type="prev_correspondence_request" target="file9149"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1969"/>
-					<ref type="next_same_sender" target="files.xml#9722"/>
-					<ref type="prev_same_sender" target="files.xml#9719"/>
+					<ref type="prev_correspondence_reaction" target="file1969"/>
+					<ref type="next_same_sender" target="file9722"/>
+					<ref type="prev_same_sender" target="file9719"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#1969"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9722"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9719"/>
+					<ref type="prev_same_addressee" target="file1969"/>
+					<ref type="next_with_sender_as_addressee" target="file9722"/>
+					<ref type="prev_with_sender_as_addressee" target="file9719"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1969"/>
-					<ref type="child" target="files.xml#798"/>
+					<ref type="prev_with_addressee_as_sender" target="file1969"/>
+					<ref type="child" target="file798"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -108,35 +109,35 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Dic, mi domine affinis, amplissimo viro d. Bellevreio<note type="margin">a.R.: Jean de Bellièvre</note>, regis Francorum legato et oratori, licet nuper ipsum adire certas ob caussas noluerim, nihilominus tamen me esse eius amicum et fautorem regni Francorum longe fideliorem et synceriorem, quam sint omnes eius pensionarii.</s>
+					<s n="1" xml:lang="la" type="auto">Dic, mi domine affinis, amplissimo viro d. Bellevreio<note type="margin">a.R.: Jean de Bellièvre</note>, regis Francorum legato et oratori, licet nuper ipsum adire certas ob caussas noluerim, nihilominus tamen me esse eius amicum et fautorem regni Francorum longe fideliorem et synceriorem, quam sint omnes eius pensionarii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vident autem nunc, si volunt patriam suam salvam et incolumem gloriam regni Francici longe omnium regnorum vetustissimi et florentissimi, ne hoc interregno Hispani altius penetrent in regni Francici adyta, quam ullus credat.</s>
-					<s xml:lang="la" type="auto">Habent Hispani in ipsa Gallia amicos non vulgares etiam inter spirituales, quos vocant.</s>
-					<s xml:lang="la" type="auto">Scribitur ex Italia nonnullos Gallos malle Hispanum regem quam ullum alium regii sanguinis principem.</s>
-					<s xml:lang="la" type="auto">Memineris, quid dixerim tibi, quod ipsum quoque Mediolano scribebatur de principe Sabaudo, qui prorsus pendet ab Hispano.</s>
+					<s n="2" xml:lang="la" type="auto">Vident autem nunc, si volunt patriam suam salvam et incolumem gloriam regni Francici longe omnium regnorum vetustissimi et florentissimi, ne hoc interregno Hispani altius penetrent in regni Francici adyta, quam ullus credat.</s>
+					<s n="3" xml:lang="la" type="auto">Habent Hispani in ipsa Gallia amicos non vulgares etiam inter spirituales, quos vocant.</s>
+					<s n="4" xml:lang="la" type="auto">Scribitur ex Italia nonnullos Gallos malle Hispanum regem quam ullum alium regii sanguinis principem.</s>
+					<s n="5" xml:lang="la" type="auto">Memineris, quid dixerim tibi, quod ipsum quoque Mediolano scribebatur de principe Sabaudo, qui prorsus pendet ab Hispano.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pontifex mallet, si Hispano Galliae corona imponi nequeat, ad hunc deferri multas ob caussas.</s>
-					<s xml:lang="la" type="auto">Ideo vero Immontanis et Quinquepagicis et Hispani et Allobroges se insinuant; cupiunt omnino Gallos eo loco pellere, quem hactenus obtinuere apud Helvetios.</s>
-					<s xml:lang="la" type="auto">In quem finem, oro?</s>
-					<s xml:lang="la" type="auto">Qui hoc non videt, nihil videt.</s>
-					<s xml:lang="la" type="auto">Si itaque Galli sapiunt, sese coniungunt arctius.</s>
-					<s xml:lang="la" type="auto">Regem habent Polonum<note type="margin">a.R.: = Heinrich III. von Frankreich</note> ab eo, quantum intelligo, non abhorrent Hugonothi; obedient et inservient ei fideliter, modo vinctos liberet et religionem ipsis liberam det, quod illi difficile non erit.</s>
+					<s n="6" xml:lang="la" type="auto">Pontifex mallet, si Hispano Galliae corona imponi nequeat, ad hunc deferri multas ob caussas.</s>
+					<s n="7" xml:lang="la" type="auto">Ideo vero Immontanis et Quinquepagicis et Hispani et Allobroges se insinuant; cupiunt omnino Gallos eo loco pellere, quem hactenus obtinuere apud Helvetios.</s>
+					<s n="8" xml:lang="la" type="auto">In quem finem, oro?</s>
+					<s n="9" xml:lang="la" type="auto">Qui hoc non videt, nihil videt.</s>
+					<s n="10" xml:lang="la" type="auto">Si itaque Galli sapiunt, sese coniungunt arctius.</s>
+					<s n="11" xml:lang="la" type="auto">Regem habent Polonum<note type="margin">a.R.: = Heinrich III. von Frankreich</note> ab eo, quantum intelligo, non abhorrent Hugonothi; obedient et inservient ei fideliter, modo vinctos liberet et religionem ipsis liberam det, quod illi difficile non erit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pace illa facta reflorebit Gallia; insidatores et hostes nihil poterunt.</s>
-					<s xml:lang="la" type="auto">Si vero audierit rex potificem Romanum et emissarium eius, cardinalem Lotharingum, mihi credat, brevi videbit, quod deus avertat, regni Francici interitum.</s>
+					<s n="12" xml:lang="la" type="auto">Pace illa facta reflorebit Gallia; insidatores et hostes nihil poterunt.</s>
+					<s n="13" xml:lang="la" type="auto">Si vero audierit rex potificem Romanum et emissarium eius, cardinalem Lotharingum, mihi credat, brevi videbit, quod deus avertat, regni Francici interitum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominus aperiat oculos eorum, quorum interest videre et adiuvante deo regnum conservare, etc.</s>
-					<s xml:lang="la" type="auto">Plura tu addes, quae audisti a me.</s>
+					<s n="14" xml:lang="la" type="auto">Dominus aperiat oculos eorum, quorum interest videre et adiuvante deo regnum conservare, etc.</s>
+					<s n="15" xml:lang="la" type="auto">Plura tu addes, quae audisti a me.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nosti manum.</s>
+					<s n="16" xml:lang="la" type="auto">Nosti manum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Georgio Cellario, doctori medicinae, affini meo dilectissimo.</s>
+					<s n="17" xml:lang="la" type="auto">Clarissimo viro d. Georgio Cellario, doctori medicinae, affini meo dilectissimo.</s>
 				</p>
 			</div>
 		</body>

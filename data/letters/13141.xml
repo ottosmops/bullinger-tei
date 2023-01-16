@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3092</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3092</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357a,876</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357a,876</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -130,40 +133,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13141">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="high">
+					<!--
+					<persName ref="person392" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<date min="1547-12-09" max="1547-12-13" cert="low"/>
+					-->
+					<persName ref="person392" cert="high"/>
+					<date notBefore="1547-12-09" notAfter="1547-12-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13142"/>
-					<ref type="prev_chronologically" target="files.xml#13140"/>
-					<ref type="next_correspondence" target="files.xml#13148"/>
-					<ref type="prev_correspondence" target="files.xml#13138"/>
-					<ref type="next_correspondence_request" target="files.xml#13148"/>
-					<ref type="prev_correspondence_request" target="files.xml#13138"/>
-					<ref type="next_correspondence_reaction" target="files.xml#311"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#13134"/>
-					<ref type="next_same_sender" target="files.xml#13148"/>
-					<ref type="prev_same_sender" target="files.xml#13138"/>
-					<ref type="next_same_addressee" target="files.xml#13145"/>
-					<ref type="prev_same_addressee" target="files.xml#13134"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13148"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13138"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13145"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13134"/>
+					<ref type="next_chronologically" target="file13142"/>
+					<ref type="prev_chronologically" target="file13140"/>
+					<ref type="next_correspondence" target="file13148"/>
+					<ref type="prev_correspondence" target="file13138"/>
+					<ref type="next_correspondence_request" target="file13148"/>
+					<ref type="prev_correspondence_request" target="file13138"/>
+					<ref type="next_correspondence_reaction" target="file311"/>
+					<ref type="prev_correspondence_reaction" target="file13134"/>
+					<ref type="next_same_sender" target="file13148"/>
+					<ref type="prev_same_sender" target="file13138"/>
+					<ref type="next_same_addressee" target="file13145"/>
+					<ref type="prev_same_addressee" target="file13134"/>
+					<ref type="next_with_sender_as_addressee" target="file13148"/>
+					<ref type="prev_with_sender_as_addressee" target="file13138"/>
+					<ref type="next_with_addressee_as_sender" target="file13145"/>
+					<ref type="prev_with_addressee_as_sender" target="file13134"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -173,94 +185,97 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="13141/Autograph/00 E_II_357__fol__876_r_.tif" n="1"/>
+		<graphic url="13141/Autograph/01 E_II_357__fol__876_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="de">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">De literis, quas reddendas curasti, bene est, et gratiam habent quęstor<note xml:id="fn2" type="footnote" n="2">Gabriel Arnold. - Ist hier vielleicht der vermisste Brief gemeint, von dem in <ref target="file#13135">Nr. 3086</ref> die Rede ist?</note> et C[onradus] Z[viccius].</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">De literis, quas reddendas curasti, bene est, et gratiam habent quęstor<note xml:id="fn2" type="footnote" n="2">Gabriel Arnold. - Ist hier vielleicht der vermisste Brief gemeint, von dem in <ref target="file13135">Nr. 3086</ref> die Rede ist?</note> et C[onradus] Z[viccius].</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Vestratibus omnibus regiam istam compaternitatem (ut vocant) valde gratulor, ac dominum omnibus votis precor, ut, quicquid id est, felix sit et faustum.<note xml:id="fn3" type="footnote" n="3">Angesprochen wird hier die geplante Patenschaft der Eidgenossen an der noch bevorstehenden Taufe von Claude, der Tochter des französischen Königs Heinrich II., über die Bullinger Blarer am 25. November (und zwar unmittelbar nachdem die Eidgenossen auf der Tagsatzung zu Baden von der Anfrage des französischen Königs erfahren hatten) mit <ref target="file#13134">Nr. 3085</ref>,<qv>zl17351-7</qv>, erstmals informiert hatte.</note></s>
+					<s n="3" xml:lang="la" type="auto">Vestratibus omnibus regiam istam compaternitatem (ut vocant) valde gratulor, ac dominum omnibus votis precor, ut, quicquid id est, felix sit et faustum.<note xml:id="fn3" type="footnote" n="3">Angesprochen wird hier die geplante Patenschaft der Eidgenossen an der noch bevorstehenden Taufe von Claude, der Tochter des französischen Königs Heinrich II., über die Bullinger Blarer am 25. November (und zwar unmittelbar nachdem die Eidgenossen auf der Tagsatzung zu Baden von der Anfrage des französischen Königs erfahren hatten) mit <ref target="file13134">Nr. 3085</ref>,<qv>zl17351-7</qv>, erstmals informiert hatte.</note></s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Chronica<note xml:id="fn4" type="footnote" n="4">Die "Eidgenössische Chronik" des Johannes Stumpf, von der Christoph Froschauer bereits vor dem 17. Dezember etliche Exemplare nach Augsburg gebracht hatte; s. <ref target="file#13143">Nr. 3094</ref>, <qv>fn17360-3</qv>. - Offensichtlich ist Froschauer damals durch Konstanz gereist und hatte einigen Konstanzern einen Einblick in das neu erschienene Werk gewährt oder gar ein Exemplar davon einem Konstanzer ausgehändigt bzw. geliehen.<zfn>fn17362-7</zfn></note> istic excusa ob iucundissimam illam rerum varietatem et incredibile[m]<note xml:id="fnb" type="footnote" n="b"><hi>Hier und unten ist das Papier, besonders am rechten Rand, des Öfteren beschädigt und die untere rechte Blattecke sogar abgerissen worden.</hi></note> authoris diligentiam supra modum arrident.</s>
-					<s xml:lang="la" type="auto">Quinquepagicis adeo placere potuiss[e] miramur nonnihil, ob quędam liberius scripta, praesertim in religionis negocio.<note xml:id="fn5" type="footnote" n="5">Vgl. <ref target="file#13145">Nr. 3096</ref>,[4], und <qv>fn17364-7</qv> und <qv>fn17364-10</qv>.</note></s>
-					<s xml:lang="la" type="auto">Rogo, ut me certiorem facias, quanti istic emi possit.<note xml:id="fn6" type="footnote" n="6">Froschauer verkaufte ein ungebundenes Exemplar dieser "Chronik" um 3<note type="sup">1/2</note> bis 4 fl., das gebundene um 5<note type="sup">1/2</note> bis 6 fl.; s. <ref target="file#13144">Nr. 3095</ref>,<qv>zl17361-1</qv>; Urs B. <hi>Leu,</hi> Reformation als Auftrag: Der Zürcher Drucker Christoph Froschauer d.Ä. (ca. 1490-1564), in: <abbr>Zwa</abbr> XLV, 2018, 66 und Anm. 285.<zfn>fn17362-6</zfn></note></s>
+					<s n="4" xml:lang="la" type="auto">Chronica<note xml:id="fn4" type="footnote" n="4">Die "Eidgenössische Chronik" des Johannes Stumpf, von der Christoph Froschauer bereits vor dem 17. Dezember etliche Exemplare nach Augsburg gebracht hatte; s. <ref target="file13143">Nr. 3094</ref>, <qv>fn17360-3</qv>. - Offensichtlich ist Froschauer damals durch Konstanz gereist und hatte einigen Konstanzern einen Einblick in das neu erschienene Werk gewährt oder gar ein Exemplar davon einem Konstanzer ausgehändigt bzw. geliehen.<zfn>fn17362-7</zfn></note> istic excusa ob iucundissimam illam rerum varietatem et incredibile[m]<note xml:id="fnb" type="footnote" n="b"><hi>Hier und unten ist das Papier, besonders am rechten Rand, des Öfteren beschädigt und die untere rechte Blattecke sogar abgerissen worden.</hi></note> authoris diligentiam supra modum arrident.</s>
+					<s n="5" xml:lang="la" type="auto">Quinquepagicis adeo placere potuiss[e] miramur nonnihil, ob quędam liberius scripta, praesertim in religionis negocio.<note xml:id="fn5" type="footnote" n="5">Vgl. <ref target="file13145">Nr. 3096</ref>,[4], und <qv>fn17364-7</qv> und <qv>fn17364-10</qv>.</note></s>
+					<s n="6" xml:lang="la" type="auto">Rogo, ut me certiorem facias, quanti istic emi possit.<note xml:id="fn6" type="footnote" n="6">Froschauer verkaufte ein ungebundenes Exemplar dieser "Chronik" um 3<note type="sup">1/2</note> bis 4 fl., das gebundene um 5<note type="sup">1/2</note> bis 6 fl.; s. <ref target="file13144">Nr. 3095</ref>,<qv>zl17361-1</qv>; Urs B. <hi>Leu,</hi> Reformation als Auftrag: Der Zürcher Drucker Christoph Froschauer d.Ä. (ca. 1490-1564), in: <abbr>Zwa</abbr> XLV, 2018, 66 und Anm. 285.<zfn>fn17362-6</zfn></note></s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="de" type="auto">Des ehhandels halber beger ich von euch zuͦ vernemen, diewyl die personen<note xml:id="fn7" type="footnote" n="7">Hans Rutishauser und Dorothea Diethelm gen. Münchin; s. dazu <ref target="file#13137">Nr. 3088</ref>,<qv>zl17355-1</qv>.</note> im Turgöw sesshafft sind, davon ich euch geschriben habe, wie die guͦt tocht[er] vom gesellen, irem vetter, geschwengert seye, ob sich ewere herren zuͦ Zürich iren annemmen und uff fuͤrpitt, etc., mitt inen dispensieren<note xml:id="fn8" type="footnote" n="8">mitt inen dispensieren: ihnen eine Dispens erteilen (würden).</note> und sy zuͦsamen lass[en] oder zuͦ kirchen gon gestatten wurden, und wann<note xml:id="fn9" type="footnote" n="9">wenn.</note> es ewere herren bewilligeten[d], ob sy<note xml:id="fn10" type="footnote" n="10">Die Eheleute.</note> darnach der anderen aidgnossen<note xml:id="fn11" type="footnote" n="11">Die katholischen Orte, die mit Zürich den Thurgau verwalteten.</note> <pb type="edition" next="702"/> halber im Turgöw belyben möchten.</s>
-					<s xml:lang="de" type="auto">Dann<note xml:id="fn12" type="footnote" n="12">Denn.</note>, wa dem allso were, wurdend sy baide hininkeren<note xml:id="fn13" type="footnote" n="13">sich hinein [nach Zürich] begeben.</note> und by eweren herr[en] um bewilligung anhalten, damitt sy<note xml:id="fn14" type="footnote" n="14">Die Frau ("die guͦt tochter").</note> nitt allso zuͦ schand kommen muͤsse, die guͦt tochter!</s>
-					<s xml:lang="de" type="auto">Es sind zway erbare gschlecht und guͦt, lieb leut zuͦ baiden seyten.</s>
-					<s xml:lang="de" type="auto">Bitt euch fleyssig, mag es yenen<note xml:id="fn15" type="footnote" n="15">irgendwie.</note> gesein, das ir michs berichtind.</s>
+					<s n="7" xml:lang="de" type="auto">Des ehhandels halber beger ich von euch zuͦ vernemen, diewyl die personen<note xml:id="fn7" type="footnote" n="7">Hans Rutishauser und Dorothea Diethelm gen. Münchin; s. dazu <ref target="file13137">Nr. 3088</ref>,<qv>zl17355-1</qv>.</note> im Turgöw sesshafft sind, davon ich euch geschriben habe, wie die guͦt tocht[er] vom gesellen, irem vetter, geschwengert seye, ob sich ewere herren zuͦ Zürich iren annemmen und uff fuͤrpitt, etc., mitt inen dispensieren<note xml:id="fn8" type="footnote" n="8">mitt inen dispensieren: ihnen eine Dispens erteilen (würden).</note> und sy zuͦsamen lass[en] oder zuͦ kirchen gon gestatten wurden, und wann<note xml:id="fn9" type="footnote" n="9">wenn.</note> es ewere herren bewilligeten[d], ob sy<note xml:id="fn10" type="footnote" n="10">Die Eheleute.</note> darnach der anderen aidgnossen<note xml:id="fn11" type="footnote" n="11">Die katholischen Orte, die mit Zürich den Thurgau verwalteten.</note> <pb type="edition" next="702"/> halber im Turgöw belyben möchten.</s>
+					<s n="8" xml:lang="de" type="auto">Dann<note xml:id="fn12" type="footnote" n="12">Denn.</note>, wa dem allso were, wurdend sy baide hininkeren<note xml:id="fn13" type="footnote" n="13">sich hinein [nach Zürich] begeben.</note> und by eweren herr[en] um bewilligung anhalten, damitt sy<note xml:id="fn14" type="footnote" n="14">Die Frau ("die guͦt tochter").</note> nitt allso zuͦ schand kommen muͤsse, die guͦt tochter!</s>
+					<s n="9" xml:lang="de" type="auto">Es sind zway erbare gschlecht und guͦt, lieb leut zuͦ baiden seyten.</s>
+					<s n="10" xml:lang="de" type="auto">Bitt euch fleyssig, mag es yenen<note xml:id="fn15" type="footnote" n="15">irgendwie.</note> gesein, das ir michs berichtind.</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Metelli<note xml:id="fn16" type="footnote" n="16">Joachim Mötteli vom Rappenstein. - Siehe dazu schon <ref target="file#13137">Nr. 3088</ref>, <qv>fn17355-6</qv>.</note> caussa talis est, ut ni dignas se pęnas det, nemo non intellecturus sit venalia esse omnia apud hosce iudices.</s>
-					<s xml:lang="la" type="auto">Fecit impius ille maximos sumptus, ut quosdam corrumperet, et successisse sibi, quod conatus est, apud nonnullos haud obscure gloriatur.</s>
-					<s xml:lang="la" type="auto">Sed dominus novit reddere superbis retributionem, etc.<note xml:id="fn17" type="footnote" n="17">Ps 94 (Vulg. 93), 2.</note></s>
+					<s n="11" xml:lang="la" type="auto">Metelli<note xml:id="fn16" type="footnote" n="16">Joachim Mötteli vom Rappenstein. - Siehe dazu schon <ref target="file13137">Nr. 3088</ref>, <qv>fn17355-6</qv>.</note> caussa talis est, ut ni dignas se pęnas det, nemo non intellecturus sit venalia esse omnia apud hosce iudices.</s>
+					<s n="12" xml:lang="la" type="auto">Fecit impius ille maximos sumptus, ut quosdam corrumperet, et successisse sibi, quod conatus est, apud nonnullos haud obscure gloriatur.</s>
+					<s n="13" xml:lang="la" type="auto">Sed dominus novit reddere superbis retributionem, etc.<note xml:id="fn17" type="footnote" n="17">Ps 94 (Vulg. 93), 2.</note></s>
 				</p>
 			</div>
 			<div xml:id="div6" corresp="regest6">
 				<p>
-					<s xml:lang="de" type="auto">Uff mittwoch<note xml:id="fn18" type="footnote" n="18">Siehe dazu oben <qv>fn17362-1</qv>.</note> sind ettlich des raths von Lyndauw hie gewesen.</s>
-					<s xml:lang="de" type="auto">Habend unsern herren anzögt, wie inen auch ain mandat zuͦkommen seye,<note xml:id="fn19" type="footnote" n="19">Das entsprechende kaiserliche, an die Lindauer gerichtete Verbot datiert vom 3. November; s. <hi>Wolfart,</hi> aaO, S. 17, Nr. XXV. Die Lindauer versuchten also tatsächlich lange, wenn auch vergebens, das kaiserliche Verbot zu umgehen oder rückgängig zu machen. - Auch den Überlingern wurden Geschäfte mit Konstanz verboten; s. <ref target="file#13138">Nr. 3089</ref>,<qv>zl17357-1</qv>.<zfn>fn17362-3</zfn></note> etc., ain nachpurlichs mittlyden gebärdet<note xml:id="fn20" type="footnote" n="20">ain mittlyden gebärdet: Anteilnahme bekundet.</note>, und das inen laid seye, das sy sölichs thain<note xml:id="fn21" type="footnote" n="21">tun.</note> muͤssind und sich kainswegs wissind ausszeschlöffen.<note xml:id="fn22" type="footnote" n="22">sich aus der Schlaufe zu ziehen (um dieses Mandat umgehen zu können); s. <abbr>SI</abbr> IX 127.</note></s>
-					<s xml:lang="de" type="auto">Allso dörffen wir den merckt und fuͦr gen Lyndauw auch nitt mehr brauchen!<note xml:id="fn23" type="footnote" n="23">Gemeint ist, dass die Konstanzer auf die durch die Märkte und durch die Schifffahrt generierten Einkommen verzichten müssen. - Die Lindauer durften mit ihren Schiffen nicht mehr unter der Konstanzer Rheinbrücke die rheinabwärts gelegenen Ortschaften bedienen, und so wurde Konstanz um die aus dem Durchfahrtszoll erzeugten Einnahmen gebracht. Im Januar 1548 aber konnten die Lindauer doch noch eine kaiserliche Geheimerklärung erwirken, die es ihnen weiterhin erlaubte, die Schiffsdurchfahrt bei Konstanz zu benutzen; s. Karl <hi>Wolfart,</hi> Kaiser Karl V. und Lindau, in: Schriften des Vereins für Geschichte des Bodensees und seiner Umgebung 39, 1910, S. 9. 18, Nr. XXVII.</note></s>
-					<s xml:lang="de" type="auto">Und suͦcht man ye lenger ye mehr unß ze drengen und nötigen über<note xml:id="fn24" type="footnote" n="24">trotz.</note> unser billich und erbar erpieten<note xml:id="fn25" type="footnote" n="25">Angebot (mit dem die Kontanzer damals versuchten, sich mit Kaiser Karl V. zu versöhnen). - Die Konstanzer warteten damals auf die entsprechende Antwort des Kaisers; s. dazu die in <ref target="file#13137">Nr. 3088</ref>, <qv>fn17355-7</qv>, angeführten Verweise.</note>, daruff man noch alltag bschaid wartet, und wir aber nichts dest weniger mittler zyt überylt<note xml:id="fn26" type="footnote" n="26">bestraft.</note> werden.</s>
-					<s xml:lang="de" type="auto">Man argwonet allerlay practica.<note xml:id="fn27" type="footnote" n="27">Machenschaften (von Seiten der Kaiserlichen).</note></s>
+					<s n="14" xml:lang="de" type="auto">Uff mittwoch<note xml:id="fn18" type="footnote" n="18">Siehe dazu oben <qv>fn17362-1</qv>.</note> sind ettlich des raths von Lyndauw hie gewesen.</s>
+					<s n="15" xml:lang="de" type="auto">Habend unsern herren anzögt, wie inen auch ain mandat zuͦkommen seye,<note xml:id="fn19" type="footnote" n="19">Das entsprechende kaiserliche, an die Lindauer gerichtete Verbot datiert vom 3. November; s. <hi>Wolfart,</hi> aaO, S. 17, Nr. XXV. Die Lindauer versuchten also tatsächlich lange, wenn auch vergebens, das kaiserliche Verbot zu umgehen oder rückgängig zu machen. - Auch den Überlingern wurden Geschäfte mit Konstanz verboten; s. <ref target="file13138">Nr. 3089</ref>,<qv>zl17357-1</qv>.<zfn>fn17362-3</zfn></note> etc., ain nachpurlichs mittlyden gebärdet<note xml:id="fn20" type="footnote" n="20">ain mittlyden gebärdet: Anteilnahme bekundet.</note>, und das inen laid seye, das sy sölichs thain<note xml:id="fn21" type="footnote" n="21">tun.</note> muͤssind und sich kainswegs wissind ausszeschlöffen.<note xml:id="fn22" type="footnote" n="22">sich aus der Schlaufe zu ziehen (um dieses Mandat umgehen zu können); s. <abbr>SI</abbr> IX 127.</note></s>
+					<s n="16" xml:lang="de" type="auto">Allso dörffen wir den merckt und fuͦr gen Lyndauw auch nitt mehr brauchen!<note xml:id="fn23" type="footnote" n="23">Gemeint ist, dass die Konstanzer auf die durch die Märkte und durch die Schifffahrt generierten Einkommen verzichten müssen. - Die Lindauer durften mit ihren Schiffen nicht mehr unter der Konstanzer Rheinbrücke die rheinabwärts gelegenen Ortschaften bedienen, und so wurde Konstanz um die aus dem Durchfahrtszoll erzeugten Einnahmen gebracht. Im Januar 1548 aber konnten die Lindauer doch noch eine kaiserliche Geheimerklärung erwirken, die es ihnen weiterhin erlaubte, die Schiffsdurchfahrt bei Konstanz zu benutzen; s. Karl <hi>Wolfart,</hi> Kaiser Karl V. und Lindau, in: Schriften des Vereins für Geschichte des Bodensees und seiner Umgebung 39, 1910, S. 9. 18, Nr. XXVII.</note></s>
+					<s n="17" xml:lang="de" type="auto">Und suͦcht man ye lenger ye mehr unß ze drengen und nötigen über<note xml:id="fn24" type="footnote" n="24">trotz.</note> unser billich und erbar erpieten<note xml:id="fn25" type="footnote" n="25">Angebot (mit dem die Kontanzer damals versuchten, sich mit Kaiser Karl V. zu versöhnen). - Die Konstanzer warteten damals auf die entsprechende Antwort des Kaisers; s. dazu die in <ref target="file13137">Nr. 3088</ref>, <qv>fn17355-7</qv>, angeführten Verweise.</note>, daruff man noch alltag bschaid wartet, und wir aber nichts dest weniger mittler zyt überylt<note xml:id="fn26" type="footnote" n="26">bestraft.</note> werden.</s>
+					<s n="18" xml:lang="de" type="auto">Man argwonet allerlay practica.<note xml:id="fn27" type="footnote" n="27">Machenschaften (von Seiten der Kaiserlichen).</note></s>
 				</p>
 			</div>
 			<div xml:id="div7" corresp="regest7">
 				<p>
-					<s xml:lang="de" type="auto">Es ist gewiss, das der kaiser<note xml:id="fn28" type="footnote" n="28">Karl V.</note> kurtzverruckter tag so gar<note xml:id="fn29" type="footnote" n="29">sehr.</note> kranck gewesen, das die ärtzt selbs nitt anderst geacht, dann<note xml:id="fn30" type="footnote" n="30">als.</note> das er tod seye, und ime die fäder uff den mund gelegt haben.<note xml:id="fn31" type="footnote" n="31">Vermutlich ein falsches Gerücht. - Feststeht, dass der Kaiser damals einen akuten Gichtanfall hatte; s. Collection des voyages des souverains des Pays-Bas, hg. v. Louis Prosper Gachard, Bd. 2: Itinéraire de Charles-Quint de 1506 à 1531. Journal des voyages de Charles-Quint de 1514 à 1551, hg. v. Jean de Vandenesse, Brüssel 1874, S. 351.<zfn>fn17362-4</zfn></note><pb type="edition" next="703"/></s>
+					<s n="19" xml:lang="de" type="auto">Es ist gewiss, das der kaiser<note xml:id="fn28" type="footnote" n="28">Karl V.</note> kurtzverruckter tag so gar<note xml:id="fn29" type="footnote" n="29">sehr.</note> kranck gewesen, das die ärtzt selbs nitt anderst geacht, dann<note xml:id="fn30" type="footnote" n="30">als.</note> das er tod seye, und ime die fäder uff den mund gelegt haben.<note xml:id="fn31" type="footnote" n="31">Vermutlich ein falsches Gerücht. - Feststeht, dass der Kaiser damals einen akuten Gichtanfall hatte; s. Collection des voyages des souverains des Pays-Bas, hg. v. Louis Prosper Gachard, Bd. 2: Itinéraire de Charles-Quint de 1506 à 1531. Journal des voyages de Charles-Quint de 1514 à 1551, hg. v. Jean de Vandenesse, Brüssel 1874, S. 351.<zfn>fn17362-4</zfn></note><pb type="edition" next="703"/></s>
 				</p>
 			</div>
 			<div xml:id="div8" corresp="regest8">
 				<p>
-					<s xml:lang="de" type="auto">Wir wolten gern wissen, was weyter erfaren were<note xml:id="fn32" type="footnote" n="32">was weyter erfaren were: was vielleicht weiter in Erfahrung gebracht werden konnte.</note> und wie es stönde der red halber, damitt<note xml:id="fn33" type="footnote" n="33">mit (der).</note> der Gessner, kromer<note xml:id="fn34" type="footnote" n="34">Krämer (Händler). - Gemeint ist Andreas Gessner d.Ä., der mit Gotthard Richmut dem Freundeskreis Bullingers angehörte; s. <ref target="file#12935">Nr. 2886</ref>, <qv>fn17153-2</qv>. Demnach steht vermutlich diese Stelle in Verbindung mit dem von Marcell Dietrich von Schankwitz unternommenen und schliesslich gescheiterten Versuch, das Schloss Dübelstein (in der Zürcher Landschaft) von Richmut abzukaufen; s. <ref target="file#12930">Nr. 2881</ref>,<qv>zl17147-1</qv>. - Schankwitz hatte Ende Oktober / Anfang November 1547 bei einem Besuch in Zürich Bullinger persönlich kennengelernt; s. <ref target="file#13122">Nr. 3073</ref>, <qv>fn17339-2</qv>.</note> by euch, des Marcell Dietrich halber angereddt ist worden.</s>
+					<s n="20" xml:lang="de" type="auto">Wir wolten gern wissen, was weyter erfaren were<note xml:id="fn32" type="footnote" n="32">was weyter erfaren were: was vielleicht weiter in Erfahrung gebracht werden konnte.</note> und wie es stönde der red halber, damitt<note xml:id="fn33" type="footnote" n="33">mit (der).</note> der Gessner, kromer<note xml:id="fn34" type="footnote" n="34">Krämer (Händler). - Gemeint ist Andreas Gessner d.Ä., der mit Gotthard Richmut dem Freundeskreis Bullingers angehörte; s. <ref target="file12935">Nr. 2886</ref>, <qv>fn17153-2</qv>. Demnach steht vermutlich diese Stelle in Verbindung mit dem von Marcell Dietrich von Schankwitz unternommenen und schliesslich gescheiterten Versuch, das Schloss Dübelstein (in der Zürcher Landschaft) von Richmut abzukaufen; s. <ref target="file12930">Nr. 2881</ref>,<qv>zl17147-1</qv>. - Schankwitz hatte Ende Oktober / Anfang November 1547 bei einem Besuch in Zürich Bullinger persönlich kennengelernt; s. <ref target="file13122">Nr. 3073</ref>, <qv>fn17339-2</qv>.</note> by euch, des Marcell Dietrich halber angereddt ist worden.</s>
 				</p>
 			</div>
 			<div xml:id="div9" corresp="regest9">
 				<p>
-					<s xml:lang="de" type="auto">Ich muͦsß predigen.</s>
-					<s xml:lang="de" type="auto">Hapt für gut.<note xml:id="fn35" type="footnote" n="35">Gemeint ist: Seid für diesmal zufrieden mit dem, was ich geschrieben habe.</note></s>
-					<s xml:lang="de" type="auto">Ich schick euch ain brieff von ainem vertrauwten<note xml:id="fn36" type="footnote" n="36">Unbekannt.</note> in des alten churfursten von Sachsen<note xml:id="fn37" type="footnote" n="37">Der gefangene Johann Friedrich I.</note> cantzley, der mir ouch daby in ainem ingelegten zeddtel under anderm schrei[bt],<note xml:id="fn38" type="footnote" n="38">Vermutlich waren es diese beiden Dokumente, die Blarer am 26. Dezember zurückverlangte; s. oben <qv>fn17362-1</qv>.</note> das hertzog Moritz hinwegh seye auss Augspurg.<note xml:id="fn39" type="footnote" n="39">Kurfürst Moritz von Sachsen hatte Augsburg am frühen Morgen des 29. November heimlich verlassen; s. <ref target="file#13139">Nr. 3090</ref>,[8]; <abbr>Moritz von Sachsen PK</abbr> III 658, <ref target="file#10957">Nr. 915</ref>.<zfn>fn17362-2</zfn></note></s>
-					<s xml:lang="de" type="auto">Die ursach wisse man nitt aigentlich.<note xml:id="fn40" type="footnote" n="40">genau.</note></s>
-					<s xml:lang="de" type="auto">Er höre aber, das die von Madenburg<note xml:id="fn41" type="footnote" n="41">Magdeburg; vgl. <ref target="file#13139">Nr. 3090</ref>,[8]. - Eine falsche Nachricht. - Andere wiederum hegten den Verdacht, Moritz hätte vor, den vom Kaiser geächteten Magdeburgern zu helfen; s. <abbr>Moritz von Sachsen PK</abbr> III 669f, <ref target="file#10973">Nr. 931</ref>.</note> im in das land sollind fallen, etc.</s>
-					<s xml:lang="de" type="auto">Schribt daby, diser hertzog Mauritz seye so [gan]tz verhasst by mengklichem<note xml:id="fn42" type="footnote" n="42">so manchem.</note>, das er, wa<note xml:id="fn43" type="footnote" n="43">wohin (auch).</note> er reyt oder gang, nitt [d]örffe die augen uffwerffen oder yemand ansechen, etc.</s>
+					<s n="21" xml:lang="de" type="auto">Ich muͦsß predigen.</s>
+					<s n="22" xml:lang="de" type="auto">Hapt für gut.<note xml:id="fn35" type="footnote" n="35">Gemeint ist: Seid für diesmal zufrieden mit dem, was ich geschrieben habe.</note></s>
+					<s n="23" xml:lang="de" type="auto">Ich schick euch ain brieff von ainem vertrauwten<note xml:id="fn36" type="footnote" n="36">Unbekannt.</note> in des alten churfursten von Sachsen<note xml:id="fn37" type="footnote" n="37">Der gefangene Johann Friedrich I.</note> cantzley, der mir ouch daby in ainem ingelegten zeddtel under anderm schrei[bt],<note xml:id="fn38" type="footnote" n="38">Vermutlich waren es diese beiden Dokumente, die Blarer am 26. Dezember zurückverlangte; s. oben <qv>fn17362-1</qv>.</note> das hertzog Moritz hinwegh seye auss Augspurg.<note xml:id="fn39" type="footnote" n="39">Kurfürst Moritz von Sachsen hatte Augsburg am frühen Morgen des 29. November heimlich verlassen; s. <ref target="file13139">Nr. 3090</ref>,[8]; <abbr>Moritz von Sachsen PK</abbr> III 658, <ref target="file10957">Nr. 915</ref>.<zfn>fn17362-2</zfn></note></s>
+					<s n="24" xml:lang="de" type="auto">Die ursach wisse man nitt aigentlich.<note xml:id="fn40" type="footnote" n="40">genau.</note></s>
+					<s n="25" xml:lang="de" type="auto">Er höre aber, das die von Madenburg<note xml:id="fn41" type="footnote" n="41">Magdeburg; vgl. <ref target="file13139">Nr. 3090</ref>,[8]. - Eine falsche Nachricht. - Andere wiederum hegten den Verdacht, Moritz hätte vor, den vom Kaiser geächteten Magdeburgern zu helfen; s. <abbr>Moritz von Sachsen PK</abbr> III 669f, <ref target="file10973">Nr. 931</ref>.</note> im in das land sollind fallen, etc.</s>
+					<s n="26" xml:lang="de" type="auto">Schribt daby, diser hertzog Mauritz seye so [gan]tz verhasst by mengklichem<note xml:id="fn42" type="footnote" n="42">so manchem.</note>, das er, wa<note xml:id="fn43" type="footnote" n="43">wohin (auch).</note> er reyt oder gang, nitt [d]örffe die augen uffwerffen oder yemand ansechen, etc.</s>
 				</p>
 			</div>
 			<div xml:id="div10" corresp="regest10">
 				<p>
-					<s xml:lang="de" type="auto">Salutiert ewer gesind und all guͦt herren und freund.</s>
-					<s xml:lang="de" type="auto">Bittend [gott] hertzlich unnd mitt ernst.</s>
-					<s xml:lang="de" type="auto">Es sind vyl wunderbarlicher<note xml:id="fn44" type="footnote" n="44">seltsame.</note> d[ing] und geschwynd<note xml:id="fn45" type="footnote" n="45">gefährliche.</note> practiken, aber der herr waists zum b[esten ze schicken].<note xml:id="fnc" type="footnote" n="c"><hi>Vgl. <ref target="file#13089">Nr. 3040</ref>,<qv>zl17309-16</qv>; <abbr>HBBW</abbr> XIX 208,50.</hi></note></s>
+					<s n="27" xml:lang="de" type="auto">Salutiert ewer gesind und all guͦt herren und freund.</s>
+					<s n="28" xml:lang="de" type="auto">Bittend [gott] hertzlich unnd mitt ernst.</s>
+					<s n="29" xml:lang="de" type="auto">Es sind vyl wunderbarlicher<note xml:id="fn44" type="footnote" n="44">seltsame.</note> d[ing] und geschwynd<note xml:id="fn45" type="footnote" n="45">gefährliche.</note> practiken, aber der herr waists zum b[esten ze schicken].<note xml:id="fnc" type="footnote" n="c"><hi>Vgl. <ref target="file13089">Nr. 3040</ref>,<qv>zl17309-16</qv>; <abbr>HBBW</abbr> XIX 208,50.</hi></note></s>
 				</p>
 			</div>
 			<div xml:id="div11" corresp="regest11">
 				<p>
-					<s xml:lang="de" type="auto">Man hat des cardinals bischoff von Trient<note xml:id="fn46" type="footnote" n="46">Kardinal Cristoforo Madruzzo, Bischof von Trient. - Er war am 6. November von Augsburg nach Rom aufgebrochen, wo er am 23. November eintraf. Von dort reiste er unmittelbar nach dem 14. Dezember unverrichteter Dinge wieder ab (Papst Paul III. wollte nichts von der vom Kaiser gewünschten Fortführung eines ebenfalls für die deutschen Protestanten offenstehenden Konzils in Trient hören). Am 23. Dezember war er in Trient, am 5. Januar wieder in Augsburg zurück; s. <ref target="file#13123">Nr. 3074</ref>, <qv>fn17340-1</qv>; <abbr>NBD</abbr> X 211, Anm. 2; 220, Nr. 75; 223, Nr. 76; Georg <hi>Beutel,</hi> Über den Ursprung des Augsburger Interims, Dresden 1888, S. 33f.<zfn>fn17362-5</zfn></note> all stunde [erwartet].</s>
-					<s xml:lang="de" type="auto">Der soll den frid oder unfriden bringen zwyschen papst<note xml:id="fn47" type="footnote" n="47">Paul III.</note> [und kayser].<pb type="edition" next="704"/></s>
+					<s n="30" xml:lang="de" type="auto">Man hat des cardinals bischoff von Trient<note xml:id="fn46" type="footnote" n="46">Kardinal Cristoforo Madruzzo, Bischof von Trient. - Er war am 6. November von Augsburg nach Rom aufgebrochen, wo er am 23. November eintraf. Von dort reiste er unmittelbar nach dem 14. Dezember unverrichteter Dinge wieder ab (Papst Paul III. wollte nichts von der vom Kaiser gewünschten Fortführung eines ebenfalls für die deutschen Protestanten offenstehenden Konzils in Trient hören). Am 23. Dezember war er in Trient, am 5. Januar wieder in Augsburg zurück; s. <ref target="file13123">Nr. 3074</ref>, <qv>fn17340-1</qv>; <abbr>NBD</abbr> X 211, Anm. 2; 220, Nr. 75; 223, Nr. 76; Georg <hi>Beutel,</hi> Über den Ursprung des Augsburger Interims, Dresden 1888, S. 33f.<zfn>fn17362-5</zfn></note> all stunde [erwartet].</s>
+					<s n="31" xml:lang="de" type="auto">Der soll den frid oder unfriden bringen zwyschen papst<note xml:id="fn47" type="footnote" n="47">Paul III.</note> [und kayser].<pb type="edition" next="704"/></s>
 				</p>
 			</div>
 			<div xml:id="div12" corresp="regest12">
 				<p>
-					<s xml:lang="de" type="auto">Ach, bittend gott getrulich, das er seinen zorn lenger uffhalten [und] nitt gar<note xml:id="fn48" type="footnote" n="48">völlig.</note> ausschutten welle!</s>
-					<s xml:lang="de" type="auto">Schickend mir die [brief wider].<note xml:id="fn49" type="footnote" n="49">Wohl die oben in Z. <qv>zl17362-4</qv> erwähnten Briefe.</note></s>
-					<s xml:lang="de" type="auto">Di[e]<note xml:id="fnd" type="footnote" n="d"><hi>Auf der vorliegenden letzten Briefzeile sind nur noch ein paar Wörter bzw. Buchstaben lesbar.</hi></note> [m]einen emputtend<note xml:id="fn50" type="footnote" n="50">entbieten.</note> euch [vy]ll l[iebs und g]uͦ[ts...].</s>
-					<s xml:lang="la" type="auto">[...].<note xml:id="fne" type="footnote" n="e"><hi>Vermutlich ohne Unterschrift.</hi></note></s>
+					<s n="32" xml:lang="de" type="auto">Ach, bittend gott getrulich, das er seinen zorn lenger uffhalten [und] nitt gar<note xml:id="fn48" type="footnote" n="48">völlig.</note> ausschutten welle!</s>
+					<s n="33" xml:lang="de" type="auto">Schickend mir die [brief wider].<note xml:id="fn49" type="footnote" n="49">Wohl die oben in Z. <qv>zl17362-4</qv> erwähnten Briefe.</note></s>
+					<s n="34" xml:lang="de" type="auto">Di[e]<note xml:id="fnd" type="footnote" n="d"><hi>Auf der vorliegenden letzten Briefzeile sind nur noch ein paar Wörter bzw. Buchstaben lesbar.</hi></note> [m]einen emputtend<note xml:id="fn50" type="footnote" n="50">entbieten.</note> euch [vy]ll l[iebs und g]uͦ[ts...].</s>
+					<s n="35" xml:lang="la" type="auto">[...].<note xml:id="fne" type="footnote" n="e"><hi>Vermutlich ohne Unterschrift.</hi></note></s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Heinricho Bullingero, d. et amico suo venerando longeque omnium maximo.</s>
+					<s n="36" xml:lang="la" type="auto">D. Heinricho Bullingero, d. et amico suo venerando longeque omnium maximo.</s>
 				</p>
 			</div>
 		</body>

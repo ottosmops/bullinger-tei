@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Hinweis" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E I 13.1, Fasz 1, Nr. 5</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E I 13.1, Fasz 1, Nr. 5</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -33,43 +36,20 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2949">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#63" cert="low">Schulherren</name>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#64" cert="low">Schulmeister</name>
-					</roleName>
+					<personGrp ref="role0" role="Schulherren"/>
+					<orgName ref="org61" role="Grossmünster"/>"
+					<personGrp ref="role0" role="Schulmeister"/>
+					<orgName ref="org61" role="Grossmünster"/>"
 					<date when="1556-06-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#14" cert="high">Bürgermeister</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="high">Räte</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role28" role="Bürgermeister"/>
+					<personGrp ref="role0" role="Räte"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2951"/>
-					<ref type="prev_chronologically" target="files.xml#2948"/>
+					<ref type="next_chronologically" target="file2951"/>
+					<ref type="prev_chronologically" target="file2948"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -77,13 +57,13 @@
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#892"/>
-					<ref type="next_same_addressee" target="files.xml#4643"/>
-					<ref type="prev_same_addressee" target="files.xml#2914"/>
+					<ref type="prev_same_sender" target="file892"/>
+					<ref type="next_same_addressee" target="file4643"/>
+					<ref type="prev_same_addressee" target="file2914"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#892"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4643"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2914"/>
+					<ref type="prev_with_sender_as_addressee" target="file892"/>
+					<ref type="next_with_addressee_as_sender" target="file4643"/>
+					<ref type="prev_with_addressee_as_sender" target="file2914"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

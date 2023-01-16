@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7641/34</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 361,69</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 361,69</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -49,14 +52,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 122,15</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">22. April 1570</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 122,15</idno>
+						<idno subtype="Hinweis">22. April 1570</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -65,53 +71,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8544">
 				<correspAction type="sent">
-					<persName ref="person#1006" cert="low">
+					<!--
+					<persName ref="person1006" cert="low">
 						<forename cert="low">Thomas</forename>
 						<surname cert="low">Erastus</surname>
-						<addName type="main">Erastus (Lüber), Thomas</addName>
+						<persName type="main" ref="person8075>Erastus (Lüber), Thomas</addName>
 						<graphic type="portrait" url="portraits/1006_Erastus_Thomas.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Thomas_Erastus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118685066"/>
 					</persName>
-					<place source="#210" cert="low">
-						<settlement>Heidelberg</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>49.41222 8.71</geo>
-					</place>
+					-->
+					<persName ref="person1006" cert="low"/>
+					<place source="place210" cert="low"/>
 					<date when="1571-04-22" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8545"/>
-					<ref type="prev_chronologically" target="files.xml#8543"/>
-					<ref type="next_correspondence" target="files.xml#8569"/>
-					<ref type="prev_correspondence" target="files.xml#8537"/>
-					<ref type="next_correspondence_request" target="files.xml#8569"/>
-					<ref type="prev_correspondence_request" target="files.xml#8537"/>
-					<ref type="next_correspondence_reaction" target="files.xml#9009"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#8454"/>
-					<ref type="next_same_sender" target="files.xml#8569"/>
-					<ref type="prev_same_sender" target="files.xml#8537"/>
-					<ref type="next_same_addressee" target="files.xml#8549"/>
-					<ref type="prev_same_addressee" target="files.xml#8531"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8569"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#8537"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8549"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8531"/>
-					<ref type="child" target="files.xml#8243"/>
+					<ref type="next_chronologically" target="file8545"/>
+					<ref type="prev_chronologically" target="file8543"/>
+					<ref type="next_correspondence" target="file8569"/>
+					<ref type="prev_correspondence" target="file8537"/>
+					<ref type="next_correspondence_request" target="file8569"/>
+					<ref type="prev_correspondence_request" target="file8537"/>
+					<ref type="next_correspondence_reaction" target="file9009"/>
+					<ref type="prev_correspondence_reaction" target="file8454"/>
+					<ref type="next_same_sender" target="file8569"/>
+					<ref type="prev_same_sender" target="file8537"/>
+					<ref type="next_same_addressee" target="file8549"/>
+					<ref type="prev_same_addressee" target="file8531"/>
+					<ref type="next_with_sender_as_addressee" target="file8569"/>
+					<ref type="prev_with_sender_as_addressee" target="file8537"/>
+					<ref type="next_with_addressee_as_sender" target="file8549"/>
+					<ref type="prev_with_addressee_as_sender" target="file8531"/>
+					<ref type="child" target="file8243"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -129,31 +134,31 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Etsi, quid nunc ad vos scribam, domine Bullingere colendissime, non habeo, non tamen debui non salutare te duobus verbis data oportunitate iuvenis huius Galli, qui hic aliquamdiu valde modeste vixit.</s>
-					<s xml:lang="la" type="auto">Sane non indignum iudico favore bonorum virorum atque ideo eum vobis commendo.</s>
-					<s xml:lang="la" type="auto">In Galliam, puto, proficiscetur istac transiturus.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Etsi, quid nunc ad vos scribam, domine Bullingere colendissime, non habeo, non tamen debui non salutare te duobus verbis data oportunitate iuvenis huius Galli, qui hic aliquamdiu valde modeste vixit.</s>
+					<s n="3" xml:lang="la" type="auto">Sane non indignum iudico favore bonorum virorum atque ideo eum vobis commendo.</s>
+					<s n="4" xml:lang="la" type="auto">In Galliam, puto, proficiscetur istac transiturus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Misi literas per d. Andream Gesnerum et cum his auri ad florenos 100 pro nobili Scherzio agente Scaphusiae apud Ietzlerum.</s>
-					<s xml:lang="la" type="auto">Rogavi te, ut per hominem fidum et certum mitteres atque ad hoc talem conduci velim; libenter enim hos sumtus faciet, qui in loco peregrino, ubi notus est nulli, pecunia eget.</s>
-					<s xml:lang="la" type="auto">Oro autem te plurimum, ut non inique feras, quod te ausus fui onerare; nullus enim tunc occurrebat, cui viderer rectius credere.</s>
-					<s xml:lang="la" type="auto">Cupio etiam per occasionem intelligere, quid hac in re sit actum, utrum pecuniam acceperis et quando apte transmitti potuerit.</s>
+					<s n="5" xml:lang="la" type="auto">Misi literas per d. Andream Gesnerum et cum his auri ad florenos 100 pro nobili Scherzio agente Scaphusiae apud Ietzlerum.</s>
+					<s n="6" xml:lang="la" type="auto">Rogavi te, ut per hominem fidum et certum mitteres atque ad hoc talem conduci velim; libenter enim hos sumtus faciet, qui in loco peregrino, ubi notus est nulli, pecunia eget.</s>
+					<s n="7" xml:lang="la" type="auto">Oro autem te plurimum, ut non inique feras, quod te ausus fui onerare; nullus enim tunc occurrebat, cui viderer rectius credere.</s>
+					<s n="8" xml:lang="la" type="auto">Cupio etiam per occasionem intelligere, quid hac in re sit actum, utrum pecuniam acceperis et quando apte transmitti potuerit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Transilvanum mortuum esse scitis, credo; dabit ea res, metuo, novas turbas.</s>
-					<s xml:lang="la" type="auto">Sic res habent humanae, ut, unde bona speramus, mala plerumque oriantur.</s>
-					<s xml:lang="la" type="auto">Arianismum abnegavisse ferebatur; cuius rei causa in magna omnes eramus expectatione.</s>
-					<s xml:lang="la" type="auto">Deus optimus maximus nos omnes incolumes servet.</s>
-					<s xml:lang="de" type="auto">Amen.</s>
-					<s xml:lang="la" type="auto">Die 22. aprilis.</s>
+					<s n="9" xml:lang="la" type="auto">Transilvanum mortuum esse scitis, credo; dabit ea res, metuo, novas turbas.</s>
+					<s n="10" xml:lang="la" type="auto">Sic res habent humanae, ut, unde bona speramus, mala plerumque oriantur.</s>
+					<s n="11" xml:lang="la" type="auto">Arianismum abnegavisse ferebatur; cuius rei causa in magna omnes eramus expectatione.</s>
+					<s n="12" xml:lang="la" type="auto">Deus optimus maximus nos omnes incolumes servet.</s>
+					<s n="13" xml:lang="de" type="auto">Amen.</s>
+					<s n="14" xml:lang="la" type="auto">Die 22. aprilis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuae praestantiae observantissimus Thomas Erastus.</s>
-					<s xml:lang="la" type="auto">Omnes collegas, viros mihi summa observantia colendissimos, salutari cupio.</s>
+					<s n="15" xml:lang="la" type="auto">Tuae praestantiae observantissimus Thomas Erastus.</s>
+					<s n="16" xml:lang="la" type="auto">Omnes collegas, viros mihi summa observantia colendissimos, salutari cupio.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Viro clarissimo pietate et doctrina d. Henrico Bullingero, Tigurinae ecclesiae ministro primario, domino suo colendissimo.</s>
+					<s n="17" xml:lang="la" type="auto">Viro clarissimo pietate et doctrina d. Henrico Bullingero, Tigurinae ecclesiae ministro primario, domino suo colendissimo.</s>
 				</p>
 			</div>
 		</body>

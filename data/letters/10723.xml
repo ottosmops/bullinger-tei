@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=685</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=685</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 340,71b</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 340,71b</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -56,44 +59,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10723">
 				<correspAction type="sent">
-					<persName ref="person#2982" cert="high">
+					<!--
+					<persName ref="person2982" cert="high">
 						<forename cert="high">Peter</forename>
 						<surname cert="high">Simler</surname>
-						<addName type="main">Simler (Simmler), Peter</addName>
+						<persName type="main" ref="person8443>Simler (Simmler), Peter</addName>
 					</persName>
-					<place source="#242" cert="high">
-						<settlement>Kappel am Albis</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.2288482 8.5251335</geo>
-					</place>
+					-->
+					<persName ref="person2982" cert="high"/>
+					<place source="place242" cert="high"/>
 					<date when="1535-11-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10724"/>
-					<ref type="prev_chronologically" target="files.xml#10722"/>
-					<ref type="next_correspondence" target="files.xml#10726"/>
-					<ref type="prev_correspondence" target="files.xml#10238"/>
-					<ref type="next_correspondence_request" target="files.xml#10726"/>
-					<ref type="prev_correspondence_request" target="files.xml#10238"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11277"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10059"/>
-					<ref type="next_same_sender" target="files.xml#10726"/>
-					<ref type="prev_same_sender" target="files.xml#10238"/>
-					<ref type="next_same_addressee" target="files.xml#10735"/>
-					<ref type="prev_same_addressee" target="files.xml#10706"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10726"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10238"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10735"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10706"/>
+					<ref type="next_chronologically" target="file10724"/>
+					<ref type="prev_chronologically" target="file10722"/>
+					<ref type="next_correspondence" target="file10726"/>
+					<ref type="prev_correspondence" target="file10238"/>
+					<ref type="next_correspondence_request" target="file10726"/>
+					<ref type="prev_correspondence_request" target="file10238"/>
+					<ref type="next_correspondence_reaction" target="file11277"/>
+					<ref type="prev_correspondence_reaction" target="file10059"/>
+					<ref type="next_same_sender" target="file10726"/>
+					<ref type="prev_same_sender" target="file10238"/>
+					<ref type="next_same_addressee" target="file10735"/>
+					<ref type="prev_same_addressee" target="file10706"/>
+					<ref type="next_with_sender_as_addressee" target="file10726"/>
+					<ref type="prev_with_sender_as_addressee" target="file10238"/>
+					<ref type="next_with_addressee_as_sender" target="file10735"/>
+					<ref type="prev_with_addressee_as_sender" target="file10706"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -111,25 +117,25 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Min früntlich diennst zuͦvor.</s>
+					<s n="1" xml:lang="de" type="auto">Min früntlich diennst zuͦvor.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ersamer, getrüwer, lieber her gfatter<note xml:id="fn1" type="footnote" n="1">Zur verwandtschaftlichen Anrede vgl. <hi>Bächtold,</hi> Bullinger vor dem Rat 208f, Anm. 62.</note>, uff üwer beger schick ich üch ein kalb.</s>
-					<s xml:lang="de" type="auto">Han ich by einem nachpuren<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> erfragt.</s>
-					<s xml:lang="de" type="auto">Gott wellt, es wär üch zuͦ diser zit gelegenn.</s>
-					<s xml:lang="de" type="auto">Ich han aber keiner zit künnen faren; dann<note xml:id="fn3" type="footnote" n="3">deshalb (SI XIII 37).</note>, dwyl sy jetz seltzam<note xml:id="fn4" type="footnote" n="4">rar, knapp (SI VII 872f).</note> sinnd, han ichs gschickt, so bald ichs han ankommen<note xml:id="fn5" type="footnote" n="5">sobald ich es bekommen habe.</note>.</s>
-					<s xml:lang="de" type="auto">Darumb nemmend min dienst imbesten an unnd sinnd damit gott bevolhenn.</s>
-					<s xml:lang="de" type="auto">So ich zuͦ üch komm, wil ich sagen, was es kost.</s>
+					<s n="2" xml:lang="de" type="auto">Ersamer, getrüwer, lieber her gfatter<note xml:id="fn1" type="footnote" n="1">Zur verwandtschaftlichen Anrede vgl. <hi>Bächtold,</hi> Bullinger vor dem Rat 208f, Anm. 62.</note>, uff üwer beger schick ich üch ein kalb.</s>
+					<s n="3" xml:lang="de" type="auto">Han ich by einem nachpuren<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> erfragt.</s>
+					<s n="4" xml:lang="de" type="auto">Gott wellt, es wär üch zuͦ diser zit gelegenn.</s>
+					<s n="5" xml:lang="de" type="auto">Ich han aber keiner zit künnen faren; dann<note xml:id="fn3" type="footnote" n="3">deshalb (SI XIII 37).</note>, dwyl sy jetz seltzam<note xml:id="fn4" type="footnote" n="4">rar, knapp (SI VII 872f).</note> sinnd, han ichs gschickt, so bald ichs han ankommen<note xml:id="fn5" type="footnote" n="5">sobald ich es bekommen habe.</note>.</s>
+					<s n="6" xml:lang="de" type="auto">Darumb nemmend min dienst imbesten an unnd sinnd damit gott bevolhenn.</s>
+					<s n="7" xml:lang="de" type="auto">So ich zuͦ üch komm, wil ich sagen, was es kost.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum zinstags vor Cathrinen 1535.</s>
+					<s n="8" xml:lang="de" type="auto">Datum zinstags vor Cathrinen 1535.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="200">Petrus Simler</persName>.</s>
+					<s n="9" xml:lang="la" type="auto"><persName ref="person200">Petrus Simler</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Dem wolgelerten, ersamen heren Meister Heinrich Bullinger, predicant Zürich, minen lieben heren und gfatter.</s>
+					<s n="10" xml:lang="de" type="auto">Dem wolgelerten, ersamen heren Meister Heinrich Bullinger, predicant Zürich, minen lieben heren und gfatter.</s>
 				</p>
 			</div>
 		</body>

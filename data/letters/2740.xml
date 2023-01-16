@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4022</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#167">Genf</settlement>
-						<institution>Bibliothèque publique et universitaire</institution>
-						<idno type="Autograph">Ms. lat. 114, fo 96-97</idno>
-						<repository ref="archive#38">
+						<!--
+						<repository ref="archive38">
 							<name>Genf BPU</name>
 							<ref target="http://institutions.ville-geneve.ch/fr/bge/"/>
 						</repository>
+						<settlement ref="place167">Genf</settlement>
+						<institution>Bibliothèque publique et universitaire</institution>
+						-->
+						<repository ref="archive38"/>
+						<idno subtype="Autograph">Ms. lat. 114, fo 96-97</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -49,13 +52,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 85,178</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 85,178</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -69,52 +75,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2740">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1555-09-30" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#540" cert="high">
+					<!--
+					<persName ref="person540" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Calvin</surname>
 						<graphic type="portrait" url="portraits/540_Calvin_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Calvin"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118518534"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11418245"/>
 					</persName>
-					<place source="#167" cert="high">
-						<settlement>Genf</settlement>
-						<district>Genève</district>
-						<country>Schweiz</country>
-						<geo>46.20222 6.14569</geo>
-					</place>
+					-->
+					<persName ref="person540" cert="high"/>
+					<place source="place167" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2741"/>
-					<ref type="prev_chronologically" target="files.xml#2739"/>
-					<ref type="next_correspondence" target="files.xml#2742"/>
-					<ref type="prev_correspondence" target="files.xml#2737"/>
-					<ref type="next_correspondence_request" target="files.xml#2760"/>
-					<ref type="prev_correspondence_request" target="files.xml#2737"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2742"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2670"/>
-					<ref type="next_same_sender" target="files.xml#2760"/>
-					<ref type="prev_same_sender" target="files.xml#2737"/>
-					<ref type="next_same_addressee" target="files.xml#2742"/>
-					<ref type="prev_same_addressee" target="files.xml#2670"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2760"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2737"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2742"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2670"/>
+					<ref type="next_chronologically" target="file2741"/>
+					<ref type="prev_chronologically" target="file2739"/>
+					<ref type="next_correspondence" target="file2742"/>
+					<ref type="prev_correspondence" target="file2737"/>
+					<ref type="next_correspondence_request" target="file2760"/>
+					<ref type="prev_correspondence_request" target="file2737"/>
+					<ref type="next_correspondence_reaction" target="file2742"/>
+					<ref type="prev_correspondence_reaction" target="file2670"/>
+					<ref type="next_same_sender" target="file2760"/>
+					<ref type="prev_same_sender" target="file2737"/>
+					<ref type="next_same_addressee" target="file2742"/>
+					<ref type="prev_same_addressee" target="file2670"/>
+					<ref type="next_with_sender_as_addressee" target="file2760"/>
+					<ref type="prev_with_sender_as_addressee" target="file2737"/>
+					<ref type="next_with_addressee_as_sender" target="file2742"/>
+					<ref type="prev_with_addressee_as_sender" target="file2670"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -128,22 +133,22 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Accipe, carissime mi frater et domine colendissime, exempla epistolarum harum.</s>
-					<s xml:lang="la" type="auto">Putavi in his esse quae te omnino scire conveniat.</s>
-					<s xml:lang="la" type="auto">Ideo per generum meum describi curavi.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Accipe, carissime mi frater et domine colendissime, exempla epistolarum harum.</s>
+					<s n="3" xml:lang="la" type="auto">Putavi in his esse quae te omnino scire conveniat.</s>
+					<s n="4" xml:lang="la" type="auto">Ideo per generum meum describi curavi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Copiosiores literas adferet d. Thomas Leverus Anglus, cui heri tibi ferendas tradidi.</s>
-					<s xml:lang="la" type="auto">Opportune nunc aderat d. Crispinus noster, cui has dare volui.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">Tiguri, ultima septemb. 1555.</s>
+					<s n="5" xml:lang="la" type="auto">Copiosiores literas adferet d. Thomas Leverus Anglus, cui heri tibi ferendas tradidi.</s>
+					<s n="6" xml:lang="la" type="auto">Opportune nunc aderat d. Crispinus noster, cui has dare volui.</s>
+					<s n="7" xml:lang="la" type="auto">Vale.</s>
+					<s n="8" xml:lang="la" type="auto">Tiguri, ultima septemb. 1555.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus tuus.</s>
+					<s n="9" xml:lang="la" type="auto">Bullingerus tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Ioanni Calvino, Genevensis ecclesiae pastori fidelissimo, domino colendissimo et fratri carissimo suo.</s>
+					<s n="10" xml:lang="la" type="auto">Clarissimo viro d. Ioanni Calvino, Genevensis ecclesiae pastori fidelissimo, domino colendissimo et fratri carissimo suo.</s>
 				</p>
 			</div>
 		</body>

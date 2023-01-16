@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356a,968</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356a,968</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -35,13 +38,16 @@
 				</msDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 65,194</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 65,194</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -55,58 +61,60 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/775">
 				<correspAction type="sent">
-					<persName ref="person#1456" cert="low">
+					<!--
+					<persName ref="person1456" cert="low">
 						<forename cert="low">Wigand</forename>
 						<surname cert="low">Happel</surname>
 						<graphic type="portrait" url="portraits/1456_Happel_Wigand.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Wigand_Happel"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/132234238"/>
 					</persName>
-					<place source="#311" cert="low">
-						<settlement>Marburg</settlement>
-						<district>Hessen</district>
-						<country>Deutschland</country>
-						<geo>50.80904 8.77069</geo>
-					</place>
-					<date when="1549-00-00" cert="low">[Ende 1549]<note type="Datum">s.d. gemäss Simler und Köhler; siehe: «1547 Sept./Okt.» (Kartei StA: 1549); ID nicht gefunden</note></date>
+					-->
+					<persName ref="person1456" cert="low"/>
+					<place source="place311" cert="low"/>
+					<date notBefore="1549-01-01" notAfter="1549-12-12" cert="low">[Ende 1549]<note type="Datum">s.d. gemäss Simler und Köhler; siehe: «1547 Sept./Okt.» (Kartei StA: 1549); ID nicht gefunden</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#393"/>
-					<ref type="prev_chronologically" target="files.xml#766"/>
-					<ref type="next_correspondence" target="files.xml#1023"/>
-					<ref type="prev_correspondence" target="files.xml#58"/>
-					<ref type="next_correspondence_request" target="files.xml#1023"/>
-					<ref type="prev_correspondence_request" target="files.xml#58"/>
+					<ref type="next_chronologically" target="file393"/>
+					<ref type="prev_chronologically" target="file766"/>
+					<ref type="next_correspondence" target="file1023"/>
+					<ref type="prev_correspondence" target="file58"/>
+					<ref type="next_correspondence_request" target="file1023"/>
+					<ref type="prev_correspondence_request" target="file58"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#1023"/>
-					<ref type="prev_same_sender" target="files.xml#58"/>
-					<ref type="next_same_addressee" target="files.xml#397"/>
-					<ref type="prev_same_addressee" target="files.xml#387"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1023"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#58"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#397"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#387"/>
+					<ref type="next_same_sender" target="file1023"/>
+					<ref type="prev_same_sender" target="file58"/>
+					<ref type="next_same_addressee" target="file397"/>
+					<ref type="prev_same_addressee" target="file387"/>
+					<ref type="next_with_sender_as_addressee" target="file1023"/>
+					<ref type="prev_with_sender_as_addressee" target="file58"/>
+					<ref type="next_with_addressee_as_sender" target="file397"/>
+					<ref type="prev_with_addressee_as_sender" target="file387"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="unklar"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="775/Autograph/00 E_II_356__S__968_.tif" n="1"/>
+		<graphic url="775/Autograph/01 E_II_356__S__969_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

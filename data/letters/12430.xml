@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2014"/>
-				<idno type="ISBN">ISBN 978-3-290-17760-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2383</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17760-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2383</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 16</title>
+				<title subtype="publication">HBBW XVI</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">16</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#474">St. Gallen</settlement>
-						<institution>Kantonsbibliothek Vadiana</institution>
-						<idno type="Autograph">Ms 35 (VBS VI),114</idno>
-						<repository ref="archive#78">
+						<!--
+						<repository ref="archive78">
 							<name>St. Gallen KB</name>
 							<ref target="https://www.sg.ch/kultur/kantonsbibliothek-vadiana.html"/>
 						</repository>
+						<settlement ref="place474">St. Gallen</settlement>
+						<institution>Kantonsbibliothek Vadiana</institution>
+						-->
+						<repository ref="archive78"/>
+						<idno subtype="Autograph">Ms 35 (VBS VI),114</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,30 +49,30 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Jakob [Metzler?] hat <persName ref="19">Blarers</persName> Brief
-								[<ref target="file#12428">Nr. 2381</ref>] überbracht, dessen beigelegte, in Eile gelesene Dokumente Bullinger
+								Jakob [Metzler?] hat <persName ref="person19">Blarers</persName> Brief
+								[<ref target="file12428">Nr. 2381</ref>] überbracht, dessen beigelegte, in Eile gelesene Dokumente Bullinger
 								hiermit zurücksendet. Es freut ihn sehr, dass der Wortführer der Protestanten
-								[<persName ref="28">Martin Bucer</persName>] die Heilige Schrift zum Maßstab nehmen will, auch wenn
+								[<persName ref="person28">Martin Bucer</persName>] die Heilige Schrift zum Maßstab nehmen will, auch wenn
 								auf diese Weise nichts erreicht werden kann, zumal die [Katholiken] solch ein Vorgehen ablehnen werden.
 								</p>
 								<p xml:id="regest2">
 								- Vom Kaiser [Karl V.] verspricht Bullinger sich nichts anderes als von [den grausamen Herrschern] Pharao,
 								Sanherib, Domitian und Diokletian. Man muss sich auf schwere Verfolgungen einstellen, in denen der Herr
 								seine Kirche dennoch nicht verlassen wird. Wenn der Kaiser zuerst
-								<placeName ref="577">Köln</placeName> besetzt, wird dies zu einem großen Übel für ganz Deutschland
-								werden, weil dann <placeName ref="577">Köln</placeName> sein Zufluchtsort werden würde, wohin er
+								<placeName ref="place577">Köln</placeName> besetzt, wird dies zu einem großen Übel für ganz Deutschland
+								werden, weil dann <placeName ref="place577">Köln</placeName> sein Zufluchtsort werden würde, wohin er
 								sich nach der Zerstörung vieler Regionen (nicht durch ein rechtmäßiges Heer, sondern durch brandschatzende
 								Scharen) zurückziehen könnte. Wollten die [Protestanten] dies verhindern, müssten sie große Kosten in Kauf
 								nehmen.
 								</p>
 								<p xml:id="regest3">
-								- Bullingers Schrift [„De sacramentis“] soll <persName ref="19">Blarer</persName> jetzt genauer
+								- Bullingers Schrift [„De sacramentis“] soll <persName ref="person19">Blarer</persName> jetzt genauer
 								lesen und Bullinger mitteilen, ob er zu deren Druck rät oder nicht.
 								</p>
 								<p xml:id="regest4">
-								- Aus <placeName ref="11">Frankreich</placeName> hört man, dass König [Franz I.] ein Heer in
-								das <placeName ref="66">Piemont</placeName> schickt, und dass [Antoine] Morelet [du Museau] mit
-								Geld nach <placeName ref="83">Solothurn</placeName> kommen wird.
+								- Aus <placeName ref="place11">Frankreich</placeName> hört man, dass König [Franz I.] ein Heer in
+								das <placeName ref="place66">Piemont</placeName> schickt, und dass [Antoine] Morelet [du Museau] mit
+								Geld nach <placeName ref="place83">Solothurn</placeName> kommen wird.
 							</p>
 						</summary>
 					</msContents>
@@ -89,46 +92,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12430">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="low"/>
 					<date when="1546-03-18" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#392" cert="high">
+					<!--
+					<persName ref="person392" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
+					-->
+					<persName ref="person392" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12431"/>
-					<ref type="prev_chronologically" target="files.xml#12429"/>
-					<ref type="next_correspondence" target="files.xml#12432"/>
-					<ref type="prev_correspondence" target="files.xml#12428"/>
-					<ref type="next_correspondence_request" target="files.xml#12434"/>
-					<ref type="prev_correspondence_request" target="files.xml#12423"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12432"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12428"/>
-					<ref type="next_same_sender" target="files.xml#12434"/>
-					<ref type="prev_same_sender" target="files.xml#12424"/>
-					<ref type="next_same_addressee" target="files.xml#12432"/>
-					<ref type="prev_same_addressee" target="files.xml#12428"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12434"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12424"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12432"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12428"/>
+					<ref type="next_chronologically" target="file12431"/>
+					<ref type="prev_chronologically" target="file12429"/>
+					<ref type="next_correspondence" target="file12432"/>
+					<ref type="prev_correspondence" target="file12428"/>
+					<ref type="next_correspondence_request" target="file12434"/>
+					<ref type="prev_correspondence_request" target="file12423"/>
+					<ref type="next_correspondence_reaction" target="file12432"/>
+					<ref type="prev_correspondence_reaction" target="file12428"/>
+					<ref type="next_same_sender" target="file12434"/>
+					<ref type="prev_same_sender" target="file12424"/>
+					<ref type="next_same_addressee" target="file12432"/>
+					<ref type="prev_same_addressee" target="file12428"/>
+					<ref type="next_with_sender_as_addressee" target="file12434"/>
+					<ref type="prev_with_sender_as_addressee" target="file12424"/>
+					<ref type="next_with_addressee_as_sender" target="file12432"/>
+					<ref type="prev_with_addressee_as_sender" target="file12428"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -143,50 +150,50 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem.</s>
-					<s xml:lang="la" type="auto">Reddidit tuas<note xml:id="fn1" type="footnote" n="1"><persName ref="19">Blarers</persName> Brief vom 15. März (<ref target="file#12428">Nr. 2381</ref>).</note>, frater in domino colendissime, Iacobus<note xml:id="fn2" type="footnote" n="2">Jakob Metzler? - Er beförderte damals auch einen Brief <persName ref="19">Blarers</persName> an Konrad Hofherr; vgl. <ref target="file#12432">Nr. 2385</ref>,21f.</note> hic.</s>
-					<s xml:lang="la" type="auto">Remitto autem schedas communicatas<note xml:id="fn3" type="footnote" n="3">Siehe <ref target="file#12428">Nr. 2381</ref>,28f.</note> cum gratiarum actione.</s>
-					<s xml:lang="la" type="auto">Eas non nisi percurrere propter varia negotia licuit.</s>
-					<s xml:lang="la" type="auto">In iis hoc maxime placuit, quod protestantium colloqutor<note xml:id="fn4" type="footnote" n="4">Bullinger meint hier wohl <persName ref="28">Bucer</persName>, der beim <placeName ref="880">Regensburger</placeName> Religionsgespräch an <persName ref="146">Melanchthons</persName> Stelle für die Protestanten sprach; s. <ref target="file#12418">Nr. 2371</ref>,17f.</note> omnia vult iudicari ad scripturas sanctas, quae omnia pertinentia ad salutem nostram plene contineant.</s>
-					<s xml:lang="la" type="auto">At si nostri in eo perstiterint, nulla erit spes progrediendi; adversarii enim hoc nunquam concedent.</s>
-					<s xml:lang="la" type="auto">Ita rursus et tempus et sumptus frustra consumpta<note xml:id="fnb" type="footnote" n="b">consumpta <hi>am Rande nachgetragen.</hi></note> pereunt.</s>
-					<s xml:lang="la" type="auto">Dominus bene vertat.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem.</s>
+					<s n="2" xml:lang="la" type="auto">Reddidit tuas<note xml:id="fn1" type="footnote" n="1"><persName ref="person19">Blarers</persName> Brief vom 15. März (<ref target="file12428">Nr. 2381</ref>).</note>, frater in domino colendissime, Iacobus<note xml:id="fn2" type="footnote" n="2">Jakob Metzler? - Er beförderte damals auch einen Brief <persName ref="person19">Blarers</persName> an Konrad Hofherr; vgl. <ref target="file12432">Nr. 2385</ref>,21f.</note> hic.</s>
+					<s n="3" xml:lang="la" type="auto">Remitto autem schedas communicatas<note xml:id="fn3" type="footnote" n="3">Siehe <ref target="file12428">Nr. 2381</ref>,28f.</note> cum gratiarum actione.</s>
+					<s n="4" xml:lang="la" type="auto">Eas non nisi percurrere propter varia negotia licuit.</s>
+					<s n="5" xml:lang="la" type="auto">In iis hoc maxime placuit, quod protestantium colloqutor<note xml:id="fn4" type="footnote" n="4">Bullinger meint hier wohl <persName ref="person28">Bucer</persName>, der beim <placeName ref="place880">Regensburger</placeName> Religionsgespräch an <persName ref="person146">Melanchthons</persName> Stelle für die Protestanten sprach; s. <ref target="file12418">Nr. 2371</ref>,17f.</note> omnia vult iudicari ad scripturas sanctas, quae omnia pertinentia ad salutem nostram plene contineant.</s>
+					<s n="6" xml:lang="la" type="auto">At si nostri in eo perstiterint, nulla erit spes progrediendi; adversarii enim hoc nunquam concedent.</s>
+					<s n="7" xml:lang="la" type="auto">Ita rursus et tempus et sumptus frustra consumpta<note xml:id="fnb" type="footnote" n="b">consumpta <hi>am Rande nachgetragen.</hi></note> pereunt.</s>
+					<s n="8" xml:lang="la" type="auto">Dominus bene vertat.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">De caesare<note xml:id="fn5" type="footnote" n="5">Karl V; s. dazu <ref target="file#12428">Nr. 2381</ref>,10-17.</note> mihi aliud nihil polliceor quam de Pharaone<note xml:id="fn6" type="footnote" n="6">Gemeint ist der Pharao, der zur Zeit Moses' das israelitische Volk unterdrückte.</note>, de Sanheribo<note xml:id="fn7" type="footnote" n="7">Sanherib, assyrischer König, der 701 v. Chr. Juda eroberte.</note> et Domiciano<note xml:id="fn8" type="footnote" n="8">Der Christenverfolger Domitian, römischer Kaiser von 81 bis 96.</note> atque Diocletiano<note xml:id="fn9" type="footnote" n="9">Der Christenverfolger Diokletian, römischer Kaiser von 284 bis 305.</note>.</s>
-					<s xml:lang="la" type="auto">Necessarium ergo, ut paremus nos ad persequtiones graves, in quibus tamen dominus certo non deseret suam ecclesiam.<pb type="edition" next="231"/></s>
+					<s n="9" xml:lang="la" type="auto">De caesare<note xml:id="fn5" type="footnote" n="5">Karl V; s. dazu <ref target="file12428">Nr. 2381</ref>,10-17.</note> mihi aliud nihil polliceor quam de Pharaone<note xml:id="fn6" type="footnote" n="6">Gemeint ist der Pharao, der zur Zeit Moses' das israelitische Volk unterdrückte.</note>, de Sanheribo<note xml:id="fn7" type="footnote" n="7">Sanherib, assyrischer König, der 701 v. Chr. Juda eroberte.</note> et Domiciano<note xml:id="fn8" type="footnote" n="8">Der Christenverfolger Domitian, römischer Kaiser von 81 bis 96.</note> atque Diocletiano<note xml:id="fn9" type="footnote" n="9">Der Christenverfolger Diokletian, römischer Kaiser von 284 bis 305.</note>.</s>
+					<s n="10" xml:lang="la" type="auto">Necessarium ergo, ut paremus nos ad persequtiones graves, in quibus tamen dominus certo non deseret suam ecclesiam.<pb type="edition" next="231"/></s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Si caesar prior occuparit urbem <placeName ref="577">Coloniensem</placeName><note xml:id="fn10" type="footnote" n="10">Zur Lage in <placeName ref="577">Köln</placeName> und zu den kaiserlichen Absichten s. zuletzt <ref target="file#12428">Nr. 2381</ref>,10-17.</note>, videbis id magno totius Germaniae malo fieri.</s>
-					<s xml:lang="la" type="auto">Erit hoc ipsi tutum asylum, in quod plurimis regionibus (non iusto exercitu, sed manipulari et praedatoria turma) ferro ignique vastatis sese recipiat.</s>
-					<s xml:lang="la" type="auto">Quod, si urbem tantam obsidere noluerimus, non fiet id citra ingens periculum nostrum.</s>
-					<s xml:lang="la" type="auto">Sed dominus benedictus in saecula docet manus suorum ad proelium et digitos ad bellum<note xml:id="fn11" type="footnote" n="11">Ps 144 (Vulg. 143), 1.</note>.</s>
-					<s xml:lang="la" type="auto">Hic orandus est, ut nostri misertus nos eripiat ex ore leonis<note xml:id="fn12" type="footnote" n="12">Ps 22 (Vulg. 21), 22.</note>.</s>
+					<s n="11" xml:lang="la" type="auto">Si caesar prior occuparit urbem <placeName ref="place577">Coloniensem</placeName><note xml:id="fn10" type="footnote" n="10">Zur Lage in <placeName ref="place577">Köln</placeName> und zu den kaiserlichen Absichten s. zuletzt <ref target="file12428">Nr. 2381</ref>,10-17.</note>, videbis id magno totius Germaniae malo fieri.</s>
+					<s n="12" xml:lang="la" type="auto">Erit hoc ipsi tutum asylum, in quod plurimis regionibus (non iusto exercitu, sed manipulari et praedatoria turma) ferro ignique vastatis sese recipiat.</s>
+					<s n="13" xml:lang="la" type="auto">Quod, si urbem tantam obsidere noluerimus, non fiet id citra ingens periculum nostrum.</s>
+					<s n="14" xml:lang="la" type="auto">Sed dominus benedictus in saecula docet manus suorum ad proelium et digitos ad bellum<note xml:id="fn11" type="footnote" n="11">Ps 144 (Vulg. 143), 1.</note>.</s>
+					<s n="15" xml:lang="la" type="auto">Hic orandus est, ut nostri misertus nos eripiat ex ore leonis<note xml:id="fn12" type="footnote" n="12">Ps 22 (Vulg. 21), 22.</note>.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Non misi tibi librum meum de sacramentis<note xml:id="fn13" type="footnote" n="13">Zu Bullingers Schrift "De sacramentis" s. zuletzt <ref target="file#12428">Nr. 2381</ref>,21-24.</note>, ut iam percurreres, excusum vero diligentius legeres, sed ut ita nunc legeres, quo tuum mihi dares consilium, excudendum traderem an non traderem.</s>
-					<s xml:lang="la" type="auto">Quia ergo legisti, oro tuum adhuc iudicium paucis ad me des, et h[oc]<note xml:id="fnc" type="footnote" n="c"><hi>Textverlust durch Papierverlust.</hi></note> per proximum tabellionem.</s>
-					<s xml:lang="la" type="auto">Si quid est in toto libro, quod displicet, age, fac officium fratris et libere, quod sentis, indica; alioqui nunquam urgere te desinam.</s>
-					<s xml:lang="la" type="auto">Requiro hic a te officium fratris.</s>
+					<s n="16" xml:lang="la" type="auto">Non misi tibi librum meum de sacramentis<note xml:id="fn13" type="footnote" n="13">Zu Bullingers Schrift "De sacramentis" s. zuletzt <ref target="file12428">Nr. 2381</ref>,21-24.</note>, ut iam percurreres, excusum vero diligentius legeres, sed ut ita nunc legeres, quo tuum mihi dares consilium, excudendum traderem an non traderem.</s>
+					<s n="17" xml:lang="la" type="auto">Quia ergo legisti, oro tuum adhuc iudicium paucis ad me des, et h[oc]<note xml:id="fnc" type="footnote" n="c"><hi>Textverlust durch Papierverlust.</hi></note> per proximum tabellionem.</s>
+					<s n="18" xml:lang="la" type="auto">Si quid est in toto libro, quod displicet, age, fac officium fratris et libere, quod sentis, indica; alioqui nunquam urgere te desinam.</s>
+					<s n="19" xml:lang="la" type="auto">Requiro hic a te officium fratris.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Es kumpt ein red uß Franckrych, der koͤnig<note xml:id="fn14" type="footnote" n="14">Franz I.</note> schick ein reysigen züg<note xml:id="fn15" type="footnote" n="15">reysigen züg: Heer.</note> in das Pemondt,<note xml:id="fn16" type="footnote" n="16">Diese Nachricht steht wohl in Zusammenhang mit den Gerüchten über einen erneuten Krieg zwischen <placeName ref="11">Frankreich</placeName> und Karl V., vgl. <ref target="file#12410">Nr. 2363</ref>,9-11; <ref target="file#12426">Nr. 2379</ref>,33.</note> und werde Morellus<note xml:id="fn17" type="footnote" n="17">Antoine Morelet du Museau, Seigneur de la Marche-Ferrière, von März bis November 1546 erneut Gesandter <placeName ref="11">Frankreichs</placeName> in der <placeName ref="196">Schweiz</placeName>; s. Edouard <hi>Rott,</hi> Histoire de la représentation diplomatique de la France auprès des cantons suisses, de leurs alliés et de leurs confédérés, Bd. 1: 1430-1559, Bern 1900, S. 332-334.</note> herus gen Solenthurn<note xml:id="fn18" type="footnote" n="18"><placeName ref="83">Solothurn</placeName>, Sitz des französischen Gesandten in der <placeName ref="196">Schweiz</placeName>.</note> kummen mitt gaͤllt.</s>
-					<s xml:lang="la" type="auto">Quam vere dicatur, ignoro.</s>
+					<s n="20" xml:lang="de" type="auto">Es kumpt ein red uß Franckrych, der koͤnig<note xml:id="fn14" type="footnote" n="14">Franz I.</note> schick ein reysigen züg<note xml:id="fn15" type="footnote" n="15">reysigen züg: Heer.</note> in das Pemondt,<note xml:id="fn16" type="footnote" n="16">Diese Nachricht steht wohl in Zusammenhang mit den Gerüchten über einen erneuten Krieg zwischen <placeName ref="place11">Frankreich</placeName> und Karl V., vgl. <ref target="file12410">Nr. 2363</ref>,9-11; <ref target="file12426">Nr. 2379</ref>,33.</note> und werde Morellus<note xml:id="fn17" type="footnote" n="17">Antoine Morelet du Museau, Seigneur de la Marche-Ferrière, von März bis November 1546 erneut Gesandter <placeName ref="place11">Frankreichs</placeName> in der <placeName ref="place196">Schweiz</placeName>; s. Edouard <hi>Rott,</hi> Histoire de la représentation diplomatique de la France auprès des cantons suisses, de leurs alliés et de leurs confédérés, Bd. 1: 1430-1559, Bern 1900, S. 332-334.</note> herus gen Solenthurn<note xml:id="fn18" type="footnote" n="18"><placeName ref="place83">Solothurn</placeName>, Sitz des französischen Gesandten in der <placeName ref="place196">Schweiz</placeName>.</note> kummen mitt gaͤllt.</s>
+					<s n="21" xml:lang="la" type="auto">Quam vere dicatur, ignoro.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale et rescribe.</s>
-					<s xml:lang="la" type="auto">Martii 18. anno 1546.</s>
-					<s xml:lang="la" type="auto">Bulling. tuus.</s>
+					<s n="22" xml:lang="la" type="auto">Vale et rescribe.</s>
+					<s n="23" xml:lang="la" type="auto">Martii 18. anno 1546.</s>
+					<s n="24" xml:lang="la" type="auto">Bulling. tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Excellentissimo viro d. <persName ref="19">Ambrosio Blaurero</persName>, antistiti Constantiensis ecclesiae, domino et fratri suo incomparabili<note xml:id="fnd" type="footnote" n="d"><hi>Darunter A. <persName ref="19">Blarers</persName> Empfangsvermerk:</hi> 20. martii 1546.</note>.</s>
+					<s n="25" xml:lang="la" type="auto">Excellentissimo viro d. <persName ref="person19">Ambrosio Blaurero</persName>, antistiti Constantiensis ecclesiae, domino et fratri suo incomparabili<note xml:id="fnd" type="footnote" n="d"><hi>Darunter A. <persName ref="person19">Blarers</persName> Empfangsvermerk:</hi> 20. martii 1546.</note>.</s>
 				</p>
 			</div>
 		</body>

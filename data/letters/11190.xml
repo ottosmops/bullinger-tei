@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2000"/>
-				<idno type="ISBN">ISBN 3-290-17211-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1147</idno>
+				<idno subtype="ISBN">ISBN 3-290-17211-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1147</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 8</title>
+				<title subtype="publication">HBBW VIII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">8</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,211</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,211</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,7 +49,7 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Bittet, <persName ref="247">Melchior</persName> [<persName ref="2540">Wirz</persName>] bei
+								Bittet, Melchior [<persName ref="person2540">Wirz</persName>] bei
 								dessen Bruder dafür zu entschuldigen, daß er seine Stelle einem anderen überlassen hat.
 							</p>
 						</summary>
@@ -57,39 +60,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11190">
 				<correspAction type="sent">
-					<persName ref="person#1365" cert="high">
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
-					<date when="1538-07-00" cert="low">wohl nach Mitte Juli 1538</date>
+					-->
+					<persName ref="person1365" cert="high"/>
+					<date notBefore="1538-07-01" notAfter="1538-07-12" cert="low">wohl nach Mitte Juli 1538</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11185"/>
-					<ref type="prev_chronologically" target="files.xml#11189"/>
-					<ref type="next_correspondence" target="files.xml#11218"/>
-					<ref type="prev_correspondence" target="files.xml#11189"/>
-					<ref type="next_correspondence_request" target="files.xml#11218"/>
-					<ref type="prev_correspondence_request" target="files.xml#11189"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11310"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11161"/>
-					<ref type="next_same_sender" target="files.xml#11210"/>
-					<ref type="prev_same_sender" target="files.xml#11189"/>
-					<ref type="next_same_addressee" target="files.xml#11193"/>
-					<ref type="prev_same_addressee" target="files.xml#11181"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11210"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11189"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11193"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11181"/>
+					<ref type="next_chronologically" target="file11185"/>
+					<ref type="prev_chronologically" target="file11189"/>
+					<ref type="next_correspondence" target="file11218"/>
+					<ref type="prev_correspondence" target="file11189"/>
+					<ref type="next_correspondence_request" target="file11218"/>
+					<ref type="prev_correspondence_request" target="file11189"/>
+					<ref type="next_correspondence_reaction" target="file11310"/>
+					<ref type="prev_correspondence_reaction" target="file11161"/>
+					<ref type="next_same_sender" target="file11210"/>
+					<ref type="prev_same_sender" target="file11189"/>
+					<ref type="next_same_addressee" target="file11193"/>
+					<ref type="prev_same_addressee" target="file11181"/>
+					<ref type="next_with_sender_as_addressee" target="file11210"/>
+					<ref type="prev_with_sender_as_addressee" target="file11189"/>
+					<ref type="next_with_addressee_as_sender" target="file11193"/>
+					<ref type="prev_with_addressee_as_sender" target="file11181"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -106,24 +119,24 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Queritur <persName ref="247">Melchior</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="247">Melchior Wirz</persName>.</note>, quod male frater<note xml:id="fn3" type="footnote" n="3">Nicht namentlich bekannt.</note> abdicatam esse se inconsulto conditionem ferat, ac me rogat, ut hoc factum apud fratrem excusans se<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> se <hi>gestrichenes</hi> illum.</note> cum illo reducas in<note xml:id="fnb" type="footnote" n="b">in <hi>korrigiert aus</hi> ing.</note> gratiam.</s>
-					<s xml:lang="la" type="auto">Oro, ut facias diligenter.</s>
-					<s xml:lang="la" type="auto">Ingenue fecit iuvenis; conditionem, qua egere ipse non videbatur, cessit ei, qui<note xml:id="fnc" type="footnote" n="c"><hi>vor</hi> qui <hi>gestrichenes</hi> quod.</note> opus valde habet.</s>
-					<s xml:lang="la" type="auto">Deinde exercitationibus obrutus consulere studiis melius voluit.</s>
-					<s xml:lang="la" type="auto">Est enim discendo tempus hoc oportunissimum, ac certe, si quam discere disciplinam certam vult, debet nunc maxime animum applicare.</s>
-					<s xml:lang="la" type="auto">Haec ut apud fratrem omnia diligenter excuses, oro.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Queritur <persName ref="person247">Melchior</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="person247">Melchior Wirz</persName>.</note>, quod male frater<note xml:id="fn3" type="footnote" n="3">Nicht namentlich bekannt.</note> abdicatam esse se inconsulto conditionem ferat, ac me rogat, ut hoc factum apud fratrem excusans se<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> se <hi>gestrichenes</hi> illum.</note> cum illo reducas in<note xml:id="fnb" type="footnote" n="b">in <hi>korrigiert aus</hi> ing.</note> gratiam.</s>
+					<s n="3" xml:lang="la" type="auto">Oro, ut facias diligenter.</s>
+					<s n="4" xml:lang="la" type="auto">Ingenue fecit iuvenis; conditionem, qua egere ipse non videbatur, cessit ei, qui<note xml:id="fnc" type="footnote" n="c"><hi>vor</hi> qui <hi>gestrichenes</hi> quod.</note> opus valde habet.</s>
+					<s n="5" xml:lang="la" type="auto">Deinde exercitationibus obrutus consulere studiis melius voluit.</s>
+					<s n="6" xml:lang="la" type="auto">Est enim discendo tempus hoc oportunissimum, ac certe, si quam discere disciplinam certam vult, debet nunc maxime animum applicare.</s>
+					<s n="7" xml:lang="la" type="auto">Haec ut apud fratrem omnia diligenter excuses, oro.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino.</s>
+					<s n="8" xml:lang="la" type="auto">Vale in domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="81">Grynęus</persName> tuus in domino frater.</s>
+					<s n="9" xml:lang="la" type="auto"><persName ref="person81">Grynęus</persName> tuus in domino frater.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Bullingero suo, amico.</s>
-					<s xml:lang="la" type="auto">Tygurum.</s>
+					<s n="10" xml:lang="la" type="auto">Bullingero suo, amico.</s>
+					<s n="11" xml:lang="la" type="auto">Tygurum.</s>
 				</p>
 			</div>
 		</body>

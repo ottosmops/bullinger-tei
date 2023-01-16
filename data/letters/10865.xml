@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=826</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=826</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357a,831</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357a,831</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,14 +49,14 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Schrieb in der Sache [<persName ref="514">Johannes</persName>]
-								<persName ref="87">Haabs</persName> nach <placeName ref="1050">Stuttgart</placeName>. Hat
-								Bullingers Änderungswünsche zur [<placeName ref="100">Württemberger</placeName>] Kirchenordnung
+								Schrieb in der Sache [Johannes]
+								<persName ref="person87">Haabs</persName> nach <placeName ref="place1050">Stuttgart</placeName>. Hat
+								Bullingers Änderungswünsche zur [<placeName ref="place100">Württemberger</placeName>] Kirchenordnung
 								erhalten, glaubt aber, da mit der Beseitigung gewisser Stellen schon viel erreicht worden ist; der angefügte
-								Katechismus entspricht dem von <persName ref="514">Brenz</persName> publizierten. Schickt Bullinger
+								Katechismus entspricht dem von <persName ref="person514">Brenz</persName> publizierten. Schickt Bullinger
 								die Almosenordnung. Ist mit Arbeit überhäuft; bittet um Fürbitte. Grüße. Wird
-								[<persName ref="230">Melchior</persName>] <persName ref="230">Volmar</persName>, der in
-								<placeName ref="1198">Wildbad im Schwarzwald</placeName> weilt, Bullingers Sendung übergeben.
+								[Melchior] <persName ref="person230">Volmar</persName>, der in
+								<placeName ref="place1198">Wildbad im Schwarzwald</placeName> weilt, Bullingers Sendung übergeben.
 							</p>
 						</summary>
 					</msContents>
@@ -73,46 +76,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10865">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="high">
+					<!--
+					<persName ref="person392" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#512" cert="high">
-						<settlement>Tübingen</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>48.52266 9.05222</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="high"/>
+					<place source="place512" cert="high"/>
 					<date when="1536-05-21" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10866"/>
-					<ref type="prev_chronologically" target="files.xml#10864"/>
-					<ref type="next_correspondence" target="files.xml#10899"/>
-					<ref type="prev_correspondence" target="files.xml#10802"/>
-					<ref type="next_correspondence_request" target="files.xml#10899"/>
-					<ref type="prev_correspondence_request" target="files.xml#10802"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11276"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10498"/>
-					<ref type="next_same_sender" target="files.xml#10899"/>
-					<ref type="prev_same_sender" target="files.xml#10802"/>
-					<ref type="next_same_addressee" target="files.xml#10867"/>
-					<ref type="prev_same_addressee" target="files.xml#10864"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10899"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10802"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10867"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10864"/>
+					<ref type="next_chronologically" target="file10866"/>
+					<ref type="prev_chronologically" target="file10864"/>
+					<ref type="next_correspondence" target="file10899"/>
+					<ref type="prev_correspondence" target="file10802"/>
+					<ref type="next_correspondence_request" target="file10899"/>
+					<ref type="prev_correspondence_request" target="file10802"/>
+					<ref type="next_correspondence_reaction" target="file11276"/>
+					<ref type="prev_correspondence_reaction" target="file10498"/>
+					<ref type="next_same_sender" target="file10899"/>
+					<ref type="prev_same_sender" target="file10802"/>
+					<ref type="next_same_addressee" target="file10867"/>
+					<ref type="prev_same_addressee" target="file10864"/>
+					<ref type="next_with_sender_as_addressee" target="file10899"/>
+					<ref type="prev_with_sender_as_addressee" target="file10802"/>
+					<ref type="next_with_addressee_as_sender" target="file10867"/>
+					<ref type="prev_with_addressee_as_sender" target="file10864"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -122,43 +129,46 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="10865/Autograph/00 E_II_357__fol__831_r_.tif" n="1"/>
+		<graphic url="10865/Autograph/01 E_II_357__fol__831_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salve, mi venerande Bullingere.</s>
+					<s n="1" xml:lang="la" type="auto">Salve, mi venerande Bullingere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Longas literas Habii vestri caussa <placeName ref="1050">Stutgardiam</placeName> scripsi<note xml:id="fn2" type="footnote" n="2">Das Schreiben ist nicht erhalten. -Am 8. Januar 1536 war <persName ref="87">Johannes Haab</persName> vom Zürcher Rat an den Hof nach <placeName ref="1050">Stuttgart</placeName> geschickt worden, um - nach dem Tod des <persName ref="991">Ulrich von Grafeneck</persName> - Erbschaftsansprüche der in Zürich lebenden Verwandten <persName ref="2144">Margareta</persName> von Grafeneck, Ehefrau von Pfarrer <persName ref="2143">Hans Seebach</persName> in <placeName ref="576">Kyburg</placeName>, und der Familie der verstorbenen <persName ref="990">Kunigunde von Grafeneck</persName> geltend zu machen (s. Zürich StA, B IV 7, 1r.), nachdem frühere Versuche nichts gefruchtet hatten (s. ebd., B IV 7, 138r., 156r. und A 165. 1, <ref target="file#10255">Nr. 224</ref>; vgl. auch B IV 8, 116r.). <persName ref="19">Blarers</persName> Vorstoß läßt vermuten, daß auch Haabs Mission nicht den gewünschten Erfolg gehabt hatte.</note>, si quo modo caussae illius adesse possim, quominus est, ut ad te pluribus.</s>
+					<s n="2" xml:lang="la" type="auto">Longas literas <persName ref="person87">Habii</persName> vestri caussa <placeName ref="place1050">Stutgardiam</placeName> scripsi<note xml:id="fn2" type="footnote" n="2">Das Schreiben ist nicht erhalten. -Am 8. Januar 1536 war <persName ref="person87">Johannes Haab</persName> vom Zürcher Rat an den Hof nach <placeName ref="place1050">Stuttgart</placeName> geschickt worden, um - nach dem Tod des <persName ref="person991">Ulrich von Grafeneck</persName> - Erbschaftsansprüche der in Zürich lebenden Verwandten Margareta von Grafeneck, Ehefrau von Pfarrer <persName ref="person2143">Hans Seebach</persName> in <placeName ref="place576">Kyburg</placeName>, und der Familie der verstorbenen <persName ref="person990">Kunigunde von Grafeneck</persName> geltend zu machen (s. Zürich StA, B IV 7, 1r.), nachdem frühere Versuche nichts gefruchtet hatten (s. ebd., B IV 7, 138r., 156r. und A 165. 1, <ref target="file10255">Nr. 224</ref>; vgl. auch B IV 8, 116r.). <persName ref="person19">Blarers</persName> Vorstoß läßt vermuten, daß auch Haabs Mission nicht den gewünschten Erfolg gehabt hatte.</note>, si quo modo caussae illius adesse possim, quominus est, ut ad te pluribus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quę in Wirtempergensium ecclesiarum ritibus desideras quęque mutata cupis, plane grato animo accepi<note xml:id="fn3" type="footnote" n="3">Die Stellungnahme Bullingers - <persName ref="19">Blarer</persName> hatte ihm am 21. März ein Exemplar der [<placeName ref="100">Württemberger</placeName>] Kirchenordnung zugeschickt (s. oben <ref target="file#10802">Nr. 764</ref>, 2) - ist nicht erhalten (vgl. auch unten <ref target="file#10880">Nr. 841</ref>, 53-61).</note>; verum si, quo loco sim, diligentius tecum perpendas, facile intelliges, quo sint omnia facta consilio quove authore.</s>
-					<s xml:lang="la" type="auto">Magnum videbar mihi impetrasse, postquam mea admonitione resecta sunt quędam longe iis superstitiosiora, quę nonnulli etiam extra Schnepfium affinxerant<note xml:id="fn4" type="footnote" n="4"><persName ref="19">Blarer</persName> denkt wohl v. a. an <persName ref="514">Johannes Brenz</persName> (vgl. <persName ref="19">Blarer</persName> BW I 788f; zu Brenz' Anteil vgl. Julius <hi>Hartmann,</hi> <persName ref="514">Johannes Brenz</persName>. Leben und ausgewählte Schriften, Elberfeld 1862. - Leben und ausgewählte Schriften der Vater und Begründer der lutherischen Kirche VI, S. 154-156.</note>.</s>
-					<s xml:lang="la" type="auto">Speramus domini beneficio solidiora aliquando daturos principes.</s>
-					<s xml:lang="la" type="auto">Minor catechismus plane is est, quem <persName ref="514">Brentius</persName> edidit<note xml:id="fn5" type="footnote" n="5">Im Anhang der Kirchenordnung ist "Em kleiner Catechismus" von Brenz aus dem Jahre 1535 abgedruckt; vgl. dazu Christoph <hi>Weismann,</hi> Die Katechismen des <persName ref="514">Johannes Brenz</persName>, I: Die Entstehungs-, Text- und Wirkungsgeschichte, Berlin/New York 1990. - Spätmittelalter und Reformation, Texte und Untersuchungen 21, S. 244-246. 251f. 260-262.</note>, nec verbum mutatum, nisi quod ad calcem<note xml:id="fn6" type="footnote" n="6">Vgl. Otto 67, Nr. 308.</note> additę sunt preculae quedam, ne vacuę essent paginę.</s>
-					<s xml:lang="la" type="auto">Alioqui noveram, quam variarent hic veteres.</s>
+					<s n="3" xml:lang="la" type="auto">Quę in Wirtempergensium ecclesiarum ritibus desideras quęque mutata cupis, plane grato animo accepi<note xml:id="fn3" type="footnote" n="3">Die Stellungnahme Bullingers - <persName ref="person19">Blarer</persName> hatte ihm am 21. März ein Exemplar der [<placeName ref="place100">Württemberger</placeName>] Kirchenordnung zugeschickt (s. oben <ref target="file10802">Nr. 764</ref>, 2) - ist nicht erhalten (vgl. auch unten <ref target="file10880">Nr. 841</ref>, 53-61).</note>; verum si, quo loco sim, diligentius tecum perpendas, facile intelliges, quo sint omnia facta consilio quove authore.</s>
+					<s n="4" xml:lang="la" type="auto">Magnum videbar mihi impetrasse, postquam mea admonitione resecta sunt quędam longe iis superstitiosiora, quę nonnulli etiam extra Schnepfium affinxerant<note xml:id="fn4" type="footnote" n="4"><persName ref="person19">Blarer</persName> denkt wohl v. a. an <persName ref="person514">Johannes Brenz</persName> (vgl. <persName ref="person19">Blarer</persName> BW I 788f; zu Brenz' Anteil vgl. Julius <hi>Hartmann,</hi> <persName ref="person514">Johannes Brenz</persName>. Leben und ausgewählte Schriften, Elberfeld 1862. - Leben und ausgewählte Schriften der Vater und Begründer der lutherischen Kirche VI, S. 154-156.</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Speramus domini beneficio solidiora aliquando daturos principes.</s>
+					<s n="6" xml:lang="la" type="auto">Minor catechismus plane is est, quem <persName ref="person514">Brentius</persName> edidit<note xml:id="fn5" type="footnote" n="5">Im Anhang der Kirchenordnung ist "Em kleiner Catechismus" von Brenz aus dem Jahre 1535 abgedruckt; vgl. dazu Christoph <hi>Weismann,</hi> Die Katechismen des <persName ref="person514">Johannes Brenz</persName>, I: Die Entstehungs-, Text- und Wirkungsgeschichte, Berlin/New York 1990. - Spätmittelalter und Reformation, Texte und Untersuchungen 21, S. 244-246. 251f. 260-262.</note>, nec verbum mutatum, nisi quod ad calcem<note xml:id="fn6" type="footnote" n="6">Vgl. Otto 67, Nr. 308.</note> additę sunt preculae quedam, ne vacuę essent paginę.</s>
+					<s n="7" xml:lang="la" type="auto">Alioqui noveram, quam variarent hic veteres.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="297"/>Eleemosynarum dispensationem mitto<note xml:id="fn7" type="footnote" n="7">Siehe oben <ref target="file#10802">Nr. 764</ref>, Anm. 8. Ob Bullinger ein gedrucktes Exemplar der Kastenordnung erhielt, wie <hi>Deetjen</hi> 118 behauptet, ist nicht erwiesen. In Zürich ZB, Ms S 40, 181 liegt ein handgeschriebenes Exemplar, das er möglicherweise zugeschickt erhielt.</note>.</s>
+					<s n="8" xml:lang="la" type="auto"><pb type="edition" next="297"/>Eleemosynarum dispensationem mitto<note xml:id="fn7" type="footnote" n="7">Siehe oben <ref target="file10802">Nr. 764</ref>, Anm. 8. Ob Bullinger ein gedrucktes Exemplar der Kastenordnung erhielt, wie <hi>Deetjen</hi> 118 behauptet, ist nicht erwiesen. In Zürich ZB, Ms S 40, 181 liegt ein handgeschriebenes Exemplar, das er möglicherweise zugeschickt erhielt.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nihil praeterea possum ac vehementer immodicis istis occupationibus meis irascor, quę sic me sibi devinciunt, ut ab amicorum vel tumultuaria salutatione invitissimum revellant.</s>
-					<s xml:lang="la" type="auto">Tu, mi venerande frater, servatori Christo me meumque ministerium diligenter commenda.</s>
+					<s n="9" xml:lang="la" type="auto">Nihil praeterea possum ac vehementer immodicis istis occupationibus meis irascor, quę sic me sibi devinciunt, ut ab amicorum vel tumultuaria salutatione invitissimum revellant.</s>
+					<s n="10" xml:lang="la" type="auto">Tu, mi venerande frater, servatori Christo me meumque ministerium diligenter commenda.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Saluta fratres, inprimis uxorem<note xml:id="fn8" type="footnote" n="8">Anna, geb. Adlischwyler.</note>, <persName ref="165">Pellicanum</persName>, Leonem<note xml:id="fn9" type="footnote" n="9"><persName ref="114">Leo Jud</persName>.</note>, <persName ref="14">Theodorum</persName><note xml:id="fn10" type="footnote" n="10"><persName ref="14">Theodor Bibliander</persName>.</note> etc.</s>
-					<s xml:lang="la" type="auto">Iterum vale et per Christum ignosce brevitati.</s>
+					<s n="11" xml:lang="la" type="auto">Saluta fratres, inprimis uxorem<note xml:id="fn8" type="footnote" n="8">Anna, geb. Adlischwyler.</note>, <persName ref="person165">Pellicanum</persName>, Leonem<note xml:id="fn9" type="footnote" n="9"><persName ref="person114">Leo Jud</persName>.</note>, <persName ref="person14">Theodorum</persName><note xml:id="fn10" type="footnote" n="10"><persName ref="person14">Theodor Bibliander</persName>.</note> etc.</s>
+					<s n="12" xml:lang="la" type="auto">Iterum vale et per Christum ignosce brevitati.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">21. maii.</s>
+					<s n="13" xml:lang="de" type="auto">21. maii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Ambr. Blaur.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus Ambr. Blaur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="230">Volmarius</persName> lavat in Ferinis Balneis<note xml:id="fn11" type="footnote" n="11"><placeName ref="1198">Wildbad im Schwarzwald</placeName> (Baden-Württemberg).</note>.</s>
-					<s xml:lang="la" type="auto">Ubi redierit, reddam, quae misisti<note xml:id="fn12" type="footnote" n="12"><persName ref="230">Melchior Volmar</persName> dankte am 1. Juli für ein Geschenk (einige Buchlein) und für einen Brief Bullingers (vgl. unten <ref target="file#10898">Nr. 858</ref>, 22f, mit Anm. 2).</note>.</s>
+					<s n="15" xml:lang="la" type="auto"><persName ref="person230">Volmarius</persName> lavat in Ferinis Balneis<note xml:id="fn11" type="footnote" n="11"><placeName ref="place1198">Wildbad im Schwarzwald</placeName> (Baden-Württemberg).</note>.</s>
+					<s n="16" xml:lang="la" type="auto">Ubi redierit, reddam, quae misisti<note xml:id="fn12" type="footnote" n="12"><persName ref="person230">Melchior Volmar</persName> dankte am 1. Juli für ein Geschenk (einige Buchlein) und für einen Brief Bullingers (vgl. unten <ref target="file10898">Nr. 858</ref>, 22f, mit Anm. 2).</note>.</s>
 				</p>
 				<p>
 					<note type="address">[Ohne Adresse.]</note>

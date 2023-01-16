@@ -12,29 +12,33 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3729</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,887</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,887</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
 						<msItem>
 							<incipit>Quanquam nullum hoc tempore argumentum scriptione dignum habeam, nolui tamen hunc latorem ad te advenire</incipit>
+							<textLang>la</textLang>
 						</msItem>
 					</msContents>
 					<additional>
@@ -50,13 +54,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 83,36</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 83,36</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -70,85 +77,89 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2443">
 				<correspAction type="sent">
-					<persName ref="person#2144" cert="high">
+					<!--
+					<persName ref="person2144" cert="high">
 						<forename cert="high">Christoph</forename>
 						<surname cert="high">Mont</surname>
-						<addName type="main">Mont (Mundt), Christopher</addName>
+						<persName type="main" ref="person8121>Mont (Mundt), Christopher</addName>
 						<ref type="wikipedia" target="https://en.wikipedia.org/wiki/Christopher_Mont"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1068771844"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person2144" cert="high"/>
+					<place source="place492" cert="high"/>
 					<date when="1554-10-31" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2480"/>
-					<ref type="prev_chronologically" target="files.xml#2442"/>
-					<ref type="next_correspondence" target="files.xml#3819"/>
-					<ref type="prev_correspondence" target="files.xml#2406"/>
-					<ref type="next_correspondence_request" target="files.xml#3819"/>
-					<ref type="prev_correspondence_request" target="files.xml#2406"/>
-					<ref type="next_correspondence_reaction" target="files.xml#4548"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1588"/>
-					<ref type="next_same_sender" target="files.xml#3819"/>
-					<ref type="prev_same_sender" target="files.xml#2406"/>
-					<ref type="next_same_addressee" target="files.xml#2444"/>
-					<ref type="prev_same_addressee" target="files.xml#2436"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3819"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2406"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2444"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2436"/>
+					<ref type="next_chronologically" target="file2480"/>
+					<ref type="prev_chronologically" target="file2442"/>
+					<ref type="next_correspondence" target="file3819"/>
+					<ref type="prev_correspondence" target="file2406"/>
+					<ref type="next_correspondence_request" target="file3819"/>
+					<ref type="prev_correspondence_request" target="file2406"/>
+					<ref type="next_correspondence_reaction" target="file4548"/>
+					<ref type="prev_correspondence_reaction" target="file1588"/>
+					<ref type="next_same_sender" target="file3819"/>
+					<ref type="prev_same_sender" target="file2406"/>
+					<ref type="next_same_addressee" target="file2444"/>
+					<ref type="prev_same_addressee" target="file2436"/>
+					<ref type="next_with_sender_as_addressee" target="file3819"/>
+					<ref type="prev_with_sender_as_addressee" target="file2406"/>
+					<ref type="next_with_addressee_as_sender" target="file2444"/>
+					<ref type="prev_with_addressee_as_sender" target="file2436"/>
 				</correspContext>
 			</correspDesc>
-			<langUsage/>
+			<langUsage>
+				<language ident="la" usage="100">Latein</language>
+			</langUsage>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="2443/Autograph/00 E_II_356__fol__887_r_.tif" n="1"/>
+		<graphic url="2443/Autograph/01 E_II_356__fol__887_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Quanquam nullum hoc tempore argumentum scriptione dignum habeam, ornatissime Bullingere, nolui tamen hunc latorem ad te advenire absque meis litteris, virum religionis et pietatis studiosissimum et qui patria derelicta modo exul in Germania est, ne genua sua incurvare ad Baal cogeretur.</s>
+					<s n="1" xml:lang="la" type="auto">Quanquam nullum hoc tempore argumentum scriptione dignum habeam, ornatissime Bullingere, nolui tamen hunc latorem ad te advenire absque meis litteris, virum religionis et pietatis studiosissimum et qui patria derelicta modo exul in Germania est, ne genua sua incurvare ad Baal cogeretur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Francfordię modo omnium imperii statuum oratores et actores conventum agunt, a quo conventu ipsorum electorum, principum et reliquorum Germanie statuum comitia fore dicuntur Augustę Vindelicorum.</s>
-					<s xml:lang="la" type="auto">Modo Francfordię deliberatio instituta dicitur de iusta aliqua pecunię summa deponenda ad pacem in imperio conservandam et eos debellandos, qui contra pacis publice decreta arma sua authoritate usurpaverint, honesta sane species tutelę et defensionis; sed cum pecunia semel collecta et deposita fuerit, mille facile pretextus excogitabuntur ad eam pecuniam consequendam, tanquam plurimum intersit imperii, conari et instare, ne Gallus deceptor et sacri imperii invasor pergat pro sua libidine et ambitione urbes imperiales et ditiones avellere et violentia sibi subdere.</s>
+					<s n="2" xml:lang="la" type="auto">Francfordię modo omnium imperii statuum oratores et actores conventum agunt, a quo conventu ipsorum electorum, principum et reliquorum Germanie statuum comitia fore dicuntur Augustę Vindelicorum.</s>
+					<s n="3" xml:lang="la" type="auto">Modo Francfordię deliberatio instituta dicitur de iusta aliqua pecunię summa deponenda ad pacem in imperio conservandam et eos debellandos, qui contra pacis publice decreta arma sua authoritate usurpaverint, honesta sane species tutelę et defensionis; sed cum pecunia semel collecta et deposita fuerit, mille facile pretextus excogitabuntur ad eam pecuniam consequendam, tanquam plurimum intersit imperii, conari et instare, ne Gallus deceptor et sacri imperii invasor pergat pro sua libidine et ambitione urbes imperiales et ditiones avellere et violentia sibi subdere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Audimus quoque ibi agi, ut certę equitum centurię semper in statione per Germaniam habeantur tanquam presentes vindices futuri omnium eorum, qui publicam pacem interturbare audeant.</s>
-					<s xml:lang="la" type="auto">Quis autem eos ipsos stationarios equites in ordinem coacturos sit, ut neminem concutiant, neminem offendant, neminem depredentur, nondum video.</s>
-					<s xml:lang="la" type="auto">Non longe a nostra urbe quadringenti equites collocati sunt sub spetie marchionis avertendi et reprimendi (qui tamen, ubi gentium latitet, ignoratur).</s>
-					<s xml:lang="la" type="auto">Verum hii ipsi adeo intemperanter et imperiose se gerunt, ut moribus parum varient ab ipsis hostibus, sepe quoque excursiones in Lotharingiam faciunt et eius ducatus habitatores varia iniuria adfectos exedunt et omni penu et pabulo spoliant.</s>
+					<s n="4" xml:lang="la" type="auto">Audimus quoque ibi agi, ut certę equitum centurię semper in statione per Germaniam habeantur tanquam presentes vindices futuri omnium eorum, qui publicam pacem interturbare audeant.</s>
+					<s n="5" xml:lang="la" type="auto">Quis autem eos ipsos stationarios equites in ordinem coacturos sit, ut neminem concutiant, neminem offendant, neminem depredentur, nondum video.</s>
+					<s n="6" xml:lang="la" type="auto">Non longe a nostra urbe quadringenti equites collocati sunt sub spetie marchionis avertendi et reprimendi (qui tamen, ubi gentium latitet, ignoratur).</s>
+					<s n="7" xml:lang="la" type="auto">Verum hii ipsi adeo intemperanter et imperiose se gerunt, ut moribus parum varient ab ipsis hostibus, sepe quoque excursiones in Lotharingiam faciunt et eius ducatus habitatores varia iniuria adfectos exedunt et omni penu et pabulo spoliant.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Metuendum, ne Gallum hiis offitiis ad paria reddenda incitemus, quod ut fiat multos expectare metuo, ut vel per hanc occasionem imperium bello implicetur.</s>
-					<s xml:lang="la" type="auto">Audimus quoque Metensis urbis occupationem vehementibus accusationibus et improbationibus in conventu exaggerari.</s>
-					<s xml:lang="la" type="auto">Quid vero conventus ille pariturus tandem sit, propediem audiemus.</s>
-					<s xml:lang="la" type="auto">Anglicarum rerum conturbationes harum lator optima fide dom[inationi] t[uae] enarrabit.</s>
-					<s xml:lang="la" type="auto">Si qua re interim dom[inationi] t[uae] gratificari potero, iube et impera.</s>
-					<s xml:lang="la" type="auto">Commenda me optimis et honestissimis viris generis tuis.</s>
-					<s xml:lang="la" type="auto">Bene vale Argentine ultima octobris 1554.</s>
+					<s n="8" xml:lang="la" type="auto">Metuendum, ne Gallum hiis offitiis ad paria reddenda incitemus, quod ut fiat multos expectare metuo, ut vel per hanc occasionem imperium bello implicetur.</s>
+					<s n="9" xml:lang="la" type="auto">Audimus quoque Metensis urbis occupationem vehementibus accusationibus et improbationibus in conventu exaggerari.</s>
+					<s n="10" xml:lang="la" type="auto">Quid vero conventus ille pariturus tandem sit, propediem audiemus.</s>
+					<s n="11" xml:lang="la" type="auto">Anglicarum rerum conturbationes harum lator optima fide dom[inationi] t[uae] enarrabit.</s>
+					<s n="12" xml:lang="la" type="auto">Si qua re interim dom[inationi] t[uae] gratificari potero, iube et impera.</s>
+					<s n="13" xml:lang="la" type="auto">Commenda me optimis et honestissimis viris generis tuis.</s>
+					<s n="14" xml:lang="la" type="auto">Bene vale Argentine ultima octobris 1554.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quem nosti te redamare.</s>
+					<s n="15" xml:lang="la" type="auto">Quem nosti te redamare.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse fehlt.]</note>

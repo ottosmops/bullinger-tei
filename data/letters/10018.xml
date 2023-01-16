@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1974"/>
-				<idno type="ISBN">ISBN 3-290-11334-5</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2</idno>
+				<idno subtype="ISBN">ISBN 3-290-11334-5</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 1 (Anhang 2)</title>
+				<title subtype="publication">HBBW I (Anhang 2)</title>
 				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">1</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms A 82,53 r56r 7 fol. S.</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms A 82,53 r56r 7 fol. S.</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc><p>sehr gut erhalten</p></objectDesc>
@@ -49,7 +52,7 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Ein für den Adressaten auf Wunsch <persName ref="237">Rudolf Weingartners</persName> verfaßtes
+								Ein für den Adressaten auf Wunsch <persName ref="person237">Rudolf Weingartners</persName> verfaßtes
 								Schreiben über das Abendmahl, worin sich Bullinger vor allem gegen die Deutung des Herrenmahls als Messopfer
 								wendet.
 							</p>
@@ -61,41 +64,44 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10018">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#242" cert="low">
-						<settlement>Kappel am Albis</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.2288482 8.5251335</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place242" cert="low"/>
 					<date when="1524-11-16" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1046" cert="low">
+					<!--
+					<persName ref="person1046" cert="low">
 						<forename cert="low">Jakob</forename>
 						<surname cert="low">Frey</surname>
 					</persName>
+					-->
+					<persName ref="person1046" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10023"/>
-					<ref type="prev_chronologically" target="files.xml#10022"/>
+					<ref type="next_chronologically" target="file10023"/>
+					<ref type="prev_chronologically" target="file10022"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10023"/>
-					<ref type="prev_same_sender" target="files.xml#10017"/>
+					<ref type="next_same_sender" target="file10023"/>
+					<ref type="prev_same_sender" target="file10017"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10023"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10017"/>
+					<ref type="next_with_sender_as_addressee" target="file10023"/>
+					<ref type="prev_with_sender_as_addressee" target="file10017"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>

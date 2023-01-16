@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2011"/>
-				<idno type="ISBN">ISBN 978-3-290-17565-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1987</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17565-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1987</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 14</title>
+				<title subtype="publication">HBBW XIV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Henrich, Rainer; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">14</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336,227</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336,227</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336,209</idno>
+							<idno subtype="Autograph">E II 336,209</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -50,13 +53,13 @@
 						<summary>
 							<p xml:id="regest1">
 								Empfehlung des Überbringers, eines Doktors der Theologie [Albert Hardenberg], der auf Geheiß des Kölner
-								Erzbischofs [<persName ref="2488">Hermann von Wied</persName>] auf dem Weg nach
-								<placeName ref="1049">Straßburg</placeName> ist und vorher die Kirchen von
-								[<placeName ref="97">Basel</placeName>], Zürich und
-								<placeName ref="565">Konstanz</placeName> besucht. Er bringt Nachrichten vom englischen [König
-								Heinrich VIII.] und von Kaiser [<persName ref="1332">Karl</persName> V.] mit; in
-								<placeName ref="97">Basel</placeName> erfuhr er von der Verhaftung Graf
-								<persName ref="921">Wilhelms</persName> [von <persName ref="921">Fürstenberg</persName>] und
+								Erzbischofs [<persName ref="person2488">Hermann von Wied</persName>] auf dem Weg nach
+								<placeName ref="place1049">Straßburg</placeName> ist und vorher die Kirchen von
+								[<placeName ref="place97">Basel</placeName>], Zürich und
+								<placeName ref="place565">Konstanz</placeName> besucht. Er bringt Nachrichten vom englischen [König
+								Heinrich VIII.] und von Kaiser [<persName ref="person1332">Karl V.</persName>] mit; in
+								<placeName ref="place97">Basel</placeName> erfuhr er von der Verhaftung Graf
+								Wilhelms [<persName ref="person921">von Fürstenberg</persName>] und
 								wird Weiteres an Ort und Stelle berichten.
 							</p>
 						</summary>
@@ -67,46 +70,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12034">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1544-09-16" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12035"/>
-					<ref type="prev_chronologically" target="files.xml#12033"/>
-					<ref type="next_correspondence" target="files.xml#12093"/>
-					<ref type="prev_correspondence" target="files.xml#12032"/>
-					<ref type="next_correspondence_request" target="files.xml#12093"/>
-					<ref type="prev_correspondence_request" target="files.xml#12025"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12154"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12032"/>
-					<ref type="next_same_sender" target="files.xml#12093"/>
-					<ref type="prev_same_sender" target="files.xml#12025"/>
-					<ref type="next_same_addressee" target="files.xml#12040"/>
-					<ref type="prev_same_addressee" target="files.xml#12033"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12093"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12025"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12040"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12033"/>
+					<ref type="next_chronologically" target="file12035"/>
+					<ref type="prev_chronologically" target="file12033"/>
+					<ref type="next_correspondence" target="file12093"/>
+					<ref type="prev_correspondence" target="file12032"/>
+					<ref type="next_correspondence_request" target="file12093"/>
+					<ref type="prev_correspondence_request" target="file12025"/>
+					<ref type="next_correspondence_reaction" target="file12154"/>
+					<ref type="prev_correspondence_reaction" target="file12032"/>
+					<ref type="next_same_sender" target="file12093"/>
+					<ref type="prev_same_sender" target="file12025"/>
+					<ref type="next_same_addressee" target="file12040"/>
+					<ref type="prev_same_addressee" target="file12033"/>
+					<ref type="next_with_sender_as_addressee" target="file12093"/>
+					<ref type="prev_with_sender_as_addressee" target="file12025"/>
+					<ref type="next_with_addressee_as_sender" target="file12040"/>
+					<ref type="prev_with_addressee_as_sender" target="file12033"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -124,33 +132,33 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Qui has reddit, d[octor] theologus est<note xml:id="fn1" type="footnote" n="1">Es handelt sich um Albert Hardenberg; s. Bullingers Brief an Vadian vom 28. September 1544, unten <ref target="file#12044">Nr. 1997</ref>.</note>.</s>
-					<s xml:lang="la" type="auto">Equidem iudico doctum et pium.</s>
-					<s xml:lang="la" type="auto">Venit Argentinam missus a Coloniensi archiepiscopo<note xml:id="fn2" type="footnote" n="2"><persName ref="2488">Hermann von Wied</persName>.</note>.</s>
-					<s xml:lang="la" type="auto">Placuit, ut etiam inviseret<pb type="edition" next="405"/> ecclesias, nostram, Tigurinam et Constantiensem, priusquam adiret vocationem suam<note xml:id="fn3" type="footnote" n="3">Hardenberg reiste auf Kosten des Erzbischofs in das <placeName ref="16">Elsass</placeName>, die <placeName ref="196">Schweiz</placeName> und nach Oberdeutschiand; s. oben <ref target="file#12019">Nr. 1972</ref>, Anm. 1; unten <ref target="file#12044">Nr. 1997</ref>.</note>.</s>
-					<s xml:lang="la" type="auto">Quęrit ac disputat libenter, sed non nisi discendi gratia; nihil igitur puto timendum ab eo.</s>
-					<s xml:lang="la" type="auto">Vos excipitote illum, ut moris est vestri, benigniter.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Qui has reddit, d[octor] theologus est<note xml:id="fn1" type="footnote" n="1">Es handelt sich um Albert Hardenberg; s. Bullingers Brief an Vadian vom 28. September 1544, unten <ref target="file12044">Nr. 1997</ref>.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Equidem iudico doctum et pium.</s>
+					<s n="4" xml:lang="la" type="auto">Venit Argentinam missus a Coloniensi archiepiscopo<note xml:id="fn2" type="footnote" n="2"><persName ref="person2488">Hermann von Wied</persName>.</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Placuit, ut etiam inviseret<pb type="edition" next="405"/> ecclesias, nostram, Tigurinam et Constantiensem, priusquam adiret vocationem suam<note xml:id="fn3" type="footnote" n="3">Hardenberg reiste auf Kosten des Erzbischofs in das <placeName ref="place16">Elsass</placeName>, die <placeName ref="place196">Schweiz</placeName> und nach Oberdeutschiand; s. oben <ref target="file12019">Nr. 1972</ref>, Anm. 1; unten <ref target="file12044">Nr. 1997</ref>.</note>.</s>
+					<s n="6" xml:lang="la" type="auto">Quęrit ac disputat libenter, sed non nisi discendi gratia; nihil igitur puto timendum ab eo.</s>
+					<s n="7" xml:lang="la" type="auto">Vos excipitote illum, ut moris est vestri, benigniter.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Potest is dicere multa de rebus variis, quas valebis exquirere ab ipso.</s>
-					<s xml:lang="la" type="auto">De Anglo<note xml:id="fn4" type="footnote" n="4">König Heinrich VIII.</note> novit certa, de cęsare<note xml:id="fn5" type="footnote" n="5"><persName ref="1332">Karl</persName> V.</note> quędam secum adtulit, quędam didicit hic, e quibus est comitem Gulielmum<note xml:id="fn6" type="footnote" n="6">Graf <persName ref="921">Wilhelm von Fürstenberg</persName>.</note> Parrhisios ductum captivum<note xml:id="fn7" type="footnote" n="7"><persName ref="921">Wilhelm von Fürstenberg</persName> wurde vom 2. auf den 3. September bei der Erkundung einer Furt in der <placeName ref="30">Marne</placeName> gefangen genommen; s. <hi>Paillard</hi> 324-330; Johannes Volker <hi>Wagner,</hi> Fürstenberg 258f (mit weiterer Lit., aber falschem Datum der Festnahme).</note> et regem<note xml:id="fn8" type="footnote" n="8">Franz I.</note> his ad eum verbis usum: „Ito Parrhisios ac disce bonus esse comes, qualis fuisti aliquando, sed dedidicisti.“</s>
-					<s xml:lang="la" type="auto">Mirabile, si verum est.</s>
-					<s xml:lang="la" type="auto">Reliqua ex doctore.</s>
+					<s n="8" xml:lang="la" type="auto">Potest is dicere multa de rebus variis, quas valebis exquirere ab ipso.</s>
+					<s n="9" xml:lang="la" type="auto">De Anglo<note xml:id="fn4" type="footnote" n="4">König Heinrich VIII.</note> novit certa, de cęsare<note xml:id="fn5" type="footnote" n="5"><persName ref="person1332">Karl V.</persName></note> quędam secum adtulit, quędam didicit hic, e quibus est comitem Gulielmum<note xml:id="fn6" type="footnote" n="6">Graf <persName ref="person921">Wilhelm von Fürstenberg</persName>.</note> Parrhisios ductum captivum<note xml:id="fn7" type="footnote" n="7"><persName ref="person921">Wilhelm von Fürstenberg</persName> wurde vom 2. auf den 3. September bei der Erkundung einer Furt in der <placeName ref="place30">Marne</placeName> gefangen genommen; s. <hi>Paillard</hi> 324-330; Johannes Volker <hi>Wagner,</hi> Fürstenberg 258f (mit weiterer Lit., aber falschem Datum der Festnahme).</note> et regem<note xml:id="fn8" type="footnote" n="8">Franz I.</note> his ad eum verbis usum: „Ito Parrhisios ac disce bonus esse comes, qualis fuisti aliquando, sed dedidicisti.“</s>
+					<s n="10" xml:lang="la" type="auto">Mirabile, si verum est.</s>
+					<s n="11" xml:lang="la" type="auto">Reliqua ex doctore.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino.</s>
+					<s n="12" xml:lang="la" type="auto">Vale in domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileae</placeName>, 16. septembris anno 1544.</s>
+					<s n="13" xml:lang="la" type="auto"><placeName ref="place97">Basileae</placeName>, 16. septembris anno 1544.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus <persName ref="154">Myconius</persName>.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus <persName ref="person154">Myconius</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Heinricho Bullingero doctissimo, fratri in domino suo observando.</s>
-					<s xml:lang="de" type="auto">Z[urich]<note xml:id="fnb" type="footnote" n="b"><hi>Teilweise auf das nicht mehr erhaltene Verschlussband geschrieben.</hi></note>.</s>
+					<s n="15" xml:lang="la" type="auto">D. Heinricho Bullingero doctissimo, fratri in domino suo observando.</s>
+					<s n="16" xml:lang="de" type="auto">Z[urich]<note xml:id="fnb" type="footnote" n="b"><hi>Teilweise auf das nicht mehr erhaltene Verschlussband geschrieben.</hi></note>.</s>
 				</p>
 			</div>
 		</body>

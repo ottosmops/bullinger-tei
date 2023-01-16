@@ -12,25 +12,28 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">965</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 360,477</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">[Korrektur StAZH]</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 360,477</idno>
+						<idno subtype="Hinweis">[Korrektur StAZH]</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -45,49 +48,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/186">
 				<correspAction type="sent">
-					<persName ref="person#3700" cert="low">
+					<!--
+					<persName ref="person3700" cert="low">
 						<forename cert="low">Eberhard</forename>
 						<surname cert="low">von Rümlang</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089804970"/>
 					</persName>
-					<place source="#41" cert="low">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person3700" cert="low"/>
+					<place source="place41" cert="low"/>
 					<date when="1548-07-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#187"/>
-					<ref type="prev_chronologically" target="files.xml#185"/>
-					<ref type="next_correspondence" target="files.xml#194"/>
-					<ref type="prev_correspondence" target="files.xml#105"/>
-					<ref type="next_correspondence_request" target="files.xml#194"/>
-					<ref type="prev_correspondence_request" target="files.xml#105"/>
+					<ref type="next_chronologically" target="file187"/>
+					<ref type="prev_chronologically" target="file185"/>
+					<ref type="next_correspondence" target="file194"/>
+					<ref type="prev_correspondence" target="file105"/>
+					<ref type="next_correspondence_request" target="file194"/>
+					<ref type="prev_correspondence_request" target="file105"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12480"/>
-					<ref type="next_same_sender" target="files.xml#194"/>
-					<ref type="prev_same_sender" target="files.xml#105"/>
-					<ref type="next_same_addressee" target="files.xml#190"/>
-					<ref type="prev_same_addressee" target="files.xml#184"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#194"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#105"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#190"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#184"/>
+					<ref type="prev_correspondence_reaction" target="file12480"/>
+					<ref type="next_same_sender" target="file194"/>
+					<ref type="prev_same_sender" target="file105"/>
+					<ref type="next_same_addressee" target="file190"/>
+					<ref type="prev_same_addressee" target="file184"/>
+					<ref type="next_with_sender_as_addressee" target="file194"/>
+					<ref type="prev_with_sender_as_addressee" target="file105"/>
+					<ref type="next_with_addressee_as_sender" target="file190"/>
+					<ref type="prev_with_addressee_as_sender" target="file184"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -104,39 +106,39 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Gratia et pax a domino, Bullingere integerrime omnibusque modis reverende et excolende.</s>
-					<s xml:lang="la" type="auto">Intellexi ex scriptis tuis ad D. Hallerum redditis calamitosam evangelicę veritatis cladem et efferatam rabiem atque truculentiam, quam Carolus, lupus immanissimus, contra Christi oves instituit, qui cum blandis verborum lenociniis hactenus nimium credulos dementarit, tandem, quę occultata falsa simulatione delituerant, rebus suis omnibus (ut ipse censet), stabilitis sese diutius retinere nequeunt, quin sese iam cum magno multorum periculo prodant.</s>
-					<s xml:lang="la" type="auto">Itaque decebit nos Satanę insultus vilipendere et seria oratione pro adiutorio dominum interpellere eaque prorsus, quę sunt poenitentię exquirere et ad ea conniti atque deinde, quicquid accidat, solida spe concepta in dei gratiam magno animo expectare, quid deus operari velit, qui mirabiliter agit, qui dignetur nos reddere imperterritos et constantes, ut, si coelum ruat, non extimescamus.</s>
-					<s xml:lang="la" type="auto">Providit dominus terminum huic bestię, quem non transibit.</s>
-					<s xml:lang="la" type="auto">Quodsi deus requireret nos in periculum, tum oporteret notram operam impendere, quo hoc scelus compesceretur.</s>
-					<s xml:lang="la" type="auto">Quis non exoptate et erecto atque magnanimo pectore id prestaret?</s>
+					<s n="1" xml:lang="la" type="auto">Gratia et pax a domino, Bullingere integerrime omnibusque modis reverende et excolende.</s>
+					<s n="2" xml:lang="la" type="auto">Intellexi ex scriptis tuis ad D. Hallerum redditis calamitosam evangelicę veritatis cladem et efferatam rabiem atque truculentiam, quam Carolus, lupus immanissimus, contra Christi oves instituit, qui cum blandis verborum lenociniis hactenus nimium credulos dementarit, tandem, quę occultata falsa simulatione delituerant, rebus suis omnibus (ut ipse censet), stabilitis sese diutius retinere nequeunt, quin sese iam cum magno multorum periculo prodant.</s>
+					<s n="3" xml:lang="la" type="auto">Itaque decebit nos Satanę insultus vilipendere et seria oratione pro adiutorio dominum interpellere eaque prorsus, quę sunt poenitentię exquirere et ad ea conniti atque deinde, quicquid accidat, solida spe concepta in dei gratiam magno animo expectare, quid deus operari velit, qui mirabiliter agit, qui dignetur nos reddere imperterritos et constantes, ut, si coelum ruat, non extimescamus.</s>
+					<s n="4" xml:lang="la" type="auto">Providit dominus terminum huic bestię, quem non transibit.</s>
+					<s n="5" xml:lang="la" type="auto">Quodsi deus requireret nos in periculum, tum oporteret notram operam impendere, quo hoc scelus compesceretur.</s>
+					<s n="6" xml:lang="la" type="auto">Quis non exoptate et erecto atque magnanimo pectore id prestaret?</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Effoeminatorum est mortem exhorrescere pro scelerato Cęsaris conatu; nescit ut suo successu, dei pupillam Satanico fastu non reveretur.</s>
-					<s xml:lang="la" type="auto">Sed ecce invocamus dominum fiducia certa; aderit nobis, non sinet tam innania scelera, quae imbelli plebeculę intorsit, inulta.</s>
-					<s xml:lang="la" type="auto">Quodsi dominus nos in partem huius negocii vocare velit, sumus in procinctu parati potius mori quam in nos grassari hanc bestiam Babylonicam pati.</s>
+					<s n="7" xml:lang="la" type="auto">Effoeminatorum est mortem exhorrescere pro scelerato Cęsaris conatu; nescit ut suo successu, dei pupillam Satanico fastu non reveretur.</s>
+					<s n="8" xml:lang="la" type="auto">Sed ecce invocamus dominum fiducia certa; aderit nobis, non sinet tam innania scelera, quae imbelli plebeculę intorsit, inulta.</s>
+					<s n="9" xml:lang="la" type="auto">Quodsi dominus nos in partem huius negocii vocare velit, sumus in procinctu parati potius mori quam in nos grassari hanc bestiam Babylonicam pati.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">D. Musculum in sua afflictione consolare; habebit apud nos locum.</s>
-					<s xml:lang="la" type="auto">Accesit me D. Hallerus et ostendi literas, quibus lectis consilium dedi, quod illi placebat, et omnes literati laborabimus, quo Musculus noster fiat, quem semper ob eruditionem et candorem, quem ex scriptis sentire mihi videbar, maxime feci, licet in re sacramentaria nimium Vertumnis<note xml:id="fn1" type="footnote" n="1">Vertumnus: Gott des steten Wandels; vgl. Adagia, 2, 2, 74 (LB II 473).</note> accedere (fortassis immerito; nam non meum est id iudicare) visus sit.</s>
-					<s xml:lang="la" type="auto">Sed quicquid sit, si bene sentit, nam nosti nos adhucdum esse tenellos, impendemus operam sedulam, quam et brevi senties, ut confido, nun fuisse inanem.</s>
+					<s n="10" xml:lang="la" type="auto">D. Musculum in sua afflictione consolare; habebit apud nos locum.</s>
+					<s n="11" xml:lang="la" type="auto">Accesit me D. Hallerus et ostendi literas, quibus lectis consilium dedi, quod illi placebat, et omnes literati laborabimus, quo Musculus noster fiat, quem semper ob eruditionem et candorem, quem ex scriptis sentire mihi videbar, maxime feci, licet in re sacramentaria nimium Vertumnis<note xml:id="fn1" type="footnote" n="1">Vertumnus: Gott des steten Wandels; vgl. Adagia, 2, 2, 74 (LB II 473).</note> accedere (fortassis immerito; nam non meum est id iudicare) visus sit.</s>
+					<s n="12" xml:lang="la" type="auto">Sed quicquid sit, si bene sentit, nam nosti nos adhucdum esse tenellos, impendemus operam sedulam, quam et brevi senties, ut confido, nun fuisse inanem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Interea salutabis meo nomine D. Musculum et omnes fratres, quos omnes integros exopto, et omnes nos ad Christi crucem accingamus, quam ubi in fauces Satanę impegimus, evanescit prorsus ad nihilum.</s>
+					<s n="13" xml:lang="la" type="auto">Interea salutabis meo nomine D. Musculum et omnes fratres, quos omnes integros exopto, et omnes nos ad Christi crucem accingamus, quam ubi in fauces Satanę impegimus, evanescit prorsus ad nihilum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino.</s>
-					<s xml:lang="la" type="auto">Raptim.</s>
+					<s n="14" xml:lang="la" type="auto">Vale in domino.</s>
+					<s n="15" xml:lang="la" type="auto">Raptim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum 9. iulii anno 48.</s>
+					<s n="16" xml:lang="la" type="auto">Datum 9. iulii anno 48.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus totus Eber[hardus] a Rümlang.</s>
+					<s n="17" xml:lang="la" type="auto">Tuus totus Eber[hardus] a Rümlang.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Vigilantissimo et integerrimo viro D. Heinricho Bullingero, ecclesię Tigurinę pastori primario, domino et patrono suo semper colendissimo.</s>
+					<s n="18" xml:lang="la" type="auto">Vigilantissimo et integerrimo viro D. Heinricho Bullingero, ecclesię Tigurinę pastori primario, domino et patrono suo semper colendissimo.</s>
 				</p>
 			</div>
 		</body>

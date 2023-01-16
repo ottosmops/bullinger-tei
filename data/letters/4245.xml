@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5422/61</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 361,109</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 361,109</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 96,197</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 96,197</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -56,50 +62,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4245">
 				<correspAction type="sent">
-					<persName ref="person#391" cert="high">
+					<!--
+					<persName ref="person391" cert="high">
 						<forename cert="high">Dietrich</forename>
 						<surname cert="high">Bitter</surname>
-						<addName type="main">Bitter (von Wipperford), Dietrich</addName>
+						<persName type="main" ref="person8175>Bitter (von Wipperford), Dietrich</addName>
 					</persName>
-					<place source="#267" cert="high">
-						<settlement>Köln</settlement>
-						<district>Nordrhein-Westfalen</district>
-						<country>Deutschland</country>
-						<geo>50.93333 6.95</geo>
-					</place>
+					-->
+					<persName ref="person391" cert="high"/>
+					<place source="place267" cert="high"/>
 					<date when="1560-03-25" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4246"/>
-					<ref type="prev_chronologically" target="files.xml#4244"/>
+					<ref type="next_chronologically" target="file4246"/>
+					<ref type="prev_chronologically" target="file4244"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#3790"/>
+					<ref type="prev_correspondence" target="file3790"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#3790"/>
+					<ref type="prev_correspondence_request" target="file3790"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#3790"/>
-					<ref type="next_same_addressee" target="files.xml#4247"/>
-					<ref type="prev_same_addressee" target="files.xml#4241"/>
+					<ref type="prev_same_sender" target="file3790"/>
+					<ref type="next_same_addressee" target="file4247"/>
+					<ref type="prev_same_addressee" target="file4241"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3790"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4247"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#4241"/>
+					<ref type="prev_with_sender_as_addressee" target="file3790"/>
+					<ref type="next_with_addressee_as_sender" target="file4247"/>
+					<ref type="prev_with_addressee_as_sender" target="file4241"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,26 +120,26 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Theodericus Bitter suo domino Henricho Bullingero gratiam et pacem a domino Iesu.</s>
+					<s n="1" xml:lang="la" type="auto">Theodericus Bitter suo domino Henricho Bullingero gratiam et pacem a domino Iesu.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Habeo gratiam, ornatissime mi domine Henrice, pro Tügurine ecclesie ritibus novissime transmissis, estque certe tanta de singulis sollicitudo et concinnatio admodum laudabilis, et optarim me de nostris Coloniensibus talem aut similem libellum destinare posse.</s>
-					<s xml:lang="la" type="auto">Verum quia id negatur, in locum eiusdem veniunt ad te tabule aliquot a nostris ordinate, e quibus conatus et molimina nostratium sole clarius licebit odorare possisque nacta oportunitate his arietibus tempore et loco congruentibus resistere et obviare.</s>
+					<s n="2" xml:lang="la" type="auto">Habeo gratiam, ornatissime mi domine Henrice, pro Tügurine ecclesie ritibus novissime transmissis, estque certe tanta de singulis sollicitudo et concinnatio admodum laudabilis, et optarim me de nostris Coloniensibus talem aut similem libellum destinare posse.</s>
+					<s n="3" xml:lang="la" type="auto">Verum quia id negatur, in locum eiusdem veniunt ad te tabule aliquot a nostris ordinate, e quibus conatus et molimina nostratium sole clarius licebit odorare possisque nacta oportunitate his arietibus tempore et loco congruentibus resistere et obviare.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Meo sane iuditio temerario alteram partem quam primum cedere necesse erit; utrinque enim he in christiana republica et religione differentie et seditiones annos iam plus quadraginta lamentabiliter ventilate et discusse sunt, ita ut veritas catholice ecclesie diutius supprimi vix possit.</s>
-					<s xml:lang="la" type="auto">Et o utinam praesens vite cursus tamdiu nobis non denegetur, donec omnes, qui christiani dicuntur, revera una ore et spiritu absque ullis fidei nostre aut ceremoniarum schismatibus deum, patrem nostrum, qui in coelis est, unicum et verum pacis datorem imploremus et huic serviamus.</s>
-					<s xml:lang="la" type="auto">Apud nos iam bellici tumultus undique silent.</s>
+					<s n="4" xml:lang="la" type="auto">Meo sane iuditio temerario alteram partem quam primum cedere necesse erit; utrinque enim he in christiana republica et religione differentie et seditiones annos iam plus quadraginta lamentabiliter ventilate et discusse sunt, ita ut veritas catholice ecclesie diutius supprimi vix possit.</s>
+					<s n="5" xml:lang="la" type="auto">Et o utinam praesens vite cursus tamdiu nobis non denegetur, donec omnes, qui christiani dicuntur, revera una ore et spiritu absque ullis fidei nostre aut ceremoniarum schismatibus deum, patrem nostrum, qui in coelis est, unicum et verum pacis datorem imploremus et huic serviamus.</s>
+					<s n="6" xml:lang="la" type="auto">Apud nos iam bellici tumultus undique silent.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Illustris domina a Lupfen, cuius literas, ut retulit, brevi quoque videbis, adhuc bona est valetudine, non minus ego cum uxore et sex liberis, optoque vicissim, ut me de similibus certiorem reddas rescribasque, si tabule huiusmodi Wilhelmi Lindani non omnino tibi ingrate aut reiiciende potius quam legende.</s>
-					<s xml:lang="la" type="auto">Quodsi primum significaveris, transmittam primo nuntio opus eiusdem maius, unde huiusmodi transumptae sunt.</s>
+					<s n="7" xml:lang="la" type="auto">Illustris domina a Lupfen, cuius literas, ut retulit, brevi quoque videbis, adhuc bona est valetudine, non minus ego cum uxore et sex liberis, optoque vicissim, ut me de similibus certiorem reddas rescribasque, si tabule huiusmodi Wilhelmi Lindani non omnino tibi ingrate aut reiiciende potius quam legende.</s>
+					<s n="8" xml:lang="la" type="auto">Quodsi primum significaveris, transmittam primo nuntio opus eiusdem maius, unde huiusmodi transumptae sunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Interim in Christo Iesu valebis salutato tuo fratre domino Ioanne, si adhuc in calamitoso hoc seculo superfuerit.</s>
-					<s xml:lang="la" type="auto">Datum Colonie anno domini etc.</s>
-					<s xml:lang="la" type="auto">60. ipsis feriis annuntiacionis beate Marie virginis.</s>
-					<s xml:lang="la" type="auto">Ornatissimo ac vere pio viro domino Henrico Bullingero, amplissime ecclesię Tigurine ecclesiasti fidelissimo et primario.</s>
+					<s n="9" xml:lang="la" type="auto">Interim in Christo Iesu valebis salutato tuo fratre domino Ioanne, si adhuc in calamitoso hoc seculo superfuerit.</s>
+					<s n="10" xml:lang="la" type="auto">Datum Colonie anno domini etc.</s>
+					<s n="11" xml:lang="la" type="auto">60. ipsis feriis annuntiacionis beate Marie virginis.</s>
+					<s n="12" xml:lang="la" type="auto">Ornatissimo ac vere pio viro domino Henrico Bullingero, amplissime ecclesię Tigurine ecclesiasti fidelissimo et primario.</s>
 				</p>
 			</div>
 		</body>

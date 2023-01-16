@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5027/136</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 371,715 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 371,715 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -56,14 +59,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 92,176</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Utenhove an Calvin: Simler 92</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 92,176</idno>
+						<idno subtype="Hinweis">Utenhove an Calvin: Simler 92</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -77,52 +83,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3660">
 				<correspAction type="sent">
-					<persName ref="person#3284" cert="high">
+					<!--
+					<persName ref="person3284" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Utenhove</surname>
-						<addName type="main">Utenhove d.Ä., Jan</addName>
+						<persName type="main" ref="person8061>Utenhove d.Ä., Jan</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Jan_van_Utenhove"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/130065803"/>
 					</persName>
-					<place source="#260" cert="high">
-						<settlement>Krakau</settlement>
-						<district>Kleinpolen</district>
-						<country>Polen</country>
-						<geo>50.06143 19.93658</geo>
-					</place>
+					-->
+					<persName ref="person3284" cert="high"/>
+					<place source="place260" cert="high"/>
 					<date when="1558-07-30" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<note type="Person">Vermigli Peter Martyr</note>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3661"/>
-					<ref type="prev_chronologically" target="files.xml#3659"/>
-					<ref type="next_correspondence" target="files.xml#3700"/>
-					<ref type="prev_correspondence" target="files.xml#3627"/>
-					<ref type="next_correspondence_request" target="files.xml#3851"/>
-					<ref type="prev_correspondence_request" target="files.xml#3223"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3700"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3627"/>
-					<ref type="next_same_sender" target="files.xml#3704"/>
-					<ref type="prev_same_sender" target="files.xml#3223"/>
-					<ref type="next_same_addressee" target="files.xml#3661"/>
-					<ref type="prev_same_addressee" target="files.xml#3654"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3704"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3223"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3661"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3654"/>
+					<ref type="next_chronologically" target="file3661"/>
+					<ref type="prev_chronologically" target="file3659"/>
+					<ref type="next_correspondence" target="file3700"/>
+					<ref type="prev_correspondence" target="file3627"/>
+					<ref type="next_correspondence_request" target="file3851"/>
+					<ref type="prev_correspondence_request" target="file3223"/>
+					<ref type="next_correspondence_reaction" target="file3700"/>
+					<ref type="prev_correspondence_reaction" target="file3627"/>
+					<ref type="next_same_sender" target="file3704"/>
+					<ref type="prev_same_sender" target="file3223"/>
+					<ref type="next_same_addressee" target="file3661"/>
+					<ref type="prev_same_addressee" target="file3654"/>
+					<ref type="next_with_sender_as_addressee" target="file3704"/>
+					<ref type="prev_with_sender_as_addressee" target="file3223"/>
+					<ref type="next_with_addressee_as_sender" target="file3661"/>
+					<ref type="prev_with_addressee_as_sender" target="file3654"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -141,54 +146,54 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Ioanni Calvino ministro ecclesiae Genevensis multo fidelissimo praeceptori ac fratri suo perpetua observantia colendo.</s>
-					<s xml:lang="la" type="auto">Genevae.</s>
+					<s n="1" xml:lang="la" type="auto">Clarissimo viro d. Ioanni Calvino ministro ecclesiae Genevensis multo fidelissimo praeceptori ac fratri suo perpetua observantia colendo.</s>
+					<s n="2" xml:lang="la" type="auto">Genevae.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S. P.</s>
-					<s xml:lang="la" type="auto">Scripsi iam dudum ad vos, vir clarissime, de comitiis regni huius hoc anno habendis, in quibus haud parum spei positum esse piis omnibus videtur.</s>
-					<s xml:lang="la" type="auto">Quod adversarii praesentientes curant ea protrahi quanto sane possunt studio.</s>
-					<s xml:lang="la" type="auto">Interim messis hic passim multa est, multique quotidie magis magisque accedunt ad agnitionem evangelii, seque ecclesiae dei adiiciunt.</s>
-					<s xml:lang="la" type="auto">In maiore Polonia plurimi sunt nostri, sed quidam plus aequo Boemis addictiores: alii vero Saxonibus ipsis, inter quos est illustris Stanislaus ab Ostorog, castellanus Medzerecensis, qui inter omnes maiores Poloniae nobiles viros, quum generis splendore tum etiam autoritate, primas facile obstinet, ut interim prudentiam, facundiam, magnanimitatem, potentiam liberalitatemque hominis praetermittam.</s>
-					<s xml:lang="la" type="auto">Is vero non videtur ita praefractus quin facile deo iuvante adduci queat in sanam de re eucharistica sententiam.</s>
-					<s xml:lang="la" type="auto">Nam d. Ioannem a Lasco, cuius neptem e sorore germana uxorem duxit, non illibenter audivit quum nuper ipsi adessemus, eumque magni facit, ac tuas literas, quum tui memoriam nuper apud eum facerem, sibi gratas fore dixit, seque libenter rescripturum esse.</s>
-					<s xml:lang="la" type="auto">Quamobrem, si ad eum scriberes adque consensionem aliquam cum d. a Lasco cumque fratribus minoris Poloniae ineundam amanter invitares, operae pretium haud dubio facturus esses ecclesiae Christi domini.</s>
-					<s xml:lang="la" type="auto">Si is lucrifieri hac parte posset, maxima sane fieret accessio ecclesiae in maiore praesertim Polonia.</s>
-					<s xml:lang="la" type="auto">Is enim unus magnam sibi animorum partem secum trahere dignoscitur.</s>
+					<s n="3" xml:lang="la" type="auto">S. P.</s>
+					<s n="4" xml:lang="la" type="auto">Scripsi iam dudum ad vos, vir clarissime, de comitiis regni huius hoc anno habendis, in quibus haud parum spei positum esse piis omnibus videtur.</s>
+					<s n="5" xml:lang="la" type="auto">Quod adversarii praesentientes curant ea protrahi quanto sane possunt studio.</s>
+					<s n="6" xml:lang="la" type="auto">Interim messis hic passim multa est, multique quotidie magis magisque accedunt ad agnitionem evangelii, seque ecclesiae dei adiiciunt.</s>
+					<s n="7" xml:lang="la" type="auto">In maiore Polonia plurimi sunt nostri, sed quidam plus aequo Boemis addictiores: alii vero Saxonibus ipsis, inter quos est illustris Stanislaus ab Ostorog, castellanus Medzerecensis, qui inter omnes maiores Poloniae nobiles viros, quum generis splendore tum etiam autoritate, primas facile obstinet, ut interim prudentiam, facundiam, magnanimitatem, potentiam liberalitatemque hominis praetermittam.</s>
+					<s n="8" xml:lang="la" type="auto">Is vero non videtur ita praefractus quin facile deo iuvante adduci queat in sanam de re eucharistica sententiam.</s>
+					<s n="9" xml:lang="la" type="auto">Nam d. Ioannem a Lasco, cuius neptem e sorore germana uxorem duxit, non illibenter audivit quum nuper ipsi adessemus, eumque magni facit, ac tuas literas, quum tui memoriam nuper apud eum facerem, sibi gratas fore dixit, seque libenter rescripturum esse.</s>
+					<s n="10" xml:lang="la" type="auto">Quamobrem, si ad eum scriberes adque consensionem aliquam cum d. a Lasco cumque fratribus minoris Poloniae ineundam amanter invitares, operae pretium haud dubio facturus esses ecclesiae Christi domini.</s>
+					<s n="11" xml:lang="la" type="auto">Si is lucrifieri hac parte posset, maxima sane fieret accessio ecclesiae in maiore praesertim Polonia.</s>
+					<s n="12" xml:lang="la" type="auto">Is enim unus magnam sibi animorum partem secum trahere dignoscitur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Concionatores ipsius omnes, quos in ditionibus suis habet, a nostra non abhorrent sententia, dempto uno superintendente qui studiorum causa Vitebergam profectus esse dicitur.</s>
-					<s xml:lang="la" type="auto">D. Ioannes Bonerus Baro a Balicze, castellanus Biecensis etc., qui sane viriliter se non ita pridem gessit, planeque constanter adversus Zebridovium episcopum Cracoviensem, se iam commendat vestris istuc omnium precibus, suaque per me studia vobis omnibus peramanter per me defert.</s>
-					<s xml:lang="la" type="auto">Si quoque vacaret tibi ad eum aliquid literarum dare, quo eum ad robur animi constantiamque christianam adhortarere, quaeso te ne id facere graveris.</s>
-					<s xml:lang="la" type="auto">Plurimum enim momenti in eo viro positum esse nihil est ambigendum.</s>
+					<s n="13" xml:lang="la" type="auto">Concionatores ipsius omnes, quos in ditionibus suis habet, a nostra non abhorrent sententia, dempto uno superintendente qui studiorum causa Vitebergam profectus esse dicitur.</s>
+					<s n="14" xml:lang="la" type="auto">D. Ioannes Bonerus Baro a Balicze, castellanus Biecensis etc., qui sane viriliter se non ita pridem gessit, planeque constanter adversus Zebridovium episcopum Cracoviensem, se iam commendat vestris istuc omnium precibus, suaque per me studia vobis omnibus peramanter per me defert.</s>
+					<s n="15" xml:lang="la" type="auto">Si quoque vacaret tibi ad eum aliquid literarum dare, quo eum ad robur animi constantiamque christianam adhortarere, quaeso te ne id facere graveris.</s>
+					<s n="16" xml:lang="la" type="auto">Plurimum enim momenti in eo viro positum esse nihil est ambigendum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">D. Ioannes a Lasco octavo mensis huius die nuptiis elocavit filiam suam primogenitam d. Stanislao Luthemirio, r. m. secretario pio erudito vereque nobili ac magni nominis viro.</s>
+					<s n="17" xml:lang="la" type="auto">D. Ioannes a Lasco octavo mensis huius die nuptiis elocavit filiam suam primogenitam d. Stanislao Luthemirio, r. m. secretario pio erudito vereque nobili ac magni nominis viro.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quibus nuptiis quam parum gratulentur Aposcopi vobis istic expendendum relinquo.</s>
-					<s xml:lang="la" type="auto">Is enim, ut hactenus semper, dum adhuc canonicatum obtineret, se strenue magno rerum suarum dispendio opposuit Antichristo, ita et nunc infracto opponit animo, verbique ministerio fideliter fungitur.</s>
-					<s xml:lang="la" type="auto">Caetera narrabit grammatophorus Sebastianus noster, quem tibi quantum omnino possum studio commendo, utque consiliis tuis eius studiis non deesse velis te etiam atque etiam rogo.</s>
-					<s xml:lang="la" type="auto">Non enim est dubium quin deo adiuvante utilis ecclesiae Christi domini sit futurus.</s>
-					<s xml:lang="la" type="auto">Si qua tibi vicissim servire queam, certo tibi persuadeas velim, me tuis postulationibus nunquam defuturum esse in Christo domino.</s>
-					<s xml:lang="la" type="auto">Mittimus nunc d. Crispino excudendam historiam peregrinationis nostrae Anglicae in Daniam, dignam sane quae toti mundo innotescat.</s>
-					<s xml:lang="la" type="auto">Eam vero vel ab invitis nobis extorsit nimia adversariorum impudentia, quae tanta fuit, post ipsos alioqui casus illos nostros plane miserandos, ut sine summo passim fratrum dolore maximaque ecclesiae nostrae nostrique ministerii contumelia, causaeque demum ipsius gratia, suspicione eam premere diutius non licuerit.</s>
-					<s xml:lang="la" type="auto">Neque suadet ipse Phil.</s>
+					<s n="18" xml:lang="la" type="auto">Quibus nuptiis quam parum gratulentur Aposcopi vobis istic expendendum relinquo.</s>
+					<s n="19" xml:lang="la" type="auto">Is enim, ut hactenus semper, dum adhuc canonicatum obtineret, se strenue magno rerum suarum dispendio opposuit Antichristo, ita et nunc infracto opponit animo, verbique ministerio fideliter fungitur.</s>
+					<s n="20" xml:lang="la" type="auto">Caetera narrabit grammatophorus Sebastianus noster, quem tibi quantum omnino possum studio commendo, utque consiliis tuis eius studiis non deesse velis te etiam atque etiam rogo.</s>
+					<s n="21" xml:lang="la" type="auto">Non enim est dubium quin deo adiuvante utilis ecclesiae Christi domini sit futurus.</s>
+					<s n="22" xml:lang="la" type="auto">Si qua tibi vicissim servire queam, certo tibi persuadeas velim, me tuis postulationibus nunquam defuturum esse in Christo domino.</s>
+					<s n="23" xml:lang="la" type="auto">Mittimus nunc d. Crispino excudendam historiam peregrinationis nostrae Anglicae in Daniam, dignam sane quae toti mundo innotescat.</s>
+					<s n="24" xml:lang="la" type="auto">Eam vero vel ab invitis nobis extorsit nimia adversariorum impudentia, quae tanta fuit, post ipsos alioqui casus illos nostros plane miserandos, ut sine summo passim fratrum dolore maximaque ecclesiae nostrae nostrique ministerii contumelia, causaeque demum ipsius gratia, suspicione eam premere diutius non licuerit.</s>
+					<s n="25" xml:lang="la" type="auto">Neque suadet ipse Phil.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Melanchthon ut eam premamus diutius, praesertim quum adeo multis calumniis nos cum suis gravarit Westphalus, qui denuo nunc adversum te nescio quid scripsisse fertur.</s>
-					<s xml:lang="la" type="auto">Porro Westphalus vel ex istac historia qualis sit facile innotescet.</s>
+					<s n="26" xml:lang="la" type="auto">Melanchthon ut eam premamus diutius, praesertim quum adeo multis calumniis nos cum suis gravarit Westphalus, qui denuo nunc adversum te nescio quid scripsisse fertur.</s>
+					<s n="27" xml:lang="la" type="auto">Porro Westphalus vel ex istac historia qualis sit facile innotescet.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, vir clarissime, in Christo Iesu, cui ego labores tuos commendo ex animo, ut eos sanctificet eisque benedicat ad regni sui perpetuum incrementum.</s>
-					<s xml:lang="la" type="auto">Meque ut soles ama ac me precibus piisque suspiriis tuis commenda deo opt. max., omnemque a me exspectato vicissitudinem.</s>
+					<s n="28" xml:lang="la" type="auto">Vale, vir clarissime, in Christo Iesu, cui ego labores tuos commendo ex animo, ut eos sanctificet eisque benedicat ad regni sui perpetuum incrementum.</s>
+					<s n="29" xml:lang="la" type="auto">Meque ut soles ama ac me precibus piisque suspiriis tuis commenda deo opt. max., omnemque a me exspectato vicissitudinem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">D. Stanislaus Lassocius, qui primas in vera pietate inter nobiles omnes facile hic tenet, rogavit ut tibi suo nomine omnia felicia precarer plurimamque salutem adscriberem.</s>
-					<s xml:lang="la" type="auto">Prope Cracoviam 30. iulii a. 1558.</s>
+					<s n="30" xml:lang="la" type="auto">D. Stanislaus Lassocius, qui primas in vera pietate inter nobiles omnes facile hic tenet, rogavit ut tibi suo nomine omnia felicia precarer plurimamque salutem adscriberem.</s>
+					<s n="31" xml:lang="la" type="auto">Prope Cracoviam 30. iulii a. 1558.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus quantus est Ioannes Utenhovius.</s>
+					<s n="32" xml:lang="la" type="auto">Tuus quantus est Ioannes Utenhovius.</s>
 				</p>
 			</div>
 		</body>

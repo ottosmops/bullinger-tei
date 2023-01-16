@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1982"/>
-				<idno type="ISBN">ISBN 3-290-11467-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=149</idno>
+				<idno subtype="ISBN">ISBN 3-290-11467-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=149</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 2</title>
+				<title subtype="publication">HBBW II</title>
 				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">2</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 441,768</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 441,768</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,10 +49,10 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Läßt Bullinger durch <persName ref="188">Erasmus Schmid</persName> ein deutsches Gedicht und ein
-								lateinisches Epigramm gegen die Verunglimpfungen <persName ref="265">Zwinglis</persName> zukommen.
+								Läßt Bullinger durch <persName ref="person188">Erasmus Schmid</persName> ein deutsches Gedicht und ein
+								lateinisches Epigramm gegen die Verunglimpfungen <persName ref="person265">Zwinglis</persName> zukommen.
 								Erhofft wohlwollende Aufnahme, da ihm Bullingers Urteil besonders viel bedeutet. Grüße. Bittet um Bullingers
-								Fürsprache bei seinem Gläubiger, <persName ref="891">Froschauer</persName>, den er bald zu
+								Fürsprache bei seinem Gläubiger, <persName ref="person891">Froschauer</persName>, den er bald zu
 								befriedigen verspricht.
 							</p>
 						</summary>
@@ -60,44 +63,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10180">
 				<correspAction type="sent">
-					<persName ref="person#2115" cert="high">
+					<!--
+					<persName ref="person2115" cert="high">
 						<forename cert="high">Lorenz</forename>
 						<surname cert="high">Meyer</surname>
-						<addName type="main">Meyer (Agricola), Lorenz</addName>
+						<persName type="main" ref="person8130>Meyer (Agricola), Lorenz</addName>
 					</persName>
-					<place source="#486" cert="high">
-						<settlement>Stammheim</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.63244 8.79963</geo>
-					</place>
+					-->
+					<persName ref="person2115" cert="high"/>
+					<place source="place486" cert="high"/>
 					<date when="1532-11-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10181"/>
-					<ref type="prev_chronologically" target="files.xml#10179"/>
-					<ref type="next_correspondence" target="files.xml#10189"/>
+					<ref type="next_chronologically" target="file10181"/>
+					<ref type="prev_chronologically" target="file10179"/>
+					<ref type="next_correspondence" target="file10189"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#10189"/>
+					<ref type="next_correspondence_request" target="file10189"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#11081"/>
+					<ref type="next_correspondence_reaction" target="file11081"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10189"/>
+					<ref type="next_same_sender" target="file10189"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10202"/>
-					<ref type="prev_same_addressee" target="files.xml#10173"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10189"/>
+					<ref type="next_same_addressee" target="file10202"/>
+					<ref type="prev_same_addressee" target="file10173"/>
+					<ref type="next_with_sender_as_addressee" target="file10189"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10202"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10173"/>
+					<ref type="next_with_addressee_as_sender" target="file10202"/>
+					<ref type="prev_with_addressee_as_sender" target="file10173"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -106,39 +112,42 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="10180/Autograph/00 E_II_441__fol__768_r_.tif" n="1"/>
+		<graphic url="10180/Autograph/01 E_II_441__fol__768_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="151">Laurentius Agricola</persName> <placeName ref="1202">Vituduranus</placeName> <persName ref="1775">Heinricho</persName> Bullingero, viro claro, docto, pio et imprimis humano.</s>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Mitto ad te, Bullingere doctissime, carmen lingua nostra, hoc est germanica, scriptum<note xml:id="fn2" type="footnote" n="2">Nicht nachweisbar.</note> et epigramma «In Zingliomastigas»<note xml:id="fn3" type="footnote" n="3">Gedruckt bei <hi>Jenny,</hi> aaO. Der Titel des Gedichts bedeutet soviel wie «Gegen die <persName ref="265">Zwingli</persName>-Geißelungen».</note>, propterea ut tibi, viro humanissimo, partim amorem erga defunctum Zinglium exponerem, partim, quę pollicitus, cum in urbe essem, praestarem, et quod tunc postulabas, nunc ferente <persName ref="188">Erasmo Fabritio</persName><note xml:id="fn4" type="footnote" n="4">Der aus <placeName ref="1032">Stein am Rhein</placeName> stammende <persName ref="188">Erasmus Schmid</persName>, damals Pfarrer in <placeName ref="1236">Zollikon</placeName>, kam vermutlich anläßlich eines Besuches seiner Vaterstadt bei <persName ref="151">Meyer</persName> vorbei.</note>, viro erudito et gravi, acciperes.</s>
-					<s xml:lang="la" type="auto">Etsi leviora tua gravitate, tamen tua meam afficit tenuitatem humanitas, immo amor erga te meus perennis iussit hęc macra ad te dare poemata.</s>
-					<s xml:lang="la" type="auto">Sanctissime mecum egisse deos arbitror, si hęc tibi - caeteros tetricos censores nihil moror - placuerint iudicioque tuo vel steterint vel ceciderint.</s>
+					<s n="1" xml:lang="la" type="auto"><persName ref="person151">Laurentius Agricola</persName> <placeName ref="place1202">Vituduranus</placeName> Heinricho Bullingero, viro claro, docto, pio et imprimis humano.</s>
+					<s n="2" xml:lang="la" type="auto">S.</s>
+					<s n="3" xml:lang="la" type="auto">Mitto ad te, Bullingere doctissime, carmen lingua nostra, hoc est germanica, scriptum<note xml:id="fn2" type="footnote" n="2">Nicht nachweisbar.</note> et epigramma «In Zingliomastigas»<note xml:id="fn3" type="footnote" n="3">Gedruckt bei <hi>Jenny,</hi> aaO. Der Titel des Gedichts bedeutet soviel wie «Gegen die <persName ref="person265">Zwingli</persName>-Geißelungen».</note>, propterea ut tibi, viro humanissimo, partim amorem erga defunctum Zinglium exponerem, partim, quę pollicitus, cum in urbe essem, praestarem, et quod tunc postulabas, nunc ferente <persName ref="person188">Erasmo Fabritio</persName><note xml:id="fn4" type="footnote" n="4">Der aus <placeName ref="place1032">Stein am Rhein</placeName> stammende <persName ref="person188">Erasmus Schmid</persName>, damals Pfarrer in <placeName ref="place1236">Zollikon</placeName>, kam vermutlich anläßlich eines Besuches seiner Vaterstadt bei <persName ref="person151">Meyer</persName> vorbei.</note>, viro erudito et gravi, acciperes.</s>
+					<s n="4" xml:lang="la" type="auto">Etsi leviora tua gravitate, tamen tua meam afficit tenuitatem humanitas, immo amor erga te meus perennis iussit hęc macra ad te dare poemata.</s>
+					<s n="5" xml:lang="la" type="auto">Sanctissime mecum egisse deos arbitror, si hęc tibi - caeteros tetricos censores nihil moror - placuerint iudicioque tuo vel steterint vel ceciderint.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in Christo servatore nostro.</s>
-					<s xml:lang="la" type="auto">Is te nobis diu servet superstitem et incolumem.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="6" xml:lang="la" type="auto">Vale in Christo servatore nostro.</s>
+					<s n="7" xml:lang="la" type="auto">Is te nobis diu servet superstitem et incolumem.</s>
+					<s n="8" xml:lang="la" type="manual">Amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sthammę, 14. novembris anno cędis Zinglii nostri altero<note xml:id="fn5" type="footnote" n="5">Im zweiten Jahr nach <persName ref="265">Zwinglis</persName> Tod, d. h. 1532.</note>.</s>
+					<s n="9" xml:lang="la" type="auto">Sthammę, 14. novembris anno cędis Zinglii nostri altero<note xml:id="fn5" type="footnote" n="5">Im zweiten Jahr nach <persName ref="person265">Zwinglis</persName> Tod, d. h. 1532.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Saphico<note xml:id="fn6" type="footnote" n="6">Eine sapphische Ode <persName ref="151">Meyers</persName> ist nicht nachweisbar.</note> extremam manum nondum imposui.</s>
-					<s xml:lang="la" type="auto">Brevi ad te mittam vel ipse portabo.</s>
-					<s xml:lang="la" type="auto">Parentes<note xml:id="fn7" type="footnote" n="7">Dekan Heinrich und <persName ref="32">Anna Bullinger</persName>, geb. Wiederkehr.</note> valere tuos sanctissimos una cum honestissima uxore tua<note xml:id="fn8" type="footnote" n="8"><persName ref="32">Anna Bullinger</persName>, geb. Adlischwyler.</note> cupio valde.</s>
-					<s xml:lang="la" type="auto">Acerbitatem <persName ref="891">Christophori</persName> calcographi<note xml:id="fn9" type="footnote" n="9">Weshalb <persName ref="151">Meyer</persName> bei <persName ref="891">Froschauer</persName> Schulden hatte, ist nicht bekannt.</note>, oro, tua dulcedine velis redulcorare; ob debiti ęris tarditatem in me factus inhumanior.</s>
-					<s xml:lang="la" type="auto">Ego vero sic me urgente necessitate non malitia pecco, sed ęris penuria.</s>
-					<s xml:lang="la" type="auto">Vina<note xml:id="fn10" type="footnote" n="10">Der Weinzehnte, der zu einem Teil verkauft wurde, bildete eine wesentliche Einnahmequelle.</note> nondum vendidi, redditus annales nondum accepi.</s>
-					<s xml:lang="la" type="auto">Quam primum vina vendidero, sancta fide polliceor iustam ei debiti pecuniam missurum.</s>
-					<s xml:lang="la" type="auto">Fac, quod postulo.</s>
-					<s xml:lang="la" type="auto">Quod promisi, curabo sedulo.</s>
+					<s n="10" xml:lang="la" type="auto">Saphico<note xml:id="fn6" type="footnote" n="6">Eine sapphische Ode <persName ref="person151">Meyers</persName> ist nicht nachweisbar.</note> extremam manum nondum imposui.</s>
+					<s n="11" xml:lang="la" type="auto">Brevi ad te mittam vel ipse portabo.</s>
+					<s n="12" xml:lang="la" type="auto">Parentes<note xml:id="fn7" type="footnote" n="7">Dekan Heinrich und <persName ref="person32">Anna Bullinger</persName>, geb. Wiederkehr.</note> valere tuos sanctissimos una cum honestissima uxore tua<note xml:id="fn8" type="footnote" n="8"><persName ref="person32">Anna Bullinger</persName>, geb. Adlischwyler.</note> cupio valde.</s>
+					<s n="13" xml:lang="la" type="auto">Acerbitatem <persName ref="person891">Christophori</persName> calcographi<note xml:id="fn9" type="footnote" n="9">Weshalb <persName ref="person151">Meyer</persName> bei <persName ref="person891">Froschauer</persName> Schulden hatte, ist nicht bekannt.</note>, oro, tua dulcedine velis redulcorare; ob debiti ęris tarditatem in me factus inhumanior.</s>
+					<s n="14" xml:lang="la" type="auto">Ego vero sic me urgente necessitate non malitia pecco, sed ęris penuria.</s>
+					<s n="15" xml:lang="la" type="auto">Vina<note xml:id="fn10" type="footnote" n="10">Der Weinzehnte, der zu einem Teil verkauft wurde, bildete eine wesentliche Einnahmequelle.</note> nondum vendidi, redditus annales nondum accepi.</s>
+					<s n="16" xml:lang="la" type="auto">Quam primum vina vendidero, sancta fide polliceor iustam ei debiti pecuniam missurum.</s>
+					<s n="17" xml:lang="la" type="auto">Fac, quod postulo.</s>
+					<s n="18" xml:lang="la" type="auto">Quod promisi, curabo sedulo.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">H[einricho] B[ullingero], ecclesiasti Tigurino.</s>
+					<s n="19" xml:lang="la" type="auto">H[einricho] B[ullingero], ecclesiasti Tigurino.</s>
 				</p>
 			</div>
 		</body>

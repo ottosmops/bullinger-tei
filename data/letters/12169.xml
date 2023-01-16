@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2013"/>
-				<idno type="ISBN">ISBN 978-3-290-17664-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2122</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17664-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2122</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 15</title>
+				<title subtype="publication">HBBW XV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">15</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 338,1427</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 338,1427</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,11 +49,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Hardenberg kann nicht jedem Einzelnen (Propst [<persName ref="872">Felix Frey</persName>], Theodor
-								[Bibliander], [Kaspar] Megander, [<persName ref="69">Johannes</persName>]
-								<persName ref="69">Fries</persName> und [Konrad] Gessner) schreiben, erinnert sich aber stets an ihre
+								Hardenberg kann nicht jedem Einzelnen (Propst [<persName ref="person872">Felix Frey</persName>], Theodor
+								[Bibliander], [Kaspar] Megander, [Johannes]
+								<persName ref="person69">Fries</persName> und [Konrad] Gessner) schreiben, erinnert sich aber stets an ihre
 								Wohltaten. Die Liste mit den Namen [der Zürcher Pfarrer] ließ er in
-								<placeName ref="1049">Straßburg</placeName> und kann daher nicht alle namentlich nennen. Er verehrt
+								<placeName ref="place1049">Straßburg</placeName> und kann daher nicht alle namentlich nennen. Er verehrt
 								sie aber alle. - Sie sollen ihm schreiben, denn er bedarf ihrer Ermahnung und Unterweisung. Oh, wenn sie
 								sich einmal wiedersehen könnten! Wenn nicht, sehen sie sich im Reiche Gottes, und hoffentlich bald! -
 								Hardenbergs [ehemaliger] Gastgeber Bullinger wird ihnen Grüße übermitteln.
@@ -63,55 +66,41 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12169">
 				<correspAction type="sent">
-					<persName ref="person#1458" cert="high">
+					<!--
+					<persName ref="person1458" cert="high">
 						<forename cert="high">Albert</forename>
 						<surname cert="high">Hardenberg</surname>
-						<addName type="main">Hardenberg (Rizäus), Albert</addName>
+						<persName type="main" ref="person8371>Hardenberg (Rizäus), Albert</addName>
 						<graphic type="portrait" url="portraits/1458_Hardenberg_Albert.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Albert_Hardenberg"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118720317"/>
 					</persName>
-					<place source="#56" cert="high">
-						<settlement>Bonn</settlement>
-						<district>Nordrhein-Westfalen</district>
-						<country>Deutschland</country>
-						<geo>50.735851 7.10066</geo>
-					</place>
+					-->
+					<persName ref="person1458" cert="high"/>
+					<place source="place56" cert="high"/>
 					<date when="1545-03-25" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12170"/>
-					<ref type="prev_chronologically" target="files.xml#12168"/>
+					<ref type="next_chronologically" target="file12170"/>
+					<ref type="prev_chronologically" target="file12168"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#8640"/>
-					<ref type="prev_same_sender" target="files.xml#12167"/>
+					<ref type="next_same_sender" target="file8640"/>
+					<ref type="prev_same_sender" target="file12167"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#12133"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8640"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12167"/>
+					<ref type="prev_same_addressee" target="file12133"/>
+					<ref type="next_with_sender_as_addressee" target="file8640"/>
+					<ref type="prev_with_sender_as_addressee" target="file12167"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12133"/>
+					<ref type="prev_with_addressee_as_sender" target="file12133"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -128,30 +117,30 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Non mihi vacat, ut ad vos scribam, clarissimi viri, domine preposite,<note xml:id="fn2" type="footnote" n="2">Der Propst <persName ref="872">Felix Frey</persName>.</note> domine Theodore<note xml:id="fn3" type="footnote" n="3">Theodor Bibliander.</note>, domine Megander<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> Megande.</note><note xml:id="fn4" type="footnote" n="4">Kaspar Megander.</note>, Frisi, Kesnere<note xml:id="fn5" type="footnote" n="5">Konrad Gessner.</note> vosque alii, charissimi fratres, tamen semper memor sum maximorum vestrorum beneficiorum.</s>
+					<s n="1" xml:lang="la" type="auto">Non mihi vacat, ut ad vos scribam, clarissimi viri, domine preposite,<note xml:id="fn2" type="footnote" n="2">Der Propst <persName ref="person872">Felix Frey</persName>.</note> domine Theodore<note xml:id="fn3" type="footnote" n="3">Theodor Bibliander.</note>, domine Megander<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> Megande.</note><note xml:id="fn4" type="footnote" n="4">Kaspar Megander.</note>, Frisi, Kesnere<note xml:id="fn5" type="footnote" n="5">Konrad Gessner.</note> vosque alii, charissimi fratres, tamen semper memor sum maximorum vestrorum beneficiorum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Non habeo nunc catalogum nominum vestrorum, qui est Argentinae, itaque non possum omnes nunc nominare; tamen omnes amo, colo, veneror tacito cogitationis affectu.</s>
+					<s n="2" xml:lang="la" type="auto">Non habeo nunc catalogum nominum vestrorum, qui est Argentinae, itaque non possum omnes nunc nominare; tamen omnes amo, colo, veneror tacito cogitationis affectu.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Oro vos, exhilarate<note xml:id="fnc" type="footnote" n="c"><hi>In der Vorlage</hi> exhilarat.</note> semel animum meum vestris scriptis, nam et monitionibus et instructionibus vestris semper egeo.</s>
-					<s xml:lang="la" type="auto">Utinam liceat adhuc semel in hac vita videre illa sacratissima pectora!</s>
-					<s xml:lang="la" type="auto">O si, o si!</s>
-					<s xml:lang="la" type="auto">Si autem hoc non liceat, videbimus tamen nos in illo die in regno patris nostri; quod utinam quam primum adveniat, ne non fiat salva omnis caro<note xml:id="fn6" type="footnote" n="6">Anspielung auf Mt 24, 22 par.</note>!</s>
-					<s xml:lang="la" type="auto">Nam magna est miseria istis regionibus.</s>
-					<s xml:lang="la" type="auto">Sed de his alias.</s>
+					<s n="3" xml:lang="la" type="auto">Oro vos, exhilarate<note xml:id="fnc" type="footnote" n="c"><hi>In der Vorlage</hi> exhilarat.</note> semel animum meum vestris scriptis, nam et monitionibus et instructionibus vestris semper egeo.</s>
+					<s n="4" xml:lang="la" type="auto">Utinam liceat adhuc semel in hac vita videre illa sacratissima pectora!</s>
+					<s n="5" xml:lang="la" type="auto">O si, o si!</s>
+					<s n="6" xml:lang="la" type="auto">Si autem hoc non liceat, videbimus tamen nos in illo die in regno patris nostri; quod utinam quam primum adveniat, ne non fiat salva omnis caro<note xml:id="fn6" type="footnote" n="6">Anspielung auf Mt 24, 22 par.</note>!</s>
+					<s n="7" xml:lang="la" type="auto">Nam magna est miseria istis regionibus.</s>
+					<s n="8" xml:lang="la" type="auto">Sed de his alias.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Meus hospes meritissimus, m. Bullingerus,<note xml:id="fn7" type="footnote" n="7">Hardenberg bezieht sich auf seinen Besuch vom <hi>25.</hi> bis 29. September 1544 in Zürich; s. HBBW XIV, <ref target="file#12019">Nr. 1972</ref>, Anm. 1.</note> spero, salutabit vos meis verbis<note xml:id="fn8" type="footnote" n="8">Siehe oben <ref target="file#12166">Nr. 2119</ref>, 41-44.</note>.</s>
-					<s xml:lang="la" type="auto">Valete in domino.</s>
-					<s xml:lang="la" type="auto">1545, 25. martii, <placeName ref="1334">Bonnae</placeName>.</s>
+					<s n="9" xml:lang="la" type="auto">Meus hospes meritissimus, m. Bullingerus,<note xml:id="fn7" type="footnote" n="7">Hardenberg bezieht sich auf seinen Besuch vom 25. bis 29. September 1544 in Zürich; s. HBBW XIV, <ref target="file12019">Nr. 1972</ref>, Anm. 1.</note> spero, salutabit vos meis verbis<note xml:id="fn8" type="footnote" n="8">Siehe oben <ref target="file12166">Nr. 2119</ref>, 41-44.</note>.</s>
+					<s n="10" xml:lang="la" type="auto">Valete in domino.</s>
+					<s n="11" xml:lang="la" type="auto">1545, 25. martii, <placeName ref="place1334">Bonnae</placeName>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Albertus Hardenbergus Frisius.</s>
+					<s n="12" xml:lang="la" type="auto">Albertus Hardenbergus Frisius.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimis viris patribus et fratribus meis, ministris ecclesiae Tygurinae seorsum singulis.</s>
+					<s n="13" xml:lang="la" type="auto">Clarissimis viris patribus et fratribus meis, ministris ecclesiae Tygurinae seorsum singulis.</s>
 				</p>
 			</div>
 		</body>

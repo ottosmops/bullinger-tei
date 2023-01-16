@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=537</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=537</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 346,19-21</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 346,19-21</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,20 +49,20 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Will die neulich vergessenen Gutachten [Bullingers und <persName ref="165">Pellikans</persName>]
-								beilegen. Schickt vertraulich einen Brief <persName ref="28">Bucers</persName>.
-								<persName ref="20">Thomas</persName> [<persName ref="19">Blarer</persName>] hat bei
-								<persName ref="19">Ambrosius</persName> [<persName ref="19">Blarer</persName> in
-								<placeName ref="1107">Tübingen</placeName>] mit <persName ref="28">Bucer</persName>
-								verhandelt, der zwar bedauert, die <placeName ref="565">Konstanzer</placeName> beunruhigt zu haben,
-								aber die Gefahr nicht sieht; <persName ref="263">Zwick</persName> befürchtet eine Ermutigung
-								<persName ref="2122">Schwenckfelds</persName> und Zulauf für die münsterischen [Täufer]. Möchte die
-								Gutachten von Bullinger und <persName ref="165">Pellikan</persName> an
-								<persName ref="19">Ambrosius</persName> [<persName ref="19">Blarer</persName>] senden;
-								empfiehlt, sie auch an <persName ref="28">Bucer</persName> zu schicken, ohne dabei die
-								<placeName ref="565">Konstanzer</placeName> zu erwähnen, und ihm von der Besorgnis der Zürcher zu
+								Will die neulich vergessenen Gutachten [Bullingers und <persName ref="person165">Pellikans</persName>]
+								beilegen. Schickt vertraulich einen Brief <persName ref="person28">Bucers</persName>.
+								Thomas [<persName ref="person19">Blarer</persName>] hat bei
+								Ambrosius [<persName ref="person19">Blarer</persName> in
+								<placeName ref="place1107">Tübingen</placeName>] mit <persName ref="person28">Bucer</persName>
+								verhandelt, der zwar bedauert, die <placeName ref="place565">Konstanzer</placeName> beunruhigt zu haben,
+								aber die Gefahr nicht sieht; <persName ref="person263">Zwick</persName> befürchtet eine Ermutigung
+								<persName ref="person2122">Schwenckfelds</persName> und Zulauf für die münsterischen [Täufer]. Möchte die
+								Gutachten von Bullinger und <persName ref="person165">Pellikan</persName> an
+								Ambrosius [<persName ref="person19">Blarer</persName>] senden;
+								empfiehlt, sie auch an <persName ref="person28">Bucer</persName> zu schicken, ohne dabei die
+								<placeName ref="place565">Konstanzer</placeName> zu erwähnen, und ihm von der Besorgnis der Zürcher zu
 								berichten. Entschuldigt sich für die mangelhafte Abschrift des Briefes von
-								<persName ref="28">Bucer</persName>. Bittet, auch weiterhin unterrichtet zu werden. Gruß.
+								<persName ref="person28">Bucer</persName>. Bittet, auch weiterhin unterrichtet zu werden. Gruß.
 							</p>
 						</summary>
 					</msContents>
@@ -69,45 +72,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10573">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<place source="#257" cert="high">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person4079" cert="high"/>
+					<place source="place257" cert="high"/>
 					<date when="1535-02-27" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10574"/>
-					<ref type="prev_chronologically" target="files.xml#10572"/>
-					<ref type="next_correspondence" target="files.xml#10599"/>
-					<ref type="prev_correspondence" target="files.xml#10570"/>
-					<ref type="next_correspondence_request" target="files.xml#10601"/>
-					<ref type="prev_correspondence_request" target="files.xml#10570"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10599"/>
+					<ref type="next_chronologically" target="file10574"/>
+					<ref type="prev_chronologically" target="file10572"/>
+					<ref type="next_correspondence" target="file10599"/>
+					<ref type="prev_correspondence" target="file10570"/>
+					<ref type="next_correspondence_request" target="file10601"/>
+					<ref type="prev_correspondence_request" target="file10570"/>
+					<ref type="next_correspondence_reaction" target="file10599"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10601"/>
-					<ref type="prev_same_sender" target="files.xml#10570"/>
-					<ref type="next_same_addressee" target="files.xml#10577"/>
-					<ref type="prev_same_addressee" target="files.xml#10564"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10601"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10570"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10577"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10564"/>
+					<ref type="next_same_sender" target="file10601"/>
+					<ref type="prev_same_sender" target="file10570"/>
+					<ref type="next_same_addressee" target="file10577"/>
+					<ref type="prev_same_addressee" target="file10564"/>
+					<ref type="next_with_sender_as_addressee" target="file10601"/>
+					<ref type="prev_with_sender_as_addressee" target="file10570"/>
+					<ref type="next_with_addressee_as_sender" target="file10577"/>
+					<ref type="prev_with_addressee_as_sender" target="file10564"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -127,61 +134,61 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salus et pax Christi.</s>
+					<s n="1" xml:lang="la" type="auto">Salus et pax Christi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Iterum atque etiam experiris, mi Bullingere, suavissime frater, quam sim stupido et oblivioso ingenio: quorsum enim, quod nuper tam constanter scripsi me tibi remittere consilia<note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file#10570">Nr. 534</ref>, 11.</note>, cum ipsa servaverim domi?</s>
-					<s xml:lang="la" type="auto">Ergo si tibet, mendacii me accusa, quanquam mendatium purgaturus sim ignorantia, quę innata est mihi homini misero.</s>
-					<s xml:lang="la" type="auto">Sed iam praesto, quod pollicebar nuper, nisi iterum excidat, quominus addam literis consilia.</s>
-					<s xml:lang="la" type="auto">Hoc ne fiat, e naso nodum faciam<note xml:id="fn3" type="footnote" n="3">scherzhaft für: sich etwas merken (wofür sonst der Knoten im Taschentuch üblich ist), vgl. Wander II 1441: <hi>Röhrich</hi> II 677. I 521.</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Iterum atque etiam experiris, mi Bullingere, suavissime frater, quam sim stupido et oblivioso ingenio: quorsum enim, quod nuper tam constanter scripsi me tibi remittere consilia<note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file10570">Nr. 534</ref>, 11.</note>, cum ipsa servaverim domi?</s>
+					<s n="3" xml:lang="la" type="auto">Ergo si tibet, mendacii me accusa, quanquam mendatium purgaturus sim ignorantia, quę innata est mihi homini misero.</s>
+					<s n="4" xml:lang="la" type="auto">Sed iam praesto, quod pollicebar nuper, nisi iterum excidat, quominus addam literis consilia.</s>
+					<s n="5" xml:lang="la" type="auto">Hoc ne fiat, e naso nodum faciam<note xml:id="fn3" type="footnote" n="3">scherzhaft für: sich etwas merken (wofür sonst der Knoten im Taschentuch üblich ist), vgl. Wander II 1441: <hi>Röhrich</hi> II 677. I 521.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="120"/>Deinde ad te mitto responsionem <persName ref="28">Buceri</persName> ad nos priorem<note xml:id="fn4" type="footnote" n="4">Gemeint ist <persName ref="28">Bucers</persName> Brief vom 3. Februar an <persName ref="20">Thomas Blarer</persName> und <persName ref="263">Johannes Zwick</persName>, vgl. oben <ref target="file#10570">Nr. 534</ref>, 7f. Die Abschrift (vgl. unten Z. 33-35) scheint nicht mehr erhalten zu sein.</note>, sed nosti, qua lege, scilicet bonę fidei.</s>
-					<s xml:lang="la" type="auto">Nob enim, quisquam alius legat, cum non omnes sint aequo animo neque irritanda sunt magis atque magis ingenia quorundam.</s>
-					<s xml:lang="la" type="auto">Fingendum esset quid potius, quo placarentur.</s>
-					<s xml:lang="la" type="auto">Proinde non omnes cauti sunt in scribendis<note xml:id="fna" type="footnote" n="a">scribendis <hi>korr. aus</hi> scribendo.</note> literis ad amicos.</s>
-					<s xml:lang="la" type="auto">Hinc miscentur vel odiosissima, quaeque non nisi in sinum effusa sunt.</s>
+					<s n="6" xml:lang="la" type="auto"><pb type="edition" next="120"/>Deinde ad te mitto responsionem <persName ref="person28">Buceri</persName> ad nos priorem<note xml:id="fn4" type="footnote" n="4">Gemeint ist <persName ref="person28">Bucers</persName> Brief vom 3. Februar an <persName ref="person20">Thomas Blarer</persName> und <persName ref="person263">Johannes Zwick</persName>, vgl. oben <ref target="file10570">Nr. 534</ref>, 7f. Die Abschrift (vgl. unten Z. 33-35) scheint nicht mehr erhalten zu sein.</note>, sed nosti, qua lege, scilicet bonę fidei.</s>
+					<s n="7" xml:lang="la" type="auto">Nob enim, quisquam alius legat, cum non omnes sint aequo animo neque irritanda sunt magis atque magis ingenia quorundam.</s>
+					<s n="8" xml:lang="la" type="auto">Fingendum esset quid potius, quo placarentur.</s>
+					<s n="9" xml:lang="la" type="auto">Proinde non omnes cauti sunt in scribendis<note xml:id="fna" type="footnote" n="a">scribendis <hi>korr. aus</hi> scribendo.</note> literis ad amicos.</s>
+					<s n="10" xml:lang="la" type="auto">Hinc miscentur vel odiosissima, quaeque non nisi in sinum effusa sunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="20">Thomas</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="20">Thomas Blarer</persName>.</note> noster <persName ref="28">Bucerum</persName> deprehendit apud <persName ref="19">Ambrosium</persName><note xml:id="fn6" type="footnote" n="6"><persName ref="19">Ambrosius Blarer</persName>. Zur Begegnung von <persName ref="20">Thomas Blarer</persName> und <persName ref="28">Bucer</persName> in <placeName ref="1107">Tübingen</placeName> vgl. oben <ref target="file#10562">Nr. 526</ref>, Anm. 8.</note>.</s>
-					<s xml:lang="la" type="auto">Egit cum illo multis et strenue.</s>
-					<s xml:lang="la" type="auto">Quid responsi adtulerit nobis, uno verbo dicam: Dolet hoc unum <persName ref="28">Bucero</persName> nos Constantienses tam offensos esse consilio suo.</s>
-					<s xml:lang="la" type="auto"><pb type="scan" next="||20"/>Verum an persuasum sit optimo viro huius modi conatus esse periculosos et parum solidos, non intelligo.</s>
-					<s xml:lang="la" type="auto">Omnino putat se nihil dedisse a scriptura alienum.</s>
-					<s xml:lang="la" type="auto">Sed quid dicam?</s>
-					<s xml:lang="la" type="auto">Articulorum summa circumfertur typis excusa<note xml:id="fn7" type="footnote" n="7">Ein solcher Druck ließ sich bisher nicht nachweisen. Vgl. unten <ref target="file#10661">Nr. 623</ref>, Anm. 57.</note>.</s>
-					<s xml:lang="la" type="auto">Quidam blandiuntur, quidam frendunt, et nemo est, qui non summę levitatis nos insimulet.</s>
-					<s xml:lang="la" type="auto">Egregie confirmabuntur sectę; <persName ref="2122">Schwenckfeldio</persName> duplex cor nascetur, si modo non multi quoque Monasteriensibus<note xml:id="fnb" type="footnote" n="b">sibus <hi>am Rande nachgetragen.</hi></note> accessuri sunt.</s>
+					<s n="11" xml:lang="la" type="auto"><persName ref="person20">Thomas</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="person20">Thomas Blarer</persName>.</note> noster <persName ref="person28">Bucerum</persName> deprehendit apud <persName ref="person19">Ambrosium</persName><note xml:id="fn6" type="footnote" n="6"><persName ref="person19">Ambrosius Blarer</persName>. Zur Begegnung von <persName ref="person20">Thomas Blarer</persName> und <persName ref="person28">Bucer</persName> in <placeName ref="place1107">Tübingen</placeName> vgl. oben <ref target="file10562">Nr. 526</ref>, Anm. 8.</note>.</s>
+					<s n="12" xml:lang="la" type="auto">Egit cum illo multis et strenue.</s>
+					<s n="13" xml:lang="la" type="auto">Quid responsi adtulerit nobis, uno verbo dicam: Dolet hoc unum <persName ref="person28">Bucero</persName> nos Constantienses tam offensos esse consilio suo.</s>
+					<s n="14" xml:lang="la" type="auto"><pb type="scan" next="||20"/>Verum an persuasum sit optimo viro huius modi conatus esse periculosos et parum solidos, non intelligo.</s>
+					<s n="15" xml:lang="la" type="auto">Omnino putat se nihil dedisse a scriptura alienum.</s>
+					<s n="16" xml:lang="la" type="auto">Sed quid dicam?</s>
+					<s n="17" xml:lang="la" type="auto">Articulorum summa circumfertur typis excusa<note xml:id="fn7" type="footnote" n="7">Ein solcher Druck ließ sich bisher nicht nachweisen. Vgl. unten <ref target="file10661">Nr. 623</ref>, Anm. 57.</note>.</s>
+					<s n="18" xml:lang="la" type="auto">Quidam blandiuntur, quidam frendunt, et nemo est, qui non summę levitatis nos insimulet.</s>
+					<s n="19" xml:lang="la" type="auto">Egregie confirmabuntur sectę; <persName ref="person2122">Schwenckfeldio</persName> duplex cor nascetur, si modo non multi quoque Monasteriensibus<note xml:id="fnb" type="footnote" n="b">sibus <hi>am Rande nachgetragen.</hi></note> accessuri sunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuum consilium iuncto <persName ref="165">Pellicani</persName> summe placet nostris omnibus.</s>
-					<s xml:lang="la" type="auto">Quodsi vobis non ingratam rem fecissem, certe misissem <persName ref="19">Ambrosio</persName>, sed nolui sine venia.</s>
-					<s xml:lang="la" type="auto">Unum vero optaremus, ut<note xml:id="fnc" type="footnote" n="c"><hi>vor</hi> ut <hi>gestrichenes q.</hi></note> per vos quoque scriberetur <persName ref="28">Bucero</persName> negotium fieri a vestris propter consilia Gallo data<note xml:id="fn8" type="footnote" n="8">Bullinger äußerte seine Kritik an den Gutachten von <persName ref="28">Bucer</persName> und <persName ref="146">Melanchthon</persName> in seinem Brief an <persName ref="28">Bucer</persName> vom 28. März, s. unten <ref target="file#10598">Nr. 562</ref>, 104-138.</note>, ne putaret bonus vir nobis tantum<note xml:id="fnd" type="footnote" n="d">tantum <hi>am Rande nachgetragen.</hi></note> Constantiensibus hęc minime probari.</s>
-					<s xml:lang="la" type="auto">Cavendum vero, ne ex vestris literis - quas communi nomine scribendas censemus - quicquam suspicari posset de monitione nostra.</s>
-					<s xml:lang="la" type="auto">Abstinendum esset ab omni mentione nostrarum literarum, imo nominis nostri.</s>
-					<s xml:lang="la" type="auto">Possent quoque mitti consilia vestra, quo magis intelligeret, quae vestra in hisce concordiis sententia, atque hinc forte minus pergeret in instituto.</s>
-					<s xml:lang="la" type="auto">Speramus vos ita facturos.</s>
+					<s n="20" xml:lang="la" type="auto">Tuum consilium iuncto <persName ref="person165">Pellicani</persName> summe placet nostris omnibus.</s>
+					<s n="21" xml:lang="la" type="auto">Quodsi vobis non ingratam rem fecissem, certe misissem <persName ref="person19">Ambrosio</persName>, sed nolui sine venia.</s>
+					<s n="22" xml:lang="la" type="auto">Unum vero optaremus, ut<note xml:id="fnc" type="footnote" n="c"><hi>vor</hi> ut <hi>gestrichenes q.</hi></note> per vos quoque scriberetur <persName ref="person28">Bucero</persName> negotium fieri a vestris propter consilia Gallo data<note xml:id="fn8" type="footnote" n="8">Bullinger äußerte seine Kritik an den Gutachten von <persName ref="person28">Bucer</persName> und <persName ref="person146">Melanchthon</persName> in seinem Brief an <persName ref="person28">Bucer</persName> vom 28. März, s. unten <ref target="file10598">Nr. 562</ref>, 104-138.</note>, ne putaret bonus vir nobis tantum<note xml:id="fnd" type="footnote" n="d">tantum <hi>am Rande nachgetragen.</hi></note> Constantiensibus hęc minime probari.</s>
+					<s n="23" xml:lang="la" type="auto">Cavendum vero, ne ex vestris literis - quas communi nomine scribendas censemus - quicquam suspicari posset de monitione nostra.</s>
+					<s n="24" xml:lang="la" type="auto">Abstinendum esset ab omni mentione nostrarum literarum, imo nominis nostri.</s>
+					<s n="25" xml:lang="la" type="auto">Possent quoque mitti consilia vestra, quo magis intelligeret, quae vestra in hisce concordiis sententia, atque hinc forte minus pergeret in instituto.</s>
+					<s n="26" xml:lang="la" type="auto">Speramus vos ita facturos.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="scan" next="||21"/>Responsio, quam mitto, per pueros descripta parum cohaeret, sed litterae A B C etc. indicabunt ordinem.</s>
-					<s xml:lang="la" type="auto">Aliis quoque erroribus dabis veniam, neque enim relegi neque cum archetypo contuli.</s>
-					<s xml:lang="la" type="auto">Facile deprehendetis mentem.</s>
+					<s n="27" xml:lang="la" type="auto"><pb type="scan" next="||21"/>Responsio, quam mitto, per pueros descripta parum cohaeret, sed litterae A B C etc. indicabunt ordinem.</s>
+					<s n="28" xml:lang="la" type="auto">Aliis quoque erroribus dabis veniam, neque enim relegi neque cum archetypo contuli.</s>
+					<s n="29" xml:lang="la" type="auto">Facile deprehendetis mentem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quicquid vero tibi boni incident ad hanc concordiam confutandam, cave, ne me lateat.</s>
+					<s n="30" xml:lang="la" type="auto">Quicquid vero tibi boni incident ad hanc concordiam confutandam, cave, ne me lateat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Servet te servator cum tota familia omnibusque fratribus.</s>
+					<s n="31" xml:lang="la" type="auto">Servet te servator cum tota familia omnibusque fratribus.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">27. septembris<note xml:id="fne" type="footnote" n="e"><hi>irrtümlich statt</hi> februarii, <hi>vgl. Anm. 1.</hi></note> 1535.</s>
+					<s n="32" xml:lang="de" type="auto">27. septembris<note xml:id="fne" type="footnote" n="e"><hi>irrtümlich statt</hi> februarii, <hi>vgl. Anm. 1.</hi></note> 1535.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus atque iterum tuus Io. Z.</s>
+					<s n="33" xml:lang="la" type="auto">Tuus atque iterum tuus Io. Z.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf S. 22:]</note>
-					<s xml:lang="la" type="auto">Domino Hainricho Bullingero, selectissimo meo fratri.</s>
+					<s n="34" xml:lang="la" type="auto">Domino Hainricho Bullingero, selectissimo meo fratri.</s>
 				</p>
 			</div>
 		</body>

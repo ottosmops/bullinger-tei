@@ -9,28 +9,31 @@
 				<publisher>(nicht publiziert)</publisher>
 				<pubPlace>(Zürich)</pubPlace>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2559</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2559</idno>
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">374</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#474">St. Gallen</settlement>
-						<institution>Kantonsbibliothek Vadiana</institution>
-						<idno type="Autograph">Ms 35 (VBS VI),189</idno>
-						<repository ref="archive#78">
+						<!--
+						<repository ref="archive78">
 							<name>St. Gallen KB</name>
 							<ref target="https://www.sg.ch/kultur/kantonsbibliothek-vadiana.html"/>
 						</repository>
+						<settlement ref="place474">St. Gallen</settlement>
+						<institution>Kantonsbibliothek Vadiana</institution>
+						-->
+						<repository ref="archive78"/>
+						<idno subtype="Autograph">Ms 35 (VBS VI),189</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,20 +44,20 @@
 							<p xml:id="regest1">
 								Der aus einer vornehmen spanischen Familie stammende, gelehrte und fromme Francisco de Enzinas reist nach
 								St. Gallen, und zwar nur, um Vadian zu sehen! Von dort will er nach
-								<placeName ref="636">Lindau</placeName> zu [Hieronymus] Sailer, dann nach
-								<placeName ref="565">Konstanz</placeName> und wieder zurück nach
-								<placeName ref="97">Basel</placeName>, wo er einige Zeit leben wird.
+								<placeName ref="place636">Lindau</placeName> zu [Hieronymus] Sailer, dann nach
+								<placeName ref="place565">Konstanz</placeName> und wieder zurück nach
+								<placeName ref="place97">Basel</placeName>, wo er einige Zeit leben wird.
 								</p>
 								<p xml:id="regest2">
 								- Er vertritt eine rechtgläubige Auffassung. Vadian soll ihm aber nicht den Eindruck geben, er würde den in
-								der Lehre so wechselhaften <persName ref="28">Bucer</persName> unterstützen. Nicht dass Bullinger
+								der Lehre so wechselhaften <persName ref="person28">Bucer</persName> unterstützen. Nicht dass Bullinger
 								Zweifel über Vadians Auffassung des Abendmahls hegen würde; er weiß aber, dass
-								<persName ref="28">Bucer</persName> dem Spanier gegenüber den Namen Vadians bei Aufzählung seiner
-								Anhänger erwähnt hat. Der Spanier ist ferner überzeugt, dass [<persName ref="28">Bucer</persName>]
+								<persName ref="person28">Bucer</persName> dem Spanier gegenüber den Namen Vadians bei Aufzählung seiner
+								Anhänger erwähnt hat. Der Spanier ist ferner überzeugt, dass [<persName ref="person28">Bucer</persName>]
 								nicht so anders denken kann, als er sich in seinen Büchern äußert.
 								</p>
 								<p xml:id="regest3">
-								- Er ist auch <persName ref="146">Melanchthon</persName> sehr lieb, hat bei diesem bis letzten Juni
+								- Er ist auch <persName ref="person146">Melanchthon</persName> sehr lieb, hat bei diesem bis letzten Juni
 								gewohnt und wird Erstaunliches über ihn berichten.
 								</p>
 								<p xml:id="regest4">
@@ -79,46 +82,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12606">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1546-09-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
+					-->
+					<persName ref="person3306" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12607"/>
-					<ref type="prev_chronologically" target="files.xml#12605"/>
-					<ref type="next_correspondence" target="files.xml#12761"/>
-					<ref type="prev_correspondence" target="files.xml#12591"/>
-					<ref type="next_correspondence_request" target="files.xml#12866"/>
-					<ref type="prev_correspondence_request" target="files.xml#12591"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12761"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12458"/>
-					<ref type="next_same_sender" target="files.xml#12609"/>
-					<ref type="prev_same_sender" target="files.xml#12604"/>
-					<ref type="next_same_addressee" target="files.xml#12761"/>
-					<ref type="prev_same_addressee" target="files.xml#12458"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12609"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12604"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12761"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12458"/>
+					<ref type="next_chronologically" target="file12607"/>
+					<ref type="prev_chronologically" target="file12605"/>
+					<ref type="next_correspondence" target="file12761"/>
+					<ref type="prev_correspondence" target="file12591"/>
+					<ref type="next_correspondence_request" target="file12866"/>
+					<ref type="prev_correspondence_request" target="file12591"/>
+					<ref type="next_correspondence_reaction" target="file12761"/>
+					<ref type="prev_correspondence_reaction" target="file12458"/>
+					<ref type="next_same_sender" target="file12609"/>
+					<ref type="prev_same_sender" target="file12604"/>
+					<ref type="next_same_addressee" target="file12761"/>
+					<ref type="prev_same_addressee" target="file12458"/>
+					<ref type="next_with_sender_as_addressee" target="file12609"/>
+					<ref type="prev_with_sender_as_addressee" target="file12604"/>
+					<ref type="next_with_addressee_as_sender" target="file12761"/>
+					<ref type="prev_with_addressee_as_sender" target="file12458"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -132,50 +139,50 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
-					<s xml:lang="la" type="auto">Franciscus hic Dryander, Hispanus, vir certe pius et doctus, venit ad tuam humanitatem, vir clarissime, te videndi dumtaxat gratia.</s>
-					<s xml:lang="la" type="auto">Excitus enim fama nominis tui diu iam te videre desideravit.</s>
-					<s xml:lang="la" type="auto">Est clara et magna in Hispaniis familia natus, est opulentus et longe doctissimus.</s>
-					<s xml:lang="la" type="auto">Petit praeterea Lindaviam ad d. Hieronymum Seylerum<note xml:id="fn1" type="footnote" n="1">Sailer.</note>, inde per <placeName ref="565">Constantiam</placeName> rediturus <placeName ref="97">Basileam</placeName>, ubi aliquamdiu agere instituit.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
+					<s n="2" xml:lang="la" type="auto">Franciscus hic Dryander, Hispanus, vir certe pius et doctus, venit ad tuam humanitatem, vir clarissime, te videndi dumtaxat gratia.</s>
+					<s n="3" xml:lang="la" type="auto">Excitus enim fama nominis tui diu iam te videre desideravit.</s>
+					<s n="4" xml:lang="la" type="auto">Est clara et magna in Hispaniis familia natus, est opulentus et longe doctissimus.</s>
+					<s n="5" xml:lang="la" type="auto">Petit praeterea Lindaviam ad d. Hieronymum Seylerum<note xml:id="fn1" type="footnote" n="1">Sailer.</note>, inde per <placeName ref="place565">Constantiam</placeName> rediturus <placeName ref="place97">Basileam</placeName>, ubi aliquamdiu agere instituit.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Sanus et integer est in doctrina catholica et orthodoxa.</s>
-					<s xml:lang="la" type="auto">Cave autem, quicquam ille intelligat, te favere Buceranae toties mutatae sententiae.</s>
-					<s xml:lang="la" type="auto">Non quod non sciam, recte te sentire de coena domini, sed quod <persName ref="28">Bucerus</persName> magnifice et splendide Hispano huic praedicavit, quot et quantos in sua sententia habeat viros, inter quos te quoque numeravit.</s>
-					<s xml:lang="la" type="auto">Hispanus dixit, uti mihi retulit: "Non arbitror, virum tantum aliud sentire, quam quod libris aeditis prodidit, etc."</s>
+					<s n="6" xml:lang="la" type="auto">Sanus et integer est in doctrina catholica et orthodoxa.</s>
+					<s n="7" xml:lang="la" type="auto">Cave autem, quicquam ille intelligat, te favere Buceranae toties mutatae sententiae.</s>
+					<s n="8" xml:lang="la" type="auto">Non quod non sciam, recte te sentire de coena domini, sed quod <persName ref="person28">Bucerus</persName> magnifice et splendide Hispano huic praedicavit, quot et quantos in sua sententia habeat viros, inter quos te quoque numeravit.</s>
+					<s n="9" xml:lang="la" type="auto">Hispanus dixit, uti mihi retulit: "Non arbitror, virum tantum aliud sentire, quam quod libris aeditis prodidit, etc."</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Est hic <persName ref="146">Melanchtoni</persName> charissimus, de quo mira audies; fuit apud Melanchtonem adhuc in mense iunio.</s>
+					<s n="10" xml:lang="la" type="auto">Est hic <persName ref="person146">Melanchtoni</persName> charissimus, de quo mira audies; fuit apud <persName ref="person146">Melanchtonem</persName> adhuc in mense iunio.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Idem erit viva apud te epistola.</s>
-					<s xml:lang="la" type="auto">Mitto libros meos commentariorum 9 in Lucam<note xml:id="fn2" type="footnote" n="2">HBBibl I 173.</note>, hac aestate impressos simul et aeditos sive natos.</s>
-					<s xml:lang="la" type="auto">Hi in caussa sunt, cur a tribus mensibus scripserim rarius.</s>
-					<s xml:lang="la" type="auto">Hic iam habes totam scriptionem et excusationem iustam, opinor.</s>
+					<s n="11" xml:lang="la" type="auto">Idem erit viva apud te epistola.</s>
+					<s n="12" xml:lang="la" type="auto">Mitto libros meos commentariorum 9 in Lucam<note xml:id="fn2" type="footnote" n="2">HBBibl I 173.</note>, hac aestate impressos simul et aeditos sive natos.</s>
+					<s n="13" xml:lang="la" type="auto">Hi in caussa sunt, cur a tribus mensibus scripserim rarius.</s>
+					<s n="14" xml:lang="la" type="auto">Hic iam habes totam scriptionem et excusationem iustam, opinor.</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Valebis, domine colendissime.</s>
-					<s xml:lang="la" type="auto">Si quid habueris rerum novarum, fac sciam.</s>
-					<s xml:lang="la" type="auto">Vale iterum.</s>
+					<s n="15" xml:lang="la" type="auto">Valebis, domine colendissime.</s>
+					<s n="16" xml:lang="la" type="auto">Si quid habueris rerum novarum, fac sciam.</s>
+					<s n="17" xml:lang="la" type="auto">Vale iterum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, 1. septembris, anno 1546.</s>
+					<s n="18" xml:lang="la" type="auto">Tiguri, 1. septembris, anno 1546.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus tuus.</s>
+					<s n="19" xml:lang="la" type="auto">Bullingerus tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro d. d. Ioachimo Vadiano, Sangallensi consuli dignissiomo, domino suo colendissimo.</s>
-					<s xml:lang="la" type="auto">Sangallen.</s>
+					<s n="20" xml:lang="la" type="auto">Clarissimo viro d. d. Ioachimo Vadiano, Sangallensi consuli dignissiomo, domino suo colendissimo.</s>
+					<s n="21" xml:lang="la" type="auto">Sangallen.</s>
 				</p>
 			</div>
 		</body>

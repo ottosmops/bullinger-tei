@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3031</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3031</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357a,801</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357a,801</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -162,13 +165,16 @@
 				</msDesc>
 				<msDesc type="Beilage" subtype="Beilage" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Beilage">E II 338,1450</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Beilage">E II 338,1450</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -177,46 +183,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13080">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="high">
+					<!--
+					<persName ref="person392" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#257" cert="low">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="high"/>
+					<place source="place257" cert="low"/>
 					<date when="1547-10-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13081"/>
-					<ref type="prev_chronologically" target="files.xml#13079"/>
-					<ref type="next_correspondence" target="files.xml#13086"/>
-					<ref type="prev_correspondence" target="files.xml#13072"/>
-					<ref type="next_correspondence_request" target="files.xml#13086"/>
-					<ref type="prev_correspondence_request" target="files.xml#13072"/>
-					<ref type="next_correspondence_reaction" target="files.xml#13102"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#13068"/>
-					<ref type="next_same_sender" target="files.xml#13086"/>
-					<ref type="prev_same_sender" target="files.xml#13072"/>
-					<ref type="next_same_addressee" target="files.xml#13081"/>
-					<ref type="prev_same_addressee" target="files.xml#13069"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13086"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13072"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13081"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13069"/>
+					<ref type="next_chronologically" target="file13081"/>
+					<ref type="prev_chronologically" target="file13079"/>
+					<ref type="next_correspondence" target="file13086"/>
+					<ref type="prev_correspondence" target="file13072"/>
+					<ref type="next_correspondence_request" target="file13086"/>
+					<ref type="prev_correspondence_request" target="file13072"/>
+					<ref type="next_correspondence_reaction" target="file13102"/>
+					<ref type="prev_correspondence_reaction" target="file13068"/>
+					<ref type="next_same_sender" target="file13086"/>
+					<ref type="prev_same_sender" target="file13072"/>
+					<ref type="next_same_addressee" target="file13081"/>
+					<ref type="prev_same_addressee" target="file13069"/>
+					<ref type="next_with_sender_as_addressee" target="file13086"/>
+					<ref type="prev_with_sender_as_addressee" target="file13072"/>
+					<ref type="next_with_addressee_as_sender" target="file13081"/>
+					<ref type="prev_with_addressee_as_sender" target="file13069"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -226,146 +236,149 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="13080/Autograph/00 E_II_357__fol__801_r_.tif" n="1"/>
+		<graphic url="13080/Autograph/01 E_II_357__fol__801_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="de">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Nudius tertius<note xml:id="fn2" type="footnote" n="2">Am 2. Oktober.</note> ad Vadianum nostrum tuas<note xml:id="fn3" type="footnote" n="3">Ein nicht erhaltener Brief Bullingers an Vadian, der an Blarer (mit der Bitte um Weiterleitung) mit einem nicht erhaltenen, zwischen dem 23. und dem 28. September verfassten Brief (s. <ref target="file#13072">Nr. 3023</ref>, <qv>fn17291-5</qv>) geschickt worden war. Bullingers Brief an Blarer war die hier unten erwähnte "Apologia" beigelegt.<zfn>fn17300-1</zfn></note> dedi cum oratione illa apologetica<note xml:id="fn4" type="footnote" n="4">Bullingers Schrift "Contra scandala ex bello infeliciter gesto oborta Apologia"; s. <ref target="file#13072">Nr. 3023</ref>, <qv>fn17291-2</qv>.</note>, quę valde mihi probatur, pro qua etiam maximas tibi gratias ago, quod communicare mihi volueris.</s>
-					<s xml:lang="la" type="auto">Opus est ac semper erit in novissimis istis temporibus scripturarum et veteris christianę historię consolatione, etiam bonis dei filiis, ne animum despondeant inter tot ac tanta a dextris et sinistris offensicula.</s>
-					<s xml:lang="la" type="auto">Qua in re praeter cęteros fęlicem te, mi Bullingere, merito praedicamus, qui, ut in multis aliis multum, hic tamen plurimum vales.</s>
-					<s xml:lang="la" type="auto">Dominus sua in te dona tueatur!</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Nudius tertius<note xml:id="fn2" type="footnote" n="2">Am 2. Oktober.</note> ad Vadianum nostrum tuas<note xml:id="fn3" type="footnote" n="3">Ein nicht erhaltener Brief Bullingers an Vadian, der an Blarer (mit der Bitte um Weiterleitung) mit einem nicht erhaltenen, zwischen dem 23. und dem 28. September verfassten Brief (s. <ref target="file13072">Nr. 3023</ref>, <qv>fn17291-5</qv>) geschickt worden war. Bullingers Brief an Blarer war die hier unten erwähnte "Apologia" beigelegt.<zfn>fn17300-1</zfn></note> dedi cum oratione illa apologetica<note xml:id="fn4" type="footnote" n="4">Bullingers Schrift "Contra scandala ex bello infeliciter gesto oborta Apologia"; s. <ref target="file13072">Nr. 3023</ref>, <qv>fn17291-2</qv>.</note>, quę valde mihi probatur, pro qua etiam maximas tibi gratias ago, quod communicare mihi volueris.</s>
+					<s n="3" xml:lang="la" type="auto">Opus est ac semper erit in novissimis istis temporibus scripturarum et veteris christianę historię consolatione, etiam bonis dei filiis, ne animum despondeant inter tot ac tanta a dextris et sinistris offensicula.</s>
+					<s n="4" xml:lang="la" type="auto">Qua in re praeter cęteros fęlicem te, mi Bullingere, merito praedicamus, qui, ut in multis aliis multum, hic tamen plurimum vales.</s>
+					<s n="5" xml:lang="la" type="auto">Dominus sua in te dona tueatur!</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Picturam illam<note xml:id="fn5" type="footnote" n="5">Die Abbildung der Glarner Himmelserscheinung; s. <ref target="file#13033">Nr. 2984</ref>, <qv>fn17249-2</qv>; <ref target="file#13072">Nr. 3023</ref>, <qv>fn17291-4</qv>.</note> mittere ad Vadianum non licuit, quod is<note xml:id="fn6" type="footnote" n="6">Unbekannt. - Blarer hatte also die Abbildung nicht sofort an Vadian weitergeleitet, sondern erst noch einer anderen, unbekannten Person zur Ansicht übermittelt; s. auch <ref target="file#13089">Nr. 3040</ref>,<qv>zl17309-2</qv>.</note>, cui spectandam misi, nondum eam remiserat.</s>
-					<s xml:lang="la" type="auto">Missurus tamen, ubi primum accepero.</s>
-					<s xml:lang="la" type="auto">Danielem<note xml:id="fn7" type="footnote" n="7">Der Prophet Daniel war für seine Fähigkeit, Visionen und Träume zu deuten, bekannt.</note> et ipse desidero, qui istam nobis ex domini voluntate interpretetur.<pb type="edition" next="522"/></s>
-					<s xml:lang="la" type="auto">Ego hic nihil mihi sumo, tuam tuique similium sententiam venerabundus auditurus.</s>
-					<s xml:lang="la" type="auto">Eventus ipse erit, puto, certissimus horum omnium enarrator.<note xml:id="fn8" type="footnote" n="8">Vgl. <ref target="file#12943">Nr. 2894</ref>,<qv>zl17159-18</qv>.</note></s>
-					<s xml:lang="la" type="auto">Dominus bene vertat!</s>
+					<s n="6" xml:lang="la" type="auto">Picturam illam<note xml:id="fn5" type="footnote" n="5">Die Abbildung der Glarner Himmelserscheinung; s. <ref target="file13033">Nr. 2984</ref>, <qv>fn17249-2</qv>; <ref target="file13072">Nr. 3023</ref>, <qv>fn17291-4</qv>.</note> mittere ad Vadianum non licuit, quod is<note xml:id="fn6" type="footnote" n="6">Unbekannt. - Blarer hatte also die Abbildung nicht sofort an Vadian weitergeleitet, sondern erst noch einer anderen, unbekannten Person zur Ansicht übermittelt; s. auch <ref target="file13089">Nr. 3040</ref>,<qv>zl17309-2</qv>.</note>, cui spectandam misi, nondum eam remiserat.</s>
+					<s n="7" xml:lang="la" type="auto">Missurus tamen, ubi primum accepero.</s>
+					<s n="8" xml:lang="la" type="auto">Danielem<note xml:id="fn7" type="footnote" n="7">Der Prophet Daniel war für seine Fähigkeit, Visionen und Träume zu deuten, bekannt.</note> et ipse desidero, qui istam nobis ex domini voluntate interpretetur.<pb type="edition" next="522"/></s>
+					<s n="9" xml:lang="la" type="auto">Ego hic nihil mihi sumo, tuam tuique similium sententiam venerabundus auditurus.</s>
+					<s n="10" xml:lang="la" type="auto">Eventus ipse erit, puto, certissimus horum omnium enarrator.<note xml:id="fn8" type="footnote" n="8">Vgl. <ref target="file12943">Nr. 2894</ref>,<qv>zl17159-18</qv>.</note></s>
+					<s n="11" xml:lang="la" type="auto">Dominus bene vertat!</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Mitto epistolam pientissimae sanctimonialis fęminę, Schöneri nostri<note xml:id="fn9" type="footnote" n="9">Hans Schöner.</note> sororis<note xml:id="fn10" type="footnote" n="10">Sabina Schöner; s. <abbr>HBBW</abbr> XVII 483, Anm. 21. Ihr hier erwähnter Brief ist nicht bekannt. - Blarer betonte auch später ihre Frömmigkeit; s. Blarers Briefe an Bullinger vom 27. Oktober 1548 (Zürich StA, E II 357a, 810f; <abbr>Blarer BW</abbr> II 753) und 25. Februar 1549 (Zürich StA, E II 357a, 820f; <abbr>Blarer BW</abbr> III 15).<zfn>fn17300-5</zfn></note>, cum aureo nummo, quo uxorem tuam<note xml:id="fn11" type="footnote" n="11">Anna, geb. Adlischwyler.</note> donat, ut intelligas promptum illius gratificandi tibi animum.</s>
-					<s xml:lang="la" type="auto">Rogo vero, ut exemplum literarum, quas ad nos<note xml:id="fn12" type="footnote" n="12">Gemeint sind Blarer und Bullinger, die sich bei den Augsburger Behörden für Hans Schöner eingesetzt hatten; s. dazu die Verweise in <ref target="file#13026">Nr. 2977</ref>, <qv>fn17243-3</qv>. Vielleicht handelte es sich hier um die Antwort, die Blarer bereits am 8. August erhalten hatte; s. <ref target="file#13029">Nr. 2980</ref>,<qv>zl17246-2</qv>.</note> dedit Augustanus senatus in Schöneri caussa, ad me mittas, ut ipse hoc bonę illi mulieri, quemadmodum petit, reddendum curare possim.<note xml:id="fn13" type="footnote" n="13">Blarer wird den hier in Frage kommenden Brief von Augsburg betreffend Schöner entweder seinem Brief vom 8. August (s. <ref target="file#13029">Nr. 2980</ref>,<qv>zl17246-1</qv>) oder einem seiner nicht mehr erhaltenen, aber in <ref target="file#13070">Nr. 3021</ref>,<qv>zl17289-7</qv> und <qv>fn17289-6</qv>, bezeugten Briefe beigelegt haben.</note></s>
-					<s xml:lang="la" type="auto">Afflicti senis<note xml:id="fn14" type="footnote" n="14">Gemeint ist Schöner.</note> supra modum me miseret, sed nullicunde<note xml:id="fn15" type="footnote" n="15">von nirgendwo.</note> quicquam affulget, quo iuvare me illum posse confidam!</s>
-					<s xml:lang="la" type="auto">Adeo nihil mihi reliquum fecerunt Augustanorum et Lęti literę<note xml:id="fn16" type="footnote" n="16">Entsprechende Briefe an Blarer von Augsburgern bzw. Georg Frölich sind nicht erhalten. - Frölich und Johannes Welser machten Bullinger diesbezüglich auch keine Hoffnung; s. <ref target="file#13026">Nr. 2977</ref>,<qv>zl17243-2</qv>; <ref target="file#13079">Nr. 3030</ref>,<qv>zl17299-2</qv>.</note>, sed dominus illi, quantum opus erit, suppeditabit, cuius est terra et plenitudo ipsius.<note xml:id="fn17" type="footnote" n="17">Vgl. z.B. Ps 24 (Vulg. 23), 1.</note></s>
+					<s n="12" xml:lang="la" type="auto">Mitto epistolam pientissimae sanctimonialis fęminę, Schöneri nostri<note xml:id="fn9" type="footnote" n="9">Hans Schöner.</note> sororis<note xml:id="fn10" type="footnote" n="10">Sabina Schöner; s. <abbr>HBBW</abbr> XVII 483, Anm. 21. Ihr hier erwähnter Brief ist nicht bekannt. - Blarer betonte auch später ihre Frömmigkeit; s. Blarers Briefe an Bullinger vom 27. Oktober 1548 (Zürich StA, E II 357a, 810f; <abbr>Blarer BW</abbr> II 753) und 25. Februar 1549 (Zürich StA, E II 357a, 820f; <abbr>Blarer BW</abbr> III 15).<zfn>fn17300-5</zfn></note>, cum aureo nummo, quo uxorem tuam<note xml:id="fn11" type="footnote" n="11">Anna, geb. Adlischwyler.</note> donat, ut intelligas promptum illius gratificandi tibi animum.</s>
+					<s n="13" xml:lang="la" type="auto">Rogo vero, ut exemplum literarum, quas ad nos<note xml:id="fn12" type="footnote" n="12">Gemeint sind Blarer und Bullinger, die sich bei den Augsburger Behörden für Hans Schöner eingesetzt hatten; s. dazu die Verweise in <ref target="file13026">Nr. 2977</ref>, <qv>fn17243-3</qv>. Vielleicht handelte es sich hier um die Antwort, die Blarer bereits am 8. August erhalten hatte; s. <ref target="file13029">Nr. 2980</ref>,<qv>zl17246-2</qv>.</note> dedit Augustanus senatus in Schöneri caussa, ad me mittas, ut ipse hoc bonę illi mulieri, quemadmodum petit, reddendum curare possim.<note xml:id="fn13" type="footnote" n="13">Blarer wird den hier in Frage kommenden Brief von Augsburg betreffend Schöner entweder seinem Brief vom 8. August (s. <ref target="file13029">Nr. 2980</ref>,<qv>zl17246-1</qv>) oder einem seiner nicht mehr erhaltenen, aber in <ref target="file13070">Nr. 3021</ref>,<qv>zl17289-7</qv> und <qv>fn17289-6</qv>, bezeugten Briefe beigelegt haben.</note></s>
+					<s n="14" xml:lang="la" type="auto">Afflicti senis<note xml:id="fn14" type="footnote" n="14">Gemeint ist Schöner.</note> supra modum me miseret, sed nullicunde<note xml:id="fn15" type="footnote" n="15">von nirgendwo.</note> quicquam affulget, quo iuvare me illum posse confidam!</s>
+					<s n="15" xml:lang="la" type="auto">Adeo nihil mihi reliquum fecerunt Augustanorum et Lęti literę<note xml:id="fn16" type="footnote" n="16">Entsprechende Briefe an Blarer von Augsburgern bzw. Georg Frölich sind nicht erhalten. - Frölich und Johannes Welser machten Bullinger diesbezüglich auch keine Hoffnung; s. <ref target="file13026">Nr. 2977</ref>,<qv>zl17243-2</qv>; <ref target="file13079">Nr. 3030</ref>,<qv>zl17299-2</qv>.</note>, sed dominus illi, quantum opus erit, suppeditabit, cuius est terra et plenitudo ipsius.<note xml:id="fn17" type="footnote" n="17">Vgl. z.B. Ps 24 (Vulg. 23), 1.</note></s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="de" type="auto">Auß Augspurg necht<note xml:id="fn18" type="footnote" n="18">Am Vorabend. - Blarer zitiert hier offensichtlich aus einem Brief aus Augsburg, der ihm oder einem ihm nahestehenden Konstanzer am Vorabend zuteil wurde.</note>: Das man des kaisers<note xml:id="fn19" type="footnote" n="19">Karl V.</note> widerum ausß Mynchen<note xml:id="fn20" type="footnote" n="20">Der Kaiser weilte in München vom 19. bis zum 30. September; s. <ref target="file#13066">Nr. 3017</ref>, <qv>fn17285-5</qv>.</note> teglich warte, wiewol ettlich achten wellend, er werde ain andern weg ziechen.</s>
-					<s xml:lang="de" type="auto">Engeland soll dem Frantzosen<note xml:id="fn21" type="footnote" n="21">König Heinrich II. - Die Franzosen sind hier als Verbündete der Schotten erwähnt, gefallen sind aber in der Schlacht von Pinkie Cleugh am 10. September 1547 die Schotten; s. <ref target="file#13079">Nr. 3030</ref>, <qv>fn17299-4</qv>; <ref target="file#13113">Nr. 3064</ref>.<zfn>fn17300-6</zfn></note> 10000 erlegt haben.</s>
-					<s xml:lang="de" type="auto">Der Papst<note xml:id="fn22" type="footnote" n="22">Paul III.</note> soll vyl knecht machen und gantz rasig<note xml:id="fn23" type="footnote" n="23">wütend; s. <abbr>Fischer</abbr> V 144.</note> sin von seines erwirgten sons<note xml:id="fn24" type="footnote" n="24">Pièr Luigi Farnese, ermordet am 10. September 1547; s. <ref target="file#13013">Nr. 2964</ref>, <qv>fn17229-4</qv>.</note> wegent.</s>
-					<s xml:lang="de" type="auto">Speyt führ, blytz, tunder und stral.<note xml:id="fn25" type="footnote" n="25">Blitz. - Die hier verwendeten Wörter sind gängige Fluchwörter.</note></s>
-					<s xml:lang="de" type="auto">Es facht<note xml:id="fn26" type="footnote" n="26">fängt.</note> an zuͦ Augspurg etwas treffelich<note xml:id="fn27" type="footnote" n="27">etwas treffelich: sehr stark.</note> sterben.<note xml:id="fn28" type="footnote" n="28">Zur ausbrechenden Pest in Augsburg s. zuletzt <ref target="file#13059">Nr. 3010</ref>,[1].</note><pb type="edition" next="523"/></s>
+					<s n="16" xml:lang="de" type="auto">Auß Augspurg necht<note xml:id="fn18" type="footnote" n="18">Am Vorabend. - Blarer zitiert hier offensichtlich aus einem Brief aus Augsburg, der ihm oder einem ihm nahestehenden Konstanzer am Vorabend zuteil wurde.</note>: Das man des kaisers<note xml:id="fn19" type="footnote" n="19">Karl V.</note> widerum ausß Mynchen<note xml:id="fn20" type="footnote" n="20">Der Kaiser weilte in München vom 19. bis zum 30. September; s. <ref target="file13066">Nr. 3017</ref>, <qv>fn17285-5</qv>.</note> teglich warte, wiewol ettlich achten wellend, er werde ain andern weg ziechen.</s>
+					<s n="17" xml:lang="de" type="auto">Engeland soll dem Frantzosen<note xml:id="fn21" type="footnote" n="21">König Heinrich II. - Die Franzosen sind hier als Verbündete der Schotten erwähnt, gefallen sind aber in der Schlacht von Pinkie Cleugh am 10. September 1547 die Schotten; s. <ref target="file13079">Nr. 3030</ref>, <qv>fn17299-4</qv>; <ref target="file13113">Nr. 3064</ref>.<zfn>fn17300-6</zfn></note> 10000 erlegt haben.</s>
+					<s n="18" xml:lang="de" type="auto">Der Papst<note xml:id="fn22" type="footnote" n="22">Paul III.</note> soll vyl knecht machen und gantz rasig<note xml:id="fn23" type="footnote" n="23">wütend; s. <abbr>Fischer</abbr> V 144.</note> sin von seines erwirgten sons<note xml:id="fn24" type="footnote" n="24">Pièr Luigi Farnese, ermordet am 10. September 1547; s. <ref target="file13013">Nr. 2964</ref>, <qv>fn17229-4</qv>.</note> wegent.</s>
+					<s n="19" xml:lang="de" type="auto">Speyt führ, blytz, tunder und stral.<note xml:id="fn25" type="footnote" n="25">Blitz. - Die hier verwendeten Wörter sind gängige Fluchwörter.</note></s>
+					<s n="20" xml:lang="de" type="auto">Es facht<note xml:id="fn26" type="footnote" n="26">fängt.</note> an zuͦ Augspurg etwas treffelich<note xml:id="fn27" type="footnote" n="27">etwas treffelich: sehr stark.</note> sterben.<note xml:id="fn28" type="footnote" n="28">Zur ausbrechenden Pest in Augsburg s. zuletzt <ref target="file13059">Nr. 3010</ref>,[1].</note><pb type="edition" next="523"/></s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="de" type="auto">Der landtgrauff<note xml:id="fn29" type="footnote" n="29">Philipp von Hessen.</note> noch zuͦ Tonowerd.<note xml:id="fn30" type="footnote" n="30">Donauwörth.</note></s>
-					<s xml:lang="de" type="auto">Wirdt ubel gehalten.<note xml:id="fn31" type="footnote" n="31">Vgl. dazu <ref target="file#13027">Nr. 2978</ref>, <qv>fn17244-4</qv>; <ref target="file#13070">Nr. 3021</ref>,<qv>zl17289-3</qv>.</note></s>
-					<s xml:lang="de" type="auto">Etlich wellend achten, der kaiser wurde in ylends abweg thain<note xml:id="fn32" type="footnote" n="32">abweg thain: beseitigen (töten); vgl. <abbr>SI</abbr> XV 853.</note>, wa er nitt hertzog Mauritzen<note xml:id="fn33" type="footnote" n="33">Moritz von Sachsen, Schwiegersohn Philipps. - Moritz bemühte sich um Philipps Freilassung; s. Kerstin <hi>Schäfer,</hi> Der Fürstenaufstand gegen Karl V. im Jahr 1552. Entstehung, Verlauf und Ergebnis - vom Schmalkaldischen Krieg bis zum Passauer Vertrag, Taunusstein 2009, S. 38-40; Johannes <hi>Herrmann,</hi> Moritz von Sachsen (1521-1553). Landes-, Reichs- und Friedensfürst, Beucha-Markkleeberg<ptr target="#fn2" type="footnote" n="2"/> 2013, S. 94-96.</note> ze vyl seinen halb versprochen hette.</s>
+					<s n="21" xml:lang="de" type="auto">Der landtgrauff<note xml:id="fn29" type="footnote" n="29">Philipp von Hessen.</note> noch zuͦ Tonowerd.<note xml:id="fn30" type="footnote" n="30">Donauwörth.</note></s>
+					<s n="22" xml:lang="de" type="auto">Wirdt ubel gehalten.<note xml:id="fn31" type="footnote" n="31">Vgl. dazu <ref target="file13027">Nr. 2978</ref>, <qv>fn17244-4</qv>; <ref target="file13070">Nr. 3021</ref>,<qv>zl17289-3</qv>.</note></s>
+					<s n="23" xml:lang="de" type="auto">Etlich wellend achten, der kaiser wurde in ylends abweg thain<note xml:id="fn32" type="footnote" n="32">abweg thain: beseitigen (töten); vgl. <abbr>SI</abbr> XV 853.</note>, wa er nitt hertzog Mauritzen<note xml:id="fn33" type="footnote" n="33">Moritz von Sachsen, Schwiegersohn Philipps. - Moritz bemühte sich um Philipps Freilassung; s. Kerstin <hi>Schäfer,</hi> Der Fürstenaufstand gegen Karl V. im Jahr 1552. Entstehung, Verlauf und Ergebnis - vom Schmalkaldischen Krieg bis zum Passauer Vertrag, Taunusstein 2009, S. 38-40; Johannes <hi>Herrmann,</hi> Moritz von Sachsen (1521-1553). Landes-, Reichs- und Friedensfürst, Beucha-Markkleeberg <note type="sup">2</note>2013, S. 94-96.</note> ze vyl seinen halb versprochen hette.</s>
 				</p>
 			</div>
 			<div xml:id="div6" corresp="regest6">
 				<p>
-					<s xml:lang="de" type="auto">Der churfurst Sachsen<note xml:id="fn34" type="footnote" n="34">Johann Friedrich I. von Sachsen. - Zu dieser Stelle vgl. <ref target="file#13002">Nr. 2953</ref>,<qv>zl17219-7</qv>; <ref target="file#13015">Nr. 2966</ref>,<qv>zl17231-8</qv>; <ref target="file#13033">Nr. 2984</ref>,<qv>zl17249-17</qv>; <ref target="file#13059">Nr. 3010</ref>,[2]; <ref target="file#13070">Nr. 3021</ref>,<qv>zl17289-10</qv>; <abbr>Mentz</abbr> III 276, Anm. 3; <abbr>Roth, Augsburg</abbr> IV 79-81.</note> hat grossen gunst by den Spanyern unnd mengklichen.<note xml:id="fn35" type="footnote" n="35">vielen.</note></s>
-					<s xml:lang="de" type="auto">Und acht man, er solle ledig<note xml:id="fn36" type="footnote" n="36">freigelassen. - Vgl. dazu <ref target="file#13070">Nr. 3021</ref>,<qv>zl17289-9</qv>.</note> werden disen rychstag.</s>
-					<s xml:lang="de" type="auto">Des konigs<note xml:id="fn37" type="footnote" n="37">Ferdinand I. - Er traf am 20. Oktober in Augsburg ein; s. <ref target="file#13019">Nr. 2970</ref>, <qv>fn17236-3</qv>.<zfn>fn17300-3</zfn></note> wart man all tag.</s>
-					<s xml:lang="de" type="auto">Der hat in Behem<note xml:id="fn38" type="footnote" n="38">Böhmen.</note> alles verricht.<note xml:id="fn39" type="footnote" n="39">erledigt (hier im negativen Sinne; s. <abbr>SI</abbr> VI 431). - Zur Lage in Böhmen s. die Verweise in <ref target="file#13068">Nr. 3019</ref>, <qv>fn17287-1</qv>.</note></s>
-					<s xml:lang="de" type="auto">Des churfursten prediger<note xml:id="fn40" type="footnote" n="40">Christoph Hoffmann; s. <ref target="file#13070">Nr. 3021</ref>,<qv>zl17289-10</qv>. - Zu diesem Verbot war es allerdings schon im Juli gekommen; s. <abbr>MBW-T</abbr> XVII 53.</note> darff nitt mehr offenlich in seiner herb[erg]<note xml:id="fnb" type="footnote" n="b"><hi>Textverlust bei der Entfernung des Siegels. Die Lücken wurden sinngemäß und entsprechend dem Umfang des Verlustes ergänzt.</hi></note> wie bys anher predigen.</s>
-					<s xml:lang="de" type="auto">Der zuͦlauff ist zuͦ gross gewesen.</s>
-					<s xml:lang="de" type="auto">Abe[r dem] churfursten in seinem gemach darff er fuͤr sein person sagen od[er predigen], was er will.</s>
+					<s n="24" xml:lang="de" type="auto">Der churfurst Sachsen<note xml:id="fn34" type="footnote" n="34">Johann Friedrich I. von Sachsen. - Zu dieser Stelle vgl. <ref target="file13002">Nr. 2953</ref>,<qv>zl17219-7</qv>; <ref target="file13015">Nr. 2966</ref>,<qv>zl17231-8</qv>; <ref target="file13033">Nr. 2984</ref>,<qv>zl17249-17</qv>; <ref target="file13059">Nr. 3010</ref>,[2]; <ref target="file13070">Nr. 3021</ref>,<qv>zl17289-10</qv>; <abbr>Mentz</abbr> III 276, Anm. 3; <abbr>Roth, Augsburg</abbr> IV 79-81.</note> hat grossen gunst by den Spanyern unnd mengklichen.<note xml:id="fn35" type="footnote" n="35">vielen.</note></s>
+					<s n="25" xml:lang="de" type="auto">Und acht man, er solle ledig<note xml:id="fn36" type="footnote" n="36">freigelassen. - Vgl. dazu <ref target="file13070">Nr. 3021</ref>,<qv>zl17289-9</qv>.</note> werden disen rychstag.</s>
+					<s n="26" xml:lang="de" type="auto">Des konigs<note xml:id="fn37" type="footnote" n="37">Ferdinand I. - Er traf am 20. Oktober in Augsburg ein; s. <ref target="file13019">Nr. 2970</ref>, <qv>fn17236-3</qv>.<zfn>fn17300-3</zfn></note> wart man all tag.</s>
+					<s n="27" xml:lang="de" type="auto">Der hat in Behem<note xml:id="fn38" type="footnote" n="38">Böhmen.</note> alles verricht.<note xml:id="fn39" type="footnote" n="39">erledigt (hier im negativen Sinne; s. <abbr>SI</abbr> VI 431). - Zur Lage in Böhmen s. die Verweise in <ref target="file13068">Nr. 3019</ref>, <qv>fn17287-1</qv>.</note></s>
+					<s n="28" xml:lang="de" type="auto">Des churfursten prediger<note xml:id="fn40" type="footnote" n="40">Christoph Hoffmann; s. <ref target="file13070">Nr. 3021</ref>,<qv>zl17289-10</qv>. - Zu diesem Verbot war es allerdings schon im Juli gekommen; s. <abbr>MBW-T</abbr> XVII 53.</note> darff nitt mehr offenlich in seiner herb[erg]<note xml:id="fnb" type="footnote" n="b"><hi>Textverlust bei der Entfernung des Siegels. Die Lücken wurden sinngemäß und entsprechend dem Umfang des Verlustes ergänzt.</hi></note> wie bys anher predigen.</s>
+					<s n="29" xml:lang="de" type="auto">Der zuͦlauff ist zuͦ gross gewesen.</s>
+					<s n="30" xml:lang="de" type="auto">Abe[r dem] churfursten in seinem gemach darff er fuͤr sein person sagen od[er predigen], was er will.</s>
 				</p>
 			</div>
 			<div xml:id="div7" corresp="regest7">
 				<p>
-					<s xml:lang="de" type="auto">Sonst predigt man zuͦ Augspurg wie von alter her [...]<note xml:id="fn41" type="footnote" n="41">Vgl. auch unten Z. <qv>zl17300-7</qv>.</note> Fromm leut beschwärend sich hütt der frömden gest.<note xml:id="fn42" type="footnote" n="42">Gemeint sind die in Augsburg stationierten kaiserlichen Soldaten sowie die Teilnehmer am Reichstag, die alle in der Stadt einquartiert waren.</note></s>
-					<s xml:lang="de" type="auto">Es geht ubel zuͦ.</s>
-					<s xml:lang="de" type="auto">Die frombden habend aber newlich ain soldner der statt vorm thor erwuͤrgt und noch ainen tödtlich verwundt.<note xml:id="fn43" type="footnote" n="43">Vielleicht bezieht sich diese Meldung auf den schon von Johannes Haller in <ref target="file#13027">Nr. 2978</ref>,<qv>zl17244-4</qv>, mitgeteilten Vorfall vom 3. August 1547, bei dem Georg Feuchtweck, ein Angestellter des Augsburger Bürgermeisters Jakob Herbrot, beinahe erwürgt, und ein Kammerdiener des Kurfürsten Johann Friedrich von Sachsen erstochen wurde.<zfn>fn17300-4</zfn></note></s>
+					<s n="31" xml:lang="de" type="auto">Sonst predigt man zuͦ Augspurg wie von alter her [...]<note xml:id="fn41" type="footnote" n="41">Vgl. auch unten Z. <qv>zl17300-7</qv>.</note> Fromm leut beschwärend sich hütt der frömden gest.<note xml:id="fn42" type="footnote" n="42">Gemeint sind die in Augsburg stationierten kaiserlichen Soldaten sowie die Teilnehmer am Reichstag, die alle in der Stadt einquartiert waren.</note></s>
+					<s n="32" xml:lang="de" type="auto">Es geht ubel zuͦ.</s>
+					<s n="33" xml:lang="de" type="auto">Die frombden habend aber newlich ain soldner der statt vorm thor erwuͤrgt und noch ainen tödtlich verwundt.<note xml:id="fn43" type="footnote" n="43">Vielleicht bezieht sich diese Meldung auf den schon von Johannes Haller in <ref target="file13027">Nr. 2978</ref>,<qv>zl17244-4</qv>, mitgeteilten Vorfall vom 3. August 1547, bei dem Georg Feuchtweck, ein Angestellter des Augsburger Bürgermeisters Jakob Herbrot, beinahe erwürgt, und ein Kammerdiener des Kurfürsten Johann Friedrich von Sachsen erstochen wurde.<zfn>fn17300-4</zfn></note></s>
 				</p>
 			</div>
 			<div xml:id="div8" corresp="regest8">
 				<p>
-					<s xml:lang="de" type="auto">Von unß<note xml:id="fn44" type="footnote" n="44">Gemeint sind die Konstanzer.</note> schreibend ettlich, das wir in grossen ungnaden seyen.</s>
-					<s xml:lang="de" type="auto">Wolan, wir muͦssends allso in gedult erwarten<note xml:id="fn45" type="footnote" n="45">abwarten.</note>, was gott mitt unß machen well.</s>
-					<s xml:lang="de" type="auto">Der geb gnad und duldt, das wirs alles ertragen und das furgesteckt zyl erraichen mögind.<note xml:id="fn46" type="footnote" n="46">Siehe dazu <ref target="file#13102">Nr. 3053</ref>, <qv>fn17321-2</qv>.</note><pb type="edition" next="524"/></s>
+					<s n="34" xml:lang="de" type="auto">Von unß<note xml:id="fn44" type="footnote" n="44">Gemeint sind die Konstanzer.</note> schreibend ettlich, das wir in grossen ungnaden seyen.</s>
+					<s n="35" xml:lang="de" type="auto">Wolan, wir muͦssends allso in gedult erwarten<note xml:id="fn45" type="footnote" n="45">abwarten.</note>, was gott mitt unß machen well.</s>
+					<s n="36" xml:lang="de" type="auto">Der geb gnad und duldt, das wirs alles ertragen und das furgesteckt zyl erraichen mögind.<note xml:id="fn46" type="footnote" n="46">Siehe dazu <ref target="file13102">Nr. 3053</ref>, <qv>fn17321-2</qv>.</note><pb type="edition" next="524"/></s>
 				</p>
 			</div>
 			<div xml:id="div9" corresp="regest9">
 				<p>
-					<s xml:lang="la" type="auto">Datum 4. octobris.</s>
-					<s xml:lang="la" type="auto">Salveat tua domus cum fratribus et amicis.</s>
-					<s xml:lang="la" type="auto">Salutem tibi dicunt nostri, inprimis germanus frater<note xml:id="fn47" type="footnote" n="47">Thomas Blarer.</note> cum Zviccio.<note xml:id="fn48" type="footnote" n="48">Konrad Zwick.</note></s>
-					<s xml:lang="la" type="auto">Tuus A. B.</s>
+					<s n="37" xml:lang="la" type="auto">Datum 4. octobris.</s>
+					<s n="38" xml:lang="la" type="auto">Salveat tua domus cum fratribus et amicis.</s>
+					<s n="39" xml:lang="la" type="auto">Salutem tibi dicunt nostri, inprimis germanus frater<note xml:id="fn47" type="footnote" n="47">Thomas Blarer.</note> cum Zviccio.<note xml:id="fn48" type="footnote" n="48">Konrad Zwick.</note></s>
+					<s n="40" xml:lang="la" type="auto">Tuus A. B.</s>
 				</p>
 			</div>
 			<div xml:id="div10" corresp="regest10">
 				<p>
-					<s xml:lang="la" type="auto">Remitte Schönerę epistolam<note xml:id="fn49" type="footnote" n="49">Siehe dazu oben Z. <qv>zl17300-3</qv>.</note> cum exemplo literarum senatus Augustani ad nos.<note xml:id="fn50" type="footnote" n="50">Siehe dazu oben Z. <qv>zl17300-4</qv>.</note></s>
-					<s xml:lang="la" type="auto">Commendo tibi multum accurate huncce adulescentem Ioannem<note xml:id="fn51" type="footnote" n="51">Unbekannt.</note>, ut tuo quoque consilio illi adsis.</s>
+					<s n="41" xml:lang="la" type="auto">Remitte Schönerę epistolam<note xml:id="fn49" type="footnote" n="49">Siehe dazu oben Z. <qv>zl17300-3</qv>.</note> cum exemplo literarum senatus Augustani ad nos.<note xml:id="fn50" type="footnote" n="50">Siehe dazu oben Z. <qv>zl17300-4</qv>.</note></s>
+					<s n="42" xml:lang="la" type="auto">Commendo tibi multum accurate huncce adulescentem Ioannem<note xml:id="fn51" type="footnote" n="51">Unbekannt.</note>, ut tuo quoque consilio illi adsis.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. H. Bullingero, amico incomparabili.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="43" xml:lang="la" type="auto">D. H. Bullingero, amico incomparabili.</s>
+					<s n="44" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 			<div xml:id="div11" corresp="regest11">
 				<p>
 					<note type="attachment">[Beilage:]</note>
-					<s xml:lang="de" type="auto"><pb type="scan" next="EII 338, 1450"/>Ausß Augspurg, etc., datum 23. septembris<note xml:id="fnc" type="footnote" n="c"><hi>In der Vorlage</hi> septebris.</note>:</s>
+					<s n="45" xml:lang="de" type="auto"><pb type="scan" next="EII 338, 1450"/>Ausß Augspurg, etc., datum 23. septembris<note xml:id="fnc" type="footnote" n="c"><hi>In der Vorlage</hi> septebris.</note>:</s>
 				</p>
 			</div>
 			<div xml:id="div12" corresp="regest12">
 				<p>
-					<s xml:lang="de" type="auto">Auff 20. tag septembris<note xml:id="fn52" type="footnote" n="52">Vermutlich geschah dies schon am 19. September; vgl. <ref target="file#13066">Nr. 3017</ref>,<qv>zl17285-2</qv>. - Dass König Ferdinand I. und Königin Maria von Ungarn, Statthalterin der Niederlande, ihren kaiserlichen Bruder auf die Jagd begleitet hätten, ist falsch; s. oben <qv>fn17300-3</qv> (betreffend den König) und unten <qv>fn17300-2</qv> (betreffend die Königin).</note> seind kai[serliche] m[aiesta]t, ouch der römische könig mitt der konigin Maria<note xml:id="fn53" type="footnote" n="53">Maria von Ungarn wurde noch am 8. November in Augsburg erwartet und traf dort erst am 23. November ein; s. <abbr>Venetianische Depeschen</abbr> II 368f und Anm. 1f; <abbr>NBD</abbr> X 174, Anm. 3. Sie blieb in Augsburg bis zum 3. Februar 1548; s. Adelbert <hi>Soldan,</hi> Die projektirte Succession Philipps II. auf dem Kaiserthrone, in: Jahresbericht über die Städtische Realschule I. Ordnung zu Crefeld, Krefeld 1876, S. 5 mit Anm. 2; <abbr>Creutznachers Diarium</abbr> 311f (wo als Tag der Ankunft der 20. November angegeben ist, der sonst nicht bezeugt ist).<zfn>fn17300-2</zfn></note> gen Mynchen zuͦ jagen und kurtzwylen<note xml:id="fn54" type="footnote" n="54">sich zu vergnügen; s. <abbr>SI</abbr> XV 1225.</note> geritten.</s>
-					<s xml:lang="de" type="auto">Sollen in kurtzen tagen widerum hie ankommen.</s>
+					<s n="46" xml:lang="de" type="auto">Auff 20. tag septembris<note xml:id="fn52" type="footnote" n="52">Vermutlich geschah dies schon am 19. September; vgl. <ref target="file13066">Nr. 3017</ref>,<qv>zl17285-2</qv>. - Dass König Ferdinand I. und Königin Maria von Ungarn, Statthalterin der Niederlande, ihren kaiserlichen Bruder auf die Jagd begleitet hätten, ist falsch; s. oben <qv>fn17300-3</qv> (betreffend den König) und unten <qv>fn17300-2</qv> (betreffend die Königin).</note> seind kai[serliche] m[aiesta]t, ouch der römische könig mitt der konigin Maria<note xml:id="fn53" type="footnote" n="53">Maria von Ungarn wurde noch am 8. November in Augsburg erwartet und traf dort erst am 23. November ein; s. <abbr>Venetianische Depeschen</abbr> II 368f und Anm. 1f; <abbr>NBD</abbr> X 174, Anm. 3. Sie blieb in Augsburg bis zum 3. Februar 1548; s. Adelbert <hi>Soldan,</hi> Die projektirte Succession Philipps II. auf dem Kaiserthrone, in: Jahresbericht über die Städtische Realschule I. Ordnung zu Crefeld, Krefeld 1876, S. 5 mit Anm. 2; <abbr>Creutznachers Diarium</abbr> 311f (wo als Tag der Ankunft der 20. November angegeben ist, der sonst nicht bezeugt ist).<zfn>fn17300-2</zfn></note> gen Mynchen zuͦ jagen und kurtzwylen<note xml:id="fn54" type="footnote" n="54">sich zu vergnügen; s. <abbr>SI</abbr> XV 1225.</note> geritten.</s>
+					<s n="47" xml:lang="de" type="auto">Sollen in kurtzen tagen widerum hie ankommen.</s>
 				</p>
 			</div>
 			<div xml:id="div13" corresp="regest13">
 				<p>
-					<s xml:lang="de" type="auto">Es wirt nichts sonders gehandelt byß auff disen tag, dann<note xml:id="fn55" type="footnote" n="55">außer.</note> das etlich vorberaitungen auff kunfftig handlungen gemacht werden.</s>
+					<s n="48" xml:lang="de" type="auto">Es wirt nichts sonders gehandelt byß auff disen tag, dann<note xml:id="fn55" type="footnote" n="55">außer.</note> das etlich vorberaitungen auff kunfftig handlungen gemacht werden.</s>
 				</p>
 			</div>
 			<div xml:id="div14" corresp="regest14">
 				<p>
-					<s xml:lang="de" type="auto">Ausserhalb dem fursten von Payer<note xml:id="fn56" type="footnote" n="56">Herzog Wilhelm IV. von Bayern. - Er war am 26. Juli in Augsburg eingetroffen; s. <ref target="file#13019">Nr. 2970</ref> und <qv>fn17236-5</qv>.</note> ist sonst noch kain weltlicher fuͤrst hieher kommen,<note xml:id="fn57" type="footnote" n="57">Vgl. aber <ref target="file#13054">Nr. 3005</ref>,<qv>zl17272-10</qv>.</note> aber uff yetz Michaelis<note xml:id="fn58" type="footnote" n="58">29. September.</note> ist man ir aller wertig.<note xml:id="fn59" type="footnote" n="59">ist man ir aller wertig: erwartet man sie alle.</note></s>
-					<s xml:lang="de" type="auto">Auch soll die hertzogin von Luttringen<note xml:id="fn60" type="footnote" n="60">Christina von Dänemark, Witwe des Herzogs Franz I. von Lothringen, eine Nichte des Kaisers. - Sie traf mit Königin Maria von Ungarn in Augsburg ein; s. die in oben <qv>fn17300-2</qv> angeführte Literatur.<zfn>fn17300-7</zfn></note> gewisslich die tag herkommen.</s>
-					<s xml:lang="de" type="auto">Was sölichs bedeut mitt denen weybern, mag man nitt wissen.</s>
+					<s n="49" xml:lang="de" type="auto">Ausserhalb dem fursten von Payer<note xml:id="fn56" type="footnote" n="56">Herzog Wilhelm IV. von Bayern. - Er war am 26. Juli in Augsburg eingetroffen; s. <ref target="file13019">Nr. 2970</ref> und <qv>fn17236-5</qv>.</note> ist sonst noch kain weltlicher fuͤrst hieher kommen,<note xml:id="fn57" type="footnote" n="57">Vgl. aber <ref target="file13054">Nr. 3005</ref>,<qv>zl17272-10</qv>.</note> aber uff yetz Michaelis<note xml:id="fn58" type="footnote" n="58">29. September.</note> ist man ir aller wertig.<note xml:id="fn59" type="footnote" n="59">ist man ir aller wertig: erwartet man sie alle.</note></s>
+					<s n="50" xml:lang="de" type="auto">Auch soll die hertzogin von Luttringen<note xml:id="fn60" type="footnote" n="60">Christina von Dänemark, Witwe des Herzogs Franz I. von Lothringen, eine Nichte des Kaisers. - Sie traf mit Königin Maria von Ungarn in Augsburg ein; s. die in oben <qv>fn17300-2</qv> angeführte Literatur.<zfn>fn17300-7</zfn></note> gewisslich die tag herkommen.</s>
+					<s n="51" xml:lang="de" type="auto">Was sölichs bedeut mitt denen weybern, mag man nitt wissen.</s>
 				</p>
 			</div>
 			<div xml:id="div15" corresp="regest15">
 				<p>
-					<s xml:lang="de" type="auto">Es ist diser zeyt hie die allergrösst practic<note xml:id="fn61" type="footnote" n="61">geheime Unterhandlung.</note> mit dem pryntzen<note xml:id="fn62" type="footnote" n="62">Maximilian, Sohn von Ferdinand I., der vom Kaiser aus Rücksicht auf die Protestanten zum Präsidenten des Reichstags ernannt worden war, anstelle des Augsburger Kardinals Otto Truchsess von Waldburg; s. <abbr>Venetianische Depeschen</abbr> II 336, <ref target="file#10174">Nr. 143</ref>.</note>, sonderlich mitt den küngischen räthen, das sy dahin möchten bewegt werden, dem <pb type="edition" next="525"/> könig ettlich sachen ze persuadieren.<note xml:id="fn63" type="footnote" n="63">schmackhaft zu machen.</note></s>
-					<s xml:lang="de" type="auto">Die Spanyer hoffierend dem herr Johann Hofman<note xml:id="fn64" type="footnote" n="64">Freiherr Johann Hoffmann (gest. am 18. Juli 1564), der nach 1545 Oberster Hofmeister des Königs war und großen Einfluss auf diesen hatte. Um 1560 trat er zum Protestantismus über; s. <abbr>NDB</abbr> XII 629f.</note>, des königs obersten rath, uber die massen.</s>
-					<s xml:lang="de" type="auto">Kommend beynach nymmer von im.</s>
-					<s xml:lang="de" type="auto">Hengend ime mehr nach dann<note xml:id="fn65" type="footnote" n="65">als.</note> dem könig selber; davon aber nitt ze schriben.</s>
-					<s xml:lang="de" type="auto">Die zeyt wirt allerlay und bald zuͦ erkennen geben.</s>
-					<s xml:lang="de" type="auto">Gewisß ists, das man<note xml:id="fn66" type="footnote" n="66">Gemeint sind hier die Kaiserlichen.</note> gar sittsam<note xml:id="fn67" type="footnote" n="67">vorsichtig.</note> mitt andern sachen handlen und nieman hochen<note xml:id="fn68" type="footnote" n="68">nieman hochen: keine hochrangige Persönlichkeit.</note> gern verbittern wirt, byß man vorhin<note xml:id="fn69" type="footnote" n="69">byß man vorhin: ehe man.</note> den willen erlangt in denen sachen, die kai. m[ajesta]ten am nechsten diser zeyt angelegen.</s>
-					<s xml:lang="de" type="auto">Gott verleych guͦts end uff nitt guͦt anfeng!</s>
+					<s n="52" xml:lang="de" type="auto">Es ist diser zeyt hie die allergrösst practic<note xml:id="fn61" type="footnote" n="61">geheime Unterhandlung.</note> mit dem pryntzen<note xml:id="fn62" type="footnote" n="62">Maximilian, Sohn von Ferdinand I., der vom Kaiser aus Rücksicht auf die Protestanten zum Präsidenten des Reichstags ernannt worden war, anstelle des Augsburger Kardinals Otto Truchsess von Waldburg; s. <abbr>Venetianische Depeschen</abbr> II 336, <ref target="file10174">Nr. 143</ref>.</note>, sonderlich mitt den küngischen räthen, das sy dahin möchten bewegt werden, dem <pb type="edition" next="525"/> könig ettlich sachen ze persuadieren.<note xml:id="fn63" type="footnote" n="63">schmackhaft zu machen.</note></s>
+					<s n="53" xml:lang="de" type="auto">Die Spanyer hoffierend dem herr Johann Hofman<note xml:id="fn64" type="footnote" n="64">Freiherr Johann Hoffmann (gest. am 18. Juli 1564), der nach 1545 Oberster Hofmeister des Königs war und großen Einfluss auf diesen hatte. Um 1560 trat er zum Protestantismus über; s. <abbr>NDB</abbr> XII 629f.</note>, des königs obersten rath, uber die massen.</s>
+					<s n="54" xml:lang="de" type="auto">Kommend beynach nymmer von im.</s>
+					<s n="55" xml:lang="de" type="auto">Hengend ime mehr nach dann<note xml:id="fn65" type="footnote" n="65">als.</note> dem könig selber; davon aber nitt ze schriben.</s>
+					<s n="56" xml:lang="de" type="auto">Die zeyt wirt allerlay und bald zuͦ erkennen geben.</s>
+					<s n="57" xml:lang="de" type="auto">Gewisß ists, das man<note xml:id="fn66" type="footnote" n="66">Gemeint sind hier die Kaiserlichen.</note> gar sittsam<note xml:id="fn67" type="footnote" n="67">vorsichtig.</note> mitt andern sachen handlen und nieman hochen<note xml:id="fn68" type="footnote" n="68">nieman hochen: keine hochrangige Persönlichkeit.</note> gern verbittern wirt, byß man vorhin<note xml:id="fn69" type="footnote" n="69">byß man vorhin: ehe man.</note> den willen erlangt in denen sachen, die kai. m[ajesta]ten am nechsten diser zeyt angelegen.</s>
+					<s n="58" xml:lang="de" type="auto">Gott verleych guͦts end uff nitt guͦt anfeng!</s>
 				</p>
 			</div>
 			<div xml:id="div16" corresp="regest16">
 				<p>
-					<s xml:lang="de" type="auto">Mitt unsern predigen und kirchenuͤbungen stets noch ymmerdaren gleich, und wie ich euch vormals geschriben.<note xml:id="fn70" type="footnote" n="70">Vgl. oben Z. <qv>zl17300-14</qv>.</note></s>
-					<s xml:lang="de" type="auto">Gott günne und geb, das wir allso furt<note xml:id="fn71" type="footnote" n="71">weiter.</note> by solichem wie bisanher belyben mögind!</s>
+					<s n="59" xml:lang="de" type="auto">Mitt unsern predigen und kirchenuͤbungen stets noch ymmerdaren gleich, und wie ich euch vormals geschriben.<note xml:id="fn70" type="footnote" n="70">Vgl. oben Z. <qv>zl17300-14</qv>.</note></s>
+					<s n="60" xml:lang="de" type="auto">Gott günne und geb, das wir allso furt<note xml:id="fn71" type="footnote" n="71">weiter.</note> by solichem wie bisanher belyben mögind!</s>
 				</p>
 			</div>
 			<div xml:id="div17" corresp="regest17">
 				<p>
-					<s xml:lang="de" type="auto">Sonst hab ich euch nichts sonders ze schriben, dann das vyl und groß volck hie ist, welchs sich ouch teglich mehret, derhalb ouch all ding anfachend treffelich theur hie werden.</s>
-					<s xml:lang="de" type="auto">Ist dem gmainen mann warlich gantz und gar beschwärlich und verderplich.</s>
-					<s xml:lang="de" type="auto">Und habend unsere junge leut vyl böser exempel, das unser statt den vorigen<note xml:id="fn72" type="footnote" n="72">Der Augsburger Reichstag von 1530.</note> und yetzigen reychstag lang nitt uberwinden wirt.</s>
-					<s xml:lang="de" type="auto">Ich hett vyl ze klagen.</s>
-					<s xml:lang="de" type="auto">Muͦß mich trucken<note xml:id="fn73" type="footnote" n="73">schicken; s. <abbr>SI</abbr> XIV 797.</note>, und so ich an die sich<note xml:id="fn74" type="footnote" n="74">so ich an die sich: wenn ich diejenigen anschaue.</note>, die vyl herter getrengt sind dann ich, byn ich billich<note xml:id="fn75" type="footnote" n="75">gerne.</note> gedultig.</s>
-					<s xml:lang="de" type="auto">Es gond teglich vyl klainer doppel fuͤr<note xml:id="fn76" type="footnote" n="76">Es gond vyl doppel fuͤr: es passieren viele Schlägereien; s. <abbr>SI</abbr> XIII 952f. - Zu solchen Handgreiflichkeiten s. z.B. <ref target="file#13021">Nr. 2972</ref>,<qv>zl17238-3</qv>; <ref target="file#13027">Nr. 2978</ref>,<qv>zl17244-5</qv>; <ref target="file#13032">Nr. 2983</ref>,[2]; und oben <qv>fn17300-4</qv>.</note> von unfletigen leuten.</s>
-					<s xml:lang="de" type="auto">Und hat man ymmerdar ze wehren, wie dann brüchig<note xml:id="fn77" type="footnote" n="77">üblich.</note>, wa<note xml:id="fn78" type="footnote" n="78">wo.</note> so vyl und mancherlay biderber leut kinder by ainander sind.</s>
+					<s n="61" xml:lang="de" type="auto">Sonst hab ich euch nichts sonders ze schriben, dann das vyl und groß volck hie ist, welchs sich ouch teglich mehret, derhalb ouch all ding anfachend treffelich theur hie werden.</s>
+					<s n="62" xml:lang="de" type="auto">Ist dem gmainen mann warlich gantz und gar beschwärlich und verderplich.</s>
+					<s n="63" xml:lang="de" type="auto">Und habend unsere junge leut vyl böser exempel, das unser statt den vorigen<note xml:id="fn72" type="footnote" n="72">Der Augsburger Reichstag von 1530.</note> und yetzigen reychstag lang nitt uberwinden wirt.</s>
+					<s n="64" xml:lang="de" type="auto">Ich hett vyl ze klagen.</s>
+					<s n="65" xml:lang="de" type="auto">Muͦß mich trucken<note xml:id="fn73" type="footnote" n="73">schicken; s. <abbr>SI</abbr> XIV 797.</note>, und so ich an die sich<note xml:id="fn74" type="footnote" n="74">so ich an die sich: wenn ich diejenigen anschaue.</note>, die vyl herter getrengt sind dann ich, byn ich billich<note xml:id="fn75" type="footnote" n="75">gerne.</note> gedultig.</s>
+					<s n="66" xml:lang="de" type="auto">Es gond teglich vyl klainer doppel fuͤr<note xml:id="fn76" type="footnote" n="76">Es gond vyl doppel fuͤr: es passieren viele Schlägereien; s. <abbr>SI</abbr> XIII 952f. - Zu solchen Handgreiflichkeiten s. z.B. <ref target="file13021">Nr. 2972</ref>,<qv>zl17238-3</qv>; <ref target="file13027">Nr. 2978</ref>,<qv>zl17244-5</qv>; <ref target="file13032">Nr. 2983</ref>,[2]; und oben <qv>fn17300-4</qv>.</note> von unfletigen leuten.</s>
+					<s n="67" xml:lang="de" type="auto">Und hat man ymmerdar ze wehren, wie dann brüchig<note xml:id="fn77" type="footnote" n="77">üblich.</note>, wa<note xml:id="fn78" type="footnote" n="78">wo.</note> so vyl und mancherlay biderber leut kinder by ainander sind.</s>
 				</p>
 			</div>
 		</body>

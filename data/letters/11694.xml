@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2006"/>
-				<idno type="ISBN">ISBN 978-3-290-17431-6</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1651</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17431-6</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1651</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 12</title>
+				<title subtype="publication">HBBW XII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">12</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 364,77</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 364,77</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,10 +49,10 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Schreibt selten an Bullinger, weil <persName ref="19">Ambrosius</persName>
-								[<persName ref="19">Blarer</persName>] wortgewandt an seiner Stelle schreibt; sein Schweigen bedeutet
+								Schreibt selten an Bullinger, weil Ambrosius
+								[<persName ref="person19">Blarer</persName>] wortgewandt an seiner Stelle schreibt; sein Schweigen bedeutet
 								also nicht Ablehnung oder Vergessen. Grüße. Kann seine Trauer über den Tod
-								<persName ref="114">Leo</persName> [<persName ref="114">Juds</persName>] in keiner Weise
+								Leo [<persName ref="person114">Juds</persName>] in keiner Weise
 								ausdrücken, Gott möge uns trösten.
 							</p>
 						</summary>
@@ -60,45 +63,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11694">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<place source="#257" cert="high">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person4079" cert="high"/>
+					<place source="place257" cert="high"/>
 					<date when="1542-08-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11696"/>
-					<ref type="prev_chronologically" target="files.xml#11693"/>
+					<ref type="next_chronologically" target="file11696"/>
+					<ref type="prev_chronologically" target="file11693"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#11646"/>
+					<ref type="prev_correspondence" target="file11646"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#11646"/>
+					<ref type="prev_correspondence_request" target="file11646"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10990"/>
+					<ref type="prev_correspondence_reaction" target="file10990"/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#11646"/>
-					<ref type="next_same_addressee" target="files.xml#11704"/>
-					<ref type="prev_same_addressee" target="files.xml#11690"/>
+					<ref type="prev_same_sender" target="file11646"/>
+					<ref type="next_same_addressee" target="file11704"/>
+					<ref type="prev_same_addressee" target="file11690"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11646"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11704"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11690"/>
+					<ref type="prev_with_sender_as_addressee" target="file11646"/>
+					<ref type="next_with_addressee_as_sender" target="file11704"/>
+					<ref type="prev_with_addressee_as_sender" target="file11690"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -112,25 +119,25 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Quod rarius ad te scribo, <persName ref="19">Ambrosii</persName><note xml:id="fn1" type="footnote" n="1"><persName ref="19">Ambrosius Blarer</persName>.</note> literae in causa sunt; nam ille iam etiam meo loco officio scribendi fungitur, qui potest illi et copiose et eleganter satisfacere.</s>
-					<s xml:lang="la" type="auto">Itaque silentium meum bene vertas, quod nullo fastidio nec ulla tui oblivione nascitur; in oculis enim meis semper talis es, quales sunt amantissimi.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Quod rarius ad te scribo, <persName ref="person19">Ambrosii</persName><note xml:id="fn1" type="footnote" n="1"><persName ref="person19">Ambrosius Blarer</persName>.</note> literae in causa sunt; nam ille iam etiam meo loco officio scribendi fungitur, qui potest illi et copiose et eleganter satisfacere.</s>
+					<s n="3" xml:lang="la" type="auto">Itaque silentium meum bene vertas, quod nullo fastidio nec ulla tui oblivione nascitur; in oculis enim meis semper talis es, quales sunt amantissimi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale et uxorem tuam<note xml:id="fn2" type="footnote" n="2">Anna, geb. Adlischwyler.</note> totamque domum saluta nomine meo<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage</hi> me.</note> studiosissime.</s>
-					<s xml:lang="la" type="auto">Quam me etiamnum affligat obitus Leonis<note xml:id="fn3" type="footnote" n="3"><persName ref="114">Leo Jud</persName>, der am 19. Juni verstorben war, vgl. oben <ref target="file#11681">Nr. 1638</ref>.</note>, non possum ulla ratione explicare.</s>
-					<s xml:lang="la" type="auto">Dominus nos consoletur.</s>
+					<s n="4" xml:lang="la" type="auto">Vale et uxorem tuam<note xml:id="fn2" type="footnote" n="2">Anna, geb. Adlischwyler.</note> totamque domum saluta nomine meo<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage</hi> me.</note> studiosissime.</s>
+					<s n="5" xml:lang="la" type="auto">Quam me etiamnum affligat obitus Leonis<note xml:id="fn3" type="footnote" n="3"><persName ref="person114">Leo Jud</persName>, der am 19. Juni verstorben war, vgl. oben <ref target="file11681">Nr. 1638</ref>.</note>, non possum ulla ratione explicare.</s>
+					<s n="6" xml:lang="la" type="auto">Dominus nos consoletur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex <placeName ref="565">Constantia</placeName>, 9. augusti 1542.</s>
+					<s n="7" xml:lang="la" type="auto">Ex <placeName ref="place565">Constantia</placeName>, 9. augusti 1542.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Io. <persName ref="263">Zvick</persName>.</s>
+					<s n="8" xml:lang="la" type="auto">Tuus <persName ref="person263">Io. Zvick</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Praestantissimo viro d. Hainricho Bullingero, ecclesiae Tigurinae administro, suo in domino dilectissimo fratri.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="9" xml:lang="la" type="auto">Praestantissimo viro d. Hainricho Bullingero, ecclesiae Tigurinae administro, suo in domino dilectissimo fratri.</s>
+					<s n="10" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

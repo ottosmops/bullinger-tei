@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2013"/>
-				<idno type="ISBN">ISBN 978-3-290-17664-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2077</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17664-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2077</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 15</title>
+				<title subtype="publication">HBBW XV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">15</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 358,151</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 358,151</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,7 +50,7 @@
 						<summary>
 							<p xml:id="regest1">
 								Ottheinrich dankt für die am 26. Januar [1545] eingetroffene Sendung von Bullingers „Brevis
-								<foreign xml:lang="el">ἀντιβολή</foreign>“ [gegen <persName ref="640">Cochläus</persName>], für die dort
+								<foreign xml:lang="el">ἀντιβολή</foreign>“ [gegen <persName ref="person640">Cochläus</persName>], für die dort
 								[vorangestellte] Widmungsepistel und für Bullingers Begleitbrief vom 31. Dezember [1544].
 							</p>
 						</summary>
@@ -58,45 +61,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12124">
 				<correspAction type="sent">
-					<persName ref="person#2411" cert="high">
+					<!--
+					<persName ref="person2411" cert="high">
 						<forename cert="high">Ottheinrich I.</forename>
 						<surname cert="high">von der Pfalz</surname>
-						<graphic type="portrait" url="portraits/2411_Ottheinrich_von_der_Pfalz.jpg"/>
+						<graphic type="portrait" url="portraits/2411_von_der_Pfalz_Ottheinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ottheinrich"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118738712"/>
 					</persName>
-					<place source="#210" cert="high">
-						<settlement>Heidelberg</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>49.41222 8.71</geo>
-					</place>
+					-->
+					<persName ref="person2411" cert="high"/>
+					<place source="place210" cert="high"/>
 					<date when="1545-01-31" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12125"/>
-					<ref type="prev_chronologically" target="files.xml#12123"/>
-					<ref type="next_correspondence" target="files.xml#12146"/>
-					<ref type="prev_correspondence" target="files.xml#12080"/>
-					<ref type="next_correspondence_request" target="files.xml#2603"/>
+					<ref type="next_chronologically" target="file12125"/>
+					<ref type="prev_chronologically" target="file12123"/>
+					<ref type="next_correspondence" target="file12146"/>
+					<ref type="prev_correspondence" target="file12080"/>
+					<ref type="next_correspondence_request" target="file2603"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#12146"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12080"/>
-					<ref type="next_same_sender" target="files.xml#2603"/>
+					<ref type="next_correspondence_reaction" target="file12146"/>
+					<ref type="prev_correspondence_reaction" target="file12080"/>
+					<ref type="next_same_sender" target="file2603"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#12125"/>
-					<ref type="prev_same_addressee" target="files.xml#12114"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2603"/>
+					<ref type="next_same_addressee" target="file12125"/>
+					<ref type="prev_same_addressee" target="file12114"/>
+					<ref type="next_with_sender_as_addressee" target="file2603"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12125"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12114"/>
+					<ref type="next_with_addressee_as_sender" target="file12125"/>
+					<ref type="prev_with_addressee_as_sender" target="file12114"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -110,20 +117,20 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Otthainrich, von gottes gnaden pfalltzgraf bey Rein, hertzog in Nidern und Obern Bairn, etc.</s>
+					<s n="1" xml:lang="de" type="auto">Otthainrich, von gottes gnaden pfalltzgraf bey Rein, hertzog in Nidern und Obern Bairn, etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Unsern grues zuvor.</s>
-					<s xml:lang="de" type="auto">Hochgelerter, lieber, besonder, wir haben eur schreiben des datum steet Zürich inn der eidgnoschaft, des letzsten tags decembris uns gethan,<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note> sambt dem uberschigkten buech<note xml:id="fn2" type="footnote" n="2">Die gegen <persName ref="640">Cochläus</persName> gerichtete "Brevis <foreign xml:lang="el">ἀντιβολή</foreign>" Bullingers von Dezember 1544; s. HBBW XIV 460, Anm. 22.</note> ann dem sechsundzwaintzigisten tag dits monats empfangen und sagen euch von solhs<note xml:id="fn3" type="footnote" n="3">solchs.</note> eurs zueschreibens<note xml:id="fn4" type="footnote" n="4">Die für Ottheinrich bestimmte Widmungsepistel vom 10. November 1544, die Bullinger der "Brevis <foreign xml:lang="el">ἀντιβολή</foreign>" vorangestellt hatte (HBBW XIV 519-545).</note> und gehabter arbait wegen, auch umb eur underthenigs erbieten<pb type="edition" next="111"/> gnedigen dangk.</s>
-					<s xml:lang="de" type="auto">Wellen auch solhs mit gnaden gegen euch erkhennen; und dieweil solh buech eben gros<note xml:id="fn5" type="footnote" n="5">wichtig. - Das Buch umfasst [76] Seiten im Quartformat (die Widmungsepistel umfasst 23 Seiten).</note>, dasselb mit guter muß und weil vleissig lesen, auch, wa<note xml:id="fn6" type="footnote" n="6">falls.</note> vonnoten<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage über</hi> nn <hi>ein hier unpassendes Kennzeichen für ein</hi> u.</note>, euch darauf widerumb schreiben<note xml:id="fn7" type="footnote" n="7">Ottheinrich konnte kein Latein und musste deshalb zunächst eine Übersetzung von Bullingers Vorrede anfertigen lassen; vgl. HBBW XIV 430, 40-43.</note>.</s>
-					<s xml:lang="de" type="auto">Das wollten wir euch gnediger maynung nit verhallten.</s>
+					<s n="2" xml:lang="de" type="auto">Unsern grues zuvor.</s>
+					<s n="3" xml:lang="de" type="auto">Hochgelerter, lieber, besonder, wir haben eur schreiben des datum steet Zürich inn der eidgnoschaft, des letzsten tags decembris uns gethan,<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note> sambt dem uberschigkten buech<note xml:id="fn2" type="footnote" n="2">Die gegen <persName ref="person640">Cochläus</persName> gerichtete "Brevis <foreign xml:lang="el">ἀντιβολή</foreign>" Bullingers von Dezember 1544; s. HBBW XIV 460, Anm. 22.</note> ann dem sechsundzwaintzigisten tag dits monats empfangen und sagen euch von solhs<note xml:id="fn3" type="footnote" n="3">solchs.</note> eurs zueschreibens<note xml:id="fn4" type="footnote" n="4">Die für Ottheinrich bestimmte Widmungsepistel vom 10. November 1544, die Bullinger der "Brevis <foreign xml:lang="el">ἀντιβολή</foreign>" vorangestellt hatte (HBBW XIV 519-545).</note> und gehabter arbait wegen, auch umb eur underthenigs erbieten<pb type="edition" next="111"/> gnedigen dangk.</s>
+					<s n="4" xml:lang="de" type="auto">Wellen auch solhs mit gnaden gegen euch erkhennen; und dieweil solh buech eben gros<note xml:id="fn5" type="footnote" n="5">wichtig. - Das Buch umfasst [76] Seiten im Quartformat (die Widmungsepistel umfasst 23 Seiten).</note>, dasselb mit guter muß und weil vleissig lesen, auch, wa<note xml:id="fn6" type="footnote" n="6">falls.</note> vonnoten<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage über</hi> nn <hi>ein hier unpassendes Kennzeichen für ein</hi> u.</note>, euch darauf widerumb schreiben<note xml:id="fn7" type="footnote" n="7">Ottheinrich konnte kein Latein und musste deshalb zunächst eine Übersetzung von Bullingers Vorrede anfertigen lassen; vgl. HBBW XIV 430, 40-43.</note>.</s>
+					<s n="5" xml:lang="de" type="auto">Das wollten wir euch gnediger maynung nit verhallten.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum Haidlberg, den 31ten tag januarii anno etc. 45.</s>
+					<s n="6" xml:lang="de" type="auto">Datum Haidlberg, den 31ten tag januarii anno etc. 45.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Dem hochgelerten, unserm lieben, besondern Hainrichen Bullinger, diener der kirchen Zirch.</s>
+					<s n="7" xml:lang="de" type="auto">Dem hochgelerten, unserm lieben, besondern Hainrichen Bullinger, diener der kirchen Zirch.</s>
 				</p>
 			</div>
 		</body>

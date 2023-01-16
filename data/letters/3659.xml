@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,196</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,196</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -38,14 +41,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 92,164</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">eingereiht bei 17. Juli 1558</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 92,164</idno>
+						<idno subtype="Hinweis">eingereiht bei 17. Juli 1558</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -59,58 +65,60 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3659">
 				<correspAction type="sent">
-					<persName ref="person#3009" cert="high">
+					<!--
+					<persName ref="person3009" cert="high">
 						<forename cert="high">Laelius</forename>
 						<surname cert="high">Socin</surname>
-						<addName type="main">Sozzini (Socinus), Lelio</addName>
+						<persName type="main" ref="person8101>Sozzini (Socinus), Lelio</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Lelio_Sozzini"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118615823"/>
 					</persName>
-					<place source="#18" cert="high">
-						<settlement>Augsburg</settlement>
-						<district>Bayern</district>
-						<country>Deutschland</country>
-						<geo>48.37154 10.89851</geo>
-					</place>
+					-->
+					<persName ref="person3009" cert="high"/>
+					<place source="place18" cert="high"/>
 					<date when="1558-07-30" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3660"/>
-					<ref type="prev_chronologically" target="files.xml#3658"/>
-					<ref type="next_correspondence" target="files.xml#3848"/>
-					<ref type="prev_correspondence" target="files.xml#3657"/>
-					<ref type="next_correspondence_request" target="files.xml#3848"/>
-					<ref type="prev_correspondence_request" target="files.xml#3657"/>
+					<ref type="next_chronologically" target="file3660"/>
+					<ref type="prev_chronologically" target="file3658"/>
+					<ref type="next_correspondence" target="file3848"/>
+					<ref type="prev_correspondence" target="file3657"/>
+					<ref type="next_correspondence_request" target="file3848"/>
+					<ref type="prev_correspondence_request" target="file3657"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2668"/>
-					<ref type="next_same_sender" target="files.xml#3848"/>
-					<ref type="prev_same_sender" target="files.xml#3657"/>
-					<ref type="next_same_addressee" target="files.xml#3661"/>
-					<ref type="prev_same_addressee" target="files.xml#3654"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3848"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3657"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3661"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3654"/>
+					<ref type="prev_correspondence_reaction" target="file2668"/>
+					<ref type="next_same_sender" target="file3848"/>
+					<ref type="prev_same_sender" target="file3657"/>
+					<ref type="next_same_addressee" target="file3661"/>
+					<ref type="prev_same_addressee" target="file3654"/>
+					<ref type="next_with_sender_as_addressee" target="file3848"/>
+					<ref type="prev_with_sender_as_addressee" target="file3657"/>
+					<ref type="next_with_addressee_as_sender" target="file3661"/>
+					<ref type="prev_with_addressee_as_sender" target="file3654"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="3659/Autograph/00 E_II_365__fol__196_r_.tif" n="1"/>
+		<graphic url="3659/Autograph/01 E_II_365__fol__196_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

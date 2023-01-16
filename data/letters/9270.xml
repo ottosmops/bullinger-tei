@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">8097/67</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 375,876</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 375,876</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,52 +47,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9270">
 				<correspAction type="sent">
-					<persName ref="person#3243" cert="low">
+					<!--
+					<persName ref="person3243" cert="low">
 						<forename cert="low">Johann Konrad</forename>
 						<surname cert="low">Ulmer</surname>
-						<addName type="main">Ulmer (ab Ulmis), Johann Konrad</addName>
-						<graphic type="portrait" url="portraits/3243_Johann_Conrad_Ulmer.jpg"/>
+						<persName type="main" ref="person8109>Ulmer (ab Ulmis), Johann Konrad</addName>
+						<graphic type="portrait" url="portraits/3243_Ulmer_Johann_Conrad.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johann_Konrad_Ulmer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/120341913"/>
 					</persName>
-					<place source="#441" cert="low">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					-->
+					<persName ref="person3243" cert="low"/>
+					<place source="place441" cert="low"/>
 					<date when="1573-04-02" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9271"/>
-					<ref type="prev_chronologically" target="files.xml#9269"/>
-					<ref type="next_correspondence" target="files.xml#9288"/>
-					<ref type="prev_correspondence" target="files.xml#9260"/>
-					<ref type="next_correspondence_request" target="files.xml#9288"/>
-					<ref type="prev_correspondence_request" target="files.xml#9259"/>
-					<ref type="next_correspondence_reaction" target="files.xml#9379"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#9260"/>
-					<ref type="next_same_sender" target="files.xml#9288"/>
-					<ref type="prev_same_sender" target="files.xml#9259"/>
-					<ref type="next_same_addressee" target="files.xml#9271"/>
-					<ref type="prev_same_addressee" target="files.xml#9263"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9288"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9259"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9271"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#9263"/>
+					<ref type="next_chronologically" target="file9271"/>
+					<ref type="prev_chronologically" target="file9269"/>
+					<ref type="next_correspondence" target="file9288"/>
+					<ref type="prev_correspondence" target="file9260"/>
+					<ref type="next_correspondence_request" target="file9288"/>
+					<ref type="prev_correspondence_request" target="file9259"/>
+					<ref type="next_correspondence_reaction" target="file9379"/>
+					<ref type="prev_correspondence_reaction" target="file9260"/>
+					<ref type="next_same_sender" target="file9288"/>
+					<ref type="prev_same_sender" target="file9259"/>
+					<ref type="next_same_addressee" target="file9271"/>
+					<ref type="prev_same_addressee" target="file9263"/>
+					<ref type="next_with_sender_as_addressee" target="file9288"/>
+					<ref type="prev_with_sender_as_addressee" target="file9259"/>
+					<ref type="next_with_addressee_as_sender" target="file9271"/>
+					<ref type="prev_with_addressee_as_sender" target="file9263"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -98,15 +100,18 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="9270/Autograph/00 E_II_375__fol__876_r_.tif" n="1"/>
+		<graphic url="9270/Autograph/01 E_II_375__fol__876_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Literas tuas, clarissime vir et pater in domino summe colende, 27. martii ad me datas postridie eiusdem accepi una cum epistolis tuis ad Bellieverium scriptis, quas nunc, ut petebas, remitto.</s>
-					<s xml:lang="la" type="auto">Quanto vero gaudio epistolas illas imprimis acceperim quantaque animi mei aviditate et laetitia legerim, verbis eloqui non licet.</s>
-					<s xml:lang="la" type="auto">Utinam in omnium piorum atque etiam impiorum manibus versarentur...</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Literas tuas, clarissime vir et pater in domino summe colende, 27. martii ad me datas postridie eiusdem accepi una cum epistolis tuis ad Bellieverium scriptis, quas nunc, ut petebas, remitto.</s>
+					<s n="3" xml:lang="la" type="auto">Quanto vero gaudio epistolas illas imprimis acceperim quantaque animi mei aviditate et laetitia legerim, verbis eloqui non licet.</s>
+					<s n="4" xml:lang="la" type="auto">Utinam in omnium piorum atque etiam impiorum manibus versarentur...</s>
 				</p>
 			</div>
 		</body>

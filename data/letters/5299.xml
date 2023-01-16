@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5996/84</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 377,2372</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 377,2372</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -49,13 +52,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 104,84</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 104,84</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -64,47 +70,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5299">
 				<correspAction type="sent">
-					<persName ref="person#2474" cert="high">
+					<!--
+					<persName ref="person2474" cert="high">
 						<forename cert="high">Margret</forename>
 						<surname cert="high">Parkhurst</surname>
 					</persName>
-					<place source="#299" cert="high">
-						<settlement>Ludham</settlement>
-						<geo>52.70473 1.56135</geo>
-					</place>
+					-->
+					<persName ref="person2474" cert="high"/>
+					<place source="place299" cert="high"/>
 					<date when="1562-04-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5300"/>
-					<ref type="prev_chronologically" target="files.xml#5298"/>
-					<ref type="next_correspondence" target="files.xml#5346"/>
-					<ref type="prev_correspondence" target="files.xml#4822"/>
-					<ref type="next_correspondence_request" target="files.xml#5346"/>
-					<ref type="prev_correspondence_request" target="files.xml#4822"/>
+					<ref type="next_chronologically" target="file5300"/>
+					<ref type="prev_chronologically" target="file5298"/>
+					<ref type="next_correspondence" target="file5346"/>
+					<ref type="prev_correspondence" target="file4822"/>
+					<ref type="next_correspondence_request" target="file5346"/>
+					<ref type="prev_correspondence_request" target="file4822"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#5346"/>
-					<ref type="prev_same_sender" target="files.xml#4822"/>
-					<ref type="next_same_addressee" target="files.xml#5306"/>
-					<ref type="prev_same_addressee" target="files.xml#5296"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5346"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4822"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5306"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5296"/>
+					<ref type="next_same_sender" target="file5346"/>
+					<ref type="prev_same_sender" target="file4822"/>
+					<ref type="next_same_addressee" target="file5306"/>
+					<ref type="prev_same_addressee" target="file5296"/>
+					<ref type="next_with_sender_as_addressee" target="file5346"/>
+					<ref type="prev_with_sender_as_addressee" target="file4822"/>
+					<ref type="next_with_addressee_as_sender" target="file5306"/>
+					<ref type="prev_with_addressee_as_sender" target="file5296"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -114,34 +120,37 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="5299/Autograph/00 E_II_377__fol__2372_r_.tif" n="1"/>
+		<graphic url="5299/Autograph/01 E_II_377__fol__2372_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="de">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Euwere brieff, wilche ihr (mein lieber gnadt her) zu mir den 24. august anno 1562 gar frundtlich und holtzselig geschrieben habent, hab ich entpfangen und mitt großer freudt meines hertzens dieselbige gelesen.</s>
-					<s xml:lang="de" type="auto">In wilchen ihr uns nicht allein verstendiget, das ihr, euwere liebe hausfrauwe, alle euwere kindt, sun, dachteren und dachtermamnen, unserer nicht vergeßent, sunder auch euwere große sorg, die ihr vor uns, unsere landt und konnigin dragent, offenbaret und anzeiget.</s>
-					<s xml:lang="de" type="auto">Vor wilhes und auch vor alle andere gutthaten wir euch gar hertzlich und thruwlich dancken.</s>
+					<s n="1" xml:lang="de" type="auto">Euwere brieff, wilche ihr (mein lieber gnadt her) zu mir den 24. august anno 1562 gar frundtlich und holtzselig geschrieben habent, hab ich entpfangen und mitt großer freudt meines hertzens dieselbige gelesen.</s>
+					<s n="2" xml:lang="de" type="auto">In wilchen ihr uns nicht allein verstendiget, das ihr, euwere liebe hausfrauwe, alle euwere kindt, sun, dachteren und dachtermamnen, unserer nicht vergeßent, sunder auch euwere große sorg, die ihr vor uns, unsere landt und konnigin dragent, offenbaret und anzeiget.</s>
+					<s n="3" xml:lang="de" type="auto">Vor wilhes und auch vor alle andere gutthaten wir euch gar hertzlich und thruwlich dancken.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Das aber mein her und ich nichts vor dießer zeit geschrieben habent, ist nicht auß vergeß oder nachleßigkaitt geschehen oder das etwas an unserer lieb gegen euch geringeret sey, sunder große geschefft meines herren und auch zum theil kranckheit solches verhindert haben.</s>
-					<s xml:lang="de" type="auto">Dan den ersten sondagk des advents hatt mein her zu Norvic geprediget hat, und ist gar kalt gewesen, und mein her auch so kalt worden, das ehr, nachdem ehr heimkummen ist, drey dag eynem nach dem anderen in ein onmacht ist gefallen, das wir alle sorg hatten, das große und sorgfeltige kranckheitt solte volgen.</s>
-					<s xml:lang="de" type="auto">Aber der almechtig gott, wilcher die seinigen nicht verlest, hat ihn durch seyne gnadt erhalten und von der kranckheitt gesundt gemacht.</s>
-					<s xml:lang="de" type="auto">Nicht lang darnach sein ich in das kaltwe gefallen; aber gott (wilchem sey allezeitt lob, eher und prieß) hatt mich widrum gesundt gemacht.</s>
-					<s xml:lang="de" type="auto">Undt dieß ist die ursach unseres stilschwiegen gewesen.</s>
+					<s n="4" xml:lang="de" type="auto">Das aber mein her und ich nichts vor dießer zeit geschrieben habent, ist nicht auß vergeß oder nachleßigkaitt geschehen oder das etwas an unserer lieb gegen euch geringeret sey, sunder große geschefft meines herren und auch zum theil kranckheit solches verhindert haben.</s>
+					<s n="5" xml:lang="de" type="auto">Dan den ersten sondagk des advents hatt mein her zu Norvic geprediget hat, und ist gar kalt gewesen, und mein her auch so kalt worden, das ehr, nachdem ehr heimkummen ist, drey dag eynem nach dem anderen in ein onmacht ist gefallen, das wir alle sorg hatten, das große und sorgfeltige kranckheitt solte volgen.</s>
+					<s n="6" xml:lang="de" type="auto">Aber der almechtig gott, wilcher die seinigen nicht verlest, hat ihn durch seyne gnadt erhalten und von der kranckheitt gesundt gemacht.</s>
+					<s n="7" xml:lang="de" type="auto">Nicht lang darnach sein ich in das kaltwe gefallen; aber gott (wilchem sey allezeitt lob, eher und prieß) hatt mich widrum gesundt gemacht.</s>
+					<s n="8" xml:lang="de" type="auto">Undt dieß ist die ursach unseres stilschwiegen gewesen.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Wir haben von den concilio zu Trient gehoret; aber nimandt auß unserem landt ist dar gezogen noch er soll oder woll dar ziegen, so lang als es der popsch haltet.</s>
-					<s xml:lang="de" type="auto">Gott der almechtig gib uns alle genad und beistandt, das mir alle nach seinem gottlichen willen und wolgefallen leben und alles boßes und ubels vermeiden undt laßen, was seynen zorn uber uns bewegen mochte.</s>
-					<s xml:lang="de" type="auto">Grußet mir euwere liebe hausfrawe, alle euwere kindt, sun, dachteren und dachtermannen und alle andere gutte herren und freundt und all Zurych.</s>
-					<s xml:lang="de" type="auto">Geben den 24. aprilis anno 1562 zu Ludham.</s>
+					<s n="9" xml:lang="de" type="auto">Wir haben von den concilio zu Trient gehoret; aber nimandt auß unserem landt ist dar gezogen noch er soll oder woll dar ziegen, so lang als es der popsch haltet.</s>
+					<s n="10" xml:lang="de" type="auto">Gott der almechtig gib uns alle genad und beistandt, das mir alle nach seinem gottlichen willen und wolgefallen leben und alles boßes und ubels vermeiden undt laßen, was seynen zorn uber uns bewegen mochte.</s>
+					<s n="11" xml:lang="de" type="auto">Grußet mir euwere liebe hausfrawe, alle euwere kindt, sun, dachteren und dachtermannen und alle andere gutte herren und freundt und all Zurych.</s>
+					<s n="12" xml:lang="de" type="auto">Geben den 24. aprilis anno 1562 zu Ludham.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">M[argareta] P[arkhurst].</s>
+					<s n="13" xml:lang="de" type="auto">M[argareta] P[arkhurst].</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Dem weisen undt wolgelerten herren meister Herychen Bullinger, kirchen diener zu Zurych, ihrem gunstigen herren zu handen.</s>
-					<s xml:lang="la" type="auto">Tigurum.</s>
+					<s n="14" xml:lang="de" type="auto">Dem weisen undt wolgelerten herren meister Herychen Bullinger, kirchen diener zu Zurych, ihrem gunstigen herren zu handen.</s>
+					<s n="15" xml:lang="la" type="auto">Tigurum.</s>
 				</p>
 			</div>
 		</body>

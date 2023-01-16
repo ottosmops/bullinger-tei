@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2011"/>
-				<idno type="ISBN">ISBN 978-3-290-17565-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2000</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17565-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2000</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 14</title>
+				<title subtype="publication">HBBW XIV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Henrich, Rainer; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">14</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 346,131</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 346,131</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,14 +50,14 @@
 						<summary>
 							<p xml:id="regest1">
 								Hat am 19. September durch [Wolfgang] Musculus’ Söhnchen [Abraham oder Elias] Bullingers Brief erhalten, in
-								dem sich dieser unnötigerweise für seine späte Antwort [auf <ref target="file#11948">Nr. 1901</ref>]
-								entschuldigt; mittlerweile bittet <persName ref="17">Birck</persName> Bullinger und seine Kollegen,
+								dem sich dieser unnötigerweise für seine späte Antwort [auf <ref target="file11948">Nr. 1901</ref>]
+								entschuldigt; mittlerweile bittet <persName ref="person17">Birck</persName> Bullinger und seine Kollegen,
 								ihm ihre Meinung über Dramen zukommen zu lassen, da diese von einigen missbilligt werden, weil sie die
-								Schüler vom Studium abhalten und die guten Sitten verderben. <persName ref="17">Birck</persName>
+								Schüler vom Studium abhalten und die guten Sitten verderben. <persName ref="person17">Birck</persName>
 								möchte keineswegs seine „Judith“ den Zürchern aufdrängen, es sei denn, Christoph [Froschauer] betrachte den
-								[Nachdruck] als dienlich; mit seiner Sendung wollte <persName ref="17">Birck</persName> sich
+								[Nachdruck] als dienlich; mit seiner Sendung wollte <persName ref="person17">Birck</persName> sich
 								hauptsächlich den Zürchern empfehlen; deshalb seine Freude [beim Lesen von Bullingers Brief] über die lange
-								Liste der ihn Grüßenden; <persName ref="17">Birck</persName> lässt zurückgrüßen.
+								Liste der ihn Grüßenden; <persName ref="person17">Birck</persName> lässt zurückgrüßen.
 							</p>
 						</summary>
 					</msContents>
@@ -64,45 +67,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12047">
 				<correspAction type="sent">
-					<persName ref="person#351" cert="high">
+					<!--
+					<persName ref="person351" cert="high">
 						<forename cert="high">Sixt</forename>
 						<surname cert="high">Birck</surname>
-						<addName type="main">Birck (Betuleius), Sixt (Xystus)</addName>
+						<persName type="main" ref="person8173>Birck (Betuleius), Sixt (Xystus)</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Sixtus_Birck"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118859730"/>
 					</persName>
-					<place source="#18" cert="high">
-						<settlement>Augsburg</settlement>
-						<district>Bayern</district>
-						<country>Deutschland</country>
-						<geo>48.37154 10.89851</geo>
-					</place>
+					-->
+					<persName ref="person351" cert="high"/>
+					<place source="place18" cert="high"/>
 					<date when="1544-09-30" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12048"/>
-					<ref type="prev_chronologically" target="files.xml#12046"/>
-					<ref type="next_correspondence" target="files.xml#12369"/>
-					<ref type="prev_correspondence" target="files.xml#11948"/>
-					<ref type="next_correspondence_request" target="files.xml#12369"/>
-					<ref type="prev_correspondence_request" target="files.xml#11948"/>
+					<ref type="next_chronologically" target="file12048"/>
+					<ref type="prev_chronologically" target="file12046"/>
+					<ref type="next_correspondence" target="file12369"/>
+					<ref type="prev_correspondence" target="file11948"/>
+					<ref type="next_correspondence_request" target="file12369"/>
+					<ref type="prev_correspondence_request" target="file11948"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#12369"/>
-					<ref type="prev_same_sender" target="files.xml#11948"/>
-					<ref type="next_same_addressee" target="files.xml#12050"/>
-					<ref type="prev_same_addressee" target="files.xml#12045"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12369"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11948"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12050"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12045"/>
+					<ref type="next_same_sender" target="file12369"/>
+					<ref type="prev_same_sender" target="file11948"/>
+					<ref type="next_same_addressee" target="file12050"/>
+					<ref type="prev_same_addressee" target="file12045"/>
+					<ref type="next_with_sender_as_addressee" target="file12369"/>
+					<ref type="prev_with_sender_as_addressee" target="file11948"/>
+					<ref type="next_with_addressee_as_sender" target="file12050"/>
+					<ref type="prev_with_addressee_as_sender" target="file12045"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -119,32 +126,32 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S[alutem] d[ico].</s>
-					<s xml:lang="la" type="auto">Decima nona septembris Musculus noster<note xml:id="fn1" type="footnote" n="1">Wolfgang Musculus.</note> per filiolum suum<note xml:id="fn2" type="footnote" n="2">Abraham Musculus (geb. 8. Dezember 1534) oder Elias Musculus (geb. 1535/1536); s. Reinhard <hi>Bodenmann,</hi> Wolfgang Musculus (1497-1563). Destin d'un autodidacte lorrain au siècle des Réformes, Genf 2000. - Travaux d'Humanisme et Renaissance 343, S. 301-305.</note> tuas ad me misit literas<note xml:id="fn3" type="footnote" n="3">Nicht erhalten; vgl. aber oben <ref target="file#12033">Nr. 1986</ref> mit Anm. 2.</note> tam pias quam amicas.</s>
-					<s xml:lang="la" type="auto">Nimium religiosae responsionis dilationem excusas, quasi is sim, cui necesse sit in rebus non valde arduis<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage irrtümlich:</hi> ardui.</note> responderi a viris tantis tantoque negotiorum ecclesiasticorum cumulo adobrutis.</s>
-					<s xml:lang="la" type="auto">Quanquam ad has interim mihi a te responderi pervelim.</s>
+					<s n="1" xml:lang="la" type="auto">S[alutem] d[ico].</s>
+					<s n="2" xml:lang="la" type="auto">Decima nona septembris Musculus noster<note xml:id="fn1" type="footnote" n="1">Wolfgang Musculus.</note> per filiolum suum<note xml:id="fn2" type="footnote" n="2">Abraham Musculus (geb. 8. Dezember 1534) oder Elias Musculus (geb. 1535/1536); s. Reinhard <hi>Bodenmann,</hi> Wolfgang Musculus (1497-1563). Destin d'un autodidacte lorrain au siècle des Réformes, Genf 2000. - Travaux d'Humanisme et Renaissance 343, S. 301-305.</note> tuas ad me misit literas<note xml:id="fn3" type="footnote" n="3">Nicht erhalten; vgl. aber oben <ref target="file12033">Nr. 1986</ref> mit Anm. 2.</note> tam pias quam amicas.</s>
+					<s n="3" xml:lang="la" type="auto">Nimium religiosae responsionis dilationem excusas, quasi is sim, cui necesse sit in rebus non valde arduis<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage irrtümlich:</hi> ardui.</note> responderi a viris tantis tantoque negotiorum ecclesiasticorum cumulo adobrutis.</s>
+					<s n="4" xml:lang="la" type="auto">Quanquam ad has interim mihi a te responderi pervelim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ad quam, inquis, quaestionem?</s>
-					<s xml:lang="la" type="auto">Unnus[!] est et alter, qui dramata, quale „Iudith“ nostra est<note xml:id="fn4" type="footnote" n="4">Siehe dazu <ref target="file#11948">Nr. 1901</ref>, Anm. 1.</note>, hoc nomine improbant,<note xml:id="fn5" type="footnote" n="5">Unter den damaligen Kritikern: Wolfgang Musculus, der anfänglich <persName ref="17">Bircks</persName> Dramen befürwortete; s. <hi>Bodenmann,</hi> aaO, S. 357f.</note> quod et studiis iuventutis et<pb type="edition" next="432"/> publice moribus officiant.</s>
-					<s xml:lang="la" type="auto">Ecclesię Tigurinae super ea re iudicium audire percupio.</s>
-					<s xml:lang="la" type="auto">Rogo igitur te propter studia propterque pietatem, qua studiosos complecteris, ut proposita in conventu vestro quaestione doctorum suffragia colligas; quae certe apud me plurimum autoritatis sunt habitura<note xml:id="fn6" type="footnote" n="6">Eine parallele Anfrage richtete <persName ref="17">Birck</persName> am 1. Oktober 1544 auch an <persName ref="19">Ambrosius Blarer</persName>; s. Blarer BW II 302f, <ref target="file#11171">Nr. 1128</ref>. -Mit seinen Nachfragen in Zürich (s. oben <ref target="file#11948">Nr. 1901</ref>, Anm. 1), wo sich auch Bullinger in dieser Gattung 1533 versucht hatte (HBBibl I 39-41), und im Konstanz des <persName ref="19">Ambrosius Blarer</persName> (der die Schuldramen seines Schützling Jakob Funcklin billigen wird; s. Max <hi>Schiendorfer,</hi> Die Bühne als Kanzel. Der Bieler Prädikant und Dramatiker Jakob Funcklin (1522/23-1565), in: Nova Acta Paracelsica, NF 22/23, 2008/2009, S. 51-74) ging <persName ref="17">Birck</persName> kein großes Risiko ein. - Zur eher positiven Bewertung des Schuidramas in Zürich in den 1540er Jahren (solange diese keinen Anlass zur Unzüchtigkeit gaben) und für ein Verzeichnis der etwa 20 ermittelten Dramenaufführungen in Zürich zwischen 1526 bis 1544 s. Thomas <hi>Brunnschweiler,</hi> Johann Jakob Breitingers "Bedencken von Comoedien oder Spilen". Die Theaterfeindlichkeit im Alten Zürich. Edition - Kommentar - Monographie, Bern usw. 1989. - Zürcher Germanistische Studien 17, S. 125-128. 132-137. 267f.</note>.</s>
-					<s xml:lang="la" type="auto">Nunquam, crede mihi, animum induxi, quod velim vel moribus vel studiis officere, quibus colendis ego publice conductus sum.</s>
+					<s n="5" xml:lang="la" type="auto">Ad quam, inquis, quaestionem?</s>
+					<s n="6" xml:lang="la" type="auto">Unnus[!] est et alter, qui dramata, quale „Iudith“ nostra est<note xml:id="fn4" type="footnote" n="4">Siehe dazu <ref target="file11948">Nr. 1901</ref>, Anm. 1.</note>, hoc nomine improbant,<note xml:id="fn5" type="footnote" n="5">Unter den damaligen Kritikern: Wolfgang Musculus, der anfänglich <persName ref="person17">Bircks</persName> Dramen befürwortete; s. <hi>Bodenmann,</hi> aaO, S. 357f.</note> quod et studiis iuventutis et<pb type="edition" next="432"/> publice moribus officiant.</s>
+					<s n="7" xml:lang="la" type="auto">Ecclesię Tigurinae super ea re iudicium audire percupio.</s>
+					<s n="8" xml:lang="la" type="auto">Rogo igitur te propter studia propterque pietatem, qua studiosos complecteris, ut proposita in conventu vestro quaestione doctorum suffragia colligas; quae certe apud me plurimum autoritatis sunt habitura<note xml:id="fn6" type="footnote" n="6">Eine parallele Anfrage richtete <persName ref="person17">Birck</persName> am 1. Oktober 1544 auch an <persName ref="person19">Ambrosius Blarer</persName>; s. Blarer BW II 302f, <ref target="file11171">Nr. 1128</ref>. -Mit seinen Nachfragen in Zürich (s. oben <ref target="file11948">Nr. 1901</ref>, Anm. 1), wo sich auch Bullinger in dieser Gattung 1533 versucht hatte (HBBibl I 39-41), und im Konstanz des <persName ref="person19">Ambrosius Blarer</persName> (der die Schuldramen seines Schützling Jakob Funcklin billigen wird; s. Max <hi>Schiendorfer,</hi> Die Bühne als Kanzel. Der Bieler Prädikant und Dramatiker Jakob Funcklin (1522/23-1565), in: Nova Acta Paracelsica, NF 22/23, 2008/2009, S. 51-74) ging <persName ref="person17">Birck</persName> kein großes Risiko ein. - Zur eher positiven Bewertung des Schuidramas in Zürich in den 1540er Jahren (solange diese keinen Anlass zur Unzüchtigkeit gaben) und für ein Verzeichnis der etwa 20 ermittelten Dramenaufführungen in Zürich zwischen 1526 bis 1544 s. Thomas <hi>Brunnschweiler,</hi> Johann Jakob Breitingers "Bedencken von Comoedien oder Spilen". Die Theaterfeindlichkeit im Alten Zürich. Edition - Kommentar - Monographie, Bern usw. 1989. - Zürcher Germanistische Studien 17, S. 125-128. 132-137. 267f.</note>.</s>
+					<s n="9" xml:lang="la" type="auto">Nunquam, crede mihi, animum induxi, quod velim vel moribus vel studiis officere, quibus colendis ego publice conductus sum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De excudenda apud vos „Iudith“ nec insto nec cupio, nisi quatenus commoditas ipsa Christophoro<note xml:id="fn7" type="footnote" n="7">Christoph Froschauer; vgl. oben <ref target="file#11948">Nr. 1901</ref>, 10f.</note> suadeat, neque tam in hoc misi, quam ut occasionem quęrerem insinuandi apud vos <persName ref="17">Xysti</persName>, qui apud doctos et pios viros nomen suum innotescere cupit.</s>
-					<s xml:lang="la" type="auto">Quo nomine mihi vehementer gratus fuit longus ille doctorum catalogus <persName ref="17">Xystum</persName> per te salutantium.</s>
-					<s xml:lang="la" type="auto">Salutem illis ex me vicissim per occasionem dicito meoque ipsos nomine rogo, ut super dramatis<note xml:id="fnb" type="footnote" n="b">dramatis: <hi>Abl. Pl. nach der griechischen Deklination, steht für</hi> dramatibus.</note> illis in mei gratiam suam ferant sententiam.</s>
-					<s xml:lang="la" type="auto">Quod si fecerint, interpretabor pro officio non vulgari.</s>
+					<s n="10" xml:lang="la" type="auto">De excudenda apud vos „Iudith“ nec insto nec cupio, nisi quatenus commoditas ipsa Christophoro<note xml:id="fn7" type="footnote" n="7">Christoph Froschauer; vgl. oben <ref target="file11948">Nr. 1901</ref>, 10f.</note> suadeat, neque tam in hoc misi, quam ut occasionem quęrerem insinuandi apud vos <persName ref="person17">Xysti</persName>, qui apud doctos et pios viros nomen suum innotescere cupit.</s>
+					<s n="11" xml:lang="la" type="auto">Quo nomine mihi vehementer gratus fuit longus ille doctorum catalogus <persName ref="person17">Xystum</persName> per te salutantium.</s>
+					<s n="12" xml:lang="la" type="auto">Salutem illis ex me vicissim per occasionem dicito meoque ipsos nomine rogo, ut super dramatis<note xml:id="fnb" type="footnote" n="b">dramatis: <hi>Abl. Pl. nach der griechischen Deklination, steht für</hi> dramatibus.</note> illis in mei gratiam suam ferant sententiam.</s>
+					<s n="13" xml:lang="la" type="auto">Quod si fecerint, interpretabor pro officio non vulgari.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">Ex <placeName ref="70">Augusta Vindelicorum</placeName>, pridie calendas octobris 44.</s>
-					<s xml:lang="la" type="auto">Vestrae humanitati deditissimus <persName ref="17">Xystus</persName> Betul.</s>
+					<s n="14" xml:lang="la" type="auto">Vale.</s>
+					<s n="15" xml:lang="la" type="auto">Ex <placeName ref="place70">Augusta Vindelicorum</placeName>, pridie calendas octobris 44.</s>
+					<s n="16" xml:lang="la" type="auto">Vestrae humanitati deditissimus <persName ref="person17">Xystus</persName> Betul.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Doctissimo piissimoque viro d. Hainricho Bullingero, apud Tygurum divini verbi praeconi primario, domino ac patri suo cum primis colendo.</s>
+					<s n="17" xml:lang="la" type="auto">Doctissimo piissimoque viro d. Hainricho Bullingero, apud Tygurum divini verbi praeconi primario, domino ac patri suo cum primis colendo.</s>
 				</p>
 			</div>
 		</body>

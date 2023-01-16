@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 337,629</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 337,629</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -33,13 +36,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 84,18</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 84,18</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -50,15 +56,18 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#41">Bern</settlement>
-						<institution>Burgerbibliothek</institution>
-						<idno type="Kopie">B III 61, p.366-368</idno>
-						<repository ref="archive#12">
+						<!--
+						<repository ref="archive12">
 							<name>Bern BB</name>
 							<ref target="https://www.burgerbib.ch/de"/>
 						</repository>
+						<settlement ref="place41">Bern</settlement>
+						<institution>Burgerbibliothek</institution>
+						-->
+						<repository ref="archive12"/>
+						<idno subtype="Kopie">B III 61, p.366-368</idno>
 						<altIdentifier>
-							<idno type="Kopie">CA VI 32</idno>
+							<idno subtype="Kopie">CA VI 32</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -68,55 +77,41 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2529">
 				<correspAction type="sent">
-					<persName ref="person#540" cert="high">
+					<!--
+					<persName ref="person540" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Calvin</surname>
 						<graphic type="portrait" url="portraits/540_Calvin_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Calvin"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118518534"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11418245"/>
 					</persName>
-					<place source="#167" cert="high">
-						<settlement>Genf</settlement>
-						<district>Genève</district>
-						<country>Schweiz</country>
-						<geo>46.20222 6.14569</geo>
-					</place>
-					<date min="1555-01-10" max="0-00-13" cert="low"/>
+					-->
+					<persName ref="person540" cert="high"/>
+					<place source="place167" cert="high"/>
+					<date notBefore="1555-01-10" notAfter="1555-01-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2530"/>
-					<ref type="prev_chronologically" target="files.xml#2527"/>
-					<ref type="next_correspondence" target="files.xml#3285"/>
-					<ref type="prev_correspondence" target="files.xml#2464"/>
-					<ref type="next_correspondence_request" target="files.xml#3285"/>
-					<ref type="prev_correspondence_request" target="files.xml#2464"/>
+					<ref type="next_chronologically" target="file2530"/>
+					<ref type="prev_chronologically" target="file2527"/>
+					<ref type="next_correspondence" target="file3285"/>
+					<ref type="prev_correspondence" target="file2464"/>
+					<ref type="next_correspondence_request" target="file3285"/>
+					<ref type="prev_correspondence_request" target="file2464"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2435"/>
-					<ref type="next_same_sender" target="files.xml#2530"/>
-					<ref type="prev_same_sender" target="files.xml#2510"/>
-					<ref type="next_same_addressee" target="files.xml#2649"/>
-					<ref type="prev_same_addressee" target="files.xml#2435"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2530"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2510"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2649"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2435"/>
+					<ref type="prev_correspondence_reaction" target="file2435"/>
+					<ref type="next_same_sender" target="file2530"/>
+					<ref type="prev_same_sender" target="file2510"/>
+					<ref type="next_same_addressee" target="file2649"/>
+					<ref type="prev_same_addressee" target="file2435"/>
+					<ref type="next_with_sender_as_addressee" target="file2530"/>
+					<ref type="prev_with_sender_as_addressee" target="file2510"/>
+					<ref type="next_with_addressee_as_sender" target="file2649"/>
+					<ref type="prev_with_addressee_as_sender" target="file2435"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

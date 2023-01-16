@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=690</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=690</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,88</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,88</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,7 +49,7 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Bittet um einen neuen Termin für den Theologenkonvent in <placeName ref="5">Aarau</placeName>, da
+								Bittet um einen neuen Termin für den Theologenkonvent in <placeName ref="place5">Aarau</placeName>, da
 								die Einladung zu spät eingetroffen ist.
 							</p>
 						</summary>
@@ -57,43 +60,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10728">
 				<correspAction type="sent">
-					<persName ref="person#1391" cert="high">
+					<!--
+					<persName ref="person1391" cert="high">
 						<forename cert="high">Berchtold</forename>
 						<surname cert="high">Haller</surname>
+						<graphic type="portrait" url="portraits/1391_Haller_Berchtold.jpg"/>
+						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Berchtold_Haller"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104180536"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413862"/>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person1391" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1535-11-29" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10729"/>
-					<ref type="prev_chronologically" target="files.xml#10727"/>
-					<ref type="next_correspondence" target="files.xml#10729"/>
-					<ref type="prev_correspondence" target="files.xml#10727"/>
-					<ref type="next_correspondence_request" target="files.xml#10729"/>
-					<ref type="prev_correspondence_request" target="files.xml#10727"/>
+					<ref type="next_chronologically" target="file10729"/>
+					<ref type="prev_chronologically" target="file10727"/>
+					<ref type="next_correspondence" target="file10729"/>
+					<ref type="prev_correspondence" target="file10727"/>
+					<ref type="next_correspondence_request" target="file10729"/>
+					<ref type="prev_correspondence_request" target="file10727"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10217"/>
-					<ref type="next_same_sender" target="files.xml#10729"/>
-					<ref type="prev_same_sender" target="files.xml#10727"/>
-					<ref type="next_same_addressee" target="files.xml#10735"/>
-					<ref type="prev_same_addressee" target="files.xml#10706"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10729"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10727"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10735"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10706"/>
+					<ref type="prev_correspondence_reaction" target="file10217"/>
+					<ref type="next_same_sender" target="file10729"/>
+					<ref type="prev_same_sender" target="file10727"/>
+					<ref type="next_same_addressee" target="file10735"/>
+					<ref type="prev_same_addressee" target="file10706"/>
+					<ref type="next_with_sender_as_addressee" target="file10729"/>
+					<ref type="prev_with_sender_as_addressee" target="file10727"/>
+					<ref type="next_with_addressee_as_sender" target="file10735"/>
+					<ref type="prev_with_addressee_as_sender" target="file10706"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -110,26 +120,26 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Literas tuas<note xml:id="fn1" type="footnote" n="1">Dieser Brief ist ebensowenig erhalten geblieben wie die gesamte von <persName ref="90">Haller</persName> weiter unten erwähnte Korrespondenz.</note> serius nimio accepimus; datę enim sunt Tiguri 19. novembris, redditę vero una cum libris mihi tantillo precio charissimis<note xml:id="fn2" type="footnote" n="2"><persName ref="90">Haller</persName> hatte durch Bullingers Vermittlung Schriften aus dem Nachlaß des Pfarrers von <placeName ref="558">Kloten</placeName> erworben, vgl. unten <ref target="file#10729">Nr. 691</ref>, 1-11.</note> 29. novembris hora quarta pomeridiana.</s>
-					<s xml:lang="la" type="auto">Deinde, quas scripseras 26. novembris, quinta hora eiusdem diei portione accepimus.</s>
-					<s xml:lang="la" type="auto">28. novembris scripserat <persName ref="154">Miconius</persName> de conventu inter nos celebrando<note xml:id="fn3" type="footnote" n="3">Am 1. Dezember 1535 trafen sich <persName ref="114">Leo Jud</persName>, <persName ref="165">Konrad Pellikan</persName>, <persName ref="14">Theodor Bibliander</persName>, <persName ref="154">Oswald Myconius</persName> und <persName ref="81">Simon Grynäus</persName> in <placeName ref="5">Aarau</placeName> (Kt. Aargau) zu einem Gespräch über die geplante Abendmahlskonkordie mit den Lutheranern, vgl. <hi>Köhler</hi> ZL II 407f. Myconius hatte bereits am 9. November in einem Brief an Bullinger ein solches Treffen angeregt, s. oben <ref target="file#10711">Nr. 673</ref>, 33-35.</note>, quam utilis scilicet et necessarius is foret, sed quo tempore quoque loco mox habendus sit, praeteriit.</s>
-					<s xml:lang="la" type="auto">Respondimus illi nobis non displicere conventum, quem nimirum optima occasione <placeName ref="97">Basilienses</placeName> nostratibus indicere possent et vobis<note xml:id="fna" type="footnote" n="a">et vobis <hi>übergeschrieben.</hi></note>.</s>
-					<s xml:lang="la" type="auto">Iam videtis, qui factum sit, ut nos hunc conventum neglexerimus.</s>
-					<s xml:lang="la" type="auto">Petimus tamen, ut ab instituto vestro, quandoquidem summe pro dei gloria et ecclesiarum nostrarum profectu facere videtur, nequaquam desistatis, sed diem alium conventus eodem loco, Arouię scilicet, in tempore indicatis, ut certo scire possitis nos esse conscios et ad ipsum invisendum paratos.</s>
-					<s xml:lang="la" type="auto">Et quanto occultius unquam fieri potest, tanto libentius adfuturi sumus.</s>
-					<s xml:lang="la" type="auto">Quodsi omnino non commodum habere poteritis nuncium ad nos, agite ad praefectum Lenczburgensem<note xml:id="fn4" type="footnote" n="4"><persName ref="92">Sulpitius Haller</persName>.</note> mittatis literas, sed ut eas suis nunciis mox ad nos perferri curet, id quod faciet, ubi vel minima schedula illi indicaveritis.</s>
-					<s xml:lang="la" type="auto">Noscitis eum virum esse bonum, cui omnia tuto credere poterimus utrinque.</s>
-					<s xml:lang="la" type="auto">Nihil igitur nos remoratum est, quam quod vestras tardissime accepimus literas et quod ex <persName ref="154">Miconii</persName> literis intelligere non potuimus diem iam esse constitutam.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Literas tuas<note xml:id="fn1" type="footnote" n="1">Dieser Brief ist ebensowenig erhalten geblieben wie die gesamte von <persName ref="person90">Haller</persName> weiter unten erwähnte Korrespondenz.</note> serius nimio accepimus; datę enim sunt Tiguri 19. novembris, redditę vero una cum libris mihi tantillo precio charissimis<note xml:id="fn2" type="footnote" n="2"><persName ref="person90">Haller</persName> hatte durch Bullingers Vermittlung Schriften aus dem Nachlaß des Pfarrers von <placeName ref="place558">Kloten</placeName> erworben, vgl. unten <ref target="file10729">Nr. 691</ref>, 1-11.</note> 29. novembris hora quarta pomeridiana.</s>
+					<s n="3" xml:lang="la" type="auto">Deinde, quas scripseras 26. novembris, quinta hora eiusdem diei portione accepimus.</s>
+					<s n="4" xml:lang="la" type="auto">28. novembris scripserat <persName ref="person154">Miconius</persName> de conventu inter nos celebrando<note xml:id="fn3" type="footnote" n="3">Am 1. Dezember 1535 trafen sich <persName ref="person114">Leo Jud</persName>, <persName ref="person165">Konrad Pellikan</persName>, <persName ref="person14">Theodor Bibliander</persName>, <persName ref="person154">Oswald Myconius</persName> und <persName ref="person81">Simon Grynäus</persName> in <placeName ref="place5">Aarau</placeName> (Kt. Aargau) zu einem Gespräch über die geplante Abendmahlskonkordie mit den Lutheranern, vgl. <hi>Köhler</hi> ZL II 407f. Myconius hatte bereits am 9. November in einem Brief an Bullinger ein solches Treffen angeregt, s. oben <ref target="file10711">Nr. 673</ref>, 33-35.</note>, quam utilis scilicet et necessarius is foret, sed quo tempore quoque loco mox habendus sit, praeteriit.</s>
+					<s n="5" xml:lang="la" type="auto">Respondimus illi nobis non displicere conventum, quem nimirum optima occasione <placeName ref="place97">Basilienses</placeName> nostratibus indicere possent et vobis<note xml:id="fna" type="footnote" n="a">et vobis <hi>übergeschrieben.</hi></note>.</s>
+					<s n="6" xml:lang="la" type="auto">Iam videtis, qui factum sit, ut nos hunc conventum neglexerimus.</s>
+					<s n="7" xml:lang="la" type="auto">Petimus tamen, ut ab instituto vestro, quandoquidem summe pro dei gloria et ecclesiarum nostrarum profectu facere videtur, nequaquam desistatis, sed diem alium conventus eodem loco, Arouię scilicet, in tempore indicatis, ut certo scire possitis nos esse conscios et ad ipsum invisendum paratos.</s>
+					<s n="8" xml:lang="la" type="auto">Et quanto occultius unquam fieri potest, tanto libentius adfuturi sumus.</s>
+					<s n="9" xml:lang="la" type="auto">Quodsi omnino non commodum habere poteritis nuncium ad nos, agite ad praefectum Lenczburgensem<note xml:id="fn4" type="footnote" n="4"><persName ref="person92">Sulpitius Haller</persName>.</note> mittatis literas, sed ut eas suis nunciis mox ad nos perferri curet, id quod faciet, ubi vel minima schedula illi indicaveritis.</s>
+					<s n="10" xml:lang="la" type="auto">Noscitis eum virum esse bonum, cui omnia tuto credere poterimus utrinque.</s>
+					<s n="11" xml:lang="la" type="auto">Nihil igitur nos remoratum est, quam quod vestras tardissime accepimus literas et quod ex <persName ref="person154">Miconii</persName> literis intelligere non potuimus diem iam esse constitutam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Interim vale, mi Heinrice, cum cęteris simmistis, viris et fratribus nobis omnibus in domino charissimis.</s>
+					<s n="12" xml:lang="la" type="auto">Interim vale, mi Heinrice, cum cęteris simmistis, viris et fratribus nobis omnibus in domino charissimis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">29. a cęna hora nona novembris, anno 35.</s>
+					<s n="13" xml:lang="la" type="auto">29. a cęna hora nona novembris, anno 35.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus B. Hall.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus B. Hall.</s>
 				</p>
 				<p>
 					<note type="address">[Ohne Adresse.]</note>

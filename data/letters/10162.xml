@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1982"/>
-				<idno type="ISBN">ISBN 3-290-11467-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=131</idno>
+				<idno subtype="ISBN">ISBN 3-290-11467-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=131</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 2</title>
+				<title subtype="publication">HBBW II</title>
 				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">2</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 62,453</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 62,453</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,8 +49,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Empfehlung für <persName ref="1762">Ludwig Oechsli</persName>, der über die kirchliche Lage in
-								<placeName ref="943">Schaffhausen</placeName> berichten wird.
+								Empfehlung für <persName ref="person1762">Ludwig Oechsli</persName>, der über die kirchliche Lage in
+								<placeName ref="place943">Schaffhausen</placeName> berichten wird.
 							</p>
 						</summary>
 					</msContents>
@@ -57,43 +60,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10162">
 				<correspAction type="sent">
-					<persName ref="person#2810" cert="high">
+					<!--
+					<persName ref="person2810" cert="high">
 						<forename cert="high">Erasmus</forename>
 						<surname cert="high">Ritter</surname>
+						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Erasmus_Ritter_(Theologe)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/137993781"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11416562"/>
 					</persName>
-					<place source="#441" cert="high">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					-->
+					<persName ref="person2810" cert="high"/>
+					<place source="place441" cert="high"/>
 					<date when="1532-09-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10163"/>
-					<ref type="prev_chronologically" target="files.xml#10161"/>
-					<ref type="next_correspondence" target="files.xml#10227"/>
-					<ref type="prev_correspondence" target="files.xml#10107"/>
-					<ref type="next_correspondence_request" target="files.xml#10227"/>
-					<ref type="prev_correspondence_request" target="files.xml#10107"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10867"/>
+					<ref type="next_chronologically" target="file10163"/>
+					<ref type="prev_chronologically" target="file10161"/>
+					<ref type="next_correspondence" target="file10227"/>
+					<ref type="prev_correspondence" target="file10107"/>
+					<ref type="next_correspondence_request" target="file10227"/>
+					<ref type="prev_correspondence_request" target="file10107"/>
+					<ref type="next_correspondence_reaction" target="file10867"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10227"/>
-					<ref type="prev_same_sender" target="files.xml#10107"/>
-					<ref type="next_same_addressee" target="files.xml#10173"/>
-					<ref type="prev_same_addressee" target="files.xml#10160"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10227"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10107"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10173"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10160"/>
+					<ref type="next_same_sender" target="file10227"/>
+					<ref type="prev_same_sender" target="file10107"/>
+					<ref type="next_same_addressee" target="file10173"/>
+					<ref type="prev_same_addressee" target="file10160"/>
+					<ref type="next_with_sender_as_addressee" target="file10227"/>
+					<ref type="prev_with_sender_as_addressee" target="file10107"/>
+					<ref type="next_with_addressee_as_sender" target="file10173"/>
+					<ref type="prev_with_addressee_as_sender" target="file10160"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -110,24 +119,24 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gracia et pax etc.</s>
+					<s n="1" xml:lang="la" type="auto">Gracia et pax etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Habes hic epistolam vivam, Henrice doctissime, Ludovicum Bovillum<note xml:id="fn1" type="footnote" n="1"><persName ref="1762">Ludwig Oechsli</persName> (Bovillus), gest. 1569, von <placeName ref="943">Schaffhausen</placeName>, studierte 1519/1520 in <placeName ref="569">Krakau</placeName>, seit 1520 in <placeName ref="1205">Wittenberg</placeName>, wo ihn <persName ref="138">Luther</persName> begeisterte (<persName ref="226">Vadian</persName> BW II 338f). 1523 als Magister heimgekehrt, wurde er Schulmeister und 1525-1530 Rektor der Lateinschule in <placeName ref="943">Schaffhausen</placeName>. Im Auftrag des Rates nahm er an der <placeName ref="85">Badener</placeName> Disputation 1526 teil und unterschrieb die Thesen <persName ref="160">Oekolampads</persName>. Später bekleidete er verschiedene öffentliche Ämter. 1543-1552 war er Probst zu <placeName ref="1146">Wagenhausen</placeName>, 1543 stritt er gegen die Täufer. Er wurde mehrfach mit kirchlichen Angelegenheiten betraut, war Eherichter, Klosterpfleger und Synodalabgeordneter, 1536 erläuterte er dem Rat die Erste Helvetische Konfession, 1557 gehörte er einer evangelischen Gesandtschaft aus der Schweiz an <persName ref="1143">Heinrich</persName> II. von Frankreich wegen der Waldenser an. Oechsli stand mit <persName ref="265">Zwingli</persName> und <persName ref="226">Vadian</persName> im Briefwechsel (vgl. Z XI, Reg.; <persName ref="226">Vadian</persName> BW, Reg.). Ein Brief von ihm an Bullinger aus dem Jahre <hi>1535</hi> ist erhalten. - Lit.: Z VIII 601, Anm. 1; <hi>Wipf,</hi> passim; LL XIV 240; HBLS V 333.</note> nostrum, qui tibi rem omnem<note xml:id="fn2" type="footnote" n="2">Gemeint ist möglicherweise der Streit mit <persName ref="36">Benedikt Burgauer</persName>, der die Eingabe der reformierten Pfarrer an den Schaffhauser Rat von Anfang August 1532 nicht unterschrieb, s. <persName ref="176">Ritter</persName> an <persName ref="226">Vadian</persName>, 6. August 1532 (<persName ref="226">Vadian</persName> BW V 87f); Wipf 290f.309.</note> exponet, cum quo libere ac tuto loqui vales, quae nostra, imo non nostra, sed Christi interesse putaveris.</s>
-					<s xml:lang="la" type="auto">Erit enim nunctius certus.</s>
+					<s n="2" xml:lang="la" type="auto">Habes hic epistolam vivam, Henrice doctissime, Ludovicum Bovillum<note xml:id="fn1" type="footnote" n="1"><persName ref="person1762">Ludwig Oechsli</persName> (Bovillus), gest. 1569, von <placeName ref="place943">Schaffhausen</placeName>, studierte 1519/1520 in <placeName ref="place569">Krakau</placeName>, seit 1520 in <placeName ref="place1205">Wittenberg</placeName>, wo ihn <persName ref="person138">Luther</persName> begeisterte (<persName ref="person226">Vadian</persName> BW II 338f). 1523 als Magister heimgekehrt, wurde er Schulmeister und 1525-1530 Rektor der Lateinschule in <placeName ref="place943">Schaffhausen</placeName>. Im Auftrag des Rates nahm er an der <placeName ref="place85">Badener</placeName> Disputation 1526 teil und unterschrieb die Thesen <persName ref="person160">Oekolampads</persName>. Später bekleidete er verschiedene öffentliche Ämter. 1543-1552 war er Probst zu <placeName ref="place1146">Wagenhausen</placeName>, 1543 stritt er gegen die Täufer. Er wurde mehrfach mit kirchlichen Angelegenheiten betraut, war Eherichter, Klosterpfleger und Synodalabgeordneter, 1536 erläuterte er dem Rat die Erste Helvetische Konfession, 1557 gehörte er einer evangelischen Gesandtschaft aus der Schweiz an <persName ref="person1143">Heinrich</persName> II. von Frankreich wegen der Waldenser an. Oechsli stand mit <persName ref="person265">Zwingli</persName> und <persName ref="person226">Vadian</persName> im Briefwechsel (vgl. Z XI, Reg.; <persName ref="person226">Vadian</persName> BW, Reg.). Ein Brief von ihm an Bullinger aus dem Jahre 1535 ist erhalten. - Lit.: Z VIII 601, Anm. 1; <hi>Wipf,</hi> passim; LL XIV 240; HBLS V 333.</note> nostrum, qui tibi rem omnem<note xml:id="fn2" type="footnote" n="2">Gemeint ist möglicherweise der Streit mit <persName ref="person36">Benedikt Burgauer</persName>, der die Eingabe der reformierten Pfarrer an den Schaffhauser Rat von Anfang August 1532 nicht unterschrieb, s. <persName ref="person176">Ritter</persName> an <persName ref="person226">Vadian</persName>, 6. August 1532 (<persName ref="person226">Vadian</persName> BW V 87f); Wipf 290f.309.</note> exponet, cum quo libere ac tuto loqui vales, quae nostra, imo non nostra, sed Christi interesse putaveris.</s>
+					<s n="3" xml:lang="la" type="auto">Erit enim nunctius certus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="4" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex <placeName ref="943">Scaphusia</placeName>, 10. septembris 1532.</s>
+					<s n="5" xml:lang="la" type="auto">Ex <placeName ref="place943">Scaphusia</placeName>, 10. septembris 1532.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="176">Erasmus Ritter</persName>, ex animo tuus.</s>
+					<s n="6" xml:lang="la" type="auto"><persName ref="person176">Erasmus Ritter</persName>, ex animo tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Henrico Bullingero, apud Tigurum Christi evangelium adnunccianti, fratri charissimo.</s>
+					<s n="7" xml:lang="la" type="auto">Henrico Bullingero, apud Tigurum Christi evangelium adnunccianti, fratri charissimo.</s>
 				</p>
 			</div>
 		</body>

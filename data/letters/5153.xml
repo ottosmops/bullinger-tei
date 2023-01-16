@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms S 103,69</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Schluss von Erasts Hand</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms S 103,69</idno>
+						<idno subtype="Hinweis">Schluss von Erasts Hand</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -34,13 +37,16 @@
 				</msDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms H 40, Teil 2, p. 108 f. (f 134v-135v)</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms H 40, Teil 2, p. 108 f. (f 134v-135v)</idno>
 					</msIdentifier>
 					<history><origin><p><date>16. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -56,54 +62,53 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5153">
 				<correspAction type="sent">
-					<persName ref="person#1006" cert="low">
+					<!--
+					<persName ref="person1006" cert="low">
 						<forename cert="low">Thomas</forename>
 						<surname cert="low">Erastus</surname>
-						<addName type="main">Erastus (Lüber), Thomas</addName>
+						<persName type="main" ref="person8075>Erastus (Lüber), Thomas</addName>
 						<graphic type="portrait" url="portraits/1006_Erastus_Thomas.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Thomas_Erastus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118685066"/>
 					</persName>
-					<place source="#210" cert="low">
-						<settlement>Heidelberg</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>49.41222 8.71</geo>
-					</place>
-					<date when="1562-01-00" cert="low"><note>Datum unsicher:  [Ende Januar 1562]  (oder Beilage zu: 11. Februar 1562) (= ID 5169)</note></date>
+					-->
+					<persName ref="person1006" cert="low"/>
+					<place source="place210" cert="low"/>
+					<date notBefore="1562-01-01" notAfter="1562-01-12" cert="low"><note>Datum unsicher:  [Ende Januar 1562]  (oder Beilage zu: 11. Februar 1562) (= ID 5169)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5122"/>
-					<ref type="prev_chronologically" target="files.xml#5120"/>
-					<ref type="next_correspondence" target="files.xml#5169"/>
-					<ref type="prev_correspondence" target="files.xml#5085"/>
-					<ref type="next_correspondence_request" target="files.xml#5169"/>
-					<ref type="prev_correspondence_request" target="files.xml#5085"/>
-					<ref type="next_correspondence_reaction" target="files.xml#7636"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3386"/>
-					<ref type="next_same_sender" target="files.xml#5169"/>
-					<ref type="prev_same_sender" target="files.xml#5085"/>
-					<ref type="next_same_addressee" target="files.xml#5126"/>
-					<ref type="prev_same_addressee" target="files.xml#5112"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5169"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5085"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5126"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5112"/>
-					<ref type="child" target="files.xml#5169"/>
-					<ref type="parent" target="files.xml#5169"/>
+					<ref type="next_chronologically" target="file5122"/>
+					<ref type="prev_chronologically" target="file5120"/>
+					<ref type="next_correspondence" target="file5169"/>
+					<ref type="prev_correspondence" target="file5085"/>
+					<ref type="next_correspondence_request" target="file5169"/>
+					<ref type="prev_correspondence_request" target="file5085"/>
+					<ref type="next_correspondence_reaction" target="file7636"/>
+					<ref type="prev_correspondence_reaction" target="file3386"/>
+					<ref type="next_same_sender" target="file5169"/>
+					<ref type="prev_same_sender" target="file5085"/>
+					<ref type="next_same_addressee" target="file5126"/>
+					<ref type="prev_same_addressee" target="file5112"/>
+					<ref type="next_with_sender_as_addressee" target="file5169"/>
+					<ref type="prev_with_sender_as_addressee" target="file5085"/>
+					<ref type="next_with_addressee_as_sender" target="file5126"/>
+					<ref type="prev_with_addressee_as_sender" target="file5112"/>
+					<ref type="child" target="file5169"/>
+					<ref type="parent" target="file5169"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

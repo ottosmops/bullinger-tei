@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#441">Schaffhausen</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">J.J. Spleiß, Abschriften 4, Bd. II, S. 264 f.</idno>
-						<repository ref="archive#76">
+						<!--
+						<repository ref="archive76">
 							<name>Schaffhausen StA</name>
-							<note type="Xeroxkopie">IRG</note>
 							<ref target="https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Regierung/Staatskanzlei/Staatsarchiv-3936-DE.html"/>
 						</repository>
+						<settlement ref="place441">Schaffhausen</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive76"/>
+						<idno subtype="Kopie">J.J. Spleiß, Abschriften 4, Bd. II, S. 264 f.</idno>
+						<idno subtype="Xeroxkopie">IRG</idno>
 					</msIdentifier>
 					<history><origin><p><date>17. Jh.</date></p></origin></history>
 					<physDesc>
@@ -35,54 +38,41 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1560">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1552-02-05" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#441" cert="high">
-							<settlement>Schaffhausen</settlement>
-							<district>Schaffhausen</district>
-							<country>Schweiz</country>
-							<geo>47.69732 8.63493</geo>
-						</place>
-					</roleName>
-					<place source="#441" cert="high">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place441" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1561"/>
-					<ref type="prev_chronologically" target="files.xml#1559"/>
-					<ref type="next_correspondence" target="files.xml#2653"/>
-					<ref type="prev_correspondence" target="files.xml#10090"/>
-					<ref type="next_correspondence_request" target="files.xml#2653"/>
-					<ref type="prev_correspondence_request" target="files.xml#10090"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2768"/>
+					<ref type="next_chronologically" target="file1561"/>
+					<ref type="prev_chronologically" target="file1559"/>
+					<ref type="next_correspondence" target="file2653"/>
+					<ref type="prev_correspondence" target="file10090"/>
+					<ref type="next_correspondence_request" target="file2653"/>
+					<ref type="prev_correspondence_request" target="file10090"/>
+					<ref type="next_correspondence_reaction" target="file2768"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#1565"/>
-					<ref type="prev_same_sender" target="files.xml#1553"/>
-					<ref type="next_same_addressee" target="files.xml#1870"/>
-					<ref type="prev_same_addressee" target="files.xml#1490"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1565"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1553"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1870"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1490"/>
+					<ref type="next_same_sender" target="file1565"/>
+					<ref type="prev_same_sender" target="file1553"/>
+					<ref type="next_same_addressee" target="file1870"/>
+					<ref type="prev_same_addressee" target="file1490"/>
+					<ref type="next_with_sender_as_addressee" target="file1565"/>
+					<ref type="prev_with_sender_as_addressee" target="file1553"/>
+					<ref type="next_with_addressee_as_sender" target="file1870"/>
+					<ref type="prev_with_addressee_as_sender" target="file1490"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

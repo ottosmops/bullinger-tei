@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1974"/>
-				<idno type="ISBN">ISBN 3-290-11334-5</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1</idno>
+				<idno subtype="ISBN">ISBN 3-290-11334-5</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 1</title>
+				<title subtype="publication">HBBW I</title>
 				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">1</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph (Kopie)" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph (Kopie)">Ms K 40,1r 1 S. 4°</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph (Kopie)">Ms K 40,1r 1 S. 4°</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc><p>sehr gut erhalten</p></objectDesc>
@@ -50,7 +53,7 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Begleitbrief zu den drei Schulreden Bullingers, die er <persName ref="204">Steiner</persName> auf
+								Begleitbrief zu den drei Schulreden Bullingers, die er <persName ref="person204">Steiner</persName> auf
 								dessen Wunsch zuschickt.
 							</p>
 						</summary>
@@ -61,42 +64,45 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10016">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#242" cert="high">
-						<settlement>Kappel am Albis</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.2288482 8.5251335</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place242" cert="high"/>
 					<date when="1524-06-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2831" cert="high">
+					<!--
+					<persName ref="person2831" cert="high">
 						<forename cert="high">Werner</forename>
 						<surname cert="high">Steiner</surname>
-						<addName type="main">Steiner (Lithonius), Werner</addName>
+						<persName type="main" ref="person8447>Steiner (Lithonius), Werner</addName>
 					</persName>
+					-->
+					<persName ref="person2831" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10020"/>
-					<ref type="prev_chronologically" target="files.xml#10013"/>
-					<ref type="next_correspondence" target="files.xml#10054"/>
+					<ref type="next_chronologically" target="file10020"/>
+					<ref type="prev_chronologically" target="file10013"/>
+					<ref type="next_correspondence" target="file10054"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#10054"/>
+					<ref type="next_correspondence_request" target="file10054"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10020"/>
-					<ref type="prev_same_sender" target="files.xml#9401"/>
+					<ref type="next_same_sender" target="file10020"/>
+					<ref type="prev_same_sender" target="file9401"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10020"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9401"/>
+					<ref type="next_with_sender_as_addressee" target="file10020"/>
+					<ref type="prev_with_sender_as_addressee" target="file9401"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
@@ -112,21 +118,21 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="204">Wernhero</persName><note xml:id="fna" type="footnote" n="a"><hi>Oben als Titel des ganzen Werkes von Bullingers Hand:</hi> Ad Magistrum Wernherum <persName ref="204">Steiner</persName> Tuginum, de cruce et patientia, charitate et pace ac de contemptu mundi orationes tres.</note> suo gratiam precatur et pacem.<pb type="edition" next="46"/></s>
+					<s n="1" xml:lang="la" type="auto"><persName ref="person204">Wernhero</persName><note xml:id="fna" type="footnote" n="a"><hi>Oben als Titel des ganzen Werkes von Bullingers Hand:</hi> Ad Magistrum Wernherum <persName ref="person204">Steiner</persName> Tuginum, de cruce et patientia, charitate et pace ac de contemptu mundi orationes tres.</note> suo gratiam precatur et pacem.<pb type="edition" next="46"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Mitto tibi, mi <persName ref="204">Wernhere</persName>, declamationes meas<note xml:id="fn2" type="footnote" n="2">Vgl. Schriftenverzeichnis, HBD 14, <hi>Nr.</hi> 17-19; <hi>Staedtke</hi> 267 f. - Von den drei in <placeName ref="534">Kappel</placeName> gehaltenen Reden ist nur die erste vollständig erhalten, sie folgt in Abschrift gleich nach dem Briefmanuskript auf fol. 1v.; die zweite bricht bereits am Anfang ab (fol. 8v.).</note> elapsas venus quam diligenter conscriptas.</s>
-					<s xml:lang="la" type="auto">Dedico eas nomini tuo, liberum relinquens, num velis opus hoc, quod tu mihi quasi vi extorsisti, boni consulere.</s>
-					<s xml:lang="la" type="auto">Quod ad me pertinet, non potui quicquam amico tam syncero ac bene faventi denegare; imo animus quidem maiora dedisset, modo licuisset per inopiam.</s>
-					<s xml:lang="la" type="auto">Ceterum quod habemus, id damus.</s>
-					<s xml:lang="la" type="auto">Vale in Christo.</s>
-					<s xml:lang="la" type="auto">Salvum te volunt fratres universi, et tu omnes vicissim salutabis, quotquot Christi nomen induerunt.</s>
+					<s n="2" xml:lang="la" type="auto">Mitto tibi, mi <persName ref="person204">Wernhere</persName>, declamationes meas<note xml:id="fn2" type="footnote" n="2">Vgl. Schriftenverzeichnis, HBD 14, <hi>Nr.</hi> 17-19; <hi>Staedtke</hi> 267 f. - Von den drei in <placeName ref="place534">Kappel</placeName> gehaltenen Reden ist nur die erste vollständig erhalten, sie folgt in Abschrift gleich nach dem Briefmanuskript auf fol. 1v.; die zweite bricht bereits am Anfang ab (fol. 8v.).</note> elapsas venus quam diligenter conscriptas.</s>
+					<s n="3" xml:lang="la" type="auto">Dedico eas nomini tuo, liberum relinquens, num velis opus hoc, quod tu mihi quasi vi extorsisti, boni consulere.</s>
+					<s n="4" xml:lang="la" type="auto">Quod ad me pertinet, non potui quicquam amico tam syncero ac bene faventi denegare; imo animus quidem maiora dedisset, modo licuisset per inopiam.</s>
+					<s n="5" xml:lang="la" type="auto">Ceterum quod habemus, id damus.</s>
+					<s n="6" xml:lang="la" type="auto">Vale in Christo.</s>
+					<s n="7" xml:lang="la" type="auto">Salvum te volunt fratres universi, et tu omnes vicissim salutabis, quotquot Christi nomen induerunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex academia nostra <placeName ref="534">Cappell</placeName>, 8. calendas iulii anno ab incarnato Christo 1524.</s>
+					<s n="8" xml:lang="la" type="auto">Ex academia nostra <placeName ref="place534">Cappell</placeName>, 8. calendas iulii anno ab incarnato Christo 1524.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Henrichus Bull[ingerus], tuus ex omni parte.</s>
+					<s n="9" xml:lang="la" type="auto">Henrichus Bull[ingerus], tuus ex omni parte.</s>
 				</p>
 			</div>
 		</body>

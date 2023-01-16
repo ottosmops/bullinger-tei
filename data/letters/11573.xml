@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2005"/>
-				<idno type="ISBN">ISBN 3-290-17339-9</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1530</idno>
+				<idno subtype="ISBN">ISBN 3-290-17339-9</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1530</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 11</title>
+				<title subtype="publication">HBBW XI</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">11</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,209</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,209</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,7 +50,7 @@
 						<summary>
 							<p xml:id="regest1">
 								Empfiehlt einen Mitbruder, der an einen Stellenwechsel denkt. Würde Neues vom
-								[<placeName ref="880">Regensburger</placeName>] Reichstag schreiben, wenn er wüsste, dass der
+								[<placeName ref="place880">Regensburger</placeName>] Reichstag schreiben, wenn er wüsste, dass der
 								Briefüberbringer den direkten Weg nimmt. Gruß.
 							</p>
 						</summary>
@@ -58,45 +61,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11573">
 				<correspAction type="sent">
-					<persName ref="person#1365" cert="high">
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
-					<place source="#28" cert="low">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person1365" cert="high"/>
+					<place source="place28" cert="low"/>
 					<date when="1541-06-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11574"/>
-					<ref type="prev_chronologically" target="files.xml#11572"/>
-					<ref type="next_correspondence" target="files.xml#11595"/>
-					<ref type="prev_correspondence" target="files.xml#11562"/>
-					<ref type="next_correspondence_request" target="files.xml#11595"/>
-					<ref type="prev_correspondence_request" target="files.xml#11562"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11593"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11378"/>
-					<ref type="next_same_sender" target="files.xml#11595"/>
-					<ref type="prev_same_sender" target="files.xml#11562"/>
-					<ref type="next_same_addressee" target="files.xml#11576"/>
-					<ref type="prev_same_addressee" target="files.xml#11530"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11595"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11562"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11576"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11530"/>
+					<ref type="next_chronologically" target="file11574"/>
+					<ref type="prev_chronologically" target="file11572"/>
+					<ref type="next_correspondence" target="file11595"/>
+					<ref type="prev_correspondence" target="file11562"/>
+					<ref type="next_correspondence_request" target="file11595"/>
+					<ref type="prev_correspondence_request" target="file11562"/>
+					<ref type="next_correspondence_reaction" target="file11593"/>
+					<ref type="prev_correspondence_reaction" target="file11378"/>
+					<ref type="next_same_sender" target="file11595"/>
+					<ref type="prev_same_sender" target="file11562"/>
+					<ref type="next_same_addressee" target="file11576"/>
+					<ref type="prev_same_addressee" target="file11530"/>
+					<ref type="next_with_sender_as_addressee" target="file11595"/>
+					<ref type="prev_with_sender_as_addressee" target="file11562"/>
+					<ref type="next_with_addressee_as_sender" target="file11576"/>
+					<ref type="prev_with_addressee_as_sender" target="file11530"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -105,36 +113,33 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile>
-		<graphic url="11573/Autograph/00 E_II_343__fol__209_r_.tif" n="1"/>
-		<graphic url="11573/Autograph/01 E_II_343__fol__209_v_.tif" n="2"/>
-	</facsimile>
+	<facsimile/>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Hic frater<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note>, sicubi posset idoneum locum obtinere, bonum testimonium hinc a nobis ad vos adferet et pietatis et industrię, non a me tantum, sed ab<pb type="edition" next="213"/> omnibus hic fratribus.</s>
-					<s xml:lang="la" type="auto">Hoc ideo ad te scribo, ne hac parte quidquam obstet vobis, si quid sit, ubi possit commode recipi.</s>
-					<s xml:lang="la" type="auto">Causas, cur mutare locum hunc cogitet, ipse tibi poterit narrare, et nos etiam non gravaremur scribere.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Hic frater<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note>, sicubi posset idoneum locum obtinere, bonum testimonium hinc a nobis ad vos adferet et pietatis et industrię, non a me tantum, sed ab<pb type="edition" next="213"/> omnibus hic fratribus.</s>
+					<s n="3" xml:lang="la" type="auto">Hoc ideo ad te scribo, ne hac parte quidquam obstet vobis, si quid sit, ubi possit commode recipi.</s>
+					<s n="4" xml:lang="la" type="auto">Causas, cur mutare locum hunc cogitet, ipse tibi poterit narrare, et nos etiam non gravaremur scribere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De iis, quae sunt allata iam ex comitiis<note xml:id="fn2" type="footnote" n="2">Gemeint sind Nachrichten vom Reichstag zu <placeName ref="880">Regensburg</placeName>.</note>, scriberem, si hunc scirem recta ad vos ire.</s>
+					<s n="5" xml:lang="la" type="auto">De iis, quae sunt allata iam ex comitiis<note xml:id="fn2" type="footnote" n="2">Gemeint sind Nachrichten vom Reichstag zu <placeName ref="place880">Regensburg</placeName>.</note>, scriberem, si hunc scirem recta ad vos ire.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nos valemus hic.</s>
-					<s xml:lang="la" type="auto">Vos omnes in domino Christo recte valere cupio.</s>
-					<s xml:lang="la" type="auto">Vale, mihi colendissime et charissime frater.</s>
-					<s xml:lang="la" type="auto">Fratres omnes in domino mihi saluta.</s>
-					<s xml:lang="la" type="auto">7. iunii 41.</s>
+					<s n="6" xml:lang="la" type="auto">Nos valemus hic.</s>
+					<s n="7" xml:lang="la" type="auto">Vos omnes in domino Christo recte valere cupio.</s>
+					<s n="8" xml:lang="la" type="auto">Vale, mihi colendissime et charissime frater.</s>
+					<s n="9" xml:lang="la" type="auto">Fratres omnes in domino mihi saluta.</s>
+					<s n="10" xml:lang="la" type="auto">7. iunii 41.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus <persName ref="81">Grynęus</persName>.</s>
+					<s n="11" xml:lang="la" type="auto">Tuus <persName ref="person81">Grynęus</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Henricho Bullingero suo, amico et fratri charissimo.</s>
-					<s xml:lang="la" type="auto">Tyguri.</s>
+					<s n="12" xml:lang="la" type="auto">Domino Henricho Bullingero suo, amico et fratri charissimo.</s>
+					<s n="13" xml:lang="la" type="auto">Tyguri.</s>
 				</p>
 			</div>
 		</body>

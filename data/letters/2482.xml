@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3784</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Rückseite" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 346,362</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 346,362</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -45,14 +48,17 @@
 				</msDesc>
 				<msDesc type="Rückseite" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 91,110</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">eingereiht bei GF an HB, 14. Januar 1558</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 91,110</idno>
+						<idno subtype="Hinweis">eingereiht bei GF an HB, 14. Januar 1558</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -66,47 +72,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2482">
 				<correspAction type="sent">
-					<persName ref="person#1218" cert="low">
+					<!--
+					<persName ref="person1218" cert="low">
 						<forename cert="low">Georg</forename>
 						<surname cert="low">Frölich</surname>
-						<addName type="main">Frölich (Laetus), Georg</addName>
-						<ref type="wikipedia" target="https://www.deutsche-biographie.de/sfz17760.html"/>
+						<persName type="main" ref="person8354>Frölich (Laetus), Georg</addName>
 					</persName>
-					<date min="1554-11-13" max="1555-02-14" cert="low">wohl Mitte Dezember 1554</date>
+					-->
+					<persName ref="person1218" cert="low"/>
+					<date notBefore="1554-11-13" notAfter="1555-02-14" cert="low">wohl Mitte Dezember 1554</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2466"/>
-					<ref type="prev_chronologically" target="files.xml#2465"/>
-					<ref type="next_correspondence" target="files.xml#2557"/>
-					<ref type="prev_correspondence" target="files.xml#2465"/>
-					<ref type="next_correspondence_request" target="files.xml#2557"/>
-					<ref type="prev_correspondence_request" target="files.xml#2465"/>
+					<ref type="next_chronologically" target="file2466"/>
+					<ref type="prev_chronologically" target="file2465"/>
+					<ref type="next_correspondence" target="file2557"/>
+					<ref type="prev_correspondence" target="file2465"/>
+					<ref type="next_correspondence_request" target="file2557"/>
+					<ref type="prev_correspondence_request" target="file2465"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12511"/>
-					<ref type="next_same_sender" target="files.xml#2557"/>
-					<ref type="prev_same_sender" target="files.xml#2465"/>
-					<ref type="next_same_addressee" target="files.xml#2478"/>
-					<ref type="prev_same_addressee" target="files.xml#2449"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2557"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2465"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2478"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2449"/>
-					<ref type="child" target="files.xml#2483"/>
-					<ref type="parent" target="files.xml#2630"/>
+					<ref type="prev_correspondence_reaction" target="file12511"/>
+					<ref type="next_same_sender" target="file2557"/>
+					<ref type="prev_same_sender" target="file2465"/>
+					<ref type="next_same_addressee" target="file2478"/>
+					<ref type="prev_same_addressee" target="file2449"/>
+					<ref type="next_with_sender_as_addressee" target="file2557"/>
+					<ref type="prev_with_sender_as_addressee" target="file2465"/>
+					<ref type="next_with_addressee_as_sender" target="file2478"/>
+					<ref type="prev_with_addressee_as_sender" target="file2449"/>
+					<ref type="child" target="file2483"/>
+					<ref type="parent" target="file2630"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -124,41 +132,41 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Inn disen ellenden überlaidigen zeiten fynnd ich gar mancherlai glaubensbehkantnus unnd catechismos.</s>
-					<s xml:lang="de" type="auto">Unnd wiewol mir ewr confession überflussig genug thut, so hat mich doch ettlicher kutzeligen Wittemberger grobe opinion dahin bewegt, das ich fur mein hauß ainen aigen catechismum gemacht, wie ir hiebei sehen werdt.</s>
-					<s xml:lang="de" type="auto">Unnd bitte euch inn aller tr we, ir wöllend denselben durhlesen, emendirn und nach der warheit richtscheit reformirn unnd nachvolgends mir bis inn 40 exemplaria uff minen costen lassen drucken, doch minen namen außlassen.</s>
-					<s xml:lang="de" type="auto">Das will ich sampt erstattung des costens umb euch bruderlich verdienen.</s>
-					<s xml:lang="la" type="auto">Ego conor iam me in dies ad ampliores honores seu potius labores sollicitatum ab aula subducere, maxime propter Lutheranorum rabiem.</s>
+					<s n="1" xml:lang="de" type="auto">Inn disen ellenden überlaidigen zeiten fynnd ich gar mancherlai glaubensbehkantnus unnd catechismos.</s>
+					<s n="2" xml:lang="de" type="auto">Unnd wiewol mir ewr confession überflussig genug thut, so hat mich doch ettlicher kutzeligen Wittemberger grobe opinion dahin bewegt, das ich fur mein hauß ainen aigen catechismum gemacht, wie ir hiebei sehen werdt.</s>
+					<s n="3" xml:lang="de" type="auto">Unnd bitte euch inn aller tr we, ir wöllend denselben durhlesen, emendirn und nach der warheit richtscheit reformirn unnd nachvolgends mir bis inn 40 exemplaria uff minen costen lassen drucken, doch minen namen außlassen.</s>
+					<s n="4" xml:lang="de" type="auto">Das will ich sampt erstattung des costens umb euch bruderlich verdienen.</s>
+					<s n="5" xml:lang="la" type="auto">Ego conor iam me in dies ad ampliores honores seu potius labores sollicitatum ab aula subducere, maxime propter Lutheranorum rabiem.</s>
 				</p>
 				<p>
 					<note>[Keine Adresse; Johannes Willing an Bullinger; Ravensburg, 21... (wohl Oktober; s. Hauptnotiz im Bd. 18) 1554; Zürich StA, E II 345, 403.]</note>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Literae tuae, humanissime et ornatissime vir, fuerunt mihi gratissimae multumque animi dederunt propter dominum periclitanti.</s>
-					<s xml:lang="la" type="auto">Darem et ego ad tuam humanitatem de statu nostrae ecclesiae admodum tristi lubens; sed pro epistola iusta fuerit Gregorius.</s>
-					<s xml:lang="la" type="auto">Novum vultum hic induerunt omnia: papistae, olim squalidi et tristes, iam animo elati frontem exporrigunt, tripudiantes circumcursitant gloriando iam omnimodam totius evangelii instare exterminationem.</s>
+					<s n="6" xml:lang="la" type="auto">S. D.</s>
+					<s n="7" xml:lang="la" type="auto">Literae tuae, humanissime et ornatissime vir, fuerunt mihi gratissimae multumque animi dederunt propter dominum periclitanti.</s>
+					<s n="8" xml:lang="la" type="auto">Darem et ego ad tuam humanitatem de statu nostrae ecclesiae admodum tristi lubens; sed pro epistola iusta fuerit Gregorius.</s>
+					<s n="9" xml:lang="la" type="auto">Novum vultum hic induerunt omnia: papistae, olim squalidi et tristes, iam animo elati frontem exporrigunt, tripudiantes circumcursitant gloriando iam omnimodam totius evangelii instare exterminationem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Adplaudunt Lutherani numero rari, animo malesani, iam curiosi quam honorifice Noricos excepturi sint deformatores.</s>
+					<s n="10" xml:lang="la" type="auto">Adplaudunt Lutherani numero rari, animo malesani, iam curiosi quam honorifice Noricos excepturi sint deformatores.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Interea divexatur et inquietatur noctes et dies ecclesia Christi omni humano consilio destituta et ope, evitando, gemendo, illachrymando adhortatur singulos dominum ut exorent, ne gaudeant super nos inimici nostri.</s>
-					<s xml:lang="la" type="auto">His vestras vos, o fratres, pias iungite preces.</s>
-					<s xml:lang="la" type="auto">Variis curis ac solicitudinibus agitatus, perplexus ac distractus plura nec possum nec volo.</s>
-					<s xml:lang="la" type="auto">Multa ex Gregorio, plurima ex me audies, vir humanissime.</s>
-					<s xml:lang="la" type="auto">Hoc unice, mi pater, oro, ut tu, dum hic moror et huius tragedię catastrophen praestolor, de ecclesiola, cui mea tenui facultate inservire possim, providere digneris.</s>
-					<s xml:lang="la" type="auto">Interim summis adnitar viribus, ut cives, ut hactenus, in officio maneant, nullas dent turbas omniaque placido et patienti perpetiantur animo, donec domini bonitas det meliora.</s>
-					<s xml:lang="la" type="auto">Faxit Christus optimus maximus, ut eius ecclesia diu de tua salute gaudeat et Christo iuges gratias agere possit.</s>
-					<s xml:lang="la" type="auto">Salutat tuam humanitatem quam plurimum symmysta meus Fridericus Wagnerus, bonus et pius senex.</s>
+					<s n="11" xml:lang="la" type="auto">Interea divexatur et inquietatur noctes et dies ecclesia Christi omni humano consilio destituta et ope, evitando, gemendo, illachrymando adhortatur singulos dominum ut exorent, ne gaudeant super nos inimici nostri.</s>
+					<s n="12" xml:lang="la" type="auto">His vestras vos, o fratres, pias iungite preces.</s>
+					<s n="13" xml:lang="la" type="auto">Variis curis ac solicitudinibus agitatus, perplexus ac distractus plura nec possum nec volo.</s>
+					<s n="14" xml:lang="la" type="auto">Multa ex Gregorio, plurima ex me audies, vir humanissime.</s>
+					<s n="15" xml:lang="la" type="auto">Hoc unice, mi pater, oro, ut tu, dum hic moror et huius tragedię catastrophen praestolor, de ecclesiola, cui mea tenui facultate inservire possim, providere digneris.</s>
+					<s n="16" xml:lang="la" type="auto">Interim summis adnitar viribus, ut cives, ut hactenus, in officio maneant, nullas dent turbas omniaque placido et patienti perpetiantur animo, donec domini bonitas det meliora.</s>
+					<s n="17" xml:lang="la" type="auto">Faxit Christus optimus maximus, ut eius ecclesia diu de tua salute gaudeat et Christo iuges gratias agere possit.</s>
+					<s n="18" xml:lang="la" type="auto">Salutat tuam humanitatem quam plurimum symmysta meus Fridericus Wagnerus, bonus et pius senex.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salutabis meo nomine tuam familiam quam officiosissime.</s>
-					<s xml:lang="la" type="auto">Ravenspurgi 21. anno 1554.</s>
+					<s n="19" xml:lang="la" type="auto">Salutabis meo nomine tuam familiam quam officiosissime.</s>
+					<s n="20" xml:lang="la" type="auto">Ravenspurgi 21. anno 1554.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">T[uae] h[umanitati] deditus Ioannes Willingus.</s>
-					<s xml:lang="la" type="auto">Ornatissimo viro episcopo ecclesiae Tigurinae vigilantissimo d. Heinrico Bullingero, domino suo observando.</s>
+					<s n="21" xml:lang="la" type="auto">T[uae] h[umanitati] deditus Ioannes Willingus.</s>
+					<s n="22" xml:lang="la" type="auto">Ornatissimo viro episcopo ecclesiae Tigurinae vigilantissimo d. Heinrico Bullingero, domino suo observando.</s>
 				</p>
 			</div>
 		</body>

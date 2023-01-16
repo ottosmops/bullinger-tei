@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2014"/>
-				<idno type="ISBN">ISBN 978-3-290-17760-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2438</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17760-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2438</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 16</title>
+				<title subtype="publication">HBBW XVI</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">16</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336a,247</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336a,247</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336a,229</idno>
+							<idno subtype="Autograph">E II 336a,229</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -49,31 +52,31 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								<persName ref="154">Myconius</persName> hat erst neulich einen Brief
-								[<ref target="file#12475">Nr. 2428</ref>] durch Heini [Spät?] übermittelt. Seit Kaiser [Karl V.] die deutschen
+								<persName ref="person154">Myconius</persName> hat erst neulich einen Brief
+								[<ref target="file12475">Nr. 2428</ref>] durch Heini [Spät?] übermittelt. Seit Kaiser [Karl V.] die deutschen
 								[Nieder]lande verließ, ist alles still. Wie Junker [Heinrich von] Ostheim erzählte, wich Kaiser [Karl V.]
-								bei seiner Ankunft in <placeName ref="1001">Speyer</placeName> dem vor der Stadt auf ihn wartenden
+								bei seiner Ankunft in <placeName ref="place1001">Speyer</placeName> dem vor der Stadt auf ihn wartenden
 								Klerus durch ein anderes Stadttor aus, was der so getäuschte Klerus erst zwei Stunden später merkte. Auf
 								eine solche Weise kann [Karl V.] die deutschen [Katholiken] nicht für sich gewinnen.
 								</p>
 								<p xml:id="regest2">
-								- [In <placeName ref="97">Basel</placeName>] ist man gespannt, welches Urteil über den
+								- [In <placeName ref="place97">Basel</placeName>] ist man gespannt, welches Urteil über den
 								Brudermörder [Alfonso Diaz] gesprochen werden wird, weil manche aus
-								<placeName ref="515">Innsbruck</placeName> kamen und meinten, er würde dem bei Gott verrufenen
-								[Karl V.] in <placeName ref="880">Regensburg</placeName> vorgeführt werden. Papst [Paul III.] sieht
+								<placeName ref="place515">Innsbruck</placeName> kamen und meinten, er würde dem bei Gott verrufenen
+								[Karl V.] in <placeName ref="place880">Regensburg</placeName> vorgeführt werden. Papst [Paul III.] sieht
 								diesen grausamen Mord als Erfolg an.
 								</p>
 								<p xml:id="regest3">
-								- Die Antwort der Eidgenossen an die von <placeName ref="565">Konstanz</placeName> in Bezug auf
-								[das Gesuch der deutschen] Protestanten kennt <persName ref="154">Myconius</persName> noch nicht. Der
+								- Die Antwort der Eidgenossen an die von <placeName ref="place565">Konstanz</placeName> in Bezug auf
+								[das Gesuch der deutschen] Protestanten kennt <persName ref="person154">Myconius</persName> noch nicht. Der
 								größere Teil soll es eher zustimmend aufgenommen haben. Nur die [Fünf Orte] wollten es [zunächst] an ihre
 								[Obrigkeiten] übergeben. [König Franz I. von] Frankreich hat den Frieden [von
-								<placeName ref="1372">Crépy</placeName>] mit Kaiser Karl V. [durch seinen Gesandten] mitteilen
+								<placeName ref="place1372">Crépy</placeName>] mit Kaiser Karl V. [durch seinen Gesandten] mitteilen
 								lassen, doch dem päpstlichen Legat [Albert Rosin] zufolge sei dieser Frieden nicht von Dauer. Die Mächtigen
 								wissen offenbar nicht, was sie tun! Vielleicht kann Bullinger Genaueres mitteilen.
 								</p>
 								<p xml:id="regest4">
-								- Grüße an [Rudolf] Gwalther, den <persName ref="154">Myconius</persName> für seine Übersetzung [„De
+								- Grüße an [Rudolf] Gwalther, den <persName ref="person154">Myconius</persName> für seine Übersetzung [„De
 								providentia sermones X“] genauso wie den Autor [Theodoret von Kyrrhos] bewundert.
 								</p>
 								<p xml:id="regest5">
@@ -87,46 +90,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12485">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1546-04-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12486"/>
-					<ref type="prev_chronologically" target="files.xml#12484"/>
-					<ref type="next_correspondence" target="files.xml#12499"/>
-					<ref type="prev_correspondence" target="files.xml#12478"/>
-					<ref type="next_correspondence_request" target="files.xml#12499"/>
-					<ref type="prev_correspondence_request" target="files.xml#12475"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12563"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12478"/>
-					<ref type="next_same_sender" target="files.xml#12499"/>
-					<ref type="prev_same_sender" target="files.xml#12475"/>
-					<ref type="next_same_addressee" target="files.xml#12493"/>
-					<ref type="prev_same_addressee" target="files.xml#12480"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12499"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12475"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12493"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12480"/>
+					<ref type="next_chronologically" target="file12486"/>
+					<ref type="prev_chronologically" target="file12484"/>
+					<ref type="next_correspondence" target="file12499"/>
+					<ref type="prev_correspondence" target="file12478"/>
+					<ref type="next_correspondence_request" target="file12499"/>
+					<ref type="prev_correspondence_request" target="file12475"/>
+					<ref type="next_correspondence_reaction" target="file12563"/>
+					<ref type="prev_correspondence_reaction" target="file12478"/>
+					<ref type="next_same_sender" target="file12499"/>
+					<ref type="prev_same_sender" target="file12475"/>
+					<ref type="next_same_addressee" target="file12493"/>
+					<ref type="prev_same_addressee" target="file12480"/>
+					<ref type="next_with_sender_as_addressee" target="file12499"/>
+					<ref type="prev_with_sender_as_addressee" target="file12475"/>
+					<ref type="next_with_addressee_as_sender" target="file12493"/>
+					<ref type="prev_with_addressee_as_sender" target="file12480"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -144,55 +152,55 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Per Heinium<note xml:id="fn1" type="footnote" n="1">Heini Spät (Spättiker)? Siehe den hier von <persName ref="154">Myconius</persName> gemeinten Brief vom 21. April (<ref target="file#12475">Nr. 2428</ref>,45-48) sowie <ref target="file#12465">Nr. 2418</ref>, Anm. 2.</note> scripsi nuperrime.</s>
-					<s xml:lang="la" type="auto">Interim nihil evenit scriptu dignum.</s>
-					<s xml:lang="la" type="auto">Postquam enim cęsar<note xml:id="fn2" type="footnote" n="2">Karl V.</note> suam reliquit Germaniam<note xml:id="fn3" type="footnote" n="3">suam ... Germaniam: die <placeName ref="20">Niederlande</placeName>.</note>, tacent omnia.</s>
-					<s xml:lang="la" type="auto">Illud obiter: Narravit nobis hisce diebus Ostheimerus<note xml:id="fn4" type="footnote" n="4">Wohl der in <placeName ref="97">Basel</placeName> ansässige Söldnerhauptmann Junker Heinrich von Ostheim; s. <hi>AK</hi> V 118, Anm. 1; VI 42, Anm. 1; VIII, S. XXVIII zu <ref target="file#12855">Nr. 2806</ref>; <hi><persName ref="74">Gast</persName>, Tagebuch</hi> 310-312, Anm. 19.</note>, vir nobilis, clericatum <placeName ref="1001">Spirensem</placeName>, ut audiverit adpropinquare<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> adpinquare.</note> cęsarem, exiisse civitatem ingenti multitudine, ut exciperet.</s>
-					<s xml:lang="la" type="auto">Illum autem, ut rem cognorit, deflexisse et paucis per aliam portam ingressum ac per duas integras fuisse horas<note xml:id="fnc" type="footnote" n="c">horas <hi>am Rande nachgetragen.</hi></note> in urbe, priusquam intellexerint miseri exceptores factum quoque non ita bene interpretatos: Contemptam enim sacram turbam satis irreverenter.</s>
-					<s xml:lang="la" type="auto">Ego tum: „Si sic ille egit, quamdiu fuit in Germania, nihil egit, quod ita placuerit, quocunque tandem animo prodierit.“</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Per Heinium<note xml:id="fn1" type="footnote" n="1">Heini Spät (Spättiker)? Siehe den hier von <persName ref="person154">Myconius</persName> gemeinten Brief vom 21. April (<ref target="file12475">Nr. 2428</ref>,45-48) sowie <ref target="file12465">Nr. 2418</ref>, Anm. 2.</note> scripsi nuperrime.</s>
+					<s n="3" xml:lang="la" type="auto">Interim nihil evenit scriptu dignum.</s>
+					<s n="4" xml:lang="la" type="auto">Postquam enim cęsar<note xml:id="fn2" type="footnote" n="2">Karl V.</note> suam reliquit Germaniam<note xml:id="fn3" type="footnote" n="3">suam ... Germaniam: die <placeName ref="place20">Niederlande</placeName>.</note>, tacent omnia.</s>
+					<s n="5" xml:lang="la" type="auto">Illud obiter: Narravit nobis hisce diebus Ostheimerus<note xml:id="fn4" type="footnote" n="4">Wohl der in <placeName ref="place97">Basel</placeName> ansässige Söldnerhauptmann Junker Heinrich von Ostheim; s. <hi>AK</hi> V 118, Anm. 1; VI 42, Anm. 1; VIII, S. XXVIII zu <ref target="file12855">Nr. 2806</ref>; <hi><persName ref="person74">Gast</persName>, Tagebuch</hi> 310-312, Anm. 19.</note>, vir nobilis, clericatum <placeName ref="place1001">Spirensem</placeName>, ut audiverit adpropinquare<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> adpinquare.</note> cęsarem, exiisse civitatem ingenti multitudine, ut exciperet.</s>
+					<s n="6" xml:lang="la" type="auto">Illum autem, ut rem cognorit, deflexisse et paucis per aliam portam ingressum ac per duas integras fuisse horas<note xml:id="fnc" type="footnote" n="c">horas <hi>am Rande nachgetragen.</hi></note> in urbe, priusquam intellexerint miseri exceptores factum quoque non ita bene interpretatos: Contemptam enim sacram turbam satis irreverenter.</s>
+					<s n="7" xml:lang="la" type="auto">Ego tum: „Si sic ille egit, quamdiu fuit in Germania, nihil egit, quod ita placuerit, quocunque tandem animo prodierit.“</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Nos hic expectamus intenti, quale iudicium sit futurum contra latronem fratricidam<note xml:id="fn5" type="footnote" n="5">Alfonso Diaz. - Zu dem Mordfall s. zuletzt <ref target="file#12475">Nr. 2428</ref>,6-15.</note>.</s>
-					<s xml:lang="la" type="auto">Nam putant quidam, qui fuerunt <placeName ref="515">Oeniponti</placeName>, missum iri <placeName ref="880">Ratisponam</placeName><note xml:id="fn6" type="footnote" n="6">Zum <placeName ref="880">Regensburger</placeName> Reichstag. - Die hier vorausgesetzte Sorge, das Verfahren könne aufgrund kaiserlichen Eingreifens verschleppt werden, war begründet. Der Prozess wurde nämlich von Anfang April an immer wieder verschoben, bis das Mandat Karls V. vom 4. April eintraf und dem Gericht Stillstand bis zur Ankunft König Ferdinands I. in <placeName ref="880">Regensburg</placeName> gebot; s. Friedrich <hi>Roth,</hi> Zur Verhaftung und zu dem Prozeß des Dr. Rotae Alfonso Diaz (27. März bis 14. April 1546), in: <hi>ARG</hi> 7, 1909/10, 416f.</note> ad cęsarem.</s>
-					<s xml:lang="la" type="auto">Egregium facinus, si consyderes papam<note xml:id="fn7" type="footnote" n="7">Paul III.</note> et suos; crudele<pb type="edition" next="389"/> vero et atrox, si rem ipsam expendas.</s>
-					<s xml:lang="la" type="auto">Age videmus, quonam loco simus apud illum et qui sunt eius discipuli.</s>
-					<s xml:lang="la" type="auto">Diligentius igitur in ea incumbamus, quę docuit nos dominus, ut magni fiamus apud deum,<note xml:id="fn8" type="footnote" n="8">Vgl. Mt 18, 1-4.</note> apud quem istum<note xml:id="fn9" type="footnote" n="9">Gemeint ist Kaiser Karl V.</note> esse maledictum iam olim dubitare desii.</s>
+					<s n="8" xml:lang="la" type="auto">Nos hic expectamus intenti, quale iudicium sit futurum contra latronem fratricidam<note xml:id="fn5" type="footnote" n="5">Alfonso Diaz. - Zu dem Mordfall s. zuletzt <ref target="file12475">Nr. 2428</ref>,6-15.</note>.</s>
+					<s n="9" xml:lang="la" type="auto">Nam putant quidam, qui fuerunt <placeName ref="place515">Oeniponti</placeName>, missum iri <placeName ref="place880">Ratisponam</placeName><note xml:id="fn6" type="footnote" n="6">Zum <placeName ref="place880">Regensburger</placeName> Reichstag. - Die hier vorausgesetzte Sorge, das Verfahren könne aufgrund kaiserlichen Eingreifens verschleppt werden, war begründet. Der Prozess wurde nämlich von Anfang April an immer wieder verschoben, bis das Mandat Karls V. vom 4. April eintraf und dem Gericht Stillstand bis zur Ankunft König Ferdinands I. in <placeName ref="place880">Regensburg</placeName> gebot; s. Friedrich <hi>Roth,</hi> Zur Verhaftung und zu dem Prozeß des Dr. Rotae Alfonso Diaz (27. März bis 14. April 1546), in: <hi>ARG</hi> 7, 1909/10, 416f.</note> ad cęsarem.</s>
+					<s n="10" xml:lang="la" type="auto">Egregium facinus, si consyderes papam<note xml:id="fn7" type="footnote" n="7">Paul III.</note> et suos; crudele<pb type="edition" next="389"/> vero et atrox, si rem ipsam expendas.</s>
+					<s n="11" xml:lang="la" type="auto">Age videmus, quonam loco simus apud illum et qui sunt eius discipuli.</s>
+					<s n="12" xml:lang="la" type="auto">Diligentius igitur in ea incumbamus, quę docuit nos dominus, ut magni fiamus apud deum,<note xml:id="fn8" type="footnote" n="8">Vgl. Mt 18, 1-4.</note> apud quem istum<note xml:id="fn9" type="footnote" n="9">Gemeint ist Kaiser Karl V.</note> esse maledictum iam olim dubitare desii.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Nondum novi, quid responsi tulerint Constantienses nomine Protestantium ab <placeName ref="196">Helvetiis</placeName>, praeter hoc: Maiorem partem non occurrisse male<note xml:id="fn10" type="footnote" n="10">Zu den Verhandlungen an der <placeName ref="85">Badener</placeName> Tagsatzung vom 12. April 1546 s. zuletzt <ref target="file#12476">Nr. 2429</ref>,41-46.</note>.</s>
-					<s xml:lang="la" type="auto">Solos Paganos<note xml:id="fn11" type="footnote" n="11"><placeName ref="51">Die Fünf Orte</placeName> der Innerschweiz.</note> rem ad suos voluisse referre.</s>
-					<s xml:lang="la" type="auto">Pręterea Gallum<note xml:id="fn12" type="footnote" n="12">König Franz I., und zwar durch seinen Gesandten Antoine Morelet du Museau. Dazu und zum hier angesprochenen Friedensschluss zwischen Franz I. und Karl V. s. <hi>EA</hi> IV/1d 605f aa sowie <ref target="file#12475">Nr. 2428</ref>, Anm. 16.</note> significasse, quam sit in altissima nunc pace, et papę legatum<note xml:id="fn13" type="footnote" n="13">Albert Rosin. Er teilte in <placeName ref="85">Baden</placeName> jedoch das Gegenteil mit; vgl. <hi>EA</hi> IV/1d 604f u.</note> pacem inter Gallum et cęsarem non fore diuturnam.</s>
-					<s xml:lang="la" type="auto">Magnates illi nesciunt, credo, quid faciant<note xml:id="fn14" type="footnote" n="14">Vgl. Lk 23, 34.</note>.</s>
-					<s xml:lang="la" type="auto">Si quid habes certius, quęso, communicato.</s>
+					<s n="13" xml:lang="la" type="auto">Nondum novi, quid responsi tulerint Constantienses nomine Protestantium ab <placeName ref="place196">Helvetiis</placeName>, praeter hoc: Maiorem partem non occurrisse male<note xml:id="fn10" type="footnote" n="10">Zu den Verhandlungen an der <placeName ref="place85">Badener</placeName> Tagsatzung vom 12. April 1546 s. zuletzt <ref target="file12476">Nr. 2429</ref>,41-46.</note>.</s>
+					<s n="14" xml:lang="la" type="auto">Solos Paganos<note xml:id="fn11" type="footnote" n="11"><placeName ref="place51">Die Fünf Orte</placeName> der Innerschweiz.</note> rem ad suos voluisse referre.</s>
+					<s n="15" xml:lang="la" type="auto">Pręterea Gallum<note xml:id="fn12" type="footnote" n="12">König Franz I., und zwar durch seinen Gesandten Antoine Morelet du Museau. Dazu und zum hier angesprochenen Friedensschluss zwischen Franz I. und Karl V. s. <hi>EA</hi> IV/1d 605f aa sowie <ref target="file12475">Nr. 2428</ref>, Anm. 16.</note> significasse, quam sit in altissima nunc pace, et papę legatum<note xml:id="fn13" type="footnote" n="13">Albert Rosin. Er teilte in <placeName ref="place85">Baden</placeName> jedoch das Gegenteil mit; vgl. <hi>EA</hi> IV/1d 604f u.</note> pacem inter Gallum et cęsarem non fore diuturnam.</s>
+					<s n="16" xml:lang="la" type="auto">Magnates illi nesciunt, credo, quid faciant<note xml:id="fn14" type="footnote" n="14">Vgl. Lk 23, 34.</note>.</s>
+					<s n="17" xml:lang="la" type="auto">Si quid habes certius, quęso, communicato.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Vale in Christo cum sanctis tuis omnibus.</s>
-					<s xml:lang="la" type="auto">Gvaltheri libellum<note xml:id="fn15" type="footnote" n="15">Die von Gwalther aus dem Griechischen ins Lateinische übersetzte Schrift "De providentia sermones X" von Theodoret von Kyrrhos; s. <ref target="file#12373">Nr. 2326</ref>, Anm. 1.</note> in manibus habeo.</s>
-					<s xml:lang="la" type="auto">Miror ęque fere et authorem et interpretem.</s>
-					<s xml:lang="la" type="auto">Hunc salutabis diligenter.</s>
+					<s n="18" xml:lang="la" type="auto">Vale in Christo cum sanctis tuis omnibus.</s>
+					<s n="19" xml:lang="la" type="auto">Gvaltheri libellum<note xml:id="fn15" type="footnote" n="15">Die von Gwalther aus dem Griechischen ins Lateinische übersetzte Schrift "De providentia sermones X" von Theodoret von Kyrrhos; s. <ref target="file12373">Nr. 2326</ref>, Anm. 1.</note> in manibus habeo.</s>
+					<s n="20" xml:lang="la" type="auto">Miror ęque fere et authorem et interpretem.</s>
+					<s n="21" xml:lang="la" type="auto">Hunc salutabis diligenter.</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileę</placeName>, 28. aprilis anno 1546.</s>
+					<s n="22" xml:lang="la" type="auto"><placeName ref="place97">Basileę</placeName>, 28. aprilis anno 1546.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Os. <persName ref="154">Myconius</persName>.</s>
+					<s n="23" xml:lang="la" type="auto">Tuus Os. <persName ref="person154">Myconius</persName>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Adiunctas mittito, quaeso, ad d. consulem Sangallensem,<note xml:id="fn16" type="footnote" n="16"><persName ref="154">Myconius</persName>' Brief an Joachim Vadian vom 28. April 1546 <hi>(Vadian BW</hi> VI 528f, <ref target="file#11507">Nr. 1464</ref>).</note> virum, bone deus, quantum!</s>
+					<s n="24" xml:lang="la" type="auto">Adiunctas mittito, quaeso, ad d. consulem Sangallensem,<note xml:id="fn16" type="footnote" n="16"><persName ref="person154">Myconius</persName>' Brief an Joachim Vadian vom 28. April 1546 <hi>(Vadian BW</hi> VI 528f, <ref target="file11507">Nr. 1464</ref>).</note> virum, bone deus, quantum!</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinricho Bullingero doctissimo, Tigurinorum antistiti optimo, fratri ac domino colendissimo suo.</s>
-					<s xml:lang="de" type="auto">Z[ürich]<note xml:id="fnd" type="footnote" n="d"><hi>Adresse teilweise über das nicht mehr erhaltene Siegelband geschrieben.</hi></note>.</s>
+					<s n="25" xml:lang="la" type="auto">Domino Heinricho Bullingero doctissimo, Tigurinorum antistiti optimo, fratri ac domino colendissimo suo.</s>
+					<s n="26" xml:lang="de" type="auto">Z[ürich]<note xml:id="fnd" type="footnote" n="d"><hi>Adresse teilweise über das nicht mehr erhaltene Siegelband geschrieben.</hi></note>.</s>
 				</p>
 			</div>
 		</body>

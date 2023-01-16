@@ -12,25 +12,28 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7028/78</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,760</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">[Korrektur Zürich StA]</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,760</idno>
+						<idno subtype="Hinweis">[Korrektur Zürich StA]</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -53,45 +56,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7155">
 				<correspAction type="sent">
-					<persName ref="person#3704" cert="high">
+					<!--
+					<persName ref="person3704" cert="high">
 						<forename cert="high">Friedrich</forename>
 						<surname cert="high">von Salis</surname>
-						<addName type="main">von Salis (a Salize, de Salicibus), Friedrich</addName>
-						<graphic type="portrait" url="portraits/3704_Salis-Wappen.png"/>
+						<persName type="main" ref="person8432>von Salis (a Salize, de Salicibus), Friedrich</addName>
+						<graphic type="portrait" url="portraits/3704_Salis_Wappen.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Salis_%28Adelsgeschlecht%29"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/119041782"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person3704" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1567-07-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7156"/>
-					<ref type="prev_chronologically" target="files.xml#7154"/>
-					<ref type="next_correspondence" target="files.xml#7156"/>
-					<ref type="prev_correspondence" target="files.xml#7143"/>
-					<ref type="next_correspondence_request" target="files.xml#7156"/>
-					<ref type="prev_correspondence_request" target="files.xml#7143"/>
-					<ref type="next_correspondence_reaction" target="files.xml#7499"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#6443"/>
-					<ref type="next_same_sender" target="files.xml#7156"/>
-					<ref type="prev_same_sender" target="files.xml#7143"/>
-					<ref type="next_same_addressee" target="files.xml#7163"/>
-					<ref type="prev_same_addressee" target="files.xml#7150"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#7156"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#7143"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#7163"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#7150"/>
-					<ref type="child" target="files.xml#7156"/>
+					<ref type="next_chronologically" target="file7156"/>
+					<ref type="prev_chronologically" target="file7154"/>
+					<ref type="next_correspondence" target="file7156"/>
+					<ref type="prev_correspondence" target="file7143"/>
+					<ref type="next_correspondence_request" target="file7156"/>
+					<ref type="prev_correspondence_request" target="file7143"/>
+					<ref type="next_correspondence_reaction" target="file7499"/>
+					<ref type="prev_correspondence_reaction" target="file6443"/>
+					<ref type="next_same_sender" target="file7156"/>
+					<ref type="prev_same_sender" target="file7143"/>
+					<ref type="next_same_addressee" target="file7163"/>
+					<ref type="prev_same_addressee" target="file7150"/>
+					<ref type="next_with_sender_as_addressee" target="file7156"/>
+					<ref type="prev_with_sender_as_addressee" target="file7143"/>
+					<ref type="next_with_addressee_as_sender" target="file7163"/>
+					<ref type="prev_with_addressee_as_sender" target="file7150"/>
+					<ref type="child" target="file7156"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -100,33 +109,38 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="7155/Autograph/00 E_II_365__S__760_.tif" n="1"/>
+		<graphic url="7155/Autograph/01 E_II_365__S__761_.tif" n="2"/>
+		<graphic url="7155/Autograph/02 E_II_365__S__761_a_.tif" n="3"/>
+		<graphic url="7155/Autograph/03 E_II_365__S__761_b_.tif" n="4"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Nuper... significavi me communitates illas, a quibus ante biennium tanta sum iniuria affectus et aere non mediocri indigne mulctatus, in ius vocasse, prout et feci.</s>
+					<s n="1" xml:lang="la" type="auto">Nuper... significavi me communitates illas, a quibus ante biennium tanta sum iniuria affectus et aere non mediocri indigne mulctatus, in ius vocasse, prout et feci.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ecce autem (ut scias, quem finem haec lis nostra sortita sit) comparuere quidem, at litem contestari noluerunt; nec enim tantillulum, quo se excusarent, habebant.</s>
-					<s xml:lang="la" type="auto">Itaque ipsarum communitatum omnium legatis praesentibus actionem meam [pro]posui, iustissimam quidem et verissimam, et tandem iudicatum est ipsas communitates incompetenter omnino mecum egisse, et proinde est etiam declaratum ipsas mihi hinc ad festum sancti Martini mille et quadringentos aureos in promptis pecuniis restituere debere; quodsi minus fiat, tunc omnes redditus et proventus, ex Gallia, locis nobis subditis et aliunde proventuros quique ipsis communitatibus spectarent, mihi exhibeant de vice in vicem, quousque mihi satis sit factum; et revera haud commodior ratio inveniri potuisset, qua mihi satisfieret.</s>
-					<s xml:lang="la" type="auto">Quod autem mihi non integram summam restituendam fore iudicaverunt, ideo factum est, quod plurimi eorum sunt, qui una mecum ob acceptam a rege Galliae pensionem mulctati sunt, quibus ne teruncium quidem est hactenus adiudicatum; quo itaque caeteri sint patientiores, par visum est utique, ut et ipse aliquid oneris ferrem.</s>
-					<s xml:lang="la" type="auto">Solatium enim est miseris, ut dicitur, socios habere poenarum.</s>
-					<s xml:lang="la" type="auto">Haec itaque sunt acta in causa mea.</s>
-					<s xml:lang="la" type="auto">Quid porro Engadinenses mei ad ea sint dicturi vel facturi, ignoro; arbitror tamen ipsos fremituros.</s>
-					<s xml:lang="la" type="auto">Verum domini Ligarum severe satis caverunt, ne ulterius tumultuentur, nec dubium est, quin, si minus obediant, ad officium redigantur; nam ea nunc stat apud Rhaetos sententia, ut porro nolint omnino tam immoderatam et pernitiosam licentiam pati.</s>
+					<s n="2" xml:lang="la" type="auto">Ecce autem (ut scias, quem finem haec lis nostra sortita sit) comparuere quidem, at litem contestari noluerunt; nec enim tantillulum, quo se excusarent, habebant.</s>
+					<s n="3" xml:lang="la" type="auto">Itaque ipsarum communitatum omnium legatis praesentibus actionem meam [pro]posui, iustissimam quidem et verissimam, et tandem iudicatum est ipsas communitates incompetenter omnino mecum egisse, et proinde est etiam declaratum ipsas mihi hinc ad festum sancti Martini mille et quadringentos aureos in promptis pecuniis restituere debere; quodsi minus fiat, tunc omnes redditus et proventus, ex Gallia, locis nobis subditis et aliunde proventuros quique ipsis communitatibus spectarent, mihi exhibeant de vice in vicem, quousque mihi satis sit factum; et revera haud commodior ratio inveniri potuisset, qua mihi satisfieret.</s>
+					<s n="4" xml:lang="la" type="auto">Quod autem mihi non integram summam restituendam fore iudicaverunt, ideo factum est, quod plurimi eorum sunt, qui una mecum ob acceptam a rege Galliae pensionem mulctati sunt, quibus ne teruncium quidem est hactenus adiudicatum; quo itaque caeteri sint patientiores, par visum est utique, ut et ipse aliquid oneris ferrem.</s>
+					<s n="5" xml:lang="la" type="auto">Solatium enim est miseris, ut dicitur, socios habere poenarum.</s>
+					<s n="6" xml:lang="la" type="auto">Haec itaque sunt acta in causa mea.</s>
+					<s n="7" xml:lang="la" type="auto">Quid porro Engadinenses mei ad ea sint dicturi vel facturi, ignoro; arbitror tamen ipsos fremituros.</s>
+					<s n="8" xml:lang="la" type="auto">Verum domini Ligarum severe satis caverunt, ne ulterius tumultuentur, nec dubium est, quin, si minus obediant, ad officium redigantur; nam ea nunc stat apud Rhaetos sententia, ut porro nolint omnino tam immoderatam et pernitiosam licentiam pati.</s>
 				</p>
 				<p>
 					<note type="regest">Er wiederholt, die im vorigen Brief ausgesprochene Bitte, dass Bullinger, wenn die Vertreter des Bischofs Beatus etwas gegen Bartholomaeus (von Salis) unternehmen sollten, ihn benachrichtigen und sich den Erzpriester empfohlen lassen sein möge.</note>
-					<s xml:lang="la" type="auto">Omnino enim peremptoriam causae cognitionem isthuc deduci arbitror; qua in re nonnulli e nostris deterreri videntur, quod intra 13 Cantones, ut dicunt, pro uno voto maior pars in Beati partes censeatur descensura, ut quae alias etiam ipsum totis viribus, non sine summo domini Bartolomei dispendio iuvit.</s>
-					<s xml:lang="la" type="auto">Ego autem penitus non timeo; omnes enim ex aequo iudices censeo suae conscientiae consulturos et proinde iuste, cum opus fuerit, iudicaturos.</s>
-					<s xml:lang="la" type="auto">Expecto autem, quid ipse ad me aliquando hac de re scribas.</s>
+					<s n="9" xml:lang="la" type="auto">Omnino enim peremptoriam causae cognitionem isthuc deduci arbitror; qua in re nonnulli e nostris deterreri videntur, quod intra 13 Cantones, ut dicunt, pro uno voto maior pars in Beati partes censeatur descensura, ut quae alias etiam ipsum totis viribus, non sine summo domini Bartolomei dispendio iuvit.</s>
+					<s n="10" xml:lang="la" type="auto">Ego autem penitus non timeo; omnes enim ex aequo iudices censeo suae conscientiae consulturos et proinde iuste, cum opus fuerit, iudicaturos.</s>
+					<s n="11" xml:lang="la" type="auto">Expecto autem, quid ipse ad me aliquando hac de re scribas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Demum novi, quod scribam, nil habeo, praeter quod hinc ad 4 dies sunt tria militum vexilla hinc recessura; incertum autem est, quo deducantur, quamquam sunt, qui autumant exercitum parari ad invadendum regnum Brittannicum.</s>
+					<s n="12" xml:lang="la" type="auto">Demum novi, quod scribam, nil habeo, praeter quod hinc ad 4 dies sunt tria militum vexilla hinc recessura; incertum autem est, quo deducantur, quamquam sunt, qui autumant exercitum parari ad invadendum regnum Brittannicum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Churiae Rhaetorum, die 14. iulii 1567.</s>
+					<s n="13" xml:lang="la" type="auto">Churiae Rhaetorum, die 14. iulii 1567.</s>
 				</p>
 			</div>
 		</body>

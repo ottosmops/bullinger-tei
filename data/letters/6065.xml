@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6405/41</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 361,128</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 361,128</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,14 +47,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 96,154</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">eingereiht im Feb. 1560 und Vermutung, eher Feb. 1561 (Verweiskarte)</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 96,154</idno>
+						<idno subtype="Hinweis">eingereiht im Feb. 1560 und Vermutung, eher Feb. 1561 (Verweiskarte)</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -60,58 +66,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6065">
 				<correspAction type="sent">
-					<persName ref="person#3656" cert="low">
+					<!--
+					<persName ref="person3656" cert="low">
 						<forename cert="low">Justina</forename>
 						<surname cert="low">von Lupfen</surname>
-						<roleName type="title">
-							<name type="plural" ref="role#32" cert="low">Gräfinnen</name>
-							<place source="#267" cert="low">
-								<settlement>Köln</settlement>
-								<district>Nordrhein-Westfalen</district>
-								<country>Deutschland</country>
-								<geo>50.93333 6.95</geo>
-							</place>
-						</roleName>
+						<personGrp ref="role64" role="Gräfinnen"/>
 					</persName>
-					<place source="#267" cert="low">
-						<settlement>Köln</settlement>
-						<district>Nordrhein-Westfalen</district>
-						<country>Deutschland</country>
-						<geo>50.93333 6.95</geo>
-					</place>
+					-->
+					<persName ref="person3656" cert="low"/>
+					<personGrp ref="role64" role="Gräfinnen"/>
+					<place source="place267" cert="low"/>
 					<date when="1564-03-14" cert="low"><note>Datum unsicher; nach: 1564 März 14.</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6066"/>
-					<ref type="prev_chronologically" target="files.xml#6064"/>
-					<ref type="next_correspondence" target="files.xml#8522"/>
-					<ref type="prev_correspondence" target="files.xml#6064"/>
-					<ref type="next_correspondence_request" target="files.xml#8522"/>
-					<ref type="prev_correspondence_request" target="files.xml#6064"/>
+					<ref type="next_chronologically" target="file6066"/>
+					<ref type="prev_chronologically" target="file6064"/>
+					<ref type="next_correspondence" target="file8522"/>
+					<ref type="prev_correspondence" target="file6064"/>
+					<ref type="next_correspondence_request" target="file8522"/>
+					<ref type="prev_correspondence_request" target="file6064"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2379"/>
-					<ref type="next_same_sender" target="files.xml#8522"/>
-					<ref type="prev_same_sender" target="files.xml#6064"/>
-					<ref type="next_same_addressee" target="files.xml#6068"/>
-					<ref type="prev_same_addressee" target="files.xml#6060"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8522"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6064"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6068"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6060"/>
+					<ref type="prev_correspondence_reaction" target="file2379"/>
+					<ref type="next_same_sender" target="file8522"/>
+					<ref type="prev_same_sender" target="file6064"/>
+					<ref type="next_same_addressee" target="file6068"/>
+					<ref type="prev_same_addressee" target="file6060"/>
+					<ref type="next_with_sender_as_addressee" target="file8522"/>
+					<ref type="prev_with_sender_as_addressee" target="file6064"/>
+					<ref type="next_with_addressee_as_sender" target="file6068"/>
+					<ref type="prev_with_addressee_as_sender" target="file6060"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -129,19 +126,19 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Hochgelerter, lieber her Bulliger, yez kumpt eine[r] zu mir und sagt mir, wie das einer... euerem dysch gsagt hab, das buechlin, das ich euch geschickt hab, das seyg schwenkfe[l]disch.</s>
+					<s n="1" xml:lang="de" type="auto">Hochgelerter, lieber her Bulliger, yez kumpt eine[r] zu mir und sagt mir, wie das einer... euerem dysch gsagt hab, das buechlin, das ich euch geschickt hab, das seyg schwenkfe[l]disch.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">So globt mir, der dye buchlin lost usgon, der weis von her Schwenckvelt nit zu sagen.</s>
-					<s xml:lang="de" type="auto">Es ist ein ander man und ist ein Niderlender gar weit nider Coln.</s>
+					<s n="2" xml:lang="de" type="auto">So globt mir, der dye buchlin lost usgon, der weis von her Schwenckvelt nit zu sagen.</s>
+					<s n="3" xml:lang="de" type="auto">Es ist ein ander man und ist ein Niderlender gar weit nider Coln.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ich halt, wan yr es gelesen hont, ir werden anders befinden, und bit, ir welens lesen, das erst und dysses, und mir ewer befintnus zu gelegner zeit daruf erofnen; dan gwyslich ist es von her Caspar Schwenckvelt nit usgangen noch von seiner ler usgezogen.</s>
-					<s xml:lang="de" type="auto">Hiemit bewar euch got.</s>
+					<s n="4" xml:lang="de" type="auto">Ich halt, wan yr es gelesen hont, ir werden anders befinden, und bit, ir welens lesen, das erst und dysses, und mir ewer befintnus zu gelegner zeit daruf erofnen; dan gwyslich ist es von her Caspar Schwenckvelt nit usgangen noch von seiner ler usgezogen.</s>
+					<s n="5" xml:lang="de" type="auto">Hiemit bewar euch got.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="manual">Justina g[räfin] z[u] Lupffen <foreign xml:lang="la">scripsit</foreign>.</s>
-					<s xml:lang="de" type="auto">An den hochgelerten her Henrich Bullinger etc.</s>
+					<s n="6" xml:lang="de" type="manual">Justina g[räfin] z[u] Lupffen <foreign xml:lang="la">scripsit</foreign>.</s>
+					<s n="7" xml:lang="de" type="auto">An den hochgelerten her Henrich Bullinger etc.</s>
 				</p>
 				<p>
 					<note>[... Brief vom 4. März 1564 erwähnte Justina von Lupfen ein in schlechtem Deutsch geschriebenes Büchlein.]</note>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6945/196</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms F 46,610</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms F 46,610</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,45 +47,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6966">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1566-12-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#8018" cert="high">
+					<!--
+					<persName ref="person8018" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Haller d.J.</surname>
-						<graphic type="portrait" url="portraits/1430_HallerdJ_Johannes.jpg"/>
+						<graphic type="portrait" url="portraits/1430_Haller_dJ_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Haller_der_J%C3%BCngere"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/136925588"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413871"/>
 					</persName>
+					-->
+					<persName ref="person8018" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6967"/>
-					<ref type="prev_chronologically" target="files.xml#6965"/>
-					<ref type="next_correspondence" target="files.xml#6971"/>
-					<ref type="prev_correspondence" target="files.xml#6961"/>
-					<ref type="next_correspondence_request" target="files.xml#6971"/>
-					<ref type="prev_correspondence_request" target="files.xml#6957"/>
-					<ref type="next_correspondence_reaction" target="files.xml#6986"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#6961"/>
-					<ref type="next_same_sender" target="files.xml#6969"/>
-					<ref type="prev_same_sender" target="files.xml#6957"/>
-					<ref type="next_same_addressee" target="files.xml#6986"/>
-					<ref type="prev_same_addressee" target="files.xml#6961"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6969"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6957"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6986"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6961"/>
+					<ref type="next_chronologically" target="file6967"/>
+					<ref type="prev_chronologically" target="file6965"/>
+					<ref type="next_correspondence" target="file6971"/>
+					<ref type="prev_correspondence" target="file6961"/>
+					<ref type="next_correspondence_request" target="file6971"/>
+					<ref type="prev_correspondence_request" target="file6957"/>
+					<ref type="next_correspondence_reaction" target="file6986"/>
+					<ref type="prev_correspondence_reaction" target="file6961"/>
+					<ref type="next_same_sender" target="file6969"/>
+					<ref type="prev_same_sender" target="file6957"/>
+					<ref type="next_same_addressee" target="file6986"/>
+					<ref type="prev_same_addressee" target="file6961"/>
+					<ref type="next_with_sender_as_addressee" target="file6969"/>
+					<ref type="prev_with_sender_as_addressee" target="file6957"/>
+					<ref type="next_with_addressee_as_sender" target="file6986"/>
+					<ref type="prev_with_addressee_as_sender" target="file6961"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -96,16 +104,16 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S[alutem] d[ico].</s>
+					<s n="1" xml:lang="la" type="auto">S[alutem] d[ico].</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valde me exhilaravit testimonium scholae Scoticae et fratrum in regno Scotiae Christum annunciantium confessioni nostrae exhibitum per publicum hoc instrumentum, quod mitto.</s>
-					<s xml:lang="la" type="auto">Volui enim et te et bonos isthic apud vos viros huius mei gaudii facere participes.</s>
-					<s xml:lang="la" type="auto">Ex Germania nihil memoratu dignum adfertur, nisi quod principes Austriaci vivant in perquellis[?].</s>
-					<s xml:lang="la" type="auto">Maximilianus dicitur festinare Pragam, ut auxilia petat et exactiones instituat.</s>
-					<s xml:lang="la" type="auto">Ita Ferdinandus in comitatum Tyrolensem est profectus.</s>
-					<s xml:lang="la" type="auto">Vix supterfugiet Helvetia; reposcetur et illa, suppetias contra Turcam ferat, misceat se bello non necessario.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="2" xml:lang="la" type="auto">Valde me exhilaravit testimonium scholae Scoticae et fratrum in regno Scotiae Christum annunciantium confessioni nostrae exhibitum per publicum hoc instrumentum, quod mitto.</s>
+					<s n="3" xml:lang="la" type="auto">Volui enim et te et bonos isthic apud vos viros huius mei gaudii facere participes.</s>
+					<s n="4" xml:lang="la" type="auto">Ex Germania nihil memoratu dignum adfertur, nisi quod principes Austriaci vivant in perquellis[?].</s>
+					<s n="5" xml:lang="la" type="auto">Maximilianus dicitur festinare Pragam, ut auxilia petat et exactiones instituat.</s>
+					<s n="6" xml:lang="la" type="auto">Ita Ferdinandus in comitatum Tyrolensem est profectus.</s>
+					<s n="7" xml:lang="la" type="auto">Vix supterfugiet Helvetia; reposcetur et illa, suppetias contra Turcam ferat, misceat se bello non necessario.</s>
+					<s n="8" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
 					<note type="address">[Ohne Adresse.]<note xml:id="fna" type="footnote" n="a"><hi>Datum, Unterschrift und Adresse wurden vom Abschreiber durch einen Vermerk am Briefanfang ersetzt:</hi> Idem eidem. Tiguro Bernam. 20. decembris 1566.</note></note>

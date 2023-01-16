@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=984</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=984</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Teilkopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#474">St. Gallen</settlement>
-						<institution>Kantonsbibliothek Vadiana</institution>
-						<idno type="Teilkopie">Ms 72,481r-482r</idno>
-						<repository ref="archive#78">
+						<!--
+						<repository ref="archive78">
 							<name>St. Gallen KB</name>
 							<ref target="https://www.sg.ch/kultur/kantonsbibliothek-vadiana.html"/>
 						</repository>
+						<settlement ref="place474">St. Gallen</settlement>
+						<institution>Kantonsbibliothek Vadiana</institution>
+						-->
+						<repository ref="archive78"/>
+						<idno subtype="Teilkopie">Ms 72,481r-482r</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -49,21 +52,21 @@
 								Berichtet über einen Aufstand [die "Pilgrimage of Grace"], der entgegen Bullingers Annahme nicht die
 								Förderung, sondern die Unterdrückung des Evangeliums bezweckte; er ging von Priestern und Mönchen aus, die
 								um ihre Privilegien fürchteten, und wurde von unzivilisierten und räuberischen Leuten unterstützt, wie sie
-								vor allem im Grenzgebiet zu <placeName ref="26">Schottland</placeName> leben. Der
-								<persName ref="98">König</persName> [<persName ref="98">Heinrich</persName>
-								<persName ref="98">VIII.</persName>] sammelte ein großes Heer, um die Treue der Untertanen zu prüfen,
+								vor allem im Grenzgebiet zu <placeName ref="place26">Schottland</placeName> leben. Der
+								König [Heinrich
+								VIII.] sammelte ein großes Heer, um die Treue der Untertanen zu prüfen,
 								konnte aber die Rebellion mit einem kleinen Teil der Truppe rasch niederwerfen; die Aufrührer wurden bis auf
 								wenige Ausnahmen begnadigt. Dank diesem Krieg hat sich der Widerstand gegen das Evangelium verringert;
-								ähnlich wie [in <placeName ref="7">Deutschland</placeName>] nach dem Bauernkrieg steht nun die
+								ähnlich wie [in <placeName ref="place7">Deutschland</placeName>] nach dem Bauernkrieg steht nun die
 								Neuordnung der kirchlichen Verhältnisse unter günstigen Vorzeichen. Die Forderungen der Aufständischen
 								waren: Wiedereinführung des Papsttums und seiner Irrlehren; Verbot der Schriften
-								<persName ref="138">Luthers</persName>, <persName ref="146">Melanchthons</persName>,
-								<persName ref="160">Oekolampads</persName> und aller Deutschen; Restitution der Klöster; Auslieferung
-								<persName ref="45">Cranmers</persName> und der Bischöfe von
-								<placeName ref="1212">Worcester</placeName> [<persName ref="1472">Hugh Latimer</persName>],
-								<placeName ref="903">Rochester</placeName> [<persName ref="1177">John Hilsey</persName>] und
-								<placeName ref="937">Salisbury</placeName>
-								[<persName ref="2160">Nicholas Shaxton</persName>].
+								<persName ref="person138">Luthers</persName>, <persName ref="person146">Melanchthons</persName>,
+								<persName ref="person160">Oekolampads</persName> und aller Deutschen; Restitution der Klöster; Auslieferung
+								<persName ref="person45">Cranmers</persName> und der Bischöfe von
+								<placeName ref="place1212">Worcester</placeName> [<persName ref="person1472">Hugh Latimer</persName>],
+								<placeName ref="place903">Rochester</placeName> [<persName ref="person1177">John Hilsey</persName>] und
+								<placeName ref="place937">Salisbury</placeName>
+								[<persName ref="person2160">Nicholas Shaxton</persName>].
 							</p>
 						</summary>
 					</msContents>
@@ -80,43 +83,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11026">
 				<correspAction type="sent">
-					<persName ref="person#674" cert="high">
+					<!--
+					<persName ref="person674" cert="high">
 						<forename cert="high">Thomas</forename>
 						<surname cert="high">Cranmer</surname>
 						<graphic type="portrait" url="portraits/674_Cranmer_Thomas.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Thomas_Cranmer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118670468"/>
 					</persName>
-					<place source="#275" cert="high">
-						<settlement>Lambeth</settlement>
-						<geo>51.49567 -0.11988</geo>
-					</place>
+					-->
+					<persName ref="person674" cert="high"/>
+					<place source="place275" cert="high"/>
 					<date when="1537-04-03" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11027"/>
-					<ref type="prev_chronologically" target="files.xml#11025"/>
-					<ref type="next_correspondence" target="files.xml#1602"/>
+					<ref type="next_chronologically" target="file11027"/>
+					<ref type="prev_chronologically" target="file11025"/>
+					<ref type="next_correspondence" target="file1602"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#1602"/>
+					<ref type="next_correspondence_request" target="file1602"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#1602"/>
+					<ref type="next_same_sender" target="file1602"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#11030"/>
-					<ref type="prev_same_addressee" target="files.xml#11015"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1602"/>
+					<ref type="next_same_addressee" target="file11030"/>
+					<ref type="prev_same_addressee" target="file11015"/>
+					<ref type="next_with_sender_as_addressee" target="file1602"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11030"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11015"/>
+					<ref type="next_with_addressee_as_sender" target="file11030"/>
+					<ref type="prev_with_addressee_as_sender" target="file11015"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=726</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=726</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 362,37</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 362,37</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,10 +49,10 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Ist mit <persName ref="36">Benedikt Burgauer</persName> zur Teilnahme an der Basler Zusammenkunft
+								Ist mit <persName ref="person36">Benedikt Burgauer</persName> zur Teilnahme an der Basler Zusammenkunft
 								aufgeboten worden - allerdings auf eigene Kosten; Bürgermeister von
-								<persName ref="232">Waldkirch</persName> und Zunftmeister
-								[<persName ref="2071">Hans Schmid</persName>] werden sie begleiten. Bittet um Mitteilung der zu
+								<persName ref="person232">Waldkirch</persName> und Zunftmeister
+								[<persName ref="person2071">Hans Schmid</persName>] werden sie begleiten. Bittet um Mitteilung der zu
 								behandelnden Geschäfte.
 							</p>
 						</summary>
@@ -60,43 +63,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10764">
 				<correspAction type="sent">
-					<persName ref="person#2810" cert="high">
+					<!--
+					<persName ref="person2810" cert="high">
 						<forename cert="high">Erasmus</forename>
 						<surname cert="high">Ritter</surname>
+						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Erasmus_Ritter_(Theologe)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/137993781"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11416562"/>
 					</persName>
-					<place source="#441" cert="high">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					-->
+					<persName ref="person2810" cert="high"/>
+					<place source="place441" cert="high"/>
 					<date when="1536-01-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10765"/>
-					<ref type="prev_chronologically" target="files.xml#10763"/>
-					<ref type="next_correspondence" target="files.xml#10831"/>
-					<ref type="prev_correspondence" target="files.xml#10725"/>
-					<ref type="next_correspondence_request" target="files.xml#10831"/>
-					<ref type="prev_correspondence_request" target="files.xml#10725"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10867"/>
+					<ref type="next_chronologically" target="file10765"/>
+					<ref type="prev_chronologically" target="file10763"/>
+					<ref type="next_correspondence" target="file10831"/>
+					<ref type="prev_correspondence" target="file10725"/>
+					<ref type="next_correspondence_request" target="file10831"/>
+					<ref type="prev_correspondence_request" target="file10725"/>
+					<ref type="next_correspondence_reaction" target="file10867"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10831"/>
-					<ref type="prev_same_sender" target="files.xml#10725"/>
-					<ref type="next_same_addressee" target="files.xml#10769"/>
-					<ref type="prev_same_addressee" target="files.xml#10757"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10831"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10725"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10769"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10757"/>
+					<ref type="next_same_sender" target="file10831"/>
+					<ref type="prev_same_sender" target="file10725"/>
+					<ref type="next_same_addressee" target="file10769"/>
+					<ref type="prev_same_addressee" target="file10757"/>
+					<ref type="next_with_sender_as_addressee" target="file10831"/>
+					<ref type="prev_with_sender_as_addressee" target="file10725"/>
+					<ref type="next_with_addressee_as_sender" target="file10769"/>
+					<ref type="prev_with_addressee_as_sender" target="file10757"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -106,31 +115,34 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="10764/Autograph/00 E_II_362__S__37_.tif" n="1"/>
+		<graphic url="10764/Autograph/01 E_II_362__S__38_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gracia et pax etc.</s>
+					<s n="1" xml:lang="la" type="auto">Gracia et pax etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ego et <persName ref="36">Benedictus</persName><note xml:id="fn1" type="footnote" n="1"><persName ref="36">Benedikt Burgauer</persName>.</note> una destinati sumus <placeName ref="97">Basileam</placeName><note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file#10762">Nr. 724</ref>, Anm. 3; zu den Einladungsschreiben <placeName ref="97">Basels</placeName> an Zürich vom 4. Januar und Zürichs an <placeName ref="943">Schaffhausen</placeName> vom 10. Januar vgl. EA IV/1c 598.</note> - comites erunt consul Waldkilchius et ex tribunis unus<note xml:id="fn3" type="footnote" n="3">Zunftmeister <persName ref="2071">Hans Schmid</persName> (s. Stumpf, Abendmahlsstreit 75).</note> -, ea tamen lege, quod ego et <persName ref="36">Benedictus</persName> proprio et reliquorum conpresbiterorum sumptu pergamus.</s>
-					<s xml:lang="la" type="auto">Viden, charissime frater, et prudentiam et pietatem nostri senatus?</s>
-					<s xml:lang="la" type="auto">Decreverant, quod neminem illuc vellent mittere ex ministris, sed tantum ex senatoribus duos.</s>
-					<s xml:lang="la" type="auto">Nescio, quid tandem illis in mentem venerit, quod et nos addiderunt.</s>
+					<s n="2" xml:lang="la" type="auto">Ego et <persName ref="person36">Benedictus</persName><note xml:id="fn1" type="footnote" n="1"><persName ref="person36">Benedikt Burgauer</persName>.</note> una destinati sumus <placeName ref="place97">Basileam</placeName><note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file10762">Nr. 724</ref>, Anm. 3; zu den Einladungsschreiben <placeName ref="place97">Basels</placeName> an Zürich vom 4. Januar und Zürichs an <placeName ref="place943">Schaffhausen</placeName> vom 10. Januar vgl. EA IV/1c 598.</note> - comites erunt consul Waldkilchius et ex tribunis unus<note xml:id="fn3" type="footnote" n="3">Zunftmeister <persName ref="person2071">Hans Schmid</persName> (s. Stumpf, Abendmahlsstreit 75).</note> -, ea tamen lege, quod ego et <persName ref="person36">Benedictus</persName> proprio et reliquorum conpresbiterorum sumptu pergamus.</s>
+					<s n="3" xml:lang="la" type="auto">Viden, charissime frater, et prudentiam et pietatem nostri senatus?</s>
+					<s n="4" xml:lang="la" type="auto">Decreverant, quod neminem illuc vellent mittere ex ministris, sed tantum ex senatoribus duos.</s>
+					<s n="5" xml:lang="la" type="auto">Nescio, quid tandem illis in mentem venerit, quod et nos addiderunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tu vero fac me cerciorem, quos nodos<note xml:id="fn4" type="footnote" n="4">Vgl. Otto 244, Nr. 1233.</note> tractaturi simus.</s>
+					<s n="6" xml:lang="la" type="auto">Tu vero fac me cerciorem, quos nodos<note xml:id="fn4" type="footnote" n="4">Vgl. Otto 244, Nr. 1233.</note> tractaturi simus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="73"/>Vale, 15. ianuarii 1536.</s>
+					<s n="7" xml:lang="la" type="auto"><pb type="edition" next="73"/>Vale, 15. ianuarii 1536.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="176">Erasmus Ritter</persName>, ex animo tuus.</s>
+					<s n="8" xml:lang="la" type="auto"><persName ref="person176">Erasmus Ritter</persName>, ex animo tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Dem wolgelerten herren Meister Heinrich Bullinger, predicanten zuͦ Zurich, minem lieben herren und guͦten freundt.</s>
+					<s n="9" xml:lang="de" type="auto">Dem wolgelerten herren Meister Heinrich Bullinger, predicanten zuͦ Zurich, minem lieben herren und guͦten freundt.</s>
 				</p>
 			</div>
 		</body>

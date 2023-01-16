@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1007</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1007</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Teilkopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#474">St. Gallen</settlement>
-						<institution>Kantonsbibliothek Vadiana</institution>
-						<idno type="Teilkopie">Ms 72,482r-v</idno>
-						<repository ref="archive#78">
+						<!--
+						<repository ref="archive78">
 							<name>St. Gallen KB</name>
 							<ref target="https://www.sg.ch/kultur/kantonsbibliothek-vadiana.html"/>
 						</repository>
+						<settlement ref="place474">St. Gallen</settlement>
+						<institution>Kantonsbibliothek Vadiana</institution>
+						-->
+						<repository ref="archive78"/>
+						<idno subtype="Teilkopie">Ms 72,482r-v</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,14 +49,14 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								An der Lausanner Synode vom 14. Mai hat <persName ref="306">Claude</persName>
-								[d'<persName ref="306">Aliod</persName>] seinen neuen Arianismus widerrufen; auch vor den Zürcher
+								An der Lausanner Synode vom 14. Mai hat Claude
+								[d'<persName ref="person306">Aliod</persName>] seinen neuen Arianismus widerrufen; auch vor den Zürcher
 								Pfarrern hat er inzwischen Abbitte geleistet. Am 8. Juni kehrten
-								[<persName ref="84">Rudolf Gwalther</persName>] und
-								<persName ref="164">Nicholas Partridge</persName> aus
-								<placeName ref="9">England</placeName> zurück; mit ihren drei Begleitern sind nun sechs
+								[<persName ref="person84">Rudolf Gwalther</persName>] und
+								<persName ref="person164">Nicholas Partridge</persName> aus
+								<placeName ref="place9">England</placeName> zurück; mit ihren drei Begleitern sind nun sechs
 								englische Studenten in Zürich. Sie brachten gute Nachrichten mit, wie sie auch dem beiliegenden Brief
-								<persName ref="45">Cranmers</persName> [<ref target="file#11026">Nr. 984</ref>] zu entnehmen sind. Über
+								<persName ref="person45">Cranmers</persName> [<ref target="file11026">Nr. 984</ref>] zu entnehmen sind. Über
 								30 [nordenglische] Aufständische, darunter ein Abt im Ordensgewand, wurden hingerichtet, etwa vierzig
 								Gefangene warten noch auf ihre Strafe.
 							</p>
@@ -72,46 +75,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11049">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1537-06-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
+					-->
+					<persName ref="person3306" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11050"/>
-					<ref type="prev_chronologically" target="files.xml#11048"/>
-					<ref type="next_correspondence" target="files.xml#11051"/>
-					<ref type="prev_correspondence" target="files.xml#11023"/>
-					<ref type="next_correspondence_request" target="files.xml#11051"/>
-					<ref type="prev_correspondence_request" target="files.xml#11015"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11256"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11023"/>
-					<ref type="next_same_sender" target="files.xml#11051"/>
-					<ref type="prev_same_sender" target="files.xml#11043"/>
-					<ref type="next_same_addressee" target="files.xml#11256"/>
-					<ref type="prev_same_addressee" target="files.xml#11023"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11051"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11043"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11256"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11023"/>
+					<ref type="next_chronologically" target="file11050"/>
+					<ref type="prev_chronologically" target="file11048"/>
+					<ref type="next_correspondence" target="file11051"/>
+					<ref type="prev_correspondence" target="file11023"/>
+					<ref type="next_correspondence_request" target="file11051"/>
+					<ref type="prev_correspondence_request" target="file11015"/>
+					<ref type="next_correspondence_reaction" target="file11256"/>
+					<ref type="prev_correspondence_reaction" target="file11023"/>
+					<ref type="next_same_sender" target="file11051"/>
+					<ref type="prev_same_sender" target="file11043"/>
+					<ref type="next_same_addressee" target="file11256"/>
+					<ref type="prev_same_addressee" target="file11023"/>
+					<ref type="next_with_sender_as_addressee" target="file11051"/>
+					<ref type="prev_with_sender_as_addressee" target="file11043"/>
+					<ref type="next_with_addressee_as_sender" target="file11256"/>
+					<ref type="prev_with_addressee_as_sender" target="file11023"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

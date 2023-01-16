@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5953/41</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Beilage" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 441,306</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 441,306</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -52,13 +55,16 @@
 				</msDesc>
 				<msDesc type="Beilage" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 103,172</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 103,172</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -67,46 +73,53 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5221">
 				<correspAction type="sent">
-					<persName ref="person#1075" cert="low">
+					<!--
+					<persName ref="person1075" cert="low">
 						<forename cert="low">Johannes</forename>
 						<surname cert="low">Fabricius</surname>
-						<addName type="main">Fabricius Montanus (Schmid), Johannes</addName>
+						<persName type="main" ref="person8009>Fabricius Montanus (Schmid), Johannes</addName>
 						<graphic type="portrait" url="portraits/1075_Fabricius_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Fabricius_Montanus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104045698"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414870"/>
 					</persName>
-					<place source="#98" cert="low">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person1075" cert="low"/>
+					<place source="place98" cert="low"/>
 					<date when="1562-03-13" cert="low"><note>Beilage zu (1562 März 13) (= ID 5220)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5222"/>
-					<ref type="prev_chronologically" target="files.xml#5220"/>
-					<ref type="next_correspondence" target="files.xml#5233"/>
-					<ref type="prev_correspondence" target="files.xml#5220"/>
-					<ref type="next_correspondence_request" target="files.xml#5234"/>
-					<ref type="prev_correspondence_request" target="files.xml#5220"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5233"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5218"/>
-					<ref type="next_same_sender" target="files.xml#5234"/>
-					<ref type="prev_same_sender" target="files.xml#5220"/>
-					<ref type="next_same_addressee" target="files.xml#5229"/>
-					<ref type="prev_same_addressee" target="files.xml#5219"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5234"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5220"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5229"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5219"/>
-					<ref type="child" target="files.xml#5220"/>
-					<ref type="parent" target="files.xml#5220"/>
+					<ref type="next_chronologically" target="file5222"/>
+					<ref type="prev_chronologically" target="file5220"/>
+					<ref type="next_correspondence" target="file5233"/>
+					<ref type="prev_correspondence" target="file5220"/>
+					<ref type="next_correspondence_request" target="file5234"/>
+					<ref type="prev_correspondence_request" target="file5220"/>
+					<ref type="next_correspondence_reaction" target="file5233"/>
+					<ref type="prev_correspondence_reaction" target="file5218"/>
+					<ref type="next_same_sender" target="file5234"/>
+					<ref type="prev_same_sender" target="file5220"/>
+					<ref type="next_same_addressee" target="file5229"/>
+					<ref type="prev_same_addressee" target="file5219"/>
+					<ref type="next_with_sender_as_addressee" target="file5234"/>
+					<ref type="prev_with_sender_as_addressee" target="file5220"/>
+					<ref type="next_with_addressee_as_sender" target="file5229"/>
+					<ref type="prev_with_addressee_as_sender" target="file5219"/>
+					<ref type="child" target="file5220"/>
+					<ref type="parent" target="file5220"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,45 +129,48 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="5221/Autograph/00 E_II_441__fol__306_r_.tif" n="1"/>
+		<graphic url="5221/Autograph/01 E_II_441__fol__306_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="de">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="de" type="auto">Ich kan nüt schryben; dan es so wüst wätter, das ich nit vermeint hab, das yemant furi; nun so kum ich uff der stett zuͦ einem.</s>
-					<s xml:lang="la" type="auto">Ideo ignosce.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="de" type="auto">Ich kan nüt schryben; dan es so wüst wätter, das ich nit vermeint hab, das yemant furi; nun so kum ich uff der stett zuͦ einem.</s>
+					<s n="3" xml:lang="la" type="auto">Ideo ignosce.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Von Trient söllend zween kommen syn, einer gaan Thusis, der ander hye zur Kronen; söllend glychlich sagen, das zuͦ Trient under den pfaffen ein ufflouff gesyn; söllind by 30 uff dem flecken beliben sin.</s>
-					<s xml:lang="de" type="auto">Söllend sich der burgeren by 400 zesamen gethon han, willens die pfaffen ze erwürgen.</s>
-					<s xml:lang="de" type="auto">Aber ir anschlag ist geoffnet worden dermaßen, das sich die gegenpart in die weer gerüst.</s>
-					<s xml:lang="de" type="auto">Daruß sol diser lärmen gevolget und, wie gehört, 30 umkomen.</s>
+					<s n="4" xml:lang="de" type="auto">Von Trient söllend zween kommen syn, einer gaan Thusis, der ander hye zur Kronen; söllend glychlich sagen, das zuͦ Trient under den pfaffen ein ufflouff gesyn; söllind by 30 uff dem flecken beliben sin.</s>
+					<s n="5" xml:lang="de" type="auto">Söllend sich der burgeren by 400 zesamen gethon han, willens die pfaffen ze erwürgen.</s>
+					<s n="6" xml:lang="de" type="auto">Aber ir anschlag ist geoffnet worden dermaßen, das sich die gegenpart in die weer gerüst.</s>
+					<s n="7" xml:lang="de" type="auto">Daruß sol diser lärmen gevolget und, wie gehört, 30 umkomen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ego, an vera sint, nescio; hi constanter affirmarunt.</s>
-					<s xml:lang="de" type="auto">Doch ist einer gaan Zürich geritten (ist mir entrunnen) den Schwan Paulen sun von Thusis; er heist Reget.</s>
-					<s xml:lang="de" type="auto">Daa mögend ir wyter fragen; dan in synes vatters huß ist das geredt worden, ob er ettwas darumb wüße.</s>
-					<s xml:lang="de" type="auto">Syn bruͦder Stoffel hatt es hye vylen geseit und hütt der wirt zuͦm Wilden Mann mihi et consuli.</s>
-					<s xml:lang="de" type="auto">Der landtschryber ab Tavoß ist diser tagen hye gesyn; zeigt an, das der jung Enderli Sprächer ab Tavoß sye von Trient kommen; habe gesagt, wie ein cardinal (kont in nit nennen) habe den wirt wöllen umb das wyb, und als sy sich gewideriget, habe er sy wöllen nottzwengen und sy geschruwen, der wirt mitt synen knächten komen, habe in erstochen und in das waßer das fürrünt (nominavit aquam; oblitus sum nominis) geworffen.</s>
-					<s xml:lang="de" type="auto">Da habe man in erst am dritten tag wyt under Trient funden.</s>
+					<s n="8" xml:lang="la" type="auto">Ego, an vera sint, nescio; hi constanter affirmarunt.</s>
+					<s n="9" xml:lang="de" type="auto">Doch ist einer gaan Zürich geritten (ist mir entrunnen) den Schwan Paulen sun von Thusis; er heist Reget.</s>
+					<s n="10" xml:lang="de" type="auto">Daa mögend ir wyter fragen; dan in synes vatters huß ist das geredt worden, ob er ettwas darumb wüße.</s>
+					<s n="11" xml:lang="de" type="auto">Syn bruͦder Stoffel hatt es hye vylen geseit und hütt der wirt zuͦm Wilden Mann mihi et consuli.</s>
+					<s n="12" xml:lang="de" type="auto">Der landtschryber ab Tavoß ist diser tagen hye gesyn; zeigt an, das der jung Enderli Sprächer ab Tavoß sye von Trient kommen; habe gesagt, wie ein cardinal (kont in nit nennen) habe den wirt wöllen umb das wyb, und als sy sich gewideriget, habe er sy wöllen nottzwengen und sy geschruwen, der wirt mitt synen knächten komen, habe in erstochen und in das waßer das fürrünt (nominavit aquam; oblitus sum nominis) geworffen.</s>
+					<s n="13" xml:lang="de" type="auto">Da habe man in erst am dritten tag wyt under Trient funden.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Das möchte villicht zum ufflouff anlaß geben haben.</s>
-					<s xml:lang="de" type="auto">Der von Raitnouw kompt ußhar, zeigt an, das ettlich cardinäl wider verrytend.</s>
+					<s n="14" xml:lang="de" type="auto">Das möchte villicht zum ufflouff anlaß geben haben.</s>
+					<s n="15" xml:lang="de" type="auto">Der von Raitnouw kompt ußhar, zeigt an, das ettlich cardinäl wider verrytend.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ferdinandus hat den baapst ermant, stil ze staan.</s>
-					<s xml:lang="la" type="auto">Verum hoc.</s>
+					<s n="16" xml:lang="de" type="auto">Ferdinandus hat den baapst ermant, stil ze staan.</s>
+					<s n="17" xml:lang="la" type="auto">Verum hoc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="18" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Amplissimo viro d. Heinrycho Bullingero, domino suo.</s>
+					<s n="19" xml:lang="la" type="auto">Amplissimo viro d. Heinrycho Bullingero, domino suo.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">An herren Bullinger.</s>
+					<s n="20" xml:lang="de" type="auto">An herren Bullinger.</s>
 				</p>
 			</div>
 		</body>

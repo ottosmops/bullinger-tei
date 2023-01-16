@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1424</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 351,95</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 351,95</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,13 +54,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 69,201</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 69,201</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -66,52 +72,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/489">
 				<correspAction type="sent">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
-					<place source="#474" cert="high">
-						<settlement>St. Gallen</settlement>
-						<district>St.Gallen</district>
-						<country>Schweiz</country>
-						<geo>47.42391 9.37477</geo>
-					</place>
+					-->
+					<persName ref="person3306" cert="high"/>
+					<place source="place474" cert="high"/>
 					<date when="1549-04-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#490"/>
-					<ref type="prev_chronologically" target="files.xml#488"/>
-					<ref type="next_correspondence" target="files.xml#491"/>
-					<ref type="prev_correspondence" target="files.xml#454"/>
-					<ref type="next_correspondence_request" target="files.xml#491"/>
-					<ref type="prev_correspondence_request" target="files.xml#441"/>
-					<ref type="next_correspondence_reaction" target="files.xml#1108"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#454"/>
-					<ref type="next_same_sender" target="files.xml#491"/>
-					<ref type="prev_same_sender" target="files.xml#441"/>
-					<ref type="next_same_addressee" target="files.xml#515"/>
-					<ref type="prev_same_addressee" target="files.xml#478"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#491"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#441"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#515"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#478"/>
+					<ref type="next_chronologically" target="file490"/>
+					<ref type="prev_chronologically" target="file488"/>
+					<ref type="next_correspondence" target="file491"/>
+					<ref type="prev_correspondence" target="file454"/>
+					<ref type="next_correspondence_request" target="file491"/>
+					<ref type="prev_correspondence_request" target="file441"/>
+					<ref type="next_correspondence_reaction" target="file1108"/>
+					<ref type="prev_correspondence_reaction" target="file454"/>
+					<ref type="next_same_sender" target="file491"/>
+					<ref type="prev_same_sender" target="file441"/>
+					<ref type="next_same_addressee" target="file515"/>
+					<ref type="prev_same_addressee" target="file478"/>
+					<ref type="next_with_sender_as_addressee" target="file491"/>
+					<ref type="prev_with_sender_as_addressee" target="file441"/>
+					<ref type="next_with_addressee_as_sender" target="file515"/>
+					<ref type="prev_with_addressee_as_sender" target="file478"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -129,37 +134,37 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Paulo longioris silentii mei, Bullingere, nulla alia caussa fuit, quam quod toto hoc tempore non erat ad manum, quod scriberem.</s>
-					<s xml:lang="la" type="auto">Erant quidem agendae tibi gratiae propter missam a te Curionis elegantem simul et piam lucubrationem, et literae amicorum, quibus me de rebus novis abunde erudiisti, tandem erant remittendae.</s>
-					<s xml:lang="la" type="auto">Sed procrastinandum tamen hoc officium arbitrabar, donec haberem, quod et ipse ad te scriberem.</s>
-					<s xml:lang="la" type="auto">Igitur quum hac hora ex Augusta literas a Saylero cognato accepissem, curavi illico, ut meae cum tuis commodato missis coniunctae per Chuͦnradum nostrum, optimum virum et (ut mihi polliceor) ad vomitum non reversurum, pererendae demandarentur.</s>
-					<s xml:lang="de" type="auto">Scribit autem Saylerus inter alia in haec verba: "Im letzsten brief von Antdorf schreybt man mir ouch, wie der amiral in Engelland, ouch der möntzmaiser, auf 20. Marzo zuͦ London gericht und endthauptet worden etc.</s>
-					<s xml:lang="de" type="auto">Sol ob fünfzehenhunderttausend kronen wert und dess alten konigs tochter aine schwanger hinder im verlaßen haben.</s>
-					<s xml:lang="de" type="auto">Aber kain ander particularitet wirt darneben gemelt, dann niemand gern zeytung schreybt, von wegen das alle brief am passagio ersuͦcht werdend.</s>
-					<s xml:lang="de" type="auto">Es sol teglich der Fukher diener ainer auß England khomen; der wirt möndtlich sagen können, das man sonst nit schreyben darf.</s>
-					<s xml:lang="de" type="auto">Bin vertrost, was der ouch der religion halber bringen werde, mir mit ersten anzuͦzaygen.</s>
-					<s xml:lang="de" type="auto">Das sol euch allsdann ouch onverhalten bleyben.</s>
-					<s xml:lang="la" type="auto">Datum Augustae, den 10. Aprilis, imm 1549."</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Paulo longioris silentii mei, Bullingere, nulla alia caussa fuit, quam quod toto hoc tempore non erat ad manum, quod scriberem.</s>
+					<s n="3" xml:lang="la" type="auto">Erant quidem agendae tibi gratiae propter missam a te Curionis elegantem simul et piam lucubrationem, et literae amicorum, quibus me de rebus novis abunde erudiisti, tandem erant remittendae.</s>
+					<s n="4" xml:lang="la" type="auto">Sed procrastinandum tamen hoc officium arbitrabar, donec haberem, quod et ipse ad te scriberem.</s>
+					<s n="5" xml:lang="la" type="auto">Igitur quum hac hora ex Augusta literas a Saylero cognato accepissem, curavi illico, ut meae cum tuis commodato missis coniunctae per Chuͦnradum nostrum, optimum virum et (ut mihi polliceor) ad vomitum non reversurum, pererendae demandarentur.</s>
+					<s n="6" xml:lang="de" type="auto">Scribit autem Saylerus inter alia in haec verba: "Im letzsten brief von Antdorf schreybt man mir ouch, wie der amiral in Engelland, ouch der möntzmaiser, auf 20. Marzo zuͦ London gericht und endthauptet worden etc.</s>
+					<s n="7" xml:lang="de" type="auto">Sol ob fünfzehenhunderttausend kronen wert und dess alten konigs tochter aine schwanger hinder im verlaßen haben.</s>
+					<s n="8" xml:lang="de" type="auto">Aber kain ander particularitet wirt darneben gemelt, dann niemand gern zeytung schreybt, von wegen das alle brief am passagio ersuͦcht werdend.</s>
+					<s n="9" xml:lang="de" type="auto">Es sol teglich der Fukher diener ainer auß England khomen; der wirt möndtlich sagen können, das man sonst nit schreyben darf.</s>
+					<s n="10" xml:lang="de" type="auto">Bin vertrost, was der ouch der religion halber bringen werde, mir mit ersten anzuͦzaygen.</s>
+					<s n="11" xml:lang="de" type="auto">Das sol euch allsdann ouch onverhalten bleyben.</s>
+					<s n="12" xml:lang="la" type="auto">Datum Augustae, den 10. Aprilis, imm 1549."</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Haec ille ad me de amiraldo et magistro eius monetae; quae deinceps submittet, te non latebunt.</s>
-					<s xml:lang="la" type="auto">De Caesare nihil, nisi quod parare se pedetentim videtur adversus urbes maritimas Germanię, quae mirabili constantia retinendae pietatis coaluerunt.</s>
-					<s xml:lang="la" type="auto">Dominus faciat in illis signum bonae suae voluntatis et nostram Helvetiam tueatur; nam et in hanc parare ungulas suas aquilas illas cauda pavonina monstrosas certo certius existimatur.</s>
-					<s xml:lang="la" type="auto">Proinde magna concordia ut cohaereamus, res ipsa efflagitabit.</s>
+					<s n="13" xml:lang="la" type="auto">Haec ille ad me de amiraldo et magistro eius monetae; quae deinceps submittet, te non latebunt.</s>
+					<s n="14" xml:lang="la" type="auto">De Caesare nihil, nisi quod parare se pedetentim videtur adversus urbes maritimas Germanię, quae mirabili constantia retinendae pietatis coaluerunt.</s>
+					<s n="15" xml:lang="la" type="auto">Dominus faciat in illis signum bonae suae voluntatis et nostram Helvetiam tueatur; nam et in hanc parare ungulas suas aquilas illas cauda pavonina monstrosas certo certius existimatur.</s>
+					<s n="16" xml:lang="la" type="auto">Proinde magna concordia ut cohaereamus, res ipsa efflagitabit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="17" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sangalli, 14 die Aprilis, hora duodecima pomeridiana, anno 49.</s>
+					<s n="18" xml:lang="la" type="auto">Sangalli, 14 die Aprilis, hora duodecima pomeridiana, anno 49.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ioachimus Vadianus.</s>
+					<s n="19" xml:lang="la" type="auto">Ioachimus Vadianus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Praestantissimo viro D. Henrycho Bullingero, almae urbis Tigurinae episcopo, domino suo colendissimo.</s>
+					<s n="20" xml:lang="la" type="auto">Praestantissimo viro D. Henrycho Bullingero, almae urbis Tigurinae episcopo, domino suo colendissimo.</s>
 				</p>
 			</div>
 		</body>

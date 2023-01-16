@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 449, Nr.10 (f. 1-15)</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Xeroxkopie">IRG</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 449, Nr.10 (f. 1-15)</idno>
+						<idno subtype="Xeroxkopie">IRG</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -36,38 +39,23 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10006">
 				<correspAction type="sent">
-					<persName ref="person#1421" cert="high">
+					<!--
+					<persName ref="person1421" cert="high">
 						<forename cert="high">Peter</forename>
 						<surname cert="high">Hack</surname>
 					</persName>
-					<place source="#202" cert="high">
-						<settlement>Hall in Tirol</settlement>
-						<district>Tirol</district>
-						<country>Österreich</country>
-						<geo>47.280465 11.50545</geo>
-					</place>
+					-->
+					<persName ref="person1421" cert="high"/>
+					<place source="place202" cert="high"/>
 					<date when="1575-09-02" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10007"/>
-					<ref type="prev_chronologically" target="files.xml#10005"/>
+					<ref type="next_chronologically" target="file10007"/>
+					<ref type="prev_chronologically" target="file10005"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -77,11 +65,11 @@
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#9994"/>
+					<ref type="prev_same_addressee" target="file9994"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#9994"/>
+					<ref type="prev_with_addressee_as_sender" target="file9994"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

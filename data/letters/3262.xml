@@ -12,25 +12,28 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4643/214</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#167">Genf</settlement>
-						<institution>Bibliothèque publique et universitaire</institution>
-						<idno type="Kopie">Ms. lat. 107 A, fo 60r</idno>
-						<repository ref="archive#38">
+						<!--
+						<repository ref="archive38">
 							<name>Genf BPU</name>
-							<note type="Hinweis">dat.: 1557 Aug. 6.</note>
 							<ref target="http://institutions.ville-geneve.ch/fr/bge/"/>
 						</repository>
+						<settlement ref="place167">Genf</settlement>
+						<institution>Bibliothèque publique et universitaire</institution>
+						-->
+						<repository ref="archive38"/>
+						<idno subtype="Kopie">Ms. lat. 107 A, fo 60r</idno>
+						<idno subtype="Hinweis">dat.: 1557 Aug. 6.</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -58,29 +61,35 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#41">Bern</settlement>
-						<institution>Burgerbibliothek</institution>
-						<idno type="Kopie">B III 61, p. 674-675</idno>
-						<repository ref="archive#12">
+						<!--
+						<repository ref="archive12">
 							<name>Bern BB</name>
 							<ref target="https://www.burgerbib.ch/de"/>
 						</repository>
+						<settlement ref="place41">Bern</settlement>
+						<institution>Burgerbibliothek</institution>
+						-->
+						<repository ref="archive12"/>
+						<idno subtype="Kopie">B III 61, p. 674-675</idno>
 						<altIdentifier>
-							<idno type="Kopie">CA VI 32</idno>
+							<idno subtype="Kopie">CA VI 32</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 90,51</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">nach Kopie Bern</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 90,51</idno>
+						<idno subtype="Hinweis">nach Kopie Bern</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -89,53 +98,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3262">
 				<correspAction type="sent">
-					<persName ref="person#540" cert="low">
+					<!--
+					<persName ref="person540" cert="low">
 						<forename cert="low">Johannes</forename>
 						<surname cert="low">Calvin</surname>
 						<graphic type="portrait" url="portraits/540_Calvin_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Calvin"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118518534"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11418245"/>
 					</persName>
-					<place source="#167" cert="low">
-						<settlement>Genf</settlement>
-						<district>Genève</district>
-						<country>Schweiz</country>
-						<geo>46.20222 6.14569</geo>
-					</place>
+					-->
+					<persName ref="person540" cert="low"/>
+					<place source="place167" cert="low"/>
 					<date when="1557-08-06" cert="low"><note>1. Karte: Entwurf; Datum unsicher; (1557 August 7.) 6.</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3263"/>
-					<ref type="prev_chronologically" target="files.xml#3261"/>
-					<ref type="next_correspondence" target="files.xml#3263"/>
-					<ref type="prev_correspondence" target="files.xml#3244"/>
-					<ref type="next_correspondence_request" target="files.xml#3263"/>
-					<ref type="prev_correspondence_request" target="files.xml#3198"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3270"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3244"/>
-					<ref type="next_same_sender" target="files.xml#3263"/>
-					<ref type="prev_same_sender" target="files.xml#3198"/>
-					<ref type="next_same_addressee" target="files.xml#3264"/>
-					<ref type="prev_same_addressee" target="files.xml#3261"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3263"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3198"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3264"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3261"/>
-					<ref type="child" target="files.xml#3263"/>
+					<ref type="next_chronologically" target="file3263"/>
+					<ref type="prev_chronologically" target="file3261"/>
+					<ref type="next_correspondence" target="file3263"/>
+					<ref type="prev_correspondence" target="file3244"/>
+					<ref type="next_correspondence_request" target="file3263"/>
+					<ref type="prev_correspondence_request" target="file3198"/>
+					<ref type="next_correspondence_reaction" target="file3270"/>
+					<ref type="prev_correspondence_reaction" target="file3244"/>
+					<ref type="next_same_sender" target="file3263"/>
+					<ref type="prev_same_sender" target="file3198"/>
+					<ref type="next_same_addressee" target="file3264"/>
+					<ref type="prev_same_addressee" target="file3261"/>
+					<ref type="next_with_sender_as_addressee" target="file3263"/>
+					<ref type="prev_with_sender_as_addressee" target="file3198"/>
+					<ref type="next_with_addressee_as_sender" target="file3264"/>
+					<ref type="prev_with_addressee_as_sender" target="file3261"/>
+					<ref type="child" target="file3263"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -149,42 +157,42 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Dum in defensione communis doctrinae occupor, ecce vicini crudele nobiscum bellum gerunt, quo et ecclesiam hanc pessum dent et urbem funditus evertant.</s>
-					<s xml:lang="la" type="auto">Sed haec merces Christi servis ab ingrato mundo speranda est.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Dum in defensione communis doctrinae occupor, ecce vicini crudele nobiscum bellum gerunt, quo et ecclesiam hanc pessum dent et urbem funditus evertant.</s>
+					<s n="3" xml:lang="la" type="auto">Sed haec merces Christi servis ab ingrato mundo speranda est.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Prae moerore vix enarrare possum.</s>
+					<s n="4" xml:lang="la" type="auto">Prae moerore vix enarrare possum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quia exsules nullum toto sesquianno fecerant maledicendi finem, et saepius rogati Bernates resonderant: apud praefectos esse expostulandum, eorum hortatu nostri conquesti sunt de contumeliis, et quia suspicabantur (quod eventu probatum est) vafre se et malitiose tentari, ne laqueos sibi per incogitantiam induerent, diserte ante litis contestationem praefati erant se hac lege agere ut tantum probra et calumnias compesceret praefectus ac de ipso facto (ut loquuntur) cognosceret, sententias vero a senatu nostro contra exsules latas ne attingeret.</s>
-					<s xml:lang="la" type="auto">Postquam autem manifestis signis ostendit praefectus, se professum esse hostem, sciscitatus est demum an procurator urbis supersedere a sua protestatione vellet.</s>
-					<s xml:lang="la" type="auto">Hoc non impetrato negavit se ius posse reddere.</s>
+					<s n="5" xml:lang="la" type="auto">Quia exsules nullum toto sesquianno fecerant maledicendi finem, et saepius rogati Bernates resonderant: apud praefectos esse expostulandum, eorum hortatu nostri conquesti sunt de contumeliis, et quia suspicabantur (quod eventu probatum est) vafre se et malitiose tentari, ne laqueos sibi per incogitantiam induerent, diserte ante litis contestationem praefati erant se hac lege agere ut tantum probra et calumnias compesceret praefectus ac de ipso facto (ut loquuntur) cognosceret, sententias vero a senatu nostro contra exsules latas ne attingeret.</s>
+					<s n="6" xml:lang="la" type="auto">Postquam autem manifestis signis ostendit praefectus, se professum esse hostem, sciscitatus est demum an procurator urbis supersedere a sua protestatione vellet.</s>
+					<s n="7" xml:lang="la" type="auto">Hoc non impetrato negavit se ius posse reddere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Paulo post iussus est pronunciare.</s>
+					<s n="8" xml:lang="la" type="auto">Paulo post iussus est pronunciare.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dixit ergo se cogniturum de tota causa a principio et procuratori iniunxit ut suo examini subiceret quidquid actum hic fuerat.</s>
-					<s xml:lang="la" type="auto">Nulla sic erat provocandi causa quia extra litem pronunciabat.</s>
+					<s n="9" xml:lang="la" type="auto">Dixit ergo se cogniturum de tota causa a principio et procuratori iniunxit ut suo examini subiceret quidquid actum hic fuerat.</s>
+					<s n="10" xml:lang="la" type="auto">Nulla sic erat provocandi causa quia extra litem pronunciabat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ergo de nullitate protestatus est, quum neque idoneus esset iudex neque intra officii sui fines se contineret.</s>
-					<s xml:lang="la" type="auto">Quum soleant contentiosissimis quibusque dare quadraginta dies ad prosequendam appellationem, octavo post die iterum Bernae damnati sunt nostri.</s>
-					<s xml:lang="la" type="auto">Atrocior etiam data fuit sententia, ut sumptus omnes nosri mox rependerent.</s>
+					<s n="11" xml:lang="la" type="auto">Ergo de nullitate protestatus est, quum neque idoneus esset iudex neque intra officii sui fines se contineret.</s>
+					<s n="12" xml:lang="la" type="auto">Quum soleant contentiosissimis quibusque dare quadraginta dies ad prosequendam appellationem, octavo post die iterum Bernae damnati sunt nostri.</s>
+					<s n="13" xml:lang="la" type="auto">Atrocior etiam data fuit sententia, ut sumptus omnes nosri mox rependerent.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nemo provocaverat, illi tamen iudicant: nostri vocati non fuerant, damnantur tamen contumaciae praetextu.</s>
-					<s xml:lang="la" type="auto">Non arbitror hoc saeculo tam foedum exstitisse impudentiae exemplum.</s>
+					<s n="14" xml:lang="la" type="auto">Nemo provocaverat, illi tamen iudicant: nostri vocati non fuerant, damnantur tamen contumaciae praetextu.</s>
+					<s n="15" xml:lang="la" type="auto">Non arbitror hoc saeculo tam foedum exstitisse impudentiae exemplum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Non ad exsequendum modo festinat praefectus, sed iterum pronunciat, quoniam priori sententiae non est satisfactum: exsules esse innoxios, syndicos, senatum et totum urbis corpus ad subeundam eandem ignominiam et sarcienda omnia damna condemnat, perinde ac si nos praedae subiiceret, atque intra muros urbis teneret obsessos.</s>
+					<s n="16" xml:lang="la" type="auto">Non ad exsequendum modo festinat praefectus, sed iterum pronunciat, quoniam priori sententiae non est satisfactum: exsules esse innoxios, syndicos, senatum et totum urbis corpus ad subeundam eandem ignominiam et sarcienda omnia damna condemnat, perinde ac si nos praedae subiiceret, atque intra muros urbis teneret obsessos.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Non loquor hyperbolice: scias hoc uno solo cives et fortunis omnibus spoliatos et in custodiam coniectos, ne quis egredi audeat.</s>
-					<s xml:lang="la" type="auto">Hic iam portentum barbarae saevitiae audis, quod ne a belluis quidem metuendum erat.</s>
-					<s xml:lang="la" type="auto">Quod si feratur, ubi humanitas?</s>
-					<s xml:lang="la" type="auto">Et boni fratres nostri Bernenses otiosi quiescunt.</s>
+					<s n="17" xml:lang="la" type="auto">Non loquor hyperbolice: scias hoc uno solo cives et fortunis omnibus spoliatos et in custodiam coniectos, ne quis egredi audeat.</s>
+					<s n="18" xml:lang="la" type="auto">Hic iam portentum barbarae saevitiae audis, quod ne a belluis quidem metuendum erat.</s>
+					<s n="19" xml:lang="la" type="auto">Quod si feratur, ubi humanitas?</s>
+					<s n="20" xml:lang="la" type="auto">Et boni fratres nostri Bernenses otiosi quiescunt.</s>
 				</p>
 			</div>
 		</body>

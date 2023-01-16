@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1856</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 340,205 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 340,205 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 72,9</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 72,9</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -61,35 +67,33 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/797">
 				<correspAction type="sent">
-					<persName ref="person#3170" cert="high">
+					<!--
+					<persName ref="person3170" cert="high">
 						<forename cert="high">Felix</forename>
 						<surname cert="high">Tobler</surname>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person3170" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1550-01-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#798"/>
-					<ref type="prev_chronologically" target="files.xml#796"/>
+					<ref type="next_chronologically" target="file798"/>
+					<ref type="prev_chronologically" target="file796"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -98,12 +102,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#798"/>
-					<ref type="prev_same_addressee" target="files.xml#761"/>
+					<ref type="next_same_addressee" target="file798"/>
+					<ref type="prev_same_addressee" target="file761"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#798"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#761"/>
+					<ref type="next_with_addressee_as_sender" target="file798"/>
+					<ref type="prev_with_addressee_as_sender" target="file761"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -122,35 +126,35 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Viro magnanimo d. H. Bullingero patri ac mecęnati suo F[elix] Tobler S. D.</s>
+					<s n="1" xml:lang="la" type="auto">Viro magnanimo d. H. Bullingero patri ac mecęnati suo F[elix] Tobler S. D.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Etsi merito accuser, vir doctissime et patrone colendissime, quod in expensis nivibus hanc in harenam descenderim<note xml:id="fn1" type="footnote" n="1">Adagia 1, 9, 83 (ASD II/2 396, Nr. 883).</note> et istam mihi provintiam administrandam susceperim, quam vel omnino vel certe non satis pro dignitate rei sim administraturus, quod te negotiis perquam plurimis prius occupatum, (et quod hactenus non ausus fui) nunc demum meis ineptiis te interturbare et negotium facessere videor.</s>
-					<s xml:lang="la" type="auto">Caeterum postquam in mentem subiissent ea, quae scripsisti contubernali meo admodum familiaria molleque dulciora, non potui non oscitari et stimulus aliquis ad currentem addi, quin aliquas ad te literas darem, si non adeo tersas, lepidas, ut aliquid mereantur, tamen eas ex animo scriptas intelligere facile posses.</s>
-					<s xml:lang="la" type="auto">Simul negligentiae nomen formidans mihi soli hoc imponi veritus, si aliorum pede metiar, cum ipsi me dudum anteverterint.</s>
-					<s xml:lang="la" type="auto">Verum quoniam parum erat, imo nihil, quod dignum scriptu videretur tuaeque humanitati consentaneum, ad hoc usque temporis intervallum reservavi, quo rationes acceptorum et expensorum d. scolarchae scriberem.</s>
-					<s xml:lang="la" type="auto">Haec tibi visum fuit hac occasione oblata paucula scribere, non quod existimarim has/hos?</s>
-					<s xml:lang="la" type="auto">apud te aliquid valere, sed a tua humanitate rogaturus, ut, quemadmodum hactenus fecisti, me tuae fidei commendatum haberes.</s>
-					<s xml:lang="la" type="auto">Tibi enim me totum dedo, tuae misericordiae totum subiicio, ut, quemadmodum ipse novisti, quam curta nostra sit (ut dicitur) suppellex,<note xml:id="fn2" type="footnote" n="2">Vgl. Persius, Saturae, 4, 52.</note> nobis pro tua humanitate sic prospectum velis, ut id utrique nostrum commodissimum esse videatur.</s>
-					<s xml:lang="la" type="auto">Si enim dominus suam concesserit gratiam, quod facturum confido, ut aliquid subeundum sit cuiuscunque gratiae, videbitis non immemori neque ingrato ista omnia fuisse collocata.</s>
-					<s xml:lang="la" type="auto">Sic enim affectus natura sum, ut cuiuscumque beneficia recepissem, etsi non possem refferrem, tamen ex animo relata vellem.</s>
+					<s n="2" xml:lang="la" type="auto">Etsi merito accuser, vir doctissime et patrone colendissime, quod in expensis nivibus hanc in harenam descenderim<note xml:id="fn1" type="footnote" n="1">Adagia 1, 9, 83 (ASD II/2 396, Nr. 883).</note> et istam mihi provintiam administrandam susceperim, quam vel omnino vel certe non satis pro dignitate rei sim administraturus, quod te negotiis perquam plurimis prius occupatum, (et quod hactenus non ausus fui) nunc demum meis ineptiis te interturbare et negotium facessere videor.</s>
+					<s n="3" xml:lang="la" type="auto">Caeterum postquam in mentem subiissent ea, quae scripsisti contubernali meo admodum familiaria molleque dulciora, non potui non oscitari et stimulus aliquis ad currentem addi, quin aliquas ad te literas darem, si non adeo tersas, lepidas, ut aliquid mereantur, tamen eas ex animo scriptas intelligere facile posses.</s>
+					<s n="4" xml:lang="la" type="auto">Simul negligentiae nomen formidans mihi soli hoc imponi veritus, si aliorum pede metiar, cum ipsi me dudum anteverterint.</s>
+					<s n="5" xml:lang="la" type="auto">Verum quoniam parum erat, imo nihil, quod dignum scriptu videretur tuaeque humanitati consentaneum, ad hoc usque temporis intervallum reservavi, quo rationes acceptorum et expensorum d. scolarchae scriberem.</s>
+					<s n="6" xml:lang="la" type="auto">Haec tibi visum fuit hac occasione oblata paucula scribere, non quod existimarim has/hos?</s>
+					<s n="7" xml:lang="la" type="auto">apud te aliquid valere, sed a tua humanitate rogaturus, ut, quemadmodum hactenus fecisti, me tuae fidei commendatum haberes.</s>
+					<s n="8" xml:lang="la" type="auto">Tibi enim me totum dedo, tuae misericordiae totum subiicio, ut, quemadmodum ipse novisti, quam curta nostra sit (ut dicitur) suppellex,<note xml:id="fn2" type="footnote" n="2">Vgl. Persius, Saturae, 4, 52.</note> nobis pro tua humanitate sic prospectum velis, ut id utrique nostrum commodissimum esse videatur.</s>
+					<s n="9" xml:lang="la" type="auto">Si enim dominus suam concesserit gratiam, quod facturum confido, ut aliquid subeundum sit cuiuscunque gratiae, videbitis non immemori neque ingrato ista omnia fuisse collocata.</s>
+					<s n="10" xml:lang="la" type="auto">Sic enim affectus natura sum, ut cuiuscumque beneficia recepissem, etsi non possem refferrem, tamen ex animo relata vellem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Postremum est, quod te etiam atque etiam rogatum velim, quod tuum studium et favorem maxime desiderat, si quid residet in te amoris erga me, quod scio, illud hoc negocio inprimis ostendas, ut studiis amplioribus frui liceat, si modo tuae humanitati non displicuerit.</s>
-					<s xml:lang="la" type="auto">Ego sane, quae tuam dignitatem, quae est per se amplissima, pertinere arbitror, summo semper studio summaque diligentia suscipiam; imprimis etiam curabo omni, qua possim, observantia clarissimos viros mecęnates patresque meos, quod et pro vetustate necessitudinis et pro beneficiis vestris et pro dignitate tua facere debeo, ne unquam etiam a vobis ingratitudinis nota inuri queat, quoad vocationi meae satisfacere possim, ad quam ab incunabulis me accersitum non dubitaverim.</s>
+					<s n="11" xml:lang="la" type="auto">Postremum est, quod te etiam atque etiam rogatum velim, quod tuum studium et favorem maxime desiderat, si quid residet in te amoris erga me, quod scio, illud hoc negocio inprimis ostendas, ut studiis amplioribus frui liceat, si modo tuae humanitati non displicuerit.</s>
+					<s n="12" xml:lang="la" type="auto">Ego sane, quae tuam dignitatem, quae est per se amplissima, pertinere arbitror, summo semper studio summaque diligentia suscipiam; imprimis etiam curabo omni, qua possim, observantia clarissimos viros mecęnates patresque meos, quod et pro vetustate necessitudinis et pro beneficiis vestris et pro dignitate tua facere debeo, ne unquam etiam a vobis ingratitudinis nota inuri queat, quoad vocationi meae satisfacere possim, ad quam ab incunabulis me accersitum non dubitaverim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quapropter nunc modum faciam.</s>
+					<s n="13" xml:lang="la" type="auto">Quapropter nunc modum faciam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">In praesentia tantum significandum putavi, ut potius amorem tibi ostenderem meum quam ostentarem prudentiam.</s>
-					<s xml:lang="la" type="auto">Vale et tibi cum familia tua foelicissimum huius anni initium, medium et finem imprecor.</s>
-					<s xml:lang="la" type="auto">Vale iterum.</s>
-					<s xml:lang="la" type="auto">Datae Bernae anno salutis 1550. 7. idibus ianuarii.</s>
+					<s n="14" xml:lang="la" type="auto">In praesentia tantum significandum putavi, ut potius amorem tibi ostenderem meum quam ostentarem prudentiam.</s>
+					<s n="15" xml:lang="la" type="auto">Vale et tibi cum familia tua foelicissimum huius anni initium, medium et finem imprecor.</s>
+					<s n="16" xml:lang="la" type="auto">Vale iterum.</s>
+					<s n="17" xml:lang="la" type="auto">Datae Bernae anno salutis 1550. 7. idibus ianuarii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Foelix Tobler, tuae humanitati semper obedientissimus.</s>
-					<s xml:lang="la" type="auto">Clarissimo theologo m. Heinrico Bullingero, patriae mecęnati suo longe charissimo.</s>
+					<s n="18" xml:lang="la" type="auto">Foelix Tobler, tuae humanitati semper obedientissimus.</s>
+					<s n="19" xml:lang="la" type="auto">Clarissimo theologo m. Heinrico Bullingero, patriae mecęnati suo longe charissimo.</s>
 				</p>
 			</div>
 		</body>

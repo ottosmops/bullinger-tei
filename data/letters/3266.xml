@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4647/218</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,655</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,655</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,13 +54,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 90,55</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 90,55</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -71,52 +77,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3266">
 				<correspAction type="sent">
-					<persName ref="person#3704" cert="high">
+					<!--
+					<persName ref="person3704" cert="high">
 						<forename cert="high">Friedrich</forename>
 						<surname cert="high">von Salis</surname>
-						<addName type="main">von Salis (a Salize, de Salicibus), Friedrich</addName>
-						<graphic type="portrait" url="portraits/3704_Salis-Wappen.png"/>
+						<persName type="main" ref="person8432>von Salis (a Salize, de Salicibus), Friedrich</addName>
+						<graphic type="portrait" url="portraits/3704_Salis_Wappen.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Salis_%28Adelsgeschlecht%29"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/119041782"/>
 					</persName>
-					<place source="#522" cert="high">
-						<settlement>Venedig</settlement>
-						<district>Veneto</district>
-						<country>Italien</country>
-						<geo>45.43713 12.33265</geo>
-					</place>
+					-->
+					<persName ref="person3704" cert="high"/>
+					<place source="place522" cert="high"/>
 					<date when="1557-08-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3267"/>
-					<ref type="prev_chronologically" target="files.xml#3265"/>
-					<ref type="next_correspondence" target="files.xml#3290"/>
-					<ref type="prev_correspondence" target="files.xml#3257"/>
-					<ref type="next_correspondence_request" target="files.xml#3290"/>
-					<ref type="prev_correspondence_request" target="files.xml#3257"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3384"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3190"/>
-					<ref type="next_same_sender" target="files.xml#3290"/>
-					<ref type="prev_same_sender" target="files.xml#3257"/>
-					<ref type="next_same_addressee" target="files.xml#3270"/>
-					<ref type="prev_same_addressee" target="files.xml#3264"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3290"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3257"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3270"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3264"/>
+					<ref type="next_chronologically" target="file3267"/>
+					<ref type="prev_chronologically" target="file3265"/>
+					<ref type="next_correspondence" target="file3290"/>
+					<ref type="prev_correspondence" target="file3257"/>
+					<ref type="next_correspondence_request" target="file3290"/>
+					<ref type="prev_correspondence_request" target="file3257"/>
+					<ref type="next_correspondence_reaction" target="file3384"/>
+					<ref type="prev_correspondence_reaction" target="file3190"/>
+					<ref type="next_same_sender" target="file3290"/>
+					<ref type="prev_same_sender" target="file3257"/>
+					<ref type="next_same_addressee" target="file3270"/>
+					<ref type="prev_same_addressee" target="file3264"/>
+					<ref type="next_with_sender_as_addressee" target="file3290"/>
+					<ref type="prev_with_sender_as_addressee" target="file3257"/>
+					<ref type="next_with_addressee_as_sender" target="file3270"/>
+					<ref type="prev_with_addressee_as_sender" target="file3264"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -125,55 +130,58 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="3266/Autograph/00 E_II_365__fol__655_r_.tif" n="1"/>
+		<graphic url="3266/Autograph/01 E_II_365__fol__655_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Bullingero Friderichus a Salice S. D.</s>
+					<s n="1" xml:lang="la" type="auto">Clarissimo viro d. Bullingero Friderichus a Salice S. D.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Paucis diebus elapsis per d. Petrum Pernam ad te scripsi.</s>
+					<s n="2" xml:lang="la" type="auto">Paucis diebus elapsis per d. Petrum Pernam ad te scripsi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nova autem, quę significavi tum, in dies asseverantur veriora.</s>
+					<s n="3" xml:lang="la" type="auto">Nova autem, quę significavi tum, in dies asseverantur veriora.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Captus autem est in conflictu illo versus Palianum, de quo scripsi, d. Iulius Ursinus, qui praeerat equitibus pontificis.</s>
+					<s n="4" xml:lang="la" type="auto">Captus autem est in conflictu illo versus Palianum, de quo scripsi, d. Iulius Ursinus, qui praeerat equitibus pontificis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nunc vero hic dicitur Romae penuria frumenti et vini admodum laborari, et quod ingens hominum copia urbem reliquerit et alio migraverit ob penuriam, adeo quod reperiuntur 5542 aedes possessoribus vacuę, quae alioquin solebant esse habitatoribus refertissimae.</s>
+					<s n="5" xml:lang="la" type="auto">Nunc vero hic dicitur Romae penuria frumenti et vini admodum laborari, et quod ingens hominum copia urbem reliquerit et alio migraverit ob penuriam, adeo quod reperiuntur 5542 aedes possessoribus vacuę, quae alioquin solebant esse habitatoribus refertissimae.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pappa vero timens repentinem aliquam seditionem a civibus contra sese concitari, quippe cum omnes iniquissime ferant hoc bellum et Romanae quidem ditioni velut exitiale ab ipso pontifice commotum, ut sit cautior, misit accersitum ducem Guisanum multis pollicitationibus alliciens, ut confestim cum exercitu se Romam conferat, quoque enixius pontificis nomine id a Guisano petatur, etiam in causa est, quod Marcus Antonius Columna auctus est 8000 peditum et 1000 equitibus ei missis a duce Albae, crediturque Palianum brevi admodum expugnatum iri, quo facto censetur Columnam exercitum suum urbi admoturum esse coniunctis prius, ut nonnulli arbitrantur, copiis cum duce Albae.</s>
-					<s xml:lang="la" type="auto">Insuper pontifex petiit a duce Ferrariensi, ut sibi ocyus mittat 2500 Helvetios, quos apud se habet; sed dux id facere recusavit asserens sibi hiis opus esse pro defensione sui ducatus, et revera videtur aliquid discrimen ei imminere; nam Caesarianae copiae admodum auguntur Corregii et Guastallae, locis non longe dissitis ab agro Ferrariensi.</s>
+					<s n="6" xml:lang="la" type="auto">Pappa vero timens repentinem aliquam seditionem a civibus contra sese concitari, quippe cum omnes iniquissime ferant hoc bellum et Romanae quidem ditioni velut exitiale ab ipso pontifice commotum, ut sit cautior, misit accersitum ducem Guisanum multis pollicitationibus alliciens, ut confestim cum exercitu se Romam conferat, quoque enixius pontificis nomine id a Guisano petatur, etiam in causa est, quod Marcus Antonius Columna auctus est 8000 peditum et 1000 equitibus ei missis a duce Albae, crediturque Palianum brevi admodum expugnatum iri, quo facto censetur Columnam exercitum suum urbi admoturum esse coniunctis prius, ut nonnulli arbitrantur, copiis cum duce Albae.</s>
+					<s n="7" xml:lang="la" type="auto">Insuper pontifex petiit a duce Ferrariensi, ut sibi ocyus mittat 2500 Helvetios, quos apud se habet; sed dux id facere recusavit asserens sibi hiis opus esse pro defensione sui ducatus, et revera videtur aliquid discrimen ei imminere; nam Caesarianae copiae admodum auguntur Corregii et Guastallae, locis non longe dissitis ab agro Ferrariensi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Adde, quod et marchio Pescariae per agrum Mantuanum conscribit milites et alias etiam, quam potest maxime, instruit militiam profecturus contra Ferrariensem.</s>
-					<s xml:lang="la" type="auto">Classis Turcica applicuit ad Vallonam, ut dicunt, instruiturque copiosius commeatu et omnibus futurae navigationi necessariis instauratur; sed quo tandem sit profectura, ignoratur.</s>
-					<s xml:lang="la" type="auto">Sunt quidem, qui arbitrantur eam ad provinciam Narbonensem accessuram ibidemque in hybernis commoraturam, alii vero rentur portum petituram apud Anchonam et alia loca a pontifice duci Guisano designata, ut scilicet classis auxilio Galli uti queant, quoquo versus regi christianissimo fuerit opus, circa ora illa maritima.</s>
-					<s xml:lang="la" type="auto">Et praedicta quidem omnia, ut accepi, ita et tibi trado, veniam praefatus, si fuerint minus vera.</s>
-					<s xml:lang="la" type="auto">Ego, colendissime mi domine Bullingere, hic diutius detineor, quam vellem; at connivendum est potentioribus.</s>
-					<s xml:lang="la" type="auto">Sane pertracto negocium pietati christianae admodum, si pro voto cedat, profuturum, atque eo cunctatius expedior, qui negocium est religiosum.</s>
+					<s n="8" xml:lang="la" type="auto">Adde, quod et marchio Pescariae per agrum Mantuanum conscribit milites et alias etiam, quam potest maxime, instruit militiam profecturus contra Ferrariensem.</s>
+					<s n="9" xml:lang="la" type="auto">Classis Turcica applicuit ad Vallonam, ut dicunt, instruiturque copiosius commeatu et omnibus futurae navigationi necessariis instauratur; sed quo tandem sit profectura, ignoratur.</s>
+					<s n="10" xml:lang="la" type="auto">Sunt quidem, qui arbitrantur eam ad provinciam Narbonensem accessuram ibidemque in hybernis commoraturam, alii vero rentur portum petituram apud Anchonam et alia loca a pontifice duci Guisano designata, ut scilicet classis auxilio Galli uti queant, quoquo versus regi christianissimo fuerit opus, circa ora illa maritima.</s>
+					<s n="11" xml:lang="la" type="auto">Et praedicta quidem omnia, ut accepi, ita et tibi trado, veniam praefatus, si fuerint minus vera.</s>
+					<s n="12" xml:lang="la" type="auto">Ego, colendissime mi domine Bullingere, hic diutius detineor, quam vellem; at connivendum est potentioribus.</s>
+					<s n="13" xml:lang="la" type="auto">Sane pertracto negocium pietati christianae admodum, si pro voto cedat, profuturum, atque eo cunctatius expedior, qui negocium est religiosum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nullibi enim desunt adversarii, estque, qui nobis adversatur, semper sui simillimus, suntque tales et eius sequaces et pedisequi.</s>
-					<s xml:lang="la" type="auto">Utcunque sit, tamen vincet dominus deus.</s>
+					<s n="14" xml:lang="la" type="auto">Nullibi enim desunt adversarii, estque, qui nobis adversatur, semper sui simillimus, suntque tales et eius sequaces et pedisequi.</s>
+					<s n="15" xml:lang="la" type="auto">Utcunque sit, tamen vincet dominus deus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Mihi non constat, quando evolvam me ex hoc labyrintho; insto tamen diligenter, ut, quam fieri possit citius, expediar, non absque spe petitis potiundi.</s>
-					<s xml:lang="la" type="auto">Simul autem atque repatriavero, de singulis ad te latius scribam.</s>
+					<s n="16" xml:lang="la" type="auto">Mihi non constat, quando evolvam me ex hoc labyrintho; insto tamen diligenter, ut, quam fieri possit citius, expediar, non absque spe petitis potiundi.</s>
+					<s n="17" xml:lang="la" type="auto">Simul autem atque repatriavero, de singulis ad te latius scribam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tu interim cura, ut bene valeas cum tota familia, quam meo nomine plurimum salutabis, sed et reverendos d. Bernardinum Occhinum, d. Petrum Martirem itemque dominos generos tuos omnes, dominum Rodolphum Waltherum et d. Frisium, reliquos amicos omnes nomine meo pariter salutabis.</s>
+					<s n="18" xml:lang="la" type="auto">Tu interim cura, ut bene valeas cum tota familia, quam meo nomine plurimum salutabis, sed et reverendos d. Bernardinum Occhinum, d. Petrum Martirem itemque dominos generos tuos omnes, dominum Rodolphum Waltherum et d. Frisium, reliquos amicos omnes nomine meo pariter salutabis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="19" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Venetiis 9. augusti 1557.</s>
-					<s xml:lang="la" type="auto">Saluta itidem filium meum, quem tibi et piis omnibus semper commendatum opto etc.</s>
-					<s xml:lang="la" type="auto">Ut qui maxime tuus idem qui semper Federicus a Salice.</s>
+					<s n="20" xml:lang="la" type="auto">Venetiis 9. augusti 1557.</s>
+					<s n="21" xml:lang="la" type="auto">Saluta itidem filium meum, quem tibi et piis omnibus semper commendatum opto etc.</s>
+					<s n="22" xml:lang="la" type="auto">Ut qui maxime tuus idem qui semper Federicus a Salice.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse fehlt.]</note>

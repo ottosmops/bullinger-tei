@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=902</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=902</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 346,78</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 346,78</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,8 +49,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Ist nach <placeName ref="1107">Tübingen</placeName> gereist, um mit
-								<persName ref="146">Philipp</persName> [<persName ref="146">Melanchthon</persName>] über die
+								Ist nach <placeName ref="place1107">Tübingen</placeName> gereist, um mit
+								Philipp [<persName ref="person146">Melanchthon</persName>] über die
 								Beförderung der Konkordie zu sprechen; wird nach seiner Rückkehr ausführlicher berichten.
 							</p>
 						</summary>
@@ -58,45 +61,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10944">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<place source="#512" cert="high">
-						<settlement>Tübingen</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>48.52266 9.05222</geo>
-					</place>
+					-->
+					<persName ref="person4079" cert="high"/>
+					<place source="place512" cert="high"/>
 					<date when="1536-10-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10945"/>
-					<ref type="prev_chronologically" target="files.xml#10943"/>
-					<ref type="next_correspondence" target="files.xml#10950"/>
-					<ref type="prev_correspondence" target="files.xml#10941"/>
-					<ref type="next_correspondence_request" target="files.xml#10950"/>
-					<ref type="prev_correspondence_request" target="files.xml#10941"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10958"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10599"/>
-					<ref type="next_same_sender" target="files.xml#10950"/>
-					<ref type="prev_same_sender" target="files.xml#10941"/>
-					<ref type="next_same_addressee" target="files.xml#10947"/>
-					<ref type="prev_same_addressee" target="files.xml#10934"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10950"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10941"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10947"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10934"/>
+					<ref type="next_chronologically" target="file10945"/>
+					<ref type="prev_chronologically" target="file10943"/>
+					<ref type="next_correspondence" target="file10950"/>
+					<ref type="prev_correspondence" target="file10941"/>
+					<ref type="next_correspondence_request" target="file10950"/>
+					<ref type="prev_correspondence_request" target="file10941"/>
+					<ref type="next_correspondence_reaction" target="file10958"/>
+					<ref type="prev_correspondence_reaction" target="file10599"/>
+					<ref type="next_same_sender" target="file10950"/>
+					<ref type="prev_same_sender" target="file10941"/>
+					<ref type="next_same_addressee" target="file10947"/>
+					<ref type="prev_same_addressee" target="file10934"/>
+					<ref type="next_with_sender_as_addressee" target="file10950"/>
+					<ref type="prev_with_sender_as_addressee" target="file10941"/>
+					<ref type="next_with_addressee_as_sender" target="file10947"/>
+					<ref type="prev_with_addressee_as_sender" target="file10934"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -113,26 +120,26 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salus.</s>
+					<s n="1" xml:lang="la" type="auto">Salus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cum sperarem me <persName ref="146">Philippum</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="146">Philipp Melanchthon</persName>.</note> invenire <placeName ref="1107">Tubingae</placeName>, accinxi me itineri, neque me fefellit spes mea.</s>
-					<s xml:lang="la" type="auto">Inveni illum impeditum a principe<note xml:id="fn3" type="footnote" n="3"><persName ref="224">Herzog Ulrich von Württemberg</persName>.</note> et etiamnum agentem <placeName ref="1107">Tubingae</placeName> reformandae achademiae caussa<note xml:id="fn4" type="footnote" n="4">Siehe oben <ref target="file#10942">Nr. 900</ref>, Anm. 10.</note>.</s>
-					<s xml:lang="la" type="auto">Ego cum illo nunc agam de concordiae negotio non impediendo, sed firmius et certius concludendo.</s>
-					<s xml:lang="la" type="auto">Ubi domum rediero, faciam te de reliquis certiorem<note xml:id="fn5" type="footnote" n="5">Siehe unten <ref target="file#10950">Nr. 908</ref>.</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Cum sperarem me <persName ref="person146">Philippum</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="person146">Philipp Melanchthon</persName>.</note> invenire <placeName ref="place1107">Tubingae</placeName>, accinxi me itineri, neque me fefellit spes mea.</s>
+					<s n="3" xml:lang="la" type="auto">Inveni illum impeditum a principe<note xml:id="fn3" type="footnote" n="3">Herzog <persName ref="person224">Ulrich</persName> von Württemberg.</note> et etiamnum agentem <placeName ref="place1107">Tubingae</placeName> reformandae achademiae caussa<note xml:id="fn4" type="footnote" n="4">Siehe oben <ref target="file10942">Nr. 900</ref>, Anm. 10.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Ego cum illo nunc agam de concordiae negotio non impediendo, sed firmius et certius concludendo.</s>
+					<s n="5" xml:lang="la" type="auto">Ubi domum rediero, faciam te de reliquis certiorem<note xml:id="fn5" type="footnote" n="5">Siehe unten <ref target="file10950">Nr. 908</ref>.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale cum fratribus et dominis.</s>
+					<s n="6" xml:lang="la" type="auto">Vale cum fratribus et dominis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum <placeName ref="1107">Tubingae</placeName>.</s>
+					<s n="7" xml:lang="la" type="auto">Datum <placeName ref="place1107">Tubingae</placeName>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Io. <persName ref="263">Zvick</persName>.</s>
+					<s n="8" xml:lang="la" type="auto">Tuus <persName ref="person263">Io. Zvick</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Hainricho Bullingero, Tigurinae ecclesię antistiti, fratri optimo.</s>
+					<s n="9" xml:lang="la" type="auto">Domino Hainricho Bullingero, Tigurinae ecclesię antistiti, fratri optimo.</s>
 				</p>
 			</div>
 		</body>

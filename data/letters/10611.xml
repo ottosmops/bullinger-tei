@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=573</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=573</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 364,8r</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 364,8r</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,12 +49,12 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Leitet <persName ref="19">Ambrosius</persName> [<persName ref="19">Blarers</persName>] Bitte
-								weiter, <persName ref="140">Konrad Lüthard</persName> zu senden,
-								<persName ref="165">Pellikan</persName> für seinen Brief an die Pfullinger Nonnen zu danken - da die
-								Zürcher <persName ref="165">Pellikan</persName> nicht als Hebräischlehrer [nach
-								<placeName ref="1107">Tübingen</placeName>] ziehen lassen wollen, soll er nicht weiter bedrängt
-								werden - und ihn zu entschuldigen, daß er nicht selbst schrieb. <persName ref="263">Zwick</persName>
+								Leitet Ambrosius [<persName ref="person19">Blarers</persName>] Bitte
+								weiter, <persName ref="person140">Konrad Lüthard</persName> zu senden,
+								<persName ref="person165">Pellikan</persName> für seinen Brief an die Pfullinger Nonnen zu danken - da die
+								Zürcher <persName ref="person165">Pellikan</persName> nicht als Hebräischlehrer [nach
+								<placeName ref="place1107">Tübingen</placeName>] ziehen lassen wollen, soll er nicht weiter bedrängt
+								werden - und ihn zu entschuldigen, daß er nicht selbst schrieb. <persName ref="person263">Zwick</persName>
 								empfiehlt den Briefüberbringer.
 							</p>
 						</summary>
@@ -69,52 +72,60 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10611">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<place source="#257" cert="high">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person4079" cert="high"/>
+					<place source="place257" cert="high"/>
 					<date when="1535-04-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<persName ref="person#2508" cert="high">
+					-->
+					<persName ref="person495" cert="high"/>
+					<!--
+					<persName ref="person2508" cert="high">
 						<forename cert="high">Konrad</forename>
 						<surname cert="high">Pellikan</surname>
-						<addName type="main">Pellikan (Kürschner), Konrad</addName>
+						<persName type="main" ref="person8127>Pellikan (Kürschner), Konrad</addName>
 						<graphic type="portrait" url="portraits/2514_Pelikan_Konrad.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Konrad_Pellikan"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118739867"/>
 					</persName>
+					-->
+					<persName ref="person2508" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10612"/>
-					<ref type="prev_chronologically" target="files.xml#10610"/>
-					<ref type="next_correspondence" target="files.xml#10612"/>
-					<ref type="prev_correspondence" target="files.xml#10470"/>
-					<ref type="next_correspondence_request" target="files.xml#10612"/>
-					<ref type="prev_correspondence_request" target="files.xml#10470"/>
+					<ref type="next_chronologically" target="file10612"/>
+					<ref type="prev_chronologically" target="file10610"/>
+					<ref type="next_correspondence" target="file10612"/>
+					<ref type="prev_correspondence" target="file10470"/>
+					<ref type="next_correspondence_request" target="file10612"/>
+					<ref type="prev_correspondence_request" target="file10470"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10612"/>
-					<ref type="prev_same_sender" target="files.xml#10610"/>
-					<ref type="next_same_addressee" target="files.xml#10806"/>
-					<ref type="prev_same_addressee" target="files.xml#10540"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10612"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10610"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10806"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10540"/>
+					<ref type="next_same_sender" target="file10612"/>
+					<ref type="prev_same_sender" target="file10610"/>
+					<ref type="next_same_addressee" target="file10806"/>
+					<ref type="prev_same_addressee" target="file10540"/>
+					<ref type="next_with_sender_as_addressee" target="file10612"/>
+					<ref type="prev_with_sender_as_addressee" target="file10610"/>
+					<ref type="next_with_addressee_as_sender" target="file10806"/>
+					<ref type="prev_with_addressee_as_sender" target="file10540"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -128,34 +139,34 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salus.</s>
+					<s n="1" xml:lang="la" type="auto">Salus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">"Bullingero pręterea scribe<note xml:id="fn1" type="footnote" n="1">Diese Bitte <persName ref="19">Ambrosius Blarers</persName> (vgl. Z. 12) ist einem nicht erhaltenen, wahrscheinlich gleichzeitig mit zwei weiteren Briefen am 8. April geschriebenen und am 12. April in <placeName ref="565">Konstanz</placeName> eingetroffenen Schreiben entnommen; vgl. Blarer BW I 679f.</note>, ut <persName ref="140">Conradum</persName> Luthardum, quem semel atque iterum commendavit<note xml:id="fn2" type="footnote" n="2">Bullingers Empfehlungsbriefe sind nicht erhalten, vgl. aber oben <ref target="file#10566">Nr. 530</ref>, 4-6.</note>, mittat indicans, quid hominis sit et qualis sibi ecclesia credi merito debeat.</s>
-					<s xml:lang="la" type="auto"><persName ref="165">Pellicano</persName> meis verbis gratias age pro epistola ad <placeName ref="850">Pfullingenses</placeName><note xml:id="fn3" type="footnote" n="3"><persName ref="19">Blarer</persName> hatte vergeblich versucht, <persName ref="165">Pellikan</persName> als Seelsorger für das Klarissenkloster <placeName ref="850">Pfullingen</placeName> (Kr. Reutlingen, Baden-Württemberg) zu gewinnen. <persName ref="165">Pellikan</persName> sandte stattdessen gegen Ende März eine Trostschrift für die Nonnen, vgl. <persName ref="19">Blarer</persName> BW I 659. 677.</note>; nam spero vehementer commodaturam muliercularum istarum ingenio.</s>
+					<s n="2" xml:lang="la" type="auto">"Bullingero pręterea scribe<note xml:id="fn1" type="footnote" n="1">Diese Bitte <persName ref="person19">Ambrosius Blarers</persName> (vgl. Z. 12) ist einem nicht erhaltenen, wahrscheinlich gleichzeitig mit zwei weiteren Briefen am 8. April geschriebenen und am 12. April in <placeName ref="place565">Konstanz</placeName> eingetroffenen Schreiben entnommen; vgl. Blarer BW I 679f.</note>, ut <persName ref="person140">Conradum</persName> Luthardum, quem semel atque iterum commendavit<note xml:id="fn2" type="footnote" n="2">Bullingers Empfehlungsbriefe sind nicht erhalten, vgl. aber oben <ref target="file10566">Nr. 530</ref>, 4-6.</note>, mittat indicans, quid hominis sit et qualis sibi ecclesia credi merito debeat.</s>
+					<s n="3" xml:lang="la" type="auto"><persName ref="person165">Pellicano</persName> meis verbis gratias age pro epistola ad <placeName ref="place850">Pfullingenses</placeName><note xml:id="fn3" type="footnote" n="3"><persName ref="person19">Blarer</persName> hatte vergeblich versucht, <persName ref="person165">Pellikan</persName> als Seelsorger für das Klarissenkloster <placeName ref="place850">Pfullingen</placeName> (Kr. Reutlingen, Baden-Württemberg) zu gewinnen. <persName ref="person165">Pellikan</persName> sandte stattdessen gegen Ende März eine Trostschrift für die Nonnen, vgl. <persName ref="person19">Blarer</persName> BW I 659. 677.</note>; nam spero vehementer commodaturam muliercularum istarum ingenio.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="201"/>Caeterum, quando in praelegendis hic hebreis vel non potest vel non vult perpetuam operam suam polliceri<note xml:id="fn4" type="footnote" n="4"><persName ref="165">Pellikan</persName> war am 17. Februar 1535 von <persName ref="19">Blarer</persName> gebeten worden, einer Berufung als Hebräischlehrer zu folgen. Am 22. Februar hatte er für einige Zeit zugesagt, doch ließen ihn die Zürcher nicht ziehen; vgl. <persName ref="19">Blarer</persName> BW 1659. 662. 676f.</note> et Bullingerus scribit<note xml:id="fn5" type="footnote" n="5">Bullingers Brief ist nicht erhalten.</note> istuc nos a Tigurinis impetrare non posse, non erimus porro molesti viro tam modis omnibus sancto, cui me quam potes diligenter, pariter et Bullingero, quod non scribo, excusabis.</s>
-					<s xml:lang="la" type="auto">Supra vires et modum divexant me tot ecclesiarum negotia, ut nihil sit tempusculi reliquum, quod amicis tam insignibus salutandis dedicare valearn."</s>
-					<s xml:lang="la" type="auto">Haec <persName ref="19">Ambrosius</persName>, quibus descriptis officium fecisse volo.</s>
+					<s n="4" xml:lang="la" type="auto"><pb type="edition" next="201"/>Caeterum, quando in praelegendis hic hebreis vel non potest vel non vult perpetuam operam suam polliceri<note xml:id="fn4" type="footnote" n="4"><persName ref="person165">Pellikan</persName> war am 17. Februar 1535 von <persName ref="person19">Blarer</persName> gebeten worden, einer Berufung als Hebräischlehrer zu folgen. Am 22. Februar hatte er für einige Zeit zugesagt, doch ließen ihn die Zürcher nicht ziehen; vgl. <persName ref="person19">Blarer</persName> BW 1659. 662. 676f.</note> et Bullingerus scribit<note xml:id="fn5" type="footnote" n="5">Bullingers Brief ist nicht erhalten.</note> istuc nos a Tigurinis impetrare non posse, non erimus porro molesti viro tam modis omnibus sancto, cui me quam potes diligenter, pariter et Bullingero, quod non scribo, excusabis.</s>
+					<s n="5" xml:lang="la" type="auto">Supra vires et modum divexant me tot ecclesiarum negotia, ut nihil sit tempusculi reliquum, quod amicis tam insignibus salutandis dedicare valeam."</s>
+					<s n="6" xml:lang="la" type="auto">Haec <persName ref="person19">Ambrosius</persName>, quibus descriptis officium fecisse volo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valete perpetuo.</s>
+					<s n="7" xml:lang="la" type="auto">Valete perpetuo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="565">Constantiae</placeName>, 12. aprilis 1535.</s>
+					<s n="8" xml:lang="la" type="auto"><placeName ref="place565">Constantiae</placeName>, 12. aprilis 1535.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pręsentium literarum latori<note xml:id="fn6" type="footnote" n="6">Unbekannt.</note> non nihil negotii est apud vestros<note xml:id="fna" type="footnote" n="a">vestros <hi>korr. aus</hi> tuos.</note>, quod ex ipso intelliges.</s>
-					<s xml:lang="la" type="auto">Est autem vere bonus et pius vir, qui magis deo quam hominibus serviens aliquandiu apud nos exulem egit.</s>
-					<s xml:lang="la" type="auto">Si manum porrexeritis<note xml:id="fnb" type="footnote" n="b">porrexeritis <hi>korr. aus</hi> porrexeris.</note>, non indigno aut ingrato feceritis<note xml:id="fnc" type="footnote" n="c">feceritis <hi>korr. aus</hi> feceris.</note>.</s>
+					<s n="9" xml:lang="la" type="auto">Pręsentium literarum latori<note xml:id="fn6" type="footnote" n="6">Unbekannt.</note> non nihil negotii est apud vestros<note xml:id="fna" type="footnote" n="a">vestros <hi>korr. aus</hi> tuos.</note>, quod ex ipso intelliges.</s>
+					<s n="10" xml:lang="la" type="auto">Est autem vere bonus et pius vir, qui magis deo quam hominibus serviens aliquandiu apud nos exulem egit.</s>
+					<s n="11" xml:lang="la" type="auto">Si manum porrexeritis<note xml:id="fnb" type="footnote" n="b">porrexeritis <hi>korr. aus</hi> porrexeris.</note>, non indigno aut ingrato feceritis<note xml:id="fnc" type="footnote" n="c">feceritis <hi>korr. aus</hi> feceris.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Iterum vale.</s>
+					<s n="12" xml:lang="la" type="auto">Iterum vale.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Sanctissimis viris d[ominis]<note xml:id="fnd" type="footnote" n="d"><hi>in der Vorlage</hi> DD.</note> Hainricho Bullingero et Chuͦnrado <persName ref="165">Pellicano</persName>, summo studio observandis, Tiguri.</s>
+					<s n="13" xml:lang="la" type="auto">Sanctissimis viris d[ominis]<note xml:id="fnd" type="footnote" n="d"><hi>in der Vorlage</hi> DD.</note> Hainricho Bullingero et Chuͦnrado <persName ref="person165">Pellicano</persName>, summo studio observandis, Tiguri.</s>
 				</p>
 			</div>
 		</body>

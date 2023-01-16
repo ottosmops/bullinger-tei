@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2013"/>
-				<idno type="ISBN">ISBN 978-3-290-17664-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2090</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17664-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2090</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 15</title>
+				<title subtype="publication">HBBW XV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">15</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 366,238</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 366,238</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,26 +49,26 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								<persName ref="74">Gast</persName> hat ein wenig in Bullingers Schrift [„Warhaffte Bekanntnuß“]
-								gegen <persName ref="138">Luthers</persName> [„Kurtz bekentnis“] gelesen und billigt alles. Die
-								Lutheraner sind in Angst. Der gelehrte <placeName ref="617">Leipziger</placeName> Theologe
-								Alexander Alesius schrieb an <persName ref="74">Gast</persName>, man hörte, Bullinger plane ein Buch
-								gegen <persName ref="138">Luther</persName>, woraus neuer Aufruhr entstehen und der Erfolg des
+								<persName ref="person74">Gast</persName> hat ein wenig in Bullingers Schrift [„Warhaffte Bekanntnuß“]
+								gegen <persName ref="person138">Luthers</persName> [„Kurtz bekentnis“] gelesen und billigt alles. Die
+								Lutheraner sind in Angst. Der gelehrte <placeName ref="place617">Leipziger</placeName> Theologe
+								Alexander Alesius schrieb an <persName ref="person74">Gast</persName>, man hörte, Bullinger plane ein Buch
+								gegen <persName ref="person138">Luther</persName>, woraus neuer Aufruhr entstehen und der Erfolg des
 								Evangeliums verhindert werden könnte; man würde dem Brief des Papstes und den Drohungen des Kaisers zufolge
-								in höchster Gefahr schweben. - <persName ref="74">Gast</persName> schickt zwei Bücher
-								<persName ref="160">Oekolampads</persName>. - Das [in <placeName ref="97">Basel</placeName>]
+								in höchster Gefahr schweben. - <persName ref="person74">Gast</persName> schickt zwei Bücher
+								<persName ref="person160">Oekolampads</persName>. - Das [in <placeName ref="place97">Basel</placeName>]
 								nicht vorhandene Buch [„In primum Musculi Anticochlaeum Replica brevis“] von
-								[<persName ref="160">Johannes</persName>] <persName ref="640">Cochläus</persName> könnte
-								<persName ref="74">Gast</persName> auf der <placeName ref="361">Frankfurter</placeName>
-								[Frühjahrs]messe kaufen, wenn Bullinger es braucht. - <persName ref="74">Gast</persName> wird
+								[Johannes] <persName ref="person640">Cochläus</persName> könnte
+								<persName ref="person74">Gast</persName> auf der <placeName ref="place361">Frankfurter</placeName>
+								[Frühjahrs]messe kaufen, wenn Bullinger es braucht. - <persName ref="person74">Gast</persName> wird
 								[Sebastian Lepusculus] ermahnen, keinen neuen Brand zu entfachen und
-								[<persName ref="81">Simon</persName>] <persName ref="81">Grynäus</persName>’ berühmten Namen
+								[Simon] <persName ref="person81">Grynäus</persName>’ berühmten Namen
 								durch [Lepusculus’ Kommentar zu Aristoteles] nicht herabzuwürdigen.
-								<persName ref="74">Gast</persName> legt einen Brief von Gilbert [Cousin] bei. - Möge Bullinger den
+								<persName ref="person74">Gast</persName> legt einen Brief von Gilbert [Cousin] bei. - Möge Bullinger den
 								Kirchen unversehrt erhalten bleiben! - [P.S.:] Bullinger soll [Cousins] Brief Theodor [Bibliander] zu lesen
 								geben, damit dieser etwas an [Cousin] schreibt. Dieser ist ein guter und dem Evangelium ergebener Mann, auch
 								wenn er noch papistischen Zeremonien anhängt. Er bildet die Jugend gut aus und liest alles, was [in
-								<placeName ref="97">Basel</placeName>] veröffentlicht wird.
+								<placeName ref="place97">Basel</placeName>] veröffentlicht wird.
 							</p>
 						</summary>
 					</msContents>
@@ -75,44 +78,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12137">
 				<correspAction type="sent">
-					<persName ref="person#1278" cert="high">
+					<!--
+					<persName ref="person1278" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Gast</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Gast"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/122090284"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415086"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person1278" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1545-02-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12138"/>
-					<ref type="prev_chronologically" target="files.xml#12136"/>
-					<ref type="next_correspondence" target="files.xml#12156"/>
-					<ref type="prev_correspondence" target="files.xml#12135"/>
-					<ref type="next_correspondence_request" target="files.xml#12156"/>
-					<ref type="prev_correspondence_request" target="files.xml#12135"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12899"/>
+					<ref type="next_chronologically" target="file12138"/>
+					<ref type="prev_chronologically" target="file12136"/>
+					<ref type="next_correspondence" target="file12156"/>
+					<ref type="prev_correspondence" target="file12135"/>
+					<ref type="next_correspondence_request" target="file12156"/>
+					<ref type="prev_correspondence_request" target="file12135"/>
+					<ref type="next_correspondence_reaction" target="file12899"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#12156"/>
-					<ref type="prev_same_sender" target="files.xml#12135"/>
-					<ref type="next_same_addressee" target="files.xml#12143"/>
-					<ref type="prev_same_addressee" target="files.xml#12136"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12156"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12135"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12143"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12136"/>
+					<ref type="next_same_sender" target="file12156"/>
+					<ref type="prev_same_sender" target="file12135"/>
+					<ref type="next_same_addressee" target="file12143"/>
+					<ref type="prev_same_addressee" target="file12136"/>
+					<ref type="next_with_sender_as_addressee" target="file12156"/>
+					<ref type="prev_with_sender_as_addressee" target="file12135"/>
+					<ref type="next_with_addressee_as_sender" target="file12143"/>
+					<ref type="prev_with_addressee_as_sender" target="file12136"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -130,46 +138,46 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S. in domino, mi charissime Bullingere.</s>
+					<s n="1" xml:lang="la" type="auto">S. in domino, mi charissime Bullingere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Legi unum et alterum folium tuae responsionis<note xml:id="fn1" type="footnote" n="1">Das "Warhaffte Bekanntnuß" der Zürcher, das kurz vor dem 12. März 1545 erschien; s. oben <ref target="file#12108">Nr. 2061</ref>, Anm. 9.</note> contra <persName ref="138">Lutheri</persName> fanaticum et mendacem libellum<note xml:id="fn2" type="footnote" n="2"><persName ref="138">Luthers</persName> "Kurtz bekentnis"; s. oben <ref target="file#12108">Nr. 2061</ref>, Anm. 7.</note>, et summe probantur omnia.</s>
-					<s xml:lang="la" type="auto">Benigne tractas hominem crudelem, quem nunquam cicurem aut mansuetum reddes etiam blandissimis<pb type="edition" next="141"/> verbis adhibitis.</s>
-					<s xml:lang="la" type="auto">Habebit suum iudicem.</s>
-					<s xml:lang="la" type="auto">Hoc autem scio, quod Lutherani trepident.</s>
-					<s xml:lang="la" type="auto">Scripsit enim d. Alexander Alesius, <placeName ref="617">Lipsensis</placeName> theologus, doctus et pius vir, cuius commentaria in Psalterum<note xml:id="fn3" type="footnote" n="3">Alexander <hi>Alesius,</hi> De autore et usu Psalmorum oratio, <placeName ref="361">Frankfurt</placeName> a. d. Oder, <persName ref="160">Johannes</persName> Hanau d. A., 1541 (VD 16 A 1723).</note> domi meę habeo, ad me hęc verba: „Audivimus hic Bullingerum adornare scriptum contra <persName ref="138">Lutherum</persName>; hic forsan faciet novos tumultus et impediet successum evangelii.</s>
-					<s xml:lang="la" type="auto">Et versabimur iam in summo periculo ac discrimine, quantum apparet ex literis pontificis<note xml:id="fn4" type="footnote" n="4">Gemeint sind das Tadelsbreve des Papstes an Karl V., von dem es zwei Fassungen gab (von August 1544 und vom 24. August 1544); s. oben <ref target="file#12118">Nr. 2071</ref>, Anm. 25, sowie die päpstliche Bulle vom 19. November 1544, die das Konzil auf den 15. März 1545 ansetzte; s. oben <ref target="file#12118">Nr. 2071</ref>, Anm. 24.</note> et minis caesaris<note xml:id="fn5" type="footnote" n="5">Kaiser Karl V.</note>.“<note xml:id="fn6" type="footnote" n="6">Näheres zu diesem Brief von Alesius an <persName ref="74">Gast</persName> ist nicht bekannt.</note></s>
-					<s xml:lang="la" type="auto">Hęc ille.</s>
+					<s n="2" xml:lang="la" type="auto">Legi unum et alterum folium tuae responsionis<note xml:id="fn1" type="footnote" n="1">Das "Warhaffte Bekanntnuß" der Zürcher, das kurz vor dem 12. März 1545 erschien; s. oben <ref target="file12108">Nr. 2061</ref>, Anm. 9.</note> contra <persName ref="person138">Lutheri</persName> fanaticum et mendacem libellum<note xml:id="fn2" type="footnote" n="2"><persName ref="person138">Luthers</persName> "Kurtz bekentnis"; s. oben <ref target="file12108">Nr. 2061</ref>, Anm. 7.</note>, et summe probantur omnia.</s>
+					<s n="3" xml:lang="la" type="auto">Benigne tractas hominem crudelem, quem nunquam cicurem aut mansuetum reddes etiam blandissimis<pb type="edition" next="141"/> verbis adhibitis.</s>
+					<s n="4" xml:lang="la" type="auto">Habebit suum iudicem.</s>
+					<s n="5" xml:lang="la" type="auto">Hoc autem scio, quod Lutherani trepident.</s>
+					<s n="6" xml:lang="la" type="auto">Scripsit enim d. Alexander Alesius, <placeName ref="place617">Lipsensis</placeName> theologus, doctus et pius vir, cuius commentaria in Psalterum<note xml:id="fn3" type="footnote" n="3">Alexander <hi>Alesius,</hi> De autore et usu Psalmorum oratio, <placeName ref="place361">Frankfurt</placeName> a. d. Oder, Johannes Hanau d. A., 1541 (VD 16 A 1723).</note> domi meę habeo, ad me hęc verba: „Audivimus hic Bullingerum adornare scriptum contra <persName ref="person138">Lutherum</persName>; hic forsan faciet novos tumultus et impediet successum evangelii.</s>
+					<s n="7" xml:lang="la" type="auto">Et versabimur iam in summo periculo ac discrimine, quantum apparet ex literis pontificis<note xml:id="fn4" type="footnote" n="4">Gemeint sind das Tadelsbreve des Papstes an Karl V., von dem es zwei Fassungen gab (von August 1544 und vom 24. August 1544); s. oben <ref target="file12118">Nr. 2071</ref>, Anm. 25, sowie die päpstliche Bulle vom 19. November 1544, die das Konzil auf den 15. März 1545 ansetzte; s. oben <ref target="file12118">Nr. 2071</ref>, Anm. 24.</note> et minis caesaris<note xml:id="fn5" type="footnote" n="5">Kaiser Karl V.</note>.“<note xml:id="fn6" type="footnote" n="6">Näheres zu diesem Brief von Alesius an <persName ref="person74">Gast</persName> ist nicht bekannt.</note></s>
+					<s n="8" xml:lang="la" type="auto">Hęc ille.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Libellos duos <persName ref="160">Oecolampadii</persName><note xml:id="fn7" type="footnote" n="7">Vielleicht zwei Exemplare der Ende 1544 erschienenen Schrift "Inn die clag Hieremie" (s. HBBW XIV <hi>555f);</hi> vielleicht aber auch frühere Schriften <persName ref="160">Oekolampads</persName>, die damals für die Herausgabe der Werke Zwinglis (s. HBBW XIV 140, Anm. 4) oder für die Abschlussarbeiten am "Warhafften Bekanntnuß"benötigt wurden.</note> mitto.</s>
-					<s xml:lang="la" type="auto">Choclei libellus<note xml:id="fn8" type="footnote" n="8"><persName ref="640">Cochläus</persName>' "In primum Musculi Anticochlaeum Replica brevis" (s. oben <ref target="file#12125">Nr. 2078</ref>, Anm. 4), in der eine "Responsio in Anti-hole Bullingeri" als "Epilog" veröffentlicht ist.</note> non extat apud nos.</s>
-					<s xml:lang="la" type="auto">Si opus habes, emam in nundinis Francofordanis<note xml:id="fn9" type="footnote" n="9">Die <placeName ref="361">Frankfurter</placeName> Frühjahrsmesse begann etwa 24 Tage vor Ostern und dauerte 20 Tage; s. Alexandre <hi>Vanautgaerden,</hi> Erasme typographe. Humanisme et imprimerie au début du XVI e siècle, Genf 2012-Travaux d'Humanisme et Renaissance <hi>503, S.</hi> 10.</note>.</s>
+					<s n="9" xml:lang="la" type="auto">Libellos duos <persName ref="person160">Oecolampadii</persName><note xml:id="fn7" type="footnote" n="7">Vielleicht zwei Exemplare der Ende 1544 erschienenen Schrift "Inn die clag Hieremie" (s. HBBW XIV 555f); vielleicht aber auch frühere Schriften <persName ref="person160">Oekolampads</persName>, die damals für die Herausgabe der Werke Zwinglis (s. HBBW XIV 140, Anm. 4) oder für die Abschlussarbeiten am "Warhafften Bekanntnuß"benötigt wurden.</note> mitto.</s>
+					<s n="10" xml:lang="la" type="auto">Choclei libellus<note xml:id="fn8" type="footnote" n="8"><persName ref="person640">Cochläus</persName>' "In primum Musculi Anticochlaeum Replica brevis" (s. oben <ref target="file12125">Nr. 2078</ref>, Anm. 4), in der eine "Responsio in Anti-hole Bullingeri" als "Epilog" veröffentlicht ist.</note> non extat apud nos.</s>
+					<s n="11" xml:lang="la" type="auto">Si opus habes, emam in nundinis Francofordanis<note xml:id="fn9" type="footnote" n="9">Die <placeName ref="place361">Frankfurter</placeName> Frühjahrsmesse begann etwa 24 Tage vor Ostern und dauerte 20 Tage; s. Alexandre <hi>Vanautgaerden,</hi> Erasme typographe. Humanisme et imprimerie au début du XVI e siècle, Genf 2012-Travaux d'Humanisme et Renaissance <hi>503, S.</hi> 10.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino.</s>
+					<s n="12" xml:lang="la" type="auto">Vale in domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Lepusculum<note xml:id="fn10" type="footnote" n="10">Sebastian Lepusculus (Häslin).</note> admonebo, ne quid novi incendii suscitet, ne <persName ref="81">Grynęi</persName> nomen celebre hiis scriptis ignobile reddat<note xml:id="fn11" type="footnote" n="11"><persName ref="74">Gast</persName> bezieht sich auf Lepusculus' in Arbeit befindliche Ausgabe eines Kommentars von <persName ref="81">Simon Grynäus</persName> zu Aristoteles' "Topica": Aristotelis philosophorum principis octavus Topicorum liber, absolutam quandam disputandi methodum continens, doctissimisque annotationibus D. Simonis Grynaei illustratus. Una cum epistola nuncupatoria Sebastiani Lepusculi Basiliensis ..., Basel, Hieronymus Curio, <hi>1545</hi> (VD 16 ZV 712; GG 130). Die Widmungsepistel datiert vom 12. November <hi>1545;</hi> das Buch wurde also etwa in der zweiten Hälfte November 1545 fertig gedruckt. - Diese Mahnung könnte durch Bullingers Abneigung gegen Philosophie verursacht worden sein; s. unten Nr. <hi>2095,</hi> 29-32.</note>.</s>
-					<s xml:lang="la" type="auto">Quid ad me scripserit Gilbertus<note xml:id="fn12" type="footnote" n="12">Gilbert Cousin.</note>, hic habes<note xml:id="fn13" type="footnote" n="13">Gilbert Cousin an <persName ref="74">Johannes Gast</persName>, 15. Februar 1545 (Zürich StA, E II <hi>345,</hi> 288). Darin erwähnt Cousin Bullingers Brief (nicht erhalten; s. HBBW XIV 268, Anm. <hi>15)</hi> mit Dankbarkeit, vermisst eine Antwort von Bibliander und erkundigt sich nach Konrad Gessner.</note>.<pb type="edition" next="142"/></s>
+					<s n="13" xml:lang="la" type="auto">Lepusculum<note xml:id="fn10" type="footnote" n="10">Sebastian Lepusculus (Häslin).</note> admonebo, ne quid novi incendii suscitet, ne <persName ref="person81">Grynęi</persName> nomen celebre hiis scriptis ignobile reddat<note xml:id="fn11" type="footnote" n="11"><persName ref="person74">Gast</persName> bezieht sich auf Lepusculus' in Arbeit befindliche Ausgabe eines Kommentars von <persName ref="person81">Simon Grynäus</persName> zu Aristoteles' "Topica": Aristotelis philosophorum principis octavus Topicorum liber, absolutam quandam disputandi methodum continens, doctissimisque annotationibus D. Simonis Grynaei illustratus. Una cum epistola nuncupatoria Sebastiani Lepusculi Basiliensis ..., Basel, Hieronymus Curio, 1545 (VD 16 ZV 712; GG 130). Die Widmungsepistel datiert vom 12. November 1545; das Buch wurde also etwa in der zweiten Hälfte November 1545 fertig gedruckt. - Diese Mahnung könnte durch Bullingers Abneigung gegen Philosophie verursacht worden sein; s. unten Nr. 2095, 29-32.</note>.</s>
+					<s n="14" xml:lang="la" type="auto">Quid ad me scripserit Gilbertus<note xml:id="fn12" type="footnote" n="12">Gilbert Cousin.</note>, hic habes<note xml:id="fn13" type="footnote" n="13">Gilbert Cousin an <persName ref="person74">Johannes Gast</persName>, 15. Februar 1545 (Zürich StA, E II 345, 288). Darin erwähnt Cousin Bullingers Brief (nicht erhalten; s. HBBW XIV 268, Anm. 15) mit Dankbarkeit, vermisst eine Antwort von Bibliander und erkundigt sich nach Konrad Gessner.</note>.<pb type="edition" next="142"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale iterum atque iterum diu salvus ecclesiis nostris, quę a lupo crudelissimo<note xml:id="fn14" type="footnote" n="14">Vgl. Mt 7, <hi>15;</hi> Apg 20, 29.</note> devastantur.</s>
+					<s n="15" xml:lang="la" type="auto">Vale iterum atque iterum diu salvus ecclesiis nostris, quę a lupo crudelissimo<note xml:id="fn14" type="footnote" n="14">Vgl. Mt 7, 15; Apg 20, 29.</note> devastantur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileę</placeName>, 28. februarii 1545.</s>
+					<s n="16" xml:lang="la" type="auto"><placeName ref="place97">Basileę</placeName>, 28. februarii 1545.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Theodoro<note xml:id="fn15" type="footnote" n="15">Theodor Bibliander.</note> nostro has literas<note xml:id="fn16" type="footnote" n="16">Cousins Brief.</note> legendas prębe, ut tandem aliquid Gilberto nostro scribat.</s>
-					<s xml:lang="la" type="auto">Est enim bonus vir et evangelio addictissimus, licet adhuc papisticis ceremoniis alligatus sit propter commodum et lucellum; attamen bene docet iuventutem, et quicquid usquam editur divulgaturque, coemit et legit.</s>
+					<s n="17" xml:lang="la" type="auto">Theodoro<note xml:id="fn15" type="footnote" n="15">Theodor Bibliander.</note> nostro has literas<note xml:id="fn16" type="footnote" n="16">Cousins Brief.</note> legendas prębe, ut tandem aliquid Gilberto nostro scribat.</s>
+					<s n="18" xml:lang="la" type="auto">Est enim bonus vir et evangelio addictissimus, licet adhuc papisticis ceremoniis alligatus sit propter commodum et lucellum; attamen bene docet iuventutem, et quicquid usquam editur divulgaturque, coemit et legit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus <persName ref="74">Gastius</persName> ex animo.</s>
+					<s n="19" xml:lang="la" type="auto">Tuus <persName ref="person74">Gastius</persName> ex animo.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Heinrycho Bullingero, Tigurinae ecclesiae vigilantissimo pastori, etc.</s>
-					<s xml:lang="de" type="auto">Zuͦ Zurich.</s>
+					<s n="20" xml:lang="la" type="auto">D. Heinrycho Bullingero, Tigurinae ecclesiae vigilantissimo pastori, etc.</s>
+					<s n="21" xml:lang="de" type="auto">Zuͦ Zurich.</s>
 				</p>
 			</div>
 		</body>

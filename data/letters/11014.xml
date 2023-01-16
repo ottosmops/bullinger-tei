@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=972</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=972</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 355,91</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 355,91</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,7 +50,7 @@
 						<summary>
 							<p xml:id="regest1">
 								Dankt für Bullingers Hilfe bei seiner Wahl zum Pfarrer [von
-								<placeName ref="214">Bülach</placeName>] und hofft, den hohen Anforderungen zu genügen. Macht
+								<placeName ref="place214">Bülach</placeName>] und hofft, den hohen Anforderungen zu genügen. Macht
 								Angaben über sein Pfrundeinkommen. Wird in einigen Tagen zu Bullinger kommen.
 							</p>
 						</summary>
@@ -58,29 +61,32 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11014">
 				<correspAction type="sent">
-					<persName ref="person#1761" cert="high">
+					<!--
+					<persName ref="person1761" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Kuster</surname>
 					</persName>
-					<place source="#547" cert="high">
-						<settlement>Wiesendangen</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.5213051 8.7889904</geo>
-					</place>
+					-->
+					<persName ref="person1761" cert="high"/>
+					<place source="place547" cert="high"/>
 					<date when="1537-03-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11015"/>
-					<ref type="prev_chronologically" target="files.xml#11013"/>
+					<ref type="next_chronologically" target="file11015"/>
+					<ref type="prev_chronologically" target="file11013"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -89,12 +95,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#11015"/>
-					<ref type="prev_same_addressee" target="files.xml#11010"/>
+					<ref type="next_same_addressee" target="file11015"/>
+					<ref type="prev_same_addressee" target="file11010"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11015"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11010"/>
+					<ref type="next_with_addressee_as_sender" target="file11015"/>
+					<ref type="prev_with_addressee_as_sender" target="file11010"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -111,24 +117,24 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Non possum non tibi gracias agere, Heinrice doctissime, quod tantum in mea re<note xml:id="fn3" type="footnote" n="3"><persName ref="128">Kusters</persName> Dank bezieht sich offensichtlich auf Bullingers Hilfe bei der Wahl zum Pfarrer von <placeName ref="214">Bülach</placeName>. Er dürfte den Brief noch in <placeName ref="1193">Wiesendangen</placeName>, bevor er sein neues Amt übernahm, geschrieben haben. Vgl. auch oben <ref target="file#11006">Nr. 964</ref>.</note> laboraveris.</s>
-					<s xml:lang="la" type="auto">Verum si tibi magis nota fuisset mea erudicio, quae profecto nulla est, non me huic provinciae pręfecisses.</s>
-					<s xml:lang="la" type="auto">Veruntamen non<pb type="edition" next="104"/> dubito, quin ita deus voluerit, cum me nesciente et nolente res acta atque transacta siet, rogaturusque eum, ut mihi sapientiam suarum sedium assistricem<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> astriticem, <hi>davor gestrichenes</hi> asteriticem.</note><note xml:id="fn4" type="footnote" n="4">Sap. 9, 4 (Vulgata).</note> superne demittat, quo suam gloriam evehere valeam.</s>
+					<s n="1" xml:lang="la" type="auto">Non possum non tibi gracias agere, Heinrice doctissime, quod tantum in mea re<note xml:id="fn3" type="footnote" n="3"><persName ref="person128">Kusters</persName> Dank bezieht sich offensichtlich auf Bullingers Hilfe bei der Wahl zum Pfarrer von <placeName ref="place214">Bülach</placeName>. Er dürfte den Brief noch in <placeName ref="place1193">Wiesendangen</placeName>, bevor er sein neues Amt übernahm, geschrieben haben. Vgl. auch oben <ref target="file11006">Nr. 964</ref>.</note> laboraveris.</s>
+					<s n="2" xml:lang="la" type="auto">Verum si tibi magis nota fuisset mea erudicio, quae profecto nulla est, non me huic provinciae pręfecisses.</s>
+					<s n="3" xml:lang="la" type="auto">Veruntamen non<pb type="edition" next="104"/> dubito, quin ita deus voluerit, cum me nesciente et nolente res acta atque transacta siet, rogaturusque eum, ut mihi sapientiam suarum sedium assistricem<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> astriticem, <hi>davor gestrichenes</hi> asteriticem.</note><note xml:id="fn4" type="footnote" n="4">Sap. 9, 4 (Vulgata).</note> superne demittat, quo suam gloriam evehere valeam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">C[ae]terum<note xml:id="fnb" type="footnote" n="b"><hi>Textverlust wegen Beschädigung des Papiers.</hi></note> de reditu annuo cupis fieri certior.</s>
-					<s xml:lang="la" type="auto">Habet hoc beneficium annuatim 25 modios tritici<note xml:id="fn5" type="footnote" n="5">In den Zürcher Quellen üblicherweise als "Mütt Kernen" bezeichnet (vgl. dazu Paul <hi>Kläui,</hi> Ortsgeschichte, 2., überarb. Aufl., Zürich 1956, S. 122f).</note>, item decem buttos vini et duodecim malteros avenae, ut barbare dicam<note xml:id="fn6" type="footnote" n="6">"buttos" und "malteros" sind eigenwillige Latinisierungen <persName ref="128">Kusters</persName> für die Maßeinheiten Eimer - aus "Bütte" (hölzernes Gefäß; vgl. SI IV 1911) - und Malter (vgl. dazu <hi>Kläui,</hi> aaO, S. 122f, und z. B. HBBW VI, S. 276, 9 mit Anm. 7 und 8).</note> aureos 26.</s>
-					<s xml:lang="la" type="auto">Vale. Intra paucos dies tecum ero.</s>
+					<s n="4" xml:lang="la" type="auto">C[ae]terum<note xml:id="fnb" type="footnote" n="b"><hi>Textverlust wegen Beschädigung des Papiers.</hi></note> de reditu annuo cupis fieri certior.</s>
+					<s n="5" xml:lang="la" type="auto">Habet hoc beneficium annuatim 25 modios tritici<note xml:id="fn5" type="footnote" n="5">In den Zürcher Quellen üblicherweise als "Mütt Kernen" bezeichnet (vgl. dazu Paul <hi>Kläui,</hi> Ortsgeschichte, 2., überarb. Aufl., Zürich 1956, S. 122f).</note>, item decem buttos vini et duodecim malteros avenae, ut barbare dicam<note xml:id="fn6" type="footnote" n="6">"buttos" und "malteros" sind eigenwillige Latinisierungen <persName ref="person128">Kusters</persName> für die Maßeinheiten Eimer - aus "Bütte" (hölzernes Gefäß; vgl. SI IV 1911) - und Malter (vgl. dazu <hi>Kläui,</hi> aaO, S. 122f, und z. B. HBBW VI, S. 276, 9 mit Anm. 7 und 8).</note> aureos 26.</s>
+					<s n="6" xml:lang="la" type="auto">Vale. Intra paucos dies tecum ero.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum 14. calendas aprilis 37.</s>
+					<s n="7" xml:lang="la" type="auto">Datum 14. calendas aprilis 37.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Heinricus Custor.</s>
+					<s n="8" xml:lang="la" type="auto">Heinricus Custor.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Doctissimo <persName ref="128">Heinricho</persName> Bullingero, fratri ac domino suo.</s>
+					<s n="9" xml:lang="la" type="auto">Doctissimo Heinricho Bullingero, fratri ac domino suo.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2011"/>
-				<idno type="ISBN">ISBN 978-3-290-17565-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1916</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17565-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1916</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 14</title>
+				<title subtype="publication">HBBW XIV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Henrich, Rainer; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">14</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336,220</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336,220</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336,202</idno>
+							<idno subtype="Autograph">E II 336,202</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -49,11 +52,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Der Überbringer Johannes Fabricius [Hans <persName ref="188">Schmid</persName>] hat <persName ref="154">Myconius</persName> um ein für die [Zürcher] bestimmtes Zeugnis
-								für die Zeit gebeten, die er bei <persName ref="154">Myconius</persName> lebte, was <persName ref="154">Myconius</persName> nicht ablehnen kann, mag sein Verhältnis zu
+								Der Überbringer Johannes Fabricius [Hans <persName ref="person188">Schmid</persName>] hat <persName ref="person154">Myconius</persName> um ein für die [Zürcher] bestimmtes Zeugnis
+								für die Zeit gebeten, die er bei <persName ref="person154">Myconius</persName> lebte, was <persName ref="person154">Myconius</persName> nicht ablehnen kann, mag sein Verhältnis zu
 								den Adressaten sein, wie es wolle; Fabricius ist so, wie <pb type="edition" next="243"/> ihn ein Verwandter
-								[Konrad] <persName ref="165">Pellikans</persName>, Konrad [Lycostehenes], empfohlen hat, nämlich gut, gefällig und unbeschwerlich im
-								Umgang, und <persName ref="154">Myconius</persName> sieht ihn als Lehrer, nachdem er eine Zeitlang Hilfslehrer gewesen sein wird, denn ohne
+								[Konrad] <persName ref="person165">Pellikans</persName>, Konrad [Lycostehenes], empfohlen hat, nämlich gut, gefällig und unbeschwerlich im
+								Umgang, und <persName ref="person154">Myconius</persName> sieht ihn als Lehrer, nachdem er eine Zeitlang Hilfslehrer gewesen sein wird, denn ohne
 								Erfahrung ist es schwer, als Lehrer zu wirken; das Übrige ist von diesem selbst zu erfahren.
 							</p>
 						</summary>
@@ -64,60 +67,73 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11963">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1544-05-21" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<persName ref="person#2508" cert="high">
+					-->
+					<persName ref="person495" cert="high"/>
+					<!--
+					<persName ref="person2508" cert="high">
 						<forename cert="high">Konrad</forename>
 						<surname cert="high">Pellikan</surname>
-						<addName type="main">Pellikan (Kürschner), Konrad</addName>
+						<persName type="main" ref="person8127>Pellikan (Kürschner), Konrad</addName>
 						<graphic type="portrait" url="portraits/2514_Pelikan_Konrad.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Konrad_Pellikan"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118739867"/>
 					</persName>
-					<persName ref="person#341" cert="high">
+					-->
+					<persName ref="person2508" cert="high"/>
+					<!--
+					<persName ref="person341" cert="high">
 						<forename cert="high">Theodor</forename>
 						<surname cert="high">Bibliander</surname>
-						<addName type="main">Bibliander (Buchmann), Theodor</addName>
+						<persName type="main" ref="person8171>Bibliander (Buchmann), Theodor</addName>
 						<graphic type="portrait" url="portraits/341_Bibliander_Theodor.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Theodor_Bibliander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/116170638"/>
 					</persName>
+					-->
+					<persName ref="person341" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11964"/>
-					<ref type="prev_chronologically" target="files.xml#11962"/>
+					<ref type="next_chronologically" target="file11964"/>
+					<ref type="prev_chronologically" target="file11962"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#11892"/>
+					<ref type="prev_correspondence" target="file11892"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#10906"/>
+					<ref type="prev_correspondence_request" target="file10906"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11892"/>
-					<ref type="next_same_sender" target="files.xml#11965"/>
-					<ref type="prev_same_sender" target="files.xml#11912"/>
-					<ref type="next_same_addressee" target="files.xml#4441"/>
-					<ref type="prev_same_addressee" target="files.xml#11892"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11965"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11912"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4441"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11892"/>
+					<ref type="prev_correspondence_reaction" target="file11892"/>
+					<ref type="next_same_sender" target="file11965"/>
+					<ref type="prev_same_sender" target="file11912"/>
+					<ref type="next_same_addressee" target="file4441"/>
+					<ref type="prev_same_addressee" target="file11892"/>
+					<ref type="next_with_sender_as_addressee" target="file11965"/>
+					<ref type="prev_with_sender_as_addressee" target="file11912"/>
+					<ref type="next_with_addressee_as_sender" target="file4441"/>
+					<ref type="prev_with_addressee_as_sender" target="file11892"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -134,31 +150,31 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S. et pacem in domino.</s>
+					<s n="1" xml:lang="la" type="auto">S. et pacem in domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Petiit a me <persName ref="188">Ioannes Fabricius</persName><note xml:id="fn1" type="footnote" n="1">Kaum <persName ref="74">Johannes</persName> Fabricius Montanus (Hans <persName ref="188">Schmid</persName> aus <placeName ref="116">Bergheim</placeName>, 1527-1566) entgegen Traugott Schieß (<persName ref="74">Johannes</persName> Fabricius Montanus, in: ZTB 1904, NF 27, S. 253-310, bes. 258f), da dieser nach eigenem Zeugnis schon ab 1543 an der 2. Klasse der Großmünsterschule unterrichtete (s. Misc. Tig. III 379 und Zürich StA, G II 39.2, 1543, unter dem Namen "Io. <persName ref="188">Schmid</persName> Leonis", woraus der 19. Sept. 1543 als Datum des Unterrichtsbeginns hervorgeht). - Vermutlich handelt es sich hier um Hans <persName ref="188">Schmid</persName> (gen. Fabri), der im Juli 1543 auf Empfehlung seines Pflegevaters, des Zürcher Propstes <persName ref="872">Felix Frey</persName>, als Kostgänger bei <persName ref="154">Myconius</persName> einzog (s. HBBW XIII 181, Anm. 61; <hi>Pfarrerbuch</hi> 507, Nr. 14, mit teilweise unzuverlässigen Angaben). Fabri stammte laut Bullingers Stipendiatenliste (Zürich ZB Ms Car C 44, S. 925, Nr. 50; s. auch Zürich ZB, Ms F 95/1, f. [6]v., nach Nr. 48) aus dem <placeName ref="66">Piemont</placeName> und erhielt gemäß Studentenamtsrechnung (Zürich StA, G II 39.2, 1545) ab dem 16. Sept. 1545 Geld für eine Lehrtätigkeit an Stelle des bereits im Sept. 1545 wegziehenden oben erwähnten Hans <persName ref="188">Schmids</persName>. Noch bis ins Schuljahr 1547/48, das er nicht beendete, nachgewiesen. 1548 wurde er als Pfarrer nach <placeName ref="297">Dübendorf</placeName> gewählt, wo er bis zu seinem Tode wirkte; vor seiner Wahl unterrichtete er laut Bullingers Wahlvorschlag die 3. Klasse der Großmünsterschule und versah die Gemeinde <placeName ref="21">Albisrieden</placeName> (s. Zürich StA, E I 30. 30, Nr. 3).</note>, qui has reddit, ut testimonio sibi apud vos adsim pro eo tempore, quo in ędibus meis versatus est, nam ita opus se habere adseruit.</s>
-					<s xml:lang="la" type="auto">Ego qualisqualis sim coram animis vestris<note xml:id="fn2" type="footnote" n="2">Im Dezember 1544 waren die Zürcher immer noch wegen <persName ref="154">Myconius</persName> verstimmt; s. Corr. des réformateurs IX 434.</note>, quod petiit, negare non potui.</s>
-					<s xml:lang="la" type="auto">Brevibus itaque dico, ne multis sim molestus.</s>
+					<s n="2" xml:lang="la" type="auto">Petiit a me <persName ref="person188">Ioannes Fabricius</persName><note xml:id="fn1" type="footnote" n="1">Kaum Johannes Fabricius Montanus (Hans <persName ref="person188">Schmid</persName> aus <placeName ref="place116">Bergheim</placeName>, 1527-1566) entgegen Traugott Schieß (Johannes Fabricius Montanus, in: ZTB 1904, NF 27, S. 253-310, bes. 258f), da dieser nach eigenem Zeugnis schon ab 1543 an der 2. Klasse der Großmünsterschule unterrichtete (s. Misc. Tig. III 379 und Zürich StA, G II 39.2, 1543, unter dem Namen "Io. <persName ref="person188">Schmid</persName> Leonis", woraus der 19. Sept. 1543 als Datum des Unterrichtsbeginns hervorgeht). - Vermutlich handelt es sich hier um Hans <persName ref="person188">Schmid</persName> (gen. Fabri), der im Juli 1543 auf Empfehlung seines Pflegevaters, des Zürcher Propstes <persName ref="person872">Felix Frey</persName>, als Kostgänger bei <persName ref="person154">Myconius</persName> einzog (s. HBBW XIII 181, Anm. 61; <hi>Pfarrerbuch</hi> 507, Nr. 14, mit teilweise unzuverlässigen Angaben). Fabri stammte laut Bullingers Stipendiatenliste (Zürich ZB Ms Car C 44, S. 925, Nr. 50; s. auch Zürich ZB, Ms F 95/1, f. [6]v., nach Nr. 48) aus dem <placeName ref="place66">Piemont</placeName> und erhielt gemäß Studentenamtsrechnung (Zürich StA, G II 39.2, 1545) ab dem 16. Sept. 1545 Geld für eine Lehrtätigkeit an Stelle des bereits im Sept. 1545 wegziehenden oben erwähnten Hans <persName ref="person188">Schmids</persName>. Noch bis ins Schuljahr 1547/48, das er nicht beendete, nachgewiesen. 1548 wurde er als Pfarrer nach <placeName ref="place297">Dübendorf</placeName> gewählt, wo er bis zu seinem Tode wirkte; vor seiner Wahl unterrichtete er laut Bullingers Wahlvorschlag die 3. Klasse der Großmünsterschule und versah die Gemeinde <placeName ref="place21">Albisrieden</placeName> (s. Zürich StA, E I 30. 30, Nr. 3).</note>, qui has reddit, ut testimonio sibi apud vos adsim pro eo tempore, quo in ędibus meis versatus est, nam ita opus se habere adseruit.</s>
+					<s n="3" xml:lang="la" type="auto">Ego qualisqualis sim coram animis vestris<note xml:id="fn2" type="footnote" n="2">Im Dezember 1544 waren die Zürcher immer noch wegen <persName ref="person154">Myconius</persName> verstimmt; s. Corr. des réformateurs IX 434.</note>, quod petiit, negare non potui.</s>
+					<s n="4" xml:lang="la" type="auto">Brevibus itaque dico, ne multis sim molestus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Talem equidem reperi, qualem M. Cunhardus<note xml:id="fn3" type="footnote" n="3"><persName ref="165">Konrad</persName> Lycosthenes (Wolfhart), 1518-1561, aus Rufach im Oberelsass, Theologe und Philologe, kam bereits im Juni 1529 als Schüler zu <persName ref="165">Pellikan</persName> nach Zürich (s. <hi>Pellikan,</hi> Chronikon 119); hatte von 1535 bis 1541 in Heidelberg studiert, wo er 1541 zum Magister promoviert wurde. 1542 immatrikulierte er sich in <placeName ref="97">Basel</placeName>, wo er 1543 Professor an der Artistenfakultät wurde und von 1544 bis 1561 als Diakon zu St. Leonhard amtierte. Nach dem Tod <persName ref="74">Johannes Gasts</persName> im Jahr 1552 übernahm er für kurze Zeit (1552/53) dessen Funktion als Bullingers wichtigster Basler Korrespondent. Er war als Herausgeber und Kommentator antiker und zeitgenössischer Literatur tätig und edierte und kommentierte u.a. Werke von <persName ref="2243">Strabo</persName>, Ptolemäus, <persName ref="158">Sebastian Münster</persName>, Enea Silvio Piccolomini und Johannes Ravisius Textor; seine Sammlung von Prodigien (<placeName ref="97">Basel</placeName> 1557) und die Bearbeitung der Apophthegmata von Erasmus (<placeName ref="97">Basel</placeName> 1555) wurden Schulbücher und erlebten zahlreiche Auflagen; s. Karl <hi>Wolfart,</hi> Beiträge zur Augsburger Reformationsgeschichte II. Zur Biographie des M. Bonifacius Wolfhart, in: Beiträge zur bayerischen Kirchengeschichte 7, 1901, S. 167-180; ders., Beiträge zur Augsburger Reformationsgeschichte III. Kaspar Schwenckfeld und Bonifacius Wolfhart, aaO, 8, 1902, S. 97-114. 145-161; Jürgen <hi>Beyer,</hi> in: Enzyklopädie des Märchens, hg. v. Rolf Wilhelm Brednich, Bd. VIII, Berlin-New York 1996, Sp. 1323-1326, mit weiterer Lit.; Amerbach, Korr. V 363, Anm. 1; Franz <hi>Mauelshagen,</hi> Die "portenta et ostenta mines lieben Herren vnsers säligen ...". Nachlassdokumente Bullingers im 13. Buch der Wickiana, in: Zwa 28, 2001, 73-117, bes. 82-91 und 97f.</note>, d. <persName ref="165">Pellicani</persName> cognatus,<note xml:id="fn4" type="footnote" n="4"><persName ref="165">Konrad</persName> Lycosthenes war der Sohn von <persName ref="165">Pellikans</persName> Schwester, also <persName ref="165">Pellikans</persName> Neffe; s. <hi>Pellikan,</hi> Chronikon 119; 162.</note> priusquam ad me reciperem, commendavit, nam illi plane hac in re tum<pb type="edition" next="244"/> inserviebam.</s>
-					<s xml:lang="la" type="auto">Bonus est, placidus, et qui vivere possit cum quovis probo sine eius molestia.</s>
-					<s xml:lang="la" type="auto">Diligentiam in literis ex praeceptoribus eius licebit cognoscere, nam ei rei ego quidem intendere aliis occupatus non valeo.</s>
-					<s xml:lang="la" type="auto">Quamvis interea dicam libere, pro ludimagistro darem, modo prius egisset ad tempus hypodidascalum.</s>
-					<s xml:lang="la" type="auto">Ipsi nostis, quam sit agere magistrum difficile, si quis careat artis suę qualicunque exercitio.</s>
-					<s xml:lang="la" type="auto">Quae reliqua sunt, vos ex ipso poteritis pręsente cognoscere.</s>
+					<s n="5" xml:lang="la" type="auto">Talem equidem reperi, qualem M. Cunhardus<note xml:id="fn3" type="footnote" n="3">Konrad Lycosthenes (Wolfhart), 1518-1561, aus Rufach im Oberelsass, Theologe und Philologe, kam bereits im Juni 1529 als Schüler zu <persName ref="person165">Pellikan</persName> nach Zürich (s. <hi><persName ref="person165">Pellikan</persName>,</hi> Chronikon 119); hatte von 1535 bis 1541 in Heidelberg studiert, wo er 1541 zum Magister promoviert wurde. 1542 immatrikulierte er sich in <placeName ref="place97">Basel</placeName>, wo er 1543 Professor an der Artistenfakultät wurde und von 1544 bis 1561 als Diakon zu St. Leonhard amtierte. Nach dem Tod <persName ref="person74">Johannes Gasts</persName> im Jahr 1552 übernahm er für kurze Zeit (1552/53) dessen Funktion als Bullingers wichtigster Basler Korrespondent. Er war als Herausgeber und Kommentator antiker und zeitgenössischer Literatur tätig und edierte und kommentierte u.a. Werke von <persName ref="person2243">Strabo</persName>, Ptolemäus, <persName ref="person158">Sebastian Münster</persName>, Enea Silvio Piccolomini und Johannes Ravisius Textor; seine Sammlung von Prodigien (<placeName ref="place97">Basel</placeName> 1557) und die Bearbeitung der Apophthegmata von Erasmus (<placeName ref="place97">Basel</placeName> 1555) wurden Schulbücher und erlebten zahlreiche Auflagen; s. Karl <hi>Wolfart,</hi> Beiträge zur Augsburger Reformationsgeschichte II. Zur Biographie des M. Bonifacius Wolfhart, in: Beiträge zur bayerischen Kirchengeschichte 7, 1901, S. 167-180; ders., Beiträge zur Augsburger Reformationsgeschichte III. Kaspar Schwenckfeld und Bonifacius Wolfhart, aaO, 8, 1902, S. 97-114. 145-161; Jürgen <hi>Beyer,</hi> in: Enzyklopädie des Märchens, hg. v. Rolf Wilhelm Brednich, Bd. VIII, Berlin-New York 1996, Sp. 1323-1326, mit weiterer Lit.; Amerbach, Korr. V 363, Anm. 1; Franz <hi>Mauelshagen,</hi> Die "portenta et ostenta mines lieben Herren vnsers säligen ...". Nachlassdokumente Bullingers im 13. Buch der Wickiana, in: Zwa 28, 2001, 73-117, bes. 82-91 und 97f.</note>, d. <persName ref="person165">Pellicani</persName> cognatus,<note xml:id="fn4" type="footnote" n="4">Konrad Lycosthenes war der Sohn von <persName ref="person165">Pellikans</persName> Schwester, also <persName ref="person165">Pellikans</persName> Neffe; s. <hi><persName ref="person165">Pellikan</persName>,</hi> Chronikon 119; 162.</note> priusquam ad me reciperem, commendavit, nam illi plane hac in re tum<pb type="edition" next="244"/> inserviebam.</s>
+					<s n="6" xml:lang="la" type="auto">Bonus est, placidus, et qui vivere possit cum quovis probo sine eius molestia.</s>
+					<s n="7" xml:lang="la" type="auto">Diligentiam in literis ex praeceptoribus eius licebit cognoscere, nam ei rei ego quidem intendere aliis occupatus non valeo.</s>
+					<s n="8" xml:lang="la" type="auto">Quamvis interea dicam libere, pro ludimagistro darem, modo prius egisset ad tempus hypodidascalum.</s>
+					<s n="9" xml:lang="la" type="auto">Ipsi nostis, quam sit agere magistrum difficile, si quis careat artis suę qualicunque exercitio.</s>
+					<s n="10" xml:lang="la" type="auto">Quae reliqua sunt, vos ex ipso poteritis pręsente cognoscere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valete in Christo et commendatiunculam hanc boni consulite.</s>
-					<s xml:lang="la" type="auto">Basileae, 21. maii anno 1544.</s>
+					<s n="11" xml:lang="la" type="auto">Valete in Christo et commendatiunculam hanc boni consulite.</s>
+					<s n="12" xml:lang="la" type="auto">Basileae, 21. maii anno 1544.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Os. <persName ref="154">Myconius</persName> vester.</s>
+					<s n="13" xml:lang="la" type="auto">Os. <persName ref="person154">Myconius</persName> vester.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. d. Heinricho Bullingero, Cunhardo <persName ref="165">Pellicano</persName> et Theodoro Bibliandro, viris undecunque doctissimis, suis in domino maioribus observandissimis.</s>
+					<s n="14" xml:lang="la" type="auto">D. d. Heinricho Bullingero, Cunhardo <persName ref="person165">Pellicano</persName> et Theodoro Bibliandro, viris undecunque doctissimis, suis in domino maioribus observandissimis.</s>
 				</p>
 			</div>
 		</body>

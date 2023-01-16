@@ -12,25 +12,28 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3839</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 46,44-47 *</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">gleichz. Kopie</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 46,44-47 *</idno>
+						<idno subtype="Hinweis">gleichz. Kopie</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -53,13 +56,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 84,113</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 84,113</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -73,46 +79,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2582">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1555-03-08" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2560" cert="low">
+					<!--
+					<persName ref="person2560" cert="low">
 						<forename cert="low">Ottheinrich</forename>
 						<surname cert="low">Pfalzgraf von Neuburg</surname>
-						<addName type="main">von der Pfalz, Ottheinrich I.</addName>
-						<graphic type="portrait" url="portraits/2411_Ottheinrich_von_der_Pfalz.jpg"/>
+						<persName type="main" ref="person2411>von der Pfalz, Ottheinrich I.</addName>
+						<graphic type="portrait" url="portraits/2411_von_der_Pfalz_Ottheinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ottheinrich"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118738712"/>
 					</persName>
+					-->
+					<persName ref="person2560" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2583"/>
-					<ref type="prev_chronologically" target="files.xml#2581"/>
-					<ref type="next_correspondence" target="files.xml#2603"/>
-					<ref type="prev_correspondence" target="files.xml#12146"/>
+					<ref type="next_chronologically" target="file2583"/>
+					<ref type="prev_chronologically" target="file2581"/>
+					<ref type="next_correspondence" target="file2603"/>
+					<ref type="prev_correspondence" target="file12146"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#12146"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2603"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12124"/>
-					<ref type="next_same_sender" target="files.xml#2584"/>
-					<ref type="prev_same_sender" target="files.xml#2574"/>
-					<ref type="next_same_addressee" target="files.xml#2603"/>
-					<ref type="prev_same_addressee" target="files.xml#12124"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2584"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2574"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2603"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12124"/>
+					<ref type="prev_correspondence_request" target="file12146"/>
+					<ref type="next_correspondence_reaction" target="file2603"/>
+					<ref type="prev_correspondence_reaction" target="file12124"/>
+					<ref type="next_same_sender" target="file2584"/>
+					<ref type="prev_same_sender" target="file2574"/>
+					<ref type="next_same_addressee" target="file2603"/>
+					<ref type="prev_same_addressee" target="file12124"/>
+					<ref type="next_with_sender_as_addressee" target="file2584"/>
+					<ref type="prev_with_sender_as_addressee" target="file2574"/>
+					<ref type="next_with_addressee_as_sender" target="file2603"/>
+					<ref type="prev_with_addressee_as_sender" target="file12124"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -131,32 +141,32 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Durchleuchtiger, hochgepornner fürst, E[wer] f[ürstlich] g'naden mein underthenig, schuldig und willig dienst alzeitt bevoran.</s>
-					<s xml:lang="de" type="auto">Gnediger fürst und herr, der edell vest Hanns Jacob Adelschweiler von Nollingen, mein freundtlicher, lieber schwager bericht mich, was grosser fürtreffenlicher gnad und guthatten E. f. g. im als einem unverdienten bewisen habt und noch teglich bewysett.</s>
-					<s xml:lang="de" type="auto">Darumb ich verursacht, E. f. g. uff das aller truwlichest zu danckhen, mit undertheniger pitt, E. f. g. inn, als der hilff und ratth bedarff, fürhin in gnaden bevolhen ze haben.</s>
+					<s n="1" xml:lang="de" type="auto">Durchleuchtiger, hochgepornner fürst, E[wer] f[ürstlich] g'naden mein underthenig, schuldig und willig dienst alzeitt bevoran.</s>
+					<s n="2" xml:lang="de" type="auto">Gnediger fürst und herr, der edell vest Hanns Jacob Adelschweiler von Nollingen, mein freundtlicher, lieber schwager bericht mich, was grosser fürtreffenlicher gnad und guthatten E. f. g. im als einem unverdienten bewisen habt und noch teglich bewysett.</s>
+					<s n="3" xml:lang="de" type="auto">Darumb ich verursacht, E. f. g. uff das aller truwlichest zu danckhen, mit undertheniger pitt, E. f. g. inn, als der hilff und ratth bedarff, fürhin in gnaden bevolhen ze haben.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Khönde immer E. f. g. ich mit allem dem, das mir müglich, gedienen und gefallens gethuͦn, wölthe ich alle zeitt bereit sein.</s>
-					<s xml:lang="de" type="auto">Schickhen hiemit zwo getruckhte sermonen, die ich vergangner tagen in den truckh geben hab und grad yetzundt von der preß kumend, bitten underthenig, E. f. g. wölle gedachte sermones in g[naden] von mir aufnemen etc.</s>
+					<s n="4" xml:lang="de" type="auto">Khönde immer E. f. g. ich mit allem dem, das mir müglich, gedienen und gefallens gethuͦn, wölthe ich alle zeitt bereit sein.</s>
+					<s n="5" xml:lang="de" type="auto">Schickhen hiemit zwo getruckhte sermonen, die ich vergangner tagen in den truckh geben hab und grad yetzundt von der preß kumend, bitten underthenig, E. f. g. wölle gedachte sermones in g[naden] von mir aufnemen etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Demnach hat mein fürgeliebther tochterman her Josias Simler, diser kilchen schul leser in dem Nüwen Testament, uß besonder lieb und anmuttung, so er zu E. f. g. tragt, das Epitome bibliothecae etc.</s>
-					<s xml:lang="de" type="auto">E. F. G. zugeschriben und dediciert, alls die epistola dedicatoria und das werckh selb bezügett.</s>
-					<s xml:lang="de" type="auto">Sollich buch ist erst gestern gar ußgetruckht.</s>
-					<s xml:lang="de" type="auto">So woldt mein fründtlicher schwager hütt verrytten, und was aber obgemelter mein lieber tochtermann nit bey der statt, so zu seiner muther, die todts kranckh lag, gereysett.</s>
-					<s xml:lang="de" type="auto">Der was wol willens gewest, das buch fürstlich rüsten ze lassen mit inbinden und gepürlicher zierd.</s>
-					<s xml:lang="de" type="auto">Dweil er aber nit anheimsch was und ein so komblicher bott, durch den das buch E. f. g. in yl und gewiß mocht gefertigt werden, hab ich mich vertruwlichen gwalts angenommen und in seinem nammen zwey exempla von dem herren Froschouwer gefordert, soliche ingemacht und schickhen sy E. f. g. hie mit meinem freundtlichen schwager gar guther zuversicht, E. f. g. werde solichs in g[naden] von mir uffnemmen.</s>
-					<s xml:lang="de" type="auto">Was dann mein fürgeliebther tochterman besonders E. f. g. ze schriben hatt, mag hernach, wann er wider anheimsch khompt, von im bescheenn.</s>
-					<s xml:lang="de" type="auto">Das ist aber gewiß, und bin ich auch deß grundtlich bericht, das obermelte dedicatio gar nit der meinung bescheen ist, wie aber diser zeitt bey vilen gewonlich ist, das er ützitt von E. f. g. uffbringe, begere oder under solcher gestaldt höusche, zu<note type="margin">a.R.: in?</note> vernüegt größlich wol, so er E. f. g. gnad und guten, geneigten willen haben mag, so er E. f.g.</s>
-					<s xml:lang="de" type="auto">gefallens gethan und nach weither gedienen khan, ja so E. f. g. fürfar[en]die guten künst zu lieben und innen harfür ze helffen sampt der warhafften christlichen religion.</s>
-					<s xml:lang="de" type="auto">Über das alles E. f. g. gut wüssen haben mag, was unser gn.</s>
-					<s xml:lang="de" type="auto">herren und oberen allgemeine satzung ist, kheine myetten, gaben noch schenckhen zuͦ nemmen, das E. f. g. gar khein andernn gedanckhen hierin fassen soll, dann das hertzlich und guttwillig E. f. g. min fürgeliebther tochterman hatt dienen und wolgefallen thun wollen.</s>
-					<s xml:lang="de" type="auto">Bittend underthenig, uns in g[naden] alle zeitt bevolhen zu haben.</s>
-					<s xml:lang="de" type="auto">Gott der allmechtig wölle E. f. g. inn seinen göttlichen gnaden in gesundtheitt und rechten wolstandt langwirig erhalten.</s>
-					<s xml:lang="de" type="auto">Datum zu Zürich des 8. marcij anno etc. 1555.</s>
+					<s n="6" xml:lang="de" type="auto">Demnach hat mein fürgeliebther tochterman her Josias Simler, diser kilchen schul leser in dem Nüwen Testament, uß besonder lieb und anmuttung, so er zu E. f. g. tragt, das Epitome bibliothecae etc.</s>
+					<s n="7" xml:lang="de" type="auto">E. F. G. zugeschriben und dediciert, alls die epistola dedicatoria und das werckh selb bezügett.</s>
+					<s n="8" xml:lang="de" type="auto">Sollich buch ist erst gestern gar ußgetruckht.</s>
+					<s n="9" xml:lang="de" type="auto">So woldt mein fründtlicher schwager hütt verrytten, und was aber obgemelter mein lieber tochtermann nit bey der statt, so zu seiner muther, die todts kranckh lag, gereysett.</s>
+					<s n="10" xml:lang="de" type="auto">Der was wol willens gewest, das buch fürstlich rüsten ze lassen mit inbinden und gepürlicher zierd.</s>
+					<s n="11" xml:lang="de" type="auto">Dweil er aber nit anheimsch was und ein so komblicher bott, durch den das buch E. f. g. in yl und gewiß mocht gefertigt werden, hab ich mich vertruwlichen gwalts angenommen und in seinem nammen zwey exempla von dem herren Froschouwer gefordert, soliche ingemacht und schickhen sy E. f. g. hie mit meinem freundtlichen schwager gar guther zuversicht, E. f. g. werde solichs in g[naden] von mir uffnemmen.</s>
+					<s n="12" xml:lang="de" type="auto">Was dann mein fürgeliebther tochterman besonders E. f. g. ze schriben hatt, mag hernach, wann er wider anheimsch khompt, von im bescheenn.</s>
+					<s n="13" xml:lang="de" type="auto">Das ist aber gewiß, und bin ich auch deß grundtlich bericht, das obermelte dedicatio gar nit der meinung bescheen ist, wie aber diser zeitt bey vilen gewonlich ist, das er ützitt von E. f. g. uffbringe, begere oder under solcher gestaldt höusche, zu<note type="margin">a.R.: in?</note> vernüegt größlich wol, so er E. f. g. gnad und guten, geneigten willen haben mag, so er E. f.g.</s>
+					<s n="14" xml:lang="de" type="auto">gefallens gethan und nach weither gedienen khan, ja so E. f. g. fürfar[en]die guten künst zu lieben und innen harfür ze helffen sampt der warhafften christlichen religion.</s>
+					<s n="15" xml:lang="de" type="auto">Über das alles E. f. g. gut wüssen haben mag, was unser gn.</s>
+					<s n="16" xml:lang="de" type="auto">herren und oberen allgemeine satzung ist, kheine myetten, gaben noch schenckhen zuͦ nemmen, das E. f. g. gar khein andernn gedanckhen hierin fassen soll, dann das hertzlich und guttwillig E. f. g. min fürgeliebther tochterman hatt dienen und wolgefallen thun wollen.</s>
+					<s n="17" xml:lang="de" type="auto">Bittend underthenig, uns in g[naden] alle zeitt bevolhen zu haben.</s>
+					<s n="18" xml:lang="de" type="auto">Gott der allmechtig wölle E. f. g. inn seinen göttlichen gnaden in gesundtheitt und rechten wolstandt langwirig erhalten.</s>
+					<s n="19" xml:lang="de" type="auto">Datum zu Zürich des 8. marcij anno etc. 1555.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">E[wer] f[ürstlichen] g[naden] williger diener Heinrich Bullinger, diener der kirchen zu Zürich.</s>
+					<s n="20" xml:lang="de" type="auto">E[wer] f[ürstlichen] g[naden] williger diener Heinrich Bullinger, diener der kirchen zu Zürich.</s>
 				</p>
 			</div>
 		</body>

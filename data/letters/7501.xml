@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7241/78</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 367,409</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 367,409</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -49,13 +52,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 118,22</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 118,22</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -64,67 +70,37 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7501">
 				<correspAction type="sent">
-					<persName ref="person#4035" cert="high">
+					<!--
+					<persName ref="person4035" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Zacius</surname>
-						<addName type="main">Zacius (Zak, Zasius), Simon</addName>
+						<persName type="main" ref="person8520>Zacius (Zak, Zasius), Simon</addName>
 					</persName>
 					<note type="Adresse">Simon Zak im Namen der Ältesten und der Gemeinde von Krakau</note>
-					<roleName type="title">
-						<name type="plural" ref="role#6" cert="high">Älteste</name>
-						<place source="#260" cert="high">
-							<settlement>Krakau</settlement>
-							<district>Kleinpolen</district>
-							<country>Polen</country>
-							<geo>50.06143 19.93658</geo>
-						</place>
-					</roleName>
-					<place source="#1" cert="high">
-						<settlement>Aargau</settlement>
-						<district>Aargau</district>
-						<country>Schweiz</country>
-						<geo>47.412396 8.1948321</geo>
-					</place>
-					<orgName type="institution">
-						<name type="plural" ref="org#12" cert="high">Gemeinden</name>
-						<place source="#260" cert="high">
-							<settlement>Krakau</settlement>
-							<district>Kleinpolen</district>
-							<country>Polen</country>
-							<geo>50.06143 19.93658</geo>
-						</place>
-					</orgName>
-					<place source="#260" cert="high">
-						<settlement>Krakau</settlement>
-						<district>Kleinpolen</district>
-						<country>Polen</country>
-						<geo>50.06143 19.93658</geo>
-					</place>
-					<place source="#260" cert="high">
-						<settlement>Krakau</settlement>
-						<district>Kleinpolen</district>
-						<country>Polen</country>
-						<geo>50.06143 19.93658</geo>
-					</place>
+					-->
+					<persName ref="person4035" cert="high"/>
+					<personGrp ref="role12" role="Älteste"/>
+					<orgName ref="org24" role="Gemeinden"/>"
+					<place source="place260" cert="high"/>
 					<date when="1568-06-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7502"/>
-					<ref type="prev_chronologically" target="files.xml#7500"/>
+					<ref type="next_chronologically" target="file7502"/>
+					<ref type="prev_chronologically" target="file7500"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -133,12 +109,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#7505"/>
-					<ref type="prev_same_addressee" target="files.xml#7499"/>
+					<ref type="next_same_addressee" target="file7505"/>
+					<ref type="prev_same_addressee" target="file7499"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#7505"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#7499"/>
+					<ref type="next_with_addressee_as_sender" target="file7505"/>
+					<ref type="prev_with_addressee_as_sender" target="file7499"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -147,21 +123,26 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="7501/Autograph/00 E_II_367__S__409_.tif" n="1"/>
+		<graphic url="7501/Autograph/01 E_II_367__S__410_.tif" n="2"/>
+		<graphic url="7501/Autograph/02 E_II_367__S__402_a_.tif" n="3"/>
+		<graphic url="7501/Autograph/03 E_II_367__S__402_b_.tif" n="4"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Literae tuae ad nos per d. Thretium, collegam nostrum, scriptae multis nominibus nobis fuerunt gratissimae.</s>
-					<s xml:lang="la" type="auto">Nam praeterquam quod singularem ac plane fraternam tuam in nos benevolentiam a nobis saepe perspectam nobis abunde declararunt, vehementer etiam plurimos in orthodoxa sententia confirmarunt.</s>
-					<s xml:lang="la" type="auto">Cum enim intellexissemus d. Iosiam Simlerum, virum omni praestantiae laude clarissimum, multorum aliorum hortatu suam operam ecclesiae promisisse in refutandis haereticorum fundamentum religionis christianae oppugnantium blasphemiis, magnam sane ex eo laetitiam concepimus.</s>
-					<s xml:lang="la" type="auto">Pro certo enim persuasum habemus, illum argumentum hoc ut alia omnia maximo cum totius, praesertim autem nostrae ecclesiae fructu tractaturum, ut non dubitemus, cum non pauci ex primaria etiam nobilitate dei beneficio ad meliorem sententiam ultro redeant, laborem hunc vestrum pro ecclesia dei susceptum plurimis magno ad resipiscendum adiumento futurum.</s>
-					<s xml:lang="la" type="auto">Quare cum ipsi d. Simlero tum tibi etiam, frater in Christo observandissime, quas possumus maximas habemus atque agimus gratias, quod in tot ac tantis occupationibus vestris, quibus semper distinemini, eam rationem nostri ac curam habeatis, nulli ut labori vobis parcendum putetis, modo quam plurimos ex remotissimis etiam a vobis gentibus Christo lucrifaciatis.</s>
-					<s xml:lang="la" type="auto">Nos cum alia ratione nostram pro tantis in nos officiis gratitudinem ac mutuam erga vos benevolentiam cum debita observantia coniunctam testari hoc tempore non possimus, quod licet, deum sedulo oramus, ut vos ad nominis sui gloriam et ecclesiae suae propagationem diu servet incolumes.</s>
-					<s xml:lang="la" type="auto">Caeterum de ecclesiarum Polonicarum ac coetus nostri statu d. Thretius, collega noster, plenius omnia vobis referet...</s>
+					<s n="1" xml:lang="la" type="auto">Literae tuae ad nos per d. Thretium, collegam nostrum, scriptae multis nominibus nobis fuerunt gratissimae.</s>
+					<s n="2" xml:lang="la" type="auto">Nam praeterquam quod singularem ac plane fraternam tuam in nos benevolentiam a nobis saepe perspectam nobis abunde declararunt, vehementer etiam plurimos in orthodoxa sententia confirmarunt.</s>
+					<s n="3" xml:lang="la" type="auto">Cum enim intellexissemus d. Iosiam Simlerum, virum omni praestantiae laude clarissimum, multorum aliorum hortatu suam operam ecclesiae promisisse in refutandis haereticorum fundamentum religionis christianae oppugnantium blasphemiis, magnam sane ex eo laetitiam concepimus.</s>
+					<s n="4" xml:lang="la" type="auto">Pro certo enim persuasum habemus, illum argumentum hoc ut alia omnia maximo cum totius, praesertim autem nostrae ecclesiae fructu tractaturum, ut non dubitemus, cum non pauci ex primaria etiam nobilitate dei beneficio ad meliorem sententiam ultro redeant, laborem hunc vestrum pro ecclesia dei susceptum plurimis magno ad resipiscendum adiumento futurum.</s>
+					<s n="5" xml:lang="la" type="auto">Quare cum ipsi d. Simlero tum tibi etiam, frater in Christo observandissime, quas possumus maximas habemus atque agimus gratias, quod in tot ac tantis occupationibus vestris, quibus semper distinemini, eam rationem nostri ac curam habeatis, nulli ut labori vobis parcendum putetis, modo quam plurimos ex remotissimis etiam a vobis gentibus Christo lucrifaciatis.</s>
+					<s n="6" xml:lang="la" type="auto">Nos cum alia ratione nostram pro tantis in nos officiis gratitudinem ac mutuam erga vos benevolentiam cum debita observantia coniunctam testari hoc tempore non possimus, quod licet, deum sedulo oramus, ut vos ad nominis sui gloriam et ecclesiae suae propagationem diu servet incolumes.</s>
+					<s n="7" xml:lang="la" type="auto">Caeterum de ecclesiarum Polonicarum ac coetus nostri statu d. Thretius, collega noster, plenius omnia vobis referet...</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum cracoviae 19. iunii 1568.</s>
+					<s n="8" xml:lang="la" type="auto">Datum cracoviae 19. iunii 1568.</s>
 				</p>
 			</div>
 		</body>

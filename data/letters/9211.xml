@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">8077/47</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 348,79b</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 348,79b</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,53 +50,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9211">
 				<correspAction type="sent">
-					<persName ref="person#2977" cert="low">
+					<!--
+					<persName ref="person2977" cert="low">
 						<forename cert="low">Josias</forename>
 						<surname cert="low">Simler</surname>
-						<addName type="main">Simler (Simmler), Josias</addName>
+						<persName type="main" ref="person8442>Simler (Simmler), Josias</addName>
 						<graphic type="portrait" url="portraits/2978_Simmler_Josias.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Josias_Simler"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11879728X"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date min="1572-09-03" max="1573-02-22" cert="low"/>
+					-->
+					<persName ref="person2977" cert="low"/>
+					<place source="place587" cert="low"/>
+					<date notBefore="1572-09-03" notAfter="1573-02-22" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9012"/>
-					<ref type="prev_chronologically" target="files.xml#9011"/>
+					<ref type="next_chronologically" target="file9012"/>
+					<ref type="prev_chronologically" target="file9011"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#9011"/>
+					<ref type="prev_correspondence" target="file9011"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#9011"/>
+					<ref type="prev_correspondence_request" target="file9011"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#8589"/>
+					<ref type="prev_correspondence_reaction" target="file8589"/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#9011"/>
-					<ref type="next_same_addressee" target="files.xml#9013"/>
-					<ref type="prev_same_addressee" target="files.xml#9009"/>
+					<ref type="prev_same_sender" target="file9011"/>
+					<ref type="next_same_addressee" target="file9013"/>
+					<ref type="prev_same_addressee" target="file9009"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9011"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9013"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#9009"/>
-					<ref type="child" target="files.xml#9011"/>
+					<ref type="prev_with_sender_as_addressee" target="file9011"/>
+					<ref type="next_with_addressee_as_sender" target="file9013"/>
+					<ref type="prev_with_addressee_as_sender" target="file9009"/>
+					<ref type="child" target="file9011"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -110,35 +112,35 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Mitto quaestiones, quemadmodum intelligo.</s>
-					<s xml:lang="la" type="auto">Ego nihil statuere possum; nescio, quae sit ratio initiationis seu primorum ordinum.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Mitto quaestiones, quemadmodum intelligo.</s>
+					<s n="3" xml:lang="la" type="auto">Ego nihil statuere possum; nescio, quae sit ratio initiationis seu primorum ordinum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Video tamen eos, qui hęc proponunt, ab his abhorrere, si liberum esset.</s>
-					<s xml:lang="la" type="auto">Sed quaestio comparata est, an scilicet minus malum maioris boni causa ferendum sit.</s>
+					<s n="4" xml:lang="la" type="auto">Video tamen eos, qui hęc proponunt, ab his abhorrere, si liberum esset.</s>
+					<s n="5" xml:lang="la" type="auto">Sed quaestio comparata est, an scilicet minus malum maioris boni causa ferendum sit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Audio Argentinenses quosdam olim in Marchia a quodam episcopo, qui evangelium amabat, recepisse ordines suasu Buceri, ut possent in Alsatio promoveri.</s>
+					<s n="6" xml:lang="la" type="auto">Audio Argentinenses quosdam olim in Marchia a quodam episcopo, qui evangelium amabat, recepisse ordines suasu Buceri, ut possent in Alsatio promoveri.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Duas, ut ego intelligo, quaestiones proponit: Primo, an liceat primos ordines recipere et ita fieri canonicum, ut des operam literis, scholę inservias aut praedices evangelium.</s>
+					<s n="7" xml:lang="la" type="auto">Duas, ut ego intelligo, quaestiones proponit: Primo, an liceat primos ordines recipere et ita fieri canonicum, ut des operam literis, scholę inservias aut praedices evangelium.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Exempli enim gratia episcopus Wormatiensis habet collationem beneficiorum in ea urbe; itaque nemini conferet nisi initiato; sed tamen in urbe libera imperii non potest hos ad superstitiones aut missas faciendas cogere, sed cogitur illis religionem liberam relinquere.</s>
-					<s xml:lang="la" type="auto">Tales opibus ecclesię bene uti possunt; sed, an hac ratione illas acquirere liceat, quaeritur.</s>
-					<s xml:lang="la" type="auto">Qui affirmant, utuntur hac ratione: Prima initiatio non obstringit voto nec in se habet manifestam impietatem, est obedientia quaedam, qua obstringuntur episcopo, sed tantum ad honesta et licita.</s>
+					<s n="8" xml:lang="la" type="auto">Exempli enim gratia episcopus Wormatiensis habet collationem beneficiorum in ea urbe; itaque nemini conferet nisi initiato; sed tamen in urbe libera imperii non potest hos ad superstitiones aut missas faciendas cogere, sed cogitur illis religionem liberam relinquere.</s>
+					<s n="9" xml:lang="la" type="auto">Tales opibus ecclesię bene uti possunt; sed, an hac ratione illas acquirere liceat, quaeritur.</s>
+					<s n="10" xml:lang="la" type="auto">Qui affirmant, utuntur hac ratione: Prima initiatio non obstringit voto nec in se habet manifestam impietatem, est obedientia quaedam, qua obstringuntur episcopo, sed tantum ad honesta et licita.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Deinde, si hęc servitus non subeatur, negligantur scholę et ecclesię; nam non alias opes habent, quam quae hoc modo conferuntur, et nemo gratis volet servire.</s>
+					<s n="11" xml:lang="la" type="auto">Deinde, si hęc servitus non subeatur, negligantur scholę et ecclesię; nam non alias opes habent, quam quae hoc modo conferuntur, et nemo gratis volet servire.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Secundo quaestio etiam de prima initiatione, sed in eo differt, quod magni canonici ut comites et barones Argentinę in summo templo opes ecclesię accipiunt initiati, non tamen missificant, sed ex his opibus erhaltends iren stand.</s>
-					<s xml:lang="la" type="auto">Itaque praeter primam quaestionem de primis ordinibus, an liceat accipere, quęritur, an nobiles opibus ecclesię ita uti possint ad ordinem tuendum, praesertim quando<note type="margin">a.R.: qn quoniam?</note> illis non accipientibus alii forte accipient, qui missificabunt; hic praetenditur utilitas reipublicę:</s>
+					<s n="12" xml:lang="la" type="auto">Secundo quaestio etiam de prima initiatione, sed in eo differt, quod magni canonici ut comites et barones Argentinę in summo templo opes ecclesię accipiunt initiati, non tamen missificant, sed ex his opibus erhaltends iren stand.</s>
+					<s n="13" xml:lang="la" type="auto">Itaque praeter primam quaestionem de primis ordinibus, an liceat accipere, quęritur, an nobiles opibus ecclesię ita uti possint ad ordinem tuendum, praesertim quando<note type="margin">a.R.: qn quoniam?</note> illis non accipientibus alii forte accipient, qui missificabunt; hic praetenditur utilitas reipublicę:</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Reipublicę et ecclesię interest nobilitate tueri suum statum, ut sint, qui tueantur rempublicam.</s>
-					<s xml:lang="la" type="auto">Item aut opes hę convertendę sunt prorsus in superstitiosum aut in usum legitimum aut in civilem; sed primum impium est, secundum non licet per episcopos; ergo tertium tolerari debet.</s>
+					<s n="14" xml:lang="la" type="auto">Reipublicę et ecclesię interest nobilitate tueri suum statum, ut sint, qui tueantur rempublicam.</s>
+					<s n="15" xml:lang="la" type="auto">Item aut opes hę convertendę sunt prorsus in superstitiosum aut in usum legitimum aut in civilem; sed primum impium est, secundum non licet per episcopos; ergo tertium tolerari debet.</s>
 				</p>
 				<p>
 					<note>[Ohne Schluss und Adresse.]</note>

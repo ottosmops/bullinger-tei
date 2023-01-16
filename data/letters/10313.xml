@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1983"/>
-				<idno type="ISBN">ISBN 3-290-11531-3</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=282</idno>
+				<idno subtype="ISBN">ISBN 3-290-11531-3</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=282</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 3</title>
+				<title subtype="publication">HBBW III</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">3</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,2</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,2</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,7 +49,7 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Hat Bullinger wegen <persName ref="59">Benedikt Euander</persName> bereits früher geschrieben.
+								Hat Bullinger wegen <persName ref="person59">Benedikt Euander</persName> bereits früher geschrieben.
 								Schildert die schwierige Situation der reformierten Kirche, die von verschiedenen Seiten angegriffen wird,
 								und beklagt den allgemeinen Zerfall der Sitten. Möchte lieber in Zürich sein. Befürchtet den baldigen
 								Niedergang der evangelischen Lehre. Grüße.
@@ -59,43 +62,46 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10313">
 				<correspAction type="sent">
-					<persName ref="person#1767" cert="high">
+					<!--
+					<persName ref="person1767" cert="high">
 						<forename cert="high">Veit</forename>
 						<surname cert="high">Kappeler</surname>
 					</persName>
-					<place source="#907" cert="high">
-						<settlement>Kempten im Allgäu</settlement>
-						<district>Bayern</district>
-						<country>Deutschland</country>
-						<geo>47.722857 10.315784</geo>
-					</place>
+					-->
+					<persName ref="person1767" cert="high"/>
+					<place source="place907" cert="high"/>
 					<date when="1533-11-06" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10314"/>
-					<ref type="prev_chronologically" target="files.xml#10312"/>
-					<ref type="next_correspondence" target="files.xml#661"/>
-					<ref type="prev_correspondence" target="files.xml#10284"/>
-					<ref type="next_correspondence_request" target="files.xml#661"/>
-					<ref type="prev_correspondence_request" target="files.xml#10284"/>
+					<ref type="next_chronologically" target="file10314"/>
+					<ref type="prev_chronologically" target="file10312"/>
+					<ref type="next_correspondence" target="file661"/>
+					<ref type="prev_correspondence" target="file10284"/>
+					<ref type="next_correspondence_request" target="file661"/>
+					<ref type="prev_correspondence_request" target="file10284"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#661"/>
-					<ref type="prev_same_sender" target="files.xml#10284"/>
-					<ref type="next_same_addressee" target="files.xml#10318"/>
-					<ref type="prev_same_addressee" target="files.xml#10305"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#661"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10284"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10318"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10305"/>
+					<ref type="next_same_sender" target="file661"/>
+					<ref type="prev_same_sender" target="file10284"/>
+					<ref type="next_same_addressee" target="file10318"/>
+					<ref type="prev_same_addressee" target="file10305"/>
+					<ref type="next_with_sender_as_addressee" target="file661"/>
+					<ref type="prev_with_sender_as_addressee" target="file10284"/>
+					<ref type="next_with_addressee_as_sender" target="file10318"/>
+					<ref type="prev_with_addressee_as_sender" target="file10305"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -113,47 +119,47 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Per Iesum Christum omnem salutem.</s>
+					<s n="1" xml:lang="la" type="auto">Per Iesum Christum omnem salutem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Scripsi nuper <persName ref="59">Benedicti</persName> Euandri causa ad te<note xml:id="fn1" type="footnote" n="1">Siehe oben <ref target="file#10284">Nr. 253</ref>.</note>, frater sincerissime, nunc iterum ecclesie nostre.</s>
-					<s xml:lang="la" type="auto">Desperabundi de saluti plurimorum.</s>
-					<s xml:lang="la" type="auto">Interturbatur ecclesia Lutheranorum, anabaptistarum et aliorum doctrina.</s>
-					<s xml:lang="la" type="auto">Per decennium predicatur verbum dei<note xml:id="fn2" type="footnote" n="2">Seit ungefähr 1523 predigten in <placeName ref="544">Kempten</placeName> <persName ref="1976">Sixt Rummel</persName>, <persName ref="89">Jakob Haistung</persName> und <persName ref="1962">Johannes Rottach</persName> im evangelischen Geist, s. <hi>Erhard,</hi> Reformation 7f.</note> sine fructu<note xml:id="fn3" type="footnote" n="3">Vgl. Mt 13, 22 par.</note>.</s>
-					<s xml:lang="la" type="auto">Adhuc omnia pendent sub priori seculo.</s>
-					<s xml:lang="la" type="auto">Ceremonie prostant adhuc cum misse nomenclatura in monasterio<note xml:id="fn4" type="footnote" n="4">In dem vor der Stadt liegenden, mächtigen Benediktinerkloster. In der Stadt selbst hatten nur die Nonnen des Franziskanerinnenklosters den katholischen Glauben beibehalten und mußten deshalb 1537 <placeName ref="544">Kempten</placeName> verlassen, s. <hi>Erhard,</hi> Reformation 41.</note>.</s>
-					<s xml:lang="la" type="auto">Luditur, bibitur, peieratur etc., nec ulle censure apud seniores populi memoria habetur.</s>
-					<s xml:lang="la" type="auto">Timent cesarem.</s>
-					<s xml:lang="la" type="auto">Quid plura?</s>
-					<s xml:lang="la" type="auto">Audiunt verbum dei, sed non credunt<note xml:id="fn5" type="footnote" n="5">Vgl. Jes 6, 9; Mt 13, 13-23.</note>.</s>
-					<s xml:lang="la" type="auto">Timeo in damnationis testimonium denuncietur, ut ubique inscius, quid faciendum, ita «sanctum dare canibus» [Mt 7, 6].</s>
-					<s xml:lang="la" type="auto">Vellem potius esse tecum agro Tigurino, si deus velit.</s>
-					<s xml:lang="la" type="auto">Consule itaque, optime frater, boni, si quid habes.</s>
-					<s xml:lang="la" type="auto">Ni adsit deus miris modis, decidit omnis spes.</s>
-					<s xml:lang="la" type="auto">Magistratus timore perculsus.</s>
-					<s xml:lang="la" type="auto">Misera gens pendet a mense fortuna.</s>
-					<s xml:lang="la" type="auto">Ex Christi precepto brevi abeundum censeo.</s>
+					<s n="2" xml:lang="la" type="auto">Scripsi nuper <persName ref="person59">Benedicti Euandri</persName> causa ad te<note xml:id="fn1" type="footnote" n="1">Siehe oben <ref target="file10284">Nr. 253</ref>.</note>, frater sincerissime, nunc iterum ecclesie nostre.</s>
+					<s n="3" xml:lang="la" type="auto">Desperabundi de saluti plurimorum.</s>
+					<s n="4" xml:lang="la" type="auto">Interturbatur ecclesia Lutheranorum, anabaptistarum et aliorum doctrina.</s>
+					<s n="5" xml:lang="la" type="auto">Per decennium predicatur verbum dei<note xml:id="fn2" type="footnote" n="2">Seit ungefähr 1523 predigten in <placeName ref="place544">Kempten</placeName> <persName ref="person1976">Sixt Rummel</persName>, <persName ref="person89">Jakob Haistung</persName> und <persName ref="person1962">Johannes Rottach</persName> im evangelischen Geist, s. <hi>Erhard,</hi> Reformation 7f.</note> sine fructu<note xml:id="fn3" type="footnote" n="3">Vgl. Mt 13, 22 par.</note>.</s>
+					<s n="6" xml:lang="la" type="auto">Adhuc omnia pendent sub priori seculo.</s>
+					<s n="7" xml:lang="la" type="auto">Ceremonie prostant adhuc cum misse nomenclatura in monasterio<note xml:id="fn4" type="footnote" n="4">In dem vor der Stadt liegenden, mächtigen Benediktinerkloster. In der Stadt selbst hatten nur die Nonnen des Franziskanerinnenklosters den katholischen Glauben beibehalten und mußten deshalb 1537 <placeName ref="place544">Kempten</placeName> verlassen, s. <hi>Erhard,</hi> Reformation 41.</note>.</s>
+					<s n="8" xml:lang="la" type="auto">Luditur, bibitur, peieratur etc., nec ulle censure apud seniores populi memoria habetur.</s>
+					<s n="9" xml:lang="la" type="auto">Timent cesarem.</s>
+					<s n="10" xml:lang="la" type="auto">Quid plura?</s>
+					<s n="11" xml:lang="la" type="auto">Audiunt verbum dei, sed non credunt<note xml:id="fn5" type="footnote" n="5">Vgl. Jes 6, 9; Mt 13, 13-23.</note>.</s>
+					<s n="12" xml:lang="la" type="auto">Timeo in damnationis testimonium denuncietur, ut ubique inscius, quid faciendum, ita «sanctum dare canibus» [Mt 7, 6].</s>
+					<s n="13" xml:lang="la" type="auto">Vellem potius esse tecum agro Tigurino, si deus velit.</s>
+					<s n="14" xml:lang="la" type="auto">Consule itaque, optime frater, boni, si quid habes.</s>
+					<s n="15" xml:lang="la" type="auto">Ni adsit deus miris modis, decidit omnis spes.</s>
+					<s n="16" xml:lang="la" type="auto">Magistratus timore perculsus.</s>
+					<s n="17" xml:lang="la" type="auto">Misera gens pendet a mense fortuna.</s>
+					<s n="18" xml:lang="la" type="auto">Ex Christi precepto brevi abeundum censeo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Scribito paucis, si vacas, per huius schede latorem<note xml:id="fn6" type="footnote" n="6">Unbekannt.</note>.</s>
-					<s xml:lang="la" type="auto">Ora sedulo nisu pro statu ecclesie nostre, etiam pro nobis.</s>
-					<s xml:lang="la" type="auto">Itidem et nos faciemus.</s>
-					<s xml:lang="la" type="auto">Cupio salvos fratres omnes, qui tecum sunt, Leonem<note xml:id="fn7" type="footnote" n="7"><persName ref="114">Leo Jud</persName>.</note>, Erasmum <persName ref="188">Fabricium</persName>, <persName ref="117">Carolstadium</persName>.</s>
-					<s xml:lang="la" type="auto">Salutant et te tuosque fratres mei<note xml:id="fn8" type="footnote" n="8"><persName ref="116">Kappelers</persName> Amtsbrüder <persName ref="173">Paul Rasdorfer</persName> und <persName ref="89">Jakob Haistung</persName>.</note>, etiam genitricem tuam<note xml:id="fn9" type="footnote" n="9"><persName ref="32">Anna Bullinger</persName>, geb. Wiederkehr.</note> cum uxore<note xml:id="fn10" type="footnote" n="10"><persName ref="32">Anna Bullinger</persName>, geb. Adlischwyler.</note> adamata: omnem gratiam.</s>
+					<s n="19" xml:lang="la" type="auto">Scribito paucis, si vacas, per huius schede latorem<note xml:id="fn6" type="footnote" n="6">Unbekannt.</note>.</s>
+					<s n="20" xml:lang="la" type="auto">Ora sedulo nisu pro statu ecclesie nostre, etiam pro nobis.</s>
+					<s n="21" xml:lang="la" type="auto">Itidem et nos faciemus.</s>
+					<s n="22" xml:lang="la" type="auto">Cupio salvos fratres omnes, qui tecum sunt, Leonem<note xml:id="fn7" type="footnote" n="7"><persName ref="person114">Leo Jud</persName>.</note>, <persName ref="person188">Erasmum Fabricium</persName>, <persName ref="person117">Carolstadium</persName>.</s>
+					<s n="23" xml:lang="la" type="auto">Salutant et te tuosque fratres mei<note xml:id="fn8" type="footnote" n="8"><persName ref="person116">Kappelers</persName> Amtsbrüder <persName ref="person173">Paul Rasdorfer</persName> und <persName ref="person89">Jakob Haistung</persName>.</note>, etiam genitricem tuam<note xml:id="fn9" type="footnote" n="9"><persName ref="person32">Anna Bullinger</persName>, geb. Wiederkehr.</note> cum uxore<note xml:id="fn10" type="footnote" n="10"><persName ref="person32">Anna Bullinger</persName>, geb. Adlischwyler.</note> adamata: omnem gratiam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="224"/>Vale.</s>
+					<s n="24" xml:lang="la" type="auto"><pb type="edition" next="224"/>Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Kampidone, 6. novembris 33, raptim.</s>
+					<s n="25" xml:lang="la" type="auto">Kampidone, 6. novembris 33, raptim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vitus Kappeller, verbi dei minister, tuus deditus.</s>
+					<s n="26" xml:lang="la" type="auto">Vitus Kappeller, verbi dei minister, tuus deditus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Heinricho Bullingero episcopo Tigurino, viro candido diligentissimoque fratri.</s>
-					<s xml:lang="de" type="auto">Zürich.</s>
+					<s n="27" xml:lang="la" type="auto">Heinricho Bullingero episcopo Tigurino, viro candido diligentissimoque fratri.</s>
+					<s n="28" xml:lang="de" type="auto">Zürich.</s>
 				</p>
 			</div>
 		</body>

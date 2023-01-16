@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 371,1106</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">2 Kopien bekannt, beide von Bullinger</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 371,1106</idno>
+						<idno subtype="Hinweis">2 Kopien bekannt, beide von Bullinger</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -34,14 +37,17 @@
 				</msDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#167">Genf</settlement>
-						<institution>Bibliothèque publique et universitaire</institution>
-						<idno type="Kopie">Ms. lat. 120, f. 59</idno>
-						<repository ref="archive#38">
+						<!--
+						<repository ref="archive38">
 							<name>Genf BPU</name>
-							<note type="Hinweis">Photo im Computer (unter «Aufnahmen von HBBW-Briefen»); Ausdruck in den Abschriften von Schiess unter Datum. [Interna]</note>
 							<ref target="http://institutions.ville-geneve.ch/fr/bge/"/>
 						</repository>
+						<settlement ref="place167">Genf</settlement>
+						<institution>Bibliothèque publique et universitaire</institution>
+						-->
+						<repository ref="archive38"/>
+						<idno subtype="Kopie">Ms. lat. 120, f. 59</idno>
+						<idno subtype="Hinweis">Photo im Computer (unter «Aufnahmen von HBBW-Briefen»); Ausdruck in den Abschriften von Schiess unter Datum. [Interna]</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -50,54 +56,60 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6822">
 				<correspAction type="sent">
-					<persName ref="person#3738" cert="low">
+					<!--
+					<persName ref="person3738" cert="low">
 						<forename cert="low">Georg</forename>
 						<surname cert="low">von Stetten</surname>
-						<addName type="main">von Stetten d.J., Georg</addName>
+						<persName type="main" ref="person3740>von Stetten d.J., Georg</addName>
 					</persName>
-					<place source="#18" cert="low">
-						<settlement>Augsburg</settlement>
-						<district>Bayern</district>
-						<country>Deutschland</country>
-						<geo>48.37154 10.89851</geo>
-					</place>
+					-->
+					<persName ref="person3738" cert="low"/>
+					<place source="place18" cert="low"/>
 					<date when="1566-06-25" cert="low"><note>Vgl. HB an Beza, 10. Juli 1566 (= ID 6836)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#503" cert="low">
+					<!--
+					<persName ref="person503" cert="low">
 						<forename cert="low">s.n.</forename>
 						<surname cert="low">Bullinger</surname>
-						<addName type="main">Bullinger, Heinrich</addName>
+						<persName type="main" ref="person495>Bullinger, Heinrich</addName>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person503" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6823"/>
-					<ref type="prev_chronologically" target="files.xml#6821"/>
-					<ref type="next_correspondence" target="files.xml#6872"/>
-					<ref type="prev_correspondence" target="files.xml#6781"/>
-					<ref type="next_correspondence_request" target="files.xml#6872"/>
-					<ref type="prev_correspondence_request" target="files.xml#6781"/>
-					<ref type="next_correspondence_reaction" target="files.xml#8717"/>
+					<ref type="next_chronologically" target="file6823"/>
+					<ref type="prev_chronologically" target="file6821"/>
+					<ref type="next_correspondence" target="file6872"/>
+					<ref type="prev_correspondence" target="file6781"/>
+					<ref type="next_correspondence_request" target="file6872"/>
+					<ref type="prev_correspondence_request" target="file6781"/>
+					<ref type="next_correspondence_reaction" target="file8717"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#6872"/>
-					<ref type="prev_same_sender" target="files.xml#6781"/>
-					<ref type="next_same_addressee" target="files.xml#6832"/>
-					<ref type="prev_same_addressee" target="files.xml#6820"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6872"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6781"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6832"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6820"/>
-					<ref type="child" target="files.xml#6836"/>
-					<ref type="parent" target="files.xml#6836"/>
+					<ref type="next_same_sender" target="file6872"/>
+					<ref type="prev_same_sender" target="file6781"/>
+					<ref type="next_same_addressee" target="file6832"/>
+					<ref type="prev_same_addressee" target="file6820"/>
+					<ref type="next_with_sender_as_addressee" target="file6872"/>
+					<ref type="prev_with_sender_as_addressee" target="file6781"/>
+					<ref type="next_with_addressee_as_sender" target="file6832"/>
+					<ref type="prev_with_addressee_as_sender" target="file6820"/>
+					<ref type="child" target="file6836"/>
+					<ref type="parent" target="file6836"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="6822/Kopie/00 E_II_371__fol__1106_r_.tif" n="1"/>
+		<graphic url="6822/Kopie/01 E_II_371__fol__1106_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

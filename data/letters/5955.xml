@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6346/190</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#474">St. Gallen</settlement>
-						<institution>Kantonsbibliothek Vadiana</institution>
-						<idno type="Autograph">IX, 132</idno>
-						<repository ref="archive#78">
+						<!--
+						<repository ref="archive78">
 							<name>St. Gallen KB</name>
 							<ref target="https://www.sg.ch/kultur/kantonsbibliothek-vadiana.html"/>
 						</repository>
+						<settlement ref="place474">St. Gallen</settlement>
+						<institution>Kantonsbibliothek Vadiana</institution>
+						-->
+						<repository ref="archive78"/>
+						<idno subtype="Autograph">IX, 132</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,14 +51,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms F 43,109v-110r</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">dat.: 23. Nov. 1563</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms F 43,109v-110r</idno>
+						<idno subtype="Hinweis">dat.: 23. Nov. 1563</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -64,52 +70,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5955">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1563-11-29" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#392" cert="high">
+					<!--
+					<persName ref="person392" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#287" cert="high">
-						<settlement>Leutmerken</settlement>
-						<district>Thurgau</district>
-						<country>Schweiz</country>
-						<geo>47.56506 9.03488</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="high"/>
+					<place source="place287" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5956"/>
-					<ref type="prev_chronologically" target="files.xml#5954"/>
-					<ref type="next_correspondence" target="files.xml#5966"/>
-					<ref type="prev_correspondence" target="files.xml#5938"/>
-					<ref type="next_correspondence_request" target="files.xml#5978"/>
-					<ref type="prev_correspondence_request" target="files.xml#5823"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5966"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5938"/>
-					<ref type="next_same_sender" target="files.xml#5960"/>
-					<ref type="prev_same_sender" target="files.xml#5954"/>
-					<ref type="next_same_addressee" target="files.xml#5966"/>
-					<ref type="prev_same_addressee" target="files.xml#5938"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5960"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5954"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5966"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5938"/>
+					<ref type="next_chronologically" target="file5956"/>
+					<ref type="prev_chronologically" target="file5954"/>
+					<ref type="next_correspondence" target="file5966"/>
+					<ref type="prev_correspondence" target="file5938"/>
+					<ref type="next_correspondence_request" target="file5978"/>
+					<ref type="prev_correspondence_request" target="file5823"/>
+					<ref type="next_correspondence_reaction" target="file5966"/>
+					<ref type="prev_correspondence_reaction" target="file5938"/>
+					<ref type="next_same_sender" target="file5960"/>
+					<ref type="prev_same_sender" target="file5954"/>
+					<ref type="next_same_addressee" target="file5966"/>
+					<ref type="prev_same_addressee" target="file5938"/>
+					<ref type="next_with_sender_as_addressee" target="file5960"/>
+					<ref type="prev_with_sender_as_addressee" target="file5954"/>
+					<ref type="next_with_addressee_as_sender" target="file5966"/>
+					<ref type="prev_with_addressee_as_sender" target="file5938"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -124,69 +129,69 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Tandem mitto responsionem viri cuiusdam boni ad quastiones illas tuas; hoc autem peto, ut mihi manum istius, id est has literas remittas aut discindas et aboleas.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Tandem mitto responsionem viri cuiusdam boni ad quastiones illas tuas; hoc autem peto, ut mihi manum istius, id est has literas remittas aut discindas et aboleas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Manum si viderent Gugelbergii, facile agnoscerent.</s>
+					<s n="3" xml:lang="la" type="auto">Manum si viderent Gugelbergii, facile agnoscerent.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Diu ille respondere noluit timens, ne ipsi aliquando fraudi foret.</s>
+					<s n="4" xml:lang="la" type="auto">Diu ille respondere noluit timens, ne ipsi aliquando fraudi foret.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex Gallia nunc nihil habemus, nisi quod nundinae Lugdunenses dicantur fuisse frequentes et pacata satis omnia.</s>
+					<s n="5" xml:lang="la" type="auto">Ex Gallia nunc nihil habemus, nisi quod nundinae Lugdunenses dicantur fuisse frequentes et pacata satis omnia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Caeterum Roma scribitur 2. novembris in hanc fere sententiam: "Papa praeterita septimana expedivit r[everendissimum] d. Beriam ad imperatorem, r. Sanctae Crucis ad Gallum et r. Vicecomitem ad Hispanum legatos petitum, ut in certum conveniant locum, in quo concludant, quae concludenda sint pro terminatione et exequtione concilii Tridentini contra omnes principes et respublicas, quae declaratae haereticae per concilium etc.</s>
+					<s n="6" xml:lang="la" type="auto">Caeterum Roma scribitur 2. novembris in hanc fere sententiam: "Papa praeterita septimana expedivit r[everendissimum] d. Beriam ad imperatorem, r. Sanctae Crucis ad Gallum et r. Vicecomitem ad Hispanum legatos petitum, ut in certum conveniant locum, in quo concludant, quae concludenda sint pro terminatione et exequtione concilii Tridentini contra omnes principes et respublicas, quae declaratae haereticae per concilium etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Fuit hic Romae Lotharingus cardinalis, qui horum consiliorum artifex esse putatur.</s>
-					<s xml:lang="la" type="auto">Idem impetravit illustrissimum d. Franciscum Estensem, patruum ducis Ferrariae, qui nomine omnium Italiae principum proficiscatur ad regem Galliae petitum contra noxios homines in Gallia vindictam, maximam contra eos, quorum consilio et impulsu occisus sit Guysius" etc.</s>
+					<s n="7" xml:lang="la" type="auto">Fuit hic Romae Lotharingus cardinalis, qui horum consiliorum artifex esse putatur.</s>
+					<s n="8" xml:lang="la" type="auto">Idem impetravit illustrissimum d. Franciscum Estensem, patruum ducis Ferrariae, qui nomine omnium Italiae principum proficiscatur ad regem Galliae petitum contra noxios homines in Gallia vindictam, maximam contra eos, quorum consilio et impulsu occisus sit Guysius" etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ergo, sicuti ab antiquo caedes, bella, incendia, proditiones, parricidia ex lustro hoc luporum Roma prodierunt, ita nunc quoque meretrix madens sanguine sanctorum coccinea poculum offert omnibus principibus.</s>
+					<s n="9" xml:lang="la" type="auto">Ergo, sicuti ab antiquo caedes, bella, incendia, proditiones, parricidia ex lustro hoc luporum Roma prodierunt, ita nunc quoque meretrix madens sanguine sanctorum coccinea poculum offert omnibus principibus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Veni, domine Iesu, et deiice tandem istam bestiam!</s>
-					<s xml:lang="la" type="auto">Exortus est in Calabria motus.</s>
+					<s n="10" xml:lang="la" type="auto">Veni, domine Iesu, et deiice tandem istam bestiam!</s>
+					<s n="11" xml:lang="la" type="auto">Exortus est in Calabria motus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Referuntur a Philippo propter graves exactiones ad 6000 defecisse iuvarique a quibusdam nobilibus.</s>
+					<s n="12" xml:lang="la" type="auto">Referuntur a Philippo propter graves exactiones ad 6000 defecisse iuvarique a quibusdam nobilibus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Condensantur contra hos Hispani; aliquoties congressi defectores superiores evasere.</s>
+					<s n="13" xml:lang="la" type="auto">Condensantur contra hos Hispani; aliquoties congressi defectores superiores evasere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nunc dicuntur Ianuam appulisse supra 2000 Hispanorum; incertum tamen, an et illi sint in Calabriam profecturi.</s>
+					<s n="14" xml:lang="la" type="auto">Nunc dicuntur Ianuam appulisse supra 2000 Hispanorum; incertum tamen, an et illi sint in Calabriam profecturi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Mediolanensibus novum est impositum vectigal, ob quod omnes vociferantur etc.</s>
-					<s xml:lang="la" type="auto">22. huius mensis Bernhardinus Ochinus, ecclesiae Italicae minister, officio suo deiectus et urbe et agro eiectus est ab amplissimo senatu urbis nostrae propter editos et Basileae impressos 30 eius dialogos multa prava et noxia continentes; hinc sunt offendicula et querelae.</s>
+					<s n="15" xml:lang="la" type="auto">Mediolanensibus novum est impositum vectigal, ob quod omnes vociferantur etc.</s>
+					<s n="16" xml:lang="la" type="auto">22. huius mensis Bernhardinus Ochinus, ecclesiae Italicae minister, officio suo deiectus et urbe et agro eiectus est ab amplissimo senatu urbis nostrae propter editos et Basileae impressos 30 eius dialogos multa prava et noxia continentes; hinc sunt offendicula et querelae.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ita nos exercemur perpetuo et ab hostibus et a falsis fratribus.</s>
+					<s n="17" xml:lang="la" type="auto">Ita nos exercemur perpetuo et ab hostibus et a falsis fratribus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Agitur de eadem causa et Basileae, ubi Castalio vertit Latine etc.</s>
+					<s n="18" xml:lang="la" type="auto">Agitur de eadem causa et Basileae, ubi Castalio vertit Latine etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ora pro nobis dominum perpetuo.</s>
+					<s n="19" xml:lang="la" type="auto">Ora pro nobis dominum perpetuo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salvi sint tui omnes!</s>
-					<s xml:lang="la" type="auto">Bene vale.</s>
+					<s n="20" xml:lang="la" type="auto">Salvi sint tui omnes!</s>
+					<s n="21" xml:lang="la" type="auto">Bene vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 29. novembris 1563.</s>
+					<s n="22" xml:lang="la" type="auto">Tiguri 29. novembris 1563.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Bullingerus.</s>
+					<s n="23" xml:lang="la" type="auto">Tuus Bullingerus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Ambrosio Blaurero, Lüthmerchae agenti in Durgavia, fratri meo charissimo.</s>
+					<s n="24" xml:lang="la" type="auto">Clarissimo viro d. Ambrosio Blaurero, Lüthmerchae agenti in Durgavia, fratri meo charissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Lüthmerchen.</s>
+					<s n="25" xml:lang="de" type="auto">Lüthmerchen.</s>
 				</p>
 			</div>
 		</body>

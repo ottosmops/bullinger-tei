@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2014"/>
-				<idno type="ISBN">ISBN 978-3-290-17760-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2423</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17760-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2423</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 16</title>
+				<title subtype="publication">HBBW XVI</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">16</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 370a,566</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 370a,566</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,13 @@
 							<p xml:id="regest1">
 								[Hans Wilpert] Zoller fehlt es an Zeit, um an Bullinger oder an seine Mutter [Agnes, geb. Schmid] zu
 								schreiben. Haller gibt ihm bisweilen brieflich Ratschläge, wie er sich verhalten soll. Vor einigen Tagen war
-								[Sebastian] Schertlin [von Burtenbach] in <placeName ref="70">Augsburg</placeName> und lobte Zoller
+								[Sebastian] Schertlin [von Burtenbach] in <placeName ref="place70">Augsburg</placeName> und lobte Zoller
 								sehr. Haller mahnte diesen daraufhin [in einem Brief], trotz [Schertlins] Lob demütig und bescheiden zu
 								bleiben.
 								</p>
 								<p xml:id="regest2">
 								- Angeblich sind die Lebensmittel in [Zürich] nicht teuer. In
-								[<placeName ref="70">Augsburg</placeName>] sind die Preise sogar um über die Hälfte gesunken.
+								[<placeName ref="place70">Augsburg</placeName>] sind die Preise sogar um über die Hälfte gesunken.
 							</p>
 						</summary>
 					</msContents>
@@ -64,39 +67,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12470">
 				<correspAction type="sent">
-					<persName ref="person#8018" cert="high">
+					<!--
+					<persName ref="person8018" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Haller d.J.</surname>
-						<graphic type="portrait" url="portraits/1430_HallerdJ_Johannes.jpg"/>
+						<graphic type="portrait" url="portraits/1430_Haller_dJ_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Haller_der_J%C3%BCngere"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/136925588"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413871"/>
 					</persName>
-					<date min="1546-04-14" max="1546-05-09" cert="low">kurz nach 14. April oder 9. Mai 1546</date>
+					-->
+					<persName ref="person8018" cert="high"/>
+					<date notBefore="1546-04-14" notAfter="1546-05-09" cert="low">kurz nach 14. April oder 9. Mai 1546</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12471"/>
-					<ref type="prev_chronologically" target="files.xml#12469"/>
-					<ref type="next_correspondence" target="files.xml#12490"/>
-					<ref type="prev_correspondence" target="files.xml#12469"/>
-					<ref type="next_correspondence_request" target="files.xml#12490"/>
-					<ref type="prev_correspondence_request" target="files.xml#12469"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12526"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12435"/>
-					<ref type="next_same_sender" target="files.xml#12490"/>
-					<ref type="prev_same_sender" target="files.xml#12469"/>
-					<ref type="next_same_addressee" target="files.xml#12471"/>
-					<ref type="prev_same_addressee" target="files.xml#12454"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12490"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12469"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12471"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12454"/>
+					<ref type="next_chronologically" target="file12471"/>
+					<ref type="prev_chronologically" target="file12469"/>
+					<ref type="next_correspondence" target="file12490"/>
+					<ref type="prev_correspondence" target="file12469"/>
+					<ref type="next_correspondence_request" target="file12490"/>
+					<ref type="prev_correspondence_request" target="file12469"/>
+					<ref type="next_correspondence_reaction" target="file12526"/>
+					<ref type="prev_correspondence_reaction" target="file12435"/>
+					<ref type="next_same_sender" target="file12490"/>
+					<ref type="prev_same_sender" target="file12469"/>
+					<ref type="next_same_addressee" target="file12471"/>
+					<ref type="prev_same_addressee" target="file12454"/>
+					<ref type="next_with_sender_as_addressee" target="file12490"/>
+					<ref type="prev_with_sender_as_addressee" target="file12469"/>
+					<ref type="next_with_addressee_as_sender" target="file12471"/>
+					<ref type="prev_with_addressee_as_sender" target="file12454"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -114,26 +127,26 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Si Zollerus<note xml:id="fn2" type="footnote" n="2">Hans Wilpert Zoller.</note> nec tibi nec matri<note xml:id="fn3" type="footnote" n="3">Agnes, geb. <persName ref="188">Schmid</persName>; s. Carl <hi>Keller-Escher,</hi> Promptuarium genealogicum, Bd. VII (Zürich ZB, Ms Z II 6a), S. 435.</note> scribit, ignoscite.</s>
-					<s xml:lang="la" type="auto">Non enim ei datur tempus.</s>
-					<s xml:lang="la" type="auto">Ego ei subinde scribo et instituo eum, quomodo se gerere debeat.<pb type="edition" next="354"/></s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Si Zollerus<note xml:id="fn2" type="footnote" n="2">Hans Wilpert Zoller.</note> nec tibi nec matri<note xml:id="fn3" type="footnote" n="3">Agnes, geb. Schmid; s. Carl <hi>Keller-Escher,</hi> Promptuarium genealogicum, Bd. VII (Zürich ZB, Ms Z II 6a), S. 435.</note> scribit, ignoscite.</s>
+					<s n="3" xml:lang="la" type="auto">Non enim ei datur tempus.</s>
+					<s n="4" xml:lang="la" type="auto">Ego ei subinde scribo et instituo eum, quomodo se gerere debeat.<pb type="edition" next="354"/></s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Laudat eum valde Schertlius<note xml:id="fn4" type="footnote" n="4">Sebastian Schertlin von Burtenbach.</note>, quem allocutus sum superioribus diebus, cum esset <placeName ref="70">Augustae</placeName> illius gratia.</s>
-					<s xml:lang="la" type="auto">Moneo tamen eum<note xml:id="fn5" type="footnote" n="5">Gemeint ist Zoller.</note>, ne efferatur laudibus alienis, sed cum humilitate et modestia temperet fortitudinem.</s>
+					<s n="5" xml:lang="la" type="auto">Laudat eum valde Schertlius<note xml:id="fn4" type="footnote" n="4">Sebastian Schertlin von Burtenbach.</note>, quem allocutus sum superioribus diebus, cum esset <placeName ref="place70">Augustae</placeName> illius gratia.</s>
+					<s n="6" xml:lang="la" type="auto">Moneo tamen eum<note xml:id="fn5" type="footnote" n="5">Gemeint ist Zoller.</note>, ne efferatur laudibus alienis, sed cum humilitate et modestia temperet fortitudinem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale iterum.</s>
-					<s xml:lang="la" type="auto">Audio annonam apud vos caram non esse.</s>
-					<s xml:lang="la" type="auto">Idem fit apud nos<note xml:id="fna" type="footnote" n="a">nos <hi>wurde in der Vorlage vergessen.</hi></note>; descendit precium ultra dimidiam partem.</s>
-					<s xml:lang="la" type="auto">Deo sit laus!</s>
+					<s n="7" xml:lang="la" type="auto">Vale iterum.</s>
+					<s n="8" xml:lang="la" type="auto">Audio annonam apud vos caram non esse.</s>
+					<s n="9" xml:lang="la" type="auto">Idem fit apud nos<note xml:id="fna" type="footnote" n="a">nos <hi>wurde in der Vorlage vergessen.</hi></note>; descendit precium ultra dimidiam partem.</s>
+					<s n="10" xml:lang="la" type="auto">Deo sit laus!</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">An m. Heinrych Bullinger zu Zürich, sinem insonders günstigen herren undt vatter.</s>
+					<s n="11" xml:lang="de" type="auto">An m. Heinrych Bullinger zu Zürich, sinem insonders günstigen herren undt vatter.</s>
 				</p>
 			</div>
 		</body>

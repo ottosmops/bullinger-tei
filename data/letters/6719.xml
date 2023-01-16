@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6794/45</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 371,1083</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 371,1083</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,77 +51,44 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6719">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<note type="Person">und Zürcher Geistliche</note>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1566-03-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#50" cert="high">Prediger</name>
-						<place source="#41" cert="high">
-							<settlement>Bern</settlement>
-							<district>Bern</district>
-							<country>Schweiz</country>
-							<geo>46.94809 7.44744</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#50" cert="high">Prediger</name>
-						<place source="#167" cert="high">
-							<settlement>Genf</settlement>
-							<district>Genève</district>
-							<country>Schweiz</country>
-							<geo>46.20222 6.14569</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#50" cert="high">Prediger</name>
-						<place source="#49" cert="high">
-							<settlement>Biel</settlement>
-							<district>Metropolitanes Frankreich</district>
-							<country>Frankreich</country>
-							<geo>47.13713 7.24608</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#50" cert="high">Prediger</name>
-						<place source="#98" cert="high">
-							<settlement>Chur</settlement>
-							<geo>46.84986 9.53287</geo>
-						</place>
-					</roleName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					<personGrp ref="role0" role="Prediger"/>
+					<personGrp ref="role0" role="Prediger"/>
+					<personGrp ref="role0" role="Prediger"/>
+					<personGrp ref="role0" role="Prediger"/>
+					<place source="place98" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6720"/>
-					<ref type="prev_chronologically" target="files.xml#6718"/>
+					<ref type="next_chronologically" target="file6720"/>
+					<ref type="prev_chronologically" target="file6718"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#6720"/>
-					<ref type="prev_same_sender" target="files.xml#6715"/>
-					<ref type="next_same_addressee" target="files.xml#9842"/>
+					<ref type="next_same_sender" target="file6720"/>
+					<ref type="prev_same_sender" target="file6715"/>
+					<ref type="next_same_addressee" target="file9842"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6720"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6715"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9842"/>
+					<ref type="next_with_sender_as_addressee" target="file6720"/>
+					<ref type="prev_with_sender_as_addressee" target="file6715"/>
+					<ref type="next_with_addressee_as_sender" target="file9842"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -136,26 +106,26 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Postquam mirabili dei providentia gratiaque singulari factum est, ut ministri omnium ecclesiarum in Helvetia et Rhetia consenserint in eam confessionem, quam antea vidistis et in quam etiam vos consensistis nobiscum, visum est illam praefixa praefatione communi omnium nostrum nomine edere in publicum.</s>
-					<s xml:lang="la" type="auto">Quod felix et faustum sit, precamur benedicente laboribus nostris domino nostro Iesu Christo.</s>
-					<s xml:lang="la" type="auto">Iam vero antea intellexistis Basiliensium responsum, quorum literas descriptas misimus ad d. Hallerum<note type="misc">zuerst wollte er offenbar schreiben 'ad vestram urbem Bernensem; es steht "nururbe" das gestrichen u. durch über der Zeile nachgetragenes, D. Hallerum nostrum' ersetzt ist.</note> nostrum.</s>
-					<s xml:lang="la" type="auto">Iussi autem sumus 12 exempla mittere ad vos, ut ea inter vos distribuatis et inter senatores praecipuos.</s>
-					<s xml:lang="la" type="auto">Omnia egimus communi magistratus nostri consilio, cuius sumptibus publicis haec res tandem est perfecta.</s>
-					<s xml:lang="la" type="auto">Restat vero, colendissimi domini et fratres charissimi, ut primum agamus maximas gratias domino deo nostro pro hoc concordi nostro consensu, deinde ut sedulo opem eius imploremus, quo laboribus nostris benedicere pergat ipseque efficiet, ut confessio nostr multum boni fructus proferat.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Postquam mirabili dei providentia gratiaque singulari factum est, ut ministri omnium ecclesiarum in Helvetia et Rhetia consenserint in eam confessionem, quam antea vidistis et in quam etiam vos consensistis nobiscum, visum est illam praefixa praefatione communi omnium nostrum nomine edere in publicum.</s>
+					<s n="3" xml:lang="la" type="auto">Quod felix et faustum sit, precamur benedicente laboribus nostris domino nostro Iesu Christo.</s>
+					<s n="4" xml:lang="la" type="auto">Iam vero antea intellexistis Basiliensium responsum, quorum literas descriptas misimus ad d. Hallerum<note type="misc">zuerst wollte er offenbar schreiben 'ad vestram urbem Bernensem; es steht "nururbe" das gestrichen u. durch über der Zeile nachgetragenes, D. Hallerum nostrum' ersetzt ist.</note> nostrum.</s>
+					<s n="5" xml:lang="la" type="auto">Iussi autem sumus 12 exempla mittere ad vos, ut ea inter vos distribuatis et inter senatores praecipuos.</s>
+					<s n="6" xml:lang="la" type="auto">Omnia egimus communi magistratus nostri consilio, cuius sumptibus publicis haec res tandem est perfecta.</s>
+					<s n="7" xml:lang="la" type="auto">Restat vero, colendissimi domini et fratres charissimi, ut primum agamus maximas gratias domino deo nostro pro hoc concordi nostro consensu, deinde ut sedulo opem eius imploremus, quo laboribus nostris benedicere pergat ipseque efficiet, ut confessio nostr multum boni fructus proferat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bene valete, viri reverendi, domini colendissimi et fratres charissimi.</s>
-					<s xml:lang="la" type="auto">Orate pro nobis ac amemus nos mutuum charitate syncera.</s>
+					<s n="8" xml:lang="la" type="auto">Bene valete, viri reverendi, domini colendissimi et fratres charissimi.</s>
+					<s n="9" xml:lang="la" type="auto">Orate pro nobis ac amemus nos mutuum charitate syncera.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 12. martii anno 1566.</s>
+					<s n="10" xml:lang="la" type="auto">Tiguri 12. martii anno 1566.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Heinrychus Bullingerus scripsit hoc nomine omnium pastorum atque ministrorum Tigurinae ecclesiae.</s>
+					<s n="11" xml:lang="la" type="auto">Heinrychus Bullingerus scripsit hoc nomine omnium pastorum atque ministrorum Tigurinae ecclesiae.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Huiusmodi literas misimus Bernam, Genevam et Biennam et Curiam<note type="misc">"et Curiam" nachträglich von ihm beigefügt.</note>.</s>
+					<s n="12" xml:lang="la" type="auto">Huiusmodi literas misimus Bernam, Genevam et Biennam et Curiam<note type="misc">"et Curiam" nachträglich von ihm beigefügt.</note>.</s>
 				</p>
 			</div>
 		</body>

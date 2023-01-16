@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2293</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 347,362</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 347,362</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -69,13 +72,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 74,16</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 74,16</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -89,50 +95,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1144">
 				<correspAction type="sent">
-					<persName ref="person#224" cert="high">
+					<!--
+					<persName ref="person224" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">a Lasco</surname>
-						<addName type="main">a Lasco (Laski), Johannes (Jan)</addName>
+						<persName type="main" ref="person8041>a Lasco (Laski), Johannes (Jan)</addName>
 						<graphic type="portrait" url="portraits/220_Laski_Jan.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_a_Lasco"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118726633"/>
 					</persName>
-					<place source="#296" cert="high">
-						<settlement>London</settlement>
-						<geo>51.50853 -0.12574</geo>
-					</place>
+					-->
+					<persName ref="person224" cert="high"/>
+					<place source="place296" cert="high"/>
 					<date when="1551-01-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1145"/>
-					<ref type="prev_chronologically" target="files.xml#1143"/>
-					<ref type="next_correspondence" target="files.xml#1240"/>
-					<ref type="prev_correspondence" target="files.xml#920"/>
-					<ref type="next_correspondence_request" target="files.xml#1240"/>
-					<ref type="prev_correspondence_request" target="files.xml#920"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2225"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12005"/>
-					<ref type="next_same_sender" target="files.xml#1240"/>
-					<ref type="prev_same_sender" target="files.xml#920"/>
-					<ref type="next_same_addressee" target="files.xml#1157"/>
-					<ref type="prev_same_addressee" target="files.xml#1138"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1240"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#920"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1157"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1138"/>
+					<ref type="next_chronologically" target="file1145"/>
+					<ref type="prev_chronologically" target="file1143"/>
+					<ref type="next_correspondence" target="file1240"/>
+					<ref type="prev_correspondence" target="file920"/>
+					<ref type="next_correspondence_request" target="file1240"/>
+					<ref type="prev_correspondence_request" target="file920"/>
+					<ref type="next_correspondence_reaction" target="file2225"/>
+					<ref type="prev_correspondence_reaction" target="file12005"/>
+					<ref type="next_same_sender" target="file1240"/>
+					<ref type="prev_same_sender" target="file920"/>
+					<ref type="next_same_addressee" target="file1157"/>
+					<ref type="prev_same_addressee" target="file1138"/>
+					<ref type="next_with_sender_as_addressee" target="file1240"/>
+					<ref type="prev_with_sender_as_addressee" target="file920"/>
+					<ref type="next_with_addressee_as_sender" target="file1157"/>
+					<ref type="prev_with_addressee_as_sender" target="file1138"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -149,48 +156,48 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Iam ter ad te scribere volui ex quo huc veni, vir sanctissime et frater in domino observandissime, sed nunquam literas absolvere prius potui quam illi iam abirent qui eas perferre debebant.</s>
-					<s xml:lang="la" type="auto">Nunc vero committere amplius nolui ut qui nunc se mihi obtulit nuncius sine meis ad te literis hinc abiret.</s>
-					<s xml:lang="la" type="auto">Est enim vir pius et vestri studiosissimus, quales hic non paucos habetis.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Iam ter ad te scribere volui ex quo huc veni, vir sanctissime et frater in domino observandissime, sed nunquam literas absolvere prius potui quam illi iam abirent qui eas perferre debebant.</s>
+					<s n="3" xml:lang="la" type="auto">Nunc vero committere amplius nolui ut qui nunc se mihi obtulit nuncius sine meis ad te literis hinc abiret.</s>
+					<s n="4" xml:lang="la" type="auto">Est enim vir pius et vestri studiosissimus, quales hic non paucos habetis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Multa autem mihi ad vos scribenda essent, sed neque est tutum, neque tempus patitur scribere omnia.</s>
-					<s xml:lang="la" type="auto">Istud autem imprimis a vobis istic omnibus peto, ut quae ad te scribo ea ad vos pariter omnes scripta esse putetis, qui simul in eodem ministerio collegae estis: nam revera non potui ad singulos scribere.</s>
+					<s n="5" xml:lang="la" type="auto">Multa autem mihi ad vos scribenda essent, sed neque est tutum, neque tempus patitur scribere omnia.</s>
+					<s n="6" xml:lang="la" type="auto">Istud autem imprimis a vobis istic omnibus peto, ut quae ad te scribo ea ad vos pariter omnes scripta esse putetis, qui simul in eodem ministerio collegae estis: nam revera non potui ad singulos scribere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Primum igitur ago gratias domino deo nostro quod regnum filii sui per vestrum ministerium istic provehat atque illustret, gratulorque ex animo vestris ecclesiis de inducta consensione illa doctrinae inter vos et dominum Calvinum in re sacramentaria, et spero plures indies illi subscripturos etiam esse.</s>
-					<s xml:lang="la" type="auto">Nos hic eandem doctrinam sequimur, etiamsi aliis quandoque verbis illam exprimamus, et brevi, si dominus volet, nostram omnes confessionem unanimiter edemus.</s>
-					<s xml:lang="la" type="auto">Quin et de Saxonicis quibusdam ecclesiis optima quaeque nobis hac in re per dei gratiam pollicemur.</s>
+					<s n="7" xml:lang="la" type="auto">Primum igitur ago gratias domino deo nostro quod regnum filii sui per vestrum ministerium istic provehat atque illustret, gratulorque ex animo vestris ecclesiis de inducta consensione illa doctrinae inter vos et dominum Calvinum in re sacramentaria, et spero plures indies illi subscripturos etiam esse.</s>
+					<s n="8" xml:lang="la" type="auto">Nos hic eandem doctrinam sequimur, etiamsi aliis quandoque verbis illam exprimamus, et brevi, si dominus volet, nostram omnes confessionem unanimiter edemus.</s>
+					<s n="9" xml:lang="la" type="auto">Quin et de Saxonicis quibusdam ecclesiis optima quaeque nobis hac in re per dei gratiam pollicemur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nos hic dei et regis nostri beneficio instituimus Germanicam et Gallicam ecclesiam, publicumque verbi ministerium duobus locis Germanica et Gallica lingua habemus.</s>
-					<s xml:lang="la" type="auto">Nunc de puro, quoad eius fieri potest, sacramentorum et disciplinae usu tractatur, quem nos brevi habituros, per dei gratiam, esse speramus.</s>
-					<s xml:lang="la" type="auto">Ecclesiam porro ita colligimus, ut qui in illa censeri velit, aeditae per nos confessioni nostrae subscribat, ut totius ecclesiae nostrae nomina in catalogo habeamus.</s>
-					<s xml:lang="la" type="auto">Eius porro confessionis nostrae aliquot exemplaria ad te transmitto, ut nostrae doctrinae rationes cognitas habeatis.</s>
-					<s xml:lang="la" type="auto">Vellem autem et domino Calvino unum a vobis transmitti, cui nostra omnia alioqui probari cupimus, atque illius ad dominum precibus ministerium hic nostrum commendari.</s>
-					<s xml:lang="la" type="auto">Iam vero et Itali suam habebunt ecclesiam, quibus et templum iam et minister peculiaris ordinatus est, vir et pius et doctus et singulari dicendi gratia praeditus, proque Christi gloria plurima passus.</s>
-					<s xml:lang="la" type="auto">Germanorum ministri sunt Gvaltherus Deloenus, regis demortui olim biblioscopus et Martinus Flandrus, inter vos aliquandiu cum domino Hoopero, ni fallor, versatus, de quo nobis omnes maiorem in modum gratulamur, propter hominis candorem, simplicitatem, eruditionem et pietatem.</s>
-					<s xml:lang="la" type="auto">Galli habent Franciscum Riverium et Richardum, bene doctum utrunque et eloquentem.</s>
+					<s n="10" xml:lang="la" type="auto">Nos hic dei et regis nostri beneficio instituimus Germanicam et Gallicam ecclesiam, publicumque verbi ministerium duobus locis Germanica et Gallica lingua habemus.</s>
+					<s n="11" xml:lang="la" type="auto">Nunc de puro, quoad eius fieri potest, sacramentorum et disciplinae usu tractatur, quem nos brevi habituros, per dei gratiam, esse speramus.</s>
+					<s n="12" xml:lang="la" type="auto">Ecclesiam porro ita colligimus, ut qui in illa censeri velit, aeditae per nos confessioni nostrae subscribat, ut totius ecclesiae nostrae nomina in catalogo habeamus.</s>
+					<s n="13" xml:lang="la" type="auto">Eius porro confessionis nostrae aliquot exemplaria ad te transmitto, ut nostrae doctrinae rationes cognitas habeatis.</s>
+					<s n="14" xml:lang="la" type="auto">Vellem autem et domino Calvino unum a vobis transmitti, cui nostra omnia alioqui probari cupimus, atque illius ad dominum precibus ministerium hic nostrum commendari.</s>
+					<s n="15" xml:lang="la" type="auto">Iam vero et Itali suam habebunt ecclesiam, quibus et templum iam et minister peculiaris ordinatus est, vir et pius et doctus et singulari dicendi gratia praeditus, proque Christi gloria plurima passus.</s>
+					<s n="16" xml:lang="la" type="auto">Germanorum ministri sunt Gvaltherus Deloenus, regis demortui olim biblioscopus et Martinus Flandrus, inter vos aliquandiu cum domino Hoopero, ni fallor, versatus, de quo nobis omnes maiorem in modum gratulamur, propter hominis candorem, simplicitatem, eruditionem et pietatem.</s>
+					<s n="17" xml:lang="la" type="auto">Galli habent Franciscum Riverium et Richardum, bene doctum utrunque et eloquentem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Breviter: est quod divinae benignitati omnes unanimiter gratias agamus pro tanto illius beneficio, gratitudinemque nostram nostra resipiscentia et mutuis charitatis officiis attestamur, et oremus diligenter ut, quod ita hic orsus est dominus pro ineffabili sua misericordia, hisce optissimum aflictissimis temporibus, id ut provehat ad finem usque, addatque nobis spiritum suum sanctum, qui nos nostraque consilia omnia in nostro ministerio regat, moderetur ac prosperet, ut regnum filii sui dilecti per nos propagari illustriusque reddi possit, ad gloriam nominis ipsius, salutem nostram et ecclesiae suae aedificationem.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="18" xml:lang="la" type="auto">Breviter: est quod divinae benignitati omnes unanimiter gratias agamus pro tanto illius beneficio, gratitudinemque nostram nostra resipiscentia et mutuis charitatis officiis attestamur, et oremus diligenter ut, quod ita hic orsus est dominus pro ineffabili sua misericordia, hisce optissimum aflictissimis temporibus, id ut provehat ad finem usque, addatque nobis spiritum suum sanctum, qui nos nostraque consilia omnia in nostro ministerio regat, moderetur ac prosperet, ut regnum filii sui dilecti per nos propagari illustriusque reddi possit, ad gloriam nominis ipsius, salutem nostram et ecclesiae suae aedificationem.</s>
+					<s n="19" xml:lang="la" type="manual">Amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sensimus iam conatus Satanae undiquaque nostrum institutum perturbare conantis, adeo ut res ad scissionem ecclesiarum propemodum spectaret.</s>
-					<s xml:lang="la" type="auto">Sed dominus iam furias illius compescuit utcunque, et posthac speramus meliora.</s>
+					<s n="20" xml:lang="la" type="auto">Sensimus iam conatus Satanae undiquaque nostrum institutum perturbare conantis, adeo ut res ad scissionem ecclesiarum propemodum spectaret.</s>
+					<s n="21" xml:lang="la" type="auto">Sed dominus iam furias illius compescuit utcunque, et posthac speramus meliora.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Iam finem cogor facere propter obruentia me negotia.</s>
-					<s xml:lang="la" type="auto">Opto itaque cum nostris omnibus, vos istic omnes observandissimos nobis praeceptores et fratres recte in domino agere et optime valere una cum tota ecclesia vestra, cuius nos precibus officiosissime commendamus.</s>
-					<s xml:lang="la" type="auto">Londini 7. ianuarii anno 1551.</s>
+					<s n="22" xml:lang="la" type="auto">Iam finem cogor facere propter obruentia me negotia.</s>
+					<s n="23" xml:lang="la" type="auto">Opto itaque cum nostris omnibus, vos istic omnes observandissimos nobis praeceptores et fratres recte in domino agere et optime valere una cum tota ecclesia vestra, cuius nos precibus officiosissime commendamus.</s>
+					<s n="24" xml:lang="la" type="auto">Londini 7. ianuarii anno 1551.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuae pietati ex animo addictissimus Ioannes a Lasco.</s>
+					<s n="25" xml:lang="la" type="auto">Tuae pietati ex animo addictissimus Ioannes a Lasco.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Viro sanctissimo domino Henrico Bullingero, ecclesiae Tigurinae ministro fidelissimo, fratri in domino unice observando.</s>
+					<s n="26" xml:lang="la" type="auto">Viro sanctissimo domino Henrico Bullingero, ecclesiae Tigurinae ministro fidelissimo, fratri in domino unice observando.</s>
 				</p>
 			</div>
 		</body>

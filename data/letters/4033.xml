@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 95,142</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Titel von Bullingers Hand</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 95,142</idno>
+						<idno subtype="Hinweis">Titel von Bullingers Hand</idno>
 					</msIdentifier>
 					<history><origin><p><date>zeitgenössisch</date></p></origin></history>
 					<physDesc>
@@ -56,14 +59,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 345,483r-485r</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">London, Public Record Office, S.P. 70.9 fol. 9-12</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 345,483r-485r</idno>
+						<idno subtype="Hinweis">London, Public Record Office, S.P. 70.9 fol. 9-12</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -72,39 +78,45 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4033">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<date when="1559-08-00" cert="low"><note>Datum unsicher  1559* (August anfangs (nach Juli 20. kurz vor August 7.))  (oder 1. Dez. 1559?)</note></date>
+					-->
+					<persName ref="person495" cert="high"/>
+					<date notBefore="1559-08-01" notAfter="1559-08-12" cert="low"><note>Datum unsicher  1559* (August anfangs (nach Juli 20. kurz vor August 7.))  (oder 1. Dez. 1559?)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3312" cert="low">
+					<!--
+					<persName ref="person3312" cert="low">
 						<forename cert="low">Franz II.</forename>
 						<surname cert="low">König von Frankreich</surname>
-						<addName type="main">König von Frankreich (Valois), Franz II.</addName>
+						<persName type="main" ref="person8347>König von Frankreich (Valois), Franz II.</addName>
 					</persName>
-					<place source="#832" cert="low">
-						<country>Frankreich</country>
-					</place>
+					-->
+					<persName ref="person3312" cert="low"/>
+					<place source="place832" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4034"/>
-					<ref type="prev_chronologically" target="files.xml#4032"/>
+					<ref type="next_chronologically" target="file4034"/>
+					<ref type="prev_chronologically" target="file4032"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#4034"/>
-					<ref type="prev_same_sender" target="files.xml#4028"/>
+					<ref type="next_same_sender" target="file4034"/>
+					<ref type="prev_same_sender" target="file4028"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4034"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4028"/>
+					<ref type="next_with_sender_as_addressee" target="file4034"/>
+					<ref type="prev_with_sender_as_addressee" target="file4028"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>

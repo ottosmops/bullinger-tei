@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5040/149</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 373,57</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 373,57</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 93,20</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 93,20</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -68,50 +74,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3683">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1558-08-26" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1075" cert="high">
+					<!--
+					<persName ref="person1075" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Fabricius</surname>
-						<addName type="main">Fabricius Montanus (Schmid), Johannes</addName>
+						<persName type="main" ref="person8009>Fabricius Montanus (Schmid), Johannes</addName>
 						<graphic type="portrait" url="portraits/1075_Fabricius_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Fabricius_Montanus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104045698"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414870"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person1075" cert="high"/>
+					<place source="place98" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3684"/>
-					<ref type="prev_chronologically" target="files.xml#3682"/>
-					<ref type="next_correspondence" target="files.xml#3687"/>
-					<ref type="prev_correspondence" target="files.xml#3680"/>
-					<ref type="next_correspondence_request" target="files.xml#3692"/>
-					<ref type="prev_correspondence_request" target="files.xml#3678"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3687"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3680"/>
-					<ref type="next_same_sender" target="files.xml#3685"/>
-					<ref type="prev_same_sender" target="files.xml#3678"/>
-					<ref type="next_same_addressee" target="files.xml#3687"/>
-					<ref type="prev_same_addressee" target="files.xml#3680"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3685"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3678"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3687"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3680"/>
+					<ref type="next_chronologically" target="file3684"/>
+					<ref type="prev_chronologically" target="file3682"/>
+					<ref type="next_correspondence" target="file3687"/>
+					<ref type="prev_correspondence" target="file3680"/>
+					<ref type="next_correspondence_request" target="file3692"/>
+					<ref type="prev_correspondence_request" target="file3678"/>
+					<ref type="next_correspondence_reaction" target="file3687"/>
+					<ref type="prev_correspondence_reaction" target="file3680"/>
+					<ref type="next_same_sender" target="file3685"/>
+					<ref type="prev_same_sender" target="file3678"/>
+					<ref type="next_same_addressee" target="file3687"/>
+					<ref type="prev_same_addressee" target="file3680"/>
+					<ref type="next_with_sender_as_addressee" target="file3685"/>
+					<ref type="prev_with_sender_as_addressee" target="file3678"/>
+					<ref type="next_with_addressee_as_sender" target="file3687"/>
+					<ref type="prev_with_addressee_as_sender" target="file3680"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -120,61 +128,64 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="3683/Autograph/00 E_II_373__S__57_.tif" n="1"/>
+		<graphic url="3683/Autograph/01 E_II_373__S__58_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Plures hisce diebus literas Francfordiam sunt scribendae, frater charissime.</s>
-					<s xml:lang="la" type="auto">Te itaque oro, ut breviusculis his sis contentus.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Plures hisce diebus literas Francfordiam sunt scribendae, frater charissime.</s>
+					<s n="3" xml:lang="la" type="auto">Te itaque oro, ut breviusculis his sis contentus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Recepi tuas ac prudenter te facere iudico, qui legato regio te non nimis familiarem facias; quia tamen vir est humanus et doctus, non videtur omnino contemnendus.</s>
-					<s xml:lang="la" type="auto">Interim ecclesia et incolumitas ecclesiae rebus praeferenda est omnibus.</s>
+					<s n="4" xml:lang="la" type="auto">Recepi tuas ac prudenter te facere iudico, qui legato regio te non nimis familiarem facias; quia tamen vir est humanus et doctus, non videtur omnino contemnendus.</s>
+					<s n="5" xml:lang="la" type="auto">Interim ecclesia et incolumitas ecclesiae rebus praeferenda est omnibus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Doleo vicem A[mbrosii]<note type="misc">A... viell</note>.</s>
-					<s xml:lang="la" type="auto">A[mbrosii] (Martini?); sed quia is talis est, prodest erupisse ulcus.</s>
+					<s n="6" xml:lang="la" type="auto">Doleo vicem A[mbrosii]<note type="misc">A... viell</note>.</s>
+					<s n="7" xml:lang="la" type="auto">A[mbrosii] (Martini?); sed quia is talis est, prodest erupisse ulcus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Simile evenit nobis Tiguri, ut scis, cum Fuliginosi filia nuberet Frölichio, militum duci;<note xml:id="fn1" type="footnote" n="1">Wilhelm Frölich heiratete ca. 1545 Anna Rahn (vgl. <hi>Keller-Escher,</hi> Die Familie Rahn von Zürich), aber vielleicht ist jemand anderer gemeint. Schieß löst Fuliginosus im Register mit "Röichli" auf. Das Dürsteler-Register zu den Zürcher Kirchenbüchern enthält weder zu Frölich noch zu Röichli einen passenden Eintrag.</note> scis, quam graves inimicitias illi contra nos exercuerint, quod pro concionibus sacris factum parentis damnaremus hortaremurque, ne quis inde offenderetur.</s>
-					<s xml:lang="la" type="auto">Prudenter tamen et moderate, quam fieri potuit, egimus, quod egimus, ne forte mederi vellemus et plus detrimenti daremus ecclesiae.</s>
-					<s xml:lang="la" type="auto">Tu quoque rationem habebis ecclesiae et aedificationis et pro huius commoditate opportune importune ages.</s>
-					<s xml:lang="la" type="auto">Orandus imprimis dominus, ut is sit in ore nostro et verba nostra dirigat ad gloriam nominis eius et incolumitatem animarum.</s>
-					<s xml:lang="la" type="auto">Turcicam classem discessisse cuperem; si quid de ea certius habueris, communicabis.</s>
-					<s xml:lang="la" type="auto">Pro istis, quae dedisti, ago gratias maximas.</s>
+					<s n="8" xml:lang="la" type="auto">Simile evenit nobis Tiguri, ut scis, cum Fuliginosi filia nuberet Frölichio, militum duci;<note xml:id="fn1" type="footnote" n="1">Wilhelm Frölich heiratete ca. 1545 Anna Rahn (vgl. <hi>Keller-Escher,</hi> Die Familie Rahn von Zürich), aber vielleicht ist jemand anderer gemeint. Schieß löst Fuliginosus im Register mit "Röichli" auf. Das Dürsteler-Register zu den Zürcher Kirchenbüchern enthält weder zu Frölich noch zu Röichli einen passenden Eintrag.</note> scis, quam graves inimicitias illi contra nos exercuerint, quod pro concionibus sacris factum parentis damnaremus hortaremurque, ne quis inde offenderetur.</s>
+					<s n="9" xml:lang="la" type="auto">Prudenter tamen et moderate, quam fieri potuit, egimus, quod egimus, ne forte mederi vellemus et plus detrimenti daremus ecclesiae.</s>
+					<s n="10" xml:lang="la" type="auto">Tu quoque rationem habebis ecclesiae et aedificationis et pro huius commoditate opportune importune ages.</s>
+					<s n="11" xml:lang="la" type="auto">Orandus imprimis dominus, ut is sit in ore nostro et verba nostra dirigat ad gloriam nominis eius et incolumitatem animarum.</s>
+					<s n="12" xml:lang="la" type="auto">Turcicam classem discessisse cuperem; si quid de ea certius habueris, communicabis.</s>
+					<s n="13" xml:lang="la" type="auto">Pro istis, quae dedisti, ago gratias maximas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salutabis quoque virum amplissimum d. a Cambray et illi me commendabis.</s>
+					<s n="14" xml:lang="la" type="auto">Salutabis quoque virum amplissimum d. a Cambray et illi me commendabis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Audimus hic quoque exercitum utrumque in vicinia consedisse et Philippi laborare commeatus inopia ideoque fervidius quaerere pugnandi occasionem.</s>
-					<s xml:lang="la" type="auto">Fama est, pro certo non refero, duodecim naves onerarias Gallicas voluisse in Caletum inferre annonam et pulverem bombardicum; ex his ab Anglica classe duas esse demersas, 10 captas.</s>
-					<s xml:lang="la" type="auto">Bernae superioribus diebus magna fuit concertatio, quod ministri Lausanenses voluerunt sibi dari excommunicationem et plurima huius generis.</s>
-					<s xml:lang="la" type="auto">Senatus eis restitit; tandem sequestres se interposuere ministri Bernenses, ut cum bona gratia Lausanenses domum redierint.</s>
-					<s xml:lang="la" type="auto">Semper aliquid turbarum est etc.</s>
+					<s n="15" xml:lang="la" type="auto">Audimus hic quoque exercitum utrumque in vicinia consedisse et Philippi laborare commeatus inopia ideoque fervidius quaerere pugnandi occasionem.</s>
+					<s n="16" xml:lang="la" type="auto">Fama est, pro certo non refero, duodecim naves onerarias Gallicas voluisse in Caletum inferre annonam et pulverem bombardicum; ex his ab Anglica classe duas esse demersas, 10 captas.</s>
+					<s n="17" xml:lang="la" type="auto">Bernae superioribus diebus magna fuit concertatio, quod ministri Lausanenses voluerunt sibi dari excommunicationem et plurima huius generis.</s>
+					<s n="18" xml:lang="la" type="auto">Senatus eis restitit; tandem sequestres se interposuere ministri Bernenses, ut cum bona gratia Lausanenses domum redierint.</s>
+					<s n="19" xml:lang="la" type="auto">Semper aliquid turbarum est etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="20" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 26. augusti 1558.</s>
+					<s n="21" xml:lang="la" type="auto">Tiguri 26. augusti 1558.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus tuus.</s>
+					<s n="22" xml:lang="la" type="auto">Bullingerus tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Non relegi.</s>
+					<s n="23" xml:lang="la" type="auto">Non relegi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Post dies 8, hoc est proxima die Veneris, si potes, aliquem ad me ex mercatoribus vestris venire iubeas.</s>
-					<s xml:lang="la" type="auto">Dabo ei duos libros, alterum pro te, alterum pro Philippo.</s>
+					<s n="24" xml:lang="la" type="auto">Post dies 8, hoc est proxima die Veneris, si potes, aliquem ad me ex mercatoribus vestris venire iubeas.</s>
+					<s n="25" xml:lang="la" type="auto">Dabo ei duos libros, alterum pro te, alterum pro Philippo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Prodit iam; nondum autem habeo exempla; alioqui nunc mitterem.</s>
-					<s xml:lang="la" type="auto">Praestantissimo viro d. Ioanni Fabritio, Curiensis ecclesiae fideli ministro, domino suo et fratri atque compatri dilectissimo.</s>
-					<s xml:lang="la" type="auto">Chur.</s>
+					<s n="26" xml:lang="la" type="auto">Prodit iam; nondum autem habeo exempla; alioqui nunc mitterem.</s>
+					<s n="27" xml:lang="la" type="auto">Praestantissimo viro d. Ioanni Fabritio, Curiensis ecclesiae fideli ministro, domino suo et fratri atque compatri dilectissimo.</s>
+					<s n="28" xml:lang="la" type="auto">Chur.</s>
 				</p>
 			</div>
 		</body>

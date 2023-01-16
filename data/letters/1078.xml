@@ -12,24 +12,28 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2223</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 346,264</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 346,264</idno>
+						<idno subtype="Hinweis">Handwechsel ab"Bullingero"(wohl von Erb geschrieben)</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +52,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 73,180</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 73,180</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -68,43 +75,46 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1078">
 				<correspAction type="sent">
-					<persName ref="person#3131" cert="high">
+					<!--
+					<persName ref="person3131" cert="high">
 						<forename cert="high">Sigismund</forename>
 						<surname cert="high">Taurus</surname>
-						<addName type="main">Stier (Taurus), Sigismund</addName>
+						<persName type="main" ref="person8103>Stier (Taurus), Sigismund</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Sigismund_Stier"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1275639186"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person3131" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1550-11-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
 					<note type="Adresse">durch Erb an Bullinger</note>
-					<persName ref="person#1010" cert="high">
+					-->
+					<persName ref="person495" cert="low"/>
+					<!--
+					<persName ref="person1010" cert="high">
 						<forename cert="high">Matthias</forename>
 						<surname cert="high">Erb</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Matthias_Erb"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/100972160"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person1010" cert="high"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1079"/>
-					<ref type="prev_chronologically" target="files.xml#1077"/>
+					<ref type="next_chronologically" target="file1079"/>
+					<ref type="prev_chronologically" target="file1077"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -112,13 +122,13 @@
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#13093"/>
-					<ref type="next_same_addressee" target="files.xml#2028"/>
-					<ref type="prev_same_addressee" target="files.xml#1034"/>
+					<ref type="prev_same_sender" target="file13093"/>
+					<ref type="next_same_addressee" target="file2028"/>
+					<ref type="prev_same_addressee" target="file1034"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13093"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2028"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1034"/>
+					<ref type="prev_with_sender_as_addressee" target="file13093"/>
+					<ref type="next_with_addressee_as_sender" target="file2028"/>
+					<ref type="prev_with_addressee_as_sender" target="file1034"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -135,35 +145,35 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Salutem in domino.</s>
-					<s xml:lang="la" type="auto">Quo in statu sint res principum Wirtenbergensium, amantissime frater, facile ex senioris ducis obitu coniicere poteris atque adeo literis a principe nostro superioribus diebus vobis transmissis.</s>
+					<s n="1" xml:lang="la" type="auto">Salutem in domino.</s>
+					<s n="2" xml:lang="la" type="auto">Quo in statu sint res principum Wirtenbergensium, amantissime frater, facile ex senioris ducis obitu coniicere poteris atque adeo literis a principe nostro superioribus diebus vobis transmissis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Negotium d. Christophoro ut haeredi cum rege Ferdinando, nobis cum Caesare esse plane ignotum non est.</s>
-					<s xml:lang="la" type="auto">Si ea essent composita et transacta, bene nobiscum ex optimi maximi beneficio agi non dubitarem.</s>
-					<s xml:lang="la" type="auto">Id ut iuxta patris nostri cęlestis voluntatem, ad eius gloriam et animarum nostrarum salutem fiat, summa opera, diligentia et studio precandum est.</s>
-					<s xml:lang="la" type="auto">Qua in re puto summe necessarium, ut fratres omnes in concionibus et precationibus solitariis non intermittant pulsare apud dominum, ut omnia dirigat et disponat ad suam gloriam et principum salutem.</s>
-					<s xml:lang="la" type="auto">Optime vale.</s>
-					<s xml:lang="la" type="auto">Basileae, 13. novembris 1550.</s>
+					<s n="3" xml:lang="la" type="auto">Negotium d. Christophoro ut haeredi cum rege Ferdinando, nobis cum Caesare esse plane ignotum non est.</s>
+					<s n="4" xml:lang="la" type="auto">Si ea essent composita et transacta, bene nobiscum ex optimi maximi beneficio agi non dubitarem.</s>
+					<s n="5" xml:lang="la" type="auto">Id ut iuxta patris nostri cęlestis voluntatem, ad eius gloriam et animarum nostrarum salutem fiat, summa opera, diligentia et studio precandum est.</s>
+					<s n="6" xml:lang="la" type="auto">Qua in re puto summe necessarium, ut fratres omnes in concionibus et precationibus solitariis non intermittant pulsare apud dominum, ut omnia dirigat et disponat ad suam gloriam et principum salutem.</s>
+					<s n="7" xml:lang="la" type="auto">Optime vale.</s>
+					<s n="8" xml:lang="la" type="auto">Basileae, 13. novembris 1550.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Taurus.</s>
+					<s n="9" xml:lang="la" type="auto">Tuus Taurus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dux Huldrichus obiit 6. novembris mane intra 5. et 6. horas 1550.</s>
-					<s xml:lang="la" type="auto">Significato mihi pretium pro nostri filii vestibus, quod debes.</s>
-					<s xml:lang="la" type="auto">Rursum vale in domino.</s>
+					<s n="10" xml:lang="la" type="auto">Dux Huldrichus obiit 6. novembris mane intra 5. et 6. horas 1550.</s>
+					<s n="11" xml:lang="la" type="auto">Significato mihi pretium pro nostri filii vestibus, quod debes.</s>
+					<s n="12" xml:lang="la" type="auto">Rursum vale in domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingero.</s>
+					<s n="13" xml:lang="la" type="auto">Bullingero.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dum claudebam tuas pręsente Nicolao Regio, redditę sunt mihi literę Petri Tossani, confratris nostri charissimi, quę indicant statum ecclesię Montbelgardianę magno esse in periculo propter episcopum Vesontinum et Burgundiones.</s>
-					<s xml:lang="la" type="auto">Disputarunt illic fratres, an velint salutare et resalutare impios pfaffones, et convenerunt quod minime et cupiunt scire meam sententiam.</s>
-					<s xml:lang="la" type="auto">Oro, ut tu quoque, si vacarit, tuam ad me scribas sententiam etc.</s>
+					<s n="14" xml:lang="la" type="auto">Dum claudebam tuas pręsente Nicolao Regio, redditę sunt mihi literę Petri Tossani, confratris nostri charissimi, quę indicant statum ecclesię Montbelgardianę magno esse in periculo propter episcopum Vesontinum et Burgundiones.</s>
+					<s n="15" xml:lang="la" type="auto">Disputarunt illic fratres, an velint salutare et resalutare impios pfaffones, et convenerunt quod minime et cupiunt scire meam sententiam.</s>
+					<s n="16" xml:lang="la" type="auto">Oro, ut tu quoque, si vacarit, tuam ad me scribas sententiam etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nil dissidii paret.</s>
+					<s n="17" xml:lang="la" type="auto">Nil dissidii paret.</s>
 				</p>
 				<p>
 					<note>[Nur ein Zettel. Schluss von Bullingero an scheint von Erb geschrieben zu sein.]</note>

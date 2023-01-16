@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=898</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=898</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 348,421</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 348,421</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,16 +49,16 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Die <placeName ref="1049">Straßburger</placeName> sind erfreut darüber, daß sich Bullinger für die
-								Konkordie einsetzen will. Die [Zehn Artikel] der <placeName ref="644">Londoner</placeName> Synode
-								kann <persName ref="28">Bucer</persName> wegen der bevorstehenden Abreise nach
-								<placeName ref="1107">Tübingen</placeName> jetzt nicht schicken, hat sie aber bereits an die in
-								Zürich befindlichen Engländer [<persName ref="164">Partridge</persName>,
-								<persName ref="37">Butler</persName> und <persName ref="2555">Woodroffe</persName>] gesandt;
-								bedauert zwar, daß die von <persName ref="98">König</persName>
-								[<persName ref="98">Heinrich VIII.</persName>] gewünschte
-								Gesandtschaft [der <placeName ref="958">Schmalkaldener</placeName>] nicht zustande kam, doch wird
-								in <placeName ref="9">England</placeName> immerhin bereits richtig über den Papst und die
+								Die <placeName ref="place1049">Straßburger</placeName> sind erfreut darüber, daß sich Bullinger für die
+								Konkordie einsetzen will. Die [Zehn Artikel] der <placeName ref="place644">Londoner</placeName> Synode
+								kann <persName ref="person28">Bucer</persName> wegen der bevorstehenden Abreise nach
+								<placeName ref="place1107">Tübingen</placeName> jetzt nicht schicken, hat sie aber bereits an die in
+								Zürich befindlichen Engländer [<persName ref="person164">Partridge</persName>,
+								<persName ref="person37">Butler</persName> und <persName ref="person2555">Woodroffe</persName>] gesandt;
+								bedauert zwar, daß die von König
+								[<persName ref="person98">Heinrich VIII.</persName>] gewünschte
+								Gesandtschaft [der <placeName ref="place958">Schmalkaldener</placeName>] nicht zustande kam, doch wird
+								in <placeName ref="place9">England</placeName> immerhin bereits richtig über den Papst und die
 								Rechtfertigung gelehrt. Grüße.
 							</p>
 						</summary>
@@ -66,46 +69,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10940">
 				<correspAction type="sent">
-					<persName ref="person#467" cert="high">
+					<!--
+					<persName ref="person467" cert="high">
 						<forename cert="high">Martin</forename>
 						<surname cert="high">Bucer</surname>
 						<graphic type="portrait" url="portraits/467_Bucer_Martinus.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Martin_Bucer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118516507"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11483585"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
-					<date min="1536-09-00" max="1536-10-00" cert="low"/>
+					-->
+					<persName ref="person467" cert="high"/>
+					<place source="place492" cert="high"/>
+					<date notBefore="1536-09-01" notAfter="1536-10-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10931"/>
-					<ref type="prev_chronologically" target="files.xml#10928"/>
-					<ref type="next_correspondence" target="files.xml#10931"/>
-					<ref type="prev_correspondence" target="files.xml#10917"/>
-					<ref type="next_correspondence_request" target="files.xml#11090"/>
-					<ref type="prev_correspondence_request" target="files.xml#10917"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10931"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10786"/>
-					<ref type="next_same_sender" target="files.xml#10981"/>
-					<ref type="prev_same_sender" target="files.xml#10917"/>
-					<ref type="next_same_addressee" target="files.xml#10931"/>
-					<ref type="prev_same_addressee" target="files.xml#10925"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10981"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10917"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10931"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10925"/>
+					<ref type="next_chronologically" target="file10931"/>
+					<ref type="prev_chronologically" target="file10928"/>
+					<ref type="next_correspondence" target="file10931"/>
+					<ref type="prev_correspondence" target="file10917"/>
+					<ref type="next_correspondence_request" target="file11090"/>
+					<ref type="prev_correspondence_request" target="file10917"/>
+					<ref type="next_correspondence_reaction" target="file10931"/>
+					<ref type="prev_correspondence_reaction" target="file10786"/>
+					<ref type="next_same_sender" target="file10981"/>
+					<ref type="prev_same_sender" target="file10917"/>
+					<ref type="next_same_addressee" target="file10931"/>
+					<ref type="prev_same_addressee" target="file10925"/>
+					<ref type="next_with_sender_as_addressee" target="file10981"/>
+					<ref type="prev_with_sender_as_addressee" target="file10917"/>
+					<ref type="next_with_addressee_as_sender" target="file10931"/>
+					<ref type="prev_with_addressee_as_sender" target="file10925"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -122,33 +129,33 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratia et pax, observande et charissime Bullingere.</s>
+					<s n="1" xml:lang="la" type="auto">Gratia et pax, observande et charissime Bullingere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nostri hic admodum exhilarati sunt, dum praedicavimus illis, qua fide, quo studio concordiam iuveris illic et adiuturum te receperis apud tuos<note xml:id="fna" type="footnote" n="a">apud tuos <hi>über der Zeile nachgetragen.</hi></note><note xml:id="fn2" type="footnote" n="2"><persName ref="28">Bucer</persName> bezieht sich wohl auf mündliche Äußerungen Bullingers während der Bas- 1er Tagung vom 24./25. September. Vgl. den Abschied vom 25. September (EA IV/1c 764) sowie die Antwort der Theologen auf den Vortrag <persName ref="40">Capitos</persName> und <persName ref="28">Bucers</persName> (ebd. und EA IV/1b 903f, zu f 2; Abschrift von Bullingers Hand: E II 337, 180v.-181r.).</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Nostri hic admodum exhilarati sunt, dum praedicavimus illis, qua fide, quo studio concordiam iuveris illic et adiuturum te receperis apud tuos<note xml:id="fna" type="footnote" n="a">apud tuos <hi>über der Zeile nachgetragen.</hi></note><note xml:id="fn2" type="footnote" n="2"><persName ref="person28">Bucer</persName> bezieht sich wohl auf mündliche Äußerungen Bullingers während der Bas- 1er Tagung vom 24./25. September. Vgl. den Abschied vom 25. September (EA IV/1c 764) sowie die Antwort der Theologen auf den Vortrag <persName ref="person40">Capitos</persName> und <persName ref="person28">Bucers</persName> (ebd. und EA IV/1b 903f, zu f 2; Abschrift von Bullingers Hand: E II 337, 180v.-181r.).</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Volebam vobis mittere capita synodi <placeName ref="644">Londinensis</placeName><note xml:id="fn3" type="footnote" n="3">Zur den von der Konvokation im Juli 1536 angenommenen "Zehn Artikeln" s. <hi>Prüser,</hi> <placeName ref="9">England</placeName> 112-115.</note>, sed defuit tempus.</s>
-					<s xml:lang="la" type="auto">Abeo enim nunc <placeName ref="1107">Tubingam</placeName><note xml:id="fn4" type="footnote" n="4">Siehe oben Anm. 1.</note>.</s>
-					<s xml:lang="la" type="auto">Capita eius perscripsi ad Anglos hospites vestros<note xml:id="fn5" type="footnote" n="5"><persName ref="164">Nicholas Partridge</persName>, <persName ref="37">John Butler</persName> und <persName ref="2555">William Woodroffe</persName>.</note>; ab illis accipietis ea.</s>
-					<s xml:lang="la" type="auto">Nos regno Christi pessime defuimus detrectando legationem mittere, quae hinc<note xml:id="fnb" type="footnote" n="b"><hi>kann auch als</hi> huic <hi>gelesen werden.</hi></note> synodo interfuisset, id quod rex petierat<note xml:id="fn6" type="footnote" n="6">Auf die Entsendung der von <persName ref="98">König Heinrich VIII.</persName> gewünschten Gesandtschaft der <placeName ref="958">Schmalkaldener</placeName>, an der auch <persName ref="28">Bucer</persName> teilnehmen sollte, hatte man nach der Hinrichtung Anne <persName ref="489">Boleyns</persName> verzichtet; s. <hi>Prüser,</hi> <placeName ref="9">England</placeName> 95-103.</note>.</s>
-					<s xml:lang="la" type="manual">Sed accipiendum est, quod dominus largitur.</s>
-					<s xml:lang="la" type="auto">Bene habet, dum regnum hoc<note xml:id="fnc" type="footnote" n="c">hoc <hi>über der Zeile nachgetragen.</hi></note> perstat<pb type="edition" next="435"/> in reiectione papae et admisit doctrinam iustificationis, et reliqua dominus olim dabit.</s>
+					<s n="3" xml:lang="la" type="auto">Volebam vobis mittere capita synodi <placeName ref="place644">Londinensis</placeName><note xml:id="fn3" type="footnote" n="3">Zur den von der Konvokation im Juli 1536 angenommenen "Zehn Artikeln" s. <hi>Prüser,</hi> <placeName ref="place9">England</placeName> 112-115.</note>, sed defuit tempus.</s>
+					<s n="4" xml:lang="la" type="auto">Abeo enim nunc <placeName ref="place1107">Tubingam</placeName><note xml:id="fn4" type="footnote" n="4">Siehe oben Anm. 1.</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Capita eius perscripsi ad Anglos hospites vestros<note xml:id="fn5" type="footnote" n="5"><persName ref="person164">Nicholas Partridge</persName>, <persName ref="person37">John Butler</persName> und <persName ref="person2555">William Woodroffe</persName>.</note>; ab illis accipietis ea.</s>
+					<s n="6" xml:lang="la" type="auto">Nos regno Christi pessime defuimus detrectando legationem mittere, quae hinc<note xml:id="fnb" type="footnote" n="b"><hi>kann auch als</hi> huic <hi>gelesen werden.</hi></note> synodo interfuisset, id quod rex petierat<note xml:id="fn6" type="footnote" n="6">Auf die Entsendung der von König <persName ref="person98">Heinrich VIII.</persName> gewünschten Gesandtschaft der <placeName ref="place958">Schmalkaldener</placeName>, an der auch <persName ref="person28">Bucer</persName> teilnehmen sollte, hatte man nach der Hinrichtung Anne <persName ref="person489">Boleyns</persName> verzichtet; s. <hi>Prüser,</hi> <placeName ref="place9">England</placeName> 95-103.</note>.</s>
+					<s n="7" xml:lang="la" type="manual">Sed accipiendum est, quod dominus largitur.</s>
+					<s n="8" xml:lang="la" type="auto">Bene habet, dum regnum hoc<note xml:id="fnc" type="footnote" n="c">hoc <hi>über der Zeile nachgetragen.</hi></note> perstat<pb type="edition" next="435"/> in reiectione papae et admisit doctrinam iustificationis, et reliqua dominus olim dabit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valete, sancti illic omnes,<note xml:id="fnd" type="footnote" n="d">Pellicane <hi>aus</hi> Pellicanus <hi>korrigiert.</hi></note>.</s>
-					<s xml:lang="la" type="auto"><persName ref="165">Pellicane</persName>, <persName ref="114">Leo</persName><note xml:id="fn7" type="footnote" n="7"><persName ref="114">Leo Jud</persName>.</note>, <persName ref="14">Theodore</persName><note xml:id="fne" type="footnote" n="e">Theodore <hi>aus</hi> Theodorus <hi>korrigiert.</hi></note><note xml:id="fn8" type="footnote" n="8"><persName ref="14">Theodor Bibliander</persName>.</note>, et habete nos in domino commendatos.</s>
+					<s n="9" xml:lang="la" type="auto">Valete, sancti illic omnes,<note xml:id="fnd" type="footnote" n="d">Pellicane <hi>aus</hi> Pellicanus <hi>korrigiert.</hi></note>.</s>
+					<s n="10" xml:lang="la" type="auto"><persName ref="person165">Pellicane</persName>, <persName ref="person114">Leo</persName><note xml:id="fn7" type="footnote" n="7"><persName ref="person114">Leo Jud</persName>.</note>, <persName ref="person14">Theodore</persName><note xml:id="fne" type="footnote" n="e">Theodore <hi>aus</hi> Theodorus <hi>korrigiert.</hi></note><note xml:id="fn8" type="footnote" n="8"><persName ref="person14">Theodor Bibliander</persName>.</note>, et habete nos in domino commendatos.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="1049">Argentorati</placeName>, 1536.</s>
+					<s n="11" xml:lang="la" type="auto"><placeName ref="place1049">Argentorati</placeName>, 1536.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">M. Bu. vester in domino totus.</s>
+					<s n="12" xml:lang="la" type="auto">M. Bu. vester in domino totus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Eximia pietate et doctrina domino Heylricho Bullingero suo, pastori ecclesiae Tigurinae vigilantissimo, suo singulari patrono et fratri charissimo.</s>
-					<s xml:lang="la" type="auto">Tigurum.</s>
+					<s n="13" xml:lang="la" type="auto">Eximia pietate et doctrina domino Heylricho Bullingero suo, pastori ecclesiae Tigurinae vigilantissimo, suo singulari patrono et fratri charissimo.</s>
+					<s n="14" xml:lang="la" type="auto">Tigurum.</s>
 				</p>
 			</div>
 		</body>

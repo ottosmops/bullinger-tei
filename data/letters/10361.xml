@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=329</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=329</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 355,58</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 355,58</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -57,26 +60,32 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10361">
 				<correspAction type="sent">
-					<persName ref="person#2829" cert="high">
+					<!--
+					<persName ref="person2829" cert="high">
 						<forename cert="high">Georg</forename>
 						<surname cert="high">Stadler</surname>
 					</persName>
-					<place source="#905" cert="high">
-						<settlement>Krakau und Leipzig</settlement>
-					</place>
+					-->
+					<persName ref="person2829" cert="high"/>
+					<place source="place905" cert="high"/>
 					<date when="1534-02-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10362"/>
-					<ref type="prev_chronologically" target="files.xml#10360"/>
+					<ref type="next_chronologically" target="file10362"/>
+					<ref type="prev_chronologically" target="file10360"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -85,12 +94,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10364"/>
-					<ref type="prev_same_addressee" target="files.xml#10360"/>
+					<ref type="next_same_addressee" target="file10364"/>
+					<ref type="prev_same_addressee" target="file10360"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10364"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10360"/>
+					<ref type="next_with_addressee_as_sender" target="file10364"/>
+					<ref type="prev_with_addressee_as_sender" target="file10360"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -107,35 +116,35 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Gnad und frid von gott dem<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> den.</note> vatter und dem heren Jesus Cristus.</s>
-					<s xml:lang="de" type="auto">Amen.</s>
+					<s n="1" xml:lang="de" type="auto">Gnad und frid von gott dem<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> den.</note> vatter und dem heren Jesus Cristus.</s>
+					<s n="2" xml:lang="de" type="auto">Amen.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Lieber her und vettere<note xml:id="fn3" type="footnote" n="3">Zur Verwandtschaft mit Bullinger s. Anm. I.</note> ich las eüch, wüsen, das ich frisch und gesünd bin.</s>
-					<s xml:lang="de" type="auto">Solichs von eüch zuͦ hören, wer mir ein grose fröwd.</s>
-					<s xml:lang="de" type="auto">Lieber vetter, ich las eüch wüssen, das es noch<note xml:id="fnb" type="footnote" n="b"><hi>in der Vorlage</hi> moch.</note> wol by uns statt, doch sorgt man eins kriegs.</s>
-					<s xml:lang="de" type="auto">Got wend es ab nach sinem willen.</s>
+					<s n="3" xml:lang="de" type="auto">Lieber her und vettere<note xml:id="fn3" type="footnote" n="3">Zur Verwandtschaft mit Bullinger s. Anm. I.</note> ich las eüch, wüsen, das ich frisch und gesünd bin.</s>
+					<s n="4" xml:lang="de" type="auto">Solichs von eüch zuͦ hören, wer mir ein grose fröwd.</s>
+					<s n="5" xml:lang="de" type="auto">Lieber vetter, ich las eüch wüssen, das es noch<note xml:id="fnb" type="footnote" n="b"><hi>in der Vorlage</hi> moch.</note> wol by uns statt, doch sorgt man eins kriegs.</s>
+					<s n="6" xml:lang="de" type="auto">Got wend es ab nach sinem willen.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ich will auch nach uf osteren<note xml:id="fn4" type="footnote" n="4">um Ostern. - Ostern fiel im Jahr 1534 auf den 5. April.</note> by eüch sin, latt mich gott gessünd.</s>
-					<s xml:lang="de" type="auto">Darümb wil ich eüch nitt vill schriben.</s>
-					<s xml:lang="de" type="auto">Ich wil aüch nitt lang zuͦ Zürich sin, dan es werden zwen gessellen<note xml:id="fn5" type="footnote" n="5">Unbekannt.</note> mitt mir ziehen.</s>
-					<s xml:lang="de" type="auto">Mit denen will ich aüch wider wandlen<note xml:id="fn6" type="footnote" n="6">mich auf Wanderschaft begeben (Grimm XIII 1595-1597).</note>, dan es ist nit vür mich, das ich nach zu<note xml:id="fn7" type="footnote" n="7">dann, darnach (SI IV 637).</note> Zürich bellib.</s>
+					<s n="7" xml:lang="de" type="auto">Ich will auch nach uf osteren<note xml:id="fn4" type="footnote" n="4">um Ostern. - Ostern fiel im Jahr 1534 auf den 5. April.</note> by eüch sin, latt mich gott gessünd.</s>
+					<s n="8" xml:lang="de" type="auto">Darümb wil ich eüch nitt vill schriben.</s>
+					<s n="9" xml:lang="de" type="auto">Ich wil aüch nitt lang zuͦ Zürich sin, dan es werden zwen gessellen<note xml:id="fn5" type="footnote" n="5">Unbekannt.</note> mitt mir ziehen.</s>
+					<s n="10" xml:lang="de" type="auto">Mit denen will ich aüch wider wandlen<note xml:id="fn6" type="footnote" n="6">mich auf Wanderschaft begeben (Grimm XIII 1595-1597).</note>, dan es ist nit vür mich, das ich nach zu<note xml:id="fn7" type="footnote" n="7">dann, darnach (SI IV 637).</note> Zürich bellib.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Nitt me uf dis mal, dan gott sy mitt uns allen.</s>
-					<s xml:lang="de" type="auto">Amen.</s>
-					<s xml:lang="de" type="auto">Grussen mir eüwer husfrowen<note xml:id="fn8" type="footnote" n="8">Anna Adlischwyler.</note> und min vogtt<note xml:id="fn9" type="footnote" n="9">Unbekannt.</note>.</s>
+					<s n="11" xml:lang="de" type="auto">Nitt me uf dis mal, dan gott sy mitt uns allen.</s>
+					<s n="12" xml:lang="de" type="auto">Amen.</s>
+					<s n="13" xml:lang="de" type="auto">Grussen mir eüwer husfrowen<note xml:id="fn8" type="footnote" n="8">Anna Adlischwyler.</note> und min vogtt<note xml:id="fn9" type="footnote" n="9">Unbekannt.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ttatum [!] am sant Matisttag zuͦ nacht im 1534 jar.</s>
+					<s n="14" xml:lang="de" type="auto">Ttatum [!] am sant Matisttag zuͦ nacht im 1534 jar.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Von mir, Jörg <persName ref="202">Stadler</persName>, allzitt eüwer williger diener.</s>
+					<s n="15" xml:lang="de" type="auto">Von mir, Jörg <persName ref="person202">Stadler</persName>, allzitt eüwer williger diener.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Dem achtbaren und wollgelertten Meister Heinrich Bullinger, beredicant [!] zuͦ Zürich zuͦ dem<note xml:id="fnc" type="footnote" n="c"><hi>in der Vorlage</hi> den.</note> grosen münster, zuͦ hand..</s>
+					<s n="16" xml:lang="de" type="auto">Dem achtbaren und wollgelertten Meister Heinrich Bullinger, beredicant [!] zuͦ Zürich zuͦ dem<note xml:id="fnc" type="footnote" n="c"><hi>in der Vorlage</hi> den.</note> grosen münster, zuͦ hand..</s>
 				</p>
 			</div>
 		</body>

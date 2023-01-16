@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2000"/>
-				<idno type="ISBN">ISBN 3-290-17211-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1138</idno>
+				<idno subtype="ISBN">ISBN 3-290-17211-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1138</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 8</title>
+				<title subtype="publication">HBBW VIII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">8</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#492">Strassburg</settlement>
-						<institution>National- und Universitätsbibliothek</institution>
-						<idno type="Kopie">Ms 0.670 = STB Bd. XI,129</idno>
-						<repository ref="archive#81">
+						<!--
+						<repository ref="archive81">
 							<name>Strassburg BNU</name>
 							<ref target="https://www.bnu.fr/fr"/>
 						</repository>
+						<settlement ref="place492">Strassburg</settlement>
+						<institution>National- und Universitätsbibliothek</institution>
+						-->
+						<repository ref="archive81"/>
+						<idno subtype="Kopie">Ms 0.670 = STB Bd. XI,129</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,13 +50,13 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Nachdem er <persName ref="64">Frecht</persName> durch die Zürcher Gesandtschaft an
-								<persName ref="98">König</persName> <persName ref="832">Ferdinand</persName> vor kurzem ein
+								Nachdem er <persName ref="person64">Frecht</persName> durch die Zürcher Gesandtschaft an
+								König Ferdinand vor kurzem ein
 								Schreiben und sein Buch [„De scripturae sanctae authoritate“] zukommen ließ, folgt nun eine Sendung mit
-								Akten zu den Konkordienverhandlungen. <persName ref="64">Frecht</persName> darf den vom Boten an
-								<persName ref="138">Luther</persName> zu überbringenden Brief seinen Mitpfarrern vorläufig nur im
-								Vertrauen bekanntmachen; die Zürcher hoffen auf <persName ref="138">Luthers</persName> Zustimmung.
-								Bullinger wird <persName ref="64">Frecht</persName> auf Wunsch das [Erste Helvetische] Bekenntnis und
+								Akten zu den Konkordienverhandlungen. <persName ref="person64">Frecht</persName> darf den vom Boten an
+								<persName ref="person138">Luther</persName> zu überbringenden Brief seinen Mitpfarrern vorläufig nur im
+								Vertrauen bekanntmachen; die Zürcher hoffen auf <persName ref="person138">Luthers</persName> Zustimmung.
+								Bullinger wird <persName ref="person64">Frecht</persName> auf Wunsch das [Erste Helvetische] Bekenntnis und
 								dessen Erläuterung zukommen lassen. Gute Wünsche.
 							</p>
 						</summary>
@@ -64,44 +67,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11181">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1538-06-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1055" cert="high">
+					<!--
+					<persName ref="person1055" cert="high">
 						<forename cert="high">Martin</forename>
 						<surname cert="high">Frecht</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Martin_Frecht"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/116747382"/>
 					</persName>
+					-->
+					<persName ref="person1055" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11182"/>
-					<ref type="prev_chronologically" target="files.xml#11180"/>
-					<ref type="next_correspondence" target="files.xml#11192"/>
-					<ref type="prev_correspondence" target="files.xml#10699"/>
-					<ref type="next_correspondence_request" target="files.xml#12215"/>
+					<ref type="next_chronologically" target="file11182"/>
+					<ref type="prev_chronologically" target="file11180"/>
+					<ref type="next_correspondence" target="file11192"/>
+					<ref type="prev_correspondence" target="file10699"/>
+					<ref type="next_correspondence_request" target="file12215"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#11192"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10699"/>
-					<ref type="next_same_sender" target="files.xml#11193"/>
-					<ref type="prev_same_sender" target="files.xml#11178"/>
-					<ref type="next_same_addressee" target="files.xml#11192"/>
-					<ref type="prev_same_addressee" target="files.xml#10699"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11193"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11178"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11192"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10699"/>
+					<ref type="next_correspondence_reaction" target="file11192"/>
+					<ref type="prev_correspondence_reaction" target="file10699"/>
+					<ref type="next_same_sender" target="file11193"/>
+					<ref type="prev_same_sender" target="file11178"/>
+					<ref type="next_same_addressee" target="file11192"/>
+					<ref type="prev_same_addressee" target="file10699"/>
+					<ref type="next_with_sender_as_addressee" target="file11193"/>
+					<ref type="prev_with_sender_as_addressee" target="file11178"/>
+					<ref type="next_with_addressee_as_sender" target="file11192"/>
+					<ref type="prev_with_addressee_as_sender" target="file10699"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -115,37 +122,37 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus <persName ref="64">Frechto</persName>.</s>
+					<s n="1" xml:lang="la" type="auto">Bullingerus <persName ref="person64">Frechto</persName>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
+					<s n="2" xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cum non ita multis ante diebus legatus ad regem ex senatu nostro mitteretur<note xml:id="fn1" type="footnote" n="1">Ende März war eine Zürcher Gesandtschaft zu <persName ref="98">König</persName> <persName ref="832">Ferdinand</persName> I. nach <placeName ref="863">Prag</placeName> aufgebrochen (vgl. <ref target="file#11153">Nr. 1110</ref>, Anm. 3).</note>, visum est tibi, frater in domino honorande, paucula scribere<note xml:id="fn2" type="footnote" n="2">Nicht erhalten.</note> et libros nostros Anglorum regi inscriptos<note xml:id="fn3" type="footnote" n="3">Bullingers "De scripturae sanctae authoritate ... ad sereniss. Angliae regem Heinrychum <persName ref="98">VIII.</persName> ... libri duo" (HBBibl I 111).</note> dono adiicere.</s>
-					<s xml:lang="la" type="auto">Intellexi ex Zwiccio<pb type="edition" next="151"/> nostro munus nostrum grato a te animo acceptum<note xml:id="fn4" type="footnote" n="4">Bullinger hatte durch <persName ref="263">Johannes Zwick</persName> folgendes Fragment eines autographen Schreibens von <persName ref="64">Frecht</persName> erhalten (wohl als Beilage zu Zwicks Brief vom 27. Mai, oben <ref target="file#11176">Nr. 1133</ref>): "Obsecro, ubi Tigurinis fratribus scripseris, et mei mentionem commendationemque inseras epistolae tuae. Nunc ut volebam rescribere d. Pellicano et Bullingero, non licuit. Hic me nuper magnifico munere ornavit, utpote duobus a se editis libris Anglorum regi inscriptis. Pro quo dono habeo gratias ingentes, relaturus, ubi potero. Iterum vale et scias Schwenckf[eldium] nunc abesse, Francum autem, impudentem scriptorem, adhuc hic versari. Is edidit Arcam auream [<persName ref="857">Sebastian Franck</persName>, Die Guldin Arch, Augsburg 1538], quae vix aerea est, plena blasphemiis. Iterum atque iterum vale. - Frechtus tuus ex animo." (Zürich StA, E II 364, 19; mit Randbemerkung von der Hand Zwicks: "Haec Frechtus ad me.")</note>.</s>
-					<s xml:lang="la" type="auto">Ideo alteras hasce ad te dare volui, <persName ref="64">Frechte</persName> amantissime, simul et acta quaedam concordiae<note xml:id="fn5" type="footnote" n="5">Gemeint ist wohl der Abschied der Zürcher Tagung vom 28. April bis 3. Mai 1538 (vgl. oben <ref target="file#11171">Nr. 1128</ref>, Anm. 1). Entsprechende Akten hatte bereits am 20. Mai auch <persName ref="28">Bucer</persName> an <persName ref="64">Frecht</persName> gesandt (s. Straßburg Stadtarchiv, AST 158, 241); <persName ref="1558">Johann Ottmar Mailänder</persName> leitete sie am 5. Juli an <persName ref="2045">Simprecht Schenck</persName> weiter (eine von <persName ref="59">Euander</persName> an Bullinger adressierte Kopie des Briefs von Mailänder liegt in Zürich StA, E II 448, 4, Nr. 2).</note> addere, ut etiam aliis circum fratribus, quid inter nos actum sit, noris exponere.</s>
+					<s n="3" xml:lang="la" type="auto">Cum non ita multis ante diebus legatus ad regem ex senatu nostro mitteretur<note xml:id="fn1" type="footnote" n="1">Ende März war eine Zürcher Gesandtschaft zu König <persName ref="person832">Ferdinand I.</persName> nach <placeName ref="place863">Prag</placeName> aufgebrochen (vgl. <ref target="file11153">Nr. 1110</ref>, Anm. 3).</note>, visum est tibi, frater in domino honorande, paucula scribere<note xml:id="fn2" type="footnote" n="2">Nicht erhalten.</note> et libros nostros Anglorum regi inscriptos<note xml:id="fn3" type="footnote" n="3">Bullingers "De scripturae sanctae authoritate ... ad sereniss. Angliae regem Heinrychum VIII. ... libri duo" (HBBibl I 111).</note> dono adiicere.</s>
+					<s n="4" xml:lang="la" type="auto">Intellexi ex Zwiccio<pb type="edition" next="151"/> nostro munus nostrum grato a te animo acceptum<note xml:id="fn4" type="footnote" n="4">Bullinger hatte durch <persName ref="person263">Johannes Zwick</persName> folgendes Fragment eines autographen Schreibens von <persName ref="person64">Frecht</persName> erhalten (wohl als Beilage zu Zwicks Brief vom 27. Mai, oben <ref target="file11176">Nr. 1133</ref>): "Obsecro, ubi Tigurinis fratribus scripseris, et mei mentionem commendationemque inseras epistolae tuae. Nunc ut volebam rescribere d. Pellicano et Bullingero, non licuit. Hic me nuper magnifico munere ornavit, utpote duobus a se editis libris Anglorum regi inscriptis. Pro quo dono habeo gratias ingentes, relaturus, ubi potero. Iterum vale et scias Schwenckf[eldium] nunc abesse, Francum autem, impudentem scriptorem, adhuc hic versari. Is edidit Arcam auream [<persName ref="person857">Sebastian Franck</persName>, Die Guldin Arch, Augsburg 1538], quae vix aerea est, plena blasphemiis. Iterum atque iterum vale. - Frechtus tuus ex animo." (Zürich StA, E II 364, 19; mit Randbemerkung von der Hand Zwicks: "Haec Frechtus ad me.")</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Ideo alteras hasce ad te dare volui, <persName ref="person64">Frechte</persName> amantissime, simul et acta quaedam concordiae<note xml:id="fn5" type="footnote" n="5">Gemeint ist wohl der Abschied der Zürcher Tagung vom 28. April bis 3. Mai 1538 (vgl. oben <ref target="file11171">Nr. 1128</ref>, Anm. 1). Entsprechende Akten hatte bereits am 20. Mai auch <persName ref="person28">Bucer</persName> an <persName ref="person64">Frecht</persName> gesandt (s. Straßburg Stadtarchiv, AST 158, 241); <persName ref="person1558">Johann Ottmar Mailänder</persName> leitete sie am 5. Juli an <persName ref="person2045">Simprecht Schenck</persName> weiter (eine von <persName ref="person59">Euander</persName> an Bullinger adressierte Kopie des Briefs von Mailänder liegt in Zürich StA, E II 448, 4, Nr. 2).</note> addere, ut etiam aliis circum fratribus, quid inter nos actum sit, noris exponere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Epistolam<note xml:id="fn6" type="footnote" n="6">Zum Schreiben der reformierten Städte der Eidgenossenschaft an <persName ref="138">Luther</persName> vom 4. Mai vgl. oben <ref target="file#11171">Nr. 1128</ref>, Anm. 8.</note> doctori <persName ref="138">Luthero</persName> hic fert tabellio<note xml:id="fn7" type="footnote" n="7">Der Zürcher Standesläufer <persName ref="343">Niklaus Appenzeller</persName> (vgl. oben <ref target="file#11171">Nr. 1128</ref>, Anm. 8, und unten <ref target="file#11195">Nr. 1152</ref>, Anm. 4).</note>.</s>
-					<s xml:lang="la" type="auto">Video<note xml:id="fnb" type="footnote" n="b"><hi>vielleicht vom Abschreiber verlesen aus</hi> Vides.</note> ergo, quid facto opus sit, exemplum epistolae doctori <persName ref="138">Luthero</persName> destinatae non publice communica his fratribus, quam putaveris per tabellionem archetypum esse redditum doctori <persName ref="138">Luthero</persName><note xml:id="fn8" type="footnote" n="8"><persName ref="138">Luther</persName> erhielt den Brief am 25. Juni; s. WA Briefwechsel VIII 241.</note>.</s>
-					<s xml:lang="la" type="auto">Interim vero fidis communicare poteris.</s>
-					<s xml:lang="la" type="auto">Post redditam autem epistolam quibuslibet.</s>
-					<s xml:lang="la" type="auto">Speramus doctorem <persName ref="138">Lutherum</persName> amice responsurum et recepturum conditionem.</s>
+					<s n="6" xml:lang="la" type="auto">Epistolam<note xml:id="fn6" type="footnote" n="6">Zum Schreiben der reformierten Städte der Eidgenossenschaft an <persName ref="person138">Luther</persName> vom 4. Mai vgl. oben <ref target="file11171">Nr. 1128</ref>, Anm. 8.</note> doctori <persName ref="person138">Luthero</persName> hic fert tabellio<note xml:id="fn7" type="footnote" n="7">Der Zürcher Standesläufer <persName ref="person343">Niklaus Appenzeller</persName> (vgl. oben <ref target="file11171">Nr. 1128</ref>, Anm. 8, und unten <ref target="file11195">Nr. 1152</ref>, Anm. 4).</note>.</s>
+					<s n="7" xml:lang="la" type="auto">Video<note xml:id="fnb" type="footnote" n="b"><hi>vielleicht vom Abschreiber verlesen aus</hi> Vides.</note> ergo, quid facto opus sit, exemplum epistolae doctori <persName ref="person138">Luthero</persName> destinatae non publice communica his fratribus, quam putaveris per tabellionem archetypum esse redditum doctori <persName ref="person138">Luthero</persName><note xml:id="fn8" type="footnote" n="8"><persName ref="person138">Luther</persName> erhielt den Brief am 25. Juni; s. WA Briefwechsel VIII 241.</note>.</s>
+					<s n="8" xml:lang="la" type="auto">Interim vero fidis communicare poteris.</s>
+					<s n="9" xml:lang="la" type="auto">Post redditam autem epistolam quibuslibet.</s>
+					<s n="10" xml:lang="la" type="auto">Speramus doctorem <persName ref="person138">Lutherum</persName> amice responsurum et recepturum conditionem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quod si confessionem <placeName ref="97">Basiliensem</placeName> et expositionem eius<note xml:id="fn9" type="footnote" n="9">Zum Ersten Helvetischen Bekenntnis von 1536 und dessen Erklärung im Brief an <persName ref="138">Luther</persName> vom 12. Januar 1537 vgl. HBBW VI, S. 101f, Anm. 1, und VII, S. 34, Anm. 15.</note> nondum vidisti, fac sciam; habebis.</s>
+					<s n="11" xml:lang="la" type="auto">Quod si confessionem <placeName ref="place97">Basiliensem</placeName> et expositionem eius<note xml:id="fn9" type="footnote" n="9">Zum Ersten Helvetischen Bekenntnis von 1536 und dessen Erklärung im Brief an <persName ref="person138">Luther</persName> vom 12. Januar 1537 vgl. HBBW VI, S. 101f, Anm. 1, und VII, S. 34, Anm. 15.</note> nondum vidisti, fac sciam; habebis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Recte valemus, qui Tiguri Christum docemus omnes.</s>
-					<s xml:lang="la" type="auto">Optimo habent res ecclesiae nostrae, laus et gratia domino.</s>
-					<s xml:lang="la" type="auto">Cupimus etiam vos in domino recte valere.</s>
-					<s xml:lang="la" type="auto">Orate pro nobis dominum.</s>
+					<s n="12" xml:lang="la" type="auto">Recte valemus, qui Tiguri Christum docemus omnes.</s>
+					<s n="13" xml:lang="la" type="auto">Optimo habent res ecclesiae nostrae, laus et gratia domino.</s>
+					<s n="14" xml:lang="la" type="auto">Cupimus etiam vos in domino recte valere.</s>
+					<s n="15" xml:lang="la" type="auto">Orate pro nobis dominum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, 12. iunii 1538.</s>
+					<s n="16" xml:lang="la" type="auto">Tiguri, 12. iunii 1538.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus tuus.</s>
+					<s n="17" xml:lang="la" type="auto">H. Bullingerus tuus.</s>
 				</p>
 			</div>
 		</body>

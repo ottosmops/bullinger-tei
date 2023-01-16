@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=606</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=606</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 361,277</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 361,277</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,11 +49,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Ist sehr dankbar, daß ihn <persName ref="230">Melchior Volmar</persName> aufgrund von Bullingers
+								Ist sehr dankbar, daß ihn <persName ref="person230">Melchior Volmar</persName> aufgrund von Bullingers
 								Empfehlung so freundlich behandelt; er wird alles daransetzen, daß die Verdienste der Zürcher [in
-								<placeName ref="520">Isny</placeName>] erkannt und gewürdigt werden, besonders von
-								[<persName ref="548">Peter</persName>] <persName ref="548">Buffler</persName>, dem Bullinger -
-								wie er von [<persName ref="16">Georg</persName>] <persName ref="16">Binder</persName> erfahren
+								<placeName ref="place520">Isny</placeName>] erkannt und gewürdigt werden, besonders von
+								[Peter] <persName ref="person548">Buffler</persName>, dem Bullinger -
+								wie er von [Georg] <persName ref="person16">Binder</persName> erfahren
 								hat - noch schreiben wird.
 							</p>
 						</summary>
@@ -61,43 +64,46 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10644">
 				<correspAction type="sent">
-					<persName ref="person#1039" cert="high">
+					<!--
+					<persName ref="person1039" cert="high">
 						<forename cert="high">Benedikt</forename>
 						<surname cert="high">Euander</surname>
 					</persName>
-					<place source="#234" cert="high">
-						<settlement>Isny</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.691684949999996 10.033669207373844</geo>
-					</place>
+					-->
+					<persName ref="person1039" cert="high"/>
+					<place source="place234" cert="high"/>
 					<date when="1535-07-02" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10645"/>
-					<ref type="prev_chronologically" target="files.xml#10643"/>
-					<ref type="next_correspondence" target="files.xml#10793"/>
-					<ref type="prev_correspondence" target="files.xml#10465"/>
-					<ref type="next_correspondence_request" target="files.xml#10793"/>
-					<ref type="prev_correspondence_request" target="files.xml#10465"/>
+					<ref type="next_chronologically" target="file10645"/>
+					<ref type="prev_chronologically" target="file10643"/>
+					<ref type="next_correspondence" target="file10793"/>
+					<ref type="prev_correspondence" target="file10465"/>
+					<ref type="next_correspondence_request" target="file10793"/>
+					<ref type="prev_correspondence_request" target="file10465"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10793"/>
-					<ref type="prev_same_sender" target="files.xml#10465"/>
-					<ref type="next_same_addressee" target="files.xml#10648"/>
-					<ref type="prev_same_addressee" target="files.xml#10642"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10793"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10465"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10648"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10642"/>
+					<ref type="next_same_sender" target="file10793"/>
+					<ref type="prev_same_sender" target="file10465"/>
+					<ref type="next_same_addressee" target="file10648"/>
+					<ref type="prev_same_addressee" target="file10642"/>
+					<ref type="next_with_sender_as_addressee" target="file10793"/>
+					<ref type="prev_with_sender_as_addressee" target="file10465"/>
+					<ref type="next_with_addressee_as_sender" target="file10648"/>
+					<ref type="prev_with_addressee_as_sender" target="file10642"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -114,21 +120,21 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Doctor <persName ref="230">Melchior Volmarius</persName> adhuc apud nos agit, et ex tua amicissima cornmendatione<note xml:id="fn2" type="footnote" n="2"><persName ref="230">Volmar</persName> hatte auf seiner Rückreise von <placeName ref="11">Frankreich</placeName> in Zürich Halt gemacht und dabei Bullinger persönlich kennengelernt (vgl. oben <ref target="file#10643">Nr. 605</ref>, 3 mit Anm. 1).</note> tam humaniter me fovet ac tractat, ut certe nesciam, quibus rebus et tibi et ipsi vel saltem aliquas gratias referam; video autem liquidissime, quantum tua apud ipsum valeat autoritas, qui omnibus modis studet, ut tuis iussis mihi benefaciendo satisfaciat; tum insuper, quid mihi a vobis sperandum sit, planissime intelligo; etenim si me aliis tam sedulo committis, quid tu mihi, si occasio se obtulerit, non ultro offeres.</s>
-					<s xml:lang="la" type="auto">Sed age perge, humanissime doctissimeque vir, in rebus meis promovendis, atque hoc mutuum facies; nam et ego (si saltem vestris laudibus et autoritati aliquid addi potest) in eis augendis sum occupatissimus, neque desistam, donec vos in rebus omnibus et optime sentire et rectissime agere evicero, id quod nunc<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> nuc.</note> apud multos obtinui, pręsertim apud Buflerum<note xml:id="fn3" type="footnote" n="3"><persName ref="548">Peter Buffler</persName>.</note>, cui te brevi scripturum<note xml:id="fn4" type="footnote" n="4">Ein Brief Bullingers an <persName ref="548">Buffler</persName> ist nicht erhalten.</note> ex litteris <persName ref="16">Binderi</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="16">Georg Binder</persName>. - Sein Brief an <persName ref="59">Euander</persName> ist nicht erhalten.</note> non sine summa voluptate intellexi.</s>
+					<s n="1" xml:lang="la" type="auto">Doctor <persName ref="person230">Melchior Volmarius</persName> adhuc apud nos agit, et ex tua amicissima cornmendatione<note xml:id="fn2" type="footnote" n="2"><persName ref="person230">Volmar</persName> hatte auf seiner Rückreise von <placeName ref="place11">Frankreich</placeName> in Zürich Halt gemacht und dabei Bullinger persönlich kennengelernt (vgl. oben <ref target="file10643">Nr. 605</ref>, 3 mit Anm. 1).</note> tam humaniter me fovet ac tractat, ut certe nesciam, quibus rebus et tibi et ipsi vel saltem aliquas gratias referam; video autem liquidissime, quantum tua apud ipsum valeat autoritas, qui omnibus modis studet, ut tuis iussis mihi benefaciendo satisfaciat; tum insuper, quid mihi a vobis sperandum sit, planissime intelligo; etenim si me aliis tam sedulo committis, quid tu mihi, si occasio se obtulerit, non ultro offeres.</s>
+					<s n="2" xml:lang="la" type="auto">Sed age perge, humanissime doctissimeque vir, in rebus meis promovendis, atque hoc mutuum facies; nam et ego (si saltem vestris laudibus et autoritati aliquid addi potest) in eis augendis sum occupatissimus, neque desistam, donec vos in rebus omnibus et optime sentire et rectissime agere evicero, id quod nunc<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> nuc.</note> apud multos obtinui, pręsertim apud Buflerum<note xml:id="fn3" type="footnote" n="3"><persName ref="person548">Peter Buffler</persName>.</note>, cui te brevi scripturum<note xml:id="fn4" type="footnote" n="4">Ein Brief Bullingers an <persName ref="person548">Buffler</persName> ist nicht erhalten.</note> ex litteris <persName ref="person16">Binderi</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="person16">Georg Binder</persName>. - Sein Brief an <persName ref="person59">Euander</persName> ist nicht erhalten.</note> non sine summa voluptate intellexi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="3" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">E ludo nostro, 6. nonas iulii.</s>
+					<s n="4" xml:lang="la" type="auto">E ludo nostro, 6. nonas iulii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Benedictus <persName ref="59">Euander</persName>.</s>
+					<s n="5" xml:lang="la" type="auto"><persName ref="person59">Benedictus Euander</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinrico Bullingero, contionatori Tigurino christianissimo, praeceptori et domino suo colendissimo.</s>
+					<s n="6" xml:lang="la" type="auto">Domino Heinrico Bullingero, contionatori Tigurino christianissimo, praeceptori et domino suo colendissimo.</s>
 				</p>
 			</div>
 		</body>

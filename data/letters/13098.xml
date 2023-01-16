@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3049</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3049</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 359,2820</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 359,2820</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -70,43 +73,46 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13098">
 				<correspAction type="sent">
-					<persName ref="person#985" cert="high">
+					<!--
+					<persName ref="person985" cert="high">
 						<forename cert="high">Jean</forename>
 						<surname cert="high">de Hotot</surname>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person985" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1547-10-21" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13099"/>
-					<ref type="prev_chronologically" target="files.xml#13097"/>
+					<ref type="next_chronologically" target="file13099"/>
+					<ref type="prev_chronologically" target="file13097"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#13074"/>
+					<ref type="prev_correspondence" target="file13074"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#13074"/>
+					<ref type="prev_correspondence_request" target="file13074"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#13074"/>
-					<ref type="next_same_addressee" target="files.xml#13099"/>
-					<ref type="prev_same_addressee" target="files.xml#13097"/>
+					<ref type="prev_same_sender" target="file13074"/>
+					<ref type="next_same_addressee" target="file13099"/>
+					<ref type="prev_same_addressee" target="file13097"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13074"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13099"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13097"/>
+					<ref type="prev_with_sender_as_addressee" target="file13074"/>
+					<ref type="next_with_addressee_as_sender" target="file13099"/>
+					<ref type="prev_with_addressee_as_sender" target="file13097"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -123,29 +129,29 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Credo vos omnes mei prorsus oblivionem cepisse.</s>
-					<s xml:lang="la" type="auto">Tertia est haec, quam ad te scribo, epistola.<note xml:id="fn1" type="footnote" n="1">Neben dem vorliegenden Brief ist nur noch Brief <ref target="file#13074">Nr. 3025</ref> vom 1. Oktober 1547 erhalten.</note></s>
-					<s xml:lang="la" type="auto">Domino Pellicano et Bibliandro secundo scripsi.<note xml:id="fn2" type="footnote" n="2">Keiner dieser Briefe ist erhalten.</note></s>
-					<s xml:lang="la" type="auto">Hospiti meo<note xml:id="fn3" type="footnote" n="3">Georg Rubli; s. <ref target="file#13105">Nr. 3056</ref>,<qv>zl17329-2</qv>.</note>, qui sarcinas meas huc transmittendas in se receperat, totidem, quot ad te, dedi.</s>
-					<s xml:lang="la" type="auto">Ab ullo nihil accipio, nec possum satis mirari, qui fiat.</s>
-					<s xml:lang="la" type="auto">Non enim neque hominum huc<note xml:id="fn4" type="footnote" n="4">Nach Bern, wo er sich befindet; s. <ref target="file#13074">Nr. 3025</ref>, <qv>fn17294-2</qv>.</note> commeantium inopiam neque temporis paucitatem<note xml:id="fn5" type="footnote" n="5">temporis paucitatem: Gemeint ist seine Wartezeit in Bern.</note> <pb type="edition" next="576"/> neque quicquam accusare possum, nisi id in fortunam meam vel in negligentiam eorum, qui se mihi coram amicos esse dictitarunt, reiiciam.</s>
-					<s xml:lang="la" type="auto">Id si (ut debeo) aegre fero, malo tamen in me esse commissum quam in alios a me, cum enim semper veritus sum, ne cuivis inoffitiosus esse videar<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage</hi> videarer.</note>, tum maxime erga amicos, aut saltem mea amicitia dignos.</s>
-					<s xml:lang="la" type="auto">Talia officia negligere iniustum esse duxi.</s>
-					<s xml:lang="la" type="auto">Hic iuvenis<note xml:id="fn6" type="footnote" n="6">Unbekannt.</note> commodum se mihi obtulit, per quem ultimo id ad vos scriberem, dum video vos offitium meum ita aspernari.</s>
+					<s n="1" xml:lang="la" type="auto">Credo vos omnes mei prorsus oblivionem cepisse.</s>
+					<s n="2" xml:lang="la" type="auto">Tertia est haec, quam ad te scribo, epistola.<note xml:id="fn1" type="footnote" n="1">Neben dem vorliegenden Brief ist nur noch Brief <ref target="file13074">Nr. 3025</ref> vom 1. Oktober 1547 erhalten.</note></s>
+					<s n="3" xml:lang="la" type="auto">Domino Pellicano et Bibliandro secundo scripsi.<note xml:id="fn2" type="footnote" n="2">Keiner dieser Briefe ist erhalten.</note></s>
+					<s n="4" xml:lang="la" type="auto">Hospiti meo<note xml:id="fn3" type="footnote" n="3">Georg Rubli; s. <ref target="file13105">Nr. 3056</ref>,<qv>zl17329-2</qv>.</note>, qui sarcinas meas huc transmittendas in se receperat, totidem, quot ad te, dedi.</s>
+					<s n="5" xml:lang="la" type="auto">Ab ullo nihil accipio, nec possum satis mirari, qui fiat.</s>
+					<s n="6" xml:lang="la" type="auto">Non enim neque hominum huc<note xml:id="fn4" type="footnote" n="4">Nach Bern, wo er sich befindet; s. <ref target="file13074">Nr. 3025</ref>, <qv>fn17294-2</qv>.</note> commeantium inopiam neque temporis paucitatem<note xml:id="fn5" type="footnote" n="5">temporis paucitatem: Gemeint ist seine Wartezeit in Bern.</note> <pb type="edition" next="576"/> neque quicquam accusare possum, nisi id in fortunam meam vel in negligentiam eorum, qui se mihi coram amicos esse dictitarunt, reiiciam.</s>
+					<s n="7" xml:lang="la" type="auto">Id si (ut debeo) aegre fero, malo tamen in me esse commissum quam in alios a me, cum enim semper veritus sum, ne cuivis inoffitiosus esse videar<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage</hi> videarer.</note>, tum maxime erga amicos, aut saltem mea amicitia dignos.</s>
+					<s n="8" xml:lang="la" type="auto">Talia officia negligere iniustum esse duxi.</s>
+					<s n="9" xml:lang="la" type="auto">Hic iuvenis<note xml:id="fn6" type="footnote" n="6">Unbekannt.</note> commodum se mihi obtulit, per quem ultimo id ad vos scriberem, dum video vos offitium meum ita aspernari.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Dominus Iodocus<note xml:id="fn7" type="footnote" n="7">Jodocus Kilchmeyer.</note> dat tibi salutem.</s>
-					<s xml:lang="la" type="auto">Dominis Pellicano et Bibliandro eandem meis verbis (si lubet) dices.</s>
-					<s xml:lang="la" type="auto">Bene vale.</s>
-					<s xml:lang="la" type="auto">Bernae, 21 octobris 1547.</s>
-					<s xml:lang="la" type="auto">Tui studiosissimus Ioa. de Hotot.</s>
+					<s n="10" xml:lang="la" type="auto">Dominus Iodocus<note xml:id="fn7" type="footnote" n="7">Jodocus Kilchmeyer.</note> dat tibi salutem.</s>
+					<s n="11" xml:lang="la" type="auto">Dominis Pellicano et Bibliandro eandem meis verbis (si lubet) dices.</s>
+					<s n="12" xml:lang="la" type="auto">Bene vale.</s>
+					<s n="13" xml:lang="la" type="auto">Bernae, 21 octobris 1547.</s>
+					<s n="14" xml:lang="la" type="auto">Tui studiosissimus Ioa. de Hotot.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro doctrina et virtute praestanti, domino Heynrico Bulingero, ecclesiae Tigurinae pastori.</s>
-					<s xml:lang="la" type="auto">A.<note xml:id="fn8" type="footnote" n="8">Ist damit vielleicht <hi>Antistiti</hi> gemeint?</note> Tiguri.<note xml:id="fn9" type="footnote" n="9">Bullinger erhielt den vorliegenden Brief erst etwa um den 10. November; s. <ref target="file#13105">Nr. 3056</ref>,<qv>zl17329-11</qv>. <qv>zl17329-2</qv>, und <qv>fn17329-2</qv>.</note></s>
+					<s n="15" xml:lang="la" type="auto">Clarissimo viro doctrina et virtute praestanti, domino Heynrico Bulingero, ecclesiae Tigurinae pastori.</s>
+					<s n="16" xml:lang="la" type="auto">A.<note xml:id="fn8" type="footnote" n="8">Ist damit vielleicht <hi>Antistiti</hi> gemeint?</note> Tiguri.<note xml:id="fn9" type="footnote" n="9">Bullinger erhielt den vorliegenden Brief erst etwa um den 10. November; s. <ref target="file13105">Nr. 3056</ref>,<qv>zl17329-11</qv>. <qv>zl17329-2</qv>, und <qv>fn17329-2</qv>.</note></s>
 				</p>
 			</div>
 		</body>

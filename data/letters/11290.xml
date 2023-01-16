@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2002"/>
-				<idno type="ISBN">ISBN 3-290-17220-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1247</idno>
+				<idno subtype="ISBN">ISBN 3-290-17220-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1247</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 9</title>
+				<title subtype="publication">HBBW IX</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">9</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 340,91</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 340,91</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,14 +50,14 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								<persName ref="2610">Jakob Zorn</persName>, Pfarrer in
-								<placeName ref="32">Alterswilen</placeName>, hat um ein Zeugnis gebeten, weil er in seiner
+								<persName ref="person2610">Jakob Zorn</persName>, Pfarrer in
+								<placeName ref="place32">Alterswilen</placeName>, hat um ein Zeugnis gebeten, weil er in seiner
 								schwierigen Lage gänzlich auf Zürich hofft; sie können guten Gewissens
 								bezeugen, daß er sich bezüglich Lebensführung und Lehre untadelig verhalten und seine kirchlichen Aufgaben
-								gut wahrgenommen hat. Sie haben <persName ref="2610">Zorn</persName>, der ihnen seine Händel der vergangenen Jahre dargelegt und um Rat
+								gut wahrgenommen hat. Sie haben <persName ref="person2610">Zorn</persName>, der ihnen seine Händel der vergangenen Jahre dargelegt und um Rat
 								gefragt hat, auszuharren empfohlen, müssen ihn nun aber ziehen lassen.
-								<persName ref="123">Andreas Klinger</persName> hat für das
-								[<placeName ref="1030">Steckborner</placeName>] Kapitel gesiegelt.
+								<persName ref="person123">Andreas Klinger</persName> hat für das
+								[<placeName ref="place1030">Steckborner</placeName>] Kapitel gesiegelt.
 							</p>
 						</summary>
 					</msContents>
@@ -64,78 +67,94 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11290">
 				<correspAction type="sent">
-					<persName ref="person#1867" cert="high">
+					<!--
+					<persName ref="person1867" cert="high">
 						<forename cert="high">Ulrich</forename>
 						<surname cert="high">Lieb</surname>
-						<addName type="main">Lieb (Amantius), Ulrich (Huldrych)</addName>
+						<persName type="main" ref="person8483>Lieb (Amantius), Ulrich (Huldrych)</addName>
 					</persName>
-					<persName ref="person#2840" cert="high">
+					-->
+					<persName ref="person1867" cert="high"/>
+					<!--
+					<persName ref="person2840" cert="high">
 						<forename cert="high">Alexander</forename>
 						<surname cert="high">Schmutz</surname>
+						<ref type="histhub" target="https://data.histhub.ch/person/11585060"/>
 					</persName>
-					<persName ref="person#2237" cert="high">
+					-->
+					<persName ref="person2840" cert="high"/>
+					<!--
+					<persName ref="person2237" cert="high">
 						<forename cert="high">Martin</forename>
 						<surname cert="high">Mötteli</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089474202"/>
 					</persName>
-					<persName ref="person#1862" cert="high">
+					-->
+					<persName ref="person2237" cert="high"/>
+					<!--
+					<persName ref="person1862" cert="high">
 						<forename cert="high">Andreas</forename>
 						<surname cert="high">Klinger</surname>
 					</persName>
-					<persName ref="person#8003" cert="high">
+					-->
+					<persName ref="person1862" cert="high"/>
+					<!--
+					<persName ref="person8003" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Schmid</surname>
-						<addName type="main">Schmid (Fabricius), Johannes</addName>
+						<persName type="main" ref="person8007>Schmid (Fabricius), Johannes</addName>
 					</persName>
-					<persName ref="person#2853" cert="high">
+					-->
+					<persName ref="person8003" cert="high"/>
+					<!--
+					<persName ref="person2853" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Stäbinger</surname>
 					</persName>
-					<persName ref="person#2259" cert="high">
+					-->
+					<persName ref="person2853" cert="high"/>
+					<!--
+					<persName ref="person2259" cert="high">
 						<forename cert="high">Gregor</forename>
 						<surname cert="high">Mangolt</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Gregor_Mangolt"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/119752085"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11558654"/>
 					</persName>
-					<place source="#549" cert="low">
-						<settlement>Wigoltingen</settlement>
-						<district>Thurgau</district>
-						<country>Schweiz</country>
-						<geo>47.5967195 9.0320675</geo>
-					</place>
+					-->
+					<persName ref="person2259" cert="high"/>
+					<place source="place549" cert="low"/>
 					<date when="1539-03-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<persName ref="person#1753" cert="high">
+					-->
+					<persName ref="person495" cert="high"/>
+					<!--
+					<persName ref="person1753" cert="high">
 						<forename cert="high">Leo</forename>
 						<surname cert="high">Jud</surname>
 						<graphic type="portrait" url="portraits/1753_Jud_Leo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Leo_Jud"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118558528"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11423330"/>
 					</persName>
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person1753" cert="high"/>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11291"/>
-					<ref type="prev_chronologically" target="files.xml#11289"/>
+					<ref type="next_chronologically" target="file11291"/>
+					<ref type="prev_chronologically" target="file11289"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -144,11 +163,11 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#11892"/>
+					<ref type="next_same_addressee" target="file11892"/>
 					<ref type="prev_same_addressee" target=""/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11892"/>
+					<ref type="next_with_addressee_as_sender" target="file11892"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -166,30 +185,30 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratia et pax per Iesum Christum.</s>
+					<s n="1" xml:lang="la" type="auto">Gratia et pax per Iesum Christum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ornatissimi viri ac fratres in domino observandi, comparuit apud nos Iacobus <persName ref="2610">Zorn</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="2610">Jakob Zorn</persName>, von <placeName ref="565">Konstanz</placeName>, gest. nach 1566, seit 1536 Pfarrer in <placeName ref="32">Alterswilen</placeName> (Kt. Thurgau), flüchtete 1539 nach Zürich und wurde - nach vorübergehender Unterstützung aus dem Studentenamt - im selben Jahr als Pfarrer nach <placeName ref="881">Regensdorf</placeName> (Kt. Zürich) gewählt (s. Bullingers Fürschlag vom 12. August; Zürich StA, E II 381, 1836r./1843v.); <hi>1543</hi> erhielt er in der Stadt das Bürgerrecht (Zürich Stadtarchiv, VIII. C. III. A. 1, 407v.). Seine Lebens- und Amtsführung wurde auf den Synoden mehrmals gerügt, und im Herbst 1549 setzte ihn der Rat nach einem betrügerischen Handel ab, gewährte ihm jedoch <hi>1550/51</hi> wiederum Unterstützungsgelder aus dem Studentenamt. Die Familie von Diesbach setzte ihn, nachdem er beim <placeName ref="121">Berner</placeName> Rat abgewiesen worden war, 1551 in ihre Kirchgemeinde <placeName ref="1211">Worb</placeName> (Kt. <placeName ref="121">Bern</placeName>) ein (s. <persName ref="91">Johannes Haller</persName> an Bullinger, 27. April 1551; Zürich StA, E II 370, 137). 1557 erscheint er als Pfarrer in <placeName ref="874">Rapperswil</placeName>, wurde aber 1560 seines Amtes enthoben, und auch als Pfarrer der Gemeinden <placeName ref="532">Kallnach</placeName> (bis <hi>1564)</hi> und <placeName ref="775">Niederbipp</placeName> <hi>(1566)</hi> wurde er jeweils - wegen Ehebruchs - abgesetzt (alle drei Kt. <placeName ref="121">Bern</placeName>). - Lit.: Zürich StA, G II 39. 1 und 2 (Studentenamtsrechnungen); Zürich StA, E II 1, 244. 328f. 332. 347. 351 (Synodalprotokolle): Blarer BW II. Reg.; Lohner 160. 496. 590. 609; Sulzberger 242; Pfarrerbuch 658.</note>, Alterschwilensis ecclesie liturgus, precatusque est nos, quatenus<pb type="edition" next="92"/> doctrine eius ac conversationis digna demus ad vos testimonia, spe bona fretus eadem plurimum apud prestantias vestras pollere, quibus in tribulatione sua omnem opitulationis locavit fidutiam<note xml:id="fn5" type="footnote" n="5"><persName ref="2610">Zorn</persName> hatte Bullinger bereits im Januar seine schwierige Lage geschildert, worauf dieser versuchte, ihn zum Bleiben zu bewegen (vgl. oben <ref target="file#11255">Nr. 1212</ref>, 2-10, und <ref target="file#11257">Nr. 1214</ref>, 2-4). Am 8. Februar beschwerte er sich vor dem Zürcher Rat über die Nachstellungen "um des Evangeliums willen" im <placeName ref="87">Thurgau</placeName>. Er sei von Landvogt <persName ref="2194">Christoph von Sonnenberg</persName> (1534-1536) um 20 Gulden gebüßt worden, weil er einen sterbenden Bauern zum "falschen, zweifelhaften Glauben" bekehrt habe, danach um 10 Gulden, weil er Allerheiligen nicht zu feiern geboten habe, und im Herbst 1538 sowie kurz nach Neujahr sei er von Landrichter <persName ref="2397">Hans Vogel</persName> aus <placeName ref="34">Altnau</placeName> auf offener Straße beschimpft und angegriffen worden. Der Rat leitete die Klage umgehend an seine Gesandten <persName ref="132">Lavater</persName> und von <persName ref="619">Cham</persName> in <placeName ref="85">Baden</placeName> weiter (s. Zürich StA, A 268), und am 12. Februar bat er die Ehefrau von <persName ref="1685">Sebastian Muntprat zu Salenstein</persName> vertraulich um weitere Informationen (s. ebd., B IV 10, 33r.); mit Brief vom 9. März bescheinigten sodann vier <placeName ref="87">Thurgauer</placeName> Pfarrer, von Vogel nie in ihrem Glauben verletzt worden zu sein (s. ebd., A 323. 2; vgl. auch <hi>Knittel,</hi> Kirche 49).</note>.</s>
-					<s xml:lang="la" type="auto">Cum ergo de morum eius integritate, predicationis candore aliud certi nihil habeamus neque aliter a vicinioribus explorare potuerimus, quam quod hactenus fideliter ecclesiam suam providerit functionemque ecclesiasticam iuxta donum ipsi traditum bene administraverit, corruptos mores ac vitiatas oves modesta quidem correxerit parrhesia, denique nulla culpata vita quemquam offenderit, damus illi sincera conscientia, quantum omnibus nobis constat huius rei, indubitatum ac verum testimonium, interim obnixe orantes, ut illum vobis habeatis quam comendatissimum; neque enim vacillamus eum sic se apud vos habiturum, ut piis quibuslibet diplicere non possit<note xml:id="fn6" type="footnote" n="6">Vgl. auch die Empfehlungen <persName ref="263">Zwicks</persName> (oben <ref target="file#11255">Nr. 1212</ref>, 4f, und unten <ref target="file#11319">Nr. 1276</ref>, 191) sowie jene des <placeName ref="565">Konstanzer</placeName> Rates im Brief an Zürich vom 26. Februar (Zürich StA, A 205. 1, <ref target="file#10203">Nr. 172</ref>).</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Ornatissimi viri ac fratres in domino observandi, comparuit apud nos <persName ref="person2610">Iacobus Zorn</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="person2610">Jakob Zorn</persName>, von <placeName ref="place565">Konstanz</placeName>, gest. nach 1566, seit 1536 Pfarrer in <placeName ref="place32">Alterswilen</placeName> (Kt. Thurgau), flüchtete 1539 nach Zürich und wurde - nach vorübergehender Unterstützung aus dem Studentenamt - im selben Jahr als Pfarrer nach <placeName ref="place881">Regensdorf</placeName> (Kt. Zürich) gewählt (s. Bullingers Fürschlag vom 12. August; Zürich StA, E II 381, 1836r./1843v.); 1543 erhielt er in der Stadt das Bürgerrecht (Zürich Stadtarchiv, VIII. C. III. A. 1, 407v.). Seine Lebens- und Amtsführung wurde auf den Synoden mehrmals gerügt, und im Herbst 1549 setzte ihn der Rat nach einem betrügerischen Handel ab, gewährte ihm jedoch 1550/51 wiederum Unterstützungsgelder aus dem Studentenamt. Die Familie von Diesbach setzte ihn, nachdem er beim <placeName ref="place121">Berner</placeName> Rat abgewiesen worden war, 1551 in ihre Kirchgemeinde <placeName ref="place1211">Worb</placeName> (Kt. <placeName ref="place121">Bern</placeName>) ein (s. <persName ref="person91">Johannes Haller</persName> an Bullinger, 27. April 1551; Zürich StA, E II 370, 137). 1557 erscheint er als Pfarrer in <placeName ref="place874">Rapperswil</placeName>, wurde aber 1560 seines Amtes enthoben, und auch als Pfarrer der Gemeinden <placeName ref="place532">Kallnach</placeName> (bis 1564) und <placeName ref="place775">Niederbipp</placeName> (1566) wurde er jeweils - wegen Ehebruchs - abgesetzt (alle drei Kt. <placeName ref="place121">Bern</placeName>). - Lit.: Zürich StA, G II 39. 1 und 2 (Studentenamtsrechnungen); Zürich StA, E II 1, 244. 328f. 332. 347. 351 (Synodalprotokolle): Blarer BW II. Reg.; Lohner 160. 496. 590. 609; Sulzberger 242; Pfarrerbuch 658.</note>, Alterschwilensis ecclesie liturgus, precatusque est nos, quatenus<pb type="edition" next="92"/> doctrine eius ac conversationis digna demus ad vos testimonia, spe bona fretus eadem plurimum apud prestantias vestras pollere, quibus in tribulatione sua omnem opitulationis locavit fidutiam<note xml:id="fn5" type="footnote" n="5"><persName ref="person2610">Zorn</persName> hatte Bullinger bereits im Januar seine schwierige Lage geschildert, worauf dieser versuchte, ihn zum Bleiben zu bewegen (vgl. oben <ref target="file11255">Nr. 1212</ref>, 2-10, und <ref target="file11257">Nr. 1214</ref>, 2-4). Am 8. Februar beschwerte er sich vor dem Zürcher Rat über die Nachstellungen "um des Evangeliums willen" im <placeName ref="place87">Thurgau</placeName>. Er sei von Landvogt <persName ref="person2194">Christoph von Sonnenberg</persName> (1534-1536) um 20 Gulden gebüßt worden, weil er einen sterbenden Bauern zum "falschen, zweifelhaften Glauben" bekehrt habe, danach um 10 Gulden, weil er Allerheiligen nicht zu feiern geboten habe, und im Herbst 1538 sowie kurz nach Neujahr sei er von Landrichter <persName ref="person2397">Hans Vogel</persName> aus <placeName ref="place34">Altnau</placeName> auf offener Straße beschimpft und angegriffen worden. Der Rat leitete die Klage umgehend an seine Gesandten <persName ref="person132">Lavater</persName> und <persName ref="person619">von Cham</persName> in <placeName ref="place85">Baden</placeName> weiter (s. Zürich StA, A 268), und am 12. Februar bat er die Ehefrau von <persName ref="person1685">Sebastian Muntprat zu Salenstein</persName> vertraulich um weitere Informationen (s. ebd., B IV 10, 33r.); mit Brief vom 9. März bescheinigten sodann vier <placeName ref="place87">Thurgauer</placeName> Pfarrer, von Vogel nie in ihrem Glauben verletzt worden zu sein (s. ebd., A 323. 2; vgl. auch <hi>Knittel,</hi> Kirche 49).</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Cum ergo de morum eius integritate, predicationis candore aliud certi nihil habeamus neque aliter a vicinioribus explorare potuerimus, quam quod hactenus fideliter ecclesiam suam providerit functionemque ecclesiasticam iuxta donum ipsi traditum bene administraverit, corruptos mores ac vitiatas oves modesta quidem correxerit parrhesia, denique nulla culpata vita quemquam offenderit, damus illi sincera conscientia, quantum omnibus nobis constat huius rei, indubitatum ac verum testimonium, interim obnixe orantes, ut illum vobis habeatis quam comendatissimum; neque enim vacillamus eum sic se apud vos habiturum, ut piis quibuslibet diplicere non possit<note xml:id="fn6" type="footnote" n="6">Vgl. auch die Empfehlungen <persName ref="person263">Zwicks</persName> (oben <ref target="file11255">Nr. 1212</ref>, 4f, und unten <ref target="file11319">Nr. 1276</ref>, 191) sowie jene des <placeName ref="place565">Konstanzer</placeName> Rates im Brief an Zürich vom 26. Februar (Zürich StA, A 205. 1, <ref target="file10203">Nr. 172</ref>).</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Causas suas lapso anni curriculo ac nunc temporis exposuit<note xml:id="fn7" type="footnote" n="7">Siehe oben Anm. 5.</note> consuluitque intime, an ob quorundam excandescentiam ac persequutionem deserenda sit ecclesia necne.</s>
-					<s xml:lang="la" type="auto">Cui semper respondimus ac consilium dedimus ex scripture sacre fontibus pium multas oportere pati ob evangelii professionem tribulationes<note xml:id="fn8" type="footnote" n="8">Ps 34 (33 Vulg.), 20.</note>, inprimis vero preconem, si conformes fieri velimus imagini crucis Christi<note xml:id="fn9" type="footnote" n="9">Vgl. Röm 8, 29.</note>, unde temere ob aliquorum ingratitudinem ipsi ecclesiam nullo pacto deserendam; quibus admonitionibus hactenus obtemperavit ac cordatum se prestitit.</s>
-					<s xml:lang="la" type="auto">Iam vero exerente se per membra sua maiore vi satane, subsidium ex fratrum instinctu a tota ecclesia adversus eos, quos estimat supplantatores, petiit, quo frustrato discessus sui iuxta iuditiorum nostrorum parvitatem ipsum liberam habere facultatem cognoscimus.</s>
-					<s xml:lang="la" type="auto">Quod et vos dominos observandos latere noluimus, iterato ipsum vobis comendantes, ut<pb type="edition" next="93"/> ope ac industria vestra colendissimis patritiis vestris insinuatus sibi ac puerulis<note xml:id="fn10" type="footnote" n="10"><persName ref="2610">Zorn</persName> hatte zu dieser Zeit sechs Kinder; vgl. Zürich StA, A 268 (8. Februar 1539).</note> suis alimoniam comparare valeat.</s>
+					<s n="4" xml:lang="la" type="auto">Causas suas lapso anni curriculo ac nunc temporis exposuit<note xml:id="fn7" type="footnote" n="7">Siehe oben Anm. 5.</note> consuluitque intime, an ob quorundam excandescentiam ac persequutionem deserenda sit ecclesia necne.</s>
+					<s n="5" xml:lang="la" type="auto">Cui semper respondimus ac consilium dedimus ex scripture sacre fontibus pium multas oportere pati ob evangelii professionem tribulationes<note xml:id="fn8" type="footnote" n="8">Ps 34 (33 Vulg.), 20.</note>, inprimis vero preconem, si conformes fieri velimus imagini crucis Christi<note xml:id="fn9" type="footnote" n="9">Vgl. Röm 8, 29.</note>, unde temere ob aliquorum ingratitudinem ipsi ecclesiam nullo pacto deserendam; quibus admonitionibus hactenus obtemperavit ac cordatum se prestitit.</s>
+					<s n="6" xml:lang="la" type="auto">Iam vero exerente se per membra sua maiore vi satane, subsidium ex fratrum instinctu a tota ecclesia adversus eos, quos estimat supplantatores, petiit, quo frustrato discessus sui iuxta iuditiorum nostrorum parvitatem ipsum liberam habere facultatem cognoscimus.</s>
+					<s n="7" xml:lang="la" type="auto">Quod et vos dominos observandos latere noluimus, iterato ipsum vobis comendantes, ut<pb type="edition" next="93"/> ope ac industria vestra colendissimis patritiis vestris insinuatus sibi ac puerulis<note xml:id="fn10" type="footnote" n="10"><persName ref="person2610">Zorn</persName> hatte zu dieser Zeit sechs Kinder; vgl. Zürich StA, A 268 (8. Februar 1539).</note> suis alimoniam comparare valeat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Date ac consueto capituli nostri<note xml:id="fn11" type="footnote" n="11">Gemeint ist das <placeName ref="1030">Steckborner</placeName> Kapitel.</note> sigillo per Andream <persName ref="123">Clingerum</persName> signate decima nona die marcii anno 1539.</s>
+					<s n="8" xml:lang="la" type="auto">Date ac consueto capituli nostri<note xml:id="fn11" type="footnote" n="11">Gemeint ist das <placeName ref="place1030">Steckborner</placeName> Kapitel.</note> sigillo per Andream <persName ref="person123">Clingerum</persName> signate decima nona die marcii anno 1539.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Huldrichus <persName ref="133">Amantius</persName> ceterique per agrum Thurgeum ecclesiaste viciniores:</s>
+					<s n="9" xml:lang="la" type="auto"><persName ref="person133">Huldrichus Amantius</persName> ceterique per agrum Thurgeum ecclesiaste viciniores:</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">M. <persName ref="193">Alexander Schmutz</persName>, <persName ref="156">Martinus</persName> Motyli, <persName ref="123">Andreas</persName> Clingerus, <persName ref="191">Ioannes Schmid</persName>, <persName ref="212">Ioannes Stäbinger</persName>, Gregorius in <placeName ref="498">Hugelshofen</placeName>.</s>
+					<s n="10" xml:lang="la" type="auto">M. <persName ref="person193">Alexander Schmutz</persName>, <persName ref="person156">Martinus</persName> Motyli, <persName ref="person123">Andreas Clingerus</persName>, <persName ref="person191">Ioannes Schmid</persName>, <persName ref="person212">Ioannes Stäbinger</persName>, Gregorius in <placeName ref="place498">Hugelshofen</placeName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Prestantissimis viris ac observandissimis fratribus M. Hainrico Bullingero, M. Leoni <persName ref="114">Iude</persName> ceterisque per <persName ref="84">Tigurinum</persName> agrum symmistis, dominis suis colendissimis.</s>
+					<s n="11" xml:lang="la" type="auto">Prestantissimis viris ac observandissimis fratribus M. Hainrico Bullingero, M. Leoni <persName ref="person114">Iude</persName> ceterisque per <persName ref="person84">Tigurinum</persName> agrum symmistis, dominis suis colendissimis.</s>
 				</p>
 			</div>
 		</body>

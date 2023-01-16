@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=711</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=711</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 355,76</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 355,76</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,7 +50,7 @@
 						<summary>
 							<p xml:id="regest1">
 								Möchte, dass ihm Bullinger in Zürich zu einer Stelle verhilft; ist beim Landschreiber von
-								<placeName ref="925">Rötteln</placeName>. Lässt seine Base, Bullingers Ehefrau, grüssen und bittet,
+								<placeName ref="place925">Rötteln</placeName>. Lässt seine Base, Bullingers Ehefrau, grüssen und bittet,
 								ihm umgehend durch den Briefboten zurückzuschreiben.
 							</p>
 						</summary>
@@ -58,44 +61,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10749">
 				<correspAction type="sent">
-					<persName ref="person#49" cert="high">
+					<!--
+					<persName ref="person49" cert="high">
 						<forename cert="high">Hans Jakob</forename>
 						<surname cert="high">Adlischwyler</surname>
-						<addName type="main">Adlischwyler, Hans-Jakob</addName>
+						<persName type="main" ref="person8036>Adlischwyler, Hans-Jakob</addName>
 					</persName>
-					<place source="#434" cert="high">
-						<settlement>Rötteln</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.63237 7.65936</geo>
-					</place>
+					-->
+					<persName ref="person49" cert="high"/>
+					<place source="place434" cert="high"/>
 					<date when="1536-01-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10750"/>
-					<ref type="prev_chronologically" target="files.xml#10748"/>
-					<ref type="next_correspondence" target="files.xml#302"/>
+					<ref type="next_chronologically" target="file10750"/>
+					<ref type="prev_chronologically" target="file10748"/>
+					<ref type="next_correspondence" target="file302"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#302"/>
+					<ref type="next_correspondence_request" target="file302"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#1284"/>
+					<ref type="next_correspondence_reaction" target="file1284"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#302"/>
+					<ref type="next_same_sender" target="file302"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10756"/>
-					<ref type="prev_same_addressee" target="files.xml#10745"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#302"/>
+					<ref type="next_same_addressee" target="file10756"/>
+					<ref type="prev_same_addressee" target="file10745"/>
+					<ref type="next_with_sender_as_addressee" target="file302"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10756"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10745"/>
+					<ref type="next_with_addressee_as_sender" target="file10756"/>
+					<ref type="prev_with_addressee_as_sender" target="file10745"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -112,28 +118,28 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Mein underthenig, gehorsam, willig dienst zuvor.</s>
+					<s n="1" xml:lang="de" type="auto">Mein underthenig, gehorsam, willig dienst zuvor.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Hochgelerter, lieber her vetter<note xml:id="fn3" type="footnote" n="3">Onkel, männlicher Verwandter (SI I 1133).</note>, ich laß uch wüssen, das ich frusch und gesundt bin, gott hab lob etc.</s>
+					<s n="2" xml:lang="de" type="auto">Hochgelerter, lieber her vetter<note xml:id="fn3" type="footnote" n="3">Onkel, männlicher Verwandter (SI I 1133).</note>, ich laß uch wüssen, das ich frusch und gesundt bin, gott hab lob etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Lieber her vetter, ich bitt uch fruntlich, wo es ye gesein mag, das ir mir umb ein herren hulffen, damit ich by uch, auch by meiner lieben besin<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> besin <hi>gestrichenes</hi> bess.</note><note xml:id="fn4" type="footnote" n="4">Tante, weibliche Verwandte (SI IV 1648); gemeint ist Bullingers Frau Anna.</note> sein möchte; dann ich ein groß verlangen nach uch und iren hab.</s>
-					<s xml:lang="de" type="auto">Furs ander loß ich wissen, das ich zu Roteln by dem landtschriber<note xml:id="fn5" type="footnote" n="5"><persName ref="940">Petermann Gebwiler</persName> (ursprünglich Petermann Sattler, bzw. Petrus Sellatoris) scheint 1536, vielleicht schon im Jahr 1535, Landschreiber der Herrschaft <placeName ref="925">Rötteln</placeName> gewesen zu sein; sein Vorgänger <persName ref="2586">Johannes Zech</persName> hatte wohl bis zum Jahr 1535 geamtet; vgl. Christian Martin <hi>Vortisch,</hi> Landschreiber und Juristen der Oberen badischen Herrschaften, in: Das Markgräfler-Land 2/1988, S. 164.</note> bin.</s>
+					<s n="3" xml:lang="de" type="auto">Lieber her vetter, ich bitt uch fruntlich, wo es ye gesein mag, das ir mir umb ein herren hulffen, damit ich by uch, auch by meiner lieben besin<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> besin <hi>gestrichenes</hi> bess.</note><note xml:id="fn4" type="footnote" n="4">Tante, weibliche Verwandte (SI IV 1648); gemeint ist Bullingers Frau Anna.</note> sein möchte; dann ich ein groß verlangen nach uch und iren hab.</s>
+					<s n="4" xml:lang="de" type="auto">Furs ander loß ich wissen, das ich zu Roteln by dem landtschriber<note xml:id="fn5" type="footnote" n="5"><persName ref="person940">Petermann Gebwiler</persName> (ursprünglich Petermann Sattler, bzw. Petrus Sellatoris) scheint 1536, vielleicht schon im Jahr 1535, Landschreiber der Herrschaft <placeName ref="place925">Rötteln</placeName> gewesen zu sein; sein Vorgänger <persName ref="person2586">Johannes Zech</persName> hatte wohl bis zum Jahr 1535 geamtet; vgl. Christian Martin <hi>Vortisch,</hi> Landschreiber und Juristen der Oberen badischen Herrschaften, in: Das Markgräfler-Land 2/1988, S. 164.</note> bin.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Nit me, dann griessen mir mein hertzliebe bese, uwer husfrouwen.</s>
-					<s xml:lang="de" type="auto">Bitt ouch uch, wo es geschefften halb möchte sein, das ir mir schriben, wie es uch, ouch meiner hertzlieben besen gang, und mir solhe schrifft by zeigern dis brieffs<note xml:id="fn6" type="footnote" n="6">Der Überbringer ist nicht bekannt.</note> zuschicken.</s>
+					<s n="5" xml:lang="de" type="auto">Nit me, dann griessen mir mein hertzliebe bese, uwer husfrouwen.</s>
+					<s n="6" xml:lang="de" type="auto">Bitt ouch uch, wo es geschefften halb möchte sein, das ir mir schriben, wie es uch, ouch meiner hertzlieben besen gang, und mir solhe schrifft by zeigern dis brieffs<note xml:id="fn6" type="footnote" n="6">Der Überbringer ist nicht bekannt.</note> zuschicken.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum Roteln, inn il, uff zinstag nach dem neuwen jar anno etc. 36.</s>
+					<s n="7" xml:lang="de" type="auto">Datum Roteln, inn il, uff zinstag nach dem neuwen jar anno etc. 36.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">E[wer] gehorsamer vetter <persName ref="2">Hans Jacob Adelschwiler</persName>.</s>
+					<s n="8" xml:lang="de" type="auto">E[wer] gehorsamer vetter <persName ref="person2">Hans Jacob Adelschwiler</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Dem hochgelerten herren hern <persName ref="1775">Heinrichen</persName> N., bredicant zu Zurich, meinem hertzlieben vettern zu handen.</s>
+					<s n="9" xml:lang="de" type="auto">Dem hochgelerten herren hern <persName ref="person1775">Heinrichen</persName> N., bredicant zu Zurich, meinem hertzlieben vettern zu handen.</s>
 				</p>
 			</div>
 		</body>

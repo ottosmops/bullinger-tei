@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1974"/>
-				<idno type="ISBN">ISBN 3-290-11334-5</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3</idno>
+				<idno subtype="ISBN">ISBN 3-290-11334-5</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 1</title>
+				<title subtype="publication">HBBW I</title>
 				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">1</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Fragment" subtype="Autograph (Kopie)" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph (Kopie)">Ms A 82,52v 1/2 fol. S.</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph (Kopie)">Ms A 82,52v 1/2 fol. S.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -57,49 +60,55 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10020">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#242" cert="high">
-						<settlement>Kappel am Albis</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.2288482 8.5251335</geo>
-					</place>
-					<date min="1524-10-00" max="1524-11-00" cert="low">wohl Oktober / November 1524</date>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place242" cert="high"/>
+					<date notBefore="1524-10-01" notAfter="1524-11-12" cert="low">wohl Oktober / November 1524</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1757" cert="high">
+					<!--
+					<persName ref="person1757" cert="high">
 						<forename cert="high">Wolfgang</forename>
 						<surname cert="high">Joner</surname>
-						<addName type="main">Rüpplin (Joner), Wolfgang</addName>
+						<persName type="main" ref="person9709>Rüpplin (Joner), Wolfgang</addName>
 					</persName>
-					<persName ref="person#2982" cert="high">
+					-->
+					<persName ref="person1757" cert="high"/>
+					<!--
+					<persName ref="person2982" cert="high">
 						<forename cert="high">Peter</forename>
 						<surname cert="high">Simler</surname>
-						<addName type="main">Simler (Simmler), Peter</addName>
+						<persName type="main" ref="person8443>Simler (Simmler), Peter</addName>
 					</persName>
+					-->
+					<persName ref="person2982" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10017"/>
-					<ref type="prev_chronologically" target="files.xml#10016"/>
+					<ref type="next_chronologically" target="file10017"/>
+					<ref type="prev_chronologically" target="file10016"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10017"/>
-					<ref type="prev_same_sender" target="files.xml#10016"/>
+					<ref type="next_same_sender" target="file10017"/>
+					<ref type="prev_same_sender" target="file10016"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#10015"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10017"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10016"/>
+					<ref type="prev_same_addressee" target="file10015"/>
+					<ref type="next_with_sender_as_addressee" target="file10017"/>
+					<ref type="prev_with_sender_as_addressee" target="file10016"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10015"/>
+					<ref type="prev_with_addressee_as_sender" target="file10015"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -113,11 +122,10 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Reverendissimis<note xml:id="fna" type="footnote" n="a"><hi>Darüber als Titel des ganzen Werkes, von Bullingers Hand:</hi> De dei erga nos providentia, contra impium carnis iuditium liber. Jesus Christus. «Hic est filius meus dilectus, in quo placata est anima mea; ipsum audite!» [Mt 17,5.] 1524.</note> dominis d.</s>
-					<s xml:lang="la" type="manual"><persName ref="113">Volcatio Ionero</persName> abbati et <persName ref="200">Petro Simlero</persName> priori <placeName ref="534">Cappellae</placeName> sit gratia et pax a deo patre et domino nostro Jesu Christo.</s>
+					<s n="1" xml:lang="la" type="manual">Reverendissimis<note xml:id="fna" type="footnote" n="a"><hi>Darüber als Titel des ganzen Werkes, von Bullingers Hand:</hi> De dei erga nos providentia, contra impium carnis iuditium liber. Jesus Christus. «Hic est filius meus dilectus, in quo placata est anima mea; ipsum audite!» [Mt 17,5.] 1524.</note> dominis d. <persName ref="person113">Volcatio Ionero</persName> abbati et <persName ref="person200">Petro Simlero</persName> priori <placeName ref="place534">Cappellae</placeName> sit gratia et pax a deo patre et domino nostro Jesu Christo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quae hic de divina providentia congessimus vobis, viri ornatissimi, duximus dedicanda, partim ut currentes vos in via do [mini] - - -<note xml:id="fnb" type="footnote" n="b"><hi>Das Ganze ist nachträglich durchgestrichen und die nachfolgenden 12 Folioblätter des Kopialbuches sind herausgeschnitten</hi><ptr target="#fn4" type="footnote" n="4"/>.</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Quae hic de divina providentia congessimus vobis, viri ornatissimi, duximus dedicanda, partim ut currentes vos in via do [mini] - - -<note xml:id="fnb" type="footnote" n="b"><hi>Das Ganze ist nachträglich durchgestrichen und die nachfolgenden 12 Folioblätter des Kopialbuches sind herausgeschnitten</hi><ptr target="fn4" type="footnote" n="4"/>.</note>.</s>
 				</p>
 			</div>
 		</body>

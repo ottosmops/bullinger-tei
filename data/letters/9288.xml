@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">8108/78</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 375,877</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 375,877</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,52 +47,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9288">
 				<correspAction type="sent">
-					<persName ref="person#3243" cert="low">
+					<!--
+					<persName ref="person3243" cert="low">
 						<forename cert="low">Johann Konrad</forename>
 						<surname cert="low">Ulmer</surname>
-						<addName type="main">Ulmer (ab Ulmis), Johann Konrad</addName>
-						<graphic type="portrait" url="portraits/3243_Johann_Conrad_Ulmer.jpg"/>
+						<persName type="main" ref="person8109>Ulmer (ab Ulmis), Johann Konrad</addName>
+						<graphic type="portrait" url="portraits/3243_Ulmer_Johann_Conrad.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johann_Konrad_Ulmer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/120341913"/>
 					</persName>
-					<place source="#441" cert="low">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					-->
+					<persName ref="person3243" cert="low"/>
+					<place source="place441" cert="low"/>
 					<date when="1573-04-16" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9289"/>
-					<ref type="prev_chronologically" target="files.xml#9287"/>
-					<ref type="next_correspondence" target="files.xml#9296"/>
-					<ref type="prev_correspondence" target="files.xml#9270"/>
-					<ref type="next_correspondence_request" target="files.xml#9296"/>
-					<ref type="prev_correspondence_request" target="files.xml#9270"/>
-					<ref type="next_correspondence_reaction" target="files.xml#9379"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#9260"/>
-					<ref type="next_same_sender" target="files.xml#9296"/>
-					<ref type="prev_same_sender" target="files.xml#9270"/>
-					<ref type="next_same_addressee" target="files.xml#9289"/>
-					<ref type="prev_same_addressee" target="files.xml#9279"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9296"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9270"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9289"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#9279"/>
+					<ref type="next_chronologically" target="file9289"/>
+					<ref type="prev_chronologically" target="file9287"/>
+					<ref type="next_correspondence" target="file9296"/>
+					<ref type="prev_correspondence" target="file9270"/>
+					<ref type="next_correspondence_request" target="file9296"/>
+					<ref type="prev_correspondence_request" target="file9270"/>
+					<ref type="next_correspondence_reaction" target="file9379"/>
+					<ref type="prev_correspondence_reaction" target="file9260"/>
+					<ref type="next_same_sender" target="file9296"/>
+					<ref type="prev_same_sender" target="file9270"/>
+					<ref type="next_same_addressee" target="file9289"/>
+					<ref type="prev_same_addressee" target="file9279"/>
+					<ref type="next_with_sender_as_addressee" target="file9296"/>
+					<ref type="prev_with_sender_as_addressee" target="file9270"/>
+					<ref type="next_with_addressee_as_sender" target="file9289"/>
+					<ref type="prev_with_addressee_as_sender" target="file9279"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -98,34 +100,37 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="9288/Autograph/00 E_II_375__fol__877_r_.tif" n="1"/>
+		<graphic url="9288/Autograph/01 E_II_375__fol__877_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Literas ab humanitate tua, clarissime vir et pater in Christo summe colende, 4. aprilis scriptas 12. demum eiusdem mensis accepi, quibus et amicorum literas ex Anglia, Heidelberga et Argentina ad te scriptas humanissime communicas.</s>
-					<s xml:lang="la" type="auto">Quae cum mihi gratissimae fuerint, pro iis gratias quam possum maximas ago; usus autem illis sum, quemadmodum mihi praescribis.</s>
-					<s xml:lang="la" type="auto">Quas et nunc per bonae fidei nuncium remitto.</s>
-					<s xml:lang="la" type="auto">Accepi nuper quatuor Rapsaceni scripti exempla; nam 6 tantum ad d. doctorem Martinum Peyerum miserat doctor Samuel Grynaeus, quorum 2 sibi reservavit Peyerus, unum donavi d. doctori Meyero, quaestori urbis nostrae, tuae humanitati duo offero dono, unum mihi reservant.</s>
-					<s xml:lang="la" type="auto">At spero brevi plura me accepturum esse.</s>
-					<s xml:lang="la" type="auto">Scribit d. Grynaeus ad d. Peyerum, quotquot Francofordiam devecta fuerint, mox ad unum omnia fuisse divendita editionemque omnibus doctis et bonis maxime probatam esse.</s>
-					<s xml:lang="la" type="auto">Quod coniecturae meae potius quam sententiae de nova stella tuae humanitati aliisque doctis non displicuerunt, haud fuit ingratum cognoscere.</s>
-					<s xml:lang="la" type="auto">Hodie mane illud revera domini ostentum conspiciens haudquaquam brevi dispariturum arbitror, ut d. Dasypodius de hoc mense divinabat.</s>
-					<s xml:lang="la" type="auto">Unde et quintum mihi argumentum exhibebit eius diuturnitas, ut negare audacius possim esse cometam; nam Cardanus reliquis de cometis ita scribit: "Longissimum eorum tempus (nisi pro miraculo sex menses excedit), plerumque autem finitur ante 30. diem, nunquam ante septimam."</s>
-					<s xml:lang="la" type="auto">Quod admiratione dignum iudico, adiicio: Haec stella cum Iove 21. martii primum ciniuncta usque ad 6. maii, hoc est intra 46 dierum spacium, cum omnibus planetis coibit praeterquam cum Saturno, qui perpetuo huius stellae oppositum signum occupat, et intra hoc tempus multae etiam aliae planetarum coniunctiones fient, quo et multa in terra comitia habentur, et orandus dominus, ut propediem et sua magna comitia de coelo delata celebret in mundo.</s>
-					<s xml:lang="la" type="auto">Iacobi Andreae partus si prodierit, forte maiores turbas dabit.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Literas ab humanitate tua, clarissime vir et pater in Christo summe colende, 4. aprilis scriptas 12. demum eiusdem mensis accepi, quibus et amicorum literas ex Anglia, Heidelberga et Argentina ad te scriptas humanissime communicas.</s>
+					<s n="3" xml:lang="la" type="auto">Quae cum mihi gratissimae fuerint, pro iis gratias quam possum maximas ago; usus autem illis sum, quemadmodum mihi praescribis.</s>
+					<s n="4" xml:lang="la" type="auto">Quas et nunc per bonae fidei nuncium remitto.</s>
+					<s n="5" xml:lang="la" type="auto">Accepi nuper quatuor Rapsaceni scripti exempla; nam 6 tantum ad d. doctorem Martinum Peyerum miserat doctor Samuel Grynaeus, quorum 2 sibi reservavit Peyerus, unum donavi d. doctori Meyero, quaestori urbis nostrae, tuae humanitati duo offero dono, unum mihi reservant.</s>
+					<s n="6" xml:lang="la" type="auto">At spero brevi plura me accepturum esse.</s>
+					<s n="7" xml:lang="la" type="auto">Scribit d. Grynaeus ad d. Peyerum, quotquot Francofordiam devecta fuerint, mox ad unum omnia fuisse divendita editionemque omnibus doctis et bonis maxime probatam esse.</s>
+					<s n="8" xml:lang="la" type="auto">Quod coniecturae meae potius quam sententiae de nova stella tuae humanitati aliisque doctis non displicuerunt, haud fuit ingratum cognoscere.</s>
+					<s n="9" xml:lang="la" type="auto">Hodie mane illud revera domini ostentum conspiciens haudquaquam brevi dispariturum arbitror, ut d. Dasypodius de hoc mense divinabat.</s>
+					<s n="10" xml:lang="la" type="auto">Unde et quintum mihi argumentum exhibebit eius diuturnitas, ut negare audacius possim esse cometam; nam Cardanus reliquis de cometis ita scribit: "Longissimum eorum tempus (nisi pro miraculo sex menses excedit), plerumque autem finitur ante 30. diem, nunquam ante septimam."</s>
+					<s n="11" xml:lang="la" type="auto">Quod admiratione dignum iudico, adiicio: Haec stella cum Iove 21. martii primum ciniuncta usque ad 6. maii, hoc est intra 46 dierum spacium, cum omnibus planetis coibit praeterquam cum Saturno, qui perpetuo huius stellae oppositum signum occupat, et intra hoc tempus multae etiam aliae planetarum coniunctiones fient, quo et multa in terra comitia habentur, et orandus dominus, ut propediem et sua magna comitia de coelo delata celebret in mundo.</s>
+					<s n="12" xml:lang="la" type="auto">Iacobi Andreae partus si prodierit, forte maiores turbas dabit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino salutem omnibus dominis fratribus dicens.</s>
-					<s xml:lang="la" type="auto">Resalutant reverenter tuam humanitatem singuli, quos salutasti.</s>
+					<s n="13" xml:lang="la" type="auto">Vale in domino salutem omnibus dominis fratribus dicens.</s>
+					<s n="14" xml:lang="la" type="auto">Resalutant reverenter tuam humanitatem singuli, quos salutasti.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum festinantissime 16. aprilis, quo die cum sole nova stella coibit, anno domini 1573.</s>
+					<s n="15" xml:lang="la" type="auto">Datum festinantissime 16. aprilis, quo die cum sole nova stella coibit, anno domini 1573.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuae humanitatis studiosissimus Iohannes Conradus Ulmerus.</s>
-					<s xml:lang="la" type="auto">Clarissimo viro atque eximio Iesu Christi servo d. Henrico Bullingero, Tigurinae ecclesiae antistiti fidelissimo, domino et patri suo in Christo summe colendo.</s>
+					<s n="16" xml:lang="la" type="auto">Tuae humanitatis studiosissimus Iohannes Conradus Ulmerus.</s>
+					<s n="17" xml:lang="la" type="auto">Clarissimo viro atque eximio Iesu Christi servo d. Henrico Bullingero, Tigurinae ecclesiae antistiti fidelissimo, domino et patri suo in Christo summe colendo.</s>
 				</p>
 			</div>
 		</body>

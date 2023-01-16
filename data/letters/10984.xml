@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=942</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=942</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,124</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,124</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,15 +49,15 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Übersendet ein Schreiben <persName ref="28">Bucers</persName>
-								[<ref target="file#10981">Nr. 939</ref>], auf das die Basler [Pfarrer] erst nach Rücksprache mit den Zürchern
-								und Bernern antworten wollen. Die [von <persName ref="28">Bucer</persName> verteidigte]
-								"Retraktation" haben <persName ref="154">Myconius</persName>,
-								<persName ref="117">Karlstadt</persName>, <persName ref="11">Markus</persName>
-								[<persName ref="11">Bertschi</persName>] und Wolf[gang
-								<persName ref="250">Wissenburg</persName>] erst oberflächlich oder noch gar nicht gelesen; um neuen
+								Übersendet ein Schreiben <persName ref="person28">Bucers</persName>
+								[<ref target="file10981">Nr. 939</ref>], auf das die Basler [Pfarrer] erst nach Rücksprache mit den Zürchern
+								und Bernern antworten wollen. Die [von <persName ref="person28">Bucer</persName> verteidigte]
+								"Retraktation" haben <persName ref="person154">Myconius</persName>,
+								<persName ref="person117">Karlstadt</persName>, Markus
+								[<persName ref="person11">Bertschi</persName>] und Wolf[gang
+								<persName ref="person250">Wissenburg</persName>] erst oberflächlich oder noch gar nicht gelesen; um neuen
 								Streit zu vermeiden, muß bei der Antwort unnötige Härte vermieden werden. Wartet auf Bullingers
-								Stellungnahme zu den Traktanden des Bundestags zu <placeName ref="958">Schmalkalden</placeName>.
+								Stellungnahme zu den Traktanden des Bundestags zu <placeName ref="place958">Schmalkalden</placeName>.
 							</p>
 						</summary>
 					</msContents>
@@ -64,46 +67,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10984">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1537-02-03" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10985"/>
-					<ref type="prev_chronologically" target="files.xml#10983"/>
-					<ref type="next_correspondence" target="files.xml#10985"/>
-					<ref type="prev_correspondence" target="files.xml#10976"/>
-					<ref type="next_correspondence_request" target="files.xml#10985"/>
-					<ref type="prev_correspondence_request" target="files.xml#10976"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10986"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10970"/>
-					<ref type="next_same_sender" target="files.xml#10985"/>
-					<ref type="prev_same_sender" target="files.xml#10976"/>
-					<ref type="next_same_addressee" target="files.xml#10986"/>
-					<ref type="prev_same_addressee" target="files.xml#10983"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10985"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10976"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10986"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10983"/>
+					<ref type="next_chronologically" target="file10985"/>
+					<ref type="prev_chronologically" target="file10983"/>
+					<ref type="next_correspondence" target="file10985"/>
+					<ref type="prev_correspondence" target="file10976"/>
+					<ref type="next_correspondence_request" target="file10985"/>
+					<ref type="prev_correspondence_request" target="file10976"/>
+					<ref type="next_correspondence_reaction" target="file10986"/>
+					<ref type="prev_correspondence_reaction" target="file10970"/>
+					<ref type="next_same_sender" target="file10985"/>
+					<ref type="prev_same_sender" target="file10976"/>
+					<ref type="next_same_addressee" target="file10986"/>
+					<ref type="prev_same_addressee" target="file10983"/>
+					<ref type="next_with_sender_as_addressee" target="file10985"/>
+					<ref type="prev_with_sender_as_addressee" target="file10976"/>
+					<ref type="next_with_addressee_as_sender" target="file10986"/>
+					<ref type="prev_with_addressee_as_sender" target="file10983"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -120,35 +128,35 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Quae <persName ref="28">Bucerus</persName> ad nos dimisit abiturus Smalcaldum, nos descriptum bona fide mittimus ad vos<note xml:id="fn1" type="footnote" n="1">Gemeint ist <persName ref="28">Bucers</persName> Brief vom 27. Januar an die Pfarrer von <placeName ref="97">Basel</placeName>, <placeName ref="121">Bern</placeName> und Zürich (oben <ref target="file#10981">Nr. 939</ref>); zu der von <persName ref="108">Leonhard Hospinian</persName> angefertigten Abschrift s. ebd., Anm. a und b.</note>.</s>
-					<s xml:lang="la" type="auto">Patebit, quid velit.</s>
-					<s xml:lang="la" type="auto">Contra nos si quid habet, ignoramus.</s>
-					<s xml:lang="la" type="auto">Quocirca, quid respondendum sit etsi consultavimus, nondum tamen definitum est quicquam, donec vos audierimus et <placeName ref="121">Bernenses</placeName>.</s>
-					<s xml:lang="la" type="auto">Ego vidi potius Retractationem<note xml:id="fn2" type="footnote" n="2">Zu <persName ref="28">Bucers</persName> "Retraktationen" s. HBBW VI, S. 368, Anm. 12.</note> quam legerim; neque animus est neque ocium hactenus diligentius videndi.</s>
-					<s xml:lang="la" type="auto">Tum <persName ref="117">Carolstadius</persName> nec vidit nec legit.</s>
-					<s xml:lang="la" type="auto">Itidem <persName ref="11">Marcus</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="11">Markus Bertschi</persName>.</note>.</s>
-					<s xml:lang="la" type="auto">Wolfius<note xml:id="fn4" type="footnote" n="4"><persName ref="250">Wolfgang Wissenburg</persName> (vgl. unten <ref target="file#10986">Nr. 944</ref>, Z. 231).</note> dicit se perlegisse, attamen non respexisse nisi ad ea, quae ad eucharistiam proprie pertinent, et ea sibi talia visa, qualia <persName ref="28">Bucerus</persName> nobis iam aliquoties proposuerit.</s>
-					<s xml:lang="la" type="auto">Iam videmus virum commotum; igitur quomodo sit occurrendum, videtur consyderandum diligenter, non tam propter ipsum quam propter deum et ecclesiam, ne novae contentiones oriantur in scandalum evangelii.</s>
-					<s xml:lang="la" type="auto">Non erit charitas in nobis, nisi taliter egerimus.</s>
-					<s xml:lang="la" type="auto">Illud ergo nobis curae sit, occurrere, ne quid nostrae duriciei, si quod peccatum ceciderit, adscribatur.</s>
-					<s xml:lang="la" type="auto">Fidei lumen praefigamus, et facile cum illo transigemus omnia.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Quae <persName ref="person28">Bucerus</persName> ad nos dimisit abiturus Smalcaldum, nos descriptum bona fide mittimus ad vos<note xml:id="fn1" type="footnote" n="1">Gemeint ist <persName ref="person28">Bucers</persName> Brief vom 27. Januar an die Pfarrer von <placeName ref="place97">Basel</placeName>, <placeName ref="place121">Bern</placeName> und Zürich (oben <ref target="file10981">Nr. 939</ref>); zu der von <persName ref="person108">Leonhard Hospinian</persName> angefertigten Abschrift s. ebd., Anm. a und b.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Patebit, quid velit.</s>
+					<s n="4" xml:lang="la" type="auto">Contra nos si quid habet, ignoramus.</s>
+					<s n="5" xml:lang="la" type="auto">Quocirca, quid respondendum sit etsi consultavimus, nondum tamen definitum est quicquam, donec vos audierimus et <placeName ref="place121">Bernenses</placeName>.</s>
+					<s n="6" xml:lang="la" type="auto">Ego vidi potius Retractationem<note xml:id="fn2" type="footnote" n="2">Zu <persName ref="person28">Bucers</persName> "Retraktationen" s. HBBW VI, S. 368, Anm. 12.</note> quam legerim; neque animus est neque ocium hactenus diligentius videndi.</s>
+					<s n="7" xml:lang="la" type="auto">Tum <persName ref="person117">Carolstadius</persName> nec vidit nec legit.</s>
+					<s n="8" xml:lang="la" type="auto">Itidem <persName ref="person11">Marcus</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="person11">Markus Bertschi</persName>.</note>.</s>
+					<s n="9" xml:lang="la" type="auto">Wolfius<note xml:id="fn4" type="footnote" n="4"><persName ref="person250">Wolfgang Wissenburg</persName> (vgl. unten <ref target="file10986">Nr. 944</ref>, Z. 231).</note> dicit se perlegisse, attamen non respexisse nisi ad ea, quae ad eucharistiam proprie pertinent, et ea sibi talia visa, qualia <persName ref="person28">Bucerus</persName> nobis iam aliquoties proposuerit.</s>
+					<s n="10" xml:lang="la" type="auto">Iam videmus virum commotum; igitur quomodo sit occurrendum, videtur consyderandum diligenter, non tam propter ipsum quam propter deum et ecclesiam, ne novae contentiones oriantur in scandalum evangelii.</s>
+					<s n="11" xml:lang="la" type="auto">Non erit charitas in nobis, nisi taliter egerimus.</s>
+					<s n="12" xml:lang="la" type="auto">Illud ergo nobis curae sit, occurrere, ne quid nostrae duriciei, si quod peccatum ceciderit, adscribatur.</s>
+					<s n="13" xml:lang="la" type="auto">Fidei lumen praefigamus, et facile cum illo transigemus omnia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Equidem expecto responsionem super articulis comitiorum Smalcaldensium<note xml:id="fn5" type="footnote" n="5">Vgl. <persName ref="154">Myconius</persName>' Anfrage vom 16. Januar, oben <ref target="file#10976">Nr. 934</ref>, 1-45.</note>.</s>
+					<s n="14" xml:lang="la" type="auto">Equidem expecto responsionem super articulis comitiorum Smalcaldensium<note xml:id="fn5" type="footnote" n="5">Vgl. <persName ref="person154">Myconius</persName>' Anfrage vom 16. Januar, oben <ref target="file10976">Nr. 934</ref>, 1-45.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, mi Bullingere, et deum pro<note xml:id="fna" type="footnote" n="a"><hi>zu ergänzen ist wohl</hi> nobis.</note> orato.</s>
+					<s n="15" xml:lang="la" type="auto">Vale, mi Bullingere, et deum pro<note xml:id="fna" type="footnote" n="a"><hi>zu ergänzen ist wohl</hi> nobis.</note> orato.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileae</placeName>, raptim, 3. februarii anno 37.</s>
+					<s n="16" xml:lang="la" type="auto"><placeName ref="place97">Basileae</placeName>, raptim, 3. februarii anno 37.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Os. <persName ref="154">Myconius</persName>.</s>
+					<s n="17" xml:lang="la" type="auto">Tuus Os. <persName ref="person154">Myconius</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinricho Bullingero, antistiti Tigurino, domino ac fratri in Christo suspiciendo suo.<pb type="edition" next="47"/></s>
+					<s n="18" xml:lang="la" type="auto">Domino Heinricho Bullingero, antistiti Tigurino, domino ac fratri in Christo suspiciendo suo.<pb type="edition" next="47"/></s>
 				</p>
 			</div>
 		</body>

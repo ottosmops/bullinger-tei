@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2017"/>
-				<idno type="ISBN">ISBN 078-3-290-17889-5547</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2609</idno>
+				<idno subtype="ISBN">ISBN 078-3-290-17889-5547</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2609</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 18</title>
+				<title subtype="publication">HBBW XVIII</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">18</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 360,405 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 360,405 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,10 +49,10 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								[1] Die [Schmalkaldener] zogen am 3. Oktober von <placeName ref="279">Donauwörth</placeName> dem
-								Kaiser [Karl V.] entgegen, der sich in Richtung <placeName ref="794">Nördlingen</placeName>
+								[1] Die [Schmalkaldener] zogen am 3. Oktober von <placeName ref="place279">Donauwörth</placeName> dem
+								Kaiser [Karl V.] entgegen, der sich in Richtung <placeName ref="place794">Nördlingen</placeName>
 								bewegte. Am 4. Oktober wurde frühmorgens im Nebel sehr stark gekämpft. Die [Schmalkaldener] haben die Stadt
-								<placeName ref="794">Nördlingen</placeName> besetzt und sich auf einer nahe gelegenen Höhe
+								<placeName ref="place794">Nördlingen</placeName> besetzt und sich auf einer nahe gelegenen Höhe
 								positioniert. Als sich der Nebel verzog, waren beide Heere nur eine Viertelmeile voneinander entfernt und
 								nur durch einen Bach getrennt. Die Heere stellten sich in Schlachtordnung auf. Die [Schmalkaldener] machten
 								einen Vorstoß, doch der Kaiser zog sich auf eine Anhöhe zurück, gegen die man nicht anzustürmen wagte. Es
@@ -59,7 +62,7 @@
 								<p xml:id="regest2">
 								[2] [Kurfürst Friedrich II. von der] Pfalz und [Herzog Ulrich von] Württemberg haben große Truppen. Herzog
 								Moritz von Sachsen befiehlt über 2000 Pferde sowie 6000 Knechte und kann überall die Landbevölkerung
-								verfügbar machen. Falls er nach <placeName ref="279">Donauwörth</placeName> ziehen will, wird sein
+								verfügbar machen. Falls er nach <placeName ref="place279">Donauwörth</placeName> ziehen will, wird sein
 								Volk wohl gut geschützt sein.
 								</p>
 								<p xml:id="regest3">
@@ -68,7 +71,7 @@
 								</p>
 								<p xml:id="regest4">
 								[4] Das beigelegte Nachrichtenblatt möchte Bullinger zusammen mit einer Mitteilung über Hallwyls
-								Wohlergehen dem Landschreiber von <placeName ref="623">Lenzburg</placeName> [Hemann <persName ref="88">Haberer</persName>]
+								Wohlergehen dem Landschreiber von <placeName ref="place623">Lenzburg</placeName> [Hemann <persName ref="person88">Haberer</persName>]
 								zukommen lassen. Dieser soll die Nachrichten auch Hallwyls Bekannten mitteilen.
 								</p>
 								<p xml:id="regest5">
@@ -82,43 +85,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12656">
 				<correspAction type="sent">
-					<persName ref="person#3559" cert="high">
+					<!--
+					<persName ref="person3559" cert="high">
 						<forename cert="high">Hartmann</forename>
 						<surname cert="high">von Hallwyl</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/1074197577"/>
 					</persName>
-					<place source="#228" cert="high">
-						<settlement>Höchstädt an der Donau</settlement>
-						<district>Bayern</district>
-						<country>Deutschland</country>
-						<geo>48.6114313 10.5670984</geo>
-					</place>
+					-->
+					<persName ref="person3559" cert="high"/>
+					<place source="place228" cert="high"/>
 					<date when="1546-10-05" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12657"/>
-					<ref type="prev_chronologically" target="files.xml#12655"/>
-					<ref type="next_correspondence" target="files.xml#12695"/>
-					<ref type="prev_correspondence" target="files.xml#12646"/>
-					<ref type="next_correspondence_request" target="files.xml#12695"/>
-					<ref type="prev_correspondence_request" target="files.xml#12646"/>
+					<ref type="next_chronologically" target="file12657"/>
+					<ref type="prev_chronologically" target="file12655"/>
+					<ref type="next_correspondence" target="file12695"/>
+					<ref type="prev_correspondence" target="file12646"/>
+					<ref type="next_correspondence_request" target="file12695"/>
+					<ref type="prev_correspondence_request" target="file12646"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#12695"/>
-					<ref type="prev_same_sender" target="files.xml#12646"/>
-					<ref type="next_same_addressee" target="files.xml#12689"/>
-					<ref type="prev_same_addressee" target="files.xml#12654"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12695"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12646"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12689"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12654"/>
+					<ref type="next_same_sender" target="file12695"/>
+					<ref type="prev_same_sender" target="file12646"/>
+					<ref type="next_same_addressee" target="file12689"/>
+					<ref type="prev_same_addressee" target="file12654"/>
+					<ref type="next_with_sender_as_addressee" target="file12695"/>
+					<ref type="prev_with_sender_as_addressee" target="file12646"/>
+					<ref type="next_with_addressee_as_sender" target="file12689"/>
+					<ref type="prev_with_addressee_as_sender" target="file12654"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -135,43 +142,43 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Min dinst, lieber<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> leiber.</note> her und frewndt.</s>
-					<s xml:lang="de" type="auto">Den 3. octobris ist unser volck<note xml:id="fn2" type="footnote" n="2">die schmalkaldischen Truppen.</note> zw Donenwerdt ufgeprochen, dem keysser<note xml:id="fn3" type="footnote" n="3">Karl V.</note>, der allen seinen hauffen uff Norlingen<note xml:id="fn4" type="footnote" n="4"><placeName ref="794">Nördlingen</placeName>.</note> gricht hat, bei tag und nacht bezogen.<note xml:id="fn5" type="footnote" n="5">entgegenmarschiert. - Zur Sache s. <ref target="file#12654">Nr. 2607</ref>, Anm. 31; <ref target="file#12660">Nr. 2613</ref>,27-44; sowie den Brief von Heinrich Thomann an Zürich vom 3. Oktober 1546 (Zürich StA, A 177, Nr. 62), der auch die Stunde des Aufbruchs (12 Uhr) angibt. Vgl. aber <ref target="file#12663">Nr. 2616</ref>,391.</note></s>
-					<s xml:lang="de" type="auto">Morndrigs<note xml:id="fn6" type="footnote" n="6">Am folgenden Tag.</note> den 4. am morgen im nebel fast<note xml:id="fn7" type="footnote" n="7">sehr.</note> starck gscharmützt.<note xml:id="fn8" type="footnote" n="8">Siehe dazu <hi>Schüz, Donaufeldzug</hi> 61f.</note></s>
-					<s xml:lang="de" type="auto">Handt<note xml:id="fn9" type="footnote" n="9">Gemeint sind die Schmalkaldener, die allerdings <placeName ref="794">Nördlingen</placeName> nicht einnahmen, sondern einige Truppeneinheiten dahin entsandten, um die Stadt vor einem Überfall des Kaisers zu schützen. Vgl. auch <ref target="file#12659">Nr. 2612</ref>,121-126; <ref target="file#12663">Nr. 2616</ref>,45-47.</note> ingenomen die statt Norlingen und den nechsten berg<note xml:id="fn10" type="footnote" n="10">Hügel. - So auch Thomann in dem oben in Anm. 5 erwähnten Brief.</note> darbei.</s>
-					<s xml:lang="de" type="auto">Und nachdem der nebel ufgangen, sindt beidersitz<note xml:id="fn11" type="footnote" n="11">von beiden Seiten; s. <hi>SI</hi> VII 1464.</note> hauffen in ebnem feldt, nit me den ein kleiner bach<note xml:id="fn12" type="footnote" n="12">Die Eger; vgl. <hi>Schüz, Donaufeldzug</hi> 62f mit Skizze <hi>6; Viglius van Zwichem</hi> 134 (unter dem 4. Oktober: "fossa et fluvius Eger, duplex impedimentum"); <ref target="file#12663">Nr. 2616</ref>,58-71.</note> dazwüschen, uff ein viertel mil wegs<note xml:id="fn13" type="footnote" n="13">Also etwa 2 km.</note> von ein andern gelegen.</s>
-					<s xml:lang="de" type="auto">Handt beidersitz ire schlachthauffen ze roß und fuͦß, als muͦse es geschlagen sin, verordnet.</s>
-					<s xml:lang="de" type="auto">Und nachdem die unsern mitt iren ordnong gegen dem findt getrüngen, hat sich der keysser nebent sich an ein berg in vorteil<note xml:id="fn14" type="footnote" n="14">vorteilhafte Lage.</note> gezogen, darum in die unsern nit wellen angriffen.</s>
-					<s xml:lang="de" type="auto">Ist bedersitz fürer<note xml:id="fn15" type="footnote" n="15">weiter.</note> starck gescharmützt bis in die nacht.<note xml:id="fn16" type="footnote" n="16">Zu den Kämpfen am 4. Oktober s. <hi>Schüz, Donaufeldzug</hi> 61-64 sowie den Brief von Heinrich Thomann an Zürich vom 4. Oktober 1546 (Zürich StA, A 177, Nr. 63).</note></s>
-					<s xml:lang="de" type="auto">Den 5. octobris ist newtt sonders namhaftig bis uff den mittag verloffen, dan das jettweder<note xml:id="fn17" type="footnote" n="17">jeder (von beiden).</note>, wie er ze nacht hiefor, beliben.</s>
-					<s xml:lang="de" type="auto">Got weist, was der hell obent<note xml:id="fn18" type="footnote" n="18">hell obent: der volle, ganze Abend; s. <hi>SI</hi> II 1139.</note> geben wirt.</s>
-					<s xml:lang="de" type="auto">Niemantz kan sich uß des keyssers fürnemen verrichten.<note xml:id="fn19" type="footnote" n="19">Zu verstehen: Niemand versteht, was der Kaiser vorhat; s. <hi>SI</hi> IV 746; VI 430 (unter 10a).</note></s>
-					<s xml:lang="de" type="auto">Ich hoff zw gott, wo er ußziehen<note xml:id="fn20" type="footnote" n="20">attackiert.</note>, werde er findt<note xml:id="fn21" type="footnote" n="21">Feinde.</note> gnog finden.</s>
+					<s n="1" xml:lang="de" type="auto">Min dinst, lieber<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> leiber.</note> her und frewndt.</s>
+					<s n="2" xml:lang="de" type="auto">Den 3. octobris ist unser volck<note xml:id="fn2" type="footnote" n="2">die schmalkaldischen Truppen.</note> zw Donenwerdt ufgeprochen, dem keysser<note xml:id="fn3" type="footnote" n="3">Karl V.</note>, der allen seinen hauffen uff Norlingen<note xml:id="fn4" type="footnote" n="4"><placeName ref="place794">Nördlingen</placeName>.</note> gricht hat, bei tag und nacht bezogen.<note xml:id="fn5" type="footnote" n="5">entgegenmarschiert. - Zur Sache s. <ref target="file12654">Nr. 2607</ref>, Anm. 31; <ref target="file12660">Nr. 2613</ref>,27-44; sowie den Brief von Heinrich Thomann an Zürich vom 3. Oktober 1546 (Zürich StA, A 177, Nr. 62), der auch die Stunde des Aufbruchs (12 Uhr) angibt. Vgl. aber <ref target="file12663">Nr. 2616</ref>,391.</note></s>
+					<s n="3" xml:lang="de" type="auto">Morndrigs<note xml:id="fn6" type="footnote" n="6">Am folgenden Tag.</note> den 4. am morgen im nebel fast<note xml:id="fn7" type="footnote" n="7">sehr.</note> starck gscharmützt.<note xml:id="fn8" type="footnote" n="8">Siehe dazu <hi>Schüz, Donaufeldzug</hi> 61f.</note></s>
+					<s n="4" xml:lang="de" type="auto">Handt<note xml:id="fn9" type="footnote" n="9">Gemeint sind die Schmalkaldener, die allerdings <placeName ref="place794">Nördlingen</placeName> nicht einnahmen, sondern einige Truppeneinheiten dahin entsandten, um die Stadt vor einem Überfall des Kaisers zu schützen. Vgl. auch <ref target="file12659">Nr. 2612</ref>,121-126; <ref target="file12663">Nr. 2616</ref>,45-47.</note> ingenomen die statt Norlingen und den nechsten berg<note xml:id="fn10" type="footnote" n="10">Hügel. - So auch Thomann in dem oben in Anm. 5 erwähnten Brief.</note> darbei.</s>
+					<s n="5" xml:lang="de" type="auto">Und nachdem der nebel ufgangen, sindt beidersitz<note xml:id="fn11" type="footnote" n="11">von beiden Seiten; s. <hi>SI</hi> VII 1464.</note> hauffen in ebnem feldt, nit me den ein kleiner bach<note xml:id="fn12" type="footnote" n="12">Die Eger; vgl. <hi>Schüz, Donaufeldzug</hi> 62f mit Skizze <hi>6; Viglius van Zwichem</hi> 134 (unter dem 4. Oktober: "fossa et fluvius Eger, duplex impedimentum"); <ref target="file12663">Nr. 2616</ref>,58-71.</note> dazwüschen, uff ein viertel mil wegs<note xml:id="fn13" type="footnote" n="13">Also etwa 2 km.</note> von ein andern gelegen.</s>
+					<s n="6" xml:lang="de" type="auto">Handt beidersitz ire schlachthauffen ze roß und fuͦß, als muͦse es geschlagen sin, verordnet.</s>
+					<s n="7" xml:lang="de" type="auto">Und nachdem die unsern mitt iren ordnong gegen dem findt getrüngen, hat sich der keysser nebent sich an ein berg in vorteil<note xml:id="fn14" type="footnote" n="14">vorteilhafte Lage.</note> gezogen, darum in die unsern nit wellen angriffen.</s>
+					<s n="8" xml:lang="de" type="auto">Ist bedersitz fürer<note xml:id="fn15" type="footnote" n="15">weiter.</note> starck gescharmützt bis in die nacht.<note xml:id="fn16" type="footnote" n="16">Zu den Kämpfen am 4. Oktober s. <hi>Schüz, Donaufeldzug</hi> 61-64 sowie den Brief von Heinrich Thomann an Zürich vom 4. Oktober 1546 (Zürich StA, A 177, Nr. 63).</note></s>
+					<s n="9" xml:lang="de" type="auto">Den 5. octobris ist newtt sonders namhaftig bis uff den mittag verloffen, dan das jettweder<note xml:id="fn17" type="footnote" n="17">jeder (von beiden).</note>, wie er ze nacht hiefor, beliben.</s>
+					<s n="10" xml:lang="de" type="auto">Got weist, was der hell obent<note xml:id="fn18" type="footnote" n="18">hell obent: der volle, ganze Abend; s. <hi>SI</hi> II 1139.</note> geben wirt.</s>
+					<s n="11" xml:lang="de" type="auto">Niemantz kan sich uß des keyssers fürnemen verrichten.<note xml:id="fn19" type="footnote" n="19">Zu verstehen: Niemand versteht, was der Kaiser vorhat; s. <hi>SI</hi> IV 746; VI 430 (unter 10a).</note></s>
+					<s n="12" xml:lang="de" type="auto">Ich hoff zw gott, wo er ußziehen<note xml:id="fn20" type="footnote" n="20">attackiert.</note>, werde er findt<note xml:id="fn21" type="footnote" n="21">Feinde.</note> gnog finden.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="de" type="auto">Ich vernim, Pfaltz<note xml:id="fn22" type="footnote" n="22">Kurfürst Friedrich II. von der Pfalz.</note> und Wirttenberg<note xml:id="fn23" type="footnote" n="23">Herzog Ulrich von Württemberg.</note> sollent samenthaft<note xml:id="fn24" type="footnote" n="24">insgesamt.</note> starck uff sin.</s>
-					<s xml:lang="de" type="auto">Darzw hatt hertzog Moritz<note xml:id="fn25" type="footnote" n="25">Moritz von Sachsen, von dessen verräterischen Plänen die Öffentlichkeit noch nichts wusste.</note> 2000 gerüster pferdt und 6000 knecht und sin <pb type="edition" next="78"/> landtvolck also, wo er,<pb type="scan" next="406"/> das er allenthalb finden, gnuͦg finden wirt.</s>
-					<s xml:lang="de" type="auto">Wil er dan wider hinder sich<note xml:id="fn26" type="footnote" n="26">hinder sich: zurück. - Weil Moritz vom 24. Mai bis zum 20. Juni 1546 in <placeName ref="880">Regensburg</placeName> (beim Reichstag) gewesen war; s. <hi>HBBW</hi> XVII 68,63f (mit Anm. 39); 91,14f; 200,6-8.</note> uff Donenwerdt, acht, es<note xml:id="fn27" type="footnote" n="27">Gemeint ist das Land bzw. das Landvolk.</note> solle ouch versechen<note xml:id="fn28" type="footnote" n="28">(gut) versorgt; hier im engeren Sinne: geschützt; vgl. eine ähnliche Aussage über das Territorium des Landgrafen Philipp von Hessen in <hi>HBBW</hi> XVII 290,20-22.</note> sin.</s>
+					<s n="13" xml:lang="de" type="auto">Ich vernim, Pfaltz<note xml:id="fn22" type="footnote" n="22">Kurfürst Friedrich II. von der Pfalz.</note> und Wirttenberg<note xml:id="fn23" type="footnote" n="23">Herzog Ulrich von Württemberg.</note> sollent samenthaft<note xml:id="fn24" type="footnote" n="24">insgesamt.</note> starck uff sin.</s>
+					<s n="14" xml:lang="de" type="auto">Darzw hatt hertzog Moritz<note xml:id="fn25" type="footnote" n="25">Moritz von Sachsen, von dessen verräterischen Plänen die Öffentlichkeit noch nichts wusste.</note> 2000 gerüster pferdt und 6000 knecht und sin <pb type="edition" next="78"/> landtvolck also, wo er,<pb type="scan" next="406"/> das er allenthalb finden, gnuͦg finden wirt.</s>
+					<s n="15" xml:lang="de" type="auto">Wil er dan wider hinder sich<note xml:id="fn26" type="footnote" n="26">hinder sich: zurück. - Weil Moritz vom 24. Mai bis zum 20. Juni 1546 in <placeName ref="place880">Regensburg</placeName> (beim Reichstag) gewesen war; s. <hi>HBBW</hi> XVII 68,63f (mit Anm. 39); 91,14f; 200,6-8.</note> uff Donenwerdt, acht, es<note xml:id="fn27" type="footnote" n="27">Gemeint ist das Land bzw. das Landvolk.</note> solle ouch versechen<note xml:id="fn28" type="footnote" n="28">(gut) versorgt; hier im engeren Sinne: geschützt; vgl. eine ähnliche Aussage über das Territorium des Landgrafen Philipp von Hessen in <hi>HBBW</hi> XVII 290,20-22.</note> sin.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="de" type="auto">Der herre gott welle sich der armen landtleutten erbarm[en]<note xml:id="fnc" type="footnote" n="c"><hi>Hier und unten Text im engen Einband verdeckt.</hi></note>, welche dermassen mitt mortt, brandt und nottzog<note xml:id="fn29" type="footnote" n="29">Vergewaltigung; s. <hi>Grimm</hi> XIII 962.</note> genoͤttiget und verderbtt<note xml:id="fn30" type="footnote" n="30">umgebracht; s. <hi>SI</hi> XIII 1418f.</note> werden von des tyrannen<note xml:id="fn31" type="footnote" n="31">Gemeint ist der Kaiser.</note> volck, das nüt gnugs[am]<note xml:id="fnd" type="footnote" n="d"><hi>Lesung unsicher.</hi></note> mag usgesprochen werden.</s>
-					<s xml:lang="de" type="auto">Pittent alle den herren got, er sin zorn abwende.</s>
+					<s n="16" xml:lang="de" type="auto">Der herre gott welle sich der armen landtleutten erbarm[en]<note xml:id="fnc" type="footnote" n="c"><hi>Hier und unten Text im engen Einband verdeckt.</hi></note>, welche dermassen mitt mortt, brandt und nottzog<note xml:id="fn29" type="footnote" n="29">Vergewaltigung; s. <hi>Grimm</hi> XIII 962.</note> genoͤttiget und verderbtt<note xml:id="fn30" type="footnote" n="30">umgebracht; s. <hi>SI</hi> XIII 1418f.</note> werden von des tyrannen<note xml:id="fn31" type="footnote" n="31">Gemeint ist der Kaiser.</note> volck, das nüt gnugs[am]<note xml:id="fnd" type="footnote" n="d"><hi>Lesung unsicher.</hi></note> mag usgesprochen werden.</s>
+					<s n="17" xml:lang="de" type="auto">Pittent alle den herren got, er sin zorn abwende.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="de" type="auto">Thuͦndt so wol und verschafent disere zitung<note xml:id="fn32" type="footnote" n="32">Vorliegende Nachricht oder ein diesem Brief beigelegtes Dokument mit Nachrichten.</note> dem landtschriber zw Lentzburg<note xml:id="fn33" type="footnote" n="33">Hemann <persName ref="88">Haberer</persName>, von 1535 bis 1558 Landschreiber von <placeName ref="623">Lenzburg</placeName>; vgl. <hi>HBBW</hi> XVII 323,108f.</note> zw komme, dan<note xml:id="fn34" type="footnote" n="34">weil.</note> er semlichs<note xml:id="fn35" type="footnote" n="35">selbiges, solches.</note> minen frewnden und nachpuren anzwzeigen habe sampt meinem wolstandt.<note xml:id="fn36" type="footnote" n="36">Wohlergehen.</note></s>
+					<s n="18" xml:lang="de" type="auto">Thuͦndt so wol und verschafent disere zitung<note xml:id="fn32" type="footnote" n="32">Vorliegende Nachricht oder ein diesem Brief beigelegtes Dokument mit Nachrichten.</note> dem landtschriber zw Lentzburg<note xml:id="fn33" type="footnote" n="33">Hemann <persName ref="person88">Haberer</persName>, von 1535 bis 1558 Landschreiber von <placeName ref="place623">Lenzburg</placeName>; vgl. <hi>HBBW</hi> XVII 323,108f.</note> zw komme, dan<note xml:id="fn34" type="footnote" n="34">weil.</note> er semlichs<note xml:id="fn35" type="footnote" n="35">selbiges, solches.</note> minen frewnden und nachpuren anzwzeigen habe sampt meinem wolstandt.<note xml:id="fn36" type="footnote" n="36">Wohlergehen.</note></s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="de" type="auto">Datum Höchstett, den 5. octobris in 46.</s>
-					<s xml:lang="de" type="auto">Ich hab nit zit noch platz, fil ze schriben.</s>
-					<s xml:lang="de" type="auto">E[urer] williger Hartman von Halwil.</s>
+					<s n="19" xml:lang="de" type="auto">Datum Höchstett, den 5. octobris in 46.</s>
+					<s n="20" xml:lang="de" type="auto">Ich hab nit zit noch platz, fil ze schriben.</s>
+					<s n="21" xml:lang="de" type="auto">E[urer] williger Hartman von Halwil.</s>
 				</p>
 				<p>
 					<note type="address">[Ohne Adresse.]</note>

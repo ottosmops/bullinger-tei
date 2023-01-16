@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2013"/>
-				<idno type="ISBN">ISBN 978-3-290-17664-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2210</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17664-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2210</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 15</title>
+				<title subtype="publication">HBBW XV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">15</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#474">St. Gallen</settlement>
-						<institution>Kantonsbibliothek Vadiana</institution>
-						<idno type="Autograph">Ms 35 (VBS VI),48</idno>
-						<repository ref="archive#78">
+						<!--
+						<repository ref="archive78">
 							<name>St. Gallen KB</name>
 							<ref target="https://www.sg.ch/kultur/kantonsbibliothek-vadiana.html"/>
 						</repository>
+						<settlement ref="place474">St. Gallen</settlement>
+						<institution>Kantonsbibliothek Vadiana</institution>
+						-->
+						<repository ref="archive78"/>
+						<idno subtype="Autograph">Ms 35 (VBS VI),48</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,8 +50,8 @@
 						<summary>
 							<p xml:id="regest1">
 								Bullinger empfiehlt Theodor [Bibliander], der [aus Zürich] berichten wird. - Falls
-								<persName ref="19">Blarer</persName> etwas über den Ausgang des Reichstags [zu
-								<placeName ref="1214">Worms</placeName>] oder über <persName ref="138">Luther</persName>
+								<persName ref="person19">Blarer</persName> etwas über den Ausgang des Reichstags [zu
+								<placeName ref="place1214">Worms</placeName>] oder über <persName ref="person138">Luther</persName>
 								weiß, möge er dies mitteilen.
 							</p>
 						</summary>
@@ -66,46 +69,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12257">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1545-08-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#392" cert="high">
+					<!--
+					<persName ref="person392" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
+					-->
+					<persName ref="person392" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12258"/>
-					<ref type="prev_chronologically" target="files.xml#12256"/>
-					<ref type="next_correspondence" target="files.xml#12258"/>
-					<ref type="prev_correspondence" target="files.xml#12247"/>
-					<ref type="next_correspondence_request" target="files.xml#12273"/>
-					<ref type="prev_correspondence_request" target="files.xml#12231"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12258"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12247"/>
-					<ref type="next_same_sender" target="files.xml#12273"/>
-					<ref type="prev_same_sender" target="files.xml#12256"/>
-					<ref type="next_same_addressee" target="files.xml#12258"/>
-					<ref type="prev_same_addressee" target="files.xml#12247"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12273"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12256"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12258"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12247"/>
+					<ref type="next_chronologically" target="file12258"/>
+					<ref type="prev_chronologically" target="file12256"/>
+					<ref type="next_correspondence" target="file12258"/>
+					<ref type="prev_correspondence" target="file12247"/>
+					<ref type="next_correspondence_request" target="file12273"/>
+					<ref type="prev_correspondence_request" target="file12231"/>
+					<ref type="next_correspondence_reaction" target="file12258"/>
+					<ref type="prev_correspondence_reaction" target="file12247"/>
+					<ref type="next_same_sender" target="file12273"/>
+					<ref type="prev_same_sender" target="file12256"/>
+					<ref type="next_same_addressee" target="file12258"/>
+					<ref type="prev_same_addressee" target="file12247"/>
+					<ref type="next_with_sender_as_addressee" target="file12273"/>
+					<ref type="prev_with_sender_as_addressee" target="file12256"/>
+					<ref type="next_with_addressee_as_sender" target="file12258"/>
+					<ref type="prev_with_addressee_as_sender" target="file12247"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -119,24 +126,24 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S[alutem] d[ico].</s>
-					<s xml:lang="la" type="auto">Cum nihil, quod scriberem, haberem, vir amantissime, hoc unicum tamen unice a te impetratum cupio, ut praeceptorem et fratrem nostrum colendissimum Theodorum<note xml:id="fn1" type="footnote" n="1">Theodor Bibliander.</note> amice excipias commendatumque habeas<note xml:id="fn2" type="footnote" n="2">Vielleicht hatte sich Bibliander im Zuge des Dissenses mit den Zürchern (s. oben <ref target="file#12236">Nr. 2189</ref> und <ref target="file#12240">Nr. 2193</ref>, Anm. 10) nach <placeName ref="565">Konstanz</placeName> begeben, um schon zu diesem Zeitpunkt über eine Anstellung in <placeName ref="565">Konstanz</placeName> zu verhandeln. Am 27. Februar 1546 dankte er <persName ref="19">Blarer</persName> und der <placeName ref="565">Konstanzer</placeName> Obrigkeit für deren Stellenangebot, lehnte dieses aber ab; s. <persName ref="19">Blarer</persName> BW II 419, <ref target="file#11298">Nr. 1255</ref>; <hi>Egli,</hi> Analecta 1176.</note>.</s>
+					<s n="1" xml:lang="la" type="auto">S[alutem] d[ico].</s>
+					<s n="2" xml:lang="la" type="auto">Cum nihil, quod scriberem, haberem, vir amantissime, hoc unicum tamen unice a te impetratum cupio, ut praeceptorem et fratrem nostrum colendissimum Theodorum<note xml:id="fn1" type="footnote" n="1">Theodor Bibliander.</note> amice excipias commendatumque habeas<note xml:id="fn2" type="footnote" n="2">Vielleicht hatte sich Bibliander im Zuge des Dissenses mit den Zürchern (s. oben <ref target="file12236">Nr. 2189</ref> und <ref target="file12240">Nr. 2193</ref>, Anm. 10) nach <placeName ref="place565">Konstanz</placeName> begeben, um schon zu diesem Zeitpunkt über eine Anstellung in <placeName ref="place565">Konstanz</placeName> zu verhandeln. Am 27. Februar 1546 dankte er <persName ref="person19">Blarer</persName> und der <placeName ref="place565">Konstanzer</placeName> Obrigkeit für deren Stellenangebot, lehnte dieses aber ab; s. <persName ref="person19">Blarer</persName> BW II 419, <ref target="file11298">Nr. 1255</ref>; <hi>Egli,</hi> Analecta 1176.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Res nostras ex ipso omnes audies.</s>
+					<s n="3" xml:lang="la" type="auto">Res nostras ex ipso omnes audies.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si quid certi habes de comitiorum<note xml:id="fn3" type="footnote" n="3">Der Reichstag zu <placeName ref="1214">Worms</placeName>, der am 4. August beendet worden war; s. oben <ref target="file#12232">Nr. 2185</ref>, Anm. 17.</note> exitu et d. <persName ref="138">Luthero</persName>, significa, quaeso.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">Tiguri, 10. augusti 1545.</s>
+					<s n="4" xml:lang="la" type="auto">Si quid certi habes de comitiorum<note xml:id="fn3" type="footnote" n="3">Der Reichstag zu <placeName ref="place1214">Worms</placeName>, der am 4. August beendet worden war; s. oben <ref target="file12232">Nr. 2185</ref>, Anm. 17.</note> exitu et d. <persName ref="person138">Luthero</persName>, significa, quaeso.</s>
+					<s n="5" xml:lang="la" type="auto">Vale.</s>
+					<s n="6" xml:lang="la" type="auto">Tiguri, 10. augusti 1545.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus tuus.</s>
+					<s n="7" xml:lang="la" type="auto">H. Bullingerus tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro d. <persName ref="19">Ambrosio Blaurero</persName>, colendissimo domino suo.</s>
-					<s xml:lang="la" type="auto"><placeName ref="565">Constantz</placeName>.</s>
+					<s n="8" xml:lang="la" type="auto">Clarissimo viro d. <persName ref="person19">Ambrosio Blaurero</persName>, colendissimo domino suo.</s>
+					<s n="9" xml:lang="la" type="auto"><placeName ref="place565">Constantz</placeName>.</s>
 				</p>
 			</div>
 		</body>

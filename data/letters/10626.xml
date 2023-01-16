@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=588</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=588</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 364,12r</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 364,12r</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,12 +50,12 @@
 						<summary>
 							<p xml:id="regest1">
 								Wird auf den ersten Brief antworten, wenn er Bullingers Prädestinationsschrift zurücksendet;
-								<persName ref="20">Thomas</persName> [<persName ref="20">Blarer</persName>] hat sie gelesen,
-								jetzt ist sie in der Hand von [<persName ref="264">Konrad</persName>
-								<persName ref="263">Zwick</persName>]. Ist befriedigt vom zweiten,
-								<persName ref="193">Alexander</persName> [<persName ref="193">Schmutz</persName>] betreffenden
+								Thomas [<persName ref="person20">Blarer</persName>] hat sie gelesen,
+								jetzt ist sie in der Hand von [Konrad
+								<persName ref="person263">Zwick</persName>]. Ist befriedigt vom zweiten,
+								Alexander [<persName ref="person193">Schmutz</persName>] betreffenden
 								Schreiben und hofft, diesen vom Verlassen seiner Gemeinde abhalten zu können. Erinnert sich gerne an [die
-								Badekur in] <placeName ref="1117">Urdorf</placeName> Grüße.
+								Badekur in] <placeName ref="place1117">Urdorf</placeName> Grüße.
 							</p>
 						</summary>
 					</msContents>
@@ -62,45 +65,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10626">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<place source="#257" cert="high">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person4079" cert="high"/>
+					<place source="place257" cert="high"/>
 					<date when="1535-06-05" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10627"/>
-					<ref type="prev_chronologically" target="files.xml#10625"/>
-					<ref type="next_correspondence" target="files.xml#10631"/>
-					<ref type="prev_correspondence" target="files.xml#10610"/>
-					<ref type="next_correspondence_request" target="files.xml#10631"/>
-					<ref type="prev_correspondence_request" target="files.xml#10610"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10958"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10599"/>
-					<ref type="next_same_sender" target="files.xml#10631"/>
-					<ref type="prev_same_sender" target="files.xml#10623"/>
-					<ref type="next_same_addressee" target="files.xml#10629"/>
-					<ref type="prev_same_addressee" target="files.xml#10619"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10631"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10623"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10629"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10619"/>
+					<ref type="next_chronologically" target="file10627"/>
+					<ref type="prev_chronologically" target="file10625"/>
+					<ref type="next_correspondence" target="file10631"/>
+					<ref type="prev_correspondence" target="file10610"/>
+					<ref type="next_correspondence_request" target="file10631"/>
+					<ref type="prev_correspondence_request" target="file10610"/>
+					<ref type="next_correspondence_reaction" target="file10958"/>
+					<ref type="prev_correspondence_reaction" target="file10599"/>
+					<ref type="next_same_sender" target="file10631"/>
+					<ref type="prev_same_sender" target="file10623"/>
+					<ref type="next_same_addressee" target="file10629"/>
+					<ref type="prev_same_addressee" target="file10619"/>
+					<ref type="next_with_sender_as_addressee" target="file10631"/>
+					<ref type="prev_with_sender_as_addressee" target="file10623"/>
+					<ref type="next_with_addressee_as_sender" target="file10629"/>
+					<ref type="prev_with_addressee_as_sender" target="file10619"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -115,35 +122,35 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salus.</s>
+					<s n="1" xml:lang="la" type="auto">Salus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ad priores literas<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note> respondebo, charissime frater, ubi moderationem tuam in praedestinationis causa<note xml:id="fn2" type="footnote" n="2">Gemeint ist Bullingers Karlstagsrede vom 28. Januar 1535 "Quae moderatio servanda sit..." (vgl. unten <ref target="file#10630">Nr. 592</ref> mit Anm. 2).</note> remisero, quod brevi fiet<note xml:id="fn3" type="footnote" n="3"><persName ref="263">Zwick</persName> sandte Bullingers Schrift am 3. Juli zurück, vgl. unten <ref target="file#10646">Nr. 608</ref>, 1-11.</note>.</s>
-					<s xml:lang="la" type="auto">Relegit <persName ref="20">Thomas</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="20">Thomas Blarer</persName> nahm schon am 16. Juni Stellung, s. unten <ref target="file#10630">Nr. 592</ref>.</note>, iam in manu est fratris<note xml:id="fn5" type="footnote" n="5"><persName ref="264">Konrad Zwick</persName>.</note>, deinde in meam quoque recipiam.</s>
+					<s n="2" xml:lang="la" type="auto">Ad priores literas<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note> respondebo, charissime frater, ubi moderationem tuam in praedestinationis causa<note xml:id="fn2" type="footnote" n="2">Gemeint ist Bullingers Karlstagsrede vom 28. Januar 1535 "Quae moderatio servanda sit..." (vgl. unten <ref target="file10630">Nr. 592</ref> mit Anm. 2).</note> remisero, quod brevi fiet<note xml:id="fn3" type="footnote" n="3"><persName ref="person263">Zwick</persName> sandte Bullingers Schrift am 3. Juli zurück, vgl. unten <ref target="file10646">Nr. 608</ref>, 1-11.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Relegit <persName ref="person20">Thomas</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="person20">Thomas Blarer</persName> nahm schon am 16. Juni Stellung, s. unten <ref target="file10630">Nr. 592</ref>.</note>, iam in manu est fratris<note xml:id="fn5" type="footnote" n="5"><persName ref="person264">Konrad Zwick</persName>.</note>, deinde in meam quoque recipiam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">In posterioribus literis<note xml:id="fn6" type="footnote" n="6">Nicht erhalten; vgl. oben <ref target="file#10623">Nr. 585</ref>, 22-31.</note> summe placent, quae Alexandrum<note xml:id="fn7" type="footnote" n="7"><persName ref="193">Alexander Schmutz</persName>.</note> adtinent.</s>
-					<s xml:lang="la" type="auto">Ego, cum nuper ex <placeName ref="1049">Argentorato</placeName> rediisset, vici coram fratribus omniaque argumenta fregi homini.</s>
-					<s xml:lang="la" type="auto">An obtemperaturus sit, nescio, sed nihil sum praetermissurus.</s>
-					<s xml:lang="la" type="auto">Nam pessime odi desertiones ecclesiarum.</s>
-					<s xml:lang="la" type="auto">De aliis proxime.</s>
+					<s n="4" xml:lang="la" type="auto">In posterioribus literis<note xml:id="fn6" type="footnote" n="6">Nicht erhalten; vgl. oben <ref target="file10623">Nr. 585</ref>, 22-31.</note> summe placent, quae Alexandrum<note xml:id="fn7" type="footnote" n="7"><persName ref="person193">Alexander Schmutz</persName>.</note> adtinent.</s>
+					<s n="5" xml:lang="la" type="auto">Ego, cum nuper ex <placeName ref="place1049">Argentorato</placeName> rediisset, vici coram fratribus omniaque argumenta fregi homini.</s>
+					<s n="6" xml:lang="la" type="auto">An obtemperaturus sit, nescio, sed nihil sum praetermissurus.</s>
+					<s n="7" xml:lang="la" type="auto">Nam pessime odi desertiones ecclesiarum.</s>
+					<s n="8" xml:lang="la" type="auto">De aliis proxime.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">O wie denck ich so offt dran, wie wir so guͦt leben ghept hond zuͦ <placeName ref="1117">Urdorf</placeName><note xml:id="fn8" type="footnote" n="8">Zu <persName ref="263">Zwicks</persName> Badeaufenthalt in <placeName ref="1117">Urdorf</placeName> (Kt. Zürich) vgl. oben <ref target="file#10610">Nr. 572</ref>, Anm. 37.</note> Es wurt mir min lebenlang nymer als<note xml:id="fn9" type="footnote" n="9">so.</note> guͦt.</s>
+					<s n="9" xml:lang="de" type="auto">O wie denck ich so offt dran, wie wir so guͦt leben ghept hond zuͦ <placeName ref="place1117">Urdorf</placeName><note xml:id="fn8" type="footnote" n="8">Zu <persName ref="person263">Zwicks</persName> Badeaufenthalt in <placeName ref="place1117">Urdorf</placeName> (Kt. Zürich) vgl. oben <ref target="file10610">Nr. 572</ref>, Anm. 37.</note> Es wurt mir min lebenlang nymer als<note xml:id="fn9" type="footnote" n="9">so.</note> guͦt.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Grutzen mir uwer husfrowen<note xml:id="fn10" type="footnote" n="10"><persName ref="32">Anna Bullinger</persName>, geb. Adlischwyler.</note> und die muͦter<note xml:id="fn11" type="footnote" n="11"><persName ref="32">Anna Bullinger</persName>, geb. Wiederkehr.</note> 1, ja yederman.</s>
-					<s xml:lang="de" type="auto">Und sye got mit uch allen.</s>
+					<s n="10" xml:lang="de" type="auto">Grutzen mir uwer husfrowen<note xml:id="fn10" type="footnote" n="10"><persName ref="person32">Anna Bullinger</persName>, geb. Adlischwyler.</note> und die muͦter<note xml:id="fn11" type="footnote" n="11"><persName ref="person32">Anna Bullinger</persName>, geb. Wiederkehr.</note> 1, ja yederman.</s>
+					<s n="11" xml:lang="de" type="auto">Und sye got mit uch allen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">5. iunii 1535.</s>
+					<s n="12" xml:lang="la" type="auto">5. iunii 1535.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Io. Z. tuus.</s>
+					<s n="13" xml:lang="la" type="auto">Io. Z. tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Ornatissimo viro d. Hainricho Bullingero, Tigurinae ecclesiae antistiti dignissimo, fratri suo bene meritissimo.</s>
+					<s n="14" xml:lang="la" type="auto">Ornatissimo viro d. Hainricho Bullingero, Tigurinae ecclesiae antistiti dignissimo, fratri suo bene meritissimo.</s>
 				</p>
 			</div>
 		</body>

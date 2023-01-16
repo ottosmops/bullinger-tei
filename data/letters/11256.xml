@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2002"/>
-				<idno type="ISBN">ISBN 3-290-17220-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1213</idno>
+				<idno subtype="ISBN">ISBN 3-290-17220-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1213</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 9</title>
+				<title subtype="publication">HBBW IX</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">9</biblScope>
@@ -31,14 +31,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Teilkopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Teilkopie">Ms F 23,41/42</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">eingelegtes Blatt</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Teilkopie">Ms F 23,41/42</idno>
+						<idno subtype="Hinweis">eingelegtes Blatt</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,8 +51,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Schickt ein ihm von Stadtschreiber [<persName ref="825">Augustin Fechter</persName>] übermitteltes
-								Gedicht, das in <placeName ref="1246">Überlingen</placeName> an einer Kirchentür angeschlagen
+								Schickt ein ihm von Stadtschreiber [<persName ref="person825">Augustin Fechter</persName>] übermitteltes
+								Gedicht, das in <placeName ref="place1246">Überlingen</placeName> an einer Kirchentür angeschlagen
 								worden war.
 							</p>
 						</summary>
@@ -60,46 +63,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11256">
 				<correspAction type="sent">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
-					<place source="#474" cert="high">
-						<settlement>St. Gallen</settlement>
-						<district>St.Gallen</district>
-						<country>Schweiz</country>
-						<geo>47.42391 9.37477</geo>
-					</place>
+					-->
+					<persName ref="person3306" cert="high"/>
+					<place source="place474" cert="high"/>
 					<date when="1539-01-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11257"/>
-					<ref type="prev_chronologically" target="files.xml#11255"/>
-					<ref type="next_correspondence" target="files.xml#11259"/>
-					<ref type="prev_correspondence" target="files.xml#11253"/>
-					<ref type="next_correspondence_request" target="files.xml#11444"/>
-					<ref type="prev_correspondence_request" target="files.xml#11023"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11259"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11253"/>
-					<ref type="next_same_sender" target="files.xml#11444"/>
-					<ref type="prev_same_sender" target="files.xml#11023"/>
-					<ref type="next_same_addressee" target="files.xml#11259"/>
-					<ref type="prev_same_addressee" target="files.xml#11253"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11444"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11023"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11259"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11253"/>
+					<ref type="next_chronologically" target="file11257"/>
+					<ref type="prev_chronologically" target="file11255"/>
+					<ref type="next_correspondence" target="file11259"/>
+					<ref type="prev_correspondence" target="file11253"/>
+					<ref type="next_correspondence_request" target="file11444"/>
+					<ref type="prev_correspondence_request" target="file11023"/>
+					<ref type="next_correspondence_reaction" target="file11259"/>
+					<ref type="prev_correspondence_reaction" target="file11253"/>
+					<ref type="next_same_sender" target="file11444"/>
+					<ref type="prev_same_sender" target="file11023"/>
+					<ref type="next_same_addressee" target="file11259"/>
+					<ref type="prev_same_addressee" target="file11253"/>
+					<ref type="next_with_sender_as_addressee" target="file11444"/>
+					<ref type="prev_with_sender_as_addressee" target="file11023"/>
+					<ref type="next_with_addressee_as_sender" target="file11259"/>
+					<ref type="prev_with_addressee_as_sender" target="file11253"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -114,21 +121,21 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Zuͦ<note xml:id="fnb" type="footnote" n="b"><hi>Darüber</hi> Ex litteris d[octoris] Ioachimi Vadiani ad dominum Heynirichumi Bullingerum.</note> <placeName ref="1246">Überlingen</placeName> hatt einer an die kilchthür einen rymen angeschlagen, welcher abgnommen und ussgangen ist<note xml:id="fn1" type="footnote" n="1">verbreitet worden ist. - So soll auch <persName ref="229">Simprecht Vogt</persName> das Schmähgedicht im Gespräch mit dem Abt von <placeName ref="890">Rheinau</placeName> angeführt haben (s. <persName ref="242">Jakob</persName> <hi>Wipf</hi> Reformationsgeschichte der Stadt und Landschaft Schafthausen, Zürich 1929, S. 311); vgl. auch die zeitgenössische handschriftliche Wiedergabe auf der letzten Seite des Werkes "In orationem dominicam saluberrimae ac sanctissimae meditationes ..." von <persName ref="263">Johannes</persName> <persName ref="74">Gast</persName>, <placeName ref="97">Basel</placeName> 1543, im Exemplar Zürich ZB, <hi>5.</hi> 395.</note>.</s>
-					<s xml:lang="de" type="auto">Von dem hatt mir der stattschryber<note xml:id="fn2" type="footnote" n="2"><persName ref="825">Augustin Fechter</persName>.</note> des<note xml:id="fnc" type="footnote" n="c">des <hi>über der Zeile nachgetragen.</hi></note> ein abgschrifft von wunders wägen zuͦ gestelt.</s>
-					<s xml:lang="de" type="auto">Lutet also:<pb type="edition" next="31"/> Ich fragen hie on allen list, worum so vil tüfel und nun<note xml:id="fn3" type="footnote" n="3">nur.</note> ein gott ist?</s>
+					<s n="1" xml:lang="de" type="auto">Zuͦ<note xml:id="fnb" type="footnote" n="b"><hi>Darüber</hi> Ex litteris d[octoris] Ioachimi Vadiani ad dominum Heynirichumi Bullingerum.</note> <placeName ref="place1246">Überlingen</placeName> hatt einer an die kilchthür einen rymen angeschlagen, welcher abgnommen und ussgangen ist<note xml:id="fn1" type="footnote" n="1">verbreitet worden ist. - So soll auch <persName ref="person229">Simprecht Vogt</persName> das Schmähgedicht im Gespräch mit dem Abt von <placeName ref="place890">Rheinau</placeName> angeführt haben (s. Jakob <hi>Wipf</hi> Reformationsgeschichte der Stadt und Landschaft Schafthausen, Zürich 1929, S. 311); vgl. auch die zeitgenössische handschriftliche Wiedergabe auf der letzten Seite des Werkes "In orationem dominicam saluberrimae ac sanctissimae meditationes ..." von Johannes Gast, Basel 1543, im Exemplar Zürich ZB, 5. 395.</note>.</s>
+					<s n="2" xml:lang="de" type="auto">Von dem hatt mir der stattschryber<note xml:id="fn2" type="footnote" n="2"><persName ref="person825">Augustin Fechter</persName>.</note> des<note xml:id="fnc" type="footnote" n="c">des <hi>über der Zeile nachgetragen.</hi></note> ein abgschrifft von wunders wägen zuͦ gestelt.</s>
+					<s n="3" xml:lang="de" type="auto">Lutet also:<pb type="edition" next="31"/> Ich fragen hie on allen list, worum so vil tüfel und nun<note xml:id="fn3" type="footnote" n="3">nur.</note> ein gott ist?</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Antwurt: Lieber fründ, nun hab gedult, es ist der münchen und pfaffen schuld.</s>
+					<s n="4" xml:lang="de" type="auto">Antwurt: Lieber fründ, nun hab gedult, es ist der münchen und pfaffen schuld.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Hettend sy in allen iren mässen so vil tüfel als<note xml:id="fn4" type="footnote" n="4">wie.</note> hergott gfrässen, werind tüfel gar vertriben und iro keiner überbliben.</s>
+					<s n="5" xml:lang="de" type="auto">Hettend sy in allen iren mässen so vil tüfel als<note xml:id="fn4" type="footnote" n="4">wie.</note> hergott gfrässen, werind tüfel gar vertriben und iro keiner überbliben.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="6" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sangalli, 13. ianuarii anno 1539<note xml:id="fnd" type="footnote" n="d"><hi>Darunter von anderer Hand:</hi> A.</note>.</s>
+					<s n="7" xml:lang="la" type="auto">Sangalli, 13. ianuarii anno 1539<note xml:id="fnd" type="footnote" n="d"><hi>Darunter von anderer Hand:</hi> A.</note>.</s>
 				</p>
 			</div>
 		</body>

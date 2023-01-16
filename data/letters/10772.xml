@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=734</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=734</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,55</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,55</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,15 +49,15 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Erwartet <persName ref="226">Vadian</persName> zur gemeinsamen Reise an die Basler [Zusammenkunft];
-								von Zürich werden <persName ref="12">Werner Beyel</persName>,
-								<persName ref="87">Johannes Haab</persName>, <persName ref="114">Leo Jud</persName> und
-								Bullinger, von <placeName ref="943">Schaffhausen</placeName>
-								<persName ref="232">Hans von Waldkirch</persName>,
-								[<persName ref="2071">Hans Schmid</persName>], <persName ref="36">Benedikt Burgauer</persName>
-								und <persName ref="176">Erasmus Ritter</persName> hinreisen. Die
-								<placeName ref="121">Berner</placeName> eilen den Genfern zu Hilfe. Bittet um Neuigkeiten aus
-								<placeName ref="958">Schmalkalden</placeName>.
+								Erwartet <persName ref="person226">Vadian</persName> zur gemeinsamen Reise an die Basler [Zusammenkunft];
+								von Zürich werden <persName ref="person12">Werner Beyel</persName>,
+								<persName ref="person87">Johannes Haab</persName>, <persName ref="person114">Leo Jud</persName> und
+								Bullinger, von <placeName ref="place943">Schaffhausen</placeName>
+								<persName ref="person232">Hans von Waldkirch</persName>,
+								[<persName ref="person2071">Hans Schmid</persName>], <persName ref="person36">Benedikt Burgauer</persName>
+								und <persName ref="person176">Erasmus Ritter</persName> hinreisen. Die
+								<placeName ref="place121">Berner</placeName> eilen den Genfern zu Hilfe. Bittet um Neuigkeiten aus
+								<placeName ref="place958">Schmalkalden</placeName>.
 							</p>
 						</summary>
 					</msContents>
@@ -71,46 +74,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10772">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1536-01-21" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
+					-->
+					<persName ref="person3306" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10773"/>
-					<ref type="prev_chronologically" target="files.xml#10771"/>
-					<ref type="next_correspondence" target="files.xml#10805"/>
-					<ref type="prev_correspondence" target="files.xml#10735"/>
-					<ref type="next_correspondence_request" target="files.xml#10805"/>
-					<ref type="prev_correspondence_request" target="files.xml#10735"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10839"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10733"/>
-					<ref type="next_same_sender" target="files.xml#10778"/>
-					<ref type="prev_same_sender" target="files.xml#10771"/>
-					<ref type="next_same_addressee" target="files.xml#10839"/>
-					<ref type="prev_same_addressee" target="files.xml#10733"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10778"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10771"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10839"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10733"/>
+					<ref type="next_chronologically" target="file10773"/>
+					<ref type="prev_chronologically" target="file10771"/>
+					<ref type="next_correspondence" target="file10805"/>
+					<ref type="prev_correspondence" target="file10735"/>
+					<ref type="next_correspondence_request" target="file10805"/>
+					<ref type="prev_correspondence_request" target="file10735"/>
+					<ref type="next_correspondence_reaction" target="file10839"/>
+					<ref type="prev_correspondence_reaction" target="file10733"/>
+					<ref type="next_same_sender" target="file10778"/>
+					<ref type="prev_same_sender" target="file10771"/>
+					<ref type="next_same_addressee" target="file10839"/>
+					<ref type="prev_same_addressee" target="file10733"/>
+					<ref type="next_with_sender_as_addressee" target="file10778"/>
+					<ref type="prev_with_sender_as_addressee" target="file10771"/>
+					<ref type="next_with_addressee_as_sender" target="file10839"/>
+					<ref type="prev_with_addressee_as_sender" target="file10733"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -127,32 +134,32 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bene habet negotium, quo de, honorande vir, extremis in literis<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note> scribis.</s>
-					<s xml:lang="la" type="auto">Expectamus iam tuam praesentiam, et ut comites tui tecum abeamus <placeName ref="97">Basileam</placeName><note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file#10762">Nr. 724</ref>, Anm. 3.</note>.</s>
-					<s xml:lang="la" type="auto">Senatus voluit, ut primarius urbis scriba<note xml:id="fn3" type="footnote" n="3"><persName ref="12">Werner Beyel</persName>.</note>, deinde Habius<note xml:id="fn4" type="footnote" n="4">Anstelle von <persName ref="87">Haab</persName> reiste schliesslich <persName ref="1720">Kaspar Nasal</persName> nach <placeName ref="97">Basel</placeName> (vgl. Bullingers Aufzeichnungen in: Zürich StA, E II 337, 138r., sowie Stumpf, Abendmahlsstreit 74).</note>, <persName ref="114">Leo</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="114">Leo Jud</persName>.</note> item et ego abeamus.</s>
-					<s xml:lang="la" type="auto">Ex <placeName ref="943">Schaffhusio</placeName> abibunt Waldkylchius, unus ex tribunis<note xml:id="fn6" type="footnote" n="6"><persName ref="2071">Hans Schmid</persName> (vgl. <ref target="file#10764">Nr. 726</ref>, Anm. 3).</note>, <persName ref="36">Benedictus</persName><note xml:id="fn7" type="footnote" n="7"><persName ref="36">Benedikt Burgauer</persName>.</note> et <persName ref="176">Erasmus</persName><note xml:id="fn8" type="footnote" n="8"><persName ref="176">Erasmus Ritter</persName>.</note>.</s>
-					<s xml:lang="la" type="auto">Te a Sangallo expectamus.</s>
+					<s n="2" xml:lang="la" type="auto">Bene habet negotium, quo de, honorande vir, extremis in literis<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note> scribis.</s>
+					<s n="3" xml:lang="la" type="auto">Expectamus iam tuam praesentiam, et ut comites tui tecum abeamus <placeName ref="place97">Basileam</placeName><note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file10762">Nr. 724</ref>, Anm. 3.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Senatus voluit, ut primarius urbis scriba<note xml:id="fn3" type="footnote" n="3"><persName ref="person12">Werner Beyel</persName>.</note>, deinde Habius<note xml:id="fn4" type="footnote" n="4">Anstelle von <persName ref="person87">Haab</persName> reiste schliesslich <persName ref="person1720">Kaspar Nasal</persName> nach <placeName ref="place97">Basel</placeName> (vgl. Bullingers Aufzeichnungen in: Zürich StA, E II 337, 138r., sowie Stumpf, Abendmahlsstreit 74).</note>, <persName ref="person114">Leo</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="person114">Leo Jud</persName>.</note> item et ego abeamus.</s>
+					<s n="5" xml:lang="la" type="auto">Ex <placeName ref="place943">Schaffhusio</placeName> abibunt Waldkylchius, unus ex tribunis<note xml:id="fn6" type="footnote" n="6"><persName ref="person2071">Hans Schmid</persName> (vgl. <ref target="file10764">Nr. 726</ref>, Anm. 3).</note>, <persName ref="person36">Benedictus</persName><note xml:id="fn7" type="footnote" n="7"><persName ref="person36">Benedikt Burgauer</persName>.</note> et <persName ref="person176">Erasmus</persName><note xml:id="fn8" type="footnote" n="8"><persName ref="person176">Erasmus Ritter</persName>.</note>.</s>
+					<s n="6" xml:lang="la" type="auto">Te a Sangallo expectamus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nosti fortassis <placeName ref="121">Bernates</placeName> in auxilium festinare <placeName ref="398">Gebennensium</placeName><note xml:id="fn9" type="footnote" n="9">Zur Eröffnung des Krieges <placeName ref="121">Berns</placeName> gegen <placeName ref="75">Savoyen</placeName> vgl. oben <ref target="file#10762">Nr. 724</ref>, 3-6 mit Anm. 2, und 729, 27-32.</note>.</s>
-					<s xml:lang="la" type="auto">Populum sane habent benevolum.</s>
-					<s xml:lang="la" type="auto">Dominus in gloriam nominis sui victoriam optimis viris et pro fide pura pugnantibus concedat!</s>
+					<s n="7" xml:lang="la" type="auto">Nosti fortassis <placeName ref="place121">Bernates</placeName> in auxilium festinare <placeName ref="place398">Gebennensium</placeName><note xml:id="fn9" type="footnote" n="9">Zur Eröffnung des Krieges <placeName ref="place121">Berns</placeName> gegen <placeName ref="place75">Savoyen</placeName> vgl. oben <ref target="file10762">Nr. 724</ref>, 3-6 mit Anm. 2, und 729, 27-32.</note>.</s>
+					<s n="8" xml:lang="la" type="auto">Populum sane habent benevolum.</s>
+					<s n="9" xml:lang="la" type="auto">Dominus in gloriam nominis sui victoriam optimis viris et pro fide pura pugnantibus concedat!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si quid certi habes a Schmalkeldia<note xml:id="fn10" type="footnote" n="10">Zur Tagung des Schmalkaldischen Bundes vom 6. bis 24. Dezember 1535 vgl. Fabian, Bundesabschiede 59-78.</note>, fac sciam, obsecro, et valeto.</s>
+					<s n="10" xml:lang="la" type="auto">Si quid certi habes a Schmalkeldia<note xml:id="fn10" type="footnote" n="10">Zur Tagung des Schmalkaldischen Bundes vom 6. bis 24. Dezember 1535 vgl. Fabian, Bundesabschiede 59-78.</note>, fac sciam, obsecro, et valeto.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">21. ianuarii 1536.</s>
+					<s n="11" xml:lang="la" type="auto">21. ianuarii 1536.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus tuus.</s>
+					<s n="12" xml:lang="la" type="auto">H. Bullingerus tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Doctori Ioachimo <persName ref="226">Vadiano</persName>, domino suo inprimis observando.</s>
+					<s n="13" xml:lang="la" type="auto">Doctori <persName ref="person226">Ioachimo Vadiano</persName>, domino suo inprimis observando.</s>
 				</p>
 			</div>
 		</body>

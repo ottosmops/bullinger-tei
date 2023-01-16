@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7518/66</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,594</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,594</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,45 +54,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8273">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 					<date when="1570-05-26" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#993" cert="low">
+					<!--
+					<persName ref="person993" cert="low">
 						<forename cert="low">Tobias</forename>
 						<surname cert="low">Egli</surname>
-						<addName type="main">Egli (Iconius, Götz), Tobias</addName>
+						<persName type="main" ref="person8016>Egli (Iconius, Götz), Tobias</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Tobias_Egli"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089466366"/>
 					</persName>
+					-->
+					<persName ref="person993" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8274"/>
-					<ref type="prev_chronologically" target="files.xml#8272"/>
-					<ref type="next_correspondence" target="files.xml#8283"/>
-					<ref type="prev_correspondence" target="files.xml#8271"/>
-					<ref type="next_correspondence_request" target="files.xml#8287"/>
-					<ref type="prev_correspondence_request" target="files.xml#8261"/>
-					<ref type="next_correspondence_reaction" target="files.xml#8283"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#8271"/>
-					<ref type="next_same_sender" target="files.xml#8279"/>
-					<ref type="prev_same_sender" target="files.xml#8270"/>
-					<ref type="next_same_addressee" target="files.xml#8283"/>
-					<ref type="prev_same_addressee" target="files.xml#8271"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8279"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#8270"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8283"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8271"/>
+					<ref type="next_chronologically" target="file8274"/>
+					<ref type="prev_chronologically" target="file8272"/>
+					<ref type="next_correspondence" target="file8283"/>
+					<ref type="prev_correspondence" target="file8271"/>
+					<ref type="next_correspondence_request" target="file8287"/>
+					<ref type="prev_correspondence_request" target="file8261"/>
+					<ref type="next_correspondence_reaction" target="file8283"/>
+					<ref type="prev_correspondence_reaction" target="file8271"/>
+					<ref type="next_same_sender" target="file8279"/>
+					<ref type="prev_same_sender" target="file8270"/>
+					<ref type="next_same_addressee" target="file8283"/>
+					<ref type="prev_same_addressee" target="file8271"/>
+					<ref type="next_with_sender_as_addressee" target="file8279"/>
+					<ref type="prev_with_sender_as_addressee" target="file8270"/>
+					<ref type="next_with_addressee_as_sender" target="file8283"/>
+					<ref type="prev_with_addressee_as_sender" target="file8271"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -107,57 +114,57 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Binas a te, mi frater, accepi literas, priores quidem breves, sed posteriores paulo prolixiores.</s>
-					<s xml:lang="la" type="auto">Froschouerus pro tua diligentia gratias agit et dicebat se aliquid scripturum hodie; ignoro, an ad te vel ad bibliopolam, debitorem suum.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Binas a te, mi frater, accepi literas, priores quidem breves, sed posteriores paulo prolixiores.</s>
+					<s n="3" xml:lang="la" type="auto">Froschouerus pro tua diligentia gratias agit et dicebat se aliquid scripturum hodie; ignoro, an ad te vel ad bibliopolam, debitorem suum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Expecto eius literas et his meis, si miserit, adiungam.</s>
-					<s xml:lang="la" type="auto">Constantissime vero pergetis in semel coepto negotio bibliopolae.</s>
-					<s xml:lang="la" type="auto">Norunt hi homines omnia simulare et dissimulare adeoque iurare et fidem fallere, et qui nolunt iurare, ideo non volunt iurare, quod id, quod ab eis exigitur, nolunt praestare.</s>
-					<s xml:lang="la" type="auto">At magistratus sanctus non tantum non ferre, sed ne dissimulare quidem debet hanc rebellionem et malitiosam fraudem.</s>
-					<s xml:lang="la" type="auto">Quodsi ille multum polliceatur emendationem, sentietis tamen perpetuo illum suo more facturum.</s>
-					<s xml:lang="la" type="auto">Venenati sunt homines, qui multis suum afflant venenum.</s>
-					<s xml:lang="la" type="auto">Cogetur tandem magistratus animadvertere in plures, si pepercerit nunc paucis et nolit eos severiter pro iustitia cohercere.</s>
+					<s n="4" xml:lang="la" type="auto">Expecto eius literas et his meis, si miserit, adiungam.</s>
+					<s n="5" xml:lang="la" type="auto">Constantissime vero pergetis in semel coepto negotio bibliopolae.</s>
+					<s n="6" xml:lang="la" type="auto">Norunt hi homines omnia simulare et dissimulare adeoque iurare et fidem fallere, et qui nolunt iurare, ideo non volunt iurare, quod id, quod ab eis exigitur, nolunt praestare.</s>
+					<s n="7" xml:lang="la" type="auto">At magistratus sanctus non tantum non ferre, sed ne dissimulare quidem debet hanc rebellionem et malitiosam fraudem.</s>
+					<s n="8" xml:lang="la" type="auto">Quodsi ille multum polliceatur emendationem, sentietis tamen perpetuo illum suo more facturum.</s>
+					<s n="9" xml:lang="la" type="auto">Venenati sunt homines, qui multis suum afflant venenum.</s>
+					<s n="10" xml:lang="la" type="auto">Cogetur tandem magistratus animadvertere in plures, si pepercerit nunc paucis et nolit eos severiter pro iustitia cohercere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Recte ergo facis, qui instas et urges magistratum.</s>
-					<s xml:lang="la" type="auto">Mirum autem est ministrum verbi publicum seductoribus his favere et hoc nomine suae renunciare functioni, quod innoxii et boni scilicet anabaptistae et Svenckfel[diani] in ordinem rediguntur.</s>
-					<s xml:lang="la" type="auto">Oportet et illum esse complicem et corruptum falsis dogmatibus.</s>
-					<s xml:lang="la" type="auto">Haud dubie agetis cum eo in synodo vestra; neque enim dissimulanda haec sunt.</s>
-					<s xml:lang="la" type="auto">Quodsi prorsus et officio et synodo renunciat et privatus vult vivere, diligenter observandus erit, ne hic quoque plures in errorem abstrahat.</s>
-					<s xml:lang="la" type="auto">Si vero adhuc spes est et commode sanari potest, non arbitror parcendum esse ullis laboribus.</s>
-					<s xml:lang="la" type="auto">Dominus det vobis sapientiam et benigne dignetur haec pacare!</s>
+					<s n="11" xml:lang="la" type="auto">Recte ergo facis, qui instas et urges magistratum.</s>
+					<s n="12" xml:lang="la" type="auto">Mirum autem est ministrum verbi publicum seductoribus his favere et hoc nomine suae renunciare functioni, quod innoxii et boni scilicet anabaptistae et Svenckfel[diani] in ordinem rediguntur.</s>
+					<s n="13" xml:lang="la" type="auto">Oportet et illum esse complicem et corruptum falsis dogmatibus.</s>
+					<s n="14" xml:lang="la" type="auto">Haud dubie agetis cum eo in synodo vestra; neque enim dissimulanda haec sunt.</s>
+					<s n="15" xml:lang="la" type="auto">Quodsi prorsus et officio et synodo renunciat et privatus vult vivere, diligenter observandus erit, ne hic quoque plures in errorem abstrahat.</s>
+					<s n="16" xml:lang="la" type="auto">Si vero adhuc spes est et commode sanari potest, non arbitror parcendum esse ullis laboribus.</s>
+					<s n="17" xml:lang="la" type="auto">Dominus det vobis sapientiam et benigne dignetur haec pacare!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hactenus nihil audivi de legione in comitatu Tridentino conscripta neque de morte bassae Turcici.</s>
-					<s xml:lang="la" type="auto">Forte fingitur hoc ad animandam classem Venetam, quam audimus profectam esse contra Turcas.</s>
-					<s xml:lang="la" type="auto">Tu si quid habueris de his certi, significabis.</s>
-					<s xml:lang="la" type="auto">Multus sermo spargitur de pace in Gallia confecta.</s>
-					<s xml:lang="la" type="auto">Ego nondum credere possum, quia bellum in Delphinatu magis magisque inardescit et feliciter hactenus processit admirallius.</s>
-					<s xml:lang="la" type="auto">Dominus ei benedicat!</s>
-					<s xml:lang="la" type="auto">Metuunt sibi misere Avenionenses a suo papa subsidium petentes; missurus dicitur 2000 militum.</s>
-					<s xml:lang="la" type="auto">Si sapiunt et poterunt admiralliani, excipient eos etc.</s>
-					<s xml:lang="la" type="auto">De legatione imperatoris et protestantium ad papam a te primum audio et, quid sit, miror, an religionis c[aus]a an Florentini sublimati gratia illuc sint profecti.</s>
-					<s xml:lang="la" type="auto">Dies docebunt.</s>
+					<s n="18" xml:lang="la" type="auto">Hactenus nihil audivi de legione in comitatu Tridentino conscripta neque de morte bassae Turcici.</s>
+					<s n="19" xml:lang="la" type="auto">Forte fingitur hoc ad animandam classem Venetam, quam audimus profectam esse contra Turcas.</s>
+					<s n="20" xml:lang="la" type="auto">Tu si quid habueris de his certi, significabis.</s>
+					<s n="21" xml:lang="la" type="auto">Multus sermo spargitur de pace in Gallia confecta.</s>
+					<s n="22" xml:lang="la" type="auto">Ego nondum credere possum, quia bellum in Delphinatu magis magisque inardescit et feliciter hactenus processit admirallius.</s>
+					<s n="23" xml:lang="la" type="auto">Dominus ei benedicat!</s>
+					<s n="24" xml:lang="la" type="auto">Metuunt sibi misere Avenionenses a suo papa subsidium petentes; missurus dicitur 2000 militum.</s>
+					<s n="25" xml:lang="la" type="auto">Si sapiunt et poterunt admiralliani, excipient eos etc.</s>
+					<s n="26" xml:lang="la" type="auto">De legatione imperatoris et protestantium ad papam a te primum audio et, quid sit, miror, an religionis c[aus]a an Florentini sublimati gratia illuc sint profecti.</s>
+					<s n="27" xml:lang="la" type="auto">Dies docebunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ego tibi in praesentia mitto, quae Bernae sunt facta, unde ad me perscribuntur; male pinxit, qui descripsit, sed te facile expedies.</s>
-					<s xml:lang="la" type="auto">Parcito mihi; non possum ego solus omnia describere, facio quod possum, nec admodum rursus firmis sum viribus frangentibus me quotidianis laboribus et curis atque moeroribus etc.</s>
+					<s n="28" xml:lang="la" type="auto">Ego tibi in praesentia mitto, quae Bernae sunt facta, unde ad me perscribuntur; male pinxit, qui descripsit, sed te facile expedies.</s>
+					<s n="29" xml:lang="la" type="auto">Parcito mihi; non possum ego solus omnia describere, facio quod possum, nec admodum rursus firmis sum viribus frangentibus me quotidianis laboribus et curis atque moeroribus etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominus servet te.</s>
-					<s xml:lang="la" type="auto">Saluta amicos, quos nosti ordine omnes, imprimis d. d. consules, d. Carolum, d. Pontisellam.</s>
-					<s xml:lang="de" type="auto">26. maii 1570.</s>
+					<s n="30" xml:lang="la" type="auto">Dominus servet te.</s>
+					<s n="31" xml:lang="la" type="auto">Saluta amicos, quos nosti ordine omnes, imprimis d. d. consules, d. Carolum, d. Pontisellam.</s>
+					<s n="32" xml:lang="de" type="auto">26. maii 1570.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus tuus.</s>
+					<s n="33" xml:lang="la" type="auto">Bullingerus tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ornatissimo viro d. Tobiae Eglio, Curiensis ecclesiae fideli ministro, domino et fratri meo honorando et dilecto.</s>
+					<s n="34" xml:lang="la" type="auto">Ornatissimo viro d. Tobiae Eglio, Curiensis ecclesiae fideli ministro, domino et fratri meo honorando et dilecto.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Chur.</s>
+					<s n="35" xml:lang="la" type="auto">Chur.</s>
 				</p>
 			</div>
 		</body>

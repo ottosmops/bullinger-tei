@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,789</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,789</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -28,14 +31,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#28">Basel</settlement>
-						<institution>Universitätsbibliothek</institution>
-						<idno type="Kopie">Ms. Ki. Ar. 18b, fo 334</idno>
-						<repository ref="archive#6">
+						<!--
+						<repository ref="archive6">
 							<name>Basel UB</name>
-							<note type="Hinweis">mit irrt. Datum: 1563 Feb. 14.</note>
 							<ref target="https://ub.unibas.ch/de"/>
 						</repository>
+						<settlement ref="place28">Basel</settlement>
+						<institution>Universitätsbibliothek</institution>
+						-->
+						<repository ref="archive6"/>
+						<idno subtype="Kopie">Ms. Ki. Ar. 18b, fo 334</idno>
+						<idno subtype="Hinweis">mit irrt. Datum: 1563 Feb. 14.</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -44,54 +50,61 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5621">
 				<correspAction type="sent">
-					<persName ref="person#4038" cert="high">
+					<!--
+					<persName ref="person4038" cert="high">
 						<forename cert="high">Hieronymus</forename>
 						<surname cert="high">Zanchi</surname>
-						<addName type="main">Zanchi, Girolamo</addName>
+						<persName type="main" ref="person4037>Zanchi, Girolamo</addName>
 						<graphic type="portrait" url="portraits/4037_Girolami_Zanchi.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Girolamo_Zanchi"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/119296411"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person4038" cert="high"/>
+					<place source="place492" cert="high"/>
 					<date when="1563-02-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5622"/>
-					<ref type="prev_chronologically" target="files.xml#5620"/>
-					<ref type="next_correspondence" target="files.xml#5673"/>
-					<ref type="prev_correspondence" target="files.xml#5613"/>
-					<ref type="next_correspondence_request" target="files.xml#5673"/>
-					<ref type="prev_correspondence_request" target="files.xml#5613"/>
-					<ref type="next_correspondence_reaction" target="files.xml#6070"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5541"/>
-					<ref type="next_same_sender" target="files.xml#5673"/>
-					<ref type="prev_same_sender" target="files.xml#5613"/>
-					<ref type="next_same_addressee" target="files.xml#5622"/>
-					<ref type="prev_same_addressee" target="files.xml#5620"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5673"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5613"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5622"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5620"/>
-					<ref type="child" target="files.xml#5613"/>
+					<ref type="next_chronologically" target="file5622"/>
+					<ref type="prev_chronologically" target="file5620"/>
+					<ref type="next_correspondence" target="file5673"/>
+					<ref type="prev_correspondence" target="file5613"/>
+					<ref type="next_correspondence_request" target="file5673"/>
+					<ref type="prev_correspondence_request" target="file5613"/>
+					<ref type="next_correspondence_reaction" target="file6070"/>
+					<ref type="prev_correspondence_reaction" target="file5541"/>
+					<ref type="next_same_sender" target="file5673"/>
+					<ref type="prev_same_sender" target="file5613"/>
+					<ref type="next_same_addressee" target="file5622"/>
+					<ref type="prev_same_addressee" target="file5620"/>
+					<ref type="next_with_sender_as_addressee" target="file5673"/>
+					<ref type="prev_with_sender_as_addressee" target="file5613"/>
+					<ref type="next_with_addressee_as_sender" target="file5622"/>
+					<ref type="prev_with_addressee_as_sender" target="file5620"/>
+					<ref type="child" target="file5613"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="5621/Autograph/00 E_II_356__fol__789_r_.tif" n="1"/>
+		<graphic url="5621/Autograph/01 E_II_356__fol__789_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

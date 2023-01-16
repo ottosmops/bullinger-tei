@@ -7,27 +7,30 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>C.A. Schwetschke</publisher>
-				<pubPlace>Brunsvigae</pubPlace>
-				<date when="1863"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1488</idno>
+				<pubPlace>Braunschweig/Berlin</pubPlace>
+				<date when="1863-1900"/>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1488</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Joannis Calvini - Opera quae supersunt omnia.</title>
-				<biblScope type="author">Cunitz, Edouard; Baum, Johann-Wilhelm; Reuss, Eduard Wilhelm Eugen</biblScope>
+				<title subtype="publication">Opera Calvini</title>
+				<biblScope type="editor">Guilielmus Baum, Eduardus Cunitz, Eduardus Reuss</biblScope>
 				<biblScope type="edition">Corpus Reformatorium</biblScope>
-				<biblScope type="volumes">58</biblScope>
+				<biblScope type="volumes">59</biblScope>
 				<biblScope type="page">182</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Original" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#339">Neuenburg</settlement>
-						<institution>Bibliothèque des Pasteurs</institution>
-						<idno type="Original">Lettres des réformateurs, Cahier A, Nr. 5</idno>
-						<repository ref="archive#65">
+						<!--
+						<repository ref="archive65">
 							<name>Neuenburg BP</name>
 							<ref target="http://bpun.unine.ch/"/>
 						</repository>
+						<settlement ref="place339">Neuenburg</settlement>
+						<institution>Bibliothèque des Pasteurs</institution>
+						-->
+						<repository ref="archive65"/>
+						<idno subtype="Original">Lettres des réformateurs, Cahier A, Nr. 5</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -38,11 +41,11 @@
 						<summary>
 							<p xml:id="regest1">
 								Haben sich gefreut, in seinem Brief ihre alte Verbundenheit bestätigt zu finden. Wollen auf seine Bitte hin
-								mithelfen, dass <placeName ref="398">Genf</placeName> seinen früheren Hirten wieder erhält, indem
-								sie mit den Baslern an die <placeName ref="1049">Straßburger</placeName> Gelehrten und Räte sowie
-								an <persName ref="39">Calvin</persName> schreiben; inzwischen soll
-								<persName ref="60">Farel</persName> um Gottes Hilfe bitten. Haben vernommen, er sei in einem Brief
-								[von <persName ref="146">Melanchthon</persName>] aufgefordert worden, eine Glaubensprüfung als
+								mithelfen, dass <placeName ref="place398">Genf</placeName> seinen früheren Hirten wieder erhält, indem
+								sie mit den Baslern an die <placeName ref="place1049">Straßburger</placeName> Gelehrten und Räte sowie
+								an <persName ref="person39">Calvin</persName> schreiben; inzwischen soll
+								<persName ref="person60">Farel</persName> um Gottes Hilfe bitten. Haben vernommen, er sei in einem Brief
+								[von <persName ref="person146">Melanchthon</persName>] aufgefordert worden, eine Glaubensprüfung als
 								Voraussetzung zur Teilnahme am Abendmahl einzuführen; zweifellos wird er sich nicht auf eine solche Neuerung
 								einlassen, die der von ihm selbst bekämpften Ohrenbeichte wieder den Weg ebnen würde. Nehmen auch ihrerseits
 								brüderliche Ermahnung gerne an.
@@ -65,56 +68,40 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11531">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#45" cert="high">Lehrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<personGrp ref="role0" role="Lehrer"/>
+					<place source="place587" cert="high"/>
 					<date when="1541-04-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1049" cert="high">
+					<!--
+					<persName ref="person1049" cert="high">
 						<forename cert="high">Guillaume</forename>
 						<surname cert="high">Farel</surname>
 						<graphic type="portrait" url="portraits/1049_Farel_Guillaume.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Guillaume_Farel"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118531948"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11418641"/>
 					</persName>
+					-->
+					<persName ref="person1049" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11532"/>
-					<ref type="prev_chronologically" target="files.xml#11530"/>
-					<ref type="next_correspondence" target="files.xml#11552"/>
+					<ref type="next_chronologically" target="file11532"/>
+					<ref type="prev_chronologically" target="file11530"/>
+					<ref type="next_correspondence" target="file11552"/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#11552"/>
+					<ref type="next_correspondence_reaction" target="file11552"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11532"/>
-					<ref type="prev_same_sender" target="files.xml#11116"/>
-					<ref type="next_same_addressee" target="files.xml#11552"/>
+					<ref type="next_same_sender" target="file11532"/>
+					<ref type="prev_same_sender" target="file11116"/>
+					<ref type="next_same_addressee" target="file11552"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11532"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11116"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11552"/>
+					<ref type="next_with_sender_as_addressee" target="file11532"/>
+					<ref type="prev_with_sender_as_addressee" target="file11116"/>
+					<ref type="next_with_addressee_as_sender" target="file11552"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -129,35 +116,35 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam a Domino.</s>
-					<s xml:lang="la" type="auto">Quas misisti, Farelle carissime, literae tuae magnopere nos delectarunt: magna etiam animi voluptate illas perlegimus.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam a Domino.</s>
+					<s n="2" xml:lang="la" type="auto">Quas misisti, Farelle carissime, literae tuae magnopere nos delectarunt: magna etiam animi voluptate illas perlegimus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Intelligimus enim hisce nos tibi adhuc esse, qui olim eramus, iunctissimos.</s>
-					<s xml:lang="la" type="auto">Rogamus ut, quemadmodum tibi ex animo bene volumus, tuique amantissimi sumus, tu nos quoque in Domino semper redamare velis.</s>
-					<s xml:lang="la" type="auto">Quae rogas multisque flagitas, quia iusta ac pia nostriquo officii esse iudicamus, summo studio diligentia et fide exsequemur.</s>
-					<s xml:lang="la" type="auto">Nec soli etiam conficiemus, sed una cum Basiliensibus, ecclesiae Argentoratensis doctis et reipublicae proceribus, ipsique Calvino scribemus, vires et nervos intendentes omnes quo ecclesiae Gebennensi suus restituatur pastor.</s>
-					<s xml:lang="la" type="auto">Tuum fratrumque omnium erit interim precibus agere apud Deum, ut quod ad suam gloriam ecclesiarumque salutem promovendam facere viderit, institutum et curatum velit.</s>
+					<s n="3" xml:lang="la" type="auto">Intelligimus enim hisce nos tibi adhuc esse, qui olim eramus, iunctissimos.</s>
+					<s n="4" xml:lang="la" type="auto">Rogamus ut, quemadmodum tibi ex animo bene volumus, tuique amantissimi sumus, tu nos quoque in Domino semper redamare velis.</s>
+					<s n="5" xml:lang="la" type="auto">Quae rogas multisque flagitas, quia iusta ac pia nostriquo officii esse iudicamus, summo studio diligentia et fide exsequemur.</s>
+					<s n="6" xml:lang="la" type="auto">Nec soli etiam conficiemus, sed una cum Basiliensibus, ecclesiae Argentoratensis doctis et reipublicae proceribus, ipsique Calvino scribemus, vires et nervos intendentes omnes quo ecclesiae Gebennensi suus restituatur pastor.</s>
+					<s n="7" xml:lang="la" type="auto">Tuum fratrumque omnium erit interim precibus agere apud Deum, ut quod ad suam gloriam ecclesiarumque salutem promovendam facere viderit, institutum et curatum velit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Rogamus te plurimum, omnium carissime Farelle, ut quemadmodum hactenus probe pie et sinceriter, ita semper agere velis omnia, repudiatis Papae dogmatibus et neotericis inventis non aurem quidem, ne animum praebere dicamus.</s>
-					<s xml:lang="la" type="auto">Rumor est vagans, sed potens, literae in agrum Neocomensem quendam attulisse, flagitantes et contendentes ne posthac ad sacram synaxim quemquam admittatis, nisi prius do fide probe examinatum.</s>
-					<s xml:lang="la" type="auto">Ista de te ambigentes non scribimus: maioris enim autoritatis, eruditionis et sinceritatis nobis es, quam ut ista de te suspicemur, ne dicam credamus.</s>
-					<s xml:lang="la" type="auto">Sed quid hoc aliud, obsecramus, mi Farelle, si eo dementiae veniremus omnes, ut ad sacram coenae actionem nisi fide examinatus a nobis nemo admitteretur, quam confessioni auriculari viam sternere et fundamentum ponere papisticae?</s>
-					<s xml:lang="la" type="auto">Quam tu una cum piis omnibus non modo odio flagrasti, sed totis viribus tanquam perniciosum rei christianae malum impugnasti, Christique ecclesia reiecisti et repulisti.</s>
-					<s xml:lang="la" type="auto">Spectandum nobis, observande Farelle, ne papistice agere incipiamus, qui hactenus pie sancte et apostolice transegimus omnia.</s>
-					<s xml:lang="la" type="auto">Scribimus ista, quemadmodum supra dictum, non autumantes aut suspicantes de te, sed quod officii esse iudicavimus, ut fratres sussurronis et rumoris illius admoneremus: rogantes ut boni omnia consulas, nosque commendatos habeas, et si quid in nobis desideras, libere semper admoneas.</s>
+					<s n="8" xml:lang="la" type="auto">Rogamus te plurimum, omnium carissime Farelle, ut quemadmodum hactenus probe pie et sinceriter, ita semper agere velis omnia, repudiatis Papae dogmatibus et neotericis inventis non aurem quidem, ne animum praebere dicamus.</s>
+					<s n="9" xml:lang="la" type="auto">Rumor est vagans, sed potens, literae in agrum Neocomensem quendam attulisse, flagitantes et contendentes ne posthac ad sacram synaxim quemquam admittatis, nisi prius do fide probe examinatum.</s>
+					<s n="10" xml:lang="la" type="auto">Ista de te ambigentes non scribimus: maioris enim autoritatis, eruditionis et sinceritatis nobis es, quam ut ista de te suspicemur, ne dicam credamus.</s>
+					<s n="11" xml:lang="la" type="auto">Sed quid hoc aliud, obsecramus, mi Farelle, si eo dementiae veniremus omnes, ut ad sacram coenae actionem nisi fide examinatus a nobis nemo admitteretur, quam confessioni auriculari viam sternere et fundamentum ponere papisticae?</s>
+					<s n="12" xml:lang="la" type="auto">Quam tu una cum piis omnibus non modo odio flagrasti, sed totis viribus tanquam perniciosum rei christianae malum impugnasti, Christique ecclesia reiecisti et repulisti.</s>
+					<s n="13" xml:lang="la" type="auto">Spectandum nobis, observande Farelle, ne papistice agere incipiamus, qui hactenus pie sancte et apostolice transegimus omnia.</s>
+					<s n="14" xml:lang="la" type="auto">Scribimus ista, quemadmodum supra dictum, non autumantes aut suspicantes de te, sed quod officii esse iudicavimus, ut fratres sussurronis et rumoris illius admoneremus: rogantes ut boni omnia consulas, nosque commendatos habeas, et si quid in nobis desideras, libere semper admoneas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Non solum lubentes parebimus, sed admonitori tibi gratias agemus fideli.</s>
-					<s xml:lang="la" type="auto">Bene vale salvis omnibus Neocomensibus fratribus.</s>
-					<s xml:lang="la" type="auto">Tiguri, Aprilis 4. Anno 41.</s>
+					<s n="15" xml:lang="la" type="auto">Non solum lubentes parebimus, sed admonitori tibi gratias agemus fideli.</s>
+					<s n="16" xml:lang="la" type="auto">Bene vale salvis omnibus Neocomensibus fratribus.</s>
+					<s n="17" xml:lang="la" type="auto">Tiguri, Aprilis 4. Anno 41.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pastores et doctores ministri ecclesiae Tigurinae, tui ex animo.</s>
+					<s n="18" xml:lang="la" type="auto">Pastores et doctores ministri ecclesiae Tigurinae, tui ex animo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimae et spectatissimae fidei viro D. Guilhelmo Pharello ecclesiastae Neocomensi fratri in Domino venerando et dilecto.</s>
+					<s n="19" xml:lang="la" type="auto">Clarissimae et spectatissimae fidei viro D. Guilhelmo Pharello ecclesiastae Neocomensi fratri in Domino venerando et dilecto.</s>
 				</p>
 			</div>
 		</body>

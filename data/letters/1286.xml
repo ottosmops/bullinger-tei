@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#555">Winterthur</settlement>
-						<institution>Stadtarchiv</institution>
-						<idno type="Autograph">AL 167/11</idno>
-						<repository ref="archive#89">
+						<!--
+						<repository ref="archive89">
 							<name>Winterthur SA</name>
-							<note type="Xeroxkopie">IRG</note>
 							<ref target="https://stadt.winterthur.ch/gemeinde/verwaltung/stadtkanzlei/stadtarchiv"/>
 						</repository>
+						<settlement ref="place555">Winterthur</settlement>
+						<institution>Stadtarchiv</institution>
+						-->
+						<repository ref="archive89"/>
+						<idno subtype="Autograph">AL 167/11</idno>
+						<idno subtype="Xeroxkopie">IRG</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -36,63 +39,42 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1286">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1551-05-22" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#65" cert="high">Schultheissen</name>
-						<place source="#555" cert="high">
-							<settlement>Winterthur</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.50564 8.72413</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="high">Räte</name>
-						<place source="#555" cert="high">
-							<settlement>Winterthur</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.50564 8.72413</geo>
-						</place>
-					</roleName>
-					<place source="#555" cert="high">
-						<settlement>Winterthur</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.50564 8.72413</geo>
-					</place>
+					<personGrp ref="role0" role="Schultheissen"/>
+					<personGrp ref="role0" role="Räte"/>
+					<place source="place555" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1287"/>
-					<ref type="prev_chronologically" target="files.xml#1285"/>
-					<ref type="next_correspondence" target="files.xml#1479"/>
-					<ref type="prev_correspondence" target="files.xml#1062"/>
-					<ref type="next_correspondence_request" target="files.xml#1850"/>
-					<ref type="prev_correspondence_request" target="files.xml#1062"/>
-					<ref type="next_correspondence_reaction" target="files.xml#1479"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#706"/>
-					<ref type="next_same_sender" target="files.xml#1303"/>
-					<ref type="prev_same_sender" target="files.xml#1284"/>
-					<ref type="next_same_addressee" target="files.xml#1479"/>
-					<ref type="prev_same_addressee" target="files.xml#706"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1303"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1284"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1479"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#706"/>
+					<ref type="next_chronologically" target="file1287"/>
+					<ref type="prev_chronologically" target="file1285"/>
+					<ref type="next_correspondence" target="file1479"/>
+					<ref type="prev_correspondence" target="file1062"/>
+					<ref type="next_correspondence_request" target="file1850"/>
+					<ref type="prev_correspondence_request" target="file1062"/>
+					<ref type="next_correspondence_reaction" target="file1479"/>
+					<ref type="prev_correspondence_reaction" target="file706"/>
+					<ref type="next_same_sender" target="file1303"/>
+					<ref type="prev_same_sender" target="file1284"/>
+					<ref type="next_same_addressee" target="file1479"/>
+					<ref type="prev_same_addressee" target="file706"/>
+					<ref type="next_with_sender_as_addressee" target="file1303"/>
+					<ref type="prev_with_sender_as_addressee" target="file1284"/>
+					<ref type="next_with_addressee_as_sender" target="file1479"/>
+					<ref type="prev_with_addressee_as_sender" target="file706"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

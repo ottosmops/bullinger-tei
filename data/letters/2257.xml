@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3558</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 359,2921</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 359,2921</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,46 +47,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2257">
 				<correspAction type="sent">
-					<persName ref="person#941" cert="high">
+					<!--
+					<persName ref="person941" cert="high">
 						<forename cert="high">Sebastian</forename>
 						<surname cert="high">de l'Aubespine</surname>
-						<addName type="main">de L'Aubespine (Abbé de Basse-Fontaine), Sébastien</addName>
+						<persName type="main" ref="person8296>de L'Aubespine (Abbé de Basse-Fontaine), Sébastien</addName>
 						<graphic type="portrait" url="portraits/940_delAubespine_Sebastien.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/S%C3%A9bastien_de_l%E2%80%99Aubespine"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104185392"/>
 					</persName>
+					-->
+					<persName ref="person941" cert="high"/>
 					<date when="1554-04-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2258"/>
-					<ref type="prev_chronologically" target="files.xml#2256"/>
-					<ref type="next_correspondence" target="files.xml#2271"/>
-					<ref type="prev_correspondence" target="files.xml#2252"/>
-					<ref type="next_correspondence_request" target="files.xml#2271"/>
-					<ref type="prev_correspondence_request" target="files.xml#2252"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2419"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1885"/>
-					<ref type="next_same_sender" target="files.xml#2271"/>
-					<ref type="prev_same_sender" target="files.xml#2252"/>
-					<ref type="next_same_addressee" target="files.xml#2269"/>
-					<ref type="prev_same_addressee" target="files.xml#2256"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2271"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2252"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2269"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2256"/>
+					<ref type="next_chronologically" target="file2258"/>
+					<ref type="prev_chronologically" target="file2256"/>
+					<ref type="next_correspondence" target="file2271"/>
+					<ref type="prev_correspondence" target="file2252"/>
+					<ref type="next_correspondence_request" target="file2271"/>
+					<ref type="prev_correspondence_request" target="file2252"/>
+					<ref type="next_correspondence_reaction" target="file2419"/>
+					<ref type="prev_correspondence_reaction" target="file1885"/>
+					<ref type="next_same_sender" target="file2271"/>
+					<ref type="prev_same_sender" target="file2252"/>
+					<ref type="next_same_addressee" target="file2269"/>
+					<ref type="prev_same_addressee" target="file2256"/>
+					<ref type="next_with_sender_as_addressee" target="file2271"/>
+					<ref type="prev_with_sender_as_addressee" target="file2252"/>
+					<ref type="next_with_addressee_as_sender" target="file2269"/>
+					<ref type="prev_with_addressee_as_sender" target="file2256"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -102,34 +109,34 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. P.</s>
-					<s xml:lang="la" type="auto">Binas tuas accepi, nec est credibile, quantum voluptatis conceperim ex earum lectura; perge ergo, mi Bullingere, et existima te eum locum apud me habere, qualem apud amicum summe optares.</s>
-					<s xml:lang="la" type="auto">Hunc remitto ad d. Vergerium et ei iuxta eius postulata pecuniam per eundem mitto; nescio tamen, an sit tutum, nam hominem non novi, neque eius conditionem.</s>
-					<s xml:lang="la" type="auto">Sed audi: non credas, quam mihi fuerit iucundum ultimas tuas legere; nam tu non solum mecum convenis, sed rem/cum omnibus Germaniae statibus, nam in summa Caesar utitur marchione Alberto tanquam Catilina ad perdendam et penitus evertandam Germaniam sub praetextu belli contra episcopos.</s>
-					<s xml:lang="la" type="auto">Scis artem: vivet marchio ex bonis ecclesiasticis et absque Caesaris pecuniis colliget militem, quem fovebit per aliquod tempus, donec coniunctis cum Caesare copiis alios principes possit cogere et ad pristinum iugum revocare.</s>
-					<s xml:lang="la" type="auto">Marchio scripsit literas ante aliquot dies episcopo Atrebatensi, que versus Lucenburgum a nostris sunt intercepte et coppia ad me missa Gallice translata, ex qua coppia articulum extraxi et iussi rursum Germanice fieri, ut tu posses intelligere.</s>
-					<s xml:lang="la" type="auto">Hunc mitto et fac, ut diligenter legas; nam nisi fallor, interest reipublicae, ut omnes status illa sciant et videant conspirationem nefandam.</s>
+					<s n="1" xml:lang="la" type="auto">S. P.</s>
+					<s n="2" xml:lang="la" type="auto">Binas tuas accepi, nec est credibile, quantum voluptatis conceperim ex earum lectura; perge ergo, mi Bullingere, et existima te eum locum apud me habere, qualem apud amicum summe optares.</s>
+					<s n="3" xml:lang="la" type="auto">Hunc remitto ad d. Vergerium et ei iuxta eius postulata pecuniam per eundem mitto; nescio tamen, an sit tutum, nam hominem non novi, neque eius conditionem.</s>
+					<s n="4" xml:lang="la" type="auto">Sed audi: non credas, quam mihi fuerit iucundum ultimas tuas legere; nam tu non solum mecum convenis, sed rem/cum omnibus Germaniae statibus, nam in summa Caesar utitur marchione Alberto tanquam Catilina ad perdendam et penitus evertandam Germaniam sub praetextu belli contra episcopos.</s>
+					<s n="5" xml:lang="la" type="auto">Scis artem: vivet marchio ex bonis ecclesiasticis et absque Caesaris pecuniis colliget militem, quem fovebit per aliquod tempus, donec coniunctis cum Caesare copiis alios principes possit cogere et ad pristinum iugum revocare.</s>
+					<s n="6" xml:lang="la" type="auto">Marchio scripsit literas ante aliquot dies episcopo Atrebatensi, que versus Lucenburgum a nostris sunt intercepte et coppia ad me missa Gallice translata, ex qua coppia articulum extraxi et iussi rursum Germanice fieri, ut tu posses intelligere.</s>
+					<s n="7" xml:lang="la" type="auto">Hunc mitto et fac, ut diligenter legas; nam nisi fallor, interest reipublicae, ut omnes status illa sciant et videant conspirationem nefandam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cetera omnia leta in Gallia, et fore prevideo Cesarem velle in confinibus nostris et vestris bellum connectere versus Burgundiam et Sabaudiam.</s>
-					<s xml:lang="la" type="auto">Propterea omnes boni debent maxime vigilare et contra talem ferocem bestiam unionem tueri.</s>
+					<s n="8" xml:lang="la" type="auto">Cetera omnia leta in Gallia, et fore prevideo Cesarem velle in confinibus nostris et vestris bellum connectere versus Burgundiam et Sabaudiam.</s>
+					<s n="9" xml:lang="la" type="auto">Propterea omnes boni debent maxime vigilare et contra talem ferocem bestiam unionem tueri.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Scribe, queso, de illo fędere Svevico, si quid audias, quod non credo fore, ut tu ipse.</s>
-					<s xml:lang="la" type="auto">Nam si unquam, nunc principes debent suo periculo sapere.</s>
-					<s xml:lang="la" type="auto">Vale optime et me ama.</s>
+					<s n="10" xml:lang="la" type="auto">Scribe, queso, de illo fędere Svevico, si quid audias, quod non credo fore, ut tu ipse.</s>
+					<s n="11" xml:lang="la" type="auto">Nam si unquam, nunc principes debent suo periculo sapere.</s>
+					<s n="12" xml:lang="la" type="auto">Vale optime et me ama.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum 10a ap[rilis] raptim.</s>
+					<s n="13" xml:lang="la" type="auto">Datum 10a ap[rilis] raptim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus semper Bassefontaneus.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus semper Bassefontaneus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Id, quod vobis scriptum est de Hedino, est falsum; nam nostri, qui 12a die viderunt, non posse defendi, dediderunt Caesarianis absque ulla iactura; nam salvi sunt reversi exceptis tribus captivis, et videns Cesar castellum illud parum munitum, ipse reliquid.</s>
+					<s n="15" xml:lang="la" type="auto">Id, quod vobis scriptum est de Hedino, est falsum; nam nostri, qui 12a die viderunt, non posse defendi, dediderunt Caesarianis absque ulla iactura; nam salvi sunt reversi exceptis tribus captivis, et videns Cesar castellum illud parum munitum, ipse reliquid.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Domino Bullingero.</s>
+					<s n="16" xml:lang="la" type="auto">Domino Bullingero.</s>
 				</p>
 			</div>
 		</body>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3424</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,599-602</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,599-602</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -49,14 +52,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 80,161</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">dat.: Nov. 1553</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 80,161</idno>
+						<idno subtype="Hinweis">dat.: Nov. 1553</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -70,54 +76,53 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2096">
 				<correspAction type="sent">
-					<persName ref="person#3375" cert="high">
+					<!--
+					<persName ref="person3375" cert="high">
 						<forename cert="high">Pier Paolo</forename>
 						<surname cert="high">Vergerio</surname>
 						<graphic type="portrait" url="portraits/3375_Vergerio_Pietro_Paolo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Pietro_Paolo_Vergerio"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118768077"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417291"/>
 					</persName>
-					<place source="#512" cert="high">
-						<settlement>Tübingen</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>48.52266 9.05222</geo>
-					</place>
-					<date when="1553-12-00" cert="low"/>
+					-->
+					<persName ref="person3375" cert="high"/>
+					<place source="place512" cert="high"/>
+					<date notBefore="1553-12-01" notAfter="1553-12-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2097"/>
-					<ref type="prev_chronologically" target="files.xml#2095"/>
-					<ref type="next_correspondence" target="files.xml#2106"/>
-					<ref type="prev_correspondence" target="files.xml#2059"/>
-					<ref type="next_correspondence_request" target="files.xml#2106"/>
-					<ref type="prev_correspondence_request" target="files.xml#2059"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3237"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1884"/>
-					<ref type="next_same_sender" target="files.xml#2106"/>
-					<ref type="prev_same_sender" target="files.xml#2059"/>
-					<ref type="next_same_addressee" target="files.xml#2107"/>
-					<ref type="prev_same_addressee" target="files.xml#2090"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2106"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2059"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2107"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2090"/>
-					<ref type="child" target="files.xml#2059"/>
-					<ref type="child" target="files.xml#2300"/>
+					<ref type="next_chronologically" target="file2097"/>
+					<ref type="prev_chronologically" target="file2095"/>
+					<ref type="next_correspondence" target="file2106"/>
+					<ref type="prev_correspondence" target="file2059"/>
+					<ref type="next_correspondence_request" target="file2106"/>
+					<ref type="prev_correspondence_request" target="file2059"/>
+					<ref type="next_correspondence_reaction" target="file3237"/>
+					<ref type="prev_correspondence_reaction" target="file1884"/>
+					<ref type="next_same_sender" target="file2106"/>
+					<ref type="prev_same_sender" target="file2059"/>
+					<ref type="next_same_addressee" target="file2107"/>
+					<ref type="prev_same_addressee" target="file2090"/>
+					<ref type="next_with_sender_as_addressee" target="file2106"/>
+					<ref type="prev_with_sender_as_addressee" target="file2059"/>
+					<ref type="next_with_addressee_as_sender" target="file2107"/>
+					<ref type="prev_with_addressee_as_sender" target="file2090"/>
+					<ref type="child" target="file2059"/>
+					<ref type="child" target="file2300"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -126,68 +131,73 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="2096/Autograph/00 E_II_356__S__599_.tif" n="1"/>
+		<graphic url="2096/Autograph/01 E_II_356__S__600_.tif" n="2"/>
+		<graphic url="2096/Autograph/02 E_II_356__S__601_.tif" n="3"/>
+		<graphic url="2096/Autograph/03 E_II_356__S__602_.tif" n="4"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Praecipua causa huiusce nuncii mittendi fuit dolium, quod nusquam apparet, tametsi Schaffusii dimiserim mandata et pecuniam d. Iacobo parocho de eo post me mittendo.</s>
-					<s xml:lang="la" type="auto">At non invitus sumptum nuncii nunc facio, ut interim invisam amicos et literas ab eis extorqueam praecipue abs te, Bullingere iucundissime.</s>
-					<s xml:lang="la" type="auto">Primum itaque te valde oratum velim, ut tua autoritate iuves negotium, quod ad dolium ipsum pertinet.</s>
+					<s n="1" xml:lang="la" type="auto">Praecipua causa huiusce nuncii mittendi fuit dolium, quod nusquam apparet, tametsi Schaffusii dimiserim mandata et pecuniam d. Iacobo parocho de eo post me mittendo.</s>
+					<s n="2" xml:lang="la" type="auto">At non invitus sumptum nuncii nunc facio, ut interim invisam amicos et literas ab eis extorqueam praecipue abs te, Bullingere iucundissime.</s>
+					<s n="3" xml:lang="la" type="auto">Primum itaque te valde oratum velim, ut tua autoritate iuves negotium, quod ad dolium ipsum pertinet.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ego tantumdem vestium, librorum, supellectilis fere centum aureis non emerem.</s>
-					<s xml:lang="la" type="auto">Si forte adhuc istic haeret (quod vix mihi possum persuadere), urge, ut Schaffusium mittatur; si istic non haeret, scribe ad illum parochum, ne desit, sed mittat ad oppidum, cui nomen Tuttlingen<note type="margin">a.R.: gem? geni?</note>; nam ibi est ducis mei pręfectus, qui huc curabit vehendum.</s>
-					<s xml:lang="la" type="auto">Scio, quantum intersit, ut tu tuam autoritatem interponas.</s>
+					<s n="4" xml:lang="la" type="auto">Ego tantumdem vestium, librorum, supellectilis fere centum aureis non emerem.</s>
+					<s n="5" xml:lang="la" type="auto">Si forte adhuc istic haeret (quod vix mihi possum persuadere), urge, ut Schaffusium mittatur; si istic non haeret, scribe ad illum parochum, ne desit, sed mittat ad oppidum, cui nomen Tuttlingen<note type="margin">a.R.: gem? geni?</note>; nam ibi est ducis mei pręfectus, qui huc curabit vehendum.</s>
+					<s n="6" xml:lang="la" type="auto">Scio, quantum intersit, ut tu tuam autoritatem interponas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Podagra non deserit me, ita ut non potuerim recta ad ducem ire Stucardium, et deus effecit, ut paulo post ipse ad me venerit.</s>
-					<s xml:lang="la" type="auto">Quid quaeris, optime se erga me gerit; vocavit ad cenam bis, multa mecum et diu egit amanter et clementer plus quam dicere non audeo.</s>
-					<s xml:lang="la" type="auto">Statim dono dedit centum aureos, iussit dari currum vini et lignum et domum mihi assignari et inquit: "Ubi haec consumpseris, mone; nam tibi non deero, quin aliquid certi (ita inquit et scripserat etiam, antequam huc e Stucardio venerat) curabo tibi constituendum."</s>
+					<s n="7" xml:lang="la" type="auto">Podagra non deserit me, ita ut non potuerim recta ad ducem ire Stucardium, et deus effecit, ut paulo post ipse ad me venerit.</s>
+					<s n="8" xml:lang="la" type="auto">Quid quaeris, optime se erga me gerit; vocavit ad cenam bis, multa mecum et diu egit amanter et clementer plus quam dicere non audeo.</s>
+					<s n="9" xml:lang="la" type="auto">Statim dono dedit centum aureos, iussit dari currum vini et lignum et domum mihi assignari et inquit: "Ubi haec consumpseris, mone; nam tibi non deero, quin aliquid certi (ita inquit et scripserat etiam, antequam huc e Stucardio venerat) curabo tibi constituendum."</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dedi manu mea tuas literas, quas me praesente legit, et agnovi fuisse caras illi; nam ortus de te sermo fuit et honorifice quidem loquebatur.</s>
+					<s n="10" xml:lang="la" type="auto">Dedi manu mea tuas literas, quas me praesente legit, et agnovi fuisse caras illi; nam ortus de te sermo fuit et honorifice quidem loquebatur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Molineus illum convenit Halprunae et venturus est huc, ut ipse princeps affirmat.</s>
+					<s n="11" xml:lang="la" type="auto">Molineus illum convenit Halprunae et venturus est huc, ut ipse princeps affirmat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Comitia Augustae sunt futura ad trium regum; at Caesarem non puto affuturum; aderit Ferdinandus et regina Maria.</s>
+					<s n="12" xml:lang="la" type="auto">Comitia Augustae sunt futura ad trium regum; at Caesarem non puto affuturum; aderit Ferdinandus et regina Maria.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cardinalis Angliae, qui ad Caesarem legatus pro pace mittebatur tum etiam ob res Anglicanas, Tilingae iubente ipso Caesare apud cardinalem Augustae substitit; Caesar scilicet non vult videri pacis cupidus, sed rogari.</s>
-					<s xml:lang="la" type="auto">Suspicor ego cum cardinali futurum legatum in proximis comitiis, quod nollem; nam hipocrisi sua illa incomparabili aliquos decipiet (at non procul abero), quod non possunt facere cardinales palam mali atque impii.</s>
+					<s n="13" xml:lang="la" type="auto">Cardinalis Angliae, qui ad Caesarem legatus pro pace mittebatur tum etiam ob res Anglicanas, Tilingae iubente ipso Caesare apud cardinalem Augustae substitit; Caesar scilicet non vult videri pacis cupidus, sed rogari.</s>
+					<s n="14" xml:lang="la" type="auto">Suspicor ego cum cardinali futurum legatum in proximis comitiis, quod nollem; nam hipocrisi sua illa incomparabili aliquos decipiet (at non procul abero), quod non possunt facere cardinales palam mali atque impii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dux non ita male sperat de regno Angliae, quamquam sciat nunc grassari Vintoniensem.</s>
-					<s xml:lang="la" type="auto">Puto te audiisse Martirem nostrum pervenisse Argentinam incolumem, deo gratiae; iam laudavi eum apud principem de meliore nota.</s>
+					<s n="15" xml:lang="la" type="auto">Dux non ita male sperat de regno Angliae, quamquam sciat nunc grassari Vintoniensem.</s>
+					<s n="16" xml:lang="la" type="auto">Puto te audiisse Martirem nostrum pervenisse Argentinam incolumem, deo gratiae; iam laudavi eum apud principem de meliore nota.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Albertus adhuc collegit tertium exercitum nec desistit vexare faffos.</s>
-					<s xml:lang="la" type="auto">Dux Brunsvicensis nuper illi arcem, cui nomen... arripuit; coegit enim ad deditionem et pręfectum laqueo necavit<note type="margin">a.R.: "Rumor est."</note>.</s>
+					<s n="17" xml:lang="la" type="auto">Albertus adhuc collegit tertium exercitum nec desistit vexare faffos.</s>
+					<s n="18" xml:lang="la" type="auto">Dux Brunsvicensis nuper illi arcem, cui nomen... arripuit; coegit enim ad deditionem et pręfectum laqueo necavit<note type="margin">a.R.: "Rumor est."</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Res transacta de electoratu.</s>
-					<s xml:lang="la" type="auto">Augustus potitus est dignitatis; at ea redibit in filios Ioannis Friderici, ducis Saxonum, si ille sine filiis masculis decesserit; hactenus dicitur neminem habere.</s>
+					<s n="19" xml:lang="la" type="auto">Res transacta de electoratu.</s>
+					<s n="20" xml:lang="la" type="auto">Augustus potitus est dignitatis; at ea redibit in filios Ioannis Friderici, ducis Saxonum, si ille sine filiis masculis decesserit; hactenus dicitur neminem habere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vix aliud habeo, quod scribam.</s>
-					<s xml:lang="la" type="auto">Spero me comitiis interfuturum, quod penes te habeto.</s>
-					<s xml:lang="la" type="auto">Tu scribe ad me de rebus omnibus atque illud imprimis tibi persuade, Henrice Bullingere, me cum ipsismet tuis generis contendere atque adeo cum filiis benevolentia, caritate et pietate in te.</s>
+					<s n="21" xml:lang="la" type="auto">Vix aliud habeo, quod scribam.</s>
+					<s n="22" xml:lang="la" type="auto">Spero me comitiis interfuturum, quod penes te habeto.</s>
+					<s n="23" xml:lang="la" type="auto">Tu scribe ad me de rebus omnibus atque illud imprimis tibi persuade, Henrice Bullingere, me cum ipsismet tuis generis contendere atque adeo cum filiis benevolentia, caritate et pietate in te.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Deus scit me ex animo scribere.</s>
+					<s n="24" xml:lang="la" type="auto">Deus scit me ex animo scribere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quum hucusque scripsissem, en mihi Carolum Molineum intrantem in hypocaustum et mihi gratias agentem, qui etiam ait se nunc scripturum ad te.</s>
-					<s xml:lang="la" type="auto">Laetor certe eum advenisse et nollem substitisse Argentinae propter nos, qui illum commendaveramus, ne videremur leviculum commendasse.</s>
-					<s xml:lang="la" type="auto">Finem facio et te rogo, ut me domino deo nostro tuis precibus commendes.</s>
-					<s xml:lang="la" type="auto">Salvere iubeo symmistas, generos et reliquos fratres.</s>
-					<s xml:lang="la" type="auto">Cura (ex animo te rogo), ut literas, quae pertinent ad utrumque legatum, tuto ad [eos] perferantur; obducas utrique inscriptionem Germanicam et hospiti Ciconiae commenda diligentissime.</s>
-					<s xml:lang="la" type="auto">Scribe, quamdiu nuncius haerebit istic expectando abs te responsum.</s>
-					<s xml:lang="la" type="auto">Cave discedat, nisi Laurentius Cremonensis, qui apud d. Gvalterum degit, suas adiunxerit.</s>
-					<s xml:lang="la" type="auto">Si aliae meae literae ad tuas manus venerint, retineo, dum vel alium mittam nuncium vel fortuitus a[li]quis occurrat.</s>
-					<s xml:lang="la" type="auto">D. Iesus benedicat vobis.</s>
+					<s n="25" xml:lang="la" type="auto">Quum hucusque scripsissem, en mihi Carolum Molineum intrantem in hypocaustum et mihi gratias agentem, qui etiam ait se nunc scripturum ad te.</s>
+					<s n="26" xml:lang="la" type="auto">Laetor certe eum advenisse et nollem substitisse Argentinae propter nos, qui illum commendaveramus, ne videremur leviculum commendasse.</s>
+					<s n="27" xml:lang="la" type="auto">Finem facio et te rogo, ut me domino deo nostro tuis precibus commendes.</s>
+					<s n="28" xml:lang="la" type="auto">Salvere iubeo symmistas, generos et reliquos fratres.</s>
+					<s n="29" xml:lang="la" type="auto">Cura (ex animo te rogo), ut literas, quae pertinent ad utrumque legatum, tuto ad [eos] perferantur; obducas utrique inscriptionem Germanicam et hospiti Ciconiae commenda diligentissime.</s>
+					<s n="30" xml:lang="la" type="auto">Scribe, quamdiu nuncius haerebit istic expectando abs te responsum.</s>
+					<s n="31" xml:lang="la" type="auto">Cave discedat, nisi Laurentius Cremonensis, qui apud d. Gvalterum degit, suas adiunxerit.</s>
+					<s n="32" xml:lang="la" type="auto">Si aliae meae literae ad tuas manus venerint, retineo, dum vel alium mittam nuncium vel fortuitus a[li]quis occurrat.</s>
+					<s n="33" xml:lang="la" type="auto">D. Iesus benedicat vobis.</s>
 				</p>
 				<p>
 					<note>[Schluss fehlt hier.]</note>

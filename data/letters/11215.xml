@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2000"/>
-				<idno type="ISBN">ISBN 3-290-17211-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1172</idno>
+				<idno subtype="ISBN">ISBN 3-290-17211-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1172</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 8</title>
+				<title subtype="publication">HBBW VIII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">8</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,191</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,191</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,8 +49,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Empfiehlt auf Bitte <persName ref="6">Amerbachs</persName> und anderer einen begabten Zürcher Knaben
-								[<persName ref="1181">Heinrich Hindermann</persName>], da
+								Empfiehlt auf Bitte <persName ref="person6">Amerbachs</persName> und anderer einen begabten Zürcher Knaben
+								[<persName ref="person1181">Heinrich Hindermann</persName>], da
 								dieser nicht länger bei seinen Stiefeltern bleiben kann.
 							</p>
 						</summary>
@@ -58,39 +61,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11215">
 				<correspAction type="sent">
-					<persName ref="person#1365" cert="high">
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
+					-->
+					<persName ref="person1365" cert="high"/>
 					<date when="1538-09-09" cert="low">um 9. Septmeber 1538</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11216"/>
-					<ref type="prev_chronologically" target="files.xml#11214"/>
-					<ref type="next_correspondence" target="files.xml#11237"/>
-					<ref type="prev_correspondence" target="files.xml#11218"/>
-					<ref type="next_correspondence_request" target="files.xml#11237"/>
-					<ref type="prev_correspondence_request" target="files.xml#11218"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11310"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11161"/>
-					<ref type="next_same_sender" target="files.xml#11237"/>
-					<ref type="prev_same_sender" target="files.xml#11218"/>
-					<ref type="next_same_addressee" target="files.xml#11223"/>
-					<ref type="prev_same_addressee" target="files.xml#11211"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11237"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11218"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11223"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11211"/>
+					<ref type="next_chronologically" target="file11216"/>
+					<ref type="prev_chronologically" target="file11214"/>
+					<ref type="next_correspondence" target="file11237"/>
+					<ref type="prev_correspondence" target="file11218"/>
+					<ref type="next_correspondence_request" target="file11237"/>
+					<ref type="prev_correspondence_request" target="file11218"/>
+					<ref type="next_correspondence_reaction" target="file11310"/>
+					<ref type="prev_correspondence_reaction" target="file11161"/>
+					<ref type="next_same_sender" target="file11237"/>
+					<ref type="prev_same_sender" target="file11218"/>
+					<ref type="next_same_addressee" target="file11223"/>
+					<ref type="prev_same_addressee" target="file11211"/>
+					<ref type="next_with_sender_as_addressee" target="file11237"/>
+					<ref type="prev_with_sender_as_addressee" target="file11218"/>
+					<ref type="next_with_addressee_as_sender" target="file11223"/>
+					<ref type="prev_with_addressee_as_sender" target="file11211"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -107,22 +120,22 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Obsecro te, mi Bullingere<note xml:id="fna" type="footnote" n="a">Obsecro te, mi Bullingere <hi>durch größere Schrift hervorgehoben.</hi></note>, ut puerum<note xml:id="fn2" type="footnote" n="2"><persName ref="1181">Heinrich Hindermann</persName>; s. ebd.</note> ingenio praestanti, quantum multorum testimonio intelligo, vestratemque, si potest ullo pacto fieri, ne negligatis.</s>
-					<s xml:lang="la" type="auto">Adiutus hic a nostris fuit aliquamdiu; verum sic nunc habet res, ut versari cum parentibus amplius commode non possit, noverca<note xml:id="fn3" type="footnote" n="3">Nicht namentlich bekannt.</note> et vitrico<note xml:id="fn4" type="footnote" n="4"><persName ref="1415">Peter Kriesi</persName>; s. ebd.</note>.</s>
-					<s xml:lang="la" type="auto">Dabis operam, sicubi possit iuvari; est indignum, si non excolatur ingenium tam aptum.</s>
-					<s xml:lang="la" type="auto">Rogarunt me <persName ref="6">Amerbachius</persName> et alii quidam, ut ea de re te caeterosque fratres rogarem.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Obsecro te, mi Bullingere<note xml:id="fna" type="footnote" n="a">Obsecro te, mi Bullingere <hi>durch größere Schrift hervorgehoben.</hi></note>, ut puerum<note xml:id="fn2" type="footnote" n="2"><persName ref="person1181">Heinrich Hindermann</persName>; s. ebd.</note> ingenio praestanti, quantum multorum testimonio intelligo, vestratemque, si potest ullo pacto fieri, ne negligatis.</s>
+					<s n="3" xml:lang="la" type="auto">Adiutus hic a nostris fuit aliquamdiu; verum sic nunc habet res, ut versari cum parentibus amplius commode non possit, noverca<note xml:id="fn3" type="footnote" n="3">Nicht namentlich bekannt.</note> et vitrico<note xml:id="fn4" type="footnote" n="4"><persName ref="person1415">Peter Kriesi</persName>; s. ebd.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Dabis operam, sicubi possit iuvari; est indignum, si non excolatur ingenium tam aptum.</s>
+					<s n="5" xml:lang="la" type="auto">Rogarunt me <persName ref="person6">Amerbachius</persName> et alii quidam, ut ea de re te caeterosque fratres rogarem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valebis in domino Christo, qui nos in sancta voluntate ipsius conservet.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="6" xml:lang="la" type="auto">Valebis in domino Christo, qui nos in sancta voluntate ipsius conservet.</s>
+					<s n="7" xml:lang="la" type="manual">Amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="81">Simon Grynęus</persName> tuus.</s>
+					<s n="8" xml:lang="la" type="auto"><persName ref="person81">Simon Grynęus</persName> tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino <persName ref="1181">Heynricho</persName> Bullingero, amico.</s>
+					<s n="9" xml:lang="la" type="auto">Domino Heynricho Bullingero, amico.</s>
 				</p>
 			</div>
 		</body>

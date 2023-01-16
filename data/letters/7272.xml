@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 1,589-592</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 1,589-592</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -32,57 +35,29 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7272">
 				<correspAction type="sent">
-					<persName ref="person#2951" cert="high">
+					<!--
+					<persName ref="person2951" cert="high">
 						<forename cert="high">Gregor</forename>
 						<surname cert="high">Seebach</surname>
 					</persName>
-					<place source="#445" cert="low">
-						<settlement>Scherzingen</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.630467 9.226138</geo>
-					</place>
+					-->
+					<persName ref="person2951" cert="high"/>
+					<place source="place445" cert="low"/>
 					<date when="1567-10-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#14" cert="high">Bürgermeister</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="high">Räte</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
+					<personGrp ref="role28" role="Bürgermeister"/>
+					<personGrp ref="role0" role="Räte"/>
+					<!--
 					<note type="Adresse">Geistliche in der Synode von Zürich</note>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<personGrp ref="role52" role="Geistliche"/>
+					<orgName ref="org49" role="Synode"/>"
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7273"/>
-					<ref type="prev_chronologically" target="files.xml#7271"/>
+					<ref type="next_chronologically" target="file7273"/>
+					<ref type="prev_chronologically" target="file7271"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -92,11 +67,11 @@
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#5369"/>
+					<ref type="prev_same_addressee" target="file5369"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5369"/>
+					<ref type="prev_with_addressee_as_sender" target="file5369"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

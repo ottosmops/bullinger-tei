@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2008"/>
-				<idno type="ISBN">ISBN 978-3-290-17459-0</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1823</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17459-0</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1823</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 13</title>
+				<title subtype="publication">HBBW XIII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">13</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336,216</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336,216</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336,198</idno>
+							<idno subtype="Autograph">E II 336,198</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -49,13 +52,13 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Empfiehlt erneut [<persName ref="138">Martin</persName>?] Rischacher, der sein Studium wieder
+								Empfiehlt erneut [Martin?] Rischacher, der sein Studium wieder
 								aufnahm, nachdem er das Schneiderhandwerk, zu dem ihn sein Vater gedrängt hatte, wegen der Augen aufgeben
-								musste. Durch das <placeName ref="16">Elsass</placeName> ziehen eidgenössische [Söldner], obwohl
-								Kaiser [<persName ref="1332">Karl</persName> V.] und [<persName ref="859">König</persName>
-								<persName ref="859">Franz</persName> I.] noch keinen Frieden geschlossen haben; ein gewisser Edelmann
-								ist sehr betrübt, dass der Kaiser noch nicht <persName ref="859">König</persName> von
-								<placeName ref="11">Frankreich</placeName> wurde.
+								musste. Durch das <placeName ref="place16">Elsass</placeName> ziehen eidgenössische [Söldner], obwohl
+								Kaiser [<persName ref="person1332">Karl V.</persName>] und [König
+								<persName ref="person859">Franz I.</persName>] noch keinen Frieden geschlossen haben; ein gewisser Edelmann
+								ist sehr betrübt, dass der Kaiser noch nicht König von
+								<placeName ref="place11">Frankreich</placeName> wurde.
 							</p>
 						</summary>
 					</msContents>
@@ -65,46 +68,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11869">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1543-12-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11870"/>
-					<ref type="prev_chronologically" target="files.xml#11868"/>
-					<ref type="next_correspondence" target="files.xml#11874"/>
-					<ref type="prev_correspondence" target="files.xml#11868"/>
-					<ref type="next_correspondence_request" target="files.xml#11874"/>
-					<ref type="prev_correspondence_request" target="files.xml#11868"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11876"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11664"/>
-					<ref type="next_same_sender" target="files.xml#11874"/>
-					<ref type="prev_same_sender" target="files.xml#11868"/>
-					<ref type="next_same_addressee" target="files.xml#11871"/>
-					<ref type="prev_same_addressee" target="files.xml#11865"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11874"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11868"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11871"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11865"/>
+					<ref type="next_chronologically" target="file11870"/>
+					<ref type="prev_chronologically" target="file11868"/>
+					<ref type="next_correspondence" target="file11874"/>
+					<ref type="prev_correspondence" target="file11868"/>
+					<ref type="next_correspondence_request" target="file11874"/>
+					<ref type="prev_correspondence_request" target="file11868"/>
+					<ref type="next_correspondence_reaction" target="file11876"/>
+					<ref type="prev_correspondence_reaction" target="file11664"/>
+					<ref type="next_same_sender" target="file11874"/>
+					<ref type="prev_same_sender" target="file11868"/>
+					<ref type="next_same_addressee" target="file11871"/>
+					<ref type="prev_same_addressee" target="file11865"/>
+					<ref type="next_with_sender_as_addressee" target="file11874"/>
+					<ref type="prev_with_sender_as_addressee" target="file11868"/>
+					<ref type="next_with_addressee_as_sender" target="file11871"/>
+					<ref type="prev_with_addressee_as_sender" target="file11865"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -122,31 +130,31 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Hic est, quem nuper tibi commendaram,<note xml:id="fn1" type="footnote" n="1">Vgl. oben <ref target="file#11850">Nr. 1804</ref>, 1-20.</note> iuvenis, filius inquam Alexandri de Rischach<note xml:id="fn2" type="footnote" n="2">Martin(?) Rischacher; vgl. ebd., Anm. 2.</note>.</s>
-					<s xml:lang="la" type="auto">Ab initio dedit operam literis; impensę gravantes patrem impulerunt, ut doceret artem sarctoriam.</s>
-					<s xml:lang="la" type="auto">Hanc dum probe didicisset, dimisit Argentinam, ut laboraret.</s>
-					<s xml:lang="la" type="auto">Ubi dum aliquandiu fuisset, oculi laborem ad lumen renuerunt; nam sicut pater oculos habet lusciosos et hac ratione rediit ad literas, quas nunquam reliquisset, si non coactus fuisset patris sequi consilium.</s>
-					<s xml:lang="la" type="auto">Tu, quęso, quod in te est, iuvenem habeas commendatum.</s>
-					<s xml:lang="la" type="auto">Dixi d. de Rischach<note xml:id="fn3" type="footnote" n="3">Alexander Rischacher (oder eventuell Ludwig von Reischach; vgl. ebd., Anm. 6).</note>, quo animo hac in re ipsi inservieris; agebat et nunc agit tibi gratias quęrens, ut intelligas aliquando, quanti te tuumque favorem faciat.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Hic est, quem nuper tibi commendaram,<note xml:id="fn1" type="footnote" n="1">Vgl. oben <ref target="file11850">Nr. 1804</ref>, 1-20.</note> iuvenis, filius inquam Alexandri de Rischach<note xml:id="fn2" type="footnote" n="2">Martin(?) Rischacher; vgl. ebd., Anm. 2.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Ab initio dedit operam literis; impensę gravantes patrem impulerunt, ut doceret artem sarctoriam.</s>
+					<s n="4" xml:lang="la" type="auto">Hanc dum probe didicisset, dimisit Argentinam, ut laboraret.</s>
+					<s n="5" xml:lang="la" type="auto">Ubi dum aliquandiu fuisset, oculi laborem ad lumen renuerunt; nam sicut pater oculos habet lusciosos et hac ratione rediit ad literas, quas nunquam reliquisset, si non coactus fuisset patris sequi consilium.</s>
+					<s n="6" xml:lang="la" type="auto">Tu, quęso, quod in te est, iuvenem habeas commendatum.</s>
+					<s n="7" xml:lang="la" type="auto">Dixi d. de Rischach<note xml:id="fn3" type="footnote" n="3">Alexander Rischacher (oder eventuell Ludwig von Reischach; vgl. ebd., Anm. 6).</note>, quo animo hac in re ipsi inservieris; agebat et nunc agit tibi gratias quęrens, ut intelligas aliquando, quanti te tuumque favorem faciat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Transeunt Confoederati<note xml:id="fn4" type="footnote" n="4">Gemeint sind eidgenössische Söldner.</note> per Alsatiam, mirum quod tam temere, cum non audiam pacem esse factam inter cęsarem<note xml:id="fn5" type="footnote" n="5"><persName ref="1332">Karl</persName> V.</note> et Gallum<note xml:id="fn6" type="footnote" n="6"><persName ref="859">König Franz</persName> I.</note>.</s>
-					<s xml:lang="la" type="auto">Est vir nobilis<note xml:id="fn7" type="footnote" n="7">Unbekannt (zu denken ist eventuell an Ludwig von Reischach, über dessen Sympathien für den Kaiser sich <persName ref="154">Myconius</persName> bereits im Brief vom 1. Oktober verwundert gezeigt hatte; vgl. oben <ref target="file#11838">Nr. 1792</ref>, 14f).</note> circa <placeName ref="97">Basileam</placeName>, qui supra modum vexatur melancholia, quod cęsar ante nativitatem domini non est factus rex Gallię.</s>
+					<s n="8" xml:lang="la" type="auto">Transeunt Confoederati<note xml:id="fn4" type="footnote" n="4">Gemeint sind eidgenössische Söldner.</note> per Alsatiam, mirum quod tam temere, cum non audiam pacem esse factam inter cęsarem<note xml:id="fn5" type="footnote" n="5"><persName ref="person1332">Karl V.</persName></note> et Gallum<note xml:id="fn6" type="footnote" n="6">König <persName ref="person859">Franz I.</persName></note>.</s>
+					<s n="9" xml:lang="la" type="auto">Est vir nobilis<note xml:id="fn7" type="footnote" n="7">Unbekannt (zu denken ist eventuell an Ludwig von Reischach, über dessen Sympathien für den Kaiser sich <persName ref="person154">Myconius</persName> bereits im Brief vom 1. Oktober verwundert gezeigt hatte; vgl. oben <ref target="file11838">Nr. 1792</ref>, 14f).</note> circa <placeName ref="place97">Basileam</placeName>, qui supra modum vexatur melancholia, quod cęsar ante nativitatem domini non est factus rex Gallię.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale per Christum cum tuis.</s>
+					<s n="10" xml:lang="la" type="auto">Vale per Christum cum tuis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileę</placeName>, raptim, ante lucem, 4. decembris anno 1543.</s>
+					<s n="11" xml:lang="la" type="auto"><placeName ref="place97">Basileę</placeName>, raptim, ante lucem, 4. decembris anno 1543.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Os. <persName ref="154">Myconius</persName> tuus.</s>
+					<s n="12" xml:lang="la" type="auto">Os. <persName ref="person154">Myconius</persName> tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Heinricho Bullingero doctissimo, in domino venerando suo.</s>
-					<s xml:lang="de" type="auto">Z[ürich]<note xml:id="fnb" type="footnote" n="b"><hi>Teilweise auf das nicht mehr vorhandene Verschlussband geschrieben.</hi></note>.</s>
+					<s n="13" xml:lang="la" type="auto">D. Heinricho Bullingero doctissimo, in domino venerando suo.</s>
+					<s n="14" xml:lang="de" type="auto">Z[ürich]<note xml:id="fnb" type="footnote" n="b"><hi>Teilweise auf das nicht mehr vorhandene Verschlussband geschrieben.</hi></note>.</s>
 				</p>
 			</div>
 		</body>

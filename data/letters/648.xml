@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1670</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,907 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,907 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 71,29</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 71,29</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -68,51 +74,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/648">
 				<correspAction type="sent">
-					<persName ref="person#2145" cert="high">
+					<!--
+					<persName ref="person2145" cert="high">
 						<forename cert="high">Christopher</forename>
 						<surname cert="high">Mont</surname>
-						<addName type="main">Mont (Mundt), Christopher</addName>
+						<persName type="main" ref="person8121>Mont (Mundt), Christopher</addName>
 						<ref type="wikipedia" target="https://en.wikipedia.org/wiki/Christopher_Mont"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1068771844"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person2145" cert="high"/>
+					<place source="place492" cert="high"/>
 					<date when="1549-08-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#649"/>
-					<ref type="prev_chronologically" target="files.xml#647"/>
-					<ref type="next_correspondence" target="files.xml#685"/>
+					<ref type="next_chronologically" target="file649"/>
+					<ref type="prev_chronologically" target="file647"/>
+					<ref type="next_correspondence" target="file685"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#685"/>
+					<ref type="next_correspondence_request" target="file685"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#1588"/>
+					<ref type="next_correspondence_reaction" target="file1588"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#685"/>
+					<ref type="next_same_sender" target="file685"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#651"/>
-					<ref type="prev_same_addressee" target="files.xml#644"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#685"/>
+					<ref type="next_same_addressee" target="file651"/>
+					<ref type="prev_same_addressee" target="file644"/>
+					<ref type="next_with_sender_as_addressee" target="file685"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#651"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#644"/>
+					<ref type="next_with_addressee_as_sender" target="file651"/>
+					<ref type="prev_with_addressee_as_sender" target="file644"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -121,42 +126,45 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="648/Autograph/00 E_II_356__S__907_.tif" n="1"/>
+		<graphic url="648/Autograph/01 E_II_356__S__908_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Facit humanitas tua, ornatissime D. Bullingere, ut ego ignotus ad te scribere audeam; homo enim cum sim, ut dicit ille apud Terentium, humani nihil alienum a me putem.</s>
-					<s xml:lang="la" type="auto">Superioribus mensibus audivimus precipuos quatuor apud vos pagos non consensisse cum reliquis in confederationem cum Gallie rege ineundam, et me sententia prudenter quidem et graviter.</s>
-					<s xml:lang="la" type="auto">Nulla enim firma amicitia esse potest, nisi quam animorum similitudo coniunxit.</s>
-					<s xml:lang="la" type="auto">Et ecce hisce diebus quidam a vobis huc reversus constanter et sedulo adfirmat omnes modo pagos Helvetiorum Gallico fęderi nomina dedisse.</s>
-					<s xml:lang="la" type="auto">Ego tametsi authoritate narratoris movear, tamen nondum in animum adducere, possum, ut talibus narrationibus fidem habeam, inprimis cum nuper Gallie rex horribili et truculento edicto omnia pietate profligata et proscripta superstitiones grossissimas et vulgatissimas cruentis legibus sanciverit et edixerit, et vobis talia non ignorata esse compertum habeam; hec enim supplicia per universum Gallie regnum interminata et promulgata sunt.</s>
-					<s xml:lang="la" type="auto">Adeoque dominationem tuam rogo, ut de rumore apud nos sparso me per hunc aurigam certiorem facere velit.</s>
-					<s xml:lang="la" type="auto">Quod ut minus moleste facias, communicabo tibi quoque ea, que certo nuncio mihi es Saxonia comperta sunt: Madenburgenses adhuc inter sacrum et saxum constituti clementiorem aliquam fortunam expectant.</s>
-					<s xml:lang="la" type="auto">Cesar ab iis nuper duo petiit, prius ut omnia sua privilegia urbi ab antiquis Cesaribus concessa Cesaris arbitrio permittant, posterius ut urbis menia diruant; que ambo facere pernegant.</s>
-					<s xml:lang="la" type="auto">Bremenses suo iure et more ad hunc diem agunt; nihil enim modo ab iis expetitur, quod ego vicinitate et propinquitate Magdenburgensis urbis fieri puto, ne duę urbes uno tempore irritentur.</s>
-					<s xml:lang="la" type="auto">Urbs Brunsvicensis et dux Henricus mutuis populationibus agros vicinos vastant et hęc deprędationes ex decimis, quas uterque sibi vendicat, modo aguntur.</s>
-					<s xml:lang="la" type="auto">Civitatum maritimarum<note xml:id="fn1" type="footnote" n="1">die Hansestädte ("Seestädte").</note> nulla inter se confederatio est.</s>
+					<s n="1" xml:lang="la" type="auto">Facit humanitas tua, ornatissime D. Bullingere, ut ego ignotus ad te scribere audeam; homo enim cum sim, ut dicit ille apud Terentium, humani nihil alienum a me putem.</s>
+					<s n="2" xml:lang="la" type="auto">Superioribus mensibus audivimus precipuos quatuor apud vos pagos non consensisse cum reliquis in confederationem cum Gallie rege ineundam, et me sententia prudenter quidem et graviter.</s>
+					<s n="3" xml:lang="la" type="auto">Nulla enim firma amicitia esse potest, nisi quam animorum similitudo coniunxit.</s>
+					<s n="4" xml:lang="la" type="auto">Et ecce hisce diebus quidam a vobis huc reversus constanter et sedulo adfirmat omnes modo pagos Helvetiorum Gallico fęderi nomina dedisse.</s>
+					<s n="5" xml:lang="la" type="auto">Ego tametsi authoritate narratoris movear, tamen nondum in animum adducere, possum, ut talibus narrationibus fidem habeam, inprimis cum nuper Gallie rex horribili et truculento edicto omnia pietate profligata et proscripta superstitiones grossissimas et vulgatissimas cruentis legibus sanciverit et edixerit, et vobis talia non ignorata esse compertum habeam; hec enim supplicia per universum Gallie regnum interminata et promulgata sunt.</s>
+					<s n="6" xml:lang="la" type="auto">Adeoque dominationem tuam rogo, ut de rumore apud nos sparso me per hunc aurigam certiorem facere velit.</s>
+					<s n="7" xml:lang="la" type="auto">Quod ut minus moleste facias, communicabo tibi quoque ea, que certo nuncio mihi es Saxonia comperta sunt: Madenburgenses adhuc inter sacrum et saxum constituti clementiorem aliquam fortunam expectant.</s>
+					<s n="8" xml:lang="la" type="auto">Cesar ab iis nuper duo petiit, prius ut omnia sua privilegia urbi ab antiquis Cesaribus concessa Cesaris arbitrio permittant, posterius ut urbis menia diruant; que ambo facere pernegant.</s>
+					<s n="9" xml:lang="la" type="auto">Bremenses suo iure et more ad hunc diem agunt; nihil enim modo ab iis expetitur, quod ego vicinitate et propinquitate Magdenburgensis urbis fieri puto, ne duę urbes uno tempore irritentur.</s>
+					<s n="10" xml:lang="la" type="auto">Urbs Brunsvicensis et dux Henricus mutuis populationibus agros vicinos vastant et hęc deprędationes ex decimis, quas uterque sibi vendicat, modo aguntur.</s>
+					<s n="11" xml:lang="la" type="auto">Civitatum maritimarum<note xml:id="fn1" type="footnote" n="1">die Hansestädte ("Seestädte").</note> nulla inter se confederatio est.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ferdinandus, Mauritius et Brandenburgensis modo Brandenburgi conventum agunt, in qua vero tractatione nondum sciri potest.</s>
+					<s n="12" xml:lang="la" type="auto">Ferdinandus, Mauritius et Brandenburgensis modo Brandenburgi conventum agunt, in qua vero tractatione nondum sciri potest.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Danie rex adhuc firmus in religione perstat et proprio nunccio Brentium ad se advocat.</s>
-					<s xml:lang="la" type="auto">In Anglia nuper plebeiorum hominum rebellio adversum regem exorta est; nam a superstitiosis et papisticis satellitibus persuasi fuerant perinde, ac rex omnia sacramenta et pietatem abolitam velit.</s>
-					<s xml:lang="la" type="auto">Sed horum inobedientia, quae ex ignorantia orta est, remissione et regis clementia condonata est.</s>
-					<s xml:lang="la" type="auto">Authores vero commotionis suspendio e medio sublati sunt.</s>
-					<s xml:lang="la" type="auto">Propter febrim me infestantem plura modo scribere gravor.</s>
-					<s xml:lang="la" type="auto">Ego omnia mea officia dominationi tuae defero.</s>
+					<s n="13" xml:lang="la" type="auto">Danie rex adhuc firmus in religione perstat et proprio nunccio Brentium ad se advocat.</s>
+					<s n="14" xml:lang="la" type="auto">In Anglia nuper plebeiorum hominum rebellio adversum regem exorta est; nam a superstitiosis et papisticis satellitibus persuasi fuerant perinde, ac rex omnia sacramenta et pietatem abolitam velit.</s>
+					<s n="15" xml:lang="la" type="auto">Sed horum inobedientia, quae ex ignorantia orta est, remissione et regis clementia condonata est.</s>
+					<s n="16" xml:lang="la" type="auto">Authores vero commotionis suspendio e medio sublati sunt.</s>
+					<s n="17" xml:lang="la" type="auto">Propter febrim me infestantem plura modo scribere gravor.</s>
+					<s n="18" xml:lang="la" type="auto">Ego omnia mea officia dominationi tuae defero.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bene vale.</s>
+					<s n="19" xml:lang="la" type="auto">Bene vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Argentinę 23. augusti anno 1549.</s>
+					<s n="20" xml:lang="la" type="auto">Argentinę 23. augusti anno 1549.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Christophorus Mont.</s>
+					<s n="21" xml:lang="la" type="auto">Christophorus Mont.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse fehlt.]</note>

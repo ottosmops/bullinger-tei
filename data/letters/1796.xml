@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2750</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,105</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,105</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -53,14 +56,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 77,25</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">1552</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 77,25</idno>
+						<idno subtype="Hinweis">1552</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -74,49 +80,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1796">
 				<correspAction type="sent">
-					<persName ref="person#654" cert="high">
+					<!--
+					<persName ref="person654" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Comander</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Comander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118713841"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413826"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
-					<date min="1552-01-21" max="1553-01-21" cert="low">wohl 21. Januar 1553<note type="Datum">«1552»; recte 1553: Januar 21 (= ID 1541)</note></date>
+					-->
+					<persName ref="person654" cert="high"/>
+					<place source="place98" cert="high"/>
+					<date notBefore="1552-01-21" notAfter="1553-01-21" cert="low">wohl 21. Januar 1553<note type="Datum">«1552»; recte 1553: Januar 21 (= ID 1541)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1542"/>
-					<ref type="prev_chronologically" target="files.xml#1541"/>
-					<ref type="next_correspondence" target="files.xml#1609"/>
-					<ref type="prev_correspondence" target="files.xml#1541"/>
-					<ref type="next_correspondence_request" target="files.xml#1609"/>
-					<ref type="prev_correspondence_request" target="files.xml#1541"/>
+					<ref type="next_chronologically" target="file1542"/>
+					<ref type="prev_chronologically" target="file1541"/>
+					<ref type="next_correspondence" target="file1609"/>
+					<ref type="prev_correspondence" target="file1541"/>
+					<ref type="next_correspondence_request" target="file1609"/>
+					<ref type="prev_correspondence_request" target="file1541"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11508"/>
-					<ref type="next_same_sender" target="files.xml#1609"/>
-					<ref type="prev_same_sender" target="files.xml#1541"/>
-					<ref type="next_same_addressee" target="files.xml#1542"/>
-					<ref type="prev_same_addressee" target="files.xml#1530"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1609"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1541"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1542"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1530"/>
-					<ref type="child" target="files.xml#1541"/>
+					<ref type="prev_correspondence_reaction" target="file11508"/>
+					<ref type="next_same_sender" target="file1609"/>
+					<ref type="prev_same_sender" target="file1541"/>
+					<ref type="next_same_addressee" target="file1542"/>
+					<ref type="prev_same_addressee" target="file1530"/>
+					<ref type="next_with_sender_as_addressee" target="file1609"/>
+					<ref type="prev_with_sender_as_addressee" target="file1541"/>
+					<ref type="next_with_addressee_as_sender" target="file1542"/>
+					<ref type="prev_with_addressee_as_sender" target="file1530"/>
+					<ref type="child" target="file1541"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -125,26 +133,29 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="1796/Autograph/00 E_II_365__fol__105_r_.tif" n="1"/>
+		<graphic url="1796/Autograph/01 E_II_365__fol__105_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
-					<s xml:lang="la" type="auto">Deo optimo maximo ingentes agimus gratias, quod te nobis restituerit; cura, ut valeas tuae ecclesiae tuaeque familiae et nobis omnibus omnino necessarius.</s>
-					<s xml:lang="la" type="auto">Pontessaella de omnibus nos certiores fecit.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
+					<s n="2" xml:lang="la" type="auto">Deo optimo maximo ingentes agimus gratias, quod te nobis restituerit; cura, ut valeas tuae ecclesiae tuaeque familiae et nobis omnibus omnino necessarius.</s>
+					<s n="3" xml:lang="la" type="auto">Pontessaella de omnibus nos certiores fecit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Apud nos omnia eodem statu permanent.</s>
-					<s xml:lang="la" type="auto">Cum Camillo et Paravicino agemus in nundinis Paulinis, quum primores nostri conveniunt, apud quos potestas est; nam sine illis nihil possumus.</s>
-					<s xml:lang="la" type="auto">Ex Italia fere nihil habemus, nisi quod milites (ut fertur) conscribuntur Mirandulę; nimirum contra Parmam et Senam Cęsar aliquid molietur.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">Ex Curia, 21. ianuarii 52.</s>
-					<s xml:lang="la" type="auto">Binas literas mittit Vergerius.</s>
-					<s xml:lang="la" type="auto">Vocatus est a duce Wirtenbergensi; videtur nobis hanc vocationem negligere; qua causa nescimus.</s>
+					<s n="4" xml:lang="la" type="auto">Apud nos omnia eodem statu permanent.</s>
+					<s n="5" xml:lang="la" type="auto">Cum Camillo et Paravicino agemus in nundinis Paulinis, quum primores nostri conveniunt, apud quos potestas est; nam sine illis nihil possumus.</s>
+					<s n="6" xml:lang="la" type="auto">Ex Italia fere nihil habemus, nisi quod milites (ut fertur) conscribuntur Mirandulę; nimirum contra Parmam et Senam Cęsar aliquid molietur.</s>
+					<s n="7" xml:lang="la" type="auto">Vale.</s>
+					<s n="8" xml:lang="la" type="auto">Ex Curia, 21. ianuarii 52.</s>
+					<s n="9" xml:lang="la" type="auto">Binas literas mittit Vergerius.</s>
+					<s n="10" xml:lang="la" type="auto">Vocatus est a duce Wirtenbergensi; videtur nobis hanc vocationem negligere; qua causa nescimus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pietate et doctrina ornatissimo viro m[agistro] Heinricho Bullingero, domino et fratri suo colendissimo.</s>
+					<s n="11" xml:lang="la" type="auto">Pietate et doctrina ornatissimo viro m[agistro] Heinricho Bullingero, domino et fratri suo colendissimo.</s>
 				</p>
 			</div>
 		</body>

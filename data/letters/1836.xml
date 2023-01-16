@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3091</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 368,225</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 368,225</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,14 +54,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 79,65</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">30. März 1553</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 79,65</idno>
+						<idno subtype="Hinweis">30. März 1553</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -72,55 +78,42 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1836">
 				<correspAction type="sent">
-					<persName ref="person#890" cert="high">
+					<!--
+					<persName ref="person890" cert="high">
 						<forename cert="high">Theodor</forename>
 						<surname cert="high">Beza</surname>
-						<addName type="main">de Bèze (Beza), Théodor</addName>
+						<persName type="main" ref="person8033>de Bèze (Beza), Théodor</addName>
 						<graphic type="portrait" url="portraits/876_Beza_Theodor.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Th%C3%A9odore_de_B%C3%A8ze"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118662864"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11418065"/>
 					</persName>
-					<place source="#280" cert="high">
-						<settlement>Lausanne</settlement>
-						<district>Waadt</district>
-						<country>Schweiz</country>
-						<geo>46.516 6.63282</geo>
-					</place>
+					-->
+					<persName ref="person890" cert="high"/>
+					<place source="place280" cert="high"/>
 					<date when="1553-03-30" cert="low"><note>«tertio die cal. Apr» (29. Schiess chron.)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1837"/>
-					<ref type="prev_chronologically" target="files.xml#1835"/>
-					<ref type="next_correspondence" target="files.xml#3412"/>
-					<ref type="prev_correspondence" target="files.xml#1251"/>
-					<ref type="next_correspondence_request" target="files.xml#3412"/>
-					<ref type="prev_correspondence_request" target="files.xml#1251"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3435"/>
+					<ref type="next_chronologically" target="file1837"/>
+					<ref type="prev_chronologically" target="file1835"/>
+					<ref type="next_correspondence" target="file3412"/>
+					<ref type="prev_correspondence" target="file1251"/>
+					<ref type="next_correspondence_request" target="file3412"/>
+					<ref type="prev_correspondence_request" target="file1251"/>
+					<ref type="next_correspondence_reaction" target="file3435"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#1940"/>
-					<ref type="prev_same_sender" target="files.xml#1805"/>
-					<ref type="next_same_addressee" target="files.xml#1870"/>
-					<ref type="prev_same_addressee" target="files.xml#1490"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1940"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1805"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1870"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1490"/>
+					<ref type="next_same_sender" target="file1940"/>
+					<ref type="prev_same_sender" target="file1805"/>
+					<ref type="next_same_addressee" target="file1870"/>
+					<ref type="prev_same_addressee" target="file1490"/>
+					<ref type="next_with_sender_as_addressee" target="file1940"/>
+					<ref type="prev_with_sender_as_addressee" target="file1805"/>
+					<ref type="next_with_addressee_as_sender" target="file1870"/>
+					<ref type="prev_with_addressee_as_sender" target="file1490"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -129,30 +122,33 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="1836/Autograph/00 E_II_368__fol__225_r_.tif" n="1"/>
+		<graphic url="1836/Autograph/01 E_II_368__fol__225_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. et pacem a domino.</s>
+					<s n="1" xml:lang="la" type="auto">S. et pacem a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hodie Iohannes Rodolphus a Landeberg, Caspar Messicomerus et Felix Blonslius nobis significarunt sese a vobis, optimi et colendissimi fratres, domum revocari et testimonium actae apud nos vitae a nobis petierunt, quod illis minime putavimus denegandum.</s>
-					<s xml:lang="la" type="auto">Hoc igitur vobis testatum esse cupimus, quamdiu apud nos vixerunt, visos esse nobis pios, modestos et studiosos adolescentes neque quicquam unquam in ipsis esse vel a nobis animadversum vel ab aliis ad nos delatum, quod ab ipsorum officio esset alienum.</s>
-					<s xml:lang="la" type="auto">Utinam ergo dominus perficiat, quod in ipsis inchoavit, et non illis modo, sed quamplurimis etiam aliis opera nostra in domino prodesse possit.</s>
-					<s xml:lang="la" type="auto">Hanc enim uberrimam et amplissimam laborum nostrorum mercedem esse arbitrabimur, si qualescunque nostros conatus neque ecclesiae dei inutiles neque vobis, optimi fratres, ingratos esse intelligamus.</s>
-					<s xml:lang="la" type="auto">Bene valete in domino, quem ex animo precamur, ut ecclesiam suam et vos imprimis salvos et incolumes praestet.</s>
-					<s xml:lang="la" type="auto">Lausanae tertio calendas aprilis 1553.</s>
+					<s n="2" xml:lang="la" type="auto">Hodie Iohannes Rodolphus a Landeberg, Caspar Messicomerus et Felix Blonslius nobis significarunt sese a vobis, optimi et colendissimi fratres, domum revocari et testimonium actae apud nos vitae a nobis petierunt, quod illis minime putavimus denegandum.</s>
+					<s n="3" xml:lang="la" type="auto">Hoc igitur vobis testatum esse cupimus, quamdiu apud nos vixerunt, visos esse nobis pios, modestos et studiosos adolescentes neque quicquam unquam in ipsis esse vel a nobis animadversum vel ab aliis ad nos delatum, quod ab ipsorum officio esset alienum.</s>
+					<s n="4" xml:lang="la" type="auto">Utinam ergo dominus perficiat, quod in ipsis inchoavit, et non illis modo, sed quamplurimis etiam aliis opera nostra in domino prodesse possit.</s>
+					<s n="5" xml:lang="la" type="auto">Hanc enim uberrimam et amplissimam laborum nostrorum mercedem esse arbitrabimur, si qualescunque nostros conatus neque ecclesiae dei inutiles neque vobis, optimi fratres, ingratos esse intelligamus.</s>
+					<s n="6" xml:lang="la" type="auto">Bene valete in domino, quem ex animo precamur, ut ecclesiam suam et vos imprimis salvos et incolumes praestet.</s>
+					<s n="7" xml:lang="la" type="auto">Lausanae tertio calendas aprilis 1553.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Theodorus Beza, frater in domino vestri observantissimus, nomine ministrorum et professorum huius ecclesiae Lausanensis.</s>
+					<s n="8" xml:lang="la" type="auto">Theodorus Beza, frater in domino vestri observantissimus, nomine ministrorum et professorum huius ecclesiae Lausanensis.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Eximiis servis dei et fratribus in domino colendissimis ministris verbi et professoribus bonarum artium.</s>
+					<s n="9" xml:lang="la" type="auto">Eximiis servis dei et fratribus in domino colendissimis ministris verbi et professoribus bonarum artium.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="10" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

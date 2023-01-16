@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2005"/>
-				<idno type="ISBN">ISBN 3-290-17339-9</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1522</idno>
+				<idno subtype="ISBN">ISBN 3-290-17339-9</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1522</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 11</title>
+				<title subtype="publication">HBBW XI</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">11</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 350,471</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 350,471</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,14 +49,14 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Wie <persName ref="81">Grynäus</persName> vielleicht schon geschrieben hat, wird [im
-								<placeName ref="880">Regensburger</placeName> Religionsgespräch] hart um die Transsubstantiation,
+								Wie <persName ref="person81">Grynäus</persName> vielleicht schon geschrieben hat, wird [im
+								<placeName ref="place880">Regensburger</placeName> Religionsgespräch] hart um die Transsubstantiation,
 								die Anrufung der Heiligen, die Fürbitte für die Toten und die Messe gerungen, während die Gegner bei der
 								Rechtfertigungslehre unerwartet große Zugeständnisse gemacht haben.
-								<persName ref="2500">Herzog</persName> [<persName ref="2500">Wilhelm</persName>] von Kleve ist
-								mit 300 Pferden nach <placeName ref="11">Frankreich</placeName> gezogen, um seine Braut [Jeanne
-								d’Albret] heimzuführen; sein berittenes Heer hat in <placeName ref="7">Deutschland</placeName>
-								nicht seinesgleichen, und seine Heirat wird Kaiser [<persName ref="1332">Karl</persName> V.]
+								Herzog [Wilhelm] von Kleve ist
+								mit 300 Pferden nach <placeName ref="place11">Frankreich</placeName> gezogen, um seine Braut [Jeanne
+								d’Albret] heimzuführen; sein berittenes Heer hat in <placeName ref="place7">Deutschland</placeName>
+								nicht seinesgleichen, und seine Heirat wird Kaiser [<persName ref="person1332">Karl V.</persName>]
 								schmerzen. Grüße.
 							</p>
 						</summary>
@@ -64,46 +67,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11565">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1541-05-27" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11566"/>
-					<ref type="prev_chronologically" target="files.xml#11564"/>
-					<ref type="next_correspondence" target="files.xml#11594"/>
-					<ref type="prev_correspondence" target="files.xml#11559"/>
-					<ref type="next_correspondence_request" target="files.xml#11594"/>
-					<ref type="prev_correspondence_request" target="files.xml#11559"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11604"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11530"/>
-					<ref type="next_same_sender" target="files.xml#11594"/>
-					<ref type="prev_same_sender" target="files.xml#11559"/>
-					<ref type="next_same_addressee" target="files.xml#11576"/>
-					<ref type="prev_same_addressee" target="files.xml#11530"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11594"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11559"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11576"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11530"/>
+					<ref type="next_chronologically" target="file11566"/>
+					<ref type="prev_chronologically" target="file11564"/>
+					<ref type="next_correspondence" target="file11594"/>
+					<ref type="prev_correspondence" target="file11559"/>
+					<ref type="next_correspondence_request" target="file11594"/>
+					<ref type="prev_correspondence_request" target="file11559"/>
+					<ref type="next_correspondence_reaction" target="file11604"/>
+					<ref type="prev_correspondence_reaction" target="file11530"/>
+					<ref type="next_same_sender" target="file11594"/>
+					<ref type="prev_same_sender" target="file11559"/>
+					<ref type="next_same_addressee" target="file11576"/>
+					<ref type="prev_same_addressee" target="file11530"/>
+					<ref type="next_with_sender_as_addressee" target="file11594"/>
+					<ref type="prev_with_sender_as_addressee" target="file11559"/>
+					<ref type="next_with_addressee_as_sender" target="file11576"/>
+					<ref type="prev_with_addressee_as_sender" target="file11530"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -120,32 +128,32 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Si <persName ref="81">Grynęus</persName> non scripsit,<note xml:id="fn1" type="footnote" n="1">Ein entsprechendes Schreiben von <persName ref="81">Grynäus</persName> liegt nicht vor.</note> sic postremo accepimus:<note xml:id="fn2" type="footnote" n="2"><persName ref="154">Myconius</persName> bezieht sich auf einen Brief <persName ref="40">Capitos</persName> an <persName ref="81">Grynäus</persName> vom 18. Mai, von dem nur ein Exzerpt von <persName ref="154">Myconius</persName>' Hand erhalten ist (Zürich ZB, Ms A 40, Nr. XII, S. 26; vgl. <persName ref="40">Capito</persName>, Corr. 269, <ref target="file#10793">Nr. 755</ref>). An gleicher Stelle finden sich weitere Auszüge aus Briefen vom April/Mai 1541, die offenbar von Straßburg nach <placeName ref="97">Basel</placeName> gesandt und teils von <persName ref="154">Myconius</persName>, teils von <persName ref="1959">Christoph Rotacher</persName> kopiert wurden (aaO, S. 25-27). Zu den Einzelheiten der Verhandlungen vgl. die Berichte von <persName ref="84">Gwalther</persName> und <persName ref="171">Pistorius</persName> vom 30. Mai (unten <ref target="file#11566">Nr. 1523</ref>f).</note> Res, quia in paucorum manibus est, ob magnitudinem eos propemodum enecat.</s>
-					<s xml:lang="la" type="auto">Transsubstantiatio, intercessio sanctorum, suffragia mortuorum et missa maxime obsistunt.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Si <persName ref="person81">Grynęus</persName> non scripsit,<note xml:id="fn1" type="footnote" n="1">Ein entsprechendes Schreiben von <persName ref="person81">Grynäus</persName> liegt nicht vor.</note> sic postremo accepimus:<note xml:id="fn2" type="footnote" n="2"><persName ref="person154">Myconius</persName> bezieht sich auf einen Brief <persName ref="person40">Capitos</persName> an <persName ref="person81">Grynäus</persName> vom 18. Mai, von dem nur ein Exzerpt von <persName ref="person154">Myconius</persName>' Hand erhalten ist (Zürich ZB, Ms A 40, Nr. XII, S. 26; vgl. <persName ref="person40">Capito</persName>, Corr. 269, <ref target="file10793">Nr. 755</ref>). An gleicher Stelle finden sich weitere Auszüge aus Briefen vom April/Mai 1541, die offenbar von Straßburg nach <placeName ref="place97">Basel</placeName> gesandt und teils von <persName ref="person154">Myconius</persName>, teils von <persName ref="person1959">Christoph Rotacher</persName> kopiert wurden (aaO, S. 25-27). Zu den Einzelheiten der Verhandlungen vgl. die Berichte von <persName ref="person84">Gwalther</persName> und <persName ref="person171">Pistorius</persName> vom 30. Mai (unten <ref target="file11566">Nr. 1523</ref>f).</note> Res, quia in paucorum manibus est, ob magnitudinem eos propemodum enecat.</s>
+					<s n="3" xml:lang="la" type="auto">Transsubstantiatio, intercessio sanctorum, suffragia mortuorum et missa maxime obsistunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Concesserunt adversarii in materia iustificationis, quod putarant omnes impugnaturos eos acerrime.</s>
-					<s xml:lang="la" type="auto">Nullus e scholasticis unquam eousque pervenit.</s>
+					<s n="4" xml:lang="la" type="auto">Concesserunt adversarii in materia iustificationis, quod putarant omnes impugnaturos eos acerrime.</s>
+					<s n="5" xml:lang="la" type="auto">Nullus e scholasticis unquam eousque pervenit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Petunt, ut fratres precibus dominum implorent, ut mittat auxilium.</s>
-					<s xml:lang="la" type="auto">Reliquum est: Dux Clivensis transiit in Galliam ad evocandam sponsam suam<note xml:id="fn3" type="footnote" n="3"><persName ref="2500">Herzog Wilhelm von Jülich</persName>, Berg und Kleve heiratete am 14. Juni 1541 in <placeName ref="1363">Châtellerault</placeName> Jeanne d'Albret, die dreizehnjährige Tochter des Königs von <placeName ref="754">Navarra</placeName>; s. Woldemar <hi>Harless,</hi> Zur Geschichte <persName ref="2500">Herzog Wilhelm</persName> III. von Cleve-<persName ref="2500">Jülich</persName>-Berg. Die Navarresische Heirat und des <persName ref="2500">Herzogs</persName> Reise nach <placeName ref="11">Frankreich</placeName>, in: Zeitschrift des Bergischen Geschichtsvereins 1, 1863, S. 1-38.</note> trecentis equis<note xml:id="fn4" type="footnote" n="4">In einem Bericht aus der herzoglichen Kanzlei ist von ungefähr 70 Pferden die Rede (s. ebd., S. 17).</note>.</s>
-					<s xml:lang="la" type="auto">Non est in <persName ref="1332">Germania</persName> par equitatus, qualem ille habet.</s>
-					<s xml:lang="la" type="auto">Dolebit connubium caesari, cum ipse tamen in causa sit, quamobrem dux Gallam duxerit<note xml:id="fn5" type="footnote" n="5">Die Auseinandersetzung mit Kaiser <persName ref="1332">Karl</persName> V. um <placeName ref="21">Geldern</placeName> veranlasste den <persName ref="2500">Herzog</persName>, seine Position durch eine französische Verbindung zu festigen.</note>.</s>
-					<s xml:lang="la" type="auto">Non possum plura scribere propter negocia.</s>
+					<s n="6" xml:lang="la" type="auto">Petunt, ut fratres precibus dominum implorent, ut mittat auxilium.</s>
+					<s n="7" xml:lang="la" type="auto">Reliquum est: Dux Clivensis transiit in Galliam ad evocandam sponsam suam<note xml:id="fn3" type="footnote" n="3">Herzog Wilhelm von Jülich, Berg und Kleve heiratete am 14. Juni 1541 in <placeName ref="place1363">Châtellerault</placeName> Jeanne d'Albret, die dreizehnjährige Tochter des Königs von <placeName ref="place754">Navarra</placeName>; s. Woldemar <hi>Harless,</hi> Zur Geschichte Herzog Wilhelm III. von Cleve-Jülich-Berg. Die Navarresische Heirat und des Herzogs Reise nach <placeName ref="place11">Frankreich</placeName>, in: Zeitschrift des Bergischen Geschichtsvereins 1, 1863, S. 1-38.</note> trecentis equis<note xml:id="fn4" type="footnote" n="4">In einem Bericht aus der herzoglichen Kanzlei ist von ungefähr 70 Pferden die Rede (s. ebd., S. 17).</note>.</s>
+					<s n="8" xml:lang="la" type="auto">Non est in <persName ref="person1332">Germania</persName> par equitatus, qualem ille habet.</s>
+					<s n="9" xml:lang="la" type="auto">Dolebit connubium caesari, cum ipse tamen in causa sit, quamobrem dux Gallam duxerit<note xml:id="fn5" type="footnote" n="5">Die Auseinandersetzung mit Kaiser <persName ref="person1332">Karl V.</persName> um <placeName ref="place21">Geldern</placeName> veranlasste den Herzog, seine Position durch eine französische Verbindung zu festigen.</note>.</s>
+					<s n="10" xml:lang="la" type="auto">Non possum plura scribere propter negocia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale cum tuis.</s>
-					<s xml:lang="la" type="auto"><persName ref="14">Theodorum</persName><note xml:id="fn6" type="footnote" n="6"><persName ref="14">Theodor Bibliander</persName>.</note> et <persName ref="165">Pellicanum</persName> salvos opto.</s>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileae</placeName>, 27. maii anno 1541.</s>
+					<s n="11" xml:lang="la" type="auto">Vale cum tuis.</s>
+					<s n="12" xml:lang="la" type="auto"><persName ref="person14">Theodorum</persName><note xml:id="fn6" type="footnote" n="6"><persName ref="person14">Theodor Bibliander</persName>.</note> et <persName ref="person165">Pellicanum</persName> salvos opto.</s>
+					<s n="13" xml:lang="la" type="auto"><placeName ref="place97">Basileae</placeName>, 27. maii anno 1541.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus <persName ref="154">Myconius</persName>.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus <persName ref="person154">Myconius</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinricho Bullingero suo.</s>
+					<s n="15" xml:lang="la" type="auto">Domino Heinricho Bullingero suo.</s>
 				</p>
 			</div>
 		</body>

@@ -9,10 +9,10 @@
 				<publisher>Basler Buch- und Antiquariatshandlung</publisher>
 				<pubPlace>Basel</pubPlace>
 				<date when="1904"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1301</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1301</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Bullingers Korrespondenz mit den Graubündnern</title>
+				<title subtype="publication">Graubünden, Korr.</title>
 				<biblScope type="author">Bullinger, H.; Schiess, T.</biblScope>
 				<biblScope type="edition">Bullingers Korrespondenz mit den Graubündnern</biblScope>
 				<biblScope type="page">16</biblScope>
@@ -20,13 +20,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,8</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,8</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -35,11 +38,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Bittet Bullinger, den Überbringer des Briefes, den <placeName ref="243">Churer</placeName>
-								[Alt-]Bürgermeister [<persName ref="1137">Luzi</persName>
-								<persName ref="1137">Heim</persName>] in seiner evangelischen Gesinnung zu bestärken; Bullinger kann
-								ihm eine eventuelle Sendung für [<persName ref="21">Johannes</persName>]
-								<persName ref="220">Travers</persName> mitgeben. Bittet, Neues zum Fortgang der Reformation
+								Bittet Bullinger, den Überbringer des Briefes, den <placeName ref="place243">Churer</placeName>
+								[Alt-]Bürgermeister [Luzi
+								<persName ref="person1137">Heim</persName>] in seiner evangelischen Gesinnung zu bestärken; Bullinger kann
+								ihm eine eventuelle Sendung für [Johannes]
+								<persName ref="person220">Travers</persName> mitgeben. Bittet, Neues zum Fortgang der Reformation
 								mitzuteilen.
 							</p>
 						</summary>
@@ -57,42 +60,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11344">
 				<correspAction type="sent">
-					<persName ref="person#396" cert="high">
+					<!--
+					<persName ref="person396" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Blasius</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Blasius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089451822"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person396" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1539-08-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11345"/>
-					<ref type="prev_chronologically" target="files.xml#11343"/>
-					<ref type="next_correspondence" target="files.xml#11676"/>
-					<ref type="prev_correspondence" target="files.xml#10707"/>
-					<ref type="next_correspondence_request" target="files.xml#11676"/>
-					<ref type="prev_correspondence_request" target="files.xml#10707"/>
+					<ref type="next_chronologically" target="file11345"/>
+					<ref type="prev_chronologically" target="file11343"/>
+					<ref type="next_correspondence" target="file11676"/>
+					<ref type="prev_correspondence" target="file10707"/>
+					<ref type="next_correspondence_request" target="file11676"/>
+					<ref type="prev_correspondence_request" target="file10707"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11676"/>
-					<ref type="prev_same_sender" target="files.xml#10707"/>
-					<ref type="next_same_addressee" target="files.xml#11345"/>
-					<ref type="prev_same_addressee" target="files.xml#11340"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11676"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10707"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11345"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11340"/>
+					<ref type="next_same_sender" target="file11676"/>
+					<ref type="prev_same_sender" target="file10707"/>
+					<ref type="next_same_addressee" target="file11345"/>
+					<ref type="prev_same_addressee" target="file11340"/>
+					<ref type="next_with_sender_as_addressee" target="file11676"/>
+					<ref type="prev_with_sender_as_addressee" target="file10707"/>
+					<ref type="next_with_addressee_as_sender" target="file11345"/>
+					<ref type="prev_with_addressee_as_sender" target="file11340"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -101,23 +110,26 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="11344/Autograph/00 E_II_365__fol__8_r_.tif" n="1"/>
+		<graphic url="11344/Autograph/01 E_II_365__fol__8_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Ioannes Blasius Heinricho suo S.</s>
+					<s n="1" xml:lang="la" type="auto">Ioannes Blasius Heinricho suo S.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Is, quem hic coram cernis, observandissime vir, reipublicae nostrae consul est, homo omnium bonorum iudicio syncerus ac in re evangelica constantissimus.</s>
-					<s xml:lang="la" type="auto">Illum et tibi notum volui, cui, licet currenti, calcar tuum addas, ut in re bene cepta persistat.</s>
-					<s xml:lang="la" type="auto">Deinde Traverso nostro si quid destinasti, fac per illum accipiamus etc.</s>
-					<s xml:lang="la" type="auto">et si quid est apud [vos], quod facit ad promovendam Domini veritatem, fac et nos participes.</s>
-					<s xml:lang="la" type="auto">Vale per Dominum, qui te diu nobis conservare dignetur, amen.</s>
-					<s xml:lang="la" type="auto">Raptim, Curiae, 23. Augusti, anno 39.</s>
+					<s n="2" xml:lang="la" type="auto">Is, quem hic coram cernis, observandissime vir, reipublicae nostrae consul est, homo omnium bonorum iudicio syncerus ac in re evangelica constantissimus.</s>
+					<s n="3" xml:lang="la" type="auto">Illum et tibi notum volui, cui, licet currenti, calcar tuum addas, ut in re bene cepta persistat.</s>
+					<s n="4" xml:lang="la" type="auto">Deinde Traverso nostro si quid destinasti, fac per illum accipiamus etc.</s>
+					<s n="5" xml:lang="la" type="auto">et si quid est apud [vos], quod facit ad promovendam Domini veritatem, fac et nos participes.</s>
+					<s n="6" xml:lang="la" type="auto">Vale per Dominum, qui te diu nobis conservare dignetur, amen.</s>
+					<s n="7" xml:lang="la" type="auto">Raptim, Curiae, 23. Augusti, anno 39.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ornatissimo iuxta ac humanissimo domino Heinricho Bullingero, ecclesiae Tigurinae episcopo vigilantissimo.</s>
+					<s n="8" xml:lang="la" type="auto">Ornatissimo iuxta ac humanissimo domino Heinricho Bullingero, ecclesiae Tigurinae episcopo vigilantissimo.</s>
 				</p>
 			</div>
 		</body>

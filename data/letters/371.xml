@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1242</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,73</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,73</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,14 +44,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 68,174</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">nur Regest</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 68,174</idno>
+						<idno subtype="Hinweis">nur Regest</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -57,49 +63,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/371">
 				<correspAction type="sent">
-					<persName ref="person#4060" cert="low">
+					<!--
+					<persName ref="person4060" cert="low">
 						<forename cert="low">Ludwig</forename>
 						<surname cert="low">Zehender</surname>
+						<ref type="histhub" target="https://data.histhub.ch/person/11595878"/>
 					</persName>
-					<place source="#46" cert="low">
-						<settlement>Biberstein</settlement>
-						<district>Aargau</district>
-						<country>Schweiz</country>
-						<geo>47.41641 8.08508</geo>
-					</place>
+					-->
+					<persName ref="person4060" cert="low"/>
+					<place source="place46" cert="low"/>
 					<date when="1548-12-17" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#372"/>
-					<ref type="prev_chronologically" target="files.xml#370"/>
-					<ref type="next_correspondence" target="files.xml#3986"/>
-					<ref type="prev_correspondence" target="files.xml#10153"/>
-					<ref type="next_correspondence_request" target="files.xml#3986"/>
-					<ref type="prev_correspondence_request" target="files.xml#10153"/>
+					<ref type="next_chronologically" target="file372"/>
+					<ref type="prev_chronologically" target="file370"/>
+					<ref type="next_correspondence" target="file3986"/>
+					<ref type="prev_correspondence" target="file10153"/>
+					<ref type="next_correspondence_request" target="file3986"/>
+					<ref type="prev_correspondence_request" target="file10153"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#3986"/>
-					<ref type="prev_same_sender" target="files.xml#10153"/>
-					<ref type="next_same_addressee" target="files.xml#386"/>
-					<ref type="prev_same_addressee" target="files.xml#359"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3986"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10153"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#386"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#359"/>
+					<ref type="next_same_sender" target="file3986"/>
+					<ref type="prev_same_sender" target="file10153"/>
+					<ref type="next_same_addressee" target="file386"/>
+					<ref type="prev_same_addressee" target="file359"/>
+					<ref type="next_with_sender_as_addressee" target="file3986"/>
+					<ref type="prev_with_sender_as_addressee" target="file10153"/>
+					<ref type="next_with_addressee_as_sender" target="file386"/>
+					<ref type="prev_with_addressee_as_sender" target="file359"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,19 +122,19 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Erwirdiger, wolgelerter herre und früntlicher schwager, min gants unverdrossen, willig dienst zuͦ vor.</s>
-					<s xml:lang="de" type="auto">Fürgeliepter herre, üwer vilfalt gegent uns bewyßte guͦtthat und früntligkeit macht mich gehertz, üwer erwird noch mer umb dienst und hilff anzesuͦchen.</s>
-					<s xml:lang="de" type="auto">Namlich so hat min lieber bruͦder sälig, Hans Uͦlrich, einen son, zöugern dis, so das goldschmidhandtwärch zuͦ Jenff gelert, und als nun sine leerjare uss sind, weltend in sine bruͤder gen Zürich gern haben ze dienen und sonderlich, ob es sin möchte, zuͦ meister Jacoben Stampffler oder, so es doselbst nit müglich, ettwan sunst by einem andren wolberichten frommen meister; hiemit er nütdesterweniger mitler zite sin arbeit sähen und vilicht volgendts zuͦ im kommen möchte.</s>
-					<s xml:lang="de" type="auto">Denen von langt an üwer erwird min underdienstlichs, getrünggenlichs begären, disern minen lieben vetteren trülich (als ich sunst wol vertruwen) bevolchen ze haben und ettwan underzehelffen; wirt er guͦtwillig derster minder lones begären, damit er zuͦ frommen eeren- und wolberichten lüthen kommen möge.</s>
-					<s xml:lang="de" type="auto">Begär ich yeder zyte mines mögens willig ze gedienen.</s>
+					<s n="1" xml:lang="de" type="auto">Erwirdiger, wolgelerter herre und früntlicher schwager, min gants unverdrossen, willig dienst zuͦ vor.</s>
+					<s n="2" xml:lang="de" type="auto">Fürgeliepter herre, üwer vilfalt gegent uns bewyßte guͦtthat und früntligkeit macht mich gehertz, üwer erwird noch mer umb dienst und hilff anzesuͦchen.</s>
+					<s n="3" xml:lang="de" type="auto">Namlich so hat min lieber bruͦder sälig, Hans Uͦlrich, einen son, zöugern dis, so das goldschmidhandtwärch zuͦ Jenff gelert, und als nun sine leerjare uss sind, weltend in sine bruͤder gen Zürich gern haben ze dienen und sonderlich, ob es sin möchte, zuͦ meister Jacoben Stampffler oder, so es doselbst nit müglich, ettwan sunst by einem andren wolberichten frommen meister; hiemit er nütdesterweniger mitler zite sin arbeit sähen und vilicht volgendts zuͦ im kommen möchte.</s>
+					<s n="4" xml:lang="de" type="auto">Denen von langt an üwer erwird min underdienstlichs, getrünggenlichs begären, disern minen lieben vetteren trülich (als ich sunst wol vertruwen) bevolchen ze haben und ettwan underzehelffen; wirt er guͦtwillig derster minder lones begären, damit er zuͦ frommen eeren- und wolberichten lüthen kommen möge.</s>
+					<s n="5" xml:lang="de" type="auto">Begär ich yeder zyte mines mögens willig ze gedienen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum xvija Decembris anno domini xlviij.</s>
-					<s xml:lang="de" type="auto">Ü[wer] erwird williger diener Ludwig Zächender, vogt zuͦ Biberstein.</s>
+					<s n="6" xml:lang="la" type="auto">Datum xvija Decembris anno domini xlviij.</s>
+					<s n="7" xml:lang="de" type="auto">Ü[wer] erwird williger diener Ludwig Zächender, vogt zuͦ Biberstein.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="de" type="auto">Dem erwirdigenn hoch- und wollgelerten herren meister Heinrichen Bulli, ußkündern götlichs wordtes zuͦ Zürich, minem lieben, eerenden herren und früntlichen schwager.</s>
+					<s n="8" xml:lang="de" type="auto">Dem erwirdigenn hoch- und wollgelerten herren meister Heinrichen Bulli, ußkündern götlichs wordtes zuͦ Zürich, minem lieben, eerenden herren und früntlichen schwager.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1983"/>
-				<idno type="ISBN">ISBN 3-290-11531-3</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=302</idno>
+				<idno subtype="ISBN">ISBN 3-290-11531-3</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=302</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 3</title>
+				<title subtype="publication">HBBW III</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">3</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,342r -342ar.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,342r -342ar.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -57,43 +60,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10333">
 				<correspAction type="sent">
-					<persName ref="person#1553" cert="high">
+					<!--
+					<persName ref="person1553" cert="high">
 						<forename cert="high">Christian</forename>
 						<surname cert="high">Hochholzer</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/108932216X"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person1553" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1533-12-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10334"/>
-					<ref type="prev_chronologically" target="files.xml#10332"/>
-					<ref type="next_correspondence" target="files.xml#11609"/>
+					<ref type="next_chronologically" target="file10334"/>
+					<ref type="prev_chronologically" target="file10332"/>
+					<ref type="next_correspondence" target="file11609"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#11609"/>
+					<ref type="next_correspondence_request" target="file11609"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11609"/>
+					<ref type="next_same_sender" target="file11609"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10337"/>
-					<ref type="prev_same_addressee" target="files.xml#10332"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11609"/>
+					<ref type="next_same_addressee" target="file10337"/>
+					<ref type="prev_same_addressee" target="file10332"/>
+					<ref type="next_with_sender_as_addressee" target="file11609"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10337"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10332"/>
+					<ref type="next_with_addressee_as_sender" target="file10337"/>
+					<ref type="prev_with_addressee_as_sender" target="file10332"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -112,25 +119,25 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Heinricho Bullingero <persName ref="104">Christianus</persName> Hochholtzer, domino et patri suo colendissimo, S. P. D.</s>
+					<s n="1" xml:lang="la" type="auto">Heinricho Bullingero <persName ref="person104">Christianus</persName> Hochholtzer, domino et patri suo colendissimo, S. P. D.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quanquam tanta est tuorum in me beneficiorum magnitudo, pater observande - tu enim mihi solus patris loco<note xml:id="fn3" type="footnote" n="3">Über <persName ref="104">Hochholzers</persName> Vater ist nichts bekannt; inwiefern Bullinger an dessen Stelle trat, ähnlich wie bei <persName ref="84">Rudolf Gwalther</persName>, bleibt ungewiß.</note> -, ut nullam partem tuorum erga me meritorum non modo referenda sed ne cogitanda quidem gratia consequi possim, tamen, quia te semper fautorem ac Mecaenatem omnium studiosorum et inprimis mei sensi, maiora, si ullo pacto fieri possunt, a te - per literas quo melius - petere haud sum dedignatus, non quin mihi ipsi tantum apud te tribuerem authoritatis, sed quod te adeo benevolum sum expertus, ut nullis non benefacere concupiscas.</s>
-					<s xml:lang="la" type="auto">Quod autem per literas tecum colloquor, duplex me ratio movit: Primo, quo melius et consyderatius tecum loquerer, deinde, ut stilum exercerem<note xml:id="fn4" type="footnote" n="4">Tatsächlich kann der ganze Brief als Stilübung für eine «epistola petitoria» gelten. Vgl. die Beispiele in <persName ref="779">Erasmus</persName> 1/2 467-475.</note>.</s>
-					<s xml:lang="la" type="auto">Quandoquidem itaque iam ferme annus suum integrum perfecit cursum, ex quo ex mera tua gratia et benevolentia coepi inter domesticos tuos recenseri, et quoniam ad exitum nunc vergit annus, optimum visum est, ut te precibus summis aggrederer rogaremque, ut si ullo possit<pb type="scan" next="||342v."/> fieri modo, denuo concedas ultra etiam inter tuos recenseri commensales.</s>
-					<s xml:lang="la" type="auto">Video enim, quantae et fortunę et eruditionis mihi futurę sint accessiones, si diutius tecum licuerit conversari.</s>
-					<s xml:lang="la" type="auto">Quare tam supplex ad te venio quam qui maxime, quamvis haud me fugiat me aliquibus in rebus forte contra te peccasse minusque tuę obedivisse voluntati<note xml:id="fn5" type="footnote" n="5">Ein konkreter Anlaß ist nicht bekannt. Vielleicht ist die Wendung als Topos gebraucht.</note>.</s>
-					<s xml:lang="la" type="auto">Id tamen si factum, ex ignorantia contigit.</s>
-					<s xml:lang="la" type="auto">Maxime enim, quantum fieri potuit, in id intentus fui, omnem operam eo collocavi summisque viribus id conatus sum, ut tuae obtemperarem voluntati tuique effugerem offensionem, quod etiam porro me facturum certo de me habeo polliceri.</s>
-					<s xml:lang="la" type="auto">Praecium vero, quod admodum parvum ex<pb type="edition" next="261"/> tua beneficentia per hunc a me accepisti annum, pro quo ingentes tibi et habeo gratias et habiturus sum, quoad vixero - referre enim non potero -, vel duplo maius solvere non recusabo, modo detur inter tuos recenseri.</s>
-					<s xml:lang="la" type="auto">Si enim a te repudiatus fuero, quo me vertam, quo me recipiam, quę domus me suscipiet?</s>
-					<s xml:lang="la" type="auto">Nulla certe aeque grata ac tua, maiori tamen, sat scio, precio.</s>
-					<s xml:lang="la" type="auto">Quare ad summum te oratum velim - non enim multis utar verbisar<pb type="scan" next="||342ar"/> hoc mihi tribuas et concedas, si ullo modo potis est fieri.</s>
-					<s xml:lang="la" type="auto">Me certe habebis in omnibus rebus morigerum.</s>
-					<s xml:lang="la" type="auto">Iam enim totus tibi debeo, meque tibi habes implicatum gratia et benevolentia tua, ut nil non, si quid potero, tui causa sim facturus.</s>
+					<s n="2" xml:lang="la" type="auto">Quanquam tanta est tuorum in me beneficiorum magnitudo, pater observande - tu enim mihi solus patris loco<note xml:id="fn3" type="footnote" n="3">Über <persName ref="person104">Hochholzers</persName> Vater ist nichts bekannt; inwiefern Bullinger an dessen Stelle trat, ähnlich wie bei <persName ref="person84">Rudolf Gwalther</persName>, bleibt ungewiß.</note> -, ut nullam partem tuorum erga me meritorum non modo referenda sed ne cogitanda quidem gratia consequi possim, tamen, quia te semper fautorem ac Mecaenatem omnium studiosorum et inprimis mei sensi, maiora, si ullo pacto fieri possunt, a te - per literas quo melius - petere haud sum dedignatus, non quin mihi ipsi tantum apud te tribuerem authoritatis, sed quod te adeo benevolum sum expertus, ut nullis non benefacere concupiscas.</s>
+					<s n="3" xml:lang="la" type="auto">Quod autem per literas tecum colloquor, duplex me ratio movit: Primo, quo melius et consyderatius tecum loquerer, deinde, ut stilum exercerem<note xml:id="fn4" type="footnote" n="4">Tatsächlich kann der ganze Brief als Stilübung für eine «epistola petitoria» gelten. Vgl. die Beispiele in <persName ref="person779">Erasmus</persName> 1/2 467-475.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Quandoquidem itaque iam ferme annus suum integrum perfecit cursum, ex quo ex mera tua gratia et benevolentia coepi inter domesticos tuos recenseri, et quoniam ad exitum nunc vergit annus, optimum visum est, ut te precibus summis aggrederer rogaremque, ut si ullo possit<pb type="scan" next="||342v."/> fieri modo, denuo concedas ultra etiam inter tuos recenseri commensales.</s>
+					<s n="5" xml:lang="la" type="auto">Video enim, quantae et fortunę et eruditionis mihi futurę sint accessiones, si diutius tecum licuerit conversari.</s>
+					<s n="6" xml:lang="la" type="auto">Quare tam supplex ad te venio quam qui maxime, quamvis haud me fugiat me aliquibus in rebus forte contra te peccasse minusque tuę obedivisse voluntati<note xml:id="fn5" type="footnote" n="5">Ein konkreter Anlaß ist nicht bekannt. Vielleicht ist die Wendung als Topos gebraucht.</note>.</s>
+					<s n="7" xml:lang="la" type="auto">Id tamen si factum, ex ignorantia contigit.</s>
+					<s n="8" xml:lang="la" type="auto">Maxime enim, quantum fieri potuit, in id intentus fui, omnem operam eo collocavi summisque viribus id conatus sum, ut tuae obtemperarem voluntati tuique effugerem offensionem, quod etiam porro me facturum certo de me habeo polliceri.</s>
+					<s n="9" xml:lang="la" type="auto">Praecium vero, quod admodum parvum ex<pb type="edition" next="261"/> tua beneficentia per hunc a me accepisti annum, pro quo ingentes tibi et habeo gratias et habiturus sum, quoad vixero - referre enim non potero -, vel duplo maius solvere non recusabo, modo detur inter tuos recenseri.</s>
+					<s n="10" xml:lang="la" type="auto">Si enim a te repudiatus fuero, quo me vertam, quo me recipiam, quę domus me suscipiet?</s>
+					<s n="11" xml:lang="la" type="auto">Nulla certe aeque grata ac tua, maiori tamen, sat scio, precio.</s>
+					<s n="12" xml:lang="la" type="auto">Quare ad summum te oratum velim - non enim multis utar verbis - <pb type="scan" next="||342ar"/> hoc mihi tribuas et concedas, si ullo modo potis est fieri.</s>
+					<s n="13" xml:lang="la" type="auto">Me certe habebis in omnibus rebus morigerum.</s>
+					<s n="14" xml:lang="la" type="auto">Iam enim totus tibi debeo, meque tibi habes implicatum gratia et benevolentia tua, ut nil non, si quid potero, tui causa sim facturus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, pater observande, Christianumque tuum ita ut hactenus ames velim tibique habeas commendatum.</s>
+					<s n="15" xml:lang="la" type="auto">Vale, pater observande, Christianumque tuum ita ut hactenus ames velim tibique habeas commendatum.</s>
 				</p>
 			</div>
 		</body>

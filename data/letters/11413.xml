@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2003"/>
-				<idno type="ISBN">ISBN 3-290-17265-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1370</idno>
+				<idno subtype="ISBN">ISBN 3-290-17265-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1370</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 10</title>
+				<title subtype="publication">HBBW X</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">10</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 364,65</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 364,65</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,8 +50,8 @@
 						<summary>
 							<p xml:id="regest1">
 								Dankt für Bullingers [„Der christliche Ehestand“]. Sonst gibt es nichts zu schreiben; er hofft auf gute
-								Nachrichten vom Bundestag [zu <placeName ref="958">Schmalkalden</placeName>]. Auch seine Frau
-								[<persName ref="2623">Anna</persName>] dankt für das Buch; sie wollen seine Lehren beherzigen. Grüße.
+								Nachrichten vom Bundestag [zu <placeName ref="place958">Schmalkalden</placeName>]. Auch seine Frau
+								[Anna] dankt für das Buch; sie wollen seine Lehren beherzigen. Grüße.
 							</p>
 						</summary>
 					</msContents>
@@ -58,45 +61,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11413">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<place source="#257" cert="low">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person4079" cert="high"/>
+					<place source="place257" cert="low"/>
 					<date when="1540-03-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11414"/>
-					<ref type="prev_chronologically" target="files.xml#11412"/>
-					<ref type="next_correspondence" target="files.xml#11439"/>
-					<ref type="prev_correspondence" target="files.xml#11399"/>
-					<ref type="next_correspondence_request" target="files.xml#11439"/>
-					<ref type="prev_correspondence_request" target="files.xml#11399"/>
+					<ref type="next_chronologically" target="file11414"/>
+					<ref type="prev_chronologically" target="file11412"/>
+					<ref type="next_correspondence" target="file11439"/>
+					<ref type="prev_correspondence" target="file11399"/>
+					<ref type="next_correspondence_request" target="file11439"/>
+					<ref type="prev_correspondence_request" target="file11399"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10990"/>
-					<ref type="next_same_sender" target="files.xml#11439"/>
-					<ref type="prev_same_sender" target="files.xml#11399"/>
-					<ref type="next_same_addressee" target="files.xml#11415"/>
-					<ref type="prev_same_addressee" target="files.xml#11410"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11439"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11399"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11415"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11410"/>
+					<ref type="prev_correspondence_reaction" target="file10990"/>
+					<ref type="next_same_sender" target="file11439"/>
+					<ref type="prev_same_sender" target="file11399"/>
+					<ref type="next_same_addressee" target="file11415"/>
+					<ref type="prev_same_addressee" target="file11410"/>
+					<ref type="next_with_sender_as_addressee" target="file11439"/>
+					<ref type="prev_with_sender_as_addressee" target="file11399"/>
+					<ref type="next_with_addressee_as_sender" target="file11415"/>
+					<ref type="prev_with_addressee_as_sender" target="file11410"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -111,36 +118,36 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salus et pax Christi.</s>
+					<s n="1" xml:lang="la" type="auto">Salus et pax Christi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pro libello<note xml:id="fn1" type="footnote" n="1">Gemeint ist Bullingers neuerschienenes Werk "Der christliche Ehestand"; vgl. oben <ref target="file#11409">Nr. 1366</ref>, 2-6 mit Anm. 1.</note> tuo gratias ago quam possum plurimas; gratissima enim michi sunt talia talium amicorum dona.</s>
-					<s xml:lang="la" type="auto">Utinam rependere possem tua tot erga me offitia.</s>
-					<s xml:lang="la" type="auto">Expecto occasionem, qua oblata non ero ingratus.</s>
+					<s n="2" xml:lang="la" type="auto">Pro libello<note xml:id="fn1" type="footnote" n="1">Gemeint ist Bullingers neuerschienenes Werk "Der christliche Ehestand"; vgl. oben <ref target="file11409">Nr. 1366</ref>, 2-6 mit Anm. 1.</note> tuo gratias ago quam possum plurimas; gratissima enim michi sunt talia talium amicorum dona.</s>
+					<s n="3" xml:lang="la" type="auto">Utinam rependere possem tua tot erga me offitia.</s>
+					<s n="4" xml:lang="la" type="auto">Expecto occasionem, qua oblata non ero ingratus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quid scribam, aliud non habeo.</s>
-					<s xml:lang="la" type="auto">Omnia nunc silent, quod ad evangelii negotium adtinet.</s>
-					<s xml:lang="la" type="auto">Utinam ex comitiis nostrorum audiamus felicia<note xml:id="fn2" type="footnote" n="2">Zu den Ergebnissen des Bundestags zu <placeName ref="958">Schmalkalden</placeName> s. unten <ref target="file#11424">Nr. 1381</ref>, 1-8; 1398, 2-24.</note>!</s>
+					<s n="5" xml:lang="la" type="auto">Quid scribam, aliud non habeo.</s>
+					<s n="6" xml:lang="la" type="auto">Omnia nunc silent, quod ad evangelii negotium adtinet.</s>
+					<s n="7" xml:lang="la" type="auto">Utinam ex comitiis nostrorum audiamus felicia<note xml:id="fn2" type="footnote" n="2">Zu den Ergebnissen des Bundestags zu <placeName ref="place958">Schmalkalden</placeName> s. unten <ref target="file11424">Nr. 1381</ref>, 1-8; 1398, 2-24.</note>!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, mi frater, et pro nobis semper ora.</s>
-					<s xml:lang="la" type="auto">10. martii 1540.</s>
+					<s n="8" xml:lang="la" type="auto">Vale, mi frater, et pro nobis semper ora.</s>
+					<s n="9" xml:lang="la" type="auto">10. martii 1540.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Io. <persName ref="263">Zvick</persName>.</s>
+					<s n="10" xml:lang="la" type="auto">Tuus <persName ref="person263">Io. Zvick</persName>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Uxor<note xml:id="fn3" type="footnote" n="3"><persName ref="2623">Anna</persName> Tegerfelderin oder Tegerwilerin; vgl. HBBW IX, S. 203, Anm. 20.</note> mea quoque gratias agit pro munere; legemus mutuo et dabimus operam, ut tuis exhortationibus adiuti reddamur meliores.</s>
+					<s n="11" xml:lang="la" type="auto">Uxor<note xml:id="fn3" type="footnote" n="3">Anna Tegerfelderin oder Tegerwilerin; vgl. HBBW IX, S. 203, Anm. 20.</note> mea quoque gratias agit pro munere; legemus mutuo et dabimus operam, ut tuis exhortationibus adiuti reddamur meliores.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuam totam familiam saluta studiosissime.</s>
-					<s xml:lang="la" type="auto">Leonem<note xml:id="fn4" type="footnote" n="4"><persName ref="114">Leo Jud</persName>.</note>, <persName ref="165">Pellicanum</persName> et omnes fratres salvos iubeo.</s>
+					<s n="12" xml:lang="la" type="auto">Tuam totam familiam saluta studiosissime.</s>
+					<s n="13" xml:lang="la" type="auto">Leonem<note xml:id="fn4" type="footnote" n="4"><persName ref="person114">Leo Jud</persName>.</note>, <persName ref="person165">Pellicanum</persName> et omnes fratres salvos iubeo.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Hainricho Bullingero, ecclesiastae Tigurino, suo fratri charissimo.</s>
-					<s xml:lang="de" type="auto">Zurch.</s>
+					<s n="14" xml:lang="la" type="auto">Domino Hainricho Bullingero, ecclesiastae Tigurino, suo fratri charissimo.</s>
+					<s n="15" xml:lang="de" type="auto">Zurch.</s>
 				</p>
 			</div>
 		</body>

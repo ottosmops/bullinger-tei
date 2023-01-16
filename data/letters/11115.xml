@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1072</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1072</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,188</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,188</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,10 +49,10 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Auch ihm scheint ein weiteres Verbleiben von <persName ref="1647">Sebastian</persName>
-								[<persName ref="148">Meyer</persName>] [in <placeName ref="121">Bern</placeName>] der
+								Auch ihm scheint ein weiteres Verbleiben von Sebastian
+								[<persName ref="person1647">Meyer</persName>] [in <placeName ref="place121">Bern</placeName>] der
 								Konkordie nicht zuträglich zu sein. Bullingers Schilderung, wie er selbst bei
-								<persName ref="138">Luther</persName> für die eidgenössischen Kirchen eintreten würde, trägt der
+								<persName ref="person138">Luther</persName> für die eidgenössischen Kirchen eintreten würde, trägt der
 								Tatsache keine Rechnung, daß ein Vermittler notwendigerweise von einer Angleichung der Positionen sprechen
 								muß. Empfiehlt die Briefüberbringer.
 							</p>
@@ -61,45 +64,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11115">
 				<correspAction type="sent">
-					<persName ref="person#1365" cert="high">
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person1365" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1537-11-26" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11116"/>
-					<ref type="prev_chronologically" target="files.xml#11114"/>
-					<ref type="next_correspondence" target="files.xml#11151"/>
-					<ref type="prev_correspondence" target="files.xml#11094"/>
-					<ref type="next_correspondence_request" target="files.xml#11151"/>
-					<ref type="prev_correspondence_request" target="files.xml#11094"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11161"/>
+					<ref type="next_chronologically" target="file11116"/>
+					<ref type="prev_chronologically" target="file11114"/>
+					<ref type="next_correspondence" target="file11151"/>
+					<ref type="prev_correspondence" target="file11094"/>
+					<ref type="next_correspondence_request" target="file11151"/>
+					<ref type="prev_correspondence_request" target="file11094"/>
+					<ref type="next_correspondence_reaction" target="file11161"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11151"/>
-					<ref type="prev_same_sender" target="files.xml#11094"/>
-					<ref type="next_same_addressee" target="files.xml#11120"/>
-					<ref type="prev_same_addressee" target="files.xml#11106"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11151"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11094"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11120"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11106"/>
+					<ref type="next_same_sender" target="file11151"/>
+					<ref type="prev_same_sender" target="file11094"/>
+					<ref type="next_same_addressee" target="file11120"/>
+					<ref type="prev_same_addressee" target="file11106"/>
+					<ref type="next_with_sender_as_addressee" target="file11151"/>
+					<ref type="prev_with_sender_as_addressee" target="file11094"/>
+					<ref type="next_with_addressee_as_sender" target="file11120"/>
+					<ref type="prev_with_addressee_as_sender" target="file11106"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,35 +124,35 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">De <persName ref="1647">Sebastiano</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="1647">Sebastian Meyer</persName> (vgl. Anm. 1).</note> videbo.</s>
-					<s xml:lang="la" type="auto">Nam mihi ipsi sic videtur esse inutile ad concordiam, si diutius istic sit.</s>
+					<s n="1" xml:lang="la" type="auto">De <persName ref="person1647">Sebastiano</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="person1647">Sebastian Meyer</persName> (vgl. Anm. 1).</note> videbo.</s>
+					<s n="2" xml:lang="la" type="auto">Nam mihi ipsi sic videtur esse inutile ad concordiam, si diutius istic sit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Qualis tu esse legatus <placeName ref="121">Helvetiorum</placeName> velles in<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> in <hi>gestrichenes</hi> audivi.</note> hoc concordię negotio, audivi<note xml:id="fn3" type="footnote" n="3">Bullinger hatte in seinem Brief an <persName ref="28">Bucer</persName> vom 6. Oktober dessen Schreiben an <persName ref="138">Luther</persName> vom 19. Januar kritisiert und kurz skizziert, wie er selbst argumentiert hätte; s. oben <ref target="file#11096">Nr. 1053</ref>, 96-106.</note>.</s>
-					<s xml:lang="la" type="auto">Sed, ut pace tua dicam, parum attineat hoc ad rem.</s>
-					<s xml:lang="la" type="auto">Res est, uter recte causam sacramenti intelligat.</s>
-					<s xml:lang="la" type="auto">In ea qui fungi recte sequestris<note xml:id="fnb" type="footnote" n="b"><hi>vor</hi> sequestris <hi>ein gestrichenes, unlesbares Wort.</hi></note> officio vult, apud <persName ref="138">Lutherum</persName> concedet non prorsus nos rem intellexisse aut, si intellexerimus, non ita expressisse, ut sentiebamus.</s>
-					<s xml:lang="la" type="auto">Vide, sic apud <persName ref="138">Lutherum</persName> est agendum necessario, et[?] qui se praebere volet medium in hac quidem causa, ut<note xml:id="fnc" type="footnote" n="c"><hi>kann auch als</hi> at <hi>oder</hi> ac <hi>gelesen werden.</hi></note> aliter non potest<note xml:id="fnd" type="footnote" n="d"><hi>vielleicht als</hi> possit <hi>zu lesen.</hi></note>, apud nos sic dicet: <persName ref="138">Lutherus</persName> aliter nunc sentit,<note xml:id="fne" type="footnote" n="e">sensit <hi>am Rande nachgetragen.</hi></note> quam olim sensit aut certe quam scripsit olim.</s>
-					<s xml:lang="la" type="auto">At neque hic ratio sequestrandi alia est.</s>
-					<s xml:lang="la" type="auto">Sed de his alias.</s>
-					<s xml:lang="la" type="auto">Te quaeso, ut in omni negotio Christi Christi<note xml:id="fnf" type="footnote" n="f"><hi>Die ersten drei Buchstaben</hi> des <hi>zweiten</hi> Christi <hi>in Majuskeln.</hi></note> sis, sic ut es, et te regno eius impertias totum.</s>
+					<s n="3" xml:lang="la" type="auto">Qualis tu esse legatus <placeName ref="place121">Helvetiorum</placeName> velles in<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> in <hi>gestrichenes</hi> audivi.</note> hoc concordię negotio, audivi<note xml:id="fn3" type="footnote" n="3">Bullinger hatte in seinem Brief an <persName ref="person28">Bucer</persName> vom 6. Oktober dessen Schreiben an <persName ref="person138">Luther</persName> vom 19. Januar kritisiert und kurz skizziert, wie er selbst argumentiert hätte; s. oben <ref target="file11096">Nr. 1053</ref>, 96-106.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Sed, ut pace tua dicam, parum attineat hoc ad rem.</s>
+					<s n="5" xml:lang="la" type="auto">Res est, uter recte causam sacramenti intelligat.</s>
+					<s n="6" xml:lang="la" type="auto">In ea qui fungi recte sequestris<note xml:id="fnb" type="footnote" n="b"><hi>vor</hi> sequestris <hi>ein gestrichenes, unlesbares Wort.</hi></note> officio vult, apud <persName ref="person138">Lutherum</persName> concedet non prorsus nos rem intellexisse aut, si intellexerimus, non ita expressisse, ut sentiebamus.</s>
+					<s n="7" xml:lang="la" type="auto">Vide, sic apud <persName ref="person138">Lutherum</persName> est agendum necessario, et[?] qui se praebere volet medium in hac quidem causa, ut<note xml:id="fnc" type="footnote" n="c"><hi>kann auch als</hi> at <hi>oder</hi> ac <hi>gelesen werden.</hi></note> aliter non potest<note xml:id="fnd" type="footnote" n="d"><hi>vielleicht als</hi> possit <hi>zu lesen.</hi></note>, apud nos sic dicet: <persName ref="person138">Lutherus</persName> aliter nunc sentit,<note xml:id="fne" type="footnote" n="e">sensit <hi>am Rande nachgetragen.</hi></note> quam olim sensit aut certe quam scripsit olim.</s>
+					<s n="8" xml:lang="la" type="auto">At neque hic ratio sequestrandi alia est.</s>
+					<s n="9" xml:lang="la" type="auto">Sed de his alias.</s>
+					<s n="10" xml:lang="la" type="auto">Te quaeso, ut in omni negotio Christi Christi<note xml:id="fnf" type="footnote" n="f"><hi>Die ersten drei Buchstaben</hi> des <hi>zweiten</hi> Christi <hi>in Majuskeln.</hi></note> sis, sic ut es, et te regno eius impertias totum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="310"/>Hos viros<note xml:id="fn4" type="footnote" n="4">Unbekannt.</note> valde cupio ut omni officio humanitatis excipias.</s>
+					<s n="11" xml:lang="la" type="auto"><pb type="edition" next="310"/>Hos viros<note xml:id="fn4" type="footnote" n="4">Unbekannt.</note> valde cupio ut omni officio humanitatis excipias.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, mi frater dulcissime.</s>
-					<s xml:lang="la" type="auto">Saluta mihi <persName ref="14">Theodorum</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="14">Theodor Bibliander</persName>.</note> et fratres diligenter.</s>
+					<s n="12" xml:lang="la" type="auto">Vale, mi frater dulcissime.</s>
+					<s n="13" xml:lang="la" type="auto">Saluta mihi <persName ref="person14">Theodorum</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="person14">Theodor Bibliander</persName>.</note> et fratres diligenter.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="14" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="81">Gryneus</persName> tuus.</s>
+					<s n="15" xml:lang="la" type="auto"><persName ref="person81">Gryneus</persName> tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinricho Bullingero, fratri charissimo.</s>
+					<s n="16" xml:lang="la" type="auto">Domino Heinricho Bullingero, fratri charissimo.</s>
 				</p>
 			</div>
 		</body>

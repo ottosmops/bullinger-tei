@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=399</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=399</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,38</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,38</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,8 +49,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Versucht <persName ref="154">Myconius</persName> zu besänftigen, der mit seinem Schüler
-								[<persName ref="1421">Balthasar</persName>? <persName ref="1421">Kuchimeister</persName>] aus
+								Versucht <persName ref="person154">Myconius</persName> zu besänftigen, der mit seinem Schüler
+								[Balthasar? <persName ref="person1421">Kuchimeister</persName>] aus
 								Zürich offenbar Schwierigkeiten hatte.
 							</p>
 						</summary>
@@ -58,46 +61,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10434">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1534-06-27" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
+					-->
+					<persName ref="person2234" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10435"/>
-					<ref type="prev_chronologically" target="files.xml#10433"/>
-					<ref type="next_correspondence" target="files.xml#10446"/>
-					<ref type="prev_correspondence" target="files.xml#10430"/>
-					<ref type="next_correspondence_request" target="files.xml#10486"/>
-					<ref type="prev_correspondence_request" target="files.xml#10423"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10446"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10430"/>
-					<ref type="next_same_sender" target="files.xml#10441"/>
-					<ref type="prev_same_sender" target="files.xml#10423"/>
-					<ref type="next_same_addressee" target="files.xml#10446"/>
-					<ref type="prev_same_addressee" target="files.xml#10430"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10441"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10423"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10446"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10430"/>
+					<ref type="next_chronologically" target="file10435"/>
+					<ref type="prev_chronologically" target="file10433"/>
+					<ref type="next_correspondence" target="file10446"/>
+					<ref type="prev_correspondence" target="file10430"/>
+					<ref type="next_correspondence_request" target="file10486"/>
+					<ref type="prev_correspondence_request" target="file10423"/>
+					<ref type="next_correspondence_reaction" target="file10446"/>
+					<ref type="prev_correspondence_reaction" target="file10430"/>
+					<ref type="next_same_sender" target="file10441"/>
+					<ref type="prev_same_sender" target="file10423"/>
+					<ref type="next_same_addressee" target="file10446"/>
+					<ref type="prev_same_addressee" target="file10430"/>
+					<ref type="next_with_sender_as_addressee" target="file10441"/>
+					<ref type="prev_with_sender_as_addressee" target="file10423"/>
+					<ref type="next_with_addressee_as_sender" target="file10446"/>
+					<ref type="prev_with_addressee_as_sender" target="file10430"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -114,29 +122,29 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Audio, vir clarissime, animum tuum nonnihil mutatum erga Wolphgangi<note xml:id="fn1" type="footnote" n="1"><persName ref="1423">Wolfgang Kuchimeister</persName>.</note> filium<note xml:id="fn2" type="footnote" n="2">Wohl <persName ref="1421">Balthasar Kuchimeister</persName>, s. oben S. 134, Anm. 27.</note>.</s>
-					<s xml:lang="la" type="auto">Verum ne an falsum audierim ignoro.</s>
-					<s xml:lang="la" type="auto">Caeterum unice te oro, ut adulescentulum tibi habeas commendatum.</s>
-					<s xml:lang="la" type="auto">Viri enim optimi filius est, puer, quod spero, non omnino malus<note xml:id="fn3" type="footnote" n="3">Die Schwierigkeiten mit seinem Kostgänger beschreibt <persName ref="154">Myconius</persName> zu Beginn von <ref target="file#10446">Nr. 411</ref>.</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Audio, vir clarissime, animum tuum nonnihil mutatum erga Wolphgangi<note xml:id="fn1" type="footnote" n="1"><persName ref="person1423">Wolfgang Kuchimeister</persName>.</note> filium<note xml:id="fn2" type="footnote" n="2">Wohl <persName ref="person1421">Balthasar Kuchimeister</persName>, s. oben S. 134, Anm. 27.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Verum ne an falsum audierim ignoro.</s>
+					<s n="4" xml:lang="la" type="auto">Caeterum unice te oro, ut adulescentulum tibi habeas commendatum.</s>
+					<s n="5" xml:lang="la" type="auto">Viri enim optimi filius est, puer, quod spero, non omnino malus<note xml:id="fn3" type="footnote" n="3">Die Schwierigkeiten mit seinem Kostgänger beschreibt <persName ref="person154">Myconius</persName> zu Beginn von <ref target="file10446">Nr. 411</ref>.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale et haec nostra boni consule.</s>
+					<s n="6" xml:lang="la" type="auto">Vale et haec nostra boni consule.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, iunii 27, 1534.</s>
+					<s n="7" xml:lang="la" type="auto">Tiguri, iunii 27, 1534.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salvum volo <persName ref="117">Carolostadium</persName> nostrum.</s>
+					<s n="8" xml:lang="la" type="auto">Salvum volo <persName ref="person117">Carolostadium</persName> nostrum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hein. tuus.</s>
+					<s n="9" xml:lang="la" type="auto">Hein. tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino <persName ref="154">Osvaldo Myconio</persName>, fratri suo charissimo.</s>
+					<s n="10" xml:lang="la" type="auto">Domino <persName ref="person154">Osvaldo Myconio</persName>, fratri suo charissimo.</s>
 				</p>
 			</div>
 		</body>

@@ -8,25 +8,31 @@
 			<publicationStmt>
 				<publisher>Fehr'sche Buchhandlung</publisher>
 				<pubPlace>St. Gallen</pubPlace>
-				<date when="1908"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2197</idno>
+				<date when="1890-1913"/>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2197</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Vadianische Briefsammlung VI. 1541-1551</title>
+				<title subtype="publication">Vadian BW VI</title>
 				<biblScope type="editor">Arbenz, Emil; Wartmann, Hermann</biblScope>
 				<biblScope type="edition">Vadianische Briefsammlung</biblScope>
+				<biblScope type="volume">6</biblScope>
+				<biblScope type="volumes">7</biblScope>
+				<biblScope type="period">1531-1540</biblScope>
 				<biblScope type="page">437</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,137</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,137</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -36,20 +42,20 @@
 						<summary>
 							<p xml:id="regest1">
 								Was die [am 30. Mai 1545 geschriebene] Fürbitte der helvetischen Städte
-								[<placeName ref="97">Basel</placeName>, <placeName ref="121">Bern</placeName>,
-								<placeName ref="943">Schaffhausen</placeName>, St. Gallen und Zürich zugunsten der Waldenser] beim
+								[<placeName ref="place97">Basel</placeName>, <placeName ref="place121">Bern</placeName>,
+								<placeName ref="place943">Schaffhausen</placeName>, St. Gallen und Zürich zugunsten der Waldenser] beim
 								grausamen König [Franz I.] bewirkt hat, kann Vadian aus dessen Antwort [vom 27. Juni] erfahren. [Franz I.]
 								hat die Fürbitte nicht vertragen, obwohl sie bescheiden formuliert war und der Schreiber
-								[<persName ref="12">Werner Beyel</persName>] sich bei deren
+								[<persName ref="person12">Werner Beyel</persName>] sich bei deren
 								Abfassung viel Mühe gab. Dies belegt die beigelegte Abschrift. Die Mächtigen jedoch bleiben unantastbar.
-								[<persName ref="12">Beyel</persName>] macht sich Vorwürfe, doch gibt es keinen Grund dazu. [Gott],
+								[<persName ref="person12">Beyel</persName>] macht sich Vorwürfe, doch gibt es keinen Grund dazu. [Gott],
 								den diese Leiche [Franz I.] verfolgt, lebt im Himmel! - Wie glücklich sollten sich die Helvetier angesichts
 								ihrer Freiheit schätzen! Könnten sie bloß aus dieser Begebenheit lernen, näher zusammenrücken und sich vor
 								den Fürsten hüten! - Vadian soll für die Heimgesuchten beten. - Aus
-								<placeName ref="1214">Worms</placeName> gibt es nichts Neues. Der bedrohliche [Karl V.] tritt wider
+								<placeName ref="place1214">Worms</placeName> gibt es nichts Neues. Der bedrohliche [Karl V.] tritt wider
 								den Herrn und seinen Gesalbten auf. - Grüße von den Bürgermeistern [Hans Rudolf Lavater und
-								<persName ref="87">Johannes Haab</persName>] und dem Stadtschreiber
-								[<persName ref="12">Beyel</persName>].
+								<persName ref="person87">Johannes Haab</persName>] und dem Stadtschreiber
+								[<persName ref="person12">Beyel</persName>].
 							</p>
 						</summary>
 					</msContents>
@@ -66,46 +72,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12244">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1545-07-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
+					-->
+					<persName ref="person3306" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12245"/>
-					<ref type="prev_chronologically" target="files.xml#12243"/>
-					<ref type="next_correspondence" target="files.xml#12291"/>
-					<ref type="prev_correspondence" target="files.xml#12239"/>
-					<ref type="next_correspondence_request" target="files.xml#12350"/>
-					<ref type="prev_correspondence_request" target="files.xml#12228"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12291"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12239"/>
-					<ref type="next_same_sender" target="files.xml#12246"/>
-					<ref type="prev_same_sender" target="files.xml#12231"/>
-					<ref type="next_same_addressee" target="files.xml#12291"/>
-					<ref type="prev_same_addressee" target="files.xml#12239"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12246"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12231"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12291"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12239"/>
+					<ref type="next_chronologically" target="file12245"/>
+					<ref type="prev_chronologically" target="file12243"/>
+					<ref type="next_correspondence" target="file12291"/>
+					<ref type="prev_correspondence" target="file12239"/>
+					<ref type="next_correspondence_request" target="file12350"/>
+					<ref type="prev_correspondence_request" target="file12228"/>
+					<ref type="next_correspondence_reaction" target="file12291"/>
+					<ref type="prev_correspondence_reaction" target="file12239"/>
+					<ref type="next_same_sender" target="file12246"/>
+					<ref type="prev_same_sender" target="file12231"/>
+					<ref type="next_same_addressee" target="file12291"/>
+					<ref type="prev_same_addressee" target="file12239"/>
+					<ref type="next_with_sender_as_addressee" target="file12246"/>
+					<ref type="prev_with_sender_as_addressee" target="file12231"/>
+					<ref type="next_with_addressee_as_sender" target="file12291"/>
+					<ref type="prev_with_addressee_as_sender" target="file12239"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -122,28 +132,28 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Quid effecerit pia Helvetiorum intercessio apud regem Francię truculentissimum, intelliges ex literis eius ad Christianas urbes.</s>
-					<s xml:lang="la" type="auto">Indigne fert scriptum, quo tamen nihil est modestius.</s>
-					<s xml:lang="la" type="auto">Usus est scriba noster artificio et fide optima, quod ipse testaberis, ubi legeris apographum.</s>
-					<s xml:lang="la" type="auto">Ceterum cum tanguntur montes, fumigant.</s>
-					<s xml:lang="la" type="auto">Dolet optimo viro scriba(e) regis intemperies.</s>
-					<s xml:lang="la" type="auto">Metuis, ne quid ipse neglexerit; sed merito mente est tranquilla, cum diligenter, prudenter et fideliter hic egerit.</s>
-					<s xml:lang="la" type="auto">Truculentus est alioqui regis animus ac mitigari nescit.</s>
-					<s xml:lang="la" type="auto">Sed vivit in caelis, quem putridus ille et cadaverosus rex persequitur.</s>
-					<s xml:lang="la" type="auto">O felicem Helvetiam, si suam felicitatem et libertatem tanti aestimaret, quanti est!</s>
-					<s xml:lang="la" type="auto">Unicum hoc regis exemplum doceret nos, ut arctius coniungeremus nos deo et caveremus nobis tanquam a publica peste a principibus.</s>
-					<s xml:lang="la" type="auto">Commendo tuis tuorumque precibus nihilominus causam afflictorum.</s>
-					<s xml:lang="la" type="auto">Dominus Iesus consoletur illos et servet in regnum suum aeternum.</s>
-					<s xml:lang="la" type="auto">A <placeName ref="1214">Wormatia</placeName> nihil habemus memoria dignum.</s>
-					<s xml:lang="la" type="auto">Spirat et Caesar minas et caedes contra deum et Christum eius.</s>
-					<s xml:lang="la" type="auto">Tu vale in Christo et rescribe.</s>
-					<s xml:lang="la" type="auto">Salutant te consul uterque et scriba quoque urbis.</s>
-					<s xml:lang="la" type="auto">Tiguri, 15. Iulii, anno 1545.</s>
-					<s xml:lang="la" type="auto">- H(einricus) Bullingerus tuus.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Quid effecerit pia Helvetiorum intercessio apud regem Francię truculentissimum, intelliges ex literis eius ad Christianas urbes.</s>
+					<s n="3" xml:lang="la" type="auto">Indigne fert scriptum, quo tamen nihil est modestius.</s>
+					<s n="4" xml:lang="la" type="auto">Usus est scriba noster artificio et fide optima, quod ipse testaberis, ubi legeris apographum.</s>
+					<s n="5" xml:lang="la" type="auto">Ceterum cum tanguntur montes, fumigant.</s>
+					<s n="6" xml:lang="la" type="auto">Dolet optimo viro scriba(e) regis intemperies.</s>
+					<s n="7" xml:lang="la" type="auto">Metuis, ne quid ipse neglexerit; sed merito mente est tranquilla, cum diligenter, prudenter et fideliter hic egerit.</s>
+					<s n="8" xml:lang="la" type="auto">Truculentus est alioqui regis animus ac mitigari nescit.</s>
+					<s n="9" xml:lang="la" type="auto">Sed vivit in caelis, quem putridus ille et cadaverosus rex persequitur.</s>
+					<s n="10" xml:lang="la" type="auto">O felicem Helvetiam, si suam felicitatem et libertatem tanti aestimaret, quanti est!</s>
+					<s n="11" xml:lang="la" type="auto">Unicum hoc regis exemplum doceret nos, ut arctius coniungeremus nos deo et caveremus nobis tanquam a publica peste a principibus.</s>
+					<s n="12" xml:lang="la" type="auto">Commendo tuis tuorumque precibus nihilominus causam afflictorum.</s>
+					<s n="13" xml:lang="la" type="auto">Dominus Iesus consoletur illos et servet in regnum suum aeternum.</s>
+					<s n="14" xml:lang="la" type="auto">A <placeName ref="place1214">Wormatia</placeName> nihil habemus memoria dignum.</s>
+					<s n="15" xml:lang="la" type="auto">Spirat et Caesar minas et caedes contra deum et Christum eius.</s>
+					<s n="16" xml:lang="la" type="auto">Tu vale in Christo et rescribe.</s>
+					<s n="17" xml:lang="la" type="auto">Salutant te consul uterque et scriba quoque urbis.</s>
+					<s n="18" xml:lang="la" type="auto">Tiguri, 15. Iulii, anno 1545.</s>
+					<s n="19" xml:lang="la" type="auto">- H(einricus) Bullingerus tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro D. D. Ioachimo Vadiano, consuli Sangallensi dignissimo, domino suo semper colendo.</s>
+					<s n="20" xml:lang="la" type="auto">Clarissimo viro D. D. Ioachimo Vadiano, consuli Sangallensi dignissimo, domino suo semper colendo.</s>
 				</p>
 			</div>
 		</body>

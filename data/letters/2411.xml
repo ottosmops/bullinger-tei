@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Hinweis" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms Car XV 20.89-97</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Titel von Bullingers Hand</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms Car XV 20.89-97</idno>
+						<idno subtype="Hinweis">Titel von Bullingers Hand</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents/>
@@ -32,54 +35,42 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2411">
 				<correspAction type="sent">
-					<persName ref="person#3412" cert="high">
+					<!--
+					<persName ref="person3412" cert="high">
 						<forename cert="high">Petrus Martyr</forename>
 						<surname cert="high">Vermigli</surname>
-						<addName type="main">Vermigli (Vermilius), Peter Martyr (Pietro Martire)</addName>
+						<persName type="main" ref="person8111>Vermigli (Vermilius), Peter Martyr (Pietro Martire)</addName>
 						<graphic type="portrait" url="portraits/3410_Vermigli_Pietro.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Peter_Martyr_Vermigli"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118768123"/>
 					</persName>
-					<place source="#492" cert="low">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person3412" cert="high"/>
+					<place source="place492" cert="low"/>
 					<date when="1554-09-30" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<orgName type="institution">
-						<name type="singular" ref="org#7" cert="high">Fremdengemeinde</name>
-						<place source="#157" cert="high">
-							<settlement>Frankfurt am Main</settlement>
-							<district>Hessen</district>
-							<country>Deutschland</country>
-							<geo>50.110922 8.682126</geo>
-						</place>
-					</orgName>
+					<!--
 					<note type="Adresse">Fremdengemeinde in Frankfurt</note>
-					<place source="#157" cert="high">
-						<settlement>Frankfurt am Main</settlement>
-						<district>Hessen</district>
-						<country>Deutschland</country>
-						<geo>50.110922 8.682126</geo>
-					</place>
+					-->
+					<orgName ref="org13" role="Fremdengemeinde"/>"
+					<place source="place157" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2414"/>
-					<ref type="prev_chronologically" target="files.xml#2410"/>
+					<ref type="next_chronologically" target="file2414"/>
+					<ref type="prev_chronologically" target="file2410"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#2495"/>
-					<ref type="prev_same_sender" target="files.xml#2324"/>
+					<ref type="next_same_sender" target="file2495"/>
+					<ref type="prev_same_sender" target="file2324"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2495"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2324"/>
+					<ref type="next_with_sender_as_addressee" target="file2495"/>
+					<ref type="prev_with_sender_as_addressee" target="file2324"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>

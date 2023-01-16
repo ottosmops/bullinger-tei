@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1974"/>
-				<idno type="ISBN">ISBN 3-290-11334-5</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=33</idno>
+				<idno subtype="ISBN">ISBN 3-290-11334-5</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=33</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 1</title>
+				<title subtype="publication">HBBW I</title>
 				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">1</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 339,210 1/2 S. 4°</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 339,210 1/2 S. 4°</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc><p>sehr gut erhalten</p></objectDesc>
@@ -49,8 +52,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Bittet um Unterstützung für einen alten Mann und dessen auch <persName ref="265">Zwingli</persName>
-								bekannten kranken Sohn <persName ref="974">Johannes Gingi</persName>.
+								Bittet um Unterstützung für einen alten Mann und dessen auch <persName ref="person265">Zwingli</persName>
+								bekannten kranken Sohn <persName ref="person974">Johannes Gingi</persName>.
 							</p>
 						</summary>
 					</msContents>
@@ -67,44 +70,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10060">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#62" cert="low">
-						<settlement>Bremgarten</settlement>
-						<district>Aargau</district>
-						<country>Schweiz</country>
-						<geo>47.3539569 8.3376446</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place62" cert="low"/>
 					<date when="1529-11-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#4091" cert="high">
+					<!--
+					<persName ref="person4091" cert="high">
 						<forename cert="high">Huldrych</forename>
 						<surname cert="high">Zwingli</surname>
 						<graphic type="portrait" url="portraits/4091_Zwingli.jpeg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Huldrych_Zwingli"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118637533"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11086592"/>
 					</persName>
+					-->
+					<persName ref="person4091" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10059"/>
-					<ref type="prev_chronologically" target="files.xml#10058"/>
-					<ref type="next_correspondence" target="files.xml#10061"/>
-					<ref type="prev_correspondence" target="files.xml#10048"/>
+					<ref type="next_chronologically" target="file10059"/>
+					<ref type="prev_chronologically" target="file10058"/>
+					<ref type="next_correspondence" target="file10061"/>
+					<ref type="prev_correspondence" target="file10048"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#10048"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10061"/>
+					<ref type="prev_correspondence_request" target="file10048"/>
+					<ref type="next_correspondence_reaction" target="file10061"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10059"/>
-					<ref type="prev_same_sender" target="files.xml#10057"/>
-					<ref type="next_same_addressee" target="files.xml#10061"/>
+					<ref type="next_same_sender" target="file10059"/>
+					<ref type="prev_same_sender" target="file10057"/>
+					<ref type="next_same_addressee" target="file10061"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10059"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10057"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10061"/>
+					<ref type="next_with_sender_as_addressee" target="file10059"/>
+					<ref type="prev_with_sender_as_addressee" target="file10057"/>
+					<ref type="next_with_addressee_as_sender" target="file10061"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -120,24 +128,24 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Fovet hic miserandus senex filium domi (quem nosti <persName ref="974">Ioannem Gingium</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="974">Johannes Gingi</persName> unterschrieb im Januar 1528 als «kilchherr zu Schöftlen» (<placeName ref="969">Schöftland</placeName>, Kt. Aargau) die Thesen der <placeName ref="121">Berner</placeName> Disputation (ABernerRef 1465, S. 596). Die Familie Gingi war im unteren Reußtal ansässig (Z X 339, Anm. 2).</note>) paralisi deiectum, cum interim ab hoc exigatur docendi offitium.</s>
-					<s xml:lang="la" type="auto">Ceterum cum non ignoret, quanti referat, quem suis praefitiat, nemini arduum hoc negotium citius concredidit, atque tibi, <persName ref="265">Zuingli</persName> doctissime, quippe qui pro ista tua vigilanti ecclesiarum cura et possis et velis adminiculari.</s>
-					<s xml:lang="la" type="auto">Sunt enim illic apud vos plurimi ad hasce res eidonei.</s>
-					<s xml:lang="la" type="auto">Obsecramus itaque, ut te nobis, imprimis vero ovibus Christi hac in re impendas, denique boni consulas temeritatem nostram, qua severiora tua audemus interturbare studia<note xml:id="fn4" type="footnote" n="4">Vom weiteren Verlauf dieser Angelegenheit ist nichts bekannt.</note>.</s>
-					<s xml:lang="la" type="auto">Dominus Jesus te nobis diu servet incolumem.</s>
+					<s n="2" xml:lang="la" type="auto">Fovet hic miserandus senex filium domi (quem nosti <persName ref="person974">Ioannem Gingium</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="person974">Johannes Gingi</persName> unterschrieb im Januar 1528 als «kilchherr zu Schöftlen» (<placeName ref="place969">Schöftland</placeName>, Kt. Aargau) die Thesen der <placeName ref="place121">Berner</placeName> Disputation (ABernerRef 1465, S. 596). Die Familie Gingi war im unteren Reußtal ansässig (Z X 339, Anm. 2).</note>) paralisi deiectum, cum interim ab hoc exigatur docendi offitium.</s>
+					<s n="3" xml:lang="la" type="auto">Ceterum cum non ignoret, quanti referat, quem suis praefitiat, nemini arduum hoc negotium citius concredidit, atque tibi, <persName ref="person265">Zuingli</persName> doctissime, quippe qui pro ista tua vigilanti ecclesiarum cura et possis et velis adminiculari.</s>
+					<s n="4" xml:lang="la" type="auto">Sunt enim illic apud vos plurimi ad hasce res eidonei.</s>
+					<s n="5" xml:lang="la" type="auto">Obsecramus itaque, ut te nobis, imprimis vero ovibus Christi hac in re impendas, denique boni consulas temeritatem nostram, qua severiora tua audemus interturbare studia<note xml:id="fn4" type="footnote" n="4">Vom weiteren Verlauf dieser Angelegenheit ist nichts bekannt.</note>.</s>
+					<s n="6" xml:lang="la" type="auto">Dominus Jesus te nobis diu servet incolumem.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">24. novembris 1529.</s>
+					<s n="7" xml:lang="de" type="auto">24. novembris 1529.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus H. Bullingerus</s>
+					<s n="8" xml:lang="la" type="auto">Tuus H. Bullingerus</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto"><persName ref="265">Huldrycho Zuinglio</persName>, fratri charissimo.</s>
+					<s n="9" xml:lang="la" type="auto"><persName ref="person265">Huldrycho Zuinglio</persName>, fratri charissimo.</s>
 				</p>
 			</div>
 		</body>

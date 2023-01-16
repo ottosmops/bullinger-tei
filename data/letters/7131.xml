@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 371,1181 ff.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 371,1181 ff.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -28,31 +31,16 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7131">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#51" cert="high">Predikanten</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role0" role="Predikanten"/>
+					<place source="place587" cert="high"/>
 					<date when="1567-06-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#14" cert="low">Bürgermeister</name>
-					</roleName>
+					<personGrp ref="role28" role="Bürgermeister"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7132"/>
-					<ref type="prev_chronologically" target="files.xml#7130"/>
+					<ref type="next_chronologically" target="file7132"/>
+					<ref type="prev_chronologically" target="file7130"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>

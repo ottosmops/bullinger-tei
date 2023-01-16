@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4760/331</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 346,378</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 346,378</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -54,13 +57,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 90,175</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 90,175</idno>
 					</msIdentifier>
 					<history><origin><p><date>18. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -70,46 +76,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3360">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1557-10-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3188" cert="low">
+					<!--
+					<persName ref="person3188" cert="low">
 						<forename cert="low">Primus</forename>
 						<surname cert="low">Truber</surname>
-						<addName type="main">Truber (Trubar), Primus (Primoz)</addName>
+						<persName type="main" ref="person8452>Truber (Trubar), Primus (Primoz)</addName>
 						<graphic type="portrait" url="portraits/3191_Trubar_Primus.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Primo%C5%BE_Trubar"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118761005"/>
 					</persName>
+					-->
+					<persName ref="person3188" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3361"/>
-					<ref type="prev_chronologically" target="files.xml#3359"/>
-					<ref type="next_correspondence" target="files.xml#3401"/>
-					<ref type="prev_correspondence" target="files.xml#3238"/>
-					<ref type="next_correspondence_request" target="files.xml#3552"/>
-					<ref type="prev_correspondence_request" target="files.xml#3006"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3401"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3238"/>
-					<ref type="next_same_sender" target="files.xml#3372"/>
-					<ref type="prev_same_sender" target="files.xml#3357"/>
-					<ref type="next_same_addressee" target="files.xml#3401"/>
-					<ref type="prev_same_addressee" target="files.xml#3238"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3372"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3357"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3401"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3238"/>
+					<ref type="next_chronologically" target="file3361"/>
+					<ref type="prev_chronologically" target="file3359"/>
+					<ref type="next_correspondence" target="file3401"/>
+					<ref type="prev_correspondence" target="file3238"/>
+					<ref type="next_correspondence_request" target="file3552"/>
+					<ref type="prev_correspondence_request" target="file3006"/>
+					<ref type="next_correspondence_reaction" target="file3401"/>
+					<ref type="prev_correspondence_reaction" target="file3238"/>
+					<ref type="next_same_sender" target="file3372"/>
+					<ref type="prev_same_sender" target="file3357"/>
+					<ref type="next_same_addressee" target="file3401"/>
+					<ref type="prev_same_addressee" target="file3238"/>
+					<ref type="next_with_sender_as_addressee" target="file3372"/>
+					<ref type="prev_with_sender_as_addressee" target="file3357"/>
+					<ref type="next_with_addressee_as_sender" target="file3401"/>
+					<ref type="prev_with_addressee_as_sender" target="file3238"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -118,72 +128,75 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="3360/Kopie/00 E_II_346__fol__378_r_.tif" n="1"/>
+		<graphic url="3360/Kopie/01 E_II_346__fol__378_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. P.</s>
-					<s xml:lang="la" type="auto">Accepi literas tuas, Trubere charissime, una cum foliis versionis tuae.</s>
+					<s n="1" xml:lang="la" type="auto">S. P.</s>
+					<s n="2" xml:lang="la" type="auto">Accepi literas tuas, Trubere charissime, una cum foliis versionis tuae.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Probo admodum operam tuam et hortor modis omnibus, ut pergas in re sanctissima pariter et utilissima.</s>
-					<s xml:lang="la" type="auto">Quid enim fructuosius agere posses, quam salutaria servatoris nostri verba et facta, denique sanctissimorum apostolorum eius doctrinam syncerissimam barbaris gentibus praeponere legendam.</s>
-					<s xml:lang="la" type="auto">Dubito, numquid hodie possis maius.</s>
+					<s n="3" xml:lang="la" type="auto">Probo admodum operam tuam et hortor modis omnibus, ut pergas in re sanctissima pariter et utilissima.</s>
+					<s n="4" xml:lang="la" type="auto">Quid enim fructuosius agere posses, quam salutaria servatoris nostri verba et facta, denique sanctissimorum apostolorum eius doctrinam syncerissimam barbaris gentibus praeponere legendam.</s>
+					<s n="5" xml:lang="la" type="auto">Dubito, numquid hodie possis maius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Oro itaque deum, ut te confirmet in instituto sanctissimo viresque concedat (ad) perficienda ea, quae cepisti fidelissime.</s>
+					<s n="6" xml:lang="la" type="auto">Oro itaque deum, ut te confirmet in instituto sanctissimo viresque concedat (ad) perficienda ea, quae cepisti fidelissime.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">D. d. Iacobi Andreae modestiam et animum pacis studiosum probamus et laudamus, libellum autem eius non ita probamus.</s>
-					<s xml:lang="la" type="auto">Non conatur ille partes inter sese dissidentes (quod tamen multos opinari audio) componere, sed simpliciores erudire, quid de coena et doctrina sacramentaria in hisce conversationibus sentiant.</s>
-					<s xml:lang="la" type="auto">Pauics autem demptis totam Lutheri doctrinam redegit in compendium et lectoribus instillat.</s>
-					<s xml:lang="la" type="auto">Quae ille de coelo disputat, minime probare possum, sicuti nec illud, quod contendit revera corpore Christi et precioso eius sanguine impios quoque communicare.</s>
-					<s xml:lang="la" type="auto">Verum non institui nunc libellum illum censere.</s>
+					<s n="7" xml:lang="la" type="auto">D. d. Iacobi Andreae modestiam et animum pacis studiosum probamus et laudamus, libellum autem eius non ita probamus.</s>
+					<s n="8" xml:lang="la" type="auto">Non conatur ille partes inter sese dissidentes (quod tamen multos opinari audio) componere, sed simpliciores erudire, quid de coena et doctrina sacramentaria in hisce conversationibus sentiant.</s>
+					<s n="9" xml:lang="la" type="auto">Pauics autem demptis totam Lutheri doctrinam redegit in compendium et lectoribus instillat.</s>
+					<s n="10" xml:lang="la" type="auto">Quae ille de coelo disputat, minime probare possum, sicuti nec illud, quod contendit revera corpore Christi et precioso eius sanguine impios quoque communicare.</s>
+					<s n="11" xml:lang="la" type="auto">Verum non institui nunc libellum illum censere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cuperem bonum illum virum mihi esse notiorem, quam est.</s>
-					<s xml:lang="la" type="auto">Neque nobis unquam receptum fuit eos, qui ex Lutheranis in hoc capite diversum a nobis sentiunt, persequi, odiose convitiisque adoperire, uti nonnullus ex istis mos est non admodum laudabilis.</s>
-					<s xml:lang="la" type="auto">Posset fortassis aliqua per temporis opportunitatem tolerabilis inveniri concordia, si modo ex animis eximeretur acerbitas et... Videmus non raro dissensisse alios ex beatis patribus et aliis, sed ideo non omnem dissuisse amicitiam.</s>
-					<s xml:lang="la" type="auto">Hodie vero tanta quorundam animos obsedit rabies et ita in verba magistrorum iurati veluti vinciuntur, ut, si aliquem a se vel magistro suo dissidentem vel modice intelligant, tantum non haereseos inclament et arma furibundi corripiant.</s>
-					<s xml:lang="la" type="auto">Per nos nunquam stetit, quominus coiret concordia; sed cum scirent multi nos in omnibus non posse nec velle (nisi scripturis edocti) ipsorum sententiis accedere.</s>
+					<s n="12" xml:lang="la" type="auto">Cuperem bonum illum virum mihi esse notiorem, quam est.</s>
+					<s n="13" xml:lang="la" type="auto">Neque nobis unquam receptum fuit eos, qui ex Lutheranis in hoc capite diversum a nobis sentiunt, persequi, odiose convitiisque adoperire, uti nonnullus ex istis mos est non admodum laudabilis.</s>
+					<s n="14" xml:lang="la" type="auto">Posset fortassis aliqua per temporis opportunitatem tolerabilis inveniri concordia, si modo ex animis eximeretur acerbitas et... Videmus non raro dissensisse alios ex beatis patribus et aliis, sed ideo non omnem dissuisse amicitiam.</s>
+					<s n="15" xml:lang="la" type="auto">Hodie vero tanta quorundam animos obsedit rabies et ita in verba magistrorum iurati veluti vinciuntur, ut, si aliquem a se vel magistro suo dissidentem vel modice intelligant, tantum non haereseos inclament et arma furibundi corripiant.</s>
+					<s n="16" xml:lang="la" type="auto">Per nos nunquam stetit, quominus coiret concordia; sed cum scirent multi nos in omnibus non posse nec velle (nisi scripturis edocti) ipsorum sententiis accedere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Indigne visi sumus, qui vel audiamur, quorum libri legantur et cum quibus ineatur vel aliqua societas.</s>
-					<s xml:lang="la" type="auto">Per istorum intemperiem et clamores stetit hactenus, quod incendium hoc infoelix non modo extingui non quivit, sed in diem potius incrementa magis magisque accepit.</s>
-					<s xml:lang="la" type="auto">Scripsimus nos consensionem ante annos aliquot eamque vulgavimus, non ut quemquam ad pugnam provocaremus, sed ut placaremus potius multos, qui existimarunt nos inania statuere et tueri symbola.</s>
-					<s xml:lang="la" type="auto">Ac dum spe bona pleni sumus fore, ut, qui nobis hactenus fuerunt inquiores[iniquiores?], placidi magis esse nobis incipiant, irruit ex improviso Westphalus ille nulla adhoc necessitate, sed mera libidine impulsus et edit farraginem dissidentium.</s>
-					<s xml:lang="la" type="auto">Qui qualis liber sit, ipse loquatur potius malo quam ipse multis repetam.</s>
+					<s n="17" xml:lang="la" type="auto">Indigne visi sumus, qui vel audiamur, quorum libri legantur et cum quibus ineatur vel aliqua societas.</s>
+					<s n="18" xml:lang="la" type="auto">Per istorum intemperiem et clamores stetit hactenus, quod incendium hoc infoelix non modo extingui non quivit, sed in diem potius incrementa magis magisque accepit.</s>
+					<s n="19" xml:lang="la" type="auto">Scripsimus nos consensionem ante annos aliquot eamque vulgavimus, non ut quemquam ad pugnam provocaremus, sed ut placaremus potius multos, qui existimarunt nos inania statuere et tueri symbola.</s>
+					<s n="20" xml:lang="la" type="auto">Ac dum spe bona pleni sumus fore, ut, qui nobis hactenus fuerunt inquiores[iniquiores?], placidi magis esse nobis incipiant, irruit ex improviso Westphalus ille nulla adhoc necessitate, sed mera libidine impulsus et edit farraginem dissidentium.</s>
+					<s n="21" xml:lang="la" type="auto">Qui qualis liber sit, ipse loquatur potius malo quam ipse multis repetam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hic vero, ut aliorum animos placaret, Calvinus defensionem consensionis nostrae conscripsit.</s>
-					<s xml:lang="la" type="auto">Cui mox Westphalus hostile scriptum opposuit totumque propemodum Balthici maris tractum armavit et ad pugnae consortium attraxit.</s>
+					<s n="22" xml:lang="la" type="auto">Hic vero, ut aliorum animos placaret, Calvinus defensionem consensionis nostrae conscripsit.</s>
+					<s n="23" xml:lang="la" type="auto">Cui mox Westphalus hostile scriptum opposuit totumque propemodum Balthici maris tractum armavit et ad pugnae consortium attraxit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Volant itaque instar saxorum confessiones, imo condemnationes, execrationes et anathemata.</s>
-					<s xml:lang="la" type="auto">damnantur enim ecclesiae nostrae, damnatur fides et doctrina nostra, et quicquid foedum est et intollerandum, plenius in nos vi... effuditur.</s>
-					<s xml:lang="la" type="auto">Appellamur enim sacramentarii, sectarii, seditiosi, schismatici, haeretici, sacrilegi, impii et quid non?</s>
-					<s xml:lang="la" type="auto">Haec ita habere, declarant libri, probat rerum series confirmatque historiae veritas.</s>
-					<s xml:lang="la" type="auto">Cur igitur nunc quidem in nos velut authores retorquent sacramentarii certaminis reparationem?</s>
-					<s xml:lang="la" type="auto">Verum de his plura scripsi, quam ab initio me scripturum putavi.</s>
-					<s xml:lang="la" type="auto">De Grybald negocio quid sentirem, mi Prime?</s>
-					<s xml:lang="la" type="auto">Ego symbolo apostolico, Niceno et Athanasii adhereo et contrariam doctrinam ex corde abhorreo.</s>
-					<s xml:lang="la" type="auto">Egi aliquando cum isto homine de hac ipsa causa, qui et in manibus meis confessionem reliquit non omnino repudiandam.</s>
+					<s n="24" xml:lang="la" type="auto">Volant itaque instar saxorum confessiones, imo condemnationes, execrationes et anathemata.</s>
+					<s n="25" xml:lang="la" type="auto">damnantur enim ecclesiae nostrae, damnatur fides et doctrina nostra, et quicquid foedum est et intollerandum, plenius in nos vi... effuditur.</s>
+					<s n="26" xml:lang="la" type="auto">Appellamur enim sacramentarii, sectarii, seditiosi, schismatici, haeretici, sacrilegi, impii et quid non?</s>
+					<s n="27" xml:lang="la" type="auto">Haec ita habere, declarant libri, probat rerum series confirmatque historiae veritas.</s>
+					<s n="28" xml:lang="la" type="auto">Cur igitur nunc quidem in nos velut authores retorquent sacramentarii certaminis reparationem?</s>
+					<s n="29" xml:lang="la" type="auto">Verum de his plura scripsi, quam ab initio me scripturum putavi.</s>
+					<s n="30" xml:lang="la" type="auto">De Grybald negocio quid sentirem, mi Prime?</s>
+					<s n="31" xml:lang="la" type="auto">Ego symbolo apostolico, Niceno et Athanasii adhereo et contrariam doctrinam ex corde abhorreo.</s>
+					<s n="32" xml:lang="la" type="auto">Egi aliquando cum isto homine de hac ipsa causa, qui et in manibus meis confessionem reliquit non omnino repudiandam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sed video istum lubrica fide usum esse.</s>
-					<s xml:lang="la" type="auto">Nuper Bernae coniectus in vincula palinodiam se cantaturum recepit; vix incolumi vita evasit.</s>
-					<s xml:lang="la" type="auto">Siquid habueris rerum Turcicarum et Austriacarum, gratum feceris, si communicaveris.</s>
-					<s xml:lang="la" type="auto">Pro communicatis immortales ago gratias et literas mihi traditas remitto.</s>
+					<s n="33" xml:lang="la" type="auto">Sed video istum lubrica fide usum esse.</s>
+					<s n="34" xml:lang="la" type="auto">Nuper Bernae coniectus in vincula palinodiam se cantaturum recepit; vix incolumi vita evasit.</s>
+					<s n="35" xml:lang="la" type="auto">Siquid habueris rerum Turcicarum et Austriacarum, gratum feceris, si communicaveris.</s>
+					<s n="36" xml:lang="la" type="auto">Pro communicatis immortales ago gratias et literas mihi traditas remitto.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="37" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 10. octobris anno 1557.</s>
+					<s n="38" xml:lang="la" type="auto">Tiguri 10. octobris anno 1557.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus tuus.</s>
+					<s n="39" xml:lang="la" type="auto">Bullingerus tuus.</s>
 				</p>
 			</div>
 		</body>

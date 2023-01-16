@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6010/98</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 375,689</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 375,689</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,13 +47,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 104,124</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 104,124</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -59,44 +65,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5327">
 				<correspAction type="sent">
-					<persName ref="person#2119" cert="high">
+					<!--
+					<persName ref="person2119" cert="high">
 						<forename cert="high">Laurentius</forename>
 						<surname cert="high">Agricola</surname>
-						<addName type="main">Meyer (Agricola), Lorenz</addName>
+						<persName type="main" ref="person8130>Meyer (Agricola), Lorenz</addName>
 					</persName>
-					<place source="#362" cert="high">
-						<settlement>Oberglatt</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.47576 8.51896</geo>
-					</place>
+					-->
+					<persName ref="person2119" cert="high"/>
+					<place source="place362" cert="high"/>
 					<date when="1562-05-18" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5328"/>
-					<ref type="prev_chronologically" target="files.xml#5326"/>
+					<ref type="next_chronologically" target="file5328"/>
+					<ref type="prev_chronologically" target="file5326"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#2924"/>
+					<ref type="prev_correspondence" target="file2924"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#2924"/>
+					<ref type="prev_correspondence_request" target="file2924"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11081"/>
+					<ref type="prev_correspondence_reaction" target="file11081"/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#2924"/>
-					<ref type="next_same_addressee" target="files.xml#5334"/>
-					<ref type="prev_same_addressee" target="files.xml#5326"/>
+					<ref type="prev_same_sender" target="file2924"/>
+					<ref type="next_same_addressee" target="file5334"/>
+					<ref type="prev_same_addressee" target="file5326"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2924"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5334"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5326"/>
+					<ref type="prev_with_sender_as_addressee" target="file2924"/>
+					<ref type="next_with_addressee_as_sender" target="file5334"/>
+					<ref type="prev_with_addressee_as_sender" target="file5326"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -106,34 +115,37 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="5327/Autograph/00 E_II_375__fol__689_r_.tif" n="1"/>
+		<graphic url="5327/Autograph/01 E_II_375__fol__689_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Obsecro te, clarissime et charissime d. compater, ut mei sis memor in declarandis ministris verbi Christi.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Obsecro te, clarissime et charissime d. compater, ut mei sis memor in declarandis ministris verbi Christi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Meam nosti miseriam inprimis in re frumentaria cum tot pueris, et cum nihil nunc spei relictum sit cum Thälliken, optarem proficisci in Steinmur et optimo Hilero succesorem agere in ecclesiastico officio.</s>
-					<s xml:lang="la" type="auto">Esset locus familię meę plane oportunus ad alendam eam.</s>
+					<s n="3" xml:lang="la" type="auto">Meam nosti miseriam inprimis in re frumentaria cum tot pueris, et cum nihil nunc spei relictum sit cum Thälliken, optarem proficisci in Steinmur et optimo Hilero succesorem agere in ecclesiastico officio.</s>
+					<s n="4" xml:lang="la" type="auto">Esset locus familię meę plane oportunus ad alendam eam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">In locum meum potest alterius boni fratris fieri electio, cum non tam numerosa esset soboles etc.</s>
-					<s xml:lang="la" type="auto">Da mihi in electione nomen et vocem tuam sanctam; nam magnę energię est, et vivet anima mea et in te et domino meo Christo.</s>
-					<s xml:lang="la" type="auto">Is curam tui habeat, precor ex animo.</s>
+					<s n="5" xml:lang="la" type="auto">In locum meum potest alterius boni fratris fieri electio, cum non tam numerosa esset soboles etc.</s>
+					<s n="6" xml:lang="la" type="auto">Da mihi in electione nomen et vocem tuam sanctam; nam magnę energię est, et vivet anima mea et in te et domino meo Christo.</s>
+					<s n="7" xml:lang="la" type="auto">Is curam tui habeat, precor ex animo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale foeliciter.</s>
+					<s n="8" xml:lang="la" type="auto">Vale foeliciter.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ex Oberglatt 18. maii anno 62.</s>
+					<s n="9" xml:lang="de" type="auto">Ex Oberglatt 18. maii anno 62.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Laurentius semper tuus.</s>
+					<s n="10" xml:lang="la" type="auto">Laurentius semper tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Prraestantissimo dei ministro d. Heinri[co] Bullingero, ecclesię TIgurinę pastori circumspectissimo, d. et compatri suo plurimum observando etc.</s>
+					<s n="11" xml:lang="la" type="auto">Prraestantissimo dei ministro d. Heinri[co] Bullingero, ecclesię TIgurinę pastori circumspectissimo, d. et compatri suo plurimum observando etc.</s>
 				</p>
 			</div>
 		</body>

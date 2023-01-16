@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2999</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Rückseite" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 37,186</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 37,186</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,51 +50,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1771">
 				<correspAction type="sent">
-					<persName ref="person#527" cert="low">
+					<!--
+					<persName ref="person527" cert="low">
 						<forename cert="low">Johannes</forename>
 						<surname cert="low">Bullinger</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/1057658944"/>
 					</persName>
-					<place source="#375" cert="low">
-						<settlement>Ottenbach</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.28228 8.40432</geo>
-					</place>
-					<date min="1546-12-03" max="1552-12-03" cert="low">3. Dezember 1546/52<note type="Datum">falls 1546: siehe Hinweiskarte V</note></date>
+					-->
+					<persName ref="person527" cert="low"/>
+					<place source="place375" cert="low"/>
+					<date notBefore="1546-12-03" notAfter="1552-12-03" cert="low">3. Dezember 1546/52<note type="Datum">falls 1546: siehe Hinweiskarte V</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12747"/>
-					<ref type="prev_chronologically" target="files.xml#12746"/>
-					<ref type="next_correspondence" target="files.xml#12772"/>
-					<ref type="prev_correspondence" target="files.xml#10896"/>
-					<ref type="next_correspondence_request" target="files.xml#12772"/>
-					<ref type="prev_correspondence_request" target="files.xml#10896"/>
-					<ref type="next_correspondence_reaction" target="files.xml#8009"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10035"/>
-					<ref type="next_same_sender" target="files.xml#12772"/>
-					<ref type="prev_same_sender" target="files.xml#10896"/>
-					<ref type="next_same_addressee" target="files.xml#12755"/>
-					<ref type="prev_same_addressee" target="files.xml#12744"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12772"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10896"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12755"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12744"/>
-					<ref type="child" target="files.xml#1772"/>
-					<ref type="parent" target="files.xml#1772"/>
+					<ref type="next_chronologically" target="file12747"/>
+					<ref type="prev_chronologically" target="file12746"/>
+					<ref type="next_correspondence" target="file12772"/>
+					<ref type="prev_correspondence" target="file10896"/>
+					<ref type="next_correspondence_request" target="file12772"/>
+					<ref type="prev_correspondence_request" target="file10896"/>
+					<ref type="next_correspondence_reaction" target="file8009"/>
+					<ref type="prev_correspondence_reaction" target="file10035"/>
+					<ref type="next_same_sender" target="file12772"/>
+					<ref type="prev_same_sender" target="file10896"/>
+					<ref type="next_same_addressee" target="file12755"/>
+					<ref type="prev_same_addressee" target="file12744"/>
+					<ref type="next_with_sender_as_addressee" target="file12772"/>
+					<ref type="prev_with_sender_as_addressee" target="file10896"/>
+					<ref type="next_with_addressee_as_sender" target="file12755"/>
+					<ref type="prev_with_addressee_as_sender" target="file12744"/>
+					<ref type="child" target="file1772"/>
+					<ref type="parent" target="file1772"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -110,38 +112,38 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Salus a Christo etc.</s>
-					<s xml:lang="de" type="auto">Es ist nit gnuͦg, das du mir drincken gist; duͦ muͦst ouch z'essen geen; ist als guͦtt by einanderen.</s>
-					<s xml:lang="de" type="auto">Dorum ich dyr und besunder myn suppenschmidt uich allen dancket; sy wil sich ouch rytterlich und redlich mit den kynden mit yrem guͦttjar halten, sobald wyr fuͦr fyndent und versorget ist; dyn guͦttjar, das du von myr bist wartten, flügt noch, weiß nit wo.</s>
-					<s xml:lang="de" type="auto">Der schwester<note type="margin">a.R.: wohl die Schwägerin gemeint, s. SI VII 2229.</note> gib den dicken zuͦ eynem zeichen eynes guͦtten, säligen jars, das [ich] und min frow uich allen wünsch[en]; den wyr des nach dynem schriben wol dorffendt.</s>
-					<s xml:lang="la" type="auto">Laaß här gan: non vidi iustum derelictum; saltem simus fortes in bello contra omnes insultus diaboli etc.</s>
+					<s n="1" xml:lang="la" type="auto">Salus a Christo etc.</s>
+					<s n="2" xml:lang="de" type="auto">Es ist nit gnuͦg, das du mir drincken gist; duͦ muͦst ouch z'essen geen; ist als guͦtt by einanderen.</s>
+					<s n="3" xml:lang="de" type="auto">Dorum ich dyr und besunder myn suppenschmidt uich allen dancket; sy wil sich ouch rytterlich und redlich mit den kynden mit yrem guͦttjar halten, sobald wyr fuͦr fyndent und versorget ist; dyn guͦttjar, das du von myr bist wartten, flügt noch, weiß nit wo.</s>
+					<s n="4" xml:lang="de" type="auto">Der schwester<note type="margin">a.R.: wohl die Schwägerin gemeint, s. SI VII 2229.</note> gib den dicken zuͦ eynem zeichen eynes guͦtten, säligen jars, das [ich] und min frow uich allen wünsch[en]; den wyr des nach dynem schriben wol dorffendt.</s>
+					<s n="5" xml:lang="la" type="auto">Laaß här gan: non vidi iustum derelictum; saltem simus fortes in bello contra omnes insultus diaboli etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Minethalben ist es vast yn eym.</s>
-					<s xml:lang="de" type="auto">An mittwuchen waß ich um halbe 4 daheim; hat mich so vil geuͤbt, das es des anderen tags etwas mee mitterung aber mit grosser muͤde hat.</s>
+					<s n="6" xml:lang="de" type="auto">Minethalben ist es vast yn eym.</s>
+					<s n="7" xml:lang="de" type="auto">An mittwuchen waß ich um halbe 4 daheim; hat mich so vil geuͤbt, das es des anderen tags etwas mee mitterung aber mit grosser muͤde hat.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Uff huitt han ich verseen zuͦ Maschwanden mit predigen.</s>
-					<s xml:lang="de" type="auto">An frytag han ich ußgen 17 lib. 4<foreign xml:lang="el">β</foreign>, han ich vertröschet[?]; weer myr schier wäger gsyn, den zenden ze verlichen.</s>
-					<s xml:lang="de" type="auto">Wie ichs anhan, gad es mit myr uff.</s>
+					<s n="8" xml:lang="de" type="auto">Uff huitt han ich verseen zuͦ Maschwanden mit predigen.</s>
+					<s n="9" xml:lang="de" type="auto">An frytag han ich ußgen 17 lib. 4<foreign xml:lang="el">β</foreign>, han ich vertröschet[?]; weer myr schier wäger gsyn, den zenden ze verlichen.</s>
+					<s n="10" xml:lang="de" type="auto">Wie ichs anhan, gad es mit myr uff.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Als ich mein, schickt du myr ein stück Capperer<note type="misc">Wein von Kappel.</note>; dargegen schick ich dyr ein stück Murner<note type="misc">Wein von Muri</note>.</s>
-					<s xml:lang="de" type="auto">Den versuͦch gegen einanderen.</s>
-					<s xml:lang="de" type="auto">Nit mee, dan gott sig mit uich allen.</s>
+					<s n="11" xml:lang="de" type="auto">Als ich mein, schickt du myr ein stück Capperer<note type="misc">Wein von Kappel.</note>; dargegen schick ich dyr ein stück Murner<note type="misc">Wein von Muri</note>.</s>
+					<s n="12" xml:lang="de" type="auto">Den versuͦch gegen einanderen.</s>
+					<s n="13" xml:lang="de" type="auto">Nit mee, dan gott sig mit uich allen.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Zum nechsten han ich dyr nit den laderlon von dem win gen, hab den überwäschsel an den 5 gl. so sy dyr werden.</s>
-					<s xml:lang="la" type="auto">Datum sabatho.</s>
+					<s n="14" xml:lang="de" type="auto">Zum nechsten han ich dyr nit den laderlon von dem win gen, hab den überwäschsel an den 5 gl. so sy dyr werden.</s>
+					<s n="15" xml:lang="la" type="auto">Datum sabatho.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Uß dinem vulfaltigen schriben wil ich neen zuͦ gluͦben, was ich mein, das im änlich sig.</s>
+					<s n="16" xml:lang="de" type="auto">Uß dinem vulfaltigen schriben wil ich neen zuͦ gluͦben, was ich mein, das im änlich sig.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Joannes tuus.</s>
+					<s n="17" xml:lang="la" type="auto">Joannes tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Synem lieben bruͦder m. Heinrichen Bullinger zuͦ Zürich.</s>
+					<s n="18" xml:lang="de" type="auto">Synem lieben bruͦder m. Heinrichen Bullinger zuͦ Zürich.</s>
 				</p>
 			</div>
 		</body>

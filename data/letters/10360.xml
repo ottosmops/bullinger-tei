@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=328</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=328</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,29</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,29</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,17 +50,17 @@
 						<summary>
 							<p xml:id="regest1">
 								Bedankt sich für die Zusendung des Textes [der Ersten Basler Konfession?] wie auch für
-								<persName ref="154">Myconius</persName>' Antwort. Auf Grund von dessen Bericht über die Lage in
-								<placeName ref="7">Deutschland</placeName> befürchtet er ein starkes Kriegstreiben Frankreichs
+								<persName ref="person154">Myconius</persName>' Antwort. Auf Grund von dessen Bericht über die Lage in
+								<placeName ref="place7">Deutschland</placeName> befürchtet er ein starkes Kriegstreiben Frankreichs
 								gegen den Kaiser, der sich dadurch schließlich gegen die evangelischen Fürsten und Städte wenden könnte. Er
-								charakterisiert die selbstsüchtige Politik der Mächtigen: Der <persName ref="635">Papst</persName>
-								wünscht die Ausrottung der Evangelischen, <persName ref="859">König</persName>
-								[<persName ref="859">Franz</persName> I.] die Besitznahme von
-								<placeName ref="667">Mailand</placeName> und <placeName ref="755">Neapel</placeName>.
+								charakterisiert die selbstsüchtige Politik der Mächtigen: Der Papst
+								wünscht die Ausrottung der Evangelischen, König
+								[<persName ref="person859">Franz I.</persName>] die Besitznahme von
+								<placeName ref="place667">Mailand</placeName> und <placeName ref="place755">Neapel</placeName>.
 								Bullinger rügt die deutschen Fürsten und Städte, weil sie dem Kaiser die Treue nicht halten. Die Strafe
 								Gottes wird die Evangelischen treffen, die den Frieden mißachten und einen von den Franzosen gewünschten
-								Krieg innerhalb von <placeName ref="7">Deutschland</placeName> entfachen wollen. Gruß an
-								[<persName ref="148">Jakob Meyer</persName>].
+								Krieg innerhalb von <placeName ref="place7">Deutschland</placeName> entfachen wollen. Gruß an
+								[Jakob Meyer].
 							</p>
 						</summary>
 					</msContents>
@@ -67,46 +70,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10360">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1534-02-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
+					-->
+					<persName ref="person2234" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10361"/>
-					<ref type="prev_chronologically" target="files.xml#10358"/>
-					<ref type="next_correspondence" target="files.xml#10363"/>
-					<ref type="prev_correspondence" target="files.xml#10357"/>
-					<ref type="next_correspondence_request" target="files.xml#10369"/>
-					<ref type="prev_correspondence_request" target="files.xml#10353"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10363"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10357"/>
-					<ref type="next_same_sender" target="files.xml#10364"/>
-					<ref type="prev_same_sender" target="files.xml#10353"/>
-					<ref type="next_same_addressee" target="files.xml#10363"/>
-					<ref type="prev_same_addressee" target="files.xml#10357"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10364"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10353"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10363"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10357"/>
+					<ref type="next_chronologically" target="file10361"/>
+					<ref type="prev_chronologically" target="file10358"/>
+					<ref type="next_correspondence" target="file10363"/>
+					<ref type="prev_correspondence" target="file10357"/>
+					<ref type="next_correspondence_request" target="file10369"/>
+					<ref type="prev_correspondence_request" target="file10353"/>
+					<ref type="next_correspondence_reaction" target="file10363"/>
+					<ref type="prev_correspondence_reaction" target="file10357"/>
+					<ref type="next_same_sender" target="file10364"/>
+					<ref type="prev_same_sender" target="file10353"/>
+					<ref type="next_same_addressee" target="file10363"/>
+					<ref type="prev_same_addressee" target="file10357"/>
+					<ref type="next_with_sender_as_addressee" target="file10364"/>
+					<ref type="prev_with_sender_as_addressee" target="file10353"/>
+					<ref type="next_with_addressee_as_sender" target="file10363"/>
+					<ref type="prev_with_addressee_as_sender" target="file10357"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -124,54 +132,54 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Immortales tibi, vir clarissime, gratias habeo, qui me libello<note xml:id="fn1" type="footnote" n="1">Wahrscheinlich handelt es sich um ein von Bullinger bereits erbetenes Exemplar der [Ersten] Basler Konfession vom Januar 1534, s. oben S. 51, Anm. 22 und S. 57,2-7. Bullinger ordnete es in seine Dokumentation zum Abendmahlsstreit ein, s. unten S 369f, Anm. a.</note> donaris et tam amice responderis<note xml:id="fn2" type="footnote" n="2">Oben <ref target="file#10357">Nr. 326</ref>.</note>.</s>
-					<s xml:lang="la" type="auto">Perge, obsecro, semper benefacere.</s>
+					<s n="2" xml:lang="la" type="auto">Immortales tibi, vir clarissime, gratias habeo, qui me libello<note xml:id="fn1" type="footnote" n="1">Wahrscheinlich handelt es sich um ein von Bullinger bereits erbetenes Exemplar der [Ersten] Basler Konfession vom Januar 1534, s. oben S. 51, Anm. 22 und S. 57,2-7. Bullinger ordnete es in seine Dokumentation zum Abendmahlsstreit ein, s. unten S 369f, Anm. a.</note> donaris et tam amice responderis<note xml:id="fn2" type="footnote" n="2">Oben <ref target="file10357">Nr. 326</ref>.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Perge, obsecro, semper benefacere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quae de Hesso et Gallo, legatione quoque <placeName ref="70">Augustana</placeName> mones<note xml:id="fn3" type="footnote" n="3">Vgl. oben S. 64, 5-14.</note>, supra quam dici potest, obturba[n]t<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage</hi> obturpat.</note>.</s>
-					<s xml:lang="la" type="manual">Vereor Gallicam subesse technam.</s>
-					<s xml:lang="la" type="auto">Pontifex hactenus non potuit in exitium nostrum provocare caesarem, quod princeps sit non omnino malus.</s>
-					<s xml:lang="la" type="auto">Quid, si hac arte caesarea arma et in principes et urbes christianas provocaret?</s>
-					<s xml:lang="la" type="auto">Pontifex hoc unum cogitat, quomodo religionem excindat.</s>
+					<s n="4" xml:lang="la" type="auto">Quae de Hesso et Gallo, legatione quoque <placeName ref="place70">Augustana</placeName> mones<note xml:id="fn3" type="footnote" n="3">Vgl. oben S. 64, 5-14.</note>, supra quam dici potest, obturba[n]t<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage</hi> obturpat.</note>.</s>
+					<s n="5" xml:lang="la" type="manual">Vereor Gallicam subesse technam.</s>
+					<s n="6" xml:lang="la" type="auto">Pontifex hactenus non potuit in exitium nostrum provocare caesarem, quod princeps sit non omnino malus.</s>
+					<s n="7" xml:lang="la" type="auto">Quid, si hac arte caesarea arma et in principes et urbes christianas provocaret?</s>
+					<s n="8" xml:lang="la" type="auto">Pontifex hoc unum cogitat, quomodo religionem excindat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="68"/>Gallus hoc unum cogitat, quomodo <placeName ref="667">Mediolano</placeName> et <placeName ref="755">Neapolis</placeName> regno potiatur.</s>
-					<s xml:lang="la" type="auto">Diversi sunt huius tragoediae catastrophe<note xml:id="fn4" type="footnote" n="4">Wohl griechischer Dativ («bei der entscheidenden Wendung des Trauerspiels»).</note>.</s>
-					<s xml:lang="la" type="auto">Nulla fides in principibus.</s>
-					<s xml:lang="la" type="auto">Quisque rem suam quaerit.</s>
-					<s xml:lang="la" type="auto">Pontifex cogitat: Si per amicitiam Galli et Germanorum Germanis infensum redderes caesarem, vicisses.</s>
-					<s xml:lang="la" type="auto">Iam etsi Gallus una periret, conciliares te caesari quam minimo, utpote homini facili et clementi.</s>
-					<s xml:lang="la" type="auto">Gallus cogitat: Si tu pontificis et Germanorum opera potireris <placeName ref="667">Mediolano</placeName> et <placeName ref="755">Neapoli</placeName>, deinde ne pontificem quidem vel Germanos huius aestimaris.</s>
-					<s xml:lang="la" type="auto">Infensus est caesar.</s>
-					<s xml:lang="la" type="auto">Imperium ambit Gallus, de iniuria papiensi se ulcisci cogitat, breviter caesarem extinctum cupit.</s>
-					<s xml:lang="la" type="auto">Haec principes et urbes<note xml:id="fn5" type="footnote" n="5">Nämlich die deutschen Kurfürsten und Reichsstädte.</note> non vident vel videre nolunt, fidem caesari datam violant, proinde carbones in capita sua congerunt<note xml:id="fn6" type="footnote" n="6">Röm 12, 20 (zitiert Spr 25, 22).</note>.</s>
-					<s xml:lang="la" type="auto">Videbis, frater dilectissime, nos brevi contempti evangelii, sanguinis rusticani effusi poenas daturos<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage irrtümlich</hi> daturum.</note>.</s>
-					<s xml:lang="la" type="auto">Annon pudenda res, quod intestina bella Galli gratia in Germaniam suscipimus<note xml:id="fn7" type="footnote" n="7">Gemeint sind die Kriegsvorbereitungen von <persName ref="169">Philipp von Hessen</persName> vor der Wiedereinsetzung von <persName ref="224">Herzog Ulrich</persName> in <placeName ref="100">Württemberg</placeName>, vgl. <hi>Wille</hi> 145-171.</note>, cum pace frui liceret?</s>
-					<s xml:lang="la" type="auto">Quis offendit aut opprimit urbes?</s>
-					<s xml:lang="la" type="auto">Annon libere crediderunt hactenus?</s>
-					<s xml:lang="la" type="auto">Annon caesaris quoque praesidio egere in pace?</s>
-					<s xml:lang="la" type="auto">Sed ita maturat vindicta domini<note xml:id="fn8" type="footnote" n="8">Vgl. Röm 12, 19.</note>.</s>
-					<s xml:lang="la" type="auto">Utinam vanus sim vates.</s>
-					<s xml:lang="de" type="auto">Es ist ghein trüw nienan<note xml:id="fn9" type="footnote" n="9">nirgends.</note> me.</s>
+					<s n="9" xml:lang="la" type="auto"><pb type="edition" next="68"/>Gallus hoc unum cogitat, quomodo <placeName ref="place667">Mediolano</placeName> et <placeName ref="place755">Neapolis</placeName> regno potiatur.</s>
+					<s n="10" xml:lang="la" type="auto">Diversi sunt huius tragoediae catastrophe<note xml:id="fn4" type="footnote" n="4">Wohl griechischer Dativ («bei der entscheidenden Wendung des Trauerspiels»).</note>.</s>
+					<s n="11" xml:lang="la" type="auto">Nulla fides in principibus.</s>
+					<s n="12" xml:lang="la" type="auto">Quisque rem suam quaerit.</s>
+					<s n="13" xml:lang="la" type="auto">Pontifex cogitat: Si per amicitiam Galli et Germanorum Germanis infensum redderes caesarem, vicisses.</s>
+					<s n="14" xml:lang="la" type="auto">Iam etsi Gallus una periret, conciliares te caesari quam minimo, utpote homini facili et clementi.</s>
+					<s n="15" xml:lang="la" type="auto">Gallus cogitat: Si tu pontificis et Germanorum opera potireris <placeName ref="place667">Mediolano</placeName> et <placeName ref="place755">Neapoli</placeName>, deinde ne pontificem quidem vel Germanos huius aestimaris.</s>
+					<s n="16" xml:lang="la" type="auto">Infensus est caesar.</s>
+					<s n="17" xml:lang="la" type="auto">Imperium ambit Gallus, de iniuria papiensi se ulcisci cogitat, breviter caesarem extinctum cupit.</s>
+					<s n="18" xml:lang="la" type="auto">Haec principes et urbes<note xml:id="fn5" type="footnote" n="5">Nämlich die deutschen Kurfürsten und Reichsstädte.</note> non vident vel videre nolunt, fidem caesari datam violant, proinde carbones in capita sua congerunt<note xml:id="fn6" type="footnote" n="6">Röm 12, 20 (zitiert Spr 25, 22).</note>.</s>
+					<s n="19" xml:lang="la" type="auto">Videbis, frater dilectissime, nos brevi contempti evangelii, sanguinis rusticani effusi poenas daturos<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage irrtümlich</hi> daturum.</note>.</s>
+					<s n="20" xml:lang="la" type="auto">Annon pudenda res, quod intestina bella Galli gratia in Germaniam suscipimus<note xml:id="fn7" type="footnote" n="7">Gemeint sind die Kriegsvorbereitungen von Philipp von Hessen vor der Wiedereinsetzung von Herzog <persName ref="person224">Ulrich</persName> in <placeName ref="place100">Württemberg</placeName>, vgl. <hi>Wille</hi> 145-171.</note>, cum pace frui liceret?</s>
+					<s n="21" xml:lang="la" type="auto">Quis offendit aut opprimit urbes?</s>
+					<s n="22" xml:lang="la" type="auto">Annon libere crediderunt hactenus?</s>
+					<s n="23" xml:lang="la" type="auto">Annon caesaris quoque praesidio egere in pace?</s>
+					<s n="24" xml:lang="la" type="auto">Sed ita maturat vindicta domini<note xml:id="fn8" type="footnote" n="8">Vgl. Röm 12, 19.</note>.</s>
+					<s n="25" xml:lang="la" type="auto">Utinam vanus sim vates.</s>
+					<s n="26" xml:lang="de" type="auto">Es ist ghein trüw nienan<note xml:id="fn9" type="footnote" n="9">nirgends.</note> me.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale et ora sedulo dominum, nobis adsit.</s>
+					<s n="27" xml:lang="la" type="auto">Vale et ora sedulo dominum, nobis adsit.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">23. februarii 1534.</s>
+					<s n="28" xml:lang="de" type="auto">23. februarii 1534.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salvum volo communem patrem nostrum<note xml:id="fn10" type="footnote" n="10">Bürgermeister <persName ref="148">Jakob Meyer zum Hirzen</persName>.</note>.</s>
+					<s n="29" xml:lang="la" type="auto">Salvum volo communem patrem nostrum<note xml:id="fn10" type="footnote" n="10">Bürgermeister <persName ref="person148">Jakob Meyer zum Hirzen</persName>.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hein. tuus.</s>
+					<s n="30" xml:lang="la" type="auto">Hein. tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Ornatissimo viro d. <persName ref="154">Osvaldo Myconio</persName>, <placeName ref="97">Basileiensis</placeName> ecclesiae ministro, fratri charissimo.</s>
+					<s n="31" xml:lang="la" type="auto">Ornatissimo viro d. <persName ref="person154">Osvaldo Myconio</persName>, <placeName ref="place97">Basileiensis</placeName> ecclesiae ministro, fratri charissimo.</s>
 				</p>
 			</div>
 		</body>

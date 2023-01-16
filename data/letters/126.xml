@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">880</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 359,2835</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 359,2835</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 66,2029</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 66,2029</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -56,50 +62,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/126">
 				<correspAction type="sent">
-					<persName ref="person#657" cert="high">
+					<!--
+					<persName ref="person657" cert="high">
 						<forename cert="high">Beatus</forename>
 						<surname cert="high">Comes</surname>
-						<addName type="main">Comte (Comes Donzarensis), Béat</addName>
+						<persName type="main" ref="person8031>Comte (Comes Donzarensis), Béat</addName>
 					</persName>
-					<place source="#21" cert="high">
-						<settlement>Baden</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>47.47333 8.30592</geo>
-					</place>
+					-->
+					<persName ref="person657" cert="high"/>
+					<place source="place21" cert="high"/>
 					<date when="1548-05-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#127"/>
-					<ref type="prev_chronologically" target="files.xml#125"/>
+					<ref type="next_chronologically" target="file127"/>
+					<ref type="prev_chronologically" target="file125"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#12122"/>
+					<ref type="prev_correspondence" target="file12122"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#12122"/>
+					<ref type="prev_correspondence_request" target="file12122"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#51"/>
-					<ref type="next_same_addressee" target="files.xml#135"/>
-					<ref type="prev_same_addressee" target="files.xml#120"/>
+					<ref type="prev_same_sender" target="file51"/>
+					<ref type="next_same_addressee" target="file135"/>
+					<ref type="prev_same_addressee" target="file120"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#51"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#135"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#120"/>
+					<ref type="prev_with_sender_as_addressee" target="file51"/>
+					<ref type="next_with_addressee_as_sender" target="file135"/>
+					<ref type="prev_with_addressee_as_sender" target="file120"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,28 +120,28 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. per Iesum dominum.</s>
+					<s n="1" xml:lang="la" type="auto">S. per Iesum dominum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Scripsi non ita pridem vobis omnibus de eo, quod iampridem moliri mihi visi sunt nostrates aliquot carnivori, eamque ob rem rogavi vos vehementer, id ut daretis operam ne tandem perficere possent, quod magnam aliquando ecclesię Christi perniciem allaturum esset.</s>
-					<s xml:lang="la" type="auto">Itaque sensi non omnino inanes fuisse literas meas, quandoquidem senatus noster Bernensis iam in aliquot scelerosi huius et perversi dogmatis assertores animadvertit, idque, quantum ego mihi persuadeo, a vobis monitus egit cordatius et alacrius.</s>
-					<s xml:lang="la" type="auto">Verum, quoniam non a capite coepit percuti hydra haec, magnum vos opere pręcium facietis, si denuo unum atque alterum eorum, quos pio et docto zelo teneri non ignoratis, literis vestris, seriis quidem illis et tali argumento dignis, monueritis, nimirum ut fontem ipsamque malique huius apud nos originem pervestigent, Lausannam adeant inibique de illis inquirant dilligentius, qui primum pestiferam illam doctrinam attulerunt, qui postea allatam foverunt et in vulgus spargere conati sunt, et hęc omnia modis mirandis magnoque sanctimonię prętextu.</s>
-					<s xml:lang="la" type="auto">Nam quin ita sint comparati, ut omnia potius simulare ac dissimulare in animo habeant quam loco cedere sperantes se, donec in republica nostra tolerabuntur, sementem semper uberiorem impuri suo dogmatis posse facere fermentoque illo massam dominicam contaminare, magna est adhibenda cautio, ne, qui tales sunt, ferantur in posterum.</s>
-					<s xml:lang="la" type="auto">Abiurare autem, quantum ego intelligo, nulla illorum plerisque erit religio, ut eo modo impetrata adhuc concionandi libertate, secreto ea in populum disseminent, quae palam profiteri neque audent set neque illis tutum est.</s>
-					<s xml:lang="la" type="auto">Quamobrem te per eam, quam domino redditurus es rationem obsecro atque obtestor, Bulingere doctissime, omnem ut in id operam tuam atque industriam colloces, quos nosti ex nostris senatoribus synceram magis tueri doctrinam, literis tuis sępius et diligenter moneas, ne eam pestem diutius in suo populo grassari patiantur.</s>
-					<s xml:lang="la" type="auto">Quod simul ac perfeceris, existimato te et magnum cultum deo et eius ecclesię operam nunquam poenitendam prestitisse.</s>
+					<s n="2" xml:lang="la" type="auto">Scripsi non ita pridem vobis omnibus de eo, quod iampridem moliri mihi visi sunt nostrates aliquot carnivori, eamque ob rem rogavi vos vehementer, id ut daretis operam ne tandem perficere possent, quod magnam aliquando ecclesię Christi perniciem allaturum esset.</s>
+					<s n="3" xml:lang="la" type="auto">Itaque sensi non omnino inanes fuisse literas meas, quandoquidem senatus noster Bernensis iam in aliquot scelerosi huius et perversi dogmatis assertores animadvertit, idque, quantum ego mihi persuadeo, a vobis monitus egit cordatius et alacrius.</s>
+					<s n="4" xml:lang="la" type="auto">Verum, quoniam non a capite coepit percuti hydra haec, magnum vos opere pręcium facietis, si denuo unum atque alterum eorum, quos pio et docto zelo teneri non ignoratis, literis vestris, seriis quidem illis et tali argumento dignis, monueritis, nimirum ut fontem ipsamque malique huius apud nos originem pervestigent, Lausannam adeant inibique de illis inquirant dilligentius, qui primum pestiferam illam doctrinam attulerunt, qui postea allatam foverunt et in vulgus spargere conati sunt, et hęc omnia modis mirandis magnoque sanctimonię prętextu.</s>
+					<s n="5" xml:lang="la" type="auto">Nam quin ita sint comparati, ut omnia potius simulare ac dissimulare in animo habeant quam loco cedere sperantes se, donec in republica nostra tolerabuntur, sementem semper uberiorem impuri suo dogmatis posse facere fermentoque illo massam dominicam contaminare, magna est adhibenda cautio, ne, qui tales sunt, ferantur in posterum.</s>
+					<s n="6" xml:lang="la" type="auto">Abiurare autem, quantum ego intelligo, nulla illorum plerisque erit religio, ut eo modo impetrata adhuc concionandi libertate, secreto ea in populum disseminent, quae palam profiteri neque audent set neque illis tutum est.</s>
+					<s n="7" xml:lang="la" type="auto">Quamobrem te per eam, quam domino redditurus es rationem obsecro atque obtestor, Bulingere doctissime, omnem ut in id operam tuam atque industriam colloces, quos nosti ex nostris senatoribus synceram magis tueri doctrinam, literis tuis sępius et diligenter moneas, ne eam pestem diutius in suo populo grassari patiantur.</s>
+					<s n="8" xml:lang="la" type="auto">Quod simul ac perfeceris, existimato te et magnum cultum deo et eius ecclesię operam nunquam poenitendam prestitisse.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale semper beate cum sanctissimo fratrum tuorum collegio.</s>
-					<s xml:lang="la" type="auto">Badis Helvetiorum 14. calendas Iunias 1548.</s>
+					<s n="9" xml:lang="la" type="auto">Vale semper beate cum sanctissimo fratrum tuorum collegio.</s>
+					<s n="10" xml:lang="la" type="auto">Badis Helvetiorum 14. calendas Iunias 1548.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus tanquam frater Beatus Comes Donzarensis.</s>
-					<s xml:lang="la" type="auto">Hae meae literae neque priores illae, quas ad vos scripsi, non sunt aliquibus ex nostris communicandę.</s>
+					<s n="11" xml:lang="la" type="auto">Tuus tanquam frater Beatus Comes Donzarensis.</s>
+					<s n="12" xml:lang="la" type="auto">Hae meae literae neque priores illae, quas ad vos scripsi, non sunt aliquibus ex nostris communicandę.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Vigilantissimo atque doctissimo ecclesię Tigurinę pastori domino Heynrico Bullingero, domino mihi summe colendo.</s>
+					<s n="13" xml:lang="la" type="auto">Vigilantissimo atque doctissimo ecclesię Tigurinę pastori domino Heynrico Bullingero, domino mihi summe colendo.</s>
 				</p>
 			</div>
 		</body>

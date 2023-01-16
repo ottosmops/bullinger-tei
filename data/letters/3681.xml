@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,670 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,670 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -32,14 +35,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 92,185</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">eingereiht Anfang August 1558</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 92,185</idno>
+						<idno subtype="Hinweis">eingereiht Anfang August 1558</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -53,59 +59,63 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3681">
 				<correspAction type="sent">
-					<persName ref="person#3704" cert="high">
+					<!--
+					<persName ref="person3704" cert="high">
 						<forename cert="high">Friedrich</forename>
 						<surname cert="high">von Salis</surname>
-						<addName type="main">von Salis (a Salize, de Salicibus), Friedrich</addName>
-						<graphic type="portrait" url="portraits/3704_Salis-Wappen.png"/>
+						<persName type="main" ref="person8432>von Salis (a Salize, de Salicibus), Friedrich</addName>
+						<graphic type="portrait" url="portraits/3704_Salis_Wappen.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Salis_%28Adelsgeschlecht%29"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/119041782"/>
 					</persName>
-					<place source="#546" cert="high">
-						<settlement>Wien</settlement>
-						<district>Wien</district>
-						<country>Österreich</country>
-						<geo>48.20849 16.37208</geo>
-					</place>
+					-->
+					<persName ref="person3704" cert="high"/>
+					<place source="place546" cert="high"/>
 					<date when="1558-08-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3682"/>
-					<ref type="prev_chronologically" target="files.xml#3680"/>
-					<ref type="next_correspondence" target="files.xml#3731"/>
-					<ref type="prev_correspondence" target="files.xml#3665"/>
-					<ref type="next_correspondence_request" target="files.xml#3731"/>
-					<ref type="prev_correspondence_request" target="files.xml#3665"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3761"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3574"/>
-					<ref type="next_same_sender" target="files.xml#3731"/>
-					<ref type="prev_same_sender" target="files.xml#3665"/>
-					<ref type="next_same_addressee" target="files.xml#3683"/>
-					<ref type="prev_same_addressee" target="files.xml#3678"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3731"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3665"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3683"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3678"/>
+					<ref type="next_chronologically" target="file3682"/>
+					<ref type="prev_chronologically" target="file3680"/>
+					<ref type="next_correspondence" target="file3731"/>
+					<ref type="prev_correspondence" target="file3665"/>
+					<ref type="next_correspondence_request" target="file3731"/>
+					<ref type="prev_correspondence_request" target="file3665"/>
+					<ref type="next_correspondence_reaction" target="file3761"/>
+					<ref type="prev_correspondence_reaction" target="file3574"/>
+					<ref type="next_same_sender" target="file3731"/>
+					<ref type="prev_same_sender" target="file3665"/>
+					<ref type="next_same_addressee" target="file3683"/>
+					<ref type="prev_same_addressee" target="file3678"/>
+					<ref type="next_with_sender_as_addressee" target="file3731"/>
+					<ref type="prev_with_sender_as_addressee" target="file3665"/>
+					<ref type="next_with_addressee_as_sender" target="file3683"/>
+					<ref type="prev_with_addressee_as_sender" target="file3678"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="3681/Autograph/00 E_II_365__S__670_.tif" n="1"/>
+		<graphic url="3681/Autograph/01 E_II_365__S__671_.tif" n="2"/>
+		<graphic url="3681/Autograph/02 E_II_365__S__671_a_.tif" n="3"/>
+		<graphic url="3681/Autograph/03 E_II_365__S__671_b_.tif" n="4"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

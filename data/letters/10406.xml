@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=373</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=373</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,27</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,27</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,17 +50,17 @@
 						<summary>
 							<p xml:id="regest1">
 								Hat ihm [am 3. Mai 1534] bereits geschrieben. Seitdem gab es ein Streitgespräch der
-								<placeName ref="121">Berner</placeName> Theologen mit [<persName ref="306">Claude</persName>
-								d'<persName ref="306">Aliod</persName>]. Dieser leugnet die Gottheit oder wenigstens die Präexistenz
+								<placeName ref="place121">Berner</placeName> Theologen mit [Claude
+								d'<persName ref="person306">Aliod</persName>]. Dieser leugnet die Gottheit oder wenigstens die Präexistenz
 								Christi, die Gottheit des Heiligen Geistes und die Personen der Dreieinigkeit.
-								<persName ref="90">Haller</persName> hält sich an Bullingers diesbezügliche Äußerungen u. a. in
+								<persName ref="person90">Haller</persName> hält sich an Bullingers diesbezügliche Äußerungen u. a. in
 								dessen Kommentar zum Hebräerbrief, möchte aber den Ausdruck «Person», der u. a. auch von
-								<persName ref="265">Zwingli</persName> in seinem «Commentarius de vera et falsa religione» durch
+								<persName ref="person265">Zwingli</persName> in seinem «Commentarius de vera et falsa religione» durch
 								andere ersetzt wurde, näher erklärt haben. Er befürchtet, daß auch
-								[<persName ref="60">Guillaume</persName>] <persName ref="60">Farel</persName> Antitrinitarier
+								[Guillaume] <persName ref="person60">Farel</persName> Antitrinitarier
 								werden könnte. Bullinger sollte bereits durch den Überbringer des Briefes,
-								[<persName ref="910">Hans</persName> oder <persName ref="913">Jakob</persName>?]
-								<persName ref="910">Funk</persName>, antworten.
+								[Hans oder Jakob?]
+								<persName ref="person910">Funk</persName>, antworten.
 							</p>
 						</summary>
 					</msContents>
@@ -80,43 +83,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10406">
 				<correspAction type="sent">
-					<persName ref="person#1391" cert="high">
+					<!--
+					<persName ref="person1391" cert="high">
 						<forename cert="high">Berchtold</forename>
 						<surname cert="high">Haller</surname>
+						<graphic type="portrait" url="portraits/1391_Haller_Berchtold.jpg"/>
+						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Berchtold_Haller"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104180536"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413862"/>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person1391" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1534-05-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10407"/>
-					<ref type="prev_chronologically" target="files.xml#10405"/>
-					<ref type="next_correspondence" target="files.xml#10413"/>
-					<ref type="prev_correspondence" target="files.xml#10402"/>
-					<ref type="next_correspondence_request" target="files.xml#10413"/>
-					<ref type="prev_correspondence_request" target="files.xml#10402"/>
+					<ref type="next_chronologically" target="file10407"/>
+					<ref type="prev_chronologically" target="file10405"/>
+					<ref type="next_correspondence" target="file10413"/>
+					<ref type="prev_correspondence" target="file10402"/>
+					<ref type="next_correspondence_request" target="file10413"/>
+					<ref type="prev_correspondence_request" target="file10402"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10217"/>
-					<ref type="next_same_sender" target="files.xml#10413"/>
-					<ref type="prev_same_sender" target="files.xml#10402"/>
-					<ref type="next_same_addressee" target="files.xml#10407"/>
-					<ref type="prev_same_addressee" target="files.xml#10400"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10413"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10402"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10407"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10400"/>
+					<ref type="prev_correspondence_reaction" target="file10217"/>
+					<ref type="next_same_sender" target="file10413"/>
+					<ref type="prev_same_sender" target="file10402"/>
+					<ref type="next_same_addressee" target="file10407"/>
+					<ref type="prev_same_addressee" target="file10400"/>
+					<ref type="next_with_sender_as_addressee" target="file10413"/>
+					<ref type="prev_with_sender_as_addressee" target="file10402"/>
+					<ref type="next_with_addressee_as_sender" target="file10407"/>
+					<ref type="prev_with_addressee_as_sender" target="file10400"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -134,40 +144,40 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Alteras paraveram literas<note xml:id="fn1" type="footnote" n="1"><persName ref="90">Berchtold Haller</persName> an Bullinger, 3. Mai 1534, oben <ref target="file#10402">Nr. 370</ref>.</note>, dum per ocium vacabat et nuncii<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> <placeName ref="368">Friburgi</placeName> sua agerent, doctissime Heinrice.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Alteras paraveram literas<note xml:id="fn1" type="footnote" n="1"><persName ref="person90">Berchtold Haller</persName> an Bullinger, 3. Mai 1534, oben <ref target="file10402">Nr. 370</ref>.</note>, dum per ocium vacabat et nuncii<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> <placeName ref="place368">Friburgi</placeName> sua agerent, doctissime Heinrice.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Interim collocuti sumus cum Gallo hoc<note xml:id="fn3" type="footnote" n="3"><persName ref="306">Claude</persName> d'<persName ref="306">Aliod</persName>, vgl. oben S. 158, Anm. 39.</note>, qui tametsi mentis compos non sit, natus tamen videtur ad pertinaciam et contentionem.</s>
-					<s xml:lang="la" type="auto">Asseverat primum Christum nuditer esse hominem.</s>
-					<s xml:lang="la" type="auto">Deinde, cum apertissimis a nobis urgeretur scripturis, admisit Christum naturalem dei filium adeoque deum esse, sed non ęternum, imo in tempore constitutum, praeordinatum, 1. Pe. 1 [20] et factum Act. 2 [36], atque hunc alioqui purum hominem esse fidei nostrae obiectum.</s>
-					<s xml:lang="la" type="auto">Cui satis abunde responsum est, sed minime satisfactum.</s>
-					<s xml:lang="la" type="auto">Pertinaci enim satis fieri nequit.</s>
-					<s xml:lang="la" type="auto">Monuimus hominem, ut fidem hanc erroneam apud se habeat, id quod minime facturum scio.</s>
-					<s xml:lang="la" type="auto">Restat, ut illi probemus spiritum sanctum esse deum et ab ęterno, quem creaturam asserit.</s>
-					<s xml:lang="la" type="auto">Negat triadem, personas, tam<note xml:id="fna" type="footnote" n="a">quam <hi>gestrichen,</hi> tam <hi>darübergeschrieben.</hi></note> quoad vocem quam quoad rem.</s>
-					<s xml:lang="la" type="auto">Vidi tua in Hebraeos<note xml:id="fn4" type="footnote" n="4">Heinrich Bullinger, «Commentarius in epistolam ad Hebraeos», Zürich 1532 (HBBibl I 38); die Lehre von der Dreieinigkeit wird auf fol. 13r.-14v. behandelt.</note> et aliis locis, quibus magnam mihi cogitandi occasionem dedisti.</s>
-					<s xml:lang="la" type="auto">In hoc hęreo, ut non plane intelligam, quid sibi velit vox «persona», quam notionem <persName ref="265">Zwinglius</persName> vocat in «Religione vera et falsa»<note xml:id="fn5" type="footnote" n="5"><persName ref="265">Huldrych Zwingli</persName>, «De vera et falsa religione commentarius», 1525 (s. bes. Z III 675, Zeilen 25-27).</note>, alii vero nomina operationum, alii relationes aut proprietates.</s>
-					<s xml:lang="la" type="auto">Vidi scolasticos in 1.-mo «Sententiarum»<note xml:id="fn6" type="footnote" n="6">Vgl. <persName ref="1819">Petrus Lombardus</persName>, «Sententiarum libri quatuor», Liber I, Distinctiones XIX-XXXIV (MPL CXCII 573-617).</note>; sed ex illis omnibus me extricare nescio.</s>
-					<s xml:lang="la" type="auto">Sic semper et in omnibus te cogor perturbare.</s>
-					<s xml:lang="la" type="auto">Paucis dabis occasionem cogitandi, dummodo rei summam depinxeris.</s>
-					<s xml:lang="la" type="auto">Vereor, ne et <persName ref="60">Farellus</persName> in hoc captus sit errore<note xml:id="fn7" type="footnote" n="7">Ähnliche Befürchtungen äußerte auch <persName ref="263">Johannes Zwick</persName> gegenüber <persName ref="226">Vadian</persName> am 23. August 1534 (<persName ref="226">Vadian</persName> BW V 183). <persName ref="60">Guillaume Farel</persName> hat sich jedoch von der Gedankenwelt des Antitrinitarismus immer ferngehalten, vgl. die in HBBW II 117, Anm. 18 aufgezählte Literatur.</note>.</s>
-					<s xml:lang="la" type="auto">Curabis igitur, quam primum poteris<note xml:id="fn8" type="footnote" n="8">Wahrscheinlich des Glasmalers <persName ref="910">Hans Funk</persName>.</note> - potes vero per hunc nuncium, Funckii nostri filium<note xml:id="fn9" type="footnote" n="9">Wahrscheinlich einer der Söhne von <persName ref="910">Hans Funk</persName>, <persName ref="911">Hans</persName> oder <persName ref="913">Jakob</persName> (s. Glückshafenrodel I 182, 45. 47). Über die Söhne <persName ref="911">Funks</persName> ist nichts mehr in Erfahrung zu bringen, s. <persName ref="911">Hans</persName> <hi>Lehmann,</hi> Schweizerische Handzeichnungen und die Frage: Gab es in der ersten Hälfte des 16. Jahrhunderts zwei Maler <persName ref="910">Hans Funk</persName>, Vater und Sohn, in Bern? in: Anzeiger für Schweizerische Altertumskunde, N. F. 31, 1929, S. 217-226; vgl. auch SKL I 532.</note> -, ut respondeas<note xml:id="fn10" type="footnote" n="10">Bullingers Antwort ist nicht erhalten, seine «Assertio utriusque in Christo naturae», die er hauptsächlich gegen die Lehren des <persName ref="306">Claude</persName> d'<persName ref="306">Aliod</persName> nach dessen Besuch in Zürich verfaßte, erschien jedoch bereits im Oktober 1534 (HBBibl I 62).</note>.</s>
-					<s xml:lang="de" type="auto">Ich mein, die hendel machend unß eins.</s>
-					<s xml:lang="la" type="auto">Reliqua in prioribus.</s>
+					<s n="3" xml:lang="la" type="auto">Interim collocuti sumus cum Gallo hoc<note xml:id="fn3" type="footnote" n="3">Claude d'<persName ref="person306">Aliod</persName>, vgl. oben S. 158, Anm. 39.</note>, qui tametsi mentis compos non sit, natus tamen videtur ad pertinaciam et contentionem.</s>
+					<s n="4" xml:lang="la" type="auto">Asseverat primum Christum nuditer esse hominem.</s>
+					<s n="5" xml:lang="la" type="auto">Deinde, cum apertissimis a nobis urgeretur scripturis, admisit Christum naturalem dei filium adeoque deum esse, sed non ęternum, imo in tempore constitutum, praeordinatum, 1. Pe. 1 [20] et factum Act. 2 [36], atque hunc alioqui purum hominem esse fidei nostrae obiectum.</s>
+					<s n="6" xml:lang="la" type="auto">Cui satis abunde responsum est, sed minime satisfactum.</s>
+					<s n="7" xml:lang="la" type="auto">Pertinaci enim satis fieri nequit.</s>
+					<s n="8" xml:lang="la" type="auto">Monuimus hominem, ut fidem hanc erroneam apud se habeat, id quod minime facturum scio.</s>
+					<s n="9" xml:lang="la" type="auto">Restat, ut illi probemus spiritum sanctum esse deum et ab ęterno, quem creaturam asserit.</s>
+					<s n="10" xml:lang="la" type="auto">Negat triadem, personas, tam<note xml:id="fna" type="footnote" n="a">quam <hi>gestrichen,</hi> tam <hi>darübergeschrieben.</hi></note> quoad vocem quam quoad rem.</s>
+					<s n="11" xml:lang="la" type="auto">Vidi tua in Hebraeos<note xml:id="fn4" type="footnote" n="4">Heinrich Bullinger, «Commentarius in epistolam ad Hebraeos», Zürich 1532 (HBBibl I 38); die Lehre von der Dreieinigkeit wird auf fol. 13r.-14v. behandelt.</note> et aliis locis, quibus magnam mihi cogitandi occasionem dedisti.</s>
+					<s n="12" xml:lang="la" type="auto">In hoc hęreo, ut non plane intelligam, quid sibi velit vox «persona», quam notionem <persName ref="person265">Zwinglius</persName> vocat in «Religione vera et falsa»<note xml:id="fn5" type="footnote" n="5"><persName ref="person265">Huldrych Zwingli</persName>, «De vera et falsa religione commentarius», 1525 (s. bes. Z III 675, Zeilen 25-27).</note>, alii vero nomina operationum, alii relationes aut proprietates.</s>
+					<s n="13" xml:lang="la" type="auto">Vidi scolasticos in 1.-mo «Sententiarum»<note xml:id="fn6" type="footnote" n="6">Vgl. <persName ref="person1819">Petrus Lombardus</persName>, «Sententiarum libri quatuor», Liber I, Distinctiones XIX-XXXIV (MPL CXCII 573-617).</note>; sed ex illis omnibus me extricare nescio.</s>
+					<s n="14" xml:lang="la" type="auto">Sic semper et in omnibus te cogor perturbare.</s>
+					<s n="15" xml:lang="la" type="auto">Paucis dabis occasionem cogitandi, dummodo rei summam depinxeris.</s>
+					<s n="16" xml:lang="la" type="auto">Vereor, ne et <persName ref="person60">Farellus</persName> in hoc captus sit errore<note xml:id="fn7" type="footnote" n="7">Ähnliche Befürchtungen äußerte auch <persName ref="person263">Johannes Zwick</persName> gegenüber <persName ref="person226">Vadian</persName> am 23. August 1534 (<persName ref="person226">Vadian</persName> BW V 183). <persName ref="person60">Guillaume Farel</persName> hat sich jedoch von der Gedankenwelt des Antitrinitarismus immer ferngehalten, vgl. die in HBBW II 117, Anm. 18 aufgezählte Literatur.</note>.</s>
+					<s n="17" xml:lang="la" type="auto">Curabis igitur, quam primum poteris<note xml:id="fn8" type="footnote" n="8">Wahrscheinlich des Glasmalers <persName ref="person910">Hans Funk</persName>.</note> - potes vero per hunc nuncium, <persName ref="person910">Funckii</persName> nostri filium<note xml:id="fn9" type="footnote" n="9">Wahrscheinlich einer der Söhne von <persName ref="person910">Hans Funk</persName>, Hans oder Jakob (s. Glückshafenrodel I 182, 45. 47). Über die Söhne <persName ref="person911">Funks</persName> ist nichts mehr in Erfahrung zu bringen, s. Hans <hi>Lehmann,</hi> Schweizerische Handzeichnungen und die Frage: Gab es in der ersten Hälfte des 16. Jahrhunderts zwei Maler <persName ref="person910">Hans Funk</persName>, Vater und Sohn, in Bern? in: Anzeiger für Schweizerische Altertumskunde, N. F. 31, 1929, S. 217-226; vgl. auch SKL I 532.</note> -, ut respondeas<note xml:id="fn10" type="footnote" n="10">Bullingers Antwort ist nicht erhalten, seine «Assertio utriusque in Christo naturae», die er hauptsächlich gegen die Lehren des Claude d'<persName ref="person306">Aliod</persName> nach dessen Besuch in Zürich verfaßte, erschien jedoch bereits im Oktober 1534 (HBBibl I 62).</note>.</s>
+					<s n="18" xml:lang="de" type="auto">Ich mein, die hendel machend unß eins.</s>
+					<s n="19" xml:lang="la" type="auto">Reliqua in prioribus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="20" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">7. maii 34.</s>
+					<s n="21" xml:lang="de" type="auto">7. maii 34.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus <persName ref="90">Berchtoldus</persName> Hall.</s>
+					<s n="22" xml:lang="la" type="auto">Tuus <persName ref="person90">Berchtoldus</persName> Hall.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">An Meister Heinrich Bullinger, sinem insunders geliepten herren und bruͦder.</s>
+					<s n="23" xml:lang="de" type="auto">An Meister Heinrich Bullinger, sinem insunders geliepten herren und bruͦder.</s>
 				</p>
 			</div>
 		</body>

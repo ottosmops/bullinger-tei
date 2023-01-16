@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5399/38</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,472</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,472</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 96,156</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 96,156</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -63,52 +69,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4220">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="high">
+					<!--
+					<persName ref="person392" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#555" cert="high">
-						<settlement>Winterthur</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.50564 8.72413</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="high"/>
+					<place source="place555" cert="high"/>
 					<date when="1560-02-26" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4221"/>
-					<ref type="prev_chronologically" target="files.xml#4219"/>
-					<ref type="next_correspondence" target="files.xml#4248"/>
-					<ref type="prev_correspondence" target="files.xml#4214"/>
-					<ref type="next_correspondence_request" target="files.xml#4250"/>
-					<ref type="prev_correspondence_request" target="files.xml#4214"/>
-					<ref type="next_correspondence_reaction" target="files.xml#4248"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#4200"/>
-					<ref type="next_same_sender" target="files.xml#4250"/>
-					<ref type="prev_same_sender" target="files.xml#4214"/>
-					<ref type="next_same_addressee" target="files.xml#4223"/>
-					<ref type="prev_same_addressee" target="files.xml#4219"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4250"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4214"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4223"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#4219"/>
+					<ref type="next_chronologically" target="file4221"/>
+					<ref type="prev_chronologically" target="file4219"/>
+					<ref type="next_correspondence" target="file4248"/>
+					<ref type="prev_correspondence" target="file4214"/>
+					<ref type="next_correspondence_request" target="file4250"/>
+					<ref type="prev_correspondence_request" target="file4214"/>
+					<ref type="next_correspondence_reaction" target="file4248"/>
+					<ref type="prev_correspondence_reaction" target="file4200"/>
+					<ref type="next_same_sender" target="file4250"/>
+					<ref type="prev_same_sender" target="file4214"/>
+					<ref type="next_same_addressee" target="file4223"/>
+					<ref type="prev_same_addressee" target="file4219"/>
+					<ref type="next_with_sender_as_addressee" target="file4250"/>
+					<ref type="prev_with_sender_as_addressee" target="file4214"/>
+					<ref type="next_with_addressee_as_sender" target="file4223"/>
+					<ref type="prev_with_addressee_as_sender" target="file4219"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,37 +122,40 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="4220/Autograph/00 E_II_357__fol__472_r_.tif" n="1"/>
+		<graphic url="4220/Autograph/01 E_II_357__fol__472_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Totum fere sesquimensem Griessenbergi apud suavissimam sororem propter negocia, quę nobis conficienda fuerunt, transegi atque inde ad te decima nona februarii satis longam epistolam misi, quam puto te Conradi nostri Höuw officiositate accepisse per tabellarium quendam Augustinum.</s>
-					<s xml:lang="la" type="auto">Quum igitur iam nudiustertius huc redierim, volui certior abs te fieri, quid tibi in Burcheri Angli negocio, quod cum mea sorore illi est, agendum videatur, quandoquidem istic abire iam parat, ne forte, quod absit, discessus viri fraudi sit meę sorori.</s>
+					<s n="1" xml:lang="la" type="auto">Totum fere sesquimensem Griessenbergi apud suavissimam sororem propter negocia, quę nobis conficienda fuerunt, transegi atque inde ad te decima nona februarii satis longam epistolam misi, quam puto te Conradi nostri Höuw officiositate accepisse per tabellarium quendam Augustinum.</s>
+					<s n="2" xml:lang="la" type="auto">Quum igitur iam nudiustertius huc redierim, volui certior abs te fieri, quid tibi in Burcheri Angli negocio, quod cum mea sorore illi est, agendum videatur, quandoquidem istic abire iam parat, ne forte, quod absit, discessus viri fraudi sit meę sorori.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Facies hic igitur tuo more amici officium et, quamprimum, quid vel ipse hic egeris vel sorori agendum existimes, significabis, quo mox, quid porro facto sit opus, dispiciamus.</s>
-					<s xml:lang="la" type="auto">Huc reversus literas ab amicis missas inveni, in quibus nihil adeo est novi, quod non iam antea resciveris.</s>
-					<s xml:lang="la" type="auto">Calvinus scribit continuis se morbis addictum, ita alii alios subinde excipiunt; cogi se bonam temporis partem decumbere ac propterea valedicturum lucubrationibus, nisi veris temperie paulum se recreet; molestam sibi esse crurum debilitatem, magis vero infestam imbecillitatem ventriculi.</s>
-					<s xml:lang="la" type="auto">Addit nuper se tantum non suffocatum largo sanguinis profluvio ex pulmonibus.</s>
+					<s n="3" xml:lang="la" type="auto">Facies hic igitur tuo more amici officium et, quamprimum, quid vel ipse hic egeris vel sorori agendum existimes, significabis, quo mox, quid porro facto sit opus, dispiciamus.</s>
+					<s n="4" xml:lang="la" type="auto">Huc reversus literas ab amicis missas inveni, in quibus nihil adeo est novi, quod non iam antea resciveris.</s>
+					<s n="5" xml:lang="la" type="auto">Calvinus scribit continuis se morbis addictum, ita alii alios subinde excipiunt; cogi se bonam temporis partem decumbere ac propterea valedicturum lucubrationibus, nisi veris temperie paulum se recreet; molestam sibi esse crurum debilitatem, magis vero infestam imbecillitatem ventriculi.</s>
+					<s n="6" xml:lang="la" type="auto">Addit nuper se tantum non suffocatum largo sanguinis profluvio ex pulmonibus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Commendemus igitur, mi venerande charissimeque Bullingere, eximium hunc Iesu Christi servum ac strenuum militem domino, ut eum vegetum et incolumem ecclesię suę quam diutissime conservet ideoque totam Gebennensem ecclesiam tot iam periculis indigne obiectam in suam tutelam suscipiat, praesertim quum ipsi quoque in eadem navi propediem futuri simus.</s>
-					<s xml:lang="la" type="auto">Ah vigilemus, oramus sicque vires colligamus tot tentationibus et certaminibus, quę nos quoque manent, suffecturas.</s>
-					<s xml:lang="la" type="auto">Bene vale, mi cor et anima mea, in domino meque piorum votorum perpetuis suffragiis apud cęlestem patrem nostrum adiuva.</s>
-					<s xml:lang="la" type="auto">Salutem dic nostris verbis tuę domui, salveant omnes fratres, symmystae tui, Gvaltherus, Wolfius, Theodorus, inprimis vero incomparabilis Christi martyr Petrus, cui utinam integrum esset Angliam denuo restaurare planeque angelicam reddere; sed vereor, ut per ętatem aliaque corporis et itineris pericula istuc possit, et satius forte est, ut, quam apud vos iam nactus est Spartam, quemadmodum cępit, ... et.</s>
+					<s n="7" xml:lang="la" type="auto">Commendemus igitur, mi venerande charissimeque Bullingere, eximium hunc Iesu Christi servum ac strenuum militem domino, ut eum vegetum et incolumem ecclesię suę quam diutissime conservet ideoque totam Gebennensem ecclesiam tot iam periculis indigne obiectam in suam tutelam suscipiat, praesertim quum ipsi quoque in eadem navi propediem futuri simus.</s>
+					<s n="8" xml:lang="la" type="auto">Ah vigilemus, oramus sicque vires colligamus tot tentationibus et certaminibus, quę nos quoque manent, suffecturas.</s>
+					<s n="9" xml:lang="la" type="auto">Bene vale, mi cor et anima mea, in domino meque piorum votorum perpetuis suffragiis apud cęlestem patrem nostrum adiuva.</s>
+					<s n="10" xml:lang="la" type="auto">Salutem dic nostris verbis tuę domui, salveant omnes fratres, symmystae tui, Gvaltherus, Wolfius, Theodorus, inprimis vero incomparabilis Christi martyr Petrus, cui utinam integrum esset Angliam denuo restaurare planeque angelicam reddere; sed vereor, ut per ętatem aliaque corporis et itineris pericula istuc possit, et satius forte est, ut, quam apud vos iam nactus est Spartam, quemadmodum cępit, ... et.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Iterum iterumque vale.</s>
+					<s n="11" xml:lang="la" type="auto">Iterum iterumque vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vituduri, 5. calendas martii 1560.</s>
+					<s n="12" xml:lang="la" type="auto">Vituduri, 5. calendas martii 1560.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">T[uus] Amb[rosius] Bl[aurerus].</s>
+					<s n="13" xml:lang="la" type="auto">T[uus] Amb[rosius] Bl[aurerus].</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Heinricho Bullingero, fratri suo tam venerando quam longe charissimo.</s>
+					<s n="14" xml:lang="la" type="auto">Clarissimo viro d. Heinricho Bullingero, fratri suo tam venerando quam longe charissimo.</s>
 				</p>
 			</div>
 		</body>

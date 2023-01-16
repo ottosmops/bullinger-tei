@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5998/86</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 62,445</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 62,445</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -60,13 +63,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 104,85</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 104,85</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -75,43 +81,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5303">
 				<correspAction type="sent">
-					<persName ref="person#2473" cert="high">
+					<!--
+					<persName ref="person2473" cert="high">
 						<forename cert="high">John</forename>
 						<surname cert="high">Parkhurst</surname>
 						<graphic type="portrait" url="portraits/2473_Parkhurst_John.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/John_Parkhurst"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/119781492"/>
 					</persName>
-					<place source="#299" cert="high">
-						<settlement>Ludham</settlement>
-						<geo>52.70473 1.56135</geo>
-					</place>
+					-->
+					<persName ref="person2473" cert="high"/>
+					<place source="place299" cert="high"/>
 					<date when="1562-04-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5304"/>
-					<ref type="prev_chronologically" target="files.xml#5302"/>
-					<ref type="next_correspondence" target="files.xml#5337"/>
-					<ref type="prev_correspondence" target="files.xml#4939"/>
-					<ref type="next_correspondence_request" target="files.xml#5337"/>
-					<ref type="prev_correspondence_request" target="files.xml#4939"/>
+					<ref type="next_chronologically" target="file5304"/>
+					<ref type="prev_chronologically" target="file5302"/>
+					<ref type="next_correspondence" target="file5337"/>
+					<ref type="prev_correspondence" target="file4939"/>
+					<ref type="next_correspondence_request" target="file5337"/>
+					<ref type="prev_correspondence_request" target="file4939"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#5337"/>
-					<ref type="prev_same_sender" target="files.xml#4939"/>
-					<ref type="next_same_addressee" target="files.xml#5306"/>
-					<ref type="prev_same_addressee" target="files.xml#5296"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5337"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4939"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5306"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5296"/>
+					<ref type="next_same_sender" target="file5337"/>
+					<ref type="prev_same_sender" target="file4939"/>
+					<ref type="next_same_addressee" target="file5306"/>
+					<ref type="prev_same_addressee" target="file5296"/>
+					<ref type="next_with_sender_as_addressee" target="file5337"/>
+					<ref type="prev_with_sender_as_addressee" target="file4939"/>
+					<ref type="next_with_addressee_as_sender" target="file5306"/>
+					<ref type="prev_with_addressee_as_sender" target="file5296"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -130,91 +142,91 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Salvus sis in Christo, clarissime Bullingere!</s>
-					<s xml:lang="la" type="auto">Obiicis meis conterraneis Anglis ingratitudinem, quod nihil ad vos dent literarum.</s>
-					<s xml:lang="la" type="auto">Et vereor ne idem crimen mihi impingas, quia superioribus nundinis nihil ad te scripserim.</s>
-					<s xml:lang="la" type="auto">Mi Bullingere, quidvis potius mihi impingas, quam ingratitudinem.</s>
+					<s n="1" xml:lang="la" type="auto">Salvus sis in Christo, clarissime Bullingere!</s>
+					<s n="2" xml:lang="la" type="auto">Obiicis meis conterraneis Anglis ingratitudinem, quod nihil ad vos dent literarum.</s>
+					<s n="3" xml:lang="la" type="auto">Et vereor ne idem crimen mihi impingas, quia superioribus nundinis nihil ad te scripserim.</s>
+					<s n="4" xml:lang="la" type="auto">Mi Bullingere, quidvis potius mihi impingas, quam ingratitudinem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Mihi crede, malim non esse quam esse ingratus.</s>
-					<s xml:lang="la" type="auto">Quod non scripserim, morbo, eique valde periculoso, imputes, non mihi.</s>
+					<s n="5" xml:lang="la" type="auto">Mihi crede, malim non esse quam esse ingratus.</s>
+					<s n="6" xml:lang="la" type="auto">Quod non scripserim, morbo, eique valde periculoso, imputes, non mihi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Egon' Tigurinorum meorum oblivisci possum?</s>
-					<s xml:lang="la" type="auto">Non possum, dum memor ipse mei, dum spiritus hos reget artus<note xml:id="fn1" type="footnote" n="1"><hi>Vergil,</hi> Aeneis, 4, 336.</note>.</s>
+					<s n="7" xml:lang="la" type="auto">Egon' Tigurinorum meorum oblivisci possum?</s>
+					<s n="8" xml:lang="la" type="auto">Non possum, dum memor ipse mei, dum spiritus hos reget artus<note xml:id="fn1" type="footnote" n="1"><hi>Vergil,</hi> Aeneis, 4, 336.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Et ne vestri oblitum crederetis, (quia per valetudinem scribere non potui,) misi aliquid ad vos. etc.</s>
+					<s n="9" xml:lang="la" type="auto">Et ne vestri oblitum crederetis, (quia per valetudinem scribere non potui,) misi aliquid ad vos. etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si unquam primitias persolvero, et ex aere alieno me extricavero, sentietis, quis et qualis sit vester Parkhurstus.</s>
-					<s xml:lang="la" type="auto">Fratres meos episcopos, et alios quos ingratitudinis accusas, nec immerito, satis acerbe satisque imperiose (tametsi illi dixerint satis pro imperio,) coram tractabo.</s>
-					<s xml:lang="la" type="auto">Nec interea temporis cessabunt ad illos meae literae: ammanuensem enim habeo, qui Anglice scribat, at non Latine.</s>
+					<s n="10" xml:lang="la" type="auto">Si unquam primitias persolvero, et ex aere alieno me extricavero, sentietis, quis et qualis sit vester Parkhurstus.</s>
+					<s n="11" xml:lang="la" type="auto">Fratres meos episcopos, et alios quos ingratitudinis accusas, nec immerito, satis acerbe satisque imperiose (tametsi illi dixerint satis pro imperio,) coram tractabo.</s>
+					<s n="12" xml:lang="la" type="auto">Nec interea temporis cessabunt ad illos meae literae: ammanuensem enim habeo, qui Anglice scribat, at non Latine.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tu interim, optime Bullingere, de conterraneis meis dicas bene, tametsi mereantur audire male.</s>
-					<s xml:lang="la" type="auto">Ago gratias pro libro, quem ais te misisse ad me elucubratum hac hyeme contra Brentium.</s>
-					<s xml:lang="la" type="auto">At nondum recepi: brevi recepturus spero.</s>
+					<s n="13" xml:lang="la" type="auto">Tu interim, optime Bullingere, de conterraneis meis dicas bene, tametsi mereantur audire male.</s>
+					<s n="14" xml:lang="la" type="auto">Ago gratias pro libro, quem ais te misisse ad me elucubratum hac hyeme contra Brentium.</s>
+					<s n="15" xml:lang="la" type="auto">At nondum recepi: brevi recepturus spero.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominus Brentii et Lutheranorum omnium oculos aperiat, ne in tanta luce caligine opprimantur!</s>
-					<s xml:lang="la" type="auto">Fabricium signiferi vestri<note xml:id="fn2" type="footnote" n="2">Pannerherr Andreas Schmid.</note> filium nondum vidi.</s>
-					<s xml:lang="la" type="auto">Intra triduum arcessam eum Nordovicum; nam ultro ad me venire fortassis recusat.</s>
+					<s n="16" xml:lang="la" type="auto">Dominus Brentii et Lutheranorum omnium oculos aperiat, ne in tanta luce caligine opprimantur!</s>
+					<s n="17" xml:lang="la" type="auto">Fabricium signiferi vestri<note xml:id="fn2" type="footnote" n="2">Pannerherr Andreas Schmid.</note> filium nondum vidi.</s>
+					<s n="18" xml:lang="la" type="auto">Intra triduum arcessam eum Nordovicum; nam ultro ad me venire fortassis recusat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Gratissimus adveniet, nec omnino indonatus abibit.</s>
-					<s xml:lang="la" type="auto">Si canis Tigurinus ad me commearet, (nullum tamen novi praeter Gvaltheri Wartlaeum,) plurimi facerem, nec canino more tractarem. etc.</s>
+					<s n="19" xml:lang="la" type="auto">Gratissimus adveniet, nec omnino indonatus abibit.</s>
+					<s n="20" xml:lang="la" type="auto">Si canis Tigurinus ad me commearet, (nullum tamen novi praeter Gvaltheri Wartlaeum,) plurimi facerem, nec canino more tractarem. etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Haec breviter ad binas tuas literas.</s>
+					<s n="21" xml:lang="la" type="auto">Haec breviter ad binas tuas literas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Religio apud nos in eo statu est, quo antea, statu inquam non omnino contemnendo.</s>
+					<s n="22" xml:lang="la" type="auto">Religio apud nos in eo statu est, quo antea, statu inquam non omnino contemnendo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sed ego spero aliqua meliora in proximis comitiis.</s>
-					<s xml:lang="la" type="auto">Sunt in Anglia multi boni viri et spiritu ferventes; sunt multi nimium frigidi; sunt et tepidi non pauci, quos dominus ex ore suo evomet.</s>
-					<s xml:lang="la" type="auto">Sed ut nihil apud te dissimulem, metuo ne multa mala nostris capitibus impendeant.</s>
-					<s xml:lang="la" type="auto">Omnes enim fere avariciae student, omnes diligunt munera.</s>
+					<s n="23" xml:lang="la" type="auto">Sed ego spero aliqua meliora in proximis comitiis.</s>
+					<s n="24" xml:lang="la" type="auto">Sunt in Anglia multi boni viri et spiritu ferventes; sunt multi nimium frigidi; sunt et tepidi non pauci, quos dominus ex ore suo evomet.</s>
+					<s n="25" xml:lang="la" type="auto">Sed ut nihil apud te dissimulem, metuo ne multa mala nostris capitibus impendeant.</s>
+					<s n="26" xml:lang="la" type="auto">Omnes enim fere avariciae student, omnes diligunt munera.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nulla veritas, nulla beneficentia, nulla dei cognitio.</s>
+					<s n="27" xml:lang="la" type="auto">Nulla veritas, nulla beneficentia, nulla dei cognitio.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Maledicere et mentiri et occidere et furari et moechari perruperunt. etc.</s>
+					<s n="28" xml:lang="la" type="auto">Maledicere et mentiri et occidere et furari et moechari perruperunt. etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Et quod Empedocles de suis Agrigentinis dixit, hoc ego dicam de meis Anglis: Angli sic indulgent voluptatibus, quasi postridie morituri; sic aedificant, quasi semper victuri.</s>
-					<s xml:lang="la" type="auto">At faxit deus, ut ex animo poenitentiam agamus!</s>
+					<s n="29" xml:lang="la" type="auto">Et quod Empedocles de suis Agrigentinis dixit, hoc ego dicam de meis Anglis: Angli sic indulgent voluptatibus, quasi postridie morituri; sic aedificant, quasi semper victuri.</s>
+					<s n="30" xml:lang="la" type="auto">At faxit deus, ut ex animo poenitentiam agamus!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bene vale, suavissime Bullingere.</s>
+					<s n="31" xml:lang="la" type="auto">Bene vale, suavissime Bullingere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Saluta meo nomine optimam tuam coniugem, filios, filias, generos, omnes doctos, magistratus, et amicos meos omnes.</s>
-					<s xml:lang="la" type="auto">Pro vestra republica fundo ad deum preces nocte dieque.</s>
+					<s n="32" xml:lang="la" type="auto">Saluta meo nomine optimam tuam coniugem, filios, filias, generos, omnes doctos, magistratus, et amicos meos omnes.</s>
+					<s n="33" xml:lang="la" type="auto">Pro vestra republica fundo ad deum preces nocte dieque.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Iterum vale.</s>
+					<s n="34" xml:lang="la" type="auto">Iterum vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Mea vos omnes.</s>
+					<s n="35" xml:lang="la" type="auto">Mea vos omnes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Raptim.</s>
+					<s n="36" xml:lang="la" type="auto">Raptim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ludhamiae, 28. aprilis, 1562.</s>
+					<s n="37" xml:lang="la" type="auto">Ludhamiae, 28. aprilis, 1562.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus ex animo.</s>
+					<s n="38" xml:lang="la" type="auto">Tuus ex animo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ioannes Parkhurstus, Nordovicensis.</s>
-					<s xml:lang="la" type="auto">446a... b: Clarissimo viro d. Henrico Bullingero.</s>
+					<s n="39" xml:lang="la" type="auto">Ioannes Parkhurstus, Nordovicensis.</s>
+					<s n="40" xml:lang="la" type="auto">446a... b: Clarissimo viro d. Henrico Bullingero.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="41" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

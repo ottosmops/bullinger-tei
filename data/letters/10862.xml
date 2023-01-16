@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=823</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=823</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E I 12.1</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E I 12.1</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,7 +49,7 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Bittet Stadtschreiber [<persName ref="12">Beyel</persName>], dafür zu sorgen, daß die Frage der
+								Bittet Stadtschreiber [<persName ref="person12">Beyel</persName>], dafür zu sorgen, daß die Frage der
 								Pfarrer[-Besoldungen] noch vor dem 24. Juni behandelt wird.
 							</p>
 						</summary>
@@ -64,42 +67,46 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10862">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1536-05-18" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#257" cert="high">
+					<!--
+					<persName ref="person257" cert="high">
 						<forename cert="high">Werner</forename>
 						<surname cert="high">Beyel</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/1078319871"/>
 					</persName>
+					-->
+					<persName ref="person257" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10863"/>
-					<ref type="prev_chronologically" target="files.xml#10861"/>
-					<ref type="next_correspondence" target="files.xml#10959"/>
+					<ref type="next_chronologically" target="file10863"/>
+					<ref type="prev_chronologically" target="file10861"/>
+					<ref type="next_correspondence" target="file10959"/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#10959"/>
+					<ref type="next_correspondence_reaction" target="file10959"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10864"/>
-					<ref type="prev_same_sender" target="files.xml#10857"/>
-					<ref type="next_same_addressee" target="files.xml#10959"/>
+					<ref type="next_same_sender" target="file10864"/>
+					<ref type="prev_same_sender" target="file10857"/>
+					<ref type="next_same_addressee" target="file10959"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10864"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10857"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10959"/>
+					<ref type="next_with_sender_as_addressee" target="file10864"/>
+					<ref type="prev_with_sender_as_addressee" target="file10857"/>
+					<ref type="next_with_addressee_as_sender" target="file10959"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -114,13 +121,13 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Lieber h[err] stattschryber, verhälffend, das die sach der pfarreren, von dero wagen ich üch brieff<note xml:id="fn2" type="footnote" n="2">Siehe <ref target="file#10861">Nr. 822</ref>.</note> gäben, ußgemacht<note xml:id="fn3" type="footnote" n="3">vor dem 24. Juni, d. h. vor dem Ratswechsel.</note> werde vor Ioannis, und das sy nitt also lang uffzogen<note xml:id="fn4" type="footnote" n="4">aufgeschoben (Grimm I 784f).</note> werde.</s>
+					<s n="1" xml:lang="de" type="auto">Lieber h[err] stattschryber, verhälffend, das die sach der pfarreren, von dero wagen ich üch brieff<note xml:id="fn2" type="footnote" n="2">Siehe <ref target="file10861">Nr. 822</ref>.</note> gäben, ußgemacht<note xml:id="fn3" type="footnote" n="3">vor dem 24. Juni, d. h. vor dem Ratswechsel.</note> werde vor Ioannis, und das sy nitt also lang uffzogen<note xml:id="fn4" type="footnote" n="4">aufgeschoben (Grimm I 784f).</note> werde.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Wil ich umb üch, wo ich könde, verdienen.</s>
+					<s n="2" xml:lang="de" type="auto">Wil ich umb üch, wo ich könde, verdienen.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">H. Bullinger, der uwer<note xml:id="fna" type="footnote" n="a"><hi>Darunter von der Hand des Stadtschreibers:</hi> M. [<persName ref="87">Johannes</persName>] Hab, m. [<persName ref="1323">Ulrich</persName>] Cambli, m. Conradt <persName ref="58">Escher</persName>, m. <persName ref="1646">Peter</persName> Meyger, m. Jörg <persName ref="1709">Müller</persName> stattschryber; <hi>auf der Rückseite:</hi> Der competentzen [Einkünfte] halb.</note>.</s>
+					<s n="3" xml:lang="de" type="auto">H. Bullinger, der uwer<note xml:id="fna" type="footnote" n="a"><hi>Darunter von der Hand des Stadtschreibers:</hi> M. [Johannes] Hab, m. [Ulrich] Cambli, m. Conradt Escher, m. Peter Meyger, m. Jörg <persName ref="person1709">Müller</persName> stattschryber; <hi>auf der Rückseite:</hi> Der competentzen [Einkünfte] halb.</note>.</s>
 				</p>
 				<p>
 					<note type="address">[Ohne Adresse.]</note>

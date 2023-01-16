@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3613</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 59,315</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 59,315</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,13 +47,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 82,83</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 82,83</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -64,51 +70,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2320">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<note type="Person">sen</note>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1554-06-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#488" cert="high">
+					<!--
+					<persName ref="person488" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger der Jüngere</surname>
-						<addName type="main">Bullinger d.J., Heinrich</addName>
+						<persName type="main" ref="person487>Bullinger d.J., Heinrich</addName>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person488" cert="high"/>
+					<place source="place492" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2321"/>
-					<ref type="prev_chronologically" target="files.xml#2319"/>
-					<ref type="next_correspondence" target="files.xml#2352"/>
-					<ref type="prev_correspondence" target="files.xml#2246"/>
-					<ref type="next_correspondence_request" target="files.xml#2352"/>
-					<ref type="prev_correspondence_request" target="files.xml#2246"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2651"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2210"/>
-					<ref type="next_same_sender" target="files.xml#2327"/>
-					<ref type="prev_same_sender" target="files.xml#2318"/>
-					<ref type="next_same_addressee" target="files.xml#2651"/>
-					<ref type="prev_same_addressee" target="files.xml#2210"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2327"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2318"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2651"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2210"/>
+					<ref type="next_chronologically" target="file2321"/>
+					<ref type="prev_chronologically" target="file2319"/>
+					<ref type="next_correspondence" target="file2352"/>
+					<ref type="prev_correspondence" target="file2246"/>
+					<ref type="next_correspondence_request" target="file2352"/>
+					<ref type="prev_correspondence_request" target="file2246"/>
+					<ref type="next_correspondence_reaction" target="file2651"/>
+					<ref type="prev_correspondence_reaction" target="file2210"/>
+					<ref type="next_same_sender" target="file2327"/>
+					<ref type="prev_same_sender" target="file2318"/>
+					<ref type="next_same_addressee" target="file2651"/>
+					<ref type="prev_same_addressee" target="file2210"/>
+					<ref type="next_with_sender_as_addressee" target="file2327"/>
+					<ref type="prev_with_sender_as_addressee" target="file2318"/>
+					<ref type="next_with_addressee_as_sender" target="file2651"/>
+					<ref type="prev_with_addressee_as_sender" target="file2210"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -127,32 +131,32 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Salve, mi fili.</s>
-					<s xml:lang="la" type="auto">Dum expecto, quid scribas de precio, quod exolvi solet a ditioribus et mediocribus pro mensa Argentinae, praevertit te charissimus dominus et frater meus dominus tuus Burcherus et postulat pro te hoc anno coronatos Gallicos octodecim.</s>
-					<s xml:lang="la" type="auto">Non nimium mihi quidem postulasse videtur, unde et gratias illi egi et polliceor me illi fideliter numeraturum.</s>
-					<s xml:lang="la" type="auto">Te hortor, ut illum amice alloquaris et dicas: "Praedicavit apud me pater tuam beneficentiam, qui, cum plura accipere potuisses, pauciora postulasti; ago igitur tibi gratias et oro, ut me porro commendatum habeas.</s>
+					<s n="1" xml:lang="la" type="auto">Salve, mi fili.</s>
+					<s n="2" xml:lang="la" type="auto">Dum expecto, quid scribas de precio, quod exolvi solet a ditioribus et mediocribus pro mensa Argentinae, praevertit te charissimus dominus et frater meus dominus tuus Burcherus et postulat pro te hoc anno coronatos Gallicos octodecim.</s>
+					<s n="3" xml:lang="la" type="auto">Non nimium mihi quidem postulasse videtur, unde et gratias illi egi et polliceor me illi fideliter numeraturum.</s>
+					<s n="4" xml:lang="la" type="auto">Te hortor, ut illum amice alloquaris et dicas: "Praedicavit apud me pater tuam beneficentiam, qui, cum plura accipere potuisses, pauciora postulasti; ago igitur tibi gratias et oro, ut me porro commendatum habeas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quodsi aliquid etiam in aedibus et alias inservire possum, meam operam offero paratus."</s>
-					<s xml:lang="la" type="auto">Oravi enim, ut porro te sustentet, donec te ablegavero ab Argentina, ubi tamen nunc optimos habes praeceptores et lectiones utilissimas.</s>
-					<s xml:lang="la" type="auto">Vide, ut bene utaris benevolentia clarissimorum virorum d. d. Martyris et Zanchi, quorum uterque scriptis literis testatur in te, non in ipsis culpam haerere, si quid hic negligatur; se enim tibi esse faventes et paratissimos, id quod tibi significarint.</s>
+					<s n="5" xml:lang="la" type="auto">Quodsi aliquid etiam in aedibus et alias inservire possum, meam operam offero paratus."</s>
+					<s n="6" xml:lang="la" type="auto">Oravi enim, ut porro te sustentet, donec te ablegavero ab Argentina, ubi tamen nunc optimos habes praeceptores et lectiones utilissimas.</s>
+					<s n="7" xml:lang="la" type="auto">Vide, ut bene utaris benevolentia clarissimorum virorum d. d. Martyris et Zanchi, quorum uterque scriptis literis testatur in te, non in ipsis culpam haerere, si quid hic negligatur; se enim tibi esse faventes et paratissimos, id quod tibi significarint.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Iam ergo si addideris 8 coronatos, quos tecum avexisti (nihil iam dico de viatico et aliis pecuniis) his 18, colliges summam coronatorum 26 sive aureorum Germanicorum 40 et semis et 5<foreign xml:lang="el">β</foreign>.</s>
-					<s xml:lang="la" type="auto">Hos libenter pro te expono, utrunque me in re domestica... urant et angant.</s>
-					<s xml:lang="la" type="auto">Vide tu modo, mi fili, ne frustra tantos faciam sumptus; incumbe noctes atque dies literis, time deum, sis moribus probatis, et si quid frugi praeterea tibi opus sit, significa; volo tamen, ut sis frugi et parcus; dann so vil eins jars uß miner hußhaltung gäben truckt mich.</s>
+					<s n="8" xml:lang="la" type="auto">Iam ergo si addideris 8 coronatos, quos tecum avexisti (nihil iam dico de viatico et aliis pecuniis) his 18, colliges summam coronatorum 26 sive aureorum Germanicorum 40 et semis et 5<foreign xml:lang="el">β</foreign>.</s>
+					<s n="9" xml:lang="la" type="auto">Hos libenter pro te expono, utrunque me in re domestica... urant et angant.</s>
+					<s n="10" xml:lang="la" type="auto">Vide tu modo, mi fili, ne frustra tantos faciam sumptus; incumbe noctes atque dies literis, time deum, sis moribus probatis, et si quid frugi praeterea tibi opus sit, significa; volo tamen, ut sis frugi et parcus; dann so vil eins jars uß miner hußhaltung gäben truckt mich.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Mitto tibi per H. Vuestium Decades meas non ineleganter compactas; vide ut munde illis utaris, ut inquam librum illum ex patre semper habeas, diu illo etiam domi utaris<note type="margin">dazu a.R.: "Precium vecturae ego solvam; tu nihil expones."</note>.</s>
-					<s xml:lang="la" type="auto">Mater non admodum firmis est viribus, solicitum me habet; ora dominum, ut illam roboret, ne praematuro fato et morbis consumatur.</s>
-					<s xml:lang="la" type="auto">Vive et vale.</s>
-					<s xml:lang="la" type="auto">Tiguri 24. iunii 1554.</s>
+					<s n="11" xml:lang="la" type="auto">Mitto tibi per H. Vuestium Decades meas non ineleganter compactas; vide ut munde illis utaris, ut inquam librum illum ex patre semper habeas, diu illo etiam domi utaris<note type="margin">dazu a.R.: "Precium vecturae ego solvam; tu nihil expones."</note>.</s>
+					<s n="12" xml:lang="la" type="auto">Mater non admodum firmis est viribus, solicitum me habet; ora dominum, ut illam roboret, ne praematuro fato et morbis consumatur.</s>
+					<s n="13" xml:lang="la" type="auto">Vive et vale.</s>
+					<s n="14" xml:lang="la" type="auto">Tiguri 24. iunii 1554.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dilecto suo filio Heinrycho Bullingero iuniori Argentinae agenti in aedibus domini Burcheri Angli.</s>
+					<s n="15" xml:lang="la" type="auto">Dilecto suo filio Heinrycho Bullingero iuniori Argentinae agenti in aedibus domini Burcheri Angli.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Straßburg.</s>
+					<s n="16" xml:lang="de" type="auto">Straßburg.</s>
 				</p>
 			</div>
 		</body>

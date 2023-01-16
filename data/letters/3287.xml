@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4675/246</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 375,501a</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 375,501a</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -52,13 +55,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 90,87</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 90,87</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -72,51 +78,53 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3287">
 				<correspAction type="sent">
-					<persName ref="person#1075" cert="high">
+					<!--
+					<persName ref="person1075" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Fabricius</surname>
-						<addName type="main">Fabricius Montanus (Schmid), Johannes</addName>
+						<persName type="main" ref="person8009>Fabricius Montanus (Schmid), Johannes</addName>
 						<graphic type="portrait" url="portraits/1075_Fabricius_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Fabricius_Montanus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104045698"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414870"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person1075" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1557-08-31" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3288"/>
-					<ref type="prev_chronologically" target="files.xml#3286"/>
-					<ref type="next_correspondence" target="files.xml#3295"/>
-					<ref type="prev_correspondence" target="files.xml#3276"/>
-					<ref type="next_correspondence_request" target="files.xml#3311"/>
-					<ref type="prev_correspondence_request" target="files.xml#3265"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3295"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3276"/>
-					<ref type="next_same_sender" target="files.xml#3311"/>
-					<ref type="prev_same_sender" target="files.xml#3265"/>
-					<ref type="next_same_addressee" target="files.xml#3292"/>
-					<ref type="prev_same_addressee" target="files.xml#3276"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3311"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3265"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3292"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3276"/>
-					<ref type="child" target="files.xml#3288"/>
+					<ref type="next_chronologically" target="file3288"/>
+					<ref type="prev_chronologically" target="file3286"/>
+					<ref type="next_correspondence" target="file3295"/>
+					<ref type="prev_correspondence" target="file3276"/>
+					<ref type="next_correspondence_request" target="file3311"/>
+					<ref type="prev_correspondence_request" target="file3265"/>
+					<ref type="next_correspondence_reaction" target="file3295"/>
+					<ref type="prev_correspondence_reaction" target="file3276"/>
+					<ref type="next_same_sender" target="file3311"/>
+					<ref type="prev_same_sender" target="file3265"/>
+					<ref type="next_same_addressee" target="file3292"/>
+					<ref type="prev_same_addressee" target="file3276"/>
+					<ref type="next_with_sender_as_addressee" target="file3311"/>
+					<ref type="prev_with_sender_as_addressee" target="file3265"/>
+					<ref type="next_with_addressee_as_sender" target="file3292"/>
+					<ref type="prev_with_addressee_as_sender" target="file3276"/>
+					<ref type="child" target="file3288"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -126,62 +134,65 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="3287/Autograph/00 E_II_375__fol__501_a_r_.tif" n="1"/>
+		<graphic url="3287/Autograph/01 E_II_375__fol__501_a_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Quod (reverende in Christo pater) pro tuo erga me amore omnia, quae nostra scire interesse iudicas, officiosissime mecum communicas, incredibile dictu est quam gratum mihi iucundumque accidat.</s>
-					<s xml:lang="la" type="auto">Utinam meritorum tuorum erga me summam quoque aliquam meis officiis assequi aliquando possem.</s>
-					<s xml:lang="la" type="auto">Quae de Gallorum strage scribis, iam ante ex d. Coigneto cognovi, qui mihi ceu intimo suo amico rem omnem, ut gesta erat, concredere non dubitavit.</s>
-					<s xml:lang="la" type="auto">Potuissem quidem sati eadem ad te perscribere, nisi d. Coignetus recta ad vos proficisci se cogitare mihi affirmasset, et sane miror, ubi locorum interea temporis haereat; diu enim est, quod a nobis discessit.</s>
-					<s xml:lang="la" type="auto">Addebat d. Coignetus ducem Guisium brevi hac transiturum; eum enim rex ex Italia evocavit; succedet is in locum connestablii, quem d. Coignetus graviter vulneratum aut in pugna cecidisse aut in hostium potestatem venisse referebat.</s>
-					<s xml:lang="la" type="auto">Interim vero quod christiani in summo discrimine in Gallia versantur, consuluit d. Coignetus apud ducem Guisium et verbis et scriptis esse intercedendum; iam enim opportunitatem rei bene gerendae oblatam esse existimavit; fere enim, cum res nostrae afflictae sunt, afflictis nos praestare solemus aequiores.</s>
-					<s xml:lang="la" type="auto">Supplicationem ergo, quam duci offerre statuimus, cuius quoque summam verbis, si modo eius adeundi copia nobis facta fuerit, studiose prosequemur, iam ad te mitto.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Quod (reverende in Christo pater) pro tuo erga me amore omnia, quae nostra scire interesse iudicas, officiosissime mecum communicas, incredibile dictu est quam gratum mihi iucundumque accidat.</s>
+					<s n="3" xml:lang="la" type="auto">Utinam meritorum tuorum erga me summam quoque aliquam meis officiis assequi aliquando possem.</s>
+					<s n="4" xml:lang="la" type="auto">Quae de Gallorum strage scribis, iam ante ex d. Coigneto cognovi, qui mihi ceu intimo suo amico rem omnem, ut gesta erat, concredere non dubitavit.</s>
+					<s n="5" xml:lang="la" type="auto">Potuissem quidem sati eadem ad te perscribere, nisi d. Coignetus recta ad vos proficisci se cogitare mihi affirmasset, et sane miror, ubi locorum interea temporis haereat; diu enim est, quod a nobis discessit.</s>
+					<s n="6" xml:lang="la" type="auto">Addebat d. Coignetus ducem Guisium brevi hac transiturum; eum enim rex ex Italia evocavit; succedet is in locum connestablii, quem d. Coignetus graviter vulneratum aut in pugna cecidisse aut in hostium potestatem venisse referebat.</s>
+					<s n="7" xml:lang="la" type="auto">Interim vero quod christiani in summo discrimine in Gallia versantur, consuluit d. Coignetus apud ducem Guisium et verbis et scriptis esse intercedendum; iam enim opportunitatem rei bene gerendae oblatam esse existimavit; fere enim, cum res nostrae afflictae sunt, afflictis nos praestare solemus aequiores.</s>
+					<s n="8" xml:lang="la" type="auto">Supplicationem ergo, quam duci offerre statuimus, cuius quoque summam verbis, si modo eius adeundi copia nobis facta fuerit, studiose prosequemur, iam ad te mitto.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Non dubito autem, quin per vos quoque sit transiturus.</s>
-					<s xml:lang="la" type="auto">Quodsi vos iisdem, quibus nos, eum oppugnaretis copiis aut etiam firmioribus, mutua nostra auxilia multum ad causae bonitatem roboris essent habitura.</s>
-					<s xml:lang="la" type="auto">Ex Italia nihil novi habetur, nisi quod lues quaedam per Germanum militem pervagata plurimos absumit.</s>
-					<s xml:lang="la" type="auto">Antonius Corvinus, Antonii Corvini filius, nuper hac transivit, qui quod esset afflictae valetudinis aut pene desperatae, me per hospitem acciri ad se voluit.</s>
+					<s n="9" xml:lang="la" type="auto">Non dubito autem, quin per vos quoque sit transiturus.</s>
+					<s n="10" xml:lang="la" type="auto">Quodsi vos iisdem, quibus nos, eum oppugnaretis copiis aut etiam firmioribus, mutua nostra auxilia multum ad causae bonitatem roboris essent habitura.</s>
+					<s n="11" xml:lang="la" type="auto">Ex Italia nihil novi habetur, nisi quod lues quaedam per Germanum militem pervagata plurimos absumit.</s>
+					<s n="12" xml:lang="la" type="auto">Antonius Corvinus, Antonii Corvini filius, nuper hac transivit, qui quod esset afflictae valetudinis aut pene desperatae, me per hospitem acciri ad se voluit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Is procerae admodum staturae homo Saxonem sequutus equitem, qui Caesari militat, evangelium in castris praedicavit.</s>
-					<s xml:lang="de" type="auto">Er seyt, es wärind iren 600 gesyn; darvon wärind noch 300 überig; dan zweyhundert wärind gestorben, hundert lägind noch uff dem schragen.</s>
-					<s xml:lang="de" type="auto">Doch ist er nye by dem rechten gwaltshuffen gesyn, kont mir noch nütt gewüß vom selben sagen.</s>
-					<s xml:lang="de" type="auto">Dise Saxen (seyt er) wärind gerugkt uffs hertzogen von Ferrärs land, sich als fyend ze erzeigen.</s>
+					<s n="13" xml:lang="la" type="auto">Is procerae admodum staturae homo Saxonem sequutus equitem, qui Caesari militat, evangelium in castris praedicavit.</s>
+					<s n="14" xml:lang="de" type="auto">Er seyt, es wärind iren 600 gesyn; darvon wärind noch 300 überig; dan zweyhundert wärind gestorben, hundert lägind noch uff dem schragen.</s>
+					<s n="15" xml:lang="de" type="auto">Doch ist er nye by dem rechten gwaltshuffen gesyn, kont mir noch nütt gewüß vom selben sagen.</s>
+					<s n="16" xml:lang="de" type="auto">Dise Saxen (seyt er) wärind gerugkt uffs hertzogen von Ferrärs land, sich als fyend ze erzeigen.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Er seyt, das die keiserischen gar übel bezalt wurdind, das auch er mit den synen die zyt, so sy in Italia glegen, noch nye kein sold hettind entpfangen.</s>
-					<s xml:lang="de" type="auto">D. Coignetus zeigt an, das unsere knecht ellendiglich wider werdind heym kommen, jaa wölche kommen mügend; dann sobald der oberist von inen kompt, deßglich der Froelich (dan man desselben ouch wartet ist), wirt es gfaarlich um sy staan.</s>
-					<s xml:lang="de" type="auto">Uß den Pünten sind überal 6 fendlin hinweg, sind under allen kum 800 knecht, under denen die halben Pünter sind, wen man glych geyßhirten und alls zuͦsamen rechnet.</s>
+					<s n="17" xml:lang="de" type="auto">Er seyt, das die keiserischen gar übel bezalt wurdind, das auch er mit den synen die zyt, so sy in Italia glegen, noch nye kein sold hettind entpfangen.</s>
+					<s n="18" xml:lang="de" type="auto">D. Coignetus zeigt an, das unsere knecht ellendiglich wider werdind heym kommen, jaa wölche kommen mügend; dann sobald der oberist von inen kompt, deßglich der Froelich (dan man desselben ouch wartet ist), wirt es gfaarlich um sy staan.</s>
+					<s n="19" xml:lang="de" type="auto">Uß den Pünten sind überal 6 fendlin hinweg, sind under allen kum 800 knecht, under denen die halben Pünter sind, wen man glych geyßhirten und alls zuͦsamen rechnet.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Sind all hye durchzogen, ach gott, es ist ein zesamen gsamlets völckli; müssend die Franckrych retten, wirt es ruch gan.</s>
-					<s xml:lang="de" type="auto">Antoni Notz, des houptman Frölichen furier, ist hye durchgeritten, hatt sich ein zytli in Appenzel gesumpt kranckheit halb; der zeigt mir an, das houptman Clam wäre zuͦ Schwytz an der landsgmeind gesyn; dan soverr dieselben dem künig knecht erloubt, hettind ouch die von Appenzel dem houptman Clamen knächt verwilliget.</s>
+					<s n="20" xml:lang="de" type="auto">Sind all hye durchzogen, ach gott, es ist ein zesamen gsamlets völckli; müssend die Franckrych retten, wirt es ruch gan.</s>
+					<s n="21" xml:lang="de" type="auto">Antoni Notz, des houptman Frölichen furier, ist hye durchgeritten, hatt sich ein zytli in Appenzel gesumpt kranckheit halb; der zeigt mir an, das houptman Clam wäre zuͦ Schwytz an der landsgmeind gesyn; dan soverr dieselben dem künig knecht erloubt, hettind ouch die von Appenzel dem houptman Clamen knächt verwilliget.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Derselbig hette sömliche mär heym bracht, das 10 uß der gmaind Schwytz sich mit eyd zesamen hettind verbunden (under denen were auch ein amman uß dem dorff), ir lyb und leben, gütt und hab darzestrecken, die sach daahin ze bringen, das man aller frömden fürsten und herren müßig gange etc.</s>
-					<s xml:lang="de" type="auto">Habind uff das selb barfuͦß ein fart gaan Einsidlen gethaan, habind diß ir fürnemmen an der gmeind uff den 15. augusti, doch kumm ersamlich, behouptet, und in summa, ein gantze gmeind zuͦ Schwytz habe verschworen alle pension, myet, gaaben und dienstgelt by verluost eeren und guͦts, auch ins land ze schweeren und nit meer daruß.</s>
-					<s xml:lang="la" type="auto">Haec Antonius Notz se ex ipso Clamio audisse affirmabat.</s>
+					<s n="22" xml:lang="de" type="auto">Derselbig hette sömliche mär heym bracht, das 10 uß der gmaind Schwytz sich mit eyd zesamen hettind verbunden (under denen were auch ein amman uß dem dorff), ir lyb und leben, gütt und hab darzestrecken, die sach daahin ze bringen, das man aller frömden fürsten und herren müßig gange etc.</s>
+					<s n="23" xml:lang="de" type="auto">Habind uff das selb barfuͦß ein fart gaan Einsidlen gethaan, habind diß ir fürnemmen an der gmeind uff den 15. augusti, doch kumm ersamlich, behouptet, und in summa, ein gantze gmeind zuͦ Schwytz habe verschworen alle pension, myet, gaaben und dienstgelt by verluost eeren und guͦts, auch ins land ze schweeren und nit meer daruß.</s>
+					<s n="24" xml:lang="la" type="auto">Haec Antonius Notz se ex ipso Clamio audisse affirmabat.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Wie lang es bestaan werd, weyß gott wol, on allen zwyfel als lang als vor ettwan.</s>
-					<s xml:lang="la" type="auto">Haec raptim, ut vides; ignoce ergo mihi, quaeso.</s>
+					<s n="25" xml:lang="de" type="auto">Wie lang es bestaan werd, weyß gott wol, on allen zwyfel als lang als vor ettwan.</s>
+					<s n="26" xml:lang="la" type="auto">Haec raptim, ut vides; ignoce ergo mihi, quaeso.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, pater in Christo reverende; salutem tibi ascribere me iusserunt d. d. consules, d. Philippus, d. Pontisella.</s>
+					<s n="27" xml:lang="la" type="auto">Vale, pater in Christo reverende; salutem tibi ascribere me iusserunt d. d. consules, d. Philippus, d. Pontisella.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salutem ex me dices vestris omnibus, inprimis autem coniugi tuae, matronae honestissimae cum reliqua tua familia omni.</s>
-					<s xml:lang="la" type="auto">Quod ante te rogavi, nunc iterum rogo: si quando commode potes, amplissimis viris d. d. consulibus, d. Habio inquam et d. Müllero, patronis meis colendissimis, me commendare non graveris.</s>
+					<s n="28" xml:lang="la" type="auto">Salutem ex me dices vestris omnibus, inprimis autem coniugi tuae, matronae honestissimae cum reliqua tua familia omni.</s>
+					<s n="29" xml:lang="la" type="auto">Quod ante te rogavi, nunc iterum rogo: si quando commode potes, amplissimis viris d. d. consulibus, d. Habio inquam et d. Müllero, patronis meis colendissimis, me commendare non graveris.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale iterum Curiae pridie calendas septembris anno domini 1557.</s>
+					<s n="30" xml:lang="la" type="auto">Vale iterum Curiae pridie calendas septembris anno domini 1557.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ioannes Fabricius tui observantissimus.</s>
+					<s n="31" xml:lang="la" type="auto">Ioannes Fabricius tui observantissimus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse fehlt.]</note>

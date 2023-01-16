@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3103</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 362,13-14</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 362,13-14</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Regest" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 79,74</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 79,74</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -61,63 +67,42 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1849">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#14" cert="low">Bürgermeister</name>
-						<place source="#441" cert="low">
-							<settlement>Schaffhausen</settlement>
-							<district>Schaffhausen</district>
-							<country>Schweiz</country>
-							<geo>47.69732 8.63493</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="low">Räte</name>
-						<place source="#441" cert="low">
-							<settlement>Schaffhausen</settlement>
-							<district>Schaffhausen</district>
-							<country>Schweiz</country>
-							<geo>47.69732 8.63493</geo>
-						</place>
-					</roleName>
-					<place source="#441" cert="low">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					<personGrp ref="role28" role="Bürgermeister"/>
+					<personGrp ref="role0" role="Räte"/>
+					<place source="place441" cert="low"/>
 					<date when="1553-04-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1850"/>
-					<ref type="prev_chronologically" target="files.xml#1848"/>
-					<ref type="next_correspondence" target="files.xml#1850"/>
-					<ref type="prev_correspondence" target="files.xml#1704"/>
-					<ref type="next_correspondence_request" target="files.xml#4669"/>
-					<ref type="prev_correspondence_request" target="files.xml#1479"/>
-					<ref type="next_correspondence_reaction" target="files.xml#1850"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1704"/>
-					<ref type="next_same_sender" target="files.xml#2020"/>
-					<ref type="prev_same_sender" target="files.xml#1479"/>
-					<ref type="next_same_addressee" target="files.xml#1850"/>
-					<ref type="prev_same_addressee" target="files.xml#1837"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2020"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1479"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1850"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1837"/>
+					<ref type="next_chronologically" target="file1850"/>
+					<ref type="prev_chronologically" target="file1848"/>
+					<ref type="next_correspondence" target="file1850"/>
+					<ref type="prev_correspondence" target="file1704"/>
+					<ref type="next_correspondence_request" target="file4669"/>
+					<ref type="prev_correspondence_request" target="file1479"/>
+					<ref type="next_correspondence_reaction" target="file1850"/>
+					<ref type="prev_correspondence_reaction" target="file1704"/>
+					<ref type="next_same_sender" target="file2020"/>
+					<ref type="prev_same_sender" target="file1479"/>
+					<ref type="next_same_addressee" target="file1850"/>
+					<ref type="prev_same_addressee" target="file1837"/>
+					<ref type="next_with_sender_as_addressee" target="file2020"/>
+					<ref type="prev_with_sender_as_addressee" target="file1479"/>
+					<ref type="next_with_addressee_as_sender" target="file1850"/>
+					<ref type="prev_with_addressee_as_sender" target="file1837"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -126,21 +111,24 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="1849/Autograph/00 E_II_362__S__13_.tif" n="1"/>
+		<graphic url="1849/Autograph/01 E_II_362__S__14_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="de">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Unnser frünntlich, willig diennst, unnd was wir eerenn, liebs unnd guͦts vermögen, voran, hoch unnd wollgelert, vrom, vest unnd wiß, besonnders günstig, lieb herrenn unnd guͦt fründt.</s>
-					<s xml:lang="de" type="auto">Der hoch würdig fürst unnd herr bischoff zuͦ Costanntz etc., unnser gnediger herr, ist lechennherr der pfarr zuͦ Buchberg, daselbs wir die niderenn gericht habenn, unnd hett ain predicannten, ain junge person, herr Jacoben Keller von Rümlingen, dahin verordnet.</s>
-					<s xml:lang="de" type="auto">Unns lanngt aber an, wie gedachter her Jacob Keller in unnserer getrüwenn liebenn aidtgnossen zuͦ Zürich stipendium gsin unnd sich aber irs gefallens nit geflissenn, uß der ursach si im urlob gebenn, demnach inn wider begnadet unnd in gemelt stipendium kommen lassenn, unnd sich aber dermaßenn gehaltenn, si verursachet, im das stipendium abgeschlagenn.</s>
-					<s xml:lang="de" type="auto">Ob dem allso, unnd wie er sich gehaltenn, wellenn uns in schrifft in gehaim verstenndigen, unns darnach ze richtenn wüßenn.</s>
-					<s xml:lang="de" type="auto">Wir besorgenn, er sige nit für unnsere armenn lüt; begerenn wir umb üch frünntlich ze beschuldenn, damit üch unnd uns in den schirm des allmechtigenn gottes befelchennde.</s>
-					<s xml:lang="de" type="auto">Datum mittwuchen nach misericordia domini anno 53 etc.</s>
+					<s n="1" xml:lang="de" type="auto">Unnser frünntlich, willig diennst, unnd was wir eerenn, liebs unnd guͦts vermögen, voran, hoch unnd wollgelert, vrom, vest unnd wiß, besonnders günstig, lieb herrenn unnd guͦt fründt.</s>
+					<s n="2" xml:lang="de" type="auto">Der hoch würdig fürst unnd herr bischoff zuͦ Costanntz etc., unnser gnediger herr, ist lechennherr der pfarr zuͦ Buchberg, daselbs wir die niderenn gericht habenn, unnd hett ain predicannten, ain junge person, herr Jacoben Keller von Rümlingen, dahin verordnet.</s>
+					<s n="3" xml:lang="de" type="auto">Unns lanngt aber an, wie gedachter her Jacob Keller in unnserer getrüwenn liebenn aidtgnossen zuͦ Zürich stipendium gsin unnd sich aber irs gefallens nit geflissenn, uß der ursach si im urlob gebenn, demnach inn wider begnadet unnd in gemelt stipendium kommen lassenn, unnd sich aber dermaßenn gehaltenn, si verursachet, im das stipendium abgeschlagenn.</s>
+					<s n="4" xml:lang="de" type="auto">Ob dem allso, unnd wie er sich gehaltenn, wellenn uns in schrifft in gehaim verstenndigen, unns darnach ze richtenn wüßenn.</s>
+					<s n="5" xml:lang="de" type="auto">Wir besorgenn, er sige nit für unnsere armenn lüt; begerenn wir umb üch frünntlich ze beschuldenn, damit üch unnd uns in den schirm des allmechtigenn gottes befelchennde.</s>
+					<s n="6" xml:lang="de" type="auto">Datum mittwuchen nach misericordia domini anno 53 etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Burgermeister und rathe der statt Schaffhusenn.</s>
-					<s xml:lang="de" type="auto">Den hoch- unnd wolgelerten, frommen, vesten unnd wisenn herrenn Hainrichen Bullinger, verkünnder göttlichs worts zuͦ Zürich, und N., sinen mittschuͦlherrenn daselbs, unsern besonndern günnstigen, lieben herrenn und guͦten fründen sampt und sonders ufzethuͦndt.</s>
+					<s n="7" xml:lang="de" type="auto">Burgermeister und rathe der statt Schaffhusenn.</s>
+					<s n="8" xml:lang="de" type="auto">Den hoch- unnd wolgelerten, frommen, vesten unnd wisenn herrenn Hainrichen Bullinger, verkünnder göttlichs worts zuͦ Zürich, und N., sinen mittschuͦlherrenn daselbs, unsern besonndern günnstigen, lieben herrenn und guͦten fründen sampt und sonders ufzethuͦndt.</s>
 				</p>
 			</div>
 		</body>

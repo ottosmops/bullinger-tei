@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1013</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1013</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 355,90</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 355,90</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,9 +50,9 @@
 						<summary>
 							<p xml:id="regest1">
 								Kann zum Ausgang seines Verfahrens nun mitteilen, daß er von Landvogt
-								[<persName ref="2618">Zumbrunnen</persName>] freigesprochen wurde (hofft, daß die Feinde der Wahrheit
+								[<persName ref="person2618">Zumbrunnen</persName>] freigesprochen wurde (hofft, daß die Feinde der Wahrheit
 								zuschanden werden); bittet Bullinger, die Verteidigungsschrift
-								[<persName ref="156">Möttelis</persName>] zurückzuziehen, damit nicht Anlaß zum Streit gegeben wird.
+								[<persName ref="person156">Möttelis</persName>] zurückzuziehen, damit nicht Anlaß zum Streit gegeben wird.
 								Dankt den Pfarrern und Bullinger für die Unterstützung.
 							</p>
 						</summary>
@@ -60,43 +63,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11055">
 				<correspAction type="sent">
-					<persName ref="person#2237" cert="high">
+					<!--
+					<persName ref="person2237" cert="high">
 						<forename cert="high">Martin</forename>
 						<surname cert="high">Mötteli</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089474202"/>
 					</persName>
-					<place source="#538" cert="high">
-						<settlement>Weinfelden</settlement>
-						<district>Thurgau</district>
-						<country>Schweiz</country>
-						<geo>47.56667 9.1</geo>
-					</place>
+					-->
+					<persName ref="person2237" cert="high"/>
+					<place source="place538" cert="high"/>
 					<date when="1537-07-05" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11056"/>
-					<ref type="prev_chronologically" target="files.xml#11054"/>
-					<ref type="next_correspondence" target="files.xml#11780"/>
-					<ref type="prev_correspondence" target="files.xml#10774"/>
-					<ref type="next_correspondence_request" target="files.xml#11780"/>
-					<ref type="prev_correspondence_request" target="files.xml#10774"/>
+					<ref type="next_chronologically" target="file11056"/>
+					<ref type="prev_chronologically" target="file11054"/>
+					<ref type="next_correspondence" target="file11780"/>
+					<ref type="prev_correspondence" target="file10774"/>
+					<ref type="next_correspondence_request" target="file11780"/>
+					<ref type="prev_correspondence_request" target="file10774"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11780"/>
-					<ref type="prev_same_sender" target="files.xml#10774"/>
-					<ref type="next_same_addressee" target="files.xml#11067"/>
-					<ref type="prev_same_addressee" target="files.xml#11051"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11780"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10774"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11067"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11051"/>
+					<ref type="next_same_sender" target="file11780"/>
+					<ref type="prev_same_sender" target="file10774"/>
+					<ref type="next_same_addressee" target="file11067"/>
+					<ref type="prev_same_addressee" target="file11051"/>
+					<ref type="next_with_sender_as_addressee" target="file11780"/>
+					<ref type="prev_with_sender_as_addressee" target="file10774"/>
+					<ref type="next_with_addressee_as_sender" target="file11067"/>
+					<ref type="prev_with_addressee_as_sender" target="file11051"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -114,37 +121,37 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a deo, patre nostro, et domino Iesu Christo.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a deo, patre nostro, et domino Iesu Christo.</s>
+					<s n="2" xml:lang="la" type="manual">Amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quando te (optime vir) non solum omnium ecclesiarum, sed et omnium fratrum anxiam curam gerere sciam, res meas, quas et nuper tecum contuleram, ac scripta schedula<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note>, si quando casus<note xml:id="fn2" type="footnote" n="2">Über den Fall ist im einzelnen nichts bekannt.</note> exigeret, ut memorarentur, tibi reliqueram, quem in finem abierint, pro tua singulari in me benevolentia nequaquam cęlare volui.</s>
-					<s xml:lang="la" type="auto">Ego enim, pro augusta veritatis maiestate, omnes semel illius inimicos confundi spero.</s>
-					<s xml:lang="la" type="auto">Prefectus<note xml:id="fn3" type="footnote" n="3"><persName ref="2618">Mansuet Zumbrunnen</persName>, von <placeName ref="93">Uri</placeName>, 1536-1538 eidgenössischer Landvogt im <placeName ref="87">Thurgau</placeName>.</note> enim cum in ius me citatum in tertium usque iuris diem presentem me sine accusatore haberet nulliusque<pb type="edition" next="183"/> me reum ageret, ipse ego iudicem ius meum rogans, pręfectus me liberum dixit; quo id vero consilio, scire non possum.</s>
-					<s xml:lang="la" type="auto">Apologiam igitur meam, quam in scriptis tibi dedi<note xml:id="fn4" type="footnote" n="4">Nicht erhalten.</note>, a publico retractes velim, ne vel olim modo quovis novorum incendia iurgiorum esse possint.</s>
-					<s xml:lang="la" type="auto">Si forsan dominus ęquiorem de veritate sentiendi animum praestiterit, nullam nostri causa offensionem impatientibus querelis prebeamus.</s>
+					<s n="3" xml:lang="la" type="auto">Quando te (optime vir) non solum omnium ecclesiarum, sed et omnium fratrum anxiam curam gerere sciam, res meas, quas et nuper tecum contuleram, ac scripta schedula<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note>, si quando casus<note xml:id="fn2" type="footnote" n="2">Über den Fall ist im einzelnen nichts bekannt.</note> exigeret, ut memorarentur, tibi reliqueram, quem in finem abierint, pro tua singulari in me benevolentia nequaquam cęlare volui.</s>
+					<s n="4" xml:lang="la" type="auto">Ego enim, pro augusta veritatis maiestate, omnes semel illius inimicos confundi spero.</s>
+					<s n="5" xml:lang="la" type="auto">Prefectus<note xml:id="fn3" type="footnote" n="3"><persName ref="person2618">Mansuet Zumbrunnen</persName>, von <placeName ref="place93">Uri</placeName>, 1536-1538 eidgenössischer Landvogt im <placeName ref="place87">Thurgau</placeName>.</note> enim cum in ius me citatum in tertium usque iuris diem presentem me sine accusatore haberet nulliusque<pb type="edition" next="183"/> me reum ageret, ipse ego iudicem ius meum rogans, pręfectus me liberum dixit; quo id vero consilio, scire non possum.</s>
+					<s n="6" xml:lang="la" type="auto">Apologiam igitur meam, quam in scriptis tibi dedi<note xml:id="fn4" type="footnote" n="4">Nicht erhalten.</note>, a publico retractes velim, ne vel olim modo quovis novorum incendia iurgiorum esse possint.</s>
+					<s n="7" xml:lang="la" type="auto">Si forsan dominus ęquiorem de veritate sentiendi animum praestiterit, nullam nostri causa offensionem impatientibus querelis prebeamus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ceterum sedula opera, consilio ac sumptu mea me adiuvit ecclesia eximiam diligentiam et amorem in me exhibens, omnes item fratres; ut primum precibus et cura pro me rebusque ecclesię erant anxii, ita plurimum nunc et ecclesię et mihi congratulantur.</s>
-					<s xml:lang="la" type="auto">Reddat illis dominus ęternam lęticiam pro illorum in me amore et studio.</s>
-					<s xml:lang="la" type="auto">Tu pro tua in nos charitate nobiscum domino semper gratias agas.</s>
+					<s n="8" xml:lang="la" type="auto">Ceterum sedula opera, consilio ac sumptu mea me adiuvit ecclesia eximiam diligentiam et amorem in me exhibens, omnes item fratres; ut primum precibus et cura pro me rebusque ecclesię erant anxii, ita plurimum nunc et ecclesię et mihi congratulantur.</s>
+					<s n="9" xml:lang="la" type="auto">Reddat illis dominus ęternam lęticiam pro illorum in me amore et studio.</s>
+					<s n="10" xml:lang="la" type="auto">Tu pro tua in nos charitate nobiscum domino semper gratias agas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">Omnes te fratres semper salvum sedulo pręcantur.</s>
+					<s n="11" xml:lang="la" type="auto">Vale.</s>
+					<s n="12" xml:lang="la" type="auto">Omnes te fratres semper salvum sedulo pręcantur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quinta die iulii anno 37.</s>
+					<s n="13" xml:lang="la" type="auto">Quinta die iulii anno 37.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="156">Martinus</persName> Mötyly, semper tuus.</s>
+					<s n="14" xml:lang="la" type="auto"><persName ref="person156">Martinus</persName> Mötyly, semper tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ex Winfelden Thurgoę.</s>
+					<s n="15" xml:lang="de" type="auto">Ex Winfelden Thurgoę.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Simul piissimo doctissimoque viro M. Gheimrycho<note xml:id="fn5" type="footnote" n="5">Zur Namensform vgl. <persName ref="156">Möttelis</persName> Ausführungen im Brief vom 2. Januar 1536 (HBBW VI, S. 34, 18-23).</note> Bullingero, domino ac fratri suo semper amantissimo.</s>
+					<s n="16" xml:lang="la" type="auto">Simul piissimo doctissimoque viro M. Gheimrycho<note xml:id="fn5" type="footnote" n="5">Zur Namensform vgl. <persName ref="person156">Möttelis</persName> Ausführungen im Brief vom 2. Januar 1536 (HBBW VI, S. 34, 18-23).</note> Bullingero, domino ac fratri suo semper amantissimo.</s>
 				</p>
 			</div>
 		</body>

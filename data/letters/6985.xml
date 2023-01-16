@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6955/5</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 376,253</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 376,253</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,49 +54,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6985">
 				<correspAction type="sent">
-					<persName ref="person#993" cert="high">
+					<!--
+					<persName ref="person993" cert="high">
 						<forename cert="high">Tobias</forename>
 						<surname cert="high">Egli</surname>
-						<addName type="main">Egli (Iconius, Götz), Tobias</addName>
+						<persName type="main" ref="person8016>Egli (Iconius, Götz), Tobias</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Tobias_Egli"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089466366"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person993" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1567-01-02" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6986"/>
-					<ref type="prev_chronologically" target="files.xml#6984"/>
-					<ref type="next_correspondence" target="files.xml#6993"/>
-					<ref type="prev_correspondence" target="files.xml#6978"/>
-					<ref type="next_correspondence_request" target="files.xml#7099"/>
-					<ref type="prev_correspondence_request" target="files.xml#6964"/>
-					<ref type="next_correspondence_reaction" target="files.xml#6993"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#6978"/>
-					<ref type="next_same_sender" target="files.xml#7099"/>
-					<ref type="prev_same_sender" target="files.xml#6964"/>
-					<ref type="next_same_addressee" target="files.xml#6989"/>
-					<ref type="prev_same_addressee" target="files.xml#6978"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#7099"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6964"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6989"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6978"/>
+					<ref type="next_chronologically" target="file6986"/>
+					<ref type="prev_chronologically" target="file6984"/>
+					<ref type="next_correspondence" target="file6993"/>
+					<ref type="prev_correspondence" target="file6978"/>
+					<ref type="next_correspondence_request" target="file7099"/>
+					<ref type="prev_correspondence_request" target="file6964"/>
+					<ref type="next_correspondence_reaction" target="file6993"/>
+					<ref type="prev_correspondence_reaction" target="file6978"/>
+					<ref type="next_same_sender" target="file7099"/>
+					<ref type="prev_same_sender" target="file6964"/>
+					<ref type="next_same_addressee" target="file6989"/>
+					<ref type="prev_same_addressee" target="file6978"/>
+					<ref type="next_with_sender_as_addressee" target="file7099"/>
+					<ref type="prev_with_sender_as_addressee" target="file6964"/>
+					<ref type="next_with_addressee_as_sender" target="file6989"/>
+					<ref type="prev_with_addressee_as_sender" target="file6978"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -112,51 +116,51 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Salvus et incolumis, vir amplissime Curiam veni et apud d. Gantnerum divertens non ita prospere sum exceptus; nescio enim quis horror me pervaserat planeque vitreum effecerat.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Salvus et incolumis, vir amplissime Curiam veni et apud d. Gantnerum divertens non ita prospere sum exceptus; nescio enim quis horror me pervaserat planeque vitreum effecerat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Non aliter existimabam quam peste me quoque correptum esse, nec defuere mihi certa quaedam eius mali indicia et principia.</s>
-					<s xml:lang="la" type="auto">At triduo post, cum sudorem elicuissem, omnia felicissime subsederunt, ita ut quam rectissime dei gratia nunc me habere sentiam.</s>
-					<s xml:lang="la" type="auto">Literas commendatitias d. consuli tradidi, pro quibus aeternas tibi gratias ago; quantum enim pondus istae habuerint, totius urbis benevolentia et honor, quibus me indignum atque invitum quotidie perfundunt, abunde declaravit.</s>
-					<s xml:lang="la" type="auto">Quin et novus consul, qui nunc consulatum gerit, ipsa est comitas.</s>
-					<s xml:lang="la" type="auto">Iam vero sexies, ex quo Russiconam reliqui, sum hic concionatus, proh deum immortalem, quam infeliciter, quam invita Minerva.</s>
-					<s xml:lang="la" type="auto">Non sum, mi pater, certe non sum tanto muneri sufficiens, praesertim in tam spacioso et resonabili templo, quo vocem etiam non moderari, nedum satis digna enunciare possum.</s>
-					<s xml:lang="la" type="auto">Certe contra testimonium et vestrae et meae conscientiae me illuc extrudendo promovistis.</s>
-					<s xml:lang="la" type="auto">Mutate, quaeso, sententiam vestram, aut alia ratione mihi ipsi consulere necesse erit.</s>
-					<s xml:lang="la" type="auto">Habetis alios doctrina et eruditione abundantes, qui hoc officii exequentur longe commodius me, qui in nullo scientiae genere vel mediocriter sim versatus.</s>
-					<s xml:lang="la" type="auto">Seria loquor, et conscientiae meae carnificina me tandem pessumdabit.</s>
-					<s xml:lang="la" type="auto">Eram hodie discessurus; at amplissimus senatus iam ante enixe me rogarat, ut ad finem comitiorum perdurarem; sic enim decere et necesse esse.</s>
-					<s xml:lang="la" type="auto">Ego, ut debui, parui, sed cum rei familiaris dispendio; vereor enim, ne uxor et liberi fame pereant.</s>
-					<s xml:lang="la" type="auto">Heri d. Pontisella et nos ab amplissimo senatu (qui initium novi anni, quod tibi inpri mis sit faustissimum, placentis quibusdam celebrarunt) liberalissime tractati sumus, inde ad domum sacerdotalem, quam nondum ingressus eram ante, pergentes.</s>
-					<s xml:lang="la" type="auto">Occurrit illico illud Ciceronis: "O domus, quam dispari domino dominaris!"</s>
-					<s xml:lang="la" type="auto">et non est angulus, quem lachrymis meis non resperserim, praesertim in musaeo Fabriciano.</s>
-					<s xml:lang="la" type="auto">Egredientes per devia quaedam ad domum d. Gantneri, quae portis est proxima, perreximus.</s>
-					<s xml:lang="la" type="auto">Ecce vero nil tale opinantes, sed aedes ingressuris ingressus episcopi in conspectu est.</s>
-					<s xml:lang="la" type="auto">Nesciebamus episcopi apparatum esse; non enim hoc die exspectatus fuit, quare tectis capitibus adventum eius suspeximus.</s>
-					<s xml:lang="la" type="auto">At deum immortalem, quis apparatum episcopi talem sperasset!</s>
+					<s n="3" xml:lang="la" type="auto">Non aliter existimabam quam peste me quoque correptum esse, nec defuere mihi certa quaedam eius mali indicia et principia.</s>
+					<s n="4" xml:lang="la" type="auto">At triduo post, cum sudorem elicuissem, omnia felicissime subsederunt, ita ut quam rectissime dei gratia nunc me habere sentiam.</s>
+					<s n="5" xml:lang="la" type="auto">Literas commendatitias d. consuli tradidi, pro quibus aeternas tibi gratias ago; quantum enim pondus istae habuerint, totius urbis benevolentia et honor, quibus me indignum atque invitum quotidie perfundunt, abunde declaravit.</s>
+					<s n="6" xml:lang="la" type="auto">Quin et novus consul, qui nunc consulatum gerit, ipsa est comitas.</s>
+					<s n="7" xml:lang="la" type="auto">Iam vero sexies, ex quo Russiconam reliqui, sum hic concionatus, proh deum immortalem, quam infeliciter, quam invita Minerva.</s>
+					<s n="8" xml:lang="la" type="auto">Non sum, mi pater, certe non sum tanto muneri sufficiens, praesertim in tam spacioso et resonabili templo, quo vocem etiam non moderari, nedum satis digna enunciare possum.</s>
+					<s n="9" xml:lang="la" type="auto">Certe contra testimonium et vestrae et meae conscientiae me illuc extrudendo promovistis.</s>
+					<s n="10" xml:lang="la" type="auto">Mutate, quaeso, sententiam vestram, aut alia ratione mihi ipsi consulere necesse erit.</s>
+					<s n="11" xml:lang="la" type="auto">Habetis alios doctrina et eruditione abundantes, qui hoc officii exequentur longe commodius me, qui in nullo scientiae genere vel mediocriter sim versatus.</s>
+					<s n="12" xml:lang="la" type="auto">Seria loquor, et conscientiae meae carnificina me tandem pessumdabit.</s>
+					<s n="13" xml:lang="la" type="auto">Eram hodie discessurus; at amplissimus senatus iam ante enixe me rogarat, ut ad finem comitiorum perdurarem; sic enim decere et necesse esse.</s>
+					<s n="14" xml:lang="la" type="auto">Ego, ut debui, parui, sed cum rei familiaris dispendio; vereor enim, ne uxor et liberi fame pereant.</s>
+					<s n="15" xml:lang="la" type="auto">Heri d. Pontisella et nos ab amplissimo senatu (qui initium novi anni, quod tibi inpri mis sit faustissimum, placentis quibusdam celebrarunt) liberalissime tractati sumus, inde ad domum sacerdotalem, quam nondum ingressus eram ante, pergentes.</s>
+					<s n="16" xml:lang="la" type="auto">Occurrit illico illud Ciceronis: "O domus, quam dispari domino dominaris!"</s>
+					<s n="17" xml:lang="la" type="auto">et non est angulus, quem lachrymis meis non resperserim, praesertim in musaeo Fabriciano.</s>
+					<s n="18" xml:lang="la" type="auto">Egredientes per devia quaedam ad domum d. Gantneri, quae portis est proxima, perreximus.</s>
+					<s n="19" xml:lang="la" type="auto">Ecce vero nil tale opinantes, sed aedes ingressuris ingressus episcopi in conspectu est.</s>
+					<s n="20" xml:lang="la" type="auto">Nesciebamus episcopi apparatum esse; non enim hoc die exspectatus fuit, quare tectis capitibus adventum eius suspeximus.</s>
+					<s n="21" xml:lang="la" type="auto">At deum immortalem, quis apparatum episcopi talem sperasset!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Strepitus enim non altior erat, ac si funus procederet; paucis equitibus stipatus fuit, adventus eius sub noctem, nullus tubarum clangor, nullus bombardarum sonitus; nemo ex senatorio ordine in occursum eius prodiit.</s>
-					<s xml:lang="la" type="auto">Tantum lanii quidam, homines nihili, reperti sunt, qui saginae gratia officiosos se simularent.</s>
-					<s xml:lang="la" type="auto">Defuit haec acclamandi vox "baruch", sicque nullo splendore, negligentissima pompa, nimirum adversariae potestatis metu, imperii possessionem adiit.</s>
-					<s xml:lang="la" type="auto">Sed utinam ea negligentia, qua regnum suum est auspicatus, etiam porro regeret et statim finiret!</s>
-					<s xml:lang="la" type="auto">Non multum eius anathemata erunt timenda; sed etsi cristas erigeret, eius ampullas ceu inanes secure temneremus.</s>
+					<s n="22" xml:lang="la" type="auto">Strepitus enim non altior erat, ac si funus procederet; paucis equitibus stipatus fuit, adventus eius sub noctem, nullus tubarum clangor, nullus bombardarum sonitus; nemo ex senatorio ordine in occursum eius prodiit.</s>
+					<s n="23" xml:lang="la" type="auto">Tantum lanii quidam, homines nihili, reperti sunt, qui saginae gratia officiosos se simularent.</s>
+					<s n="24" xml:lang="la" type="auto">Defuit haec acclamandi vox "baruch", sicque nullo splendore, negligentissima pompa, nimirum adversariae potestatis metu, imperii possessionem adiit.</s>
+					<s n="25" xml:lang="la" type="auto">Sed utinam ea negligentia, qua regnum suum est auspicatus, etiam porro regeret et statim finiret!</s>
+					<s n="26" xml:lang="la" type="auto">Non multum eius anathemata erunt timenda; sed etsi cristas erigeret, eius ampullas ceu inanes secure temneremus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, humanissime mi pater, tibique quam commendatissimum me habe.</s>
-					<s xml:lang="la" type="auto">Ocyus haec; expector enim a fratre Gantnero et d. consule.</s>
-					<s xml:lang="la" type="auto">Salutat te d. Pontisella et d. Gantnerus officiosissime et consul.</s>
+					<s n="27" xml:lang="la" type="auto">Vale, humanissime mi pater, tibique quam commendatissimum me habe.</s>
+					<s n="28" xml:lang="la" type="auto">Ocyus haec; expector enim a fratre Gantnero et d. consule.</s>
+					<s n="29" xml:lang="la" type="auto">Salutat te d. Pontisella et d. Gantnerus officiosissime et consul.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuae excellentiae subditissimus Tobias Iconius.</s>
+					<s n="30" xml:lang="la" type="auto">Tuae excellentiae subditissimus Tobias Iconius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Curiae, 2. dei anni novi.</s>
+					<s n="31" xml:lang="la" type="auto">Curiae, 2. dei anni novi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Amplissimo viro d. m. Henrycho Bullingero, ecclesiae Tigurinae ministro clarissimo, domino mecoenati suo aeternum colendissimo.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="32" xml:lang="la" type="auto">Amplissimo viro d. m. Henrycho Bullingero, ecclesiae Tigurinae ministro clarissimo, domino mecoenati suo aeternum colendissimo.</s>
+					<s n="33" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

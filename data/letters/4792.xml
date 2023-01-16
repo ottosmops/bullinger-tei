@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,803</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">Tag, Monat, Jahr unleserlich (mehrdeutig lesbar)</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,803</idno>
+						<idno subtype="Hinweis">Tag, Monat, Jahr unleserlich (mehrdeutig lesbar)</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -30,14 +33,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 100,69</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">12. Mai 1561</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 100,69</idno>
+						<idno subtype="Hinweis">12. Mai 1561</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -46,60 +52,62 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4792">
 				<correspAction type="sent">
-					<persName ref="person#4038" cert="high">
+					<!--
+					<persName ref="person4038" cert="high">
 						<forename cert="high">Hieronymus</forename>
 						<surname cert="high">Zanchi</surname>
-						<addName type="main">Zanchi, Girolamo</addName>
+						<persName type="main" ref="person4037>Zanchi, Girolamo</addName>
 						<graphic type="portrait" url="portraits/4037_Girolami_Zanchi.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Girolamo_Zanchi"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/119296411"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person4038" cert="high"/>
+					<place source="place492" cert="high"/>
 					<date when="1561-05-12" cert="low"><note>Datum unsicher  1561 Mai 12. (so liest Simler, vom Inhalt her richtig)  1565 März 12. (so Schiess)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4793"/>
-					<ref type="prev_chronologically" target="files.xml#4791"/>
-					<ref type="next_correspondence" target="files.xml#5056"/>
-					<ref type="prev_correspondence" target="files.xml#4124"/>
-					<ref type="next_correspondence_request" target="files.xml#5056"/>
-					<ref type="prev_correspondence_request" target="files.xml#4124"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5541"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3002"/>
-					<ref type="next_same_sender" target="files.xml#5056"/>
-					<ref type="prev_same_sender" target="files.xml#4124"/>
-					<ref type="next_same_addressee" target="files.xml#4799"/>
-					<ref type="prev_same_addressee" target="files.xml#4789"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5056"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4124"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4799"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#4789"/>
-					<ref type="child" target="files.xml#6406"/>
+					<ref type="next_chronologically" target="file4793"/>
+					<ref type="prev_chronologically" target="file4791"/>
+					<ref type="next_correspondence" target="file5056"/>
+					<ref type="prev_correspondence" target="file4124"/>
+					<ref type="next_correspondence_request" target="file5056"/>
+					<ref type="prev_correspondence_request" target="file4124"/>
+					<ref type="next_correspondence_reaction" target="file5541"/>
+					<ref type="prev_correspondence_reaction" target="file3002"/>
+					<ref type="next_same_sender" target="file5056"/>
+					<ref type="prev_same_sender" target="file4124"/>
+					<ref type="next_same_addressee" target="file4799"/>
+					<ref type="prev_same_addressee" target="file4789"/>
+					<ref type="next_with_sender_as_addressee" target="file5056"/>
+					<ref type="prev_with_sender_as_addressee" target="file4124"/>
+					<ref type="next_with_addressee_as_sender" target="file4799"/>
+					<ref type="prev_with_addressee_as_sender" target="file4789"/>
+					<ref type="child" target="file6406"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="4792/Autograph/00 E_II_356__S__803_.tif" n="1"/>
+		<graphic url="4792/Autograph/01 E_II_356__S__804_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

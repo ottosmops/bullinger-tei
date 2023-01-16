@@ -8,13 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph (Entwurf)" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph (Entwurf)">E II 371,1226 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph (Entwurf)">E II 371,1226 f.</idno>
+						<idno subtype="Hinweis">Adresse am Briefanfang</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -42,15 +46,18 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#296">London</settlement>
-						<institution>Lambeth Palace Library</institution>
-						<idno type="Kopie">Ms 2010, fo 73-74 (Nr. 46)</idno>
-						<repository ref="archive#58">
+						<!--
+						<repository ref="archive58">
 							<name>London LPL</name>
-							<note type="Mikrofilm">48 IRG</note>
-							<note type="Hinweis">dat.: 1569 Juli 19.</note>
 							<ref target="https://lambethpalacelibrary.org/"/>
 						</repository>
+						<settlement ref="place296">London</settlement>
+						<institution>Lambeth Palace Library</institution>
+						-->
+						<repository ref="archive58"/>
+						<idno subtype="Kopie">Ms 2010, fo 73-74 (Nr. 46)</idno>
+						<idno subtype="Mikrofilm">48 IRG</idno>
+						<idno subtype="Hinweis">dat.: 1569 Juli 19.</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -59,52 +66,43 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7533">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<note type="Person">und Zürcher Prediger</note>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1568-07-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<orgName type="institution">
-						<name type="singular" ref="org#2" cert="high">Belgisch-Deutsche Fremdengemeinde</name>
-						<place source="#296" cert="high">
-							<settlement>London</settlement>
-							<geo>51.50853 -0.12574</geo>
-						</place>
-					</orgName>
-					<place source="#296" cert="high">
-						<settlement>London</settlement>
-						<geo>51.50853 -0.12574</geo>
-					</place>
+					<orgName ref="org3" role="Belgisch-Deutsche Fremdengemeinde"/>"
+					<place source="place296" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7534"/>
-					<ref type="prev_chronologically" target="files.xml#7532"/>
+					<ref type="next_chronologically" target="file7534"/>
+					<ref type="prev_chronologically" target="file7532"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#7536"/>
-					<ref type="prev_same_sender" target="files.xml#7522"/>
+					<ref type="next_same_sender" target="file7536"/>
+					<ref type="prev_same_sender" target="file7522"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#7536"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#7522"/>
+					<ref type="next_with_sender_as_addressee" target="file7536"/>
+					<ref type="prev_with_sender_as_addressee" target="file7522"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
-					<ref type="child" target="files.xml#7926"/>
+					<ref type="child" target="file7926"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
@@ -112,9 +110,9 @@
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
 	<facsimile>
-		<graphic url="7533/Autograph/00 E_II_371__fol__1226_r_.tif" n="1"/>
-		<graphic url="7533/Autograph/01 E_II_371__fol__1226_v_.tif" n="2"/>
-		<graphic url="7533/Autograph/02 E_II_371__fol__1227_r_.tif" n="3"/>
+		<graphic url="7533/Autograph (Entwurf)/00 E_II_371__fol__1226_r_.tif" n="1"/>
+		<graphic url="7533/Autograph (Entwurf)/01 E_II_371__fol__1226_v_.tif" n="2"/>
+		<graphic url="7533/Autograph (Entwurf)/02 E_II_371__fol__1227_r_.tif" n="3"/>
 	</facsimile>
 	<text xml:lang="">
 		<body>

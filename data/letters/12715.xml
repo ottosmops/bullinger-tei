@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2017"/>
-				<idno type="ISBN">ISBN 078-3-290-17889-5547</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2668</idno>
+				<idno subtype="ISBN">ISBN 078-3-290-17889-5547</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2668</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 18</title>
+				<title subtype="publication">HBBW XVIII</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">18</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 340,158</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 340,158</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,13 +50,13 @@
 						<summary>
 							<p xml:id="regest1">
 								[1] Am Dienstag den 9. November übergab ein Soldat [...], der aus dem [schmalkaldischen] Feldlager nach
-								<placeName ref="1025">Stammheim</placeName> zurückkam, <persName ref="211">Stumpf</persName>
-								den beiliegenden Brief [<ref target="file#12695">Nr. 2648</ref>] aus
-								<placeName ref="1113">Ulm</placeName>.
+								<placeName ref="place1025">Stammheim</placeName> zurückkam, <persName ref="person211">Stumpf</persName>
+								den beiliegenden Brief [<ref target="file12695">Nr. 2648</ref>] aus
+								<placeName ref="place1113">Ulm</placeName>.
 								</p>
 								<p xml:id="regest2">
 								[2] Bullinger möge Vadians Buch über die Äbte St. Gallens [„Kleine Chronik“] mittels Meister Christoph
-								[Froschauer] zurücksenden, damit <persName ref="211">Stumpf</persName> es zusammen mit anderen
+								[Froschauer] zurücksenden, damit <persName ref="person211">Stumpf</persName> es zusammen mit anderen
 								Büchern und alten Dokumenten endlich an Vadian zurückgeben kann.
 								</p>
 								<p xml:id="regest3">
@@ -67,45 +70,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12715">
 				<correspAction type="sent">
-					<persName ref="person#3067" cert="high">
+					<!--
+					<persName ref="person3067" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Stumpf</surname>
 						<graphic type="portrait" url="portraits/3066_Stumpf_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Stumpf"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118757555"/>
 					</persName>
-					<place source="#486" cert="high">
-						<settlement>Stammheim</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.63244 8.79963</geo>
-					</place>
+					-->
+					<persName ref="person3067" cert="high"/>
+					<place source="place486" cert="high"/>
 					<date when="1546-11-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12716"/>
-					<ref type="prev_chronologically" target="files.xml#12714"/>
-					<ref type="next_correspondence" target="files.xml#4"/>
-					<ref type="prev_correspondence" target="files.xml#12217"/>
-					<ref type="next_correspondence_request" target="files.xml#752"/>
-					<ref type="prev_correspondence_request" target="files.xml#11338"/>
-					<ref type="next_correspondence_reaction" target="files.xml#4"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12217"/>
-					<ref type="next_same_sender" target="files.xml#752"/>
-					<ref type="prev_same_sender" target="files.xml#11338"/>
-					<ref type="next_same_addressee" target="files.xml#12722"/>
-					<ref type="prev_same_addressee" target="files.xml#12706"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#752"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11338"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12722"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12706"/>
+					<ref type="next_chronologically" target="file12716"/>
+					<ref type="prev_chronologically" target="file12714"/>
+					<ref type="next_correspondence" target="file4"/>
+					<ref type="prev_correspondence" target="file12217"/>
+					<ref type="next_correspondence_request" target="file752"/>
+					<ref type="prev_correspondence_request" target="file11338"/>
+					<ref type="next_correspondence_reaction" target="file4"/>
+					<ref type="prev_correspondence_reaction" target="file12217"/>
+					<ref type="next_same_sender" target="file752"/>
+					<ref type="prev_same_sender" target="file11338"/>
+					<ref type="next_same_addressee" target="file12722"/>
+					<ref type="prev_same_addressee" target="file12706"/>
+					<ref type="next_with_sender_as_addressee" target="file752"/>
+					<ref type="prev_with_sender_as_addressee" target="file11338"/>
+					<ref type="next_with_addressee_as_sender" target="file12722"/>
+					<ref type="prev_with_addressee_as_sender" target="file12706"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -123,24 +130,24 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Dominus vobiscum, etc.</s>
-					<s xml:lang="de" type="auto">Günstiger, lieber herr, es hatt an zinstag den 9. novembris ein kriegßman<note xml:id="fn2" type="footnote" n="2">Der schon in <ref target="file#12707">Nr. 2660</ref>,4-7, erwähnte ältere Kriegmann.</note> von Stamheim (so uß dem veld geurloubett mit andren heimkommen ist) mir dißen byligenden brieff<note xml:id="fn3" type="footnote" n="3">Leonhard Serins Brief vom 5. November (<ref target="file#12695">Nr. 2648</ref>).</note> uberantwort, uch den zuͦzesenden; kumpt von <placeName ref="1113">Ulm</placeName>, etc.</s>
+					<s n="1" xml:lang="la" type="auto">Dominus vobiscum, etc.</s>
+					<s n="2" xml:lang="de" type="auto">Günstiger, lieber herr, es hatt an zinstag den 9. novembris ein kriegßman<note xml:id="fn2" type="footnote" n="2">Der schon in <ref target="file12707">Nr. 2660</ref>,4-7, erwähnte ältere Kriegmann.</note> von Stamheim (so uß dem veld geurloubett mit andren heimkommen ist) mir dißen byligenden brieff<note xml:id="fn3" type="footnote" n="3">Leonhard Serins Brief vom 5. November (<ref target="file12695">Nr. 2648</ref>).</note> uberantwort, uch den zuͦzesenden; kumpt von <placeName ref="place1113">Ulm</placeName>, etc.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="de" type="auto">Demnach, wie ir noch habend d. Vadiani buͦch von aͤ pten von S. <placeName ref="1011">Gallen</placeName>,<note xml:id="fn4" type="footnote" n="4">Gemeint ist die "Kleine Chronik" zu den Abtun St. Gallens, die Vadian in der ersten Hälfte von Januar 1546 Bullinger zugesandt hatte; s. <hi>HBBW</hi> XVI 61.</note> so ir das gnuͦgsam gebrucht hettind, wer myn beger, das ir es dem m. Christoff<note xml:id="fn5" type="footnote" n="5">Christoph Froschauer. - Er arbeitete zu dieser Zeit zusammen mit Bullinger an <persName ref="211">Stumpfs</persName> "Eidgenössischer Chronik" (s. dazu die in <hi>HBBW</hi> XVI 15, Anm. 35, angeführten Briefe) und erscheint auch als "m[eister] Christoffel" z.B. in dem Brief von Vadians Schwager, <persName ref="2483">Hans Widenhuber</persName>, an Bullinger vom 14. Mai 1545 <hi>(HBBW XV,</hi> <ref target="file#12208">Nr. 2161</ref>). <persName ref="211">Stumpf</persName> nennt ihn in seinem Brief an Vadian vom 4. Januar 1547 "m. Christoff Froschower"; s. <hi>Vadian BW</hi> VI 588.</note> gebind, mir zuͦ überschicken, darmit ich es mit vilen andern buͤchern und alten instrumenten<note xml:id="fn6" type="footnote" n="6">Dokumenten; s. <hi>SI</hi> I 349.</note>, mir von bemeltem doctor nun mee dan jar und tag<note xml:id="fn7" type="footnote" n="7">nun mee dan jar und tag: nun schon eine lange Zeit; vgl. <hi>SI</hi> III 57 (unter c).</note> gelyhen, ein mal samentlich<note xml:id="fn8" type="footnote" n="8">zusammen.</note> wider ubersenden moͤcht.<note xml:id="fn9" type="footnote" n="9"><persName ref="211">Stumpf</persName> sandte die Dokumente am 4. Januar 1547 zusammen mit dem oben in Anm. 5 erwähnten Brief an Vadian zurück.</note></s>
+					<s n="3" xml:lang="de" type="auto">Demnach, wie ir noch habend d. Vadiani buͦch von aͤpten von S. <placeName ref="place1011">Gallen</placeName>,<note xml:id="fn4" type="footnote" n="4">Gemeint ist die "Kleine Chronik" zu den Abtun St. Gallens, die Vadian in der ersten Hälfte von Januar 1546 Bullinger zugesandt hatte; s. <hi>HBBW</hi> XVI 61.</note> so ir das gnuͦgsam gebrucht hettind, wer myn beger, das ir es dem m. Christoff<note xml:id="fn5" type="footnote" n="5">Christoph Froschauer. - Er arbeitete zu dieser Zeit zusammen mit Bullinger an <persName ref="person211">Stumpfs</persName> "Eidgenössischer Chronik" (s. dazu die in <hi>HBBW</hi> XVI 15, Anm. 35, angeführten Briefe) und erscheint auch als "m[eister] Christoffel" z.B. in dem Brief von Vadians Schwager, <persName ref="person2483">Hans Widenhuber</persName>, an Bullinger vom 14. Mai 1545 <hi>(HBBW XV,</hi> <ref target="file12208">Nr. 2161</ref>). <persName ref="person211">Stumpf</persName> nennt ihn in seinem Brief an Vadian vom 4. Januar 1547 "m. Christoff Froschower"; s. <hi>Vadian BW</hi> VI 588.</note> gebind, mir zuͦ überschicken, darmit ich es mit vilen andern buͤchern und alten instrumenten<note xml:id="fn6" type="footnote" n="6">Dokumenten; s. <hi>SI</hi> I 349.</note>, mir von bemeltem doctor nun mee dan jar und tag<note xml:id="fn7" type="footnote" n="7">nun mee dan jar und tag: nun schon eine lange Zeit; vgl. <hi>SI</hi> III 57 (unter c).</note> gelyhen, ein mal samentlich<note xml:id="fn8" type="footnote" n="8">zusammen.</note> wider ubersenden moͤcht.<note xml:id="fn9" type="footnote" n="9"><persName ref="person211">Stumpf</persName> sandte die Dokumente am 4. Januar 1547 zusammen mit dem oben in Anm. 5 erwähnten Brief an Vadian zurück.</note></s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="de" type="auto">Hiemit sind dem getrüwen gott und vatter im himmel zu gnaden bevolhen.</s>
-					<s xml:lang="la" type="auto">Stamheim, 10. octobris<note xml:id="fn10" type="footnote" n="10">Siehe oben Anm. 1.</note> anno 1546.<note xml:id="fna" type="footnote" n="a">1546 <hi>nach gestrichenem</hi> 14.</note></s>
-					<s xml:lang="de" type="auto">U[wer] w[illiger] d[iener] und bruder Jo. Stumpff.</s>
+					<s n="4" xml:lang="de" type="auto">Hiemit sind dem getrüwen gott und vatter im himmel zu gnaden bevolhen.</s>
+					<s n="5" xml:lang="la" type="auto">Stamheim, 10. octobris<note xml:id="fn10" type="footnote" n="10">Siehe oben Anm. 1.</note> anno 1546.<note xml:id="fna" type="footnote" n="a">1546 <hi>nach gestrichenem</hi> 14.</note></s>
+					<s n="6" xml:lang="de" type="auto">U[wer] w[illiger] d[iener] und bruder Jo. Stumpff.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo divinarum literarum interpreti, d. Heinricho Bullingero, Tigurinorum urbis antistiti vigilantissimo, domino suo colendissimo.</s>
+					<s n="7" xml:lang="la" type="auto">Clarissimo divinarum literarum interpreti, d. Heinricho Bullingero, Tigurinorum urbis antistiti vigilantissimo, domino suo colendissimo.</s>
 				</p>
 			</div>
 		</body>

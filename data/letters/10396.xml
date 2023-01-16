@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=364</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=364</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,27</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,27</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,10 +49,10 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Teilt aus dem Brief des <persName ref="154">Myconius</persName> vom 20. April 1534
-								[<ref target="file#10391">Nr. 359</ref>] den Abschnitt über die Kriegsvorbereitungen mit. Der Streit zwischen
-								dem Abt von <placeName ref="1011">St. Gallen</placeName> und der Stadt
-								<placeName ref="1011">St. Gallen</placeName> soll angesichts der auswärtigen Gefahren eingestellt
+								Teilt aus dem Brief des <persName ref="person154">Myconius</persName> vom 20. April 1534
+								[<ref target="file10391">Nr. 359</ref>] den Abschnitt über die Kriegsvorbereitungen mit. Der Streit zwischen
+								dem Abt von <placeName ref="place1011">St. Gallen</placeName> und der Stadt
+								<placeName ref="place1011">St. Gallen</placeName> soll angesichts der auswärtigen Gefahren eingestellt
 								werden. Bittet, die Epitome weiterzuführen.
 							</p>
 						</summary>
@@ -67,46 +70,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10396">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1534-04-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
+					-->
+					<persName ref="person3306" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10397"/>
-					<ref type="prev_chronologically" target="files.xml#10395"/>
-					<ref type="next_correspondence" target="files.xml#10408"/>
-					<ref type="prev_correspondence" target="files.xml#10371"/>
-					<ref type="next_correspondence_request" target="files.xml#10412"/>
-					<ref type="prev_correspondence_request" target="files.xml#10371"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10408"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10185"/>
-					<ref type="next_same_sender" target="files.xml#10399"/>
-					<ref type="prev_same_sender" target="files.xml#10395"/>
-					<ref type="next_same_addressee" target="files.xml#10408"/>
-					<ref type="prev_same_addressee" target="files.xml#10185"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10399"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10395"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10408"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10185"/>
+					<ref type="next_chronologically" target="file10397"/>
+					<ref type="prev_chronologically" target="file10395"/>
+					<ref type="next_correspondence" target="file10408"/>
+					<ref type="prev_correspondence" target="file10371"/>
+					<ref type="next_correspondence_request" target="file10412"/>
+					<ref type="prev_correspondence_request" target="file10371"/>
+					<ref type="next_correspondence_reaction" target="file10408"/>
+					<ref type="prev_correspondence_reaction" target="file10185"/>
+					<ref type="next_same_sender" target="file10399"/>
+					<ref type="prev_same_sender" target="file10395"/>
+					<ref type="next_same_addressee" target="file10408"/>
+					<ref type="prev_same_addressee" target="file10185"/>
+					<ref type="next_with_sender_as_addressee" target="file10399"/>
+					<ref type="prev_with_sender_as_addressee" target="file10395"/>
+					<ref type="next_with_addressee_as_sender" target="file10408"/>
+					<ref type="prev_with_addressee_as_sender" target="file10185"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -123,30 +130,30 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto"><persName ref="154">Myconius</persName> ita ad me 20. aprilis scribebat<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file#10391">Nr. 359</ref>.</note>: Princeps <persName ref="169">Hessorum</persName> [...] silentium esse<note xml:id="fna" type="footnote" n="a"><hi>Der hier weggelassene Abschnitt ist eine leicht gekürzte Wiedergabe der von <persName ref="154">Myconius</persName> mitgeteilten Kriegsvorbereitungen, s. oben S. 132f, 3-27 und die dazugehörigen textkritischen Anmerkungen a-q.</hi></note>.</s>
-					<s xml:lang="la" type="auto">Haec <persName ref="154">Myconius</persName>.</s>
-					<s xml:lang="la" type="auto">Tu si quid istarum rerum habueris, communica.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto"><persName ref="person154">Myconius</persName> ita ad me 20. aprilis scribebat<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file10391">Nr. 359</ref>.</note>: Princeps <persName ref="person169">Hessorum</persName> [...] silentium esse<note xml:id="fna" type="footnote" n="a"><hi>Der hier weggelassene Abschnitt ist eine leicht gekürzte Wiedergabe der von <persName ref="person154">Myconius</persName> mitgeteilten Kriegsvorbereitungen, s. oben S. 132f, 3-27 und die dazugehörigen textkritischen Anmerkungen a-q.</hi></note>.</s>
+					<s n="3" xml:lang="la" type="auto">Haec <persName ref="person154">Myconius</persName>.</s>
+					<s n="4" xml:lang="la" type="auto">Tu si quid istarum rerum habueris, communica.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Totus ego in hoc sum erga fidos quosdam viros<note xml:id="fn2" type="footnote" n="2">Wahrscheinlich Hans <persName ref="87">Haab</persName> und <persName ref="1890">Heinrich Rahn</persName>, die beiden Zürcher Gesandten an den Tagsatzungen zu <placeName ref="85">Baden</placeName> vom 14. April und dann auch vom 5. Mai und 9. Juni 1534, s. EA IV/IC, 307. 317. 334.</note>, ut litem istam abbatis<note xml:id="fn3" type="footnote" n="3"><persName ref="463">Diethelm Blarer von Wartensee</persName>, Abt von <placeName ref="1011">St. Gallen</placeName>.</note> et vestram dirimant<note xml:id="fn4" type="footnote" n="4">Der Abt drängte darauf, daß die Stadt- St. Galler die Messe im Münster besuchen und die Gotteshausleute ihre Prozession über Stadtgebiet bis ins Kloster führen durften. Die Stadt verwehrte beides. Vor die Tagsatzung gelangte der Streit im Januar und April 1533 und vor allem in der ersten Hälfte 1534, als die Stadt und der Abt auch in der Wahl der Schiedorte uneinig waren, s. EA IV/IC, 2 k. 10 hh. 20 b. 53f n. 263f X. 274 cc. 277. 283 h. 287f. 307 a. 320 q. 321f aa. 335 m. 355 a. 510 tt; <hi>Näf,</hi> <persName ref="226">Vadian</persName> II 481f.</note>, ita ut intra hasce turbas periculosissimas annum unum<pb type="edition" next="146"/> atque alterum a contentione iuridica abstineamus, quaeque interim partium suo iure et suys utatur privilegiis, et spes est me hac in re nonnihil assequuturum.</s>
+					<s n="5" xml:lang="la" type="auto">Totus ego in hoc sum erga fidos quosdam viros<note xml:id="fn2" type="footnote" n="2">Wahrscheinlich Hans <persName ref="person87">Haab</persName> und <persName ref="person1890">Heinrich Rahn</persName>, die beiden Zürcher Gesandten an den Tagsatzungen zu <placeName ref="place85">Baden</placeName> vom 14. April und dann auch vom 5. Mai und 9. Juni 1534, s. EA IV/IC, 307. 317. 334.</note>, ut litem istam abbatis<note xml:id="fn3" type="footnote" n="3"><persName ref="person463">Diethelm Blarer von Wartensee</persName>, Abt von <placeName ref="place1011">St. Gallen</placeName>.</note> et vestram dirimant<note xml:id="fn4" type="footnote" n="4">Der Abt drängte darauf, daß die Stadt- St. Galler die Messe im Münster besuchen und die Gotteshausleute ihre Prozession über Stadtgebiet bis ins Kloster führen durften. Die Stadt verwehrte beides. Vor die Tagsatzung gelangte der Streit im Januar und April 1533 und vor allem in der ersten Hälfte 1534, als die Stadt und der Abt auch in der Wahl der Schiedorte uneinig waren, s. EA IV/IC, 2 k. 10 hh. 20 b. 53f n. 263f X. 274 cc. 277. 283 h. 287f. 307 a. 320 q. 321f aa. 335 m. 355 a. 510 tt; <hi>Näf,</hi> <persName ref="person226">Vadian</persName> II 481f.</note>, ita ut intra hasce turbas periculosissimas annum unum<pb type="edition" next="146"/> atque alterum a contentione iuridica abstineamus, quaeque interim partium suo iure et suys utatur privilegiis, et spes est me hac in re nonnihil assequuturum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, et in Epitome<note xml:id="fn5" type="footnote" n="5">Siehe oben S. 39, Anm. 37 und unten <ref target="file#10454">Nr. 419</ref>.</note> perge.</s>
-					<s xml:lang="la" type="auto">Relegere non vacavit.</s>
+					<s n="6" xml:lang="la" type="auto">Vale, et in Epitome<note xml:id="fn5" type="footnote" n="5">Siehe oben S. 39, Anm. 37 und unten <ref target="file10454">Nr. 419</ref>.</note> perge.</s>
+					<s n="7" xml:lang="la" type="auto">Relegere non vacavit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">24. aprilis 1534.</s>
+					<s n="8" xml:lang="la" type="auto">24. aprilis 1534.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="228">Voglerum</persName> salvum volo.</s>
+					<s n="9" xml:lang="la" type="auto"><persName ref="person228">Voglerum</persName> salvum volo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hein. tuus.</s>
+					<s n="10" xml:lang="la" type="auto">Hein. tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Doctori Ioachimo <persName ref="226">Vadiano</persName>, Sangallensi consuli prudentissimo, amico et domino imprimis observando.</s>
+					<s n="11" xml:lang="la" type="auto">Doctori <persName ref="person226">Ioachimo Vadiano</persName>, Sangallensi consuli prudentissimo, amico et domino imprimis observando.</s>
 				</p>
 			</div>
 		</body>

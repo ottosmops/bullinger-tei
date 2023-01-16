@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7080/130</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 363,85</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 363,85</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -55,13 +58,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 116,145</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 116,145</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -70,44 +76,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7238">
 				<correspAction type="sent">
-					<persName ref="person#232" cert="high">
+					<!--
+					<persName ref="person232" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Lasitius</surname>
-						<addName type="main">Lasitius (Lasicki), Johannes (Jan)</addName>
+						<persName type="main" ref="person8041>a Lasco (Laski), Johannes (Jan)</addName>
+						<graphic type="portrait" url="portraits/220_Laski_Jan.jpg"/>
+						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_a_Lasco"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118726633"/>
 					</persName>
-					<place source="#210" cert="high">
-						<settlement>Heidelberg</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>49.41222 8.71</geo>
-					</place>
-					<date min="1567-09-22" max="1567-09-23" cert="low"/>
+					-->
+					<persName ref="person232" cert="high"/>
+					<place source="place210" cert="high"/>
+					<date notBefore="1567-09-22" notAfter="1567-09-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7239"/>
-					<ref type="prev_chronologically" target="files.xml#7237"/>
-					<ref type="next_correspondence" target="files.xml#7496"/>
-					<ref type="prev_correspondence" target="files.xml#6500"/>
-					<ref type="next_correspondence_request" target="files.xml#7496"/>
-					<ref type="prev_correspondence_request" target="files.xml#6500"/>
+					<ref type="next_chronologically" target="file7239"/>
+					<ref type="prev_chronologically" target="file7237"/>
+					<ref type="next_correspondence" target="file7496"/>
+					<ref type="prev_correspondence" target="file6500"/>
+					<ref type="next_correspondence_request" target="file7496"/>
+					<ref type="prev_correspondence_request" target="file6500"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#6192"/>
-					<ref type="next_same_sender" target="files.xml#7496"/>
-					<ref type="prev_same_sender" target="files.xml#6500"/>
-					<ref type="next_same_addressee" target="files.xml#7240"/>
-					<ref type="prev_same_addressee" target="files.xml#7234"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#7496"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6500"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#7240"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#7234"/>
+					<ref type="prev_correspondence_reaction" target="file6192"/>
+					<ref type="next_same_sender" target="file7496"/>
+					<ref type="prev_same_sender" target="file6500"/>
+					<ref type="next_same_addressee" target="file7240"/>
+					<ref type="prev_same_addressee" target="file7234"/>
+					<ref type="next_with_sender_as_addressee" target="file7496"/>
+					<ref type="prev_with_sender_as_addressee" target="file6500"/>
+					<ref type="next_with_addressee_as_sender" target="file7240"/>
+					<ref type="prev_with_addressee_as_sender" target="file7234"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -125,32 +137,32 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Quod tibi iam dudum pollicitus sum, Bullingere doctissime, nunc praestare volui.</s>
-					<s xml:lang="la" type="auto">Mitto tibi et d. Simlero scriptum a me Latinum factum, si modo haec Latine scribi vel debent vel possunt, ex officina veterum ecclesiae dei hostium profectum, quo ego nihil unquam legi in aeternum dei filium magis contumeliosum; nam eum omni divinatione spoliant et nostri similem facit.</s>
-					<s xml:lang="la" type="auto">Quam intolerandam impietatem nisi vos, pastores et custodes dei ecclesiae, vera luce consultaveritis<note type="margin">a.R.: confut?</note>, verendum est, ne brevi magna tritici pars in lolium abeat.</s>
-					<s xml:lang="la" type="auto">Valde enim arrident plerisque ea, quae ab istis dicuntur, sed potissimum Iudaeis.</s>
-					<s xml:lang="la" type="auto">Vides, mi pater, quorsum iam impudentiae processerunt isti, qui semel limites orthodoxae et catholicae ecclesiae transiliere.</s>
-					<s xml:lang="la" type="auto">Quam cum non respiciant, sed arbitratu suo scripturas interpretentur, fit, ut magis ac magis cumulent mendacia mendaci de deo sensu.</s>
+					<s n="1" xml:lang="la" type="auto">Quod tibi iam dudum pollicitus sum, Bullingere doctissime, nunc praestare volui.</s>
+					<s n="2" xml:lang="la" type="auto">Mitto tibi et d. Simlero scriptum a me Latinum factum, si modo haec Latine scribi vel debent vel possunt, ex officina veterum ecclesiae dei hostium profectum, quo ego nihil unquam legi in aeternum dei filium magis contumeliosum; nam eum omni divinatione spoliant et nostri similem facit.</s>
+					<s n="3" xml:lang="la" type="auto">Quam intolerandam impietatem nisi vos, pastores et custodes dei ecclesiae, vera luce consultaveritis<note type="margin">a.R.: confut?</note>, verendum est, ne brevi magna tritici pars in lolium abeat.</s>
+					<s n="4" xml:lang="la" type="auto">Valde enim arrident plerisque ea, quae ab istis dicuntur, sed potissimum Iudaeis.</s>
+					<s n="5" xml:lang="la" type="auto">Vides, mi pater, quorsum iam impudentiae processerunt isti, qui semel limites orthodoxae et catholicae ecclesiae transiliere.</s>
+					<s n="6" xml:lang="la" type="auto">Quam cum non respiciant, sed arbitratu suo scripturas interpretentur, fit, ut magis ac magis cumulent mendacia mendaci de deo sensu.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Thretium iam Francoforto discessisse credo, a quo hodie puerum meum expecto.</s>
-					<s xml:lang="la" type="auto">Victorinus Strigelius non mediocre attulit huic academiae ornamentum.</s>
-					<s xml:lang="la" type="auto">Zanchum quoque studere video, ut hic sit, qui duo viri brevi reddent gymnasium frequentius.</s>
-					<s xml:lang="la" type="auto">De statu religionis in Belgia tristissima quaeque ad nos adferuntur.</s>
-					<s xml:lang="la" type="auto">Circumventos esse astu Hispanico aiunt praecipuos comites et ad regem missos.</s>
-					<s xml:lang="la" type="auto">Plebs vero crudeliter trucidatur, et piorum sanguine pisces marini imbuuntur.</s>
-					<s xml:lang="la" type="auto">Sed talibus fluviis paradisum dei oportet irrigari.</s>
+					<s n="7" xml:lang="la" type="auto">Thretium iam Francoforto discessisse credo, a quo hodie puerum meum expecto.</s>
+					<s n="8" xml:lang="la" type="auto">Victorinus Strigelius non mediocre attulit huic academiae ornamentum.</s>
+					<s n="9" xml:lang="la" type="auto">Zanchum quoque studere video, ut hic sit, qui duo viri brevi reddent gymnasium frequentius.</s>
+					<s n="10" xml:lang="la" type="auto">De statu religionis in Belgia tristissima quaeque ad nos adferuntur.</s>
+					<s n="11" xml:lang="la" type="auto">Circumventos esse astu Hispanico aiunt praecipuos comites et ad regem missos.</s>
+					<s n="12" xml:lang="la" type="auto">Plebs vero crudeliter trucidatur, et piorum sanguine pisces marini imbuuntur.</s>
+					<s n="13" xml:lang="la" type="auto">Sed talibus fluviis paradisum dei oportet irrigari.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, mi pater.</s>
-					<s xml:lang="la" type="auto">Sanctus dei spiritus gubernet tuum animum et impleat omni robore et sapientia!</s>
-					<s xml:lang="la" type="auto">Idem reliquis tuis collegis opto et ardentibus vestris precibus misere dilaceratas nostras ecclesias commendo.</s>
+					<s n="14" xml:lang="la" type="auto">Vale, mi pater.</s>
+					<s n="15" xml:lang="la" type="auto">Sanctus dei spiritus gubernet tuum animum et impleat omni robore et sapientia!</s>
+					<s n="16" xml:lang="la" type="auto">Idem reliquis tuis collegis opto et ardentibus vestris precibus misere dilaceratas nostras ecclesias commendo.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Heidelbergae 10. kalendas octobris 1567.</s>
-					<s xml:lang="la" type="auto">Postscriptum.</s>
-					<s xml:lang="la" type="auto">Dolium illud Balicii iam periisse puto; nam interrogati a me Torcisani, cives Norbergenses, negant se illud accepisse.</s>
-					<s xml:lang="la" type="auto">Nosse debebat Froschouerum vectorem, cui vehendum dederat.</s>
+					<s n="17" xml:lang="de" type="auto">Heidelbergae 10. kalendas octobris 1567.</s>
+					<s n="18" xml:lang="la" type="auto">Postscriptum.</s>
+					<s n="19" xml:lang="la" type="auto">Dolium illud Balicii iam periisse puto; nam interrogati a me Torcisani, cives Norbergenses, negant se illud accepisse.</s>
+					<s n="20" xml:lang="la" type="auto">Nosse debebat Froschouerum vectorem, cui vehendum dederat.</s>
 				</p>
 			</div>
 		</body>

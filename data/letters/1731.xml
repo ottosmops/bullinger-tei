@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2980</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,466</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,466</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -52,13 +55,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Teilkopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Teilkopie">Ms S 78,74</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Teilkopie">Ms S 78,74</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -72,44 +78,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1731">
 				<correspAction type="sent">
-					<persName ref="person#1422" cert="low">
+					<!--
+					<persName ref="person1422" cert="low">
 						<forename cert="low">James</forename>
 						<surname cert="low">Haddon</surname>
 						<ref type="wikipedia" target="https://en.wikipedia.org/wiki/James_Haddon"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1237501474"/>
 					</persName>
-					<date when="1552-10-00" cert="low">ca. Oktober 1552</date>
+					-->
+					<persName ref="person1422" cert="low"/>
+					<date notBefore="1552-10-01" notAfter="1552-10-12" cert="low">ca. Oktober 1552</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1732"/>
-					<ref type="prev_chronologically" target="files.xml#1730"/>
-					<ref type="next_correspondence" target="files.xml#2093"/>
-					<ref type="prev_correspondence" target="files.xml#1687"/>
-					<ref type="next_correspondence_request" target="files.xml#2093"/>
-					<ref type="prev_correspondence_request" target="files.xml#1687"/>
+					<ref type="next_chronologically" target="file1732"/>
+					<ref type="prev_chronologically" target="file1730"/>
+					<ref type="next_correspondence" target="file2093"/>
+					<ref type="prev_correspondence" target="file1687"/>
+					<ref type="next_correspondence_request" target="file2093"/>
+					<ref type="prev_correspondence_request" target="file1687"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#2093"/>
-					<ref type="prev_same_sender" target="files.xml#1687"/>
-					<ref type="next_same_addressee" target="files.xml#1741"/>
-					<ref type="prev_same_addressee" target="files.xml#1720"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2093"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1687"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1741"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1720"/>
+					<ref type="next_same_sender" target="file2093"/>
+					<ref type="prev_same_sender" target="file1687"/>
+					<ref type="next_same_addressee" target="file1741"/>
+					<ref type="prev_same_addressee" target="file1720"/>
+					<ref type="next_with_sender_as_addressee" target="file2093"/>
+					<ref type="prev_with_sender_as_addressee" target="file1687"/>
+					<ref type="next_with_addressee_as_sender" target="file1741"/>
+					<ref type="prev_with_addressee_as_sender" target="file1720"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -126,26 +136,26 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Bene longas ad te antea dedi literas, breviores iam eoque magis, quia minus firma valetudine esse te scribis.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Bene longas ad te antea dedi literas, breviores iam eoque magis, quia minus firma valetudine esse te scribis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Praetermittam civilem illum et pene aulicum gratias agendi morem propterea, quod aegrotus aut certe valetudinarius esse et tamen ad me scriberes.</s>
-					<s xml:lang="la" type="auto">Paucissimis, sic habeto, gratissimae fuerunt mihi tuae literae (humanissime et observandissime) non solum quia mecum consentire videris plene, sed etiam propter descripta initia, progressus et ordinem apud vos iam observatum, quae omnia scire mirum in modum cupiebam.</s>
-					<s xml:lang="la" type="auto">De Schmutzio tuo cum duce, meo domino, egi, qui tua causa valde benevolum fore pollicetur et collaturum in eundem quomodo ante Ioanni ab Ulmis.</s>
-					<s xml:lang="la" type="auto">Opus erit, ut aliquando id in memoriam revoces eius dominationi, quia ego discedo brevi et emigro ex eius aedibus, evocatus a regia maiestate ad certum munus in republica obeundum, licet non tam amplum propter privatum commodum et emolumentum, tamen in quo statuo me (pro mea virili) evangelium promovere.</s>
-					<s xml:lang="la" type="auto">Hoc eo dico, ut de Alexandro Schmutzio cum scribis, non ita scribas ad ducem quasi ego adessem, sed quasi absim, quia id cogito.</s>
-					<s xml:lang="la" type="auto">Tametsi enim non possum omnino disiungi ab eius dominatione, et semper; tamen maxima ex parte id erit, quum primum expedire possum aes alienum contractum et contrahendum propter primi anni fructus persolvendos.</s>
-					<s xml:lang="la" type="auto">Sed deo visum est efficere, ut eius dominatio ita me complectatur, et ego vicissim eandem eius dominationem observem et diligam, perpetuo ut non possim me seiungere, quin aliquando invisam.</s>
-					<s xml:lang="la" type="auto">Plenius tamen ipse poteris scribere de Schmutzio aut eiusmodi, quem commendare eius dominationi vis, quia arbitraris me non adesse.</s>
-					<s xml:lang="la" type="auto">Et non dubium est, quin in bonam partem eius praestantia (quia est humanitate praesertim in tui similes) accipiet.</s>
-					<s xml:lang="la" type="auto">Valetudinem tuam et te ipsum totum deo commendo.</s>
-					<s xml:lang="la" type="auto">Adhortari libenter vellem, eandem ut tueare quomodo possis et scias te debere.</s>
-					<s xml:lang="la" type="auto">D. Bibliandrum salutes meo nomine vehementer quaeso.</s>
-					<s xml:lang="la" type="auto">Deus adsit tibi suo spiritu, tuoque ministerio.</s>
+					<s n="3" xml:lang="la" type="auto">Praetermittam civilem illum et pene aulicum gratias agendi morem propterea, quod aegrotus aut certe valetudinarius esse et tamen ad me scriberes.</s>
+					<s n="4" xml:lang="la" type="auto">Paucissimis, sic habeto, gratissimae fuerunt mihi tuae literae (humanissime et observandissime) non solum quia mecum consentire videris plene, sed etiam propter descripta initia, progressus et ordinem apud vos iam observatum, quae omnia scire mirum in modum cupiebam.</s>
+					<s n="5" xml:lang="la" type="auto">De Schmutzio tuo cum duce, meo domino, egi, qui tua causa valde benevolum fore pollicetur et collaturum in eundem quomodo ante Ioanni ab Ulmis.</s>
+					<s n="6" xml:lang="la" type="auto">Opus erit, ut aliquando id in memoriam revoces eius dominationi, quia ego discedo brevi et emigro ex eius aedibus, evocatus a regia maiestate ad certum munus in republica obeundum, licet non tam amplum propter privatum commodum et emolumentum, tamen in quo statuo me (pro mea virili) evangelium promovere.</s>
+					<s n="7" xml:lang="la" type="auto">Hoc eo dico, ut de Alexandro Schmutzio cum scribis, non ita scribas ad ducem quasi ego adessem, sed quasi absim, quia id cogito.</s>
+					<s n="8" xml:lang="la" type="auto">Tametsi enim non possum omnino disiungi ab eius dominatione, et semper; tamen maxima ex parte id erit, quum primum expedire possum aes alienum contractum et contrahendum propter primi anni fructus persolvendos.</s>
+					<s n="9" xml:lang="la" type="auto">Sed deo visum est efficere, ut eius dominatio ita me complectatur, et ego vicissim eandem eius dominationem observem et diligam, perpetuo ut non possim me seiungere, quin aliquando invisam.</s>
+					<s n="10" xml:lang="la" type="auto">Plenius tamen ipse poteris scribere de Schmutzio aut eiusmodi, quem commendare eius dominationi vis, quia arbitraris me non adesse.</s>
+					<s n="11" xml:lang="la" type="auto">Et non dubium est, quin in bonam partem eius praestantia (quia est humanitate praesertim in tui similes) accipiet.</s>
+					<s n="12" xml:lang="la" type="auto">Valetudinem tuam et te ipsum totum deo commendo.</s>
+					<s n="13" xml:lang="la" type="auto">Adhortari libenter vellem, eandem ut tueare quomodo possis et scias te debere.</s>
+					<s n="14" xml:lang="la" type="auto">D. Bibliandrum salutes meo nomine vehementer quaeso.</s>
+					<s n="15" xml:lang="la" type="auto">Deus adsit tibi suo spiritu, tuoque ministerio.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tui studiosus, Iacobus Haddonus.</s>
+					<s n="16" xml:lang="la" type="auto">Tui studiosus, Iacobus Haddonus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse, Ort und Datum fehlen.]</note>

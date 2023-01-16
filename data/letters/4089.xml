@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5296/178</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 363,43</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 363,43</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 95,178</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 95,178</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -61,37 +67,36 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4089">
 				<correspAction type="sent">
-					<persName ref="person#841" cert="high">
+					<!--
+					<persName ref="person841" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Dryander</surname>
 						<graphic type="portrait" url="portraits/841_Dryander_Johann.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johann_Dryander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/116229292"/>
 					</persName>
-					<place source="#311" cert="high">
-						<settlement>Marburg</settlement>
-						<district>Hessen</district>
-						<country>Deutschland</country>
-						<geo>50.80904 8.77069</geo>
-					</place>
+					-->
+					<persName ref="person841" cert="high"/>
+					<place source="place311" cert="high"/>
 					<date when="1559-09-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4090"/>
-					<ref type="prev_chronologically" target="files.xml#4088"/>
+					<ref type="next_chronologically" target="file4090"/>
+					<ref type="prev_chronologically" target="file4088"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -100,12 +105,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#4093"/>
-					<ref type="prev_same_addressee" target="files.xml#4087"/>
+					<ref type="next_same_addressee" target="file4093"/>
+					<ref type="prev_same_addressee" target="file4087"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4093"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#4087"/>
+					<ref type="next_with_addressee_as_sender" target="file4093"/>
+					<ref type="prev_with_addressee_as_sender" target="file4087"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -123,37 +128,37 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Doctor Chunradus Gesnerus, optimus vir, tam est diligens in salutando me tui nominis gratia, ut non possit esse diligentior; rarissime ad me suas dat literas, quin officiosissime tuam salutem ad me semper iungat explens fidelissimi simul et officiosissimi hominis officium.</s>
-					<s xml:lang="la" type="auto">Ego iam optimam rationem resalutandi nactus per filium tuum iam revocatum in patriam resalutare te atque me ipsum tibi commendare volui.</s>
-					<s xml:lang="la" type="auto">Utinam videre posses, quanti Dryander tuus faciat Bullingerum suum.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Doctor Chunradus Gesnerus, optimus vir, tam est diligens in salutando me tui nominis gratia, ut non possit esse diligentior; rarissime ad me suas dat literas, quin officiosissime tuam salutem ad me semper iungat explens fidelissimi simul et officiosissimi hominis officium.</s>
+					<s n="3" xml:lang="la" type="auto">Ego iam optimam rationem resalutandi nactus per filium tuum iam revocatum in patriam resalutare te atque me ipsum tibi commendare volui.</s>
+					<s n="4" xml:lang="la" type="auto">Utinam videre posses, quanti Dryander tuus faciat Bullingerum suum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Crebra est mihi librorum tuorum lectio; raro a mensa mea deponitur, quod ex Bullingero prodiit, et ille, qui per te inscriptus est De gratia iustificante per Christum etc., adeo me rapit, ut ne semel lectus ille liber, sed subinde relectus satiare et explere animum possit.</s>
-					<s xml:lang="la" type="auto">Ita perge, mi Bullingere, tali modo de pluribus in Christo bene mereri etc.</s>
+					<s n="5" xml:lang="la" type="auto">Crebra est mihi librorum tuorum lectio; raro a mensa mea deponitur, quod ex Bullingero prodiit, et ille, qui per te inscriptus est De gratia iustificante per Christum etc., adeo me rapit, ut ne semel lectus ille liber, sed subinde relectus satiare et explere animum possit.</s>
+					<s n="6" xml:lang="la" type="auto">Ita perge, mi Bullingere, tali modo de pluribus in Christo bene mereri etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Filius tuus Ioannes (ut par est) parere voluit avocanti patri, quem ego semper exemplaris vivi loco observandum atque colendum proposui, id quod et reliqui multi boni fecerunt, qui ad paratum librum lubens sua manu testati sunt, scilicet filium exhortando, ut in patrem respiciat, hunc modis omnibus exprimere conetur, id si fecerit, non male collocatum esse tam temporis rationem quam sumptus qualescunque etiam expositos... candum erit.</s>
-					<s xml:lang="la" type="auto">Hic Marpurgi quomodo se tuus gesserit, non habeo quam velim amplificare; res ipsa loquitur, testabuntur probi apud nos omnes tuum hic probe se gessisse, ne videar adulatoris magis quam amici partes explere, volo hic esse modestior in collaudando.</s>
-					<s xml:lang="la" type="auto">Ego filium meum huic unice commendavi passusque sum, ut sequeretur Argentinam usque, minime facturus, nisi summam integritatem et candorem vitae in tuo perspexissem.</s>
-					<s xml:lang="la" type="auto">Est bona indoles coniuncta pietati semper mihi adamata in tuo; sed ut hodie est saeculum corruptum et aetas ut est adolescentiae lubrica, admonendi sunt uterque, et tuus et meus, ut recte se in officio contineant, quo et se et parentes honore afficere queant.</s>
-					<s xml:lang="la" type="auto">Sed ego sus Minervam<note xml:id="fn1" type="footnote" n="1">Adagia, 1, 1, 40 (LB II 43).</note> haec apud te; aequo animo haec qualiacunque mea scripta accipere digneris meque tibi iterum atque iterum commendatum habeas.</s>
-					<s xml:lang="la" type="auto">De valetudine mea adversa Ioannes tuus indicabit.</s>
+					<s n="7" xml:lang="la" type="auto">Filius tuus Ioannes (ut par est) parere voluit avocanti patri, quem ego semper exemplaris vivi loco observandum atque colendum proposui, id quod et reliqui multi boni fecerunt, qui ad paratum librum lubens sua manu testati sunt, scilicet filium exhortando, ut in patrem respiciat, hunc modis omnibus exprimere conetur, id si fecerit, non male collocatum esse tam temporis rationem quam sumptus qualescunque etiam expositos... candum erit.</s>
+					<s n="8" xml:lang="la" type="auto">Hic Marpurgi quomodo se tuus gesserit, non habeo quam velim amplificare; res ipsa loquitur, testabuntur probi apud nos omnes tuum hic probe se gessisse, ne videar adulatoris magis quam amici partes explere, volo hic esse modestior in collaudando.</s>
+					<s n="9" xml:lang="la" type="auto">Ego filium meum huic unice commendavi passusque sum, ut sequeretur Argentinam usque, minime facturus, nisi summam integritatem et candorem vitae in tuo perspexissem.</s>
+					<s n="10" xml:lang="la" type="auto">Est bona indoles coniuncta pietati semper mihi adamata in tuo; sed ut hodie est saeculum corruptum et aetas ut est adolescentiae lubrica, admonendi sunt uterque, et tuus et meus, ut recte se in officio contineant, quo et se et parentes honore afficere queant.</s>
+					<s n="11" xml:lang="la" type="auto">Sed ego sus Minervam<note xml:id="fn1" type="footnote" n="1">Adagia, 1, 1, 40 (LB II 43).</note> haec apud te; aequo animo haec qualiacunque mea scripta accipere digneris meque tibi iterum atque iterum commendatum habeas.</s>
+					<s n="12" xml:lang="la" type="auto">De valetudine mea adversa Ioannes tuus indicabit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ego crucem meam oblatam a domino lubens fero paratus exire ex hoc mundo, quandocunque iusserit dominus.</s>
-					<s xml:lang="la" type="auto">Annorum ratione utpote, qui vixdum ingredior annum 60., vix iam accelerata mors est; adesse mihi puto fatalem horam; sed domini est vocatio et amica correctio, qui omnem, quem diligit, corrigit etc.</s>
-					<s xml:lang="la" type="auto">Mearum est partium illatas afflictiones a domino patienter ferre animumque roborare ad ferendas aerumnas; ita enim habet scriptura: "Sive vivimus, sive morimur, domini sumus; is sit benedictus in saecula saeculorum.</s>
-					<s xml:lang="la" type="auto">Tu cum d. Gwaltero vale et Dryandrum vestrum coram deo precibus vestris commendate.</s>
-					<s xml:lang="de" type="auto">Datum Marpurgi 23. septembris anno 59.</s>
+					<s n="13" xml:lang="la" type="auto">Ego crucem meam oblatam a domino lubens fero paratus exire ex hoc mundo, quandocunque iusserit dominus.</s>
+					<s n="14" xml:lang="la" type="auto">Annorum ratione utpote, qui vixdum ingredior annum 60., vix iam accelerata mors est; adesse mihi puto fatalem horam; sed domini est vocatio et amica correctio, qui omnem, quem diligit, corrigit etc.</s>
+					<s n="15" xml:lang="la" type="auto">Mearum est partium illatas afflictiones a domino patienter ferre animumque roborare ad ferendas aerumnas; ita enim habet scriptura: "Sive vivimus, sive morimur, domini sumus; is sit benedictus in saecula saeculorum.</s>
+					<s n="16" xml:lang="la" type="auto">Tu cum d. Gwaltero vale et Dryandrum vestrum coram deo precibus vestris commendate.</s>
+					<s n="17" xml:lang="de" type="auto">Datum Marpurgi 23. septembris anno 59.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">T[otus] t[uus] Io[annes] Dryander subscripsit.</s>
-					<s xml:lang="la" type="auto">Splendidissimo eruditissimoque sacrarum literarum doctori, concionatori Tigurino, optimo viro, patrono atque domino suo Henrico Bullingero.</s>
+					<s n="18" xml:lang="la" type="auto">T[otus] t[uus] Io[annes] Dryander subscripsit.</s>
+					<s n="19" xml:lang="la" type="auto">Splendidissimo eruditissimoque sacrarum literarum doctori, concionatori Tigurino, optimo viro, patrono atque domino suo Henrico Bullingero.</s>
 				</p>
 				<p>
 					<note type="remark">[Darunter von Bullingers Hand:]</note>
-					<s xml:lang="la" type="auto">D. d. Ioannis Dryandri 1559.</s>
+					<s n="20" xml:lang="la" type="auto">D. d. Ioannis Dryandri 1559.</s>
 				</p>
 			</div>
 		</body>

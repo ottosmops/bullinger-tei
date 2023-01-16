@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2015"/>
-				<idno type="ISBN">ISBN 978-3-290-17782-9</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2586</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17782-9</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2586</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 17</title>
+				<title subtype="publication">HBBW XVII</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">17</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms A 69,23r., Nr. 9</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms A 69,23r., Nr. 9</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,17 +49,17 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Die Störenfriede [<persName ref="78">Beat Gering</persName> und
-								<persName ref="213">Simon Sulzer</persName>] haben versucht, sich der vom
-								<placeName ref="121">Berner</placeName> Rat getroffenen [Pfarrer]wahl eines Zürchers
-								[<persName ref="119">Jodocus Kilchmeyer</persName>] zu widersetzen. Sie sei illegitim und verletze
+								Die Störenfriede [<persName ref="person78">Beat Gering</persName> und
+								<persName ref="person213">Simon Sulzer</persName>] haben versucht, sich der vom
+								<placeName ref="place121">Berner</placeName> Rat getroffenen [Pfarrer]wahl eines Zürchers
+								[<persName ref="person119">Jodocus Kilchmeyer</persName>] zu widersetzen. Sie sei illegitim und verletze
 								die geistliche Autorität. Die Beispiele [der biblischen Machtinhaber] Josaphat, Hiskija, Josia, Judas
 								Makkabäus und Kyros [II.] zeigen jedoch, dass Behörden über eine Macht in kirchlichen Angelegenheiten
 								verfügen.
 								</p>
 								<p xml:id="regest2">
-								- Bullinger soll also darauf achten, dass [<persName ref="119">Kilchmeyer</persName>] nicht die vom Heiligen Geist veranlasste Berufung
-								ausschlägt. [<persName ref="119">Kilchmeyer</persName>] kann [in <placeName ref="121">Bern</placeName>] auf Unterstützung rechnen.
+								- Bullinger soll also darauf achten, dass [<persName ref="person119">Kilchmeyer</persName>] nicht die vom Heiligen Geist veranlasste Berufung
+								ausschlägt. [<persName ref="person119">Kilchmeyer</persName>] kann [in <placeName ref="place121">Bern</placeName>] auf Unterstützung rechnen.
 								</p>
 								<p xml:id="regest3">
 								- Gruß.
@@ -69,43 +72,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12633">
 				<correspAction type="sent">
-					<persName ref="person#3700" cert="high">
+					<!--
+					<persName ref="person3700" cert="high">
 						<forename cert="high">Eberhard</forename>
 						<surname cert="high">von Rümlang</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089804970"/>
 					</persName>
-					<place source="#41" cert="low">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person3700" cert="high"/>
+					<place source="place41" cert="low"/>
 					<date when="1546-09-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12634"/>
-					<ref type="prev_chronologically" target="files.xml#12632"/>
-					<ref type="next_correspondence" target="files.xml#105"/>
-					<ref type="prev_correspondence" target="files.xml#12630"/>
-					<ref type="next_correspondence_request" target="files.xml#105"/>
-					<ref type="prev_correspondence_request" target="files.xml#12630"/>
+					<ref type="next_chronologically" target="file12634"/>
+					<ref type="prev_chronologically" target="file12632"/>
+					<ref type="next_correspondence" target="file105"/>
+					<ref type="prev_correspondence" target="file12630"/>
+					<ref type="next_correspondence_request" target="file105"/>
+					<ref type="prev_correspondence_request" target="file12630"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12480"/>
-					<ref type="next_same_sender" target="files.xml#105"/>
-					<ref type="prev_same_sender" target="files.xml#12630"/>
-					<ref type="next_same_addressee" target="files.xml#12638"/>
-					<ref type="prev_same_addressee" target="files.xml#12620"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#105"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12630"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12638"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12620"/>
+					<ref type="prev_correspondence_reaction" target="file12480"/>
+					<ref type="next_same_sender" target="file105"/>
+					<ref type="prev_same_sender" target="file12630"/>
+					<ref type="next_same_addressee" target="file12638"/>
+					<ref type="prev_same_addressee" target="file12620"/>
+					<ref type="next_with_sender_as_addressee" target="file105"/>
+					<ref type="prev_with_sender_as_addressee" target="file12630"/>
+					<ref type="next_with_addressee_as_sender" target="file12638"/>
+					<ref type="prev_with_addressee_as_sender" target="file12620"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -122,25 +129,25 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Scias, Bullingere, quod turbatores<note xml:id="fn2" type="footnote" n="2"><persName ref="78">Beat Gering</persName> und <persName ref="213">Simon Sulzer</persName>.</note> nostri egerrime ferant, quod magistratus Tigurinum<note xml:id="fn3" type="footnote" n="3">Zur Wahl des <persName ref="119">Jodocus Kilchmeyer</persName> s. <ref target="file#12630">Nr. 2583</ref>, Anm. 5.</note> elegerit, quem ipsi non nominarunt<note xml:id="fn4" type="footnote" n="4">Zu den von <persName ref="78">Gering</persName> und <persName ref="213">Sulzer</persName> vorgeschlagenen Kandidaten s. <ref target="file#12630">Nr. 2583</ref>, Anm. 2.</note>.</s>
-					<s xml:lang="la" type="auto">Voluerunt itaque impedire eius vocationem quasi non legitimam, et quod violarant<note xml:id="fn5" type="footnote" n="5">Subjekt sind die Ratsherren.</note> ecclesiasticam autoritatem<note xml:id="fn6" type="footnote" n="6">Vgl. <ref target="file#12634">Nr. 2587</ref>,1-5. - Zur Autoritätsfrage der Geistlichen s. <ref target="file#12631">Nr. 2584</ref>,50-52. 68f.</note>.</s>
-					<s xml:lang="la" type="auto">Sed novimus de Josaphat, Josia, Ezechia, Iudeo Machabeo et Cyro rege,<note xml:id="fn7" type="footnote" n="7">Gemeint sind die jüdischen Reformkönige Josaphat (1 Kön 22, 41-44; 2Chr. 17, 3-9); Hiskija bzw. Ezechia (2Kön 18, 1-6), Josia (2Kön 22, 1 - 23, 28), der jüdische Widerstandskämpfer Judas Makkabäus (1Makk 3ff), und der persische judenfreundlich gesinnte König Kyros II. (2Chr 36, 221: Jes 44, 28 -45, 4).</note> quid magistratus possit in ecclesiasticis rebus ministrisque ordinandis.</s>
+					<s n="1" xml:lang="la" type="auto">Scias, Bullingere, quod turbatores<note xml:id="fn2" type="footnote" n="2"><persName ref="person78">Beat Gering</persName> und <persName ref="person213">Simon Sulzer</persName>.</note> nostri egerrime ferant, quod magistratus Tigurinum<note xml:id="fn3" type="footnote" n="3">Zur Wahl des <persName ref="person119">Jodocus Kilchmeyer</persName> s. <ref target="file12630">Nr. 2583</ref>, Anm. 5.</note> elegerit, quem ipsi non nominarunt<note xml:id="fn4" type="footnote" n="4">Zu den von <persName ref="person78">Gering</persName> und <persName ref="person213">Sulzer</persName> vorgeschlagenen Kandidaten s. <ref target="file12630">Nr. 2583</ref>, Anm. 2.</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Voluerunt itaque impedire eius vocationem quasi non legitimam, et quod violarant<note xml:id="fn5" type="footnote" n="5">Subjekt sind die Ratsherren.</note> ecclesiasticam autoritatem<note xml:id="fn6" type="footnote" n="6">Vgl. <ref target="file12634">Nr. 2587</ref>,1-5. - Zur Autoritätsfrage der Geistlichen s. <ref target="file12631">Nr. 2584</ref>,50-52. 68f.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Sed novimus de Josaphat, Josia, Ezechia, Iudeo Machabeo et Cyro rege,<note xml:id="fn7" type="footnote" n="7">Gemeint sind die jüdischen Reformkönige Josaphat (1 Kön 22, 41-44; 2Chr. 17, 3-9); Hiskija bzw. Ezechia (2Kön 18, 1-6), Josia (2Kön 22, 1 - 23, 28), der jüdische Widerstandskämpfer Judas Makkabäus (1Makk 3ff), und der persische judenfreundlich gesinnte König Kyros II. (2Chr 36, 221: Jes 44, 28 -45, 4).</note> quid magistratus possit in ecclesiasticis rebus ministrisque ordinandis.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Proinde effice omni modo, ne recuset<note xml:id="fn8" type="footnote" n="8">Subjekt ist <persName ref="119">Kilchmeyer</persName>.</note> vocationem a spiritu sancto pręstitam.</s>
-					<s xml:lang="la" type="auto">Habebit constantes adstipulatores<note xml:id="fn9" type="footnote" n="9">Nämlich die zwinglisch Orientierten in <placeName ref="121">Bern</placeName>.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Proinde effice omni modo, ne recuset<note xml:id="fn8" type="footnote" n="8">Subjekt ist <persName ref="person119">Kilchmeyer</persName>.</note> vocationem a spiritu sancto pręstitam.</s>
+					<s n="5" xml:lang="la" type="auto">Habebit constantes adstipulatores<note xml:id="fn9" type="footnote" n="9">Nämlich die zwinglisch Orientierten in <placeName ref="place121">Bern</placeName>.</note>.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">Datum 15. septembris anno, etc., 46., etc.</s>
-					<s xml:lang="la" type="auto">Tuus Eb.</s>
+					<s n="6" xml:lang="la" type="auto">Vale.</s>
+					<s n="7" xml:lang="la" type="auto">Datum 15. septembris anno, etc., 46., etc.</s>
+					<s n="8" xml:lang="la" type="auto">Tuus Eb.</s>
 				</p>
 				<p>
-					<note type="address">[Ohne Adresse.<note xml:id="fn10" type="footnote" n="10">Dieses auf einem kleinen Zettelchen verfasste Schreiben wurde höchstwahrscheinlich den Briefen <ref target="file#12631">Nr. 2584</ref> und <ref target="file#12634">Nr. 2587</ref> beigelegt.</note>]</note>
+					<note type="address">[Ohne Adresse.<note xml:id="fn10" type="footnote" n="10">Dieses auf einem kleinen Zettelchen verfasste Schreiben wurde höchstwahrscheinlich den Briefen <ref target="file12631">Nr. 2584</ref> und <ref target="file12634">Nr. 2587</ref> beigelegt.</note>]</note>
 				</p>
 			</div>
 		</body>

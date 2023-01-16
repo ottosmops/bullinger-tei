@@ -7,27 +7,30 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>C.A. Schwetschke</publisher>
-				<pubPlace>Brunsvigae</pubPlace>
-				<date when="1863"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1054</idno>
+				<pubPlace>Braunschweig/Berlin</pubPlace>
+				<date when="1863-1900"/>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1054</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Joannis Calvini - Opera quae supersunt omnia.</title>
-				<biblScope type="author">Cunitz, Edouard; Baum, Johann-Wilhelm; Reuss, Eduard Wilhelm Eugen</biblScope>
+				<title subtype="publication">Opera Calvini</title>
+				<biblScope type="editor">Guilielmus Baum, Eduardus Cunitz, Eduardus Reuss</biblScope>
 				<biblScope type="edition">Corpus Reformatorium</biblScope>
-				<biblScope type="volumes">58</biblScope>
+				<biblScope type="volumes">59</biblScope>
 				<biblScope type="page">126</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 337,264</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 337,264</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -36,10 +39,10 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Übersendet das Abendmahlsbekenntnis der <placeName ref="398">Genfer</placeName> und ihre
+								Übersendet das Abendmahlsbekenntnis der <placeName ref="place398">Genfer</placeName> und ihre
 								Erläuterung des Wortes "Adonai" [bzw. "Jehovah" als Name für Christus]; beides haben sie [am 22. September]
-								in <placeName ref="121">Bern</placeName> <persName ref="40">Capito</persName> und
-								<persName ref="28">Bucer</persName> vorgelegt. Hofft, am 20. des Monats [zur Synode] in Zürich zu
+								in <placeName ref="place121">Bern</placeName> <persName ref="person40">Capito</persName> und
+								<persName ref="person28">Bucer</persName> vorgelegt. Hofft, am 20. des Monats [zur Synode] in Zürich zu
 								sein.
 							</p>
 						</summary>
@@ -60,51 +63,60 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11097">
 				<correspAction type="sent">
-					<persName ref="person#2263" cert="high">
+					<!--
+					<persName ref="person2263" cert="high">
 						<forename cert="high">Kaspar</forename>
 						<surname cert="high">Megander</surname>
-						<addName type="main">Megander (Großmann), Kaspar</addName>
+						<persName type="main" ref="person8412>Megander (Großmann), Kaspar</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Kaspar_Megander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/12037210X"/>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person2263" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1537-10-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<persName ref="person#1753" cert="high">
+					-->
+					<persName ref="person495" cert="high"/>
+					<!--
+					<persName ref="person1753" cert="high">
 						<forename cert="high">Leo</forename>
 						<surname cert="high">Jud</surname>
 						<graphic type="portrait" url="portraits/1753_Jud_Leo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Leo_Jud"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118558528"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11423330"/>
 					</persName>
+					-->
+					<persName ref="person1753" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11098"/>
-					<ref type="prev_chronologically" target="files.xml#11096"/>
-					<ref type="next_correspondence" target="files.xml#11123"/>
-					<ref type="prev_correspondence" target="files.xml#11080"/>
-					<ref type="next_correspondence_request" target="files.xml#11123"/>
-					<ref type="prev_correspondence_request" target="files.xml#11080"/>
+					<ref type="next_chronologically" target="file11098"/>
+					<ref type="prev_chronologically" target="file11096"/>
+					<ref type="next_correspondence" target="file11123"/>
+					<ref type="prev_correspondence" target="file11080"/>
+					<ref type="next_correspondence_request" target="file11123"/>
+					<ref type="prev_correspondence_request" target="file11080"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11108"/>
-					<ref type="prev_same_sender" target="files.xml#11080"/>
-					<ref type="next_same_addressee" target="files.xml#11615"/>
-					<ref type="prev_same_addressee" target="files.xml#10894"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11108"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11080"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11615"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10894"/>
+					<ref type="next_same_sender" target="file11108"/>
+					<ref type="prev_same_sender" target="file11080"/>
+					<ref type="next_same_addressee" target="file11615"/>
+					<ref type="prev_same_addressee" target="file10894"/>
+					<ref type="next_with_sender_as_addressee" target="file11108"/>
+					<ref type="prev_with_sender_as_addressee" target="file11080"/>
+					<ref type="next_with_addressee_as_sender" target="file11615"/>
+					<ref type="prev_with_addressee_as_sender" target="file10894"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -122,20 +134,20 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam a Domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam a Domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Placuit hoc nuncio Genevensis ecclesiae confessionem eucharistiae, vocis item Adonai explicationem perspicuam, visitatoribus Capitoni et Bucero iam pridem Bernae oblatam transmittere, quo quid boni viri illi et doctissimi hisce in rebus sentiant appareat.</s>
-					<s xml:lang="la" type="auto">Spero me vigesima huius mensis prima sub noctem vobiscum Tiguri futurum.</s>
-					<s xml:lang="la" type="auto">Dominus vobiscum.</s>
-					<s xml:lang="la" type="auto">Bernae, 13. Octobris anno XXXVII.</s>
+					<s n="2" xml:lang="la" type="auto">Placuit hoc nuncio Genevensis ecclesiae confessionem eucharistiae, vocis item Adonai explicationem perspicuam, visitatoribus Capitoni et Bucero iam pridem Bernae oblatam transmittere, quo quid boni viri illi et doctissimi hisce in rebus sentiant appareat.</s>
+					<s n="3" xml:lang="la" type="auto">Spero me vigesima huius mensis prima sub noctem vobiscum Tiguri futurum.</s>
+					<s n="4" xml:lang="la" type="auto">Dominus vobiscum.</s>
+					<s n="5" xml:lang="la" type="auto">Bernae, 13. Octobris anno XXXVII.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Megander totus vester.</s>
+					<s n="6" xml:lang="la" type="auto">Megander totus vester.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominis et fratribus in Domino observandissimis Bullingero et Leoni Tiguri a concionibus.</s>
-					<s xml:lang="de" type="auto">Zurich.</s>
+					<s n="7" xml:lang="la" type="auto">Dominis et fratribus in Domino observandissimis Bullingero et Leoni Tiguri a concionibus.</s>
+					<s n="8" xml:lang="de" type="auto">Zurich.</s>
 				</p>
 			</div>
 		</body>

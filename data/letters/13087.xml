@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3038</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3038</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 366,80</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 366,80</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -69,44 +72,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13087">
 				<correspAction type="sent">
-					<persName ref="person#714" cert="high">
+					<!--
+					<persName ref="person714" cert="high">
 						<forename cert="high">Celio Secondo</forename>
 						<surname cert="high">Curione</surname>
+						<graphic type="portrait" url="portraits/714_Curione_Celio_Secondo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Celio_Secondo_Curione"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/10407440X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414681"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person714" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1547-10-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13088"/>
-					<ref type="prev_chronologically" target="files.xml#13086"/>
-					<ref type="next_correspondence" target="files.xml#26"/>
-					<ref type="prev_correspondence" target="files.xml#13051"/>
-					<ref type="next_correspondence_request" target="files.xml#26"/>
-					<ref type="prev_correspondence_request" target="files.xml#13049"/>
-					<ref type="next_correspondence_reaction" target="files.xml#601"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#13051"/>
-					<ref type="next_same_sender" target="files.xml#13101"/>
-					<ref type="prev_same_sender" target="files.xml#13049"/>
-					<ref type="next_same_addressee" target="files.xml#13088"/>
-					<ref type="prev_same_addressee" target="files.xml#13081"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13101"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13049"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13088"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13081"/>
+					<ref type="next_chronologically" target="file13088"/>
+					<ref type="prev_chronologically" target="file13086"/>
+					<ref type="next_correspondence" target="file26"/>
+					<ref type="prev_correspondence" target="file13051"/>
+					<ref type="next_correspondence_request" target="file26"/>
+					<ref type="prev_correspondence_request" target="file13049"/>
+					<ref type="next_correspondence_reaction" target="file601"/>
+					<ref type="prev_correspondence_reaction" target="file13051"/>
+					<ref type="next_same_sender" target="file13101"/>
+					<ref type="prev_same_sender" target="file13049"/>
+					<ref type="next_same_addressee" target="file13088"/>
+					<ref type="prev_same_addressee" target="file13081"/>
+					<ref type="next_with_sender_as_addressee" target="file13101"/>
+					<ref type="prev_with_sender_as_addressee" target="file13049"/>
+					<ref type="next_with_addressee_as_sender" target="file13088"/>
+					<ref type="prev_with_addressee_as_sender" target="file13081"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -123,26 +132,26 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Quod tuae charitati aliquos commendem, puto te non moleste ferre, cum et tu his officiis laeteris, et ego nonnisi bonos et dignos tibi commendem.</s>
-					<s xml:lang="la" type="auto">Hic adolescens Italus<note xml:id="fn1" type="footnote" n="1">Vielleicht Lelio Sozzini, der nach April 1547 Italien verlassen hatte (s. <abbr>Tedeschi, Socinus</abbr> 306) und sich im Frühsommer 1547 in Basel immatrikulierte (s. <abbr>M-Basel</abbr> II 51, Nr. 9). Er soll um diese Zeit eine Reise nach England unternommen haben, ehe er im Oktober 1548 nach Zürich kam und dort bei Konrad Pellikan wohnte; s. <abbr>Pellikan, Chronikon</abbr> 176f. Vielleicht begab er sich damals von Italien (Venedig?) aus nach England. - Lit.: <abbr>DBI</abbr> XIX 426-430.<zfn>fn17307-2</zfn></note> est, et christiani patris<note xml:id="fn2" type="footnote" n="2">Falls es sich bei dem oben genannten Italiener um Lelio Sozzini handelt, wäre mit dem Vater Mariano il Giovane Sozzini (1483-1556) gemeint, der in Bologna als Jurist tätig war. - Lit.: <abbr>DBI</abbr> XIX 433-435.</note> christianus filius, et modestus et pudens, quem non alia de caussa tibi commendatum velim, quam ut, quia pauper nunc<note xml:id="fn3" type="footnote" n="3">Diese Präzisierung passt gut zu der Tatsache, dass Lelio eigentlich nicht aus einem armen Elternhaus stammte und demnach nur vorübergehend an Geldmangel leiden konnte.</note> est et valde tenuis, eum transeuntem in Italiam hospitio digneris; quod etiamsi sciebam te et alios isthic fratres optimos vestra sponte esse facturos, poscenti tamen, ut eius pudori consulerem, et prope timori, his paucis eum tibi et aliis commendo.<note xml:id="fn4" type="footnote" n="4">Der junge Mann reiste schließlich nicht durch Zürich; s. unten <qv>fn17307-1</qv>.</note></s>
+					<s n="1" xml:lang="la" type="auto">Quod tuae charitati aliquos commendem, puto te non moleste ferre, cum et tu his officiis laeteris, et ego nonnisi bonos et dignos tibi commendem.</s>
+					<s n="2" xml:lang="la" type="auto">Hic adolescens Italus<note xml:id="fn1" type="footnote" n="1">Vielleicht Lelio Sozzini, der nach April 1547 Italien verlassen hatte (s. <abbr>Tedeschi, Socinus</abbr> 306) und sich im Frühsommer 1547 in Basel immatrikulierte (s. <abbr>M-Basel</abbr> II 51, Nr. 9). Er soll um diese Zeit eine Reise nach England unternommen haben, ehe er im Oktober 1548 nach Zürich kam und dort bei Konrad Pellikan wohnte; s. <abbr>Pellikan, Chronikon</abbr> 176f. Vielleicht begab er sich damals von Italien (Venedig?) aus nach England. - Lit.: <abbr>DBI</abbr> XIX 426-430.<zfn>fn17307-2</zfn></note> est, et christiani patris<note xml:id="fn2" type="footnote" n="2">Falls es sich bei dem oben genannten Italiener um Lelio Sozzini handelt, wäre mit dem Vater Mariano il Giovane Sozzini (1483-1556) gemeint, der in Bologna als Jurist tätig war. - Lit.: <abbr>DBI</abbr> XIX 433-435.</note> christianus filius, et modestus et pudens, quem non alia de caussa tibi commendatum velim, quam ut, quia pauper nunc<note xml:id="fn3" type="footnote" n="3">Diese Präzisierung passt gut zu der Tatsache, dass Lelio eigentlich nicht aus einem armen Elternhaus stammte und demnach nur vorübergehend an Geldmangel leiden konnte.</note> est et valde tenuis, eum transeuntem in Italiam hospitio digneris; quod etiamsi sciebam te et alios isthic fratres optimos vestra sponte esse facturos, poscenti tamen, ut eius pudori consulerem, et prope timori, his paucis eum tibi et aliis commendo.<note xml:id="fn4" type="footnote" n="4">Der junge Mann reiste schließlich nicht durch Zürich; s. unten <qv>fn17307-1</qv>.</note></s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Quod reliquum est, cuperem scire, an, quem ad Rodolphum tuum<note xml:id="fn5" type="footnote" n="5">Hans Rudolf Bullinger (geb. 1536).</note> libellum<note xml:id="fn6" type="footnote" n="6">Curiones Büchlein De omni artificio disserendi atque tractandi summa. - Zur Angelegenheit s. <ref target="file#13049">Nr. 3000</ref>,<qv>zl17267-4</qv>; <ref target="file#13051">Nr. 3002</ref>,<qv>zl17269-1</qv>.</note> post acceptas literas tuas<note xml:id="fn7" type="footnote" n="7">Bullingers Brief <ref target="file#13051">Nr. 3002</ref> vom 30. August.</note> misi, acceperis, ut intelligam, qua fide, qui<note xml:id="fn8" type="footnote" n="8">Unbekannt (vielleicht Michael Martin Stella; s. <ref target="file#13101">Nr. 3052</ref>, <qv>fn17379-1</qv>). - Curiones Misstrauen war gerechtfertigt, da der Unbekannte das ihm anvertraute Buch tatsächlich nicht übermittelt hatte; s. <ref target="file#13101">Nr. 3052</ref>,<qv>zl17379-1</qv>.</note> eum ferendum suscepit, mecum et vobiscum egerit.</s>
+					<s n="3" xml:lang="la" type="auto">Quod reliquum est, cuperem scire, an, quem ad Rodolphum tuum<note xml:id="fn5" type="footnote" n="5">Hans Rudolf Bullinger (geb. 1536).</note> libellum<note xml:id="fn6" type="footnote" n="6">Curiones Büchlein De omni artificio disserendi atque tractandi summa. - Zur Angelegenheit s. <ref target="file13049">Nr. 3000</ref>,<qv>zl17267-4</qv>; <ref target="file13051">Nr. 3002</ref>,<qv>zl17269-1</qv>.</note> post acceptas literas tuas<note xml:id="fn7" type="footnote" n="7">Bullingers Brief <ref target="file13051">Nr. 3002</ref> vom 30. August.</note> misi, acceperis, ut intelligam, qua fide, qui<note xml:id="fn8" type="footnote" n="8">Unbekannt (vielleicht Michael Martin Stella; s. <ref target="file13101">Nr. 3052</ref>, <qv>fn17379-1</qv>). - Curiones Misstrauen war gerechtfertigt, da der Unbekannte das ihm anvertraute Buch tatsächlich nicht übermittelt hatte; s. <ref target="file13101">Nr. 3052</ref>,<qv>zl17379-1</qv>.</note> eum ferendum suscepit, mecum et vobiscum egerit.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Vale, mi patrone<note xml:id="fn9" type="footnote" n="9">Siehe dazu zuletzt <abbr>HBBW</abbr> XIX 74 und Anm. 8.</note> optime et suavissime, cum tota familia tua honestissima.</s>
-					<s xml:lang="la" type="auto">Fratres meo nomine saluta.</s>
-					<s xml:lang="la" type="auto">Basileae, 12. octobris 1547.</s>
-					<s xml:lang="la" type="auto">Caelius vere tuus.</s>
+					<s n="4" xml:lang="la" type="auto">Vale, mi patrone<note xml:id="fn9" type="footnote" n="9">Siehe dazu zuletzt <abbr>HBBW</abbr> XIX 74 und Anm. 8.</note> optime et suavissime, cum tota familia tua honestissima.</s>
+					<s n="5" xml:lang="la" type="auto">Fratres meo nomine saluta.</s>
+					<s n="6" xml:lang="la" type="auto">Basileae, 12. octobris 1547.</s>
+					<s n="7" xml:lang="la" type="auto">Caelius vere tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo theologo d. Heinrycho Bullingero, Tigurinae ecclesiae pastori vigilantissimo, fratri et amico singulari.</s>
-					<s xml:lang="la" type="auto">Tiguri.<note xml:id="fn10" type="footnote" n="10">Vorliegender Brief wurde nicht von dem oben in Z. <qv>zl17307-2</qv> erwähnten Italiener, sondern von Chur aus durch Johannes Blasius am 31. Oktober brieflich übermittelt, da der Italiener schließlich nicht durch Zürich reiste; s. <ref target="file#13112">Nr. 3063</ref>,[1].<zfn>fn17307-1</zfn></note></s>
+					<s n="8" xml:lang="la" type="auto">Clarissimo theologo d. Heinrycho Bullingero, Tigurinae ecclesiae pastori vigilantissimo, fratri et amico singulari.</s>
+					<s n="9" xml:lang="la" type="auto">Tiguri.<note xml:id="fn10" type="footnote" n="10">Vorliegender Brief wurde nicht von dem oben in Z. <qv>zl17307-2</qv> erwähnten Italiener, sondern von Chur aus durch Johannes Blasius am 31. Oktober brieflich übermittelt, da der Italiener schließlich nicht durch Zürich reiste; s. <ref target="file13112">Nr. 3063</ref>,[1].<zfn>fn17307-1</zfn></note></s>
 				</p>
 			</div>
 		</body>

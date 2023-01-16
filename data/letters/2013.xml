@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Hinweis" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 359,2935 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 359,2935 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -25,14 +28,17 @@
 				</msDesc>
 				<msDesc type="Hinweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 80,87</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">[1553]</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 80,87</idno>
+						<idno subtype="Hinweis">[1553]</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -46,49 +52,53 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2013">
 				<correspAction type="sent">
-					<persName ref="person#940" cert="high">
+					<!--
+					<persName ref="person940" cert="high">
 						<forename cert="high">Sébastien</forename>
 						<surname cert="high">de l'Aubespine</surname>
-						<addName type="main">de L'Aubespine (Abbé de Basse-Fontaine), Sébastien</addName>
+						<persName type="main" ref="person8296>de L'Aubespine (Abbé de Basse-Fontaine), Sébastien</addName>
 						<graphic type="portrait" url="portraits/940_delAubespine_Sebastien.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/S%C3%A9bastien_de_l%E2%80%99Aubespine"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104185392"/>
 					</persName>
-					<place source="#468" cert="high">
-						<settlement>Solothurn</settlement>
-						<district>Solothurn</district>
-						<country>Schweiz</country>
-						<geo>47.20791 7.53714</geo>
-					</place>
-					<date min="1553-09-18" max="1554-09-18" cert="low"><note>Hinweis: [1553] oder [1554] September 18  Karteikarte unter 1554, aber unbedingt kontrollieren beim Edieren der Briefe 1553  [Interna] (vgl. ID 2395)</note></date>
+					-->
+					<persName ref="person940" cert="high"/>
+					<place source="place468" cert="high"/>
+					<date notBefore="1553-09-18" notAfter="1554-09-18" cert="low"><note>Hinweis: [1553] oder [1554] September 18  Karteikarte unter 1554, aber unbedingt kontrollieren beim Edieren der Briefe 1553  [Interna] (vgl. ID 2395)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#503" cert="low">
+					<!--
+					<persName ref="person503" cert="low">
 						<forename cert="low">s.n.</forename>
 						<surname cert="low">Bullinger</surname>
-						<addName type="main">Bullinger, Heinrich</addName>
+						<persName type="main" ref="person495>Bullinger, Heinrich</addName>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person503" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2015"/>
-					<ref type="prev_chronologically" target="files.xml#2012"/>
-					<ref type="next_correspondence" target="files.xml#2395"/>
-					<ref type="prev_correspondence" target="files.xml#1980"/>
-					<ref type="next_correspondence_request" target="files.xml#2395"/>
-					<ref type="prev_correspondence_request" target="files.xml#1980"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2419"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1885"/>
-					<ref type="next_same_sender" target="files.xml#2395"/>
-					<ref type="prev_same_sender" target="files.xml#1980"/>
-					<ref type="next_same_addressee" target="files.xml#2014"/>
-					<ref type="prev_same_addressee" target="files.xml#2012"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2395"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1980"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2014"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2012"/>
-					<ref type="child" target="files.xml#2395"/>
-					<ref type="parent" target="files.xml#2395"/>
+					<ref type="next_chronologically" target="file2015"/>
+					<ref type="prev_chronologically" target="file2012"/>
+					<ref type="next_correspondence" target="file2395"/>
+					<ref type="prev_correspondence" target="file1980"/>
+					<ref type="next_correspondence_request" target="file2395"/>
+					<ref type="prev_correspondence_request" target="file1980"/>
+					<ref type="next_correspondence_reaction" target="file2419"/>
+					<ref type="prev_correspondence_reaction" target="file1885"/>
+					<ref type="next_same_sender" target="file2395"/>
+					<ref type="prev_same_sender" target="file1980"/>
+					<ref type="next_same_addressee" target="file2014"/>
+					<ref type="prev_same_addressee" target="file2012"/>
+					<ref type="next_with_sender_as_addressee" target="file2395"/>
+					<ref type="prev_with_sender_as_addressee" target="file1980"/>
+					<ref type="next_with_addressee_as_sender" target="file2014"/>
+					<ref type="prev_with_addressee_as_sender" target="file2012"/>
+					<ref type="child" target="file2395"/>
+					<ref type="parent" target="file2395"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

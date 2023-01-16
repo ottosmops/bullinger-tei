@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3851</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,1021</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,1021</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -49,14 +52,17 @@
 				</msDesc>
 				<msDesc type="Regest" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 84,152</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">nur Regest</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 84,152</idno>
+						<idno subtype="Hinweis">nur Regest</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -70,51 +76,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2595">
 				<correspAction type="sent">
-					<persName ref="person#93" cert="high">
+					<!--
+					<persName ref="person93" cert="high">
 						<forename cert="high">Hans Jakob</forename>
 						<surname cert="high">Adlischwiler</surname>
-						<addName type="main">Adlischwyler, Hans-Jakob</addName>
+						<persName type="main" ref="person8036>Adlischwyler, Hans-Jakob</addName>
 						<note type="Person">Brief von Bullinger vom 5. Jan. 1555 (= Karteikarte #2523)</note>
 					</persName>
-					<place source="#18" cert="high">
-						<settlement>Augsburg</settlement>
-						<district>Bayern</district>
-						<country>Deutschland</country>
-						<geo>48.37154 10.89851</geo>
-					</place>
+					-->
+					<persName ref="person93" cert="high"/>
+					<place source="place18" cert="high"/>
 					<date when="1555-03-26" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2596"/>
-					<ref type="prev_chronologically" target="files.xml#2594"/>
+					<ref type="next_chronologically" target="file2596"/>
+					<ref type="prev_chronologically" target="file2594"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#2523"/>
+					<ref type="prev_correspondence" target="file2523"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#302"/>
+					<ref type="prev_correspondence_request" target="file302"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2523"/>
+					<ref type="prev_correspondence_reaction" target="file2523"/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#302"/>
-					<ref type="next_same_addressee" target="files.xml#2602"/>
-					<ref type="prev_same_addressee" target="files.xml#2591"/>
+					<ref type="prev_same_sender" target="file302"/>
+					<ref type="next_same_addressee" target="file2602"/>
+					<ref type="prev_same_addressee" target="file2591"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#302"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2602"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2591"/>
+					<ref type="prev_with_sender_as_addressee" target="file302"/>
+					<ref type="next_with_addressee_as_sender" target="file2602"/>
+					<ref type="prev_with_addressee_as_sender" target="file2591"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -124,24 +128,27 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="2595/Autograph/00 E_II_356__fol__1021_r_.tif" n="1"/>
+		<graphic url="2595/Autograph/01 E_II_356__fol__1021_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="de">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Min frundtlich grus zuvor, herzlieber schwager, wüssen, das ich alle ding uberandtwurt und das der herzog euch bj mir auch schriben wirt, und ist gar gutt, das ich selbs zu Augspurg bin und anhold; hoff, inn dryen wochen, wils gott, bey üch zu sein.</s>
-					<s xml:lang="de" type="auto">Und diewils so theur, hab ich mich am geldt nit endtplozen dorffen, gedenckh, so schwager Ulrich das inn aignem anhaimsch kommen uberandtwürt were, syge früw gnug, es syge auch euch und ime lieber, dann das ich mangel liden müest.</s>
-					<s xml:lang="de" type="auto">So ich von Augspurg gefertigt, würt ich gen Nüwburg müessen; alda würt ich mer geldt empfachen.</s>
-					<s xml:lang="de" type="auto">Ich khan euch nichts nüws fruchtparlichs schreiben; dann noch nichts gehandeldt.</s>
-					<s xml:lang="de" type="auto">Es ist erst suntag des anttencrists cardinal ingriten, dem der kunig und bischoff von Augspurg endtgegen griten.</s>
-					<s xml:lang="de" type="auto">Hiemit gott inn sinen schirm bevolhen.</s>
-					<s xml:lang="de" type="auto">Gruessen mir min liebe baß, euwre khinder, tochtermenner, und wo ir pottschafft, minen bruder.</s>
-					<s xml:lang="la" type="auto">Datum in il.</s>
-					<s xml:lang="de" type="auto">Zinstag nach letare anno 1555.</s>
+					<s n="1" xml:lang="de" type="auto">Min frundtlich grus zuvor, herzlieber schwager, wüssen, das ich alle ding uberandtwurt und das der herzog euch bj mir auch schriben wirt, und ist gar gutt, das ich selbs zu Augspurg bin und anhold; hoff, inn dryen wochen, wils gott, bey üch zu sein.</s>
+					<s n="2" xml:lang="de" type="auto">Und diewils so theur, hab ich mich am geldt nit endtplozen dorffen, gedenckh, so schwager Ulrich das inn aignem anhaimsch kommen uberandtwürt were, syge früw gnug, es syge auch euch und ime lieber, dann das ich mangel liden müest.</s>
+					<s n="3" xml:lang="de" type="auto">So ich von Augspurg gefertigt, würt ich gen Nüwburg müessen; alda würt ich mer geldt empfachen.</s>
+					<s n="4" xml:lang="de" type="auto">Ich khan euch nichts nüws fruchtparlichs schreiben; dann noch nichts gehandeldt.</s>
+					<s n="5" xml:lang="de" type="auto">Es ist erst suntag des anttencrists cardinal ingriten, dem der kunig und bischoff von Augspurg endtgegen griten.</s>
+					<s n="6" xml:lang="de" type="auto">Hiemit gott inn sinen schirm bevolhen.</s>
+					<s n="7" xml:lang="de" type="auto">Gruessen mir min liebe baß, euwre khinder, tochtermenner, und wo ir pottschafft, minen bruder.</s>
+					<s n="8" xml:lang="la" type="auto">Datum in il.</s>
+					<s n="9" xml:lang="de" type="auto">Zinstag nach letare anno 1555.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">E[wer] w[illiger] H[ans] Jacob Adelschwiler von Nollingen.</s>
-					<s xml:lang="de" type="auto">Dem wolgelerten und hochgeachten meinem fründtlichen, lieben schwager meister Heinrich Bullinger, bredicant zuͦ Zurich.</s>
+					<s n="10" xml:lang="de" type="auto">E[wer] w[illiger] H[ans] Jacob Adelschwiler von Nollingen.</s>
+					<s n="11" xml:lang="de" type="auto">Dem wolgelerten und hochgeachten meinem fründtlichen, lieben schwager meister Heinrich Bullinger, bredicant zuͦ Zurich.</s>
 				</p>
 			</div>
 		</body>

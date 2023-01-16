@@ -8,15 +8,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">A 248.1, Nr. 206</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">A 248.1, Nr. 206</idno>
 						<altIdentifier>
-							<idno type="Autograph">A 248.1</idno>
+							<idno subtype="Autograph">A 248.1</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -51,26 +54,32 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#41">Bern</settlement>
-						<institution>Burgerbibliothek</institution>
-						<idno type="Kopie">Cod. 122, f. 37-43, Nr. 16</idno>
-						<repository ref="archive#12">
+						<!--
+						<repository ref="archive12">
 							<name>Bern BB</name>
-							<note type="Mikrofilm">IRG</note>
 							<ref target="https://www.burgerbib.ch/de"/>
 						</repository>
+						<settlement ref="place41">Bern</settlement>
+						<institution>Burgerbibliothek</institution>
+						-->
+						<repository ref="archive12"/>
+						<idno subtype="Kopie">Cod. 122, f. 37-43, Nr. 16</idno>
+						<idno subtype="Mikrofilm">IRG</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 100,104</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 100,104</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -79,53 +88,31 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4814">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
 					<date when="1561-05-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<orgName type="institution">
-						<name type="singular" ref="org#25" cert="low">Synode</name>
-						<place source="#98" cert="low">
-							<settlement>Chur</settlement>
-							<geo>46.84986 9.53287</geo>
-						</place>
-					</orgName>
-					<place source="#98" cert="low">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					<orgName ref="org49" role="Synode"/>"
+					<place source="place98" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4815"/>
-					<ref type="prev_chronologically" target="files.xml#4813"/>
-					<ref type="next_correspondence" target="files.xml#5440"/>
+					<ref type="next_chronologically" target="file4815"/>
+					<ref type="prev_chronologically" target="file4813"/>
+					<ref type="next_correspondence" target="file5440"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#8457"/>
+					<ref type="next_correspondence_request" target="file8457"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#5440"/>
+					<ref type="next_correspondence_reaction" target="file5440"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#4815"/>
-					<ref type="prev_same_sender" target="files.xml#4683"/>
-					<ref type="next_same_addressee" target="files.xml#5440"/>
-					<ref type="prev_same_addressee" target="files.xml#12271"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4815"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4683"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5440"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12271"/>
+					<ref type="next_same_sender" target="file4815"/>
+					<ref type="prev_same_sender" target="file4683"/>
+					<ref type="next_same_addressee" target="file5440"/>
+					<ref type="prev_same_addressee" target="file12271"/>
+					<ref type="next_with_sender_as_addressee" target="file4815"/>
+					<ref type="prev_with_sender_as_addressee" target="file4683"/>
+					<ref type="next_with_addressee_as_sender" target="file5440"/>
+					<ref type="prev_with_addressee_as_sender" target="file12271"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2015"/>
-				<idno type="ISBN">ISBN 978-3-290-17782-9</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2475</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17782-9</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2475</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 17</title>
+				<title subtype="publication">HBBW XVII</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">17</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#311">Marburg</settlement>
-						<institution>Hessisches Landesarchiv Abteilung Staatsarchiv</institution>
-						<idno type="Kopie">3, 1797 (PA 1797), 46r.</idno>
-						<repository ref="archive#61">
+						<!--
+						<repository ref="archive61">
 							<name>Marburg HStA</name>
 							<ref target="https://landesarchiv.hessen.de/"/>
 						</repository>
+						<settlement ref="place311">Marburg</settlement>
+						<institution>Hessisches Landesarchiv Abteilung Staatsarchiv</institution>
+						-->
+						<repository ref="archive61"/>
+						<idno subtype="Kopie">3, 1797 (PA 1797), 46r.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,10 +50,10 @@
 						<summary>
 							<p xml:id="regest1">
 								<pb type="edition" next="120"/> Bullinger hat den Brief von Landgraf Philipp von Hessen
-								[<ref target="file#12502">Nr. 2455</ref>] empfangen. Es schmerzte und überraschte ihn zu erfahren, was man den
+								[<ref target="file12502">Nr. 2455</ref>] empfangen. Es schmerzte und überraschte ihn zu erfahren, was man den
 								Zürchern zu Unrecht vorwirft. Deshalb las er den Brief dem Rat, den Pfarrern und den Lehrern von Zürich vor,
 								damit sie sich dazu äußern und dem Landgrafen antworten könnten. Der Landgraf möge das beigelegte Schreiben
-								[<ref target="file#12523">Nr. 2476</ref>] wohlwollend aufnehmen. Bullinger bleibt wie bis anhin dem Landgrafen
+								[<ref target="file12523">Nr. 2476</ref>] wohlwollend aufnehmen. Bullinger bleibt wie bis anhin dem Landgrafen
 								und der Eintracht der Kirche verpflichtet.
 								</p>
 								<p xml:id="regest2">
@@ -75,14 +78,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 337a,377</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">Gleichzeitige Fassung, ohne Adresse und mit einer Korrektur</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 337a,377</idno>
+						<idno subtype="Hinweis">Gleichzeitige Fassung, ohne Adresse und mit einer Korrektur</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -91,46 +97,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12522">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1546-06-27" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1871" cert="high">
+					<!--
+					<persName ref="person1871" cert="high">
 						<forename cert="high">Philipp</forename>
 						<surname cert="high">von Hessen</surname>
-						<addName type="main">von Hessen, Philipp I. («der Großmütige»)</addName>
-						<graphic type="portrait" url="portraits/8019_von_Hessen_Philipp_I.jpg"/>
+						<persName type="main" ref="person8019>von Hessen, Philipp I. («der Großmütige»)</addName>
+						<graphic type="portrait" url="portraits/1871_von_Hessen_Philipp_I.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Philipp_I._(Hessen)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11859382X"/>
 					</persName>
+					-->
+					<persName ref="person1871" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12523"/>
-					<ref type="prev_chronologically" target="files.xml#12521"/>
-					<ref type="next_correspondence" target="files.xml#12616"/>
-					<ref type="prev_correspondence" target="files.xml#12502"/>
-					<ref type="next_correspondence_request" target="files.xml#12616"/>
-					<ref type="prev_correspondence_request" target="files.xml#10441"/>
-					<ref type="next_correspondence_reaction" target="files.xml#1783"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12502"/>
-					<ref type="next_same_sender" target="files.xml#12524"/>
-					<ref type="prev_same_sender" target="files.xml#12521"/>
-					<ref type="next_same_addressee" target="files.xml#1783"/>
-					<ref type="prev_same_addressee" target="files.xml#12502"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12524"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12521"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1783"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12502"/>
+					<ref type="next_chronologically" target="file12523"/>
+					<ref type="prev_chronologically" target="file12521"/>
+					<ref type="next_correspondence" target="file12616"/>
+					<ref type="prev_correspondence" target="file12502"/>
+					<ref type="next_correspondence_request" target="file12616"/>
+					<ref type="prev_correspondence_request" target="file10441"/>
+					<ref type="next_correspondence_reaction" target="file1783"/>
+					<ref type="prev_correspondence_reaction" target="file12502"/>
+					<ref type="next_same_sender" target="file12524"/>
+					<ref type="prev_same_sender" target="file12521"/>
+					<ref type="next_same_addressee" target="file1783"/>
+					<ref type="prev_same_addressee" target="file12502"/>
+					<ref type="next_with_sender_as_addressee" target="file12524"/>
+					<ref type="prev_with_sender_as_addressee" target="file12521"/>
+					<ref type="next_with_addressee_as_sender" target="file1783"/>
+					<ref type="prev_with_addressee_as_sender" target="file12502"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -144,39 +154,39 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Durchlüchtiger, hochgeborner, christenlicher fürst unnd herr, gnediger her, min underthenig, willig dienst sampt allem guͦtem sye u[wer] f[ürstlichen] g[naden] von mir alle zyt bevoran bereit<note xml:id="fn1" type="footnote" n="1">bevoran bereit: vorab entboten.</note>.</s>
-					<s xml:lang="de" type="auto">U.f.g. christenlich getrüw zuͦschriben<note xml:id="fn2" type="footnote" n="2">Brief <ref target="file#12502">Nr. 2455</ref> vom 5. Juni 1546.</note> hab ich empfangen unnd sines ynhalts verstanden.</s>
-					<s xml:lang="de" type="auto">Unnd hatt mich hertzlich beduret unnd trefflich<note xml:id="fn3" type="footnote" n="3">sehr.</note> befroͤmbdet, das u.f.g. von unns hie Zürich soͤmliche<note xml:id="fn4" type="footnote" n="4">solche.</note><note xml:id="fne" type="footnote" n="e"><hi>In der Vorlage</hi> smliche, <hi>gegebenenfalls</hi> semliche, <hi>hier korrigiert in Anlehnung an die gleichzeitige Fassung.</hi></note> ding<note xml:id="fn5" type="footnote" n="5">Vgl. <ref target="file#12502">Nr. 2455</ref>,2-10.</note> fürgebracht sind, deren wir unns von den gnaden gottes unschuldig wüssend.</s>
-					<s xml:lang="de" type="auto">Unnd damit u.f.g. dess alles so vil besseren grund unnd sicherheit haͤtte, hab ich u.f.g. schriben einem eersammen radt, minen gnedigen herren, ouch dem gantzen collegio der predigeren unnd laͤseren<note xml:id="fn6" type="footnote" n="6">Lehrer.</note>, minen lieben bruͤdern, fürgebracht mit begaͤr, sich diser sachen ze eroffnen unnd u.f.g. ze schriben, welchs beschaͤhen lut der brieffen hier bygelegt<note xml:id="fn7" type="footnote" n="7">Brief <ref target="file#12523">Nr. 2476</ref> vom gleichen Tag.</note>.</s>
-					<s xml:lang="de" type="auto">Dann<note xml:id="fn8" type="footnote" n="8">Weil.</note> u.f.g. ich von hertzen bereit bin ze dienen unnd vorab<note xml:id="fn9" type="footnote" n="9">vor allem.</note> einigkeit der kyrchen ze fürderen, bitt, u.f.g. woͤlle disen minen dienst imm besten uffnemmen.</s>
+					<s n="1" xml:lang="de" type="auto">Durchlüchtiger, hochgeborner, christenlicher fürst unnd herr, gnediger her, min underthenig, willig dienst sampt allem guͦtem sye u[wer] f[ürstlichen] g[naden] von mir alle zyt bevoran bereit<note xml:id="fn1" type="footnote" n="1">bevoran bereit: vorab entboten.</note>.</s>
+					<s n="2" xml:lang="de" type="auto">U.f.g. christenlich getrüw zuͦschriben<note xml:id="fn2" type="footnote" n="2">Brief <ref target="file12502">Nr. 2455</ref> vom 5. Juni 1546.</note> hab ich empfangen unnd sines ynhalts verstanden.</s>
+					<s n="3" xml:lang="de" type="auto">Unnd hatt mich hertzlich beduret unnd trefflich<note xml:id="fn3" type="footnote" n="3">sehr.</note> befroͤmbdet, das u.f.g. von unns hie Zürich soͤmliche<note xml:id="fn4" type="footnote" n="4">solche.</note><note xml:id="fne" type="footnote" n="e"><hi>In der Vorlage</hi> smliche, <hi>gegebenenfalls</hi> semliche, <hi>hier korrigiert in Anlehnung an die gleichzeitige Fassung.</hi></note> ding<note xml:id="fn5" type="footnote" n="5">Vgl. <ref target="file12502">Nr. 2455</ref>,2-10.</note> fürgebracht sind, deren wir unns von den gnaden gottes unschuldig wüssend.</s>
+					<s n="4" xml:lang="de" type="auto">Unnd damit u.f.g. dess alles so vil besseren grund unnd sicherheit haͤtte, hab ich u.f.g. schriben einem eersammen radt, minen gnedigen herren, ouch dem gantzen collegio der predigeren unnd laͤseren<note xml:id="fn6" type="footnote" n="6">Lehrer.</note>, minen lieben bruͤdern, fürgebracht mit begaͤr, sich diser sachen ze eroffnen unnd u.f.g. ze schriben, welchs beschaͤhen lut der brieffen hier bygelegt<note xml:id="fn7" type="footnote" n="7">Brief <ref target="file12523">Nr. 2476</ref> vom gleichen Tag.</note>.</s>
+					<s n="5" xml:lang="de" type="auto">Dann<note xml:id="fn8" type="footnote" n="8">Weil.</note> u.f.g. ich von hertzen bereit bin ze dienen unnd vorab<note xml:id="fn9" type="footnote" n="9">vor allem.</note> einigkeit der kyrchen ze fürderen, bitt, u.f.g. woͤlle disen minen dienst imm besten uffnemmen.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="de" type="auto">U.f.g. zedel<note xml:id="fn10" type="footnote" n="10">Nicht bekannt.</note> belangend minen günstigen herren burgermeistern Johanns Ruͦdolphen Lavatar hab ich im ouch gezeigt.</s>
-					<s xml:lang="de" type="auto">Was er gar guͦtwillig.</s>
-					<s xml:lang="de" type="auto">Befalch mir ouch trüwlich u.f.g. sin willige dienst alle zyt ungespart anzezeigen.</s>
+					<s n="6" xml:lang="de" type="auto">U.f.g. zedel<note xml:id="fn10" type="footnote" n="10">Nicht bekannt.</note> belangend minen günstigen herren burgermeistern Johanns Ruͦdolphen Lavatar hab ich im ouch gezeigt.</s>
+					<s n="7" xml:lang="de" type="auto">Was er gar guͦtwillig.</s>
+					<s n="8" xml:lang="de" type="auto">Befalch mir ouch trüwlich u.f.g. sin willige dienst alle zyt ungespart anzezeigen.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="de" type="auto">Diewyl dann ietzund sich wider die waren religion ein groß rüsten erhept unnd sich grosse gfaren zuͦtragend, bittend wir den allmechtigen, das er u.f.g. verstand, wyssheit, sterck, macht, guͦten faal unnd glück<note xml:id="fn11" type="footnote" n="11">guten faal unnd glück: gutes Gelingen.</note> verlihe.</s>
-					<s xml:lang="de" type="auto">Die sach ist an ir selb uffrecht<note xml:id="fn12" type="footnote" n="12">gerecht.</note>.</s>
-					<s xml:lang="de" type="auto">So verlast der warhaffte gott die sinen nit,<note xml:id="fn13" type="footnote" n="13">Vgl. Ps 9, 11: 37 (Vulg. 36), 28.</note> ob er sy glichwol in grosse gfar ynfuͤrt<note xml:id="fn14" type="footnote" n="14">Vgl. Ps 23 (Vulg. 22), 4.</note>.</s>
-					<s xml:lang="de" type="auto">Sterben getroͤst in eeren umb gottes willen ist die groͤste eer unnd das recht laͤben.</s>
-					<s xml:lang="de" type="auto">Laͤben in abgottery, in valscher leer unnd under der tyranny der rotten kyrchen (bapst, cardinal unnd iren anhang verstan ich)<note xml:id="fn15" type="footnote" n="15">Zur Bezeichnung "rote Kirche" vgl. <ref target="file#12510">Nr. 2463</ref> und Anm. 31.</note> ist die grusammest dienstbarkeit unnd der schantlichest<pb type="edition" next="121"/> tod.</s>
-					<s xml:lang="de" type="auto">U.f.g. ruͤffe zuͦ gott, ergaͤbe sich an gott unnd sye vest.</s>
-					<s xml:lang="de" type="auto">Gott woͤlle u.f.g. langwirig unnd sighafft zuͦ guͦtem siner kyrchen erhallten.</s>
+					<s n="9" xml:lang="de" type="auto">Diewyl dann ietzund sich wider die waren religion ein groß rüsten erhept unnd sich grosse gfaren zuͦtragend, bittend wir den allmechtigen, das er u.f.g. verstand, wyssheit, sterck, macht, guͦten faal unnd glück<note xml:id="fn11" type="footnote" n="11">guten faal unnd glück: gutes Gelingen.</note> verlihe.</s>
+					<s n="10" xml:lang="de" type="auto">Die sach ist an ir selb uffrecht<note xml:id="fn12" type="footnote" n="12">gerecht.</note>.</s>
+					<s n="11" xml:lang="de" type="auto">So verlast der warhaffte gott die sinen nit,<note xml:id="fn13" type="footnote" n="13">Vgl. Ps 9, 11: 37 (Vulg. 36), 28.</note> ob er sy glichwol in grosse gfar ynfuͤrt<note xml:id="fn14" type="footnote" n="14">Vgl. Ps 23 (Vulg. 22), 4.</note>.</s>
+					<s n="12" xml:lang="de" type="auto">Sterben getroͤst in eeren umb gottes willen ist die groͤste eer unnd das recht laͤben.</s>
+					<s n="13" xml:lang="de" type="auto">Laͤben in abgottery, in valscher leer unnd under der tyranny der rotten kyrchen (bapst, cardinal unnd iren anhang verstan ich)<note xml:id="fn15" type="footnote" n="15">Zur Bezeichnung "rote Kirche" vgl. <ref target="file12510">Nr. 2463</ref> und Anm. 31.</note> ist die grusammest dienstbarkeit unnd der schantlichest<pb type="edition" next="121"/> tod.</s>
+					<s n="14" xml:lang="de" type="auto">U.f.g. ruͤffe zuͦ gott, ergaͤbe sich an gott unnd sye vest.</s>
+					<s n="15" xml:lang="de" type="auto">Gott woͤlle u.f.g. langwirig unnd sighafft zuͦ guͦtem siner kyrchen erhallten.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum Zurich, 27. iunii anno 1546.</s>
+					<s n="16" xml:lang="de" type="auto">Datum Zurich, 27. iunii anno 1546.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">U.f.g. gantz williger diener Heinrych Bullinger, diener der kyrch Zürich.</s>
+					<s n="17" xml:lang="de" type="auto">U.f.g. gantz williger diener Heinrych Bullinger, diener der kyrch Zürich.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf f. 47v.:]<note xml:id="fnf" type="footnote" n="f"><hi>F. 46v.-47r. sind unbeschrieben.</hi></note></note>
-					<s xml:lang="de" type="auto">Dem durchlüchtigen, hochgebornen fürsten unnd herren, herr Philippen <placeName ref="74">Landtgrafen</placeName> zuͦ <placeName ref="26">Hessen</placeName>, graven zuͦ Catzenelnbogen, etc., sinem gnedigen herren<note xml:id="fng" type="footnote" n="g"><hi>Darüber und darunter Kanzleieinträge:</hi> Bullingerrus. Ein trostschrift und Mudt. Presentatae Cassell, <hi>5.</hi> iulii anno, etc., 46.</note>.</s>
+					<s n="18" xml:lang="de" type="auto">Dem durchlüchtigen, hochgebornen fürsten unnd herren, herr Philippen <placeName ref="place74">Landtgrafen</placeName> zuͦ <placeName ref="place26">Hessen</placeName>, graven zuͦ Catzenelnbogen, etc., sinem gnedigen herren<note xml:id="fng" type="footnote" n="g"><hi>Darüber und darunter Kanzleieinträge:</hi> Bullingerrus. Ein trostschrift und Mudt. Presentatae Cassell, 5. iulii anno, etc., 46.</note>.</s>
 				</p>
 			</div>
 		</body>

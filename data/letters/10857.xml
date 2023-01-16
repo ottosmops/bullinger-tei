@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=818</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=818</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -29,16 +29,19 @@
 				<biblScope type="pages">518</biblScope>
 			</seriesStmt>
 			<sourceDesc>
-				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
+				<msDesc type="Brief" subtype="Autograph (Kopie)" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 345,159-161</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">Autographe Kopie oder Konzept</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph (Kopie)">E II 345,159-161</idno>
+						<idno subtype="Hinweis">Autographe Kopie oder Konzept</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,13 +50,13 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Das Sakramentsverständnis, das <persName ref="36">Burgauer</persName> in seinem Brief darlegte,
-								gefällt Bullinger und stimmt auch mit <persName ref="265">Zwinglis</persName> Lehre überein; wundert
-								sich, daß <persName ref="36">Burgauer</persName> an dieser Übereinstimmung zweifelt, und bittet
-								deshalb um Aufschluß. Besänftigt <persName ref="36">Burgauers</persName> Erregung, die durch das
+								Das Sakramentsverständnis, das <persName ref="person36">Burgauer</persName> in seinem Brief darlegte,
+								gefällt Bullinger und stimmt auch mit <persName ref="person265">Zwinglis</persName> Lehre überein; wundert
+								sich, daß <persName ref="person36">Burgauer</persName> an dieser Übereinstimmung zweifelt, und bittet
+								deshalb um Aufschluß. Besänftigt <persName ref="person36">Burgauers</persName> Erregung, die durch das
 								frühere Schreiben der Zürcher ausgelöst worden ist, und sagt ihm Freundschaft zu, sobald er sich
 								gerechtfertigt hat. Mahnt zur Vorsicht gegenüber den französischen Machenschaften. Gruß an
-								<persName ref="176">Erasmus</persName> [<persName ref="176">Ritter</persName>].
+								Erasmus [<persName ref="person176">Ritter</persName>].
 							</p>
 						</summary>
 					</msContents>
@@ -63,43 +66,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10857">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1536-05-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#264" cert="high">
+					<!--
+					<persName ref="person264" cert="high">
 						<forename cert="high">Benedikt</forename>
 						<surname cert="high">Burgauer</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Benedikt_Burgauer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1012180530"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11414537"/>
 					</persName>
+					-->
+					<persName ref="person264" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10858"/>
-					<ref type="prev_chronologically" target="files.xml#10856"/>
+					<ref type="next_chronologically" target="file10858"/>
+					<ref type="prev_chronologically" target="file10856"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10862"/>
-					<ref type="prev_same_sender" target="files.xml#10856"/>
+					<ref type="next_same_sender" target="file10862"/>
+					<ref type="prev_same_sender" target="file10856"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10862"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10856"/>
+					<ref type="next_with_sender_as_addressee" target="file10862"/>
+					<ref type="prev_with_sender_as_addressee" target="file10856"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
@@ -111,52 +118,52 @@
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
 	<facsimile>
-		<graphic url="10857/Kopie/00 E_II_345__S__159.tif" n="1"/>
-		<graphic url="10857/Kopie/01 E_II_345__S__160_.tif" n="2"/>
-		<graphic url="10857/Kopie/02 E_II_345__S__161_.tif" n="3"/>
+		<graphic url="10857/Autograph (Kopie)/00 E_II_345__S__159.tif" n="1"/>
+		<graphic url="10857/Autograph (Kopie)/01 E_II_345__S__160_.tif" n="2"/>
+		<graphic url="10857/Autograph (Kopie)/02 E_II_345__S__161_.tif" n="3"/>
 	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="36">Benedicto</persName> Burgowero.</s>
+					<s n="1" xml:lang="la" type="auto"><persName ref="person36">Benedicto</persName> Burgowero.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem.</s>
+					<s n="2" xml:lang="la" type="auto">Gratiam et pacem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Gratae mihi fuerunt literae tuae<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note>, <persName ref="36">Benedicte</persName> charissime, tum quod loqupletissime testentur amorem in me tuum eumque non vulgarem, quem ego pari compensare cupio, tum quod metu me liberasti.</s>
-					<s xml:lang="la" type="auto">Si enim hoc fecisti et dixisti,<pb type="edition" next="283"/> quod te als dixisse et fecisse, nihil<pb type="scan" next="||160v"/> ideris pecasse.</s>
-					<s xml:lang="la" type="auto">Fateris ingenue sacramenta sine fide nullam conferre gratiam.</s>
-					<s xml:lang="la" type="auto">Non vis in honorem tuum ista provehere elementa; als cum doctore <persName ref="1173">Hieronymo</persName> non aquam, sed spiritum lavare animam<note xml:id="fn2" type="footnote" n="2"><persName ref="1173">Hieronymus</persName>, Altercatio Luciferiani et orthodoxi (dialogus contra Luciferianos) 6 (MPL XXIII 169).</note> Deinde diserte sentis pios rem et signum sumere, idque fidei benefitio, impios signum tantum, ideoque signum et signatum non necesse apud sanctos esse juncta, apud quos interim res iustificat, etsi signum absit, modo id non fiat per contemptum, adeoque in sacramentis praecipue spectandam esse rem, quae significatur, et fidem, verbum et institutionem, ex quibus signo omnis accedit authoritas, quod sine illis nullum est.</s>
-					<s xml:lang="la" type="auto">Hactenus ergo satisfecisti mihi.</s>
-					<s xml:lang="la" type="auto">Tu modo simpliciter<note xml:id="fnb" type="footnote" n="b"><hi>vor</hi> simpliciter <hi>gestrichenes</hi> ista.</note> et pure ista docere pergito.</s>
-					<s xml:lang="la" type="auto">In tertio adhuc aliquid desydero.</s>
-					<s xml:lang="la" type="auto">Sic enim scribis: "Si in concepto dogmate <persName ref="265">Zvinglium</persName> iam opponentem haberem, cordatius ei resistere vellem."</s>
-					<s xml:lang="la" type="auto">Si enim legisti scripta <persName ref="265">Zvinglii</persName>, ut non ambigo, sane hoc ipsum de sacramentis sensisse vidisti virum doctissimum et piissimum, quod ipse sentis et iamiam ex tuis recensui.</s>
-					<s xml:lang="la" type="auto">Miror igitur, de quo loquaris dogmate, in quo refellendo illi velles resistere.</s>
-					<s xml:lang="la" type="auto">Aliudne tu sentis de sacramentis quam quod <persName ref="265">Zvinglius</persName>, aut aliudne ille asseruit quam tu?</s>
-					<s xml:lang="la" type="auto">Expone igitur, de quo loquaris dogmate, ut te intelligam rectius.</s>
+					<s n="3" xml:lang="la" type="auto">Gratae mihi fuerunt literae tuae<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note>, <persName ref="person36">Benedicte</persName> charissime, tum quod loqupletissime testentur amorem in me tuum eumque non vulgarem, quem ego pari compensare cupio, tum quod metu me liberasti.</s>
+					<s n="4" xml:lang="la" type="auto">Si enim hoc fecisti et dixisti,<pb type="edition" next="283"/> quod te als dixisse et fecisse, nihil<pb type="scan" next="||160v"/> ideris pecasse.</s>
+					<s n="5" xml:lang="la" type="auto">Fateris ingenue sacramenta sine fide nullam conferre gratiam.</s>
+					<s n="6" xml:lang="la" type="auto">Non vis in honorem tuum ista provehere elementa; als cum doctore <persName ref="person1173">Hieronymo</persName> non aquam, sed spiritum lavare animam<note xml:id="fn2" type="footnote" n="2"><persName ref="person1173">Hieronymus</persName>, Altercatio Luciferiani et orthodoxi (dialogus contra Luciferianos) 6 (MPL XXIII 169).</note> Deinde diserte sentis pios rem et signum sumere, idque fidei benefitio, impios signum tantum, ideoque signum et signatum non necesse apud sanctos esse juncta, apud quos interim res iustificat, etsi signum absit, modo id non fiat per contemptum, adeoque in sacramentis praecipue spectandam esse rem, quae significatur, et fidem, verbum et institutionem, ex quibus signo omnis accedit authoritas, quod sine illis nullum est.</s>
+					<s n="7" xml:lang="la" type="auto">Hactenus ergo satisfecisti mihi.</s>
+					<s n="8" xml:lang="la" type="auto">Tu modo simpliciter<note xml:id="fnb" type="footnote" n="b"><hi>vor</hi> simpliciter <hi>gestrichenes</hi> ista.</note> et pure ista docere pergito.</s>
+					<s n="9" xml:lang="la" type="auto">In tertio adhuc aliquid desydero.</s>
+					<s n="10" xml:lang="la" type="auto">Sic enim scribis: "Si in concepto dogmate <persName ref="person265">Zvinglium</persName> iam opponentem haberem, cordatius ei resistere vellem."</s>
+					<s n="11" xml:lang="la" type="auto">Si enim legisti scripta <persName ref="person265">Zvinglii</persName>, ut non ambigo, sane hoc ipsum de sacramentis sensisse vidisti virum doctissimum et piissimum, quod ipse sentis et iamiam ex tuis recensui.</s>
+					<s n="12" xml:lang="la" type="auto">Miror igitur, de quo loquaris dogmate, in quo refellendo illi velles resistere.</s>
+					<s n="13" xml:lang="la" type="auto">Aliudne tu sentis de sacramentis quam quod <persName ref="person265">Zvinglius</persName>, aut aliudne ille asseruit quam tu?</s>
+					<s n="14" xml:lang="la" type="auto">Expone igitur, de quo loquaris dogmate, ut te intelligam rectius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Postremo obtestor te per nomen domini nostri Iesu Christi, ut illam animi tui perturbationem per epistolam nostram<note xml:id="fn3" type="footnote" n="3">Nicht erhalten.</note> exagitatam non permittas animi affectibus, quo perturbent vehementius.</s>
-					<s xml:lang="la" type="auto">Non est, quod cuiquam huius nomine amicitiam renuncies aut male de aliquibus suspiceris.</s>
-					<s xml:lang="la" type="auto">Si qui videntur in te peccasse, domini imitare exemplum et ignosce.</s>
-					<s xml:lang="la" type="auto">Certe ego ista non a tuis, sed alienis percepi, atque iis quidem, qui fovebant tibi.</s>
-					<s xml:lang="la" type="auto">Id si a te impetravero, te in amicorum numero habebo et posthac scribam liberius tibique potestatem facio scribendi quaelibet.</s>
+					<s n="15" xml:lang="la" type="auto">Postremo obtestor te per nomen domini nostri Iesu Christi, ut illam animi tui perturbationem per epistolam nostram<note xml:id="fn3" type="footnote" n="3">Nicht erhalten.</note> exagitatam non permittas animi affectibus, quo perturbent vehementius.</s>
+					<s n="16" xml:lang="la" type="auto">Non est, quod cuiquam huius nomine amicitiam renuncies aut male de aliquibus suspiceris.</s>
+					<s n="17" xml:lang="la" type="auto">Si qui videntur in te peccasse, domini imitare exemplum et ignosce.</s>
+					<s n="18" xml:lang="la" type="auto">Certe ego ista non a tuis, sed alienis percepi, atque iis quidem, qui fovebant tibi.</s>
+					<s n="19" xml:lang="la" type="auto">Id si a te impetravero, te in amicorum numero habebo et posthac scribam liberius tibique potestatem facio scribendi quaelibet.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hoc nunc adiicio: Caveto tibi a Gallorum versutia!</s>
-					<s xml:lang="la" type="auto">Ad legem,<pb type="scan" next="||161"/> ad testimonium, ad Christum, ad evangelium respice, non ad regem ullum.</s>
-					<s xml:lang="la" type="auto">Hoc non dico, quod quicquam dubitem de fide tua, sed quod video istum nescio quid moliri<note xml:id="fn4" type="footnote" n="4">Bullingers Mißtrauen war begründet in den Aktivitäten des französischen Gesandten <persName ref="487">Louis Daugerant</persName> de <persName ref="487">Boisrigaut</persName>, der, nachdem er auf seine Gesuche um eidgenössische Soldner abschlägige Antwort erhalten hatte (vgl. EA IV/1c 656 b. 659 zu b. 667 e), in der Nord- und Ostschweiz heimlich Soldner anwarb (vgl. ebd., S. 694 a und zu a).</note>.</s>
+					<s n="20" xml:lang="la" type="auto">Hoc nunc adiicio: Caveto tibi a Gallorum versutia!</s>
+					<s n="21" xml:lang="la" type="auto">Ad legem,<pb type="scan" next="||161"/> ad testimonium, ad Christum, ad evangelium respice, non ad regem ullum.</s>
+					<s n="22" xml:lang="la" type="auto">Hoc non dico, quod quicquam dubitem de fide tua, sed quod video istum nescio quid moliri<note xml:id="fn4" type="footnote" n="4">Bullingers Mißtrauen war begründet in den Aktivitäten des französischen Gesandten Louis Daugerant de <persName ref="person487">Boisrigaut</persName>, der, nachdem er auf seine Gesuche um eidgenössische Soldner abschlägige Antwort erhalten hatte (vgl. EA IV/1c 656 b. 659 zu b. 667 e), in der Nord- und Ostschweiz heimlich Soldner anwarb (vgl. ebd., S. 694 a und zu a).</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominus conservet nos.</s>
-					<s xml:lang="la" type="auto"><persName ref="176">Erasmum</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="176">Erasmus Ritter</persName>.</note> nostrum salutabis.</s>
-					<s xml:lang="la" type="auto">Valebis.</s>
+					<s n="23" xml:lang="la" type="auto">Dominus conservet nos.</s>
+					<s n="24" xml:lang="la" type="auto"><persName ref="person176">Erasmum</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="person176">Erasmus Ritter</persName>.</note> nostrum salutabis.</s>
+					<s n="25" xml:lang="la" type="auto">Valebis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, 12. maii anno 1536.</s>
+					<s n="26" xml:lang="la" type="auto">Tiguri, 12. maii anno 1536.</s>
 				</p>
 			</div>
 		</body>

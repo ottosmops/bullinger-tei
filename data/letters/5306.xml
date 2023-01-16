@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 373,355 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 373,355 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -32,13 +35,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 104,91</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 104,91</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -47,47 +53,62 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5306">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<date min="1562-04-30" max="1562-05-01" cert="low"/>
+					-->
+					<persName ref="person495" cert="high"/>
+					<date notBefore="1562-04-30" notAfter="1562-05-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1075" cert="high">
+					<!--
+					<persName ref="person1075" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Fabricius</surname>
-						<addName type="main">Fabricius Montanus (Schmid), Johannes</addName>
+						<persName type="main" ref="person8009>Fabricius Montanus (Schmid), Johannes</addName>
 						<graphic type="portrait" url="portraits/1075_Fabricius_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Fabricius_Montanus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104045698"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414870"/>
 					</persName>
+					-->
+					<persName ref="person1075" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5308"/>
-					<ref type="prev_chronologically" target="files.xml#5305"/>
-					<ref type="next_correspondence" target="files.xml#5313"/>
-					<ref type="prev_correspondence" target="files.xml#5292"/>
-					<ref type="next_correspondence_request" target="files.xml#5313"/>
-					<ref type="prev_correspondence_request" target="files.xml#5292"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5316"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5290"/>
-					<ref type="next_same_sender" target="files.xml#5308"/>
-					<ref type="prev_same_sender" target="files.xml#5296"/>
-					<ref type="next_same_addressee" target="files.xml#5316"/>
-					<ref type="prev_same_addressee" target="files.xml#5290"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5308"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5296"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5316"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5290"/>
+					<ref type="next_chronologically" target="file5308"/>
+					<ref type="prev_chronologically" target="file5305"/>
+					<ref type="next_correspondence" target="file5313"/>
+					<ref type="prev_correspondence" target="file5292"/>
+					<ref type="next_correspondence_request" target="file5313"/>
+					<ref type="prev_correspondence_request" target="file5292"/>
+					<ref type="next_correspondence_reaction" target="file5316"/>
+					<ref type="prev_correspondence_reaction" target="file5290"/>
+					<ref type="next_same_sender" target="file5308"/>
+					<ref type="prev_same_sender" target="file5296"/>
+					<ref type="next_same_addressee" target="file5316"/>
+					<ref type="prev_same_addressee" target="file5290"/>
+					<ref type="next_with_sender_as_addressee" target="file5308"/>
+					<ref type="prev_with_sender_as_addressee" target="file5296"/>
+					<ref type="next_with_addressee_as_sender" target="file5316"/>
+					<ref type="prev_with_addressee_as_sender" target="file5290"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="5306/Autograph/00 E_II_373__S__355_.tif" n="1"/>
+		<graphic url="5306/Autograph/01 E_II_373__S__356_.tif" n="2"/>
+		<graphic url="5306/Autograph/02 E_II_373__S__361_.tif" n="3"/>
+		<graphic url="5306/Autograph/03 E_II_373__S__362_.tif" n="4"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

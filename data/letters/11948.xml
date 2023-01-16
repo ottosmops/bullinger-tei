@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2011"/>
-				<idno type="ISBN">ISBN 978-3-290-17565-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1901</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17565-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1901</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 14</title>
+				<title subtype="publication">HBBW XIV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Henrich, Rainer; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">14</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 346,189</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 346,189</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,8 +50,8 @@
 						<summary>
 							<p xml:id="regest1">
 								Konnte vor sechs Jahren und vier Monaten der Einladung von Bullinger,
-								[<persName ref="165">Konrad</persName>] <persName ref="165">Pellikan</persName> und
-								[<persName ref="16">Georg</persName>] <persName ref="16">Binder</persName> zur Aufführung
+								[Konrad] <persName ref="person165">Pellikan</persName> und
+								[Georg] <persName ref="person16">Binder</persName> zur Aufführung
 								seiner „Susanna“ nicht folgen, da der Brief erst am Tag der Aufführung eintraf. Sendet ein neues Werk
 								[„Judith“], das vielleicht von der Zürcher Jugend aufgeführt werden kann; hat nichts gegen eine Drucklegung
 								durch Christoph [Froschauer] einzuwenden und schickt deshalb ein gründlich durchkorrigiertes, gedrucktes
@@ -62,45 +65,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11948">
 				<correspAction type="sent">
-					<persName ref="person#351" cert="high">
+					<!--
+					<persName ref="person351" cert="high">
 						<forename cert="high">Sixt</forename>
 						<surname cert="high">Birck</surname>
-						<addName type="main">Birck (Betuleius), Sixt (Xystus)</addName>
+						<persName type="main" ref="person8173>Birck (Betuleius), Sixt (Xystus)</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Sixtus_Birck"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118859730"/>
 					</persName>
-					<place source="#18" cert="high">
-						<settlement>Augsburg</settlement>
-						<district>Bayern</district>
-						<country>Deutschland</country>
-						<geo>48.37154 10.89851</geo>
-					</place>
+					-->
+					<persName ref="person351" cert="high"/>
+					<place source="place18" cert="high"/>
 					<date when="1544-04-25" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11949"/>
-					<ref type="prev_chronologically" target="files.xml#11946"/>
-					<ref type="next_correspondence" target="files.xml#12047"/>
+					<ref type="next_chronologically" target="file11949"/>
+					<ref type="prev_chronologically" target="file11946"/>
+					<ref type="next_correspondence" target="file12047"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#12047"/>
+					<ref type="next_correspondence_request" target="file12047"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#12047"/>
-					<ref type="prev_same_sender" target="files.xml#11138"/>
-					<ref type="next_same_addressee" target="files.xml#11952"/>
-					<ref type="prev_same_addressee" target="files.xml#11946"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12047"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11138"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11952"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11946"/>
+					<ref type="next_same_sender" target="file12047"/>
+					<ref type="prev_same_sender" target="file11138"/>
+					<ref type="next_same_addressee" target="file11952"/>
+					<ref type="prev_same_addressee" target="file11946"/>
+					<ref type="next_with_sender_as_addressee" target="file12047"/>
+					<ref type="prev_with_sender_as_addressee" target="file11138"/>
+					<ref type="next_with_addressee_as_sender" target="file11952"/>
+					<ref type="prev_with_addressee_as_sender" target="file11946"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,33 +124,33 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S[alutem] d[ico].</s>
-					<s xml:lang="la" type="auto">Sex anni iam et quatuor praeterea menses abiverunt, vir doctissime, ex quo a te literas accepi, quae me Tygurum ad Susannae nostrae actum invitabant<note xml:id="fn2" type="footnote" n="2">Das Einladungsschreiben ist nicht erhalten, wohl aber <persName ref="17">Bircks</persName> Antwort (s. oben Anm. 1).</note>.</s>
-					<s xml:lang="la" type="auto">Erant hae nomine partim tuo, partim domini <persName ref="165">Pellicani</persName>, praeceptoris mei colendissimi, et <persName ref="16">Binderi</persName>, paedodidascali vestri nomine scriptae.</s>
-					<s xml:lang="la" type="auto">Erat ea res mihi pergrata, impossibile tamen, ut Tygurum adirem spectatum, quum eo die ageretur ludus, quo ego literas vestras acceperam.</s>
+					<s n="1" xml:lang="la" type="auto">S[alutem] d[ico].</s>
+					<s n="2" xml:lang="la" type="auto">Sex anni iam et quatuor praeterea menses abiverunt, vir doctissime, ex quo a te literas accepi, quae me Tygurum ad Susannae nostrae actum invitabant<note xml:id="fn2" type="footnote" n="2">Das Einladungsschreiben ist nicht erhalten, wohl aber <persName ref="person17">Bircks</persName> Antwort (s. oben Anm. 1).</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Erant hae nomine partim tuo, partim domini <persName ref="person165">Pellicani</persName>, praeceptoris mei colendissimi, et <persName ref="person16">Binderi</persName>, paedodidascali vestri nomine scriptae.</s>
+					<s n="4" xml:lang="la" type="auto">Erat ea res mihi pergrata, impossibile tamen, ut Tygurum adirem spectatum, quum eo die ageretur ludus, quo ego literas vestras acceperam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ecce tibi, mitto tibi aliud drama<note xml:id="fn3" type="footnote" n="3">Gemeint ist <persName ref="17">Bircks</persName> "Judith" (s. oben Anm. 1). Am 30. April sandte <persName ref="17">Birck</persName> auch an <persName ref="19">Ambrosius Blarer</persName> ein korrigiertes Büchlein; s. Blarer BW II 254, <ref target="file#11124">Nr. 1081</ref>. Auch der vorliegende Brief mit der Beilage wurde von Blarer nach Zürich weitergeleitet (s. unten <ref target="file#11953">Nr. 1906</ref>, Anm. 39). -Siehe ferner unten <ref target="file#12047">Nr. 2000</ref>, 6-13.</note> huic tempori meo iudicio non incongruum, si id etiam forte iuventus vestra actura sit<note xml:id="fn4" type="footnote" n="4">Über eine eventuelle Aufführung von <persName ref="17">Bircks</persName> "Judith" in Zürich liegen keine Nachrichten vor.</note>.</s>
-					<s xml:lang="la" type="auto">Mitto unum dumtaxat vobis exemplar, quia non minus bene quam illud<note xml:id="fn5" type="footnote" n="5"><persName ref="17">Bircks</persName> Schauspiel "Susanna".</note> correctum est, licet ipse prelo diligentissime advigilaverim.</s>
-					<s xml:lang="la" type="auto">Si hoc itaque, ut illud<note xml:id="fn6" type="footnote" n="6"><persName ref="17">Bircks</persName> "Susanna" war 1538 von Christoph Froschauer gedruckt worden; s. BZD C 271.</note>, Christophori prelo committere volueritis<note xml:id="fn7" type="footnote" n="7">Das Schauspiel "Judith" erschien in Zürich weder auf Latein noch in Deutsch. - <persName ref="17">Birck</persName> bemängelt hier die Qualität des gerade erschienenen Druckes (Z. 9f; vgl. <persName ref="19">Blarer</persName> BW II 254). Weil die sorgfältige Eintragung handschriftlicher Korrekturen im fehlerhaften, kurz zuvor gedruckten Exemplar dieser Schrift wohl viel Zeit beanspruchte, schickte er nach Zürich nur ein korrigiertes Exemplar davon, das Froschauer ebenfalls als Vorlage zu einem Neudruck hätte verwenden dürfen.</note>, nihil repugnabo; nam ob hoc ipsum tibi exemplum<pb type="edition" next="217"/> lituris conspersum mitto.</s>
-					<s xml:lang="la" type="auto">Rogo tuam humanitatem, ut aequi bonique consulas.</s>
+					<s n="5" xml:lang="la" type="auto">Ecce tibi, mitto tibi aliud drama<note xml:id="fn3" type="footnote" n="3">Gemeint ist <persName ref="person17">Bircks</persName> "Judith" (s. oben Anm. 1). Am 30. April sandte <persName ref="person17">Birck</persName> auch an <persName ref="person19">Ambrosius Blarer</persName> ein korrigiertes Büchlein; s. Blarer BW II 254, <ref target="file11124">Nr. 1081</ref>. Auch der vorliegende Brief mit der Beilage wurde von Blarer nach Zürich weitergeleitet (s. unten <ref target="file11953">Nr. 1906</ref>, Anm. 39). -Siehe ferner unten <ref target="file12047">Nr. 2000</ref>, 6-13.</note> huic tempori meo iudicio non incongruum, si id etiam forte iuventus vestra actura sit<note xml:id="fn4" type="footnote" n="4">Über eine eventuelle Aufführung von <persName ref="person17">Bircks</persName> "Judith" in Zürich liegen keine Nachrichten vor.</note>.</s>
+					<s n="6" xml:lang="la" type="auto">Mitto unum dumtaxat vobis exemplar, quia non minus bene quam illud<note xml:id="fn5" type="footnote" n="5"><persName ref="person17">Bircks</persName> Schauspiel "Susanna".</note> correctum est, licet ipse prelo diligentissime advigilaverim.</s>
+					<s n="7" xml:lang="la" type="auto">Si hoc itaque, ut illud<note xml:id="fn6" type="footnote" n="6"><persName ref="person17">Bircks</persName> "Susanna" war 1538 von Christoph Froschauer gedruckt worden; s. BZD C 271.</note>, Christophori prelo committere volueritis<note xml:id="fn7" type="footnote" n="7">Das Schauspiel "Judith" erschien in Zürich weder auf Latein noch in Deutsch. - <persName ref="person17">Birck</persName> bemängelt hier die Qualität des gerade erschienenen Druckes (Z. 9f; vgl. <persName ref="person19">Blarer</persName> BW II 254). Weil die sorgfältige Eintragung handschriftlicher Korrekturen im fehlerhaften, kurz zuvor gedruckten Exemplar dieser Schrift wohl viel Zeit beanspruchte, schickte er nach Zürich nur ein korrigiertes Exemplar davon, das Froschauer ebenfalls als Vorlage zu einem Neudruck hätte verwenden dürfen.</note>, nihil repugnabo; nam ob hoc ipsum tibi exemplum<pb type="edition" next="217"/> lituris conspersum mitto.</s>
+					<s n="8" xml:lang="la" type="auto">Rogo tuam humanitatem, ut aequi bonique consulas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominum patrem <persName ref="165">Pellicanum</persName> atque etiam Binderum nomine meo salutato et eos insuper, cum quibus mihi nulla prorsus hactenus familiaritas intercessit, ne scriptis quidem, Bibliandrum, <persName ref="39">Calvinum</persName>, Gvalterum et alios pios doctosque vestrates, quorum nomina colo et veneror etiam absens et ignotus.</s>
+					<s n="9" xml:lang="la" type="auto">Dominum patrem <persName ref="person165">Pellicanum</persName> atque etiam Binderum nomine meo salutato et eos insuper, cum quibus mihi nulla prorsus hactenus familiaritas intercessit, ne scriptis quidem, Bibliandrum, <persName ref="person39">Calvinum</persName>, Gvalterum et alios pios doctosque vestrates, quorum nomina colo et veneror etiam absens et ignotus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale bene.</s>
+					<s n="10" xml:lang="la" type="auto">Vale bene.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex <placeName ref="70">Augusta Vindelicorum</placeName>, 7. calendas maii.</s>
+					<s n="11" xml:lang="la" type="auto">Ex <placeName ref="place70">Augusta Vindelicorum</placeName>, 7. calendas maii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">T[uae] d[ominationi] deditissimus X[ystus] <persName ref="17">Betuleius</persName>.</s>
+					<s n="12" xml:lang="la" type="auto">T[uae] d[ominationi] deditissimus X[ystus] <persName ref="person17">Betuleius</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Doctissimo piissimoque viro domino Heinrico Bullingero, Tygurinae ecclesię antistiti, domino suo colendissimo.</s>
-					<s xml:lang="la" type="auto">Tyguri.</s>
+					<s n="13" xml:lang="la" type="auto">Doctissimo piissimoque viro domino Heinrico Bullingero, Tygurinae ecclesię antistiti, domino suo colendissimo.</s>
+					<s n="14" xml:lang="la" type="auto">Tyguri.</s>
 				</p>
 			</div>
 		</body>

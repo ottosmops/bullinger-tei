@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">949</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 366,176</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 366,176</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,14 +54,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 67,15</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">eingeordnet bei 7. Juni 1548</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 67,15</idno>
+						<idno subtype="Hinweis">eingeordnet bei 7. Juni 1548</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -67,50 +73,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/141">
 				<correspAction type="sent">
-					<persName ref="person#1278" cert="high">
+					<!--
+					<persName ref="person1278" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Gast</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Gast"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/122090284"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415086"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
-					<date when="1548-06-00" cert="low"/>
+					-->
+					<persName ref="person1278" cert="high"/>
+					<place source="place28" cert="high"/>
+					<date notBefore="1548-06-01" notAfter="1548-06-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#178"/>
-					<ref type="prev_chronologically" target="files.xml#140"/>
-					<ref type="next_correspondence" target="files.xml#177"/>
-					<ref type="prev_correspondence" target="files.xml#113"/>
-					<ref type="next_correspondence_request" target="files.xml#177"/>
-					<ref type="prev_correspondence_request" target="files.xml#113"/>
-					<ref type="next_correspondence_reaction" target="files.xml#1220"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12899"/>
-					<ref type="next_same_sender" target="files.xml#177"/>
-					<ref type="prev_same_sender" target="files.xml#113"/>
-					<ref type="next_same_addressee" target="files.xml#162"/>
-					<ref type="prev_same_addressee" target="files.xml#135"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#177"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#113"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#162"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#135"/>
+					<ref type="next_chronologically" target="file178"/>
+					<ref type="prev_chronologically" target="file140"/>
+					<ref type="next_correspondence" target="file177"/>
+					<ref type="prev_correspondence" target="file113"/>
+					<ref type="next_correspondence_request" target="file177"/>
+					<ref type="prev_correspondence_request" target="file113"/>
+					<ref type="next_correspondence_reaction" target="file1220"/>
+					<ref type="prev_correspondence_reaction" target="file12899"/>
+					<ref type="next_same_sender" target="file177"/>
+					<ref type="prev_same_sender" target="file113"/>
+					<ref type="next_same_addressee" target="file162"/>
+					<ref type="prev_same_addressee" target="file135"/>
+					<ref type="next_with_sender_as_addressee" target="file177"/>
+					<ref type="prev_with_sender_as_addressee" target="file113"/>
+					<ref type="next_with_addressee_as_sender" target="file162"/>
+					<ref type="prev_with_addressee_as_sender" target="file135"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -128,56 +134,56 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. in domino.</s>
-					<s xml:lang="la" type="auto">Ad binas literas tuas respondeo.</s>
+					<s n="1" xml:lang="la" type="auto">S. in domino.</s>
+					<s n="2" xml:lang="la" type="auto">Ad binas literas tuas respondeo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sultzerum cum Beato vestro excidisse ab officio non mirum; novi enim illorum ingenia.</s>
-					<s xml:lang="la" type="auto">Sultzerus apud nos agit, consilia varia tractat de consequenda aliqua conditione; doctoris nimirum titulum suscipiet, si illum adsequi potest, quod tamen haud credo, quod illum indepturus sit, cum nondum compleverit lectiones theologicas iuxta constitutiones academię nostrę.</s>
-					<s xml:lang="la" type="auto">Et quidam candidati theologię apud nos sunt, quibus denegatur titulus, etsi compleverint (ut vocant).</s>
-					<s xml:lang="la" type="auto">Beatus Argentinam descendit cum uxore et liberis ecclesiae curam fortassis priorem habiturus; sic isti homines non amittunt ecclesias, nisi certas habeant sedes, si fugiendum esset.</s>
-					<s xml:lang="la" type="auto">Tales apostolos nostro habemus tempore.</s>
+					<s n="3" xml:lang="la" type="auto">Sultzerum cum Beato vestro excidisse ab officio non mirum; novi enim illorum ingenia.</s>
+					<s n="4" xml:lang="la" type="auto">Sultzerus apud nos agit, consilia varia tractat de consequenda aliqua conditione; doctoris nimirum titulum suscipiet, si illum adsequi potest, quod tamen haud credo, quod illum indepturus sit, cum nondum compleverit lectiones theologicas iuxta constitutiones academię nostrę.</s>
+					<s n="5" xml:lang="la" type="auto">Et quidam candidati theologię apud nos sunt, quibus denegatur titulus, etsi compleverint (ut vocant).</s>
+					<s n="6" xml:lang="la" type="auto">Beatus Argentinam descendit cum uxore et liberis ecclesiae curam fortassis priorem habiturus; sic isti homines non amittunt ecclesias, nisi certas habeant sedes, si fugiendum esset.</s>
+					<s n="7" xml:lang="la" type="auto">Tales apostolos nostro habemus tempore.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Mitto praeterea libros, quos toties a me flagitasti.</s>
-					<s xml:lang="la" type="auto">Verum heus tu, quam segnes facti sumus in defendenda religione nostra vera et antiqua.</s>
-					<s xml:lang="la" type="auto">Lutherani taciturniores sunt quam pisces, papistae audaciores, quam unquam fuere.</s>
-					<s xml:lang="la" type="auto">Legisti librum concionatoris Augustani de misse officio, quo conatur persuadere omnibus nos insanire, falsa de sacrificio missę scripsisse.</s>
-					<s xml:lang="la" type="auto">Ubi iam sunt defensores veritatis?</s>
+					<s n="8" xml:lang="la" type="auto">Mitto praeterea libros, quos toties a me flagitasti.</s>
+					<s n="9" xml:lang="la" type="auto">Verum heus tu, quam segnes facti sumus in defendenda religione nostra vera et antiqua.</s>
+					<s n="10" xml:lang="la" type="auto">Lutherani taciturniores sunt quam pisces, papistae audaciores, quam unquam fuere.</s>
+					<s n="11" xml:lang="la" type="auto">Legisti librum concionatoris Augustani de misse officio, quo conatur persuadere omnibus nos insanire, falsa de sacrificio missę scripsisse.</s>
+					<s n="12" xml:lang="la" type="auto">Ubi iam sunt defensores veritatis?</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Lutherani nihil audent, quia timent potestatem Caesaris, et nos in Helvetia etiam tacebimus, qui sanguine nostro testati sumus nos veritatem habere?</s>
-					<s xml:lang="la" type="auto">O tempora, o mores!</s>
-					<s xml:lang="la" type="auto">Quid tu agis, quid scribis, cur cessas in tam sancto negotio?</s>
-					<s xml:lang="la" type="auto">Habes ingenium, habes doctrinam, habes cognitionem rerum omnium, et permittes tales contra Christi veritatem triumphare?</s>
-					<s xml:lang="la" type="auto">Quid Theodorus noster agit? dormitatne?</s>
-					<s xml:lang="la" type="auto">Ne dicas: periculo non carebit iis hominibus respondere, aut: Quid ad nos, quę illi scribunt?</s>
-					<s xml:lang="la" type="auto">Sumus pastores Helveticis ecclesiis solummodo praefecti?</s>
-					<s xml:lang="la" type="auto">Veritas perpetuo habuit hostes et habitura est.</s>
+					<s n="13" xml:lang="la" type="auto">Lutherani nihil audent, quia timent potestatem Caesaris, et nos in Helvetia etiam tacebimus, qui sanguine nostro testati sumus nos veritatem habere?</s>
+					<s n="14" xml:lang="la" type="auto">O tempora, o mores!</s>
+					<s n="15" xml:lang="la" type="auto">Quid tu agis, quid scribis, cur cessas in tam sancto negotio?</s>
+					<s n="16" xml:lang="la" type="auto">Habes ingenium, habes doctrinam, habes cognitionem rerum omnium, et permittes tales contra Christi veritatem triumphare?</s>
+					<s n="17" xml:lang="la" type="auto">Quid Theodorus noster agit? dormitatne?</s>
+					<s n="18" xml:lang="la" type="auto">Ne dicas: periculo non carebit iis hominibus respondere, aut: Quid ad nos, quę illi scribunt?</s>
+					<s n="19" xml:lang="la" type="auto">Sumus pastores Helveticis ecclesiis solummodo praefecti?</s>
+					<s n="20" xml:lang="la" type="auto">Veritas perpetuo habuit hostes et habitura est.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tu igitur delibera cum fratribus, ne hostes evangelii perpetuo seducant simplices.</s>
-					<s xml:lang="la" type="auto">Augustani non audent scribere, etsi clament contra oppressores veritatis.</s>
-					<s xml:lang="la" type="auto">Iam videmus, quid Interim illud pepererit: hoc est, omne malum invehet in ecclesiam catholicam, errores revocabit, superstitionibus fenestram aperiet omnibus et maiores excitabit, quam unquam fuerunt.</s>
+					<s n="21" xml:lang="la" type="auto">Tu igitur delibera cum fratribus, ne hostes evangelii perpetuo seducant simplices.</s>
+					<s n="22" xml:lang="la" type="auto">Augustani non audent scribere, etsi clament contra oppressores veritatis.</s>
+					<s n="23" xml:lang="la" type="auto">Iam videmus, quid Interim illud pepererit: hoc est, omne malum invehet in ecclesiam catholicam, errores revocabit, superstitionibus fenestram aperiet omnibus et maiores excitabit, quam unquam fuerunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De Argentina nihil certi audimus.</s>
-					<s xml:lang="la" type="auto">Bucerus nihil scribit neque alii fratres.</s>
-					<s xml:lang="la" type="auto">Sevenus in carcerem coniectus est propter Gallię regem; reliqui mussitant neque audent libere quicquam dicere.</s>
-					<s xml:lang="la" type="auto">Barones de Bütsch et Henneberg et alii, qui evangelio adhęrent, coguntur ferre militem absumentem omnia.</s>
+					<s n="24" xml:lang="la" type="auto">De Argentina nihil certi audimus.</s>
+					<s n="25" xml:lang="la" type="auto">Bucerus nihil scribit neque alii fratres.</s>
+					<s n="26" xml:lang="la" type="auto">Sevenus in carcerem coniectus est propter Gallię regem; reliqui mussitant neque audent libere quicquam dicere.</s>
+					<s n="27" xml:lang="la" type="auto">Barones de Bütsch et Henneberg et alii, qui evangelio adhęrent, coguntur ferre militem absumentem omnia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominus avertat a nobis hanc pestem.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
-					<s xml:lang="la" type="auto">Basileę 1548 mense Iunio.</s>
+					<s n="28" xml:lang="la" type="auto">Dominus avertat a nobis hanc pestem.</s>
+					<s n="29" xml:lang="la" type="manual">Amen.</s>
+					<s n="30" xml:lang="la" type="auto">Basileę 1548 mense Iunio.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">T(uus) Gastius raptim.</s>
+					<s n="31" xml:lang="la" type="auto">T(uus) Gastius raptim.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Doctissimo viro D. Heinrycho Bullingero, Tigurinae ecclesię pastori vigilantissimo, amico suo syncero.</s>
-					<s xml:lang="de" type="auto">Zurich.</s>
+					<s n="32" xml:lang="la" type="auto">Doctissimo viro D. Heinrycho Bullingero, Tigurinae ecclesię pastori vigilantissimo, amico suo syncero.</s>
+					<s n="33" xml:lang="de" type="auto">Zurich.</s>
 				</p>
 			</div>
 		</body>

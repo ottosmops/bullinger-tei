@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4607/178</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,656</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,656</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 90,6</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 90,6</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -68,52 +74,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3233">
 				<correspAction type="sent">
-					<persName ref="person#3704" cert="high">
+					<!--
+					<persName ref="person3704" cert="high">
 						<forename cert="high">Friedrich</forename>
 						<surname cert="high">von Salis</surname>
-						<addName type="main">von Salis (a Salize, de Salicibus), Friedrich</addName>
-						<graphic type="portrait" url="portraits/3704_Salis-Wappen.png"/>
+						<persName type="main" ref="person8432>von Salis (a Salize, de Salicibus), Friedrich</addName>
+						<graphic type="portrait" url="portraits/3704_Salis_Wappen.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Salis_%28Adelsgeschlecht%29"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/119041782"/>
 					</persName>
-					<place source="#439" cert="high">
-						<settlement>Samaden</settlement>
-						<district>Lombardei</district>
-						<country>Italien</country>
-						<geo>46.53399 9.87276</geo>
-					</place>
+					-->
+					<persName ref="person3704" cert="high"/>
+					<place source="place439" cert="high"/>
 					<date when="1557-07-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3234"/>
-					<ref type="prev_chronologically" target="files.xml#3232"/>
-					<ref type="next_correspondence" target="files.xml#3257"/>
-					<ref type="prev_correspondence" target="files.xml#3206"/>
-					<ref type="next_correspondence_request" target="files.xml#3257"/>
-					<ref type="prev_correspondence_request" target="files.xml#3206"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3384"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3190"/>
-					<ref type="next_same_sender" target="files.xml#3257"/>
-					<ref type="prev_same_sender" target="files.xml#3206"/>
-					<ref type="next_same_addressee" target="files.xml#3236"/>
-					<ref type="prev_same_addressee" target="files.xml#3245"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3257"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3206"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3236"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3245"/>
+					<ref type="next_chronologically" target="file3234"/>
+					<ref type="prev_chronologically" target="file3232"/>
+					<ref type="next_correspondence" target="file3257"/>
+					<ref type="prev_correspondence" target="file3206"/>
+					<ref type="next_correspondence_request" target="file3257"/>
+					<ref type="prev_correspondence_request" target="file3206"/>
+					<ref type="next_correspondence_reaction" target="file3384"/>
+					<ref type="prev_correspondence_reaction" target="file3190"/>
+					<ref type="next_same_sender" target="file3257"/>
+					<ref type="prev_same_sender" target="file3206"/>
+					<ref type="next_same_addressee" target="file3236"/>
+					<ref type="prev_same_addressee" target="file3245"/>
+					<ref type="next_with_sender_as_addressee" target="file3257"/>
+					<ref type="prev_with_sender_as_addressee" target="file3206"/>
+					<ref type="next_with_addressee_as_sender" target="file3236"/>
+					<ref type="prev_with_addressee_as_sender" target="file3245"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -123,44 +128,47 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="3233/Autograph/00 E_II_365__fol__656_r_.tif" n="1"/>
+		<graphic url="3233/Autograph/01 E_II_365__fol__656_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D. colendissime domine bullingere, hisce meis tibi foelicem meum in patriam reditum significo, eoque laudandus deus, qui iter meum prosperavit.</s>
-					<s xml:lang="la" type="auto">Caeterum post triduum sic volentibus dominis meis Venetias versus proficiscar, idemque dominus deus optimus et maximus me deducat et reducat foelicissime.</s>
-					<s xml:lang="la" type="auto">Si itaque, dum abfuero, te meis literis, incomptissimis quidem, at tibi ob amorem, quo me prosequeris singularem, sat scio, gratissimis, non visitabo, me ut excusatum habeas, rogo, quippe cum prae tabellariorum inopia tibi, etiamsi maxime velim, non liceat scribere.</s>
-					<s xml:lang="la" type="auto">Ero tamen ad hoc intentus, sive fuerim Venetiis sive alibi, ut, cum sese mihi aliqua nuncii opportunitas obtulerit, ut meas ad te dare possim, non omittam, quin id sedulo fiat, te certiorem reddam novarum rerum, si quę emergent, et successus meae legationis.</s>
+					<s n="1" xml:lang="la" type="auto">S. D. colendissime domine bullingere, hisce meis tibi foelicem meum in patriam reditum significo, eoque laudandus deus, qui iter meum prosperavit.</s>
+					<s n="2" xml:lang="la" type="auto">Caeterum post triduum sic volentibus dominis meis Venetias versus proficiscar, idemque dominus deus optimus et maximus me deducat et reducat foelicissime.</s>
+					<s n="3" xml:lang="la" type="auto">Si itaque, dum abfuero, te meis literis, incomptissimis quidem, at tibi ob amorem, quo me prosequeris singularem, sat scio, gratissimis, non visitabo, me ut excusatum habeas, rogo, quippe cum prae tabellariorum inopia tibi, etiamsi maxime velim, non liceat scribere.</s>
+					<s n="4" xml:lang="la" type="auto">Ero tamen ad hoc intentus, sive fuerim Venetiis sive alibi, ut, cum sese mihi aliqua nuncii opportunitas obtulerit, ut meas ad te dare possim, non omittam, quin id sedulo fiat, te certiorem reddam novarum rerum, si quę emergent, et successus meae legationis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Interea vero, ornatissime domine Bullingere, etiamsi filium meum commendatiorem tibi, quam ipse eum habeas, reddere non possum (es enim ei instar patris benignissimi, idque subinde re ipsa declaras), attamen rogo, curae sit tibi, ne, cum sit caeraseorum, pomorum et huiusmodi novorum fructuum appetentior, appetituri nimium indulgeat, ne scilicet aliquam exinde labem contrahat.</s>
-					<s xml:lang="la" type="auto">Itemque interdicas, ne aquis immergatur frigidis.</s>
-					<s xml:lang="la" type="auto">Sed quid sum sollicitus, cum filium meum bullingerus pater foveat?</s>
+					<s n="5" xml:lang="la" type="auto">Interea vero, ornatissime domine Bullingere, etiamsi filium meum commendatiorem tibi, quam ipse eum habeas, reddere non possum (es enim ei instar patris benignissimi, idque subinde re ipsa declaras), attamen rogo, curae sit tibi, ne, cum sit caeraseorum, pomorum et huiusmodi novorum fructuum appetentior, appetituri nimium indulgeat, ne scilicet aliquam exinde labem contrahat.</s>
+					<s n="6" xml:lang="la" type="auto">Itemque interdicas, ne aquis immergatur frigidis.</s>
+					<s n="7" xml:lang="la" type="auto">Sed quid sum sollicitus, cum filium meum bullingerus pater foveat?</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Novi nunc quod scribam, nil habeo.</s>
-					<s xml:lang="la" type="auto">Illustrem virum d. Matthaeum Cognettum, prout iusseras, conveni, seque, quicquid ut faceret iusseras, dixit vel ante adventum meum peregisse.</s>
+					<s n="8" xml:lang="la" type="auto">Novi nunc quod scribam, nil habeo.</s>
+					<s n="9" xml:lang="la" type="auto">Illustrem virum d. Matthaeum Cognettum, prout iusseras, conveni, seque, quicquid ut faceret iusseras, dixit vel ante adventum meum peregisse.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ad d. Fabritium in reditu non vidi, quamvis aedes eius tertio accesserim; foris enim erat vocatus ad nuptialia quaedam symposia; itaque accessus mihi eo, quo Churiam perveni die, non patuit, et sequenti mane primo diluculo, quo hucusque pertingerem, quod et feci eo ipso die, fuit iter ingrediendum, et quamquam eo insalutato Churia abierim, tamen, quae iusseras, per domesticos eius ipsi sedulo significavi.</s>
+					<s n="10" xml:lang="la" type="auto">Ad d. Fabritium in reditu non vidi, quamvis aedes eius tertio accesserim; foris enim erat vocatus ad nuptialia quaedam symposia; itaque accessus mihi eo, quo Churiam perveni die, non patuit, et sequenti mane primo diluculo, quo hucusque pertingerem, quod et feci eo ipso die, fuit iter ingrediendum, et quamquam eo insalutato Churia abierim, tamen, quae iusseras, per domesticos eius ipsi sedulo significavi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Reliquum, quod scribam, hoc est, ut me tibi iugiter habeas commendatum ac meo nomine plurimum salvere iubeas honestissimam coniugem tuam cum liberis et tota familia itemque egregios et undequaque praestantissimos viros dominos generos tuos, d. Bernardinum Ochinum, d. Petrum Martirem ac cunctos alios nobis bene faventes, quibus omnibus opto vitam nestoriam.</s>
+					<s n="11" xml:lang="la" type="auto">Reliquum, quod scribam, hoc est, ut me tibi iugiter habeas commendatum ac meo nomine plurimum salvere iubeas honestissimam coniugem tuam cum liberis et tota familia itemque egregios et undequaque praestantissimos viros dominos generos tuos, d. Bernardinum Ochinum, d. Petrum Martirem ac cunctos alios nobis bene faventes, quibus omnibus opto vitam nestoriam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale etiam atque etiam, optime et colendissime domine Bullingere, meque, ut soles, ama.</s>
+					<s n="12" xml:lang="la" type="auto">Vale etiam atque etiam, optime et colendissime domine Bullingere, meque, ut soles, ama.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum Samadeni die 4. iulii 1557.</s>
+					<s n="13" xml:lang="la" type="auto">Datum Samadeni die 4. iulii 1557.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tibi tuisque omnium deditissimus Federicus a Salice.</s>
+					<s n="14" xml:lang="la" type="auto">Tibi tuisque omnium deditissimus Federicus a Salice.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="de" type="auto">[Dem h]ochgelerten und fürnemen herren... chen Bullinger, minem in[sonders] günstigen, lieben herren [und guͦ]ten fründt.</s>
-					<s xml:lang="de" type="auto">Zuͦ Zürich.</s>
+					<s n="15" xml:lang="de" type="auto">[Dem h]ochgelerten und fürnemen herren... chen Bullinger, minem in[sonders] günstigen, lieben herren [und guͦ]ten fründt.</s>
+					<s n="16" xml:lang="de" type="auto">Zuͦ Zürich.</s>
 				</p>
 			</div>
 		</body>

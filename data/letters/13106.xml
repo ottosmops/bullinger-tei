@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3057</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3057</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336a,294</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336a,294</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336a,279</idno>
+							<idno subtype="Autograph">E II 336a,279</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -121,46 +124,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13106">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1547-10-27" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13107"/>
-					<ref type="prev_chronologically" target="files.xml#13105"/>
-					<ref type="next_correspondence" target="files.xml#13114"/>
-					<ref type="prev_correspondence" target="files.xml#13103"/>
-					<ref type="next_correspondence_request" target="files.xml#13120"/>
-					<ref type="prev_correspondence_request" target="files.xml#13095"/>
-					<ref type="next_correspondence_reaction" target="files.xml#13114"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#13103"/>
-					<ref type="next_same_sender" target="files.xml#13120"/>
-					<ref type="prev_same_sender" target="files.xml#13095"/>
-					<ref type="next_same_addressee" target="files.xml#13111"/>
-					<ref type="prev_same_addressee" target="files.xml#13103"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13120"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13095"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13111"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13103"/>
+					<ref type="next_chronologically" target="file13107"/>
+					<ref type="prev_chronologically" target="file13105"/>
+					<ref type="next_correspondence" target="file13114"/>
+					<ref type="prev_correspondence" target="file13103"/>
+					<ref type="next_correspondence_request" target="file13120"/>
+					<ref type="prev_correspondence_request" target="file13095"/>
+					<ref type="next_correspondence_reaction" target="file13114"/>
+					<ref type="prev_correspondence_reaction" target="file13103"/>
+					<ref type="next_same_sender" target="file13120"/>
+					<ref type="prev_same_sender" target="file13095"/>
+					<ref type="next_same_addressee" target="file13111"/>
+					<ref type="prev_same_addressee" target="file13103"/>
+					<ref type="next_with_sender_as_addressee" target="file13120"/>
+					<ref type="prev_with_sender_as_addressee" target="file13095"/>
+					<ref type="next_with_addressee_as_sender" target="file13111"/>
+					<ref type="prev_with_addressee_as_sender" target="file13103"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -178,89 +186,89 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Si nunciasses Helvetiam obpugnatam iri<note xml:id="fn1" type="footnote" n="1">Vgl. Bullingers Befürchtung vom 14. Oktober in <ref target="file#13090">Nr. 3041</ref>,<qv>zl17311-7</qv>.</note>, non sic deiecisses ut dum scribis de Constantiensibus.<note xml:id="fn2" type="footnote" n="2">Bezug auf Bullingers Mitteilung vom 25. Oktober in <ref target="file#13103">Nr. 3054</ref>,<qv>zl17322-4</qv>.</note></s>
-					<s xml:lang="la" type="auto">Istud enim nuncium hoc habet mihi: Helvetia victa est atque adeo nulla.</s>
-					<s xml:lang="la" type="auto">Speravi hactenus prius me finiturum vitam quam audire aut videre finem Helvetię!</s>
-					<s xml:lang="la" type="auto">Falsus videor, si Constantia se dediderit.</s>
-					<s xml:lang="la" type="auto">Nam hunc locum aliter tuebitur cadaver<note xml:id="fn3" type="footnote" n="3">Gemeint ist Kaiser Karl V.; vgl. zuletzt die Verweise in <ref target="file#13072">Nr. 3023</ref>, <qv>fn17291-8</qv>.</note> istud quam Maximilianus.<note xml:id="fn4" type="footnote" n="4">Kaiser Maximilian I. - Um einen Anschluss von Konstanz an die Eidgenossenschaft zu verhindern, erschien er im September 1510 mit seinen Truppen vor der Stadt, doch ohne damals etwas gegen die Eidgenossenschaft zu unternehmen; s. <abbr>Dobras, Ratsregiment</abbr> S. 25-30. 47.</note></s>
-					<s xml:lang="la" type="auto">Inde quid Durgoia<note xml:id="fn5" type="footnote" n="5">Der Thurgau, den die Eidgenossen 1460 von den Habsburgern erobert hatten.</note>, quid nos<note xml:id="fn6" type="footnote" n="6">Die vier protestantischen Städte Basel, Bern, Schaffhausen und Zürich.</note>, quid reliqui?<note xml:id="fn7" type="footnote" n="7">Die katholisch gebliebenen Orte.</note></s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Si nunciasses Helvetiam obpugnatam iri<note xml:id="fn1" type="footnote" n="1">Vgl. Bullingers Befürchtung vom 14. Oktober in <ref target="file13090">Nr. 3041</ref>,<qv>zl17311-7</qv>.</note>, non sic deiecisses ut dum scribis de Constantiensibus.<note xml:id="fn2" type="footnote" n="2">Bezug auf Bullingers Mitteilung vom 25. Oktober in <ref target="file13103">Nr. 3054</ref>,<qv>zl17322-4</qv>.</note></s>
+					<s n="3" xml:lang="la" type="auto">Istud enim nuncium hoc habet mihi: Helvetia victa est atque adeo nulla.</s>
+					<s n="4" xml:lang="la" type="auto">Speravi hactenus prius me finiturum vitam quam audire aut videre finem Helvetię!</s>
+					<s n="5" xml:lang="la" type="auto">Falsus videor, si Constantia se dediderit.</s>
+					<s n="6" xml:lang="la" type="auto">Nam hunc locum aliter tuebitur cadaver<note xml:id="fn3" type="footnote" n="3">Gemeint ist Kaiser Karl V.; vgl. zuletzt die Verweise in <ref target="file13072">Nr. 3023</ref>, <qv>fn17291-8</qv>.</note> istud quam Maximilianus.<note xml:id="fn4" type="footnote" n="4">Kaiser Maximilian I. - Um einen Anschluss von Konstanz an die Eidgenossenschaft zu verhindern, erschien er im September 1510 mit seinen Truppen vor der Stadt, doch ohne damals etwas gegen die Eidgenossenschaft zu unternehmen; s. <abbr>Dobras, Ratsregiment</abbr> S. 25-30. 47.</note></s>
+					<s n="7" xml:lang="la" type="auto">Inde quid Durgoia<note xml:id="fn5" type="footnote" n="5">Der Thurgau, den die Eidgenossen 1460 von den Habsburgern erobert hatten.</note>, quid nos<note xml:id="fn6" type="footnote" n="6">Die vier protestantischen Städte Basel, Bern, Schaffhausen und Zürich.</note>, quid reliqui?<note xml:id="fn7" type="footnote" n="7">Die katholisch gebliebenen Orte.</note></s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Non potuit aliter Constantia!</s>
-					<s xml:lang="la" type="auto">Quid, si vos recepissetis in tutelam una cum reliquis, qui habent evangelium?</s>
-					<s xml:lang="la" type="auto">Imo quid, si vos soli recepissetis?</s>
-					<s xml:lang="la" type="auto">An id contra foedus?</s>
-					<s xml:lang="la" type="auto">Non arbitror.</s>
-					<s xml:lang="la" type="auto">Potuissetis etiam tueri per dominum soli contra diabolos istos!<note xml:id="fn8" type="footnote" n="8">Gemeint sind der Kaiser und seine ausländischen Truppen; vgl. <abbr>HBBW</abbr> XIII 195,19; XVIII 200,22-26.</note></s>
-					<s xml:lang="la" type="auto">Sed timetis, ubi non erat timendum!<note xml:id="fn9" type="footnote" n="9">Ps 53 (Vulg. 52), 6.</note></s>
-					<s xml:lang="la" type="auto">Adeo devoti estis Quinque pagicis!</s>
-					<s xml:lang="la" type="auto">Scripsistis nuper literas ad nostros, e quibus timor ille satis constat.</s>
-					<s xml:lang="la" type="auto">Interim autem nobis soletis tribuere, tanquam primi simus, qui cęsaris voluntatem recepturi forent,<note xml:id="fn10" type="footnote" n="10">Dieses Gerücht ist auch in <abbr>EA</abbr> IV/1d 859 a (1) und 862 zu a belegt.</note> si quis postularet.</s>
-					<s xml:lang="la" type="auto">Hoc in sinum tibi.</s>
-					<s xml:lang="la" type="auto">Sic enim venit ad me per literas, quibus tantum tribuo, quantum convenit, dum ea fuerint adserta aut meliora accepero.</s>
-					<s xml:lang="la" type="auto">Scis, quę amici inter se conferant.<note xml:id="fn11" type="footnote" n="11">Myconius betont dies erneut in <ref target="file#13120">Nr. 3071</ref>,<qv>zl17337-1</qv>.</note></s>
-					<s xml:lang="la" type="auto">Eam rationem ego hic sequor.</s>
+					<s n="8" xml:lang="la" type="auto">Non potuit aliter Constantia!</s>
+					<s n="9" xml:lang="la" type="auto">Quid, si vos recepissetis in tutelam una cum reliquis, qui habent evangelium?</s>
+					<s n="10" xml:lang="la" type="auto">Imo quid, si vos soli recepissetis?</s>
+					<s n="11" xml:lang="la" type="auto">An id contra foedus?</s>
+					<s n="12" xml:lang="la" type="auto">Non arbitror.</s>
+					<s n="13" xml:lang="la" type="auto">Potuissetis etiam tueri per dominum soli contra diabolos istos!<note xml:id="fn8" type="footnote" n="8">Gemeint sind der Kaiser und seine ausländischen Truppen; vgl. <abbr>HBBW</abbr> XIII 195,19; XVIII 200,22-26.</note></s>
+					<s n="14" xml:lang="la" type="auto">Sed timetis, ubi non erat timendum!<note xml:id="fn9" type="footnote" n="9">Ps 53 (Vulg. 52), 6.</note></s>
+					<s n="15" xml:lang="la" type="auto">Adeo devoti estis Quinque pagicis!</s>
+					<s n="16" xml:lang="la" type="auto">Scripsistis nuper literas ad nostros, e quibus timor ille satis constat.</s>
+					<s n="17" xml:lang="la" type="auto">Interim autem nobis soletis tribuere, tanquam primi simus, qui cęsaris voluntatem recepturi forent,<note xml:id="fn10" type="footnote" n="10">Dieses Gerücht ist auch in <abbr>EA</abbr> IV/1d 859 a (1) und 862 zu a belegt.</note> si quis postularet.</s>
+					<s n="18" xml:lang="la" type="auto">Hoc in sinum tibi.</s>
+					<s n="19" xml:lang="la" type="auto">Sic enim venit ad me per literas, quibus tantum tribuo, quantum convenit, dum ea fuerint adserta aut meliora accepero.</s>
+					<s n="20" xml:lang="la" type="auto">Scis, quę amici inter se conferant.<note xml:id="fn11" type="footnote" n="11">Myconius betont dies erneut in <ref target="file13120">Nr. 3071</ref>,<qv>zl17337-1</qv>.</note></s>
+					<s n="21" xml:lang="la" type="auto">Eam rationem ego hic sequor.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Quinque pagicis<note xml:id="fna" type="footnote" n="a"><hi>Fehlt in der Vorlage.</hi></note> non fido (summa summarum, quia fidem nostram ita persequuntur, ut queant pati malum, tantum ut nos pereamus), quicquid in <pb type="edition" next="598"/> ore habeant!</s>
-					<s xml:lang="la" type="auto">Sunt exempla, quae non excidunt, quę ob nuncii<note xml:id="fn12" type="footnote" n="12">Wohl der Zürcher Stadtbote Andreas Müller, der damals den Baslern das an sie, Bern und Schaffhausen gerichtete Rundschreiben der Zürcher vom 25. Oktober (s. dazu <ref target="file#13103">Nr. 3054</ref>, <qv>fn17322-1</qv>) übermittelte; s. Zürich StA, F III 32, Seckelamtsrechnungen 1547/48, S. 53.</note> celeritatem scribere non possum.</s>
-					<s xml:lang="la" type="auto">Qua ratione nec nova possum significare pręter illud: Periit a comitiis Augustanis religio, ut reliqua taceam, ni dominus caveat.</s>
-					<s xml:lang="la" type="auto">Descripsit causam Gastius a me.</s>
-					<s xml:lang="la" type="auto">Forsitan mittit.<note xml:id="fn13" type="footnote" n="13">Dieser Bericht über den Augsburger Reichstag wurde einem an Graf Georg von Württemberg-Mömpelgard gerichteten Brief entnommen, wie dies aus Gasts Brief vom 28. Oktober hervorgeht; s. <ref target="file#13109">Nr. 3060</ref>,<qv>zl17327-3</qv>.</note></s>
+					<s n="22" xml:lang="la" type="auto">Quinque pagicis<note xml:id="fna" type="footnote" n="a"><hi>Fehlt in der Vorlage.</hi></note> non fido (summa summarum, quia fidem nostram ita persequuntur, ut queant pati malum, tantum ut nos pereamus), quicquid in <pb type="edition" next="598"/> ore habeant!</s>
+					<s n="23" xml:lang="la" type="auto">Sunt exempla, quae non excidunt, quę ob nuncii<note xml:id="fn12" type="footnote" n="12">Wohl der Zürcher Stadtbote Andreas Müller, der damals den Baslern das an sie, Bern und Schaffhausen gerichtete Rundschreiben der Zürcher vom 25. Oktober (s. dazu <ref target="file13103">Nr. 3054</ref>, <qv>fn17322-1</qv>) übermittelte; s. Zürich StA, F III 32, Seckelamtsrechnungen 1547/48, S. 53.</note> celeritatem scribere non possum.</s>
+					<s n="24" xml:lang="la" type="auto">Qua ratione nec nova possum significare pręter illud: Periit a comitiis Augustanis religio, ut reliqua taceam, ni dominus caveat.</s>
+					<s n="25" xml:lang="la" type="auto">Descripsit causam Gastius a me.</s>
+					<s n="26" xml:lang="la" type="auto">Forsitan mittit.<note xml:id="fn13" type="footnote" n="13">Dieser Bericht über den Augsburger Reichstag wurde einem an Graf Georg von Württemberg-Mömpelgard gerichteten Brief entnommen, wie dies aus Gasts Brief vom 28. Oktober hervorgeht; s. <ref target="file13109">Nr. 3060</ref>,<qv>zl17327-3</qv>.</note></s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Ex Antwerpia est, Anglos in domino pergere fortiter et feliciter.</s>
-					<s xml:lang="la" type="auto">Bis conflixerunt cum Scotis.<note xml:id="fn14" type="footnote" n="14">Gemeint ist die Schlacht von Pinkie Cleugh vom 10. September 1547; s. dazu <ref target="file#13079">Nr. 3030</ref>, <qv>fn17299-4</qv>. Es erfolgte zuerst ein Überraschungsangriff der Schotten auf die Engländer, der für die Ersteren erfolgreich auszugehen schien. Doch kam es unmittelbar danach zu einem Gegenangriff, in dem die Engländer die Schotten besiegten; s. Gervase <hi>Phillips,</hi> The Anglo-Scots wars 1513-1550, Woodbridge 1999, S. 193-199; <ref target="file#13113">Nr. 3064</ref>.<zfn>fn17324-1</zfn></note></s>
-					<s xml:lang="la" type="auto">Nunc quindecim millia perimerunt, secundo sex.</s>
-					<s xml:lang="la" type="auto">Londini conficietur pax.<note xml:id="fn15" type="footnote" n="15">Zu einem Frieden zwischen England und Schottland kam es erst am 24. März 1550 im Zuge des englisch-französischen Vertrags von Boulogne (der Vertragstext ist gedruckt in: Foedera, conventiones, literae et ... acta publica inter reges Angliae ..., hg. v. Thomas Rymer, Bd. 15, London 1713, S. 211-218, und datiert im Osterstil vom 24. März 1549 [= 1550] "avant pasques"). Doch erst mit dem im Juni 1551 erfolgten Vertrag von Norham (Abdruck ebd., S. 265-272) waren die kriegerischen Auseinandersetzungen offiziell beendet.<zfn>fn17324-3</zfn></note></s>
+					<s n="27" xml:lang="la" type="auto">Ex Antwerpia est, Anglos in domino pergere fortiter et feliciter.</s>
+					<s n="28" xml:lang="la" type="auto">Bis conflixerunt cum Scotis.<note xml:id="fn14" type="footnote" n="14">Gemeint ist die Schlacht von Pinkie Cleugh vom 10. September 1547; s. dazu <ref target="file13079">Nr. 3030</ref>, <qv>fn17299-4</qv>. Es erfolgte zuerst ein Überraschungsangriff der Schotten auf die Engländer, der für die Ersteren erfolgreich auszugehen schien. Doch kam es unmittelbar danach zu einem Gegenangriff, in dem die Engländer die Schotten besiegten; s. Gervase <hi>Phillips,</hi> The Anglo-Scots wars 1513-1550, Woodbridge 1999, S. 193-199; <ref target="file13113">Nr. 3064</ref>.<zfn>fn17324-1</zfn></note></s>
+					<s n="29" xml:lang="la" type="auto">Nunc quindecim millia perimerunt, secundo sex.</s>
+					<s n="30" xml:lang="la" type="auto">Londini conficietur pax.<note xml:id="fn15" type="footnote" n="15">Zu einem Frieden zwischen England und Schottland kam es erst am 24. März 1550 im Zuge des englisch-französischen Vertrags von Boulogne (der Vertragstext ist gedruckt in: Foedera, conventiones, literae et ... acta publica inter reges Angliae ..., hg. v. Thomas Rymer, Bd. 15, London 1713, S. 211-218, und datiert im Osterstil vom 24. März 1549 [= 1550] "avant pasques"). Doch erst mit dem im Juni 1551 erfolgten Vertrag von Norham (Abdruck ebd., S. 265-272) waren die kriegerischen Auseinandersetzungen offiziell beendet.<zfn>fn17324-3</zfn></note></s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Ex eodem loco est: In Italia pronunciatum bellum a papa<note xml:id="fn16" type="footnote" n="16">Paul III. - Eine Übertreibung, die vor dem Hintergrund der Ermordung des Papstsohnes Pièr Luigi Farnese (s. <ref target="file#13013">Nr. 2964</ref>, <qv>fn17229-4</qv>), der Besetzung Piacenzas durch den kaiserlichen Statthalter von Mailand, Ferrante Gonzaga (s. <ref target="file#13065">Nr. 3016</ref>, <qv>fn17284-3</qv>), und dem daraus resultierenden Zerwürfnis zwischen Papst und Kaiser nachvollziehbar ist; s. <ref target="file#13070">Nr. 3021</ref>,<qv>zl17289-15</qv>; <ref target="file#13080">Nr. 3031</ref>,<qv>zl17300-11</qv>; <ref target="file#13091">Nr. 3042</ref>,[2]; <ref target="file#13097">Nr. 3048</ref>,<qv>zl17317-1</qv>. Der verängstigte Papst warb damals um Verbündete, um mit deren Hilfe Italien vom spanischen Joch befreien bzw. dem Kaiser Mailand, Genua und Neapel entreißen zu können; s. <abbr>NBD</abbr> X 185-189, Nr. 61; <abbr>Pastor</abbr> V 630-632; Mariá José Bertomeu <hi>Masiá,</hi> La guerra secreta de Carlos V contra el Papa. La cuestión de Parma y Piacenza en la correspondencia del cardenal Granvela, Valencia 2009, S. 46-52. Für Spannung sorgten auch die Bestrebungen des Kaisers, das Konzil nach dem kaiserlichen Trient zurückzuverlegen, während der Papst eine Einflussnahme des Kaisers auf die Beschlüsse des Konzils befürchtete; s. ebd. 636f. Andere Zeitgenossen waren auch der Meinung, dass der Kaiser zur Durchsetzung seiner Interessen einen Konflikt mit der Kurie in Kauf nehmen würde: s. <abbr>NBD</abbr> X 159-162. Allerdings hegte dieser keine Kriegspläne gegen den Papst; s. Wilhelm <hi>Maurenbrecher,</hi> Karl V. und die deutschen Protestanten 1545-1555, Frankfurt a.M. 1865, S. 180.<zfn>fn17324-2</zfn></note> contra cęsarem.</s>
-					<s xml:lang="la" type="auto">Dubito hic nonnihil, quod vos propinquiores<note xml:id="fn17" type="footnote" n="17">Nämlich an Italien.</note> nihil ea de re.</s>
-					<s xml:lang="la" type="auto">Nam fertur cadaver ne militem quidem misisse in Italiam neque aliquid curę de papa gerere.</s>
-					<s xml:lang="la" type="auto">Colludunt, qualiter cum Turca<note xml:id="fn18" type="footnote" n="18">Sultan Suleiman I.</note> collusum est hactenus, dum <pb type="edition" next="599"/> Germaniam fecit miseram, exhaustam, servam cadaver.</s>
-					<s xml:lang="la" type="auto">Idem accidet Helvetię per Quinque pagicos, nisi dominus suos velit servare.</s>
-					<s xml:lang="la" type="auto">Cęterum quomodo servabit, qui servari nolunt?</s>
+					<s n="31" xml:lang="la" type="auto">Ex eodem loco est: In Italia pronunciatum bellum a papa<note xml:id="fn16" type="footnote" n="16">Paul III. - Eine Übertreibung, die vor dem Hintergrund der Ermordung des Papstsohnes Pièr Luigi Farnese (s. <ref target="file13013">Nr. 2964</ref>, <qv>fn17229-4</qv>), der Besetzung Piacenzas durch den kaiserlichen Statthalter von Mailand, Ferrante Gonzaga (s. <ref target="file13065">Nr. 3016</ref>, <qv>fn17284-3</qv>), und dem daraus resultierenden Zerwürfnis zwischen Papst und Kaiser nachvollziehbar ist; s. <ref target="file13070">Nr. 3021</ref>,<qv>zl17289-15</qv>; <ref target="file13080">Nr. 3031</ref>,<qv>zl17300-11</qv>; <ref target="file13091">Nr. 3042</ref>,[2]; <ref target="file13097">Nr. 3048</ref>,<qv>zl17317-1</qv>. Der verängstigte Papst warb damals um Verbündete, um mit deren Hilfe Italien vom spanischen Joch befreien bzw. dem Kaiser Mailand, Genua und Neapel entreißen zu können; s. <abbr>NBD</abbr> X 185-189, Nr. 61; <abbr>Pastor</abbr> V 630-632; Mariá José Bertomeu <hi>Masiá,</hi> La guerra secreta de Carlos V contra el Papa. La cuestión de Parma y Piacenza en la correspondencia del cardenal Granvela, Valencia 2009, S. 46-52. Für Spannung sorgten auch die Bestrebungen des Kaisers, das Konzil nach dem kaiserlichen Trient zurückzuverlegen, während der Papst eine Einflussnahme des Kaisers auf die Beschlüsse des Konzils befürchtete; s. ebd. 636f. Andere Zeitgenossen waren auch der Meinung, dass der Kaiser zur Durchsetzung seiner Interessen einen Konflikt mit der Kurie in Kauf nehmen würde: s. <abbr>NBD</abbr> X 159-162. Allerdings hegte dieser keine Kriegspläne gegen den Papst; s. Wilhelm <hi>Maurenbrecher,</hi> Karl V. und die deutschen Protestanten 1545-1555, Frankfurt a.M. 1865, S. 180.<zfn>fn17324-2</zfn></note> contra cęsarem.</s>
+					<s n="32" xml:lang="la" type="auto">Dubito hic nonnihil, quod vos propinquiores<note xml:id="fn17" type="footnote" n="17">Nämlich an Italien.</note> nihil ea de re.</s>
+					<s n="33" xml:lang="la" type="auto">Nam fertur cadaver ne militem quidem misisse in Italiam neque aliquid curę de papa gerere.</s>
+					<s n="34" xml:lang="la" type="auto">Colludunt, qualiter cum Turca<note xml:id="fn18" type="footnote" n="18">Sultan Suleiman I.</note> collusum est hactenus, dum <pb type="edition" next="599"/> Germaniam fecit miseram, exhaustam, servam cadaver.</s>
+					<s n="35" xml:lang="la" type="auto">Idem accidet Helvetię per Quinque pagicos, nisi dominus suos velit servare.</s>
+					<s n="36" xml:lang="la" type="auto">Cęterum quomodo servabit, qui servari nolunt?</s>
 				</p>
 			</div>
 			<div xml:id="div6" corresp="regest6">
 				<p>
-					<s xml:lang="la" type="auto">De Gallo<note xml:id="fn19" type="footnote" n="19">König Heinrich II.</note> nihil dico, praeter hoc unum, quod Gallus<note xml:id="fn20" type="footnote" n="20">Unbekannt.</note> retulit ante dies sex, vir doctus, pius, exul, sermone suavis (ut talem nunquam audierim)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note>: „Rex, inquit, scortum<note xml:id="fn21" type="footnote" n="21">Diana von Poitiers. - Das Gerücht, wonach es während Dianas Kindheit zu einem sexuellen Verkehr mit Franz I. gekommen sei, ist vermutlich falsch; s. Ivan <hi>Cloulas,</hi> Diane de Poitiers, Paris 1997, S. 60f. Unbestritten ist hingegen, dass sie die Geliebte Heinrichs II. und für diesen von großer Bedeutung war; s. aaO, S. 105-110; <hi>ders.,</hi> Henri II, Paris 1985, S. 143f. 342-344.</note> fovet, pascit, init, quod pater<note xml:id="fn22" type="footnote" n="22">Franz I.</note> eius hactenus iniit!“</s>
-					<s xml:lang="la" type="auto">Tibi dico, quod ille libere dixit.</s>
-					<s xml:lang="la" type="auto">Stupebam ego; narrationem repetiit; coactus sum credere, non autem cuipiam persuadere.</s>
+					<s n="37" xml:lang="la" type="auto">De Gallo<note xml:id="fn19" type="footnote" n="19">König Heinrich II.</note> nihil dico, praeter hoc unum, quod Gallus<note xml:id="fn20" type="footnote" n="20">Unbekannt.</note> retulit ante dies sex, vir doctus, pius, exul, sermone suavis (ut talem nunquam audierim)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note>: „Rex, inquit, scortum<note xml:id="fn21" type="footnote" n="21">Diana von Poitiers. - Das Gerücht, wonach es während Dianas Kindheit zu einem sexuellen Verkehr mit Franz I. gekommen sei, ist vermutlich falsch; s. Ivan <hi>Cloulas,</hi> Diane de Poitiers, Paris 1997, S. 60f. Unbestritten ist hingegen, dass sie die Geliebte Heinrichs II. und für diesen von großer Bedeutung war; s. aaO, S. 105-110; <hi>ders.,</hi> Henri II, Paris 1985, S. 143f. 342-344.</note> fovet, pascit, init, quod pater<note xml:id="fn22" type="footnote" n="22">Franz I.</note> eius hactenus iniit!“</s>
+					<s n="38" xml:lang="la" type="auto">Tibi dico, quod ille libere dixit.</s>
+					<s n="39" xml:lang="la" type="auto">Stupebam ego; narrationem repetiit; coactus sum credere, non autem cuipiam persuadere.</s>
 				</p>
 			</div>
 			<div xml:id="div7" corresp="regest7">
 				<p>
-					<s xml:lang="la" type="auto">Literas ad Butlerum<note xml:id="fn23" type="footnote" n="23">Der englische Geschäftsmann John Butler, der damals in Konstanz lebte.</note> quaeso Constantiam mittas quamprimum.</s>
-					<s xml:lang="la" type="auto">Dominus Heinrichus Winckeli<note xml:id="fn24" type="footnote" n="24">Der ehemalige Kriegsmann Hans Heinrich Winkeli, der sich in der Mitte der 1530er Jahre in Basel niedergelassen und dem Bullinger Anfang 1537 seine zum ersten Mal in Basel gedruckte Schrift zum "Alt gloub" (<abbr>VD16</abbr> B9599) gewidmet hatte; s. <abbr>HBBibl</abbr> I 51-53, Nr. 99-102; <abbr>HBBW</abbr> III 226, Anm. 44.</note> mortem obpetiit.</s>
-					<s xml:lang="la" type="auto">Hodie sepeliemus.</s>
+					<s n="40" xml:lang="la" type="auto">Literas ad Butlerum<note xml:id="fn23" type="footnote" n="23">Der englische Geschäftsmann John Butler, der damals in Konstanz lebte.</note> quaeso Constantiam mittas quamprimum.</s>
+					<s n="41" xml:lang="la" type="auto">Dominus Heinrichus Winckeli<note xml:id="fn24" type="footnote" n="24">Der ehemalige Kriegsmann Hans Heinrich Winkeli, der sich in der Mitte der 1530er Jahre in Basel niedergelassen und dem Bullinger Anfang 1537 seine zum ersten Mal in Basel gedruckte Schrift zum "Alt gloub" (<abbr>VD16</abbr> B9599) gewidmet hatte; s. <abbr>HBBibl</abbr> I 51-53, Nr. 99-102; <abbr>HBBW</abbr> III 226, Anm. 44.</note> mortem obpetiit.</s>
+					<s n="42" xml:lang="la" type="auto">Hodie sepeliemus.</s>
 				</p>
 			</div>
 			<div xml:id="div8" corresp="regest8">
 				<p>
-					<s xml:lang="la" type="auto">Cave, quod in te est, ne Constantienses conveniant cum cęsare, alioqui<note xml:id="fnc" type="footnote" n="c"><hi>In der Vorlage</hi> aliqui.</note> periimus!</s>
+					<s n="43" xml:lang="la" type="auto">Cave, quod in te est, ne Constantienses conveniant cum cęsare, alioqui<note xml:id="fnc" type="footnote" n="c"><hi>In der Vorlage</hi> aliqui.</note> periimus!</s>
 				</p>
 			</div>
 			<div xml:id="div9" corresp="regest9">
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino cum tuis et fratribus.</s>
-					<s xml:lang="la" type="auto">Basileę raptim, 27. octobris anno 1547.</s>
-					<s xml:lang="la" type="auto">Tuus O. Myc.</s>
+					<s n="44" xml:lang="la" type="auto">Vale in domino cum tuis et fratribus.</s>
+					<s n="45" xml:lang="la" type="auto">Basileę raptim, 27. octobris anno 1547.</s>
+					<s n="46" xml:lang="la" type="auto">Tuus O. Myc.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Hinricho Bullingero, ministro Christi fidelissimo doctissimoque, fratri in domino venerando suo.</s>
-					<s xml:lang="de" type="auto">Zu[ric]h.<note xml:id="fnd" type="footnote" n="d"><hi>Textverlust bei der Entfernung des Verschlussbandes.</hi></note></s>
+					<s n="47" xml:lang="la" type="auto">D. Hinricho Bullingero, ministro Christi fidelissimo doctissimoque, fratri in domino venerando suo.</s>
+					<s n="48" xml:lang="de" type="auto">Zu[ric]h.<note xml:id="fnd" type="footnote" n="d"><hi>Textverlust bei der Entfernung des Verschlussbandes.</hi></note></s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1982"/>
-				<idno type="ISBN">ISBN 3-290-11467-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=97</idno>
+				<idno subtype="ISBN">ISBN 3-290-11467-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=97</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 2</title>
+				<title subtype="publication">HBBW II</title>
 				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">2</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,1</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,1</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,9 +50,9 @@
 						<summary>
 							<p xml:id="regest1">
 								Obwohl Bullinger nicht bekannt, schreibt er auf Veranlassung
-								<persName ref="183">Konrad Sams</persName> und des Briefüberbringers, berichtet über die
-								Verhandlungen in <placeName ref="965">Schweinfurt</placeName> und
-								<persName ref="28">Bucers</persName> Einigungsversuche; verspricht weitere Nachrichten. Grüße.
+								<persName ref="person183">Konrad Sams</persName> und des Briefüberbringers, berichtet über die
+								Verhandlungen in <placeName ref="place965">Schweinfurt</placeName> und
+								<persName ref="person28">Bucers</persName> Einigungsversuche; verspricht weitere Nachrichten. Grüße.
 							</p>
 						</summary>
 					</msContents>
@@ -59,44 +62,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10126">
 				<correspAction type="sent">
-					<persName ref="person#1055" cert="high">
+					<!--
+					<persName ref="person1055" cert="high">
 						<forename cert="high">Martin</forename>
 						<surname cert="high">Frecht</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Martin_Frecht"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/116747382"/>
 					</persName>
-					<place source="#513" cert="high">
-						<settlement>Ulm</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>48.39841 9.99155</geo>
-					</place>
+					-->
+					<persName ref="person1055" cert="high"/>
+					<place source="place513" cert="high"/>
 					<date when="1532-05-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10127"/>
-					<ref type="prev_chronologically" target="files.xml#10124"/>
-					<ref type="next_correspondence" target="files.xml#10699"/>
+					<ref type="next_chronologically" target="file10127"/>
+					<ref type="prev_chronologically" target="file10124"/>
+					<ref type="next_correspondence" target="file10699"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#10699"/>
+					<ref type="next_correspondence_request" target="file10699"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#11181"/>
+					<ref type="next_correspondence_reaction" target="file11181"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10699"/>
+					<ref type="next_same_sender" target="file10699"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10131"/>
-					<ref type="prev_same_addressee" target="files.xml#10125"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10699"/>
+					<ref type="next_same_addressee" target="file10131"/>
+					<ref type="prev_same_addressee" target="file10125"/>
+					<ref type="next_with_sender_as_addressee" target="file10699"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10131"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10125"/>
+					<ref type="next_with_addressee_as_sender" target="file10131"/>
+					<ref type="prev_with_addressee_as_sender" target="file10125"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -114,45 +121,45 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salutem in domino, clarissime Bullingere.</s>
+					<s n="1" xml:lang="la" type="auto">Salutem in domino, clarissime Bullingere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quę tua est humanitas, neque impudentię neque imprudentiae meae dabis, quod ignotus ad te nunc scribam indoctisque literis meis sancta tua studia interpellem.</s>
-					<s xml:lang="la" type="auto">Nam ut id facerem, non tam mea voluntas quam Chunradi<note xml:id="fn2" type="footnote" n="2"><persName ref="183">Konrad Sam</persName>.</note> nostri et harum latoris<note xml:id="fn3" type="footnote" n="3">Unbekannt.</note> amica importunitas coegit, nimirum ut horum <foreign xml:lang="el">τῶν προξένων</foreign> sollicitatione me in tuam insinuarem amicitiam.</s>
-					<s xml:lang="la" type="auto">Verum et hoc concedes inque meliorem partem accipies, quod tam indiligenter et breviter principio ad te scribam.</s>
-					<s xml:lang="la" type="auto">Neque enim ignorat charissimus ille frater noster, quibus occupationibus obrutus aliud, quam quod legis, nihil modo ad te dare potuerim.</s>
+					<s n="2" xml:lang="la" type="auto">Quę tua est humanitas, neque impudentię neque imprudentiae meae dabis, quod ignotus ad te nunc scribam indoctisque literis meis sancta tua studia interpellem.</s>
+					<s n="3" xml:lang="la" type="auto">Nam ut id facerem, non tam mea voluntas quam Chunradi<note xml:id="fn2" type="footnote" n="2"><persName ref="person183">Konrad Sam</persName>.</note> nostri et harum latoris<note xml:id="fn3" type="footnote" n="3">Unbekannt.</note> amica importunitas coegit, nimirum ut horum <foreign xml:lang="el">τῶν προξένων</foreign> sollicitatione me in tuam insinuarem amicitiam.</s>
+					<s n="4" xml:lang="la" type="auto">Verum et hoc concedes inque meliorem partem accipies, quod tam indiligenter et breviter principio ad te scribam.</s>
+					<s n="5" xml:lang="la" type="auto">Neque enim ignorat charissimus ille frater noster, quibus occupationibus obrutus aliud, quam quod legis, nihil modo ad te dare potuerim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Non te fortasse latet, quomodo omnes evangelici principes et urbes nuper Schwinfurdti, urbe Franconię, coierint tractaturi super facienda et stabilienda pace ad futurum usque concilium, quod cęsar cum commissariis huic negotio datis, <persName ref="297">Moguntino</persName> archiepiscopo<note xml:id="fn4" type="footnote" n="4"><persName ref="297">Albrecht</persName>, <persName ref="297">Erzbischof</persName> und <persName ref="1543">Kurfürst</persName> von <persName ref="297">Mainz</persName>, 1490-1545, s. Heinrich <hi>Grimm,</hi> in: NDB I 166f.</note> et palatino Rheni<note xml:id="fn5" type="footnote" n="5"><persName ref="1543">Ludwig</persName> V., der Friedfertige, <persName ref="1543">Kurfürst</persName> von der <persName ref="1543">Pfalz</persName>, <hi>1478-1544,</hi> s. [Jakob] <hi>Wille,</hi> in: ADB XIX <hi>575-577.</hi></note> principibus electoribus, amplo ore promittunt<note xml:id="fn6" type="footnote" n="6">Zur Vorgeschichte des Konzils von <placeName ref="1089">Trient</placeName> s. Hubert <hi>Jedin,</hi> Geschichte des Konzils von <placeName ref="1089">Trient</placeName>, Bd. I, Freiburg i. Br. 1951 2 ; <hi>Müller</hi> bes. 105-107.226-229.</note>.</s>
-					<s xml:lang="la" type="auto">E comitiis Schwinfurdianis discessum est nondum imposito colophone<note xml:id="fn7" type="footnote" n="7">unvollendet, ohne die Sache zu Ende zu führen; vgl. Adagia, 2,3,45 (LB II 498f); Otto 88, Nr. 410.</note>.</s>
-					<s xml:lang="la" type="auto">Commissarii pręfati quae ultro citroque tractata sunt, ad cęsarem, qui nunc, ut audio, in venationem secessit ad <placeName ref="1048">Straubingen</placeName>, <placeName ref="7">Bavaria</placeName> oppidum, rettulerunt.</s>
-					<s xml:lang="la" type="auto">Rursus Nurnbergę, non Sveinfurdti, convenient ad quindenam proximam pertexturi, utinam foeliciter, quam nuper orsi sunt telam<note xml:id="fn8" type="footnote" n="8">Zum <placeName ref="965">Schweinfurter</placeName> Konvent s. oben S. 110, Anm. 12.</note>.</s>
+					<s n="6" xml:lang="la" type="auto">Non te fortasse latet, quomodo omnes evangelici principes et urbes nuper Schwinfurdti, urbe Franconię, coierint tractaturi super facienda et stabilienda pace ad futurum usque concilium, quod cęsar cum commissariis huic negotio datis, <persName ref="person297">Moguntino</persName> archiepiscopo<note xml:id="fn4" type="footnote" n="4">Albrecht, Erzbischof und Kurfürst von Mainz, 1490-1545, s. Heinrich <hi>Grimm,</hi> in: NDB I 166f.</note> et palatino Rheni<note xml:id="fn5" type="footnote" n="5"><persName ref="person1543">Ludwig V.</persName>, der Friedfertige, Kurfürst von der Pfalz, 1478-1544, s. [Jakob] <hi>Wille,</hi> in: ADB XIX 575-577.</note> principibus electoribus, amplo ore promittunt<note xml:id="fn6" type="footnote" n="6">Zur Vorgeschichte des Konzils von <placeName ref="place1089">Trient</placeName> s. Hubert <hi>Jedin,</hi> Geschichte des Konzils von <placeName ref="place1089">Trient</placeName>, Bd. I, Freiburg i. Br. 1951 2 ; <hi>Müller</hi> bes. 105-107.226-229.</note>.</s>
+					<s n="7" xml:lang="la" type="auto">E comitiis Schwinfurdianis discessum est nondum imposito colophone<note xml:id="fn7" type="footnote" n="7">unvollendet, ohne die Sache zu Ende zu führen; vgl. Adagia, 2,3,45 (LB II 498f); Otto 88, Nr. 410.</note>.</s>
+					<s n="8" xml:lang="la" type="auto">Commissarii pręfati quae ultro citroque tractata sunt, ad cęsarem, qui nunc, ut audio, in venationem secessit ad <placeName ref="place1048">Straubingen</placeName>, <placeName ref="place7">Bavaria</placeName> oppidum, rettulerunt.</s>
+					<s n="9" xml:lang="la" type="auto">Rursus Nurnbergę, non Sveinfurdti, convenient ad quindenam proximam pertexturi, utinam foeliciter, quam nuper orsi sunt telam<note xml:id="fn8" type="footnote" n="8">Zum <placeName ref="place965">Schweinfurter</placeName> Konvent s. oben S. 110, Anm. 12.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="123"/>Nostri «Apologię Saxonicae»<note xml:id="fn9" type="footnote" n="9">Die Apologie der Augsburgischen Konfession.</note> subscripserunt.</s>
-					<s xml:lang="la" type="auto">Bucaerus noster cum suis, quatenus pie in ratione sacramentorum cum Saxonibus convenire possimus, consilium meditatus est.</s>
-					<s xml:lang="la" type="auto">Simul rationem excogitavit, quomodo nulla fere offensione, presertim in eucharistię negotio, cum illis agamus: Vere in coena corpus et sanguinem Christi animi pabulum piis dari, quod nunquam negavimus, asserimus.</s>
-					<s xml:lang="la" type="auto">Voces, quibus scriptura non utitur ut illud eorum: «corporaliter», «substantialiter», «essentialiter» reiicimus<note xml:id="fn10" type="footnote" n="10">Vgl. <hi>Köhler,</hi> ZL II 294, Anm. 4.</note>.</s>
-					<s xml:lang="la" type="auto">Caeterum, quę resciero e comitiis illis futuris, sicubi commodum nactus fuero tabellionem, huic, quae te tuosque scire rettulerit semel, perferenda ad te committam.</s>
-					<s xml:lang="la" type="auto">Nunc sane non licuit mihi esse longiori in scribendis literis, neque interim hunc satis facundum tabellionem, vivam ad te epistolam, suo volui fraudare officio.</s>
-					<s xml:lang="la" type="auto">Is coram et de aliis tecum commentabitur.</s>
+					<s n="10" xml:lang="la" type="auto"><pb type="edition" next="123"/>Nostri «Apologię Saxonicae»<note xml:id="fn9" type="footnote" n="9">Die Apologie der Augsburgischen Konfession.</note> subscripserunt.</s>
+					<s n="11" xml:lang="la" type="auto">Bucaerus noster cum suis, quatenus pie in ratione sacramentorum cum Saxonibus convenire possimus, consilium meditatus est.</s>
+					<s n="12" xml:lang="la" type="auto">Simul rationem excogitavit, quomodo nulla fere offensione, presertim in eucharistię negotio, cum illis agamus: Vere in coena corpus et sanguinem Christi animi pabulum piis dari, quod nunquam negavimus, asserimus.</s>
+					<s n="13" xml:lang="la" type="auto">Voces, quibus scriptura non utitur ut illud eorum: «corporaliter», «substantialiter», «essentialiter» reiicimus<note xml:id="fn10" type="footnote" n="10">Vgl. <hi>Köhler,</hi> ZL II 294, Anm. 4.</note>.</s>
+					<s n="14" xml:lang="la" type="auto">Caeterum, quę resciero e comitiis illis futuris, sicubi commodum nactus fuero tabellionem, huic, quae te tuosque scire rettulerit semel, perferenda ad te committam.</s>
+					<s n="15" xml:lang="la" type="auto">Nunc sane non licuit mihi esse longiori in scribendis literis, neque interim hunc satis facundum tabellionem, vivam ad te epistolam, suo volui fraudare officio.</s>
+					<s n="16" xml:lang="la" type="auto">Is coram et de aliis tecum commentabitur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tu, quęso, pro tua insigni qua praedicaris humanitate boni ęquique consulas, quod hisce indoctis literis tibi obstrepere ausus fuerim, meque diligenter fratribus, nominatim Leoni <persName ref="114">Jud</persName> et <persName ref="165">Pellicano</persName>, commenda.</s>
+					<s n="17" xml:lang="la" type="auto">Tu, quęso, pro tua insigni qua praedicaris humanitate boni ęquique consulas, quod hisce indoctis literis tibi obstrepere ausus fuerim, meque diligenter fratribus, nominatim Leoni <persName ref="person114">Jud</persName> et <persName ref="person165">Pellicano</persName>, commenda.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale foeliciter in domino, cuius spiritu conserveris.</s>
-					<s xml:lang="la" type="auto">Salutat te et fratres Chunradus <persName ref="183">Som</persName>.</s>
+					<s n="18" xml:lang="la" type="auto">Vale foeliciter in domino, cuius spiritu conserveris.</s>
+					<s n="19" xml:lang="la" type="auto">Salutat te et fratres Chunradus <persName ref="person183">Som</persName>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Raptim <placeName ref="1113">Ulmę</placeName>, 23. maii 1532.</s>
+					<s n="20" xml:lang="la" type="auto">Raptim <placeName ref="place1113">Ulmę</placeName>, 23. maii 1532.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="64">Martinus Frechtus</persName>.</s>
+					<s n="21" xml:lang="la" type="auto"><persName ref="person64">Martinus Frechtus</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro Heinrico Bullingero, Tigurinę ecclesię episcopo et pietate et integritate venerando suo in domino maiori.<note xml:id="fna" type="footnote" n="a"><hi>darunter von Bullingers Hand:</hi> Fraechtus.</note></s>
+					<s n="22" xml:lang="la" type="auto">Clarissimo viro Heinrico Bullingero, Tigurinę ecclesię episcopo et pietate et integritate venerando suo in domino maiori.<note xml:id="fna" type="footnote" n="a"><hi>darunter von Bullingers Hand:</hi> Fraechtus.</note></s>
 				</p>
 			</div>
 		</body>

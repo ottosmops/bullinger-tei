@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2000"/>
-				<idno type="ISBN">ISBN 3-290-17211-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1168</idno>
+				<idno subtype="ISBN">ISBN 3-290-17211-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1168</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 8</title>
+				<title subtype="publication">HBBW VIII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">8</biblScope>
@@ -31,30 +31,33 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph (Entwurf)" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph (Entwurf)">E II 345,174 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph (Entwurf)">E II 345,174 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
 						<msItem/>
 						<summary>
 							<p xml:id="regest1">
-								Dankt für seinen Brief [<ref target="file#11169">Nr. 1126</ref>] und für die offenherzige Äußerung über
-								<persName ref="265">Zwingli</persName> und <persName ref="160">Oekolampad</persName>. Versteht
+								Dankt für seinen Brief [<ref target="file11169">Nr. 1126</ref>] und für die offenherzige Äußerung über
+								<persName ref="person265">Zwingli</persName> und <persName ref="person160">Oekolampad</persName>. Versteht
 								nicht, daß er immer noch von unterschiedlichen Lehrmeinungen spricht, da er nach dem Zeugnis der
-								<placeName ref="1049">Straßburger</placeName> [<persName ref="28">Bucer</persName> und
-								<persName ref="40">Capito</persName>] das [Erste Helvetische] Bekenntnis samt der in
-								<placeName ref="958">Schmalkalden</placeName> überreichten Erläuterung nicht mißbilligt hat.
-								Rechtfertigt die Veröffentlichung von <persName ref="265">Zwinglis</persName> [„Fidei expositio“], da
-								<persName ref="265">Zwingli</persName> hier nicht anders lehrt als - nach
-								<persName ref="28">Bucers</persName> Zeugnis - <persName ref="138">Luther</persName> selbst,
+								<placeName ref="place1049">Straßburger</placeName> [<persName ref="person28">Bucer</persName> und
+								<persName ref="person40">Capito</persName>] das [Erste Helvetische] Bekenntnis samt der in
+								<placeName ref="place958">Schmalkalden</placeName> überreichten Erläuterung nicht mißbilligt hat.
+								Rechtfertigt die Veröffentlichung von <persName ref="person265">Zwinglis</persName> [„Fidei expositio“], da
+								<persName ref="person265">Zwingli</persName> hier nicht anders lehrt als - nach
+								<persName ref="person28">Bucers</persName> Zeugnis - <persName ref="person138">Luther</persName> selbst,
 								folgt er doch, was die Gegenwart Christi im Abendmahl betrifft, ausdrücklich
-								<persName ref="371">Augustin</persName> und <persName ref="630">Chrysostomus</persName>.
+								<persName ref="person371">Augustin</persName> und <persName ref="person630">Chrysostomus</persName>.
 								Bittet, eventuelle Mängel im Bekenntnis anzuzeigen; Abweichungen im Ritus sollten kein Trennungsgrund sein.
 								Ruft zu gegenseitiger Liebe auf; Streit nützt den Gegnern und steht im Widerspruch zu Gottes Gebot. Grüße.
 							</p>
@@ -79,52 +82,60 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11211">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="low"/>
 					<date when="1538-09-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1974" cert="high">
+					<!--
+					<persName ref="person1974" cert="high">
 						<forename cert="high">Martin</forename>
 						<surname cert="high">Luther</surname>
 						<graphic type="portrait" url="portraits/1974_Luther_Martin.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Martin_Luther"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118575449"/>
 					</persName>
+					-->
+					<persName ref="person1974" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11212"/>
-					<ref type="prev_chronologically" target="files.xml#11218"/>
+					<ref type="next_chronologically" target="file11212"/>
+					<ref type="prev_chronologically" target="file11218"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#11169"/>
+					<ref type="prev_correspondence" target="file11169"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#11157"/>
+					<ref type="prev_correspondence_request" target="file11157"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11169"/>
-					<ref type="next_same_sender" target="files.xml#11223"/>
-					<ref type="prev_same_sender" target="files.xml#11208"/>
+					<ref type="prev_correspondence_reaction" target="file11169"/>
+					<ref type="next_same_sender" target="file11223"/>
+					<ref type="prev_same_sender" target="file11208"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#11169"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11223"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11208"/>
+					<ref type="prev_same_addressee" target="file11169"/>
+					<ref type="next_with_sender_as_addressee" target="file11223"/>
+					<ref type="prev_with_sender_as_addressee" target="file11208"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11169"/>
+					<ref type="prev_with_addressee_as_sender" target="file11169"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="11211/Autograph (Entwurf)/00 E_II_345__S__174_.tif" n="1"/>
+		<graphic url="11211/Autograph (Entwurf)/01 E_II_345__S__175_.tif" n="2"/>
+		<graphic url="11211/Autograph (Entwurf)/02 E_II_345__S__176_.tif" n="3"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 			<div xml:id="div1" corresp="regest1">

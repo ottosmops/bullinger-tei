@@ -12,25 +12,28 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3010</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Original" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Original">E II 358,208</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">mit aut. Unterschrift</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Original">E II 358,208</idno>
+						<idno subtype="Hinweis">mit aut. Unterschrift</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -67,14 +70,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#311">Marburg</settlement>
-						<institution>Hessisches Landesarchiv Abteilung Staatsarchiv</institution>
-						<idno type="Kopie">PA 1797 (= 3,1797) fo 57 r-v</idno>
-						<repository ref="archive#61">
+						<!--
+						<repository ref="archive61">
 							<name>Marburg HStA</name>
-							<note type="Mikrofilm">IRG</note>
 							<ref target="https://landesarchiv.hessen.de/"/>
 						</repository>
+						<settlement ref="place311">Marburg</settlement>
+						<institution>Hessisches Landesarchiv Abteilung Staatsarchiv</institution>
+						-->
+						<repository ref="archive61"/>
+						<idno subtype="Kopie">PA 1797 (= 3,1797) fo 57 r-v</idno>
+						<idno subtype="Mikrofilm">IRG</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -85,13 +91,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 78,176</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 78,176</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -100,52 +109,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1783">
 				<correspAction type="sent">
-					<persName ref="person#1872" cert="high">
+					<!--
+					<persName ref="person1872" cert="high">
 						<forename cert="high">Philipp</forename>
 						<surname cert="high">Landgraf von Hessen</surname>
-						<addName type="main">von Hessen, Philipp I. («der Großmütige»)</addName>
-						<graphic type="portrait" url="portraits/8019_von_Hessen_Philipp_I.jpg"/>
+						<persName type="main" ref="person8019>von Hessen, Philipp I. («der Großmütige»)</addName>
+						<graphic type="portrait" url="portraits/1871_von_Hessen_Philipp_I.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Philipp_I._(Hessen)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11859382X"/>
 					</persName>
-					<place source="#579" cert="high">
-						<settlement>Ziegenhain</settlement>
-						<district>Rheinland-Pfalz</district>
-						<country>Deutschland</country>
-						<geo>50.91522 9.23754</geo>
-					</place>
+					-->
+					<persName ref="person1872" cert="high"/>
+					<place source="place579" cert="high"/>
 					<date when="1552-12-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1784"/>
-					<ref type="prev_chronologically" target="files.xml#1782"/>
-					<ref type="next_correspondence" target="files.xml#1823"/>
-					<ref type="prev_correspondence" target="files.xml#1754"/>
-					<ref type="next_correspondence_request" target="files.xml#1834"/>
-					<ref type="prev_correspondence_request" target="files.xml#12502"/>
-					<ref type="next_correspondence_reaction" target="files.xml#1823"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1754"/>
-					<ref type="next_same_sender" target="files.xml#1834"/>
-					<ref type="prev_same_sender" target="files.xml#12502"/>
-					<ref type="next_same_addressee" target="files.xml#1820"/>
-					<ref type="prev_same_addressee" target="files.xml#1754"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1834"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12502"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1820"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1754"/>
+					<ref type="next_chronologically" target="file1784"/>
+					<ref type="prev_chronologically" target="file1782"/>
+					<ref type="next_correspondence" target="file1823"/>
+					<ref type="prev_correspondence" target="file1754"/>
+					<ref type="next_correspondence_request" target="file1834"/>
+					<ref type="prev_correspondence_request" target="file12502"/>
+					<ref type="next_correspondence_reaction" target="file1823"/>
+					<ref type="prev_correspondence_reaction" target="file1754"/>
+					<ref type="next_same_sender" target="file1834"/>
+					<ref type="prev_same_sender" target="file12502"/>
+					<ref type="next_same_addressee" target="file1820"/>
+					<ref type="prev_same_addressee" target="file1754"/>
+					<ref type="next_with_sender_as_addressee" target="file1834"/>
+					<ref type="prev_with_sender_as_addressee" target="file12502"/>
+					<ref type="next_with_addressee_as_sender" target="file1820"/>
+					<ref type="prev_with_addressee_as_sender" target="file1754"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -160,26 +168,26 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Philips, von gots gnaden landtgrave tzu Hessen, grave zu Catzennelnpogen etc.</s>
+					<s n="1" xml:lang="de" type="auto">Philips, von gots gnaden landtgrave tzu Hessen, grave zu Catzennelnpogen etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Wurdiger unnd wolgelerter, lieber besonnder, wir haben e[u]wer schreiben sampt den zugeschicktenn buchlein endtpfangenn unnd ewer meynung nit anderß dann gerecht verstanden.</s>
-					<s xml:lang="de" type="auto">Bedanckenn uns derwegenn der buchlein sampt der gluckwunschung unnserer erleddigung gegenn euch gnadiglich, seints hinwider inn allen gnadenn zu erkhennen gneigt unnd wollenn euch hinwidder nicht pergen, das wir sellicher buchlein albereit etzlich gelesenn, welche uns trefflich unnd sehr wollgefallenn; wollens auch volgendts mit allem vleiß lesenn.</s>
+					<s n="2" xml:lang="de" type="auto">Wurdiger unnd wolgelerter, lieber besonnder, wir haben e[u]wer schreiben sampt den zugeschicktenn buchlein endtpfangenn unnd ewer meynung nit anderß dann gerecht verstanden.</s>
+					<s n="3" xml:lang="de" type="auto">Bedanckenn uns derwegenn der buchlein sampt der gluckwunschung unnserer erleddigung gegenn euch gnadiglich, seints hinwider inn allen gnadenn zu erkhennen gneigt unnd wollenn euch hinwidder nicht pergen, das wir sellicher buchlein albereit etzlich gelesenn, welche uns trefflich unnd sehr wollgefallenn; wollens auch volgendts mit allem vleiß lesenn.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Unnd nachdem etliche vonn uns außgegossenn unnd gesagt, wir sienn vom glaubenn abgefallen.</s>
-					<s xml:lang="de" type="auto">Das ist nicht also; es ist auch unnser meynung gar nicht gewessen.</s>
-					<s xml:lang="de" type="auto">Wir seindt ebenn so wenig als ir unnd andere abgefallenn, unnd het man unnsere meynung recht verstanden, wurde man viell anderst (dan das wir vom glauben abgefallenn seynn solten) vonn uns gesagt habenn; dann das wir zu Hall in Sachsen in die custodien kommen hat allein das verursacht, das uns angemutet, das wir in das, was das trientisch concilium beschlossen wurde, willigenn soltenn unnd wir unß des weigertenn, wordenn wir in gefengnuß gezogenn etc.</s>
+					<s n="4" xml:lang="de" type="auto">Unnd nachdem etliche vonn uns außgegossenn unnd gesagt, wir sienn vom glaubenn abgefallen.</s>
+					<s n="5" xml:lang="de" type="auto">Das ist nicht also; es ist auch unnser meynung gar nicht gewessen.</s>
+					<s n="6" xml:lang="de" type="auto">Wir seindt ebenn so wenig als ir unnd andere abgefallenn, unnd het man unnsere meynung recht verstanden, wurde man viell anderst (dan das wir vom glauben abgefallenn seynn solten) vonn uns gesagt habenn; dann das wir zu Hall in Sachsen in die custodien kommen hat allein das verursacht, das uns angemutet, das wir in das, was das trientisch concilium beschlossen wurde, willigenn soltenn unnd wir unß des weigertenn, wordenn wir in gefengnuß gezogenn etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Wilchs wir euch also hinwidder gnediger meynung nicht woltenn pergenn, unnd seindt euch mit sonndern gnadenn gewogen.</s>
-					<s xml:lang="de" type="auto">Datum Ziegenhain den 24. decembris anno etc. 52.</s>
+					<s n="7" xml:lang="de" type="auto">Wilchs wir euch also hinwidder gnediger meynung nicht woltenn pergenn, unnd seindt euch mit sonndern gnadenn gewogen.</s>
+					<s n="8" xml:lang="de" type="auto">Datum Ziegenhain den 24. decembris anno etc. 52.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Philips, l[antgraf] z[u] Hessen, subscripsit.<note type="margin">a.R.: Datum a. Schrift (aut.?)</note></s>
+					<s n="9" xml:lang="la" type="auto">Philips, l[antgraf] z[u] Hessen, subscripsit.<note type="margin">a.R.: Datum a. Schrift (aut.?)</note></s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Dem wurdigenn unnd wolgelertenn unnserm lieben besonndernn Heinrico Bullingero, dyener der kirchen zuͦ Zurich.</s>
+					<s n="10" xml:lang="de" type="auto">Dem wurdigenn unnd wolgelertenn unnserm lieben besonndernn Heinrico Bullingero, dyener der kirchen zuͦ Zurich.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=802</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=802</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 347,63</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 347,63</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,7 +49,7 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Drängt Bullinger, [am Theologenkonvent in <placeName ref="310">Eisenach</placeName>] teilzunehmen,
+								Drängt Bullinger, [am Theologenkonvent in <placeName ref="place310">Eisenach</placeName>] teilzunehmen,
 								da Gespräche mehr Erkenntnis bringen als Lektüre; wird selbst trotz Krankheit anwesend sein und verspricht
 								sich um so mehr von der Zusammenkunft, als diese ohne Vertreter der Obrigkeit stattfindet. Grüße.
 							</p>
@@ -65,45 +68,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10841">
 				<correspAction type="sent">
-					<persName ref="person#578" cert="high">
+					<!--
+					<persName ref="person578" cert="high">
 						<forename cert="high">Wolfgang</forename>
 						<surname cert="high">Capito</surname>
+						<persName type="main" ref="person5565>Köpffel, Wolfgang</addName>
 						<graphic type="portrait" url="portraits/578_Capito_Wolfgang.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Wolfgang_Capito"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118518968"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person578" cert="high"/>
+					<place source="place492" cert="high"/>
 					<date when="1536-04-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10842"/>
-					<ref type="prev_chronologically" target="files.xml#10840"/>
-					<ref type="next_correspondence" target="files.xml#10962"/>
-					<ref type="prev_correspondence" target="files.xml#10835"/>
-					<ref type="next_correspondence_request" target="files.xml#10962"/>
-					<ref type="prev_correspondence_request" target="files.xml#10835"/>
+					<ref type="next_chronologically" target="file10842"/>
+					<ref type="prev_chronologically" target="file10840"/>
+					<ref type="next_correspondence" target="file10962"/>
+					<ref type="prev_correspondence" target="file10835"/>
+					<ref type="next_correspondence_request" target="file10962"/>
+					<ref type="prev_correspondence_request" target="file10835"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10757"/>
-					<ref type="next_same_sender" target="files.xml#10962"/>
-					<ref type="prev_same_sender" target="files.xml#10836"/>
-					<ref type="next_same_addressee" target="files.xml#10842"/>
-					<ref type="prev_same_addressee" target="files.xml#10822"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10962"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10836"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10842"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10822"/>
+					<ref type="prev_correspondence_reaction" target="file10757"/>
+					<ref type="next_same_sender" target="file10962"/>
+					<ref type="prev_same_sender" target="file10836"/>
+					<ref type="next_same_addressee" target="file10842"/>
+					<ref type="prev_same_addressee" target="file10822"/>
+					<ref type="next_with_sender_as_addressee" target="file10962"/>
+					<ref type="prev_with_sender_as_addressee" target="file10836"/>
+					<ref type="next_with_addressee_as_sender" target="file10842"/>
+					<ref type="prev_with_addressee_as_sender" target="file10822"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -120,27 +128,27 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Hoc certius statuo non omittendum, quin adfueris<note xml:id="fn1" type="footnote" n="1">Nämlich am Theologenkonvent, der am 14. Mai in <placeName ref="310">Eisenach</placeName> beginnen sollte; vgl. oben <ref target="file#10835">Nr. 796</ref>, 1-7 mit Anm. 1.</note>, quo cogito expendoque diutius.</s>
-					<s xml:lang="la" type="auto">Nam es, quo utetur deus ad maxima adeoque iam utitur.</s>
-					<s xml:lang="la" type="auto">Iuvenis es et autoritate canus<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage irrtümlich</hi> cano.</note> non unis Tigurinis.</s>
-					<s xml:lang="la" type="auto">Illic autem esses auditurus et reliquos, quorum existimatio vigebit apud posteros, nec sine fructu auditurus; nam parvi temporis colloquium plus intelligentię utrinque prodit, quam multorum mensium lectio aperuerit.</s>
-					<s xml:lang="la" type="auto">Adeo vivit indoles animi in sermone, quę stilo nescio quid ascititii<note xml:id="fn2" type="footnote" n="2">hier wohl im Sinne von: etwas Fremdes, Neues, Aufgeschnapptes.</note> contrahit.</s>
-					<s xml:lang="la" type="auto">Quare obsecro te, da operam, ut adfueris nobiscum.</s>
-					<s xml:lang="la" type="auto">Lassescit corpus seni morbis et curis fracto, et tamen volens adero.</s>
-					<s xml:lang="la" type="auto">Sine magistratu res agetur, quo syncerius ac liberius.</s>
-					<s xml:lang="la" type="auto">Spiritus Christi erit nobiscum.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Hoc certius statuo non omittendum, quin adfueris<note xml:id="fn1" type="footnote" n="1">Nämlich am Theologenkonvent, der am 14. Mai in <placeName ref="place310">Eisenach</placeName> beginnen sollte; vgl. oben <ref target="file10835">Nr. 796</ref>, 1-7 mit Anm. 1.</note>, quo cogito expendoque diutius.</s>
+					<s n="3" xml:lang="la" type="auto">Nam es, quo utetur deus ad maxima adeoque iam utitur.</s>
+					<s n="4" xml:lang="la" type="auto">Iuvenis es et autoritate canus<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage irrtümlich</hi> cano.</note> non unis Tigurinis.</s>
+					<s n="5" xml:lang="la" type="auto">Illic autem esses auditurus et reliquos, quorum existimatio vigebit apud posteros, nec sine fructu auditurus; nam parvi temporis colloquium plus intelligentię utrinque prodit, quam multorum mensium lectio aperuerit.</s>
+					<s n="6" xml:lang="la" type="auto">Adeo vivit indoles animi in sermone, quę stilo nescio quid ascititii<note xml:id="fn2" type="footnote" n="2">hier wohl im Sinne von: etwas Fremdes, Neues, Aufgeschnapptes.</note> contrahit.</s>
+					<s n="7" xml:lang="la" type="auto">Quare obsecro te, da operam, ut adfueris nobiscum.</s>
+					<s n="8" xml:lang="la" type="auto">Lassescit corpus seni morbis et curis fracto, et tamen volens adero.</s>
+					<s n="9" xml:lang="la" type="auto">Sine magistratu res agetur, quo syncerius ac liberius.</s>
+					<s n="10" xml:lang="la" type="auto">Spiritus Christi erit nobiscum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto"><persName ref="14">Bibliandro</persName> et <persName ref="165">Pellicano</persName> ex nobis salutem dicas.</s>
+					<s n="11" xml:lang="la" type="auto">Vale.</s>
+					<s n="12" xml:lang="la" type="auto"><persName ref="person14">Bibliandro</persName> et <persName ref="person165">Pellicano</persName> ex nobis salutem dicas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">19.<note xml:id="fnb" type="footnote" n="b"><hi>Die zweite Ziffer undeutlich (aus a?) korrigiert.</hi></note> aprilis anno 1536.</s>
+					<s n="13" xml:lang="la" type="auto">19.<note xml:id="fnb" type="footnote" n="b"><hi>Die zweite Ziffer undeutlich (aus a?) korrigiert.</hi></note> aprilis anno 1536.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Preclaro viro M. Henrico Bullingero, pastori urbano Tiguri, sibi in domino observando.</s>
+					<s n="14" xml:lang="la" type="auto">Preclaro viro M. Henrico Bullingero, pastori urbano Tiguri, sibi in domino observando.</s>
 				</p>
 			</div>
 		</body>

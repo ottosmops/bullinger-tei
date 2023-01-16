@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph (Entwurf)" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph (Entwurf)">E II 346a, 541</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph (Entwurf)">E II 346a, 541</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -29,13 +32,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 371,1195v-1196</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 371,1195v-1196</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -44,56 +50,43 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7179">
 				<correspAction type="sent">
-					<persName ref="person#1381" cert="high">
+					<!--
+					<persName ref="person1381" cert="high">
 						<forename cert="high">Rudolf</forename>
 						<surname cert="high">Gwalther</surname>
-						<addName type="main">Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
+						<persName type="main" ref="person8011>Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
 						<note type="Person">im Namen der Geistlichen (von Zürich)</note>
 						<graphic type="portrait" url="portraits/1381_Gwalther_Rudolf.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Rudolf_Gwalther"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11854392X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11522600"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person1381" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1567-08-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#335" cert="high">
-							<settlement>Mülhausen</settlement>
-							<district>Metropolitanes Frankreich</district>
-							<country>Frankreich</country>
-							<geo>47.75205 7.32866</geo>
-						</place>
-					</roleName>
-					<place source="#335" cert="high">
-						<settlement>Mülhausen</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>47.75205 7.32866</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place335" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7180"/>
-					<ref type="prev_chronologically" target="files.xml#7178"/>
+					<ref type="next_chronologically" target="file7180"/>
+					<ref type="prev_chronologically" target="file7178"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#7142"/>
+					<ref type="prev_correspondence" target="file7142"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#7142"/>
+					<ref type="prev_correspondence_request" target="file7142"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#7904"/>
-					<ref type="prev_same_sender" target="files.xml#7142"/>
-					<ref type="next_same_addressee" target="files.xml#7564"/>
-					<ref type="prev_same_addressee" target="files.xml#7130"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#7904"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#7142"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#7564"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#7130"/>
+					<ref type="next_same_sender" target="file7904"/>
+					<ref type="prev_same_sender" target="file7142"/>
+					<ref type="next_same_addressee" target="file7564"/>
+					<ref type="prev_same_addressee" target="file7130"/>
+					<ref type="next_with_sender_as_addressee" target="file7904"/>
+					<ref type="prev_with_sender_as_addressee" target="file7142"/>
+					<ref type="next_with_addressee_as_sender" target="file7564"/>
+					<ref type="prev_with_addressee_as_sender" target="file7130"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
@@ -101,8 +94,8 @@
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
 	<facsimile>
-		<graphic url="7179/Autograph/00 E_II_346__fol__541_r_.tif" n="1"/>
-		<graphic url="7179/Autograph/01 E_II_346__fol__541_v_.tif" n="2"/>
+		<graphic url="7179/Autograph (Entwurf)/00 E_II_346__fol__541_r_.tif" n="1"/>
+		<graphic url="7179/Autograph (Entwurf)/01 E_II_346__fol__541_v_.tif" n="2"/>
 	</facsimile>
 	<text xml:lang="">
 		<body>

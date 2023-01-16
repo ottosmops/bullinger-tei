@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2002"/>
-				<idno type="ISBN">ISBN 3-290-17220-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1214</idno>
+				<idno subtype="ISBN">ISBN 3-290-17220-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1214</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 9</title>
+				<title subtype="publication">HBBW IX</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">9</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 364,54</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 364,54</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,17 +49,17 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Wird aufgrund von Bullingers Brief mit <persName ref="2610">Jakob</persName>
-								[<persName ref="2610">Zorn</persName>] sprechen und hofft, daß dieser [in
-								<placeName ref="32">Alterswilen</placeName>] bleiben kann. Erkundigt sich bei
-								<persName ref="40">Capito</persName> nach dessen Reiseplänen und ist überzeugt, daß [die Konkordie]
-								am besten durch Stillhalten gefördert wird; was <persName ref="28">Bucers</persName> Reise nach
-								<placeName ref="26">Hessen</placeName> und <placeName ref="1205">Wittenberg</placeName>
+								Wird aufgrund von Bullingers Brief mit Jakob
+								[<persName ref="person2610">Zorn</persName>] sprechen und hofft, daß dieser [in
+								<placeName ref="place32">Alterswilen</placeName>] bleiben kann. Erkundigt sich bei
+								<persName ref="person40">Capito</persName> nach dessen Reiseplänen und ist überzeugt, daß [die Konkordie]
+								am besten durch Stillhalten gefördert wird; was <persName ref="person28">Bucers</persName> Reise nach
+								<placeName ref="place26">Hessen</placeName> und <placeName ref="place1205">Wittenberg</placeName>
 								erbracht hat, wird sich nach seiner Rückkehr zeigen. Freut sich, von der positiven Entwicklung in Zürich zu
 								hören; die göttlichen Warnzeichen sind nicht neu, werden aber selten ernst genommen. Graf
-								[<persName ref="921">Wilhelm</persName>] von <persName ref="921">Fürstenberg</persName> kam
-								nur deshalb nach <placeName ref="565">Konstanz</placeName>, weil er mit seinem Bruder
-								[<persName ref="922">Friedrich</persName>] in der Nähe war.
+								[Wilhelm] <persName ref="person921">von Fürstenberg</persName> kam
+								nur deshalb nach <placeName ref="place565">Konstanz</placeName>, weil er mit seinem Bruder
+								[Friedrich] in der Nähe war.
 							</p>
 						</summary>
 					</msContents>
@@ -66,45 +69,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11257">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<place source="#257" cert="low">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person4079" cert="high"/>
+					<place source="place257" cert="low"/>
 					<date when="1539-01-17" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11258"/>
-					<ref type="prev_chronologically" target="files.xml#11256"/>
-					<ref type="next_correspondence" target="files.xml#11263"/>
-					<ref type="prev_correspondence" target="files.xml#11255"/>
-					<ref type="next_correspondence_request" target="files.xml#11263"/>
-					<ref type="prev_correspondence_request" target="files.xml#11255"/>
+					<ref type="next_chronologically" target="file11258"/>
+					<ref type="prev_chronologically" target="file11256"/>
+					<ref type="next_correspondence" target="file11263"/>
+					<ref type="prev_correspondence" target="file11255"/>
+					<ref type="next_correspondence_request" target="file11263"/>
+					<ref type="prev_correspondence_request" target="file11255"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10990"/>
-					<ref type="next_same_sender" target="files.xml#11263"/>
-					<ref type="prev_same_sender" target="files.xml#11255"/>
-					<ref type="next_same_addressee" target="files.xml#11259"/>
-					<ref type="prev_same_addressee" target="files.xml#11253"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11263"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11255"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11259"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11253"/>
+					<ref type="prev_correspondence_reaction" target="file10990"/>
+					<ref type="next_same_sender" target="file11263"/>
+					<ref type="prev_same_sender" target="file11255"/>
+					<ref type="next_same_addressee" target="file11259"/>
+					<ref type="prev_same_addressee" target="file11253"/>
+					<ref type="next_with_sender_as_addressee" target="file11263"/>
+					<ref type="prev_with_sender_as_addressee" target="file11255"/>
+					<ref type="next_with_addressee_as_sender" target="file11259"/>
+					<ref type="prev_with_addressee_as_sender" target="file11253"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -118,36 +125,36 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salus et pax Christi.</s>
+					<s n="1" xml:lang="la" type="auto">Salus et pax Christi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cum <persName ref="2610">Iacobo</persName><note xml:id="fn1" type="footnote" n="1"><persName ref="2610">Jakob Zorn</persName>; vgl. oben <ref target="file#11255">Nr. 1212</ref>, 2-10, und unten <ref target="file#11290">Nr. 1247</ref>.</note> conferam ex<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> ex <hi>gestrichenes</hi> 1.</note> tuis literis<note xml:id="fn2" type="footnote" n="2">Nicht erhalten.</note>, ubi ad me redierit.</s>
-					<s xml:lang="la" type="auto">Ego optarem illum diutius hęrere posse, cum rarissimi sint, qui digne substituantur, et periculosum sit, si vacent ecclesiae.<pb type="edition" next="32"/></s>
+					<s n="2" xml:lang="la" type="auto">Cum <persName ref="person2610">Iacobo</persName><note xml:id="fn1" type="footnote" n="1"><persName ref="person2610">Jakob Zorn</persName>; vgl. oben <ref target="file11255">Nr. 1212</ref>, 2-10, und unten <ref target="file11290">Nr. 1247</ref>.</note> conferam ex<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> ex <hi>gestrichenes</hi> 1.</note> tuis literis<note xml:id="fn2" type="footnote" n="2">Nicht erhalten.</note>, ubi ad me redierit.</s>
+					<s n="3" xml:lang="la" type="auto">Ego optarem illum diutius hęrere posse, cum rarissimi sint, qui digne substituantur, et periculosum sit, si vacent ecclesiae.<pb type="edition" next="32"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="40">Capitoni</persName> hodie mitto literas<note xml:id="fn3" type="footnote" n="3">Nicht erhalten.</note>, in quibus peto, ut me profectionis suae faciat, quantum licet, certiorem<note xml:id="fn4" type="footnote" n="4">Zum Gerücht, <persName ref="40">Capito</persName> werde nach <placeName ref="121">Bern</placeName> reisen, s. oben <ref target="file#11255">Nr. 1212</ref>, 11 mit Anm. 2.</note>; acceptum ergo responsum tibi quoque communicabo.</s>
-					<s xml:lang="la" type="auto">Alioqui res nunc bene habent, et semper putavi silentio commodissime posse mederi controversiis.</s>
-					<s xml:lang="la" type="auto"><persName ref="28">Bucerus</persName> iam diu abfuit in Hassia et etiamnum aiunt esse <placeName ref="1205">Wittenbergae</placeName><note xml:id="fn5" type="footnote" n="5">Vgl. HBBW VIII, S. 269, 6-10.</note>; illius reditus quid sit daturus, audiemus postea.</s>
+					<s n="4" xml:lang="la" type="auto"><persName ref="person40">Capitoni</persName> hodie mitto literas<note xml:id="fn3" type="footnote" n="3">Nicht erhalten.</note>, in quibus peto, ut me profectionis suae faciat, quantum licet, certiorem<note xml:id="fn4" type="footnote" n="4">Zum Gerücht, <persName ref="person40">Capito</persName> werde nach <placeName ref="place121">Bern</placeName> reisen, s. oben <ref target="file11255">Nr. 1212</ref>, 11 mit Anm. 2.</note>; acceptum ergo responsum tibi quoque communicabo.</s>
+					<s n="5" xml:lang="la" type="auto">Alioqui res nunc bene habent, et semper putavi silentio commodissime posse mederi controversiis.</s>
+					<s n="6" xml:lang="la" type="auto"><persName ref="person28">Bucerus</persName> iam diu abfuit in Hassia et etiamnum aiunt esse <placeName ref="place1205">Wittenbergae</placeName><note xml:id="fn5" type="footnote" n="5">Vgl. HBBW VIII, S. 269, 6-10.</note>; illius reditus quid sit daturus, audiemus postea.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ach, quam exhilarat me, quod scribis quotidie apud vos proficere pietatem et bonas literas!</s>
-					<s xml:lang="la" type="auto">Dominus hunc profectum magis ac magis firmet.</s>
-					<s xml:lang="la" type="auto">Quę nobis dominus minatur, non sunt nova; nunquam non aliquo portento multis iam annis monuit nos, sed fides rara est.</s>
+					<s n="7" xml:lang="la" type="auto"><foreign xml:lang="de">Ach,</foreign> quam exhilarat me, quod scribis quotidie apud vos proficere pietatem et bonas literas!</s>
+					<s n="8" xml:lang="la" type="auto">Dominus hunc profectum magis ac magis firmet.</s>
+					<s n="9" xml:lang="la" type="auto">Quę nobis dominus minatur, non sunt nova; nunquam non aliquo portento multis iam annis monuit nos, sed fides rara est.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Co[mes] a <persName ref="921">Furstenberg</persName> nihil apud nos aliud egit, nisi quod urbem invisit<note xml:id="fn6" type="footnote" n="6">Über den Besuch <persName ref="921">Wilhelms von Fürstenberg</persName> in Konstanz berichtet auch <persName ref="19">Ambrosius Blarer</persName>, s. Blarer BW II 14.</note>; fuit enim in vicino cum fratre<note xml:id="fn7" type="footnote" n="7">Graf <persName ref="922">Friedrich von Fürstenberg</persName>-Heiligenberg.</note> suo etc.</s>
+					<s n="10" xml:lang="la" type="auto">Co[mes] a <persName ref="person921">Furstenberg</persName> nihil apud nos aliud egit, nisi quod urbem invisit<note xml:id="fn6" type="footnote" n="6">Über den Besuch Wilhelms <persName ref="person921">von Fürstenberg</persName> in Konstanz berichtet auch <persName ref="person19">Ambrosius Blarer</persName>, s. Blarer BW II 14.</note>; fuit enim in vicino cum fratre<note xml:id="fn7" type="footnote" n="7">Graf <persName ref="person922">Friedrich von Fürstenberg</persName>-Heiligenberg.</note> suo etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, nec desinas me amare et orare pro me.</s>
-					<s xml:lang="la" type="auto">Familiam totam cupio bene habere.</s>
-					<s xml:lang="la" type="auto">17. ianuarii 1539.</s>
+					<s n="11" xml:lang="la" type="auto">Vale, nec desinas me amare et orare pro me.</s>
+					<s n="12" xml:lang="la" type="auto">Familiam totam cupio bene habere.</s>
+					<s n="13" xml:lang="la" type="auto">17. ianuarii 1539.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Io. <persName ref="263">Zwick</persName>.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus <persName ref="person263">Io. Zwick</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Hainricho Bullingero, Tigurinę ecclesiae ornamento, fratri observando.</s>
+					<s n="15" xml:lang="la" type="auto">Domino Hainricho Bullingero, Tigurinę ecclesiae ornamento, fratri observando.</s>
 				</p>
 			</div>
 		</body>

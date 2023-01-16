@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=961</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=961</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,36r-v</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,36r-v</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 357,24 f.</idno>
+							<idno subtype="Autograph">E II 357,24 f.</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -49,13 +52,13 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Die ausstehende Antwort [auf <ref target="file#10983">Nr. 941</ref>] wird vom Rat statt von ihm erteilt, um
+								Die ausstehende Antwort [auf <ref target="file10983">Nr. 941</ref>] wird vom Rat statt von ihm erteilt, um
 								den Freunden in Zürich deutlich zu machen, daß man sich mit [den Domherren] auf keinen Fall mehr einlassen
 								will; dank ihrem Auszug aus der Stadt stehen die Aussichten für
-								<placeName ref="565">Konstanz</placeName> gut, nach vielen Stürmen - wie Odysseus - endlich zur
+								<placeName ref="place565">Konstanz</placeName> gut, nach vielen Stürmen - wie Odysseus - endlich zur
 								Ruhe zu kommen. Hofft auf ein gebieterisches Wort der Eidgenossen, wie es einst [Neptun in Vergils Aeneis]
 								sprach, und warnt vor Kompromißbereitschaft. Stellt einen Bericht in Aussicht, sendet Grüße und verspricht,
-								<persName ref="14">Theodor</persName> [<persName ref="14">Bibliander</persName>] bei
+								Theodor [<persName ref="person14">Bibliander</persName>] bei
 								Gelegenheit zuschreiben.
 							</p>
 						</summary>
@@ -73,46 +76,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11003">
 				<correspAction type="sent">
-					<persName ref="person#405" cert="high">
+					<!--
+					<persName ref="person405" cert="high">
 						<forename cert="high">Thomas</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer) d.Ä., Thomas</addName>
-						<graphic type="portrait" url="portraits/405_Blarer_Thomas.jpg"/>
+						<persName type="main" ref="person8178>Blarer (Blaurer) d.J., Thomas</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Thomas_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/120270234"/>
 					</persName>
-					<place source="#257" cert="high">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person405" cert="high"/>
+					<place source="place257" cert="high"/>
 					<date when="1537-03-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11004"/>
-					<ref type="prev_chronologically" target="files.xml#11002"/>
-					<ref type="next_correspondence" target="files.xml#11008"/>
-					<ref type="prev_correspondence" target="files.xml#10994"/>
-					<ref type="next_correspondence_request" target="files.xml#11037"/>
-					<ref type="prev_correspondence_request" target="files.xml#10994"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11008"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10983"/>
-					<ref type="next_same_sender" target="files.xml#11037"/>
-					<ref type="prev_same_sender" target="files.xml#10994"/>
-					<ref type="next_same_addressee" target="files.xml#11008"/>
-					<ref type="prev_same_addressee" target="files.xml#11001"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11037"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10994"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11008"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11001"/>
+					<ref type="next_chronologically" target="file11004"/>
+					<ref type="prev_chronologically" target="file11002"/>
+					<ref type="next_correspondence" target="file11008"/>
+					<ref type="prev_correspondence" target="file10994"/>
+					<ref type="next_correspondence_request" target="file11037"/>
+					<ref type="prev_correspondence_request" target="file10994"/>
+					<ref type="next_correspondence_reaction" target="file11008"/>
+					<ref type="prev_correspondence_reaction" target="file10983"/>
+					<ref type="next_same_sender" target="file11037"/>
+					<ref type="prev_same_sender" target="file10994"/>
+					<ref type="next_same_addressee" target="file11008"/>
+					<ref type="prev_same_addressee" target="file11001"/>
+					<ref type="next_with_sender_as_addressee" target="file11037"/>
+					<ref type="prev_with_sender_as_addressee" target="file10994"/>
+					<ref type="next_with_addressee_as_sender" target="file11008"/>
+					<ref type="prev_with_addressee_as_sender" target="file11001"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -133,51 +139,51 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Visum est, honorande Bullingere, optimatibus nostris, ut responsum<note xml:id="fn1" type="footnote" n="1">Nämlich die Antwort auf Bullingers Anfrage vom 2. Februar (oben <ref target="file#10983">Nr. 941</ref>; vgl. auch oben <ref target="file#10994">Nr. 952</ref> und unten <ref target="file#11008">Nr. 966</ref>).</note>, quod ex me expectari debebat, ad senatum devolveretur, quo minus, qui bene volunt reipublicę nostrę, amici Tiguricenses dubitarent, quam alienum sit a salute civitatis huius denuo cum istis heroibus commisceri.</s>
-					<s xml:lang="la" type="auto">Esse enim in foribus<note xml:id="fn2" type="footnote" n="2">Adagia, 2, 2, 85 (LB II 478).</note>, ut iam inde misertus dominus afflictionum nostrarum suo consilio pacem nobis restituat, valde confidimus.</s>
-					<s xml:lang="la" type="auto">Is autem scorpionem pro pisce non dabit<note xml:id="fn3" type="footnote" n="3">Vgl. Lk 11, 11f.</note> aut pacem, vere pax quae non sit.</s>
-					<s xml:lang="la" type="auto">Scis enim fidelem deum, cuius<pb type="edition" next="86"/> providentia id factum esse intelligimus, ut cum ipsa persuasę relligionis <foreign xml:lang="el">ἐθελοθρησκείᾳ</foreign><note xml:id="fn4" type="footnote" n="4">Vgl. Kol 2, 23.</note> eius vitii artifices urbe excederent.</s>
-					<s xml:lang="la" type="auto">Petulantiam illorum aegre perferimus, quid tamen?</s>
-					<s xml:lang="la" type="auto">Levius est ab externis vexari quam a domesticis.</s>
-					<s xml:lang="la" type="auto">Praestat civili concordia gaudere et pietatem colere potius quam periculo se exponere intestino ob alienorum astutiam falsis pollicitationibus exornatam.</s>
-					<s xml:lang="la" type="auto">Annos ab hinc non minus decem ut Ulisses ille fabulosus laborem de ventis et fluctibus exantlavimus, ita tamen, ut nostram Ithacam nobis iam apparere gaudeamus.</s>
-					<s xml:lang="la" type="auto">Quod si cum procis decertandum adhuc fuerit, optandum tamen, ne in his tectis et quam potest remota ab illis Penelope<note xml:id="fn5" type="footnote" n="5">Die Heimkehr des Odysseus nach Ithaka und sein Kampf mit den Freiern Penelopes ist Inhalt der zweiten Hälfte von <persName ref="1215">Homers</persName> "Odyssee".</note>.</s>
-					<s xml:lang="la" type="auto">Sin quis contendat non patriam nos hactenus reperisse, sed fugisse potius ut ducem Vergilianum<note xml:id="fn6" type="footnote" n="6">Gemeint ist Aeneas.</note>, ecce tamen hic<note xml:id="fna" type="footnote" n="a">hic <hi>über der Zeile nachgetragen.</hi></note> Troiam novam et Simoenta<note xml:id="fn7" type="footnote" n="7">Fluß in der Gegend von Troia; vgl. Ludwig <hi>Bürchner,</hi> in: Pauly/Wissowa III A 160f.</note> novum<note xml:id="fn8" type="footnote" n="8">Vgl. <persName ref="2382">Vergil</persName>, Aeneis 3, 302.</note>, ad quem appulimus, ut nec Troianis ad abolitam urbem nec Gręcis ad confectum negocium postliminio sit remigrandum.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Visum est, honorande Bullingere, optimatibus nostris, ut responsum<note xml:id="fn1" type="footnote" n="1">Nämlich die Antwort auf Bullingers Anfrage vom 2. Februar (oben <ref target="file10983">Nr. 941</ref>; vgl. auch oben <ref target="file10994">Nr. 952</ref> und unten <ref target="file11008">Nr. 966</ref>).</note>, quod ex me expectari debebat, ad senatum devolveretur, quo minus, qui bene volunt reipublicę nostrę, amici Tiguricenses dubitarent, quam alienum sit a salute civitatis huius denuo cum istis heroibus commisceri.</s>
+					<s n="3" xml:lang="la" type="auto">Esse enim in foribus<note xml:id="fn2" type="footnote" n="2">Adagia, 2, 2, 85 (LB II 478).</note>, ut iam inde misertus dominus afflictionum nostrarum suo consilio pacem nobis restituat, valde confidimus.</s>
+					<s n="4" xml:lang="la" type="auto">Is autem scorpionem pro pisce non dabit<note xml:id="fn3" type="footnote" n="3">Vgl. Lk 11, 11f.</note> aut pacem, vere pax quae non sit.</s>
+					<s n="5" xml:lang="la" type="auto">Scis enim fidelem deum, cuius<pb type="edition" next="86"/> providentia id factum esse intelligimus, ut cum ipsa persuasę relligionis <foreign xml:lang="el">ἐθελοθρησκείᾳ</foreign><note xml:id="fn4" type="footnote" n="4">Vgl. Kol 2, 23.</note> eius vitii artifices urbe excederent.</s>
+					<s n="6" xml:lang="la" type="auto">Petulantiam illorum aegre perferimus, quid tamen?</s>
+					<s n="7" xml:lang="la" type="auto">Levius est ab externis vexari quam a domesticis.</s>
+					<s n="8" xml:lang="la" type="auto">Praestat civili concordia gaudere et pietatem colere potius quam periculo se exponere intestino ob alienorum astutiam falsis pollicitationibus exornatam.</s>
+					<s n="9" xml:lang="la" type="auto">Annos ab hinc non minus decem ut Ulisses ille fabulosus laborem de ventis et fluctibus exantlavimus, ita tamen, ut nostram Ithacam nobis iam apparere gaudeamus.</s>
+					<s n="10" xml:lang="la" type="auto">Quod si cum procis decertandum adhuc fuerit, optandum tamen, ne in his tectis et quam potest remota ab illis Penelope<note xml:id="fn5" type="footnote" n="5">Die Heimkehr des Odysseus nach Ithaka und sein Kampf mit den Freiern Penelopes ist Inhalt der zweiten Hälfte von <persName ref="person1215">Homers</persName> "Odyssee".</note>.</s>
+					<s n="11" xml:lang="la" type="auto">Sin quis contendat non patriam nos hactenus reperisse, sed fugisse potius ut ducem Vergilianum<note xml:id="fn6" type="footnote" n="6">Gemeint ist Aeneas.</note>, ecce tamen hic<note xml:id="fna" type="footnote" n="a">hic <hi>über der Zeile nachgetragen.</hi></note> Troiam novam et Simoenta<note xml:id="fn7" type="footnote" n="7">Fluß in der Gegend von Troia; vgl. Ludwig <hi>Bürchner,</hi> in: Pauly/Wissowa III A 160f.</note> novum<note xml:id="fn8" type="footnote" n="8">Vgl. <persName ref="person2382">Vergil</persName>, Aeneis 3, 302.</note>, ad quem appulimus, ut nec Troianis ad abolitam urbem nec Gręcis ad confectum negocium postliminio sit remigrandum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Utinam tamen Helvetia, cui toties et tam amice ob oculos posuimus difficultatem navigationis nostrę, fluctibus istis aliquando, quod possunt, imperitaret<note xml:id="fnb" type="footnote" n="b"><hi>Dieses und die beiden folgenden Verben von Plural in Singular korrigiert.</hi></note> et ventos folle cohiberet aut increparet saltem ministros Aeoli collectasque fugans nubes solemque reducens his aut talibus verbis<note xml:id="fn9" type="footnote" n="9"><persName ref="2382">Vergil</persName>, Aeneis 1, 132-141.</note>:</s>
+					<s n="12" xml:lang="la" type="auto">Utinam tamen Helvetia, cui toties et tam amice ob oculos posuimus difficultatem navigationis nostrę, fluctibus istis aliquando, quod possunt, imperitaret<note xml:id="fnb" type="footnote" n="b"><hi>Dieses und die beiden folgenden Verben von Plural in Singular korrigiert.</hi></note> et ventos folle cohiberet aut increparet saltem ministros Aeoli collectasque fugans nubes solemque reducens his aut talibus verbis<note xml:id="fn9" type="footnote" n="9"><persName ref="person2382">Vergil</persName>, Aeneis 1, 132-141.</note>:</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">"Tantane vos generis tenuit fiducia vestri;<pb type="scan" next="||25"/> iam cęlum terramque meo sine numine, venti, miscere et tantas audetis tollere moles<note xml:id="fnc" type="footnote" n="c"><hi>vor</hi> moles <hi>gestrichenes</hi> nubes.</note>?</s>
-					<s xml:lang="la" type="auto">Quos ego...!</s>
-					<s xml:lang="la" type="auto">Sed motos pręstat componere fluctus; post mihi non simili poena commissa luetis.</s>
-					<s xml:lang="la" type="auto">Maturate fugam regique haec dicite vestro: Non illi imperium pelagi sęvumque tridentem, sed mihi sorte datum; tenet ille immania saxa, vestras, Eure, domos; illa se iactet in aula Aeolus et clauso ventorum carcere regnet" etc.</s>
+					<s n="13" xml:lang="la" type="auto">"Tantane vos generis tenuit fiducia vestri;<pb type="scan" next="||25"/> iam cęlum terramque meo sine numine, venti, miscere et tantas audetis tollere moles<note xml:id="fnc" type="footnote" n="c"><hi>vor</hi> moles <hi>gestrichenes</hi> nubes.</note>?</s>
+					<s n="14" xml:lang="la" type="auto">Quos ego...!</s>
+					<s n="15" xml:lang="la" type="auto">Sed motos pręstat componere fluctus; post mihi non simili poena commissa luetis.</s>
+					<s n="16" xml:lang="la" type="auto">Maturate fugam regique haec dicite vestro: Non illi imperium pelagi sęvumque tridentem, sed mihi sorte datum; tenet ille immania saxa, vestras, Eure, domos; illa se iactet in aula Aeolus et clauso ventorum carcere regnet" etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Est autem in primis cavendum, Bullingere, ne cui persuadeant hęc flamina<note xml:id="fnd" type="footnote" n="d"><hi>vor</hi> flamina <hi>gestrichenes</hi> flamina se.</note><note xml:id="fn10" type="footnote" n="10">Wortspiel mit flamina (Winde) und flamines (Priester).</note> posse<note xml:id="fne" type="footnote" n="e">posse <hi>über der Zeile nachgetragen.</hi></note> se cum nostro commodo scindi<note xml:id="fn11" type="footnote" n="11">Vgl. oben <ref target="file#10983">Nr. 941</ref>, 25f.</note>, si pars recipiatur.</s>
-					<s xml:lang="la" type="auto">Hac enim simulatione res maximas saepe obtinuerunt, et inventus est tertius semper, cuius exitio illi redirent in gratiam.</s>
+					<s n="17" xml:lang="la" type="auto">Est autem in primis cavendum, Bullingere, ne cui persuadeant hęc flamina<note xml:id="fnd" type="footnote" n="d"><hi>vor</hi> flamina <hi>gestrichenes</hi> flamina se.</note><note xml:id="fn10" type="footnote" n="10">Wortspiel mit flamina (Winde) und flamines (Priester).</note> posse<note xml:id="fne" type="footnote" n="e">posse <hi>über der Zeile nachgetragen.</hi></note> se cum nostro commodo scindi<note xml:id="fn11" type="footnote" n="11">Vgl. oben <ref target="file10983">Nr. 941</ref>, 25f.</note>, si pars recipiatur.</s>
+					<s n="18" xml:lang="la" type="auto">Hac enim simulatione res maximas saepe obtinuerunt, et inventus est tertius semper, cuius exitio illi redirent in gratiam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="87"/>Superiorum annorum res gestas ad te dabimus<note xml:id="fn12" type="footnote" n="12">Ein entsprechender Bericht ist nicht bekannt.</note>, ex quibus intelliges, quo plebis scito interposito illorum reditus ad nos prohibeatur<note xml:id="fn13" type="footnote" n="13">Der Rat kämpfte seit dem freiwilligen Auszug des Domkapitels (1527) entschlossen gegen dessen Rückkehr; vgl. <hi>Moeller,</hi> Zwick 1421.</note>, ne quis porro de ea re dubitare queat.</s>
-					<s xml:lang="la" type="auto">Quare quam potes modestissime nostros excusa et saluta meis verbis gravissimum virum Dithelmum Röstum<note xml:id="fn14" type="footnote" n="14">Bürgermeister <persName ref="180">Diethelm Röist</persName>.</note> aliosque bonos.</s>
-					<s xml:lang="la" type="auto"><persName ref="14">Theodoro</persName><note xml:id="fn15" type="footnote" n="15"><persName ref="14">Theodor Bibliander</persName>.</note> ne nunc quidem scribere potui, scribam tamen per ocium.</s>
-					<s xml:lang="la" type="auto">Dominum ora, ut rem publicam nostram conservet et augeat in regni sui honestamentum.</s>
-					<s xml:lang="la" type="auto">Et poetari me in re tanta boni et equi consulito.</s>
+					<s n="19" xml:lang="la" type="auto"><pb type="edition" next="87"/>Superiorum annorum res gestas ad te dabimus<note xml:id="fn12" type="footnote" n="12">Ein entsprechender Bericht ist nicht bekannt.</note>, ex quibus intelliges, quo plebis scito interposito illorum reditus ad nos prohibeatur<note xml:id="fn13" type="footnote" n="13">Der Rat kämpfte seit dem freiwilligen Auszug des Domkapitels (1527) entschlossen gegen dessen Rückkehr; vgl. <hi>Moeller,</hi> Zwick 1421.</note>, ne quis porro de ea re dubitare queat.</s>
+					<s n="20" xml:lang="la" type="auto">Quare quam potes modestissime nostros excusa et saluta meis verbis gravissimum virum Dithelmum Röstum<note xml:id="fn14" type="footnote" n="14">Bürgermeister <persName ref="person180">Diethelm Röist</persName>.</note> aliosque bonos.</s>
+					<s n="21" xml:lang="la" type="auto"><persName ref="person14">Theodoro</persName><note xml:id="fn15" type="footnote" n="15"><persName ref="person14">Theodor Bibliander</persName>.</note> ne nunc quidem scribere potui, scribam tamen per ocium.</s>
+					<s n="22" xml:lang="la" type="auto">Dominum ora, ut rem publicam nostram conservet et augeat in regni sui honestamentum.</s>
+					<s n="23" xml:lang="la" type="auto">Et poetari me in re tanta boni et equi consulito.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in servatore nostro cum vestris omnibus, ornatissime Bullingere.</s>
+					<s n="24" xml:lang="la" type="auto">Vale in servatore nostro cum vestris omnibus, ornatissime Bullingere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Constantię, 7. martii 1537.</s>
+					<s n="25" xml:lang="la" type="auto">Constantię, 7. martii 1537.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Th. <persName ref="20">Blaurerus</persName> tuus.</s>
+					<s n="26" xml:lang="la" type="auto">Th. <persName ref="person20">Blaurerus</persName> tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse vor S. 17 (neu: 29v.):]</note>
-					<s xml:lang="la" type="auto">Domino Henricho Bullingero, pręconi evangelicae veritatis, amico suo venerando apud Tigurum.</s>
-					<s xml:lang="de" type="auto">Zurch.</s>
+					<s n="27" xml:lang="la" type="auto">Domino Henricho Bullingero, pręconi evangelicae veritatis, amico suo venerando apud Tigurum.</s>
+					<s n="28" xml:lang="de" type="auto">Zurch.</s>
 				</p>
 			</div>
 		</body>

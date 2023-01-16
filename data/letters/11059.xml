@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1017</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1017</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 358,119</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 358,119</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,11 +50,11 @@
 						<summary>
 							<p xml:id="regest1">
 								Gibt Auskunft über den Lehrmeister von
-								<persName ref="121">Christoph Klausers</persName> Sohn: Es
+								<persName ref="person121">Christoph Klausers</persName> Sohn: Es
 								handelt sich um einen wenig erfahrenen Apotheker, der ein hohes Lehrgeld von ihm verlangt, während ihn der
-								beste Apotheker der Stadt kostenlos ausbilden würde; <persName ref="47">Dasypodius</persName> rät
+								beste Apotheker der Stadt kostenlos ausbilden würde; <persName ref="person47">Dasypodius</persName> rät
 								deshalb zum Wechsel der Lehrstelle und verweist im übrigen auf das parallele Schreiben
-								<persName ref="9">Bedrots</persName>. Grüße.
+								<persName ref="person9">Bedrots</persName>. Grüße.
 							</p>
 						</summary>
 					</msContents>
@@ -71,46 +74,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11059">
 				<correspAction type="sent">
-					<persName ref="person#771" cert="high">
+					<!--
+					<persName ref="person771" cert="high">
 						<forename cert="high">Petrus</forename>
 						<surname cert="high">Dasypodius</surname>
-						<addName type="main">Dasypodius (Hasenfratz), Petrus</addName>
+						<persName type="main" ref="person8320>Dasypodius (Hasenfratz), Petrus</addName>
 						<graphic type="portrait" url="portraits/763_Dasypodius_Petrus.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Petrus_Dasypodius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118523856"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11421746"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person771" cert="high"/>
+					<place source="place492" cert="high"/>
 					<date when="1537-07-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11060"/>
-					<ref type="prev_chronologically" target="files.xml#11058"/>
-					<ref type="next_correspondence" target="files.xml#11091"/>
-					<ref type="prev_correspondence" target="files.xml#10995"/>
-					<ref type="next_correspondence_request" target="files.xml#11091"/>
-					<ref type="prev_correspondence_request" target="files.xml#10995"/>
+					<ref type="next_chronologically" target="file11060"/>
+					<ref type="prev_chronologically" target="file11058"/>
+					<ref type="next_correspondence" target="file11091"/>
+					<ref type="prev_correspondence" target="file10995"/>
+					<ref type="next_correspondence_request" target="file11091"/>
+					<ref type="prev_correspondence_request" target="file10995"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11091"/>
-					<ref type="prev_same_sender" target="files.xml#10995"/>
-					<ref type="next_same_addressee" target="files.xml#11067"/>
-					<ref type="prev_same_addressee" target="files.xml#11051"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11091"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10995"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11067"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11051"/>
+					<ref type="next_same_sender" target="file11091"/>
+					<ref type="prev_same_sender" target="file10995"/>
+					<ref type="next_same_addressee" target="file11067"/>
+					<ref type="prev_same_addressee" target="file11051"/>
+					<ref type="next_with_sender_as_addressee" target="file11091"/>
+					<ref type="prev_with_sender_as_addressee" target="file10995"/>
+					<ref type="next_with_addressee_as_sender" target="file11067"/>
+					<ref type="prev_with_addressee_as_sender" target="file11051"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -124,27 +132,27 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Cupis per me et <persName ref="9">Bedrotum</persName> fieri certior, aliquone suo emolumento Christophori <persName ref="1374">Clauseri</persName> filius apud nos operam in myropolio navet<note xml:id="fn1" type="footnote" n="1">Bullingers Anfrage ist nicht erhalten. Zur Sache s. HBBW VI, S. 132, 25-29 mit Anm. 9.</note>.</s>
-					<s xml:lang="la" type="auto">Ego, ut paucis dicam, quod sentio, principio statim, cum huc veniret adolescens, valde mirabar, cur celebrioribus pręteritis in hac potissimum voluerit servire officina.</s>
-					<s xml:lang="la" type="auto">Et nisi credidissem quasdam familiaritatis inter doctorem Christophorum et hunc myropolam<note xml:id="fn2" type="footnote" n="2">Der Name des Lehrmeisters ist nicht bekannt.</note> intercessisse causas, iam tunc dissuasissem adolescenti, ne se homini manciparet, qui, si cętera probus et integer sit, tamen, quod certo constat, propter artis imperitiam ęgre potuit a senatu impetrare, ut in urbe nostra myropolam ageret, quod etiam hinc facile colligitur, cum alii apud nos satis celebres habeant officinas, ipse propter suae officinę infrequentiam aromatibus vendendis interim dat operam; taceo quod, quantum ego intelligo, plus a suis discipulis exigit mercedis quam alius quisquam, imo, ut rem totam uno habeas verbo: Qui primas inter myropolas in urbe nostra tenere putatur<note xml:id="fn3" type="footnote" n="3">Unbekannt.</note>, serio (nam multum habet mecum familiaritatis propter convictorem meum<note xml:id="fn4" type="footnote" n="4">Unbekannt.</note>, illi ex fratre nepotem) mihi dixit se gratis velle talem adolescentem, si detur, multo fidelius instituere.</s>
-					<s xml:lang="la" type="auto">Quare,<pb type="edition" next="188"/> optime Bullingere, quod ad hanc rem attinet, si doctor Christophorus filio suo consultum vult, non patietur eum diutius apud talem magistrum et pecunię et temporis facere dispendium.</s>
-					<s xml:lang="la" type="auto">Haec bono animo scribo, non quod civi meo lucrum, si quod facit per adolescentem, invideam, sed quod tibi, qui hęc scire voluisti, libentissime volui morem gerere et doctorem Christophorum de suo damno vehementer admonitum cupio.</s>
-					<s xml:lang="la" type="auto">Non multum his dissimilia, puto, <persName ref="9">Bedrotus</persName> scribet<note xml:id="fn5" type="footnote" n="5"><persName ref="9">Bedrots</persName> Brief ist nicht erhalten.</note>, qui et alia, quę fuerant referenda, adiiciet.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Cupis per me et <persName ref="person9">Bedrotum</persName> fieri certior, aliquone suo emolumento Christophori <persName ref="person1374">Clauseri</persName> filius apud nos operam in myropolio navet<note xml:id="fn1" type="footnote" n="1">Bullingers Anfrage ist nicht erhalten. Zur Sache s. HBBW VI, S. 132, 25-29 mit Anm. 9.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Ego, ut paucis dicam, quod sentio, principio statim, cum huc veniret adolescens, valde mirabar, cur celebrioribus pręteritis in hac potissimum voluerit servire officina.</s>
+					<s n="4" xml:lang="la" type="auto">Et nisi credidissem quasdam familiaritatis inter doctorem Christophorum et hunc myropolam<note xml:id="fn2" type="footnote" n="2">Der Name des Lehrmeisters ist nicht bekannt.</note> intercessisse causas, iam tunc dissuasissem adolescenti, ne se homini manciparet, qui, si cętera probus et integer sit, tamen, quod certo constat, propter artis imperitiam ęgre potuit a senatu impetrare, ut in urbe nostra myropolam ageret, quod etiam hinc facile colligitur, cum alii apud nos satis celebres habeant officinas, ipse propter suae officinę infrequentiam aromatibus vendendis interim dat operam; taceo quod, quantum ego intelligo, plus a suis discipulis exigit mercedis quam alius quisquam, imo, ut rem totam uno habeas verbo: Qui primas inter myropolas in urbe nostra tenere putatur<note xml:id="fn3" type="footnote" n="3">Unbekannt.</note>, serio (nam multum habet mecum familiaritatis propter convictorem meum<note xml:id="fn4" type="footnote" n="4">Unbekannt.</note>, illi ex fratre nepotem) mihi dixit se gratis velle talem adolescentem, si detur, multo fidelius instituere.</s>
+					<s n="5" xml:lang="la" type="auto">Quare,<pb type="edition" next="188"/> optime Bullingere, quod ad hanc rem attinet, si doctor Christophorus filio suo consultum vult, non patietur eum diutius apud talem magistrum et pecunię et temporis facere dispendium.</s>
+					<s n="6" xml:lang="la" type="auto">Haec bono animo scribo, non quod civi meo lucrum, si quod facit per adolescentem, invideam, sed quod tibi, qui hęc scire voluisti, libentissime volui morem gerere et doctorem Christophorum de suo damno vehementer admonitum cupio.</s>
+					<s n="7" xml:lang="la" type="auto">Non multum his dissimilia, puto, <persName ref="person9">Bedrotus</persName> scribet<note xml:id="fn5" type="footnote" n="5"><persName ref="person9">Bedrots</persName> Brief ist nicht erhalten.</note>, qui et alia, quę fuerant referenda, adiiciet.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, et me ut hactenus amare ne cesses.</s>
-					<s xml:lang="la" type="auto">Saluta fratres et amicos omnes apud vos, pręcipue Leonem<note xml:id="fn6" type="footnote" n="6"><persName ref="114">Leo Jud</persName>.</note> et <persName ref="165">Pellicanum</persName>.</s>
+					<s n="8" xml:lang="la" type="auto">Vale, et me ut hactenus amare ne cesses.</s>
+					<s n="9" xml:lang="la" type="auto">Saluta fratres et amicos omnes apud vos, pręcipue Leonem<note xml:id="fn6" type="footnote" n="6"><persName ref="person114">Leo Jud</persName>.</note> et <persName ref="person165">Pellicanum</persName>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="1049">Argentorati</placeName>, sexto idus iulii anno 1537.</s>
+					<s n="10" xml:lang="la" type="auto"><placeName ref="place1049">Argentorati</placeName>, sexto idus iulii anno 1537.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="47">Petrus Dasypodius</persName>.</s>
+					<s n="11" xml:lang="la" type="auto"><persName ref="person47">Petrus Dasypodius</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Henrico Bullingero, viro integro et docto, urbis Tigurinę antistiti, fratri et amico suo percharo<note xml:id="fna" type="footnote" n="a"><hi>Darunter von späterer Hand:</hi> N°. 7.</note>.</s>
+					<s n="12" xml:lang="la" type="auto">Henrico Bullingero, viro integro et docto, urbis Tigurinę antistiti, fratri et amico suo percharo<note xml:id="fna" type="footnote" n="a"><hi>Darunter von späterer Hand:</hi> N°. 7.</note>.</s>
 				</p>
 			</div>
 		</body>

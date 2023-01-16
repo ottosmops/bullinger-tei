@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2002"/>
-				<idno type="ISBN">ISBN 3-290-17220-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1272</idno>
+				<idno subtype="ISBN">ISBN 3-290-17220-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1272</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 9</title>
+				<title subtype="publication">HBBW IX</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">9</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 337a,317</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 337a,317</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -45,10 +48,10 @@
 						<summary>
 							<p xml:id="regest1">
 								Entschuldigt sich für die Kühnheit, ihn erneut mit einem Brief zu belästigen; weiß nicht, ob sein erstes
-								Schreiben, zu dem ihm <persName ref="81">Grynäus</persName> den Anstoß gab, angekommen ist. Empfiehlt
-								einen Glaubensbruder [<persName ref="1926">Jean Ribit</persName>?], der sich einige Monate als
-								Kostgänger von <persName ref="79">Konrad</persName> [<persName ref="79">Geßner</persName>] [in
-								<placeName ref="609">Lausanne</placeName>] aufhielt. Grüße.
+								Schreiben, zu dem ihm <persName ref="person81">Grynäus</persName> den Anstoß gab, angekommen ist. Empfiehlt
+								einen Glaubensbruder [<persName ref="person1926">Jean Ribit</persName>?], der sich einige Monate als
+								Kostgänger von Konrad [<persName ref="person79">Geßner</persName>] [in
+								<placeName ref="place609">Lausanne</placeName>] aufhielt. Grüße.
 							</p>
 						</summary>
 					</msContents>
@@ -68,46 +71,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11315">
 				<correspAction type="sent">
-					<persName ref="person#3429" cert="high">
+					<!--
+					<persName ref="person3429" cert="high">
 						<forename cert="high">Pierre</forename>
 						<surname cert="high">Viret</surname>
 						<graphic type="portrait" url="portraits/3429_Viret_Pierre.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Pierre_Viret"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118873954"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11419865"/>
 					</persName>
-					<place source="#280" cert="high">
-						<settlement>Lausanne</settlement>
-						<district>Waadt</district>
-						<country>Schweiz</country>
-						<geo>46.516 6.63282</geo>
-					</place>
+					-->
+					<persName ref="person3429" cert="high"/>
+					<place source="place280" cert="high"/>
 					<date when="1539-05-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11316"/>
-					<ref type="prev_chronologically" target="files.xml#11314"/>
-					<ref type="next_correspondence" target="files.xml#11401"/>
+					<ref type="next_chronologically" target="file11316"/>
+					<ref type="prev_chronologically" target="file11314"/>
+					<ref type="next_correspondence" target="file11401"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#11401"/>
+					<ref type="next_correspondence_request" target="file11401"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#3881"/>
+					<ref type="next_correspondence_reaction" target="file3881"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11401"/>
+					<ref type="next_same_sender" target="file11401"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#11322"/>
-					<ref type="prev_same_addressee" target="files.xml#11311"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11401"/>
+					<ref type="next_same_addressee" target="file11322"/>
+					<ref type="prev_same_addressee" target="file11311"/>
+					<ref type="next_with_sender_as_addressee" target="file11401"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11322"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11311"/>
+					<ref type="next_with_addressee_as_sender" target="file11322"/>
+					<ref type="prev_with_addressee_as_sender" target="file11311"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2011"/>
-				<idno type="ISBN">ISBN 978-3-290-17565-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1926</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17565-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1926</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 14</title>
+				<title subtype="publication">HBBW XIV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Henrich, Rainer; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">14</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 367,257</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 367,257</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -72,44 +75,55 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11973">
 				<correspAction type="sent">
-					<persName ref="person#2258" cert="high">
+					<!--
+					<persName ref="person2258" cert="high">
 						<forename cert="high">Joseph</forename>
 						<surname cert="high">Macarius</surname>
 					</persName>
-					<date min="1544-06-14" max="1544-06-19" cert="low"/>
+					-->
+					<persName ref="person2258" cert="high"/>
+					<date notBefore="1544-06-14" notAfter="1544-06-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11974"/>
-					<ref type="prev_chronologically" target="files.xml#11972"/>
-					<ref type="next_correspondence" target="files.xml#11976"/>
+					<ref type="next_chronologically" target="file11974"/>
+					<ref type="prev_chronologically" target="file11972"/>
+					<ref type="next_correspondence" target="file11976"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#12012"/>
+					<ref type="next_correspondence_request" target="file12012"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#11976"/>
+					<ref type="next_correspondence_reaction" target="file11976"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#12012"/>
+					<ref type="next_same_sender" target="file12012"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#11976"/>
-					<ref type="prev_same_addressee" target="files.xml#11971"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12012"/>
+					<ref type="next_same_addressee" target="file11976"/>
+					<ref type="prev_same_addressee" target="file11971"/>
+					<ref type="next_with_sender_as_addressee" target="file12012"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11976"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11971"/>
+					<ref type="next_with_addressee_as_sender" target="file11976"/>
+					<ref type="prev_with_addressee_as_sender" target="file11971"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="11973/Autograph/00 E_II_367__fol__257_r_.tif" n="1"/>
+		<graphic url="11973/Autograph/01 E_II_367__fol__257_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 			<div xml:id="div1" corresp="regest1">

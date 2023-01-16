@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=699</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=699</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 355,61</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 355,61</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,10 +49,10 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Der Landvogt von <placeName ref="940">Sargans</placeName>
-								[<persName ref="1087">Rudolf Haas</persName>] hat ihm ein Predigtverbot auferlegt; bittet die
-								Zürcher, sich dafür einzusetzen, daß seine Pfrundherren [<placeName ref="22">Glarus</placeName>]
-								und die Gemeinde <placeName ref="1159">Wartau</placeName> über seinen angeblichen Landfriedensbruch
+								Der Landvogt von <placeName ref="place940">Sargans</placeName>
+								[<persName ref="person1087">Rudolf Haas</persName>] hat ihm ein Predigtverbot auferlegt; bittet die
+								Zürcher, sich dafür einzusetzen, daß seine Pfrundherren [<placeName ref="place22">Glarus</placeName>]
+								und die Gemeinde <placeName ref="place1159">Wartau</placeName> über seinen angeblichen Landfriedensbruch
 								angehört werden und daß das Verbot wieder aufgehoben wird.
 							</p>
 						</summary>
@@ -67,50 +70,58 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10737">
 				<correspAction type="sent">
-					<persName ref="person#1395" cert="high">
+					<!--
+					<persName ref="person1395" cert="high">
 						<forename cert="high">Jakob</forename>
 						<surname cert="high">Hewer</surname>
-						<addName type="main">Hewer (Heuer), Jakob</addName>
+						<persName type="main" ref="person8379>Hewer (Heuer), Jakob</addName>
 					</persName>
-					<place source="#533" cert="high">
-						<settlement>Wartau</settlement>
-						<district>St.Gallen</district>
-						<country>Schweiz</country>
-						<geo>47.0926493 9.454812382792628</geo>
-					</place>
+					-->
+					<persName ref="person1395" cert="high"/>
+					<place source="place533" cert="high"/>
 					<date when="1535-12-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1753" cert="high">
+					<!--
+					<persName ref="person1753" cert="high">
 						<forename cert="high">Leo</forename>
 						<surname cert="high">Jud</surname>
 						<graphic type="portrait" url="portraits/1753_Jud_Leo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Leo_Jud"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118558528"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11423330"/>
 					</persName>
-					<persName ref="person#495" cert="high">
+					-->
+					<persName ref="person1753" cert="high"/>
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10738"/>
-					<ref type="prev_chronologically" target="files.xml#10736"/>
+					<ref type="next_chronologically" target="file10738"/>
+					<ref type="prev_chronologically" target="file10736"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#10720"/>
+					<ref type="prev_correspondence" target="file10720"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#10720"/>
+					<ref type="prev_correspondence_request" target="file10720"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#10720"/>
-					<ref type="next_same_addressee" target="files.xml#10806"/>
-					<ref type="prev_same_addressee" target="files.xml#10540"/>
+					<ref type="prev_same_sender" target="file10720"/>
+					<ref type="next_same_addressee" target="file10806"/>
+					<ref type="prev_same_addressee" target="file10540"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10720"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10806"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10540"/>
+					<ref type="prev_with_sender_as_addressee" target="file10720"/>
+					<ref type="next_with_addressee_as_sender" target="file10806"/>
+					<ref type="prev_with_addressee_as_sender" target="file10540"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -128,28 +139,28 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Gnad und fryd von got, unserem vatter, durch Jesum Christum, unserem herren.</s>
-					<s xml:lang="de" type="auto">Amen.<pb type="edition" next="468"/></s>
+					<s n="1" xml:lang="de" type="auto">Gnad und fryd von got, unserem vatter, durch Jesum Christum, unserem herren.</s>
+					<s n="2" xml:lang="de" type="auto">Amen.<pb type="edition" next="468"/></s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Lyeben herren und bruͤder, nachdem yr von mir gschrifftlich und muntlich bericht synd<note xml:id="fn1" type="footnote" n="1">Vgl. <persName ref="100">Hewers</persName> Brief vom 17. November, oben <ref target="file#10720">Nr. 682</ref>.</note>, wye myn her lantvogt von Sanganss wyder mych handlet<note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file#10720">Nr. 682</ref>, Anm. 3 und 4.</note>, soll uwer lyeb wüssen, das er mir yetzund am anderen suntag nächst vor wyenacht<note xml:id="fn3" type="footnote" n="3">12. Dezember 1535.</note> ain pott<note xml:id="fn4" type="footnote" n="4">Verbot (SI IV 1897).</note> thon hatt uss bevelch syner herren, der V orten, namlich, das ich yetzund zemall des predigens halben styll ston sölle untz<note xml:id="fn5" type="footnote" n="5">bis (zur pleonastischen Verbindung mit byss vgl. SI I 360).</note> byss uff den nächsten tag, do der syben orten tagherren zusammen kommend und myr ain entlieh<note xml:id="fn6" type="footnote" n="6">endgültige, rechtskräftige.</note> urkund gebind<note xml:id="fn7" type="footnote" n="7"><placeName ref="53">Die VII Orte</placeName>, welche die Herrschaft über die Landvogtei <placeName ref="940">Sargans</placeName> ausübten, besprachen die Angelegenheit in <placeName ref="85">Baden</placeName> im März 1536 (vgl. EA IV/1c 668 i), worauf <persName ref="100">Hewer</persName> bald wieder in sein Amt eingesetzt wurde (vgl. <hi>Kuratli,</hi> aaO, S. 126f).</note>.</s>
-					<s xml:lang="de" type="auto">Darumb ist myn ernstlich byt an üch wye formals, yr wellend druff und dran syn, das myner lehen und schyrm herren myner pfruͦnd<note xml:id="fn8" type="footnote" n="8">Patronatsinhaber war <placeName ref="22">Glarus</placeName>.</note> kuntschafft och verhört werde und ain gantze gmaind zu Wartow.</s>
-					<s xml:lang="de" type="auto">So wirdt es sich wol erfinden, ob ich den lantzfryden gehalten hab oder nit.</s>
-					<s xml:lang="de" type="auto">Och wellend versuͦchen, ob mir das pott wider abgelossen<note xml:id="fn9" type="footnote" n="9">aufgehoben (vgl. SI III 1441).</note> werden möcht.</s>
+					<s n="3" xml:lang="de" type="auto">Lyeben herren und bruͤder, nachdem yr von mir gschrifftlich und muntlich bericht synd<note xml:id="fn1" type="footnote" n="1">Vgl. <persName ref="person100">Hewers</persName> Brief vom 17. November, oben <ref target="file10720">Nr. 682</ref>.</note>, wye myn her lantvogt von Sanganss wyder mych handlet<note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file10720">Nr. 682</ref>, Anm. 3 und 4.</note>, soll uwer lyeb wüssen, das er mir yetzund am anderen suntag nächst vor wyenacht<note xml:id="fn3" type="footnote" n="3">12. Dezember 1535.</note> ain pott<note xml:id="fn4" type="footnote" n="4">Verbot (SI IV 1897).</note> thon hatt uss bevelch syner herren, der V orten, namlich, das ich yetzund zemall des predigens halben styll ston sölle untz<note xml:id="fn5" type="footnote" n="5">bis (zur pleonastischen Verbindung mit byss vgl. SI I 360).</note> byss uff den nächsten tag, do der syben orten tagherren zusammen kommend und myr ain entlieh<note xml:id="fn6" type="footnote" n="6">endgültige, rechtskräftige.</note> urkund gebind<note xml:id="fn7" type="footnote" n="7"><placeName ref="place53">Die VII Orte</placeName>, welche die Herrschaft über die Landvogtei <placeName ref="place940">Sargans</placeName> ausübten, besprachen die Angelegenheit in <placeName ref="place85">Baden</placeName> im März 1536 (vgl. EA IV/1c 668 i), worauf <persName ref="person100">Hewer</persName> bald wieder in sein Amt eingesetzt wurde (vgl. <hi>Kuratli,</hi> aaO, S. 126f).</note>.</s>
+					<s n="4" xml:lang="de" type="auto">Darumb ist myn ernstlich byt an üch wye formals, yr wellend druff und dran syn, das myner lehen und schyrm herren myner pfruͦnd<note xml:id="fn8" type="footnote" n="8">Patronatsinhaber war <placeName ref="place22">Glarus</placeName>.</note> kuntschafft och verhört werde und ain gantze gmaind zu Wartow.</s>
+					<s n="5" xml:lang="de" type="auto">So wirdt es sich wol erfinden, ob ich den lantzfryden gehalten hab oder nit.</s>
+					<s n="6" xml:lang="de" type="auto">Och wellend versuͦchen, ob mir das pott wider abgelossen<note xml:id="fn9" type="footnote" n="9">aufgehoben (vgl. SI III 1441).</note> werden möcht.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="manual">Domit synd bevolhen domino Sadai<note xml:id="fn10" type="footnote" n="10">Alter Gottesname (vgl. M. <hi>Weippert,</hi> in: Theologisches Handwörterbuch zum Alten Testament, hg. v. Ernst Jenni und Claus Westermann, Bd. II, München/Zürich 1979, S. 873-881).</note>, <foreign xml:lang="la">cui soli honor et gloria in secula.</foreign></s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="7" xml:lang="de" type="manual">Domit synd bevolhen domino Sadai<note xml:id="fn10" type="footnote" n="10">Alter Gottesname (vgl. M. <hi>Weippert,</hi> in: Theologisches Handwörterbuch zum Alten Testament, hg. v. Ernst Jenni und Claus Westermann, Bd. II, München/Zürich 1979, S. 873-881).</note>, <foreign xml:lang="la">cui soli honor et gloria in secula.</foreign></s>
+					<s n="8" xml:lang="la" type="manual">Amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datę in Wartow, secunda feria dominicę, secundę ante natalem domini anno 1535.</s>
+					<s n="9" xml:lang="la" type="auto">Datę in Wartow, secunda feria dominicę, secundę ante natalem domini anno 1535.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Jacobus <persName ref="100">Hewer</persName>, minister ecclesię in Wartow.</s>
+					<s n="10" xml:lang="la" type="auto"><persName ref="person100">Jacobus Hewer</persName>, minister ecclesię in Wartow.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Den frommen dyeneren und evangelisten der kilchen zu Zürich, Leoni Iudę und Heinricho Bullingero, mynen lyeben herren und bruͤder.</s>
+					<s n="11" xml:lang="de" type="auto">Den frommen dyeneren und evangelisten der kilchen zu Zürich, Leoni Iudę und Heinricho Bullingero, mynen lyeben herren und bruͤder.</s>
 				</p>
 			</div>
 		</body>

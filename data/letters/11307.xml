@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2002"/>
-				<idno type="ISBN">ISBN 3-290-17220-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1264</idno>
+				<idno subtype="ISBN">ISBN 3-290-17220-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1264</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 9</title>
+				<title subtype="publication">HBBW IX</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">9</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336,207</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336,207</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336,189</idno>
+							<idno subtype="Autograph">E II 336,189</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -49,12 +52,12 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								[In <placeName ref="97">Basel</placeName>] wird versucht, den Pfarrerstand der Universität zu
-								unterwerfen und <persName ref="81">Grynäus</persName> und andere Lehrer zur Annahme eines Grades zu
-								zwingen; <persName ref="81">Grynäus</persName> will bis zum Letzten widerstehen, und
-								<persName ref="154">Myconius</persName> bittet um Zuflucht für den Fall, daß er selbst weichen muß.
-								Erkundigt sich nach <persName ref="14">Theodor</persName>
-								[<persName ref="14">Bibliander</persName>]. Schickt <persName ref="84">Gwalthers</persName>
+								[In <placeName ref="place97">Basel</placeName>] wird versucht, den Pfarrerstand der Universität zu
+								unterwerfen und <persName ref="person81">Grynäus</persName> und andere Lehrer zur Annahme eines Grades zu
+								zwingen; <persName ref="person81">Grynäus</persName> will bis zum Letzten widerstehen, und
+								<persName ref="person154">Myconius</persName> bittet um Zuflucht für den Fall, daß er selbst weichen muß.
+								Erkundigt sich nach Theodor
+								[<persName ref="person14">Bibliander</persName>]. Schickt <persName ref="person84">Gwalthers</persName>
 								Abschrift [des Entwurfs der Universitätsstatuten].
 							</p>
 						</summary>
@@ -65,46 +68,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11307">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1539-05-03" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11308"/>
-					<ref type="prev_chronologically" target="files.xml#11306"/>
-					<ref type="next_correspondence" target="files.xml#11311"/>
-					<ref type="prev_correspondence" target="files.xml#11302"/>
-					<ref type="next_correspondence_request" target="files.xml#11316"/>
-					<ref type="prev_correspondence_request" target="files.xml#11300"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11311"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11302"/>
-					<ref type="next_same_sender" target="files.xml#11316"/>
-					<ref type="prev_same_sender" target="files.xml#11300"/>
-					<ref type="next_same_addressee" target="files.xml#11310"/>
-					<ref type="prev_same_addressee" target="files.xml#11302"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11316"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11300"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11310"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11302"/>
+					<ref type="next_chronologically" target="file11308"/>
+					<ref type="prev_chronologically" target="file11306"/>
+					<ref type="next_correspondence" target="file11311"/>
+					<ref type="prev_correspondence" target="file11302"/>
+					<ref type="next_correspondence_request" target="file11316"/>
+					<ref type="prev_correspondence_request" target="file11300"/>
+					<ref type="next_correspondence_reaction" target="file11311"/>
+					<ref type="prev_correspondence_reaction" target="file11302"/>
+					<ref type="next_same_sender" target="file11316"/>
+					<ref type="prev_same_sender" target="file11300"/>
+					<ref type="next_same_addressee" target="file11310"/>
+					<ref type="prev_same_addressee" target="file11302"/>
+					<ref type="next_with_sender_as_addressee" target="file11316"/>
+					<ref type="prev_with_sender_as_addressee" target="file11300"/>
+					<ref type="next_with_addressee_as_sender" target="file11310"/>
+					<ref type="prev_with_addressee_as_sender" target="file11302"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -121,28 +129,28 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Nunc demum res huc devenit, ut universitas pastoratum ecclesię conetur serio subiicere sibi adnuentibus deputatis<note xml:id="fn1" type="footnote" n="1">Vgl. oben <ref target="file#11258">Nr. 1215</ref>, Anm. 4.</note> et quibusdam ordinis senatorii, tum cogere d. <persName ref="81">Grynęum</persName> et alios quosdam ad gradum lectionibus ipsorum congruentem<note xml:id="fn2" type="footnote" n="2"><persName ref="154">Myconius</persName> bezieht sich auf den am 12. April verabschiedeten Entwurf für die neuen Universitätsstatuten (vgl. dazu <hi>Thommen</hi> 23f und 325f, Anm. 1).</note>.</s>
-					<s xml:lang="la" type="auto">Hic, qui vester est, etiamnum vires omnes intendit; hac via nanque persuasit sibi fastigium se adsequuturum.</s>
-					<s xml:lang="la" type="auto">Scriptum<note xml:id="fn3" type="footnote" n="3">Gemeint ist das in Anm. 2 erwähnte Dekret.</note> obtulerunt nobis intolerabile, quo, si cogere tentabunt, eiicient me praesertim; nam prodere ministerium nolo.</s>
-					<s xml:lang="la" type="auto">Providebis igitur de loco, qui eiectum recipiat.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Nunc demum res huc devenit, ut universitas pastoratum ecclesię conetur serio subiicere sibi adnuentibus deputatis<note xml:id="fn1" type="footnote" n="1">Vgl. oben <ref target="file11258">Nr. 1215</ref>, Anm. 4.</note> et quibusdam ordinis senatorii, tum cogere d. <persName ref="person81">Grynęum</persName> et alios quosdam ad gradum lectionibus ipsorum congruentem<note xml:id="fn2" type="footnote" n="2"><persName ref="person154">Myconius</persName> bezieht sich auf den am 12. April verabschiedeten Entwurf für die neuen Universitätsstatuten (vgl. dazu <hi>Thommen</hi> 23f und 325f, Anm. 1).</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Hic, qui vester est, etiamnum vires omnes intendit; hac via nanque persuasit sibi fastigium se adsequuturum.</s>
+					<s n="4" xml:lang="la" type="auto">Scriptum<note xml:id="fn3" type="footnote" n="3">Gemeint ist das in Anm. 2 erwähnte Dekret.</note> obtulerunt nobis intolerabile, quo, si cogere tentabunt, eiicient me praesertim; nam prodere ministerium nolo.</s>
+					<s n="5" xml:lang="la" type="auto">Providebis igitur de loco, qui eiectum recipiat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="14">Theodorus</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="14">Theodor Bibliander</persName>.</note>, nescio, vivat necne.</s>
-					<s xml:lang="la" type="auto">Rodulpho<note xml:id="fn5" type="footnote" n="5"><persName ref="84">Rudolf Gwalther</persName>.</note> commisi, ut describeret tuo nomine, quę vides<note xml:id="fn6" type="footnote" n="6">Eine Abschrift der oben Anm. 2 erwähnten Statuten findet sich in Zürich StA, E II 337, 305r.-308v.; sie stammt allerdings kaum von <persName ref="84">Gwalthers</persName> Hand.</note>; mihi non erat ocium.</s>
+					<s n="6" xml:lang="la" type="auto"><persName ref="person14">Theodorus</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="person14">Theodor Bibliander</persName>.</note>, nescio, vivat necne.</s>
+					<s n="7" xml:lang="la" type="auto">Rodulpho<note xml:id="fn5" type="footnote" n="5"><persName ref="person84">Rudolf Gwalther</persName>.</note> commisi, ut describeret tuo nomine, quę vides<note xml:id="fn6" type="footnote" n="6">Eine Abschrift der oben Anm. 2 erwähnten Statuten findet sich in Zürich StA, E II 337, 305r.-308v.; sie stammt allerdings kaum von <persName ref="person84">Gwalthers</persName> Hand.</note>; mihi non erat ocium.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale cum tuis et <persName ref="165">Pellicano</persName>.</s>
+					<s n="8" xml:lang="la" type="auto">Vale cum tuis et <persName ref="person165">Pellicano</persName>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileę</placeName>, raptim, 3. maii anno 39.</s>
+					<s n="9" xml:lang="la" type="auto"><placeName ref="place97">Basileę</placeName>, raptim, 3. maii anno 39.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Os. <persName ref="154">Myconius</persName> tuus.</s>
+					<s n="10" xml:lang="la" type="auto">Os. <persName ref="person154">Myconius</persName> tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinricho Bullingero, episcopo <persName ref="84">Tigurino</persName>, in domino suo.</s>
+					<s n="11" xml:lang="la" type="auto">Domino Heinricho Bullingero, episcopo <persName ref="person84">Tigurino</persName>, in domino suo.</s>
 				</p>
 			</div>
 		</body>

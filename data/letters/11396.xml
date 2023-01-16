@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2003"/>
-				<idno type="ISBN">ISBN 3-290-17265-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1353</idno>
+				<idno subtype="ISBN">ISBN 3-290-17265-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1353</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 10</title>
+				<title subtype="publication">HBBW X</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">10</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 345,212</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 345,212</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -66,46 +69,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11396">
 				<correspAction type="sent">
-					<persName ref="person#1384" cert="high">
+					<!--
+					<persName ref="person1384" cert="high">
 						<forename cert="high">Gerhard</forename>
 						<surname cert="high">Geldenhauer</surname>
-						<addName type="main">Geldenhauer (Noviomagus), Gerhard</addName>
+						<persName type="main" ref="person8363>Geldenhauer (Noviomagus), Gerhard</addName>
 						<graphic type="portrait" url="portraits/8363_Geldenhauer_Gerhard.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Gerhard_Geldenhauer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/121278875"/>
 					</persName>
-					<place source="#311" cert="high">
-						<settlement>Marburg</settlement>
-						<district>Hessen</district>
-						<country>Deutschland</country>
-						<geo>50.80904 8.77069</geo>
-					</place>
+					-->
+					<persName ref="person1384" cert="high"/>
+					<place source="place311" cert="high"/>
 					<date when="1540-01-29" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11397"/>
-					<ref type="prev_chronologically" target="files.xml#11395"/>
-					<ref type="next_correspondence" target="files.xml#11450"/>
+					<ref type="next_chronologically" target="file11397"/>
+					<ref type="prev_chronologically" target="file11395"/>
+					<ref type="next_correspondence" target="file11450"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#11450"/>
+					<ref type="next_correspondence_request" target="file11450"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11450"/>
+					<ref type="next_same_sender" target="file11450"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#11397"/>
-					<ref type="prev_same_addressee" target="files.xml#11389"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11450"/>
+					<ref type="next_same_addressee" target="file11397"/>
+					<ref type="prev_same_addressee" target="file11389"/>
+					<ref type="next_with_sender_as_addressee" target="file11450"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11397"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11389"/>
+					<ref type="next_with_addressee_as_sender" target="file11397"/>
+					<ref type="prev_with_addressee_as_sender" target="file11389"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -123,42 +130,42 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Iesus Christus<note xml:id="fna" type="footnote" n="a">in <hi>der Vorlage</hi> IC XC.</note>.</s>
+					<s n="1" xml:lang="la" type="auto">Iesus Christus<note xml:id="fna" type="footnote" n="a">in <hi>der Vorlage</hi> IC XC.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem in Christo Ihesu, deo ac servatore nostro.</s>
-					<s xml:lang="la" type="auto">Licet iuxta externum hominem tu mihi et ego tibi, Bullingere integerrime, ignotus sim, tamen iuxta internam conversationem verę vitę et purę doctrinę mihi iam admodum familiariter a multis annis notus es<note xml:id="fnb" type="footnote" n="b"><hi>Vom Schreiber korrigiert aus</hi> essem[?].</note>.</s>
-					<s xml:lang="la" type="auto">Utor enim tua opera tuoque ministerio in enarrandis plerumque sacris literis.</s>
-					<s xml:lang="la" type="auto">Audio crebro te magistrum mihi per libros loquentem, et in te Christum ipsum audio.</s>
-					<s xml:lang="la" type="auto">Ea vis est purę doctrinę, quę ex fonte veritatis, quę Christus est, scaturit, ut etiam ignotissimos et magnis locorum spatiis dissitos, arctissimis christianę charitatis vinculis copulet et quodam modo uniat.</s>
+					<s n="2" xml:lang="la" type="auto">Gratiam et pacem in Christo Ihesu, deo ac servatore nostro.</s>
+					<s n="3" xml:lang="la" type="auto">Licet iuxta externum hominem tu mihi et ego tibi, Bullingere integerrime, ignotus sim, tamen iuxta internam conversationem verę vitę et purę doctrinę mihi iam admodum familiariter a multis annis notus es<note xml:id="fnb" type="footnote" n="b"><hi>Vom Schreiber korrigiert aus</hi> essem[?].</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Utor enim tua opera tuoque ministerio in enarrandis plerumque sacris literis.</s>
+					<s n="5" xml:lang="la" type="auto">Audio crebro te magistrum mihi per libros loquentem, et in te Christum ipsum audio.</s>
+					<s n="6" xml:lang="la" type="auto">Ea vis est purę doctrinę, quę ex fonte veritatis, quę Christus est, scaturit, ut etiam ignotissimos et magnis locorum spatiis dissitos, arctissimis christianę charitatis vinculis copulet et quodam modo uniat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hęc cum ita se habeant, scio te in optimam partem interpretaturum, quod sanctis tuis laboribus tantisper obstrepam, dum harum literarum exhibitorem<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note> tibi commendem.</s>
-					<s xml:lang="la" type="auto">Est, ut paucis dicam, natione Britannus, verę religionis studiosissimus, peregrinatur autem non ad ostentationem inanem, sed ut discat ea, quae postea apud suos doceat.</s>
-					<s xml:lang="la" type="auto">Cupit enim esse vas utile in domo domini<note xml:id="fn2" type="footnote" n="2">Vgl. 2Tim 2, 20f.</note>.</s>
-					<s xml:lang="la" type="auto">Tres praecipuas linguas degustavit satis foeliciter.</s>
-					<s xml:lang="la" type="auto">Audivit autem apud vos vigere sacrarum literarum studium, servata certa praecipuarum linguarum enarratione.</s>
-					<s xml:lang="la" type="auto">Quare aliquot mensibus isthic morari cupit, ut discat, quae in se desiderat.</s>
-					<s xml:lang="la" type="auto">Hinc oro dilectionem tuam, ut eum benigne, ut soles huiusmodi bonos viros, excipias, et ne cuiquam gravis sit, impetres ei aliquam conditionem docendi privatim ditiorum aliquot vestrę urbis civium liberos.</s>
-					<s xml:lang="la" type="auto">Cętera ex ipso audies.</s>
-					<s xml:lang="la" type="auto">Versatus est hic aliquandiu honeste ac frugaliter.</s>
-					<s xml:lang="la" type="auto">Quicquid ergo huic beneficiorum impenderis, ipsi Ihesu Christo te impendisse non ignoras.</s>
+					<s n="7" xml:lang="la" type="auto">Hęc cum ita se habeant, scio te in optimam partem interpretaturum, quod sanctis tuis laboribus tantisper obstrepam, dum harum literarum exhibitorem<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note> tibi commendem.</s>
+					<s n="8" xml:lang="la" type="auto">Est, ut paucis dicam, natione Britannus, verę religionis studiosissimus, peregrinatur autem non ad ostentationem inanem, sed ut discat ea, quae postea apud suos doceat.</s>
+					<s n="9" xml:lang="la" type="auto">Cupit enim esse vas utile in domo domini<note xml:id="fn2" type="footnote" n="2">Vgl. 2Tim 2, 20f.</note>.</s>
+					<s n="10" xml:lang="la" type="auto">Tres praecipuas linguas degustavit satis foeliciter.</s>
+					<s n="11" xml:lang="la" type="auto">Audivit autem apud vos vigere sacrarum literarum studium, servata certa praecipuarum linguarum enarratione.</s>
+					<s n="12" xml:lang="la" type="auto">Quare aliquot mensibus isthic morari cupit, ut discat, quae in se desiderat.</s>
+					<s n="13" xml:lang="la" type="auto">Hinc oro dilectionem tuam, ut eum benigne, ut soles huiusmodi bonos viros, excipias, et ne cuiquam gravis sit, impetres ei aliquam conditionem docendi privatim ditiorum aliquot vestrę urbis civium liberos.</s>
+					<s n="14" xml:lang="la" type="auto">Cętera ex ipso audies.</s>
+					<s n="15" xml:lang="la" type="auto">Versatus est hic aliquandiu honeste ac frugaliter.</s>
+					<s n="16" xml:lang="la" type="auto">Quicquid ergo huic beneficiorum impenderis, ipsi Ihesu Christo te impendisse non ignoras.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si ego vicissim tibi tuisve quapiam in re servire potero, en offero me tibi servum ac fratrem in Christo obsequentissimum.</s>
-					<s xml:lang="la" type="auto">Commendabis me sanctis<pb type="edition" next="45"/> orationibus symmistarum et fratrum tuorum, nominatim d. <persName ref="165">Pellicani</persName>, Leonis Iudę, <persName ref="14">Bibliandri</persName>, <persName ref="145">Megandri</persName> etc.</s>
-					<s xml:lang="la" type="auto">Bene vale.</s>
+					<s n="17" xml:lang="la" type="auto">Si ego vicissim tibi tuisve quapiam in re servire potero, en offero me tibi servum ac fratrem in Christo obsequentissimum.</s>
+					<s n="18" xml:lang="la" type="auto">Commendabis me sanctis<pb type="edition" next="45"/> orationibus symmistarum et fratrum tuorum, nominatim d. <persName ref="person165">Pellicani</persName>, Leonis Iudę, <persName ref="person14">Bibliandri</persName>, <persName ref="person145">Megandri</persName> etc.</s>
+					<s n="19" xml:lang="la" type="auto">Bene vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datę <placeName ref="672">Marburgi</placeName>, 29. ianuarii 1540.</s>
+					<s n="20" xml:lang="la" type="auto">Datę <placeName ref="place672">Marburgi</placeName>, 29. ianuarii 1540.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Toto pectore<note xml:id="fn3" type="footnote" n="3">Adagia, 1, 4, 26 (LB II 160f).</note> tibi addictissimus <persName ref="76">Gerardus</persName> Geldenhaurius Noviomagus.</s>
+					<s n="21" xml:lang="la" type="auto">Toto pectore<note xml:id="fn3" type="footnote" n="3">Adagia, 1, 4, 26 (LB II 160f).</note> tibi addictissimus <persName ref="person76">Gerardus</persName> Geldenhaurius Noviomagus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Pietate eruditioneque praestantissimo viro, d. Henrico Bullingero, Tigurinę ecclesię doctori ac pastori vigilantissimo, domino et praeceptori unice observando.</s>
-					<s xml:lang="de" type="auto">Zurych.</s>
+					<s n="22" xml:lang="la" type="auto">Pietate eruditioneque praestantissimo viro, d. Henrico Bullingero, Tigurinę ecclesię doctori ac pastori vigilantissimo, domino et praeceptori unice observando.</s>
+					<s n="23" xml:lang="de" type="auto">Zurych.</s>
 				</p>
 			</div>
 		</body>

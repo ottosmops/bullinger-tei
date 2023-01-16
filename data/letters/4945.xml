@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5823/158</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 376,49</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 376,49</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -54,13 +57,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 101,133</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 101,133</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -69,50 +75,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4945">
 				<correspAction type="sent">
-					<persName ref="person#1075" cert="low">
+					<!--
+					<persName ref="person1075" cert="low">
 						<forename cert="low">Johannes</forename>
 						<surname cert="low">Fabricius</surname>
-						<addName type="main">Fabricius Montanus (Schmid), Johannes</addName>
+						<persName type="main" ref="person8009>Fabricius Montanus (Schmid), Johannes</addName>
 						<graphic type="portrait" url="portraits/1075_Fabricius_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Fabricius_Montanus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104045698"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414870"/>
 					</persName>
-					<place source="#98" cert="low">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person1075" cert="low"/>
+					<place source="place98" cert="low"/>
 					<date when="1561-09-03" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4946"/>
-					<ref type="prev_chronologically" target="files.xml#4944"/>
-					<ref type="next_correspondence" target="files.xml#4947"/>
-					<ref type="prev_correspondence" target="files.xml#4942"/>
-					<ref type="next_correspondence_request" target="files.xml#4951"/>
-					<ref type="prev_correspondence_request" target="files.xml#4942"/>
-					<ref type="next_correspondence_reaction" target="files.xml#4947"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#4930"/>
-					<ref type="next_same_sender" target="files.xml#4951"/>
-					<ref type="prev_same_sender" target="files.xml#4942"/>
-					<ref type="next_same_addressee" target="files.xml#4947"/>
-					<ref type="prev_same_addressee" target="files.xml#4940"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4951"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4942"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4947"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#4940"/>
+					<ref type="next_chronologically" target="file4946"/>
+					<ref type="prev_chronologically" target="file4944"/>
+					<ref type="next_correspondence" target="file4947"/>
+					<ref type="prev_correspondence" target="file4942"/>
+					<ref type="next_correspondence_request" target="file4951"/>
+					<ref type="prev_correspondence_request" target="file4942"/>
+					<ref type="next_correspondence_reaction" target="file4947"/>
+					<ref type="prev_correspondence_reaction" target="file4930"/>
+					<ref type="next_same_sender" target="file4951"/>
+					<ref type="prev_same_sender" target="file4942"/>
+					<ref type="next_same_addressee" target="file4947"/>
+					<ref type="prev_same_addressee" target="file4940"/>
+					<ref type="next_with_sender_as_addressee" target="file4951"/>
+					<ref type="prev_with_sender_as_addressee" target="file4942"/>
+					<ref type="next_with_addressee_as_sender" target="file4947"/>
+					<ref type="prev_with_addressee_as_sender" target="file4940"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -130,29 +138,29 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="manual">S.</s>
-					<s xml:lang="la" type="manual"><foreign xml:lang="de">Ich han alle ding erkundiget</foreign>, et quae scribo, sunt certa.</s>
+					<s n="1" xml:lang="la" type="manual">S.</s>
+					<s n="2" xml:lang="la" type="manual"><foreign xml:lang="de">Ich han alle ding erkundiget</foreign>, et quae scribo, sunt certa.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Der tag ist velengert biß uff sontag vor Galli, <foreign xml:lang="la">id est</foreign> den <foreign xml:lang="la">12. octobers, invitis legatis</foreign>, und einmal uff Davoß gesetzt.</s>
-					<s xml:lang="de" type="auto">Hoff aber, die uß dem Oberen Pundt sprechend, sy habind siderhar im protocol funden, das er inen gehöre.</s>
-					<s xml:lang="de" type="auto"><foreign xml:lang="la">Quicquid est</foreign>, es ist verlengeret.</s>
+					<s n="3" xml:lang="de" type="auto">Der tag ist velengert biß uff sontag vor Galli, <foreign xml:lang="la">id est</foreign> den <foreign xml:lang="la">12. octobers, invitis legatis</foreign>, und einmal uff Davoß gesetzt.</s>
+					<s n="4" xml:lang="de" type="auto">Hoff aber, die uß dem Oberen Pundt sprechend, sy habind siderhar im protocol funden, das er inen gehöre.</s>
+					<s n="5" xml:lang="de" type="auto"><foreign xml:lang="la">Quicquid est</foreign>, es ist verlengeret.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Nun so schrybend ir h. Coignet das alles, damit es ester stattlicher zuͦgange und des künigs bottschafft selbs möge kommen.</s>
-					<s xml:lang="de" type="auto"><foreign xml:lang="la">Adhuc unum</foreign>: Des bapsts und des Philippi bottschafft sint nächt so bitterlich mit einander uneinß worden, das sy hinacht uß der kammer von einander theylt hand.</s>
-					<s xml:lang="la" type="auto">Hęc certa.</s>
-					<s xml:lang="la" type="manual">3. septembris.</s>
+					<s n="6" xml:lang="de" type="auto">Nun so schrybend ir h. Coignet das alles, damit es ester stattlicher zuͦgange und des künigs bottschafft selbs möge kommen.</s>
+					<s n="7" xml:lang="de" type="auto"><foreign xml:lang="la">Adhuc unum</foreign>: Des bapsts und des Philippi bottschafft sint nächt so bitterlich mit einander uneinß worden, das sy hinacht uß der kammer von einander theylt hand.</s>
+					<s n="8" xml:lang="la" type="auto">Hęc certa.</s>
+					<s n="9" xml:lang="la" type="manual">3. septembris.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">T[uus] Fab[ricius].</s>
+					<s n="10" xml:lang="la" type="auto">T[uus] Fab[ricius].</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vere magno et in primis pio viro d. Heinrycho Bullingero, domino suo.</s>
+					<s n="11" xml:lang="la" type="auto">Vere magno et in primis pio viro d. Heinrycho Bullingero, domino suo.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="manual">An h. Bullinger.</s>
-					<s xml:lang="de" type="auto">Zürich.</s>
+					<s n="12" xml:lang="de" type="manual">An h. Bullinger.</s>
+					<s n="13" xml:lang="de" type="auto">Zürich.</s>
 				</p>
 			</div>
 		</body>

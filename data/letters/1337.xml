@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2507</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 335,2174</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 335,2174</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -55,14 +58,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 75,41</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Hinweise auf Füssli Nr. 72 + Korrekturen von Fehlern</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 75,41</idno>
+						<idno subtype="Hinweis">Hinweise auf Füssli Nr. 72 + Korrekturen von Fehlern</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -76,50 +82,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1337">
 				<correspAction type="sent">
-					<persName ref="person#3258" cert="high">
+					<!--
+					<persName ref="person3258" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">von Ulm</surname>
-						<addName type="main">Ulmer (ab Ulmis), Johann Konrad</addName>
-						<graphic type="portrait" url="portraits/3243_Johann_Conrad_Ulmer.jpg"/>
+						<persName type="main" ref="person8109>Ulmer (ab Ulmis), Johann Konrad</addName>
+						<graphic type="portrait" url="portraits/3243_Ulmer_Johann_Conrad.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johann_Konrad_Ulmer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/120341913"/>
 					</persName>
-					<place source="#60" cert="high">
-						<settlement>Bradgate</settlement>
-						<geo>52.68857 -1.20606</geo>
-					</place>
+					-->
+					<persName ref="person3258" cert="high"/>
+					<place source="place60" cert="high"/>
 					<date when="1551-07-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1338"/>
-					<ref type="prev_chronologically" target="files.xml#1336"/>
-					<ref type="next_correspondence" target="files.xml#1377"/>
-					<ref type="prev_correspondence" target="files.xml#1299"/>
-					<ref type="next_correspondence_request" target="files.xml#1377"/>
-					<ref type="prev_correspondence_request" target="files.xml#1299"/>
-					<ref type="next_correspondence_reaction" target="files.xml#6909"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#9401"/>
-					<ref type="next_same_sender" target="files.xml#1377"/>
-					<ref type="prev_same_sender" target="files.xml#1299"/>
-					<ref type="next_same_addressee" target="files.xml#1343"/>
-					<ref type="prev_same_addressee" target="files.xml#1335"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1377"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1299"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1343"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1335"/>
+					<ref type="next_chronologically" target="file1338"/>
+					<ref type="prev_chronologically" target="file1336"/>
+					<ref type="next_correspondence" target="file1377"/>
+					<ref type="prev_correspondence" target="file1299"/>
+					<ref type="next_correspondence_request" target="file1377"/>
+					<ref type="prev_correspondence_request" target="file1299"/>
+					<ref type="next_correspondence_reaction" target="file6909"/>
+					<ref type="prev_correspondence_reaction" target="file9401"/>
+					<ref type="next_same_sender" target="file1377"/>
+					<ref type="prev_same_sender" target="file1299"/>
+					<ref type="next_same_addressee" target="file1343"/>
+					<ref type="prev_same_addressee" target="file1335"/>
+					<ref type="next_with_sender_as_addressee" target="file1377"/>
+					<ref type="prev_with_sender_as_addressee" target="file1299"/>
+					<ref type="next_with_addressee_as_sender" target="file1343"/>
+					<ref type="prev_with_addressee_as_sender" target="file1335"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -136,26 +143,26 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Si vales, bene est; ego quidem valeo.</s>
-					<s xml:lang="la" type="auto">De rebus omnibus, quae ad tuam dignitatem pertinent, quid a me sit actum et porro constituendum, ad te, simul ac primum e Scotia redii diligenter perscripsi.</s>
-					<s xml:lang="la" type="auto">Nunc summatim tantum ac breviter ea persequar, ne si forte priores literae intercipiantur, id omnino, cuius tua multum interesse puto, a me neglectum esse videatur.</s>
-					<s xml:lang="la" type="auto">Ac primum sermones tuos a principe vehementer probari scias: mihi quidem et compluribus sane est certo persuasum, te qui[d]quid habueris iudicii de sacris rebus in illum librum contulisse.</s>
-					<s xml:lang="la" type="auto">Faxit modo ille princeps deus et summus rerum omnium moderator, ut voci ac doctrinae filii sui, nunc per terras et maria magnifice resonanti, vita nostra aliquando et actiones respondeant.</s>
-					<s xml:lang="la" type="auto">Se scripturum ad te princeps affirmat simul ac Londinum aut Bradgaet redeat; nunc se tibi per multa et gravia negocia vult excusatum, quibus plus quam dici possit est implicatus: rogat interim vehementer, ut silentium suum aequo ferre velis animo.</s>
+					<s n="1" xml:lang="la" type="auto">Si vales, bene est; ego quidem valeo.</s>
+					<s n="2" xml:lang="la" type="auto">De rebus omnibus, quae ad tuam dignitatem pertinent, quid a me sit actum et porro constituendum, ad te, simul ac primum e Scotia redii diligenter perscripsi.</s>
+					<s n="3" xml:lang="la" type="auto">Nunc summatim tantum ac breviter ea persequar, ne si forte priores literae intercipiantur, id omnino, cuius tua multum interesse puto, a me neglectum esse videatur.</s>
+					<s n="4" xml:lang="la" type="auto">Ac primum sermones tuos a principe vehementer probari scias: mihi quidem et compluribus sane est certo persuasum, te qui[d]quid habueris iudicii de sacris rebus in illum librum contulisse.</s>
+					<s n="5" xml:lang="la" type="auto">Faxit modo ille princeps deus et summus rerum omnium moderator, ut voci ac doctrinae filii sui, nunc per terras et maria magnifice resonanti, vita nostra aliquando et actiones respondeant.</s>
+					<s n="6" xml:lang="la" type="auto">Se scripturum ad te princeps affirmat simul ac Londinum aut Bradgaet redeat; nunc se tibi per multa et gravia negocia vult excusatum, quibus plus quam dici possit est implicatus: rogat interim vehementer, ut silentium suum aequo ferre velis animo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Literas Iohannae Grayae filiae domini iam istuc perlatas existimo, quibus gratam se tibi ac memorem comprobare studet; sed quia literae fere semper sunt in periculo, ne vel intercipiantur vel omnino negligantur, earum exemplum esse tua causa rescribendum putavi.</s>
-					<s xml:lang="la" type="auto">Illud ad verbum sic se habet:<note type="margin">a.R.: ...</note></s>
+					<s n="7" xml:lang="la" type="auto">Literas Iohannae Grayae filiae domini iam istuc perlatas existimo, quibus gratam se tibi ac memorem comprobare studet; sed quia literae fere semper sunt in periculo, ne vel intercipiantur vel omnino negligantur, earum exemplum esse tua causa rescribendum putavi.</s>
+					<s n="8" xml:lang="la" type="auto">Illud ad verbum sic se habet:<note type="margin">a.R.: ...</note></s>
 				</p>
 				<p>
 					<note>[f. 2175b./270e.:]</note>
-					<s xml:lang="la" type="auto">Tui studiosissimus Ioh[annes] ab Ulmis.</s>
+					<s n="9" xml:lang="la" type="auto">Tui studiosissimus Ioh[annes] ab Ulmis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Viro doctissimo et pietate praestantissimo Heinricho Bullingero, domino suo colendissimo.</s>
+					<s n="10" xml:lang="la" type="auto">Viro doctissimo et pietate praestantissimo Heinricho Bullingero, domino suo colendissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="11" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

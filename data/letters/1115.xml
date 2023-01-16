@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2266</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 351,126</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 351,126</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 73,230</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 73,230</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -68,52 +74,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1115">
 				<correspAction type="sent">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
-					<place source="#474" cert="high">
-						<settlement>St. Gallen</settlement>
-						<district>St.Gallen</district>
-						<country>Schweiz</country>
-						<geo>47.42391 9.37477</geo>
-					</place>
+					-->
+					<persName ref="person3306" cert="high"/>
+					<place source="place474" cert="high"/>
 					<date when="1550-12-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1116"/>
-					<ref type="prev_chronologically" target="files.xml#1114"/>
-					<ref type="next_correspondence" target="files.xml#1180"/>
-					<ref type="prev_correspondence" target="files.xml#1114"/>
-					<ref type="next_correspondence_request" target="files.xml#1180"/>
-					<ref type="prev_correspondence_request" target="files.xml#1114"/>
-					<ref type="next_correspondence_reaction" target="files.xml#1205"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1108"/>
-					<ref type="next_same_sender" target="files.xml#1180"/>
-					<ref type="prev_same_sender" target="files.xml#1114"/>
-					<ref type="next_same_addressee" target="files.xml#1127"/>
-					<ref type="prev_same_addressee" target="files.xml#1108"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1180"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1114"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1127"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1108"/>
+					<ref type="next_chronologically" target="file1116"/>
+					<ref type="prev_chronologically" target="file1114"/>
+					<ref type="next_correspondence" target="file1180"/>
+					<ref type="prev_correspondence" target="file1114"/>
+					<ref type="next_correspondence_request" target="file1180"/>
+					<ref type="prev_correspondence_request" target="file1114"/>
+					<ref type="next_correspondence_reaction" target="file1205"/>
+					<ref type="prev_correspondence_reaction" target="file1108"/>
+					<ref type="next_same_sender" target="file1180"/>
+					<ref type="prev_same_sender" target="file1114"/>
+					<ref type="next_same_addressee" target="file1127"/>
+					<ref type="prev_same_addressee" target="file1108"/>
+					<ref type="next_with_sender_as_addressee" target="file1180"/>
+					<ref type="prev_with_sender_as_addressee" target="file1114"/>
+					<ref type="next_with_addressee_as_sender" target="file1127"/>
+					<ref type="prev_with_addressee_as_sender" target="file1108"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -131,24 +136,24 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Hoc vespere missae sunt ad celebrem quendam mercatorem ex nostris literae mihi inscriptae et certo perlatae nuncio, sed incerto authore et sine authoris nomine, in quibus cuius rei admonear, tu ipse videbis, nam ea causa his meis inclusas misi, ut et legeres et iudicares.</s>
-					<s xml:lang="la" type="auto">Simulatur quidem pietatis studium et amor in patriam nostram; at quia omnia <foreign xml:lang="el">ανονθμα</foreign> sunt, valde mihi sunt suspecta.</s>
-					<s xml:lang="la" type="auto">Fortasse veterator aliquis aut nebulo has nugas fingere et talis tragoedię imagine terrere nos adeoque coercere voluit, ne auxiliis adversum impios institutis nostros ulla parte coniungeremus; quanquam interim fatear prudentiae esse, in tam lubricis exulceratorum temporum articulis nullam admonitionem temere reiicere.</s>
-					<s xml:lang="la" type="auto">Sed tuum erit iudicare.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Hoc vespere missae sunt ad celebrem quendam mercatorem ex nostris literae mihi inscriptae et certo perlatae nuncio, sed incerto authore et sine authoris nomine, in quibus cuius rei admonear, tu ipse videbis, nam ea causa his meis inclusas misi, ut et legeres et iudicares.</s>
+					<s n="3" xml:lang="la" type="auto">Simulatur quidem pietatis studium et amor in patriam nostram; at quia omnia <foreign xml:lang="el">ανονθμα</foreign> sunt, valde mihi sunt suspecta.</s>
+					<s n="4" xml:lang="la" type="auto">Fortasse veterator aliquis aut nebulo has nugas fingere et talis tragoedię imagine terrere nos adeoque coercere voluit, ne auxiliis adversum impios institutis nostros ulla parte coniungeremus; quanquam interim fatear prudentiae esse, in tam lubricis exulceratorum temporum articulis nullam admonitionem temere reiicere.</s>
+					<s n="5" xml:lang="la" type="auto">Sed tuum erit iudicare.</s>
+					<s n="6" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sangalli, 20. decembris, anno 1550.</s>
+					<s n="7" xml:lang="la" type="auto">Sangalli, 20. decembris, anno 1550.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ioachimus Vadianus.</s>
+					<s n="8" xml:lang="la" type="auto">Ioachimus Vadianus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Domino Henrycho Bullingero, suo.</s>
+					<s n="9" xml:lang="la" type="auto">Domino Henrycho Bullingero, suo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="10" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

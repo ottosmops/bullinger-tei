@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6397/33</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 369,58b</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 369,58b</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -54,51 +57,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2211">
 				<correspAction type="sent">
-					<persName ref="person#3304" cert="high">
+					<!--
+					<persName ref="person3304" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Utenhove der Jüngere</surname>
-						<addName type="main">Utenhove d.J., Johannes</addName>
+						<persName type="main" ref="person3302>Utenhove d.J., Johannes</addName>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person3304" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1554-03-01" cert="low"><note>Bullinger auf Adressblatt: 1564; oder nach ten Doornkaat (1552?)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2212"/>
-					<ref type="prev_chronologically" target="files.xml#2210"/>
-					<ref type="next_correspondence" target="files.xml#6085"/>
-					<ref type="prev_correspondence" target="files.xml#1615"/>
-					<ref type="next_correspondence_request" target="files.xml#6085"/>
-					<ref type="prev_correspondence_request" target="files.xml#1615"/>
+					<ref type="next_chronologically" target="file2212"/>
+					<ref type="prev_chronologically" target="file2210"/>
+					<ref type="next_correspondence" target="file6085"/>
+					<ref type="prev_correspondence" target="file1615"/>
+					<ref type="next_correspondence_request" target="file6085"/>
+					<ref type="prev_correspondence_request" target="file1615"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#6085"/>
-					<ref type="prev_same_sender" target="files.xml#1615"/>
-					<ref type="next_same_addressee" target="files.xml#2216"/>
-					<ref type="prev_same_addressee" target="files.xml#2209"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6085"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1615"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2216"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2209"/>
-					<ref type="parent" target="files.xml#6052"/>
+					<ref type="next_same_sender" target="file6085"/>
+					<ref type="prev_same_sender" target="file1615"/>
+					<ref type="next_same_addressee" target="file2216"/>
+					<ref type="prev_same_addressee" target="file2209"/>
+					<ref type="next_with_sender_as_addressee" target="file6085"/>
+					<ref type="prev_with_sender_as_addressee" target="file1615"/>
+					<ref type="next_with_addressee_as_sender" target="file2216"/>
+					<ref type="prev_with_addressee_as_sender" target="file2209"/>
+					<ref type="parent" target="file6052"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,45 +117,45 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. P.</s>
-					<s xml:lang="la" type="auto">Ut primum Basilaeam veni, clarissime domine ad praeceptor in Christo observandissime, prima mihi cura fuit, ut de hospitio commodo inquirerem.</s>
-					<s xml:lang="la" type="auto">Accessi primum ad d. Oporinum, cui literas tuas dedi.</s>
+					<s n="1" xml:lang="la" type="auto">S. P.</s>
+					<s n="2" xml:lang="la" type="auto">Ut primum Basilaeam veni, clarissime domine ad praeceptor in Christo observandissime, prima mihi cura fuit, ut de hospitio commodo inquirerem.</s>
+					<s n="3" xml:lang="la" type="auto">Accessi primum ad d. Oporinum, cui literas tuas dedi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Iis perlectis de statu vestrarum rerum diligenter quaesivit; dixi bene omnia se habere.</s>
-					<s xml:lang="la" type="auto">Primo colloquio obtulit mihi hospitium ac postulavit quadraginta coronatos.</s>
+					<s n="4" xml:lang="la" type="auto">Iis perlectis de statu vestrarum rerum diligenter quaesivit; dixi bene omnia se habere.</s>
+					<s n="5" xml:lang="la" type="auto">Primo colloquio obtulit mihi hospitium ac postulavit quadraginta coronatos.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Egi gratias pro tam prompto et benevolo in me animo; at nihil temere faciendum esse putavi, cum ea res multum incommoditatis secum ferat, si sinistre, plurimum contra commoditatis, si dextre ac fauste eveniat.</s>
-					<s xml:lang="la" type="auto">Adeundum mihi prius existimavi Celium, quia pater cupiebat, ut, (si quando Basilęam me conferrem) cum eo essem.</s>
+					<s n="6" xml:lang="la" type="auto">Egi gratias pro tam prompto et benevolo in me animo; at nihil temere faciendum esse putavi, cum ea res multum incommoditatis secum ferat, si sinistre, plurimum contra commoditatis, si dextre ac fauste eveniat.</s>
+					<s n="7" xml:lang="la" type="auto">Adeundum mihi prius existimavi Celium, quia pater cupiebat, ut, (si quando Basilęam me conferrem) cum eo essem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ille omnem suam operam et studium pollicitus est; at ob varias causas se me recipere in familiam non posse aiebat, quarum praecipua erat victus tenuitas et summa omnium rerum caritas.</s>
-					<s xml:lang="la" type="auto">Tandem auxilio amicorum quorundam recepit me vir quidam probus et mediocriter eruditus; apud eum sum, donec de commodo aliquo hospitio mihi prospectum fuerit.</s>
-					<s xml:lang="la" type="auto">Quomodocunque tamen succedat, video me multo incommodius tractatum iri (quod ad victum attinet) quam apud te, clarissime vir; sed, (ut scis), paucissimis sum contentus.</s>
-					<s xml:lang="la" type="auto">Habes rerum mearum statum; dei optimi maximi beneficio bene valeo, et pro voto succedunt omnia.</s>
+					<s n="8" xml:lang="la" type="auto">Ille omnem suam operam et studium pollicitus est; at ob varias causas se me recipere in familiam non posse aiebat, quarum praecipua erat victus tenuitas et summa omnium rerum caritas.</s>
+					<s n="9" xml:lang="la" type="auto">Tandem auxilio amicorum quorundam recepit me vir quidam probus et mediocriter eruditus; apud eum sum, donec de commodo aliquo hospitio mihi prospectum fuerit.</s>
+					<s n="10" xml:lang="la" type="auto">Quomodocunque tamen succedat, video me multo incommodius tractatum iri (quod ad victum attinet) quam apud te, clarissime vir; sed, (ut scis), paucissimis sum contentus.</s>
+					<s n="11" xml:lang="la" type="auto">Habes rerum mearum statum; dei optimi maximi beneficio bene valeo, et pro voto succedunt omnia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cum beneficia, quae a te maxima accepi, optime domine, sedulo mecum repeto, non videor mihi unquam respondere posse; sed reficit me tua singularis et propemodum divina humanitas, cui magni muneris instar est animus gratus et gratificari omnibus modis gestiens; hunc quaeso, mi domine, accipias et tibi me tui esse observantissimum persuadeas.</s>
+					<s n="12" xml:lang="la" type="auto">Cum beneficia, quae a te maxima accepi, optime domine, sedulo mecum repeto, non videor mihi unquam respondere posse; sed reficit me tua singularis et propemodum divina humanitas, cui magni muneris instar est animus gratus et gratificari omnibus modis gestiens; hunc quaeso, mi domine, accipias et tibi me tui esse observantissimum persuadeas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bene vale, praestantissime domine, in Christo Iesu.</s>
-					<s xml:lang="la" type="auto">Uxorem (si grave non sit) meis verbis reverenter saluta et filias<foreign xml:lang="el">ΑλΗΞιαν και ∆ςροΞεαν</foreign> ac generos tuos clarissimos d. Lavaterum ac Symlerum.</s>
+					<s n="13" xml:lang="la" type="auto">Bene vale, praestantissime domine, in Christo Iesu.</s>
+					<s n="14" xml:lang="la" type="auto">Uxorem (si grave non sit) meis verbis reverenter saluta et filias<foreign xml:lang="el">ΑλΗΞιαν και ∆ςροΞεαν</foreign> ac generos tuos clarissimos d. Lavaterum ac Symlerum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Etiam atque etiam vale in Christo, praeceptor colendissime.</s>
+					<s n="15" xml:lang="la" type="auto">Etiam atque etiam vale in Christo, praeceptor colendissime.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ipsis calendis martii festinanter Basilea.</s>
-					<s xml:lang="la" type="auto">Tuae p[raestantiae] observantissimus Ioannes Utenhovius.</s>
+					<s n="16" xml:lang="la" type="auto">Ipsis calendis martii festinanter Basilea.</s>
+					<s n="17" xml:lang="la" type="auto">Tuae p[raestantiae] observantissimus Ioannes Utenhovius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Doctrina ac virtute clarissimo domino d. Henrico Bullingero, ecclesiae Tigurinae episcopo, domino et praeceptori suo multum colendo.</s>
-					<s xml:lang="la" type="auto">Tigurum.</s>
+					<s n="18" xml:lang="la" type="auto">Doctrina ac virtute clarissimo domino d. Henrico Bullingero, ecclesiae Tigurinae episcopo, domino et praeceptori suo multum colendo.</s>
+					<s n="19" xml:lang="la" type="auto">Tigurum.</s>
 				</p>
 				<p>
 					<note type="remark">[Darunter von Bullingers Hand:]</note>
-					<s xml:lang="la" type="auto">Ioan[n]es Utenhovius 1564.</s>
+					<s n="20" xml:lang="la" type="auto">Ioan[n]es Utenhovius 1564.</s>
 				</p>
 			</div>
 		</body>

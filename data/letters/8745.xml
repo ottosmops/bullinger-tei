@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7758/5</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="fr">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 381,1347</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 381,1347</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -62,14 +65,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Übersetzung" xml:lang="fr">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Übersetzung">E II 381,1348</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">= lat. Übersetzung (nicht von Gwalthers Hand)</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Übersetzung">E II 381,1348</idno>
+						<idno subtype="Hinweis">= lat. Übersetzung (nicht von Gwalthers Hand)</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -78,55 +84,41 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8745">
 				<correspAction type="sent">
-					<persName ref="person#918" cert="low">
+					<!--
+					<persName ref="person918" cert="low">
 						<forename cert="low">Gaspard</forename>
 						<surname cert="low">de Coligny</surname>
 						<note type="Person">«de Chastillon»</note>
 						<graphic type="portrait" url="portraits/918_Coligny_Gaspard.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Gaspard_II._de_Coligny"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11867661X"/>
 					</persName>
-					<place source="#100" cert="low">
-						<settlement>Châtillon-sur-Loing</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>47.824021 2.845216</geo>
-					</place>
+					-->
+					<persName ref="person918" cert="low"/>
+					<place source="place100" cert="low"/>
 					<date when="1572-01-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8746"/>
-					<ref type="prev_chronologically" target="files.xml#8744"/>
-					<ref type="next_correspondence" target="files.xml#8797"/>
+					<ref type="next_chronologically" target="file8746"/>
+					<ref type="prev_chronologically" target="file8744"/>
+					<ref type="next_correspondence" target="file8797"/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#8797"/>
+					<ref type="next_correspondence_reaction" target="file8797"/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#8346"/>
-					<ref type="next_same_addressee" target="files.xml#8748"/>
-					<ref type="prev_same_addressee" target="files.xml#8527"/>
+					<ref type="prev_same_sender" target="file8346"/>
+					<ref type="next_same_addressee" target="file8748"/>
+					<ref type="prev_same_addressee" target="file8527"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#8346"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8748"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8527"/>
+					<ref type="prev_with_sender_as_addressee" target="file8346"/>
+					<ref type="next_with_addressee_as_sender" target="file8748"/>
+					<ref type="prev_with_addressee_as_sender" target="file8527"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -135,29 +127,32 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="8745/Autograph/00 E_II_381__fol__1347_r_.tif" n="1"/>
+		<graphic url="8745/Autograph/01 E_II_381__fol__1347_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="fr">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="fr" type="manual">Messieurs, ayant entendu l'accord de vostre eglise avec la nostre je ne puys que je ne m'en rejouisse... vous cougnoissant combien cela peult prouffiter a l adu... de la gloire de dieu de laquelle massurant que vous estes fort zeles et affectionez, je me doubte point que n'ayez bien bonne volonte de tenir main a la conservation des accord et ne aut meme pour l'affection que nous y devons tous avoir.</s>
-					<s xml:lang="fr" type="manual">Je ne laisseray a vous en prier bien fort de ma part - pareillement a l alliance que j entends que sa ma[jes]te veult faire p... -.. cesser.</s>
+					<s n="1" xml:lang="fr" type="manual">Messieurs, ayant entendu l'accord de vostre eglise avec la nostre je ne puys que je ne m'en rejouisse... vous cougnoissant combien cela peult prouffiter a l adu... de la gloire de dieu de laquelle massurant que vous estes fort zeles et affectionez, je me doubte point que n'ayez bien bonne volonte de tenir main a la conservation des accord et ne aut meme pour l'affection que nous y devons tous avoir.</s>
+					<s n="2" xml:lang="fr" type="manual">Je ne laisseray a vous en prier bien fort de ma part - pareillement a l alliance que j entends que sa ma[jes]te veult faire p... -.. cesser.</s>
 				</p>
 				<p>
-					<s xml:lang="fr" type="manual">Par de la... chose que vous povez aussi penser qui peult revenir a ung grand bien pour toutes les eglises reformees et en general pour tous les gens de bien.</s>
-					<s xml:lang="fr" type="manual">Et si en recougnoissant vous voyez que je puisse faire quelque chose pour vous soit en general ou en particulier, asseurez vous que je m'y emploieray de tres bon cueur du quel me recommendant vo tres bonnes graces et pruves je supplieray sur.. le... vous continuer et augmenter.</s>
-					<s xml:lang="fr" type="manual">Messieurs en sante les siennes. (?)</s>
-					<s xml:lang="fr" type="manual">De Ch[astil]lon ce 13e jour de janvier 1572.</s>
+					<s n="3" xml:lang="fr" type="manual">Par de la... chose que vous povez aussi penser qui peult revenir a ung grand bien pour toutes les eglises reformees et en general pour tous les gens de bien.</s>
+					<s n="4" xml:lang="fr" type="manual">Et si en recougnoissant vous voyez que je puisse faire quelque chose pour vous soit en general ou en particulier, asseurez vous que je m'y emploieray de tres bon cueur du quel me recommendant vo tres bonnes graces et pruves je supplieray sur.. le... vous continuer et augmenter.</s>
+					<s n="5" xml:lang="fr" type="manual">Messieurs en sante les siennes. (?)</s>
+					<s n="6" xml:lang="fr" type="manual">De Ch[astil]lon ce 13e jour de janvier 1572.</s>
 				</p>
 				<p>
 					<note>[Von hier an autograph:]</note>
-					<s xml:lang="fr" type="manual">Je vous pry messieurs que comme vous voyes que le diable ne dort pas pour mal faire que de v[ost]re part aussy vous veillies pour rempresses des saincts et pratiques et avoir memoire de moy en voz bonnes prieres.</s>
+					<s n="7" xml:lang="fr" type="manual">Je vous pry messieurs que comme vous voyes que le diable ne dort pas pour mal faire que de v[ost]re part aussy vous veillies pour rempresses des saincts et pratiques et avoir memoire de moy en voz bonnes prieres.</s>
 				</p>
 				<p>
-					<s xml:lang="fr" type="manual">V[ost]re entierement bon amy Chastillon.</s>
+					<s n="8" xml:lang="fr" type="manual">V[ost]re entierement bon amy Chastillon.</s>
 				</p>
 				<p>
-					<s xml:lang="fr" type="manual">A mess[ieu]res les ministres de l'eglise de Zurich.</s>
+					<s n="9" xml:lang="fr" type="manual">A mess[ieu]res les ministres de l'eglise de Zurich.</s>
 				</p>
 			</div>
 		</body>

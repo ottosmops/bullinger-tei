@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 40,332</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 40,332</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -36,14 +39,17 @@
 				</msDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 84,70</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">an J. Wolf, 11. Feb. 1555</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 84,70</idno>
+						<idno subtype="Hinweis">an J. Wolf, 11. Feb. 1555</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -52,46 +58,59 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/392">
 				<correspAction type="sent">
-					<persName ref="person#3007" cert="low">
+					<!--
+					<persName ref="person3007" cert="low">
 						<forename cert="low">Lelio</forename>
 						<surname cert="low">Sozzini</surname>
-						<addName type="main">Sozzini (Socinus), Lelio</addName>
+						<persName type="main" ref="person8101>Sozzini (Socinus), Lelio</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Lelio_Sozzini"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118615823"/>
 					</persName>
-					<date when="1549-00-00" cert="low"><note>siehe: nach 11. Feb. / vor 10. Aug. 1555  (= ID 2549)</note></date>
+					-->
+					<persName ref="person3007" cert="low"/>
+					<date notBefore="1549-01-01" notAfter="1549-12-12" cert="low"><note>siehe: nach 11. Feb. / vor 10. Aug. 1555  (= ID 2549)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<persName ref="person#3988" cert="low">
+					-->
+					<persName ref="person495" cert="low"/>
+					<!--
+					<persName ref="person3988" cert="low">
 						<forename cert="low">Johannes</forename>
 						<surname cert="low">Wolf</surname>
 						<graphic type="portrait" url="portraits/3988_Wolf_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johann_Wolf_(Theologe,_1521)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/122064283"/>
 					</persName>
+					-->
+					<persName ref="person3988" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#766"/>
-					<ref type="prev_chronologically" target="files.xml#391"/>
+					<ref type="next_chronologically" target="file766"/>
+					<ref type="prev_chronologically" target="file391"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#582"/>
-					<ref type="prev_same_sender" target="files.xml#391"/>
-					<ref type="next_same_addressee" target="files.xml#1034"/>
-					<ref type="prev_same_addressee" target="files.xml#12794"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#582"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#391"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1034"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12794"/>
-					<ref type="parent" target="files.xml#2549"/>
+					<ref type="next_same_sender" target="file582"/>
+					<ref type="prev_same_sender" target="file391"/>
+					<ref type="next_same_addressee" target="file1034"/>
+					<ref type="prev_same_addressee" target="file12794"/>
+					<ref type="next_with_sender_as_addressee" target="file582"/>
+					<ref type="prev_with_sender_as_addressee" target="file391"/>
+					<ref type="next_with_addressee_as_sender" target="file1034"/>
+					<ref type="prev_with_addressee_as_sender" target="file12794"/>
+					<ref type="parent" target="file2549"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

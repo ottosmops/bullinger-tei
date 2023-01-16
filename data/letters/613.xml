@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1609</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 337,411</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 337,411</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -58,38 +61,47 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 70,215</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 70,215</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 368,223</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">Genf, Archives d'Etat, RCP 82f.</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 368,223</idno>
+						<idno subtype="Hinweis">Genf, Archives d'Etat, RCP 82f.</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 71,47</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 71,47</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -98,55 +110,41 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/613">
 				<correspAction type="sent">
-					<persName ref="person#540" cert="high">
+					<!--
+					<persName ref="person540" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Calvin</surname>
 						<graphic type="portrait" url="portraits/540_Calvin_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Calvin"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118518534"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11418245"/>
 					</persName>
-					<place source="#167" cert="high">
-						<settlement>Genf</settlement>
-						<district>Genève</district>
-						<country>Schweiz</country>
-						<geo>46.20222 6.14569</geo>
-					</place>
+					-->
+					<persName ref="person540" cert="high"/>
+					<place source="place167" cert="high"/>
 					<date when="1549-08-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#614"/>
-					<ref type="prev_chronologically" target="files.xml#612"/>
-					<ref type="next_correspondence" target="files.xml#666"/>
-					<ref type="prev_correspondence" target="files.xml#578"/>
-					<ref type="next_correspondence_request" target="files.xml#2088"/>
+					<ref type="next_chronologically" target="file614"/>
+					<ref type="prev_chronologically" target="file612"/>
+					<ref type="next_correspondence" target="file666"/>
+					<ref type="prev_correspondence" target="file578"/>
+					<ref type="next_correspondence_request" target="file2088"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#666"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#578"/>
-					<ref type="next_same_sender" target="files.xml#630"/>
-					<ref type="prev_same_sender" target="files.xml#565"/>
-					<ref type="next_same_addressee" target="files.xml#666"/>
-					<ref type="prev_same_addressee" target="files.xml#578"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#630"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#565"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#666"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#578"/>
+					<ref type="next_correspondence_reaction" target="file666"/>
+					<ref type="prev_correspondence_reaction" target="file578"/>
+					<ref type="next_same_sender" target="file630"/>
+					<ref type="prev_same_sender" target="file565"/>
+					<ref type="next_same_addressee" target="file666"/>
+					<ref type="prev_same_addressee" target="file578"/>
+					<ref type="next_with_sender_as_addressee" target="file630"/>
+					<ref type="prev_with_sender_as_addressee" target="file565"/>
+					<ref type="next_with_addressee_as_sender" target="file666"/>
+					<ref type="prev_with_addressee_as_sender" target="file578"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -165,38 +163,38 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Ornatissimis viris et fidelibus Christi servis Tigurinae ecclesiae pastoribus et doctoribus, charissimis symmistis et observandis fratribus, Ioannes Calvinus S. D.</s>
+					<s n="1" xml:lang="la" type="auto">Ornatissimis viris et fidelibus Christi servis Tigurinae ecclesiae pastoribus et doctoribus, charissimis symmistis et observandis fratribus, Ioannes Calvinus S. D.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tametsi eadem saepius de re vobiscum ago, non tamen puto mihi timendum esse, ne importunus esse videar.</s>
-					<s xml:lang="la" type="auto">Quando iisdem utrisque studium est, fieri non potest, quin vobis probetur, quod ago.</s>
+					<s n="2" xml:lang="la" type="auto">Tametsi eadem saepius de re vobiscum ago, non tamen puto mihi timendum esse, ne importunus esse videar.</s>
+					<s n="3" xml:lang="la" type="auto">Quando iisdem utrisque studium est, fieri non potest, quin vobis probetur, quod ago.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quod autem paulo acrius insto, huc me assiduae bonorum virorum flagitationes stimulant.</s>
-					<s xml:lang="la" type="auto">Iam aliquoties monui levi de causa, non tamen sine praetextu offendi permultos, quod de sacramentis diversum a vobis nescio quid tradere videar.</s>
-					<s xml:lang="la" type="auto">Vestram ecclesiam, quae tot praeclaris dotibus ornata est, merito reverentur, nostrae quoque et mihi forsan privatim aliquid deferunt; ita cupiunt scriptis nostris in discenda pietatis doctrina adiuvari, ne qua dissensionis species eorum progressus moretur.</s>
-					<s xml:lang="la" type="auto">Huic offensioni tollendae cum nullum putarem aptius fore remedium, quam si familiari colloquio rationem communiter iniremus testandae nostrae consensionis.</s>
-					<s xml:lang="la" type="auto">Hac de causa profectionem, ut scitis, ad vos suscepi, et venerandus collega noster Gulielmus Farellus, ut est indeffessus Christi miles, qui mihi dux alioqui et author erat, comitem se adiungere non recusavit, ut inter nos conveniat, testari quid vere ac fideliter utrinque possumus.</s>
-					<s xml:lang="la" type="auto">Sed quia rem, ut est, non omnibus persuadeo, mihi plurimum dolet anxios vel saltem suspensos manere, quorum tranquillitati melius consultum optarem.</s>
-					<s xml:lang="la" type="auto">Proinde, ut initio praefatus sum, nihil intempestivum facere me arbitror, si urgeo, ut publicum aliquod eius, quae inter nos constat, consensionis testimonium extet.</s>
+					<s n="4" xml:lang="la" type="auto">Quod autem paulo acrius insto, huc me assiduae bonorum virorum flagitationes stimulant.</s>
+					<s n="5" xml:lang="la" type="auto">Iam aliquoties monui levi de causa, non tamen sine praetextu offendi permultos, quod de sacramentis diversum a vobis nescio quid tradere videar.</s>
+					<s n="6" xml:lang="la" type="auto">Vestram ecclesiam, quae tot praeclaris dotibus ornata est, merito reverentur, nostrae quoque et mihi forsan privatim aliquid deferunt; ita cupiunt scriptis nostris in discenda pietatis doctrina adiuvari, ne qua dissensionis species eorum progressus moretur.</s>
+					<s n="7" xml:lang="la" type="auto">Huic offensioni tollendae cum nullum putarem aptius fore remedium, quam si familiari colloquio rationem communiter iniremus testandae nostrae consensionis.</s>
+					<s n="8" xml:lang="la" type="auto">Hac de causa profectionem, ut scitis, ad vos suscepi, et venerandus collega noster Gulielmus Farellus, ut est indeffessus Christi miles, qui mihi dux alioqui et author erat, comitem se adiungere non recusavit, ut inter nos conveniat, testari quid vere ac fideliter utrinque possumus.</s>
+					<s n="9" xml:lang="la" type="auto">Sed quia rem, ut est, non omnibus persuadeo, mihi plurimum dolet anxios vel saltem suspensos manere, quorum tranquillitati melius consultum optarem.</s>
+					<s n="10" xml:lang="la" type="auto">Proinde, ut initio praefatus sum, nihil intempestivum facere me arbitror, si urgeo, ut publicum aliquod eius, quae inter nos constat, consensionis testimonium extet.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ego vero capita, de quibus inter nos contulimus, et breviter colligere et ordine digerere operę precium esse existimavi, ut, si nobis meum consilium probabitur, cuivis veluti in tabula cernere liceat, quid inter nos et actum et transactum fuerit.</s>
+					<s n="11" xml:lang="la" type="auto">Ego vero capita, de quibus inter nos contulimus, et breviter colligere et ordine digerere operę precium esse existimavi, ut, si nobis meum consilium probabitur, cuivis veluti in tabula cernere liceat, quid inter nos et actum et transactum fuerit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Certe bona fide me ex sermonibus nostris retulisse, quaecumque subiiciam, vos testes mihi fore confido.</s>
-					<s xml:lang="la" type="auto">Nos vero, me et Farellum dico, pari vobiscum studio sinceram omnique fuco et astutia vacuam perspicuitatem quesiisse pii lectores, ut spero, animadvertent, quamquam simul admonitos esse velim nihil hic contineri, quod non collegae etiam nostri, quotquot vel sub reipublicae Genevensis ditione vel in comitatu Neocomensi Christo serviunt, sua subscriptione approbaverint.</s>
+					<s n="12" xml:lang="la" type="auto">Certe bona fide me ex sermonibus nostris retulisse, quaecumque subiiciam, vos testes mihi fore confido.</s>
+					<s n="13" xml:lang="la" type="auto">Nos vero, me et Farellum dico, pari vobiscum studio sinceram omnique fuco et astutia vacuam perspicuitatem quesiisse pii lectores, ut spero, animadvertent, quamquam simul admonitos esse velim nihil hic contineri, quod non collegae etiam nostri, quotquot vel sub reipublicae Genevensis ditione vel in comitatu Neocomensi Christo serviunt, sua subscriptione approbaverint.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valete, praestantissimi viri et mihi vere ex animo colendi fratres.</s>
-					<s xml:lang="la" type="auto">Dominus vos spiritu suo regere pergat in ecclesiae suae aedificattionem vestrisque laboribus benedicat!</s>
+					<s n="14" xml:lang="la" type="auto">Valete, praestantissimi viri et mihi vere ex animo colendi fratres.</s>
+					<s n="15" xml:lang="la" type="auto">Dominus vos spiritu suo regere pergat in ecclesiae suae aedificattionem vestrisque laboribus benedicat!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Genevae calendis augusti anno domini 1549.</s>
+					<s n="16" xml:lang="la" type="auto">Genevae calendis augusti anno domini 1549.</s>
 				</p>
 				<p>
 					<note>[Es folgt unmittelbar der Wortlaut des Consensus Tigurinus:]</note>
-					<s xml:lang="la" type="auto">Consensionis capita etc.</s>
+					<s n="17" xml:lang="la" type="auto">Consensionis capita etc.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>

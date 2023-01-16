@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1983"/>
-				<idno type="ISBN">ISBN 3-290-11531-3</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=223</idno>
+				<idno subtype="ISBN">ISBN 3-290-11531-3</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=223</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 3</title>
+				<title subtype="publication">HBBW III</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">3</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#441">Schaffhausen</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">Korrespondenzen VII, Nr.123a.</idno>
-						<repository ref="archive#76">
+						<!--
+						<repository ref="archive76">
 							<name>Schaffhausen StA</name>
 							<ref target="https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Regierung/Staatskanzlei/Staatsarchiv-3936-DE.html"/>
 						</repository>
+						<settlement ref="place441">Schaffhausen</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive76"/>
+						<idno subtype="Autograph">Korrespondenzen VII, Nr.123a.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,8 +49,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Auf Wunsch <persName ref="28">Bucers</persName> wird
-								<persName ref="78">Beat Gering</persName> an die Schaffhauser empfohlen.
+								Auf Wunsch <persName ref="person28">Bucers</persName> wird
+								<persName ref="person78">Beat Gering</persName> an die Schaffhauser empfohlen.
 							</p>
 						</summary>
 					</msContents>
@@ -57,69 +60,53 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10254">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<persName ref="person#1753" cert="high">
+					-->
+					<persName ref="person495" cert="high"/>
+					<!--
+					<persName ref="person1753" cert="high">
 						<forename cert="high">Leo</forename>
 						<surname cert="high">Jud</surname>
 						<graphic type="portrait" url="portraits/1753_Jud_Leo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Leo_Jud"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118558528"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11423330"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person1753" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1533-05-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#14" cert="high">Bürgermeister</name>
-						<place source="#441" cert="high">
-							<settlement>Schaffhausen</settlement>
-							<district>Schaffhausen</district>
-							<country>Schweiz</country>
-							<geo>47.69732 8.63493</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="high">Räte</name>
-						<place source="#441" cert="high">
-							<settlement>Schaffhausen</settlement>
-							<district>Schaffhausen</district>
-							<country>Schweiz</country>
-							<geo>47.69732 8.63493</geo>
-						</place>
-					</roleName>
-					<place source="#441" cert="low">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					<personGrp ref="role28" role="Bürgermeister"/>
+					<personGrp ref="role0" role="Räte"/>
+					<place source="place441" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10255"/>
-					<ref type="prev_chronologically" target="files.xml#10253"/>
-					<ref type="next_correspondence" target="files.xml#10894"/>
+					<ref type="next_chronologically" target="file10255"/>
+					<ref type="prev_chronologically" target="file10253"/>
+					<ref type="next_correspondence" target="file10894"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#10894"/>
+					<ref type="next_correspondence_request" target="file10894"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#11550"/>
+					<ref type="next_correspondence_reaction" target="file11550"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10366"/>
-					<ref type="prev_same_sender" target="files.xml#10250"/>
-					<ref type="next_same_addressee" target="files.xml#10358"/>
-					<ref type="prev_same_addressee" target="files.xml#10076"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10366"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10250"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10358"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10076"/>
+					<ref type="next_same_sender" target="file10366"/>
+					<ref type="prev_same_sender" target="file10250"/>
+					<ref type="next_same_addressee" target="file10358"/>
+					<ref type="prev_same_addressee" target="file10076"/>
+					<ref type="next_with_sender_as_addressee" target="file10366"/>
+					<ref type="prev_with_sender_as_addressee" target="file10250"/>
+					<ref type="next_with_addressee_as_sender" target="file10358"/>
+					<ref type="prev_with_addressee_as_sender" target="file10076"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -133,24 +120,24 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Ersamm, fromm, fürsichtig, wyß herr burgermeister unnd gnedig lieb herrenn, unser früntlicher gruͦtz, williger dienst und was wir üch ze eeren und gfallen möchtind, sye üch bevor.</s>
+					<s n="1" xml:lang="de" type="auto">Ersamm, fromm, fürsichtig, wyß herr burgermeister unnd gnedig lieb herrenn, unser früntlicher gruͦtz, williger dienst und was wir üch ze eeren und gfallen möchtind, sye üch bevor.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Allß dann der ersamm und hochgelert d. <persName ref="28">Martin Butzer</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="28">Martin Bucer</persName> war vom 18. bis 21. April 1533 in <placeName ref="943">Schaffhausen</placeName>, ließ sich über die Situation der Kirche informieren (s. oben <ref target="file#10245">Nr. 214</ref>) und versprach, bei der Neubesetzung einer Helserstelle behilflich zu sein (s. Bucer an Bürgermeister und Rat von <placeName ref="943">Schaffhausen</placeName>, Zürich, 7. Mai 1533; <placeName ref="943">Schaffhausen</placeName> StA, Korrespondenzen VII, <ref target="file#10154">Nr. 123</ref>).</note> unß zöugern<note xml:id="fn3" type="footnote" n="3">über den Vorzeiger (Lexer III 1158).</note> diseß brieffs h. Batten <persName ref="78">Gerung</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="28">Bucer</persName> hatte <persName ref="78">Beat Gering</persName>, den er wenige Tage zuvor grüßen ließ (s. oben S. 122, 39), offenbar in Zürich kennengelernt.</note>, pürtig vonn <placeName ref="125">Münster</placeName> imm Ergöw<note xml:id="fn5" type="footnote" n="5"><placeName ref="125">Beromünster</placeName> (Kt. Luzern).</note> gelägen, gevragt und hochlich bezüget vonn imm, siner leer und läbens halben kundtschafft ze gäben, habend wir imm by unsern trüwen beckendt, das unß nützid vonn genamptem herren Batten ze wüssen sye dann alle eer, zucht, guͦts, gschicklickeyt und tugendt; das er besonders vonn gott begnadet sye, sin wort klaar fürzetragen mitt züchten; das er<pb type="edition" next="126"/> ouch ze Dietickon inn der graffschafft <placeName ref="85">Baden</placeName>, da er jüngst predicant gewäsen, wol christlich und rächt geleert und geläpt habe.</s>
-					<s xml:lang="de" type="auto">Da dannen gheiner uneeren halben nitt kummen sye<note xml:id="fn6" type="footnote" n="6">Von dort habe er nicht wegen unehrenhafter Handlungen weggehen müssen.</note>, diewyl ouch die biderben lüt ze Dietickon noch niemands lieber hättind, wo es deß <persName ref="2131">Schönbrunners</persName> vogts halben gesin möchte<note xml:id="fn7" type="footnote" n="7">wenn es Vogt <persName ref="2131">Schönbrunners</persName> (s. oben S. 110, Anm. 4) wegen möglich wäre.</note>, dann disen etc.</s>
-					<s xml:lang="de" type="auto">Und diewyl der hochgeleert d. M[artin] <persName ref="28">Butzer</persName> diser kundschafft begärt<note xml:id="fn8" type="footnote" n="8">Wohl ein während <persName ref="28">Bucers</persName> Zürcher Aufenthalt mündlich gestelltes Begehren; ein diesbezüglicher Brief ist nicht vorhanden.</note>, daß wir die uwer ersammen wyßheyt zuͦschrybend, sind wir willig xin.</s>
-					<s xml:lang="de" type="auto">Bittend ouch, uwer wyßheyt wölle iro disen frommen, redlichen man befolhen haben, der ouch (wo üch hieran nitt vernuͤgte) gnuͦgsamme kundtschafft von unsern gnedigenn herren von Zurych uffbringen wirt.</s>
-					<s xml:lang="de" type="auto">Hiemitt befelhen wir u[wer] e[rsammen] w[yßheyt] göttlichen gnad.</s>
+					<s n="2" xml:lang="de" type="auto">Allß dann der ersamm und hochgelert d. <persName ref="person28">Martin Butzer</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="person28">Martin Bucer</persName> war vom 18. bis 21. April 1533 in <placeName ref="place943">Schaffhausen</placeName>, ließ sich über die Situation der Kirche informieren (s. oben <ref target="file10245">Nr. 214</ref>) und versprach, bei der Neubesetzung einer Helserstelle behilflich zu sein (s. Bucer an Bürgermeister und Rat von <placeName ref="place943">Schaffhausen</placeName>, Zürich, 7. Mai 1533; <placeName ref="place943">Schaffhausen</placeName> StA, Korrespondenzen VII, <ref target="file10154">Nr. 123</ref>).</note> unß zöugern<note xml:id="fn3" type="footnote" n="3">über den Vorzeiger (Lexer III 1158).</note> diseß brieffs h. Batten <persName ref="person78">Gerung</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="person28">Bucer</persName> hatte <persName ref="person78">Beat Gering</persName>, den er wenige Tage zuvor grüßen ließ (s. oben S. 122, 39), offenbar in Zürich kennengelernt.</note>, pürtig vonn <placeName ref="place125">Münster</placeName> imm Ergöw<note xml:id="fn5" type="footnote" n="5"><placeName ref="place125">Beromünster</placeName> (Kt. Luzern).</note> gelägen, gevragt und hochlich bezüget vonn imm, siner leer und läbens halben kundtschafft ze gäben, habend wir imm by unsern trüwen beckendt, das unß nützid vonn genamptem herren Batten ze wüssen sye dann alle eer, zucht, guͦts, gschicklickeyt und tugendt; das er besonders vonn gott begnadet sye, sin wort klaar fürzetragen mitt züchten; das er<pb type="edition" next="126"/> ouch ze Dietickon inn der graffschafft Baden, da er jüngst predicant gewäsen, wol christlich und rächt geleert und geläpt habe.</s>
+					<s n="3" xml:lang="de" type="auto">Da dannen gheiner uneeren halben nitt kummen sye<note xml:id="fn6" type="footnote" n="6">Von dort habe er nicht wegen unehrenhafter Handlungen weggehen müssen.</note>, diewyl ouch die biderben lüt ze Dietickon noch niemands lieber hättind, wo es deß <persName ref="person2131">Schönbrunners</persName> vogts halben gesin möchte<note xml:id="fn7" type="footnote" n="7">wenn es Vogt <persName ref="person2131">Schönbrunners</persName> (s. oben S. 110, Anm. 4) wegen möglich wäre.</note>, dann disen etc.</s>
+					<s n="4" xml:lang="de" type="auto">Und diewyl der hochgeleert d. M[artin] <persName ref="person28">Butzer</persName> diser kundschafft begärt<note xml:id="fn8" type="footnote" n="8">Wohl ein während <persName ref="person28">Bucers</persName> Zürcher Aufenthalt mündlich gestelltes Begehren; ein diesbezüglicher Brief ist nicht vorhanden.</note>, daß wir die uwer ersammen wyßheyt zuͦschrybend, sind wir willig xin.</s>
+					<s n="5" xml:lang="de" type="auto">Bittend ouch, uwer wyßheyt wölle iro disen frommen, redlichen man befolhen haben, der ouch (wo üch hieran nitt vernuͤgte) gnuͦgsamme kundtschafft von unsern gnedigenn herren von Zurych uffbringen wirt.</s>
+					<s n="6" xml:lang="de" type="auto">Hiemitt befelhen wir u[wer] e[rsammen] w[yßheyt] göttlichen gnad.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum Zürych, deß 14. tag meyens imm 1533.</s>
+					<s n="7" xml:lang="de" type="auto">Datum Zürych, deß 14. tag meyens imm 1533.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Uwer wyßheyt willige diener deß worts der statt Zürych, <persName ref="2131">Heinrich</persName> Bullinger und <persName ref="114">Leo Jud</persName> etc.</s>
+					<s n="8" xml:lang="de" type="auto">Uwer wyßheyt willige diener deß worts der statt Zürych, Heinrich Bullinger und <persName ref="person114">Leo Jud</persName> etc.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Den ersammen, frommen und wysen herren, h. burgermeistern unnd radt der statt <placeName ref="943">Schaffhusen</placeName>, unsern gnedigenn, lieben herrenn.</s>
+					<s n="9" xml:lang="de" type="auto">Den ersammen, frommen und wysen herren, h. burgermeistern unnd radt der statt <placeName ref="place943">Schaffhusen</placeName>, unsern gnedigenn, lieben herrenn.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1982"/>
-				<idno type="ISBN">ISBN 3-290-11467-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=60</idno>
+				<idno subtype="ISBN">ISBN 3-290-11467-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=60</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 2</title>
+				<title subtype="publication">HBBW II</title>
 				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">2</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 441,739</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 441,739</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -56,39 +59,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10089">
 				<correspAction type="sent">
-					<persName ref="person#1250" cert="high">
+					<!--
+					<persName ref="person1250" cert="high">
 						<forename cert="high">Johann Valentin</forename>
 						<surname cert="high">Furtmüller</surname>
-						<addName type="main">Furtmüller (Fortmüller), Johann Valentin</addName>
+						<persName type="main" ref="person8083>Furtmüller (Fortmüller), Johann Valentin</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johann_Valentin_Furtm%C3%BCller"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089451849"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415023"/>
 					</persName>
+					-->
+					<persName ref="person1250" cert="high"/>
 					<date when="1532-01-26" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10090"/>
-					<ref type="prev_chronologically" target="files.xml#10088"/>
-					<ref type="next_correspondence" target="files.xml#12277"/>
+					<ref type="next_chronologically" target="file10090"/>
+					<ref type="prev_chronologically" target="file10088"/>
+					<ref type="next_correspondence" target="file12277"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#12277"/>
+					<ref type="next_correspondence_request" target="file12277"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#12277"/>
+					<ref type="next_same_sender" target="file12277"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10090"/>
-					<ref type="prev_same_addressee" target="files.xml#10091"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12277"/>
+					<ref type="next_same_addressee" target="file10090"/>
+					<ref type="prev_same_addressee" target="file10091"/>
+					<ref type="next_with_sender_as_addressee" target="file12277"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10090"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10091"/>
+					<ref type="next_with_addressee_as_sender" target="file10090"/>
+					<ref type="prev_with_addressee_as_sender" target="file10091"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -97,32 +110,35 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="10089/Autograph/00 E_II_441__fol__739_r_.tif" n="1"/>
+		<graphic url="10089/Autograph/01 E_II_441__fol__739_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Non possum mihi non gratulari, colendissime Heinryce, quod me pauperrimum homuntionem et abiectissimum tanto favore prosequeris, ut me non verbis<note xml:id="fn4" type="footnote" n="4">Bullinger hat möglicherweise <persName ref="72">Furtmüller</persName> geschrieben. Ein entsprechender Brief ist allerdings nicht erhalten.</note> solum, sed factis etiam consolaris, et id potissimum his diebus pro mea necessitate.</s>
-					<s xml:lang="la" type="auto">Mihi enim persuadeo te ad hoc mihi misisse librum tuum<note xml:id="fn5" type="footnote" n="5">Es ist nicht klar, um welches Werk Bullingers es sich handelt. Am ehesten käme «Von dem unverschämten Frevel der Wiedertäufer», 1531 (HBBibl I 28) in Frage.</note> donum gratissimum, quo declarares tuam erga me benevolentiam, ut non diffidem, quin habeam amicos, quos mei non pudeat, etiamsi per pristinam in me excitatam tragediam oprobrium<note xml:id="fn6" type="footnote" n="6">Vgl. Ps 31,12.</note> et abiectio sim plebis etc., et ut hunc tuum librum, quid facto sit opus, consulem, quoties congrediuntur meae afflictiones, quibus subinde exercet me dominus deus etc.</s>
+					<s n="2" xml:lang="la" type="auto">Non possum mihi non gratulari, colendissime Heinryce, quod me pauperrimum homuntionem et abiectissimum tanto favore prosequeris, ut me non verbis<note xml:id="fn4" type="footnote" n="4">Bullinger hat möglicherweise <persName ref="person72">Furtmüller</persName> geschrieben. Ein entsprechender Brief ist allerdings nicht erhalten.</note> solum, sed factis etiam consolaris, et id potissimum his diebus pro mea necessitate.</s>
+					<s n="3" xml:lang="la" type="auto">Mihi enim persuadeo te ad hoc mihi misisse librum tuum<note xml:id="fn5" type="footnote" n="5">Es ist nicht klar, um welches Werk Bullingers es sich handelt. Am ehesten käme «Von dem unverschämten Frevel der Wiedertäufer», 1531 (HBBibl I 28) in Frage.</note> donum gratissimum, quo declarares tuam erga me benevolentiam, ut non diffidem, quin habeam amicos, quos mei non pudeat, etiamsi per pristinam in me excitatam tragediam oprobrium<note xml:id="fn6" type="footnote" n="6">Vgl. Ps 31,12.</note> et abiectio sim plebis etc., et ut hunc tuum librum, quid facto sit opus, consulem, quoties congrediuntur meae afflictiones, quibus subinde exercet me dominus deus etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Habeo igitur tuę humanitati gratias quas possum maximas.</s>
-					<s xml:lang="la" type="auto">Utinam liceat, refferre etiam pro tua dignitate, quas debeo, et videas me huius doni tui minime fastidiendi habere rationem et te operam non lusisse etc.</s>
-					<s xml:lang="la" type="auto">Cetera, que scribere volui, libet viva voce<note xml:id="fn7" type="footnote" n="7">Vgl. Adagia, 1,2,17 (LB II 76f); Otto 378, Nr. 1936.</note>, ubi dabitur, tibi dicere.<pb type="edition" next="41"/></s>
+					<s n="4" xml:lang="la" type="auto">Habeo igitur tuę humanitati gratias quas possum maximas.</s>
+					<s n="5" xml:lang="la" type="auto">Utinam liceat, refferre etiam pro tua dignitate, quas debeo, et videas me huius doni tui minime fastidiendi habere rationem et te operam non lusisse etc.</s>
+					<s n="6" xml:lang="la" type="auto">Cetera, que scribere volui, libet viva voce<note xml:id="fn7" type="footnote" n="7">Vgl. Adagia, 1,2,17 (LB II 76f); Otto 378, Nr. 1936.</note>, ubi dabitur, tibi dicere.<pb type="edition" next="41"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, colendissime domine, comendatum me habendo.</s>
-					<s xml:lang="la" type="auto">26. ianuarii.</s>
+					<s n="7" xml:lang="la" type="auto">Vale, colendissime domine, comendatum me habendo.</s>
+					<s n="8" xml:lang="la" type="auto">26. ianuarii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus <persName ref="72">Ioannes Valentinus Furtmüller</persName>.</s>
+					<s n="9" xml:lang="la" type="auto">Tuus Ioannes <persName ref="person72">Valentinus Furtmüller</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Pio et docto viro Heinrycho Bullingero, Tigurinę urbis episcopo vigilantissimo.</s>
+					<s n="10" xml:lang="la" type="auto">Pio et docto viro Heinrycho Bullingero, Tigurinę urbis episcopo vigilantissimo.</s>
 				</p>
 			</div>
 		</body>

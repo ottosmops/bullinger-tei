@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2011"/>
-				<idno type="ISBN">ISBN 978-3-290-17565-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2022</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17565-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2022</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 14</title>
+				<title subtype="publication">HBBW XIV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Henrich, Rainer; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">14</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph (Entwurf)" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#339">Neuenburg</settlement>
-						<institution>Bibliothèque des Pasteurs</institution>
-						<idno type="Autograph (Entwurf)">X 9</idno>
-						<repository ref="archive#65">
+						<!--
+						<repository ref="archive65">
 							<name>Neuenburg BP</name>
 							<ref target="http://bpun.unine.ch/"/>
 						</repository>
+						<settlement ref="place339">Neuenburg</settlement>
+						<institution>Bibliothèque des Pasteurs</institution>
+						-->
+						<repository ref="archive65"/>
+						<idno subtype="Autograph (Entwurf)">X 9</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -50,7 +53,7 @@
 								Verfahren ausgesprochen; dass nun, trotz langer Geduld, die Angelegenheit zur Entscheidungsfindung vor die
 								[anderen] Gemeinden gelangen muss, bedauern [die Neuenburger]; sie übersenden [eine Beschreibung] ihrer
 								bisherigen Vorgehensweise und haben auch dem Gegner erlaubt, seine Anschauung vorzubringen [s. unten in
-								<ref target="file#12070">Nr. 2023</ref>]. Die Väter und Brüder [der anderen Gemeinden] haben nun die Aufgabe,
+								<ref target="file12070">Nr. 2023</ref>]. Die Väter und Brüder [der anderen Gemeinden] haben nun die Aufgabe,
 								diesbezüglich ihr Urteil zu äußern, um den bisherigen Brauch zu wahren, falls dieser richtig ist; [die
 								Pfarrer Neuenburgs] würden sich wünschen, von den Gegnern ein Beispiel zu sehen, um daraus zu lernen, statt
 								derjenigen Dinge beraubt zu werden, deren Verlust großen Schaden anrichten würde. Die Zensur wird
@@ -81,43 +84,28 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12069">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#339" cert="high">
-							<settlement>Neuenburg</settlement>
-							<district>Neuchâtel</district>
-							<country>Schweiz</country>
-							<geo>46.99179 6.931</geo>
-						</place>
-					</roleName>
-					<place source="#339" cert="high">
-						<settlement>Neuenburg</settlement>
-						<district>Neuchâtel</district>
-						<country>Schweiz</country>
-						<geo>46.99179 6.931</geo>
-					</place>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<place source="place339" cert="high"/>
 					<date when="1544-10-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<orgName type="institution">
-						<name type="plural" ref="org#4" cert="high">Evangelische Kirchen</name>
-					</orgName>
+					<orgName ref="org8" role="Evangelische Kirchen"/>"
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12070"/>
-					<ref type="prev_chronologically" target="files.xml#12068"/>
+					<ref type="next_chronologically" target="file12070"/>
+					<ref type="prev_chronologically" target="file12068"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#12133"/>
-					<ref type="prev_same_sender" target="files.xml#11661"/>
+					<ref type="next_same_sender" target="file12133"/>
+					<ref type="prev_same_sender" target="file11661"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12133"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11661"/>
+					<ref type="next_with_sender_as_addressee" target="file12133"/>
+					<ref type="prev_with_sender_as_addressee" target="file11661"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>

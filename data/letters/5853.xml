@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6296/140</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 38,158</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 38,158</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,29 +50,32 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5853">
 				<correspAction type="sent">
-					<persName ref="person#752" cert="high">
+					<!--
+					<persName ref="person752" cert="high">
 						<forename cert="high">Andres</forename>
 						<surname cert="high">Czikowski</surname>
 					</persName>
-					<place source="#284" cert="high">
-						<settlement>Leipzig</settlement>
-						<district>Sachsen</district>
-						<country>Deutschland</country>
-						<geo>51.33962 12.37129</geo>
-					</place>
+					-->
+					<persName ref="person752" cert="high"/>
+					<place source="place284" cert="high"/>
 					<date when="1563-08-25" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5854"/>
-					<ref type="prev_chronologically" target="files.xml#5852"/>
+					<ref type="next_chronologically" target="file5854"/>
+					<ref type="prev_chronologically" target="file5852"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -78,12 +84,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#5857"/>
-					<ref type="prev_same_addressee" target="files.xml#5849"/>
+					<ref type="next_same_addressee" target="file5857"/>
+					<ref type="prev_same_addressee" target="file5849"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5857"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5849"/>
+					<ref type="next_with_addressee_as_sender" target="file5857"/>
+					<ref type="prev_with_addressee_as_sender" target="file5849"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -100,18 +106,18 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. P. D.</s>
-					<s xml:lang="la" type="auto">Quandoquidem, vir longe charissime, scivi me rem gratam tibi facturum, si aliquid literarum ad tuam excellentiam<note type="misc">e 2. l...</note> darem, ideo praetermittere nolui, quin aliquid per mercatores, qui ad Francfordienses nundinas proficiscuntur, tuae excel[l]entiae scriberem et benevolentiam illam in nos collatam sepius commemorarem, quamvis nihil mihi singulare erat scribendum.</s>
-					<s xml:lang="la" type="auto">Sed ne videar me plane ingratum et oblitum beneficiorum in nos collatorum, sciat tua excel[l]entia nos gratia dei prospera valetudine uti.</s>
-					<s xml:lang="la" type="auto">Sed Laure[n]tio praeceptori nostro, non est admodum salubris aer; nam egrotabat.</s>
-					<s xml:lang="la" type="auto">Nulla nova audivimus ex Polonia, quae ad tuam excel[l]entiam perscribenda iudicaremus.</s>
-					<s xml:lang="la" type="auto">Igitur rogo tuam excel[l]entiam, ne me accuset negligentiae in scribendo, quoniam studiis impediebar.</s>
-					<s xml:lang="la" type="auto">Plura mihi non sund scribenda ad tuam excel[l]entiam.</s>
-					<s xml:lang="la" type="auto">Cupio tuam excel[l]entiam bene valere.</s>
+					<s n="1" xml:lang="la" type="auto">S. P. D.</s>
+					<s n="2" xml:lang="la" type="auto">Quandoquidem, vir longe charissime, scivi me rem gratam tibi facturum, si aliquid literarum ad tuam excellentiam<note type="misc">e 2. l...</note> darem, ideo praetermittere nolui, quin aliquid per mercatores, qui ad Francfordienses nundinas proficiscuntur, tuae excel[l]entiae scriberem et benevolentiam illam in nos collatam sepius commemorarem, quamvis nihil mihi singulare erat scribendum.</s>
+					<s n="3" xml:lang="la" type="auto">Sed ne videar me plane ingratum et oblitum beneficiorum in nos collatorum, sciat tua excel[l]entia nos gratia dei prospera valetudine uti.</s>
+					<s n="4" xml:lang="la" type="auto">Sed Laure[n]tio praeceptori nostro, non est admodum salubris aer; nam egrotabat.</s>
+					<s n="5" xml:lang="la" type="auto">Nulla nova audivimus ex Polonia, quae ad tuam excel[l]entiam perscribenda iudicaremus.</s>
+					<s n="6" xml:lang="la" type="auto">Igitur rogo tuam excel[l]entiam, ne me accuset negligentiae in scribendo, quoniam studiis impediebar.</s>
+					<s n="7" xml:lang="la" type="auto">Plura mihi non sund scribenda ad tuam excel[l]entiam.</s>
+					<s n="8" xml:lang="la" type="auto">Cupio tuam excel[l]entiam bene valere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Data Libsiae 25. augusti anno domini 1563.</s>
-					<s xml:lang="la" type="auto">Filius tu[ae] ex[cellentiae] obsequentissimus Andreas Czikowski.</s>
+					<s n="9" xml:lang="la" type="auto">Data Libsiae 25. augusti anno domini 1563.</s>
+					<s n="10" xml:lang="la" type="auto">Filius tu[ae] ex[cellentiae] obsequentissimus Andreas Czikowski.</s>
 				</p>
 				<p>
 					<note>[Ohne Adresse.]</note>

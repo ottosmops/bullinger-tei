@@ -9,10 +9,10 @@
 				<publisher>Basler Buch- und Antiquariatshandlung</publisher>
 				<pubPlace>Basel</pubPlace>
 				<date when="1904"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1666</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1666</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Bullingers Korrespondenz mit den Graubündnern</title>
+				<title subtype="publication">Graubünden, Korr.</title>
 				<biblScope type="author">Bullinger, H.; Schiess, T.</biblScope>
 				<biblScope type="edition">Bullingers Korrespondenz mit den Graubündnern</biblScope>
 				<biblScope type="page">48</biblScope>
@@ -20,13 +20,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,29</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,29</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -39,9 +42,9 @@
 								Briefe; wie das Zeitalter, so sind die Menschen: Die gegenwärtige Zeit ist<pb type="edition" next="192"/>
 								geprägt von Veränderungen, und ebenso haben die Menschen das Verlangen nach neuen Dingen. Dank für
 								Bullingers zuvorkommende Aufmerksamkeit. Von den turbulenten Verhältnissen [in
-								<placeName ref="24">Graubünden</placeName>] berichtet der Bote [Nikolaus Pfister?] besser
+								<placeName ref="place24">Graubünden</placeName>] berichtet der Bote [Nikolaus Pfister?] besser
 								mündlich. Grüße an Bullinger und seine Kollegen, auch von
-								<persName ref="21">Johannes Blasius</persName>.
+								<persName ref="person21">Johannes Blasius</persName>.
 							</p>
 						</summary>
 					</msContents>
@@ -58,42 +61,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11709">
 				<correspAction type="sent">
-					<persName ref="person#654" cert="high">
+					<!--
+					<persName ref="person654" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Comander</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Comander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118713841"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413826"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person654" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1542-09-26" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11710"/>
-					<ref type="prev_chronologically" target="files.xml#11708"/>
-					<ref type="next_correspondence" target="files.xml#11784"/>
-					<ref type="prev_correspondence" target="files.xml#11696"/>
-					<ref type="next_correspondence_request" target="files.xml#11784"/>
-					<ref type="prev_correspondence_request" target="files.xml#11696"/>
+					<ref type="next_chronologically" target="file11710"/>
+					<ref type="prev_chronologically" target="file11708"/>
+					<ref type="next_correspondence" target="file11784"/>
+					<ref type="prev_correspondence" target="file11696"/>
+					<ref type="next_correspondence_request" target="file11784"/>
+					<ref type="prev_correspondence_request" target="file11696"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11508"/>
-					<ref type="next_same_sender" target="files.xml#11784"/>
-					<ref type="prev_same_sender" target="files.xml#11696"/>
-					<ref type="next_same_addressee" target="files.xml#11710"/>
-					<ref type="prev_same_addressee" target="files.xml#11704"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11784"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11696"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11710"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11704"/>
+					<ref type="prev_correspondence_reaction" target="file11508"/>
+					<ref type="next_same_sender" target="file11784"/>
+					<ref type="prev_same_sender" target="file11696"/>
+					<ref type="next_same_addressee" target="file11710"/>
+					<ref type="prev_same_addressee" target="file11704"/>
+					<ref type="next_with_sender_as_addressee" target="file11784"/>
+					<ref type="prev_with_sender_as_addressee" target="file11696"/>
+					<ref type="next_with_addressee_as_sender" target="file11710"/>
+					<ref type="prev_with_addressee_as_sender" target="file11704"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -102,25 +112,28 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="11709/Autograph/00 E_II_365__fol__29_r_.tif" n="1"/>
+		<graphic url="11709/Autograph/01 E_II_365__fol__29_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et vit innocentiam a Domino.</s>
-					<s xml:lang="la" type="auto">Binas ab humanitate tua accepi literas, doctissime Bullingere, unas per fratrem Iheronimum Neapolitanum, alteras per Coelium Secundum, quibus me de pluribus certiorem fecisti.</s>
-					<s xml:lang="la" type="auto">Quale seculum, tales sunt et homines; seculum praesens subitis immutationibus refertum et stupendum est, ita et homines novarum rerum cupidissimi.</s>
-					<s xml:lang="la" type="auto">Ego tibi magnas habeo gratias pro hac diligentia tua tam officiosa erga me immeritum.</s>
-					<s xml:lang="la" type="auto">De rebus nostris tam afflictis quam disiectis et turbatis tibi scriberem, nisi tabellarius ipse tam ydoneus ad boc officium mihi contigisset, qui omnia multo melius coram referre posset.</s>
-					<s xml:lang="la" type="auto">Ex illo nempe omnia ad amussim et certissima audies.</s>
-					<s xml:lang="la" type="auto">Tu me deinceps ut hucusque commendatum habeas et ex me salutem dicas fratribus.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">Ex Rhetiae <placeName ref="243">Curia</placeName>, sexto kalendas Octobris 1542.</s>
-					<s xml:lang="la" type="auto">Salutat te et omnes fratres Tigurinos frater noster <persName ref="1499">Iohannes</persName> Blasius.</s>
-					<s xml:lang="la" type="auto">Tibi deditissimus <persName ref="43">Iohannes Comander</persName>.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et vit innocentiam a Domino.</s>
+					<s n="2" xml:lang="la" type="auto">Binas ab humanitate tua accepi literas, doctissime Bullingere, unas per fratrem Iheronimum Neapolitanum, alteras per Coelium Secundum, quibus me de pluribus certiorem fecisti.</s>
+					<s n="3" xml:lang="la" type="auto">Quale seculum, tales sunt et homines; seculum praesens subitis immutationibus refertum et stupendum est, ita et homines novarum rerum cupidissimi.</s>
+					<s n="4" xml:lang="la" type="auto">Ego tibi magnas habeo gratias pro hac diligentia tua tam officiosa erga me immeritum.</s>
+					<s n="5" xml:lang="la" type="auto">De rebus nostris tam afflictis quam disiectis et turbatis tibi scriberem, nisi tabellarius ipse tam ydoneus ad boc officium mihi contigisset, qui omnia multo melius coram referre posset.</s>
+					<s n="6" xml:lang="la" type="auto">Ex illo nempe omnia ad amussim et certissima audies.</s>
+					<s n="7" xml:lang="la" type="auto">Tu me deinceps ut hucusque commendatum habeas et ex me salutem dicas fratribus.</s>
+					<s n="8" xml:lang="la" type="auto">Vale.</s>
+					<s n="9" xml:lang="la" type="auto">Ex Rhetiae <placeName ref="place243">Curia</placeName>, sexto kalendas Octobris 1542.</s>
+					<s n="10" xml:lang="la" type="auto">Salutat te et omnes fratres Tigurinos frater noster Iohannes Blasius.</s>
+					<s n="11" xml:lang="la" type="auto">Tibi deditissimus <persName ref="person43">Iohannes Comander</persName>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro magistro Heinricho Bullingero, Tigurinae urbis episcopo, domino ac fratri suo observandissimo.</s>
+					<s n="12" xml:lang="la" type="auto">Clarissimo viro magistro Heinricho Bullingero, Tigurinae urbis episcopo, domino ac fratri suo observandissimo.</s>
 				</p>
 			</div>
 		</body>

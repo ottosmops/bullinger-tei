@@ -12,25 +12,28 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6446/82</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,714</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">nicht 514</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,714</idno>
+						<idno subtype="Hinweis">nicht 514</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -52,53 +55,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6135">
 				<correspAction type="sent">
-					<persName ref="person#3371" cert="high">
+					<!--
+					<persName ref="person3371" cert="high">
 						<forename cert="high">Pietro Paolo</forename>
 						<surname cert="high">Vergerio</surname>
-						<addName type="main">Vergerio, Pier Paolo</addName>
+						<persName type="main" ref="person3375>Vergerio, Pier Paolo</addName>
 						<graphic type="portrait" url="portraits/3375_Vergerio_Pietro_Paolo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Pietro_Paolo_Vergerio"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118768077"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417291"/>
 					</persName>
-					<place source="#512" cert="high">
-						<settlement>Tübingen</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>48.52266 9.05222</geo>
-					</place>
+					-->
+					<persName ref="person3371" cert="high"/>
+					<place source="place512" cert="high"/>
 					<date when="1564-05-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6136"/>
-					<ref type="prev_chronologically" target="files.xml#6134"/>
-					<ref type="next_correspondence" target="files.xml#6165"/>
-					<ref type="prev_correspondence" target="files.xml#6016"/>
-					<ref type="next_correspondence_request" target="files.xml#6165"/>
-					<ref type="prev_correspondence_request" target="files.xml#6016"/>
+					<ref type="next_chronologically" target="file6136"/>
+					<ref type="prev_chronologically" target="file6134"/>
+					<ref type="next_correspondence" target="file6165"/>
+					<ref type="prev_correspondence" target="file6016"/>
+					<ref type="next_correspondence_request" target="file6165"/>
+					<ref type="prev_correspondence_request" target="file6016"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5624"/>
-					<ref type="next_same_sender" target="files.xml#6165"/>
-					<ref type="prev_same_sender" target="files.xml#6016"/>
-					<ref type="next_same_addressee" target="files.xml#6141"/>
-					<ref type="prev_same_addressee" target="files.xml#6133"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6165"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6016"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6141"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6133"/>
+					<ref type="prev_correspondence_reaction" target="file5624"/>
+					<ref type="next_same_sender" target="file6165"/>
+					<ref type="prev_same_sender" target="file6016"/>
+					<ref type="next_same_addressee" target="file6141"/>
+					<ref type="prev_same_addressee" target="file6133"/>
+					<ref type="next_with_sender_as_addressee" target="file6165"/>
+					<ref type="prev_with_sender_as_addressee" target="file6016"/>
+					<ref type="next_with_addressee_as_sender" target="file6141"/>
+					<ref type="prev_with_addressee_as_sender" target="file6133"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -107,33 +109,36 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="6135/Autograph/00 E_II_356__fol__714_r_.tif" n="1"/>
+		<graphic url="6135/Autograph/01 E_II_356__fol__714_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Clarissime vir, salvus sis.</s>
+					<s n="1" xml:lang="la" type="auto">Clarissime vir, salvus sis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Puto non esse necesse efferre, quo sim in te animo; deus novit et Aurelius novit.</s>
-					<s xml:lang="la" type="auto">Quare non est, quod scribam pluribus.</s>
+					<s n="2" xml:lang="la" type="auto">Puto non esse necesse efferre, quo sim in te animo; deus novit et Aurelius novit.</s>
+					<s n="3" xml:lang="la" type="auto">Quare non est, quod scribam pluribus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Aurelius Curiam Rhetorum proficiscitur iussu illustrissimi principis.</s>
+					<s n="4" xml:lang="la" type="auto">Aurelius Curiam Rhetorum proficiscitur iussu illustrissimi principis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Volui autem te meis litteris invisere tamquam patrem, quem in dies magis diligo et pluris facio; tu me redama vicissim.</s>
+					<s n="5" xml:lang="la" type="auto">Volui autem te meis litteris invisere tamquam patrem, quem in dies magis diligo et pluris facio; tu me redama vicissim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Saluta mihi familiam atque scholam et deum roga pro me, quod caput est.</s>
-					<s xml:lang="la" type="auto">Tubingae 13. maii 1564.</s>
+					<s n="6" xml:lang="la" type="auto">Saluta mihi familiam atque scholam et deum roga pro me, quod caput est.</s>
+					<s n="7" xml:lang="la" type="auto">Tubingae 13. maii 1564.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vergerius tuus.</s>
+					<s n="8" xml:lang="la" type="auto">Vergerius tuus.</s>
 				</p>
 				<p>
 					<note>[Von der Adresse nur "Tiguri" erhalten:]</note>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="9" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

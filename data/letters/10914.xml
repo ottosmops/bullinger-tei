@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=874</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=874</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,68</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,68</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,11 +49,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Hat einen ersten Brief [<ref target="file#10913">Nr. 873</ref>] bereits
-								<persName ref="188">Erasmus</persName> [<persName ref="188">Schmid</persName>] ausgehändigt;
+								Hat einen ersten Brief [<ref target="file10913">Nr. 873</ref>] bereits
+								Erasmus [<persName ref="person188">Schmid</persName>] ausgehändigt;
 								schickt neu entworfene Darlegungen über die Sakramente und die Eucharistie aus der noch unvollendeten
 								Gesamtausgabe seiner Paulus-Kommentare [HBBibl I 84]. Bittet um Weiterleitung an
-								<persName ref="81">Grynäus</persName> und eventuell an <persName ref="28">Bucer</persName>.
+								<persName ref="person81">Grynäus</persName> und eventuell an <persName ref="person28">Bucer</persName>.
 							</p>
 						</summary>
 					</msContents>
@@ -60,46 +63,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10914">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1536-08-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
+					-->
+					<persName ref="person2234" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10915"/>
-					<ref type="prev_chronologically" target="files.xml#10913"/>
-					<ref type="next_correspondence" target="files.xml#10925"/>
-					<ref type="prev_correspondence" target="files.xml#10913"/>
-					<ref type="next_correspondence_request" target="files.xml#10925"/>
-					<ref type="prev_correspondence_request" target="files.xml#10913"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10926"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10911"/>
-					<ref type="next_same_sender" target="files.xml#10915"/>
-					<ref type="prev_same_sender" target="files.xml#10913"/>
-					<ref type="next_same_addressee" target="files.xml#10926"/>
-					<ref type="prev_same_addressee" target="files.xml#10911"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10915"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10913"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10926"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10911"/>
+					<ref type="next_chronologically" target="file10915"/>
+					<ref type="prev_chronologically" target="file10913"/>
+					<ref type="next_correspondence" target="file10925"/>
+					<ref type="prev_correspondence" target="file10913"/>
+					<ref type="next_correspondence_request" target="file10925"/>
+					<ref type="prev_correspondence_request" target="file10913"/>
+					<ref type="next_correspondence_reaction" target="file10926"/>
+					<ref type="prev_correspondence_reaction" target="file10911"/>
+					<ref type="next_same_sender" target="file10915"/>
+					<ref type="prev_same_sender" target="file10913"/>
+					<ref type="next_same_addressee" target="file10926"/>
+					<ref type="prev_same_addressee" target="file10911"/>
+					<ref type="next_with_sender_as_addressee" target="file10915"/>
+					<ref type="prev_with_sender_as_addressee" target="file10913"/>
+					<ref type="next_with_addressee_as_sender" target="file10926"/>
+					<ref type="prev_with_addressee_as_sender" target="file10911"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,26 +124,26 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Signaveram literas priores<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file#10913">Nr. 873</ref>.</note> easque tradideram <persName ref="188">Erasmo</persName> nostro<note xml:id="fn2" type="footnote" n="2"><persName ref="188">Erasmus Schmid</persName>.</note> cum in, mentem venit non infrugiferum futurum, si ea tibi ex opere nostro Paulino nondum perfecto<note xml:id="fn3" type="footnote" n="3">Bullinger, In omnes apostolicas epistolas commentarii, Zürich 1537 (HBBibl I 84).</note> mitterem, quae scripsi de ratione sacramentorum et eucharistia.</s>
-					<s xml:lang="la" type="auto">Istis vero novum exemplar loqupletavi; in aliis ante annos aliquot aeditis<note xml:id="fn4" type="footnote" n="4">Bullingers Kommentar zum Römerbrief (HBBibl I 42) war 1533, jener zum ersten Korintherbrief (HBBibl I 53) 1534 erstmals erschienen.</note> haec per omnia non leges.</s>
-					<s xml:lang="la" type="auto">Lege itaque, quae scripsi fol. 41 usque ad 45, et rursus, quae sunt fol. 204 usque ad 216<note xml:id="fn5" type="footnote" n="5">An den genannten Stellen handelt Bullinger ausführlich über die Sakramente (zu Rom 4, 11f; aaO, S. 41-45) und über die Eucharistie (zu 1Kor 11, 17-34; aaO, S. 202-216).</note>.</s>
-					<s xml:lang="la" type="auto">Planius et melius ego de hoc negotio dicere non possum.</s>
+					<s n="2" xml:lang="la" type="auto">Signaveram literas priores<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file10913">Nr. 873</ref>.</note> easque tradideram <persName ref="person188">Erasmo</persName> nostro<note xml:id="fn2" type="footnote" n="2"><persName ref="person188">Erasmus Schmid</persName>.</note> cum in, mentem venit non infrugiferum futurum, si ea tibi ex opere nostro Paulino nondum perfecto<note xml:id="fn3" type="footnote" n="3">Bullinger, In omnes apostolicas epistolas commentarii, Zürich 1537 (HBBibl I 84).</note> mitterem, quae scripsi de ratione sacramentorum et eucharistia.</s>
+					<s n="3" xml:lang="la" type="auto">Istis vero novum exemplar loqupletavi; in aliis ante annos aliquot aeditis<note xml:id="fn4" type="footnote" n="4">Bullingers Kommentar zum Römerbrief (HBBibl I 42) war 1533, jener zum ersten Korintherbrief (HBBibl I 53) 1534 erstmals erschienen.</note> haec per omnia non leges.</s>
+					<s n="4" xml:lang="la" type="auto">Lege itaque, quae scripsi fol. 41 usque ad 45, et rursus, quae sunt fol. 204 usque ad 216<note xml:id="fn5" type="footnote" n="5">An den genannten Stellen handelt Bullinger ausführlich über die Sakramente (zu Röm 4, 11f; aaO, S. 41-45) und über die Eucharistie (zu 1Kor 11, 17-34; aaO, S. 202-216).</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Planius et melius ego de hoc negotio dicere non possum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale et haec nostra etiam <persName ref="81">Grynaeo</persName> communica aut, si placet, ipsi etiam <persName ref="28">Bucero</persName>.</s>
+					<s n="6" xml:lang="la" type="auto">Vale et haec nostra etiam <persName ref="person81">Grynaeo</persName> communica aut, si placet, ipsi etiam <persName ref="person28">Bucero</persName>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, 4. augusti 1536.</s>
+					<s n="7" xml:lang="la" type="auto">Tiguri, 4. augusti 1536.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus tuus.</s>
+					<s n="8" xml:lang="la" type="auto">H. Bullingerus tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino <persName ref="154">Myconio</persName> suo.</s>
+					<s n="9" xml:lang="la" type="auto">Domino <persName ref="person154">Myconio</persName> suo.</s>
 				</p>
 			</div>
 		</body>

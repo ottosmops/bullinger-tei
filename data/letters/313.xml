@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1148</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Beilage" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,858</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,858</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,13 +54,16 @@
 				</msDesc>
 				<msDesc type="Beilage" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 68,93</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 68,93</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -66,53 +72,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/313">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="low">
+					<!--
+					<persName ref="person392" cert="low">
 						<forename cert="low">Ambrosius</forename>
 						<surname cert="low">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#184" cert="low">
-						<settlement>Griesenberg</settlement>
-						<district>Thurgau</district>
-						<country>Schweiz</country>
-						<geo>47.568889 9.011667</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="low"/>
+					<place source="place184" cert="low"/>
 					<date when="1548-10-21" cert="low"><note>Beilage zum Brief vom 21.10.1548 (= ID 312)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#314"/>
-					<ref type="prev_chronologically" target="files.xml#312"/>
-					<ref type="next_correspondence" target="files.xml#319"/>
-					<ref type="prev_correspondence" target="files.xml#312"/>
-					<ref type="next_correspondence_request" target="files.xml#319"/>
-					<ref type="prev_correspondence_request" target="files.xml#312"/>
-					<ref type="next_correspondence_reaction" target="files.xml#526"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#311"/>
-					<ref type="next_same_sender" target="files.xml#319"/>
-					<ref type="prev_same_sender" target="files.xml#312"/>
-					<ref type="next_same_addressee" target="files.xml#314"/>
-					<ref type="prev_same_addressee" target="files.xml#311"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#319"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#312"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#314"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#311"/>
-					<ref type="parent" target="files.xml#312"/>
+					<ref type="next_chronologically" target="file314"/>
+					<ref type="prev_chronologically" target="file312"/>
+					<ref type="next_correspondence" target="file319"/>
+					<ref type="prev_correspondence" target="file312"/>
+					<ref type="next_correspondence_request" target="file319"/>
+					<ref type="prev_correspondence_request" target="file312"/>
+					<ref type="next_correspondence_reaction" target="file526"/>
+					<ref type="prev_correspondence_reaction" target="file311"/>
+					<ref type="next_same_sender" target="file319"/>
+					<ref type="prev_same_sender" target="file312"/>
+					<ref type="next_same_addressee" target="file314"/>
+					<ref type="prev_same_addressee" target="file311"/>
+					<ref type="next_with_sender_as_addressee" target="file319"/>
+					<ref type="prev_with_sender_as_addressee" target="file312"/>
+					<ref type="next_with_addressee_as_sender" target="file314"/>
+					<ref type="prev_with_addressee_as_sender" target="file311"/>
+					<ref type="parent" target="file312"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -121,28 +126,31 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="313/Autograph/00 E_II_357__fol__858_r_.tif" n="1"/>
+		<graphic url="313/Autograph/01 E_II_357__fol__858_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Quam sint deploratę res ecclesię olim nostrę, venerandus hic et charissimus frater Hieronymus coram tibi exponet.</s>
-					<s xml:lang="la" type="auto">Tu illum una nobiscum implorare non cessabis, qui suscitat mortuos et vocat ea, que non sint, ut sint, quo nominis sui gloriam ab istis plusquam impiis adversariis vindicet.</s>
-					<s xml:lang="la" type="auto">Subinde certe in magnam spem venio magna etiamnum superesse, quę dominus cum pusillo illo grege suo acturus sit, nec frustrabor, puto, illa spe, nisi summus Christi dies instet.</s>
-					<s xml:lang="la" type="auto">Tum autem praecipue electorum victoria adversum hostes suos perspicua erit ac gloriosa, ut hinc maxima nobis consolatio adfulgeat.</s>
-					<s xml:lang="la" type="auto">Fuit Hieronymus hic noster nudiustertius in urbe, cuius qualis nunc facies sit, si cum priore illa satis honesta conferas, ipse tibi oculatus testis verius dixerit, quam ipse scribere possim.</s>
-					<s xml:lang="la" type="auto">Ora pro nobis pariter et nobiscum pro communibus omnium ecclesiarum Christi periculis, quę, si unquam prius magna, nunc certe maxima sunt, quę nimirum maximos fide viros, tales enim videbantur, adeo tangunt, alios prorsus non vertunt solum, sed plane miserabiliter subvertunt, ut verissimum esse re ipsa videamus, quod apostolus ait, non omnium esse fidem ac Christum multis esse lapidem offensionis ac petram scandali revelarique ex multorum cordibus cogitationes.</s>
-					<s xml:lang="la" type="auto">Utinam in illorum numero simus, apud quos veniens filius hominis fidem inventurus est, quique expectant dominum suum, quando revertatur a nuptiis, immo vero ex illis fidelibus servis, qui credita talenta cum insigni usura oblaturi sunt domino suo, vicissim audituri plausibilem hanc vereque iucundissimam vocem: Euge serve bone et fidelis etc.</s>
+					<s n="1" xml:lang="la" type="auto">Quam sint deploratę res ecclesię olim nostrę, venerandus hic et charissimus frater Hieronymus coram tibi exponet.</s>
+					<s n="2" xml:lang="la" type="auto">Tu illum una nobiscum implorare non cessabis, qui suscitat mortuos et vocat ea, que non sint, ut sint, quo nominis sui gloriam ab istis plusquam impiis adversariis vindicet.</s>
+					<s n="3" xml:lang="la" type="auto">Subinde certe in magnam spem venio magna etiamnum superesse, quę dominus cum pusillo illo grege suo acturus sit, nec frustrabor, puto, illa spe, nisi summus Christi dies instet.</s>
+					<s n="4" xml:lang="la" type="auto">Tum autem praecipue electorum victoria adversum hostes suos perspicua erit ac gloriosa, ut hinc maxima nobis consolatio adfulgeat.</s>
+					<s n="5" xml:lang="la" type="auto">Fuit Hieronymus hic noster nudiustertius in urbe, cuius qualis nunc facies sit, si cum priore illa satis honesta conferas, ipse tibi oculatus testis verius dixerit, quam ipse scribere possim.</s>
+					<s n="6" xml:lang="la" type="auto">Ora pro nobis pariter et nobiscum pro communibus omnium ecclesiarum Christi periculis, quę, si unquam prius magna, nunc certe maxima sunt, quę nimirum maximos fide viros, tales enim videbantur, adeo tangunt, alios prorsus non vertunt solum, sed plane miserabiliter subvertunt, ut verissimum esse re ipsa videamus, quod apostolus ait, non omnium esse fidem ac Christum multis esse lapidem offensionis ac petram scandali revelarique ex multorum cordibus cogitationes.</s>
+					<s n="7" xml:lang="la" type="auto">Utinam in illorum numero simus, apud quos veniens filius hominis fidem inventurus est, quique expectant dominum suum, quando revertatur a nuptiis, immo vero ex illis fidelibus servis, qui credita talenta cum insigni usura oblaturi sunt domino suo, vicissim audituri plausibilem hanc vereque iucundissimam vocem: Euge serve bone et fidelis etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tu bene vale, mi charissime et optime multumque venerande in Christo frater adeoque cor meum, in domino.</s>
-					<s xml:lang="la" type="auto">Salutant te diligenter et officiose cum coniuge tua mea coniunx cum pientissima sorore.</s>
-					<s xml:lang="la" type="auto">Frater nondum rediit; Zviccius cum affine Petro Schär Roram heri ad Marcellum sunt profecti.</s>
-					<s xml:lang="la" type="auto">Schärus affirmabat non commissurum se, ut insalutato te rediret; verum ita festinabat, ut scribere nihil potuerim.</s>
-					<s xml:lang="la" type="auto">Salve at tua domus, salveant egregii viri, Musculus et Gervasius, Angli illi cum quęstor Arnoldo cęterisque fratribus et amicis in domino, quorum sacris precationibus adiuvari apud Christum et cupio et spero, tuis inprimis.</s>
+					<s n="8" xml:lang="la" type="auto">Tu bene vale, mi charissime et optime multumque venerande in Christo frater adeoque cor meum, in domino.</s>
+					<s n="9" xml:lang="la" type="auto">Salutant te diligenter et officiose cum coniuge tua mea coniunx cum pientissima sorore.</s>
+					<s n="10" xml:lang="la" type="auto">Frater nondum rediit; Zviccius cum affine Petro Schär Roram heri ad Marcellum sunt profecti.</s>
+					<s n="11" xml:lang="la" type="auto">Schärus affirmabat non commissurum se, ut insalutato te rediret; verum ita festinabat, ut scribere nihil potuerim.</s>
+					<s n="12" xml:lang="la" type="auto">Salve at tua domus, salveant egregii viri, Musculus et Gervasius, Angli illi cum quęstor Arnoldo cęterisque fratribus et amicis in domino, quorum sacris precationibus adiuvari apud Christum et cupio et spero, tuis inprimis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hieronymum hunc nostrum, vere sanctum virum, quam possum, tibi commendo; si in filii ipsius negocio aliquid possis, pręsto illi, etiam mea caussa, adsis.</s>
+					<s n="13" xml:lang="la" type="auto">Hieronymum hunc nostrum, vere sanctum virum, quam possum, tibi commendo; si in filii ipsius negocio aliquid possis, pręsto illi, etiam mea caussa, adsis.</s>
 				</p>
 				<p>
 					<note type="signature">[Unterschrift fehlt.]</note>

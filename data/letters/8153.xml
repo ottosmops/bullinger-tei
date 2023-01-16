@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#474">St. Gallen</settlement>
-						<institution>Kantonsbibliothek Vadiana</institution>
-						<idno type="Autograph">XI 160a (bzw. 159c)</idno>
-						<repository ref="archive#78">
+						<!--
+						<repository ref="archive78">
 							<name>St. Gallen KB</name>
 							<ref target="https://www.sg.ch/kultur/kantonsbibliothek-vadiana.html"/>
 						</repository>
+						<settlement ref="place474">St. Gallen</settlement>
+						<institution>Kantonsbibliothek Vadiana</institution>
+						-->
+						<repository ref="archive78"/>
+						<idno subtype="Autograph">XI 160a (bzw. 159c)</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -37,50 +40,42 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8153">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#50" cert="high">Prediger</name>
-						<place source="#474" cert="high">
-							<settlement>St. Gallen</settlement>
-							<district>St.Gallen</district>
-							<country>Schweiz</country>
-							<geo>47.42391 9.37477</geo>
-						</place>
-					</roleName>
-					<place source="#474" cert="high">
-						<settlement>St. Gallen</settlement>
-						<district>St.Gallen</district>
-						<country>Schweiz</country>
-						<geo>47.42391 9.37477</geo>
-					</place>
-					<date when="1570-01-00" cert="low"><note>Datum unsicher  siehe: (1569 bald nach April 15) (= ID 7853)</note></date>
+					<personGrp ref="role0" role="Prediger"/>
+					<place source="place474" cert="high"/>
+					<date notBefore="1570-01-01" notAfter="1570-01-12" cert="low"><note>Datum unsicher  siehe: (1569 bald nach April 15) (= ID 7853)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8158"/>
-					<ref type="prev_chronologically" target="files.xml#8126"/>
+					<ref type="next_chronologically" target="file8158"/>
+					<ref type="prev_chronologically" target="file8126"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#7862"/>
+					<ref type="prev_correspondence" target="file7862"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#7862"/>
+					<ref type="prev_correspondence_request" target="file7862"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#7852"/>
-					<ref type="next_same_sender" target="files.xml#9533"/>
-					<ref type="prev_same_sender" target="files.xml#7862"/>
-					<ref type="next_same_addressee" target="files.xml#8131"/>
-					<ref type="prev_same_addressee" target="files.xml#8120"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9533"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#7862"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8131"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8120"/>
-					<ref type="parent" target="files.xml#7853"/>
-					<ref type="parent" target="files.xml#7852"/>
+					<ref type="prev_correspondence_reaction" target="file7852"/>
+					<ref type="next_same_sender" target="file9533"/>
+					<ref type="prev_same_sender" target="file7862"/>
+					<ref type="next_same_addressee" target="file8131"/>
+					<ref type="prev_same_addressee" target="file8120"/>
+					<ref type="next_with_sender_as_addressee" target="file9533"/>
+					<ref type="prev_with_sender_as_addressee" target="file7862"/>
+					<ref type="next_with_addressee_as_sender" target="file8131"/>
+					<ref type="prev_with_addressee_as_sender" target="file8120"/>
+					<ref type="parent" target="file7853"/>
+					<ref type="parent" target="file7852"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

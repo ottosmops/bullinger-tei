@@ -12,25 +12,28 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3099</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Original" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Original">E II 337,554</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">mit aut. Unterschrift</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Original">E II 337,554</idno>
+						<idno subtype="Hinweis">mit aut. Unterschrift</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -55,14 +58,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#311">Marburg</settlement>
-						<institution>Hessisches Landesarchiv Abteilung Staatsarchiv</institution>
-						<idno type="Kopie">PA 1797 (3, 1797), fo 61-62v (62r leer)</idno>
-						<repository ref="archive#61">
+						<!--
+						<repository ref="archive61">
 							<name>Marburg HStA</name>
-							<note type="Mikrofilm">IRG</note>
 							<ref target="https://landesarchiv.hessen.de/"/>
 						</repository>
+						<settlement ref="place311">Marburg</settlement>
+						<institution>Hessisches Landesarchiv Abteilung Staatsarchiv</institution>
+						-->
+						<repository ref="archive61"/>
+						<idno subtype="Kopie">PA 1797 (3, 1797), fo 61-62v (62r leer)</idno>
+						<idno subtype="Mikrofilm">IRG</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -73,14 +79,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 79,80</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Kassel LMB, 4° Ms hist. litt. 19</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 79,80</idno>
+						<idno subtype="Hinweis">Kassel LMB, 4° Ms hist. litt. 19</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -89,52 +98,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1846">
 				<correspAction type="sent">
-					<persName ref="person#1872" cert="high">
+					<!--
+					<persName ref="person1872" cert="high">
 						<forename cert="high">Philipp</forename>
 						<surname cert="high">Landgraf von Hessen</surname>
-						<addName type="main">von Hessen, Philipp I. («der Großmütige»)</addName>
-						<graphic type="portrait" url="portraits/8019_von_Hessen_Philipp_I.jpg"/>
+						<persName type="main" ref="person8019>von Hessen, Philipp I. («der Großmütige»)</addName>
+						<graphic type="portrait" url="portraits/1871_von_Hessen_Philipp_I.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Philipp_I._(Hessen)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11859382X"/>
 					</persName>
-					<place source="#311" cert="high">
-						<settlement>Marburg</settlement>
-						<district>Hessen</district>
-						<country>Deutschland</country>
-						<geo>50.80904 8.77069</geo>
-					</place>
+					-->
+					<persName ref="person1872" cert="high"/>
+					<place source="place311" cert="high"/>
 					<date when="1553-04-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1847"/>
-					<ref type="prev_chronologically" target="files.xml#1845"/>
-					<ref type="next_correspondence" target="files.xml#1868"/>
-					<ref type="prev_correspondence" target="files.xml#1834"/>
-					<ref type="next_correspondence_request" target="files.xml#4323"/>
-					<ref type="prev_correspondence_request" target="files.xml#1834"/>
-					<ref type="next_correspondence_reaction" target="files.xml#1868"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1823"/>
-					<ref type="next_same_sender" target="files.xml#4323"/>
-					<ref type="prev_same_sender" target="files.xml#1834"/>
-					<ref type="next_same_addressee" target="files.xml#1850"/>
-					<ref type="prev_same_addressee" target="files.xml#1837"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4323"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1834"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1850"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1837"/>
+					<ref type="next_chronologically" target="file1847"/>
+					<ref type="prev_chronologically" target="file1845"/>
+					<ref type="next_correspondence" target="file1868"/>
+					<ref type="prev_correspondence" target="file1834"/>
+					<ref type="next_correspondence_request" target="file4323"/>
+					<ref type="prev_correspondence_request" target="file1834"/>
+					<ref type="next_correspondence_reaction" target="file1868"/>
+					<ref type="prev_correspondence_reaction" target="file1823"/>
+					<ref type="next_same_sender" target="file4323"/>
+					<ref type="prev_same_sender" target="file1834"/>
+					<ref type="next_same_addressee" target="file1850"/>
+					<ref type="prev_same_addressee" target="file1837"/>
+					<ref type="next_with_sender_as_addressee" target="file4323"/>
+					<ref type="prev_with_sender_as_addressee" target="file1834"/>
+					<ref type="next_with_addressee_as_sender" target="file1850"/>
+					<ref type="prev_with_addressee_as_sender" target="file1837"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -145,35 +153,35 @@
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
 	<facsimile>
-		<graphic url="1846/Autograph/00 E_II_337__fol__554_r_.tif" n="1"/>
-		<graphic url="1846/Autograph/01 E_II_337__fol__554_v_.tif" n="2"/>
+		<graphic url="1846/Original/00 E_II_337__fol__554_r_.tif" n="1"/>
+		<graphic url="1846/Original/01 E_II_337__fol__554_v_.tif" n="2"/>
 	</facsimile>
 	<text xml:lang="de">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Philips, vonn gots gnadenn landgrave zu Hessenn, grave zu Catzenellnpogen etc.</s>
+					<s n="1" xml:lang="de" type="auto">Philips, vonn gots gnadenn landgrave zu Hessenn, grave zu Catzenellnpogen etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Wurdiger unnd hochgelarter, lieber besonnder, es hat Theobaldus Thamerus unns geschriebenn, darauff wir ime geanthwortet unnd er unns widder geschriebenn, darauff wir ime zum andern mahl geanthwortet, wie hienebenn unser diener euch verlesenn lassenn wirdet.</s>
-					<s xml:lang="de" type="auto">Daruf wollenn wir euch nicht verhalttenn, das wir gegenwertigem unnserm diener solliche schrifften alle zugestellt unnd inen beneben Theobaldo zu Philippo Melanchtoni, Erhardo Schneppio zu Jehne und Danieli Greisern zu Dreßden geschickt gehapt unnd an sie gnediglich begeert, das sie mit ime conversiren wolten, ob er widderumb vonn seinem irthumb zur warheit pracht werden möchte.</s>
-					<s xml:lang="de" type="auto">Welchs sie auch also gethan; er Theobaldus ist aber auff seinem irthumb verharret unnd sich nicht darvon weisen lassen wollen.</s>
-					<s xml:lang="de" type="auto">Dweill wir nhun ewer schrifften, buchlein unnd predigen gelesen, habenn wir darauß befunden unnd soviel vermerckt, das ir der heiligenn schrifft erfharenn unnd derselbenn ein recht iudicium unnd verstandt hapt, auch darin sonderlich geleert seit.</s>
-					<s xml:lang="de" type="auto">So haben wir vor gut angesehenn, inen Theobaldum auch zu uch zu schickenn.</s>
+					<s n="2" xml:lang="de" type="auto">Wurdiger unnd hochgelarter, lieber besonnder, es hat Theobaldus Thamerus unns geschriebenn, darauff wir ime geanthwortet unnd er unns widder geschriebenn, darauff wir ime zum andern mahl geanthwortet, wie hienebenn unser diener euch verlesenn lassenn wirdet.</s>
+					<s n="3" xml:lang="de" type="auto">Daruf wollenn wir euch nicht verhalttenn, das wir gegenwertigem unnserm diener solliche schrifften alle zugestellt unnd inen beneben Theobaldo zu Philippo Melanchtoni, Erhardo Schneppio zu Jehne und Danieli Greisern zu Dreßden geschickt gehapt unnd an sie gnediglich begeert, das sie mit ime conversiren wolten, ob er widderumb vonn seinem irthumb zur warheit pracht werden möchte.</s>
+					<s n="4" xml:lang="de" type="auto">Welchs sie auch also gethan; er Theobaldus ist aber auff seinem irthumb verharret unnd sich nicht darvon weisen lassen wollen.</s>
+					<s n="5" xml:lang="de" type="auto">Dweill wir nhun ewer schrifften, buchlein unnd predigen gelesen, habenn wir darauß befunden unnd soviel vermerckt, das ir der heiligenn schrifft erfharenn unnd derselbenn ein recht iudicium unnd verstandt hapt, auch darin sonderlich geleert seit.</s>
+					<s n="6" xml:lang="de" type="auto">So haben wir vor gut angesehenn, inen Theobaldum auch zu uch zu schickenn.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Demnach ist an euch unnser gnedigs begerenn, ir wollet durch gotliche hulff allen muglichen vleiß thun, ob der almechtig got seine gnad verleihenn unnd er widderumb vonn seinem irthumb zu der rechten erkantnuß der warheit pracht werdenn möchte; dann er dannost ein gelerter mensch unnd inn seinem lebenn messig ist.</s>
+					<s n="7" xml:lang="de" type="auto">Demnach ist an euch unnser gnedigs begerenn, ir wollet durch gotliche hulff allen muglichen vleiß thun, ob der almechtig got seine gnad verleihenn unnd er widderumb vonn seinem irthumb zu der rechten erkantnuß der warheit pracht werdenn möchte; dann er dannost ein gelerter mensch unnd inn seinem lebenn messig ist.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Das wirt got belhonen, unnd wir wollenns gegen euch inn gnadenn erkennen, euch dem herrenn hiemit befhelende.</s>
-					<s xml:lang="de" type="auto">Datum Marpurg am 14ten aprilis anno etc. 53.</s>
+					<s n="8" xml:lang="de" type="auto">Das wirt got belhonen, unnd wir wollenns gegen euch inn gnadenn erkennen, euch dem herrenn hiemit befhelende.</s>
+					<s n="9" xml:lang="de" type="auto">Datum Marpurg am 14ten aprilis anno etc. 53.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Philips l[antgraf] z[u] Hessen etc. subscripsit.</s>
+					<s n="10" xml:lang="la" type="auto">Philips l[antgraf] z[u] Hessen etc. subscripsit.</s>
 				</p>
 				<p>
 					<note type="remark">[Darunter von anderer Hand:]</note>
-					<s xml:lang="la" type="auto">An m. H. Bullinger.</s>
+					<s n="11" xml:lang="la" type="auto">An m. H. Bullinger.</s>
 				</p>
 			</div>
 		</body>

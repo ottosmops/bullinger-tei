@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1015</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 368,237</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 368,237</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,14 +44,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 63,82</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">nur Hinweis bei 1547 Feb. 4.</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 63,82</idno>
+						<idno subtype="Hinweis">nur Hinweis bei 1547 Feb. 4.</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -57,50 +63,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/218">
 				<correspAction type="sent">
-					<persName ref="person#4005" cert="high">
+					<!--
+					<persName ref="person4005" cert="high">
 						<forename cert="high">Hans</forename>
 						<surname cert="high">Wunderlich</surname>
-						<addName type="main">Wunderlich (de Merveilleux), Hans (Jean)</addName>
+						<persName type="main" ref="person8519>Wunderlich (de Merveilleux), Hans (Jean)</addName>
 					</persName>
-					<place source="#21" cert="high">
-						<settlement>Baden</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>47.47333 8.30592</geo>
-					</place>
+					-->
+					<persName ref="person4005" cert="high"/>
+					<place source="place21" cert="high"/>
 					<date when="1548-08-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#219"/>
-					<ref type="prev_chronologically" target="files.xml#217"/>
-					<ref type="next_correspondence" target="files.xml#219"/>
-					<ref type="prev_correspondence" target="files.xml#12843"/>
-					<ref type="next_correspondence_request" target="files.xml#219"/>
-					<ref type="prev_correspondence_request" target="files.xml#12843"/>
+					<ref type="next_chronologically" target="file219"/>
+					<ref type="prev_chronologically" target="file217"/>
+					<ref type="next_correspondence" target="file219"/>
+					<ref type="prev_correspondence" target="file12843"/>
+					<ref type="next_correspondence_request" target="file219"/>
+					<ref type="prev_correspondence_request" target="file12843"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#219"/>
-					<ref type="prev_same_sender" target="files.xml#12843"/>
-					<ref type="next_same_addressee" target="files.xml#240"/>
-					<ref type="prev_same_addressee" target="files.xml#216"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#219"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12843"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#240"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#216"/>
+					<ref type="next_same_sender" target="file219"/>
+					<ref type="prev_same_sender" target="file12843"/>
+					<ref type="next_same_addressee" target="file240"/>
+					<ref type="prev_same_addressee" target="file216"/>
+					<ref type="next_with_sender_as_addressee" target="file219"/>
+					<ref type="prev_with_sender_as_addressee" target="file12843"/>
+					<ref type="next_with_addressee_as_sender" target="file240"/>
+					<ref type="prev_with_addressee_as_sender" target="file216"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -109,27 +113,30 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="218/Autograph/00 E_II_368__fol__237_r_.tif" n="1"/>
+		<graphic url="218/Autograph/01 E_II_368__fol__237_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="de">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Min fründlichenn grus samptt erbiettung aller eerenn, liebs unnd gutts zuvor.</s>
-					<s xml:lang="de" type="auto">Erwürdiger, hochgelertter, eerennder, lieber herr, ich hann ein brudersun, der mutter halb ein Wyttenbacher ist; der ist nünjärig.</s>
-					<s xml:lang="de" type="auto">Dennselbigenn wellte ich gernn by üch Zürych thuͦn, damitt er beid sprachenn, latin unnd tütsch mitteinanndern lernnte unnd ein fundamennt inn der latinischen sprach ergriffen möcht, wiewoll er ein zimlichenn anfanng inn der tütschen sprach hatt, unnd allsdann ich ine by yemanndts thun möchte, da er baß sin möchte dann by üch.</s>
-					<s xml:lang="de" type="auto">Lanngtt ann üch min fründlich bitt, ir wellindt mich berichtenn, ob es üch gevellig were, ine anzenemenn; so wellte ich üch eerlichen unnd woll zefrydenn stellenn.</s>
-					<s xml:lang="de" type="auto">Der knab ist sunst ann im selbs zartt; ich zwyffell aber ganntz unnd gar nütt, ir werdennd ine khönnenn halltenn, wie ir inn söllichem ze thuͦn woll wüssennd.</s>
-					<s xml:lang="de" type="auto">Demnach, eerender, lieber herr, wüssennd, das wir by unns einenn doctor habennd, der begärte brucht ze wärdenn by üch Zürych unnd möchtt tugennlich unnd gnugsamlich sin, ein lätzge ze läsen.</s>
-					<s xml:lang="de" type="auto">Diewyll dann er mich gebättenn, üch vonn sinennt wägenn ze schrybenn, er üch ouch hieby liegend brieff, so ich üch zuschickenn, thutt schrybenn, ist ann üch min begär, ir wellind mich üwerer will unnd meynung deßhalb berichtenn.</s>
-					<s xml:lang="de" type="auto">Hierumb und obgemeldter artickel halb von wegenn mins bruders suns üwer willfärige und fründliche annttwurtt erwarttennde, gott denn allmächtigenn trüwlich bittende, das er üch gnädiglichenn bewarenn welle.</s>
+					<s n="1" xml:lang="de" type="auto">Min fründlichenn grus samptt erbiettung aller eerenn, liebs unnd gutts zuvor.</s>
+					<s n="2" xml:lang="de" type="auto">Erwürdiger, hochgelertter, eerennder, lieber herr, ich hann ein brudersun, der mutter halb ein Wyttenbacher ist; der ist nünjärig.</s>
+					<s n="3" xml:lang="de" type="auto">Dennselbigenn wellte ich gernn by üch Zürych thuͦn, damitt er beid sprachenn, latin unnd tütsch mitteinanndern lernnte unnd ein fundamennt inn der latinischen sprach ergriffen möcht, wiewoll er ein zimlichenn anfanng inn der tütschen sprach hatt, unnd allsdann ich ine by yemanndts thun möchte, da er baß sin möchte dann by üch.</s>
+					<s n="4" xml:lang="de" type="auto">Lanngtt ann üch min fründlich bitt, ir wellindt mich berichtenn, ob es üch gevellig were, ine anzenemenn; so wellte ich üch eerlichen unnd woll zefrydenn stellenn.</s>
+					<s n="5" xml:lang="de" type="auto">Der knab ist sunst ann im selbs zartt; ich zwyffell aber ganntz unnd gar nütt, ir werdennd ine khönnenn halltenn, wie ir inn söllichem ze thuͦn woll wüssennd.</s>
+					<s n="6" xml:lang="de" type="auto">Demnach, eerender, lieber herr, wüssennd, das wir by unns einenn doctor habennd, der begärte brucht ze wärdenn by üch Zürych unnd möchtt tugennlich unnd gnugsamlich sin, ein lätzge ze läsen.</s>
+					<s n="7" xml:lang="de" type="auto">Diewyll dann er mich gebättenn, üch vonn sinennt wägenn ze schrybenn, er üch ouch hieby liegend brieff, so ich üch zuschickenn, thutt schrybenn, ist ann üch min begär, ir wellind mich üwerer will unnd meynung deßhalb berichtenn.</s>
+					<s n="8" xml:lang="de" type="auto">Hierumb und obgemeldter artickel halb von wegenn mins bruders suns üwer willfärige und fründliche annttwurtt erwarttennde, gott denn allmächtigenn trüwlich bittende, das er üch gnädiglichenn bewarenn welle.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum zu Baddenn 4. augusti 1548. Üwer allzitt williger diener Hannß Wunderlich.</s>
+					<s n="9" xml:lang="de" type="auto">Datum zu Baddenn 4. augusti 1548. Üwer allzitt williger diener Hannß Wunderlich.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="de" type="auto">Dem erwürdigen hochgelertenn herren Heinrych Bullinger, verkünder des göttlichen wortts Zürych, minem eerenden, günstigen, lieben herren.</s>
-					<s xml:lang="de" type="auto">Zürych.</s>
+					<s n="10" xml:lang="de" type="auto">Dem erwürdigen hochgelertenn herren Heinrych Bullinger, verkünder des göttlichen wortts Zürych, minem eerenden, günstigen, lieben herren.</s>
+					<s n="11" xml:lang="de" type="auto">Zürych.</s>
 				</p>
 			</div>
 		</body>

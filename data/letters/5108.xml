@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#311">Marburg</settlement>
-						<institution>Hessisches Landesarchiv Abteilung Staatsarchiv</institution>
-						<idno type="Autograph">3 (=PA) 1797, fo 217-220v</idno>
-						<repository ref="archive#61">
+						<!--
+						<repository ref="archive61">
 							<name>Marburg HStA</name>
 							<ref target="https://landesarchiv.hessen.de/"/>
 						</repository>
+						<settlement ref="place311">Marburg</settlement>
+						<institution>Hessisches Landesarchiv Abteilung Staatsarchiv</institution>
+						-->
+						<repository ref="archive61"/>
+						<idno subtype="Autograph">3 (=PA) 1797, fo 217-220v</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -33,15 +36,18 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#121">Dresden</settlement>
-						<institution>Sächsisches (Haupt-)Staatsarchiv</institution>
-						<idno type="Kopie">Nr. 8510, fo 264-269v</idno>
-						<repository ref="archive#30">
+						<!--
+						<repository ref="archive30">
 							<name>Dresden StA</name>
-							<note type="Mikrofilm">IRG</note>
-							<note type="Hinweis">Kopie der hess. Kanzlei für Hzg. August von Sachsen (schreibt auch das Datum ab, 1562 Dez. 28)</note>
 							<ref target="https://www.staatsarchiv.sachsen.de/hauptstaatsarchiv-dresden-3994.html"/>
 						</repository>
+						<settlement ref="place121">Dresden</settlement>
+						<institution>Sächsisches (Haupt-)Staatsarchiv</institution>
+						-->
+						<repository ref="archive30"/>
+						<idno subtype="Kopie">Nr. 8510, fo 264-269v</idno>
+						<idno subtype="Mikrofilm">IRG</idno>
+						<idno subtype="Hinweis">Kopie der hess. Kanzlei für Hzg. August von Sachsen (schreibt auch das Datum ab, 1562 Dez. 28)</idno>
 					</msIdentifier>
 					<history><origin><p><date>16. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -54,28 +60,34 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Teilkopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Teilkopie">Ms S 102,117</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Teilkopie nach Entwurf</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Teilkopie">Ms S 102,117</idno>
+						<idno subtype="Hinweis">Teilkopie nach Entwurf</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
 				<msDesc type="Brief" subtype="Teilentwurf" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Teilentwurf">E II 363, 9</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Mikrofilm">IRG</note>
-							<note type="Hinweis">Teilentwurf (gegen Schluß)</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Teilentwurf">E II 363, 9</idno>
+						<idno subtype="Mikrofilm">IRG</idno>
+						<idno subtype="Hinweis">Teilentwurf (gegen Schluß)</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -90,49 +102,53 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5108">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1561-12-28" cert="low"><note>Datum unsicher; (1561) +); Bullinger schrieb irrt. 1562 (bzw. Weihnachts-Stil)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1872" cert="low">
+					<!--
+					<persName ref="person1872" cert="low">
 						<forename cert="low">Philipp</forename>
 						<surname cert="low">Landgraf von Hessen</surname>
-						<addName type="main">von Hessen, Philipp I. («der Großmütige»)</addName>
-						<graphic type="portrait" url="portraits/8019_von_Hessen_Philipp_I.jpg"/>
+						<persName type="main" ref="person8019>von Hessen, Philipp I. («der Großmütige»)</addName>
+						<graphic type="portrait" url="portraits/1871_von_Hessen_Philipp_I.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Philipp_I._(Hessen)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11859382X"/>
 					</persName>
+					-->
+					<persName ref="person1872" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5109"/>
-					<ref type="prev_chronologically" target="files.xml#5107"/>
-					<ref type="next_correspondence" target="files.xml#5177"/>
-					<ref type="prev_correspondence" target="files.xml#5089"/>
-					<ref type="next_correspondence_request" target="files.xml#5177"/>
-					<ref type="prev_correspondence_request" target="files.xml#5089"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5223"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5084"/>
-					<ref type="next_same_sender" target="files.xml#5109"/>
-					<ref type="prev_same_sender" target="files.xml#5107"/>
-					<ref type="next_same_addressee" target="files.xml#5223"/>
-					<ref type="prev_same_addressee" target="files.xml#5084"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5109"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5107"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5223"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5084"/>
-					<ref type="child" target="files.xml#5084"/>
-					<ref type="child" target="files.xml#5558"/>
-					<ref type="child" target="files.xml#5559"/>
+					<ref type="next_chronologically" target="file5109"/>
+					<ref type="prev_chronologically" target="file5107"/>
+					<ref type="next_correspondence" target="file5177"/>
+					<ref type="prev_correspondence" target="file5089"/>
+					<ref type="next_correspondence_request" target="file5177"/>
+					<ref type="prev_correspondence_request" target="file5089"/>
+					<ref type="next_correspondence_reaction" target="file5223"/>
+					<ref type="prev_correspondence_reaction" target="file5084"/>
+					<ref type="next_same_sender" target="file5109"/>
+					<ref type="prev_same_sender" target="file5107"/>
+					<ref type="next_same_addressee" target="file5223"/>
+					<ref type="prev_same_addressee" target="file5084"/>
+					<ref type="next_with_sender_as_addressee" target="file5109"/>
+					<ref type="prev_with_sender_as_addressee" target="file5107"/>
+					<ref type="next_with_addressee_as_sender" target="file5223"/>
+					<ref type="prev_with_addressee_as_sender" target="file5084"/>
+					<ref type="child" target="file5084"/>
+					<ref type="child" target="file5558"/>
+					<ref type="child" target="file5559"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

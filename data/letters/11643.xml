@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2006"/>
-				<idno type="ISBN">ISBN 978-3-290-17431-6</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1600</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17431-6</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1600</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 12</title>
+				<title subtype="publication">HBBW XII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">12</biblScope>
@@ -31,14 +31,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 337a,349r.-v.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">Zeitgenössische Abschrift</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 337a,349r.-v.</idno>
+						<idno subtype="Hinweis">Zeitgenössische Abschrift</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,20 +50,20 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Haben <persName ref="2122">Schwenckfelds</persName> Brief [<ref target="file#11640">Nr. 1597</ref>]
+								Haben <persName ref="person2122">Schwenckfelds</persName> Brief [<ref target="file11640">Nr. 1597</ref>]
 								erhalten und dessen durch Jakob Held vorgetragene Anliegen zur Kenntnis genommen; sie haben es bislang so
 								gut wie möglich vermieden, in solchen theologischen Auseinandersetzungen zu richten, und sich stattdessen an
 								die einfache, apostolische Lehre von der Gnade Gottes durch Jesus Christus gehalten, der als wahrer Mensch
 								und wahrer Gott gekreuzigt, auferstanden und in den Himmel aufgefahren ist, wo er zur Rechten Gottes sitzt
 								und von wo er kommen wird, über die Lebenden und Toten zu richten; diese Lehre wird durch das unfehlbare
 								Wort Gottes gestützt, an dem sie festhalten wollen, selbst wenn ein Engel etwas anderes verkünden würde.
-								Sollte <persName ref="2122">Schwenckfeld</persName> gleicher Meinung sein, danken sie Gott; sollte er
+								Sollte <persName ref="person2122">Schwenckfeld</persName> gleicher Meinung sein, danken sie Gott; sollte er
 								aber davon abweichen, bitten sie Gott, ihn auf den rechten Weg zurückzuführen. Von der Verdammung
-								<persName ref="2122">Schwenckfelds</persName> durch die
-								<placeName ref="958">Schmalkaldener</placeName> haben sie bislang nichts gewusst, können sich aber
+								<persName ref="person2122">Schwenckfelds</persName> durch die
+								<placeName ref="place958">Schmalkaldener</placeName> haben sie bislang nichts gewusst, können sich aber
 								nicht in fremde Händel einmischen; Vadians Schrift [„Antilogia“] ist ihnen bekannt und sie hoffen, dass
 								Vadian die Sache so behandelt hat, dass es schließlich zum Guten gereichen wird. Aufgrund der vielen
-								Verpflichtungen haben sie <persName ref="2122">Schwenckfelds</persName> Buch noch nicht gelesen und
+								Verpflichtungen haben sie <persName ref="person2122">Schwenckfelds</persName> Buch noch nicht gelesen und
 								werden es auch nicht begutachten, was sie Vadian überlassen. Segenswunsch.
 							</p>
 						</summary>
@@ -81,58 +84,41 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11643">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#45" cert="high">Lehrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<personGrp ref="role0" role="Lehrer"/>
+					<place source="place587" cert="high"/>
 					<date when="1542-02-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2845" cert="high">
+					<!--
+					<persName ref="person2845" cert="high">
 						<forename cert="high">Kaspar</forename>
 						<surname cert="high">Schwenckfeld</surname>
-						<addName type="main">(von) Schwenckfeld, Kaspar</addName>
-						<graphic type="portrait" url="portraits/7771_Schwenkfeld_Kaspar.jpg"/>
+						<persName type="main" ref="person8441>(von) Schwenckfeld, Kaspar</addName>
+						<graphic type="portrait" url="portraits/7771_Schwenckfeld_Kaspar.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Kaspar_Schwenckfeld"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118612190"/>
 					</persName>
+					-->
+					<persName ref="person2845" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11644"/>
-					<ref type="prev_chronologically" target="files.xml#11642"/>
+					<ref type="next_chronologically" target="file11644"/>
+					<ref type="prev_chronologically" target="file11642"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11652"/>
-					<ref type="prev_same_sender" target="files.xml#11642"/>
+					<ref type="next_same_sender" target="file11652"/>
+					<ref type="prev_same_sender" target="file11642"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#11640"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11652"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11642"/>
+					<ref type="prev_same_addressee" target="file11640"/>
+					<ref type="next_with_sender_as_addressee" target="file11652"/>
+					<ref type="prev_with_sender_as_addressee" target="file11642"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11640"/>
+					<ref type="prev_with_addressee_as_sender" target="file11640"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -151,41 +137,41 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Gnad unnd frid von gott dem vatter durch unseren herren Jesum Christum, mit erbietung unsers früntlichen gruͦsses unnd willigen diensten bevor.</s>
+					<s n="1" xml:lang="de" type="auto">Gnad unnd frid von gott dem vatter durch unseren herren Jesum Christum, mit erbietung unsers früntlichen gruͦsses unnd willigen diensten bevor.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Eerenvester, lieber herr unnd fründ, uwer schriben an uns gethon<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file#11640">Nr. 1597</ref>.</note> zuo sampt dem buͦch, uff die schmalkhaldische condemnation unnd uff die Antilogian unnsers lieben herren unnd bruͦders Vadiani durch uch gestelt,<note xml:id="fn2" type="footnote" n="2">Es handelt sich um ein Manuskript von <persName ref="2122">Schwenckfelds</persName> Schrift "Confession unnd erklerung vom erkandtnus Christi und seiner göttlichen herrlicheit" (CSch VII 484-884). Das den Zürcher Theologen übersandte Manuskript liegt unter dem Titel "Von der herrlichhait Christi und seinem erkanthnus. Rechenschaft dess Glaubens unnd verantwurtung auff das ausschreiben der gelehrtenn zu Schmalckhallden [...]" in Zürich ZB, Ms Car I 272. Mit dieser Schrift antwortete <persName ref="2122">Schwenckfeld</persName> u. a. auf die 1540 erfolgte Verurteilung seiner Lehre durch einen Theologenkonvent in <placeName ref="958">Schmalkalden</placeName> (vgl. CSch VII 455-460) und auf das gegen ihn gerichtete Werk "Antilogia" Vadians (Zürich: Christoph Froschauer, [1540] [BZD C 292]). Zu <persName ref="2122">Schwenckfelds</persName> Debatte mit Vadian und den Schweizer Theologen vgl. R. Emmet <hi>McLaughlin,</hi> The <persName ref="2122">Schwenckfeld</persName>-Vadian Debate, in: ders., The Freedom of Spirit, Social Privilege, and Religious Dissent. Caspar <persName ref="2122">Schwenckfeld</persName> and the Schwenkfelders, Baden-Baden 1996. -Bibliotheca Dissidentium. Scripta et studia 6, S. 153-173; Yasukazu <hi>Morita,</hi> Bullinger und <persName ref="2122">Schwenckfeld</persName>, in: HBGesA II 143-156.</note> habend wir von dem frommen, eerenfesten Jacoben Helden von Dieffenow, bürgern zuo <placeName ref="1049">Strassburg</placeName>, empfangen, den selben ouch sins anbringens von üweren wegen guͦtwillig verhört<note xml:id="fn3" type="footnote" n="3">angehört.</note>.</s>
+					<s n="2" xml:lang="de" type="auto">Eerenvester, lieber herr unnd fründ, uwer schriben an uns gethon<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file11640">Nr. 1597</ref>.</note> zuo sampt dem buͦch, uff die schmalkhaldische condemnation unnd uff die Antilogian unnsers lieben herren unnd bruͦders Vadiani durch uch gestelt,<note xml:id="fn2" type="footnote" n="2">Es handelt sich um ein Manuskript <persName ref="person2122">von Schwenckfelds</persName> Schrift "Confession unnd erklerung vom erkandtnus Christi und seiner göttlichen herrlicheit" (CSch VII 484-884). Das den Zürcher Theologen übersandte Manuskript liegt unter dem Titel "Von der herrlichhait Christi und seinem erkanthnus. Rechenschaft dess Glaubens unnd verantwurtung auff das ausschreiben der gelehrtenn zu Schmalckhallden [...]" in Zürich ZB, Ms Car I 272. Mit dieser Schrift antwortete <persName ref="person2122">Schwenckfeld</persName> u. a. auf die 1540 erfolgte Verurteilung seiner Lehre durch einen Theologenkonvent in <placeName ref="place958">Schmalkalden</placeName> (vgl. CSch VII 455-460) und auf das gegen ihn gerichtete Werk "Antilogia" Vadians (Zürich: Christoph Froschauer, [1540] [BZD C 292]). Zu <persName ref="person2122">Schwenckfelds</persName> Debatte mit Vadian und den Schweizer Theologen vgl. R. Emmet <hi>McLaughlin,</hi> The <persName ref="person2122">Schwenckfeld</persName>-Vadian Debate, in: ders., The Freedom of Spirit, Social Privilege, and Religious Dissent. Caspar <persName ref="person2122">Schwenckfeld</persName> and the Schwenkfelders, Baden-Baden 1996. -Bibliotheca Dissidentium. Scripta et studia 6, S. 153-173; Yasukazu <hi>Morita,</hi> Bullinger und <persName ref="person2122">Schwenckfeld</persName>, in: HBGesA II 143-156.</note> habend wir von dem frommen, eerenfesten Jacoben Helden von Dieffenow, bürgern zuo <placeName ref="place1049">Strassburg</placeName>, empfangen, den selben ouch sins anbringens von üweren wegen guͦtwillig verhört<note xml:id="fn3" type="footnote" n="3">angehört.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Unnd danckend uch hieruff alles üweren früntlichen embietens, arbeit<note xml:id="fn4" type="footnote" n="4">Mühe, Einsatz.</note> unnd guͦten willens gegen uns etc.</s>
-					<s xml:lang="de" type="auto">Fuͤgend uch hiemit zewüssen, guͦter unnd früntlicher meinung, das wir uns hie unnd bisshar der scharpfen disputationen von sömlichen<note xml:id="fn5" type="footnote" n="5">solchen.</note> hohen sachen unnd hochgelerter, träffenlicher lüten, so vil uns müglich gwesen, darin zuo richten oder uns darin zuo legen<note xml:id="fn6" type="footnote" n="6">zu entscheiden oder zu vermitteln.</note>, gantz entschlagen<note xml:id="fn7" type="footnote" n="7">enthalten haben.</note>, dargegen das wir die kilchen Christi, so uns befolhen, zum trüwlichisten unnd unnserem besten vermögen nach, vorab nach evangelischer, apostolischer einfalte<note xml:id="fn8" type="footnote" n="8">Einfachheit.</note>, also gelert habend, das got, der himelisch vatter, allen sinen gloubigen gnedig sin unnd das eewig leben geben welle durch unnseren herren Jesum Christum, welcher in unzertrenter person, doch mit unvermischten naturen, warhaffter got unnd mensch,<note xml:id="fn9" type="footnote" n="9">Vgl. die christologische Definition des Konzils von <persName ref="618">Chalcedon</persName> (451), Denzinger 301f.</note> für uns gekrützget, gestorben unnd begraben ist, der ouch mit sinem waren menschlichen lichnam<note xml:id="fn10" type="footnote" n="10">Leib.</note> am dritten tag widerum von den todten ufferstannden, in die himel uffgefaren unnd da noch, warer gott unnd mensch, zur gerechten<note xml:id="fn11" type="footnote" n="11">Rechten.</note> gottes sitzend unnd widerumb mit waarhafftem lib uber die lebenden unnd todten zuo richten, zuokünfftig ist etc<note xml:id="fn12" type="footnote" n="12">Vgl. das apostolische Glaubensbekenntnis, Denzinger 30, 4-7.</note>.</s>
-					<s xml:lang="de" type="auto">Dann sömlicher unnser leer unnd<pb type="edition" next="35"/> gloubens habend wir guͦten, hellen grund in dem unfelbaren wort gottes; dem selben werdend wir mit der hillff gottes also styff<note xml:id="fn13" type="footnote" n="13">fest, beständig.</note> anhangen unnd darby beliben, das, wenn glich ein engel vom himel kem unnd uns ein annders offnen welte, würdend wirs gantz unnd gar nit annemmen<note xml:id="fn14" type="footnote" n="14">Vgl. Gal 1, 8.</note>.</s>
+					<s n="3" xml:lang="de" type="auto">Unnd danckend uch hieruff alles üweren früntlichen embietens, arbeit<note xml:id="fn4" type="footnote" n="4">Mühe, Einsatz.</note> unnd guͦten willens gegen uns etc.</s>
+					<s n="4" xml:lang="de" type="auto">Fuͤgend uch hiemit zewüssen, guͦter unnd früntlicher meinung, das wir uns hie unnd bisshar der scharpfen disputationen von sömlichen<note xml:id="fn5" type="footnote" n="5">solchen.</note> hohen sachen unnd hochgelerter, träffenlicher lüten, so vil uns müglich gwesen, darin zuo richten oder uns darin zuo legen<note xml:id="fn6" type="footnote" n="6">zu entscheiden oder zu vermitteln.</note>, gantz entschlagen<note xml:id="fn7" type="footnote" n="7">enthalten haben.</note>, dargegen das wir die kilchen Christi, so uns befolhen, zum trüwlichisten unnd unnserem besten vermögen nach, vorab nach evangelischer, apostolischer einfalte<note xml:id="fn8" type="footnote" n="8">Einfachheit.</note>, also gelert habend, das got, der himelisch vatter, allen sinen gloubigen gnedig sin unnd das eewig leben geben welle durch unnseren herren Jesum Christum, welcher in unzertrenter person, doch mit unvermischten naturen, warhaffter got unnd mensch,<note xml:id="fn9" type="footnote" n="9">Vgl. die christologische Definition des Konzils von <persName ref="person618">Chalcedon</persName> (451), Denzinger 301f.</note> für uns gekrützget, gestorben unnd begraben ist, der ouch mit sinem waren menschlichen lichnam<note xml:id="fn10" type="footnote" n="10">Leib.</note> am dritten tag widerum von den todten ufferstannden, in die himel uffgefaren unnd da noch, warer gott unnd mensch, zur gerechten<note xml:id="fn11" type="footnote" n="11">Rechten.</note> gottes sitzend unnd widerumb mit waarhafftem lib uber die lebenden unnd todten zuo richten, zuokünfftig ist etc<note xml:id="fn12" type="footnote" n="12">Vgl. das apostolische Glaubensbekenntnis, Denzinger 30, 4-7.</note>.</s>
+					<s n="5" xml:lang="de" type="auto">Dann sömlicher unnser leer unnd<pb type="edition" next="35"/> gloubens habend wir guͦten, hellen grund in dem unfelbaren wort gottes; dem selben werdend wir mit der hillff gottes also styff<note xml:id="fn13" type="footnote" n="13">fest, beständig.</note> anhangen unnd darby beliben, das, wenn glich ein engel vom himel kem unnd uns ein annders offnen welte, würdend wirs gantz unnd gar nit annemmen<note xml:id="fn14" type="footnote" n="14">Vgl. Gal 1, 8.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">So feer ir nun des gloubens unnd glicher apostolischer einfalt unnd haltung sind, danckend wir got und bittend in, das er üch unnd allen gloubigen sin gnad meere.</s>
-					<s xml:lang="de" type="auto">Wo ir aber anderer meynung sind, bittend wir den herren, das er uch gnedig sy unnd uweren verstannd uff die einf<pb type="scan" next="349v."/> alten, gesunden leer widerumb richte.</s>
+					<s n="6" xml:lang="de" type="auto">So feer ir nun des gloubens unnd glicher apostolischer einfalt unnd haltung sind, danckend wir got und bittend in, das er üch unnd allen gloubigen sin gnad meere.</s>
+					<s n="7" xml:lang="de" type="auto">Wo ir aber anderer meynung sind, bittend wir den herren, das er uch gnedig sy unnd uweren verstannd uff die ein-<pb type="scan" next="349v."/>falten, gesunden leer widerumb richte.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Von dem span<note xml:id="fn15" type="footnote" n="15">Streit.</note>, den ir bisshar mit den Smalkhaldischen gehept, unnd von uwer hanndlung oder iren verdammung<note xml:id="fn16" type="footnote" n="16">Vgl. oben Anm. 2.</note> habend wir bis uff dise stund nie nutzig<note xml:id="fn17" type="footnote" n="17">nichts.</note> gewüst.</s>
-					<s xml:lang="de" type="auto">Darumb konnend wir uns eins frembden unnd unbekanten hanndels ubel beladen<note xml:id="fn18" type="footnote" n="18">nicht/schwerlich annehmen.</note>.</s>
-					<s xml:lang="de" type="auto">Von dem schriben<note xml:id="fn19" type="footnote" n="19">Zu Vadians "Antilogia" vgl. ebd.</note> aber unnsers fürgeliebten herrenn unnd bruͦders Vadiani habend wir wol gewüst, hoffend aber, die wil der eerenfest Jacob Held in uweren namen by Vadiano gesin, im ouch uwer geschrifft unnd buͦch überantwurt unnd gehanndlet, ouch genampter unser lieber her Vadian allweg fürpündiger<note xml:id="fn20" type="footnote" n="20">außerordentlicher.</note> früntlickeit gegen mengklichen<note xml:id="fn21" type="footnote" n="21">jedermann.</note>, fürtreffenlich trüw dem herren Christo, darzuo grosser bescheidenheit unnd wunderbarer kunst unnd erfarnuß ist, er habe der mass mit unnd gegen uch gehandlet unnd sich veranlasset<note xml:id="fn22" type="footnote" n="22">Stellung bezogen.</note>, das es alles zuo guͦtem nach<note xml:id="fn23" type="footnote" n="23">noch.</note> gereichen werde.</s>
+					<s n="8" xml:lang="de" type="auto">Von dem span<note xml:id="fn15" type="footnote" n="15">Streit.</note>, den ir bisshar mit den Smalkhaldischen gehept, unnd von uwer hanndlung oder iren verdammung<note xml:id="fn16" type="footnote" n="16">Vgl. oben Anm. 2.</note> habend wir bis uff dise stund nie nutzig<note xml:id="fn17" type="footnote" n="17">nichts.</note> gewüst.</s>
+					<s n="9" xml:lang="de" type="auto">Darumb konnend wir uns eins frembden unnd unbekanten hanndels ubel beladen<note xml:id="fn18" type="footnote" n="18">nicht/schwerlich annehmen.</note>.</s>
+					<s n="10" xml:lang="de" type="auto">Von dem schriben<note xml:id="fn19" type="footnote" n="19">Zu Vadians "Antilogia" vgl. ebd.</note> aber unnsers fürgeliebten herrenn unnd bruͦders Vadiani habend wir wol gewüst, hoffend aber, die wil der eerenfest Jacob Held in uweren namen by Vadiano gesin, im ouch uwer geschrifft unnd buͦch überantwurt unnd gehanndlet, ouch genampter unser lieber her Vadian allweg fürpündiger<note xml:id="fn20" type="footnote" n="20">außerordentlicher.</note> früntlickeit gegen mengklichen<note xml:id="fn21" type="footnote" n="21">jedermann.</note>, fürtreffenlich trüw dem herren Christo, darzuo grosser bescheidenheit unnd wunderbarer kunst unnd erfarnuß ist, er habe der mass mit unnd gegen uch gehandlet unnd sich veranlasset<note xml:id="fn22" type="footnote" n="22">Stellung bezogen.</note>, das es alles zuo guͦtem nach<note xml:id="fn23" type="footnote" n="23">noch.</note> gereichen werde.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Darum habend wir üwer buͦch uffgenommen, nit das wir es ylends unnd angends<note xml:id="fn24" type="footnote" n="24">sogleich.</note> lesind, dan wir mit vilen geschefften beladen sind unnd diser zit kein muͦß habend.</s>
-					<s xml:lang="de" type="auto">Wir habends ouch nit<note xml:id="fnb" type="footnote" n="b"><hi>Vor</hi> nit <hi>gestrichenes</hi> da.</note> darumb empfangen unnd behalten, das wir darüber richtind oder ir unnser urtheil erwartind, dann wir uns zuo vil ringfug<note xml:id="fn25" type="footnote" n="25">zu unbedeutend.</note> zuo solchen dingen schetzend, sonnder wen es unnser aller unnd unsers jetlichs gelegenheit erliden mag<note xml:id="fn26" type="footnote" n="26">erlaubt.</note>, das wir es dann besehend.</s>
-					<s xml:lang="de" type="auto">Doch hoffend wir, unser lieber herr und bruͦder Vadian werde hierinn allweg<note xml:id="fn27" type="footnote" n="27">in jeder Hinsicht.</note> hanndlen der gebür nach, das es unnser besunderen arbeit nit bedörffe<note xml:id="fn28" type="footnote" n="28">Vadian antwortete auf <persName ref="2122">Schwenckfelds</persName> Werk mit der Schrift "Dreyzehen namhaffter irrthumb Gaspar <persName ref="2122">Schwenckfelds</persName>, außzogen auß seinen büchern, die er hat lassen ußgon von dem bekenntniß und der glori Christi [...]", Zürich: [Christoph Froschauer], [1542](BZD C 314).</note>.</s>
+					<s n="11" xml:lang="de" type="auto">Darum habend wir üwer buͦch uffgenommen, nit das wir es ylends unnd angends<note xml:id="fn24" type="footnote" n="24">sogleich.</note> lesind, dan wir mit vilen geschefften beladen sind unnd diser zit kein muͦß habend.</s>
+					<s n="12" xml:lang="de" type="auto">Wir habends ouch nit<note xml:id="fnb" type="footnote" n="b"><hi>Vor</hi> nit <hi>gestrichenes</hi> da.</note> darumb empfangen unnd behalten, das wir darüber richtind oder ir unnser urtheil erwartind, dann wir uns zuo vil ringfug<note xml:id="fn25" type="footnote" n="25">zu unbedeutend.</note> zuo solchen dingen schetzend, sonnder wen es unnser aller unnd unsers jetlichs gelegenheit erliden mag<note xml:id="fn26" type="footnote" n="26">erlaubt.</note>, das wir es dann besehend.</s>
+					<s n="13" xml:lang="de" type="auto">Doch hoffend wir, unser lieber herr und bruͦder Vadian werde hierinn allweg<note xml:id="fn27" type="footnote" n="27">in jeder Hinsicht.</note> hanndlen der gebür nach, das es unnser besunderen arbeit nit bedörffe<note xml:id="fn28" type="footnote" n="28">Vadian antwortete auf <persName ref="person2122">Schwenckfelds</persName> Werk mit der Schrift "Dreyzehen namhaffter irrthumb Gaspar <persName ref="person2122">Schwenckfelds</persName>, außzogen auß seinen büchern, die er hat lassen ußgon von dem bekenntniß und der glori Christi [...]", Zürich: [Christoph Froschauer], [1542](BZD C 314).</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Gott der allmechte well uch sinen geist durch Jesum Christum trülich unnd rychlich mitteilen.</s>
-					<s xml:lang="de" type="auto">Amen.<pb type="edition" next="36"/></s>
+					<s n="14" xml:lang="de" type="auto">Gott der allmechte well uch sinen geist durch Jesum Christum trülich unnd rychlich mitteilen.</s>
+					<s n="15" xml:lang="de" type="auto">Amen.<pb type="edition" next="36"/></s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum Zürich, dess ersten tags im hornung 1542.</s>
-					<s xml:lang="de" type="auto">Pfarher, prediger, leser, diener der kylchen Zürich.</s>
+					<s n="16" xml:lang="de" type="auto">Datum Zürich, dess ersten tags im hornung 1542.</s>
+					<s n="17" xml:lang="de" type="auto">Pfarher, prediger, leser, diener der kylchen Zürich.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf f. 350v.:<note xml:id="fnc" type="footnote" n="c"><hi>Adresse von der Hand Bullingers.</hi></note> ]</note>
-					<s xml:lang="de" type="auto">Dem frommen, erenvesten, unserm lieben, besondernn <persName ref="2122">Casparn Schwenckfeld</persName>, uff <placeName ref="527">Justingen</placeName> inn Schwabenn.</s>
+					<s n="18" xml:lang="de" type="auto">Dem frommen, erenvesten, unserm lieben, besondernn <persName ref="person2122">Casparn Schwenckfeld</persName>, uff <placeName ref="place527">Justingen</placeName> inn Schwabenn.</s>
 				</p>
 			</div>
 		</body>

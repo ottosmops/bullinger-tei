@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6754/5</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 371,1036</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 371,1036</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,14 +51,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#492">Strassburg</settlement>
-						<institution>National- und Universitätsbibliothek</institution>
-						<idno type="Kopie">Ms 0.694 = STB Bd. 35,38</idno>
-						<repository ref="archive#81">
+						<!--
+						<repository ref="archive81">
 							<name>Strassburg BNU</name>
-							<note type="Hinweis">irrt. dat.: 1565 Jan. 8.; Erw.</note>
 							<ref target="https://www.bnu.fr/fr"/>
 						</repository>
+						<settlement ref="place492">Strassburg</settlement>
+						<institution>National- und Universitätsbibliothek</institution>
+						-->
+						<repository ref="archive81"/>
+						<idno subtype="Kopie">Ms 0.694 = STB Bd. 35,38</idno>
+						<idno subtype="Hinweis">irrt. dat.: 1565 Jan. 8.; Erw.</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -64,55 +70,42 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6643">
 				<correspAction type="sent">
-					<persName ref="person#890" cert="high">
+					<!--
+					<persName ref="person890" cert="high">
 						<forename cert="high">Theodor</forename>
 						<surname cert="high">Beza</surname>
-						<addName type="main">de Bèze (Beza), Théodor</addName>
+						<persName type="main" ref="person8033>de Bèze (Beza), Théodor</addName>
 						<graphic type="portrait" url="portraits/876_Beza_Theodor.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Th%C3%A9odore_de_B%C3%A8ze"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118662864"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11418065"/>
 					</persName>
-					<place source="#167" cert="high">
-						<settlement>Genf</settlement>
-						<district>Genève</district>
-						<country>Schweiz</country>
-						<geo>46.20222 6.14569</geo>
-					</place>
+					-->
+					<persName ref="person890" cert="high"/>
+					<place source="place167" cert="high"/>
 					<date when="1566-01-08" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#50" cert="high">Prediger</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role0" role="Prediger"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6644"/>
-					<ref type="prev_chronologically" target="files.xml#6642"/>
-					<ref type="next_correspondence" target="files.xml#6741"/>
-					<ref type="prev_correspondence" target="files.xml#6604"/>
-					<ref type="next_correspondence_request" target="files.xml#6741"/>
-					<ref type="prev_correspondence_request" target="files.xml#6604"/>
+					<ref type="next_chronologically" target="file6644"/>
+					<ref type="prev_chronologically" target="file6642"/>
+					<ref type="next_correspondence" target="file6741"/>
+					<ref type="prev_correspondence" target="file6604"/>
+					<ref type="next_correspondence_request" target="file6741"/>
+					<ref type="prev_correspondence_request" target="file6604"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#6658"/>
-					<ref type="prev_same_sender" target="files.xml#6642"/>
-					<ref type="next_same_addressee" target="files.xml#6842"/>
-					<ref type="prev_same_addressee" target="files.xml#6267"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6658"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6642"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6842"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6267"/>
+					<ref type="next_same_sender" target="file6658"/>
+					<ref type="prev_same_sender" target="file6642"/>
+					<ref type="next_same_addressee" target="file6842"/>
+					<ref type="prev_same_addressee" target="file6267"/>
+					<ref type="next_with_sender_as_addressee" target="file6658"/>
+					<ref type="prev_with_sender_as_addressee" target="file6642"/>
+					<ref type="next_with_addressee_as_sender" target="file6842"/>
+					<ref type="prev_with_addressee_as_sender" target="file6267"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -129,19 +122,19 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Perlectis nudiustertius literis vestris in nostro coetu, fratres plurimum colendi, nemo nostrum fuit, qui non assentiretur gravi prudentique vestro consilio de trium ecclesiarum conventu, et quum heri ad amplissimum nostrum senatum, quid vobis videretur, retulissemus, responsum est vestrum sententiam sic placere ut nihil supra.</s>
-					<s xml:lang="la" type="auto">Superest ergo, ut quam minimum morae interponatur, quum, etiamsi maxime properemus, sera tamen deliberatio futura videatur.</s>
-					<s xml:lang="la" type="auto">Bene valete, fratres plurimum colendi, d. Iesus nos omnes in opere suo confirmet et conservet!</s>
-					<s xml:lang="la" type="auto">Genevae 8. ianuarii 1566.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Perlectis nudiustertius literis vestris in nostro coetu, fratres plurimum colendi, nemo nostrum fuit, qui non assentiretur gravi prudentique vestro consilio de trium ecclesiarum conventu, et quum heri ad amplissimum nostrum senatum, quid vobis videretur, retulissemus, responsum est vestrum sententiam sic placere ut nihil supra.</s>
+					<s n="3" xml:lang="la" type="auto">Superest ergo, ut quam minimum morae interponatur, quum, etiamsi maxime properemus, sera tamen deliberatio futura videatur.</s>
+					<s n="4" xml:lang="la" type="auto">Bene valete, fratres plurimum colendi, d. Iesus nos omnes in opere suo confirmet et conservet!</s>
+					<s n="5" xml:lang="la" type="auto">Genevae 8. ianuarii 1566.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vester Beza totius fratrum coetus nomine et mandato.</s>
-					<s xml:lang="la" type="auto">Ne tempus frustra teratur nuntiis ultro citroque mittendis, Bernensibus fratribus scripsimus, ut, nisi diversum aliquod consilium ceperint, diem utrisque praescribant, quo no illu occurramus.</s>
+					<s n="6" xml:lang="la" type="auto">Vester Beza totius fratrum coetus nomine et mandato.</s>
+					<s n="7" xml:lang="la" type="auto">Ne tempus frustra teratur nuntiis ultro citroque mittendis, Bernensibus fratribus scripsimus, ut, nisi diversum aliquod consilium ceperint, diem utrisque praescribant, quo no illu occurramus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Eximiis Christi servis Tigurinae ecclesiae fidis pastoribus et doctoribus, fratribus nobis in domino plurimum colendis.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="8" xml:lang="la" type="auto">Eximiis Christi servis Tigurinae ecclesiae fidis pastoribus et doctoribus, fratribus nobis in domino plurimum colendis.</s>
+					<s n="9" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

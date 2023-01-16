@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1367</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#474">St. Gallen</settlement>
-						<institution>Kantonsbibliothek Vadiana</institution>
-						<idno type="Autograph">VII. 10</idno>
-						<repository ref="archive#78">
+						<!--
+						<repository ref="archive78">
 							<name>St. Gallen KB</name>
 							<ref target="https://www.sg.ch/kultur/kantonsbibliothek-vadiana.html"/>
 						</repository>
+						<settlement ref="place474">St. Gallen</settlement>
+						<institution>Kantonsbibliothek Vadiana</institution>
+						-->
+						<repository ref="archive78"/>
+						<idno subtype="Autograph">VII. 10</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -55,13 +58,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 69,132</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 69,132</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -70,52 +76,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/454">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1549-03-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
-					<place source="#474" cert="high">
-						<settlement>St. Gallen</settlement>
-						<district>St.Gallen</district>
-						<country>Schweiz</country>
-						<geo>47.42391 9.37477</geo>
-					</place>
+					-->
+					<persName ref="person3306" cert="high"/>
+					<place source="place474" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#455"/>
-					<ref type="prev_chronologically" target="files.xml#453"/>
-					<ref type="next_correspondence" target="files.xml#489"/>
-					<ref type="prev_correspondence" target="files.xml#441"/>
-					<ref type="next_correspondence_request" target="files.xml#1108"/>
-					<ref type="prev_correspondence_request" target="files.xml#11"/>
-					<ref type="next_correspondence_reaction" target="files.xml#489"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#441"/>
-					<ref type="next_same_sender" target="files.xml#465"/>
-					<ref type="prev_same_sender" target="files.xml#453"/>
-					<ref type="next_same_addressee" target="files.xml#489"/>
-					<ref type="prev_same_addressee" target="files.xml#441"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#465"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#453"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#489"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#441"/>
+					<ref type="next_chronologically" target="file455"/>
+					<ref type="prev_chronologically" target="file453"/>
+					<ref type="next_correspondence" target="file489"/>
+					<ref type="prev_correspondence" target="file441"/>
+					<ref type="next_correspondence_request" target="file1108"/>
+					<ref type="prev_correspondence_request" target="file11"/>
+					<ref type="next_correspondence_reaction" target="file489"/>
+					<ref type="prev_correspondence_reaction" target="file441"/>
+					<ref type="next_same_sender" target="file465"/>
+					<ref type="prev_same_sender" target="file453"/>
+					<ref type="next_same_addressee" target="file489"/>
+					<ref type="prev_same_addressee" target="file441"/>
+					<ref type="next_with_sender_as_addressee" target="file465"/>
+					<ref type="prev_with_sender_as_addressee" target="file453"/>
+					<ref type="next_with_addressee_as_sender" target="file489"/>
+					<ref type="prev_with_addressee_as_sender" target="file441"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -129,44 +134,44 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Munus accepi uxori meae missum, vir omnibus modis colendissime, ac miror humanissimi senatus benevolentiam, cum nulla sint ex me profecta beneficia, ob quae ille me amet tantopere.</s>
-					<s xml:lang="la" type="auto">Conabor tamen modis omnibus, ita me geram, ne illum unquam amoris et studii in me sui poeniteat.</s>
-					<s xml:lang="la" type="auto">Te autem oro, ut gratias meo nomine agas senatui amplissimo.</s>
-					<s xml:lang="la" type="auto">hoc interim tibi persuasissimum habe, me ne pilum quidem accep[isse], quisquis praeter te ac tuos obtulisset.</s>
-					<s xml:lang="la" type="auto">Non enim assuevi, imo oblata munera honoraria ab urbibus et clarissimis hominibus repuli hactenus constantissime nec accipiam ulla deo volente, quoad vixero.</s>
-					<s xml:lang="la" type="auto">Obtulere archiepiscopus Cantuariensis et aliquot primarii viri Angliae, obtulit Berna et Augusta, obtulerunt alii; ego nunquam vel terunicum accepi a quoquam.</s>
-					<s xml:lang="la" type="auto">Sunt autem causae multae et iustissimae, quare sic agam.</s>
-					<s xml:lang="la" type="auto">- Scripsi mensibus Ianuario et Februario sermones XX, quorum exemplum hic mitto.</s>
-					<s xml:lang="la" type="auto">Oro, ut benigne accipias munusculum.</s>
-					<s xml:lang="la" type="auto">Parabo deo volente Decades adhuc 4, in quibus tractabo et alios maxime necessarios theologiae evangelicae locos communes.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Munus accepi uxori meae missum, vir omnibus modis colendissime, ac miror humanissimi senatus benevolentiam, cum nulla sint ex me profecta beneficia, ob quae ille me amet tantopere.</s>
+					<s n="3" xml:lang="la" type="auto">Conabor tamen modis omnibus, ita me geram, ne illum unquam amoris et studii in me sui poeniteat.</s>
+					<s n="4" xml:lang="la" type="auto">Te autem oro, ut gratias meo nomine agas senatui amplissimo.</s>
+					<s n="5" xml:lang="la" type="auto">hoc interim tibi persuasissimum habe, me ne pilum quidem accep[isse], quisquis praeter te ac tuos obtulisset.</s>
+					<s n="6" xml:lang="la" type="auto">Non enim assuevi, imo oblata munera honoraria ab urbibus et clarissimis hominibus repuli hactenus constantissime nec accipiam ulla deo volente, quoad vixero.</s>
+					<s n="7" xml:lang="la" type="auto">Obtulere archiepiscopus Cantuariensis et aliquot primarii viri Angliae, obtulit Berna et Augusta, obtulerunt alii; ego nunquam vel terunicum accepi a quoquam.</s>
+					<s n="8" xml:lang="la" type="auto">Sunt autem causae multae et iustissimae, quare sic agam.</s>
+					<s n="9" xml:lang="la" type="auto">- Scripsi mensibus Ianuario et Februario sermones XX, quorum exemplum hic mitto.</s>
+					<s n="10" xml:lang="la" type="auto">Oro, ut benigne accipias munusculum.</s>
+					<s n="11" xml:lang="la" type="auto">Parabo deo volente Decades adhuc 4, in quibus tractabo et alios maxime necessarios theologiae evangelicae locos communes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Calvinianae responsionis nulla hic extant exemplaria; quod tibi misi, ex ipso Calvino accepi.</s>
-					<s xml:lang="la" type="auto">XII. huius magna celebrabitur synodus Bernae.</s>
-					<s xml:lang="la" type="auto">Vocati sunt eo omnes ministri ecclesiarum ditionis Bernatium; post octiduum comparebunt et Gallicani vel Sabaudienses ministri.</s>
-					<s xml:lang="la" type="auto">Haeret igitur Bernae Musculus, ut synodis intersit.</s>
+					<s n="12" xml:lang="la" type="auto">Calvinianae responsionis nulla hic extant exemplaria; quod tibi misi, ex ipso Calvino accepi.</s>
+					<s n="13" xml:lang="la" type="auto">XII. huius magna celebrabitur synodus Bernae.</s>
+					<s n="14" xml:lang="la" type="auto">Vocati sunt eo omnes ministri ecclesiarum ditionis Bernatium; post octiduum comparebunt et Gallicani vel Sabaudienses ministri.</s>
+					<s n="15" xml:lang="la" type="auto">Haeret igitur Bernae Musculus, ut synodis intersit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Remitto tibi chartas communicatas de parricidio Anglicano, scriptas ab Antverpia, et ago tibi magnas gratias.</s>
-					<s xml:lang="la" type="auto">Ex Anglia eandem fere historiam contexunt totidem verbis amici; sed tuis plura non habeo.</s>
-					<s xml:lang="la" type="auto">Dominus convertat omnia in gloriam sui nominis.</s>
-					<s xml:lang="la" type="auto">Expecto, quid praeterea scribant amici ex Antverpia; ea enim te communicaturum nobis polliceris.</s>
+					<s n="16" xml:lang="la" type="auto">Remitto tibi chartas communicatas de parricidio Anglicano, scriptas ab Antverpia, et ago tibi magnas gratias.</s>
+					<s n="17" xml:lang="la" type="auto">Ex Anglia eandem fere historiam contexunt totidem verbis amici; sed tuis plura non habeo.</s>
+					<s n="18" xml:lang="la" type="auto">Dominus convertat omnia in gloriam sui nominis.</s>
+					<s n="19" xml:lang="la" type="auto">Expecto, quid praeterea scribant amici ex Antverpia; ea enim te communicaturum nobis polliceris.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominus conferat tibi sapientiam et facultates componendi causam contraversam inter Helvetios.</s>
-					<s xml:lang="la" type="auto">Vale Salutant te domini consules et fratres symmistae.</s>
+					<s n="20" xml:lang="la" type="auto">Dominus conferat tibi sapientiam et facultates componendi causam contraversam inter Helvetios.</s>
+					<s n="21" xml:lang="la" type="auto">Vale Salutant te domini consules et fratres symmistae.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, 7. Martii, anno 1549.</s>
+					<s n="22" xml:lang="la" type="auto">Tiguri, 7. Martii, anno 1549.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus tuus Literas inclusas remitte omnes Clarissimo viro D. D.</s>
+					<s n="23" xml:lang="la" type="auto">Bullingerus tuus Literas inclusas remitte omnes Clarissimo viro D. D.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro D. D. Ioachimo Vadiano, domino suo colendissimo.</s>
-					<s xml:lang="la" type="auto">Sangallen.</s>
+					<s n="24" xml:lang="la" type="auto">Clarissimo viro D. D. Ioachimo Vadiano, domino suo colendissimo.</s>
+					<s n="25" xml:lang="la" type="auto">Sangallen.</s>
 				</p>
 			</div>
 		</body>

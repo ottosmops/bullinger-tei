@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2472</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 347,364 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 347,364 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -69,14 +72,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 75,64-65</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">nur Hinweise auf Gerdes und Anm; Vgl. Ms S 75, 66 Katalog vom Bullinger Büchern 1546 und 1551 für Calvin und J. a Lasco</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 75,64-65</idno>
+						<idno subtype="Hinweis">nur Hinweise auf Gerdes und Anm; Vgl. Ms S 75, 66 Katalog vom Bullinger Büchern 1546 und 1551 für Calvin und J. a Lasco</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -90,50 +96,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1311">
 				<correspAction type="sent">
-					<persName ref="person#224" cert="high">
+					<!--
+					<persName ref="person224" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">a Lasco</surname>
-						<addName type="main">a Lasco (Laski), Johannes (Jan)</addName>
+						<persName type="main" ref="person8041>a Lasco (Laski), Johannes (Jan)</addName>
 						<graphic type="portrait" url="portraits/220_Laski_Jan.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_a_Lasco"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118726633"/>
 					</persName>
-					<place source="#296" cert="high">
-						<settlement>London</settlement>
-						<geo>51.50853 -0.12574</geo>
-					</place>
+					-->
+					<persName ref="person224" cert="high"/>
+					<place source="place296" cert="high"/>
 					<date when="1551-06-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1312"/>
-					<ref type="prev_chronologically" target="files.xml#1310"/>
-					<ref type="next_correspondence" target="files.xml#1895"/>
-					<ref type="prev_correspondence" target="files.xml#1240"/>
-					<ref type="next_correspondence_request" target="files.xml#1895"/>
-					<ref type="prev_correspondence_request" target="files.xml#1240"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2225"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12005"/>
-					<ref type="next_same_sender" target="files.xml#1895"/>
-					<ref type="prev_same_sender" target="files.xml#1240"/>
-					<ref type="next_same_addressee" target="files.xml#1313"/>
-					<ref type="prev_same_addressee" target="files.xml#1303"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1895"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1240"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1313"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1303"/>
+					<ref type="next_chronologically" target="file1312"/>
+					<ref type="prev_chronologically" target="file1310"/>
+					<ref type="next_correspondence" target="file1895"/>
+					<ref type="prev_correspondence" target="file1240"/>
+					<ref type="next_correspondence_request" target="file1895"/>
+					<ref type="prev_correspondence_request" target="file1240"/>
+					<ref type="next_correspondence_reaction" target="file2225"/>
+					<ref type="prev_correspondence_reaction" target="file12005"/>
+					<ref type="next_same_sender" target="file1895"/>
+					<ref type="prev_same_sender" target="file1240"/>
+					<ref type="next_same_addressee" target="file1313"/>
+					<ref type="prev_same_addressee" target="file1303"/>
+					<ref type="next_with_sender_as_addressee" target="file1895"/>
+					<ref type="prev_with_sender_as_addressee" target="file1240"/>
+					<ref type="next_with_addressee_as_sender" target="file1313"/>
+					<ref type="prev_with_addressee_as_sender" target="file1303"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -150,55 +157,55 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Scripsi non ita pridem ad te paucis per doctorem Brunonem, qui se literas Argentina ad te transmissurum esse pollicebatur.</s>
-					<s xml:lang="la" type="auto">Deinde et libellum ad te tuum de sacramentis, quem ante triennium ad me miseras, et nunc demum quintae Decadi tuae inseruisti, per manus d. a Bredam fratris domini Falesii, ad te misi hic me autore sed valde incorrecte excusum.</s>
-					<s xml:lang="la" type="auto">Non putaram enim te istic illum editurum esse, cum tanto tempore apud me praeter meam interim voluntatem delituisset.</s>
-					<s xml:lang="la" type="auto">Adieci illi unam e meis epistolis eadem de re ante sex annos scriptam, ut doctrinae consensum attestarer, neque dubito tibi haec omnia reddita esse.</s>
-					<s xml:lang="la" type="auto">Quod ad domesticum coenae dominicae usum attinet, nos hic a vobis, ut puto, non dissentimus, sed docemus vobiscum in coenae usu publicum coetum et publicam ecclesiae convocationem requiri, siquidem id fieri possit.</s>
-					<s xml:lang="la" type="auto">Sed cum aut non licet, aut non est ex usu publico ecclesiae publice in unum convenire toti ecclesiae ad coenae usum, non negamus coenae usum aliquot fratribus illam postulantibus et privatim convenientibus, exemplo apostolorum panem per domos frangentium, modo ne ulla adhibeatur superstitio, et privatus ille eiusmodi usus non remoretur neque obscuret publicum illius usum illum in publico totius ecclesiae coetu.</s>
-					<s xml:lang="la" type="auto">Alioqui Paulum hic protinus et nos audimus: Annon habetis domos ad edendum?</s>
-					<s xml:lang="la" type="auto">absitque ut nos quod dominicum est, ut inquit Chrysostomus, privatim facere velimus.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Scripsi non ita pridem ad te paucis per doctorem Brunonem, qui se literas Argentina ad te transmissurum esse pollicebatur.</s>
+					<s n="3" xml:lang="la" type="auto">Deinde et libellum ad te tuum de sacramentis, quem ante triennium ad me miseras, et nunc demum quintae Decadi tuae inseruisti, per manus d. a Bredam fratris domini Falesii, ad te misi hic me autore sed valde incorrecte excusum.</s>
+					<s n="4" xml:lang="la" type="auto">Non putaram enim te istic illum editurum esse, cum tanto tempore apud me praeter meam interim voluntatem delituisset.</s>
+					<s n="5" xml:lang="la" type="auto">Adieci illi unam e meis epistolis eadem de re ante sex annos scriptam, ut doctrinae consensum attestarer, neque dubito tibi haec omnia reddita esse.</s>
+					<s n="6" xml:lang="la" type="auto">Quod ad domesticum coenae dominicae usum attinet, nos hic a vobis, ut puto, non dissentimus, sed docemus vobiscum in coenae usu publicum coetum et publicam ecclesiae convocationem requiri, siquidem id fieri possit.</s>
+					<s n="7" xml:lang="la" type="auto">Sed cum aut non licet, aut non est ex usu publico ecclesiae publice in unum convenire toti ecclesiae ad coenae usum, non negamus coenae usum aliquot fratribus illam postulantibus et privatim convenientibus, exemplo apostolorum panem per domos frangentium, modo ne ulla adhibeatur superstitio, et privatus ille eiusmodi usus non remoretur neque obscuret publicum illius usum illum in publico totius ecclesiae coetu.</s>
+					<s n="8" xml:lang="la" type="auto">Alioqui Paulum hic protinus et nos audimus: Annon habetis domos ad edendum?</s>
+					<s n="9" xml:lang="la" type="auto">absitque ut nos quod dominicum est, ut inquit Chrysostomus, privatim facere velimus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quod ad Florianum illum attinet, vehementer doleo te quoque in eorum numero esse quos ille pios et sanctos viros hypocrisi sua fefellit.</s>
-					<s xml:lang="la" type="auto">Facilius fero quod me fefellit, sed quod ad fallendos alios meo sit abusus nomine, denique et mea manu, id mihi magis dolet, quam ut dicere possim.</s>
-					<s xml:lang="la" type="auto">Quod vero te quoque circumvenerit, omnium maxime, ut verum fatear, doleo.</s>
-					<s xml:lang="la" type="auto">Ego vero iam a biennio et amplius nihil ab illo accepi, neque ubi sit scire possum, aliudque non suspicor quam quod se alicubi in antrum forte monasticum detrusit, tametsi neque huius quidquam scio.</s>
-					<s xml:lang="la" type="auto">Ex mea patria nemo quidquam de illo ad me scribit, ut illic eum esse plane non putem.</s>
-					<s xml:lang="la" type="auto">Sed etsi ubi ille sit prorsus nesciam, neque quidquam ab illo aut mihi aut tibi aut aliis etiam expectandum esse credam, ego tamen, posteaquam in nominis mei gratiam tantum in illum beneficium contulisti, magnam tibi habeo gratiam, et in me id totum abs te pro tua virtute collatum esse putabo, daboque operam ut sub nundinas Francfordienses tibi, vir sanctissime, satisfiat.</s>
-					<s xml:lang="la" type="auto">Nolo enim ut tibi fraudi sit etiam fucus ipse mei nominis, tibi inquam quem ego non alio quam patris loco amo veneror et colo.</s>
+					<s n="10" xml:lang="la" type="auto">Quod ad Florianum illum attinet, vehementer doleo te quoque in eorum numero esse quos ille pios et sanctos viros hypocrisi sua fefellit.</s>
+					<s n="11" xml:lang="la" type="auto">Facilius fero quod me fefellit, sed quod ad fallendos alios meo sit abusus nomine, denique et mea manu, id mihi magis dolet, quam ut dicere possim.</s>
+					<s n="12" xml:lang="la" type="auto">Quod vero te quoque circumvenerit, omnium maxime, ut verum fatear, doleo.</s>
+					<s n="13" xml:lang="la" type="auto">Ego vero iam a biennio et amplius nihil ab illo accepi, neque ubi sit scire possum, aliudque non suspicor quam quod se alicubi in antrum forte monasticum detrusit, tametsi neque huius quidquam scio.</s>
+					<s n="14" xml:lang="la" type="auto">Ex mea patria nemo quidquam de illo ad me scribit, ut illic eum esse plane non putem.</s>
+					<s n="15" xml:lang="la" type="auto">Sed etsi ubi ille sit prorsus nesciam, neque quidquam ab illo aut mihi aut tibi aut aliis etiam expectandum esse credam, ego tamen, posteaquam in nominis mei gratiam tantum in illum beneficium contulisti, magnam tibi habeo gratiam, et in me id totum abs te pro tua virtute collatum esse putabo, daboque operam ut sub nundinas Francfordienses tibi, vir sanctissime, satisfiat.</s>
+					<s n="16" xml:lang="la" type="auto">Nolo enim ut tibi fraudi sit etiam fucus ipse mei nominis, tibi inquam quem ego non alio quam patris loco amo veneror et colo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quintam tuam Decadem non licuit hactenus revera totam perlegere, sed quae legi omnia placent, et pro donis in te collatis gratias ago domino deo nostro.</s>
+					<s n="17" xml:lang="la" type="auto">Quintam tuam Decadem non licuit hactenus revera totam perlegere, sed quae legi omnia placent, et pro donis in te collatis gratias ago domino deo nostro.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quae Bucerus ante mortem de re sacramentaria mecum egerit egoque illi responderim nunc non habeo: sunt enim apud dominum Cantuariensem, qui nunc hinc abest.</s>
-					<s xml:lang="la" type="auto">Ubi rursum habuero descripta ad te transmittam.</s>
-					<s xml:lang="la" type="auto">Miraberis, sat scio, ubi perlegeris.</s>
-					<s xml:lang="la" type="auto">Scripsi ad te nuper de Musculo, Bibliandro et Castallione, si quo modo induci possint ut huc veniant.</s>
+					<s n="18" xml:lang="la" type="auto">Quae Bucerus ante mortem de re sacramentaria mecum egerit egoque illi responderim nunc non habeo: sunt enim apud dominum Cantuariensem, qui nunc hinc abest.</s>
+					<s n="19" xml:lang="la" type="auto">Ubi rursum habuero descripta ad te transmittam.</s>
+					<s n="20" xml:lang="la" type="auto">Miraberis, sat scio, ubi perlegeris.</s>
+					<s n="21" xml:lang="la" type="auto">Scripsi ad te nuper de Musculo, Bibliandro et Castallione, si quo modo induci possint ut huc veniant.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Idem vero et nunc optarim, sed audio neque Musculo neque Bibliandro nostro licere ut hoc faciant.</s>
-					<s xml:lang="la" type="auto">Ego sane optarim illos adesse, sed si id fieri non potest saltem da operam, quod in te est, ut Castallionem et Coelium Curionem hic habere possimus.</s>
-					<s xml:lang="la" type="auto">Si de illorum animo hac in parte certior essem, curarem ut et viaticum illis daretur et honestam demum hic conditionem haberent.</s>
-					<s xml:lang="la" type="auto">Cuperem nos plurimos esse qui idem in domino sentiremus et doceremus.</s>
+					<s n="22" xml:lang="la" type="auto">Idem vero et nunc optarim, sed audio neque Musculo neque Bibliandro nostro licere ut hoc faciant.</s>
+					<s n="23" xml:lang="la" type="auto">Ego sane optarim illos adesse, sed si id fieri non potest saltem da operam, quod in te est, ut Castallionem et Coelium Curionem hic habere possimus.</s>
+					<s n="24" xml:lang="la" type="auto">Si de illorum animo hac in parte certior essem, curarem ut et viaticum illis daretur et honestam demum hic conditionem haberent.</s>
+					<s n="25" xml:lang="la" type="auto">Cuperem nos plurimos esse qui idem in domino sentiremus et doceremus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Domino a Bredam, fratri d. Fallesii, dedi quaedam in mandatis ad te et ad d. Calvinum: credes igitur aut alteri illorum aut utrique.</s>
-					<s xml:lang="la" type="auto">Vale, frater in domino dilectissime, et me quaeso apud fratres quod non singulis scribam, imprimis vero apud patrem nostrum dominum Pellicanum, excusato.</s>
-					<s xml:lang="la" type="auto">Deus opt. max. servet et gubernet vestras ecclesias, vestramque istam mutuam consensionem per spiritum suum provehat et corroboret, ad nominis sui divini gloriam.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
-					<s xml:lang="la" type="auto">Dominus noster Hoperus strenue suo munere fungitur.</s>
-					<s xml:lang="la" type="auto">Nostra etiam ecclesia, gratia deo, multiplicatur, non tamen sine magna Pharisaicorum reluctatione.</s>
-					<s xml:lang="la" type="auto">Iterum vale.</s>
-					<s xml:lang="la" type="auto">Londini 7. iunii anno 1551.</s>
+					<s n="26" xml:lang="la" type="auto">Domino a Bredam, fratri d. Fallesii, dedi quaedam in mandatis ad te et ad d. Calvinum: credes igitur aut alteri illorum aut utrique.</s>
+					<s n="27" xml:lang="la" type="auto">Vale, frater in domino dilectissime, et me quaeso apud fratres quod non singulis scribam, imprimis vero apud patrem nostrum dominum Pellicanum, excusato.</s>
+					<s n="28" xml:lang="la" type="auto">Deus opt. max. servet et gubernet vestras ecclesias, vestramque istam mutuam consensionem per spiritum suum provehat et corroboret, ad nominis sui divini gloriam.</s>
+					<s n="29" xml:lang="la" type="manual">Amen.</s>
+					<s n="30" xml:lang="la" type="auto">Dominus noster Hoperus strenue suo munere fungitur.</s>
+					<s n="31" xml:lang="la" type="auto">Nostra etiam ecclesia, gratia deo, multiplicatur, non tamen sine magna Pharisaicorum reluctatione.</s>
+					<s n="32" xml:lang="la" type="auto">Iterum vale.</s>
+					<s n="33" xml:lang="la" type="auto">Londini 7. iunii anno 1551.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus quantus est Ioannes a Lasco.</s>
+					<s n="34" xml:lang="la" type="auto">Tuus quantus est Ioannes a Lasco.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Viro sanctissimo domino Henrico Bullingero, pastori ecclesiae Tigurinae fidelissimo, fratri suo observandissimo.</s>
+					<s n="35" xml:lang="la" type="auto">Viro sanctissimo domino Henrico Bullingero, pastori ecclesiae Tigurinae fidelissimo, fratri suo observandissimo.</s>
 				</p>
 			</div>
 		</body>

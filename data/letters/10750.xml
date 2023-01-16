@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=712</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=712</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336,39</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336,39</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336,28</idno>
+							<idno subtype="Autograph">E II 336,28</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -50,11 +53,11 @@
 						<summary>
 							<p xml:id="regest1">
 								In der [Konkordien-] Angelegenheit, deretwegen er in Zürich war, hat
-								<placeName ref="97">Basel</placeName> eine Tagsatzung angesetzt, zu der die Zürcher auch
-								<placeName ref="943">Schaffhausen</placeName> und
-								<placeName ref="1011">St. Gallen</placeName> einladen sollen. Gibt Bullinger Kenntnis davon, damit
-								dieser dafür sorgen kann, daß <placeName ref="1011">St. Gallen</placeName>
-								<persName ref="226">Joachim Vadian</persName> delegiert.
+								<placeName ref="place97">Basel</placeName> eine Tagsatzung angesetzt, zu der die Zürcher auch
+								<placeName ref="place943">Schaffhausen</placeName> und
+								<placeName ref="place1011">St. Gallen</placeName> einladen sollen. Gibt Bullinger Kenntnis davon, damit
+								dieser dafür sorgen kann, daß <placeName ref="place1011">St. Gallen</placeName>
+								<persName ref="person226">Joachim Vadian</persName> delegiert.
 							</p>
 						</summary>
 					</msContents>
@@ -64,29 +67,33 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10750">
 				<correspAction type="sent">
-					<persName ref="person#8349" cert="high">
+					<!--
+					<persName ref="person8349" cert="high">
 						<forename cert="high">Hans Rudolf</forename>
 						<surname cert="high">Frey</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/136301657"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person8349" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1536-01-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10751"/>
-					<ref type="prev_chronologically" target="files.xml#10749"/>
+					<ref type="next_chronologically" target="file10751"/>
+					<ref type="prev_chronologically" target="file10749"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -95,12 +102,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10756"/>
-					<ref type="prev_same_addressee" target="files.xml#10745"/>
+					<ref type="next_same_addressee" target="file10756"/>
+					<ref type="prev_same_addressee" target="file10745"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10756"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10745"/>
+					<ref type="next_with_addressee_as_sender" target="file10756"/>
+					<ref type="prev_with_addressee_as_sender" target="file10745"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,25 +124,25 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Min ganntz frünthlich und guͦtwillig diennst syen uch zuͦvor, wolgelerter, besonder lieber her und fründ.</s>
+					<s n="1" xml:lang="de" type="auto">Min ganntz frünthlich und guͦtwillig diennst syen uch zuͦvor, wolgelerter, besonder lieber her und fründ.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Uff die handlung, derenhalb ich jüngst vor einem ersamen rhat der statt Zürich und by üch gewesen<note xml:id="fn1" type="footnote" n="1"><persName ref="65">Hans Rudolf Frey</persName> hatte im Dezember 1535 in Zürich über eine Zusammenkunft von Vertretern der protestantischen Städte verhandelt; s. HBBW V, S. 477f, 2-24 mit Anm. 3.</note>, haben mine g[nädigen] h[eren] von <placeName ref="97">Basel</placeName> einem ersamen rhat by üch durch zöigern diss brieffs<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> schon tagsatzung ubersendet<note xml:id="fn3" type="footnote" n="3">eine Tagsatzung schriftlich angekündigt; s. das gleichzeitige Schreiben <placeName ref="97">Basels</placeName> an Zürich in EA IV/1c 598.</note> und sy darby gebetten, soliche tagsatzung denen von <placeName ref="943">Schaffhusen</placeName> und Sant <placeName ref="1011">Gallen</placeName>, die ouch mit irn botschaften zebesuͦchen, wüssend nit zeverhalten.</s>
-					<s xml:lang="de" type="auto">Wolten ich uch der ursach nit bergen<note xml:id="fn4" type="footnote" n="4">deshalb nicht verbergen.</note>, damit her doctor <persName ref="226">Joachim</persName> von Watt durch mittel, wie ir zethuͦnd wol wussen, als ein bot von Sant <placeName ref="1011">Gallen</placeName> verordnet und in disen schweren<note xml:id="fn5" type="footnote" n="5">schwerwiegenden, gewichtigen.</note> sachen nit usspliben thäte.</s>
+					<s n="2" xml:lang="de" type="auto">Uff die handlung, derenhalb ich jüngst vor einem ersamen rhat der statt Zürich und by üch gewesen<note xml:id="fn1" type="footnote" n="1"><persName ref="person65">Hans Rudolf Frey</persName> hatte im Dezember 1535 in Zürich über eine Zusammenkunft von Vertretern der protestantischen Städte verhandelt; s. HBBW V, S. 477f, 2-24 mit Anm. 3.</note>, haben mine g[nädigen] h[eren] von <placeName ref="place97">Basel</placeName> einem ersamen rhat by üch durch zöigern diss brieffs<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> schon tagsatzung ubersendet<note xml:id="fn3" type="footnote" n="3">eine Tagsatzung schriftlich angekündigt; s. das gleichzeitige Schreiben <placeName ref="place97">Basels</placeName> an Zürich in EA IV/1c 598.</note> und sy darby gebetten, soliche tagsatzung denen von <placeName ref="place943">Schaffhusen</placeName> und Sant <placeName ref="place1011">Gallen</placeName>, die ouch mit irn botschaften zebesuͦchen, wüssend nit zeverhalten.</s>
+					<s n="3" xml:lang="de" type="auto">Wolten ich uch der ursach nit bergen<note xml:id="fn4" type="footnote" n="4">deshalb nicht verbergen.</note>, damit her doctor <persName ref="person226">Joachim</persName> von Watt durch mittel, wie ir zethuͦnd wol wussen, als ein bot von Sant <placeName ref="place1011">Gallen</placeName> verordnet und in disen schweren<note xml:id="fn5" type="footnote" n="5">schwerwiegenden, gewichtigen.</note> sachen nit usspliben thäte.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Damit, was uch lieb und dienst ist.</s>
-					<s xml:lang="de" type="auto">Got verliche üch gsunthait und vii guter jar.</s>
+					<s n="4" xml:lang="de" type="auto">Damit, was uch lieb und dienst ist.</s>
+					<s n="5" xml:lang="de" type="auto">Got verliche üch gsunthait und vii guter jar.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum zinstags den 4ten januarii anno etc. 36.</s>
+					<s n="6" xml:lang="de" type="auto">Datum zinstags den 4ten januarii anno etc. 36.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Hanns Ruͦdolff Frig, des rhatz der statt <placeName ref="97">Basel</placeName>.</s>
+					<s n="7" xml:lang="de" type="auto">Hanns Ruͦdolff Frig, des rhatz der statt <placeName ref="place97">Basel</placeName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Dem wurdigen, wolgelerten hern Meister Heinrichen Bullinger, dienern des gothlichen worts zuͦ Zurich, minem besondern lieben hern und fründ.</s>
+					<s n="8" xml:lang="de" type="auto">Dem wurdigen, wolgelerten hern Meister Heinrichen Bullinger, dienern des gothlichen worts zuͦ Zurich, minem besondern lieben hern und fründ.</s>
 				</p>
 			</div>
 		</body>

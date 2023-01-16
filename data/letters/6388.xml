@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Rückseite" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms P 46,362</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms P 46,362</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -32,55 +35,40 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6388">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="low">Geistliche</name>
-						<place source="#587" cert="low">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date when="1565-03-00" cert="low"><note>Datum unsicher  (1565 März ..)</note></date>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="low"/>
+					<date notBefore="1565-03-01" notAfter="1565-03-12" cert="low"><note>Datum unsicher  (1565 März ..)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1898" cert="low">
+					<!--
+					<persName ref="person1898" cert="low">
 						<forename cert="low">Balthasar</forename>
 						<surname cert="low">Lehwald</surname>
-						<addName type="main">von Lehwald, Balthasar</addName>
+						<persName type="main" ref="person3655>von Lehwald, Balthasar</addName>
 					</persName>
-					<place source="#512" cert="low">
-						<settlement>Tübingen</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>48.52266 9.05222</geo>
-					</place>
+					-->
+					<persName ref="person1898" cert="low"/>
+					<place source="place512" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6390"/>
-					<ref type="prev_chronologically" target="files.xml#6387"/>
+					<ref type="next_chronologically" target="file6390"/>
+					<ref type="prev_chronologically" target="file6387"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#6327"/>
+					<ref type="prev_correspondence" target="file6327"/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#6327"/>
-					<ref type="next_same_sender" target="files.xml#6390"/>
-					<ref type="prev_same_sender" target="files.xml#6187"/>
+					<ref type="prev_correspondence_reaction" target="file6327"/>
+					<ref type="next_same_sender" target="file6390"/>
+					<ref type="prev_same_sender" target="file6187"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#6327"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6390"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6187"/>
+					<ref type="prev_same_addressee" target="file6327"/>
+					<ref type="next_with_sender_as_addressee" target="file6390"/>
+					<ref type="prev_with_sender_as_addressee" target="file6187"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6327"/>
-					<ref type="child" target="files.xml#6389"/>
-					<ref type="parent" target="files.xml#6389"/>
+					<ref type="prev_with_addressee_as_sender" target="file6327"/>
+					<ref type="child" target="file6389"/>
+					<ref type="parent" target="file6389"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

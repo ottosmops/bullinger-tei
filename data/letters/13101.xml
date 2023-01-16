@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3052</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3052</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">A 51, f. 50, Nr. 30</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">A 51, f. 50, Nr. 30</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -94,41 +97,46 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13101">
 				<correspAction type="sent">
-					<persName ref="person#714" cert="high">
+					<!--
+					<persName ref="person714" cert="high">
 						<forename cert="high">Celio Secondo</forename>
 						<surname cert="high">Curione</surname>
+						<graphic type="portrait" url="portraits/714_Curione_Celio_Secondo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Celio_Secondo_Curione"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/10407440X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414681"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person714" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1547-10-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#477" cert="high">
+					<!--
+					<persName ref="person477" cert="high">
 						<forename cert="high">Hans Rudolf</forename>
 						<surname cert="high">Bullinger</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089431538"/>
 					</persName>
+					-->
+					<persName ref="person477" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13102"/>
-					<ref type="prev_chronologically" target="files.xml#13100"/>
+					<ref type="next_chronologically" target="file13102"/>
+					<ref type="prev_chronologically" target="file13100"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#26"/>
-					<ref type="prev_same_sender" target="files.xml#13087"/>
-					<ref type="next_same_addressee" target="files.xml#1129"/>
+					<ref type="next_same_sender" target="file26"/>
+					<ref type="prev_same_sender" target="file13087"/>
+					<ref type="next_same_addressee" target="file1129"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#26"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13087"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1129"/>
+					<ref type="next_with_sender_as_addressee" target="file26"/>
+					<ref type="prev_with_sender_as_addressee" target="file13087"/>
+					<ref type="next_with_addressee_as_sender" target="file1129"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -143,46 +151,46 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Caelius Secundus Curio Rodolpho Bullingero, d. Heinrychi filio, S.P.D. per Christum Jesum.</s>
-					<s xml:lang="la" type="auto">Si nihil parenti utrique tuo,<note xml:id="fn1" type="footnote" n="1">Heinrich Bullinger und Anna, geb. Adlischwyler.</note> Rodolphe charissime, deberem, tua tamen ista praeclara indoles, quam vestrorum sermonibus hic valde audio commendari, meum animum excitare ac permovere deberet (soleo enim istis aetatulis atque ingeniis ex animo favere), ut te diligerem, tibi omnia cuperem vellemque, ac, quoad possem, te literis atque artibus ingenuis erudirem.<pb type="edition" next="580"/></s>
+					<s n="1" xml:lang="la" type="auto">Caelius Secundus Curio Rodolpho Bullingero, d. Heinrychi filio, S.P.D. per Christum Jesum.</s>
+					<s n="2" xml:lang="la" type="auto">Si nihil parenti utrique tuo,<note xml:id="fn1" type="footnote" n="1">Heinrich Bullinger und Anna, geb. Adlischwyler.</note> Rodolphe charissime, deberem, tua tamen ista praeclara indoles, quam vestrorum sermonibus hic valde audio commendari, meum animum excitare ac permovere deberet (soleo enim istis aetatulis atque ingeniis ex animo favere), ut te diligerem, tibi omnia cuperem vellemque, ac, quoad possem, te literis atque artibus ingenuis erudirem.<pb type="edition" next="580"/></s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Nunc cum et ego et uxor mea<note xml:id="fn2" type="footnote" n="2">Margherita Bianca, geb. Isacchi.</note> et liberi denique nostri<note xml:id="fn3" type="footnote" n="3">Zu deren Namen s. <abbr>Kutter</abbr> 256-269; <abbr>HBBW</abbr> XV 316, Anm. 15.</note> patri primum tuo, viro clarissimo, deinde etiam matri tuae, foeminae honestissimae, tantum debeamus, quantum persolvere difficilimum esset, mihi puto semper esse cogitandum, si, quo modo vobis<note xml:id="fn4" type="footnote" n="4">Curione verwendet hier im Unterschied zu "tuo" und "tua" oben Z. <qv>zl17379-2</qv> (u.ö.) die zweite Person Plural, was darauf hindeutet, dass hier neben Hans Rudolf auch dessen Geschwister gemeint sind.</note> saltem praestare aliquid possim, quod cum mei apud vos animi testimonium sit, tum ad cultum eruditionis (qua re excepta pietate et religione nihil praestantius esse potest) vobis esse adiumento possit.</s>
+					<s n="3" xml:lang="la" type="auto">Nunc cum et ego et uxor mea<note xml:id="fn2" type="footnote" n="2">Margherita Bianca, geb. Isacchi.</note> et liberi denique nostri<note xml:id="fn3" type="footnote" n="3">Zu deren Namen s. <abbr>Kutter</abbr> 256-269; <abbr>HBBW</abbr> XV 316, Anm. 15.</note> patri primum tuo, viro clarissimo, deinde etiam matri tuae, foeminae honestissimae, tantum debeamus, quantum persolvere difficilimum esset, mihi puto semper esse cogitandum, si, quo modo vobis<note xml:id="fn4" type="footnote" n="4">Curione verwendet hier im Unterschied zu "tuo" und "tua" oben Z. <qv>zl17379-2</qv> (u.ö.) die zweite Person Plural, was darauf hindeutet, dass hier neben Hans Rudolf auch dessen Geschwister gemeint sind.</note> saltem praestare aliquid possim, quod cum mei apud vos animi testimonium sit, tum ad cultum eruditionis (qua re excepta pietate et religione nihil praestantius esse potest) vobis esse adiumento possit.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Memini enim teneoque et qua nos omnes charitate domo atque hospitio acceperit vester uterque parens, tunc quum ex Italia (agitur nunc annus quintus)<note xml:id="fn5" type="footnote" n="5">Bezug auf Bullingers Unterstützung von Curione und dessen Familie, als sie 1542 in die Eidgenossenschaft geflüchtet waren; s. dazu <abbr>HBBW</abbr> XV 92, Anm. 35.</note>, tanquam ex naufragio, enataremus et quibus officiis abeuntes fuerint prosecuti.</s>
-					<s xml:lang="la" type="auto">Atque etiam illud recordor me ora<note xml:id="fn6" type="footnote" n="6">Hier sind die Sprachfähigkeiten von Bullingers Kindern gemeint.</note> vestra inspectasse vestramque mecum tacitus indolem observasse ac notasse; quae iam tum spem dabat non ambiguam vos aliquando parentibus vestris gaudium, patriae isti vestrae praeclarae ornamenta, ecclesiae Christi adiumenta allaturos esse.</s>
+					<s n="4" xml:lang="la" type="auto">Memini enim teneoque et qua nos omnes charitate domo atque hospitio acceperit vester uterque parens, tunc quum ex Italia (agitur nunc annus quintus)<note xml:id="fn5" type="footnote" n="5">Bezug auf Bullingers Unterstützung von Curione und dessen Familie, als sie 1542 in die Eidgenossenschaft geflüchtet waren; s. dazu <abbr>HBBW</abbr> XV 92, Anm. 35.</note>, tanquam ex naufragio, enataremus et quibus officiis abeuntes fuerint prosecuti.</s>
+					<s n="5" xml:lang="la" type="auto">Atque etiam illud recordor me ora<note xml:id="fn6" type="footnote" n="6">Hier sind die Sprachfähigkeiten von Bullingers Kindern gemeint.</note> vestra inspectasse vestramque mecum tacitus indolem observasse ac notasse; quae iam tum spem dabat non ambiguam vos aliquando parentibus vestris gaudium, patriae isti vestrae praeclarae ornamenta, ecclesiae Christi adiumenta allaturos esse.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Itaque cum nec domestica vobis desint exempla, nec praesidia ea, quae ad eximiam eruditionem bonasque arteis assequendas requiruntur, cumque tempora ista<note xml:id="fn7" type="footnote" n="7">Die Curione als endzeitlich wahrnimmt.</note> (quae nullam ferre segnitiem aut inertiam possunt)<note xml:id="fna" type="footnote" n="a"><hi>Dieses und das nächste Klammerpaar ergänzt.</hi></note> vos hortentur ac (quod omnium maxime vos exsuscitare aliosque omneis debet) tam clara voce pater ille coelestis per filium suum Jesum Christum, dominum et conservatorem nostrum, convocet, turpissimum quidem fuerit vos non equis (quod aiunt) velisque<note xml:id="fn8" type="footnote" n="8">equis velisque: mit Segeln und Pferden [zu Wasser und zu Land]; s. <abbr>Adagia</abbr> 1, 4, 17 (<abbr>ASD</abbr> II/1 422, <ref target="file#10348">Nr. 317</ref>).</note> ad summa contendisse.</s>
+					<s n="6" xml:lang="la" type="auto">Itaque cum nec domestica vobis desint exempla, nec praesidia ea, quae ad eximiam eruditionem bonasque arteis assequendas requiruntur, cumque tempora ista<note xml:id="fn7" type="footnote" n="7">Die Curione als endzeitlich wahrnimmt.</note> (quae nullam ferre segnitiem aut inertiam possunt)<note xml:id="fna" type="footnote" n="a"><hi>Dieses und das nächste Klammerpaar ergänzt.</hi></note> vos hortentur ac (quod omnium maxime vos exsuscitare aliosque omneis debet) tam clara voce pater ille coelestis per filium suum Jesum Christum, dominum et conservatorem nostrum, convocet, turpissimum quidem fuerit vos non equis (quod aiunt) velisque<note xml:id="fn8" type="footnote" n="8">equis velisque: mit Segeln und Pferden [zu Wasser und zu Land]; s. <abbr>Adagia</abbr> 1, 4, 17 (<abbr>ASD</abbr> II/1 422, <ref target="file10348">Nr. 317</ref>).</note> ad summa contendisse.</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Ad quod quidem efficiendum, ut ipse quoque, Rodolphe suavissime (nam ad te, cum loqui coepissem, nescio quo quasi aestu abreptus ad tuos etiam fratres meam orationem converti), aliquid conferrem, nostram de omni artificio disserendi summam<note xml:id="fn9" type="footnote" n="9">Gemeint ist Curiones Buch De omni artificio disserendi atque tractandi summa; s. <ref target="file#13049">Nr. 3000</ref>,<qv>zl17267-4</qv>; <ref target="file#13051">Nr. 3002</ref>,<qv>zl17269-1</qv>.</note> ad te superioribus diebus mittebam, verum is<note xml:id="fn10" type="footnote" n="10">Unbekannt (vielleicht Michael Martin Stella; vgl. <ref target="file#13084">Nr. 3035</ref>,<qv>zl17304-1</qv>; <ref target="file#13095">Nr. 3046</ref>,<qv>zl17315-1</qv>; <ref target="file#13109">Nr. 3060</ref>,<qv>zl17327-1</qv>). - Zur Angelegenheit s. <ref target="file#13087">Nr. 3038</ref>,<qv>zl17307-1</qv>.<zfn>fn17379-1</zfn></note>, cui dederam (ut patris tui literis<note xml:id="fn11" type="footnote" n="11">Ein nicht erhaltener Brief Bullingers, den Curione nach Abfassung seines Briefs <ref target="file#13087">Nr. 3038</ref> vom 12. Oktober und spätestens drei Tage vor Abfassung des vorliegenden Briefs erhalten haben wird. Da Curiones Brief vom 12. Oktober (in dem dessen Verfasser sich nach der Übermittlung seines für Hans Rudolf bestimmten Buchs erkundigte) Bullinger erst Anfang November 1547 erreichte (s. dazu <ref target="file#13087">Nr. 3038</ref>, <qv>fn17307-1</qv>), wird Curione nur auf indirekte Weise aus Bullingers Brief erfahren haben, dass das für Hans Rudolf bestimmte Exemplar (und demzufolge vermutlich auch jene weiter unten erwähnten und für Italien bestimmten Briefe) nicht übermittelt wurden.</note> accepi)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note>, non reddidit; quod me magna <pb type="edition" next="581"/> molestia affecit cum propter hoc, tum maxime propter quasdam litteras et alia quaedam gravia sane et valde necessaria, quae ei in Italiam ferenda credideram.</s>
-					<s xml:lang="la" type="auto">Sed o homines infidos, o tempora periculosa!</s>
-					<s xml:lang="la" type="auto">Igitur, quoniam ille fefellit, denuo alterum ad te eius generis libellum mitto, quo adiutus (ut mea opinio fert) ad eam, quam tibi proposuisti, studiorum tuorum metam, citius poteris<note xml:id="fnc" type="footnote" n="c">is <hi>über der Zeile nachgetragen.</hi></note> pervenire.</s>
-					<s xml:lang="la" type="auto">Nam ad Heinrychum<note xml:id="fn12" type="footnote" n="12">Heinrich Bullinger d.J., geb. 1534.</note>, fratrem<note xml:id="fnd" type="footnote" n="d"><hi>In der Vorlage</hi> fratre.</note> tuum, antea misimus.<note xml:id="fn13" type="footnote" n="13">Vgl. <ref target="file#13049">Nr. 3000</ref>,<qv>zl17267-4</qv>.</note></s>
+					<s n="7" xml:lang="la" type="auto">Ad quod quidem efficiendum, ut ipse quoque, Rodolphe suavissime (nam ad te, cum loqui coepissem, nescio quo quasi aestu abreptus ad tuos etiam fratres meam orationem converti), aliquid conferrem, nostram de omni artificio disserendi summam<note xml:id="fn9" type="footnote" n="9">Gemeint ist Curiones Buch De omni artificio disserendi atque tractandi summa; s. <ref target="file13049">Nr. 3000</ref>,<qv>zl17267-4</qv>; <ref target="file13051">Nr. 3002</ref>,<qv>zl17269-1</qv>.</note> ad te superioribus diebus mittebam, verum is<note xml:id="fn10" type="footnote" n="10">Unbekannt (vielleicht Michael Martin Stella; vgl. <ref target="file13084">Nr. 3035</ref>,<qv>zl17304-1</qv>; <ref target="file13095">Nr. 3046</ref>,<qv>zl17315-1</qv>; <ref target="file13109">Nr. 3060</ref>,<qv>zl17327-1</qv>). - Zur Angelegenheit s. <ref target="file13087">Nr. 3038</ref>,<qv>zl17307-1</qv>.<zfn>fn17379-1</zfn></note>, cui dederam (ut patris tui literis<note xml:id="fn11" type="footnote" n="11">Ein nicht erhaltener Brief Bullingers, den Curione nach Abfassung seines Briefs <ref target="file13087">Nr. 3038</ref> vom 12. Oktober und spätestens drei Tage vor Abfassung des vorliegenden Briefs erhalten haben wird. Da Curiones Brief vom 12. Oktober (in dem dessen Verfasser sich nach der Übermittlung seines für Hans Rudolf bestimmten Buchs erkundigte) Bullinger erst Anfang November 1547 erreichte (s. dazu <ref target="file13087">Nr. 3038</ref>, <qv>fn17307-1</qv>), wird Curione nur auf indirekte Weise aus Bullingers Brief erfahren haben, dass das für Hans Rudolf bestimmte Exemplar (und demzufolge vermutlich auch jene weiter unten erwähnten und für Italien bestimmten Briefe) nicht übermittelt wurden.</note> accepi)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note>, non reddidit; quod me magna <pb type="edition" next="581"/> molestia affecit cum propter hoc, tum maxime propter quasdam litteras et alia quaedam gravia sane et valde necessaria, quae ei in Italiam ferenda credideram.</s>
+					<s n="8" xml:lang="la" type="auto">Sed o homines infidos, o tempora periculosa!</s>
+					<s n="9" xml:lang="la" type="auto">Igitur, quoniam ille fefellit, denuo alterum ad te eius generis libellum mitto, quo adiutus (ut mea opinio fert) ad eam, quam tibi proposuisti, studiorum tuorum metam, citius poteris<note xml:id="fnc" type="footnote" n="c">is <hi>über der Zeile nachgetragen.</hi></note> pervenire.</s>
+					<s n="10" xml:lang="la" type="auto">Nam ad Heinrychum<note xml:id="fn12" type="footnote" n="12">Heinrich Bullinger d.J., geb. 1534.</note>, fratrem<note xml:id="fnd" type="footnote" n="d"><hi>In der Vorlage</hi> fratre.</note> tuum, antea misimus.<note xml:id="fn13" type="footnote" n="13">Vgl. <ref target="file13049">Nr. 3000</ref>,<qv>zl17267-4</qv>.</note></s>
 				</p>
 			</div>
 			<div xml:id="div6" corresp="regest6">
 				<p>
-					<s xml:lang="la" type="auto">Vale, mi Rodolphe dulcissime, et parentem utrumque tuum una cum fratribus<note xml:id="fn14" type="footnote" n="14">Zu deren Namen s. <ref target="file#12934">Nr. 2885</ref>, <qv>fn17152-3</qv>.</note> totaque domo meo et uxoris filiorumque meorum nomine saluta diligenter.</s>
-					<s xml:lang="la" type="auto">Basileae, 9. cal. novembres 1547.</s>
+					<s n="11" xml:lang="la" type="auto">Vale, mi Rodolphe dulcissime, et parentem utrumque tuum una cum fratribus<note xml:id="fn14" type="footnote" n="14">Zu deren Namen s. <ref target="file12934">Nr. 2885</ref>, <qv>fn17152-3</qv>.</note> totaque domo meo et uxoris filiorumque meorum nomine saluta diligenter.</s>
+					<s n="12" xml:lang="la" type="auto">Basileae, 9. cal. novembres 1547.</s>
 				</p>
 				<p>
 					<note type="signature">[Ohne Unterschrift.]</note>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Rodolpho Bullingero, d. Heinrychi theologi clarissimi filio, mihi imprimis charissimo.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="13" xml:lang="la" type="auto">Rodolpho Bullingero, d. Heinrychi theologi clarissimi filio, mihi imprimis charissimo.</s>
+					<s n="14" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

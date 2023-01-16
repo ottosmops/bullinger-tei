@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4178/72</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 375,485</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 375,485</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,13 +54,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 87,30</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 87,30</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -71,50 +77,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2858">
 				<correspAction type="sent">
-					<persName ref="person#1422" cert="high">
+					<!--
+					<persName ref="person1422" cert="high">
 						<forename cert="high">James</forename>
 						<surname cert="high">Haddon</surname>
 						<ref type="wikipedia" target="https://en.wikipedia.org/wiki/James_Haddon"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1237501474"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person1422" cert="high"/>
+					<place source="place492" cert="high"/>
 					<date when="1556-03-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2859"/>
-					<ref type="prev_chronologically" target="files.xml#2857"/>
+					<ref type="next_chronologically" target="file2859"/>
+					<ref type="prev_chronologically" target="file2857"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#2783"/>
+					<ref type="prev_correspondence" target="file2783"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#2783"/>
+					<ref type="prev_correspondence_request" target="file2783"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#2783"/>
-					<ref type="next_same_addressee" target="files.xml#2859"/>
-					<ref type="prev_same_addressee" target="files.xml#2856"/>
+					<ref type="prev_same_sender" target="file2783"/>
+					<ref type="next_same_addressee" target="file2859"/>
+					<ref type="prev_same_addressee" target="file2856"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2783"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2859"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2856"/>
+					<ref type="prev_with_sender_as_addressee" target="file2783"/>
+					<ref type="next_with_addressee_as_sender" target="file2859"/>
+					<ref type="prev_with_addressee_as_sender" target="file2856"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -123,34 +128,37 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="2858/Autograph/00 E_II_375__fol__485_r_.tif" n="1"/>
+		<graphic url="2858/Autograph/01 E_II_375__fol__485_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. in domino P. Dedi ad te antea, sed dubito iam, tibi redditae fuerint necne, non quod velim te gravissimis occupatum interpellare, multo minus abstrahere ad momentum mihi respondendo, neque res tanti momenti fuerunt, de quibus scripsi, ut responsionem requirerent.</s>
-					<s xml:lang="la" type="auto">Certiorem te fecerunt de illis nunciis, quos tum habuimus ex Anglia; iam vero multo minus est, quod scribam te dignum.</s>
-					<s xml:lang="la" type="auto">Sed tamen has ad te do, quia diu mihi videtur, quod cum tua collocutus sim humani[ta]te aut a te audiverim ipso.</s>
-					<s xml:lang="la" type="auto">Burcherus noster a vobis rediens mihi quaerenti de te narravit non bene te valere; cum autem adhuc nihil audiverim, iam ex te ipso valde aveo intelligere, quomodo valeas.</s>
-					<s xml:lang="la" type="auto">Nihil praeterea peto nec id quidem nisi tuo ocio.</s>
-					<s xml:lang="la" type="auto">Multae causae sunt, quamobrem de tua valetudine pervelim audire, neque mirum, si de te privatim etiam sollicitus pene sim, cum tuum in me animum ita esse perspexi, ut ex quorundam nostrorum sermonibus ad me de te intellexi.</s>
-					<s xml:lang="la" type="auto">Non dubito, quin ista tempora tibi possint ut piis omnibus dolorem gignere atque efficere, ut multa et altissima ducantur suspiria.</s>
-					<s xml:lang="la" type="auto">Sed quid facias?</s>
-					<s xml:lang="la" type="auto">Qui sedet in altiss[imis], respicit humilia in coelo et in terra; qui vult suos exerceri, sed non destitui omnino suam patietur ecclesiam, quin, ut homo ille peccati iam aliqua ex parte patefit per te tuique similes, ita conficietur tandem spiritu oris domini, amen, amen.</s>
-					<s xml:lang="la" type="auto">Deus tibi adsit suo spiritu teque tueatur ad suae ecclesiae commodum.</s>
+					<s n="1" xml:lang="la" type="auto">S. in domino P. Dedi ad te antea, sed dubito iam, tibi redditae fuerint necne, non quod velim te gravissimis occupatum interpellare, multo minus abstrahere ad momentum mihi respondendo, neque res tanti momenti fuerunt, de quibus scripsi, ut responsionem requirerent.</s>
+					<s n="2" xml:lang="la" type="auto">Certiorem te fecerunt de illis nunciis, quos tum habuimus ex Anglia; iam vero multo minus est, quod scribam te dignum.</s>
+					<s n="3" xml:lang="la" type="auto">Sed tamen has ad te do, quia diu mihi videtur, quod cum tua collocutus sim humani[ta]te aut a te audiverim ipso.</s>
+					<s n="4" xml:lang="la" type="auto">Burcherus noster a vobis rediens mihi quaerenti de te narravit non bene te valere; cum autem adhuc nihil audiverim, iam ex te ipso valde aveo intelligere, quomodo valeas.</s>
+					<s n="5" xml:lang="la" type="auto">Nihil praeterea peto nec id quidem nisi tuo ocio.</s>
+					<s n="6" xml:lang="la" type="auto">Multae causae sunt, quamobrem de tua valetudine pervelim audire, neque mirum, si de te privatim etiam sollicitus pene sim, cum tuum in me animum ita esse perspexi, ut ex quorundam nostrorum sermonibus ad me de te intellexi.</s>
+					<s n="7" xml:lang="la" type="auto">Non dubito, quin ista tempora tibi possint ut piis omnibus dolorem gignere atque efficere, ut multa et altissima ducantur suspiria.</s>
+					<s n="8" xml:lang="la" type="auto">Sed quid facias?</s>
+					<s n="9" xml:lang="la" type="auto">Qui sedet in altiss[imis], respicit humilia in coelo et in terra; qui vult suos exerceri, sed non destitui omnino suam patietur ecclesiam, quin, ut homo ille peccati iam aliqua ex parte patefit per te tuique similes, ita conficietur tandem spiritu oris domini, amen, amen.</s>
+					<s n="10" xml:lang="la" type="auto">Deus tibi adsit suo spiritu teque tueatur ad suae ecclesiae commodum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Argentinae 12. martii 1556.</s>
+					<s n="11" xml:lang="la" type="auto">Argentinae 12. martii 1556.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tui studiosissimus Iacobus Haddonus.</s>
+					<s n="12" xml:lang="la" type="auto">Tui studiosissimus Iacobus Haddonus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Omnia bona et fausta ad dei voluntatem apprecor d. Bibliandro, d. Pellicano et d. Gesnero.</s>
+					<s n="13" xml:lang="la" type="auto">Omnia bona et fausta ad dei voluntatem apprecor d. Bibliandro, d. Pellicano et d. Gesnero.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Ornatissimo viro et observandissimo (in Christo) patri d. Heinrycho Bullingero, pastori fidelissimo ecclesie Tygurinae.</s>
+					<s n="14" xml:lang="la" type="auto">Ornatissimo viro et observandissimo (in Christo) patri d. Heinrycho Bullingero, pastori fidelissimo ecclesie Tygurinae.</s>
 				</p>
 			</div>
 		</body>

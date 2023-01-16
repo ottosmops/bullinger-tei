@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5944/32</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,855</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,855</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 103,147</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 103,147</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -63,46 +69,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5200">
 				<correspAction type="sent">
-					<persName ref="person#393" cert="high">
+					<!--
+					<persName ref="person393" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blaurer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#555" cert="high">
-						<settlement>Winterthur</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.50564 8.72413</geo>
-					</place>
+					-->
+					<persName ref="person393" cert="high"/>
+					<place source="place555" cert="high"/>
 					<date when="1562-03-02" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5201"/>
-					<ref type="prev_chronologically" target="files.xml#5199"/>
-					<ref type="next_correspondence" target="files.xml#5209"/>
-					<ref type="prev_correspondence" target="files.xml#5190"/>
-					<ref type="next_correspondence_request" target="files.xml#5216"/>
-					<ref type="prev_correspondence_request" target="files.xml#5181"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5209"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5190"/>
-					<ref type="next_same_sender" target="files.xml#5216"/>
-					<ref type="prev_same_sender" target="files.xml#5181"/>
-					<ref type="next_same_addressee" target="files.xml#5204"/>
-					<ref type="prev_same_addressee" target="files.xml#5194"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5216"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5181"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5204"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5194"/>
+					<ref type="next_chronologically" target="file5201"/>
+					<ref type="prev_chronologically" target="file5199"/>
+					<ref type="next_correspondence" target="file5209"/>
+					<ref type="prev_correspondence" target="file5190"/>
+					<ref type="next_correspondence_request" target="file5216"/>
+					<ref type="prev_correspondence_request" target="file5181"/>
+					<ref type="next_correspondence_reaction" target="file5209"/>
+					<ref type="prev_correspondence_reaction" target="file5190"/>
+					<ref type="next_same_sender" target="file5216"/>
+					<ref type="prev_same_sender" target="file5181"/>
+					<ref type="next_same_addressee" target="file5204"/>
+					<ref type="prev_same_addressee" target="file5194"/>
+					<ref type="next_with_sender_as_addressee" target="file5216"/>
+					<ref type="prev_with_sender_as_addressee" target="file5181"/>
+					<ref type="next_with_addressee_as_sender" target="file5204"/>
+					<ref type="prev_with_addressee_as_sender" target="file5194"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -112,40 +122,43 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="5200/Autograph/00 E_II_357__fol__855_r_.tif" n="1"/>
+		<graphic url="5200/Autograph/01 E_II_357__fol__855_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Remitto non absque maximis gratiis, quę nudius quartus inter coenandum ab Elia accepi, mi colendissime charissimeque frater, heri remissurus, si commodus fuisset nuncius.</s>
-					<s xml:lang="la" type="auto">Spero tamen te nihil damni tantilla dilatione fecisse.</s>
+					<s n="1" xml:lang="la" type="auto">Remitto non absque maximis gratiis, quę nudius quartus inter coenandum ab Elia accepi, mi colendissime charissimeque frater, heri remissurus, si commodus fuisset nuncius.</s>
+					<s n="2" xml:lang="la" type="auto">Spero tamen te nihil damni tantilla dilatione fecisse.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ah, quam sunt mirabilia, interim tamen iustissima domini iudicia.</s>
-					<s xml:lang="la" type="auto">Vere vere maledictus, qui confidit in homine etc.</s>
+					<s n="3" xml:lang="la" type="auto">Ah, quam sunt mirabilia, interim tamen iustissima domini iudicia.</s>
+					<s n="4" xml:lang="la" type="auto">Vere vere maledictus, qui confidit in homine etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nos istuc sedulo precibus a domino contendamus, ut ter miserum istum vel in viam quamprimum cum complicibus nunquam porro defluxuros revocet vel Achitophelia ipsorum consilia cum consultoribus infatuet et perdat, ut ne quid gravius dei filiis incommodent.</s>
-					<s xml:lang="la" type="auto">Utinam vero omnia hęc nos et nostros ad christianam vigilantiam et seriam resipiscentiam extimulent, quibus propius, quam male securi existimemus, gravissima pericula certo certius imminent, nisi nulla mora ad dominum convertamur.</s>
-					<s xml:lang="la" type="auto">Ego nihil prorsus novi a quoquam accipio.</s>
+					<s n="5" xml:lang="la" type="auto">Nos istuc sedulo precibus a domino contendamus, ut ter miserum istum vel in viam quamprimum cum complicibus nunquam porro defluxuros revocet vel Achitophelia ipsorum consilia cum consultoribus infatuet et perdat, ut ne quid gravius dei filiis incommodent.</s>
+					<s n="6" xml:lang="la" type="auto">Utinam vero omnia hęc nos et nostros ad christianam vigilantiam et seriam resipiscentiam extimulent, quibus propius, quam male securi existimemus, gravissima pericula certo certius imminent, nisi nulla mora ad dominum convertamur.</s>
+					<s n="7" xml:lang="la" type="auto">Ego nihil prorsus novi a quoquam accipio.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Es wirt bald mitt hufen uffbrechen und die basilisten schlieffen, die man disen wynter bruͦtet hat, nisi domino sic videatur, ut omnia subventanea pariant.</s>
-					<s xml:lang="la" type="auto">Fiat, fiat.</s>
+					<s n="8" xml:lang="de" type="auto">Es wirt bald mitt hufen uffbrechen und die basilisten schlieffen, die man disen wynter bruͦtet hat, nisi domino sic videatur, ut omnia subventanea pariant.</s>
+					<s n="9" xml:lang="la" type="auto">Fiat, fiat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Omnia, quę iam misisti, bis meapte manu descripsi, alterum exemplum ad germanum fratrem meum Thomam dedi, qui deinde ad Mathiam nostrum Schenccium et Hoserum mittet, quos omnes novi viros bonos et tacendi gnaros esse.</s>
-					<s xml:lang="la" type="auto">D. d. Conradus Forerus nudius quartus in numerum ministrorum huius ecclesiae omnium communibus (ut audio) suffragiis nullo prorsus in diversum eunte cooptatus est, quod illi pariter et ecclesię bene vertat.</s>
-					<s xml:lang="la" type="auto">Adero optimo amico et fratri pro virili laborum partem ab ipso in me translaturus tantisper, dum maiore usu magis confirmetur.</s>
-					<s xml:lang="la" type="auto">Salutat te valde quam reverenter tuis se precibus diligentissime commendans, quod... [Matthias?] quoque noster, qui bene cupere ecclesię videtur, et ego flagrantibus votis facimus.</s>
+					<s n="10" xml:lang="la" type="auto">Omnia, quę iam misisti, bis meapte manu descripsi, alterum exemplum ad germanum fratrem meum Thomam dedi, qui deinde ad Mathiam nostrum Schenccium et Hoserum mittet, quos omnes novi viros bonos et tacendi gnaros esse.</s>
+					<s n="11" xml:lang="la" type="auto">D. d. Conradus Forerus nudius quartus in numerum ministrorum huius ecclesiae omnium communibus (ut audio) suffragiis nullo prorsus in diversum eunte cooptatus est, quod illi pariter et ecclesię bene vertat.</s>
+					<s n="12" xml:lang="la" type="auto">Adero optimo amico et fratri pro virili laborum partem ab ipso in me translaturus tantisper, dum maiore usu magis confirmetur.</s>
+					<s n="13" xml:lang="la" type="auto">Salutat te valde quam reverenter tuis se precibus diligentissime commendans, quod... [Matthias?] quoque noster, qui bene cupere ecclesię videtur, et ego flagrantibus votis facimus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salutant te praetores nostri multum officiose.</s>
-					<s xml:lang="la" type="auto">Bene vale, suavissime mi anime, cum tua sancta familia omnibusque symmystis et professoribus, dominis mihi vere observandis.</s>
-					<s xml:lang="la" type="auto">Vituduri, 2. martii 1562.</s>
+					<s n="14" xml:lang="la" type="auto">Salutant te praetores nostri multum officiose.</s>
+					<s n="15" xml:lang="la" type="auto">Bene vale, suavissime mi anime, cum tua sancta familia omnibusque symmystis et professoribus, dominis mihi vere observandis.</s>
+					<s n="16" xml:lang="la" type="auto">Vituduri, 2. martii 1562.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">T[uus] Ambr[osius] Bl[aurerus].</s>
+					<s n="17" xml:lang="la" type="auto">T[uus] Ambr[osius] Bl[aurerus].</s>
 				</p>
 				<p>
 					<note type="address">[Adresse fehlt.]</note>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2703</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 363,125</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 363,125</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 76,117</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 76,117</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -61,52 +67,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1506">
 				<correspAction type="sent">
-					<persName ref="person#3815" cert="high">
+					<!--
+					<persName ref="person3815" cert="high">
 						<forename cert="high">Georg</forename>
 						<surname cert="high">von Württemberg</surname>
-						<addName type="main">von Württemberg-Mömpelgard (Montbéliard), Georg</addName>
+						<persName type="main" ref="person8098>von Württemberg-Mömpelgard (Montbéliard), Georg</addName>
 						<graphic type="portrait" url="portraits/3815_von_Wuerttemberg_Georg.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Georg_I._(W%C3%BCrttemberg-M%C3%B6mpelgard)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/136697925"/>
 					</persName>
-					<place source="#441" cert="high">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					-->
+					<persName ref="person3815" cert="high"/>
+					<place source="place441" cert="high"/>
 					<date when="1551-12-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1507"/>
-					<ref type="prev_chronologically" target="files.xml#1505"/>
-					<ref type="next_correspondence" target="files.xml#1514"/>
-					<ref type="prev_correspondence" target="files.xml#1425"/>
-					<ref type="next_correspondence_request" target="files.xml#1514"/>
-					<ref type="prev_correspondence_request" target="files.xml#1425"/>
-					<ref type="next_correspondence_reaction" target="files.xml#1553"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1352"/>
-					<ref type="next_same_sender" target="files.xml#1514"/>
-					<ref type="prev_same_sender" target="files.xml#1425"/>
-					<ref type="next_same_addressee" target="files.xml#1522"/>
-					<ref type="prev_same_addressee" target="files.xml#1489"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1514"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1425"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1522"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1489"/>
+					<ref type="next_chronologically" target="file1507"/>
+					<ref type="prev_chronologically" target="file1505"/>
+					<ref type="next_correspondence" target="file1514"/>
+					<ref type="prev_correspondence" target="file1425"/>
+					<ref type="next_correspondence_request" target="file1514"/>
+					<ref type="prev_correspondence_request" target="file1425"/>
+					<ref type="next_correspondence_reaction" target="file1553"/>
+					<ref type="prev_correspondence_reaction" target="file1352"/>
+					<ref type="next_same_sender" target="file1514"/>
+					<ref type="prev_same_sender" target="file1425"/>
+					<ref type="next_same_addressee" target="file1522"/>
+					<ref type="prev_same_addressee" target="file1489"/>
+					<ref type="next_with_sender_as_addressee" target="file1514"/>
+					<ref type="prev_with_sender_as_addressee" target="file1425"/>
+					<ref type="next_with_addressee_as_sender" target="file1522"/>
+					<ref type="prev_with_addressee_as_sender" target="file1489"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -123,18 +128,18 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Georg, grave zuͦ Würtemberg und zu Mümpelgart etc.</s>
+					<s n="1" xml:lang="de" type="auto">Georg, grave zuͦ Würtemberg und zu Mümpelgart etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Unsern gruß zuvor, lieber besonder, wyr schicken euch die persone, der namen dye furbitt declaration und antwurt, so vor den lantgraven unsern vöttern lantgraff Philipsen etc. zuͦ Yßbruck bescheen ist, uß gutt gnedigen gemidt zuͦ, wo ir die nit also warhafftig höttent, dieselbige mitt den verdrutten zu iberlessen und unß dieselbige mitt dem ehesten und on uffzug wider verwart zukomen lassen, dem wir unß zuͦ euch gäntzlich versehen.</s>
-					<s xml:lang="de" type="auto">Seitt gott befollen.</s>
-					<s xml:lang="de" type="auto">Datum unser handt den 19. decembr[is] zu Schaffhussen anno 51.</s>
+					<s n="2" xml:lang="de" type="auto">Unsern gruß zuvor, lieber besonder, wyr schicken euch die persone, der namen dye furbitt declaration und antwurt, so vor den lantgraven unsern vöttern lantgraff Philipsen etc. zuͦ Yßbruck bescheen ist, uß gutt gnedigen gemidt zuͦ, wo ir die nit also warhafftig höttent, dieselbige mitt den verdrutten zu iberlessen und unß dieselbige mitt dem ehesten und on uffzug wider verwart zukomen lassen, dem wir unß zuͦ euch gäntzlich versehen.</s>
+					<s n="3" xml:lang="de" type="auto">Seitt gott befollen.</s>
+					<s n="4" xml:lang="de" type="auto">Datum unser handt den 19. decembr[is] zu Schaffhussen anno 51.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Wyr höttent euch die ehr zuͦgeschickt und vor acht dagen, hatt unß ein verdrutter gutter günder die zu lessen (und nit die zeitt anheims) daran verhindert.</s>
+					<s n="5" xml:lang="de" type="auto">Wyr höttent euch die ehr zuͦgeschickt und vor acht dagen, hatt unß ein verdrutter gutter günder die zu lessen (und nit die zeitt anheims) daran verhindert.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">[Unserm] lieben beson[dern Hai]nrich Bul[linger pre]digernn [... z]u Zurich, zhanden.</s>
+					<s n="6" xml:lang="de" type="auto">[Unserm] lieben beson[dern Hai]nrich Bul[linger pre]digernn [... z]u Zurich, zhanden.</s>
 				</p>
 			</div>
 		</body>

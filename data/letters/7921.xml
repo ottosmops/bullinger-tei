@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7394/48</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 376,171</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 376,171</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,43 +54,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7921">
 				<correspAction type="sent">
-					<persName ref="person#993" cert="high">
+					<!--
+					<persName ref="person993" cert="high">
 						<forename cert="high">Tobias</forename>
 						<surname cert="high">Egli</surname>
-						<addName type="main">Egli (Iconius, Götz), Tobias</addName>
+						<persName type="main" ref="person8016>Egli (Iconius, Götz), Tobias</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Tobias_Egli"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089466366"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person993" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1569-07-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7922"/>
-					<ref type="prev_chronologically" target="files.xml#7920"/>
-					<ref type="next_correspondence" target="files.xml#7938"/>
-					<ref type="prev_correspondence" target="files.xml#7895"/>
-					<ref type="next_correspondence_request" target="files.xml#7965"/>
-					<ref type="prev_correspondence_request" target="files.xml#7895"/>
-					<ref type="next_correspondence_reaction" target="files.xml#7938"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#7885"/>
-					<ref type="next_same_sender" target="files.xml#7965"/>
-					<ref type="prev_same_sender" target="files.xml#7895"/>
-					<ref type="next_same_addressee" target="files.xml#7922"/>
-					<ref type="prev_same_addressee" target="files.xml#7919"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#7965"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#7895"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#7922"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#7919"/>
+					<ref type="next_chronologically" target="file7922"/>
+					<ref type="prev_chronologically" target="file7920"/>
+					<ref type="next_correspondence" target="file7938"/>
+					<ref type="prev_correspondence" target="file7895"/>
+					<ref type="next_correspondence_request" target="file7965"/>
+					<ref type="prev_correspondence_request" target="file7895"/>
+					<ref type="next_correspondence_reaction" target="file7938"/>
+					<ref type="prev_correspondence_reaction" target="file7885"/>
+					<ref type="next_same_sender" target="file7965"/>
+					<ref type="prev_same_sender" target="file7895"/>
+					<ref type="next_same_addressee" target="file7922"/>
+					<ref type="prev_same_addressee" target="file7919"/>
+					<ref type="next_with_sender_as_addressee" target="file7965"/>
+					<ref type="prev_with_sender_as_addressee" target="file7895"/>
+					<ref type="next_with_addressee_as_sender" target="file7922"/>
+					<ref type="prev_with_addressee_as_sender" target="file7919"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -105,19 +114,19 @@
 			<div>
 				<p>
 					<note type="regest">Er hat wegen Bullingers Krankheit länger nicht geschrieben und wünscht, dass die Besserung anhalte.</note>
-					<s xml:lang="la" type="auto">Nihil nunc ad te novi mitto, nisi quod magni apud nos sunt motus inter stipendiarios regis, quos veteribus muneribus orator noster non vult afficere, ut hactenus fuit moris.</s>
-					<s xml:lang="la" type="auto">Praecipua autem scribendi causa fuit profectio fratris Ioannis Baptistae de Cribellis Mediolanensis, qui Franciscana cuculla tectus Babilonia stabula evasit, Clavennae cucullam exuit.</s>
+					<s n="1" xml:lang="la" type="auto">Nihil nunc ad te novi mitto, nisi quod magni apud nos sunt motus inter stipendiarios regis, quos veteribus muneribus orator noster non vult afficere, ut hactenus fuit moris.</s>
+					<s n="2" xml:lang="la" type="auto">Praecipua autem scribendi causa fuit profectio fratris Ioannis Baptistae de Cribellis Mediolanensis, qui Franciscana cuculla tectus Babilonia stabula evasit, Clavennae cucullam exuit.</s>
 				</p>
 				<p>
 					<note type="regest">Er empfiehlt ihn, indem er auch ein Schreiben von Lentulus beilegt, aus dem ausserdem zu ersehen:</note>
-					<s xml:lang="la" type="auto">[...] quantum Peroniana causa nobis debeat esse commendata, cum ecclesiae Gallicae nihil quicquam offendiculi ex palinodia Ioannis Antonii de Pero acceperint.</s>
+					<s n="3" xml:lang="la" type="auto">[...] quantum Peroniana causa nobis debeat esse commendata, cum ecclesiae Gallicae nihil quicquam offendiculi ex palinodia Ioannis Antonii de Pero acceperint.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ocyssime ex balneis nostris, 1569, 9. iulii, Curiae.</s>
+					<s n="4" xml:lang="la" type="auto">Ocyssime ex balneis nostris, 1569, 9. iulii, Curiae.</s>
 				</p>
 				<p>
 					<note type="PS">[P.S.:]</note>
-					<s xml:lang="la" type="auto">Frater ille dicit se esse consanguineum d. Cellarii nostri abrepti.</s>
+					<s n="5" xml:lang="la" type="auto">Frater ille dicit se esse consanguineum d. Cellarii nostri abrepti.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2015"/>
-				<idno type="ISBN">ISBN 978-3-290-17782-9</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2571</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17782-9</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2571</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 17</title>
+				<title subtype="publication">HBBW XVII</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">17</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms F 46,593</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms F 46,593</idno>
 					</msIdentifier>
 					<history><origin><p><date>17. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -51,17 +54,17 @@
 								Dank sei Gott für die bisherigen Erfolge der [Schmalkaldener]!
 								</p>
 								<p xml:id="regest2">
-								- Das Hauptanliegen von Hallers Brief [<ref target="file#12607">Nr. 2560</ref>] ist die Berufung einiger
-								Pfarrer [von Zürich nach <placeName ref="70">Augsburg</placeName>]. Die Anfrage ist legitim, auch
+								- Das Hauptanliegen von Hallers Brief [<ref target="file12607">Nr. 2560</ref>] ist die Berufung einiger
+								Pfarrer [von Zürich nach <placeName ref="place70">Augsburg</placeName>]. Die Anfrage ist legitim, auch
 								wenn Zürich ein großes Gebiet mit Pfarrern zu versehen hat, die<pb type="edition" next="411"/> Zürcher Kirche
 								im Vergleich mit anderen eher arm ist und ihr nicht so viele begabte Kräfte zur Verfügung stehen, dass sie
 								auch noch andere damit versorgen könnte. Deshalb soll Haller darauf achten, dass mit den Kirchengütern
-								[<placeName ref="70">Augsburgs</placeName>] ausgezeichnete Kräfte für den [lokalen] Kirchendienst
+								[<placeName ref="place70">Augsburgs</placeName>] ausgezeichnete Kräfte für den [lokalen] Kirchendienst
 								ausgebildet werden. Darauf kommt es nämlich an!
 								</p>
 								<p xml:id="regest3">
 								- Haller soll sich jedoch keine Sorgen machen: Bullinger wird alles daran setzen, damit [die
-								<placeName ref="70">Augsburger</placeName>] in Kürze einige Pfarrer erhalten.
+								<placeName ref="place70">Augsburger</placeName>] in Kürze einige Pfarrer erhalten.
 								</p>
 								<p xml:id="regest4">
 								- Gruß.
@@ -74,45 +77,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12618">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1546-09-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#8018" cert="high">
+					<!--
+					<persName ref="person8018" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Haller d.J.</surname>
-						<graphic type="portrait" url="portraits/1430_HallerdJ_Johannes.jpg"/>
+						<graphic type="portrait" url="portraits/1430_Haller_dJ_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Haller_der_J%C3%BCngere"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/136925588"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413871"/>
 					</persName>
+					-->
+					<persName ref="person8018" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12619"/>
-					<ref type="prev_chronologically" target="files.xml#12617"/>
-					<ref type="next_correspondence" target="files.xml#12623"/>
-					<ref type="prev_correspondence" target="files.xml#12611"/>
-					<ref type="next_correspondence_request" target="files.xml#12638"/>
-					<ref type="prev_correspondence_request" target="files.xml#12611"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12623"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12607"/>
-					<ref type="next_same_sender" target="files.xml#12620"/>
-					<ref type="prev_same_sender" target="files.xml#12617"/>
-					<ref type="next_same_addressee" target="files.xml#12623"/>
-					<ref type="prev_same_addressee" target="files.xml#12607"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12620"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12617"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12623"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12607"/>
+					<ref type="next_chronologically" target="file12619"/>
+					<ref type="prev_chronologically" target="file12617"/>
+					<ref type="next_correspondence" target="file12623"/>
+					<ref type="prev_correspondence" target="file12611"/>
+					<ref type="next_correspondence_request" target="file12638"/>
+					<ref type="prev_correspondence_request" target="file12611"/>
+					<ref type="next_correspondence_reaction" target="file12623"/>
+					<ref type="prev_correspondence_reaction" target="file12607"/>
+					<ref type="next_same_sender" target="file12620"/>
+					<ref type="prev_same_sender" target="file12617"/>
+					<ref type="next_same_addressee" target="file12623"/>
+					<ref type="prev_same_addressee" target="file12607"/>
+					<ref type="next_with_sender_as_addressee" target="file12620"/>
+					<ref type="prev_with_sender_as_addressee" target="file12617"/>
+					<ref type="next_with_addressee_as_sender" target="file12623"/>
+					<ref type="prev_with_addressee_as_sender" target="file12607"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -126,32 +134,32 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Gratias ago deo, qui hactenus nostris victoriam contulit!</s>
-					<s xml:lang="la" type="auto">Is orandus est sedulo, ne caussam nostram deserat et ne suos in tentationem tradat<note xml:id="fn2" type="footnote" n="2">Mt 6, 13 par.</note>.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Gratias ago deo, qui hactenus nostris victoriam contulit!</s>
+					<s n="3" xml:lang="la" type="auto">Is orandus est sedulo, ne caussam nostram deserat et ne suos in tentationem tradat<note xml:id="fn2" type="footnote" n="2">Mt 6, 13 par.</note>.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Praecipuum, quod tuae<note xml:id="fn3" type="footnote" n="3">Brief <ref target="file#12607">Nr. 2560</ref> vom 1. September.</note> continent, est vocatio aliquot ministrorum<note xml:id="fn4" type="footnote" n="4">Die Bitte um Zürcher Pfarrer für <placeName ref="70">Augsburg</placeName>; s. <ref target="file#12607">Nr. 2560</ref>,73-103.</note>.</s>
-					<s xml:lang="la" type="auto">Agnoscimus hic nihil iniqui vos postulare.</s>
-					<s xml:lang="la" type="auto">Sed vide<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> inde.</note> in hoc totus sis, ut ex bonis ecclesiasticis alantur egregia quoque ingenia, quibus cura ecclesiarum demandari possit<note xml:id="fn5" type="footnote" n="5">Hier wird der in <ref target="file#12607">Nr. 2560</ref>,103f, geäußerte Entschluss Hallers angesprochen, sich zugunsten einer Ausbildung lokaler Kräfte einsetzen zu wollen, damit die Bedürfnisse der örtlichen Kirche gedeckt werden können.</note>.</s>
-					<s xml:lang="la" type="auto">Habemus spatiosum agrum; opus est pluribus ministris.</s>
-					<s xml:lang="la" type="auto">Pauperes sumus, si quis nos aliis conferat ecclesiis.</s>
-					<s xml:lang="la" type="auto">Non sumus dotati<note xml:id="fnc" type="footnote" n="c"><hi>In der Vorlage</hi> alendo.</note> tot ingeniis, quot nobis et aliis opus.</s>
-					<s xml:lang="la" type="auto">Vide ergo, ut hic sis diligens<note xml:id="fn6" type="footnote" n="6">Siehe oben Anm. 5.</note>.</s>
-					<s xml:lang="la" type="auto">In hac causa, mihi crede, rei cardo vertitur<note xml:id="fn7" type="footnote" n="7">rei cardo vertitur: darauf kommt es an.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Praecipuum, quod tuae<note xml:id="fn3" type="footnote" n="3">Brief <ref target="file12607">Nr. 2560</ref> vom 1. September.</note> continent, est vocatio aliquot ministrorum<note xml:id="fn4" type="footnote" n="4">Die Bitte um Zürcher Pfarrer für <placeName ref="place70">Augsburg</placeName>; s. <ref target="file12607">Nr. 2560</ref>,73-103.</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Agnoscimus hic nihil iniqui vos postulare.</s>
+					<s n="6" xml:lang="la" type="auto">Sed vide<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> inde.</note> in hoc totus sis, ut ex bonis ecclesiasticis alantur egregia quoque ingenia, quibus cura ecclesiarum demandari possit<note xml:id="fn5" type="footnote" n="5">Hier wird der in <ref target="file12607">Nr. 2560</ref>,103f, geäußerte Entschluss Hallers angesprochen, sich zugunsten einer Ausbildung lokaler Kräfte einsetzen zu wollen, damit die Bedürfnisse der örtlichen Kirche gedeckt werden können.</note>.</s>
+					<s n="7" xml:lang="la" type="auto">Habemus spatiosum agrum; opus est pluribus ministris.</s>
+					<s n="8" xml:lang="la" type="auto">Pauperes sumus, si quis nos aliis conferat ecclesiis.</s>
+					<s n="9" xml:lang="la" type="auto">Non sumus dotati<note xml:id="fnc" type="footnote" n="c"><hi>In der Vorlage</hi> alendo.</note> tot ingeniis, quot nobis et aliis opus.</s>
+					<s n="10" xml:lang="la" type="auto">Vide ergo, ut hic sis diligens<note xml:id="fn6" type="footnote" n="6">Siehe oben Anm. 5.</note>.</s>
+					<s n="11" xml:lang="la" type="auto">In hac causa, mihi crede, rei cardo vertitur<note xml:id="fn7" type="footnote" n="7">rei cardo vertitur: darauf kommt es an.</note>.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Attamen nolo<note xml:id="fnd" type="footnote" n="d"><hi>In der Vorlage</hi> volo.</note> te in praesenti sollicitum esse<note xml:id="fn8" type="footnote" n="8">Nämlich was Hallers Anfrage betrifft.</note>.</s>
-					<s xml:lang="la" type="auto">Ero in hoc totus,<note xml:id="fn9" type="footnote" n="9">Gemäß der in <ref target="file#12607">Nr. 2560</ref>,79f. 83f, geäußerten inständigen Bitte.</note> ut aliquot habeatis, et brevi quidem habeatis<note xml:id="fn10" type="footnote" n="10">Siehe dazu <ref target="file#12620">Nr. 2573</ref>, Anm. 21.</note>.</s>
+					<s n="12" xml:lang="la" type="auto">Attamen nolo<note xml:id="fnd" type="footnote" n="d"><hi>In der Vorlage</hi> volo.</note> te in praesenti sollicitum esse<note xml:id="fn8" type="footnote" n="8">Nämlich was Hallers Anfrage betrifft.</note>.</s>
+					<s n="13" xml:lang="la" type="auto">Ero in hoc totus,<note xml:id="fn9" type="footnote" n="9">Gemäß der in <ref target="file12607">Nr. 2560</ref>,79f. 83f, geäußerten inständigen Bitte.</note> ut aliquot habeatis, et brevi quidem habeatis<note xml:id="fn10" type="footnote" n="10">Siehe dazu <ref target="file12620">Nr. 2573</ref>, Anm. 21.</note>.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Hisce vale.</s>
+					<s n="14" xml:lang="la" type="auto">Hisce vale.</s>
 				</p>
 			</div>
 		</body>

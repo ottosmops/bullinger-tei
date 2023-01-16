@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2004"/>
-				<idno type="ISBN">ISBN 3-290-17316-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=889</idno>
+				<idno subtype="ISBN">ISBN 3-290-17316-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=889</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Ergänzungsband 10</title>
+				<title subtype="publication">HBBW X (Ergänzungsband)</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">10</biblScope>
@@ -31,12 +31,15 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<institution>Universitätsbibliothek</institution>
-						<idno type="Autograph">Briefsammlung Trew, Grynäus/Bullinger</idno>
-						<repository ref="archive#35">
+						<!--
+						<repository ref="archive35">
 							<name>Erlangen UB</name>
 							<ref target="https://ub.fau.de/"/>
 						</repository>
+						<institution>Universitätsbibliothek</institution>
+						-->
+						<repository ref="archive35"/>
+						<idno subtype="Autograph">Briefsammlung Trew, Grynäus/Bullinger</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -66,39 +69,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10930">
 				<correspAction type="sent">
-					<persName ref="person#1365" cert="high">
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
+					-->
+					<persName ref="person1365" cert="high"/>
 					<date when="1536-09-06" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10932"/>
-					<ref type="prev_chronologically" target="files.xml#10931"/>
-					<ref type="next_correspondence" target="files.xml#10965"/>
-					<ref type="prev_correspondence" target="files.xml#10923"/>
-					<ref type="next_correspondence_request" target="files.xml#10965"/>
-					<ref type="prev_correspondence_request" target="files.xml#10923"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11161"/>
+					<ref type="next_chronologically" target="file10932"/>
+					<ref type="prev_chronologically" target="file10931"/>
+					<ref type="next_correspondence" target="file10965"/>
+					<ref type="prev_correspondence" target="file10923"/>
+					<ref type="next_correspondence_request" target="file10965"/>
+					<ref type="prev_correspondence_request" target="file10923"/>
+					<ref type="next_correspondence_reaction" target="file11161"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10965"/>
-					<ref type="prev_same_sender" target="files.xml#10923"/>
-					<ref type="next_same_addressee" target="files.xml#10933"/>
-					<ref type="prev_same_addressee" target="files.xml#10931"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10965"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10923"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10933"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10931"/>
+					<ref type="next_same_sender" target="file10965"/>
+					<ref type="prev_same_sender" target="file10923"/>
+					<ref type="next_same_addressee" target="file10933"/>
+					<ref type="prev_same_addressee" target="file10931"/>
+					<ref type="next_with_sender_as_addressee" target="file10965"/>
+					<ref type="prev_with_sender_as_addressee" target="file10923"/>
+					<ref type="next_with_addressee_as_sender" target="file10933"/>
+					<ref type="prev_with_addressee_as_sender" target="file10931"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -113,28 +126,28 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Oro, ut, si is, qui has ad te perfert<note xml:id="fn2" type="footnote" n="2">Der Briefüberbringer ist nicht bekannt.</note>, causam habet bonam, interposita fide authoritateque tua apud bonos iuvare velis hominem; etiam ex officio id facies tuo, et hic nobis plurimum gratificaberis.<pb type="edition" next="63"/></s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Oro, ut, si is, qui has ad te perfert<note xml:id="fn2" type="footnote" n="2">Der Briefüberbringer ist nicht bekannt.</note>, causam habet bonam, interposita fide authoritateque tua apud bonos iuvare velis hominem; etiam ex officio id facies tuo, et hic nobis plurimum gratificaberis.<pb type="edition" next="63"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De amicitię nostrae fide spero sempiternam in nos esse gratiam Christi.</s>
-					<s xml:lang="la" type="auto">Oro, ut salutare diligenter amicos velis omnes, Theodorum<note xml:id="fn3" type="footnote" n="3">Theodor Bibliander.</note> nostrum amicissime.</s>
+					<s n="3" xml:lang="la" type="auto">De amicitię nostrae fide spero sempiternam in nos esse gratiam Christi.</s>
+					<s n="4" xml:lang="la" type="auto">Oro, ut salutare diligenter amicos velis omnes, Theodorum<note xml:id="fn3" type="footnote" n="3">Theodor Bibliander.</note> nostrum amicissime.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Spero nos omnes in Christo Iesu redemptore integre conspirare.</s>
-					<s xml:lang="la" type="auto">Quae enim causa est, cur nos non toto pectore invicem redempti domini amemus, et cur non in unius eiusdem principis Christi laudibus celebrandis studia omnia et vires omnes coniugamus?</s>
+					<s n="5" xml:lang="la" type="auto">Spero nos omnes in Christo Iesu redemptore integre conspirare.</s>
+					<s n="6" xml:lang="la" type="auto">Quae enim causa est, cur nos non toto pectore invicem redempti domini amemus, et cur non in unius eiusdem principis Christi laudibus celebrandis studia omnia et vires omnes coniugamus?</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale cum uxore<note xml:id="fn4" type="footnote" n="4"><persName ref="329">Anna</persName>, geb. Adlischwyler.</note> et liberis<note xml:id="fn5" type="footnote" n="5">Vgl. HBBW VI, S. 124, Anm. 34.</note> chariss[imis] in domino optime.</s>
-					<s xml:lang="la" type="auto">6. septembris.</s>
+					<s n="7" xml:lang="la" type="auto">Vale cum uxore<note xml:id="fn4" type="footnote" n="4"><persName ref="person329">Anna</persName>, geb. Adlischwyler.</note> et liberis<note xml:id="fn5" type="footnote" n="5">Vgl. HBBW VI, S. 124, Anm. 34.</note> chariss[imis] in domino optime.</s>
+					<s n="8" xml:lang="la" type="auto">6. septembris.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S. Grynaeus tuus.</s>
+					<s n="9" xml:lang="la" type="auto">S. Grynaeus tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Henrico Bullingero, amico et fratri.</s>
-					<s xml:lang="de" type="auto">Zurch.</s>
+					<s n="10" xml:lang="la" type="auto">Clarissimo viro d. Henrico Bullingero, amico et fratri.</s>
+					<s n="11" xml:lang="de" type="auto">Zurch.</s>
 				</p>
 			</div>
 		</body>

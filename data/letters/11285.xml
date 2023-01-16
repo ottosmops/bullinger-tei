@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2002"/>
-				<idno type="ISBN">ISBN 3-290-17220-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1242</idno>
+				<idno subtype="ISBN">ISBN 3-290-17220-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1242</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 9</title>
+				<title subtype="publication">HBBW IX</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">9</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 340,89</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 340,89</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,16 +50,16 @@
 						<summary>
 							<p xml:id="regest1">
 								Dankt für Bullingers Brief, bezeugt seine Dienstfertigkeit gegenüber allen Zürchern und rühmt den von
-								Bullinger empfohlenen <persName ref="247">Melchior Wirz</persName>, der nun bei ihm wohnt; hat sich
-								vorgenommen, im Sommer [nach <placeName ref="1238">Zug</placeName>] zurückzukehren, obschon ein
-								Teil seiner Freunde ihm abrät. Der gelehrte und hilfsbereite <persName ref="436">Martin</persName>
-								[<persName ref="436">Betschart</persName>], bei seiner Obrigkeit [in
-								<placeName ref="79">Schwyz</placeName>] seines Glaubens wegen in Ungnade, hat sich auch zur
-								Rückkehr in die <placeName ref="28">Schweiz</placeName> entschlossen, wird aber vorerst die
-								Rückzahlung von Guthaben abwarten; er läßt Bullinger grüßen. <persName ref="859">König</persName>
-								[<persName ref="859">Franz</persName> I.] soll zugesagt haben, daß keine Verfolgungen des Glaubens
-								wegen mehr stattfinden werden. Grüße. Bittet, für [<placeName ref="1238">Zug</placeName>] und
-								dessen Pfarrer [<persName ref="237">Rudolf Weingartner</persName>] zu beten.
+								Bullinger empfohlenen <persName ref="person247">Melchior Wirz</persName>, der nun bei ihm wohnt; hat sich
+								vorgenommen, im Sommer [nach <placeName ref="place1238">Zug</placeName>] zurückzukehren, obschon ein
+								Teil seiner Freunde ihm abrät. Der gelehrte und hilfsbereite Martin
+								[<persName ref="person436">Betschart</persName>], bei seiner Obrigkeit [in
+								<placeName ref="place79">Schwyz</placeName>] seines Glaubens wegen in Ungnade, hat sich auch zur
+								Rückkehr in die <placeName ref="place28">Schweiz</placeName> entschlossen, wird aber vorerst die
+								Rückzahlung von Guthaben abwarten; er läßt Bullinger grüßen. König
+								[<persName ref="person859">Franz I.</persName>] soll zugesagt haben, daß keine Verfolgungen des Glaubens
+								wegen mehr stattfinden werden. Grüße. Bittet, für [<placeName ref="place1238">Zug</placeName>] und
+								dessen Pfarrer [<persName ref="person237">Rudolf Weingartner</persName>] zu beten.
 							</p>
 						</summary>
 					</msContents>
@@ -66,31 +69,35 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11285">
 				<correspAction type="sent">
-					<persName ref="person#1864" cert="high">
+					<!--
+					<persName ref="person1864" cert="high">
 						<forename cert="high">Peter</forename>
 						<surname cert="high">Kolin</surname>
-						<addName type="main">Kolin (Cholinus), Peter</addName>
+						<persName type="main" ref="person8400>Kolin (Cholinus), Peter</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Peter_Kolin"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1090348282"/>
 					</persName>
-					<place source="#378" cert="high">
-						<settlement>Paris</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.8566 2.35166</geo>
-					</place>
+					-->
+					<persName ref="person1864" cert="high"/>
+					<place source="place378" cert="high"/>
 					<date when="1539-03-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11286"/>
-					<ref type="prev_chronologically" target="files.xml#11284"/>
+					<ref type="next_chronologically" target="file11286"/>
+					<ref type="prev_chronologically" target="file11284"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -99,12 +106,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#11286"/>
-					<ref type="prev_same_addressee" target="files.xml#11283"/>
+					<ref type="next_same_addressee" target="file11286"/>
+					<ref type="prev_same_addressee" target="file11283"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11286"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11283"/>
+					<ref type="next_with_addressee_as_sender" target="file11286"/>
+					<ref type="prev_with_addressee_as_sender" target="file11283"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -122,45 +129,45 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salus a deo per Iesum Christum, dominum nostrum.</s>
+					<s n="1" xml:lang="la" type="auto">Salus a deo per Iesum Christum, dominum nostrum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Periucundae mihi, charissime Bullingere, fuerunt literae tuae<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note>, quibus mihi Melchiorem <persName ref="247">Virbium</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="247">Melchior Wirz</persName>.</note> commendas, iuvenem plane talem, qualem praedicasti, adeo ut ipse suis dotibus seipsum omnibus hominibus plurimum commendet.</s>
-					<s xml:lang="la" type="auto">Doleo in me non esse plura, per quae intelligere possit, quanti ego te patriamque ipsius et fidem, qua praeditus est, faciam.</s>
-					<s xml:lang="la" type="auto">Ita etiam vos omnes de nobis patriaque nostra meriti estis et quotidie mereri intelligo, ut impius sim, nisi summo studio vos vestrosque omnes fuero prosecutus.</s>
-					<s xml:lang="la" type="auto">Doctior tamen est <persName ref="247">Melchior</persName>, quam ut meam operam magnopere desideret.</s>
-					<s xml:lang="la" type="auto">Sed si quid est, in quo eum iuvare possem, malo eum id reipsa experiri, quam id faciam studiose, quam multis verbis promittere.</s>
-					<s xml:lang="la" type="auto">Mecum, sicuti postulavit, habitat, ubi animum meum, qualis erga ipsum sit, sentiet, eo certe temporis spatio, quo <placeName ref="836">Parisiis</placeName> fuero.</s>
-					<s xml:lang="la" type="auto">Nam hac aestate patriam<note xml:id="fn3" type="footnote" n="3"><placeName ref="1238">Zug</placeName>.</note> revisere proposui, quam<pb type="edition" next="83"/> sapienter aut<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> aut <hi>gestrichenes</hi> nescio.</note> quam felici eventu, nescio.</s>
-					<s xml:lang="la" type="auto">Sunt hic amici, qui suadent, sunt istic, qui dissuadent quidam, alii maxime velint.</s>
-					<s xml:lang="la" type="auto">Causas cum expendo, plures mihi et potiores esse videntur, cur hinc discedam.</s>
-					<s xml:lang="la" type="auto">Sed quod proposui, dominus disponet et pro voluntate sua vel impediet vel promovebit.</s>
+					<s n="2" xml:lang="la" type="auto">Periucundae mihi, charissime Bullingere, fuerunt literae tuae<note xml:id="fn1" type="footnote" n="1">Nicht erhalten.</note>, quibus mihi <persName ref="person247">Melchiorem Virbium</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="person247">Melchior Wirz</persName>.</note> commendas, iuvenem plane talem, qualem praedicasti, adeo ut ipse suis dotibus seipsum omnibus hominibus plurimum commendet.</s>
+					<s n="3" xml:lang="la" type="auto">Doleo in me non esse plura, per quae intelligere possit, quanti ego te patriamque ipsius et fidem, qua praeditus est, faciam.</s>
+					<s n="4" xml:lang="la" type="auto">Ita etiam vos omnes de nobis patriaque nostra meriti estis et quotidie mereri intelligo, ut impius sim, nisi summo studio vos vestrosque omnes fuero prosecutus.</s>
+					<s n="5" xml:lang="la" type="auto">Doctior tamen est <persName ref="person247">Melchior</persName>, quam ut meam operam magnopere desideret.</s>
+					<s n="6" xml:lang="la" type="auto">Sed si quid est, in quo eum iuvare possem, malo eum id reipsa experiri, quam id faciam studiose, quam multis verbis promittere.</s>
+					<s n="7" xml:lang="la" type="auto">Mecum, sicuti postulavit, habitat, ubi animum meum, qualis erga ipsum sit, sentiet, eo certe temporis spatio, quo <placeName ref="place836">Parisiis</placeName> fuero.</s>
+					<s n="8" xml:lang="la" type="auto">Nam hac aestate patriam<note xml:id="fn3" type="footnote" n="3"><placeName ref="place1238">Zug</placeName>.</note> revisere proposui, quam<pb type="edition" next="83"/> sapienter aut<note xml:id="fna" type="footnote" n="a"><hi>vor</hi> aut <hi>gestrichenes</hi> nescio.</note> quam felici eventu, nescio.</s>
+					<s n="9" xml:lang="la" type="auto">Sunt hic amici, qui suadent, sunt istic, qui dissuadent quidam, alii maxime velint.</s>
+					<s n="10" xml:lang="la" type="auto">Causas cum expendo, plures mihi et potiores esse videntur, cur hinc discedam.</s>
+					<s n="11" xml:lang="la" type="auto">Sed quod proposui, dominus disponet et pro voluntate sua vel impediet vel promovebit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Magister <persName ref="436">Martinus</persName> Suitensis<note xml:id="fn4" type="footnote" n="4"><persName ref="436">Martin Betschart</persName> (Besardus), von <placeName ref="79">Schwyz</placeName>, gest. 1569 oder später, studierte mit einem königlich-französischen Stipendium in <placeName ref="836">Paris</placeName> und schloß mit dem Magisterexamen ab. In <placeName ref="836">Paris</placeName> übte er an der Universiät eine Lehrtätigkeit aus - 1529, 1537, 1547, 1550/51, 1554, 1561/62, 1564 und 1569 war er Prokurator der "deutschen Nation" -, arbeitete als Korrektor und führte eine Pension, in der vor allem auch <placeName ref="28">Schweizer</placeName> Studenten Aufnahme fanden. Bei der Planung einer Schule in der katholischen <placeName ref="28">Schweiz</placeName> 1540 galt er als Anwärter für die Schulmeisterstelle. Betschart, der der reformierten Lehre zugeneigt war, blieb jedoch zeit seines Lebens in <placeName ref="836">Paris</placeName>. Aus dem Briefwechsel mit Bullinger sind von ihm zwei Schreiben überliefert. - Lit.: Willy <hi>Brändly,</hi> Magister <persName ref="436">Martin Betschart</persName> von <placeName ref="79">Schwyz</placeName>, in: Zwa VIII 426-429; Amerbach, Korr. VI 4221.</note>, olim praeceptor meus, vir bonus est et doctus et iuvandis multis multa magnaque meritus, nemini fere nisi dominis suis ob fidei causam ingratus.</s>
-					<s xml:lang="la" type="auto">Decrevit et ipse abhinc annum unum in Helvetiam redire; quo minus id faciat hoc anno, pecunia ei a Gallis debita quibusdam adhuc colligenda eum impedit.</s>
-					<s xml:lang="la" type="auto"><persName ref="247">Melchiorem</persName> vestrum commendatissimum habet et te quam officiosissime resalutat.</s>
+					<s n="12" xml:lang="la" type="auto">Magister <persName ref="person436">Martinus</persName> Suitensis<note xml:id="fn4" type="footnote" n="4"><persName ref="person436">Martin Betschart</persName> (Besardus), von <placeName ref="place79">Schwyz</placeName>, gest. 1569 oder später, studierte mit einem königlich-französischen Stipendium in <placeName ref="place836">Paris</placeName> und schloß mit dem Magisterexamen ab. In <placeName ref="place836">Paris</placeName> übte er an der Universiät eine Lehrtätigkeit aus - 1529, 1537, 1547, 1550/51, 1554, 1561/62, 1564 und 1569 war er Prokurator der "deutschen Nation" -, arbeitete als Korrektor und führte eine Pension, in der vor allem auch <placeName ref="place28">Schweizer</placeName> Studenten Aufnahme fanden. Bei der Planung einer Schule in der katholischen <placeName ref="place28">Schweiz</placeName> 1540 galt er als Anwärter für die Schulmeisterstelle. Betschart, der der reformierten Lehre zugeneigt war, blieb jedoch zeit seines Lebens in <placeName ref="place836">Paris</placeName>. Aus dem Briefwechsel mit Bullinger sind von ihm zwei Schreiben überliefert. - Lit.: Willy <hi>Brändly,</hi> Magister <persName ref="person436">Martin Betschart</persName> von <placeName ref="place79">Schwyz</placeName>, in: Zwa VIII 426-429; Amerbach, Korr. VI 4221.</note>, olim praeceptor meus, vir bonus est et doctus et iuvandis multis multa magnaque meritus, nemini fere nisi dominis suis ob fidei causam ingratus.</s>
+					<s n="13" xml:lang="la" type="auto">Decrevit et ipse abhinc annum unum in Helvetiam redire; quo minus id faciat hoc anno, pecunia ei a Gallis debita quibusdam adhuc colligenda eum impedit.</s>
+					<s n="14" xml:lang="la" type="auto"><persName ref="person247">Melchiorem</persName> vestrum commendatissimum habet et te quam officiosissime resalutat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Novi hic in praesentia nihil est.</s>
-					<s xml:lang="la" type="auto">Rex<note xml:id="fn5" type="footnote" n="5"><persName ref="859">Franz</persName> I., <persName ref="859">König</persName> von <placeName ref="11">Frankreich</placeName>.</note> prope <placeName ref="836">Parisios</placeName> iam<note xml:id="fnb" type="footnote" n="b"><hi>vor</hi> iam <hi>gestrichenes</hi> est.</note> diu haeret.</s>
-					<s xml:lang="de" type="auto">Man sagt, er habe zuͦgesagt, kein durchächtung<note xml:id="fn6" type="footnote" n="6">Verfolgung.</note> mer in sinem land des gloubens halb ze gestatten.</s>
+					<s n="15" xml:lang="la" type="auto">Novi hic in praesentia nihil est.</s>
+					<s n="16" xml:lang="la" type="auto">Rex<note xml:id="fn5" type="footnote" n="5"><persName ref="person859">Franz I.</persName>, König von <placeName ref="place11">Frankreich</placeName>.</note> prope <placeName ref="place836">Parisios</placeName> iam<note xml:id="fnb" type="footnote" n="b"><hi>vor</hi> iam <hi>gestrichenes</hi> est.</note> diu haeret.</s>
+					<s n="17" xml:lang="de" type="auto">Man sagt, er habe zuͦgesagt, kein durchächtung<note xml:id="fn6" type="footnote" n="6">Verfolgung.</note> mer in sinem land des gloubens halb ze gestatten.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salutabis nostro nomine d. Conradum <persName ref="165">Pellicanum</persName>, praeceptorem meum, M. Leonem<note xml:id="fn7" type="footnote" n="7"><persName ref="114">Leo Jud</persName>.</note>, <persName ref="14">Bibliandrum</persName> et reliquos amicos fratres.</s>
-					<s xml:lang="la" type="auto">Vale in Christo.</s>
+					<s n="18" xml:lang="la" type="auto">Salutabis nostro nomine d. <persName ref="person165">Conradum Pellicanum</persName>, praeceptorem meum, M. Leonem<note xml:id="fn7" type="footnote" n="7"><persName ref="person114">Leo Jud</persName>.</note>, <persName ref="person14">Bibliandrum</persName> et reliquos amicos fratres.</s>
+					<s n="19" xml:lang="la" type="auto">Vale in Christo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="836">Parisiis</placeName>, anno 1539, quarto idus martias.</s>
-					<s xml:lang="la" type="auto">Commendo vobis et precibus vestris patriam meam et eius episcopum<note xml:id="fn8" type="footnote" n="8"><persName ref="237">Rudolf Weingartner</persName>, Stadtpfarrer von <placeName ref="1238">Zug</placeName>.</note>, si, quod bonum decet, facere pergit.</s>
+					<s n="20" xml:lang="la" type="auto"><placeName ref="place836">Parisiis</placeName>, anno 1539, quarto idus martias.</s>
+					<s n="21" xml:lang="la" type="auto">Commendo vobis et precibus vestris patriam meam et eius episcopum<note xml:id="fn8" type="footnote" n="8"><persName ref="person237">Rudolf Weingartner</persName>, Stadtpfarrer von <placeName ref="place1238">Zug</placeName>.</note>, si, quod bonum decet, facere pergit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="124">Petrus Cholinus</persName> tuus.</s>
+					<s n="22" xml:lang="la" type="auto"><persName ref="person124">Petrus Cholinus</persName> tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Reverendo inprimis et docto viro d. Henrico Bullingero, episcopo Tigurino, mihi imprimis colendo.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="23" xml:lang="la" type="auto">Reverendo inprimis et docto viro d. Henrico Bullingero, episcopo Tigurino, mihi imprimis colendo.</s>
+					<s n="24" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

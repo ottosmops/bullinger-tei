@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6588/8</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 368,537</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 368,537</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -45,14 +48,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 84,33</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">eingeordnet 22. Jan. 1555</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 84,33</idno>
+						<idno subtype="Hinweis">eingeordnet 22. Jan. 1555</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -61,44 +67,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6364">
 				<correspAction type="sent">
-					<persName ref="person#709" cert="high">
+					<!--
+					<persName ref="person709" cert="high">
 						<forename cert="high">Nicolas</forename>
 						<surname cert="high">Cruxceus</surname>
-						<addName type="main">de La Croix, Nicolas</addName>
+						<persName type="main" ref="person1869>de La Croix, Nicolas</addName>
 					</persName>
-					<place source="#468" cert="high">
-						<settlement>Solothurn</settlement>
-						<district>Solothurn</district>
-						<country>Schweiz</country>
-						<geo>47.20791 7.53714</geo>
-					</place>
+					-->
+					<persName ref="person709" cert="high"/>
+					<place source="place468" cert="high"/>
 					<date when="1565-01-22" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6365"/>
-					<ref type="prev_chronologically" target="files.xml#6363"/>
-					<ref type="next_correspondence" target="files.xml#6375"/>
+					<ref type="next_chronologically" target="file6365"/>
+					<ref type="prev_chronologically" target="file6363"/>
+					<ref type="next_correspondence" target="file6375"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#6375"/>
+					<ref type="next_correspondence_request" target="file6375"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#6375"/>
+					<ref type="next_same_sender" target="file6375"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#6366"/>
-					<ref type="prev_same_addressee" target="files.xml#6360"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6375"/>
+					<ref type="next_same_addressee" target="file6366"/>
+					<ref type="prev_same_addressee" target="file6360"/>
+					<ref type="next_with_sender_as_addressee" target="file6375"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6366"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6360"/>
+					<ref type="next_with_addressee_as_sender" target="file6366"/>
+					<ref type="prev_with_addressee_as_sender" target="file6360"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -107,34 +116,37 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="6364/Autograph/00 E_II_368__fol__537_r_.tif" n="1"/>
+		<graphic url="6364/Autograph/01 E_II_368__fol__537_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Viro doctissimo domino Bullingero, apud Tiguros ministro dignissimo.</s>
+					<s n="1" xml:lang="la" type="auto">Viro doctissimo domino Bullingero, apud Tiguros ministro dignissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Proficiscenti ad vos rerum suarum causa d. Tuchinero, civi vestro, quem amo, iussi, ut tibi salutem meis verbis nuntiaret tecumque de certis rebus ageret, quę cum michi cordi sunt, tum nostra utriusque interest ea confieri.</s>
-					<s xml:lang="la" type="auto">Ei ipsi non secus ac michi, si tecum praesens essem, fidem adhibebis.</s>
+					<s n="2" xml:lang="la" type="auto">Proficiscenti ad vos rerum suarum causa d. Tuchinero, civi vestro, quem amo, iussi, ut tibi salutem meis verbis nuntiaret tecumque de certis rebus ageret, quę cum michi cordi sunt, tum nostra utriusque interest ea confieri.</s>
+					<s n="3" xml:lang="la" type="auto">Ei ipsi non secus ac michi, si tecum praesens essem, fidem adhibebis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De comitiis Lucernę ad diem 29. nomine pontificis convocatis diffusius cum Tuchinero poteris colloqui.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="4" xml:lang="la" type="auto">De comitiis Lucernę ad diem 29. nomine pontificis convocatis diffusius cum Tuchinero poteris colloqui.</s>
+					<s n="5" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ama me.</s>
+					<s n="6" xml:lang="la" type="auto">Ama me.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Solloduri die 22a mensis ianuarii 1555.</s>
+					<s n="7" xml:lang="la" type="auto">Solloduri die 22a mensis ianuarii 1555.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">D[ignitati] t[uae] deditissimus N. Cruxceius.</s>
-					<s xml:lang="la" type="auto">Doctissimo viro domino Bullingero.</s>
+					<s n="8" xml:lang="la" type="auto">D[ignitati] t[uae] deditissimus N. Cruxceius.</s>
+					<s n="9" xml:lang="la" type="auto">Doctissimo viro domino Bullingero.</s>
 				</p>
 				<p>
 					<note type="remark">[Bemerkung von Bullingers Hand:]</note>
-					<s xml:lang="la" type="auto">Saloduro scribit has legatus R[egiae] M[aiestatis] mense ianuario 1565.</s>
+					<s n="10" xml:lang="la" type="auto">Saloduro scribit has legatus R[egiae] M[aiestatis] mense ianuario 1565.</s>
 				</p>
 			</div>
 		</body>

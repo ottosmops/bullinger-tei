@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1028</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 441,554</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 441,554</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 67,154</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 67,154</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -63,50 +69,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/228">
 				<correspAction type="sent">
-					<persName ref="person#2595" cert="high">
+					<!--
+					<persName ref="person2595" cert="high">
 						<forename cert="high">Nicolaus</forename>
 						<surname cert="high">Pfister</surname>
-						<addName type="main">Pfister (Artopoeus, Baling), Nikolaus</addName>
+						<persName type="main" ref="person8114>Pfister (Artopoeus, Baling), Nikolaus</addName>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person2595" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1548-08-14" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#229"/>
-					<ref type="prev_chronologically" target="files.xml#227"/>
+					<ref type="next_chronologically" target="file229"/>
+					<ref type="prev_chronologically" target="file227"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#131"/>
+					<ref type="prev_correspondence" target="file131"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#131"/>
+					<ref type="prev_correspondence_request" target="file131"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#131"/>
-					<ref type="next_same_addressee" target="files.xml#240"/>
-					<ref type="prev_same_addressee" target="files.xml#216"/>
+					<ref type="prev_same_sender" target="file131"/>
+					<ref type="next_same_addressee" target="file240"/>
+					<ref type="prev_same_addressee" target="file216"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#131"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#240"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#216"/>
+					<ref type="prev_with_sender_as_addressee" target="file131"/>
+					<ref type="next_with_addressee_as_sender" target="file240"/>
+					<ref type="prev_with_addressee_as_sender" target="file216"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -115,42 +119,47 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="228/Autograph/00 E_II_441__S__554_.tif" n="1"/>
+		<graphic url="228/Autograph/01 E_II_441__S__555_.tif" n="2"/>
+		<graphic url="228/Autograph/02 E_II_441__S__555_a_.tif" n="3"/>
+		<graphic url="228/Autograph/03 E_II_441__S__555_b_.tif" n="4"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Nicolaus Artopoeus Hein[rycho] Bul[lingero], viro candidissimo, S. D.</s>
+					<s n="1" xml:lang="la" type="auto">Nicolaus Artopoeus Hein[rycho] Bul[lingero], viro candidissimo, S. D.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ostendit mihi nuper D. Hallerus lexicon a te conscriptum, de quo, ita tu me ames, peroptime sentio, quod cętera huius generis et elegantia et copia pręstet.</s>
-					<s xml:lang="la" type="auto">Quare interrogavi statim, num velles in lucem ędere.</s>
-					<s xml:lang="la" type="auto">"Si rite recordor", inquit Hallerus, "prodibit propediem, sed recognitum et ditius atque ex officina D. Froschoueri."</s>
-					<s xml:lang="la" type="auto">"Quam inique", inquam, "comparatum est, ut semper aliquid addatur ditioribus; utinam id negotii daret D. Bul[lingerus] pauperculo nostro Apiario, a quo iniret maximam gratiam, neque hoc ęgre haberet, scio, diminum Froschouerum.</s>
-					<s xml:lang="la" type="auto">Iuva nos, d[omine] mi; tu solus hoc a D. Bulling[ero] citra omnem controversiam impetrare poteris.</s>
-					<s xml:lang="la" type="auto">Ego si quid queo, queo autem non omnino nihil, faciam quoque atque perlibenter."</s>
-					<s xml:lang="la" type="auto">Cum hęc dicerem, vir amantissime, ilico in me quoque hanc rem reiecit inquiens: "Experire, quid possis; ego, quid D. Bullingerus secum constituerit, certo affirmare non ausim."</s>
+					<s n="2" xml:lang="la" type="auto">Ostendit mihi nuper D. Hallerus lexicon a te conscriptum, de quo, ita tu me ames, peroptime sentio, quod cętera huius generis et elegantia et copia pręstet.</s>
+					<s n="3" xml:lang="la" type="auto">Quare interrogavi statim, num velles in lucem ędere.</s>
+					<s n="4" xml:lang="la" type="auto">"Si rite recordor", inquit Hallerus, "prodibit propediem, sed recognitum et ditius atque ex officina D. Froschoueri."</s>
+					<s n="5" xml:lang="la" type="auto">"Quam inique", inquam, "comparatum est, ut semper aliquid addatur ditioribus; utinam id negotii daret D. Bul[lingerus] pauperculo nostro Apiario, a quo iniret maximam gratiam, neque hoc ęgre haberet, scio, diminum Froschouerum.</s>
+					<s n="6" xml:lang="la" type="auto">Iuva nos, d[omine] mi; tu solus hoc a D. Bulling[ero] citra omnem controversiam impetrare poteris.</s>
+					<s n="7" xml:lang="la" type="auto">Ego si quid queo, queo autem non omnino nihil, faciam quoque atque perlibenter."</s>
+					<s n="8" xml:lang="la" type="auto">Cum hęc dicerem, vir amantissime, ilico in me quoque hanc rem reiecit inquiens: "Experire, quid possis; ego, quid D. Bullingerus secum constituerit, certo affirmare non ausim."</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Itaque te rogo atque obsecro, mi D. Bullingere, ut hoc munere et nos et scholam nostram dones; quod si feceris, facies nobis rem gratissimam, ac persuadeas tibi, velim, prorsus neminem omnium amicorum hoc tempore te uno nobis omnibus esse chariorem.</s>
-					<s xml:lang="la" type="auto">Vale peroptime.</s>
-					<s xml:lang="la" type="auto">14. Augusti anno 48.</s>
-					<s xml:lang="la" type="auto">Saluta nostrum omnium nomine symmystas tuos omnes cum Pellicano, Amiano, Collino cęterisque probis viris.</s>
+					<s n="9" xml:lang="la" type="auto">Itaque te rogo atque obsecro, mi D. Bullingere, ut hoc munere et nos et scholam nostram dones; quod si feceris, facies nobis rem gratissimam, ac persuadeas tibi, velim, prorsus neminem omnium amicorum hoc tempore te uno nobis omnibus esse chariorem.</s>
+					<s n="10" xml:lang="la" type="auto">Vale peroptime.</s>
+					<s n="11" xml:lang="la" type="auto">14. Augusti anno 48.</s>
+					<s n="12" xml:lang="la" type="auto">Saluta nostrum omnium nomine symmystas tuos omnes cum Pellicano, Amiano, Collino cęterisque probis viris.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Heri mihi tradidit And[reas] Zebędeus, Lausanensis scholę professor, literarum fasciculum, qui continet epistolas aliquot a Calvino et aliis ad se datas, quas describam et unam et alteram ad te mittam, ex quibus poteris cognoscere, quid sentiant perturbatores illi de sinceriore doctrina evangelica, quam ipsi Zvinglianam vocant.</s>
+					<s n="13" xml:lang="la" type="auto">Heri mihi tradidit And[reas] Zebędeus, Lausanensis scholę professor, literarum fasciculum, qui continet epistolas aliquot a Calvino et aliis ad se datas, quas describam et unam et alteram ad te mittam, ex quibus poteris cognoscere, quid sentiant perturbatores illi de sinceriore doctrina evangelica, quam ipsi Zvinglianam vocant.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale iterum.</s>
-					<s xml:lang="la" type="auto">Fac, ut brevi intelligamus, quid constitueris.</s>
-					<s xml:lang="la" type="auto">Quod ad literam attinet Apiarii, nihil est, quod sis solicitus; sat superque eleganter exprimit, quae exprimenda suscipit, et ego, si tibi placuerit, corrigam neutiquam resupia diligentia.</s>
+					<s n="14" xml:lang="la" type="auto">Vale iterum.</s>
+					<s n="15" xml:lang="la" type="auto">Fac, ut brevi intelligamus, quid constitueris.</s>
+					<s n="16" xml:lang="la" type="auto">Quod ad literam attinet Apiarii, nihil est, quod sis solicitus; sat superque eleganter exprimit, quae exprimenda suscipit, et ego, si tibi placuerit, corrigam neutiquam resupia diligentia.</s>
 				</p>
 				<p>
 					<note type="signature">[Unterschrift fehlt.]</note>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">D. Heinrycho Bullingero, viro et doctrina et moribus et integritate conspicuo.</s>
+					<s n="17" xml:lang="la" type="auto">D. Heinrycho Bullingero, viro et doctrina et moribus et integritate conspicuo.</s>
 				</p>
 			</div>
 		</body>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6991/41</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 370,378</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 370,378</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,45 +47,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7058">
 				<correspAction type="sent">
-					<persName ref="person#8018" cert="high">
+					<!--
+					<persName ref="person8018" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Haller d.J.</surname>
-						<graphic type="portrait" url="portraits/1430_HallerdJ_Johannes.jpg"/>
+						<graphic type="portrait" url="portraits/1430_Haller_dJ_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Haller_der_J%C3%BCngere"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/136925588"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413871"/>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person8018" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1567-03-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7059"/>
-					<ref type="prev_chronologically" target="files.xml#7057"/>
-					<ref type="next_correspondence" target="files.xml#7066"/>
-					<ref type="prev_correspondence" target="files.xml#7057"/>
-					<ref type="next_correspondence_request" target="files.xml#7066"/>
-					<ref type="prev_correspondence_request" target="files.xml#7057"/>
-					<ref type="next_correspondence_reaction" target="files.xml#7606"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#7051"/>
-					<ref type="next_same_sender" target="files.xml#7066"/>
-					<ref type="prev_same_sender" target="files.xml#7057"/>
-					<ref type="next_same_addressee" target="files.xml#7063"/>
-					<ref type="prev_same_addressee" target="files.xml#7053"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#7066"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#7057"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#7063"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#7053"/>
+					<ref type="next_chronologically" target="file7059"/>
+					<ref type="prev_chronologically" target="file7057"/>
+					<ref type="next_correspondence" target="file7066"/>
+					<ref type="prev_correspondence" target="file7057"/>
+					<ref type="next_correspondence_request" target="file7066"/>
+					<ref type="prev_correspondence_request" target="file7057"/>
+					<ref type="next_correspondence_reaction" target="file7606"/>
+					<ref type="prev_correspondence_reaction" target="file7051"/>
+					<ref type="next_same_sender" target="file7066"/>
+					<ref type="prev_same_sender" target="file7057"/>
+					<ref type="next_same_addressee" target="file7063"/>
+					<ref type="prev_same_addressee" target="file7053"/>
+					<ref type="next_with_sender_as_addressee" target="file7066"/>
+					<ref type="prev_with_sender_as_addressee" target="file7057"/>
+					<ref type="next_with_addressee_as_sender" target="file7063"/>
+					<ref type="prev_with_addressee_as_sender" target="file7053"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -99,30 +107,30 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Scripsi his diebus aliquoties.</s>
-					<s xml:lang="la" type="auto">Illis nihil habeo quod nunc addam, nisi quod interea mihi tuae demum redditae sunt, in quibus scribis de Christophoro, filio tuo, quam liberaliter ille a lantgravio feudis quibusdam donatus sit.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Scripsi his diebus aliquoties.</s>
+					<s n="3" xml:lang="la" type="auto">Illis nihil habeo quod nunc addam, nisi quod interea mihi tuae demum redditae sunt, in quibus scribis de Christophoro, filio tuo, quam liberaliter ille a lantgravio feudis quibusdam donatus sit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quo nomine tibi tuisque omnibus gratulor et oro deum, ut tuos omnes perpetua benedictione prosequatur.</s>
-					<s xml:lang="la" type="auto">Benedicit etiam meis dominus, quo nomine est, quod illi gratias agam.</s>
+					<s n="4" xml:lang="la" type="auto">Quo nomine tibi tuisque omnibus gratulor et oro deum, ut tuos omnes perpetua benedictione prosequatur.</s>
+					<s n="5" xml:lang="la" type="auto">Benedicit etiam meis dominus, quo nomine est, quod illi gratias agam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Filius meus commodam sibi valde adeptus est conditionem; mecum enim habitat et interea non procul ab urbe concionatur.</s>
-					<s xml:lang="la" type="auto">Missurus eram eum in Galliam; sed praesens rerum status facit, ut nemo amicorum hoc mihi consulat.</s>
-					<s xml:lang="la" type="auto">Novi nihil habemus.</s>
-					<s xml:lang="la" type="auto">Expecto hodie Blasium meum et uxorem eius, meam filiam.</s>
-					<s xml:lang="la" type="auto">Dominus te servet cum tuis omnibus!</s>
-					<s xml:lang="la" type="auto">Salutant te Steigerus, Gravenrietus, Manuel, amici denique et fratres omnes.</s>
-					<s xml:lang="la" type="auto">Musculus heri laborare cepit capitis dolore; speramus tamen hodie rem esse extra periculum.</s>
-					<s xml:lang="la" type="auto">Is te quoque salutat et scribet tibi, postquam etiam exemplar tui Esaię acceperit.</s>
-					<s xml:lang="la" type="auto">Ego in proximis meis pro meo egi gratias.</s>
+					<s n="6" xml:lang="la" type="auto">Filius meus commodam sibi valde adeptus est conditionem; mecum enim habitat et interea non procul ab urbe concionatur.</s>
+					<s n="7" xml:lang="la" type="auto">Missurus eram eum in Galliam; sed praesens rerum status facit, ut nemo amicorum hoc mihi consulat.</s>
+					<s n="8" xml:lang="la" type="auto">Novi nihil habemus.</s>
+					<s n="9" xml:lang="la" type="auto">Expecto hodie Blasium meum et uxorem eius, meam filiam.</s>
+					<s n="10" xml:lang="la" type="auto">Dominus te servet cum tuis omnibus!</s>
+					<s n="11" xml:lang="la" type="auto">Salutant te Steigerus, Gravenrietus, Manuel, amici denique et fratres omnes.</s>
+					<s n="12" xml:lang="la" type="auto">Musculus heri laborare cepit capitis dolore; speramus tamen hodie rem esse extra periculum.</s>
+					<s n="13" xml:lang="la" type="auto">Is te quoque salutat et scribet tibi, postquam etiam exemplar tui Esaię acceperit.</s>
+					<s n="14" xml:lang="la" type="auto">Ego in proximis meis pro meo egi gratias.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="15" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bernę 24. martii 1567.</s>
+					<s n="16" xml:lang="la" type="auto">Bernę 24. martii 1567.</s>
 				</p>
 				<p>
 					<note type="signature">[Unterschrift u. Adresse fehlen.]</note>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4616/187</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 62,435</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 62,435</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,14 +51,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 90,7</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">6. Juli 1557</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 90,7</idno>
+						<idno subtype="Hinweis">6. Juli 1557</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -69,52 +75,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3242">
 				<correspAction type="sent">
-					<persName ref="person#2380" cert="high">
+					<!--
+					<persName ref="person2380" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Oporin</surname>
-						<addName type="main">Oporin(us, Herbster), Johannes</addName>
+						<persName type="main" ref="person8126>Oporin(us, Herbster), Johannes</addName>
 						<graphic type="portrait" url="portraits/2380_Oporinus_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Oporinus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118736396"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2380" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1557-07-16" cert="low"><note>Tag unsicher  (6. ?)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3243"/>
-					<ref type="prev_chronologically" target="files.xml#3241"/>
-					<ref type="next_correspondence" target="files.xml#3243"/>
-					<ref type="prev_correspondence" target="files.xml#3231"/>
-					<ref type="next_correspondence_request" target="files.xml#3243"/>
-					<ref type="prev_correspondence_request" target="files.xml#3231"/>
-					<ref type="next_correspondence_reaction" target="files.xml#7178"/>
+					<ref type="next_chronologically" target="file3243"/>
+					<ref type="prev_chronologically" target="file3241"/>
+					<ref type="next_correspondence" target="file3243"/>
+					<ref type="prev_correspondence" target="file3231"/>
+					<ref type="next_correspondence_request" target="file3243"/>
+					<ref type="prev_correspondence_request" target="file3231"/>
+					<ref type="next_correspondence_reaction" target="file7178"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#3243"/>
-					<ref type="prev_same_sender" target="files.xml#3231"/>
-					<ref type="next_same_addressee" target="files.xml#3244"/>
-					<ref type="prev_same_addressee" target="files.xml#3241"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3243"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3231"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3244"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3241"/>
+					<ref type="next_same_sender" target="file3243"/>
+					<ref type="prev_same_sender" target="file3231"/>
+					<ref type="next_same_addressee" target="file3244"/>
+					<ref type="prev_same_addressee" target="file3241"/>
+					<ref type="next_with_sender_as_addressee" target="file3243"/>
+					<ref type="prev_with_sender_as_addressee" target="file3231"/>
+					<ref type="next_with_addressee_as_sender" target="file3244"/>
+					<ref type="prev_with_addressee_as_sender" target="file3241"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -131,29 +136,29 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Mitto rursum 2 terniones, x et y. Quae ad nos misisti, baleo dedi, qui magno certe cum gaudio literas quoque tuas et munus libri ad se missi excepit, et quia ipsi iam rescribere propter occupationum, quibus in opere suo quasi ad praelum absolvendo tantum non obruitur, molem non vacabat, me exoravit, ut ipsius nomine et gratias agerem et, quod in praesentia non rescriberet, excusarem.</s>
-					<s xml:lang="la" type="auto">Cupit idem etiam impetrari sibi tua opera a d. Petro Martyre sive d. Bernardino sive etiam utroque potius, si quid de postremis pontificibus aliquot, ut Marcello II., Paulo III. et eo, qui nunc antichristi vices agit, certi atque explorati habeant, quo et illa suo de pontificibus catalogo inserere possit, quem alioqui iam ad umbilicum perduxit.</s>
-					<s xml:lang="la" type="auto">Communicavit ei Vergerius quędam, sed de Marcello II. tantum.</s>
-					<s xml:lang="la" type="auto">Facies itaque operę precium, si hac etiam parte optimum senem iuveris, et ego libenter monstris illis suis, quod aiunt, coloribus depingendis et operam et oleum impendam.</s>
-					<s xml:lang="la" type="auto">Literas ad Naogeorgum adhuc habeo neque video (quod per certum tabellarium mitti cupis), quomodo cito mitti possint; raros enim habemus stuggardiam recta proficiscentes tabellarios.</s>
-					<s xml:lang="la" type="auto">Alioqui per Argentinensem mercatum curari iam potuissent.</s>
-					<s xml:lang="la" type="auto">Idem impedit, ut et literas ad Cognatum nondum miserim, a quo tamen brevi certum tabellarium expecto; tum et illas curabo.</s>
-					<s xml:lang="la" type="auto">Bene vale.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Mitto rursum 2 terniones, x et y. Quae ad nos misisti, baleo dedi, qui magno certe cum gaudio literas quoque tuas et munus libri ad se missi excepit, et quia ipsi iam rescribere propter occupationum, quibus in opere suo quasi ad praelum absolvendo tantum non obruitur, molem non vacabat, me exoravit, ut ipsius nomine et gratias agerem et, quod in praesentia non rescriberet, excusarem.</s>
+					<s n="3" xml:lang="la" type="auto">Cupit idem etiam impetrari sibi tua opera a d. Petro Martyre sive d. Bernardino sive etiam utroque potius, si quid de postremis pontificibus aliquot, ut Marcello II., Paulo III. et eo, qui nunc antichristi vices agit, certi atque explorati habeant, quo et illa suo de pontificibus catalogo inserere possit, quem alioqui iam ad umbilicum perduxit.</s>
+					<s n="4" xml:lang="la" type="auto">Communicavit ei Vergerius quędam, sed de Marcello II. tantum.</s>
+					<s n="5" xml:lang="la" type="auto">Facies itaque operę precium, si hac etiam parte optimum senem iuveris, et ego libenter monstris illis suis, quod aiunt, coloribus depingendis et operam et oleum impendam.</s>
+					<s n="6" xml:lang="la" type="auto">Literas ad Naogeorgum adhuc habeo neque video (quod per certum tabellarium mitti cupis), quomodo cito mitti possint; raros enim habemus stuggardiam recta proficiscentes tabellarios.</s>
+					<s n="7" xml:lang="la" type="auto">Alioqui per Argentinensem mercatum curari iam potuissent.</s>
+					<s n="8" xml:lang="la" type="auto">Idem impedit, ut et literas ad Cognatum nondum miserim, a quo tamen brevi certum tabellarium expecto; tum et illas curabo.</s>
+					<s n="9" xml:lang="la" type="auto">Bene vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Resalutant te amici omnes.</s>
+					<s n="10" xml:lang="la" type="auto">Resalutant te amici omnes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Basileae 16. iulii 1557.</s>
+					<s n="11" xml:lang="la" type="auto">Basileae 16. iulii 1557.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ioan[nes] Oporinus tuus.</s>
+					<s n="12" xml:lang="la" type="auto">Ioan[nes] Oporinus tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Domino Heinricho Bullingero, ecclesiastae Tigurino, domino et amico suo in primis observando.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="13" xml:lang="la" type="auto">Domino Heinricho Bullingero, ecclesiastae Tigurino, domino et amico suo in primis observando.</s>
+					<s n="14" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

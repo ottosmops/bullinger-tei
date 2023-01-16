@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5994/82</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#474">St. Gallen</settlement>
-						<institution>Kantonsbibliothek Vadiana</institution>
-						<idno type="Autograph">IX, 27</idno>
-						<repository ref="archive#78">
+						<!--
+						<repository ref="archive78">
 							<name>St. Gallen KB</name>
 							<ref target="https://www.sg.ch/kultur/kantonsbibliothek-vadiana.html"/>
 						</repository>
+						<settlement ref="place474">St. Gallen</settlement>
+						<institution>Kantonsbibliothek Vadiana</institution>
+						-->
+						<repository ref="archive78"/>
+						<idno subtype="Autograph">IX, 27</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,54 +47,41 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5295">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1562-04-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#474" cert="high">
-							<settlement>St. Gallen</settlement>
-							<district>St.Gallen</district>
-							<country>Schweiz</country>
-							<geo>47.42391 9.37477</geo>
-						</place>
-					</roleName>
-					<place source="#474" cert="high">
-						<settlement>St. Gallen</settlement>
-						<district>St.Gallen</district>
-						<country>Schweiz</country>
-						<geo>47.42391 9.37477</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place474" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5296"/>
-					<ref type="prev_chronologically" target="files.xml#5294"/>
-					<ref type="next_correspondence" target="files.xml#5848"/>
-					<ref type="prev_correspondence" target="files.xml#5072"/>
-					<ref type="next_correspondence_request" target="files.xml#6954"/>
-					<ref type="prev_correspondence_request" target="files.xml#4998"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5848"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5072"/>
-					<ref type="next_same_sender" target="files.xml#5296"/>
-					<ref type="prev_same_sender" target="files.xml#5294"/>
-					<ref type="next_same_addressee" target="files.xml#5366"/>
-					<ref type="prev_same_addressee" target="files.xml#5186"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5296"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5294"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5366"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5186"/>
+					<ref type="next_chronologically" target="file5296"/>
+					<ref type="prev_chronologically" target="file5294"/>
+					<ref type="next_correspondence" target="file5848"/>
+					<ref type="prev_correspondence" target="file5072"/>
+					<ref type="next_correspondence_request" target="file6954"/>
+					<ref type="prev_correspondence_request" target="file4998"/>
+					<ref type="next_correspondence_reaction" target="file5848"/>
+					<ref type="prev_correspondence_reaction" target="file5072"/>
+					<ref type="next_same_sender" target="file5296"/>
+					<ref type="prev_same_sender" target="file5294"/>
+					<ref type="next_same_addressee" target="file5366"/>
+					<ref type="prev_same_addressee" target="file5186"/>
+					<ref type="next_with_sender_as_addressee" target="file5296"/>
+					<ref type="prev_with_sender_as_addressee" target="file5294"/>
+					<ref type="next_with_addressee_as_sender" target="file5366"/>
+					<ref type="prev_with_addressee_as_sender" target="file5186"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -106,42 +96,42 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Accepimus, domini honorandi et fratres charissimi, per certum nuncium ex Gallia a Guysianis (auxiliantibus aliquot in Gallia magnatibus coniuratis, inprimis autem cardinalibus, episcopis et clero) maximas esse turbas excitatas et quotidie extremam contra fideles exerceri saevitiam.</s>
-					<s xml:lang="la" type="auto">Quae ut omnia rectius intelligatis, mitto, quae inde ex Aurelia, ubi fidelium colligitur exercitus, accepi, vobis quoque charis communicanda fratribus.</s>
-					<s xml:lang="la" type="auto">Principio habetis descriptionem brevem crudelitatis abominandae Guysianorum, quam exercuerunt contra ecclesiam Wassensem, unde colligetis, quid consilii concoeperint illi homines contra omnes Christi fideles Galliae ecclesias.</s>
-					<s xml:lang="la" type="auto">Deinde mitto protestationem illustrissimi principis Ludovici ducis Burbonii, qui est princeps Condensis, Gallica lingua aeditam atque impressam, hic autem conversam in Germanicam a d. d. Georgio Cellario ita iubente amplissimo huius urbis magistratu, apud quem est Gallicum exemplum.</s>
-					<s xml:lang="la" type="auto">Ergo non est, quod quicquam in ea vobis sit suspectum.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Accepimus, domini honorandi et fratres charissimi, per certum nuncium ex Gallia a Guysianis (auxiliantibus aliquot in Gallia magnatibus coniuratis, inprimis autem cardinalibus, episcopis et clero) maximas esse turbas excitatas et quotidie extremam contra fideles exerceri saevitiam.</s>
+					<s n="3" xml:lang="la" type="auto">Quae ut omnia rectius intelligatis, mitto, quae inde ex Aurelia, ubi fidelium colligitur exercitus, accepi, vobis quoque charis communicanda fratribus.</s>
+					<s n="4" xml:lang="la" type="auto">Principio habetis descriptionem brevem crudelitatis abominandae Guysianorum, quam exercuerunt contra ecclesiam Wassensem, unde colligetis, quid consilii concoeperint illi homines contra omnes Christi fideles Galliae ecclesias.</s>
+					<s n="5" xml:lang="la" type="auto">Deinde mitto protestationem illustrissimi principis Ludovici ducis Burbonii, qui est princeps Condensis, Gallica lingua aeditam atque impressam, hic autem conversam in Germanicam a d. d. Georgio Cellario ita iubente amplissimo huius urbis magistratu, apud quem est Gallicum exemplum.</s>
+					<s n="6" xml:lang="la" type="auto">Ergo non est, quod quicquam in ea vobis sit suspectum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Intelligetis ex ea totius rei negotium, et quod nostri non sunt seditiosi contra regem, sed conari eos coniuratos et seditiosos contra regem in ordinem redigere, regem liberare et pacem regno reddere etc.</s>
-					<s xml:lang="la" type="auto">His adiunxi epistolam d. Bezae; ita enim voluit, ut ipsam communicarem fratribus Basiliensibus, Schaffhusianis, Sangallensibus, Rhetis.</s>
-					<s xml:lang="la" type="auto">Videtis, quid facto opus sit, optimi fratres.</s>
+					<s n="7" xml:lang="la" type="auto">Intelligetis ex ea totius rei negotium, et quod nostri non sunt seditiosi contra regem, sed conari eos coniuratos et seditiosos contra regem in ordinem redigere, regem liberare et pacem regno reddere etc.</s>
+					<s n="8" xml:lang="la" type="auto">His adiunxi epistolam d. Bezae; ita enim voluit, ut ipsam communicarem fratribus Basiliensibus, Schaffhusianis, Sangallensibus, Rhetis.</s>
+					<s n="9" xml:lang="la" type="auto">Videtis, quid facto opus sit, optimi fratres.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clamandum erit nobis sedulo et absque intermissione ad dominum, exhortanda ad supplicationem ecclesia.</s>
+					<s n="10" xml:lang="la" type="auto">Clamandum erit nobis sedulo et absque intermissione ad dominum, exhortanda ad supplicationem ecclesia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Confirmandae sunt etiam nostrae fidei creditae ecclesiae; etenim, si superiores fuerint papistae in Gallia, facinore nephando animati imminebunt et nobis.</s>
-					<s xml:lang="la" type="auto">Sed et nostri papistae istis nihilo sunt mitiores, neque dubium est non alio fine coeptum esse concilium Tridentinum, quam ut caussae apud plebem saltem probabiles praetexantur persequtioni truculentissimę, quam iam annis aliquot fabricati sunt.</s>
-					<s xml:lang="la" type="auto">Utinam vero nos vera poenitentia fideque domino occurreremus; est hic clemens ad condonandum poenitentibus delicta et potens ad servandum suos.</s>
+					<s n="11" xml:lang="la" type="auto">Confirmandae sunt etiam nostrae fidei creditae ecclesiae; etenim, si superiores fuerint papistae in Gallia, facinore nephando animati imminebunt et nobis.</s>
+					<s n="12" xml:lang="la" type="auto">Sed et nostri papistae istis nihilo sunt mitiores, neque dubium est non alio fine coeptum esse concilium Tridentinum, quam ut caussae apud plebem saltem probabiles praetexantur persequtioni truculentissimę, quam iam annis aliquot fabricati sunt.</s>
+					<s n="13" xml:lang="la" type="auto">Utinam vero nos vera poenitentia fideque domino occurreremus; est hic clemens ad condonandum poenitentibus delicta et potens ad servandum suos.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">In hoc valete, domini colendi et fratres charissimi.</s>
-					<s xml:lang="la" type="auto">Tiguri 23. aprilis 1562.</s>
-					<s xml:lang="la" type="auto">Salutant vos fratres omnes.</s>
+					<s n="14" xml:lang="la" type="auto">In hoc valete, domini colendi et fratres charissimi.</s>
+					<s n="15" xml:lang="la" type="auto">Tiguri 23. aprilis 1562.</s>
+					<s n="16" xml:lang="la" type="auto">Salutant vos fratres omnes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus vester.</s>
+					<s n="17" xml:lang="la" type="auto">Bullingerus vester.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Certum est peti ab Helvetiis militiam atque ideo Salodori comitia celebranda foederatorum 26. aprilis.</s>
-					<s xml:lang="la" type="auto">Petuntur autem nomine regis (ficti vel captivi) milites 4000.</s>
-					<s xml:lang="de" type="auto">Min gnedig herren verbietend den iren zuͦ louffen by eer, nid und guͦt und eewiger verlierung des vatterlands; habend ein gmein gebätt angesähen etc. handlend in disem handel mitt Bernn etc.</s>
+					<s n="18" xml:lang="la" type="auto">Certum est peti ab Helvetiis militiam atque ideo Salodori comitia celebranda foederatorum 26. aprilis.</s>
+					<s n="19" xml:lang="la" type="auto">Petuntur autem nomine regis (ficti vel captivi) milites 4000.</s>
+					<s n="20" xml:lang="de" type="auto">Min gnedig herren verbietend den iren zuͦ louffen by eer, nid und guͦt und eewiger verlierung des vatterlands; habend ein gmein gebätt angesähen etc. handlend in disem handel mitt Bernn etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Fidelibus Christi Iesu servis d. Valentino Fortmüllero et reliquis vigilantissimis Sangallensis ecclesiae ministris, dominis honorandis et fratribus meis charissimis.</s>
-					<s xml:lang="la" type="auto">Sangallen.</s>
+					<s n="21" xml:lang="la" type="auto">Fidelibus Christi Iesu servis d. Valentino Fortmüllero et reliquis vigilantissimis Sangallensis ecclesiae ministris, dominis honorandis et fratribus meis charissimis.</s>
+					<s n="22" xml:lang="la" type="auto">Sangallen.</s>
 				</p>
 			</div>
 		</body>

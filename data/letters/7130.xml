@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Verweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#441">Schaffhausen</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">Abschriften 4/6, p. 660-663</idno>
-						<repository ref="archive#76">
+						<!--
+						<repository ref="archive76">
 							<name>Schaffhausen StA</name>
-							<note type="Xeroxkopie">IRG</note>
 							<ref target="https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Regierung/Staatskanzlei/Staatsarchiv-3936-DE.html"/>
 						</repository>
+						<settlement ref="place441">Schaffhausen</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive76"/>
+						<idno subtype="Kopie">Abschriften 4/6, p. 660-663</idno>
+						<idno subtype="Xeroxkopie">IRG</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -30,50 +33,41 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7130">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
 					<date when="1567-06-23" cert="low"><note>2. Karte; 1. Karte siehe: 1567 Juni 23., ID 7129</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1876" cert="low">
+					<!--
+					<persName ref="person1876" cert="low">
 						<forename cert="low">Wilhelm IV.</forename>
 						<surname cert="low">Landgraf von Hessen</surname>
-						<addName type="main">von Hessen (der Weise), Wilhelm IV.</addName>
-						<graphic type="portrait" url="portraits/8096_von Hessen_Wilhelm.jpg"/>
+						<persName type="main" ref="person8096>von Hessen (der Weise), Wilhelm IV.</addName>
+						<graphic type="portrait" url="portraits/8096_von_Hessen_Wilhelm.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Wilhelm_von_Hessen"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1029523916"/>
 					</persName>
+					-->
+					<persName ref="person1876" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7131"/>
-					<ref type="prev_chronologically" target="files.xml#7129"/>
+					<ref type="next_chronologically" target="file7131"/>
+					<ref type="prev_chronologically" target="file7129"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#7564"/>
-					<ref type="prev_same_sender" target="files.xml#6879"/>
-					<ref type="next_same_addressee" target="files.xml#7165"/>
-					<ref type="prev_same_addressee" target="files.xml#7128"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#7564"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6879"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#7165"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#7128"/>
-					<ref type="parent" target="files.xml#7129"/>
+					<ref type="next_same_sender" target="file7564"/>
+					<ref type="prev_same_sender" target="file6879"/>
+					<ref type="next_same_addressee" target="file7165"/>
+					<ref type="prev_same_addressee" target="file7128"/>
+					<ref type="next_with_sender_as_addressee" target="file7564"/>
+					<ref type="prev_with_sender_as_addressee" target="file6879"/>
+					<ref type="next_with_addressee_as_sender" target="file7165"/>
+					<ref type="prev_with_addressee_as_sender" target="file7128"/>
+					<ref type="parent" target="file7129"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

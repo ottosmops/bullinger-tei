@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Beilage" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,771</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,771</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -34,14 +37,17 @@
 				</msDesc>
 				<msDesc type="Beilage" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 68,119</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">dat.: um 1548 Nov. 1.</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 68,119</idno>
+						<idno subtype="Hinweis">dat.: um 1548 Nov. 1.</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -50,49 +56,61 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5791">
 				<correspAction type="sent">
-					<persName ref="person#393" cert="low">
+					<!--
+					<persName ref="person393" cert="low">
 						<forename cert="low">Ambrosius</forename>
 						<surname cert="low">Blaurer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<date when="1563-06-00" cert="low"><note>Beilage (1563 Ende Juni) (= ID 5790)</note></date>
+					-->
+					<persName ref="person393" cert="low"/>
+					<date notBefore="1563-06-01" notAfter="1563-06-12" cert="low"><note>Beilage (1563 Ende Juni) (= ID 5790)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5792"/>
-					<ref type="prev_chronologically" target="files.xml#5790"/>
-					<ref type="next_correspondence" target="files.xml#5752"/>
-					<ref type="prev_correspondence" target="files.xml#5790"/>
-					<ref type="next_correspondence_request" target="files.xml#5752"/>
-					<ref type="prev_correspondence_request" target="files.xml#5790"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5806"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5700"/>
-					<ref type="next_same_sender" target="files.xml#5752"/>
-					<ref type="prev_same_sender" target="files.xml#5790"/>
-					<ref type="next_same_addressee" target="files.xml#5751"/>
-					<ref type="prev_same_addressee" target="files.xml#5748"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5752"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5790"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5751"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5748"/>
-					<ref type="child" target="files.xml#5790"/>
-					<ref type="parent" target="files.xml#5790"/>
+					<ref type="next_chronologically" target="file5792"/>
+					<ref type="prev_chronologically" target="file5790"/>
+					<ref type="next_correspondence" target="file5752"/>
+					<ref type="prev_correspondence" target="file5790"/>
+					<ref type="next_correspondence_request" target="file5752"/>
+					<ref type="prev_correspondence_request" target="file5790"/>
+					<ref type="next_correspondence_reaction" target="file5806"/>
+					<ref type="prev_correspondence_reaction" target="file5700"/>
+					<ref type="next_same_sender" target="file5752"/>
+					<ref type="prev_same_sender" target="file5790"/>
+					<ref type="next_same_addressee" target="file5751"/>
+					<ref type="prev_same_addressee" target="file5748"/>
+					<ref type="next_with_sender_as_addressee" target="file5752"/>
+					<ref type="prev_with_sender_as_addressee" target="file5790"/>
+					<ref type="next_with_addressee_as_sender" target="file5751"/>
+					<ref type="prev_with_addressee_as_sender" target="file5748"/>
+					<ref type="child" target="file5790"/>
+					<ref type="parent" target="file5790"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="5791/Autograph/00 E_II_357__S__771_.tif" n="1"/>
+		<graphic url="5791/Autograph/01 E_II_357__S__772_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

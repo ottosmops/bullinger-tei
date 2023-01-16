@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2438</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,420 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,420 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -54,13 +57,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 75,11</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 75,11</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -74,53 +80,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1273">
 				<correspAction type="sent">
-					<persName ref="person#3338" cert="high">
+					<!--
+					<persName ref="person3338" cert="high">
 						<forename cert="high">Petrus Paulus</forename>
 						<surname cert="high">Vergerius</surname>
-						<addName type="main">Vergerio, Pier Paolo</addName>
+						<persName type="main" ref="person3375>Vergerio, Pier Paolo</addName>
 						<graphic type="portrait" url="portraits/3375_Vergerio_Pietro_Paolo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Pietro_Paolo_Vergerio"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118768077"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417291"/>
 					</persName>
-					<place source="#87" cert="high">
-						<settlement>Casaccia</settlement>
-						<district>Piemont</district>
-						<country>Italien</country>
-						<geo>46.39105 9.66609</geo>
-					</place>
-					<date min="1551-05-06" max="1551-05-07" cert="low"/>
+					-->
+					<persName ref="person3338" cert="high"/>
+					<place source="place87" cert="high"/>
+					<date notBefore="1551-05-06" notAfter="1551-05-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1275"/>
-					<ref type="prev_chronologically" target="files.xml#1272"/>
-					<ref type="next_correspondence" target="files.xml#1276"/>
-					<ref type="prev_correspondence" target="files.xml#1263"/>
-					<ref type="next_correspondence_request" target="files.xml#1276"/>
-					<ref type="prev_correspondence_request" target="files.xml#1263"/>
-					<ref type="next_correspondence_reaction" target="files.xml#1883"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#799"/>
-					<ref type="next_same_sender" target="files.xml#1276"/>
-					<ref type="prev_same_sender" target="files.xml#1263"/>
-					<ref type="next_same_addressee" target="files.xml#1277"/>
-					<ref type="prev_same_addressee" target="files.xml#1266"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#1276"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1263"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1277"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1266"/>
+					<ref type="next_chronologically" target="file1275"/>
+					<ref type="prev_chronologically" target="file1272"/>
+					<ref type="next_correspondence" target="file1276"/>
+					<ref type="prev_correspondence" target="file1263"/>
+					<ref type="next_correspondence_request" target="file1276"/>
+					<ref type="prev_correspondence_request" target="file1263"/>
+					<ref type="next_correspondence_reaction" target="file1883"/>
+					<ref type="prev_correspondence_reaction" target="file799"/>
+					<ref type="next_same_sender" target="file1276"/>
+					<ref type="prev_same_sender" target="file1263"/>
+					<ref type="next_same_addressee" target="file1277"/>
+					<ref type="prev_same_addressee" target="file1266"/>
+					<ref type="next_with_sender_as_addressee" target="file1276"/>
+					<ref type="prev_with_sender_as_addressee" target="file1263"/>
+					<ref type="next_with_addressee_as_sender" target="file1277"/>
+					<ref type="prev_with_addressee_as_sender" target="file1266"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -139,36 +144,36 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Vir clarissime, veni Casaciam vocatus, ut adversus papam et missam, eius creaturam, verba facerem.</s>
-					<s xml:lang="la" type="auto">Hic itaque incidi in hominem, qui ad vos mane venit, et scribo tumultuarie.</s>
+					<s n="1" xml:lang="la" type="auto">Vir clarissime, veni Casaciam vocatus, ut adversus papam et missam, eius creaturam, verba facerem.</s>
+					<s n="2" xml:lang="la" type="auto">Hic itaque incidi in hominem, qui ad vos mane venit, et scribo tumultuarie.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Erant quinque vici, qui unum habebant concionatorem, nunc singuli suum habent; in summa: progreditur evangelium.</s>
-					<s xml:lang="la" type="auto">Sed contra papa clamat et minatur velle perdere Rhaetos, si diutius me audierint.</s>
-					<s xml:lang="la" type="auto">Vix crederes, quot verba de me ille Antichristus.</s>
-					<s xml:lang="la" type="auto">Tandem sensit verbula mea, quę per Italiam spargebam; nondum enim finis.</s>
+					<s n="3" xml:lang="la" type="auto">Erant quinque vici, qui unum habebant concionatorem, nunc singuli suum habent; in summa: progreditur evangelium.</s>
+					<s n="4" xml:lang="la" type="auto">Sed contra papa clamat et minatur velle perdere Rhaetos, si diutius me audierint.</s>
+					<s n="5" xml:lang="la" type="auto">Vix crederes, quot verba de me ille Antichristus.</s>
+					<s n="6" xml:lang="la" type="auto">Tandem sensit verbula mea, quę per Italiam spargebam; nondum enim finis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tua demonstratio iam sparsa est magno, (quod certo rescivi), illius bestiae dolore.</s>
-					<s xml:lang="la" type="auto">Sed insaniat et fremat; nam propediem interficietur.</s>
+					<s n="7" xml:lang="la" type="auto">Tua demonstratio iam sparsa est magno, (quod certo rescivi), illius bestiae dolore.</s>
+					<s n="8" xml:lang="la" type="auto">Sed insaniat et fremat; nam propediem interficietur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Reprehendit Venetos emissa bulla, qui non patiuntur solos monachos posse, quę volunt, adversus fratres macchinari, sed magistratum quempiam addidere, qui illis praesit.</s>
-					<s xml:lang="la" type="auto">Nunc certabunt inter sese; spero Venetos non cessuros.</s>
-					<s xml:lang="la" type="auto">Fervet persecutio in Italia.</s>
-					<s xml:lang="la" type="auto">Ego tandem ad vos propediem me recipiam.</s>
-					<s xml:lang="la" type="auto">Saluto scholam omnem et ecclesiam.</s>
-					<s xml:lang="la" type="auto">Rogate pro nobis, qui valde laboramus.</s>
+					<s n="9" xml:lang="la" type="auto">Reprehendit Venetos emissa bulla, qui non patiuntur solos monachos posse, quę volunt, adversus fratres macchinari, sed magistratum quempiam addidere, qui illis praesit.</s>
+					<s n="10" xml:lang="la" type="auto">Nunc certabunt inter sese; spero Venetos non cessuros.</s>
+					<s n="11" xml:lang="la" type="auto">Fervet persecutio in Italia.</s>
+					<s n="12" xml:lang="la" type="auto">Ego tandem ad vos propediem me recipiam.</s>
+					<s n="13" xml:lang="la" type="auto">Saluto scholam omnem et ecclesiam.</s>
+					<s n="14" xml:lang="la" type="auto">Rogate pro nobis, qui valde laboramus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cassacii, nonis maii 1551.</s>
+					<s n="15" xml:lang="la" type="auto">Cassacii, nonis maii 1551.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vergerius.</s>
+					<s n="16" xml:lang="la" type="auto">Vergerius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro domino Henrico Bullingero, Tigurinę ecclesię pastori, fratri honorando<note type="margin">a.R.: ...</note>.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="17" xml:lang="la" type="auto">Clarissimo viro domino Henrico Bullingero, Tigurinę ecclesię pastori, fratri honorando<note type="margin">a.R.: ...</note>.</s>
+					<s n="18" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

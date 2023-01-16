@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2014"/>
-				<idno type="ISBN">ISBN 978-3-290-17760-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2393</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17760-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2393</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 16</title>
+				<title subtype="publication">HBBW XVI</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">16</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 345,319</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 345,319</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,10 +49,10 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Da sich jemand [...] nach <placeName ref="97">Basel</placeName> begibt, von wo aus
-								[<persName ref="74">Johannes</persName>] <persName ref="74">Gast</persName> den Brief an
+								Da sich jemand [...] nach <placeName ref="place97">Basel</placeName> begibt, von wo aus
+								[Johannes] <persName ref="person74">Gast</persName> den Brief an
 								Bullinger weiterbefördern kann, möchte Cousin die Gelegenheit nutzen, Bullinger zu grüßen und ihm
-								mitzuteilen, dass er von seiner Gesandtschaft nach <placeName ref="11">Frankreich</placeName>
+								mitzuteilen, dass er von seiner Gesandtschaft nach <placeName ref="place11">Frankreich</placeName>
 								nun wieder gut zurückgekehrt ist und sich auch weiterhin Bullinger dienlich erweisen kann.
 								</p>
 								<p xml:id="regest2">
@@ -61,8 +64,8 @@
 								- Grüße.
 								</p>
 								<p xml:id="regest4">
-								- [P.S.:] Grüße auch an [Theodor] Bibliander, [<persName ref="165">Konrad</persName>]
-								<persName ref="165">Pellikan</persName> und <persName ref="165">Konrad</persName> Gessner,
+								- [P.S.:] Grüße auch an [Theodor] Bibliander, [Konrad]
+								<persName ref="person165">Pellikan</persName> und Konrad Gessner,
 								dessen „Bibliotheca [universalis]“ Cousin noch nicht sehen konnte.
 							</p>
 						</summary>
@@ -73,44 +76,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12440">
 				<correspAction type="sent">
-					<persName ref="person#667" cert="high">
+					<!--
+					<persName ref="person667" cert="high">
 						<forename cert="high">Gilbert</forename>
 						<surname cert="high">Cousin</surname>
-						<addName type="main">Cousin (Cognatus Nozerenus), Gilbert</addName>
+						<persName type="main" ref="person8073>Cousin (Cognatus Nozerenus), Gilbert</addName>
 					</persName>
-					<place source="#356" cert="high">
-						<settlement>Nozeroy</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>46.775187 6.038639</geo>
-					</place>
+					-->
+					<persName ref="person667" cert="high"/>
+					<place source="place356" cert="high"/>
 					<date when="1546-03-25" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12441"/>
-					<ref type="prev_chronologically" target="files.xml#12439"/>
-					<ref type="next_correspondence" target="files.xml#13023"/>
-					<ref type="prev_correspondence" target="files.xml#12234"/>
-					<ref type="next_correspondence_request" target="files.xml#13023"/>
-					<ref type="prev_correspondence_request" target="files.xml#12234"/>
+					<ref type="next_chronologically" target="file12441"/>
+					<ref type="prev_chronologically" target="file12439"/>
+					<ref type="next_correspondence" target="file13023"/>
+					<ref type="prev_correspondence" target="file12234"/>
+					<ref type="next_correspondence_request" target="file13023"/>
+					<ref type="prev_correspondence_request" target="file12234"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#13023"/>
-					<ref type="prev_same_sender" target="files.xml#12234"/>
-					<ref type="next_same_addressee" target="files.xml#12443"/>
-					<ref type="prev_same_addressee" target="files.xml#12435"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13023"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12234"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12443"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12435"/>
+					<ref type="next_same_sender" target="file13023"/>
+					<ref type="prev_same_sender" target="file12234"/>
+					<ref type="next_same_addressee" target="file12443"/>
+					<ref type="prev_same_addressee" target="file12435"/>
+					<ref type="next_with_sender_as_addressee" target="file13023"/>
+					<ref type="prev_with_sender_as_addressee" target="file12234"/>
+					<ref type="next_with_addressee_as_sender" target="file12443"/>
+					<ref type="prev_with_addressee_as_sender" target="file12435"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -127,38 +133,38 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.P.</s>
-					<s xml:lang="la" type="auto">Cum hic<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note>, qui has <persName ref="74">Gastio</persName> nostro reddet isthuc<note xml:id="fn2" type="footnote" n="2">nach Zürich.</note> transmittendas, se recta <placeName ref="97">Basileam</placeName> iturum significaret, meae erga te observantiae esse duxi, si te his longo post tempore salutarem, significaremque post meum a Gallica legatione reditum<note xml:id="fn3" type="footnote" n="3">Vgl. <ref target="file#12415">Nr. 2368</ref>,25-27.</note> hic me pristinae molae operam dare, ut scires, ubi gentium tuo prisco in me iure uti valeas.</s>
-					<s xml:lang="la" type="auto">Nam si unquam alias, nunc maxime meum illud erga te studium viget; quod re potius quam verbis testari recipio.</s>
-					<s xml:lang="la" type="auto">Certe, si cuiusquam, tui maxime, causa nihil non conabor, mi Bullingere, et, ut periculum facias, te etiam atque etiam rogo.</s>
+					<s n="1" xml:lang="la" type="auto">S.P.</s>
+					<s n="2" xml:lang="la" type="auto">Cum hic<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note>, qui has <persName ref="person74">Gastio</persName> nostro reddet isthuc<note xml:id="fn2" type="footnote" n="2">nach Zürich.</note> transmittendas, se recta <placeName ref="place97">Basileam</placeName> iturum significaret, meae erga te observantiae esse duxi, si te his longo post tempore salutarem, significaremque post meum a Gallica legatione reditum<note xml:id="fn3" type="footnote" n="3">Vgl. <ref target="file12415">Nr. 2368</ref>,25-27.</note> hic me pristinae molae operam dare, ut scires, ubi gentium tuo prisco in me iure uti valeas.</s>
+					<s n="3" xml:lang="la" type="auto">Nam si unquam alias, nunc maxime meum illud erga te studium viget; quod re potius quam verbis testari recipio.</s>
+					<s n="4" xml:lang="la" type="auto">Certe, si cuiusquam, tui maxime, causa nihil non conabor, mi Bullingere, et, ut periculum facias, te etiam atque etiam rogo.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Interim serva te nobis incolumem, nam quamdiu vixeris, tandiu et literariae reipublicae et christiano nomini consultum iri arbitramur.</s>
-					<s xml:lang="la" type="auto">Ego (quod mihi tantum licet)<note xml:id="fna" type="footnote" n="a">Klammern <hi>ergänzt.</hi></note> quotidie te in tuis scriptis disserentem audio et pene conspicor.</s>
-					<s xml:lang="la" type="auto">Inprimisque sum tuis defensionibus mirabiliter delectatus.</s>
-					<s xml:lang="la" type="auto">Summam enim illae doctrinam et illam, quam ego maxime probo, egregie redolent animi moderationem<note xml:id="fn4" type="footnote" n="4">Zu diesen Büchern Bullingers siehe bereits <hi>HBBW</hi> XV 378 und Anm. 7.</note>.</s>
-					<s xml:lang="la" type="auto">Annotationum tuarum<note xml:id="fn5" type="footnote" n="5">Offensichtlich hatte Bullinger ihm auch noch seinen im August 1545 erschienenen Markuskommentar <hi>(VD16</hi> B4904; HBBibl I 170) zukommen lassen, zusammen mit einem nicht erhaltenen Brief, der auf <hi>HBBW</hi> XV, <ref target="file#12234">Nr. 2187</ref>, vom 22. Juni 1545 antwortete.</note> iam bonam perlegi partem.</s>
-					<s xml:lang="la" type="auto">Bene atque optime vale, et me in tuo aere<note xml:id="fn6" type="footnote" n="6"><hi><persName ref="632">Cicero</persName>,</hi> Epistulae ad familiares, 15, 14, 1.</note> semper censeas et, ut vales et si quid novi excudis, significes quandoque, rogo atque obsecro.</s>
-					<s xml:lang="la" type="auto">Iterum vale.<pb type="edition" next="263"/></s>
+					<s n="5" xml:lang="la" type="auto">Interim serva te nobis incolumem, nam quamdiu vixeris, tandiu et literariae reipublicae et christiano nomini consultum iri arbitramur.</s>
+					<s n="6" xml:lang="la" type="auto">Ego (quod mihi tantum licet)<note xml:id="fna" type="footnote" n="a">Klammern <hi>ergänzt.</hi></note> quotidie te in tuis scriptis disserentem audio et pene conspicor.</s>
+					<s n="7" xml:lang="la" type="auto">Inprimisque sum tuis defensionibus mirabiliter delectatus.</s>
+					<s n="8" xml:lang="la" type="auto">Summam enim illae doctrinam et illam, quam ego maxime probo, egregie redolent animi moderationem<note xml:id="fn4" type="footnote" n="4">Zu diesen Büchern Bullingers siehe bereits <hi>HBBW</hi> XV 378 und Anm. 7.</note>.</s>
+					<s n="9" xml:lang="la" type="auto">Annotationum tuarum<note xml:id="fn5" type="footnote" n="5">Offensichtlich hatte Bullinger ihm auch noch seinen im August 1545 erschienenen Markuskommentar <hi>(VD16</hi> B4904; HBBibl I 170) zukommen lassen, zusammen mit einem nicht erhaltenen Brief, der auf <hi>HBBW</hi> XV, <ref target="file12234">Nr. 2187</ref>, vom 22. Juni 1545 antwortete.</note> iam bonam perlegi partem.</s>
+					<s n="10" xml:lang="la" type="auto">Bene atque optime vale, et me in tuo aere<note xml:id="fn6" type="footnote" n="6"><hi><persName ref="person632">Cicero</persName>,</hi> Epistulae ad familiares, 15, 14, 1.</note> semper censeas et, ut vales et si quid novi excudis, significes quandoque, rogo atque obsecro.</s>
+					<s n="11" xml:lang="la" type="auto">Iterum vale.<pb type="edition" next="263"/></s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Datum Nozerethi, 8. calendas aprilis anno christiano 1546.</s>
-					<s xml:lang="la" type="auto">Tui studiosissimus et observandissimus</s>
+					<s n="12" xml:lang="la" type="auto">Datum Nozerethi, 8. calendas aprilis anno christiano 1546.</s>
+					<s n="13" xml:lang="la" type="auto">Tui studiosissimus et observandissimus</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Gilbertus Cognatus Nozerenus<ptr target="#fnb" type="footnote" n="b"/>.</s>
-					<s xml:lang="la" type="auto">Conradum Gesnerum, medicum excellentem, cuius opus Bibliotheces<note xml:id="fn7" type="footnote" n="7">Gessners Bibliotheca universalis sive catalogus omnium scriptorum locupletissimus, in tribus linguis, Latina, Graeca, et Hebraica Zürich, Christoph Froschauer, 1545 <hi>(VD16</hi> G 1698; <hi>BZD</hi> C350).</note> nondum mihi contingere nec videre licuit, Bibliandrum, <persName ref="165">Pellicanum</persName> caeterosque ecclesiastes salvere iubeo<note xml:id="fnb" type="footnote" n="b"><hi>Links neben der Unterschrift nachgetragen.</hi></note>.</s>
+					<s n="14" xml:lang="la" type="auto">Gilbertus Cognatus Nozerenus<ptr target="fnb" type="footnote" n="b"/>.</s>
+					<s n="15" xml:lang="la" type="auto"><persName ref="person165">Conradum</persName> Gesnerum, medicum excellentem, cuius opus Bibliotheces<note xml:id="fn7" type="footnote" n="7">Gessners Bibliotheca universalis sive catalogus omnium scriptorum locupletissimus, in tribus linguis, Latina, Graeca, et Hebraica Zürich, Christoph Froschauer, 1545 <hi>(VD16</hi> G 1698; <hi>BZD</hi> C350).</note> nondum mihi contingere nec videre licuit, Bibliandrum, <persName ref="person165">Pellicanum</persName> caeterosque ecclesiastes salvere iubeo<note xml:id="fnb" type="footnote" n="b"><hi>Links neben der Unterschrift nachgetragen.</hi></note>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Praestantissimo viro domino Henrico Bullingero theologo, praeceptori suo suspiciendo.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="16" xml:lang="la" type="auto">Praestantissimo viro domino Henrico Bullingero theologo, praeceptori suo suspiciendo.</s>
+					<s n="17" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

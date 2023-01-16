@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2008"/>
-				<idno type="ISBN">ISBN 978-3-290-17459-0</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1779</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17459-0</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1779</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 13</title>
+				<title subtype="publication">HBBW XIII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">13</biblScope>
@@ -31,29 +31,32 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph (Konzept)" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph (Konzept)">E II 345,365r.–366r.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph (Konzept)">E II 345,365r.–366r.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
 						<msItem/>
 						<summary>
 							<p xml:id="regest1">
-								Aus <placeName ref="1205">Wittenberg</placeName> zurückkehrende Studenten
-								[<persName ref="1866">Johannes Pontisella</persName>,
-								<persName ref="104">Christian Hochholzer</persName> und <persName ref="1866">Johannes</persName> Faber?] rühmten
-								<persName ref="146">Melanchthons</persName> Wohlwollen gegenüber den Zürchern und überbrachten seinen
+								Aus <placeName ref="place1205">Wittenberg</placeName> zurückkehrende Studenten
+								[<persName ref="person1866">Johannes Pontisella</persName>,
+								<persName ref="person104">Christian Hochholzer</persName> und Johannes Faber?] rühmten
+								<persName ref="person146">Melanchthons</persName> Wohlwollen gegenüber den Zürchern und überbrachten seinen
 								Brief an die Schulvorsteher; Bullinger dankt und bietet seine Dienste an. Sendet seinen Johanneskommentar,
 								an dem er neun Monate gearbeitet hat; darin verteidigt er die altkirchliche Christologie und Trinitätslehre
-								gegen [<persName ref="2122">Kaspar</persName>] <persName ref="2122">Schwenckfeld</persName>,
-								[<persName ref="2154">Michael</persName>] <persName ref="2154">Servet</persName>, Campensis
-								[<persName ref="593">Johannes Campanus</persName>] und die Täufer. Grüße von den Zürcher Pfarrern und
-								Lehrern; Empfehlung an <persName ref="138">Luther</persName> und die übrigen Gelehrten.
+								gegen [Kaspar] <persName ref="person2122">Schwenckfeld</persName>,
+								[Michael] <persName ref="person2154">Servet</persName>, Campensis
+								[<persName ref="person593">Johannes Campanus</persName>] und die Täufer. Grüße von den Zürcher Pfarrern und
+								Lehrern; Empfehlung an <persName ref="person138">Luther</persName> und die übrigen Gelehrten.
 							</p>
 						</summary>
 					</msContents>
@@ -73,38 +76,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11825">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 					<date when="1543-08-28" cert="low">kurz vor 28. August 1543</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2095" cert="high">
+					<!--
+					<persName ref="person2095" cert="high">
 						<forename cert="high">Philipp</forename>
 						<surname cert="high">Melanchthon</surname>
 						<graphic type="portrait" url="portraits/2095_Melanchthon_Philipp.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Philipp_Melanchthon"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118580485"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11484197"/>
 					</persName>
+					-->
+					<persName ref="person2095" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11826"/>
-					<ref type="prev_chronologically" target="files.xml#11824"/>
-					<ref type="next_correspondence" target="files.xml#11927"/>
-					<ref type="prev_correspondence" target="files.xml#11208"/>
-					<ref type="next_correspondence_request" target="files.xml#11978"/>
-					<ref type="prev_correspondence_request" target="files.xml#11208"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11927"/>
+					<ref type="next_chronologically" target="file11826"/>
+					<ref type="prev_chronologically" target="file11824"/>
+					<ref type="next_correspondence" target="file11927"/>
+					<ref type="prev_correspondence" target="file11208"/>
+					<ref type="next_correspondence_request" target="file11978"/>
+					<ref type="prev_correspondence_request" target="file11208"/>
+					<ref type="next_correspondence_reaction" target="file11927"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11826"/>
-					<ref type="prev_same_sender" target="files.xml#11824"/>
-					<ref type="next_same_addressee" target="files.xml#11927"/>
+					<ref type="next_same_sender" target="file11826"/>
+					<ref type="prev_same_sender" target="file11824"/>
+					<ref type="next_same_addressee" target="file11927"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11826"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11824"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11927"/>
+					<ref type="next_with_sender_as_addressee" target="file11826"/>
+					<ref type="prev_with_sender_as_addressee" target="file11824"/>
+					<ref type="next_with_addressee_as_sender" target="file11927"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -112,7 +125,11 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="11825/Autograph (Konzept)/00 E_II_345__fol__365_r_.tif" n="1"/>
+		<graphic url="11825/Autograph (Konzept)/01 E_II_345__fol__365_v_.tif" n="2"/>
+		<graphic url="11825/Autograph (Konzept)/02 E_II_345__fol__366_r_.tif" n="3"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 			<div xml:id="div1" corresp="regest1">

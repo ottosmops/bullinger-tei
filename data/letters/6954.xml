@@ -8,13 +8,19 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E I, 2.1a Synodalia</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E I, 2.1, Nr. 19.4</idno>
+						<altIdentifier>
+							<idno subtype="Kopie">E I, 2.1a Synodalia</idno>
+						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -36,55 +42,45 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6954">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1566-11-21" cert="low"><note>Antwort zu: 1566 November 18. = ID 6951</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#474" cert="high">
-							<settlement>St. Gallen</settlement>
-							<district>St.Gallen</district>
-							<country>Schweiz</country>
-							<geo>47.42391 9.37477</geo>
-						</place>
-					</roleName>
+					<!--
 					<note type="Adresse">Geistliche der Synode von St.Gallen</note>
-					<place source="#474" cert="high">
-						<settlement>St. Gallen</settlement>
-						<district>St.Gallen</district>
-						<country>Schweiz</country>
-						<geo>47.42391 9.37477</geo>
-					</place>
+					-->
+					<personGrp ref="role52" role="Geistliche"/>
+					<orgName ref="org49" role="Synode"/>"
+					<place source="place474" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6955"/>
-					<ref type="prev_chronologically" target="files.xml#6953"/>
-					<ref type="next_correspondence" target="files.xml#7564"/>
-					<ref type="prev_correspondence" target="files.xml#6708"/>
+					<ref type="next_chronologically" target="file6955"/>
+					<ref type="prev_chronologically" target="file6953"/>
+					<ref type="next_correspondence" target="file7564"/>
+					<ref type="prev_correspondence" target="file6708"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#5295"/>
-					<ref type="next_correspondence_reaction" target="files.xml#7564"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#6708"/>
-					<ref type="next_same_sender" target="files.xml#6955"/>
-					<ref type="prev_same_sender" target="files.xml#6950"/>
-					<ref type="next_same_addressee" target="files.xml#7130"/>
-					<ref type="prev_same_addressee" target="files.xml#6879"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6955"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6950"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#7130"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6879"/>
+					<ref type="prev_correspondence_request" target="file5295"/>
+					<ref type="next_correspondence_reaction" target="file7564"/>
+					<ref type="prev_correspondence_reaction" target="file6708"/>
+					<ref type="next_same_sender" target="file6955"/>
+					<ref type="prev_same_sender" target="file6950"/>
+					<ref type="next_same_addressee" target="file7130"/>
+					<ref type="prev_same_addressee" target="file6879"/>
+					<ref type="next_with_sender_as_addressee" target="file6955"/>
+					<ref type="prev_with_sender_as_addressee" target="file6950"/>
+					<ref type="next_with_addressee_as_sender" target="file7130"/>
+					<ref type="prev_with_addressee_as_sender" target="file6879"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

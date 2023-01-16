@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3062</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3062</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,186 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,186 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -57,7 +60,7 @@
 								der mit 15 Pferden auf dem Weg nach Italien durch Zürich reiste und an der Schlacht zwischen den Engländern
 								und den Schotten teilgenommen hatte, neue Einzelheiten zur Kampfhandlung. [Hooper] erhielt zudem eine in
 								Antwerpen erstellte Beschreibung davon. Beide Berichte stimmen mit Vadians Darstellung [in
-								<ref target="file#13107">Nr. 3058</ref>] überein, außer dass es zu zwei Schlachten gekommen ist: In der ersten
+								<ref target="file13107">Nr. 3058</ref>] überein, außer dass es zu zwei Schlachten gekommen ist: In der ersten
 								kamen etwa 14000, in der zweiten etwa 3000 Schotten ums Leben. In der zweiten wurden auch vornehme
 								schottische Anführer gefangen genommen. Doch auch die Engländer erlitten dabei Verluste. In London wird
 								jetzt ein Frieden zwischen den beiden Königreichen ausgehandelt. Unterdessen haben aber die Franzosen unweit
@@ -68,7 +71,7 @@
 								</p>
 								<p xml:id="regest3">
 								[3] Vom Augsburger Reichstag ist nichts Großes zu erwarten. Hier die zutreffende Aussage aus dem Brief des
-								Augsburger Stadtschreibers Georg Frölich vom 25. Oktober [<ref target="file#13104">Nr. 3055</ref>]: „Ich hege
+								Augsburger Stadtschreibers Georg Frölich vom 25. Oktober [<ref target="file13104">Nr. 3055</ref>]: „Ich hege
 								keine Hoffnung mehr, was die Freiheiten Deutschlands und die öffentliche Predigt des Evangeliums anbetrifft,
 								da alle Papstanhänger, die in den Abstimmungen obsiegen, sich zugunsten der bereits gefassten und künftigen
 								Beschlüsse des Konzils von Trient aussprechen und [eine Einstellung der Verkündigung des Evangeliums]
@@ -76,7 +79,7 @@
 								bald Stadtvögte und Steuereintreiber aufgezwungen werden. König Ferdinand, dieser Teufelssohn, der Böhmen
 								schrecklich verheert und dessen beste Männer umgebracht hat, ist nun in Augsburg eingetroffen und wird das
 								noch wenige übriggebliebene Glück vernichten. Gott erbarme sich unser!“ Übereinstimmend schrieb Blarer am
-								28. Oktober [in <ref target="file#13108">Nr. 3059</ref>]: „Soeben kommt ein Brief aus Augsburg. Darin steht,
+								28. Oktober [in <ref target="file13108">Nr. 3059</ref>]: „Soeben kommt ein Brief aus Augsburg. Darin steht,
 								dass König Ferdinand angekommen ist, und dass der Kaiser einem Prädikanten [Johannes Weiß] des Herzogs
 								Moritz von Sachsen das Predigen aufgrund dessen freimütiger Reden untersagt hat. Es wird alles noch
 								schlimmer kommen.“
@@ -166,46 +169,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13111">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date min="1547-10-31" max="1547-11-04" cert="low"/>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="low"/>
+					<date notBefore="1547-10-31" notAfter="1547-11-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
+					-->
+					<persName ref="person3306" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13112"/>
-					<ref type="prev_chronologically" target="files.xml#13110"/>
-					<ref type="next_correspondence" target="files.xml#13117"/>
-					<ref type="prev_correspondence" target="files.xml#13107"/>
-					<ref type="next_correspondence_request" target="files.xml#13145"/>
-					<ref type="prev_correspondence_request" target="files.xml#13041"/>
-					<ref type="next_correspondence_reaction" target="files.xml#13117"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#13107"/>
-					<ref type="next_same_sender" target="files.xml#13114"/>
-					<ref type="prev_same_sender" target="files.xml#13103"/>
-					<ref type="next_same_addressee" target="files.xml#13117"/>
-					<ref type="prev_same_addressee" target="files.xml#13107"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13114"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13103"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13117"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13107"/>
+					<ref type="next_chronologically" target="file13112"/>
+					<ref type="prev_chronologically" target="file13110"/>
+					<ref type="next_correspondence" target="file13117"/>
+					<ref type="prev_correspondence" target="file13107"/>
+					<ref type="next_correspondence_request" target="file13145"/>
+					<ref type="prev_correspondence_request" target="file13041"/>
+					<ref type="next_correspondence_reaction" target="file13117"/>
+					<ref type="prev_correspondence_reaction" target="file13107"/>
+					<ref type="next_same_sender" target="file13114"/>
+					<ref type="prev_same_sender" target="file13103"/>
+					<ref type="next_same_addressee" target="file13117"/>
+					<ref type="prev_same_addressee" target="file13107"/>
+					<ref type="next_with_sender_as_addressee" target="file13114"/>
+					<ref type="prev_with_sender_as_addressee" target="file13103"/>
+					<ref type="next_with_addressee_as_sender" target="file13117"/>
+					<ref type="prev_with_addressee_as_sender" target="file13107"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -226,124 +233,124 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Satis mature apologiam remisisti,<note xml:id="fn2" type="footnote" n="2">Angesprochen ist Bullingers Schrift "Contra scandala ex bello infeliciter gesto oborta Apologia" (dazu s. <ref target="file#13072">Nr. 3023</ref>, <qv>fn17291-2</qv>), die Vadian am 27. Oktober zurückgeschickt hatte. - Hier bezieht sich Bullinger auf <ref target="file#13107">Nr. 3058</ref>,[1].</note> vir clarissime.</s>
-					<s xml:lang="la" type="auto">Proinde non est, quod ignoscam.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Satis mature apologiam remisisti,<note xml:id="fn2" type="footnote" n="2">Angesprochen ist Bullingers Schrift "Contra scandala ex bello infeliciter gesto oborta Apologia" (dazu s. <ref target="file13072">Nr. 3023</ref>, <qv>fn17291-2</qv>), die Vadian am 27. Oktober zurückgeschickt hatte. - Hier bezieht sich Bullinger auf <ref target="file13107">Nr. 3058</ref>,[1].</note> vir clarissime.</s>
+					<s n="3" xml:lang="la" type="auto">Proinde non est, quod ignoscam.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Gratificatus es mihi plurimum, qui Epitomen reformationis Anglicae miseris.<note xml:id="fn3" type="footnote" n="3">Zur "Mandatorum epitome" sowie zu deren weiter unten erwähnten ursprünglichen englischen Fassung s. <ref target="file#13107">Nr. 3058</ref>, <qv>fn17325-1</qv>.</note></s>
-					<s xml:lang="la" type="auto">Dixerat mihi quidem summam reformationis nobilis quidam Anglus<note xml:id="fn4" type="footnote" n="4">John Hooper.</note>, qui apud nos agit.</s>
-					<s xml:lang="la" type="auto">Is enim acceperat integram, anglica lingua scriptam.</s>
-					<s xml:lang="la" type="auto">Ego vero ex tuo libro omnia rectius intellexi, quem aliquando remittam.</s>
-					<s xml:lang="la" type="auto">Idem ille Anglus ab Italo quodam<note xml:id="fn5" type="footnote" n="5">Unbekannt.</note>, qui bello<note xml:id="fn6" type="footnote" n="6">Gemeint ist die Schlacht von Pinkie Cleugh vom 10. September 1547; s. dazu <ref target="file#13079">Nr. 3030</ref>, <qv>fn17299-4</qv>; <ref target="file#13113">Nr. 3064</ref>.</note> inter Anglum<note xml:id="fn7" type="footnote" n="7">König Eduard VI. von England, vertreten durch den Lord Protector Edward Seymour, Duke of Somerset.</note> et Scotum<note xml:id="fn8" type="footnote" n="8">James Hamilton, 2. Earl of Arran, der für die damals noch minderjährige Königin Maria Stuart die Geschäfte führte.</note> gesto interfuit et hac 15 equis comitatus in Italiam rediit, omnem rem, uti gesta est, intellexit.</s>
-					<s xml:lang="la" type="auto">Sed et historiam omnem Antverpiae descriptam accepit.</s>
-					<s xml:lang="la" type="auto">Et habet quidem res omnis, sicuti tu narras,<note xml:id="fn9" type="footnote" n="9">In <ref target="file#13107">Nr. 3058</ref>,[4].</note> nisi quod bis conflixere.<note xml:id="fn10" type="footnote" n="10">Hier und nachfolgend sind die zwei Angriffe in der Schlacht von Pinkie Cleugh gemeint; s. dazu <ref target="file#13106">Nr. 3057</ref>, <qv>fn17324-1</qv>.</note></s>
-					<s xml:lang="la" type="auto">In priore praelio ceciderunt Scotorum et stipendiariorum Scoticorum circiter 14000, in posteriore 3000,<note xml:id="fn11" type="footnote" n="11">Zu den ohnehin unzuverlässigen Zahlenangaben s. <ref target="file#13113">Nr. 3064</ref> mit <qv>fn17278-1</qv> und <qv>fn17278-4</qv>.</note> in quo etiam praecipui Scotorum principes capti sunt.</s>
-					<s xml:lang="la" type="auto">Nec incruenta fuit Anglis victoria.<note xml:id="fn12" type="footnote" n="12">Vgl. <hi>Livius,</hi> Ab urbe condita, 10, 29; 42, 7: "nec incruenta victoria fuit".</note></s>
-					<s xml:lang="la" type="auto">Iam comitia celebrantur Londini, in quibus agitur de pace et compositione regnorum.<note xml:id="fn13" type="footnote" n="13">Siehe dazu <ref target="file#13106">Nr. 3057</ref>, <qv>fn17324-3</qv>.</note></s>
-					<s xml:lang="la" type="auto">Interea Galli non procul ab Anglia regi Anglorum navim praestantissimam eripiunt; quam nisi reddiderint, bellum inter utrosque (et novum et asperrimum)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note> geretur.<note xml:id="fn14" type="footnote" n="14">Die Franzosen hatten seit der zweiten Augusthälfte 1547 mehrere englische Schiffe gekapert; s. <abbr>Cloulas, Henri II</abbr> 265-267. - Am 20. Oktober ordnete König Heinrich II. von Frankreich an, alle beschlagnahmten Schiffe mit deren Besatzungen bis Ende Monat freizugeben und keine weiteren Schiffe mehr festzusetzen; s. Catalogue des Actes de Henri II, Bd. 1: 31 mars - 31 décembre 1547, Paris 1979, S. 371, <ref target="file#11327">Nr. 1284</ref>.<zfn>fn17330-3</zfn></note></s>
-					<s xml:lang="la" type="auto">Quod si fiet, caesaris<note xml:id="fn15" type="footnote" n="15">Karl V.</note> fiet vafris consiliis.</s>
-					<s xml:lang="la" type="auto">Ita enim regum vires mutua collisione conteret<note xml:id="fn16" type="footnote" n="16">Subjekt ist der Kaiser.</note>, ut ipse demum praetenues facilius frangat.</s>
-					<s xml:lang="la" type="auto">Certum est enim cadaver<note xml:id="fn17" type="footnote" n="17">Zu dieser Bezeichnung des Kaisers s. zuletzt <ref target="file#13106">Nr. 3057</ref>,<qv>zl17324-14</qv>. - Zur Aussage vgl. <ref target="file#13099">Nr. 3050</ref>,[2].<zfn>fn17330-4</zfn></note> illud monarchiam meditari, etc.<pb type="edition" next="620"/></s>
+					<s n="4" xml:lang="la" type="auto">Gratificatus es mihi plurimum, qui Epitomen reformationis Anglicae miseris.<note xml:id="fn3" type="footnote" n="3">Zur "Mandatorum epitome" sowie zu deren weiter unten erwähnten ursprünglichen englischen Fassung s. <ref target="file13107">Nr. 3058</ref>, <qv>fn17325-1</qv>.</note></s>
+					<s n="5" xml:lang="la" type="auto">Dixerat mihi quidem summam reformationis nobilis quidam Anglus<note xml:id="fn4" type="footnote" n="4">John Hooper.</note>, qui apud nos agit.</s>
+					<s n="6" xml:lang="la" type="auto">Is enim acceperat integram, anglica lingua scriptam.</s>
+					<s n="7" xml:lang="la" type="auto">Ego vero ex tuo libro omnia rectius intellexi, quem aliquando remittam.</s>
+					<s n="8" xml:lang="la" type="auto">Idem ille Anglus ab Italo quodam<note xml:id="fn5" type="footnote" n="5">Unbekannt.</note>, qui bello<note xml:id="fn6" type="footnote" n="6">Gemeint ist die Schlacht von Pinkie Cleugh vom 10. September 1547; s. dazu <ref target="file13079">Nr. 3030</ref>, <qv>fn17299-4</qv>; <ref target="file13113">Nr. 3064</ref>.</note> inter Anglum<note xml:id="fn7" type="footnote" n="7">König Eduard VI. von England, vertreten durch den Lord Protector Edward Seymour, Duke of Somerset.</note> et Scotum<note xml:id="fn8" type="footnote" n="8">James Hamilton, 2. Earl of Arran, der für die damals noch minderjährige Königin Maria Stuart die Geschäfte führte.</note> gesto interfuit et hac 15 equis comitatus in Italiam rediit, omnem rem, uti gesta est, intellexit.</s>
+					<s n="9" xml:lang="la" type="auto">Sed et historiam omnem Antverpiae descriptam accepit.</s>
+					<s n="10" xml:lang="la" type="auto">Et habet quidem res omnis, sicuti tu narras,<note xml:id="fn9" type="footnote" n="9">In <ref target="file13107">Nr. 3058</ref>,[4].</note> nisi quod bis conflixere.<note xml:id="fn10" type="footnote" n="10">Hier und nachfolgend sind die zwei Angriffe in der Schlacht von Pinkie Cleugh gemeint; s. dazu <ref target="file13106">Nr. 3057</ref>, <qv>fn17324-1</qv>.</note></s>
+					<s n="11" xml:lang="la" type="auto">In priore praelio ceciderunt Scotorum et stipendiariorum Scoticorum circiter 14000, in posteriore 3000,<note xml:id="fn11" type="footnote" n="11">Zu den ohnehin unzuverlässigen Zahlenangaben s. <ref target="file13113">Nr. 3064</ref> mit <qv>fn17278-1</qv> und <qv>fn17278-4</qv>.</note> in quo etiam praecipui Scotorum principes capti sunt.</s>
+					<s n="12" xml:lang="la" type="auto">Nec incruenta fuit Anglis victoria.<note xml:id="fn12" type="footnote" n="12">Vgl. <hi>Livius,</hi> Ab urbe condita, 10, 29; 42, 7: "nec incruenta victoria fuit".</note></s>
+					<s n="13" xml:lang="la" type="auto">Iam comitia celebrantur Londini, in quibus agitur de pace et compositione regnorum.<note xml:id="fn13" type="footnote" n="13">Siehe dazu <ref target="file13106">Nr. 3057</ref>, <qv>fn17324-3</qv>.</note></s>
+					<s n="14" xml:lang="la" type="auto">Interea Galli non procul ab Anglia regi Anglorum navim praestantissimam eripiunt; quam nisi reddiderint, bellum inter utrosque (et novum et asperrimum)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note> geretur.<note xml:id="fn14" type="footnote" n="14">Die Franzosen hatten seit der zweiten Augusthälfte 1547 mehrere englische Schiffe gekapert; s. <abbr>Cloulas, Henri II</abbr> 265-267. - Am 20. Oktober ordnete König Heinrich II. von Frankreich an, alle beschlagnahmten Schiffe mit deren Besatzungen bis Ende Monat freizugeben und keine weiteren Schiffe mehr festzusetzen; s. Catalogue des Actes de Henri II, Bd. 1: 31 mars - 31 décembre 1547, Paris 1979, S. 371, <ref target="file11327">Nr. 1284</ref>.<zfn>fn17330-3</zfn></note></s>
+					<s n="15" xml:lang="la" type="auto">Quod si fiet, caesaris<note xml:id="fn15" type="footnote" n="15">Karl V.</note> fiet vafris consiliis.</s>
+					<s n="16" xml:lang="la" type="auto">Ita enim regum vires mutua collisione conteret<note xml:id="fn16" type="footnote" n="16">Subjekt ist der Kaiser.</note>, ut ipse demum praetenues facilius frangat.</s>
+					<s n="17" xml:lang="la" type="auto">Certum est enim cadaver<note xml:id="fn17" type="footnote" n="17">Zu dieser Bezeichnung des Kaisers s. zuletzt <ref target="file13106">Nr. 3057</ref>,<qv>zl17324-14</qv>. - Zur Aussage vgl. <ref target="file13099">Nr. 3050</ref>,[2].<zfn>fn17330-4</zfn></note> illud monarchiam meditari, etc.<pb type="edition" next="620"/></s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Ab Augusta et ex comitiis<note xml:id="fn18" type="footnote" n="18">Der Augsburger Reichstag.</note> noli aliquid egregii sperare.</s>
-					<s xml:lang="la" type="auto">G. Laeti<note xml:id="fn19" type="footnote" n="19">Georg Frölich.</note>, viri praestantissimi et archigrammatei Augustani, verba tibi ascribam, quae nuper ille ad me 25. octobris dedit:<note xml:id="fn20" type="footnote" n="20">In <ref target="file#13104">Nr. 3055</ref>,<qv>zl17323-2</qv>. <qv>zl17323-3</qv>. - Bullinger nahm in dem von ihm zitierten Text einige stilistische Änderungen vor (die allerdings den Sinngehalt kaum verändern) und fügte zudem seiner Quelle die Worte <hi>qui suffragiis vincunt</hi> hinzu.</note> „De libertate Germaniae, tum etiam de retinenda evangelii praedicatione publica parum spei amplius habeo.</s>
-					<s xml:lang="la" type="auto">Nam pontificii omnes, qui suffragiis vincunt, consilio<note xml:id="fn21" type="footnote" n="21">Diese Schreibung, die nicht der des von Bullinger zitierten Textes entspricht, enthält eine Pointe; s. <ref target="file#13009">Nr. 2960</ref>, <qv>fn17225-4</qv>.</note> Tridentino praeterito et futuro<note xml:id="fn22" type="footnote" n="22">Siehe dazu <ref target="file#12957">Nr. 2908</ref>, <qv>fn17174-3</qv>; <ref target="file#13020">Nr. 2971</ref>, <qv>fn17237-1</qv>; <ref target="file#13070">Nr. 3021</ref>, <qv>fn17289-4</qv>.</note> subscribunt illudque expetunt.</s>
-					<s xml:lang="la" type="auto">Urbes imperiales vero ita exhaustae sunt, ita trepidant et premuntur, ut impossibile videatur liberas manere posse.</s>
-					<s xml:lang="la" type="auto">Quin brevi videbis eas et praefectos et exactores recepisse.</s>
-					<s xml:lang="la" type="auto">Rex Ferdinandus, perditionis filius,<note xml:id="fn23" type="footnote" n="23">Joh 17, 12; 2Thess 2, 3.</note> Boemia misere vastata et obtruncato optimo quovis, Augustam venit, residuum felicitatis pessundaturus.</s>
-					<s xml:lang="la" type="auto">Deus misereatur nostri!“ etc.</s>
-					<s xml:lang="la" type="auto">Congruunt his ea, quae Blaurerus 28. octobris his ad me verbis scribit:<note xml:id="fn24" type="footnote" n="24">In <ref target="file#13108">Nr. 3059</ref>,<qv>zl17326-10</qv>. - Auch hier nahm Bullinger stilistische und orthographische Änderungen vor und entfernte überdies vor dem griechischen Wort das Adjektiv <hi>immodicam</hi>.</note></s>
-					<s xml:lang="de" type="manual">„Jetz hab ich schriben von Augspurg, das der könig ynkomm[en]<note xml:id="fnc" type="footnote" n="c"><hi>Textverlust durch Papierverlust.</hi></note> <pb type="scan" next="186v."/> und der keyser hertzog Moritzen prediger<note xml:id="fn25" type="footnote" n="25">Johannes Weiß (Albinus); s. <ref target="file#13108">Nr. 3059</ref>, <qv>fn17326-2</qv>.</note> das predigen propter <foreign xml:lang="el">παρρησί<note xml:id="fn26" type="footnote" n="26">Freimütigkeit im Reden.</note> αν</foreign> nidergelegt hat.</s>
-					<s xml:lang="la" type="auto">Sed sequentur atrociora.“</s>
-					<s xml:lang="la" type="auto">Haec ille.</s>
+					<s n="18" xml:lang="la" type="auto">Ab Augusta et ex comitiis<note xml:id="fn18" type="footnote" n="18">Der Augsburger Reichstag.</note> noli aliquid egregii sperare.</s>
+					<s n="19" xml:lang="la" type="auto">G. Laeti<note xml:id="fn19" type="footnote" n="19">Georg Frölich.</note>, viri praestantissimi et archigrammatei Augustani, verba tibi ascribam, quae nuper ille ad me 25. octobris dedit:<note xml:id="fn20" type="footnote" n="20">In <ref target="file13104">Nr. 3055</ref>,<qv>zl17323-2</qv>. <qv>zl17323-3</qv>. - Bullinger nahm in dem von ihm zitierten Text einige stilistische Änderungen vor (die allerdings den Sinngehalt kaum verändern) und fügte zudem seiner Quelle die Worte <hi>qui suffragiis vincunt</hi> hinzu.</note> „De libertate Germaniae, tum etiam de retinenda evangelii praedicatione publica parum spei amplius habeo.</s>
+					<s n="20" xml:lang="la" type="auto">Nam pontificii omnes, qui suffragiis vincunt, consilio<note xml:id="fn21" type="footnote" n="21">Diese Schreibung, die nicht der des von Bullinger zitierten Textes entspricht, enthält eine Pointe; s. <ref target="file13009">Nr. 2960</ref>, <qv>fn17225-4</qv>.</note> Tridentino praeterito et futuro<note xml:id="fn22" type="footnote" n="22">Siehe dazu <ref target="file12957">Nr. 2908</ref>, <qv>fn17174-3</qv>; <ref target="file13020">Nr. 2971</ref>, <qv>fn17237-1</qv>; <ref target="file13070">Nr. 3021</ref>, <qv>fn17289-4</qv>.</note> subscribunt illudque expetunt.</s>
+					<s n="21" xml:lang="la" type="auto">Urbes imperiales vero ita exhaustae sunt, ita trepidant et premuntur, ut impossibile videatur liberas manere posse.</s>
+					<s n="22" xml:lang="la" type="auto">Quin brevi videbis eas et praefectos et exactores recepisse.</s>
+					<s n="23" xml:lang="la" type="auto">Rex Ferdinandus, perditionis filius,<note xml:id="fn23" type="footnote" n="23">Joh 17, 12; 2Thess 2, 3.</note> Boemia misere vastata et obtruncato optimo quovis, Augustam venit, residuum felicitatis pessundaturus.</s>
+					<s n="24" xml:lang="la" type="auto">Deus misereatur nostri!“ etc.</s>
+					<s n="25" xml:lang="la" type="auto">Congruunt his ea, quae Blaurerus 28. octobris his ad me verbis scribit:<note xml:id="fn24" type="footnote" n="24">In <ref target="file13108">Nr. 3059</ref>,<qv>zl17326-10</qv>. - Auch hier nahm Bullinger stilistische und orthographische Änderungen vor und entfernte überdies vor dem griechischen Wort das Adjektiv <hi>immodicam</hi>.</note></s>
+					<s n="26" xml:lang="de" type="manual">„Jetz hab ich schriben von Augspurg, das der könig ynkomm[en]<note xml:id="fnc" type="footnote" n="c"><hi>Textverlust durch Papierverlust.</hi></note> <pb type="scan" next="186v."/> und der keyser hertzog Moritzen prediger<note xml:id="fn25" type="footnote" n="25">Johannes Weiß (Albinus); s. <ref target="file13108">Nr. 3059</ref>, <qv>fn17326-2</qv>.</note> das predigen propter <foreign xml:lang="el">παρρησίαν</foreign><note xml:id="fn26" type="footnote" n="26">Freimütigkeit im Reden.</note> nidergelegt hat.</s>
+					<s n="27" xml:lang="la" type="auto">Sed sequentur atrociora.“</s>
+					<s n="28" xml:lang="la" type="auto">Haec ille.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Quomodo iam habeant res Constantiensium, potes ex his, quae mitto, intelligere,<note xml:id="fn27" type="footnote" n="27">Am 22. Oktober hatte der Konstanzer Rat den Zürcher Rat benachrichtigt, Verhandlungen mit dem Kaiser aufnehmen zu müssen; s. <ref target="file#13102">Nr. 3053</ref>, <qv>fn17321-1</qv>. In seinem Brief bat der Konstanzer Rat zudem, der Zürcher Rat möge seine Verbündeten davon in Kenntnis setzen; was dieser dann auch tat (s. <ref target="file#13102">Nr. 3053</ref>,<qv>zl17321-6</qv>): Am 25. Oktober setzte er ein Rundschreiben auf, dessen Entwurf erhalten ist (Zürich StA, B IV 16, 158r./v.), und auf dessen letzter Seite die anzuschreibenden Adressaten aufgelistet wurden, nämlich die 12 anderen Orte, zu denen St. Gallen (als "nur" Zugewandter Ort) allerdings nicht zählte. Am 28. Oktober schrieb der Konstanzer Rat wieder an den Zürcher Rat und legte diesem erneut dar, warum er mit dem Kaiser in Verhandlung treten musste; s. <ref target="file#13104">Nr. 3055</ref>, <qv>fn17323-1</qv>; <ref target="file#13108">Nr. 3059</ref>, <qv>fn17326-1</qv>. Von diesem letzten Brief ist sowohl das Original erhalten (Zürich StA, A 205.2, Nr. 22a) als auch eine in Zürich entstandene schöne Abschrift (aaO, Nr. 22b - vielleicht von Hans Eschers vom Luchs Hand), die auf den beiden Seiten eines Blattes angebracht wurde, dem dann ein leeres Blatt beigefügt wurde, ehe beide Blätter zu einem kleinen Format zusammengefaltet wurden. Auf einer der äußeren Seiten dieser Sendung verzeichnete Bullinger: "Die gmeind dem Radt zuͦ Constantz gwallt gäben der ußsönung mitt dem Keyser. Weß sich der Radt beradschlagt gägen den Keyser in der uußsönung ze handlen. 28 octobris 1547." Dass hier diese Abschrift gemeint ist, wird durch die unten in Z. <qv>zl17330-3</qv> formulierte Bitte bestätigt. - Die Zürcher antworteten am 31. Oktober (Entwurf in Zürich StA, B IV 17, 184v.) auf das oben erwähnte Schreiben der Konstanzer vom 28. Oktober.<zfn>fn17330-1</zfn></note> haec tamen ea lege mitto, ut non nisi fidissimis communices, <pb type="edition" next="621"/> qui ne ipsi quidem, unde habeas, intelligant.</s>
-					<s xml:lang="la" type="auto">Remittes autem per proximum et certum, quem nactus fueris, nuncium.<note xml:id="fn28" type="footnote" n="28">Dieser Bitte entsprechend sandte Vadian die Dokumente schon am 6. November mit einem nicht näher genannten Boten zurück; s. <ref target="file#13121">Nr. 3072</ref>.</note></s>
-					<s xml:lang="la" type="auto">Iis enim diutius carere non possum.</s>
-					<s xml:lang="la" type="auto">Praevidi hoc ipsum iam olim, praesertim cum amplissimus senatus noster consulem Habium semel, tribunum plebis et triumvirum d. Georgium Mülnerum<note xml:id="fn29" type="footnote" n="29">Zunftmeister Georg Müller.</note> ter miserit tentatum, quomodo possint Constantienses vel omnibus Helvetiis, vel 4 urbibus, vel Tigurinis coniungi.</s>
-					<s xml:lang="la" type="auto">Qua in re tamen mire cunctati sunt et tergiversati.<note xml:id="fn30" type="footnote" n="30">Subjekt sind die Konstanzer Ratsherren. - Zur Kommentierung dieser Stelle s. <ref target="file#13114">Nr. 3065</ref>,<qv>zl17331-3</qv>.</note></s>
-					<s xml:lang="la" type="auto">Dumque Gallus<note xml:id="fn31" type="footnote" n="31">König Heinrich II. von Frankreich. - Vgl. zu dem Folgendem <ref target="file#13114">Nr. 3065</ref>,<qv>zl17331-4</qv>.</note> legationem suam<note xml:id="fn32" type="footnote" n="32">Sébastien de l'Aubespine, abbé de Bassefontaine; s. <ref target="file#13045">Nr. 2996</ref>, <qv>fn17262-3</qv>.</note> mitteret ad Constant[ienses]<note xml:id="fnd" type="footnote" n="d"><hi>Wort teils im engen Einband verdeckt.</hi></note>, tantum non coronam suam illis promittens, non aliud potuit elicere responsum<note xml:id="fn33" type="footnote" n="33">Angesprochen ist der etwa Mitte Juli an Heinrich II. gerichtete Brief der Konstanzer; s. <ref target="file#13004">Nr. 2955</ref>, <qv>fn17221-1</qv> und <qv>fn17221-2</qv>.</note>, quam se agnoscere summum in terris caput caesarem, neque unquam velle ab imperio illo sacrosancto deficere - quod tamen nemo postulabat, sed tantum conventionem aliquam, qua inprimis caveretur, ne unquam praesidia caesarea acciperent.</s>
-					<s xml:lang="la" type="auto">Iam vero ita res habet, ut intelliges ex his meis appositis.</s>
+					<s n="29" xml:lang="la" type="auto">Quomodo iam habeant res Constantiensium, potes ex his, quae mitto, intelligere,<note xml:id="fn27" type="footnote" n="27">Am 22. Oktober hatte der Konstanzer Rat den Zürcher Rat benachrichtigt, Verhandlungen mit dem Kaiser aufnehmen zu müssen; s. <ref target="file13102">Nr. 3053</ref>, <qv>fn17321-1</qv>. In seinem Brief bat der Konstanzer Rat zudem, der Zürcher Rat möge seine Verbündeten davon in Kenntnis setzen; was dieser dann auch tat (s. <ref target="file13102">Nr. 3053</ref>,<qv>zl17321-6</qv>): Am 25. Oktober setzte er ein Rundschreiben auf, dessen Entwurf erhalten ist (Zürich StA, B IV 16, 158r./v.), und auf dessen letzter Seite die anzuschreibenden Adressaten aufgelistet wurden, nämlich die 12 anderen Orte, zu denen St. Gallen (als "nur" Zugewandter Ort) allerdings nicht zählte. Am 28. Oktober schrieb der Konstanzer Rat wieder an den Zürcher Rat und legte diesem erneut dar, warum er mit dem Kaiser in Verhandlung treten musste; s. <ref target="file13104">Nr. 3055</ref>, <qv>fn17323-1</qv>; <ref target="file13108">Nr. 3059</ref>, <qv>fn17326-1</qv>. Von diesem letzten Brief ist sowohl das Original erhalten (Zürich StA, A 205.2, Nr. 22a) als auch eine in Zürich entstandene schöne Abschrift (aaO, Nr. 22b - vielleicht von Hans Eschers vom Luchs Hand), die auf den beiden Seiten eines Blattes angebracht wurde, dem dann ein leeres Blatt beigefügt wurde, ehe beide Blätter zu einem kleinen Format zusammengefaltet wurden. Auf einer der äußeren Seiten dieser Sendung verzeichnete Bullinger: "Die gmeind dem Radt zuͦ Constantz gwallt gäben der ußsönung mitt dem Keyser. Weß sich der Radt beradschlagt gägen den Keyser in der uußsönung ze handlen. 28 octobris 1547." Dass hier diese Abschrift gemeint ist, wird durch die unten in Z. <qv>zl17330-3</qv> formulierte Bitte bestätigt. - Die Zürcher antworteten am 31. Oktober (Entwurf in Zürich StA, B IV 17, 184v.) auf das oben erwähnte Schreiben der Konstanzer vom 28. Oktober.<zfn>fn17330-1</zfn></note> haec tamen ea lege mitto, ut non nisi fidissimis communices, <pb type="edition" next="621"/> qui ne ipsi quidem, unde habeas, intelligant.</s>
+					<s n="30" xml:lang="la" type="auto">Remittes autem per proximum et certum, quem nactus fueris, nuncium.<note xml:id="fn28" type="footnote" n="28">Dieser Bitte entsprechend sandte Vadian die Dokumente schon am 6. November mit einem nicht näher genannten Boten zurück; s. <ref target="file13121">Nr. 3072</ref>.</note></s>
+					<s n="31" xml:lang="la" type="auto">Iis enim diutius carere non possum.</s>
+					<s n="32" xml:lang="la" type="auto">Praevidi hoc ipsum iam olim, praesertim cum amplissimus senatus noster consulem Habium semel, tribunum plebis et triumvirum d. Georgium Mülnerum<note xml:id="fn29" type="footnote" n="29">Zunftmeister Georg Müller.</note> ter miserit tentatum, quomodo possint Constantienses vel omnibus Helvetiis, vel 4 urbibus, vel Tigurinis coniungi.</s>
+					<s n="33" xml:lang="la" type="auto">Qua in re tamen mire cunctati sunt et tergiversati.<note xml:id="fn30" type="footnote" n="30">Subjekt sind die Konstanzer Ratsherren. - Zur Kommentierung dieser Stelle s. <ref target="file13114">Nr. 3065</ref>,<qv>zl17331-3</qv>.</note></s>
+					<s n="34" xml:lang="la" type="auto">Dumque Gallus<note xml:id="fn31" type="footnote" n="31">König Heinrich II. von Frankreich. - Vgl. zu dem Folgendem <ref target="file13114">Nr. 3065</ref>,<qv>zl17331-4</qv>.</note> legationem suam<note xml:id="fn32" type="footnote" n="32">Sébastien de l'Aubespine, abbé de Bassefontaine; s. <ref target="file13045">Nr. 2996</ref>, <qv>fn17262-3</qv>.</note> mitteret ad Constant[ienses]<note xml:id="fnd" type="footnote" n="d"><hi>Wort teils im engen Einband verdeckt.</hi></note>, tantum non coronam suam illis promittens, non aliud potuit elicere responsum<note xml:id="fn33" type="footnote" n="33">Angesprochen ist der etwa Mitte Juli an Heinrich II. gerichtete Brief der Konstanzer; s. <ref target="file13004">Nr. 2955</ref>, <qv>fn17221-1</qv> und <qv>fn17221-2</qv>.</note>, quam se agnoscere summum in terris caput caesarem, neque unquam velle ab imperio illo sacrosancto deficere - quod tamen nemo postulabat, sed tantum conventionem aliquam, qua inprimis caveretur, ne unquam praesidia caesarea acciperent.</s>
+					<s n="35" xml:lang="la" type="auto">Iam vero ita res habet, ut intelliges ex his meis appositis.</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Nihil neglectum est a nostris, licet Immontani<note xml:id="fn34" type="footnote" n="34">Die Innerschweizer.</note> semper erga nostros male affectam erga Constantienses voluntatem declararint.</s>
-					<s xml:lang="la" type="auto">Illi idem Lucernae nunc habent legatos caesareanos<note xml:id="fn35" type="footnote" n="35">Giovanni Angelo Ritio und Giovanni Domenico Panizzone, die sich im Herbst 1547 in Luzern aufhielten; s. <ref target="file#13089">Nr. 3040</ref>, <qv>fn17309-9</qv>. Sie befanden sich noch in der Eidgenossenschaft, als die nächste Badener Tagsatzung am 22. November 1547 begann (s. dazu unten Z. <qv>zl17330-14</qv>), denn ein Schriftstück, das am 24. November in Baden angefertigt wurde, weist ihre Unterschrift auf; s. dazu <abbr>EA</abbr> IV/1d 892 zu n.</note>, Gallicos<note xml:id="fn36" type="footnote" n="36">Louis Daugerant, Seigneur de Boisrigaut.</note> (nisi his diebus primum Solodurum<note xml:id="fn37" type="footnote" n="37">In Solothurn residierten seit 1530 die französischen Botschafter.</note> rediit), pontificios<note xml:id="fn38" type="footnote" n="38">Girolamo Franco und sein ihn begleitender Dolmetscher Albert Rosin; s. <ref target="file#13095">Nr. 3046</ref>, <qv>fn17315-1</qv>.</note>, a quibus rumor est illos habere emolumenta.</s>
-					<s xml:lang="la" type="auto">Factionibus isti homines nos scindere volunt, et scissi sane sumus, dum nemo cogitat de servanda patria, omnes aut plerique de auro emungendo principibus.</s>
-					<s xml:lang="la" type="auto">Crede mihi, clarissime Vadiane, saciabitur<note xml:id="fn39" type="footnote" n="39">= satiabitur.</note> aliquando alieno auro Crassus.<note xml:id="fn40" type="footnote" n="40">Der römische Politiker und Feldherr Marcus Licinius Crassus (115-53 v.Chr.) war für seinen sprichwörtlich großen Reichtum bekannt; vgl. <hi>Cicero,</hi> Epistulae ad Atticum, 1, 4, 3.</note></s>
-					<s xml:lang="la" type="auto">Nullam ego spem habeo amplius, quod istos homines attinet.<note xml:id="fn41" type="footnote" n="41">Vgl. allerdings Bullingers etwas mildere Aussage in <ref target="file#13114">Nr. 3065</ref>,<qv>zl17331-5</qv> und <qv>fn17331-7</qv>. - Vgl. ferner die unmittelbar danach geäußerte Befürchtung Bullingers mit der von Oswald Myconius in <ref target="file#13106">Nr. 3057</ref>,<qv>zl17324-16</qv>, geäußerten Angst.</note></s>
-					<s xml:lang="la" type="auto">Imo erunt hi ruina Helvetiae, cum verbo dei non tantum repugnent, <pb type="edition" next="622"/> sed, ne ulla quidem ratione aut honestate ducantur, voluptas, levitas, licentia affectus istos quolibet abripiunt.</s>
-					<s xml:lang="la" type="auto">Non feret divina iustitia pestilentissimam et extremam conscelerationem.<note xml:id="fn42" type="footnote" n="42">Laster; Bosheit.</note></s>
-					<s xml:lang="la" type="auto">Perdet eos quoque, qui se ipsis<pb type="scan" next="187r."/> coniunxerint.</s>
-					<s xml:lang="la" type="auto">Quamquam<note xml:id="fn43" type="footnote" n="43">Hier als "indessen" zu verstehen.</note> hodie mihi vir<note xml:id="fn44" type="footnote" n="44">Unbekannt.</note> non fluxae fidei retulerit, quod Lucernae a quibusdam praecipuis dicatur: „Audimus Bernates se regi Gallorum foedere quodam coniunxisse.<note xml:id="fn45" type="footnote" n="45">Ein falsches Gerücht; vgl. schon <ref target="file#13042">Nr. 2993</ref>, [3] und Anm. 4; <ref target="file#13045">Nr. 2996</ref>,<qv>zl17262-8</qv>; <abbr>EA</abbr> IV/1d 894 zu x.<zfn>fn17330-2</zfn></note></s>
-					<s xml:lang="la" type="auto">Id non permittemus illis!</s>
-					<s xml:lang="la" type="auto">Cogentur foedus illud renunciare, idque multas ob causas.“</s>
-					<s xml:lang="la" type="auto">Breviter: Volunt isti homines imperare et praescribere omnibus!</s>
-					<s xml:lang="la" type="auto">Tanta est in ipsis malicia, superbia et barbaries, ut non possit illa non citra ingens detrimentum Helvetiae ferri aut exire.</s>
-					<s xml:lang="la" type="auto">Dominus servet omnes invocantes nomen suum!<note xml:id="fn46" type="footnote" n="46">Vgl. Joel 2, 32.</note><pb type="scan" next="e"/></s>
-					<s xml:lang="la" type="auto">Inveniuntur apud illos homines, qui palam dicunt:<note xml:id="fne" type="footnote" n="e"><hi>Am Rande nachgetragen anstelle eines zweieinhalbzeiligen Texts, den Bullinger unlesbar gemacht hat.</hi></note> „Speratis forte auxilia a nobis, siquidem vobis inferatur bellum; caeterum non est, quod quicquam speretis a nobis auxilii, nisi prius renuncietis novae religioni vestrae, veterem revocatis et recipiatis.“</s>
-					<s xml:lang="la" type="auto">Haec scilicet sunt consilia istorum hominum; haec fides, haec amicitia!</s>
+					<s n="36" xml:lang="la" type="auto">Nihil neglectum est a nostris, licet Immontani<note xml:id="fn34" type="footnote" n="34">Die Innerschweizer.</note> semper erga nostros male affectam erga Constantienses voluntatem declararint.</s>
+					<s n="37" xml:lang="la" type="auto">Illi idem Lucernae nunc habent legatos caesareanos<note xml:id="fn35" type="footnote" n="35">Giovanni Angelo Ritio und Giovanni Domenico Panizzone, die sich im Herbst 1547 in Luzern aufhielten; s. <ref target="file13089">Nr. 3040</ref>, <qv>fn17309-9</qv>. Sie befanden sich noch in der Eidgenossenschaft, als die nächste Badener Tagsatzung am 22. November 1547 begann (s. dazu unten Z. <qv>zl17330-14</qv>), denn ein Schriftstück, das am 24. November in Baden angefertigt wurde, weist ihre Unterschrift auf; s. dazu <abbr>EA</abbr> IV/1d 892 zu n.</note>, Gallicos<note xml:id="fn36" type="footnote" n="36">Louis Daugerant, Seigneur de Boisrigaut.</note> (nisi his diebus primum Solodurum<note xml:id="fn37" type="footnote" n="37">In Solothurn residierten seit 1530 die französischen Botschafter.</note> rediit), pontificios<note xml:id="fn38" type="footnote" n="38">Girolamo Franco und sein ihn begleitender Dolmetscher Albert Rosin; s. <ref target="file13095">Nr. 3046</ref>, <qv>fn17315-1</qv>.</note>, a quibus rumor est illos habere emolumenta.</s>
+					<s n="38" xml:lang="la" type="auto">Factionibus isti homines nos scindere volunt, et scissi sane sumus, dum nemo cogitat de servanda patria, omnes aut plerique de auro emungendo principibus.</s>
+					<s n="39" xml:lang="la" type="auto">Crede mihi, clarissime Vadiane, saciabitur<note xml:id="fn39" type="footnote" n="39">= satiabitur.</note> aliquando alieno auro Crassus.<note xml:id="fn40" type="footnote" n="40">Der römische Politiker und Feldherr Marcus Licinius Crassus (115-53 v.Chr.) war für seinen sprichwörtlich großen Reichtum bekannt; vgl. <hi>Cicero,</hi> Epistulae ad Atticum, 1, 4, 3.</note></s>
+					<s n="40" xml:lang="la" type="auto">Nullam ego spem habeo amplius, quod istos homines attinet.<note xml:id="fn41" type="footnote" n="41">Vgl. allerdings Bullingers etwas mildere Aussage in <ref target="file13114">Nr. 3065</ref>,<qv>zl17331-5</qv> und <qv>fn17331-7</qv>. - Vgl. ferner die unmittelbar danach geäußerte Befürchtung Bullingers mit der von Oswald Myconius in <ref target="file13106">Nr. 3057</ref>,<qv>zl17324-16</qv>, geäußerten Angst.</note></s>
+					<s n="41" xml:lang="la" type="auto">Imo erunt hi ruina Helvetiae, cum verbo dei non tantum repugnent, <pb type="edition" next="622"/> sed, ne ulla quidem ratione aut honestate ducantur, voluptas, levitas, licentia affectus istos quolibet abripiunt.</s>
+					<s n="42" xml:lang="la" type="auto">Non feret divina iustitia pestilentissimam et extremam conscelerationem.<note xml:id="fn42" type="footnote" n="42">Laster; Bosheit.</note></s>
+					<s n="43" xml:lang="la" type="auto">Perdet eos quoque, qui se ipsis<pb type="scan" next="187r."/> coniunxerint.</s>
+					<s n="44" xml:lang="la" type="auto">Quamquam<note xml:id="fn43" type="footnote" n="43">Hier als "indessen" zu verstehen.</note> hodie mihi vir<note xml:id="fn44" type="footnote" n="44">Unbekannt.</note> non fluxae fidei retulerit, quod Lucernae a quibusdam praecipuis dicatur: „Audimus Bernates se regi Gallorum foedere quodam coniunxisse.<note xml:id="fn45" type="footnote" n="45">Ein falsches Gerücht; vgl. schon <ref target="file13042">Nr. 2993</ref>, [3] und Anm. 4; <ref target="file13045">Nr. 2996</ref>,<qv>zl17262-8</qv>; <abbr>EA</abbr> IV/1d 894 zu x.<zfn>fn17330-2</zfn></note></s>
+					<s n="45" xml:lang="la" type="auto">Id non permittemus illis!</s>
+					<s n="46" xml:lang="la" type="auto">Cogentur foedus illud renunciare, idque multas ob causas.“</s>
+					<s n="47" xml:lang="la" type="auto">Breviter: Volunt isti homines imperare et praescribere omnibus!</s>
+					<s n="48" xml:lang="la" type="auto">Tanta est in ipsis malicia, superbia et barbaries, ut non possit illa non citra ingens detrimentum Helvetiae ferri aut exire.</s>
+					<s n="49" xml:lang="la" type="auto">Dominus servet omnes invocantes nomen suum!<note xml:id="fn46" type="footnote" n="46">Vgl. Joel 2, 32.</note><pb type="scan" next="e"/></s>
+					<s n="50" xml:lang="la" type="auto">Inveniuntur apud illos homines, qui palam dicunt:<note xml:id="fne" type="footnote" n="e"><hi>Am Rande nachgetragen anstelle eines zweieinhalbzeiligen Texts, den Bullinger unlesbar gemacht hat.</hi></note> „Speratis forte auxilia a nobis, siquidem vobis inferatur bellum; caeterum non est, quod quicquam speretis a nobis auxilii, nisi prius renuncietis novae religioni vestrae, veterem revocatis et recipiatis.“</s>
+					<s n="51" xml:lang="la" type="auto">Haec scilicet sunt consilia istorum hominum; haec fides, haec amicitia!</s>
 				</p>
 			</div>
 			<div xml:id="div6" corresp="regest6">
 				<p>
-					<s xml:lang="la" type="auto">Ego nos abunde felices crederem, si nihil spei collocaremus in istos, paci studeremus et, quia caesar et Gallus foedera poscunt, neutri confoederaremur.</s>
-					<s xml:lang="la" type="manual">Satis amica esset responsio, si diceremus:</s>
-					<s xml:lang="de" type="manual">„Wir habend mitt dir, keyser, ein erbeinigung<note xml:id="fn47" type="footnote" n="47">Zu diesem Vertrag vom 7. Februar 1511 s. <ref target="file#13053">Nr. 3004</ref>, <qv>fn17271-1</qv>.</note>, mitt dir, könig, ein friden.<note xml:id="fn48" type="footnote" n="48">Zu diesem "Ewigen Frieden" vom 29. November 1516 s. <ref target="file#12930">Nr. 2881</ref>, <qv>fn17147-5</qv>.</note></s>
-					<s xml:lang="de" type="auto">Darby wöllend wir blyben, uns nitt parthyen<note xml:id="fn49" type="footnote" n="49">Partei ergreifen.</note>, sunder üwer beider guͦte guner und fründ sin, etc.“<note xml:id="fn50" type="footnote" n="50">Vgl. <ref target="file#13114">Nr. 3065</ref>,<qv>zl17331-6</qv>.</note></s>
-					<s xml:lang="la" type="manual">Sed his forte nimium tibi molestus sum.</s>
-					<s xml:lang="la" type="auto">Angunt tamen haec animum meum, qui incolumem cupio patriam communem, quam tamen perdi video ab illis, quibus imperare non possum.</s>
-					<s xml:lang="la" type="auto">Dominus servet ecclesiam suam!</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="52" xml:lang="la" type="auto">Ego nos abunde felices crederem, si nihil spei collocaremus in istos, paci studeremus et, quia caesar et Gallus foedera poscunt, neutri confoederaremur.</s>
+					<s n="53" xml:lang="la" type="manual">Satis amica esset responsio, si diceremus:</s>
+					<s n="54" xml:lang="de" type="manual">„Wir habend mitt dir, keyser, ein erbeinigung<note xml:id="fn47" type="footnote" n="47">Zu diesem Vertrag vom 7. Februar 1511 s. <ref target="file13053">Nr. 3004</ref>, <qv>fn17271-1</qv>.</note>, mitt dir, könig, ein friden.<note xml:id="fn48" type="footnote" n="48">Zu diesem "Ewigen Frieden" vom 29. November 1516 s. <ref target="file12930">Nr. 2881</ref>, <qv>fn17147-5</qv>.</note></s>
+					<s n="55" xml:lang="de" type="auto">Darby wöllend wir blyben, uns nitt parthyen<note xml:id="fn49" type="footnote" n="49">Partei ergreifen.</note>, sunder üwer beider guͦte guner und fründ sin, etc.“<note xml:id="fn50" type="footnote" n="50">Vgl. <ref target="file13114">Nr. 3065</ref>,<qv>zl17331-6</qv>.</note></s>
+					<s n="56" xml:lang="la" type="manual">Sed his forte nimium tibi molestus sum.</s>
+					<s n="57" xml:lang="la" type="auto">Angunt tamen haec animum meum, qui incolumem cupio patriam communem, quam tamen perdi video ab illis, quibus imperare non possum.</s>
+					<s n="58" xml:lang="la" type="auto">Dominus servet ecclesiam suam!</s>
+					<s n="59" xml:lang="la" type="manual">Amen.</s>
 				</p>
 			</div>
 			<div xml:id="div7" corresp="regest7">
 				<p>
-					<s xml:lang="la" type="auto">Mitto Pomerani<note xml:id="fn51" type="footnote" n="51">Johannes Bugenhagen. - Zu dessen Schrift "Wie es uns zu Wittemberg ergangen ist" s. <ref target="file#13094">Nr. 3045</ref>, <qv>fn17314-3</qv>. Diese wurde damals sehr unterschiedlich bewertet; s. <abbr>MBW-T</abbr> XVII 154, Nr. 4876; 176, Nr. 4895; 281, Nr. 4967.</note> descriptionem periculorum et deditionis urbis Wittenbergae, quam superioribus diebus<note xml:id="fn52" type="footnote" n="52">Am 17. Oktober; s. <ref target="file#13094">Nr. 3045</ref>,<qv>zl17314-3</qv>.</note> ad me misit illustrissimus princeps Georgius, comes a Wirtemberg.</s>
-					<s xml:lang="la" type="auto">Remittes una cum literis aut apographis Constantiensium.<note xml:id="fn53" type="footnote" n="53">Siehe dazu oben <qv>fn17330-1</qv>.</note></s>
-					<s xml:lang="la" type="auto">Forte huiusmodi descriptionem prius accepisti ab amicis.</s>
-					<s xml:lang="la" type="auto">Depinxit se Pomeranus<note xml:id="fnf" type="footnote" n="f"><hi>Über der Zeile nachgetragen.</hi></note> hac descriptione melius, quam ullus potuisset pictor.</s>
-					<s xml:lang="la" type="auto">Rem gravem non potuisset ulla begutta<note xml:id="fn54" type="footnote" n="54">Begine (Laienschwester). Hier mit einer negativen Konnotation.</note> muliebrius, ineptius, dissolutius, stultius describere!</s>
-					<s xml:lang="la" type="auto">Isti homines et se et totam religionem nostram hostibus <pb type="edition" next="623"/> irridendam et contemnendam proponunt!</s>
-					<s xml:lang="la" type="auto">Pari stultitia descripserunt et d. Lutheri mortem.<note xml:id="fn55" type="footnote" n="55">Vgl. Bullingers Aussage in <abbr>HBBW</abbr> XVI 245,4-6. - Vielleicht ist das dort von Bullinger kritisierte "epicędium", dessen Druck laut seiner dortigen Angaben vier (in-4) Blätter (quaternio) beanspruchte und das laut vorliegender Stelle von mehreren Autoren geschrieben worden war, doch der von Justus Jonas und Michael Caelius verfasste Bericht über "Doctor Martin Luthers Christlicher abschid und sterben", welcher damals tatsächlich in Konstanz auf vier Blättern (vgl. <abbr>HBBW</abbr> XVI 239,5) nachgedruckt worden war (<abbr>VD16</abbr> ZV27824 - zwei Exemplare davon in Zürich ZB, Ms 59, 86a; Ms F 16, 34r.-37v.); was bedeuten würde, dass weder in <abbr>HBBW</abbr> XVI 223, <ref target="file#12427">Nr. 2380</ref> (s. dort Anm. 2), noch in aaO, S. 245,5, das Wort "epicędium" wortwörtlich als Trauergedicht, sondern als "Trauerbericht" zu verstehen wäre.</note></s>
-					<s xml:lang="la" type="auto">Meliorem<note xml:id="fn56" type="footnote" n="56">meliorem mortem.</note> his opto, etc.!</s>
+					<s n="60" xml:lang="la" type="auto">Mitto Pomerani<note xml:id="fn51" type="footnote" n="51">Johannes Bugenhagen. - Zu dessen Schrift "Wie es uns zu Wittemberg ergangen ist" s. <ref target="file13094">Nr. 3045</ref>, <qv>fn17314-3</qv>. Diese wurde damals sehr unterschiedlich bewertet; s. <abbr>MBW-T</abbr> XVII 154, Nr. 4876; 176, Nr. 4895; 281, Nr. 4967.</note> descriptionem periculorum et deditionis urbis Wittenbergae, quam superioribus diebus<note xml:id="fn52" type="footnote" n="52">Am 17. Oktober; s. <ref target="file13094">Nr. 3045</ref>,<qv>zl17314-3</qv>.</note> ad me misit illustrissimus princeps Georgius, comes a Wirtemberg.</s>
+					<s n="61" xml:lang="la" type="auto">Remittes una cum literis aut apographis Constantiensium.<note xml:id="fn53" type="footnote" n="53">Siehe dazu oben <qv>fn17330-1</qv>.</note></s>
+					<s n="62" xml:lang="la" type="auto">Forte huiusmodi descriptionem prius accepisti ab amicis.</s>
+					<s n="63" xml:lang="la" type="auto">Depinxit se Pomeranus<note xml:id="fnf" type="footnote" n="f"><hi>Über der Zeile nachgetragen.</hi></note> hac descriptione melius, quam ullus potuisset pictor.</s>
+					<s n="64" xml:lang="la" type="auto">Rem gravem non potuisset ulla begutta<note xml:id="fn54" type="footnote" n="54">Begine (Laienschwester). Hier mit einer negativen Konnotation.</note> muliebrius, ineptius, dissolutius, stultius describere!</s>
+					<s n="65" xml:lang="la" type="auto">Isti homines et se et totam religionem nostram hostibus <pb type="edition" next="623"/> irridendam et contemnendam proponunt!</s>
+					<s n="66" xml:lang="la" type="auto">Pari stultitia descripserunt et d. Lutheri mortem.<note xml:id="fn55" type="footnote" n="55">Vgl. Bullingers Aussage in <abbr>HBBW</abbr> XVI 245,4-6. - Vielleicht ist das dort von Bullinger kritisierte "epicędium", dessen Druck laut seiner dortigen Angaben vier (in-4) Blätter (quaternio) beanspruchte und das laut vorliegender Stelle von mehreren Autoren geschrieben worden war, doch der von Justus Jonas und Michael Caelius verfasste Bericht über "Doctor Martin Luthers Christlicher abschid und sterben", welcher damals tatsächlich in Konstanz auf vier Blättern (vgl. <abbr>HBBW</abbr> XVI 239,5) nachgedruckt worden war (<abbr>VD16</abbr> ZV27824 - zwei Exemplare davon in Zürich ZB, Ms 59, 86a; Ms F 16, 34r.-37v.); was bedeuten würde, dass weder in <abbr>HBBW</abbr> XVI 223, <ref target="file12427">Nr. 2380</ref> (s. dort Anm. 2), noch in aaO, S. 245,5, das Wort "epicędium" wortwörtlich als Trauergedicht, sondern als "Trauerbericht" zu verstehen wäre.</note></s>
+					<s n="67" xml:lang="la" type="auto">Meliorem<note xml:id="fn56" type="footnote" n="56">meliorem mortem.</note> his opto, etc.!</s>
 				</p>
 			</div>
 			<div xml:id="div8" corresp="regest8">
 				<p>
-					<s xml:lang="la" type="auto"><pb type="scan" next="187v."/>Diu nihil ad te scripsi, optime Vadiane.<note xml:id="fn57" type="footnote" n="57">Der letzte erhaltene Brief Bullingers an Vadian datiert vom 15. August (<ref target="file#13041">Nr. 2992</ref>), und in den darauffolgenden erhaltenen Schreiben Vadians an Bullinger (<ref target="file#13042">Nr. 2993</ref>, <ref target="file#13059">Nr. 3010</ref>, <ref target="file#13061">Nr. 3012</ref> und <ref target="file#13067">Nr. 3018</ref>) bedankt sich Vadian für keinen späteren Brief Bullingers.</note></s>
-					<s xml:lang="la" type="auto">His ergo resartio, quod peccavi.</s>
-					<s xml:lang="la" type="auto">Tu ineptiis meis parce.</s>
-					<s xml:lang="la" type="auto">Vive et vale.</s>
-					<s xml:lang="la" type="auto">Ultima octobris 1547.</s>
-					<s xml:lang="la" type="auto">Tuus H. Bullingerus.</s>
+					<s n="68" xml:lang="la" type="auto"><pb type="scan" next="187v."/>Diu nihil ad te scripsi, optime Vadiane.<note xml:id="fn57" type="footnote" n="57">Der letzte erhaltene Brief Bullingers an Vadian datiert vom 15. August (<ref target="file13041">Nr. 2992</ref>), und in den darauffolgenden erhaltenen Schreiben Vadians an Bullinger (<ref target="file13042">Nr. 2993</ref>, <ref target="file13059">Nr. 3010</ref>, <ref target="file13061">Nr. 3012</ref> und <ref target="file13067">Nr. 3018</ref>) bedankt sich Vadian für keinen späteren Brief Bullingers.</note></s>
+					<s n="69" xml:lang="la" type="auto">His ergo resartio, quod peccavi.</s>
+					<s n="70" xml:lang="la" type="auto">Tu ineptiis meis parce.</s>
+					<s n="71" xml:lang="la" type="auto">Vive et vale.</s>
+					<s n="72" xml:lang="la" type="auto">Ultima octobris 1547.</s>
+					<s n="73" xml:lang="la" type="auto">Tuus H. Bullingerus.</s>
 				</p>
 			</div>
 			<div xml:id="div9" corresp="regest9">
 				<p>
-					<s xml:lang="de" type="auto">Die von Schwytz schickend iren löuffer.<note xml:id="fn58" type="footnote" n="58">Unbekannt. - Zu dieser Gesandtschaft, die am 1. oder 2. November in Zürich eingetroffen war, s. <ref target="file#13114">Nr. 3065</ref>,<qv>zl17331-12</qv>.</note></s>
-					<s xml:lang="de" type="auto">Der bringt ein brieff von den 5 orten, lutend, min herren mögind gedencken<note xml:id="fn59" type="footnote" n="59">sich Gedanken darüber machen.</note>, was sy nun ettlich mal habind getaget<note xml:id="fn60" type="footnote" n="60">besprochen. - Die Innerschweizer hatten sich in Brunnen (Kt. Schwyz) am 4., 7. und 17. Oktober, in Schwyz am 29. Oktober nur unter sich versammelt; s. <abbr>EA</abbr> IV/1d 855f, <ref target="file#10432">Nr. 397</ref>; 858f, <ref target="file#10434">Nr. 399</ref>; 859-862, <ref target="file#10435">Nr. 400</ref>; 869f, <ref target="file#10437">Nr. 402</ref>.</note> alein: Das belange den keyser, von desse<note xml:id="fn61" type="footnote" n="61">= dessen; s. <abbr>SI</abbr> XIII 1029.</note> anschlegen sy menche<note xml:id="fn62" type="footnote" n="62">manche.</note> warnung habind.</s>
-					<s xml:lang="de" type="auto">Nun sage man vomm tüfel so lang, biß er kumme,<note xml:id="fn63" type="footnote" n="63">Zu verstehen: Wenn man vom Teufel spricht, kommt er tatsächlich; vgl. <abbr>Wander</abbr> IV 1099, <ref target="file#10972">Nr. 930</ref>. - Bullinger entnahm diese Bemerkung dem Brief, den die Fünf Orte an Zürich am 29. Oktober sandten; s. <abbr>EA</abbr> IV/1d 870.</note> etc.</s>
-					<s xml:lang="de" type="auto">Stellend minen herren heym<note xml:id="fn64" type="footnote" n="64">anheim.</note>, ob nitt nutz und nodtwendig, in sölichen gfaaren ein tag zuͦ beschryben, etc.</s>
-					<s xml:lang="de" type="auto">Das ist beschähen uff 20.<note xml:id="fn65" type="footnote" n="65">Zu verstehen: Die Zürcher haben (als Vorort der Eidgenossenschaft) eine Tagsatzung für den 20. November einberufen. - Zu dieser s. <ref target="file#13114">Nr. 3065</ref>, <qv>fn17331-2</qv>.</note> novembris.</s>
-					<s xml:lang="de" type="auto">Doch ist gestern ein bott<note xml:id="fn66" type="footnote" n="66">Unbekannt. - Die damit verbundenen Ausgaben sind nicht im Rechnungsbuch unter den "Loufenden boten" verzeichnet. Vermutlich haben die St. Galler den Botenlohn übernommen.</note> zuͦ üch hinuff gelouffen, das irs alles wüssent, etc.</s>
-					<s xml:lang="de" type="auto">Ich fürcht, ich fürcht uffsatz<note xml:id="fn67" type="footnote" n="67">Hinterlist; s. <abbr>SI</abbr> VII 1533.</note> und betrug!</s>
-					<s xml:lang="de" type="auto">Gott beware uns.</s>
-					<s xml:lang="la" type="auto">4. novembris.</s>
+					<s n="74" xml:lang="de" type="auto">Die von Schwytz schickend iren löuffer.<note xml:id="fn58" type="footnote" n="58">Unbekannt. - Zu dieser Gesandtschaft, die am 1. oder 2. November in Zürich eingetroffen war, s. <ref target="file13114">Nr. 3065</ref>,<qv>zl17331-12</qv>.</note></s>
+					<s n="75" xml:lang="de" type="auto">Der bringt ein brieff von den 5 orten, lutend, min herren mögind gedencken<note xml:id="fn59" type="footnote" n="59">sich Gedanken darüber machen.</note>, was sy nun ettlich mal habind getaget<note xml:id="fn60" type="footnote" n="60">besprochen. - Die Innerschweizer hatten sich in Brunnen (Kt. Schwyz) am 4., 7. und 17. Oktober, in Schwyz am 29. Oktober nur unter sich versammelt; s. <abbr>EA</abbr> IV/1d 855f, <ref target="file10432">Nr. 397</ref>; 858f, <ref target="file10434">Nr. 399</ref>; 859-862, <ref target="file10435">Nr. 400</ref>; 869f, <ref target="file10437">Nr. 402</ref>.</note> alein: Das belange den keyser, von desse<note xml:id="fn61" type="footnote" n="61">= dessen; s. <abbr>SI</abbr> XIII 1029.</note> anschlegen sy menche<note xml:id="fn62" type="footnote" n="62">manche.</note> warnung habind.</s>
+					<s n="76" xml:lang="de" type="auto">Nun sage man vomm tüfel so lang, biß er kumme,<note xml:id="fn63" type="footnote" n="63">Zu verstehen: Wenn man vom Teufel spricht, kommt er tatsächlich; vgl. <abbr>Wander</abbr> IV 1099, <ref target="file10972">Nr. 930</ref>. - Bullinger entnahm diese Bemerkung dem Brief, den die Fünf Orte an Zürich am 29. Oktober sandten; s. <abbr>EA</abbr> IV/1d 870.</note> etc.</s>
+					<s n="77" xml:lang="de" type="auto">Stellend minen herren heym<note xml:id="fn64" type="footnote" n="64">anheim.</note>, ob nitt nutz und nodtwendig, in sölichen gfaaren ein tag zuͦ beschryben, etc.</s>
+					<s n="78" xml:lang="de" type="auto">Das ist beschähen uff 20.<note xml:id="fn65" type="footnote" n="65">Zu verstehen: Die Zürcher haben (als Vorort der Eidgenossenschaft) eine Tagsatzung für den 20. November einberufen. - Zu dieser s. <ref target="file13114">Nr. 3065</ref>, <qv>fn17331-2</qv>.</note> novembris.</s>
+					<s n="79" xml:lang="de" type="auto">Doch ist gestern ein bott<note xml:id="fn66" type="footnote" n="66">Unbekannt. - Die damit verbundenen Ausgaben sind nicht im Rechnungsbuch unter den "Loufenden boten" verzeichnet. Vermutlich haben die St. Galler den Botenlohn übernommen.</note> zuͦ üch hinuff gelouffen, das irs alles wüssent, etc.</s>
+					<s n="80" xml:lang="de" type="auto">Ich fürcht, ich fürcht uffsatz<note xml:id="fn67" type="footnote" n="67">Hinterlist; s. <abbr>SI</abbr> VII 1533.</note> und betrug!</s>
+					<s n="81" xml:lang="de" type="auto">Gott beware uns.</s>
+					<s n="82" xml:lang="la" type="auto">4. novembris.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse darunter:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Ioachimo Vadiano, domino suo.<note xml:id="fn68" type="footnote" n="68">Vadian hat vorliegendes Schreiben vermutlich aus Versehen mit seinem Brief <ref target="file#13121">Nr. 3072</ref> vom 6. November an Bullinger zurückgesandt; s. <ref target="file#13125">Nr. 3076</ref>,[1].</note></s>
+					<s n="83" xml:lang="la" type="auto">Clarissimo viro d. Ioachimo Vadiano, domino suo.<note xml:id="fn68" type="footnote" n="68">Vadian hat vorliegendes Schreiben vermutlich aus Versehen mit seinem Brief <ref target="file13121">Nr. 3072</ref> vom 6. November an Bullinger zurückgesandt; s. <ref target="file13125">Nr. 3076</ref>,[1].</note></s>
 				</p>
 			</div>
 		</body>

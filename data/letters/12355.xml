@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2013"/>
-				<idno type="ISBN">ISBN 978-3-290-17664-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2308</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17664-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2308</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 15</title>
+				<title subtype="publication">HBBW XV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">15</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336,239</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336,239</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336,221</idno>
+							<idno subtype="Autograph">E II 336,221</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -51,26 +54,26 @@
 							<p xml:id="regest1">
 								Die Belgier leiden unter Kaiser [Karl V.]. Einige Städte halten ihn sich sogar mit der Begründung fern,
 								dass es genug sei, wenn sie nur das leisten, wozu sie rechtlich verpflichtet sind. Ginge [Karl V.], der
-								Störenfried <placeName ref="7">Deutschlands</placeName>, doch endlich zu den Seinen! - Aus
-								<placeName ref="11">Frankreich</placeName> kommende Soldaten berichten, dass [Franz I.] von
-								<placeName ref="11">Frankreich</placeName> und [Karl V.] bei dem Treffen [ihrer Gesandten] mit
-								[denen von <persName ref="1140">Heinrich</persName> VIII. von]
-								<placeName ref="9">England</placeName> wieder in Feindschaft geraten seien. Vielleicht ist das
-								Komplott gegen <placeName ref="1100">Turin</placeName> die Ursache dafür. Hauptmann
-								[<persName ref="897">Wilhelm</persName>] <persName ref="897">Frölich</persName> glaubt,
+								Störenfried <placeName ref="place7">Deutschlands</placeName>, doch endlich zu den Seinen! - Aus
+								<placeName ref="place11">Frankreich</placeName> kommende Soldaten berichten, dass [Franz I.] von
+								<placeName ref="place11">Frankreich</placeName> und [Karl V.] bei dem Treffen [ihrer Gesandten] mit
+								[denen von Heinrich VIII. von]
+								<placeName ref="place9">England</placeName> wieder in Feindschaft geraten seien. Vielleicht ist das
+								Komplott gegen <placeName ref="place1100">Turin</placeName> die Ursache dafür. Hauptmann
+								[Wilhelm] <persName ref="person897">Frölich</persName> glaubt,
 								deshalb von [Franz I.] einberufen worden zu sein. - [...], aus
-								<placeName ref="1049">Straßburg</placeName> kommend, erzählte, dass in
-								<placeName ref="361">Frankfurt</placeName> auf dem [Schmalkaldischen] Bundestag unter anderem
+								<placeName ref="place1049">Straßburg</placeName> kommend, erzählte, dass in
+								<placeName ref="place361">Frankfurt</placeName> auf dem [Schmalkaldischen] Bundestag unter anderem
 								beschlossen worden sei, den Schmalkaldischen Bund aufrechtzuerhalten, ungeachtet der Beschlüsse des Konzils,
 								des Kaisers und der Reichstage; ferner, dass keiner einem Verbündeten helfen müsse, es sei denn, dass dieser
 								wegen [seiner Treue zum] Wort [Gottes] angegriffen werde. - Vom Hofe des Grafen Georg von Württemberg und
 								des jungen Herzogs [Christoph von Württemberg] wird berichtet, dass der Braunschweiger [Herzog
-								<persName ref="1140">Heinrich</persName>] entlassen, sein Besitz zurückerstattet worden und er selbst
+								Heinrich] entlassen, sein Besitz zurückerstattet worden und er selbst
 								ein Protestant geworden sei; doch ist das unwahrscheinlich. - Bullinger weiß, was die Sieben [katholischen]
-								Orte im <placeName ref="98">Wallis</placeName> bewirkt haben.
-								<persName ref="154">Myconius</persName> wundert sich, wie die [Zürcher] und die übrigen
+								Orte im <placeName ref="place98">Wallis</placeName> bewirkt haben.
+								<persName ref="person154">Myconius</persName> wundert sich, wie die [Zürcher] und die übrigen
 								[evangelischen Orte] dies aufnehmen werden, besonders angesichts der Verhandlungen, die am letzten Tag zu
-								<placeName ref="85">Baden</placeName> [am 19. Oktober 1545] stattgefunden haben sollen.
+								<placeName ref="place85">Baden</placeName> [am 19. Oktober 1545] stattgefunden haben sollen.
 							</p>
 						</summary>
 					</msContents>
@@ -80,46 +83,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12355">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1545-12-22" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12356"/>
-					<ref type="prev_chronologically" target="files.xml#12354"/>
-					<ref type="next_correspondence" target="files.xml#12361"/>
-					<ref type="prev_correspondence" target="files.xml#12351"/>
-					<ref type="next_correspondence_request" target="files.xml#12388"/>
-					<ref type="prev_correspondence_request" target="files.xml#12348"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12361"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12351"/>
-					<ref type="next_same_sender" target="files.xml#12388"/>
-					<ref type="prev_same_sender" target="files.xml#12348"/>
-					<ref type="next_same_addressee" target="files.xml#12361"/>
-					<ref type="prev_same_addressee" target="files.xml#12351"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12388"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12348"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12361"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12351"/>
+					<ref type="next_chronologically" target="file12356"/>
+					<ref type="prev_chronologically" target="file12354"/>
+					<ref type="next_correspondence" target="file12361"/>
+					<ref type="prev_correspondence" target="file12351"/>
+					<ref type="next_correspondence_request" target="file12388"/>
+					<ref type="prev_correspondence_request" target="file12348"/>
+					<ref type="next_correspondence_reaction" target="file12361"/>
+					<ref type="prev_correspondence_reaction" target="file12351"/>
+					<ref type="next_same_sender" target="file12388"/>
+					<ref type="prev_same_sender" target="file12348"/>
+					<ref type="next_same_addressee" target="file12361"/>
+					<ref type="prev_same_addressee" target="file12351"/>
+					<ref type="next_with_sender_as_addressee" target="file12388"/>
+					<ref type="prev_with_sender_as_addressee" target="file12348"/>
+					<ref type="next_with_addressee_as_sender" target="file12361"/>
+					<ref type="prev_with_addressee_as_sender" target="file12351"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -136,40 +144,40 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Qui sunt in <placeName ref="5">Belgis</placeName> sub cęsare<note xml:id="fn1" type="footnote" n="1">Karl V.</note>, moleste ferre incipiunt onera, quibus in dies magis ac magis gravantur, adeo ut quędam civitates esse dicantur, quae a se ipsum excludant satis esse dictitantes, quod, quae iure debeant, pręstent<note xml:id="fn2" type="footnote" n="2">Zu den Verfolgungen in den <placeName ref="20">Niederlanden</placeName> s. oben <ref target="file#12241">Nr. 2194</ref>, 26-31; 2146, 16-19; 2144 und Anm. 3.</note>.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Qui sunt in <placeName ref="place5">Belgis</placeName> sub cęsare<note xml:id="fn1" type="footnote" n="1">Karl V.</note>, moleste ferre incipiunt onera, quibus in dies magis ac magis gravantur, adeo ut quędam civitates esse dicantur, quae a se ipsum excludant satis esse dictitantes, quod, quae iure debeant, pręstent<note xml:id="fn2" type="footnote" n="2">Zu den Verfolgungen in den <placeName ref="place20">Niederlanden</placeName> s. oben <ref target="file12241">Nr. 2194</ref>, 26-31; 2146, 16-19; 2144 und Anm. 3.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Utinam abeat aliquando ad suos!</s>
-					<s xml:lang="la" type="auto">Hactenus enim Germaniam perturbavit nimium.</s>
+					<s n="3" xml:lang="la" type="auto">Utinam abeat aliquando ad suos!</s>
+					<s n="4" xml:lang="la" type="auto">Hactenus enim Germaniam perturbavit nimium.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Spargunt milites, qui veniunt a Gallo<note xml:id="fn3" type="footnote" n="3">König Franz I.</note>, novum dissidium incidisse inter hunc et cęsarem in conventu horum et Angli<note xml:id="fn4" type="footnote" n="4">König <persName ref="1140">Heinrich</persName> VIII. -Zu den Treffen der Gesandten vgl. zuletzt oben <ref target="file#12348">Nr. 2301</ref>, 25-28. -Hintergrund von <persName ref="154">Myconius</persName>' Mitteilung sind die gescheiterten Bemühungen der Protestanten und des Kaisers um einen englisch-französischen Frieden im Dezember 1545 sowie die fortgesetzten Kampfhandlungen; s. dazu <hi>Potter</hi> 286f.</note>.</s>
-					<s xml:lang="la" type="auto">Causam ignoro, nisi forsitan sit proditio contra Turinum, quam vocant<note xml:id="fn5" type="footnote" n="5">Vgl. PA I <hi>535,</hi> <ref target="file#10888">Nr. 849</ref>: "[...]Zeitung über einen Anschlag gegen <placeName ref="1100">Turin</placeName> und <placeName ref="398">Genf</placeName>"; Die Dreizehn von <placeName ref="97">Basel</placeName> an die von <placeName ref="1049">Straßburg</placeName>, 12. Dezember 1545 (PC III 690, <ref target="file#10682">Nr. 644</ref>): "So haben drig italianische houptleut, so des konigs [Franz I.] diener gwesen, dem herzogen von Safoy [Karl III.] die stat Thaurni (<placeName ref="1100">Turin</placeName>?) mit verreteri inzugeben understanden, weliche schon gefangen und allen anschlag entdect haben."</note>.</s>
-					<s xml:lang="la" type="auto">Lętus<note xml:id="fn6" type="footnote" n="6"><persName ref="897">Wilhelm Frölich</persName>. - Dass er tatsächlich nach <placeName ref="1100">Turin</placeName> entsandt wurde, geht hervor aus Andre <hi>Thevet,</hi> Les vrais pourtraits et vies des homines illustres, Paris 1584, S. 416.</note> capitaneus evocatus est a rege<note xml:id="fn7" type="footnote" n="7">Franz I.</note> ob eam, ut ipse putat, causam.</s>
+					<s n="5" xml:lang="la" type="auto">Spargunt milites, qui veniunt a Gallo<note xml:id="fn3" type="footnote" n="3">König Franz I.</note>, novum dissidium incidisse inter hunc et cęsarem in conventu horum et Angli<note xml:id="fn4" type="footnote" n="4">König Heinrich VIII. -Zu den Treffen der Gesandten vgl. zuletzt oben <ref target="file12348">Nr. 2301</ref>, 25-28. -Hintergrund von <persName ref="person154">Myconius</persName>' Mitteilung sind die gescheiterten Bemühungen der Protestanten und des Kaisers um einen englisch-französischen Frieden im Dezember 1545 sowie die fortgesetzten Kampfhandlungen; s. dazu <hi>Potter</hi> 286f.</note>.</s>
+					<s n="6" xml:lang="la" type="auto">Causam ignoro, nisi forsitan sit proditio contra Turinum, quam vocant<note xml:id="fn5" type="footnote" n="5">Vgl. PA I 535, <ref target="file10888">Nr. 849</ref>: "[...]Zeitung über einen Anschlag gegen <placeName ref="place1100">Turin</placeName> und <placeName ref="place398">Genf</placeName>"; Die Dreizehn von <placeName ref="place97">Basel</placeName> an die von <placeName ref="place1049">Straßburg</placeName>, 12. Dezember 1545 (PC III 690, <ref target="file10682">Nr. 644</ref>): "So haben drig italianische houptleut, so des konigs [Franz I.] diener gwesen, dem herzogen von Safoy [Karl III.] die stat Thaurni (<placeName ref="place1100">Turin</placeName>?) mit verreteri inzugeben understanden, weliche schon gefangen und allen anschlag entdect haben."</note>.</s>
+					<s n="7" xml:lang="la" type="auto">Lętus<note xml:id="fn6" type="footnote" n="6"><persName ref="person897">Wilhelm Frölich</persName>. - Dass er tatsächlich nach <placeName ref="place1100">Turin</placeName> entsandt wurde, geht hervor aus Andre <hi>Thevet,</hi> Les vrais pourtraits et vies des homines illustres, Paris 1584, S. 416.</note> capitaneus evocatus est a rege<note xml:id="fn7" type="footnote" n="7">Franz I.</note> ob eam, ut ipse putat, causam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex Argentina quidam<note xml:id="fn8" type="footnote" n="8">Unbekannt.</note> adtulit heri in comitiis Francfordiensibus<note xml:id="fn9" type="footnote" n="9">Der Schmalkaldische Bundestag zu <placeName ref="361">Frankfurt am Main</placeName>; s. oben <ref target="file#12332">Nr. 2285</ref> und Anm. 37.</note> hęc duo praeter cętera agenda esse illic, et forsitan nunc acta: Alterum, quod mansurum sit foedus Smalcaldicum in verbo domini, quicquid concilium, cęsar et comitia definiant; alterum, quod deinceps nemo quidpiam alteri debeat vi foederis, nisi quis propter verbum infestetur<note xml:id="fn10" type="footnote" n="10">Zu den weiteren Verhandlungsthemen des <placeName ref="361">Frankfurter</placeName> Bundestags s. das Tagebuch von <persName ref="2255">Jakob Sturm</persName> (PC III 697-712, <ref target="file#10689">Nr. 651</ref>).</note>.</s>
-					<s xml:lang="la" type="auto">Cętera posthac.</s>
+					<s n="8" xml:lang="la" type="auto">Ex Argentina quidam<note xml:id="fn8" type="footnote" n="8">Unbekannt.</note> adtulit heri in comitiis Francfordiensibus<note xml:id="fn9" type="footnote" n="9">Der Schmalkaldische Bundestag zu <placeName ref="place361">Frankfurt am Main</placeName>; s. oben <ref target="file12332">Nr. 2285</ref> und Anm. 37.</note> hęc duo praeter cętera agenda esse illic, et forsitan nunc acta: Alterum, quod mansurum sit foedus Smalcaldicum in verbo domini, quicquid concilium, cęsar et comitia definiant; alterum, quod deinceps nemo quidpiam alteri debeat vi foederis, nisi quis propter verbum infestetur<note xml:id="fn10" type="footnote" n="10">Zu den weiteren Verhandlungsthemen des <placeName ref="place361">Frankfurter</placeName> Bundestags s. das Tagebuch von <persName ref="person2255">Jakob Sturm</persName> (PC III 697-712, <ref target="file10689">Nr. 651</ref>).</note>.</s>
+					<s n="9" xml:lang="la" type="auto">Cętera posthac.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex aula Georgii<note xml:id="fn11" type="footnote" n="11">Georg d.J. von Württemberg-Mömpelgard.</note>, comitis Wirtembergensis, et ducis iunioris,<note xml:id="fn12" type="footnote" n="12">Graf Christoph von Württemberg-Mömpelgard.</note> refertur Brunsvicensem<note xml:id="fn13" type="footnote" n="13">Herzog <persName ref="1140">Heinrich</persName> d.J. von Braunschweig-Wolfenbüttel.</note> dimissum, possessionem omnem restitutam et ipsum e numero protestantium factum<note xml:id="fn14" type="footnote" n="14">Ein Gerücht.</note>.</s>
-					<s xml:lang="la" type="auto">Non fit mihi verisimile.</s>
+					<s n="10" xml:lang="la" type="auto">Ex aula Georgii<note xml:id="fn11" type="footnote" n="11">Georg d.J. von Württemberg-Mömpelgard.</note>, comitis Wirtembergensis, et ducis iunioris,<note xml:id="fn12" type="footnote" n="12">Graf Christoph von Württemberg-Mömpelgard.</note> refertur Brunsvicensem<note xml:id="fn13" type="footnote" n="13">Herzog <persName ref="person1140">Heinrich d</persName>.J. von Braunschweig-Wolfenbüttel.</note> dimissum, possessionem omnem restitutam et ipsum e numero protestantium factum<note xml:id="fn14" type="footnote" n="14">Ein Gerücht.</note>.</s>
+					<s n="11" xml:lang="la" type="auto">Non fit mihi verisimile.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De Septempagicis<note xml:id="fn15" type="footnote" n="15">Gemeint sind die Sieben katholischen Orte (Un, <placeName ref="79">Schwyz</placeName>, <placeName ref="92">Unterwalden</placeName>, <placeName ref="652">Luzern</placeName>, <placeName ref="1238">Zug</placeName>, <placeName ref="368">Freiburg</placeName> und <placeName ref="83">Solothurn</placeName>), die eine Gesandtschaft nach Sitten (<placeName ref="98">Wallis</placeName>) schickten, wo am 28. November 1545 über Maßnahmen gegen die lutherischen Tendenzen im <placeName ref="98">Wallis</placeName> beraten wurde; s. EA IV/Id 570, Nr.1.</note> nosti, quid egerint in Vallesia.</s>
-					<s xml:lang="la" type="auto">Miror, qualiter tui et reliqui, quos evangelio donavit dominus, factum sint accepturi.</s>
-					<s xml:lang="la" type="auto">Dum id<pb type="edition" next="688"/> equidem confero cum his, quę acta dicuntur in ultimis comitiis Badensibus<note xml:id="fn16" type="footnote" n="16">Am 19. Oktober 1545; s. EA IV/Id 542- 553, wo allerdings nichts Schriftliches über die Unruhen im <placeName ref="98">Wallis</placeName> festgehalten wurde; s. aber aao, S. 536f d. - Zu den religiösen Unruhen im <placeName ref="98">Wallis</placeName> s. oben <ref target="file#12335">Nr. 2288</ref> und Anm. 12.</note>, vehementer horreo.</s>
-					<s xml:lang="la" type="auto">Hęc scires, si nescires, volui.</s>
+					<s n="12" xml:lang="la" type="auto">De Septempagicis<note xml:id="fn15" type="footnote" n="15">Gemeint sind die Sieben katholischen Orte (Un, <placeName ref="place79">Schwyz</placeName>, <placeName ref="place92">Unterwalden</placeName>, <placeName ref="place652">Luzern</placeName>, <placeName ref="place1238">Zug</placeName>, <placeName ref="place368">Freiburg</placeName> und <placeName ref="place83">Solothurn</placeName>), die eine Gesandtschaft nach Sitten (<placeName ref="place98">Wallis</placeName>) schickten, wo am 28. November 1545 über Maßnahmen gegen die lutherischen Tendenzen im <placeName ref="place98">Wallis</placeName> beraten wurde; s. EA IV/Id 570, Nr.1.</note> nosti, quid egerint in Vallesia.</s>
+					<s n="13" xml:lang="la" type="auto">Miror, qualiter tui et reliqui, quos evangelio donavit dominus, factum sint accepturi.</s>
+					<s n="14" xml:lang="la" type="auto">Dum id<pb type="edition" next="688"/> equidem confero cum his, quę acta dicuntur in ultimis comitiis Badensibus<note xml:id="fn16" type="footnote" n="16">Am 19. Oktober 1545; s. EA IV/Id 542- 553, wo allerdings nichts Schriftliches über die Unruhen im <placeName ref="place98">Wallis</placeName> festgehalten wurde; s. aber aao, S. 536f d. - Zu den religiösen Unruhen im <placeName ref="place98">Wallis</placeName> s. oben <ref target="file12335">Nr. 2288</ref> und Anm. 12.</note>, vehementer horreo.</s>
+					<s n="15" xml:lang="la" type="auto">Hęc scires, si nescires, volui.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in Christo.</s>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileę</placeName>, raptim, 22. decembris anno 1545.</s>
-					<s xml:lang="la" type="auto">Tuus Os. Myco.</s>
+					<s n="16" xml:lang="la" type="auto">Vale in Christo.</s>
+					<s n="17" xml:lang="la" type="auto"><placeName ref="place97">Basileę</placeName>, raptim, 22. decembris anno 1545.</s>
+					<s n="18" xml:lang="la" type="auto">Tuus Os. Myco.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. <persName ref="1140">Heinricho</persName> Bullingero, Tigurino episcopo, fratri in domino venerando suo.</s>
+					<s n="19" xml:lang="la" type="auto">D. Heinricho Bullingero, Tigurino episcopo, fratri in domino venerando suo.</s>
 				</p>
 			</div>
 		</body>

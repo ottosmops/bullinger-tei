@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4773/344</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph (Entwurf)" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph (Entwurf)">E II 346,380</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph (Entwurf)">E II 346,380</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,13 +47,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 90,187</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 90,187</idno>
 					</msIdentifier>
 					<history><origin><p><date>18. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -60,54 +66,41 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3373">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1557-10-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#487" cert="high">
-							<settlement>Steckborn</settlement>
-							<district>Thurgau</district>
-							<country>Schweiz</country>
-							<geo>47.669045 8.9822282</geo>
-						</place>
-					</roleName>
-					<place source="#487" cert="high">
-						<settlement>Steckborn</settlement>
-						<district>Thurgau</district>
-						<country>Schweiz</country>
-						<geo>47.669045 8.9822282</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place487" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3374"/>
-					<ref type="prev_chronologically" target="files.xml#3372"/>
-					<ref type="next_correspondence" target="files.xml#4007"/>
-					<ref type="prev_correspondence" target="files.xml#3309"/>
-					<ref type="next_correspondence_request" target="files.xml#4940"/>
-					<ref type="prev_correspondence_request" target="files.xml#3309"/>
-					<ref type="next_correspondence_reaction" target="files.xml#4007"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2768"/>
-					<ref type="next_same_sender" target="files.xml#3374"/>
-					<ref type="prev_same_sender" target="files.xml#3372"/>
-					<ref type="next_same_addressee" target="files.xml#3435"/>
-					<ref type="prev_same_addressee" target="files.xml#3288"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3374"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3372"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3435"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3288"/>
+					<ref type="next_chronologically" target="file3374"/>
+					<ref type="prev_chronologically" target="file3372"/>
+					<ref type="next_correspondence" target="file4007"/>
+					<ref type="prev_correspondence" target="file3309"/>
+					<ref type="next_correspondence_request" target="file4940"/>
+					<ref type="prev_correspondence_request" target="file3309"/>
+					<ref type="next_correspondence_reaction" target="file4007"/>
+					<ref type="prev_correspondence_reaction" target="file2768"/>
+					<ref type="next_same_sender" target="file3374"/>
+					<ref type="prev_same_sender" target="file3372"/>
+					<ref type="next_same_addressee" target="file3435"/>
+					<ref type="prev_same_addressee" target="file3288"/>
+					<ref type="next_with_sender_as_addressee" target="file3374"/>
+					<ref type="prev_with_sender_as_addressee" target="file3372"/>
+					<ref type="next_with_addressee_as_sender" target="file3435"/>
+					<ref type="prev_with_addressee_as_sender" target="file3288"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,44 +110,44 @@
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
 	<facsimile>
-		<graphic url="3373/Autograph/00 E_II_346__fol__380_r_.tif" n="1"/>
+		<graphic url="3373/Autograph (Entwurf)/00 E_II_346__fol__380_r_.tif" n="1"/>
 	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Dominis colendissimis et fratribus in Christo charissimis d. decano et fratribus classis Steckburanae in Durgavia.</s>
+					<s n="1" xml:lang="la" type="auto">Dominis colendissimis et fratribus in Christo charissimis d. decano et fratribus classis Steckburanae in Durgavia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Valde dolet nobis, credite domini colendissimi et fratres in Christo charissimi, dissidere vos, quos alioqui oportuerat esse coniunctissimos.</s>
-					<s xml:lang="la" type="auto">Dissidii causas quicunque dederunt, domino, qui ex animo detestatur adeoque abominatur linguam inter fratres serentem dissidia, rationem reddent.</s>
-					<s xml:lang="la" type="auto">Praecipua huius dissidii vestri causa illa esse videtur, quod pauculi quidam arbitrio suo et authoritate privata agentes sue temeritati publicam classis vestrae commissionem praetexerunt atque per me a magistratu huius urbis amplissimo synodum et examen sibi dari postularunt.</s>
+					<s n="2" xml:lang="la" type="auto">S. D.</s>
+					<s n="3" xml:lang="la" type="auto">Valde dolet nobis, credite domini colendissimi et fratres in Christo charissimi, dissidere vos, quos alioqui oportuerat esse coniunctissimos.</s>
+					<s n="4" xml:lang="la" type="auto">Dissidii causas quicunque dederunt, domino, qui ex animo detestatur adeoque abominatur linguam inter fratres serentem dissidia, rationem reddent.</s>
+					<s n="5" xml:lang="la" type="auto">Praecipua huius dissidii vestri causa illa esse videtur, quod pauculi quidam arbitrio suo et authoritate privata agentes sue temeritati publicam classis vestrae commissionem praetexerunt atque per me a magistratu huius urbis amplissimo synodum et examen sibi dari postularunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Caeterum res longe aliter habent.</s>
+					<s n="6" xml:lang="la" type="auto">Caeterum res longe aliter habent.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Venerunt huc fratres aliquot, qui ex commissione classis vestrae retulerunt edictum publicum a praeside promulgatum esse, quo mandetur pastoribus, ut palam et preces solennes et fidei confessionem, reliqua item catechesis requirant etiam a natu grandioribus, quae quidem res optimos etiam conturbet; proinde petere fratres consilium, quomodo in hac re difficili alioqui se gerant.</s>
-					<s xml:lang="la" type="auto">Nos vero, qui ecclesiae huic Tigurinae ministramus, commodissimum fore putavimus, si ea res communicaretur clarissimis viris d. consuli senatoribusque synodo adiunctis; haec enim eo tempore, quo isti aderant, iam erat inita, quod videretur ministrorum consilium sine amplissimi magistratus opera... quodammodo futurum.</s>
-					<s xml:lang="la" type="auto">Hoc itaque negotium ego ut interpres praesentibus dominis et fratribus meis d. Gvalthero et d. Wolphio amplissimo d. consuli deputatisque proposui idque classis nomine.</s>
+					<s n="7" xml:lang="la" type="auto">Venerunt huc fratres aliquot, qui ex commissione classis vestrae retulerunt edictum publicum a praeside promulgatum esse, quo mandetur pastoribus, ut palam et preces solennes et fidei confessionem, reliqua item catechesis requirant etiam a natu grandioribus, quae quidem res optimos etiam conturbet; proinde petere fratres consilium, quomodo in hac re difficili alioqui se gerant.</s>
+					<s n="8" xml:lang="la" type="auto">Nos vero, qui ecclesiae huic Tigurinae ministramus, commodissimum fore putavimus, si ea res communicaretur clarissimis viris d. consuli senatoribusque synodo adiunctis; haec enim eo tempore, quo isti aderant, iam erat inita, quod videretur ministrorum consilium sine amplissimi magistratus opera... quodammodo futurum.</s>
+					<s n="9" xml:lang="la" type="auto">Hoc itaque negotium ego ut interpres praesentibus dominis et fratribus meis d. Gvalthero et d. Wolphio amplissimo d. consuli deputatisque proposui idque classis nomine.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quoniam vero dudum non immerito optimo cuique doluit quosvis nec examinatos nec vocatos etiam irrumpere per Durgavianas ecclesias in ministerium sacrum et in eo absque disciplina vivere, simulatque causa illa prior amplissimo d. consuli senatoribusque proposita est, adieci et illud (quod ex commissione classis omnino non adieci) celebriores in Durgovia fratres et ministros ecclesiarum, quamquam non dubitemus aliquot refragaturos, optare reductam disciplinam.</s>
-					<s xml:lang="la" type="auto">Quae quidem res nostra sententia commodius impetrari non poterit, quam si synodus legitima vobis restituatur, in qua deinde de examine et rebus aliis necessariis cum fratrum consilio agi possit.</s>
-					<s xml:lang="la" type="auto">Benigne autem promisit amplissimus d. consul cum senatoribus hac in re omnem suam operam collocaturum, ut ea, quae ecclesiis salutaria sunt, curentur.</s>
-					<s xml:lang="la" type="auto">Quae quidem omnia fusius exposui fratri nostro fideli et dilecto Steckburanae ecclesiae ministro, qui, quae brevius hic perstrinximus, copiosius exponat.</s>
-					<s xml:lang="la" type="auto">Hortamur ergo vos, ut redeatis in concordiam cum fratribus, qui nihil in vos peccarunt, et ut boni consulatis, quod nos paterno animo et iuvandi vos ecclesiasque vestras studio fecimus.</s>
-					<s xml:lang="la" type="auto">Valete, di(lecti) in Christo domino fratres colendissimi et charissimi.</s>
+					<s n="10" xml:lang="la" type="auto">Quoniam vero dudum non immerito optimo cuique doluit quosvis nec examinatos nec vocatos etiam irrumpere per Durgavianas ecclesias in ministerium sacrum et in eo absque disciplina vivere, simulatque causa illa prior amplissimo d. consuli senatoribusque proposita est, adieci et illud (quod ex commissione classis omnino non adieci) celebriores in Durgovia fratres et ministros ecclesiarum, quamquam non dubitemus aliquot refragaturos, optare reductam disciplinam.</s>
+					<s n="11" xml:lang="la" type="auto">Quae quidem res nostra sententia commodius impetrari non poterit, quam si synodus legitima vobis restituatur, in qua deinde de examine et rebus aliis necessariis cum fratrum consilio agi possit.</s>
+					<s n="12" xml:lang="la" type="auto">Benigne autem promisit amplissimus d. consul cum senatoribus hac in re omnem suam operam collocaturum, ut ea, quae ecclesiis salutaria sunt, curentur.</s>
+					<s n="13" xml:lang="la" type="auto">Quae quidem omnia fusius exposui fratri nostro fideli et dilecto Steckburanae ecclesiae ministro, qui, quae brevius hic perstrinximus, copiosius exponat.</s>
+					<s n="14" xml:lang="la" type="auto">Hortamur ergo vos, ut redeatis in concordiam cum fratribus, qui nihil in vos peccarunt, et ut boni consulatis, quod nos paterno animo et iuvandi vos ecclesiasque vestras studio fecimus.</s>
+					<s n="15" xml:lang="la" type="auto">Valete, di(lecti) in Christo domino fratres colendissimi et charissimi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominus benedicat vestris laboribus.</s>
+					<s n="16" xml:lang="la" type="auto">Dominus benedicat vestris laboribus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 20. octobris 1557.</s>
+					<s n="17" xml:lang="la" type="auto">Tiguri 20. octobris 1557.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus suo et aliorum pastorum in urbe Tigurina nomine.</s>
+					<s n="18" xml:lang="la" type="auto">Bullingerus suo et aliorum pastorum in urbe Tigurina nomine.</s>
 				</p>
 			</div>
 		</body>

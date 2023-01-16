@@ -9,24 +9,30 @@
 				<publisher>Fehr'sche Buchhandlung</publisher>
 				<pubPlace>St. Gallen</pubPlace>
 				<date when="1913"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=981</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=981</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Vadianische Briefsammlung VII (Ergänzungsband)</title>
-				<biblScope type="author">Arbenz, Emil; Wartmann, Hermann</biblScope>
+				<title subtype="publication">Vadian BW VII</title>
+				<biblScope type="editor">Arbenz, Emil; Wartmann, Hermann</biblScope>
 				<biblScope type="edition">Vadianische Briefsammlung</biblScope>
+				<biblScope type="volume">7</biblScope>
+				<biblScope type="volumes">7</biblScope>
+				<biblScope type="period">1531-1540</biblScope>
 				<biblScope type="page">68</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms F 64,646r</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms F 64,646r</idno>
 					</msIdentifier>
 					<history><origin><p><date>17. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -38,22 +44,22 @@
 						<summary>
 							<p xml:id="regest1">
 								Dankt für einen Brief und äußert auf Wunsch Bullingers seine Meinung zu
-								<persName ref="28">Bucers</persName> [Schreiben an <persName ref="138">Luther</persName>]. Wer
-								[die eidgenössischen Kirchen] bei <persName ref="138">Luther</persName> in ein solches Licht stellt,
-								schadet der Konkordie; besonders unverständlich ist, daß <persName ref="28">Bucer</persName>
-								gegenüber <persName ref="138">Luther</persName> eine Position entschuldigt, die er in
-								<placeName ref="97">Basel</placeName> als dessen eigene Meinung ausgab. Nur deshalb haben sich
-								<placeName ref="97">Basel</placeName> und <placeName ref="1011">St. Gallen</placeName> für
-								die Unterzeichnung der [<placeName ref="1205">Wittenberger</placeName> Konkordie] ausgesprochen;
-								<persName ref="28">Bucers</persName> Behauptung, sie hätten sich zusammen mit
-								<placeName ref="738">Mülhausen</placeName> urteilsfähiger als andere gezeigt, trifft nicht zu.
-								<persName ref="138">Luther</persName> wird voraussichtlich redlicher verfahren als
-								<persName ref="28">Bucer</persName>, da er dessen Brief doch wohl weitergereicht hat, um seine
+								<persName ref="person28">Bucers</persName> [Schreiben an <persName ref="person138">Luther</persName>]. Wer
+								[die eidgenössischen Kirchen] bei <persName ref="person138">Luther</persName> in ein solches Licht stellt,
+								schadet der Konkordie; besonders unverständlich ist, daß <persName ref="person28">Bucer</persName>
+								gegenüber <persName ref="person138">Luther</persName> eine Position entschuldigt, die er in
+								<placeName ref="place97">Basel</placeName> als dessen eigene Meinung ausgab. Nur deshalb haben sich
+								<placeName ref="place97">Basel</placeName> und <placeName ref="place1011">St. Gallen</placeName> für
+								die Unterzeichnung der [<placeName ref="place1205">Wittenberger</placeName> Konkordie] ausgesprochen;
+								<persName ref="person28">Bucers</persName> Behauptung, sie hätten sich zusammen mit
+								<placeName ref="place738">Mülhausen</placeName> urteilsfähiger als andere gezeigt, trifft nicht zu.
+								<persName ref="person138">Luther</persName> wird voraussichtlich redlicher verfahren als
+								<persName ref="person28">Bucer</persName>, da er dessen Brief doch wohl weitergereicht hat, um seine
 								Glaubwürdigkeit zu erkunden. Dennoch sollte man von dieser Sache schweigen, einerseits wegen der
 								Vertraulichkeit des Briefverkehrs, andrerseits, um den
-								<placeName ref="1049">Straßburger</placeName> Rat nicht zu verärgern, obwohl
-								<persName ref="28">Bucer</persName> auch gegenüber Ammeister
-								<persName ref="1826">Mathis</persName> [<persName ref="1826">Pfarrer</persName>] unehrlich
+								<placeName ref="place1049">Straßburger</placeName> Rat nicht zu verärgern, obwohl
+								<persName ref="person28">Bucer</persName> auch gegenüber Ammeister
+								Mathis [<persName ref="person1826">Pfarrer</persName>] unehrlich
 								gewesen zu sein scheint.
 							</p>
 						</summary>
@@ -71,46 +77,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11023">
 				<correspAction type="sent">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
-					<place source="#474" cert="high">
-						<settlement>St. Gallen</settlement>
-						<district>St.Gallen</district>
-						<country>Schweiz</country>
-						<geo>47.42391 9.37477</geo>
-					</place>
+					-->
+					<persName ref="person3306" cert="high"/>
+					<place source="place474" cert="high"/>
 					<date when="1537-03-31" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11025"/>
-					<ref type="prev_chronologically" target="files.xml#11022"/>
-					<ref type="next_correspondence" target="files.xml#11049"/>
-					<ref type="prev_correspondence" target="files.xml#11015"/>
-					<ref type="next_correspondence_request" target="files.xml#11256"/>
-					<ref type="prev_correspondence_request" target="files.xml#10949"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11049"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11015"/>
-					<ref type="next_same_sender" target="files.xml#11256"/>
-					<ref type="prev_same_sender" target="files.xml#10949"/>
-					<ref type="next_same_addressee" target="files.xml#11030"/>
-					<ref type="prev_same_addressee" target="files.xml#11015"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11256"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10949"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11030"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11015"/>
+					<ref type="next_chronologically" target="file11025"/>
+					<ref type="prev_chronologically" target="file11022"/>
+					<ref type="next_correspondence" target="file11049"/>
+					<ref type="prev_correspondence" target="file11015"/>
+					<ref type="next_correspondence_request" target="file11256"/>
+					<ref type="prev_correspondence_request" target="file10949"/>
+					<ref type="next_correspondence_reaction" target="file11049"/>
+					<ref type="prev_correspondence_reaction" target="file11015"/>
+					<ref type="next_same_sender" target="file11256"/>
+					<ref type="prev_same_sender" target="file10949"/>
+					<ref type="next_same_addressee" target="file11030"/>
+					<ref type="prev_same_addressee" target="file11015"/>
+					<ref type="next_with_sender_as_addressee" target="file11256"/>
+					<ref type="prev_with_sender_as_addressee" target="file10949"/>
+					<ref type="next_with_addressee_as_sender" target="file11030"/>
+					<ref type="prev_with_addressee_as_sender" target="file11015"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -124,22 +134,22 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salvus sis, Bullingere clarissime.</s>
-					<s xml:lang="la" type="auto">Legi literas tuas libenter hac potissimum causa, quod fide tam ingenua mecum agis nec celas, quae referre nostra putas.</s>
-					<s xml:lang="la" type="auto">Cetera enim, nempe elegantia, humanitas et eruditio, nunquam desunt tuis epistolis nunquamque non delectant et prosunt.</s>
-					<s xml:lang="la" type="auto">Ut autem, quod petis, praestem et, quod sentio, dicam; primum male me habent <persName ref="28">Buceri</persName> studia, nec parum offendit, quod adeo contemptim causam maximam nostro nomine coram illo egit, cui nos praeter modum commendare et supra modum insinuare debuerat.</s>
-					<s xml:lang="la" type="auto">Concordiam non quaerit, sed discordiam pessimis gravatam suspicionibus, qui tam frigide commendat bene meritos, praesertim apud illos, quibuscum gravissimas simultates gessimus.</s>
-					<s xml:lang="la" type="auto">Quid opus erat excusare apud Lutherum, quod nomine Lutheri in publico consessu omnium ordinum <placeName ref="97">Basileae</placeName> tanta, ut aiebat, fide egit, contestatione etiam adiecta, haud aliud sentire de eucharistia Lutherum, quam quod ipse coram declaratis articulis in medium attulisset?</s>
-					<s xml:lang="la" type="auto">Hac enim una causa senatus <placeName ref="97">Basiliensis</placeName> et noster Sangallensis subscribendum articulis putabant, ne qua remora caus longe utilissima iniiceretur, quia palam ita constaret, non aliud sentire Lutherum <persName ref="28">Bucero</persName> referente, quam quod nostri multis iam annis docuissent.</s>
-					<s xml:lang="la" type="auto">Et tu ea de re gratias agebas domino ministrorum nomine, quod tandem constaret re ipsa nos non dissentire, sed ad concordiam stabiliendam eum sensum tenere Lutherum, quem ecclesiae nostrae hactenus tulissent.</s>
-					<s xml:lang="la" type="auto">Modo excusat, quod agere est iussus, et sic excusat, ut palam se ipsum praevaricationis cuiusdam insimulet, cum testetur, se multa donasse nobis, quae Luthero fortasse sint displicitura.</s>
-					<s xml:lang="la" type="auto">Ad haec <placeName ref="97">Basileenses</placeName>, Mulhusianos et nostros ita commendat, velut saniori iudicio fuerimus vestris, qui nihil tamen probavimus, quam quod omnes probarunt, praeter unam subscribendi voluntatem, quam sua illa declaratio Lutheranae fidei nobis emulserat.</s>
-					<s xml:lang="la" type="auto">At iam nunc e suis libris constat, quam male senserimus, subscripturi videlicet salebrosis articulis iuxta sensum ab ipso D. Lutheri nomine relatum, quem tantopere excusari coram ipso Luthero oportuerit.</s>
-					<s xml:lang="la" type="auto">Qui dicam?</s>
-					<s xml:lang="la" type="auto">Longe candidius hic acturus est nobiscum, quam ille egerit, quippe non dubitavit illius literas velut suspectas amicis communicare ac ceu in lucem edere, ut constare posset, probene nobiscum actum fuerit an secus.</s>
-					<s xml:lang="la" type="auto">Utcunque autem istaec habeant, censeo rem omnem summa fide celandam neque attrectandam in praesentia ullo verbo, non modo quia constet, saepe nos literis ceu arcanis internuntiis concredere, quae ne amicis quidem omnibus nota esse vellemus, immo plerunque apud amicos de amicissimis conquerimur; sed hac etiam causa, quae mihi potissima est, ne senatum Argentoratensem negotio liberius detecto a nostris abalienemus, quanquam et ipso consule Matthia abusus videtur <persName ref="28">Bucerus</persName>.</s>
-					<s xml:lang="la" type="auto">Tamen consultissimum est dissimulare, ne oleum (quod dicitur) addamus camino et tristes tragoedias excitemus inter fratres, partim ob epistolam proditam, partim ob fidem, quam senatus Argentoratensis nostris tanti viri praesentia fecit.</s>
-					<s xml:lang="la" type="auto">Pridie Kalendas Apriles 1537.</s>
+					<s n="1" xml:lang="la" type="auto">Salvus sis, Bullingere clarissime.</s>
+					<s n="2" xml:lang="la" type="auto">Legi literas tuas libenter hac potissimum causa, quod fide tam ingenua mecum agis nec celas, quae referre nostra putas.</s>
+					<s n="3" xml:lang="la" type="auto">Cetera enim, nempe elegantia, humanitas et eruditio, nunquam desunt tuis epistolis nunquamque non delectant et prosunt.</s>
+					<s n="4" xml:lang="la" type="auto">Ut autem, quod petis, praestem et, quod sentio, dicam; primum male me habent <persName ref="person28">Buceri</persName> studia, nec parum offendit, quod adeo contemptim causam maximam nostro nomine coram illo egit, cui nos praeter modum commendare et supra modum insinuare debuerat.</s>
+					<s n="5" xml:lang="la" type="auto">Concordiam non quaerit, sed discordiam pessimis gravatam suspicionibus, qui tam frigide commendat bene meritos, praesertim apud illos, quibuscum gravissimas simultates gessimus.</s>
+					<s n="6" xml:lang="la" type="auto">Quid opus erat excusare apud Lutherum, quod nomine Lutheri in publico consessu omnium ordinum <placeName ref="place97">Basileae</placeName> tanta, ut aiebat, fide egit, contestatione etiam adiecta, haud aliud sentire de eucharistia Lutherum, quam quod ipse coram declaratis articulis in medium attulisset?</s>
+					<s n="7" xml:lang="la" type="auto">Hac enim una causa senatus <placeName ref="place97">Basiliensis</placeName> et noster Sangallensis subscribendum articulis putabant, ne qua remora caus longe utilissima iniiceretur, quia palam ita constaret, non aliud sentire Lutherum <persName ref="person28">Bucero</persName> referente, quam quod nostri multis iam annis docuissent.</s>
+					<s n="8" xml:lang="la" type="auto">Et tu ea de re gratias agebas domino ministrorum nomine, quod tandem constaret re ipsa nos non dissentire, sed ad concordiam stabiliendam eum sensum tenere Lutherum, quem ecclesiae nostrae hactenus tulissent.</s>
+					<s n="9" xml:lang="la" type="auto">Modo excusat, quod agere est iussus, et sic excusat, ut palam se ipsum praevaricationis cuiusdam insimulet, cum testetur, se multa donasse nobis, quae Luthero fortasse sint displicitura.</s>
+					<s n="10" xml:lang="la" type="auto">Ad haec <placeName ref="place97">Basileenses</placeName>, Mulhusianos et nostros ita commendat, velut saniori iudicio fuerimus vestris, qui nihil tamen probavimus, quam quod omnes probarunt, praeter unam subscribendi voluntatem, quam sua illa declaratio Lutheranae fidei nobis emulserat.</s>
+					<s n="11" xml:lang="la" type="auto">At iam nunc e suis libris constat, quam male senserimus, subscripturi videlicet salebrosis articulis iuxta sensum ab ipso D. Lutheri nomine relatum, quem tantopere excusari coram ipso Luthero oportuerit.</s>
+					<s n="12" xml:lang="la" type="auto">Qui dicam?</s>
+					<s n="13" xml:lang="la" type="auto">Longe candidius hic acturus est nobiscum, quam ille egerit, quippe non dubitavit illius literas velut suspectas amicis communicare ac ceu in lucem edere, ut constare posset, probene nobiscum actum fuerit an secus.</s>
+					<s n="14" xml:lang="la" type="auto">Utcunque autem istaec habeant, censeo rem omnem summa fide celandam neque attrectandam in praesentia ullo verbo, non modo quia constet, saepe nos literis ceu arcanis internuntiis concredere, quae ne amicis quidem omnibus nota esse vellemus, immo plerunque apud amicos de amicissimis conquerimur; sed hac etiam causa, quae mihi potissima est, ne senatum Argentoratensem negotio liberius detecto a nostris abalienemus, quanquam et ipso consule Matthia abusus videtur <persName ref="person28">Bucerus</persName>.</s>
+					<s n="15" xml:lang="la" type="auto">Tamen consultissimum est dissimulare, ne oleum (quod dicitur) addamus camino et tristes tragoedias excitemus inter fratres, partim ob epistolam proditam, partim ob fidem, quam senatus Argentoratensis nostris tanti viri praesentia fecit.</s>
+					<s n="16" xml:lang="la" type="auto">Pridie Kalendas Apriles 1537.</s>
 				</p>
 			</div>
 		</body>

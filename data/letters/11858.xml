@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2008"/>
-				<idno type="ISBN">ISBN 978-3-290-17459-0</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1812</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17459-0</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1812</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 13</title>
+				<title subtype="publication">HBBW XIII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">13</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 335,2066</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 335,2066</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,8 +49,8 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Über jene Frau, der in <persName ref="1632">Metz</persName> die Zunge abgeschnitten wurde, über die
-								zwei in <placeName ref="656">Löwen</placeName> lebendig begrabenen Frauen und über die zwei Männer,
+								Über jene Frau, der in <persName ref="person1632">Metz</persName> die Zunge abgeschnitten wurde, über die
+								zwei in <placeName ref="place656">Löwen</placeName> lebendig begrabenen Frauen und über die zwei Männer,
 								die dort enthauptet wurden, sowie über die zahlreichen Exulanten werden die Briefüberbringer berichten.
 							</p>
 						</summary>
@@ -58,46 +61,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11858">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1543-11-08" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11859"/>
-					<ref type="prev_chronologically" target="files.xml#11857"/>
-					<ref type="next_correspondence" target="files.xml#11868"/>
-					<ref type="prev_correspondence" target="files.xml#11850"/>
-					<ref type="next_correspondence_request" target="files.xml#11868"/>
-					<ref type="prev_correspondence_request" target="files.xml#11850"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11876"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11664"/>
-					<ref type="next_same_sender" target="files.xml#11868"/>
-					<ref type="prev_same_sender" target="files.xml#11850"/>
-					<ref type="next_same_addressee" target="files.xml#11865"/>
-					<ref type="prev_same_addressee" target="files.xml#11856"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11868"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11850"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11865"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11856"/>
+					<ref type="next_chronologically" target="file11859"/>
+					<ref type="prev_chronologically" target="file11857"/>
+					<ref type="next_correspondence" target="file11868"/>
+					<ref type="prev_correspondence" target="file11850"/>
+					<ref type="next_correspondence_request" target="file11868"/>
+					<ref type="prev_correspondence_request" target="file11850"/>
+					<ref type="next_correspondence_reaction" target="file11876"/>
+					<ref type="prev_correspondence_reaction" target="file11664"/>
+					<ref type="next_same_sender" target="file11868"/>
+					<ref type="prev_same_sender" target="file11850"/>
+					<ref type="next_same_addressee" target="file11865"/>
+					<ref type="prev_same_addressee" target="file11856"/>
+					<ref type="next_with_sender_as_addressee" target="file11868"/>
+					<ref type="prev_with_sender_as_addressee" target="file11850"/>
+					<ref type="next_with_addressee_as_sender" target="file11865"/>
+					<ref type="prev_with_addressee_as_sender" target="file11856"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -115,22 +123,22 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">De muliercula christianissima, cui Metenses iussu legati imperialis<note xml:id="fn1" type="footnote" n="1">Charles de Boisot.</note> praeciderunt linguam,<note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file#11857">Nr. 1811</ref>, 31-33 mit Anm. 18.</note> de duabus item <placeName ref="656">Lovanii</placeName> vivis subtus terram defossis, de<pb type="edition" next="318"/> duobus viris ibidem decollatis<note xml:id="fn3" type="footnote" n="3">Vgl. oben ebd., Z. 14f mit Anm. 10.</note> deque multitudine exulantium dicent, qui has reddunt<note xml:id="fn4" type="footnote" n="4">Unbekannt.</note>.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">De muliercula christianissima, cui Metenses iussu legati imperialis<note xml:id="fn1" type="footnote" n="1">Charles de Boisot.</note> praeciderunt linguam,<note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file11857">Nr. 1811</ref>, 31-33 mit Anm. 18.</note> de duabus item <placeName ref="place656">Lovanii</placeName> vivis subtus terram defossis, de<pb type="edition" next="318"/> duobus viris ibidem decollatis<note xml:id="fn3" type="footnote" n="3">Vgl. oben ebd., Z. 14f mit Anm. 10.</note> deque multitudine exulantium dicent, qui has reddunt<note xml:id="fn4" type="footnote" n="4">Unbekannt.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale per Christum.</s>
+					<s n="3" xml:lang="la" type="auto">Vale per Christum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Basileę, 8. novembris anno 1543.</s>
+					<s n="4" xml:lang="la" type="auto">Basileę, 8. novembris anno 1543.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Os. <persName ref="154">Myconius</persName> tuus.</s>
+					<s n="5" xml:lang="la" type="auto">Os. <persName ref="person154">Myconius</persName> tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Heinricho Bullingero doctissimo, fratri in domino observandissimo suo.</s>
-					<s xml:lang="de" type="auto">Z[üric]h<note xml:id="fnb" type="footnote" n="b"><hi>Teilweise auf das nur fragmentarisch erhaltene Verschlussband geschrieben.</hi></note>.</s>
+					<s n="6" xml:lang="la" type="auto">D. Heinricho Bullingero doctissimo, fratri in domino observandissimo suo.</s>
+					<s n="7" xml:lang="de" type="auto">Z[üric]h<note xml:id="fnb" type="footnote" n="b"><hi>Teilweise auf das nur fragmentarisch erhaltene Verschlussband geschrieben.</hi></note>.</s>
 				</p>
 			</div>
 		</body>

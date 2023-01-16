@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 41,550</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 41,550</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -25,15 +28,18 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#474">St. Gallen</settlement>
-						<institution>Kantonsbibliothek Vadiana</institution>
-						<idno type="Kopie">Ms 81, f. 44r</idno>
-						<repository ref="archive#78">
+						<!--
+						<repository ref="archive78">
 							<name>St. Gallen KB</name>
-							<note type="Mikrofilm">IRG</note>
-							<note type="Hinweis">Kopier oder Entwurf</note>
 							<ref target="https://www.sg.ch/kultur/kantonsbibliothek-vadiana.html"/>
 						</repository>
+						<settlement ref="place474">St. Gallen</settlement>
+						<institution>Kantonsbibliothek Vadiana</institution>
+						-->
+						<repository ref="archive78"/>
+						<idno subtype="Kopie">Ms 81, f. 44r</idno>
+						<idno subtype="Mikrofilm">IRG</idno>
+						<idno subtype="Hinweis">Kopier oder Entwurf</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,43 +54,46 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9907">
 				<correspAction type="sent">
-					<persName ref="person#3933" cert="high">
+					<!--
+					<persName ref="person3933" cert="high">
 						<forename cert="high">David</forename>
 						<surname cert="high">Wetter</surname>
 					</persName>
-					<place source="#474" cert="high">
-						<settlement>St. Gallen</settlement>
-						<district>St.Gallen</district>
-						<country>Schweiz</country>
-						<geo>47.42391 9.37477</geo>
-					</place>
+					-->
+					<persName ref="person3933" cert="high"/>
+					<place source="place474" cert="high"/>
 					<date when="1575-02-27" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9908"/>
-					<ref type="prev_chronologically" target="files.xml#9906"/>
-					<ref type="next_correspondence" target="files.xml#9924"/>
-					<ref type="prev_correspondence" target="files.xml#9704"/>
-					<ref type="next_correspondence_request" target="files.xml#9924"/>
-					<ref type="prev_correspondence_request" target="files.xml#9704"/>
+					<ref type="next_chronologically" target="file9908"/>
+					<ref type="prev_chronologically" target="file9906"/>
+					<ref type="next_correspondence" target="file9924"/>
+					<ref type="prev_correspondence" target="file9704"/>
+					<ref type="next_correspondence_request" target="file9924"/>
+					<ref type="prev_correspondence_request" target="file9704"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#9700"/>
-					<ref type="next_same_sender" target="files.xml#9924"/>
-					<ref type="prev_same_sender" target="files.xml#9704"/>
-					<ref type="next_same_addressee" target="files.xml#9910"/>
-					<ref type="prev_same_addressee" target="files.xml#9905"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9924"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9704"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9910"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#9905"/>
+					<ref type="prev_correspondence_reaction" target="file9700"/>
+					<ref type="next_same_sender" target="file9924"/>
+					<ref type="prev_same_sender" target="file9704"/>
+					<ref type="next_same_addressee" target="file9910"/>
+					<ref type="prev_same_addressee" target="file9905"/>
+					<ref type="next_with_sender_as_addressee" target="file9924"/>
+					<ref type="prev_with_sender_as_addressee" target="file9704"/>
+					<ref type="next_with_addressee_as_sender" target="file9910"/>
+					<ref type="prev_with_addressee_as_sender" target="file9905"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

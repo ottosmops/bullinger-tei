@@ -7,27 +7,30 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>C.A. Schwetschke</publisher>
-				<pubPlace>Brunsvigae</pubPlace>
-				<date when="1863"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1067</idno>
+				<pubPlace>Braunschweig/Berlin</pubPlace>
+				<date when="1863-1900"/>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1067</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Joannis Calvini - Opera quae supersunt omnia.</title>
-				<biblScope type="author">Cunitz, Edouard; Baum, Johann-Wilhelm; Reuss, Eduard Wilhelm Eugen</biblScope>
+				<title subtype="publication">Opera Calvini</title>
+				<biblScope type="editor">Guilielmus Baum, Eduardus Cunitz, Eduardus Reuss</biblScope>
 				<biblScope type="edition">Corpus Reformatorium</biblScope>
-				<biblScope type="volumes">58</biblScope>
+				<biblScope type="volumes">59</biblScope>
 				<biblScope type="page">129</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Original" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Original">E II 337,265</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Original">E II 337,265</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -38,15 +41,15 @@
 						<summary>
 							<p xml:id="regest1">
 								Der Briefüberbringer berichtet über die unerwartet ausgebrochene Verfolgung der Brüder in
-								<placeName ref="793">Nîmes</placeName>; in
-								<placeName ref="398">Genf</placeName> hatte man geglaubt,
-								Graf <persName ref="921">Wilhelm</persName> [von <persName ref="921">Fürstenberg</persName>]
-								habe sich auf Ersuchen von <placeName ref="1049">Straßburg</placeName> und
-								<placeName ref="97">Basel</placeName> an <persName ref="859">König</persName>
-								[<persName ref="859">Franz</persName> I.] gewandt und die Freilassung aller Gefangenen erreicht, nun
+								<placeName ref="place793">Nîmes</placeName>; in
+								<placeName ref="place398">Genf</placeName> hatte man geglaubt,
+								Graf Wilhelm [<persName ref="person921">von Fürstenberg</persName>]
+								habe sich auf Ersuchen von <placeName ref="place1049">Straßburg</placeName> und
+								<placeName ref="place97">Basel</placeName> an König
+								[<persName ref="person859">Franz I.</persName>] gewandt und die Freilassung aller Gefangenen erreicht, nun
 								aber wurden zwei verbrannt, und weitere sind in Lebensgefahr. Da die
-								<placeName ref="398">Genfer</placeName> gehört haben, in
-								einem Vertrag [eidgenössischer Orte] mit dem <persName ref="859">König</persName> sei eine Klausel
+								<placeName ref="place398">Genfer</placeName> gehört haben, in
+								einem Vertrag [eidgenössischer Orte] mit dem König sei eine Klausel
 								zum Schutz der Glaubensgenossen enthalten, bitten sie dringend, die Obrigkeit zu einer Intervention zu
 								veranlassen.
 							</p>
@@ -68,57 +71,31 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11110">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#167" cert="high">
-							<settlement>Genf</settlement>
-							<district>Genève</district>
-							<country>Schweiz</country>
-							<geo>46.20222 6.14569</geo>
-						</place>
-					</roleName>
-					<place source="#167" cert="high">
-						<settlement>Genf</settlement>
-						<district>Genève</district>
-						<country>Schweiz</country>
-						<geo>46.20222 6.14569</geo>
-					</place>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<place source="place167" cert="high"/>
 					<date when="1537-11-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11111"/>
-					<ref type="prev_chronologically" target="files.xml#11109"/>
-					<ref type="next_correspondence" target="files.xml#11465"/>
-					<ref type="prev_correspondence" target="files.xml#11077"/>
-					<ref type="next_correspondence_request" target="files.xml#11465"/>
-					<ref type="prev_correspondence_request" target="files.xml#11077"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11465"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11077"/>
-					<ref type="next_same_sender" target="files.xml#11334"/>
-					<ref type="prev_same_sender" target="files.xml#11077"/>
-					<ref type="next_same_addressee" target="files.xml#11334"/>
-					<ref type="prev_same_addressee" target="files.xml#11077"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11334"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11077"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11334"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11077"/>
+					<ref type="next_chronologically" target="file11111"/>
+					<ref type="prev_chronologically" target="file11109"/>
+					<ref type="next_correspondence" target="file11465"/>
+					<ref type="prev_correspondence" target="file11077"/>
+					<ref type="next_correspondence_request" target="file11465"/>
+					<ref type="prev_correspondence_request" target="file11077"/>
+					<ref type="next_correspondence_reaction" target="file11465"/>
+					<ref type="prev_correspondence_reaction" target="file11077"/>
+					<ref type="next_same_sender" target="file11334"/>
+					<ref type="prev_same_sender" target="file11077"/>
+					<ref type="next_same_addressee" target="file11334"/>
+					<ref type="prev_same_addressee" target="file11077"/>
+					<ref type="next_with_sender_as_addressee" target="file11334"/>
+					<ref type="prev_with_sender_as_addressee" target="file11077"/>
+					<ref type="next_with_addressee_as_sender" target="file11334"/>
+					<ref type="prev_with_addressee_as_sender" target="file11077"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -135,33 +112,33 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratia vobis et pax a Deo patre nostro et Domino Iesu Christo, fratres amicissimi et nobis unice observandi.</s>
-					<s xml:lang="la" type="auto">Negotium, cuius causa hominem hunc data opera mittendum ad vos censuimus, paucis complectemur.</s>
-					<s xml:lang="la" type="auto">Nemosi enim non incelebri linguae, ut nunc vocant, Occitanae oppido, nova nuper impiorum saevitia in miseros fratres, qui illic dispersi agunt, efferbuit, quum nihil tale suspicaremur.</s>
-					<s xml:lang="la" type="auto">Literas non ita pridem publicas Senatus Argentoratensis et Basiliensis obtinueramus, quibus omnium qui tunc per Gallias in vinculis tenebantur, salus et incolumitas commendabatur Comiti Guillelmo.</s>
-					<s xml:lang="la" type="auto">Ille a Rege impetrasse dicebatur, ut solverentur omnes.</s>
-					<s xml:lang="la" type="auto">In hac spe securi acquiescebamus, dum renunciatum nobis fuit, ignem illic vehementer flagrare.</s>
-					<s xml:lang="la" type="auto">Duo combusti fuerunt, de quorum morte ab ipso spectatore audietis.</s>
-					<s xml:lang="la" type="auto">Siquidem latine vobis narrare queat, quod nobis retulit.</s>
-					<s xml:lang="la" type="auto">Plurimi in vincula coniecti sunt, qui de capite periclitantur, nisi mature obviam eatur eorum furori, qui iam ebrii duorum sanguine, finem alioqui saeviendi nullum facturi sunt.</s>
-					<s xml:lang="la" type="auto">Duo illi singularem constantiam ad extremos usque spiritus exhibuerunt: quum tamen exquisita crudelitate ipsorum patientia tentaretur.</s>
-					<s xml:lang="la" type="auto">Verum qui scimus an eadem aliis constatura sit animi magnitudo?</s>
-					<s xml:lang="la" type="auto">Ferendae ergo in tempore suppetiae, si qua ratione licet, ne terrore concidant, si qui sunt imbecilliores.</s>
-					<s xml:lang="la" type="auto">Deinde summopere cavendum, ne vile fiat nobis piorum sanguis, quem scimus esse in conspectu Domini pretiosum.</s>
-					<s xml:lang="la" type="auto">Audimus recens fuisse a Principibus vestris percussum foedus cum Rege nostro, in quo mentio quaedam iniecta fuerit religionis, ne scilicet solita severitate posthac plecterentur, quibus in religionis sensu vobiscum conveniret.</s>
-					<s xml:lang="la" type="auto">Id si verum est, non omittenda est nobis iuvandorum fratrum tanta opportunitas, quibus ad opem ferendam non modo clara voce nos Christus vocat, sed se deseri conqueritur, si deserantur.</s>
-					<s xml:lang="la" type="auto">Proinde, fratres optimi et pientissimi, vos pro animi vestri sinceritate in hanc causam totos impendite.</s>
-					<s xml:lang="la" type="auto">Quod quia vos ultro facturos confidimus, pluribus non agemus vobiscum.</s>
-					<s xml:lang="la" type="auto">Agedum ergo, apud Senatum vestrum efficite, ut serio Rex appelletur: idque quam fieri poterit brevissime, ne furiosi illi antevertant.</s>
-					<s xml:lang="la" type="auto">Scitis enim quam sedula sit eorum improbitas.</s>
-					<s xml:lang="la" type="auto">Dominus Iesus vos novis spiritus sui incrementis magis in dies locupletet, fratres eruditissimi et nobis dilectissimi.</s>
+					<s n="1" xml:lang="la" type="auto">Gratia vobis et pax a Deo patre nostro et Domino Iesu Christo, fratres amicissimi et nobis unice observandi.</s>
+					<s n="2" xml:lang="la" type="auto">Negotium, cuius causa hominem hunc data opera mittendum ad vos censuimus, paucis complectemur.</s>
+					<s n="3" xml:lang="la" type="auto">Nemosi enim non incelebri linguae, ut nunc vocant, Occitanae oppido, nova nuper impiorum saevitia in miseros fratres, qui illic dispersi agunt, efferbuit, quum nihil tale suspicaremur.</s>
+					<s n="4" xml:lang="la" type="auto">Literas non ita pridem publicas Senatus Argentoratensis et Basiliensis obtinueramus, quibus omnium qui tunc per Gallias in vinculis tenebantur, salus et incolumitas commendabatur Comiti Guillelmo.</s>
+					<s n="5" xml:lang="la" type="auto">Ille a Rege impetrasse dicebatur, ut solverentur omnes.</s>
+					<s n="6" xml:lang="la" type="auto">In hac spe securi acquiescebamus, dum renunciatum nobis fuit, ignem illic vehementer flagrare.</s>
+					<s n="7" xml:lang="la" type="auto">Duo combusti fuerunt, de quorum morte ab ipso spectatore audietis.</s>
+					<s n="8" xml:lang="la" type="auto">Siquidem latine vobis narrare queat, quod nobis retulit.</s>
+					<s n="9" xml:lang="la" type="auto">Plurimi in vincula coniecti sunt, qui de capite periclitantur, nisi mature obviam eatur eorum furori, qui iam ebrii duorum sanguine, finem alioqui saeviendi nullum facturi sunt.</s>
+					<s n="10" xml:lang="la" type="auto">Duo illi singularem constantiam ad extremos usque spiritus exhibuerunt: quum tamen exquisita crudelitate ipsorum patientia tentaretur.</s>
+					<s n="11" xml:lang="la" type="auto">Verum qui scimus an eadem aliis constatura sit animi magnitudo?</s>
+					<s n="12" xml:lang="la" type="auto">Ferendae ergo in tempore suppetiae, si qua ratione licet, ne terrore concidant, si qui sunt imbecilliores.</s>
+					<s n="13" xml:lang="la" type="auto">Deinde summopere cavendum, ne vile fiat nobis piorum sanguis, quem scimus esse in conspectu Domini pretiosum.</s>
+					<s n="14" xml:lang="la" type="auto">Audimus recens fuisse a Principibus vestris percussum foedus cum Rege nostro, in quo mentio quaedam iniecta fuerit religionis, ne scilicet solita severitate posthac plecterentur, quibus in religionis sensu vobiscum conveniret.</s>
+					<s n="15" xml:lang="la" type="auto">Id si verum est, non omittenda est nobis iuvandorum fratrum tanta opportunitas, quibus ad opem ferendam non modo clara voce nos Christus vocat, sed se deseri conqueritur, si deserantur.</s>
+					<s n="16" xml:lang="la" type="auto">Proinde, fratres optimi et pientissimi, vos pro animi vestri sinceritate in hanc causam totos impendite.</s>
+					<s n="17" xml:lang="la" type="auto">Quod quia vos ultro facturos confidimus, pluribus non agemus vobiscum.</s>
+					<s n="18" xml:lang="la" type="auto">Agedum ergo, apud Senatum vestrum efficite, ut serio Rex appelletur: idque quam fieri poterit brevissime, ne furiosi illi antevertant.</s>
+					<s n="19" xml:lang="la" type="auto">Scitis enim quam sedula sit eorum improbitas.</s>
+					<s n="20" xml:lang="la" type="auto">Dominus Iesus vos novis spiritus sui incrementis magis in dies locupletet, fratres eruditissimi et nobis dilectissimi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Genevae, 13. Novembris 1537.</s>
+					<s n="21" xml:lang="la" type="auto">Genevae, 13. Novembris 1537.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Fratres vestri amantissimi et observantissimi Genevensis ecclesiae ministri.</s>
-					<s xml:lang="la" type="auto">Fratribus et symmystis nostris in Domino observandis Tigurinae ecclesiae pastoribus.</s>
+					<s n="22" xml:lang="la" type="auto">Fratres vestri amantissimi et observantissimi Genevensis ecclesiae ministri.</s>
+					<s n="23" xml:lang="la" type="auto">Fratribus et symmystis nostris in Domino observandis Tigurinae ecclesiae pastoribus.</s>
 				</p>
 			</div>
 		</body>

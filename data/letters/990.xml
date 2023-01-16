@@ -12,25 +12,28 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2132</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 337,456</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">mit Korrekturen von Bullingers Hand; gleichzeitige Kopie</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 337,456</idno>
+						<idno subtype="Hinweis">mit Korrekturen von Bullingers Hand; gleichzeitige Kopie</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -42,13 +45,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 73,53</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 73,53</idno>
 					</msIdentifier>
 					<history><origin><p><date>18. Jh.</date></p></origin></history>
 					<physDesc>
@@ -60,12 +66,15 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#138">Emden</settlement>
-						<institution>Bibliothek der Grossen Kirche</institution>
-						<idno type="Kopie">Hs. fol 37, Nr. 30</idno>
-						<repository ref="archive#34">
+						<!--
+						<repository ref="archive34">
 							<name>Emden BGK</name>
 						</repository>
+						<settlement ref="place138">Emden</settlement>
+						<institution>Bibliothek der Grossen Kirche</institution>
+						-->
+						<repository ref="archive34"/>
+						<idno subtype="Kopie">Hs. fol 37, Nr. 30</idno>
 					</msIdentifier>
 					<history><origin><p><date>20. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -75,93 +84,68 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/990">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1550-08-17" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#138" cert="high">
-							<settlement>Emden</settlement>
-							<district>Niedersachsen</district>
-							<country>Deutschland</country>
-							<geo>53.36745 7.20778</geo>
-						</place>
-					</roleName>
-					<persName ref="person#7978" cert="high">
+					<personGrp ref="role52" role="Geistliche"/>
+					<!--
+					<persName ref="person7978" cert="high">
 						<forename cert="high">Hermann</forename>
 						<surname cert="high">Brass</surname>
-						<roleName type="title">
-							<name type="singular" ref="role#26" cert="high">Geistlicher</name>
-							<place source="#138" cert="high">
-								<settlement>Emden</settlement>
-								<district>Niedersachsen</district>
-								<country>Deutschland</country>
-								<geo>53.36745 7.20778</geo>
-							</place>
-						</roleName>
+						<personGrp ref="role51" role="Geistlicher"/>
 					</persName>
-					<persName ref="person#7979" cert="high">
+					-->
+					<persName ref="person7978" cert="high"/>
+					<personGrp ref="role51" role="Geistlicher"/>
+					<!--
+					<persName ref="person7979" cert="high">
 						<forename cert="high">Gellius Epipedius</forename>
 						<surname cert="high">Faber</surname>
-						<addName type="main">Faber van Bouma, Gellius Epipedius</addName>
-						<roleName type="title">
-							<name type="singular" ref="role#26" cert="high">Geistlicher</name>
-							<place source="#138" cert="high">
-								<settlement>Emden</settlement>
-								<district>Niedersachsen</district>
-								<country>Deutschland</country>
-								<geo>53.36745 7.20778</geo>
-							</place>
-						</roleName>
+						<persName type="main" ref="person8341>Faber van Bouma, Gellius Epipedius</addName>
+						<personGrp ref="role51" role="Geistlicher"/>
 					</persName>
-					<persName ref="person#455" cert="high">
+					-->
+					<persName ref="person7979" cert="high"/>
+					<personGrp ref="role51" role="Geistlicher"/>
+					<!--
+					<persName ref="person455" cert="high">
 						<forename cert="high">Thomas</forename>
 						<surname cert="high">Bramius</surname>
-						<roleName type="title">
-							<name type="singular" ref="role#26" cert="high">Geistlicher</name>
-							<place source="#138" cert="high">
-								<settlement>Emden</settlement>
-								<district>Niedersachsen</district>
-								<country>Deutschland</country>
-								<geo>53.36745 7.20778</geo>
-							</place>
-						</roleName>
+						<personGrp ref="role51" role="Geistlicher"/>
 					</persName>
-					<place source="#138" cert="high">
-						<settlement>Emden</settlement>
-						<district>Niedersachsen</district>
-						<country>Deutschland</country>
-						<geo>53.36745 7.20778</geo>
-					</place>
+					-->
+					<persName ref="person455" cert="high"/>
+					<personGrp ref="role51" role="Geistlicher"/>
+					<place source="place138" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#991"/>
-					<ref type="prev_chronologically" target="files.xml#989"/>
-					<ref type="next_correspondence" target="files.xml#3355"/>
+					<ref type="next_chronologically" target="file991"/>
+					<ref type="prev_chronologically" target="file989"/>
+					<ref type="next_correspondence" target="file3355"/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#3355"/>
+					<ref type="next_correspondence_reaction" target="file3355"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#992"/>
-					<ref type="prev_same_sender" target="files.xml#988"/>
-					<ref type="next_same_addressee" target="files.xml#3355"/>
+					<ref type="next_same_sender" target="file992"/>
+					<ref type="prev_same_sender" target="file988"/>
+					<ref type="next_same_addressee" target="file3355"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#992"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#988"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3355"/>
+					<ref type="next_with_sender_as_addressee" target="file992"/>
+					<ref type="prev_with_sender_as_addressee" target="file988"/>
+					<ref type="next_with_addressee_as_sender" target="file3355"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -179,40 +163,40 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Gratiam deo patre, constantiam in fide per Christum et consolationem sancti spiritus etc.</s>
-					<s xml:lang="la" type="auto">Mense iunio accepimus literas vestras Aemdae scriptas mense februario et missae per Ioannem Hypocratem Bernatem, alioqui citius respondissem charitati vestrae.</s>
-					<s xml:lang="la" type="auto">Iam vero coacti sumus expectare occasionem nundinarum Francfordiensium; ex his enim commodius et certius transmittentur amicorum et fratrum literae.</s>
-					<s xml:lang="la" type="auto">Caeterum fratres lecta epistola vestra unanimes maximas deo gratias egerunt, qui consilium et vires vobis suppeditavit, ne infelix Caesaris reciperetis Interdecretum in subversionem et contumeliam veritatis et vestrum dedecus atque oproprium sempiternum.</s>
-					<s xml:lang="la" type="auto">Oramus autem dominum, ut vos in sancto confirmet instituto, necubi cedatis illis, qui non tantum libertati nostrae insidiantur, sed et universas ecclesias Christi antichristo subdere rursus desiderant.</s>
-					<s xml:lang="la" type="auto">Nullum est periculum ex illo, quod templis interdicunt vobis; facite, quod facitis et quod exemplo apostolico didicastis, et sarcistis illud incommodi; apostoli enim synagogis exclusi alium sibi locum idoneum, aliud tempus, aliam occasionem quaesiverunt.</s>
-					<s xml:lang="la" type="auto">Idoneum est satis, quod pro tempore admittit coetum et in quo orare et docere vel praedicare Christum liceat, donec meliora dederit Christus tempora, ac multo satius est veritate doctrinaque sana sic frui in arcto quam in amplissimo loco et otio exercere cultum adulteratum per papistas.</s>
-					<s xml:lang="la" type="auto">Neque impediant et commoveant vos illorum sermones, qui clamant vos esse homines cerebrosos et nasutulos et publicae pacis perturbatores.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam deo patre, constantiam in fide per Christum et consolationem sancti spiritus etc.</s>
+					<s n="2" xml:lang="la" type="auto">Mense iunio accepimus literas vestras Aemdae scriptas mense februario et missae per Ioannem Hypocratem Bernatem, alioqui citius respondissem charitati vestrae.</s>
+					<s n="3" xml:lang="la" type="auto">Iam vero coacti sumus expectare occasionem nundinarum Francfordiensium; ex his enim commodius et certius transmittentur amicorum et fratrum literae.</s>
+					<s n="4" xml:lang="la" type="auto">Caeterum fratres lecta epistola vestra unanimes maximas deo gratias egerunt, qui consilium et vires vobis suppeditavit, ne infelix Caesaris reciperetis Interdecretum in subversionem et contumeliam veritatis et vestrum dedecus atque oproprium sempiternum.</s>
+					<s n="5" xml:lang="la" type="auto">Oramus autem dominum, ut vos in sancto confirmet instituto, necubi cedatis illis, qui non tantum libertati nostrae insidiantur, sed et universas ecclesias Christi antichristo subdere rursus desiderant.</s>
+					<s n="6" xml:lang="la" type="auto">Nullum est periculum ex illo, quod templis interdicunt vobis; facite, quod facitis et quod exemplo apostolico didicastis, et sarcistis illud incommodi; apostoli enim synagogis exclusi alium sibi locum idoneum, aliud tempus, aliam occasionem quaesiverunt.</s>
+					<s n="7" xml:lang="la" type="auto">Idoneum est satis, quod pro tempore admittit coetum et in quo orare et docere vel praedicare Christum liceat, donec meliora dederit Christus tempora, ac multo satius est veritate doctrinaque sana sic frui in arcto quam in amplissimo loco et otio exercere cultum adulteratum per papistas.</s>
+					<s n="8" xml:lang="la" type="auto">Neque impediant et commoveant vos illorum sermones, qui clamant vos esse homines cerebrosos et nasutulos et publicae pacis perturbatores.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cerebrosus et nasutulus non est, qui ea agit, quae scripturarum sunt, et in his constanter perseverat; pacis christianae perturbator est, qui conscientias perturbat fidelium et servituti rursus antichristi subiicit.</s>
+					<s n="9" xml:lang="la" type="auto">Cerebrosus et nasutulus non est, qui ea agit, quae scripturarum sunt, et in his constanter perseverat; pacis christianae perturbator est, qui conscientias perturbat fidelium et servituti rursus antichristi subiicit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cerebrosus et nasutulus est, qui plus sapit, quam sapere oportet.</s>
-					<s xml:lang="la" type="auto">Quid vero fucus adiaphororum illos iuvat?</s>
-					<s xml:lang="la" type="auto">Adiaphora illa vel ex scripturis sunt vel non sunt; si ex scripturis sunt, ostendunt, et merito scripturarum determinationem recipimus; si ex scripturis non sunt, orta sunt haud dubie arbitrio hominum.</s>
-					<s xml:lang="la" type="auto">At quis obtrudat hominis arbitrium et commentum hominibus christianis?</s>
-					<s xml:lang="la" type="auto">De his enim Paulus:</s>
+					<s n="10" xml:lang="la" type="auto">Cerebrosus et nasutulus est, qui plus sapit, quam sapere oportet.</s>
+					<s n="11" xml:lang="la" type="auto">Quid vero fucus adiaphororum illos iuvat?</s>
+					<s n="12" xml:lang="la" type="auto">Adiaphora illa vel ex scripturis sunt vel non sunt; si ex scripturis sunt, ostendunt, et merito scripturarum determinationem recipimus; si ex scripturis non sunt, orta sunt haud dubie arbitrio hominum.</s>
+					<s n="13" xml:lang="la" type="auto">At quis obtrudat hominis arbitrium et commentum hominibus christianis?</s>
+					<s n="14" xml:lang="la" type="auto">De his enim Paulus:</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">"Praetio magno empti estis," ait, "nolite fieri hominum servi:" Et revera non possunt illae ceremoniae et ritus illi, quos isti ecclesiis obtrudere contendunt, ullis deffendi scripturis; sunt enim hominum traditiones adeoque pugnant fere cum scripturis ex diametro.</s>
-					<s xml:lang="la" type="auto">Proinde state in veritate, fratres, et sanctificate nomen domini; orate illum, qui solus sapientissimo consilia sufficere et vires efficiendi, quod vult, dare potest.</s>
-					<s xml:lang="la" type="auto">In eo valete.</s>
-					<s xml:lang="la" type="auto">Salutant vos fratres et omnem operam suam vobis deferunt.</s>
-					<s xml:lang="la" type="auto">Videbitis brevi Interdecretum illud Caesaris infelix et impium isagogen esse ad integrum papismum, quem ille conabitur continuato Tridenti concilio factioso et impio restituere in integrum; sed vivit, qui dixit: "Confidite, ego vici mundum."</s>
-					<s xml:lang="la" type="auto">Pugnant et pugnabunt in finem usque saeculi pseudopropheta et bestia vel imago bestiae contra agnum in throno dei, qui vincet tandem; ei gloria et regnum et sacerdotium.</s>
-					<s xml:lang="la" type="auto">Tiguri 17. augusti 1550.</s>
-					<s xml:lang="la" type="auto">Salvi sint fratres omnes, inprimis d. Gerhardus noster tom Kampp.</s>
+					<s n="15" xml:lang="la" type="auto">"Praetio magno empti estis," ait, "nolite fieri hominum servi:" Et revera non possunt illae ceremoniae et ritus illi, quos isti ecclesiis obtrudere contendunt, ullis deffendi scripturis; sunt enim hominum traditiones adeoque pugnant fere cum scripturis ex diametro.</s>
+					<s n="16" xml:lang="la" type="auto">Proinde state in veritate, fratres, et sanctificate nomen domini; orate illum, qui solus sapientissimo consilia sufficere et vires efficiendi, quod vult, dare potest.</s>
+					<s n="17" xml:lang="la" type="auto">In eo valete.</s>
+					<s n="18" xml:lang="la" type="auto">Salutant vos fratres et omnem operam suam vobis deferunt.</s>
+					<s n="19" xml:lang="la" type="auto">Videbitis brevi Interdecretum illud Caesaris infelix et impium isagogen esse ad integrum papismum, quem ille conabitur continuato Tridenti concilio factioso et impio restituere in integrum; sed vivit, qui dixit: "Confidite, ego vici mundum."</s>
+					<s n="20" xml:lang="la" type="auto">Pugnant et pugnabunt in finem usque saeculi pseudopropheta et bestia vel imago bestiae contra agnum in throno dei, qui vincet tandem; ei gloria et regnum et sacerdotium.</s>
+					<s n="21" xml:lang="la" type="auto">Tiguri 17. augusti 1550.</s>
+					<s n="22" xml:lang="la" type="auto">Salvi sint fratres omnes, inprimis d. Gerhardus noster tom Kampp.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Heinrychus Bullingerus vester fratrum nomine.</s>
+					<s n="23" xml:lang="la" type="auto">Heinrychus Bullingerus vester fratrum nomine.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Fidelissimis Christi servis d. Hermano Brassio et Thomae Bramio et d. Gellio Epipedio Fabro, Aemdae in Frisia orientali agentibus, dominis et fratribus in domino colendissimis et charissimis suis.</s>
+					<s n="24" xml:lang="la" type="auto">Fidelissimis Christi servis d. Hermano Brassio et Thomae Bramio et d. Gellio Epipedio Fabro, Aemdae in Frisia orientali agentibus, dominis et fratribus in domino colendissimis et charissimis suis.</s>
 				</p>
 			</div>
 		</body>

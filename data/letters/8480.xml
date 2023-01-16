@@ -12,25 +12,28 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7628/21</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 123,165</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">(nach Druck in HBBibl I 562) *</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 123,165</idno>
+						<idno subtype="Hinweis">(nach Druck in HBBibl I 562) *</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -63,14 +66,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#296">London</settlement>
-						<institution>Lambeth Palace Library</institution>
-						<idno type="Kopie">Ms 2010, fo 49r (Nr. 32)</idno>
-						<repository ref="archive#58">
+						<!--
+						<repository ref="archive58">
 							<name>London LPL</name>
-							<note type="Mikrofilm">48 IRG</note>
 							<ref target="https://lambethpalacelibrary.org/"/>
 						</repository>
+						<settlement ref="place296">London</settlement>
+						<institution>Lambeth Palace Library</institution>
+						-->
+						<repository ref="archive58"/>
+						<idno subtype="Kopie">Ms 2010, fo 49r (Nr. 32)</idno>
+						<idno subtype="Mikrofilm">48 IRG</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -79,79 +85,75 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8480">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date when="1571-02-00" cert="low"/>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
+					<date notBefore="1571-02-01" notAfter="1571-02-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1341" cert="low">
+					<!--
+					<persName ref="person1341" cert="low">
 						<forename cert="low">Edmund</forename>
 						<surname cert="low">Grindal</surname>
 						<graphic type="portrait" url="portraits/1341_Grindal_Edmund.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Edmund_Grindal"/>
-						<roleName type="title">
-							<name type="singular" ref="role#81" cert="low">Erzbischof</name>
-							<place source="#574" cert="low">
-								<settlement>York</settlement>
-								<geo>53.958333 -1.080278</geo>
-							</place>
-						</roleName>
+						<ref type="gnd" target="https://d-nb.info/gnd/139364749"/>
+						<personGrp ref="role0" role="Erzbischof"/>
 					</persName>
-					<persName ref="person#672" cert="low">
+					-->
+					<persName ref="person1341" cert="low"/>
+					<personGrp ref="role0" role="Erzbischof"/>
+					<!--
+					<persName ref="person672" cert="low">
 						<forename cert="low">Richard</forename>
 						<surname cert="low">Cox</surname>
 						<graphic type="portrait" url="portraits/672_Cox_Richard.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Richard_Cox_(Bischof)"/>
-						<roleName type="title">
-							<name type="singular" ref="role#10" cert="low">Bischof</name>
-							<place source="#136" cert="low">
-								<settlement>Ely</settlement>
-								<geo>52.399539 0.262363</geo>
-							</place>
-						</roleName>
+						<ref type="gnd" target="https://d-nb.info/gnd/118670409"/>
+						<personGrp ref="role19" role="Bischof"/>
 					</persName>
-					<persName ref="person#1750" cert="low">
+					-->
+					<persName ref="person672" cert="low"/>
+					<personGrp ref="role19" role="Bischof"/>
+					<!--
+					<persName ref="person1750" cert="low">
 						<forename cert="low">John</forename>
 						<surname cert="low">Jewel</surname>
-						<addName type="main">Jewel (Juellus), John</addName>
+						<persName type="main" ref="person8391>Jewel (Juellus), John</addName>
 						<graphic type="portrait" url="portraits/1750_Jewel_John.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/John_Jewel"/>
-						<roleName type="title">
-							<name type="singular" ref="role#10" cert="low">Bischof</name>
-							<place source="#951" cert="low">
-								<settlement>Salisbury</settlement>
-							</place>
-						</roleName>
+						<ref type="gnd" target="https://d-nb.info/gnd/12126100X"/>
+						<personGrp ref="role19" role="Bischof"/>
 					</persName>
-					<place source="#951" cert="low">
-						<settlement>Salisbury</settlement>
-					</place>
+					-->
+					<persName ref="person1750" cert="low"/>
+					<personGrp ref="role19" role="Bischof"/>
+					<place source="place951" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8481"/>
-					<ref type="prev_chronologically" target="files.xml#8479"/>
+					<ref type="next_chronologically" target="file8481"/>
+					<ref type="prev_chronologically" target="file8479"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#7209"/>
+					<ref type="prev_correspondence" target="file7209"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#7209"/>
+					<ref type="prev_correspondence_request" target="file7209"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#8482"/>
-					<ref type="prev_same_sender" target="files.xml#8473"/>
+					<ref type="next_same_sender" target="file8482"/>
+					<ref type="prev_same_sender" target="file8473"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8482"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#8473"/>
+					<ref type="next_with_sender_as_addressee" target="file8482"/>
+					<ref type="prev_with_sender_as_addressee" target="file8473"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
@@ -167,23 +169,23 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Reverendissimi in Christo patres, domini honorandi et fratres carissimi.</s>
-					<s xml:lang="la" type="auto">Multum me pietati vestrae debere fateor, qui cum tanto invicem intervallo simus disiuncti, (vos quidem trans mare habitetis in Anglia, ego vero non procul ab Alpibus vivam in Helvetia), nihilominus pietas vestra frequentibus literis amicitiam fraternitatemque nostram olim contractam tam studiose colat, conservet atque magis et magis in diem augendo provehat.</s>
-					<s xml:lang="la" type="auto">Unde merito me gratum pietati vestrae obsequiosumque modis omnibus exhibere debeo.</s>
+					<s n="1" xml:lang="la" type="auto">Reverendissimi in Christo patres, domini honorandi et fratres carissimi.</s>
+					<s n="2" xml:lang="la" type="auto">Multum me pietati vestrae debere fateor, qui cum tanto invicem intervallo simus disiuncti, (vos quidem trans mare habitetis in Anglia, ego vero non procul ab Alpibus vivam in Helvetia), nihilominus pietas vestra frequentibus literis amicitiam fraternitatemque nostram olim contractam tam studiose colat, conservet atque magis et magis in diem augendo provehat.</s>
+					<s n="3" xml:lang="la" type="auto">Unde merito me gratum pietati vestrae obsequiosumque modis omnibus exhibere debeo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cumque submissa superioribus diebus bulla Pii V., episcopi Romani; quam antea non videram neque de ea quicquam audieram, occasionem mihi suppeditastis agendi aut conandi saltem aliquid pro gloria Christi, redemptoris nostri unici, et pro salute eius, quae apud vos est in Anglia, ecclesiae contra antichristum Romanum, en pietati vestrae refutationem hanc meam bullae oppositam dedico et exactissimis vestris iudiciis subiicio, ut pro pietatis vestrae beneplacito stetque cadatque tota.</s>
-					<s xml:lang="la" type="auto">Oro autem, ut hunc meum conatum animumque causae bonae vestraeque pietati devotissimum benigni accipiatis.</s>
-					<s xml:lang="la" type="auto">Alioqui fateor libere facultates meas admodum esse exiguas, vestram vero eruditionem amplissimam, ut me hanc causam longe felicius potuissetis, si quidem ita libuisset, pertractare.</s>
-					<s xml:lang="la" type="auto">At cum intellexerim hoc meo labore qualicunque me pietati vestrae gratificaturum, nolui, illa in me desideraret quicquam.</s>
-					<s xml:lang="la" type="auto">Faxit Christus dominus, ut uberrimo cum fructu multum disseram.</s>
-					<s xml:lang="la" type="auto">Salutare, quaeso, dignemini reverendos meos dominos et fratres carissimos d. Robertum Hornum, Wintoniensem episcopum, d. Edwinum Sandum, Londoniensem episcopum, d. Ioannem Parkhurstum, Nordovicensem episcopum, d. Iacobum Pilckintonum, Dunelmensem episcopum, d. item Ioannem Almerum, Samsonum, Humfredum, Leverum, Foxum et reliquos exilii quondam vestri in Helvetia et per Germaniam socios, quorum omnium precibus me commendo.</s>
-					<s xml:lang="la" type="auto">Sed et omnes ministri et fratres, qui hic sunt, vobis omnibus omnia felicia in Christo Iesu, domino nostro, precantur.</s>
-					<s xml:lang="la" type="auto">Dominus Iesus benedicat ministerio pietatis vestrae et servet ab omni malo.</s>
+					<s n="4" xml:lang="la" type="auto">Cumque submissa superioribus diebus bulla Pii V., episcopi Romani; quam antea non videram neque de ea quicquam audieram, occasionem mihi suppeditastis agendi aut conandi saltem aliquid pro gloria Christi, redemptoris nostri unici, et pro salute eius, quae apud vos est in Anglia, ecclesiae contra antichristum Romanum, en pietati vestrae refutationem hanc meam bullae oppositam dedico et exactissimis vestris iudiciis subiicio, ut pro pietatis vestrae beneplacito stetque cadatque tota.</s>
+					<s n="5" xml:lang="la" type="auto">Oro autem, ut hunc meum conatum animumque causae bonae vestraeque pietati devotissimum benigni accipiatis.</s>
+					<s n="6" xml:lang="la" type="auto">Alioqui fateor libere facultates meas admodum esse exiguas, vestram vero eruditionem amplissimam, ut me hanc causam longe felicius potuissetis, si quidem ita libuisset, pertractare.</s>
+					<s n="7" xml:lang="la" type="auto">At cum intellexerim hoc meo labore qualicunque me pietati vestrae gratificaturum, nolui, illa in me desideraret quicquam.</s>
+					<s n="8" xml:lang="la" type="auto">Faxit Christus dominus, ut uberrimo cum fructu multum disseram.</s>
+					<s n="9" xml:lang="la" type="auto">Salutare, quaeso, dignemini reverendos meos dominos et fratres carissimos d. Robertum Hornum, Wintoniensem episcopum, d. Edwinum Sandum, Londoniensem episcopum, d. Ioannem Parkhurstum, Nordovicensem episcopum, d. Iacobum Pilckintonum, Dunelmensem episcopum, d. item Ioannem Almerum, Samsonum, Humfredum, Leverum, Foxum et reliquos exilii quondam vestri in Helvetia et per Germaniam socios, quorum omnium precibus me commendo.</s>
+					<s n="10" xml:lang="la" type="auto">Sed et omnes ministri et fratres, qui hic sunt, vobis omnibus omnia felicia in Christo Iesu, domino nostro, precantur.</s>
+					<s n="11" xml:lang="la" type="auto">Dominus Iesus benedicat ministerio pietatis vestrae et servet ab omni malo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri mense februario anno salutis nostrae 1571.</s>
-					<s xml:lang="la" type="auto">Ad reverendissimos piissimosque et vigilantissimos inclyti regni Angliae episcopos d. Edmundum Gryndallum, archiepiscopum Eboracensem, d. Richardum Coxum, episcopum Eliensem, et d. Ioannem Iuellum, episcopum Sarisberiensem, dominos meos honorandos et fratres in Christo carissimos.</s>
+					<s n="12" xml:lang="la" type="auto">Tiguri mense februario anno salutis nostrae 1571.</s>
+					<s n="13" xml:lang="la" type="auto">Ad reverendissimos piissimosque et vigilantissimos inclyti regni Angliae episcopos d. Edmundum Gryndallum, archiepiscopum Eboracensem, d. Richardum Coxum, episcopum Eliensem, et d. Ioannem Iuellum, episcopum Sarisberiensem, dominos meos honorandos et fratres in Christo carissimos.</s>
 				</p>
 			</div>
 		</body>

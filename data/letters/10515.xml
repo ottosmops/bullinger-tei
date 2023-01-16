@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=479</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=479</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 347,52</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 347,52</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,11 +50,11 @@
 						<summary>
 							<p xml:id="regest1">
 								Der Zweck der beigelegten Erklärung der Zürcher zur Abendmahlsfrage ist aus
-								<persName ref="28">Bucers</persName> ebenfalls beiliegendem Brief ersichtlich. Da die Zürcher die
-								geheimen Beratungen, wie sie ihnen <persName ref="28">Bucer</persName> vorschlug, nicht mögen, haben
+								<persName ref="person28">Bucers</persName> ebenfalls beiliegendem Brief ersichtlich. Da die Zürcher die
+								geheimen Beratungen, wie sie ihnen <persName ref="person28">Bucer</persName> vorschlug, nicht mögen, haben
 								sie sich lieber schriftlich geäußert. Die Basler Glaubensbrüder werden ersucht, die Schrift zu prüfen und,
-								wenn sie einverstanden sind, einzeln zu unterzeichnen, damit sie <persName ref="28">Bucer</persName>
-								zugesandt werden kann. Die <placeName ref="121">Berner</placeName> wurden ebenfalls darum gebeten.
+								wenn sie einverstanden sind, einzeln zu unterzeichnen, damit sie <persName ref="person28">Bucer</persName>
+								zugesandt werden kann. Die <placeName ref="place121">Berner</placeName> wurden ebenfalls darum gebeten.
 							</p>
 						</summary>
 					</msContents>
@@ -61,70 +64,54 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10515">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<place source="place587" cert="high"/>
 					<date when="1534-11-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#28" cert="high">
-							<settlement>Basel</settlement>
-							<district>Basel-Stadt</district>
-							<country>Schweiz</country>
-							<geo>47.55839 7.57327</geo>
-						</place>
-					</roleName>
-					<place source="#28" cert="low">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<place source="place28" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10516"/>
-					<ref type="prev_chronologically" target="files.xml#10514"/>
-					<ref type="next_correspondence" target="files.xml#10523"/>
+					<ref type="next_chronologically" target="file10516"/>
+					<ref type="prev_chronologically" target="file10514"/>
+					<ref type="next_correspondence" target="file10523"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#10806"/>
+					<ref type="next_correspondence_request" target="file10806"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#10523"/>
+					<ref type="next_correspondence_reaction" target="file10523"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10518"/>
-					<ref type="prev_same_sender" target="files.xml#10366"/>
-					<ref type="next_same_addressee" target="files.xml#10518"/>
-					<ref type="prev_same_addressee" target="files.xml#10250"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10518"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10366"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10518"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10250"/>
+					<ref type="next_same_sender" target="file10518"/>
+					<ref type="prev_same_sender" target="file10366"/>
+					<ref type="next_same_addressee" target="file10518"/>
+					<ref type="prev_same_addressee" target="file10250"/>
+					<ref type="next_with_sender_as_addressee" target="file10518"/>
+					<ref type="prev_with_sender_as_addressee" target="file10366"/>
+					<ref type="next_with_addressee_as_sender" target="file10518"/>
+					<ref type="prev_with_addressee_as_sender" target="file10250"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -141,36 +128,36 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quo consilio mittant vobis fratres expositionem nostram de Sacramento eucharistiae<note xml:id="fn1" type="footnote" n="1">Gemeint ist das Zürcher Abendmahlsbekenntnis vom 22. Oktober 1534 zuhanden von A. <persName ref="19">Blarer</persName> (oben <ref target="file#10498">Nr. 463</ref>; vgl. <hi>Köhler,</hi> ZL II 346), wahrscheinlich ergänzt mit Erläuterungen, welche die <placeName ref="121">Berner</placeName> Kritik (oben <ref target="file#10512">Nr. 476</ref>) berücksichtigen. Diese Zwischenstufe vom ersten zum zweiten Bekenntnis zuhanden von <persName ref="28">Bucer</persName> (unten <ref target="file#10518">Nr. 482</ref>) ist nicht mehr erhalten. Entgegen <hi>Pestalozzi</hi> 178 kann es sich hier noch nicht um das zweite Bekenntnis selbst handeln, von welchem erst Anfang Dezember ein bereinigtes Konzept vorlag, am 5. Dezember aber noch keine Abschriften bestanden; s. unten S. 420f, Anm. 1; vgl. auch S. 414, Anm. 1.</note>, docebit huic apposita <persName ref="28">Buceri</persName> epistola<note xml:id="fn2" type="footnote" n="2"><persName ref="28">Bucer</persName> an Bullinger, 1. November 1534, oben <ref target="file#10506">Nr. 470</ref>.</note>.</s>
-					<s xml:lang="la" type="auto">Displicuit nobis nocturnus ille congressus<note xml:id="fn3" type="footnote" n="3">Gemeint ist die von <persName ref="28">Bucer</persName> vorgeschlagene nächtliche Zusammenkunft in der Nähe von <placeName ref="943">Schaffhausen</placeName>; schließlich fand sie in <placeName ref="565">Konstanz</placeName> statt, s. oben S. 392f, 86-94; vgl. <hi>Köhler,</hi> ZL II 363-366.</note>.</s>
-					<s xml:lang="la" type="auto">Scriptis placuit rem istam transigere.</s>
-					<s xml:lang="la" type="auto">Scripta porro ea hic habetis.</s>
-					<s xml:lang="la" type="auto">Si quid in his est, quod in veritatis detrimentum tendere videatur, libere indicate, et gratias vobis agemus maximas.</s>
-					<s xml:lang="la" type="auto">Hoc enim potissimum nomine istaec mittimus, deinde, quod in religionis negotio nihil sine vobis,<pb type="edition" next="414"/> charissimis fratribus nostris, agere statuimus.</s>
-					<s xml:lang="la" type="auto">Vos enim membra et viscera nostra<note xml:id="fn4" type="footnote" n="4">Vgl. Röm 12, 4f; 1 Kur 12, 26.</note> estis.</s>
-					<s xml:lang="la" type="auto">Si ergo recte iudicavimus de eucharistia, album addite calculum<note xml:id="fn5" type="footnote" n="5">gebt uns eure Zustimmung.</note>.</s>
-					<s xml:lang="la" type="auto">Addite epistolam, qua attestemini idem vos<note xml:id="fna" type="footnote" n="a">vos <hi>am Rande nachgetragen.</hi></note> nobiscum sentire subscriptis singulorum nominibus.</s>
-					<s xml:lang="la" type="auto">Cupimus autem, ut hoc e vestigio fiat, et per hunc quidem nuncium<note xml:id="fn6" type="footnote" n="6">Der Überbringer des Briefes ist nicht bekannt.</note>.</s>
-					<s xml:lang="la" type="auto">Per quem, obsecro, et expositionem hanc una cum <persName ref="28">Buceri</persName> epistola remittite.</s>
-					<s xml:lang="la" type="auto">Hoc enim expositionis exemplar <placeName ref="70">Augustam</placeName> una<note xml:id="fnb" type="footnote" n="b">una <hi>bis</hi> placeat <hi>am Rande nachgetragen.</hi></note> cum iis, quae vos reddideritis, nisi tantum subscribere placeat<note xml:id="fnc" type="footnote" n="c">una <hi>bis</hi> placeat <hi>am Rande nachgetragen.</hi></note>, <persName ref="28">Bucero</persName> mittemus.</s>
-					<s xml:lang="la" type="auto">Quod autem vobis scribimus, idem et <placeName ref="121">Bernatibus</placeName> nostris scribimus<note xml:id="fn7" type="footnote" n="7">Der Brief an die <placeName ref="121">Berner</placeName> Pfarrer ist nicht erhalten.</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Quo consilio mittant vobis fratres expositionem nostram de Sacramento eucharistiae<note xml:id="fn1" type="footnote" n="1">Gemeint ist das Zürcher Abendmahlsbekenntnis vom 22. Oktober 1534 zuhanden von A. <persName ref="person19">Blarer</persName> (oben <ref target="file10498">Nr. 463</ref>; vgl. <hi>Köhler,</hi> ZL II 346), wahrscheinlich ergänzt mit Erläuterungen, welche die <placeName ref="place121">Berner</placeName> Kritik (oben <ref target="file10512">Nr. 476</ref>) berücksichtigen. Diese Zwischenstufe vom ersten zum zweiten Bekenntnis zuhanden von <persName ref="person28">Bucer</persName> (unten <ref target="file10518">Nr. 482</ref>) ist nicht mehr erhalten. Entgegen <hi>Pestalozzi</hi> 178 kann es sich hier noch nicht um das zweite Bekenntnis selbst handeln, von welchem erst Anfang Dezember ein bereinigtes Konzept vorlag, am 5. Dezember aber noch keine Abschriften bestanden; s. unten S. 420f, Anm. 1; vgl. auch S. 414, Anm. 1.</note>, docebit huic apposita <persName ref="person28">Buceri</persName> epistola<note xml:id="fn2" type="footnote" n="2"><persName ref="person28">Bucer</persName> an Bullinger, 1. November 1534, oben <ref target="file10506">Nr. 470</ref>.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Displicuit nobis nocturnus ille congressus<note xml:id="fn3" type="footnote" n="3">Gemeint ist die von <persName ref="person28">Bucer</persName> vorgeschlagene nächtliche Zusammenkunft in der Nähe von <placeName ref="place943">Schaffhausen</placeName>; schließlich fand sie in <placeName ref="place565">Konstanz</placeName> statt, s. oben S. 392f, 86-94; vgl. <hi>Köhler,</hi> ZL II 363-366.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Scriptis placuit rem istam transigere.</s>
+					<s n="5" xml:lang="la" type="auto">Scripta porro ea hic habetis.</s>
+					<s n="6" xml:lang="la" type="auto">Si quid in his est, quod in veritatis detrimentum tendere videatur, libere indicate, et gratias vobis agemus maximas.</s>
+					<s n="7" xml:lang="la" type="auto">Hoc enim potissimum nomine istaec mittimus, deinde, quod in religionis negotio nihil sine vobis,<pb type="edition" next="414"/> charissimis fratribus nostris, agere statuimus.</s>
+					<s n="8" xml:lang="la" type="auto">Vos enim membra et viscera nostra<note xml:id="fn4" type="footnote" n="4">Vgl. Röm 12, 4f; 1Kor 12, 26.</note> estis.</s>
+					<s n="9" xml:lang="la" type="auto">Si ergo recte iudicavimus de eucharistia, album addite calculum<note xml:id="fn5" type="footnote" n="5">gebt uns eure Zustimmung.</note>.</s>
+					<s n="10" xml:lang="la" type="auto">Addite epistolam, qua attestemini idem vos<note xml:id="fna" type="footnote" n="a">vos <hi>am Rande nachgetragen.</hi></note> nobiscum sentire subscriptis singulorum nominibus.</s>
+					<s n="11" xml:lang="la" type="auto">Cupimus autem, ut hoc e vestigio fiat, et per hunc quidem nuncium<note xml:id="fn6" type="footnote" n="6">Der Überbringer des Briefes ist nicht bekannt.</note>.</s>
+					<s n="12" xml:lang="la" type="auto">Per quem, obsecro, et expositionem hanc una cum <persName ref="person28">Buceri</persName> epistola remittite.</s>
+					<s n="13" xml:lang="la" type="auto">Hoc enim expositionis exemplar <placeName ref="place70">Augustam</placeName> una<note xml:id="fnb" type="footnote" n="b">una <hi>bis</hi> placeat <hi>am Rande nachgetragen.</hi></note> cum iis, quae vos reddideritis, nisi tantum subscribere placeat<note xml:id="fnc" type="footnote" n="c">una <hi>bis</hi> placeat <hi>am Rande nachgetragen.</hi></note>, <persName ref="person28">Bucero</persName> mittemus.</s>
+					<s n="14" xml:lang="la" type="auto">Quod autem vobis scribimus, idem et <placeName ref="place121">Bernatibus</placeName> nostris scribimus<note xml:id="fn7" type="footnote" n="7">Der Brief an die <placeName ref="place121">Berner</placeName> Pfarrer ist nicht erhalten.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valete in domino, fratres charissimi.</s>
+					<s n="15" xml:lang="la" type="auto">Valete in domino, fratres charissimi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, 23. novembris 1534.</s>
+					<s n="16" xml:lang="la" type="auto">Tiguri, 23. novembris 1534.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="55">Heinrychus</persName> Bullingerus nomine omnium ministrorum verbi Tigurinae ecclesiae.</s>
+					<s n="17" xml:lang="la" type="auto">Heinrychus Bullingerus nomine omnium ministrorum verbi Tigurinae ecclesiae.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino <persName ref="154">Osvaldo Myconio</persName> caeterisque Basileiensis ecclesiae ministris.</s>
-					<s xml:lang="la" type="auto">Fratribus in domino charissimis.</s>
+					<s n="18" xml:lang="la" type="auto">Domino <persName ref="person154">Osvaldo Myconio</persName> caeterisque Basileiensis ecclesiae ministris.</s>
+					<s n="19" xml:lang="la" type="auto">Fratribus in domino charissimis.</s>
 				</p>
 			</div>
 		</body>

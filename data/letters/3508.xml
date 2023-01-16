@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4932/41</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 375,550</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 375,550</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -60,13 +63,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 91,157</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 91,157</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -80,49 +86,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3508">
 				<correspAction type="sent">
-					<persName ref="person#505" cert="high">
+					<!--
+					<persName ref="person505" cert="high">
 						<forename cert="high">John</forename>
 						<surname cert="high">Burcher</surname>
 					</persName>
-					<place source="#260" cert="high">
-						<settlement>Krakau</settlement>
-						<district>Kleinpolen</district>
-						<country>Polen</country>
-						<geo>50.06143 19.93658</geo>
-					</place>
+					-->
+					<persName ref="person505" cert="high"/>
+					<place source="place260" cert="high"/>
 					<date when="1558-02-16" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3509"/>
-					<ref type="prev_chronologically" target="files.xml#3507"/>
-					<ref type="next_correspondence" target="files.xml#3523"/>
-					<ref type="prev_correspondence" target="files.xml#3393"/>
-					<ref type="next_correspondence_request" target="files.xml#3523"/>
-					<ref type="prev_correspondence_request" target="files.xml#3393"/>
+					<ref type="next_chronologically" target="file3509"/>
+					<ref type="prev_chronologically" target="file3507"/>
+					<ref type="next_correspondence" target="file3523"/>
+					<ref type="prev_correspondence" target="file3393"/>
+					<ref type="next_correspondence_request" target="file3523"/>
+					<ref type="prev_correspondence_request" target="file3393"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#572"/>
-					<ref type="next_same_sender" target="files.xml#3523"/>
-					<ref type="prev_same_sender" target="files.xml#3393"/>
-					<ref type="next_same_addressee" target="files.xml#3510"/>
-					<ref type="prev_same_addressee" target="files.xml#3503"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3523"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3393"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3510"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3503"/>
+					<ref type="prev_correspondence_reaction" target="file572"/>
+					<ref type="next_same_sender" target="file3523"/>
+					<ref type="prev_same_sender" target="file3393"/>
+					<ref type="next_same_addressee" target="file3510"/>
+					<ref type="prev_same_addressee" target="file3503"/>
+					<ref type="next_with_sender_as_addressee" target="file3523"/>
+					<ref type="prev_with_sender_as_addressee" target="file3393"/>
+					<ref type="next_with_addressee_as_sender" target="file3510"/>
+					<ref type="prev_with_addressee_as_sender" target="file3503"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -131,125 +135,128 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="3508/Autograph/00 E_II_375__fol__550_r_.tif" n="1"/>
+		<graphic url="3508/Autograph/01 E_II_375__fol__550_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Cracoviae 16. ffebruarii 1558.</s>
+					<s n="1" xml:lang="la" type="auto">Cracoviae 16. ffebruarii 1558.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S. P. D.</s>
-					<s xml:lang="la" type="auto">Certo scio te, mi domine et amice colende, avide literas meas ex(s)pectare, per quas certior esse potes, quibus in locis versor, et ad quem finem negotia mea tendunt.</s>
-					<s xml:lang="la" type="auto">Ego hic Cracovie conor artem iis qui cervisiam/cerevisiam coquunt aperire, quorum ut minimum sunt quingenti.</s>
-					<s xml:lang="la" type="auto">Sed me impedivit adhuc privilegium, quod a Vilna indies ex(s)pecto.</s>
+					<s n="2" xml:lang="la" type="auto">S. P. D.</s>
+					<s n="3" xml:lang="la" type="auto">Certo scio te, mi domine et amice colende, avide literas meas ex(s)pectare, per quas certior esse potes, quibus in locis versor, et ad quem finem negotia mea tendunt.</s>
+					<s n="4" xml:lang="la" type="auto">Ego hic Cracovie conor artem iis qui cervisiam/cerevisiam coquunt aperire, quorum ut minimum sunt quingenti.</s>
+					<s n="5" xml:lang="la" type="auto">Sed me impedivit adhuc privilegium, quod a Vilna indies ex(s)pecto.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nam licet regia maiestas idem mihi concesserit, tamen non potuit me praesente regia sua manu subscribi et regni sigillo signari.</s>
-					<s xml:lang="la" type="auto">Sequenti enim die post concessum privilegium discessit venatum; nec ante quadragesimam statuit reverti.</s>
+					<s n="6" xml:lang="la" type="auto">Nam licet regia maiestas idem mihi concesserit, tamen non potuit me praesente regia sua manu subscribi et regni sigillo signari.</s>
+					<s n="7" xml:lang="la" type="auto">Sequenti enim die post concessum privilegium discessit venatum; nec ante quadragesimam statuit reverti.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Michi consultius videbatur proficisci Cracoviam, atque quaenam futura spes artis isthic esset experiri, quam universum tempus hoc otio Vilnę consumere.</s>
-					<s xml:lang="la" type="auto">Itaque hic nonnullos reperio qui contradicant neque possibile ęstimant, nonnullos qui lubentes artis experientiam desiderant.</s>
-					<s xml:lang="la" type="auto">Solum impedimentum est mora privilegii.</s>
+					<s n="8" xml:lang="la" type="auto">Michi consultius videbatur proficisci Cracoviam, atque quaenam futura spes artis isthic esset experiri, quam universum tempus hoc otio Vilnę consumere.</s>
+					<s n="9" xml:lang="la" type="auto">Itaque hic nonnullos reperio qui contradicant neque possibile ęstimant, nonnullos qui lubentes artis experientiam desiderant.</s>
+					<s n="10" xml:lang="la" type="auto">Solum impedimentum est mora privilegii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex(s)pecto tamen idem indies: nam statim a discessu meo ad funus matri defunctae celebrandum revertebatur maiestas regia, et meum negotium fideli perficiendum commisi; nempe d. Ioanni Mantzinsky, nobili Polono et secretario d. palatini Vilnensis.</s>
+					<s n="11" xml:lang="la" type="auto">Ex(s)pecto tamen idem indies: nam statim a discessu meo ad funus matri defunctae celebrandum revertebatur maiestas regia, et meum negotium fideli perficiendum commisi; nempe d. Ioanni Mantzinsky, nobili Polono et secretario d. palatini Vilnensis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Is se fideliter curaturum promisit, ut quum primum regia maiestas rediret, sua manu et regni sigillo signaretur et muniretur.</s>
-					<s xml:lang="la" type="auto">Is Mantzinskius anno 47 Tiguri operam dedit bonis literis, quod mihi spem dedit fidei et diligentiae eius.</s>
-					<s xml:lang="la" type="auto">D. Theodorum et humanitatem tuam probe novit: vobisque plurimam salutem impartit.</s>
+					<s n="12" xml:lang="la" type="auto">Is se fideliter curaturum promisit, ut quum primum regia maiestas rediret, sua manu et regni sigillo signaretur et muniretur.</s>
+					<s n="13" xml:lang="la" type="auto">Is Mantzinskius anno 47 Tiguri operam dedit bonis literis, quod mihi spem dedit fidei et diligentiae eius.</s>
+					<s n="14" xml:lang="la" type="auto">D. Theodorum et humanitatem tuam probe novit: vobisque plurimam salutem impartit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Atque haec de rebus meis hactenus.</s>
+					<s n="15" xml:lang="la" type="auto">Atque haec de rebus meis hactenus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Verbum dei et evangelium Iesu Christi indies magisque radices profundiores dei benefitio agit.</s>
-					<s xml:lang="la" type="auto">Neque doctorum quenquam audio, qui errores Lutheranos non abhorreat.</s>
+					<s n="16" xml:lang="la" type="auto">Verbum dei et evangelium Iesu Christi indies magisque radices profundiores dei benefitio agit.</s>
+					<s n="17" xml:lang="la" type="auto">Neque doctorum quenquam audio, qui errores Lutheranos non abhorreat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">D. Ioannes a Lasco vehementer in vinea domini laborat; neque quicquam magis inculcat quam puritatem cęnae dominicae.</s>
-					<s xml:lang="la" type="auto">Habent suos conventus et conciones sacras, sed in nobilium aedibus.</s>
+					<s n="18" xml:lang="la" type="auto">D. Ioannes a Lasco vehementer in vinea domini laborat; neque quicquam magis inculcat quam puritatem cęnae dominicae.</s>
+					<s n="19" xml:lang="la" type="auto">Habent suos conventus et conciones sacras, sed in nobilium aedibus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nullum vidi templum expurgatum, quam in sola Pinshovia, ubi primos ortus habuit verbum dei.</s>
-					<s xml:lang="la" type="auto">Fortis enim heroes Pinshoviensis, Nicolaus Olyeßniczkius, magnis laudibus certe dignus, se primus opposuit antichristo et papistis.</s>
+					<s n="20" xml:lang="la" type="auto">Nullum vidi templum expurgatum, quam in sola Pinshovia, ubi primos ortus habuit verbum dei.</s>
+					<s n="21" xml:lang="la" type="auto">Fortis enim heroes Pinshoviensis, Nicolaus Olyeßniczkius, magnis laudibus certe dignus, se primus opposuit antichristo et papistis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">D. Palatinus Vilnensis in domo sua habet conciones sacras, baptismum et coenam dominicam, quo veniunt multi cives Vilnenses.</s>
-					<s xml:lang="la" type="auto">Solus inter principes Poloniae aestus et labores vineae dominicae portat.</s>
+					<s n="22" xml:lang="la" type="auto">D. Palatinus Vilnensis in domo sua habet conciones sacras, baptismum et coenam dominicam, quo veniunt multi cives Vilnenses.</s>
+					<s n="23" xml:lang="la" type="auto">Solus inter principes Poloniae aestus et labores vineae dominicae portat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Male tamen audit, quod patrocinetur Iudeis, a quibus se muneribus permittit corrumpi, ut aiunt.</s>
-					<s xml:lang="la" type="auto">Quod si verum fuerit, certe non parvum scandalum pariet verbo dei.</s>
+					<s n="24" xml:lang="la" type="auto">Male tamen audit, quod patrocinetur Iudeis, a quibus se muneribus permittit corrumpi, ut aiunt.</s>
+					<s n="25" xml:lang="la" type="auto">Quod si verum fuerit, certe non parvum scandalum pariet verbo dei.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Utinam posset admoneri, ut sibi et evangelio Iesu Christi posset consuli!</s>
+					<s n="26" xml:lang="la" type="auto">Utinam posset admoneri, ut sibi et evangelio Iesu Christi posset consuli!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De gente Polonica et Lithuanica, eorum moribus et ritibus, multa essent scribenda, quae differo in reditum meum ad vos.</s>
-					<s xml:lang="la" type="auto">Hoc tamen de religionibus eorum placuit addere.</s>
+					<s n="27" xml:lang="la" type="auto">De gente Polonica et Lithuanica, eorum moribus et ritibus, multa essent scribenda, quae differo in reditum meum ad vos.</s>
+					<s n="28" xml:lang="la" type="auto">Hoc tamen de religionibus eorum placuit addere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">In Polonia Iudei, papistae, et evangelici sunt: in Lithuania praeter hos Armeni, Tartari, Russi, Turci, Moscovitae.</s>
-					<s xml:lang="la" type="auto">Tartari deum creatorem coeli et terrae agnoscunt, sed praeterea solem, lunam, et stellas adorant.</s>
-					<s xml:lang="la" type="auto">Turcarum fides et religio tibi nota existit.</s>
+					<s n="29" xml:lang="la" type="auto">In Polonia Iudei, papistae, et evangelici sunt: in Lithuania praeter hos Armeni, Tartari, Russi, Turci, Moscovitae.</s>
+					<s n="30" xml:lang="la" type="auto">Tartari deum creatorem coeli et terrae agnoscunt, sed praeterea solem, lunam, et stellas adorant.</s>
+					<s n="31" xml:lang="la" type="auto">Turcarum fides et religio tibi nota existit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Armeni, Russi, Moscovitae, Graecam habent religionem et fidem: patriarcham Constantinopolitanum supremum agnoscunt, hoc papistis feliciores quod communionem sub utraque spetie et coniugium sacerdotum detinent.</s>
-					<s xml:lang="la" type="auto">Item nulla alia quam veteri Rutenorum lingua sacra sua peragunt.</s>
+					<s n="32" xml:lang="la" type="auto">Armeni, Russi, Moscovitae, Graecam habent religionem et fidem: patriarcham Constantinopolitanum supremum agnoscunt, hoc papistis feliciores quod communionem sub utraque spetie et coniugium sacerdotum detinent.</s>
+					<s n="33" xml:lang="la" type="auto">Item nulla alia quam veteri Rutenorum lingua sacra sua peragunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pictas, non sculptas imagines in templis admittunt; sed candelis praefixis aeque eas atque papistae venerantur et adorant.</s>
-					<s xml:lang="la" type="auto">Templum in tres partes dividitur, supremam, mediam, et infimam.</s>
+					<s n="34" xml:lang="la" type="auto">Pictas, non sculptas imagines in templis admittunt; sed candelis praefixis aeque eas atque papistae venerantur et adorant.</s>
+					<s n="35" xml:lang="la" type="auto">Templum in tres partes dividitur, supremam, mediam, et infimam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Supremam sanctum sanctorum, ut Iudei, vocant: isthic nemo quam sacerdos et diaconus ingreditur.</s>
-					<s xml:lang="la" type="auto">In media parte plebs est, quae pura a coniugali munere sit: in infima parte sedent qui ea nocte carnali copula iuncti sunt, quibus non liceat ingredi medium templi priusquam sacerdos induxerit.</s>
-					<s xml:lang="la" type="auto">Stantes orant, atque ad instar monachorum capite usque ad terram ipsam declinantes: signant se in modum crucis, iis verbis replicatis, Gospodi pomiluynaß, quod est Kyrieleyson, affatimque se signant et incurvant.</s>
-					<s xml:lang="la" type="auto">Si quis eorum ritus deriserit, statim eiiciunt templo atque locum in quo steterit verrent et mundant.</s>
+					<s n="36" xml:lang="la" type="auto">Supremam sanctum sanctorum, ut Iudei, vocant: isthic nemo quam sacerdos et diaconus ingreditur.</s>
+					<s n="37" xml:lang="la" type="auto">In media parte plebs est, quae pura a coniugali munere sit: in infima parte sedent qui ea nocte carnali copula iuncti sunt, quibus non liceat ingredi medium templi priusquam sacerdos induxerit.</s>
+					<s n="38" xml:lang="la" type="auto">Stantes orant, atque ad instar monachorum capite usque ad terram ipsam declinantes: signant se in modum crucis, iis verbis replicatis, Gospodi pomiluynaß, quod est Kyrieleyson, affatimque se signant et incurvant.</s>
+					<s n="39" xml:lang="la" type="auto">Si quis eorum ritus deriserit, statim eiiciunt templo atque locum in quo steterit verrent et mundant.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Mortuos suos cum magno clamore et eiaculatu sepeliunt, quos calceis et vestibus novis induunt; ad caput duo aut vini aut cer(e)visiae canthara ponunt; insuper literas a sacerdote et a suis medium grossum accipit; pecuniam et literas d. Petro representat, ut confestim ianitor coeli portas ei patefaciat.</s>
+					<s n="40" xml:lang="la" type="auto">Mortuos suos cum magno clamore et eiaculatu sepeliunt, quos calceis et vestibus novis induunt; ad caput duo aut vini aut cer(e)visiae canthara ponunt; insuper literas a sacerdote et a suis medium grossum accipit; pecuniam et literas d. Petro representat, ut confestim ianitor coeli portas ei patefaciat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nullam concionem, nullam doctrinam admittunt, suisque ritibus aeque haerent ac papistae mordacissime.</s>
-					<s xml:lang="la" type="auto">In Moscovia excitavit deus alterum Lutherum, aut potius Zvinglium.</s>
+					<s n="41" xml:lang="la" type="auto">Nullam concionem, nullam doctrinam admittunt, suisque ritibus aeque haerent ac papistae mordacissime.</s>
+					<s n="42" xml:lang="la" type="auto">In Moscovia excitavit deus alterum Lutherum, aut potius Zvinglium.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Is admonuit eos errorum: atque propter veritatem captus debuit comburi, nisi magnus dominus Moschoviae impedivisset.</s>
-					<s xml:lang="la" type="auto">Nam quum accusationes eius ab episcopis suis ad eum deferrentur, non iudicavit eum morte dignum, precepitque ut carcere dimitteretur; qui dimissus una cum aliis sibi adiunctis monachis in Lithuaniam venit.</s>
-					<s xml:lang="la" type="auto">A palatino Vilnensi perhumaniter acceptus est.</s>
+					<s n="43" xml:lang="la" type="auto">Is admonuit eos errorum: atque propter veritatem captus debuit comburi, nisi magnus dominus Moschoviae impedivisset.</s>
+					<s n="44" xml:lang="la" type="auto">Nam quum accusationes eius ab episcopis suis ad eum deferrentur, non iudicavit eum morte dignum, precepitque ut carcere dimitteretur; qui dimissus una cum aliis sibi adiunctis monachis in Lithuaniam venit.</s>
+					<s n="45" xml:lang="la" type="auto">A palatino Vilnensi perhumaniter acceptus est.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tandem a Rutenorum duce vocatus promovet in gentem illam ipsissimam veritatem.</s>
+					<s n="46" xml:lang="la" type="auto">Tandem a Rutenorum duce vocatus promovet in gentem illam ipsissimam veritatem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Confessionem suam aedidit, nostrae fidei in omnibus plane consonam.</s>
-					<s xml:lang="la" type="auto">Promisit quidam se eandem mihi missurum, quod si fecerit, tibi aut deferam aut mittam.</s>
-					<s xml:lang="la" type="auto">Summas debemus omnipotenti deo gratias, qui per spiritum suum sanctum, nulla mediante doctrina humana, etiam Graecis regnum filii sui et veritatis aperuit.</s>
-					<s xml:lang="la" type="auto">Nam iste Latinam linguam, atque omnem aliam in qua nostro tempore placuit deus revelare filium suum, penitus ignorat.</s>
-					<s xml:lang="la" type="auto">Nova haec sunt.</s>
+					<s n="47" xml:lang="la" type="auto">Confessionem suam aedidit, nostrae fidei in omnibus plane consonam.</s>
+					<s n="48" xml:lang="la" type="auto">Promisit quidam se eandem mihi missurum, quod si fecerit, tibi aut deferam aut mittam.</s>
+					<s n="49" xml:lang="la" type="auto">Summas debemus omnipotenti deo gratias, qui per spiritum suum sanctum, nulla mediante doctrina humana, etiam Graecis regnum filii sui et veritatis aperuit.</s>
+					<s n="50" xml:lang="la" type="auto">Nam iste Latinam linguam, atque omnem aliam in qua nostro tempore placuit deus revelare filium suum, penitus ignorat.</s>
+					<s n="51" xml:lang="la" type="auto">Nova haec sunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Russiam invaserunt Tartari iam ante paucos dies, atque ultra quingentos pagos et villas depraedarunt et depopularunt.</s>
-					<s xml:lang="la" type="auto">Captivos abduxerant cum infinita praeda ad numerum, ut fertur, triginta millium, virorum, mulierum, et infantium.</s>
-					<s xml:lang="la" type="auto">Redierunt illesi, neque quicquam haec gens ea re movetur.</s>
+					<s n="52" xml:lang="la" type="auto">Russiam invaserunt Tartari iam ante paucos dies, atque ultra quingentos pagos et villas depraedarunt et depopularunt.</s>
+					<s n="53" xml:lang="la" type="auto">Captivos abduxerant cum infinita praeda ad numerum, ut fertur, triginta millium, virorum, mulierum, et infantium.</s>
+					<s n="54" xml:lang="la" type="auto">Redierunt illesi, neque quicquam haec gens ea re movetur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quarta die decembris praeterita in itinere nostro Vilnam versus vidi mirabilem solis aspectum et formam.</s>
-					<s xml:lang="la" type="auto">Neque id solus vidi, sed socii etiam itineris mei, d. Guilhelmus Barlo, et d. Georgius Niger, Francisci Nigri filius, una viderant.</s>
-					<s xml:lang="la" type="auto">Eo die ante horas tres exivimus hospitium.</s>
-					<s xml:lang="la" type="auto">Inter equitandum, saepius iam versus austrum, iam versus occasum, iam versus septentrionem, ortus est splendor magnus ad formam orientis solis, idque ex nubibus: nam nubes obduxerant coelum.</s>
-					<s xml:lang="la" type="auto">Tandem, depulsis omnibus nubibus, claro et sereno coelo adoritur sol, qui radios occidentem versus ad instar cometae miserat; utrinque apparuerat columna sub fusca, preterquam quod solem versus splendor aliquis eis in modum iridis inffulserat.</s>
-					<s xml:lang="la" type="auto">Occidentem versus desinebant in pyramidem, neque facile evanescebat iste aspectus; sed firmiter per tres integras horas duravit.</s>
-					<s xml:lang="la" type="auto">Haec me admonebat certe de adventu filii dei, quem certo propediem venturum spero.</s>
-					<s xml:lang="la" type="auto">Dominus concedat gratiam, ut resipiscamus atque cum fiducia eum expectemus!</s>
-					<s xml:lang="la" type="auto">Bene vale.</s>
+					<s n="55" xml:lang="la" type="auto">Quarta die decembris praeterita in itinere nostro Vilnam versus vidi mirabilem solis aspectum et formam.</s>
+					<s n="56" xml:lang="la" type="auto">Neque id solus vidi, sed socii etiam itineris mei, d. Guilhelmus Barlo, et d. Georgius Niger, Francisci Nigri filius, una viderant.</s>
+					<s n="57" xml:lang="la" type="auto">Eo die ante horas tres exivimus hospitium.</s>
+					<s n="58" xml:lang="la" type="auto">Inter equitandum, saepius iam versus austrum, iam versus occasum, iam versus septentrionem, ortus est splendor magnus ad formam orientis solis, idque ex nubibus: nam nubes obduxerant coelum.</s>
+					<s n="59" xml:lang="la" type="auto">Tandem, depulsis omnibus nubibus, claro et sereno coelo adoritur sol, qui radios occidentem versus ad instar cometae miserat; utrinque apparuerat columna sub fusca, preterquam quod solem versus splendor aliquis eis in modum iridis inffulserat.</s>
+					<s n="60" xml:lang="la" type="auto">Occidentem versus desinebant in pyramidem, neque facile evanescebat iste aspectus; sed firmiter per tres integras horas duravit.</s>
+					<s n="61" xml:lang="la" type="auto">Haec me admonebat certe de adventu filii dei, quem certo propediem venturum spero.</s>
+					<s n="62" xml:lang="la" type="auto">Dominus concedat gratiam, ut resipiscamus atque cum fiducia eum expectemus!</s>
+					<s n="63" xml:lang="la" type="auto">Bene vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Burcherus.</s>
+					<s n="64" xml:lang="la" type="auto">Tuus Burcherus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse fehlt.]</note>

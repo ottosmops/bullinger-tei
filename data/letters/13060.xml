@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3011</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3011</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,247</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,247</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -75,46 +78,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13060">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="high">
+					<!--
+					<persName ref="person392" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#257" cert="low">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="high"/>
+					<place source="place257" cert="low"/>
 					<date when="1547-09-11" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13061"/>
-					<ref type="prev_chronologically" target="files.xml#13059"/>
-					<ref type="next_correspondence" target="files.xml#13062"/>
-					<ref type="prev_correspondence" target="files.xml#13047"/>
-					<ref type="next_correspondence_request" target="files.xml#13062"/>
-					<ref type="prev_correspondence_request" target="files.xml#13044"/>
-					<ref type="next_correspondence_reaction" target="files.xml#13063"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#13047"/>
-					<ref type="next_same_sender" target="files.xml#13062"/>
-					<ref type="prev_same_sender" target="files.xml#13044"/>
-					<ref type="next_same_addressee" target="files.xml#13063"/>
-					<ref type="prev_same_addressee" target="files.xml#13053"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13062"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13044"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13063"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13053"/>
+					<ref type="next_chronologically" target="file13061"/>
+					<ref type="prev_chronologically" target="file13059"/>
+					<ref type="next_correspondence" target="file13062"/>
+					<ref type="prev_correspondence" target="file13047"/>
+					<ref type="next_correspondence_request" target="file13062"/>
+					<ref type="prev_correspondence_request" target="file13044"/>
+					<ref type="next_correspondence_reaction" target="file13063"/>
+					<ref type="prev_correspondence_reaction" target="file13047"/>
+					<ref type="next_same_sender" target="file13062"/>
+					<ref type="prev_same_sender" target="file13044"/>
+					<ref type="next_same_addressee" target="file13063"/>
+					<ref type="prev_same_addressee" target="file13053"/>
+					<ref type="next_with_sender_as_addressee" target="file13062"/>
+					<ref type="prev_with_sender_as_addressee" target="file13044"/>
+					<ref type="next_with_addressee_as_sender" target="file13063"/>
+					<ref type="prev_with_addressee_as_sender" target="file13053"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -132,27 +139,27 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Fr[untlicher] l[ieber] br[uͦder], es hat min gnädiger herr grauff Jorg<note xml:id="fn1" type="footnote" n="1">Georg von Württemberg-Mömpelgard. - Er befand sich damals auf Besuch in Zürich, während er seinen Diener nach Konstanz gesandt hatte; s. <ref target="file#13063">Nr. 3014</ref>,<qv>zl17282-2</qv>.</note> ain diener<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> hie gehapt mitt ainem schreiben an mich, dem ich in höchster yl antwurt[en]<note xml:id="fnb" type="footnote" n="b"><hi>Hier und unten Textverlust durch Papierverlust.</hi></note> muͤssen des predigens und anderer meiner geschefft halber.</s>
-					<s xml:lang="de" type="auto">Hab ich angezögt, was ich diser zeyt neuws waiß.</s>
-					<s xml:lang="de" type="auto">Achten, euch n[it] verhalten<note xml:id="fn3" type="footnote" n="3">vorenthalten.</note> belyben.</s>
-					<s xml:lang="de" type="auto">Kan euch glatt<note xml:id="fn4" type="footnote" n="4">überhaupt.</note> nichts schriben.</s>
+					<s n="1" xml:lang="de" type="auto">Fr[untlicher] l[ieber] br[uͦder], es hat min gnädiger herr grauff Jorg<note xml:id="fn1" type="footnote" n="1">Georg von Württemberg-Mömpelgard. - Er befand sich damals auf Besuch in Zürich, während er seinen Diener nach Konstanz gesandt hatte; s. <ref target="file13063">Nr. 3014</ref>,<qv>zl17282-2</qv>.</note> ain diener<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> hie gehapt mitt ainem schreiben an mich, dem ich in höchster yl antwurt[en]<note xml:id="fnb" type="footnote" n="b"><hi>Hier und unten Textverlust durch Papierverlust.</hi></note> muͤssen des predigens und anderer meiner geschefft halber.</s>
+					<s n="2" xml:lang="de" type="auto">Hab ich angezögt, was ich diser zeyt neuws waiß.</s>
+					<s n="3" xml:lang="de" type="auto">Achten, euch n[it] verhalten<note xml:id="fn3" type="footnote" n="3">vorenthalten.</note> belyben.</s>
+					<s n="4" xml:lang="de" type="auto">Kan euch glatt<note xml:id="fn4" type="footnote" n="4">überhaupt.</note> nichts schriben.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="de" type="auto">Bedanck mich zum allerbesten und höchsten ewers fleyssigen schriben[s].<note xml:id="fn5" type="footnote" n="5">Ein nicht erhaltener Brief Bullingers, wie es aus dem folgenden Satz hervorgeht.</note></s>
-					<s xml:lang="de" type="auto">Ewer warnung halber, das man uffsechen<note xml:id="fn6" type="footnote" n="6">Acht.</note> söllte haben, was herin<note xml:id="fn7" type="footnote" n="7">Nach Konstanz.</note> oder durchgefuͤrt wurde, bitt ich zum höchsten, mich zu verstendigen, warum sölichs beschechen; so kan man dest baß acht haben.<note xml:id="fn8" type="footnote" n="8">dest baß acht haben: umso besser auf der Hut sein.</note><pb type="edition" next="474"/></s>
+					<s n="5" xml:lang="de" type="auto">Bedanck mich zum allerbesten und höchsten ewers fleyssigen schriben[s].<note xml:id="fn5" type="footnote" n="5">Ein nicht erhaltener Brief Bullingers, wie es aus dem folgenden Satz hervorgeht.</note></s>
+					<s n="6" xml:lang="de" type="auto">Ewer warnung halber, das man uffsechen<note xml:id="fn6" type="footnote" n="6">Acht.</note> söllte haben, was herin<note xml:id="fn7" type="footnote" n="7">Nach Konstanz.</note> oder durchgefuͤrt wurde, bitt ich zum höchsten, mich zu verstendigen, warum sölichs beschechen; so kan man dest baß acht haben.<note xml:id="fn8" type="footnote" n="8">dest baß acht haben: umso besser auf der Hut sein.</note><pb type="edition" next="474"/></s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="de" type="auto">Bittend gott trulich, trulich fuͤr uns!</s>
-					<s xml:lang="de" type="auto">In hochster yl, den 11. septembris, nach zway uren, vor der aubend predig, 1547.</s>
-					<s xml:lang="la" type="auto">Tuus A. Bl.</s>
+					<s n="7" xml:lang="de" type="auto">Bittend gott trulich, trulich fuͤr uns!</s>
+					<s n="8" xml:lang="de" type="auto">In hochster yl, den 11. septembris, nach zway uren, vor der aubend predig, 1547.</s>
+					<s n="9" xml:lang="la" type="auto">Tuus A. Bl.</s>
 				</p>
 				<p>
 					<note>[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">An meis[ter Heinrich]<note xml:id="fnc" type="footnote" n="c"><hi>Die zweite Hälfte der Adresse fehlt, da der untere, wohl leergebliebene Teil des Blattes, auf dessen Rectoseite vorliegendes Brieflein abgeschrieben worden war, zur Wiederverwendung abgeschnitten wurde. Die Ergänzungen wurden in Anlehnung an zahlreiche frühere Briefe Blarers an Bullinger konjiziert.</hi></note> Bulling[er zuͦ Zuͤrich].</s>
+					<s n="10" xml:lang="de" type="auto">An meis[ter Heinrich]<note xml:id="fnc" type="footnote" n="c"><hi>Die zweite Hälfte der Adresse fehlt, da der untere, wohl leergebliebene Teil des Blattes, auf dessen Rectoseite vorliegendes Brieflein abgeschrieben worden war, zur Wiederverwendung abgeschnitten wurde. Die Ergänzungen wurden in Anlehnung an zahlreiche frühere Briefe Blarers an Bullinger konjiziert.</hi></note> Bulling[er zuͦ Zuͤrich].</s>
 				</p>
 			</div>
 		</body>

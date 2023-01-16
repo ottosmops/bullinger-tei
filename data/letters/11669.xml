@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2006"/>
-				<idno type="ISBN">ISBN 978-3-290-17431-6</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1626</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17431-6</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1626</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 12</title>
+				<title subtype="publication">HBBW XII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">12</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343a,239</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343a,239</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,14 +49,14 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Hofft zusammen mit seinen Kollegen auf baldige Genesung von <persName ref="32">Bullinger</persName>, Leo [<persName ref="114">Jud</persName>] und weiteren Zürchern;
-								Theodor [<persName ref="14">Bibliander</persName>] und auch <persName ref="32">Bullinger</persName> selbst, der kaum zu ersetzen wäre, sollten sich um der Kirche willen
-								schonen. Verweist auf einen weiteren Brief der <placeName ref="764">Neuenburger</placeName>
-								[<ref target="file#11665">Nr. 1622</ref>]. Die Reichsstädte bedauern die Uneinigkeit der Eidgenossen; sie
+								Hofft zusammen mit seinen Kollegen auf baldige Genesung von <persName ref="person32">Bullinger</persName>, Leo [<persName ref="person114">Jud</persName>] und weiteren Zürchern;
+								Theodor [<persName ref="person14">Bibliander</persName>] und auch <persName ref="person32">Bullinger</persName> selbst, der kaum zu ersetzen wäre, sollten sich um der Kirche willen
+								schonen. Verweist auf einen weiteren Brief der <placeName ref="place764">Neuenburger</placeName>
+								[<ref target="file11665">Nr. 1622</ref>]. Die Reichsstädte bedauern die Uneinigkeit der Eidgenossen; sie
 								selbst werden ebenso von den Fürsten und deren Verbündeten bedrängt wie die Eidgenossen
 								vor<pb type="edition" next="82"/> Abschluss ihrer Bündnisse; über ihre Absichten gibt es nur Gerüchte. Legt die
 								Rede bei, die der französische Gesandte [Franc¸ois Olivier] [am Reichstag zu
-								<placeName ref="1001">Speyer</placeName>] gehalten hat. Grüße.
+								<placeName ref="place1001">Speyer</placeName>] gehalten hat. Grüße.
 							</p>
 						</summary>
 					</msContents>
@@ -63,46 +66,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11669">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1542-04-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11670"/>
-					<ref type="prev_chronologically" target="files.xml#11668"/>
-					<ref type="next_correspondence" target="files.xml#11673"/>
-					<ref type="prev_correspondence" target="files.xml#11664"/>
-					<ref type="next_correspondence_request" target="files.xml#11673"/>
-					<ref type="prev_correspondence_request" target="files.xml#11663"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11876"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11664"/>
-					<ref type="next_same_sender" target="files.xml#11673"/>
-					<ref type="prev_same_sender" target="files.xml#11663"/>
-					<ref type="next_same_addressee" target="files.xml#11677"/>
-					<ref type="prev_same_addressee" target="files.xml#11664"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11673"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11663"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11677"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11664"/>
+					<ref type="next_chronologically" target="file11670"/>
+					<ref type="prev_chronologically" target="file11668"/>
+					<ref type="next_correspondence" target="file11673"/>
+					<ref type="prev_correspondence" target="file11664"/>
+					<ref type="next_correspondence_request" target="file11673"/>
+					<ref type="prev_correspondence_request" target="file11663"/>
+					<ref type="next_correspondence_reaction" target="file11876"/>
+					<ref type="prev_correspondence_reaction" target="file11664"/>
+					<ref type="next_same_sender" target="file11673"/>
+					<ref type="prev_same_sender" target="file11663"/>
+					<ref type="next_same_addressee" target="file11677"/>
+					<ref type="prev_same_addressee" target="file11664"/>
+					<ref type="next_with_sender_as_addressee" target="file11673"/>
+					<ref type="prev_with_sender_as_addressee" target="file11663"/>
+					<ref type="next_with_addressee_as_sender" target="file11677"/>
+					<ref type="prev_with_addressee_as_sender" target="file11664"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -119,48 +127,48 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Doleo multo aliter, quam dici queat, propter te, Leonem<note xml:id="fn1" type="footnote" n="1"><persName ref="114">Leo Jud</persName>.</note> et reliquos<note xml:id="fn2" type="footnote" n="2">Vgl. die Nachrichten über die Erkrankung mehrerer Zürcher Theologen in Bullingers Brief an <persName ref="154">Myconius</persName> vom 19. April (oben <ref target="file#11664">Nr. 1621</ref>, 4-13).</note>.</s>
-					<s xml:lang="la" type="auto"><persName ref="14">Theodoro</persName> proxime scripsi<note xml:id="fn3" type="footnote" n="3">Ein entsprechender Brief an <persName ref="14">Theodor Bibliander</persName> ist nicht erhalten.</note> per Christophorum<note xml:id="fn4" type="footnote" n="4">Gemeint ist wohl <persName ref="1959">Christoph Rotacher</persName>, vgl. oben <ref target="file#11663">Nr. 1620</ref>, 1-12.</note> et adhortatus sum ut antea sępe, sibi parcat propter ecclesiam, si aliter nolit; novi enim, quam in usum publicum libenter laboret, quare vellem, ut sui curam haberet talem, ut illud posset quam diutissime.</s>
-					<s xml:lang="la" type="auto">Eius imbecillitas multis dolet fratribus, similiter et <persName ref="114">Iudae</persName>; precantur itaque, ut dominus ipsis adsit per omnia.</s>
-					<s xml:lang="la" type="auto">De te equidem diutius ignoravi, quam par fuit; credo, quod nemo libenter me perturbare voluerit alioqui propter varios casus mundi perturbatissimum.</s>
-					<s xml:lang="la" type="auto">Sed ago tibi gratias, quod de restitutione certiorem me reddideris, et precor una cum fratribus dominum, ut te in primis restituat in totum, prout hęc tempora requirunt.</s>
-					<s xml:lang="la" type="auto"><persName ref="14">Theodorum</persName>, si ego loco tuo essem, cogerem, ut valetudini suę diligentius provideret.</s>
-					<s xml:lang="la" type="auto">Quid enim efficiet, si laborando se absumpserit?</s>
-					<s xml:lang="la" type="auto">Te item velim admonitum, ut curam tui gereres diligentiorem propter miseram ecclesiam, quę adhuc est tam imbecillis.</s>
-					<s xml:lang="la" type="auto">Si abires ad dominum, quisnam successurus esset?</s>
-					<s xml:lang="la" type="auto">Habetis praeclara ingenio, non nego, verum ita carnalia, ut non videam, qualiter in tempestatibus spiritualibus possent perdurare.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Doleo multo aliter, quam dici queat, propter te, Leonem<note xml:id="fn1" type="footnote" n="1"><persName ref="person114">Leo Jud</persName>.</note> et reliquos<note xml:id="fn2" type="footnote" n="2">Vgl. die Nachrichten über die Erkrankung mehrerer Zürcher Theologen in Bullingers Brief an <persName ref="person154">Myconius</persName> vom 19. April (oben <ref target="file11664">Nr. 1621</ref>, 4-13).</note>.</s>
+					<s n="3" xml:lang="la" type="auto"><persName ref="person14">Theodoro</persName> proxime scripsi<note xml:id="fn3" type="footnote" n="3">Ein entsprechender Brief an <persName ref="person14">Theodor Bibliander</persName> ist nicht erhalten.</note> per Christophorum<note xml:id="fn4" type="footnote" n="4">Gemeint ist wohl <persName ref="person1959">Christoph Rotacher</persName>, vgl. oben <ref target="file11663">Nr. 1620</ref>, 1-12.</note> et adhortatus sum ut antea sępe, sibi parcat propter ecclesiam, si aliter nolit; novi enim, quam in usum publicum libenter laboret, quare vellem, ut sui curam haberet talem, ut illud posset quam diutissime.</s>
+					<s n="4" xml:lang="la" type="auto">Eius imbecillitas multis dolet fratribus, similiter et <persName ref="person114">Iudae</persName>; precantur itaque, ut dominus ipsis adsit per omnia.</s>
+					<s n="5" xml:lang="la" type="auto">De te equidem diutius ignoravi, quam par fuit; credo, quod nemo libenter me perturbare voluerit alioqui propter varios casus mundi perturbatissimum.</s>
+					<s n="6" xml:lang="la" type="auto">Sed ago tibi gratias, quod de restitutione certiorem me reddideris, et precor una cum fratribus dominum, ut te in primis restituat in totum, prout hęc tempora requirunt.</s>
+					<s n="7" xml:lang="la" type="auto"><persName ref="person14">Theodorum</persName>, si ego loco tuo essem, cogerem, ut valetudini suę diligentius provideret.</s>
+					<s n="8" xml:lang="la" type="auto">Quid enim efficiet, si laborando se absumpserit?</s>
+					<s n="9" xml:lang="la" type="auto">Te item velim admonitum, ut curam tui gereres diligentiorem propter miseram ecclesiam, quę adhuc est tam imbecillis.</s>
+					<s n="10" xml:lang="la" type="auto">Si abires ad dominum, quisnam successurus esset?</s>
+					<s n="11" xml:lang="la" type="auto">Habetis praeclara ingenio, non nego, verum ita carnalia, ut non videam, qualiter in tempestatibus spiritualibus possent perdurare.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominus te protegat semper.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="12" xml:lang="la" type="auto">Dominus te protegat semper.</s>
+					<s n="13" xml:lang="la" type="manual">Amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Novocomenses iterum<note xml:id="fna" type="footnote" n="a"><hi>Korrigiert aus</hi> item.</note> scribunt<note xml:id="fn5" type="footnote" n="5"><persName ref="154">Myconius</persName> bezieht sich wohl auf den Brief <persName ref="60">Farels</persName> vom 19. April (oben <ref target="file#11665">Nr. 1622</ref>).</note>; quid sit, nescio.</s>
+					<s n="14" xml:lang="la" type="auto">Novocomenses iterum<note xml:id="fna" type="footnote" n="a"><hi>Korrigiert aus</hi> item.</note> scribunt<note xml:id="fn5" type="footnote" n="5"><persName ref="person154">Myconius</persName> bezieht sich wohl auf den Brief <persName ref="person60">Farels</persName> vom 19. April (oben <ref target="file11665">Nr. 1622</ref>).</note>; quid sit, nescio.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Non dubito, quin scias, quo loco sint civitates imperiales et liberę; queruntur anxie apud se non esse concordes <placeName ref="196">Helvetios</placeName>, nescio quid tentaturę.</s>
+					<s n="15" xml:lang="la" type="auto">Non dubito, quin scias, quo loco sint civitates imperiales et liberę; queruntur anxie apud se non esse concordes <placeName ref="place196">Helvetios</placeName>, nescio quid tentaturę.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Premuntur non minus a principibus electoribus quam populus noster olim ante foedera<note xml:id="fn6" type="footnote" n="6">D. h. vor der Gründung der Eidgenossenschaft. - Zur Unzufriedenheit der Städte über ihre Behandlung durch die Fürsten vgl. bereits oben <ref target="file#11662">Nr. 1619</ref>, 13-20.</note>.</s>
-					<s xml:lang="la" type="auto">Adiungunt illi sibi pfaffos, monachos, monarchas (forsitan per dominum), ut clarius sit, quam civitates vilifaciant.</s>
-					<s xml:lang="la" type="auto">Rumores feruntur, quorum author ego nolim esse.</s>
+					<s n="16" xml:lang="la" type="auto">Premuntur non minus a principibus electoribus quam populus noster olim ante foedera<note xml:id="fn6" type="footnote" n="6">D. h. vor der Gründung der Eidgenossenschaft. - Zur Unzufriedenheit der Städte über ihre Behandlung durch die Fürsten vgl. bereits oben <ref target="file11662">Nr. 1619</ref>, 13-20.</note>.</s>
+					<s n="17" xml:lang="la" type="auto">Adiungunt illi sibi pfaffos, monachos, monarchas (forsitan per dominum), ut clarius sit, quam civitates vilifaciant.</s>
+					<s n="18" xml:lang="la" type="auto">Rumores feruntur, quorum author ego nolim esse.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Mitto orationem legati<note xml:id="fn7" type="footnote" n="7">Bei der (nicht mehr vorhandenen) Beilage handelte es sich wohl um die Kurzfassung der Rede, die der französische Gesandte François Olivier am 14. Februar am Reichstag zu <placeName ref="1001">Speyer</placeName> gehalten hatte. Bullinger hatte bereits eine Abschrift aus <placeName ref="565">Konstanz</placeName> erhalten (s. oben <ref target="file#11656">Nr. 1613</ref>, 56-61; 1616, 30-34).</note>, si forsitan non vidisti, ut scias conatum Galli<note xml:id="fn8" type="footnote" n="8"><persName ref="859">Franz</persName> I., französischer <persName ref="859">König</persName>.</note>.</s>
-					<s xml:lang="la" type="auto">Potest esse usui, si quis recte usurparit.</s>
+					<s n="19" xml:lang="la" type="auto">Mitto orationem legati<note xml:id="fn7" type="footnote" n="7">Bei der (nicht mehr vorhandenen) Beilage handelte es sich wohl um die Kurzfassung der Rede, die der französische Gesandte François Olivier am 14. Februar am Reichstag zu <placeName ref="place1001">Speyer</placeName> gehalten hatte. Bullinger hatte bereits eine Abschrift aus <placeName ref="place565">Konstanz</placeName> erhalten (s. oben <ref target="file11656">Nr. 1613</ref>, 56-61; 1616, 30-34).</note>, si forsitan non vidisti, ut scias conatum Galli<note xml:id="fn8" type="footnote" n="8"><persName ref="person859">Franz I.</persName>, französischer König.</note>.</s>
+					<s n="20" xml:lang="la" type="auto">Potest esse usui, si quis recte usurparit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ego abeo in ędem capitularem<note xml:id="fn9" type="footnote" n="9">Gemeint ist das 1528 erbaute Kapitelhaus der Domherren (Münsterplatz 8).</note>, quare vale in Christo Iesu cum tuis, <persName ref="14">Theodoro</persName>, Pellicano, Leone, <persName ref="145">Gasparo</persName><note xml:id="fn10" type="footnote" n="10"><persName ref="145">Kaspar Megander</persName>.</note>, omnibus.</s>
-					<s xml:lang="la" type="auto">Fiat, fiat.<pb type="edition" next="83"/></s>
+					<s n="21" xml:lang="la" type="auto">Ego abeo in ędem capitularem<note xml:id="fn9" type="footnote" n="9">Gemeint ist das 1528 erbaute Kapitelhaus der Domherren (Münsterplatz 8).</note>, quare vale in Christo Iesu cum tuis, <persName ref="person14">Theodoro</persName>, Pellicano, Leone, <persName ref="person145">Gasparo</persName><note xml:id="fn10" type="footnote" n="10"><persName ref="person145">Kaspar Megander</persName>.</note>, omnibus.</s>
+					<s n="22" xml:lang="la" type="auto">Fiat, fiat.<pb type="edition" next="83"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileę</placeName>, raptim, 28. aprilis anno 1542.</s>
-					<s xml:lang="la" type="auto">Os. <persName ref="154">Myconius</persName> tuus.</s>
+					<s n="23" xml:lang="la" type="auto"><placeName ref="place97">Basileę</placeName>, raptim, 28. aprilis anno 1542.</s>
+					<s n="24" xml:lang="la" type="auto">Os. <persName ref="person154">Myconius</persName> tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinricho Bullingero doctissimo, fidelissimo Christi ministro, in domino suo.</s>
+					<s n="25" xml:lang="la" type="auto">Domino Heinricho Bullingero doctissimo, fidelissimo Christi ministro, in domino suo.</s>
 				</p>
 			</div>
 		</body>

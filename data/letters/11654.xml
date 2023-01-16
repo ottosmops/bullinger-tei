@@ -9,10 +9,10 @@
 				<publisher>Basler Buch- und Antiquariatshandlung</publisher>
 				<pubPlace>Basel</pubPlace>
 				<date when="1904"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1611</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1611</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Bullingers Korrespondenz mit den Graubündnern</title>
+				<title subtype="publication">Graubünden, Korr.</title>
 				<biblScope type="author">Bullinger, H.; Schiess, T.</biblScope>
 				<biblScope type="edition">Bullingers Korrespondenz mit den Graubündnern</biblScope>
 				<biblScope type="page">41</biblScope>
@@ -20,13 +20,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,27</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,27</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -35,12 +38,12 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Hat Bullinger in diesen Tagen durch <persName ref="2055">Rudolf Schinz</persName> einen Brief
-								[<ref target="file#11651">Nr. 1608</ref>] überbringen lassen, weiß aber nicht, ob er zugestellt wurde. Sendet
+								Hat Bullinger in diesen Tagen durch <persName ref="person2055">Rudolf Schinz</persName> einen Brief
+								[<ref target="file11651">Nr. 1608</ref>] überbringen lassen, weiß aber nicht, ob er zugestellt wurde. Sendet
 								eine Krone und einen Batzen für ein gebundenes Exemplar von Bullingers Kommentaren zu den paulinischen und
 								[katholischen] Briefen [HBBibl I 84f bzw. 91]; falls das Geld nicht reichen sollte, wird er unverzüglich den
 								noch ausstehenden Betrag senden; der Briefbote wird Bullingers Buch sicher transportieren und kann auch
-								weitere Dienste übernehmen. Grüße, auch von <persName ref="43">Comanders</persName> Kollegen. Bete
+								weitere Dienste übernehmen. Grüße, auch von <persName ref="person43">Comanders</persName> Kollegen. Bete
 								für uns, denn wir sind in nicht geringer Gefahr!
 							</p>
 						</summary>
@@ -58,42 +61,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11654">
 				<correspAction type="sent">
-					<persName ref="person#654" cert="high">
+					<!--
+					<persName ref="person654" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Comander</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Comander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118713841"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413826"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person654" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1542-03-06" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11655"/>
-					<ref type="prev_chronologically" target="files.xml#11653"/>
-					<ref type="next_correspondence" target="files.xml#11696"/>
-					<ref type="prev_correspondence" target="files.xml#11651"/>
-					<ref type="next_correspondence_request" target="files.xml#11696"/>
-					<ref type="prev_correspondence_request" target="files.xml#11651"/>
+					<ref type="next_chronologically" target="file11655"/>
+					<ref type="prev_chronologically" target="file11653"/>
+					<ref type="next_correspondence" target="file11696"/>
+					<ref type="prev_correspondence" target="file11651"/>
+					<ref type="next_correspondence_request" target="file11696"/>
+					<ref type="prev_correspondence_request" target="file11651"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11508"/>
-					<ref type="next_same_sender" target="files.xml#11696"/>
-					<ref type="prev_same_sender" target="files.xml#11651"/>
-					<ref type="next_same_addressee" target="files.xml#11659"/>
-					<ref type="prev_same_addressee" target="files.xml#11653"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11696"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11651"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11659"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11653"/>
+					<ref type="prev_correspondence_reaction" target="file11508"/>
+					<ref type="next_same_sender" target="file11696"/>
+					<ref type="prev_same_sender" target="file11651"/>
+					<ref type="next_same_addressee" target="file11659"/>
+					<ref type="prev_same_addressee" target="file11653"/>
+					<ref type="next_with_sender_as_addressee" target="file11696"/>
+					<ref type="prev_with_sender_as_addressee" target="file11651"/>
+					<ref type="next_with_addressee_as_sender" target="file11659"/>
+					<ref type="prev_with_addressee_as_sender" target="file11653"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -103,28 +113,31 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="11654/Autograph/00 E_II_365__fol__27_r_.tif" n="1"/>
+		<graphic url="11654/Autograph/01 E_II_365__fol__27_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et vitae innocentiam a Domino.</s>
-					<s xml:lang="la" type="auto">Literas ad te dederam his diebus, amantissime Bullingere, per Rudolphum Schintium; an redditae sint, non constat.</s>
-					<s xml:lang="la" type="auto">Illud vero potissimum est, quod continent, ut Bullingeri commentarios in omnes divi Patli epistolas ceterasque cononicas in forma maiori, codice eleganter illigato apud te invenirem.</s>
-					<s xml:lang="la" type="auto">Coronatum et batzium mitto; si quid defuerit, sine dilatione quoque mittam.</s>
-					<s xml:lang="la" type="auto">Praesentium latori tuto committere poteris librum, - probe enim curabit, ut integre ad me veniat -, et si usu venerit, ut tibi servire vel in aliqua re prodesse potuero, iubeto.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et vitae innocentiam a Domino.</s>
+					<s n="2" xml:lang="la" type="auto">Literas ad te dederam his diebus, amantissime Bullingere, per Rudolphum Schintium; an redditae sint, non constat.</s>
+					<s n="3" xml:lang="la" type="auto">Illud vero potissimum est, quod continent, ut Bullingeri commentarios in omnes divi Patli epistolas ceterasque cononicas in forma maiori, codice eleganter illigato apud te invenirem.</s>
+					<s n="4" xml:lang="la" type="auto">Coronatum et batzium mitto; si quid defuerit, sine dilatione quoque mittam.</s>
+					<s n="5" xml:lang="la" type="auto">Praesentium latori tuto committere poteris librum, - probe enim curabit, ut integre ad me veniat -, et si usu venerit, ut tibi servire vel in aliqua re prodesse potuero, iubeto.</s>
+					<s n="6" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex Rhetiae Curia, 6. Martii 42. Salvos optamus omnes fratres.</s>
-					<s xml:lang="la" type="auto">Pro nobis orate; nam in periculo sumus haud exiguo vel negligendo.</s>
-					<s xml:lang="la" type="auto">Tuus <persName ref="263">Ioannes</persName> Comander.</s>
+					<s n="7" xml:lang="la" type="auto">Ex Rhetiae Curia, 6. Martii 42. Salvos optamus omnes fratres.</s>
+					<s n="8" xml:lang="la" type="auto">Pro nobis orate; nam in periculo sumus haud exiguo vel negligendo.</s>
+					<s n="9" xml:lang="la" type="auto">Tuus Ioannes Comander.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pietate et doctrina spectabili viro magistro Heinricho Ballingero, domino ac fratri suo observando.</s>
+					<s n="10" xml:lang="la" type="auto">Pietate et doctrina spectabili viro magistro Heinricho Ballingero, domino ac fratri suo observando.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Meister Heinrichen Bullinger.</s>
+					<s n="11" xml:lang="de" type="auto">Meister Heinrichen Bullinger.</s>
 				</p>
 			</div>
 		</body>

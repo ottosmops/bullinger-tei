@@ -12,25 +12,28 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4371/265</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 338,1526 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">mit aut. Unterschrift</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 338,1526 f.</idno>
+						<idno subtype="Hinweis">mit aut. Unterschrift</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -50,13 +53,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 88,105</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 88,105</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -70,53 +76,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3021">
 				<correspAction type="sent">
-					<persName ref="person#3815" cert="high">
+					<!--
+					<persName ref="person3815" cert="high">
 						<forename cert="high">Georg</forename>
 						<surname cert="high">von Württemberg</surname>
-						<addName type="main">von Württemberg-Mömpelgard (Montbéliard), Georg</addName>
+						<persName type="main" ref="person8098>von Württemberg-Mömpelgard (Montbéliard), Georg</addName>
 						<graphic type="portrait" url="portraits/3815_von_Wuerttemberg_Georg.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Georg_I._(W%C3%BCrttemberg-M%C3%B6mpelgard)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/136697925"/>
 					</persName>
-					<place source="#333" cert="high">
-						<settlement>Mömpelgard</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>47.50957 6.79823</geo>
-					</place>
+					-->
+					<persName ref="person3815" cert="high"/>
+					<place source="place333" cert="high"/>
 					<date when="1556-09-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3022"/>
-					<ref type="prev_chronologically" target="files.xml#3020"/>
-					<ref type="next_correspondence" target="files.xml#3048"/>
-					<ref type="prev_correspondence" target="files.xml#2698"/>
-					<ref type="next_correspondence_request" target="files.xml#3137"/>
-					<ref type="prev_correspondence_request" target="files.xml#1927"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3048"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2698"/>
-					<ref type="next_same_sender" target="files.xml#3137"/>
-					<ref type="prev_same_sender" target="files.xml#1927"/>
-					<ref type="next_same_addressee" target="files.xml#3040"/>
-					<ref type="prev_same_addressee" target="files.xml#3007"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3137"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1927"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3040"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3007"/>
-					<ref type="child" target="files.xml#1928"/>
+					<ref type="next_chronologically" target="file3022"/>
+					<ref type="prev_chronologically" target="file3020"/>
+					<ref type="next_correspondence" target="file3048"/>
+					<ref type="prev_correspondence" target="file2698"/>
+					<ref type="next_correspondence_request" target="file3137"/>
+					<ref type="prev_correspondence_request" target="file1927"/>
+					<ref type="next_correspondence_reaction" target="file3048"/>
+					<ref type="prev_correspondence_reaction" target="file2698"/>
+					<ref type="next_same_sender" target="file3137"/>
+					<ref type="prev_same_sender" target="file1927"/>
+					<ref type="next_same_addressee" target="file3040"/>
+					<ref type="prev_same_addressee" target="file3007"/>
+					<ref type="next_with_sender_as_addressee" target="file3137"/>
+					<ref type="prev_with_sender_as_addressee" target="file1927"/>
+					<ref type="next_with_addressee_as_sender" target="file3040"/>
+					<ref type="prev_with_addressee_as_sender" target="file3007"/>
+					<ref type="child" target="file1928"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -138,31 +143,31 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Georg, grave zu Würtemberg unnd zu Mümppelgart etc.</s>
+					<s n="1" xml:lang="de" type="auto">Georg, grave zu Würtemberg unnd zu Mümppelgart etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Unnsern grus zuvor, wolgelerter, lieber besonnder.</s>
-					<s xml:lang="de" type="auto">Wir haben eüwer schreiben sampt zweien uns zugeschickten büechlin den 22ten septembris empfangen, zum theil gelesen und wollen hertzlich gern, das dieser langwüriger zwispalt in dem hochwüchtigen hanndel des heiligen nachtmals unnsers herrens Jesu Christi doch einmal verglichen unnd vilen guthertzigen, frommen christen zu trost, stercke und erbauwung auß den kürchen uffgehaben und entschiden werden möcht.</s>
-					<s xml:lang="de" type="auto">Da wir wa müglich unnsers theils auch gern darzu ratden und helffen wolten, dieweil wir dann vernemmen, das doctor Jacob Schmidlin, pfarrherr zu Göppingen, sampt ettlich anndern inn die marggraveschafft Röttelen zu visitieren und von dannen unnsers erachtens gen Basel auch kommen werd, den Sultzern und anndere daselbst anzusprechen, der denn ein wolerbauwener, geleerter mann und sich viler gutter reden vernemmen lassen, das er, so vil müglich, red und hanndlungen pflegen wöll, ob doch sollicher spenniger punct unnserer christlichen religion (darinn man doch, so man nitt halsstarrig sein will, nitt so weitt von einannder) inn ein christenliche einhelligkeit gebracht wurde, so ist derhalben an euch unnser gnedigs begeer, ir wöllet inn solchen sachen, wo es an euch gelangen würdt, sampt anndern euch (wie usn dann mitt zweivelt) güettlich, christlich und entschidlich findne lassen.</s>
-					<s xml:lang="de" type="auto">Das haben wir euch gnediger und gutter wolmeinung nitt wöllen bergen, als der wir solche zweiungen gern zu ruw und frid erleben wolten.</s>
-					<s xml:lang="de" type="auto">Bevelhen euch hiemitt inn den schirm des allmechtigen.</s>
+					<s n="2" xml:lang="de" type="auto">Unnsern grus zuvor, wolgelerter, lieber besonnder.</s>
+					<s n="3" xml:lang="de" type="auto">Wir haben eüwer schreiben sampt zweien uns zugeschickten büechlin den 22ten septembris empfangen, zum theil gelesen und wollen hertzlich gern, das dieser langwüriger zwispalt in dem hochwüchtigen hanndel des heiligen nachtmals unnsers herrens Jesu Christi doch einmal verglichen unnd vilen guthertzigen, frommen christen zu trost, stercke und erbauwung auß den kürchen uffgehaben und entschiden werden möcht.</s>
+					<s n="4" xml:lang="de" type="auto">Da wir wa müglich unnsers theils auch gern darzu ratden und helffen wolten, dieweil wir dann vernemmen, das doctor Jacob Schmidlin, pfarrherr zu Göppingen, sampt ettlich anndern inn die marggraveschafft Röttelen zu visitieren und von dannen unnsers erachtens gen Basel auch kommen werd, den Sultzern und anndere daselbst anzusprechen, der denn ein wolerbauwener, geleerter mann und sich viler gutter reden vernemmen lassen, das er, so vil müglich, red und hanndlungen pflegen wöll, ob doch sollicher spenniger punct unnserer christlichen religion (darinn man doch, so man nitt halsstarrig sein will, nitt so weitt von einannder) inn ein christenliche einhelligkeit gebracht wurde, so ist derhalben an euch unnser gnedigs begeer, ir wöllet inn solchen sachen, wo es an euch gelangen würdt, sampt anndern euch (wie usn dann mitt zweivelt) güettlich, christlich und entschidlich findne lassen.</s>
+					<s n="5" xml:lang="de" type="auto">Das haben wir euch gnediger und gutter wolmeinung nitt wöllen bergen, als der wir solche zweiungen gern zu ruw und frid erleben wolten.</s>
+					<s n="6" xml:lang="de" type="auto">Bevelhen euch hiemitt inn den schirm des allmechtigen.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum Mümpelgart den 23ten septembris anno etc. 56.</s>
-					<s xml:lang="de" type="auto">G[eorg] g[rave] zuͦ Württemberg etc.</s>
+					<s n="7" xml:lang="de" type="auto">Datum Mümpelgart den 23ten septembris anno etc. 56.</s>
+					<s n="8" xml:lang="de" type="auto">G[eorg] g[rave] zuͦ Württemberg etc.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse... hinter 1527:]</note>
-					<s xml:lang="de" type="auto">Dem wolgelerten, unserm lieben besondern Henrich Bullingern, predigern zuͦ Zürich.</s>
+					<s n="9" xml:lang="de" type="auto">Dem wolgelerten, unserm lieben besondern Henrich Bullingern, predigern zuͦ Zürich.</s>
 				</p>
 				<p>
 					<note type="attachment">[Beilage (1527):]</note>
-					<s xml:lang="de" type="auto">Wir thun unns auch euwerer glückwinschung zu unnsernn jungen son gnediglich bedancken und begeeren von got nicht meer, dann wa er ime das leben gönnen wöll, er zu seiner forcht, eer und glori ufferzogen werden mög.</s>
+					<s n="10" xml:lang="de" type="auto">Wir thun unns auch euwerer glückwinschung zu unnsernn jungen son gnediglich bedancken und begeeren von got nicht meer, dann wa er ime das leben gönnen wöll, er zu seiner forcht, eer und glori ufferzogen werden mög.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ir wölt auch beiden euweren burgermeistern von unnsertwegen vil liebs und gutts ansagen, unnd so es inen glücklich und wol zustiende, vernemen wir gern.</s>
-					<s xml:lang="de" type="auto">Hetten euch auch langest zugeschriben, so sein wir aber die zeit einher mitt allerlei fürfallenden geschäfften meer, dann unns lieb ist, beladen gewesen.</s>
-					<s xml:lang="la" type="auto">Datum ut in literis.</s>
+					<s n="11" xml:lang="de" type="auto">Ir wölt auch beiden euweren burgermeistern von unnsertwegen vil liebs und gutts ansagen, unnd so es inen glücklich und wol zustiende, vernemen wir gern.</s>
+					<s n="12" xml:lang="de" type="auto">Hetten euch auch langest zugeschriben, so sein wir aber die zeit einher mitt allerlei fürfallenden geschäfften meer, dann unns lieb ist, beladen gewesen.</s>
+					<s n="13" xml:lang="la" type="auto">Datum ut in literis.</s>
 				</p>
 			</div>
 		</body>

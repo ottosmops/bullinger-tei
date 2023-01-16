@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6055/143</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 376,74</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 376,74</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 105,35</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 105,35</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -63,44 +69,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5402">
 				<correspAction type="sent">
-					<persName ref="person#1075" cert="low">
+					<!--
+					<persName ref="person1075" cert="low">
 						<forename cert="low">Johannes</forename>
 						<surname cert="low">Fabricius</surname>
-						<addName type="main">Fabricius Montanus (Schmid), Johannes</addName>
+						<persName type="main" ref="person8009>Fabricius Montanus (Schmid), Johannes</addName>
 						<graphic type="portrait" url="portraits/1075_Fabricius_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Fabricius_Montanus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104045698"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414870"/>
 					</persName>
-					<place source="#98" cert="low">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person1075" cert="low"/>
+					<place source="place98" cert="low"/>
 					<date when="1562-07-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5403"/>
-					<ref type="prev_chronologically" target="files.xml#5400"/>
-					<ref type="next_correspondence" target="files.xml#5406"/>
-					<ref type="prev_correspondence" target="files.xml#5397"/>
-					<ref type="next_correspondence_request" target="files.xml#5406"/>
-					<ref type="prev_correspondence_request" target="files.xml#5397"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5417"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5387"/>
-					<ref type="next_same_sender" target="files.xml#5406"/>
-					<ref type="prev_same_sender" target="files.xml#5397"/>
-					<ref type="next_same_addressee" target="files.xml#5446"/>
-					<ref type="prev_same_addressee" target="files.xml#5399"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5406"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5397"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5446"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5399"/>
+					<ref type="next_chronologically" target="file5403"/>
+					<ref type="prev_chronologically" target="file5400"/>
+					<ref type="next_correspondence" target="file5406"/>
+					<ref type="prev_correspondence" target="file5397"/>
+					<ref type="next_correspondence_request" target="file5406"/>
+					<ref type="prev_correspondence_request" target="file5397"/>
+					<ref type="next_correspondence_reaction" target="file5417"/>
+					<ref type="prev_correspondence_reaction" target="file5387"/>
+					<ref type="next_same_sender" target="file5406"/>
+					<ref type="prev_same_sender" target="file5397"/>
+					<ref type="next_same_addressee" target="file5446"/>
+					<ref type="prev_same_addressee" target="file5399"/>
+					<ref type="next_with_sender_as_addressee" target="file5406"/>
+					<ref type="prev_with_sender_as_addressee" target="file5397"/>
+					<ref type="next_with_addressee_as_sender" target="file5446"/>
+					<ref type="prev_with_addressee_as_sender" target="file5399"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -118,59 +131,59 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Varia sunt et perplexa, quae nunciantur.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Varia sunt et perplexa, quae nunciantur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Utinam nostri aliquando saperent; piscator ictus sapit, hi toties icti ne nunc quidem sapere volunt.</s>
-					<s xml:lang="la" type="auto">Sed nitor divina providentia, quae me unice sustentat; scit ipse, quorsum haec omnia destinet.</s>
-					<s xml:lang="la" type="auto">Scribit d. Coignetius et nunciat multa fausta; sed bonus vir et ipse falsus est.</s>
-					<s xml:lang="la" type="auto">Rogo te, si quando ad eum scribis, meis verbis salvere eum iubeas siginificesque literas eius mihi redditas.</s>
-					<s xml:lang="la" type="auto">Nihil habeo, quod rescribam, et inanes mittere nolo.</s>
+					<s n="3" xml:lang="la" type="auto">Utinam nostri aliquando saperent; piscator ictus sapit, hi toties icti ne nunc quidem sapere volunt.</s>
+					<s n="4" xml:lang="la" type="auto">Sed nitor divina providentia, quae me unice sustentat; scit ipse, quorsum haec omnia destinet.</s>
+					<s n="5" xml:lang="la" type="auto">Scribit d. Coignetius et nunciat multa fausta; sed bonus vir et ipse falsus est.</s>
+					<s n="6" xml:lang="la" type="auto">Rogo te, si quando ad eum scribis, meis verbis salvere eum iubeas siginificesque literas eius mihi redditas.</s>
+					<s n="7" xml:lang="la" type="auto">Nihil habeo, quod rescribam, et inanes mittere nolo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tibi quoque mirum accidere non debet, si rarius posthac scribo; quid enim hoc unum toties scriberem me nihil habere, quod scribam, praesertim ad te alioquin occupatissimum.</s>
-					<s xml:lang="la" type="auto">Si quid certi et digni habuero, officio meo non deero.</s>
+					<s n="8" xml:lang="la" type="auto">Tibi quoque mirum accidere non debet, si rarius posthac scribo; quid enim hoc unum toties scriberem me nihil habere, quod scribam, praesertim ad te alioquin occupatissimum.</s>
+					<s n="9" xml:lang="la" type="auto">Si quid certi et digni habuero, officio meo non deero.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si tantum a te postulare debeo, rogo te, mi venerande pater, tu caeteris colophonem addas et veri aliquid (quod iam deinceps constare omnino poterit) de hoc incerto rerum eventu nos edoceas; ego bona spe non destituor.</s>
-					<s xml:lang="la" type="auto">Herculi tuas reddidi; nam hic est.</s>
+					<s n="10" xml:lang="la" type="auto">Si tantum a te postulare debeo, rogo te, mi venerande pater, tu caeteris colophonem addas et veri aliquid (quod iam deinceps constare omnino poterit) de hoc incerto rerum eventu nos edoceas; ego bona spe non destituor.</s>
+					<s n="11" xml:lang="la" type="auto">Herculi tuas reddidi; nam hic est.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Agit gratias, te cum tuis salvum cupit.</s>
+					<s n="12" xml:lang="la" type="auto">Agit gratias, te cum tuis salvum cupit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Instant nuptiae operosissimae, in quibus concionandum; ideo sum brevior.</s>
-					<s xml:lang="la" type="auto">Vale, reverende in Christo pater.</s>
+					<s n="13" xml:lang="la" type="auto">Instant nuptiae operosissimae, in quibus concionandum; ideo sum brevior.</s>
+					<s n="14" xml:lang="la" type="auto">Vale, reverende in Christo pater.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Yetz, yetz ze aabet umb die 4 ist der fasel mit großem pomp yngeritten, darunder vyl Glarner und Gilg Tschudi.</s>
-					<s xml:lang="de" type="auto">Bin ich von G[regorio] C[arlin], mit dem mir 3 wort ze reden kum wil worden, gewarnet, wie G[ilg] Tsch[udi] allein kommen, ettwas mütery und pratick ze machen, und wie er ein schryben schon yetz uff dem wäg ußgoßen, so im von dem apt von Einsidlen von Trient geschriben, wie der Conde den Guisen den fuͦßfal thon und die sach ires theils in Franckrych nunmee eroberet.</s>
-					<s xml:lang="de" type="auto">Doch so werde ich schryben deren dingen halb von h[erren] landtaman Bäldi han; den brieff bringt houptman Häßi.</s>
-					<s xml:lang="la" type="auto">Literas, cum haec scriberem, nondum accepi.</s>
+					<s n="15" xml:lang="de" type="auto">Yetz, yetz ze aabet umb die 4 ist der fasel mit großem pomp yngeritten, darunder vyl Glarner und Gilg Tschudi.</s>
+					<s n="16" xml:lang="de" type="auto">Bin ich von G[regorio] C[arlin], mit dem mir 3 wort ze reden kum wil worden, gewarnet, wie G[ilg] Tsch[udi] allein kommen, ettwas mütery und pratick ze machen, und wie er ein schryben schon yetz uff dem wäg ußgoßen, so im von dem apt von Einsidlen von Trient geschriben, wie der Conde den Guisen den fuͦßfal thon und die sach ires theils in Franckrych nunmee eroberet.</s>
+					<s n="17" xml:lang="de" type="auto">Doch so werde ich schryben deren dingen halb von h[erren] landtaman Bäldi han; den brieff bringt houptman Häßi.</s>
+					<s n="18" xml:lang="la" type="auto">Literas, cum haec scriberem, nondum accepi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tu vigila, ut verum habeamus.</s>
+					<s n="19" xml:lang="la" type="auto">Tu vigila, ut verum habeamus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quid Tsch[udius]spargat in nuptiis, omnia expiscabor interim.</s>
+					<s n="20" xml:lang="la" type="auto">Quid Tsch[udius]spargat in nuptiis, omnia expiscabor interim.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Der apt von Pfäfers ist ouch hie.</s>
+					<s n="21" xml:lang="de" type="auto">Der apt von Pfäfers ist ouch hie.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="22" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si Condensis opus haberet milite, velim omnino rationem haberi Carlini; sunt huius consilii mei gravissimae causae.</s>
-					<s xml:lang="la" type="auto">Vellem et ad illum perscribi; velim simultati inter magnos viros nullam occasionem dari.</s>
-					<s xml:lang="la" type="auto">20. iulii anno 1562.</s>
+					<s n="23" xml:lang="la" type="auto">Si Condensis opus haberet milite, velim omnino rationem haberi Carlini; sunt huius consilii mei gravissimae causae.</s>
+					<s n="24" xml:lang="la" type="auto">Vellem et ad illum perscribi; velim simultati inter magnos viros nullam occasionem dari.</s>
+					<s n="25" xml:lang="la" type="auto">20. iulii anno 1562.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">T[uus] F[abricius].</s>
+					<s n="26" xml:lang="la" type="auto">T[uus] F[abricius].</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Amplissimo viro d. Heinrycho Bullingero, d. et patri suo in Christo reverendo.</s>
+					<s n="27" xml:lang="la" type="auto">Amplissimo viro d. Heinrycho Bullingero, d. et patri suo in Christo reverendo.</s>
 				</p>
 			</div>
 		</body>

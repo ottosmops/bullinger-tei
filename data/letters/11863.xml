@@ -9,10 +9,10 @@
 				<publisher>Basler Buch- und Antiquariatshandlung</publisher>
 				<pubPlace>Basel</pubPlace>
 				<date when="1904"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1817</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1817</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Bullingers Korrespondenz mit den Graubündnern</title>
+				<title subtype="publication">Graubünden, Korr.</title>
 				<biblScope type="author">Bullinger, H.; Schiess, T.</biblScope>
 				<biblScope type="edition">Bullingers Korrespondenz mit den Graubündnern</biblScope>
 				<biblScope type="page">56</biblScope>
@@ -20,13 +20,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 335,2063</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 335,2063</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -35,18 +38,18 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Die Verhältnisse [in <placeName ref="24">Graubünden</placeName>] sind voll von
+								Die Verhältnisse [in <placeName ref="place24">Graubünden</placeName>] sind voll von
 								Beschwerlichkeiten: Die Pensionenempfänger sinnen seit ihrer Maßregelung vor zwei Jahren auf Rache,
-								verbünden sich mit den Päpstlichen, beeinflussen den [<placeName ref="243">Churer</placeName>]
+								verbünden sich mit den Päpstlichen, beeinflussen den [<placeName ref="place243">Churer</placeName>]
 								Bischof [Lucius Iter] und streben nach der Macht; [den Churern] wird auf verschiedene Weise übel
 								mitgespielt, damit sie sich wieder unter die bischöfliche Herrschaft begeben - möge Gott ihnen beistehen;
-								<persName ref="21">Johannes Blasius</persName> war aufgrund seines Dialogs mit Schwierigkeiten
-								konfrontiert, hätte er sich doch des Schreibens enthalten! <persName ref="43">Comander</persName>
+								<persName ref="person21">Johannes Blasius</persName> war aufgrund seines Dialogs mit Schwierigkeiten
+								konfrontiert, hätte er sich doch des Schreibens enthalten! <persName ref="person43">Comander</persName>
 								plagt schon seit über einem Jahr ein Kopfleiden, das er als medizinisch Unkundiger nicht näher bestimmen
 								kann, sodass er gerade in diesen verworrenen Zeiten nur wenig zu leisten vermag; zu all dem kommt die sie
 								beinahe alle bedrückende Armut und der Mangel hinzu, der ihnen kaum zu leben erlaubt. Aus
-								<placeName ref="16">Italien</placeName> gibt es keine Neuigkeiten; erwartet Nachrichten von
-								Bullinger aus <placeName ref="7">Deutschland</placeName>. Gruß.
+								<placeName ref="place16">Italien</placeName> gibt es keine Neuigkeiten; erwartet Nachrichten von
+								Bullinger aus <placeName ref="place7">Deutschland</placeName>. Gruß.
 							</p>
 						</summary>
 					</msContents>
@@ -63,42 +66,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11863">
 				<correspAction type="sent">
-					<persName ref="person#654" cert="high">
+					<!--
+					<persName ref="person654" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Comander</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Comander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118713841"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413826"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person654" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1543-11-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11864"/>
-					<ref type="prev_chronologically" target="files.xml#11862"/>
-					<ref type="next_correspondence" target="files.xml#11879"/>
-					<ref type="prev_correspondence" target="files.xml#11784"/>
-					<ref type="next_correspondence_request" target="files.xml#11879"/>
-					<ref type="prev_correspondence_request" target="files.xml#11784"/>
+					<ref type="next_chronologically" target="file11864"/>
+					<ref type="prev_chronologically" target="file11862"/>
+					<ref type="next_correspondence" target="file11879"/>
+					<ref type="prev_correspondence" target="file11784"/>
+					<ref type="next_correspondence_request" target="file11879"/>
+					<ref type="prev_correspondence_request" target="file11784"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11508"/>
-					<ref type="next_same_sender" target="files.xml#11879"/>
-					<ref type="prev_same_sender" target="files.xml#11784"/>
-					<ref type="next_same_addressee" target="files.xml#11865"/>
-					<ref type="prev_same_addressee" target="files.xml#11856"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11879"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11784"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11865"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11856"/>
+					<ref type="prev_correspondence_reaction" target="file11508"/>
+					<ref type="next_same_sender" target="file11879"/>
+					<ref type="prev_same_sender" target="file11784"/>
+					<ref type="next_same_addressee" target="file11865"/>
+					<ref type="prev_same_addressee" target="file11856"/>
+					<ref type="next_with_sender_as_addressee" target="file11879"/>
+					<ref type="prev_with_sender_as_addressee" target="file11784"/>
+					<ref type="next_with_addressee_as_sender" target="file11865"/>
+					<ref type="prev_with_addressee_as_sender" target="file11856"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -115,28 +125,28 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et misericordiam a Domino.</s>
-					<s xml:lang="la" type="auto">Multo iam tempore abstinui, ne te meis gravarem literis, doctissime vir; sed amplius continere non potui, quin te de rebus nostris certiorem facerem.</s>
-					<s xml:lang="la" type="auto">Res nostrae sun[t] accisae et calamitatibus plenae.</s>
-					<s xml:lang="la" type="auto">Pensionarii ante annos fere duos offensi et correctionis impatientes vindictam querunt, cum papistis conspirant, episcopum inflant et ad deteriora dirigunt, opem pollicentur.</s>
-					<s xml:lang="la" type="auto">Nos divexamur variis modis, ut sub ipsius potestatem denuo redigamur.</s>
-					<s xml:lang="la" type="auto">Deus optimus maximus suis adesse dignetur.</s>
-					<s xml:lang="la" type="auto"><persName ref="1499">Ioanni</persName> Blasio, collegae meo, male suus cessit dyalogus.</s>
-					<s xml:lang="la" type="auto">Utinam continuisset se a scribendo, quod illi nobisque perutile fuisset!</s>
-					<s xml:lang="la" type="auto">Ego iam per integrum annum et plus male habui in capite meo morbo quodam, quem ego medicinae inexpertus diffinire non scio.</s>
-					<s xml:lang="la" type="auto">Ego fere mihi aliisque inutilis factus, maxime in isto tempore, cum omnia perplexa, intricata confusaque sunt, ut vix sim ferendo.</s>
-					<s xml:lang="la" type="auto">Ad haec paupertate et penuria praemimur fere omnes, ut vix spirare possimus.</s>
-					<s xml:lang="la" type="auto">Ex Italia penitus nihil habemus scitu dignum; quae vero in Germania fiunt, ut vobis notiora, certiores a vobis reddi expectamus.</s>
-					<s xml:lang="la" type="auto">Caeterum tu nos causamque nostram fratribus fidelibus ecclesiaeque tuae commendare velis, qui nos praecibus suis ad Dominum iuvare dignentur.</s>
-					<s xml:lang="la" type="auto">Vale vir eximie.</s>
-					<s xml:lang="la" type="auto">Ex Rhetiae Curia, 19.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et misericordiam a Domino.</s>
+					<s n="2" xml:lang="la" type="auto">Multo iam tempore abstinui, ne te meis gravarem literis, doctissime vir; sed amplius continere non potui, quin te de rebus nostris certiorem facerem.</s>
+					<s n="3" xml:lang="la" type="auto">Res nostrae sun[t] accisae et calamitatibus plenae.</s>
+					<s n="4" xml:lang="la" type="auto">Pensionarii ante annos fere duos offensi et correctionis impatientes vindictam querunt, cum papistis conspirant, episcopum inflant et ad deteriora dirigunt, opem pollicentur.</s>
+					<s n="5" xml:lang="la" type="auto">Nos divexamur variis modis, ut sub ipsius potestatem denuo redigamur.</s>
+					<s n="6" xml:lang="la" type="auto">Deus optimus maximus suis adesse dignetur.</s>
+					<s n="7" xml:lang="la" type="auto"><persName ref="person1499">Ioanni</persName> Blasio, collegae meo, male suus cessit dyalogus.</s>
+					<s n="8" xml:lang="la" type="auto">Utinam continuisset se a scribendo, quod illi nobisque perutile fuisset!</s>
+					<s n="9" xml:lang="la" type="auto">Ego iam per integrum annum et plus male habui in capite meo morbo quodam, quem ego medicinae inexpertus diffinire non scio.</s>
+					<s n="10" xml:lang="la" type="auto">Ego fere mihi aliisque inutilis factus, maxime in isto tempore, cum omnia perplexa, intricata confusaque sunt, ut vix sim ferendo.</s>
+					<s n="11" xml:lang="la" type="auto">Ad haec paupertate et penuria praemimur fere omnes, ut vix spirare possimus.</s>
+					<s n="12" xml:lang="la" type="auto">Ex Italia penitus nihil habemus scitu dignum; quae vero in Germania fiunt, ut vobis notiora, certiores a vobis reddi expectamus.</s>
+					<s n="13" xml:lang="la" type="auto">Caeterum tu nos causamque nostram fratribus fidelibus ecclesiaeque tuae commendare velis, qui nos praecibus suis ad Dominum iuvare dignentur.</s>
+					<s n="14" xml:lang="la" type="auto">Vale vir eximie.</s>
+					<s n="15" xml:lang="la" type="auto">Ex Rhetiae Curia, 19.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Novembris 1543.</s>
-					<s xml:lang="la" type="auto">Tuus totus <persName ref="1499">Ioannes</persName> Comander.</s>
+					<s n="16" xml:lang="la" type="auto">Novembris 1543.</s>
+					<s n="17" xml:lang="la" type="auto">Tuus totus Ioannes Comander.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pietate et doctrina clarissimo viro magistro Heinricho Bullingero, Tigurinae ecclesiae antistiti vigilantissimo, domino et fratri suo inprimis observando.</s>
+					<s n="18" xml:lang="la" type="auto">Pietate et doctrina clarissimo viro magistro Heinricho Bullingero, Tigurinae ecclesiae antistiti vigilantissimo, domino et fratri suo inprimis observando.</s>
 				</p>
 			</div>
 		</body>

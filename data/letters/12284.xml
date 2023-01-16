@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2013"/>
-				<idno type="ISBN">ISBN 978-3-290-17664-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2237</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17664-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2237</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 15</title>
+				<title subtype="publication">HBBW XV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">15</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,145</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,145</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,17 +49,17 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Der aufgebrachte K[onrad] Z[wick] hat <persName ref="19">Blarer</persName> ein Schreiben [<persName ref="87">Johannes</persName>] <persName ref="87">Haabs</persName> lesen lassen und wird <persName ref="87">Haab</persName>
-								schreiben, er soll, [da die Zürcher <persName ref="264">Zwicks</persName> Kriegskunst ablehnen], sowohl die Verhandlungen um Letztere als
-								auch um einen [möglichen Anschluss von <placeName ref="565">Konstanz</placeName> an
+								Der aufgebrachte K[onrad] Z[wick] hat <persName ref="person19">Blarer</persName> ein Schreiben [Johannes] <persName ref="person87">Haabs</persName> lesen lassen und wird <persName ref="person87">Haab</persName>
+								schreiben, er soll, [da die Zürcher <persName ref="person264">Zwicks</persName> Kriegskunst ablehnen], sowohl die Verhandlungen um Letztere als
+								auch um einen [möglichen Anschluss von <placeName ref="place565">Konstanz</placeName> an
 								die<pb type="edition" next="516"/> Eidgenossenschaft] ruhen lassen, zumal er aus eigener Initiative gehandelt
-								hat. - Ferner bittet <persName ref="264">Zwick</persName> Bullinger, bei den [Zürcher] Bürgermeistern [<persName ref="87">Haab</persName> und Hans Rudolf Lavater] zu
+								hat. - Ferner bittet <persName ref="person264">Zwick</persName> Bullinger, bei den [Zürcher] Bürgermeistern [<persName ref="person87">Haab</persName> und Hans Rudolf Lavater] zu
 								erwirken, dass weder diese noch die Geheimen Räte je die Verhandlungen [über einen Anschluss von
-								<placeName ref="565">Konstanz</placeName> an die Eidgenossenschaft] an einer Tagsatzung erwähnen,
-								da kein [<placeName ref="565">Konstanzer</placeName> Rats]herr von seinen Verhandlungen wusste und
+								<placeName ref="place565">Konstanz</placeName> an die Eidgenossenschaft] an einer Tagsatzung erwähnen,
+								da kein [<placeName ref="place565">Konstanzer</placeName> Rats]herr von seinen Verhandlungen wusste und
 								ihm daher große Probleme entstehen könnten. - Bullinger möge sich in diesem Sinne engagieren. - [Beilage vom
-								7. September]: Abschrift von <persName ref="28">Bucers</persName> Brief an <persName ref="19">Blarer</persName> [vom 1. September 1545] mit Nachrichten über den von
-								Karl V. ausgeübten Druck auf <persName ref="2488">Hermann von Wied</persName> und über die
+								7. September]: Abschrift von <persName ref="person28">Bucers</persName> Brief an <persName ref="person19">Blarer</persName> [vom 1. September 1545] mit Nachrichten über den von
+								Karl V. ausgeübten Druck auf <persName ref="person2488">Hermann von Wied</persName> und über die
 								Standhaftigkeit des Letzteren.
 							</p>
 						</summary>
@@ -77,14 +80,17 @@
 				</msDesc>
 				<msDesc type="Beilage" subtype="Beilage" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Beilage">E II 357,589</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">vom 7. September</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Beilage">E II 357,589</idno>
+						<idno subtype="Hinweis">vom 7. September</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -93,46 +99,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12284">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="high">
+					<!--
+					<persName ref="person392" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#257" cert="low">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
-					<date min="1545-09-06" max="1545-09-07" cert="low"/>
+					-->
+					<persName ref="person392" cert="high"/>
+					<place source="place257" cert="low"/>
+					<date notBefore="1545-09-06" notAfter="1545-09-07" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12285"/>
-					<ref type="prev_chronologically" target="files.xml#12283"/>
-					<ref type="next_correspondence" target="files.xml#12287"/>
-					<ref type="prev_correspondence" target="files.xml#12282"/>
-					<ref type="next_correspondence_request" target="files.xml#12287"/>
-					<ref type="prev_correspondence_request" target="files.xml#12276"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12307"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12282"/>
-					<ref type="next_same_sender" target="files.xml#12287"/>
-					<ref type="prev_same_sender" target="files.xml#12276"/>
-					<ref type="next_same_addressee" target="files.xml#12292"/>
-					<ref type="prev_same_addressee" target="files.xml#12282"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12287"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12276"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12292"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12282"/>
+					<ref type="next_chronologically" target="file12285"/>
+					<ref type="prev_chronologically" target="file12283"/>
+					<ref type="next_correspondence" target="file12287"/>
+					<ref type="prev_correspondence" target="file12282"/>
+					<ref type="next_correspondence_request" target="file12287"/>
+					<ref type="prev_correspondence_request" target="file12276"/>
+					<ref type="next_correspondence_reaction" target="file12307"/>
+					<ref type="prev_correspondence_reaction" target="file12282"/>
+					<ref type="next_same_sender" target="file12287"/>
+					<ref type="prev_same_sender" target="file12276"/>
+					<ref type="next_same_addressee" target="file12292"/>
+					<ref type="prev_same_addressee" target="file12282"/>
+					<ref type="next_with_sender_as_addressee" target="file12287"/>
+					<ref type="prev_with_sender_as_addressee" target="file12276"/>
+					<ref type="next_with_addressee_as_sender" target="file12292"/>
+					<ref type="prev_with_addressee_as_sender" target="file12282"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -150,33 +160,33 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Sonders vertrauwter, geliepter herr unnd bruͦder.</s>
+					<s n="1" xml:lang="de" type="auto">Sonders vertrauwter, geliepter herr unnd bruͦder.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Es hat mich min lieber vetter C[onrad] Z[wick] ain schreiben verlesen lassen, so ime von ewer herrn burgermaister <persName ref="87">Haben</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="87">Johannes Haab</persName>.</note> zuͦkommen, des sich dann der mann<note xml:id="fn3" type="footnote" n="3"><persName ref="264">Zwick</persName>.</note> treffelich und über die maasß beschwert, derhalb er<note xml:id="fn4" type="footnote" n="4"><persName ref="264">Zwick</persName>.</note> ime auch schreibt und zum hoͤchsten vermant und ersuͦcht, baid sachen, namlich der kriegsrustung<note xml:id="fn5" type="footnote" n="5">Zu <persName ref="264">Konrad Zwicks</persName> Kriegskunst und zum (nicht ermittelten) Brief <persName ref="87">Haabs</persName>, der wohl zusammen mit Bullingers Brief an <persName ref="19">Blarer</persName> vom 5. September 1545 verschickt wurde, s. oben <ref target="file#12282">Nr. 2235</ref>, 10-14.</note> und nachpuͤrlichen verstands<note xml:id="fn6" type="footnote" n="6">Verständigung, Verhältnis. -Gemeint sind mit den nachbarschaftlichen Beziehungen auch die Verhandlungen über einen möglichen Anschluss von <placeName ref="565">Konstanz</placeName> an die Eidgenossenschaft; s. zuletzt oben <ref target="file#12220">Nr. 2173</ref>, 49f und Anm. 25.</note>, ruͦen ze lassen, dieweyl er doch soͤlichs alles ausß im selbs on yemands wissen, wie man ime billich<note xml:id="fn7" type="footnote" n="7">zu Recht.</note> uff sein hochs beturen daruͦm gloupt, gehandelt.</s>
+					<s n="2" xml:lang="de" type="auto">Es hat mich min lieber vetter C[onrad] Z[wick] ain schreiben verlesen lassen, so ime von ewer herrn burgermaister <persName ref="person87">Haben</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="person87">Johannes Haab</persName>.</note> zuͦkommen, des sich dann der mann<note xml:id="fn3" type="footnote" n="3"><persName ref="person264">Zwick</persName>.</note> treffelich und über die maasß beschwert, derhalb er<note xml:id="fn4" type="footnote" n="4"><persName ref="person264">Zwick</persName>.</note> ime auch schreibt und zum hoͤchsten vermant und ersuͦcht, baid sachen, namlich der kriegsrustung<note xml:id="fn5" type="footnote" n="5">Zu <persName ref="person264">Konrad Zwicks</persName> Kriegskunst und zum (nicht ermittelten) Brief <persName ref="person87">Haabs</persName>, der wohl zusammen mit Bullingers Brief an <persName ref="person19">Blarer</persName> vom 5. September 1545 verschickt wurde, s. oben <ref target="file12282">Nr. 2235</ref>, 10-14.</note> und nachpuͤrlichen verstands<note xml:id="fn6" type="footnote" n="6">Verständigung, Verhältnis. -Gemeint sind mit den nachbarschaftlichen Beziehungen auch die Verhandlungen über einen möglichen Anschluss von <placeName ref="place565">Konstanz</placeName> an die Eidgenossenschaft; s. zuletzt oben <ref target="file12220">Nr. 2173</ref>, 49f und Anm. 25.</note>, ruͦen ze lassen, dieweyl er doch soͤlichs alles ausß im selbs on yemands wissen, wie man ime billich<note xml:id="fn7" type="footnote" n="7">zu Recht.</note> uff sein hochs beturen daruͦm gloupt, gehandelt.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Hat mich ouch dabey vleyssig gepetten, euch von seinen und meinen wegen<note xml:id="fn8" type="footnote" n="8">D.h. im Namen <persName ref="264">Zwicks</persName> und <persName ref="19">Blarers</persName>.</note> ze schriben und zum vleyssigsten ze bitten, bey den zwayen herrn burgermaistern<note xml:id="fn9" type="footnote" n="9"><persName ref="87">Haab</persName> und Hans Rudolf Lavater.</note> anzehalten, ouch darob und daran ze sein, damitt weder durch die gehaimen raͤth noch durch sy der sach halb auff anichem tag<note xml:id="fn10" type="footnote" n="10">auff anichem tag: an irgendeinem Treffen.</note> anicherlay anregen by andern aidgnossen bescheche, sonder, dieweyl sy die ainen sach<note xml:id="fn11" type="footnote" n="11"><persName ref="264">Zwicks</persName> Kriegskunst.</note> ruͦen wellend lassen, das dann die ander<note xml:id="fn12" type="footnote" n="12">Der Anschluss von <placeName ref="565">Konstanz</placeName> an die Eidgenossenschaft; s. oben Anm. 6.</note> auch allso stillstehn beleybe; dann meinem lieben vetter nitt wenig daran gelegen.</s>
-					<s xml:lang="de" type="auto">Und moͤchte ime alles zuͦ grossem schaden und nachtail gerathen, nachdem bysanher von kainem unserer herren vernommen worden aincherlay will, mitt soͤlichen conditionen sich einzelassen, sonder min lieber vetter soͤlichs selbs als zuͦ ainer praeparation kunfftiger ding fuͤrgeschlagen, wie ir desshalb weyter alls der verstendig ewer rechnung machen koͤndt.</s>
+					<s n="3" xml:lang="de" type="auto">Hat mich ouch dabey vleyssig gepetten, euch von seinen und meinen wegen<note xml:id="fn8" type="footnote" n="8">D.h. im Namen <persName ref="person264">Zwicks</persName> und <persName ref="person19">Blarers</persName>.</note> ze schriben und zum vleyssigsten ze bitten, bey den zwayen herrn burgermaistern<note xml:id="fn9" type="footnote" n="9"><persName ref="person87">Haab</persName> und Hans Rudolf Lavater.</note> anzehalten, ouch darob und daran ze sein, damitt weder durch die gehaimen raͤth noch durch sy der sach halb auff anichem tag<note xml:id="fn10" type="footnote" n="10">auff anichem tag: an irgendeinem Treffen.</note> anicherlay anregen by andern aidgnossen bescheche, sonder, dieweyl sy die ainen sach<note xml:id="fn11" type="footnote" n="11"><persName ref="person264">Zwicks</persName> Kriegskunst.</note> ruͦen wellend lassen, das dann die ander<note xml:id="fn12" type="footnote" n="12">Der Anschluss von <placeName ref="place565">Konstanz</placeName> an die Eidgenossenschaft; s. oben Anm. 6.</note> auch allso stillstehn beleybe; dann meinem lieben vetter nitt wenig daran gelegen.</s>
+					<s n="4" xml:lang="de" type="auto">Und moͤchte ime alles zuͦ grossem schaden und nachtail gerathen, nachdem bysanher von kainem unserer herren vernommen worden aincherlay will, mitt soͤlichen conditionen sich einzelassen, sonder min lieber vetter soͤlichs selbs als zuͦ ainer praeparation kunfftiger ding fuͤrgeschlagen, wie ir desshalb weyter alls der verstendig ewer rechnung machen koͤndt.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">So thaind<note xml:id="fn13" type="footnote" n="13">tut.</note> nun das allerbest unserer baider vertrauwen nach, damitt weyter handlung<note xml:id="fn14" type="footnote" n="14">Streiterei.</note> verhuͤt und mein lieber vetter, der alles so gut und gantz getreulich maint, in kainen unrath<note xml:id="fn15" type="footnote" n="15">missliche Lage.</note> desßhalb gefuͤrt werd, wie es dann warlich unbillich, so dasjhenig, so er im besten gehandelt, ime zum ergsten<pb type="edition" next="517"/> ausschlachen soͤllte.</s>
-					<s xml:lang="de" type="auto">Damitt, was euch lieb und dienst, bitten den herren gott, mitt glouben fuͤr unß<note xml:id="fn16" type="footnote" n="16">Gemeint ist: Wir bitten Gott, dass er euch gönne, was ihr euch wünscht und was euch nützlich ist, und dass er uns Glauben schenke.</note>.</s>
+					<s n="5" xml:lang="de" type="auto">So thaind<note xml:id="fn13" type="footnote" n="13">tut.</note> nun das allerbest unserer baider vertrauwen nach, damitt weyter handlung<note xml:id="fn14" type="footnote" n="14">Streiterei.</note> verhuͤt und mein lieber vetter, der alles so gut und gantz getreulich maint, in kainen unrath<note xml:id="fn15" type="footnote" n="15">missliche Lage.</note> desßhalb gefuͤrt werd, wie es dann warlich unbillich, so dasjhenig, so er im besten gehandelt, ime zum ergsten<pb type="edition" next="517"/> ausschlachen soͤllte.</s>
+					<s n="6" xml:lang="de" type="auto">Damitt, was euch lieb und dienst, bitten den herren gott, mitt glouben fuͤr unß<note xml:id="fn16" type="footnote" n="16">Gemeint ist: Wir bitten Gott, dass er euch gönne, was ihr euch wünscht und was euch nützlich ist, und dass er uns Glauben schenke.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum, den [...]<note xml:id="fna" type="footnote" n="a"><hi><persName ref="19">Blarer</persName> ließ hier einen Abstand frei, um das Tagesdatum später zu ergänzen, was er jedoch nicht tat.</hi></note> septembris 1545.</s>
-					<s xml:lang="de" type="auto">Ewer getreuwer bruͦder im herren</s>
+					<s n="7" xml:lang="la" type="auto">Datum, den [...]<note xml:id="fna" type="footnote" n="a"><hi><persName ref="person19">Blarer</persName> ließ hier einen Abstand frei, um das Tagesdatum später zu ergänzen, was er jedoch nicht tat.</hi></note> septembris 1545.</s>
+					<s n="8" xml:lang="de" type="auto">Ewer getreuwer bruͦder im herren</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ambr. <persName ref="19">Blaurer</persName>.</s>
+					<s n="9" xml:lang="de" type="auto">Ambr. <persName ref="person19">Blaurer</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf f. 145v.:]</note>
-					<s xml:lang="la" type="auto">Colendo suo et charissimo fratri d. Heinricho Bullingero, Tiguricensis ecclesię antistiti.</s>
+					<s n="10" xml:lang="la" type="auto">Colendo suo et charissimo fratri d. Heinricho Bullingero, Tiguricensis ecclesię antistiti.</s>
 				</p>
 				<p>
 					<note type="attachment">[Beilage:]</note>
-					<s xml:lang="la" type="auto"><pb type="scan" next="589"/>Hęc heri ad me <persName ref="28">Bucerus</persName>, 7. septembris:<note xml:id="fnb" type="footnote" n="b"><hi>Es folgt die Abschrift (ohne ersten</hi> Satz, <hi>Gruß, Datum und Unterschrift) des in <placeName ref="565">Konstanz</placeName> am 6. September eingetroffenen Briefes von <persName ref="28">Martin Bucer</persName> an <persName ref="19">Ambrosius Blarer</persName> vom 1. September [1545]. Auf der Rückseite dieser separaten Beilage:</hi> Bullingero suo.</note></s>
+					<s n="11" xml:lang="la" type="auto"><pb type="scan" next="589"/>Hęc heri ad me <persName ref="person28">Bucerus</persName>, 7. septembris:<note xml:id="fnb" type="footnote" n="b"><hi>Es folgt die Abschrift (ohne ersten</hi> Satz, <hi>Gruß, Datum und Unterschrift) des in <placeName ref="place565">Konstanz</placeName> am 6. September eingetroffenen Briefes von <persName ref="person28">Martin Bucer</persName> an <persName ref="person19">Ambrosius Blarer</persName> vom 1. September [1545]. Auf der Rückseite dieser separaten Beilage:</hi> Bullingero suo.</note></s>
 				</p>
 			</div>
 		</body>

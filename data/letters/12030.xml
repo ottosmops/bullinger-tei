@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2011"/>
-				<idno type="ISBN">ISBN 978-3-290-17565-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1983</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17565-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1983</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 14</title>
+				<title subtype="publication">HBBW XIV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Henrich, Rainer; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">14</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365a,436</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365a,436</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -58,43 +61,46 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12030">
 				<correspAction type="sent">
-					<persName ref="person#830" cert="high">
+					<!--
+					<persName ref="person830" cert="high">
 						<forename cert="high">Giovanni Domenico</forename>
 						<surname cert="high">Panizzone</surname>
 					</persName>
-					<place source="#62" cert="high">
-						<settlement>Bremgarten</settlement>
-						<district>Aargau</district>
-						<country>Schweiz</country>
-						<geo>47.3539569 8.3376446</geo>
-					</place>
+					-->
+					<persName ref="person830" cert="high"/>
+					<place source="place62" cert="high"/>
 					<date when="1544-09-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12031"/>
-					<ref type="prev_chronologically" target="files.xml#12029"/>
-					<ref type="next_correspondence" target="files.xml#12039"/>
-					<ref type="prev_correspondence" target="files.xml#12026"/>
-					<ref type="next_correspondence_request" target="files.xml#12039"/>
-					<ref type="prev_correspondence_request" target="files.xml#12026"/>
+					<ref type="next_chronologically" target="file12031"/>
+					<ref type="prev_chronologically" target="file12029"/>
+					<ref type="next_correspondence" target="file12039"/>
+					<ref type="prev_correspondence" target="file12026"/>
+					<ref type="next_correspondence_request" target="file12039"/>
+					<ref type="prev_correspondence_request" target="file12026"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#12039"/>
-					<ref type="prev_same_sender" target="files.xml#12026"/>
-					<ref type="next_same_addressee" target="files.xml#12032"/>
-					<ref type="prev_same_addressee" target="files.xml#12029"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12039"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12026"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12032"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12029"/>
+					<ref type="next_same_sender" target="file12039"/>
+					<ref type="prev_same_sender" target="file12026"/>
+					<ref type="next_same_addressee" target="file12032"/>
+					<ref type="prev_same_addressee" target="file12029"/>
+					<ref type="next_with_sender_as_addressee" target="file12039"/>
+					<ref type="prev_with_sender_as_addressee" target="file12026"/>
+					<ref type="next_with_addressee_as_sender" target="file12032"/>
+					<ref type="prev_with_addressee_as_sender" target="file12029"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -103,33 +109,36 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="12030/Autograph/00 E_II_365__fol__436_r_.tif" n="1"/>
+		<graphic url="12030/Autograph/01 E_II_365__fol__436_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Eruditissime vir et domine mi observandissime.</s>
+					<s n="1" xml:lang="la" type="auto">Eruditissime vir et domine mi observandissime.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vidi, quę heri ad me scripsisti<note xml:id="fn1" type="footnote" n="1">Dieser Brief Bullingers ist nicht erhalten.</note>, et omnia libenter intellexi, quia mihi satisfecisti, ut desiderabam<note xml:id="fn2" type="footnote" n="2">Panizzone bezieht sich auf seinen Brief an Bullinger vom 9. September 1544 (oben <ref target="file#12026">Nr. 1979</ref>). Darin bat er Bullinger um Nachrichten bezüglich der Ankunft des burgundischen Gesandten in Zürich und der Friedensverhandlungen zwischen Kaiser <persName ref="1332">Karl</persName> V. und König Franz I.</note>.</s>
-					<s xml:lang="la" type="auto">Quare fateor me tibi plurimum debere et ago gratias, ac quicquid possum et habeo, id totum tibi offero.</s>
-					<s xml:lang="la" type="auto">Tuos salutavi, ut iussisti, qui te pariter resalutant.</s>
-					<s xml:lang="la" type="auto">Ego vero non ero immemor tuę comendationis erga tuos, ubi eis prodesse potero, ut hactenus feci.</s>
-					<s xml:lang="la" type="auto">Nihil aliud habeo, quod scribam, nisi quod more solito tuus sum et superi me genuere tuum, cui ac familię toto corde me comendo.</s>
+					<s n="2" xml:lang="la" type="auto">Vidi, quę heri ad me scripsisti<note xml:id="fn1" type="footnote" n="1">Dieser Brief Bullingers ist nicht erhalten.</note>, et omnia libenter intellexi, quia mihi satisfecisti, ut desiderabam<note xml:id="fn2" type="footnote" n="2">Panizzone bezieht sich auf seinen Brief an Bullinger vom 9. September 1544 (oben <ref target="file12026">Nr. 1979</ref>). Darin bat er Bullinger um Nachrichten bezüglich der Ankunft des burgundischen Gesandten in Zürich und der Friedensverhandlungen zwischen Kaiser <persName ref="person1332">Karl V.</persName> und König Franz I.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Quare fateor me tibi plurimum debere et ago gratias, ac quicquid possum et habeo, id totum tibi offero.</s>
+					<s n="4" xml:lang="la" type="auto">Tuos salutavi, ut iussisti, qui te pariter resalutant.</s>
+					<s n="5" xml:lang="la" type="auto">Ego vero non ero immemor tuę comendationis erga tuos, ubi eis prodesse potero, ut hactenus feci.</s>
+					<s n="6" xml:lang="la" type="auto">Nihil aliud habeo, quod scribam, nisi quod more solito tuus sum et superi me genuere tuum, cui ac familię toto corde me comendo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Brengartii, 12. septembris 1544.</s>
+					<s n="7" xml:lang="la" type="auto">Brengartii, 12. septembris 1544.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Totus tuus Io. Dominicus</s>
+					<s n="8" xml:lang="la" type="auto">Totus tuus Io. Dominicus</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Panizonus.</s>
+					<s n="9" xml:lang="la" type="auto">Panizonus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Eruditissimo viro ac domino meo observandissimo d. Henrico Bullingero.</s>
-					<s xml:lang="la" type="auto">Turregi.</s>
+					<s n="10" xml:lang="la" type="auto">Eruditissimo viro ac domino meo observandissimo d. Henrico Bullingero.</s>
+					<s n="11" xml:lang="la" type="auto">Turregi.</s>
 				</p>
 			</div>
 		</body>

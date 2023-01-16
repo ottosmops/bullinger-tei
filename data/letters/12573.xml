@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2015"/>
-				<idno type="ISBN">ISBN 978-3-290-17782-9</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2526</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17782-9</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2526</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 17</title>
+				<title subtype="publication">HBBW XVII</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">17</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 370a,565</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 370a,565</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,10 +49,10 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Die beiden Zürcher [Überbringer des vorliegenden Briefes], <persName ref="1242">Hans Hug</persName>
-								und Meinrat Oggenfuß, kamen aus <placeName ref="45">Mähren</placeName> zu Haller. Wegen ihrer
+								Die beiden Zürcher [Überbringer des vorliegenden Briefes], <persName ref="person1242">Hans Hug</persName>
+								und Meinrat Oggenfuß, kamen aus <placeName ref="place45">Mähren</placeName> zu Haller. Wegen ihrer
 								langen Reise hatten sie kein Geld mehr. Haller wollte ihnen helfen, hat aber gerade selbst nichts, zumal er
-								erst vor kurzem [<persName ref="1242">Hans</persName> Wilpert] Zoller 30 Florin geliehen hat. Auch hat er schon etliche schlechte
+								erst vor kurzem [Hans Wilpert] Zoller 30 Florin geliehen hat. Auch hat er schon etliche schlechte
 								Erfahrungen gemacht. Deshalb lieh er jedem nur [eine] Krone, mit der Erklärung, der Stadtschreiber [Georg
 								Frölich] habe ihnen den Betrag vorgestreckt und erwarte, dass sie diesen innerhalb von 14 Tagen an Bullinger
 								zurückzahlen. Dafür stellten beide Zürcher eine schriftliche Quittung an Haller aus. Bullinger soll das Geld
@@ -61,9 +64,9 @@
 								zurücksenden.
 								</p>
 								<p xml:id="regest3">
-								- Die Bürgermeister [<persName ref="1242">Hans</persName> Welser und Jakob Herbrot] sind gestern mit ungefähr 100 Reitern zum Empfang der
-								Fürsten<pb type="edition" next="280"/> nach <placeName ref="279">Donauwörth</placeName> aufgebrochen.
-								Ammann [<persName ref="1242">Hans</persName>] Vogler [d.Ä.], der sie begleitet, wollte [<persName ref="1242">Hug</persName> und Oggenfuß] das Geld leihen, ist aber zum
+								- Die Bürgermeister [Hans Welser und Jakob Herbrot] sind gestern mit ungefähr 100 Reitern zum Empfang der
+								Fürsten<pb type="edition" next="280"/> nach <placeName ref="place279">Donauwörth</placeName> aufgebrochen.
+								Ammann [Hans] Vogler [d.Ä.], der sie begleitet, wollte [<persName ref="person1242">Hug</persName> und Oggenfuß] das Geld leihen, ist aber zum
 								großen Ärger Letzterer schon vorher abgereist.
 							</p>
 						</summary>
@@ -74,45 +77,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12573">
 				<correspAction type="sent">
-					<persName ref="person#8018" cert="high">
+					<!--
+					<persName ref="person8018" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Haller d.J.</surname>
-						<graphic type="portrait" url="portraits/1430_HallerdJ_Johannes.jpg"/>
+						<graphic type="portrait" url="portraits/1430_Haller_dJ_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Haller_der_J%C3%BCngere"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/136925588"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413871"/>
 					</persName>
-					<place source="#18" cert="low">
-						<settlement>Augsburg</settlement>
-						<district>Bayern</district>
-						<country>Deutschland</country>
-						<geo>48.37154 10.89851</geo>
-					</place>
+					-->
+					<persName ref="person8018" cert="high"/>
+					<place source="place18" cert="low"/>
 					<date when="1546-08-05" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12574"/>
-					<ref type="prev_chronologically" target="files.xml#12572"/>
-					<ref type="next_correspondence" target="files.xml#12590"/>
-					<ref type="prev_correspondence" target="files.xml#12571"/>
-					<ref type="next_correspondence_request" target="files.xml#12595"/>
-					<ref type="prev_correspondence_request" target="files.xml#12571"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12590"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12541"/>
-					<ref type="next_same_sender" target="files.xml#12595"/>
-					<ref type="prev_same_sender" target="files.xml#12571"/>
-					<ref type="next_same_addressee" target="files.xml#12582"/>
-					<ref type="prev_same_addressee" target="files.xml#12564"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12595"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12571"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12582"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12564"/>
+					<ref type="next_chronologically" target="file12574"/>
+					<ref type="prev_chronologically" target="file12572"/>
+					<ref type="next_correspondence" target="file12590"/>
+					<ref type="prev_correspondence" target="file12571"/>
+					<ref type="next_correspondence_request" target="file12595"/>
+					<ref type="prev_correspondence_request" target="file12571"/>
+					<ref type="next_correspondence_reaction" target="file12590"/>
+					<ref type="prev_correspondence_reaction" target="file12541"/>
+					<ref type="next_same_sender" target="file12595"/>
+					<ref type="prev_same_sender" target="file12571"/>
+					<ref type="next_same_addressee" target="file12582"/>
+					<ref type="prev_same_addressee" target="file12564"/>
+					<ref type="next_with_sender_as_addressee" target="file12595"/>
+					<ref type="prev_with_sender_as_addressee" target="file12571"/>
+					<ref type="next_with_addressee_as_sender" target="file12582"/>
+					<ref type="prev_with_addressee_as_sender" target="file12564"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -129,36 +137,36 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Venerunt ad me<note xml:id="fna" type="footnote" n="a">me <hi>fehlt in der Vorlage.</hi></note> hii duo cives Tigurini, Hanns <persName ref="1242">Hug</persName> undt Meinrat Oggenfuͦß,<note xml:id="fn2" type="footnote" n="2">Meinrat Oggenfuß (laut Heinold Fast ein Korbflechter; laut <ref target="file#12597">Nr. 2550</ref>,22f, ein Metzger und Fassbinder) und der Glasbläser <persName ref="1242">Hans Hug</persName> (keine Täufer). Sie waren um den 18. Juli 1546 in Begleitung von <persName ref="174">Wilhelm Reublin</persName> zu einer Reise von Zürich via <placeName ref="1113">Ulm</placeName> nach <placeName ref="45">Mähren</placeName> aufgebrochen. Der Grund der Reise ist nicht bekannt. Vielleicht wollten sie Familienangehörige, die wegen ihres Täufertums aus Zürich auswandern mussten, besuchen oder diese zur Rückkehr in die Heimat bewegen; s. <ref target="file#12574">Nr. 2527</ref>,1f. 44-53; Heinold <hi>Fast,</hi> Neues zum Leben <persName ref="174">Wilhelm Reublins</persName>, in: Theologische Zeitschrift 11/6, 421 und Anm. 7; Martin <hi>Rothkegel,</hi> Täufer und ehemalige Täufer in Znaim. Leohard Freisleben, <persName ref="174">Wilhelm Reublin</persName> und die 'Schweizer' Gemeinde des Tischlers Balthasar, in: Mennonitische Geschichtsblätter 58, 2001, 69, Anm. 77.</note> ascendentes<note xml:id="fn3" type="footnote" n="3">Nämlich die Donau (vermutlich ab <placeName ref="1848">Krems an</placeName> der Donau) und dann den Lech hinauf.</note> ex <placeName ref="45">Moravia</placeName>, enudati prorsus propter longinquam profectionem pecuniis, rogantes, ut vel aliquot saltem eis mutuo darem florenos.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Venerunt ad me<note xml:id="fna" type="footnote" n="a">me <hi>fehlt in der Vorlage.</hi></note> hii duo cives Tigurini, Hanns <persName ref="person1242">Hug</persName> undt Meinrat Oggenfuͦß,<note xml:id="fn2" type="footnote" n="2">Meinrat Oggenfuß (laut Heinold Fast ein Korbflechter; laut <ref target="file12597">Nr. 2550</ref>,22f, ein Metzger und Fassbinder) und der Glasbläser <persName ref="person1242">Hans Hug</persName> (keine Täufer). Sie waren um den 18. Juli 1546 in Begleitung von <persName ref="person174">Wilhelm Reublin</persName> zu einer Reise von Zürich via <placeName ref="place1113">Ulm</placeName> nach <placeName ref="place45">Mähren</placeName> aufgebrochen. Der Grund der Reise ist nicht bekannt. Vielleicht wollten sie Familienangehörige, die wegen ihres Täufertums aus Zürich auswandern mussten, besuchen oder diese zur Rückkehr in die Heimat bewegen; s. <ref target="file12574">Nr. 2527</ref>,1f. 44-53; Heinold <hi>Fast,</hi> Neues zum Leben <persName ref="person174">Wilhelm Reublins</persName>, in: Theologische Zeitschrift 11/6, 421 und Anm. 7; Martin <hi>Rothkegel,</hi> Täufer und ehemalige Täufer in Znaim. Leohard Freisleben, <persName ref="person174">Wilhelm Reublin</persName> und die 'Schweizer' Gemeinde des Tischlers Balthasar, in: Mennonitische Geschichtsblätter 58, 2001, 69, Anm. 77.</note> ascendentes<note xml:id="fn3" type="footnote" n="3">Nämlich die Donau (vermutlich ab <placeName ref="place1848">Krems</placeName> an der Donau) und dann den Lech hinauf.</note> ex <placeName ref="place45">Moravia</placeName>, enudati prorsus propter longinquam profectionem pecuniis, rogantes, ut vel aliquot saltem eis mutuo darem florenos.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Ego ipse, pecuniis tam nudus ut nihil supra (quippe qui ante paucos dies Zollero<note xml:id="fn4" type="footnote" n="4"><persName ref="1242">Hans</persName> Wilpert Zoller.</note> 30 mutuo dedi florenos)<note xml:id="fnb" type="footnote" n="b">Klammern ergänzt.</note>, nec eorum potui satisfacere petitioni, nec tamen volebam conterraneos (quamvis uterque eorum mihi hactenus nisi ex facie fuerit ignotus) inanes dimittere.</s>
-					<s xml:lang="la" type="auto">Quia autem non unicuivis fidendum (hactenus enim toties ictus sum, ut, sicubi possim, caveam)<note xml:id="fnc" type="footnote" n="c"><hi>Klammern ergänzt.</hi></note>, dedi eis <ptr target="#fnd" type="footnote" n="d"/>[unum c]orona[tum<note xml:id="fn5" type="footnote" n="5">= coronam; s. <hi>Kirsch</hi> 727.</note> ad singu]lares<note xml:id="fne" type="footnote" n="e"><hi>Textverlust durch Ausschnitt des Siegels. - Dass es sich um zwei Kronen handelte, geht aus <ref target="file#12607">Nr. 2560</ref>,</hi> 32f <hi>hervor.</hi></note><note xml:id="fnd" type="footnote" n="d"><hi>Am Rande nachgetragen an Stelle von gestrichenem</hi> I fl.</note>, eo tamen praetextu, quasi d. archigrammataeus<note xml:id="fn6" type="footnote" n="6">Georg Frölich.</note> hos<note xml:id="fn7" type="footnote" n="7">coronatos.</note> eis mutuo dederit, ut intra 14 dies tibi eos reddant<note xml:id="fn8" type="footnote" n="8">Siehe aber den unten Z. 15f angebrachten Zusatz mit der neuen Vorkehrung.</note>.</s>
-					<s xml:lang="la" type="auto">Huius contractus reliquerunt apud me chirographum suum.</s>
-					<s xml:lang="la" type="auto">Si ergo tibi reddiderint, fac, obsecro, quam fidissime ad me mittas.</s>
-					<s xml:lang="la" type="auto">Chirographum me iusserunt lacerare post acceptas pecunias.</s>
+					<s n="3" xml:lang="la" type="auto">Ego ipse, pecuniis tam nudus ut nihil supra (quippe qui ante paucos dies Zollero<note xml:id="fn4" type="footnote" n="4">Hans Wilpert Zoller.</note> 30 mutuo dedi florenos)<note xml:id="fnb" type="footnote" n="b">Klammern ergänzt.</note>, nec eorum potui satisfacere petitioni, nec tamen volebam conterraneos (quamvis uterque eorum mihi hactenus nisi ex facie fuerit ignotus) inanes dimittere.</s>
+					<s n="4" xml:lang="la" type="auto">Quia autem non unicuivis fidendum (hactenus enim toties ictus sum, ut, sicubi possim, caveam)<note xml:id="fnc" type="footnote" n="c"><hi>Klammern ergänzt.</hi></note>, dedi eis <ptr target="fnd" type="footnote" n="d"/>[unum c]orona[tum<note xml:id="fn5" type="footnote" n="5">= coronam; s. <hi>Kirsch</hi> 727.</note> ad singu]lares<note xml:id="fne" type="footnote" n="e"><hi>Textverlust durch Ausschnitt des Siegels. - Dass es sich um zwei Kronen handelte, geht aus <ref target="file12607">Nr. 2560</ref>,</hi> 32f <hi>hervor.</hi></note><note xml:id="fnd" type="footnote" n="d"><hi>Am Rande nachgetragen an Stelle von gestrichenem</hi> I fl.</note>, eo tamen praetextu, quasi d. archigrammataeus<note xml:id="fn6" type="footnote" n="6">Georg Frölich.</note> hos<note xml:id="fn7" type="footnote" n="7">coronatos.</note> eis mutuo dederit, ut intra 14 dies tibi eos reddant<note xml:id="fn8" type="footnote" n="8">Siehe aber den unten Z. 15f angebrachten Zusatz mit der neuen Vorkehrung.</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Huius contractus reliquerunt apud me chirographum suum.</s>
+					<s n="6" xml:lang="la" type="auto">Si ergo tibi reddiderint, fac, obsecro, quam fidissime ad me mittas.</s>
+					<s n="7" xml:lang="la" type="auto">Chirographum me iusserunt lacerare post acceptas pecunias.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">5. augusti.</s>
+					<s n="8" xml:lang="la" type="auto">Vale.</s>
+					<s n="9" xml:lang="la" type="auto">5. augusti.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Libros,<note xml:id="fn9" type="footnote" n="9">Die von <persName ref="69">Johannes Fries</persName> übersetzte Schrift Bullingers "Hoffnung der Glöubigen"; s. <ref target="file#12500">Nr. 2453</ref>, Anm. 4 sowie <ref target="file#12571">Nr. 2524</ref>, Anm. 61.</note> quos in aliis petii mihi mitti literis<note xml:id="fn10" type="footnote" n="10">Brief <ref target="file#12571">Nr. 2524</ref> vom 3. August.</note>, ex his<note xml:id="fn11" type="footnote" n="11">aus den oben erwähnten "coronati".</note> solve; reliqua transmittito.</s>
-					<s xml:lang="la" type="auto">Consules<note xml:id="fn12" type="footnote" n="12"><persName ref="1242">Hans</persName> Welser und Jakob Herbrot; s. zuletzt <ref target="file#12572">Nr. 2525</ref>, Anm. 13.</note> heri cum 100 ferme equitibus <placeName ref="279">Werdam</placeName><note xml:id="fn13" type="footnote" n="13"><placeName ref="279">Donauwörth</placeName>.</note> profecti principes<note xml:id="fn14" type="footnote" n="14">U.a. des Kurfürsten Johann Friedrich von Sachsen und des Landgrafen Philipp von Hessen. - Zur Beschreibung der Einzuge der entsprechenden Truppen in <placeName ref="279">Donauwörth</placeName> s. <ref target="file#12578">Nr. 2531</ref>.</note> excepturi.</s>
-					<s xml:lang="la" type="auto">Item ammanus Voglerus<note xml:id="fn15" type="footnote" n="15"><persName ref="1242">Hans</persName> Vogler d. A.</note> eos<note xml:id="fn16" type="footnote" n="16">Welser und Herbrot.</note> secutus.</s>
-					<s xml:lang="la" type="auto">Is dixerat se his<note xml:id="fn17" type="footnote" n="17"><persName ref="1242">Hug</persName> und Oggenfuß.</note> mutuo<pb type="edition" next="281"/> daturum, sed relinquens eos profectus est <placeName ref="279">Werdam</placeName>; quod illos male habet supra modum.</s>
+					<s n="10" xml:lang="la" type="auto">Libros,<note xml:id="fn9" type="footnote" n="9">Die von <persName ref="person69">Johannes Fries</persName> übersetzte Schrift Bullingers "Hoffnung der Glöubigen"; s. <ref target="file12500">Nr. 2453</ref>, Anm. 4 sowie <ref target="file12571">Nr. 2524</ref>, Anm. 61.</note> quos in aliis petii mihi mitti literis<note xml:id="fn10" type="footnote" n="10">Brief <ref target="file12571">Nr. 2524</ref> vom 3. August.</note>, ex his<note xml:id="fn11" type="footnote" n="11">aus den oben erwähnten "coronati".</note> solve; reliqua transmittito.</s>
+					<s n="11" xml:lang="la" type="auto">Consules<note xml:id="fn12" type="footnote" n="12">Hans Welser und Jakob Herbrot; s. zuletzt <ref target="file12572">Nr. 2525</ref>, Anm. 13.</note> heri cum 100 ferme equitibus <placeName ref="place279">Werdam</placeName><note xml:id="fn13" type="footnote" n="13"><placeName ref="place279">Donauwörth</placeName>.</note> profecti principes<note xml:id="fn14" type="footnote" n="14">U.a. des Kurfürsten Johann Friedrich von Sachsen und des Landgrafen Philipp von Hessen. - Zur Beschreibung der Einzuge der entsprechenden Truppen in <placeName ref="place279">Donauwörth</placeName> s. <ref target="file12578">Nr. 2531</ref>.</note> excepturi.</s>
+					<s n="12" xml:lang="la" type="auto">Item ammanus Voglerus<note xml:id="fn15" type="footnote" n="15">Hans Vogler d. A.</note> eos<note xml:id="fn16" type="footnote" n="16">Welser und Herbrot.</note> secutus.</s>
+					<s n="13" xml:lang="la" type="auto">Is dixerat se his<note xml:id="fn17" type="footnote" n="17"><persName ref="person1242">Hug</persName> und Oggenfuß.</note> mutuo<pb type="edition" next="281"/> daturum, sed relinquens eos profectus est <placeName ref="place279">Werdam</placeName>; quod illos male habet supra modum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus ex animo Hallerus.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus ex animo Hallerus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Bullingero, Tigurinae ecclesiae vigilantissimo pastori, suo colendo patri.</s>
+					<s n="15" xml:lang="la" type="auto">D. Bullingero, Tigurinae ecclesiae vigilantissimo pastori, suo colendo patri.</s>
 				</p>
 			</div>
 		</body>

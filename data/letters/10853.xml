@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=814</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=814</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342,63</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342,63</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,9 +50,9 @@
 						<summary>
 							<p xml:id="regest1">
 								[Die Zürcher Theologen] haben vor dem Rat die Confessio Tetrapolitana als [mit dem Ersten Helvetischen
-								Bekenntnis] übereinstimmend anerkannt; ein gestern nach <placeName ref="5">Aarau</placeName>
-								gesandtes Schreiben [<ref target="file#10852">Nr. 813</ref>] enthält mehr dazu. Bullinger setzt sich für die
-								vertriebenen <placeName ref="83">Solothurner</placeName> ein doch sind seine Einflußmöglichkeiten
+								Bekenntnis] übereinstimmend anerkannt; ein gestern nach <placeName ref="place5">Aarau</placeName>
+								gesandtes Schreiben [<ref target="file10852">Nr. 813</ref>] enthält mehr dazu. Bullinger setzt sich für die
+								vertriebenen <placeName ref="place83">Solothurner</placeName> ein doch sind seine Einflußmöglichkeiten
 								begrenzt. Über einen Verrückten.
 							</p>
 						</summary>
@@ -60,46 +63,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10853">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1536-05-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
+					-->
+					<persName ref="person2234" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10854"/>
-					<ref type="prev_chronologically" target="files.xml#10852"/>
-					<ref type="next_correspondence" target="files.xml#10874"/>
-					<ref type="prev_correspondence" target="files.xml#10852"/>
-					<ref type="next_correspondence_request" target="files.xml#10877"/>
-					<ref type="prev_correspondence_request" target="files.xml#10852"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10874"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10850"/>
-					<ref type="next_same_sender" target="files.xml#10856"/>
-					<ref type="prev_same_sender" target="files.xml#10852"/>
-					<ref type="next_same_addressee" target="files.xml#10874"/>
-					<ref type="prev_same_addressee" target="files.xml#10850"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10856"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10852"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10874"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10850"/>
+					<ref type="next_chronologically" target="file10854"/>
+					<ref type="prev_chronologically" target="file10852"/>
+					<ref type="next_correspondence" target="file10874"/>
+					<ref type="prev_correspondence" target="file10852"/>
+					<ref type="next_correspondence_request" target="file10877"/>
+					<ref type="prev_correspondence_request" target="file10852"/>
+					<ref type="next_correspondence_reaction" target="file10874"/>
+					<ref type="prev_correspondence_reaction" target="file10850"/>
+					<ref type="next_same_sender" target="file10856"/>
+					<ref type="prev_same_sender" target="file10852"/>
+					<ref type="next_same_addressee" target="file10874"/>
+					<ref type="prev_same_addressee" target="file10850"/>
+					<ref type="next_with_sender_as_addressee" target="file10856"/>
+					<ref type="prev_with_sender_as_addressee" target="file10852"/>
+					<ref type="next_with_addressee_as_sender" target="file10874"/>
+					<ref type="prev_with_addressee_as_sender" target="file10850"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,36 +125,36 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Confessio 4 urbium<note xml:id="fn1" type="footnote" n="1">Zur Confessio Tetrapolitana s. oben <ref target="file#10814">Nr. 776</ref>, Anm. 2.</note> nobis non admodum adversa est, nec in ea invenimus quicquam, quod displiceat.</s>
-					<s xml:lang="la" type="auto">Unde illam recepimus veluti nostrae<note xml:id="fn2" type="footnote" n="2">Gemeint ist das Erste Helvetische Bekenntnis (s. oben <ref target="file#10775">Nr. 737</ref>, Anm. 1).</note> non adversam idque coram senatu palam testati sumus<note xml:id="fn3" type="footnote" n="3">Vgl. oben <ref target="file#10852">Nr. 813</ref>, Anm. 6.</note>.</s>
-					<s xml:lang="la" type="auto">Verum pluscula de hac re hen scripsimus ad Aarouiam<note xml:id="fn4" type="footnote" n="4">Gemeint ist wohl der am Vortag geschriebene und offenbar den nach <placeName ref="5">Aarau</placeName> reisenden Gesandten mitgegebene Brief an <persName ref="154">Myconius</persName> (oben <ref target="file#10852">Nr. 813</ref>; vgl. dort Anm. 5).</note>.</s>
+					<s n="2" xml:lang="la" type="auto">Confessio 4 urbium<note xml:id="fn1" type="footnote" n="1">Zur Confessio Tetrapolitana s. oben <ref target="file10814">Nr. 776</ref>, Anm. 2.</note> nobis non admodum adversa est, nec in ea invenimus quicquam, quod displiceat.</s>
+					<s n="3" xml:lang="la" type="auto">Unde illam recepimus veluti nostrae<note xml:id="fn2" type="footnote" n="2">Gemeint ist das Erste Helvetische Bekenntnis (s. oben <ref target="file10775">Nr. 737</ref>, Anm. 1).</note> non adversam idque coram senatu palam testati sumus<note xml:id="fn3" type="footnote" n="3">Vgl. oben <ref target="file10852">Nr. 813</ref>, Anm. 6.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Verum pluscula de hac re hen scripsimus ad Aarouiam<note xml:id="fn4" type="footnote" n="4">Gemeint ist wohl der am Vortag geschriebene und offenbar den nach <placeName ref="place5">Aarau</placeName> reisenden Gesandten mitgegebene Brief an <persName ref="person154">Myconius</persName> (oben <ref target="file10852">Nr. 813</ref>; vgl. dort Anm. 5).</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Caussam exulum <placeName ref="83">Solodorensium</placeName> tam mihi crede commendatam quam commendatissimam<note xml:id="fn5" type="footnote" n="5">Siehe oben <ref target="file#10852">Nr. 813</ref>, 2 mit Anm. 1.</note>.</s>
-					<s xml:lang="la" type="auto">Ego omnem movebo lapidem<note xml:id="fn6" type="footnote" n="6">Zur Redensart vgl. Adagia, 1, 4, 30 (LB II 161f).</note>, sed quid promoveam, dominus novit.</s>
-					<s xml:lang="la" type="auto">Certe multi nostrorum non placent mihi nec suadenti obsequuntur.<note xml:id="fn7" type="footnote" n="7">Am 4. und 6. Mai wurde über das weitere Vorgehen der Zürcher Schiedboten beraten: aus ihrer Instruktion (Zürich StA, B VIII 3, f. 120r.-122r.) wird deutlich, daß der Rat den Forderungen der "Banditen" zurückhaltend gegenüberstand und vor allem an der raschen Beilegung des Konflikts interessiert war.</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Caussam exulum <placeName ref="place83">Solodorensium</placeName> tam mihi crede commendatam quam commendatissimam<note xml:id="fn5" type="footnote" n="5">Siehe oben <ref target="file10852">Nr. 813</ref>, 2 mit Anm. 1.</note>.</s>
+					<s n="6" xml:lang="la" type="auto">Ego omnem movebo lapidem<note xml:id="fn6" type="footnote" n="6">Zur Redensart vgl. Adagia, 1, 4, 30 (LB II 161f).</note>, sed quid promoveam, dominus novit.</s>
+					<s n="7" xml:lang="la" type="auto">Certe multi nostrorum non placent mihi nec suadenti obsequuntur.<note xml:id="fn7" type="footnote" n="7">Am 4. und 6. Mai wurde über das weitere Vorgehen der Zürcher Schiedboten beraten: aus ihrer Instruktion (Zürich StA, B VIII 3, f. 120r.-122r.) wird deutlich, daß der Rat den Forderungen der "Banditen" zurückhaltend gegenüberstand und vor allem an der raschen Beilegung des Konflikts interessiert war.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="275"/>Valebis et pro me Orabis dominum.</s>
+					<s n="8" xml:lang="la" type="auto"><pb type="edition" next="275"/>Valebis et pro me Orabis dominum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Calendis maii anno 1536.</s>
+					<s n="9" xml:lang="la" type="auto">Calendis maii anno 1536.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus tuus.</s>
+					<s n="10" xml:lang="la" type="auto">H. Bullingerus tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Der unsinnig<note xml:id="fn8" type="footnote" n="8">Ein unbekannter Verrückter (SI VII 1070f).</note> was hütt hie.</s>
-					<s xml:lang="la" type="auto">Suggestor.</s>
-					<s xml:lang="la" type="auto">Suspendantur omnes.</s>
-					<s xml:lang="la" type="auto">Sic <persName ref="225">Utingerus</persName>.</s>
+					<s n="11" xml:lang="de" type="auto">Der unsinnig<note xml:id="fn8" type="footnote" n="8">Ein unbekannter Verrückter (SI VII 1070f).</note> was hütt hie.</s>
+					<s n="12" xml:lang="la" type="auto">Suggestor.</s>
+					<s n="13" xml:lang="la" type="auto">Suspendantur omnes.</s>
+					<s n="14" xml:lang="la" type="auto">Sic <persName ref="person225">Utingerus</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Praestantissimo viro d. <persName ref="154">Osvaldo Myconio</persName>, fratri charissimo.</s>
+					<s n="15" xml:lang="la" type="auto">Praestantissimo viro d. <persName ref="person154">Osvaldo Myconio</persName>, fratri charissimo.</s>
 				</p>
 			</div>
 		</body>

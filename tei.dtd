@@ -31,13 +31,13 @@ https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-TEI.html -->
 
 <!-- TEI-HEADER
 https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teiHeader.html -->
-<!ELEMENT teiHeader (fileDesc, profileDesc, revisionDesc)>
+<!ELEMENT teiHeader (fileDesc, profileDesc, revisionDesc?)>
     <!-- metadata language [always "de" in this version] -->
     <!ATTLIST teiHeader xml:lang CDATA #IMPLIED>
 
 <!-- bibliographic description
 https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-fileDesc.html -->
-<!ELEMENT fileDesc (titleStmt, publicationStmt?, seriesStmt?, sourceDesc)>
+<!ELEMENT fileDesc (titleStmt, publicationStmt?, seriesStmt?, sourceDesc?)>
 
 <!-- title https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-titleStmt.html -->
 <!ELEMENT titleStmt (title)>
@@ -58,7 +58,7 @@ https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-publicationStmt.html --
 <!ELEMENT authority (#PCDATA)>
 <!ELEMENT idno (#PCDATA)>
     <!-- {"isbn", "url", "gnd", "wiki", "histhub", as well as various doc-types (like "Autograph", "Kopie", etc.)} -->
-    <!ATTLIST idno type CDATA #REQUIRED>
+    <!ATTLIST idno subtype CDATA #REQUIRED>
 <!-- e.g.:
 <publicationStmt>
      <publisher>Theologischer Verlag Zürich (TVZ)</publisher>
@@ -99,8 +99,8 @@ https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html -->
     <!-- fixed date -->
     <!ATTLIST date when CDATA #IMPLIED>
     <!-- ranges (lower/upper-bound) -->
-    <!ATTLIST date min CDATA #IMPLIED>
-    <!ATTLIST date max CDATA #IMPLIED>
+    <!ATTLIST date notBefore CDATA #IMPLIED>
+    <!ATTLIST date notAfter CDATA #IMPLIED>
     <!-- verification {"high", "low" (= note verified)}; "low" is usually denoted by "[...]" (for fixed dates only) -->
     <!ATTLIST date cert CDATA #IMPLIED>
 <!-- more specific info than when/min/max as element content -->
@@ -192,7 +192,9 @@ https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html -->
 <!ELEMENT facsimile (graphic)*>
 
 <!-- ADDRESSES (correspondents: persons/roles/orgs) -->
-<!ELEMENT profileDesc (correspDesc | creation | langUsage)*>
+<!ELEMENT profileDesc (correspDesc | particDesc | settingDesc | creation | langUsage)*>
+<!ELEMENT settingDesc (listPlace)>
+<!ELEMENT particDesc (listPerson | listOrg | personGrp)>
 <!ELEMENT correspDesc (correspAction | correspContext)*>
     <!ATTLIST correspDesc ref CDATA #IMPLIED>
 <!ELEMENT correspContext (ref)*>
@@ -201,14 +203,22 @@ https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html -->
     <!ATTLIST ref target CDATA #IMPLIED>
 <!ELEMENT creation (date)*>
 <!-- type: sent/received -->
-<!ELEMENT correspAction (persName | roleName | orgName | note | place | date)*>
+<!ELEMENT correspAction (#PCDATA | persName | personGrp | roleName | orgName | note | place | date)*>
     <!ATTLIST correspAction type CDATA #IMPLIED>
 <!-- persons -->
-<!ELEMENT listPerson (persName)*>
+<!ELEMENT listPerson (person)*>
     <!ATTLIST listPerson xml:id CDATA #IMPLIED>
+<!ELEMENT person (persName)*>
+        <!ATTLIST person xml:id CDATA #IMPLIED>
+<!-- archives -->
+<!ELEMENT listOrg (org)*>
+<!ELEMENT org (orgName, addName, desc, idno?, place?)*>
+        <!ATTLIST org xml:id CDATA #IMPLIED>
+<!ELEMENT desc (#PCDATA)>
 <!-- (also used for named entities in texts, regests and footnotes) -->
-<!ELEMENT persName (#PCDATA | forename | surname | addName | place | roleName | orgName | note | graphic | ref | persName | placeName | idno)*>
+<!ELEMENT persName (#PCDATA | forename | surname | addName | place | roleName | orgName | note | graphic | ref | persName | placeName | idno | pb)*>
     <!ATTLIST persName xml:id CDATA #IMPLIED>
+    <!ATTLIST persName type CDATA #IMPLIED>
     <!ATTLIST persName ref CDATA #IMPLIED>
     <!ATTLIST persName cert CDATA #IMPLIED>
 <!ELEMENT forename (#PCDATA)>
@@ -229,10 +239,14 @@ https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-seriesStmt.html -->
 <!ELEMENT roleName (name | place)*>
     <!ATTLIST roleName type CDATA #IMPLIED>
     <!ATTLIST roleName ref CDATA #IMPLIED>
+<!ELEMENT personGrp EMPTY>
+    <!ATTLIST personGrp xml:id CDATA #IMPLIED>
+    <!ATTLIST personGrp ref CDATA #IMPLIED>
+    <!ATTLIST personGrp role CDATA #IMPLIED>
 <!-- organizations[/institutions], e.g. Kirche(n), Gemeinde(n), Synode(n), Kapitel, ... -->
 <!ELEMENT orgName (name | place)*>
-    <!ATTLIST orgName type CDATA #IMPLIED>
     <!ATTLIST orgName ref CDATA #IMPLIED>
+    <!ATTLIST orgName role CDATA #IMPLIED>
 <!ELEMENT name (#PCDATA)>
     <!ATTLIST name type CDATA #IMPLIED>
     <!ATTLIST name ref CDATA #IMPLIED>

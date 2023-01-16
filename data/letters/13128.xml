@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3079</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3079</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 62,378</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 62,378</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -100,46 +103,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13128">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1547-11-19" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13129"/>
-					<ref type="prev_chronologically" target="files.xml#13127"/>
-					<ref type="next_correspondence" target="files.xml#13131"/>
-					<ref type="prev_correspondence" target="files.xml#13120"/>
-					<ref type="next_correspondence_request" target="files.xml#13149"/>
-					<ref type="prev_correspondence_request" target="files.xml#13120"/>
-					<ref type="next_correspondence_reaction" target="files.xml#13131"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#13114"/>
-					<ref type="next_same_sender" target="files.xml#13149"/>
-					<ref type="prev_same_sender" target="files.xml#13120"/>
-					<ref type="next_same_addressee" target="files.xml#13131"/>
-					<ref type="prev_same_addressee" target="files.xml#13114"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13149"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13120"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13131"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13114"/>
+					<ref type="next_chronologically" target="file13129"/>
+					<ref type="prev_chronologically" target="file13127"/>
+					<ref type="next_correspondence" target="file13131"/>
+					<ref type="prev_correspondence" target="file13120"/>
+					<ref type="next_correspondence_request" target="file13149"/>
+					<ref type="prev_correspondence_request" target="file13120"/>
+					<ref type="next_correspondence_reaction" target="file13131"/>
+					<ref type="prev_correspondence_reaction" target="file13114"/>
+					<ref type="next_same_sender" target="file13149"/>
+					<ref type="prev_same_sender" target="file13120"/>
+					<ref type="next_same_addressee" target="file13131"/>
+					<ref type="prev_same_addressee" target="file13114"/>
+					<ref type="next_with_sender_as_addressee" target="file13149"/>
+					<ref type="prev_with_sender_as_addressee" target="file13120"/>
+					<ref type="next_with_addressee_as_sender" target="file13131"/>
+					<ref type="prev_with_addressee_as_sender" target="file13114"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -157,58 +165,58 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Duravit hic Lavaterus<note xml:id="fn1" type="footnote" n="1">Ludwig Lavater war mit einer Empfehlung Bullingers vom 5. Oktober 1547 nach Basel abgereist und hatte vor, in Paris weiterzustudieren; s. <ref target="file#13081">Nr. 3032</ref>,<qv>zl17301-4</qv>.</note> usque ad proximum post Othmari<note xml:id="fn2" type="footnote" n="2">Othmarstag ist am 16. November.</note> propter varios, qui advenerant, rumores nunc de bello nunc de peste Parhisiis sęviente<note xml:id="fn3" type="footnote" n="3">Vgl. schon <ref target="file#13084">Nr. 3035</ref>,<qv>zl17304-6</qv>.</note> deque schola clausa et lectoribus absentibus, studiosis dispersis.</s>
-					<s xml:lang="la" type="auto">Hęc in dubium coniecerunt iuvenem, meo videre<note xml:id="fn4" type="footnote" n="4">meo videre: meines Erachtens; s. schon <abbr>HBBW</abbr> XVII 222,11; XVIII 62,16.</note> valde bonum et syncerum.</s>
-					<s xml:lang="la" type="auto">Statuerat autem semel non redire hoc maxime tempore in patriam (ex quo multę consultationes, quonam esset abeundum)<note xml:id="fna" type="footnote" n="a"><hi>Klammern ergänzt.</hi></note>, ne tempus terere cogeretur.</s>
-					<s xml:lang="la" type="auto">Cogitarat de Tubinga, Witenberga, Argentina.<note xml:id="fn5" type="footnote" n="5">In Straßburg hatte Lavater von Oktober 1545 bis etwa Mai 1547 studiert; s. <abbr>HBBW</abbr> XV 576f, Anm. 23; <ref target="file#12944">Nr. 2895</ref>.</note></s>
-					<s xml:lang="la" type="auto">Dissuasi, quantum in me erat.</s>
-					<s xml:lang="la" type="auto">In mentem venit Tolosa.</s>
-					<s xml:lang="la" type="auto">Iterum dissuasi, quod illic non fiant nisi dolle<note xml:id="fn6" type="footnote" n="6">= tolle, d.h. verrückte.</note> doctores et barbari.</s>
-					<s xml:lang="la" type="auto">Nam omnes bonę literę bonęque disciplinę, inprimis dialectica et rhetorica, inde exulant hanc ob causam, ne iuventus incidat in hęreses, sicut videre est in Germania.</s>
-					<s xml:lang="la" type="auto">Sic doctor quidam iureconsultus Tolosensis<note xml:id="fn7" type="footnote" n="7">Unbekannt.</note> in urbe nostra ante annum serio.</s>
-					<s xml:lang="la" type="auto">Tandem cogitavit de Aureliano<note xml:id="fn8" type="footnote" n="8">Falls Lavater über Orléans reiste, hielt er sich dort kaum auf, da er in Paris bereits am 29. November eintraf; s. <ref target="file#13084">Nr. 3035</ref>, <qv>fn17304-4</qv>.</note> et conclusit eo se abiturum, et dum valediceret, rogavit, ut hęc ad te, ut patri<note xml:id="fn9" type="footnote" n="9">Hans Rudolf.</note> ipsius exponeres.</s>
-					<s xml:lang="la" type="auto">Recepi, et nunc facio non invitus et propter ipsum, te et patrem eius.</s>
-					<s xml:lang="la" type="auto">Quęso, ut boni consulatis.<pb type="edition" next="669"/></s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Duravit hic Lavaterus<note xml:id="fn1" type="footnote" n="1">Ludwig Lavater war mit einer Empfehlung Bullingers vom 5. Oktober 1547 nach Basel abgereist und hatte vor, in Paris weiterzustudieren; s. <ref target="file13081">Nr. 3032</ref>,<qv>zl17301-4</qv>.</note> usque ad proximum post Othmari<note xml:id="fn2" type="footnote" n="2">Othmarstag ist am 16. November.</note> propter varios, qui advenerant, rumores nunc de bello nunc de peste Parhisiis sęviente<note xml:id="fn3" type="footnote" n="3">Vgl. schon <ref target="file13084">Nr. 3035</ref>,<qv>zl17304-6</qv>.</note> deque schola clausa et lectoribus absentibus, studiosis dispersis.</s>
+					<s n="3" xml:lang="la" type="auto">Hęc in dubium coniecerunt iuvenem, meo videre<note xml:id="fn4" type="footnote" n="4">meo videre: meines Erachtens; s. schon <abbr>HBBW</abbr> XVII 222,11; XVIII 62,16.</note> valde bonum et syncerum.</s>
+					<s n="4" xml:lang="la" type="auto">Statuerat autem semel non redire hoc maxime tempore in patriam (ex quo multę consultationes, quonam esset abeundum)<note xml:id="fna" type="footnote" n="a"><hi>Klammern ergänzt.</hi></note>, ne tempus terere cogeretur.</s>
+					<s n="5" xml:lang="la" type="auto">Cogitarat de Tubinga, Witenberga, Argentina.<note xml:id="fn5" type="footnote" n="5">In Straßburg hatte Lavater von Oktober 1545 bis etwa Mai 1547 studiert; s. <abbr>HBBW</abbr> XV 576f, Anm. 23; <ref target="file12944">Nr. 2895</ref>.</note></s>
+					<s n="6" xml:lang="la" type="auto">Dissuasi, quantum in me erat.</s>
+					<s n="7" xml:lang="la" type="auto">In mentem venit Tolosa.</s>
+					<s n="8" xml:lang="la" type="auto">Iterum dissuasi, quod illic non fiant nisi dolle<note xml:id="fn6" type="footnote" n="6">= tolle, d.h. verrückte.</note> doctores et barbari.</s>
+					<s n="9" xml:lang="la" type="auto">Nam omnes bonę literę bonęque disciplinę, inprimis dialectica et rhetorica, inde exulant hanc ob causam, ne iuventus incidat in hęreses, sicut videre est in Germania.</s>
+					<s n="10" xml:lang="la" type="auto">Sic doctor quidam iureconsultus Tolosensis<note xml:id="fn7" type="footnote" n="7">Unbekannt.</note> in urbe nostra ante annum serio.</s>
+					<s n="11" xml:lang="la" type="auto">Tandem cogitavit de Aureliano<note xml:id="fn8" type="footnote" n="8">Falls Lavater über Orléans reiste, hielt er sich dort kaum auf, da er in Paris bereits am 29. November eintraf; s. <ref target="file13084">Nr. 3035</ref>, <qv>fn17304-4</qv>.</note> et conclusit eo se abiturum, et dum valediceret, rogavit, ut hęc ad te, ut patri<note xml:id="fn9" type="footnote" n="9">Hans Rudolf.</note> ipsius exponeres.</s>
+					<s n="12" xml:lang="la" type="auto">Recepi, et nunc facio non invitus et propter ipsum, te et patrem eius.</s>
+					<s n="13" xml:lang="la" type="auto">Quęso, ut boni consulatis.<pb type="edition" next="669"/></s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Didicit autem, dum hic est diversatus apud signum coronę<note xml:id="fn10" type="footnote" n="10">Das Basler Gasthaus Zur Krone, wo Myconius gerne einkehrte; s. <abbr>HBBW</abbr> XVII 222f, Anm. 16.</note>, quo nobiles cęsariani divertunt, quanto isti persequantur odio confoederatos, deinde quales sint porci isti.</s>
-					<s xml:lang="la" type="auto">Dixit enim aliquando ad me fronte seria: „Mihi videtur homines istos nullo negocio posse vinci, si bellum ineant nobiscum.</s>
-					<s xml:lang="la" type="auto">Adeo sunt moribus ineptiores<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> ineptiore.</note>, blasphemi, hostes omnis pietatis ac boni, vino semper madidi, tantum nostri caveant a tam porcinis malis et ista in eis observent et deum habeant in oculis!“</s>
-					<s xml:lang="la" type="auto">Hactenus de Lavatero.</s>
+					<s n="14" xml:lang="la" type="auto">Didicit autem, dum hic est diversatus apud signum coronę<note xml:id="fn10" type="footnote" n="10">Das Basler Gasthaus Zur Krone, wo Myconius gerne einkehrte; s. <abbr>HBBW</abbr> XVII 222f, Anm. 16.</note>, quo nobiles cęsariani divertunt, quanto isti persequantur odio confoederatos, deinde quales sint porci isti.</s>
+					<s n="15" xml:lang="la" type="auto">Dixit enim aliquando ad me fronte seria: „Mihi videtur homines istos nullo negocio posse vinci, si bellum ineant nobiscum.</s>
+					<s n="16" xml:lang="la" type="auto">Adeo sunt moribus ineptiores<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> ineptiore.</note>, blasphemi, hostes omnis pietatis ac boni, vino semper madidi, tantum nostri caveant a tam porcinis malis et ista in eis observent et deum habeant in oculis!“</s>
+					<s n="17" xml:lang="la" type="auto">Hactenus de Lavatero.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Pręter hęc est nobilis Reifenbergius<note xml:id="fn11" type="footnote" n="11">Der hessische Oberst Friedrich von Reifenberg (gest. 1595), der sich damals, wie auch andere protestantische Feldherren (s. dazu z.B. <ref target="file#13122">Nr. 3073</ref>, <qv>fn17339-2</qv>; <abbr>AK</abbr> VI 458f, Anm. 1), auf der Flucht vor dem Kaiser befand. Er zog sich für eine Zeitlang nach Basel zurück, und zwar offensichtlich schon 1547 und nicht erst 1548, wie dies im anonymen Aufsatz Der Abendteurer Friedrich von Reifenberg. Ein Beitrag zur Geschichte der Taunusgegenden, in: Didaskalia. Blätter für Geist, Gemüth und Publizität, hg. v. Johann Ludwig Heller, 23. Jg, <ref target="file#10197">Nr. 166</ref> vom 18. Juni 1845, angegeben wird.</note>, ad quem literę paucis ante diebus missę sic habent:</s>
-					<s xml:lang="de" type="manual">„Machent üch von Basel, dann man wirt die Schwitzer angrifen!“</s>
-					<s xml:lang="la" type="auto">Ex Novocastro ad Rhenum sito fuit per nundinas<note xml:id="fn12" type="footnote" n="12">Die Martini-Messe in Basel; s. dazu <ref target="file#13120">Nr. 3071</ref>, <qv>fn17337-1</qv>.</note> hic civis<note xml:id="fn13" type="footnote" n="13">Unbekannt. - Nachgewiesen ist, dass Hans Schirin aus Neuenburg am Rhein, ein Bonifacius Amerbach Nahestehender (s. <abbr>AK</abbr> VI 371), nicht allzu lange vor dem 29. November 1547 in Basel gewesen war; s. <abbr>AK</abbr> VI 552, <ref target="file#13059">Nr. 3010</ref>.</note>, qui cum eiulatu quaestus est mandatum sibi hospitium pro militibus octo.</s>
-					<s xml:lang="la" type="auto">Ex Rhinfeldio et oppidulis quatuor Rhenanis<note xml:id="fn14" type="footnote" n="14">Gemeint sind die Städtchen Rheinfelden, Säckingen, Laufenburg und Waldshut. Rheinfelden wird dadurch indirekt zweimal aufgezählt!</note> idem rumoris est.</s>
-					<s xml:lang="la" type="auto">In ludo nostro est adulescens<note xml:id="fn15" type="footnote" n="15">Unbekannt.</note>, qui his diebus venit e patria Gintzgertal.<note xml:id="fn16" type="footnote" n="16">Kinzigtal.</note></s>
-					<s xml:lang="de" type="auto"><foreign xml:lang="la">Dicit iactare omnes:</foreign> Si wellent die milchtremmel<note xml:id="fn17" type="footnote" n="17">Wortwörtlich "Milchfresser" (s. Johann Jakob <hi>Denzler,</hi> Clavis Linguae Latinae, Basel 1715, S. 202 der "Clavis Germanico-Latina"), ein Schmähwort, mit dem hier nicht nur die Innerschweizer (s. <abbr>SI</abbr> XIV 996), sondern offensichtlich alle Eidgenossen gemeint sind.</note> einmal glegen.<note xml:id="fn18" type="footnote" n="18">niedermachen.</note></s>
-					<s xml:lang="la" type="auto">Vides, ut conetur nos cingere cadaver<note xml:id="fn19" type="footnote" n="19">Die Rede ist von Kaiser Karl V.; s. dazu zuletzt <ref target="file#13111">Nr. 3062</ref> und <qv>fn17330-4</qv>.</note> paulatim nobis nescientibus, imo non credentibus, donec omnibus paratis repente ab omni parte nos invadat et obprimat.</s>
-					<s xml:lang="la" type="auto">Equidem nobis timeo cum ob securitatem, quam video, tum ob stuporem, quem sentio, adde ob multorum animos avidos auri et odio laborantes Christi.</s>
-					<s xml:lang="la" type="auto">Oremus sine intermissione!<note xml:id="fn20" type="footnote" n="20">Vgl. 1Thess 5, 17.</note></s>
+					<s n="18" xml:lang="la" type="auto">Pręter hęc est nobilis Reifenbergius<note xml:id="fn11" type="footnote" n="11">Der hessische Oberst Friedrich von Reifenberg (gest. 1595), der sich damals, wie auch andere protestantische Feldherren (s. dazu z.B. <ref target="file13122">Nr. 3073</ref>, <qv>fn17339-2</qv>; <abbr>AK</abbr> VI 458f, Anm. 1), auf der Flucht vor dem Kaiser befand. Er zog sich für eine Zeitlang nach Basel zurück, und zwar offensichtlich schon 1547 und nicht erst 1548, wie dies im anonymen Aufsatz Der Abendteurer Friedrich von Reifenberg. Ein Beitrag zur Geschichte der Taunusgegenden, in: Didaskalia. Blätter für Geist, Gemüth und Publizität, hg. v. Johann Ludwig Heller, 23. Jg, <ref target="file10197">Nr. 166</ref> vom 18. Juni 1845, angegeben wird.</note>, ad quem literę paucis ante diebus missę sic habent:</s>
+					<s n="19" xml:lang="de" type="manual">„Machent üch von Basel, dann man wirt die Schwitzer angrifen!“</s>
+					<s n="20" xml:lang="la" type="auto">Ex Novocastro ad Rhenum sito fuit per nundinas<note xml:id="fn12" type="footnote" n="12">Die Martini-Messe in Basel; s. dazu <ref target="file13120">Nr. 3071</ref>, <qv>fn17337-1</qv>.</note> hic civis<note xml:id="fn13" type="footnote" n="13">Unbekannt. - Nachgewiesen ist, dass Hans Schirin aus Neuenburg am Rhein, ein Bonifacius Amerbach Nahestehender (s. <abbr>AK</abbr> VI 371), nicht allzu lange vor dem 29. November 1547 in Basel gewesen war; s. <abbr>AK</abbr> VI 552, <ref target="file13059">Nr. 3010</ref>.</note>, qui cum eiulatu quaestus est mandatum sibi hospitium pro militibus octo.</s>
+					<s n="21" xml:lang="la" type="auto">Ex Rhinfeldio et oppidulis quatuor Rhenanis<note xml:id="fn14" type="footnote" n="14">Gemeint sind die Städtchen Rheinfelden, Säckingen, Laufenburg und Waldshut. Rheinfelden wird dadurch indirekt zweimal aufgezählt!</note> idem rumoris est.</s>
+					<s n="22" xml:lang="la" type="auto">In ludo nostro est adulescens<note xml:id="fn15" type="footnote" n="15">Unbekannt.</note>, qui his diebus venit e patria Gintzgertal.<note xml:id="fn16" type="footnote" n="16">Kinzigtal.</note></s>
+					<s n="23" xml:lang="de" type="auto"><foreign xml:lang="la">Dicit iactare omnes:</foreign> Si wellent die milchtremmel<note xml:id="fn17" type="footnote" n="17">Wortwörtlich "Milchfresser" (s. Johann Jakob <hi>Denzler,</hi> Clavis Linguae Latinae, Basel 1715, S. 202 der "Clavis Germanico-Latina"), ein Schmähwort, mit dem hier nicht nur die Innerschweizer (s. <abbr>SI</abbr> XIV 996), sondern offensichtlich alle Eidgenossen gemeint sind.</note> einmal glegen.<note xml:id="fn18" type="footnote" n="18">niedermachen.</note></s>
+					<s n="24" xml:lang="la" type="auto">Vides, ut conetur nos cingere cadaver<note xml:id="fn19" type="footnote" n="19">Die Rede ist von Kaiser Karl V.; s. dazu zuletzt <ref target="file13111">Nr. 3062</ref> und <qv>fn17330-4</qv>.</note> paulatim nobis nescientibus, imo non credentibus, donec omnibus paratis repente ab omni parte nos invadat et obprimat.</s>
+					<s n="25" xml:lang="la" type="auto">Equidem nobis timeo cum ob securitatem, quam video, tum ob stuporem, quem sentio, adde ob multorum animos avidos auri et odio laborantes Christi.</s>
+					<s n="26" xml:lang="la" type="auto">Oremus sine intermissione!<note xml:id="fn20" type="footnote" n="20">Vgl. 1Thess 5, 17.</note></s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Vale cum Gvalthero in Christo.</s>
-					<s xml:lang="la" type="auto">Basileę, 19. novembris anno 1547.</s>
-					<s xml:lang="la" type="auto">Tuus O. My.</s>
+					<s n="27" xml:lang="la" type="auto">Vale cum Gvalthero in Christo.</s>
+					<s n="28" xml:lang="la" type="auto">Basileę, 19. novembris anno 1547.</s>
+					<s n="29" xml:lang="la" type="auto">Tuus O. My.</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Hęc continere non potui apud me.</s>
-					<s xml:lang="la" type="auto">Boni consulito.<pb type="edition" next="670"/></s>
+					<s n="30" xml:lang="la" type="auto">Hęc continere non potui apud me.</s>
+					<s n="31" xml:lang="la" type="auto">Boni consulito.<pb type="edition" next="670"/></s>
 				</p>
 				<p>
 					<note>[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Heinricho Bullingero, viro doctissimo, fratri in domino observando suo.</s>
-					<s xml:lang="de" type="auto">Zü[ric]h.<note xml:id="fnc" type="footnote" n="c"><hi>Textverlust bei der Entfernung des Siegels.</hi></note></s>
+					<s n="32" xml:lang="la" type="auto">D. Heinricho Bullingero, viro doctissimo, fratri in domino observando suo.</s>
+					<s n="33" xml:lang="de" type="auto">Zü[ric]h.<note xml:id="fnc" type="footnote" n="c"><hi>Textverlust bei der Entfernung des Siegels.</hi></note></s>
 				</p>
 			</div>
 		</body>

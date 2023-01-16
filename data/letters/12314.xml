@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2013"/>
-				<idno type="ISBN">ISBN 978-3-290-17664-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2267</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17664-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2267</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 15</title>
+				<title subtype="publication">HBBW XV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">15</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 338,1413</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 338,1413</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,13 +49,13 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Der Zürcher <persName ref="122">Konrad Klauser</persName> entsprach während seines Aufenthalts in
-								[<placeName ref="520">Isny</placeName>] ganz Bullingers Beschreibung: Als er bei Frick wohnte,
+								Der Zürcher <persName ref="person122">Konrad Klauser</persName> entsprach während seines Aufenthalts in
+								[<placeName ref="place520">Isny</placeName>] ganz Bullingers Beschreibung: Als er bei Frick wohnte,
 								übersetzte er das erste Buch des griechischen [Autors] Theophilos an Autolykos aus dem Griechischen ins
 								Lateinische; er ist beredt, ein guter Verkündiger der [Heiligen] Schrift und freundlich im Umgang. Doch
 								konnte man sich mit ihm nicht über das Gehalt einigen; er wird selbst davon berichten. Frick dankt Bullinger
-								einstweilen für <persName ref="122">Klausers</persName> Entsendung, mit der Bullinger der Bitte
-								[<placeName ref="520">Isnys</placeName>] nachkam.
+								einstweilen für <persName ref="person122">Klausers</persName> Entsendung, mit der Bullinger der Bitte
+								[<placeName ref="place520">Isnys</placeName>] nachkam.
 							</p>
 						</summary>
 					</msContents>
@@ -62,29 +65,33 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12314">
 				<correspAction type="sent">
-					<persName ref="person#1056" cert="high">
+					<!--
+					<persName ref="person1056" cert="high">
 						<forename cert="high">Konrad</forename>
 						<surname cert="high">Frick</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/1012580121"/>
 					</persName>
-					<place source="#234" cert="high">
-						<settlement>Isny</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.691684949999996 10.033669207373844</geo>
-					</place>
+					-->
+					<persName ref="person1056" cert="high"/>
+					<place source="place234" cert="high"/>
 					<date when="1545-10-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12315"/>
-					<ref type="prev_chronologically" target="files.xml#12313"/>
+					<ref type="next_chronologically" target="file12315"/>
+					<ref type="prev_chronologically" target="file12313"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -93,12 +100,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#12316"/>
-					<ref type="prev_same_addressee" target="files.xml#12309"/>
+					<ref type="next_same_addressee" target="file12316"/>
+					<ref type="prev_same_addressee" target="file12309"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12316"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12309"/>
+					<ref type="next_with_addressee_as_sender" target="file12316"/>
+					<ref type="prev_with_addressee_as_sender" target="file12309"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,22 +123,22 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salus et pax a deo.</s>
-					<s xml:lang="la" type="auto">Quae in literis tuis<note xml:id="fn2" type="footnote" n="2">Nicht erhalten und wohl <persName ref="122">Klauser</persName> als Empfehlungsbrief mitgegeben.</note> mihi gratissimis de d. <persName ref="122">Conrado</persName> Claussero Tigurino testatus es, vir doctissime, omnia, ubi ad nos pervenit, pulchre praestitit, nempe quod sit Graece et Latine doctus, in divinis et humanis literis non vulgariter eruditus, humanus et fidelis; quae facile ex multis argumentis cernere licuit: Transtulit enim interim, quando mecum habitavit, librum primum Theophili Graeci ad Autolycum ex Graeco in Latinum sermonem,<note xml:id="fn3" type="footnote" n="3"><persName ref="122">Klausers</persName> Übersetzung der apologetischen Schrift „<foreign xml:lang="el">Πρὸς Αὐτόλυκον</foreign>“ („An Autolykos“) des Theophilos aus Antiochia (gest. um 183 n. Chr.) vom Griechischen ins Lateinische war bestimmt für einen Sammeldruck, in den auch Übersetzungen von <persName ref="122">Konrad</persName> Gessner, <persName ref="1926">Jean Ribit</persName> und Vincentius Opsopoeus aufgenommen wurden. Der Sammeldruck erschien im Folgejahr unter dem Titel: „<foreign xml:lang="el">Ἀπομνημονευμάτων</foreign> ... Sententiarum sive capitum theologicorum praecipue ex sacris et profanis libris ...", Zürich, Christoph Froschauer, <hi>1546</hi> (VD 16 A 2966; BZD C 354f); s. dazu Peter <hi>Frei,</hi> Conradus Clauserus Tigurinus (ca. <hi>1515-1567).</hi> Pfarrer, Schulmann, Gelehrter, Zürich 1997 -Njbl. der Gelehrten Gesellschaft in Zürich 160, S. 87f, Nr.7.</note> in cottidiano colloquio usque ad miraculum facundus, pro concione in scripturis exercitatus, in conversatione supra modum humanus, sicut nihil defuerit eorum, quae de eo adserueris; id quod eciam nostris clare fuit perspectum.</s>
-					<s xml:lang="la" type="auto">Sed qui factum sit, ut pro mercede transigenda cum nostris minus convenerit, ipse abunde narrabit<note xml:id="fn4" type="footnote" n="4">Siehe dazu den von <persName ref="122">Klauser</persName> auf der Zürcher Herbstsynode vom 20. Oktober 1545 erstatteten Bericht, in: Zürich StA, E II I, 320.</note>.</s>
-					<s xml:lang="la" type="auto">Tibi interim nomine tocius ecclesiae nostrae gracias habeo uberrimas, qui hunc ad nos, nostris praecibus adactus, transmiseris.<pb type="edition" next="592"/></s>
+					<s n="1" xml:lang="la" type="auto">Salus et pax a deo.</s>
+					<s n="2" xml:lang="la" type="auto">Quae in literis tuis<note xml:id="fn2" type="footnote" n="2">Nicht erhalten und wohl <persName ref="person122">Klauser</persName> als Empfehlungsbrief mitgegeben.</note> mihi gratissimis de d. <persName ref="person122">Conrado</persName> Claussero Tigurino testatus es, vir doctissime, omnia, ubi ad nos pervenit, pulchre praestitit, nempe quod sit Graece et Latine doctus, in divinis et humanis literis non vulgariter eruditus, humanus et fidelis; quae facile ex multis argumentis cernere licuit: Transtulit enim interim, quando mecum habitavit, librum primum Theophili Graeci ad Autolycum ex Graeco in Latinum sermonem,<note xml:id="fn3" type="footnote" n="3"><persName ref="person122">Klausers</persName> Übersetzung der apologetischen Schrift „<foreign xml:lang="el">Πρὸς Αὐτόλυκον</foreign>“ („An Autolykos“) des Theophilos aus Antiochia (gest. um 183 n. Chr.) vom Griechischen ins Lateinische war bestimmt für einen Sammeldruck, in den auch Übersetzungen von Konrad Gessner, <persName ref="person1926">Jean Ribit</persName> und Vincentius Opsopoeus aufgenommen wurden. Der Sammeldruck erschien im Folgejahr unter dem Titel: „<foreign xml:lang="el">Ἀπομνημονευμάτων</foreign> ... Sententiarum sive capitum theologicorum praecipue ex sacris et profanis libris ...", Zürich, Christoph Froschauer, 1546 (VD 16 A 2966; BZD C 354f); s. dazu Peter <hi>Frei,</hi> Conradus Clauserus Tigurinus (ca. 1515-1567). Pfarrer, Schulmann, Gelehrter, Zürich 1997 -Njbl. der Gelehrten Gesellschaft in Zürich 160, S. 87f, Nr.7.</note> in cottidiano colloquio usque ad miraculum facundus, pro concione in scripturis exercitatus, in conversatione supra modum humanus, sicut nihil defuerit eorum, quae de eo adserueris; id quod eciam nostris clare fuit perspectum.</s>
+					<s n="3" xml:lang="la" type="auto">Sed qui factum sit, ut pro mercede transigenda cum nostris minus convenerit, ipse abunde narrabit<note xml:id="fn4" type="footnote" n="4">Siehe dazu den von <persName ref="person122">Klauser</persName> auf der Zürcher Herbstsynode vom 20. Oktober 1545 erstatteten Bericht, in: Zürich StA, E II I, 320.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Tibi interim nomine tocius ecclesiae nostrae gracias habeo uberrimas, qui hunc ad nos, nostris praecibus adactus, transmiseris.<pb type="edition" next="592"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino quam felicissime et me, licet facie ignotum, spiritu tamen notissimum, semper ama.</s>
+					<s n="5" xml:lang="la" type="auto">Vale in domino quam felicissime et me, licet facie ignotum, spiritu tamen notissimum, semper ama.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum Isnae, 15. die octobris anno a Christo nato 1545.</s>
-					<s xml:lang="la" type="auto">Tuus Cunradus Friccius, Isnae a sacris concionibus.</s>
+					<s n="6" xml:lang="la" type="auto">Datum Isnae, 15. die octobris anno a Christo nato 1545.</s>
+					<s n="7" xml:lang="la" type="auto">Tuus Cunradus Friccius, Isnae a sacris concionibus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Hainricho Bullingero, ecclesiae Tigurinae episcopo, d. suo semper suspiciendo.</s>
-					<s xml:lang="de" type="auto">Zurch.</s>
+					<s n="8" xml:lang="la" type="auto">Clarissimo viro d. Hainricho Bullingero, ecclesiae Tigurinae episcopo, d. suo semper suspiciendo.</s>
+					<s n="9" xml:lang="de" type="auto">Zurch.</s>
 				</p>
 			</div>
 		</body>

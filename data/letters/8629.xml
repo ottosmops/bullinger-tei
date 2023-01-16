@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7679/72</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 62,504</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 62,504</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -50,14 +53,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 199,45+46</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">Regest/Kopie</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 199,45+46</idno>
+						<idno subtype="Hinweis">Regest/Kopie</idno>
 					</msIdentifier>
 					<history><origin><p><date>18. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -67,30 +73,33 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8629">
 				<correspAction type="sent">
-					<persName ref="person#3427" cert="low">
+					<!--
+					<persName ref="person3427" cert="low">
 						<forename cert="low">J.</forename>
 						<surname cert="low">Vigierius</surname>
 					</persName>
-					<place source="#28" cert="low">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person3427" cert="low"/>
+					<place source="place28" cert="low"/>
 					<date when="1571-08-08" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<note type="Person">vielleicht der Jüngere</note>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8630"/>
-					<ref type="prev_chronologically" target="files.xml#8628"/>
+					<ref type="next_chronologically" target="file8630"/>
+					<ref type="prev_chronologically" target="file8628"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -99,12 +108,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#8631"/>
-					<ref type="prev_same_addressee" target="files.xml#8625"/>
+					<ref type="next_same_addressee" target="file8631"/>
+					<ref type="prev_same_addressee" target="file8625"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8631"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8625"/>
+					<ref type="next_with_addressee_as_sender" target="file8631"/>
+					<ref type="prev_with_addressee_as_sender" target="file8625"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -122,33 +131,33 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Iam diu est, cum ego ad te nihil literarum dedi (domine honorande), id quod accidit non oblivione tui; mea neque pigritia aut negligentia factum esse haud existimes velim, sed quod veritus sum, ne tuis gravioribus curis et occupationibus intempestivus atque molestus intervenirem.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Iam diu est, cum ego ad te nihil literarum dedi (domine honorande), id quod accidit non oblivione tui; mea neque pigritia aut negligentia factum esse haud existimes velim, sed quod veritus sum, ne tuis gravioribus curis et occupationibus intempestivus atque molestus intervenirem.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quod autem has ad te do literas, arbitratus sum esse mei officii meaeque perpetuae erga te observantia aliquid ad te scribere.</s>
-					<s xml:lang="la" type="auto">Sum enim pro tuis multis erga me meritis iam pridem valde obstrictus; nam lectis d. Ioannis Arnaldi literis, quas tu nuperrime ei miseras, penitus recognovi in illis omnem probitatem atque praestantiam ingenii tui et pristini erga me amoris imaginem.</s>
-					<s xml:lang="la" type="auto">Quare quanti te faciam, nihil attinet nunc me scribere; equidem certe ita delector, ut nihil mihi accidere possit optatius quam me abs te, tali viro, diligi.</s>
-					<s xml:lang="la" type="auto">De studiorum meorum ratione (domine observande) sic habeto: praeceptoribus utor fidelissimis, qui ea mihi, quae maxime mei stomachi sunt, diligentissime proponunt, in stylo me frequenter exercent.</s>
-					<s xml:lang="la" type="auto">Quare in hac re quid me facere debeat, diligenter perpendam illudque perpetuo tenebo:</s>
-					<s xml:lang="el" type="manual">Αιεν αριστεθειν και θπειροψον εμμεναι αλλςν.</s>
+					<s n="3" xml:lang="la" type="auto">Quod autem has ad te do literas, arbitratus sum esse mei officii meaeque perpetuae erga te observantia aliquid ad te scribere.</s>
+					<s n="4" xml:lang="la" type="auto">Sum enim pro tuis multis erga me meritis iam pridem valde obstrictus; nam lectis d. Ioannis Arnaldi literis, quas tu nuperrime ei miseras, penitus recognovi in illis omnem probitatem atque praestantiam ingenii tui et pristini erga me amoris imaginem.</s>
+					<s n="5" xml:lang="la" type="auto">Quare quanti te faciam, nihil attinet nunc me scribere; equidem certe ita delector, ut nihil mihi accidere possit optatius quam me abs te, tali viro, diligi.</s>
+					<s n="6" xml:lang="la" type="auto">De studiorum meorum ratione (domine observande) sic habeto: praeceptoribus utor fidelissimis, qui ea mihi, quae maxime mei stomachi sunt, diligentissime proponunt, in stylo me frequenter exercent.</s>
+					<s n="7" xml:lang="la" type="auto">Quare in hac re quid me facere debeat, diligenter perpendam illudque perpetuo tenebo:</s>
+					<s n="8" xml:lang="el" type="manual">Αιεν αριστεθειν και θπειροψον εμμεναι αλλςν.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Habes (domine colendissime) epistolam, quae ut diligentiae parum, ita benevolentiae et officii plurimum prae se ferat, ad quam, quando placuerit, rescribere non dedigneris.</s>
+					<s n="9" xml:lang="la" type="auto">Habes (domine colendissime) epistolam, quae ut diligentiae parum, ita benevolentiae et officii plurimum prae se ferat, ad quam, quando placuerit, rescribere non dedigneris.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale et tuam honesti[ssi]mam matronam, charissimos tuos liberos universamque tuam familiam meo nomine saluta.</s>
-					<s xml:lang="la" type="auto">Vale iterum.</s>
+					<s n="10" xml:lang="la" type="auto">Vale et tuam honesti[ssi]mam matronam, charissimos tuos liberos universamque tuam familiam meo nomine saluta.</s>
+					<s n="11" xml:lang="la" type="auto">Vale iterum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Basileae.</s>
+					<s n="12" xml:lang="la" type="auto">Basileae.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tui observantissimus I. Vigierius.</s>
+					<s n="13" xml:lang="la" type="auto">Tui observantissimus I. Vigierius.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ornatissimo doctissimoque viro d. Bullingero, ecclesiae Tigurinae pastori fidelissimo, domino suo plurimum observando.</s>
-					<s xml:lang="la" type="auto">Tigurum.</s>
+					<s n="14" xml:lang="la" type="auto">Ornatissimo doctissimoque viro d. Bullingero, ecclesiae Tigurinae pastori fidelissimo, domino suo plurimum observando.</s>
+					<s n="15" xml:lang="la" type="auto">Tigurum.</s>
 				</p>
 				<p>
 					<note>[Wohl gleichzeitig wie J. Arnold an HB 8. Aug. 1571.]</note>

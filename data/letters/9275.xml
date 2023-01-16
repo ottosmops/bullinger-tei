@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#441">Schaffhausen</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">Korresp. XIX, Nr. 97</idno>
-						<repository ref="archive#76">
+						<!--
+						<repository ref="archive76">
 							<name>Schaffhausen StA</name>
-							<note type="Xeroxkopie">IRG</note>
 							<ref target="https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Regierung/Staatskanzlei/Staatsarchiv-3936-DE.html"/>
 						</repository>
+						<settlement ref="place441">Schaffhausen</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive76"/>
+						<idno subtype="Autograph">Korresp. XIX, Nr. 97</idno>
+						<idno subtype="Xeroxkopie">IRG</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -32,62 +35,56 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9275">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1573-04-06" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2552" cert="low">
+					<!--
+					<persName ref="person2552" cert="low">
 						<forename cert="low">Alexander</forename>
 						<surname cert="low">Peyer</surname>
 					</persName>
-					<persName ref="person#7982" cert="low">
+					-->
+					<persName ref="person2552" cert="low"/>
+					<!--
+					<persName ref="person7982" cert="low">
 						<forename cert="low">Ringgen</forename>
 						<surname cert="low">von Wildenberg</surname>
-						<roleName type="title">
-							<name type="plural" ref="role#14" cert="low">Bürgermeister</name>
-							<place source="#441" cert="low">
-								<settlement>Schaffhausen</settlement>
-								<district>Schaffhausen</district>
-								<country>Schweiz</country>
-								<geo>47.69732 8.63493</geo>
-							</place>
-						</roleName>
+						<personGrp ref="role28" role="Bürgermeister"/>
 					</persName>
-					<place source="#441" cert="low">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					-->
+					<persName ref="person7982" cert="low"/>
+					<personGrp ref="role28" role="Bürgermeister"/>
+					<place source="place441" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9276"/>
-					<ref type="prev_chronologically" target="files.xml#9274"/>
-					<ref type="next_correspondence" target="files.xml#9990"/>
-					<ref type="prev_correspondence" target="files.xml#9141"/>
-					<ref type="next_correspondence_request" target="files.xml#9990"/>
-					<ref type="prev_correspondence_request" target="files.xml#8473"/>
+					<ref type="next_chronologically" target="file9276"/>
+					<ref type="prev_chronologically" target="file9274"/>
+					<ref type="next_correspondence" target="file9990"/>
+					<ref type="prev_correspondence" target="file9141"/>
+					<ref type="next_correspondence_request" target="file9990"/>
+					<ref type="prev_correspondence_request" target="file8473"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#9141"/>
-					<ref type="next_same_sender" target="files.xml#9278"/>
-					<ref type="prev_same_sender" target="files.xml#9273"/>
+					<ref type="prev_correspondence_reaction" target="file9141"/>
+					<ref type="next_same_sender" target="file9278"/>
+					<ref type="prev_same_sender" target="file9273"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#9141"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9278"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9273"/>
+					<ref type="prev_same_addressee" target="file9141"/>
+					<ref type="next_with_sender_as_addressee" target="file9278"/>
+					<ref type="prev_with_sender_as_addressee" target="file9273"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#9141"/>
+					<ref type="prev_with_addressee_as_sender" target="file9141"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

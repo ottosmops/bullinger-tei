@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3520</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 81,117</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 81,117</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -63,52 +66,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2225">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1554-03-17" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#224" cert="high">
+					<!--
+					<persName ref="person224" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">a Lasco</surname>
-						<addName type="main">a Lasco (Laski), Johannes (Jan)</addName>
+						<persName type="main" ref="person8041>a Lasco (Laski), Johannes (Jan)</addName>
 						<graphic type="portrait" url="portraits/220_Laski_Jan.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_a_Lasco"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118726633"/>
 					</persName>
-					<place source="#138" cert="high">
-						<settlement>Emden</settlement>
-						<district>Niedersachsen</district>
-						<country>Deutschland</country>
-						<geo>53.36745 7.20778</geo>
-					</place>
+					-->
+					<persName ref="person224" cert="high"/>
+					<place source="place138" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2226"/>
-					<ref type="prev_chronologically" target="files.xml#2224"/>
-					<ref type="next_correspondence" target="files.xml#2414"/>
-					<ref type="prev_correspondence" target="files.xml#1895"/>
-					<ref type="next_correspondence_request" target="files.xml#2907"/>
-					<ref type="prev_correspondence_request" target="files.xml#12005"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2414"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#1895"/>
-					<ref type="next_same_sender" target="files.xml#2231"/>
-					<ref type="prev_same_sender" target="files.xml#2219"/>
-					<ref type="next_same_addressee" target="files.xml#2414"/>
-					<ref type="prev_same_addressee" target="files.xml#2214"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2231"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2219"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2414"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2214"/>
+					<ref type="next_chronologically" target="file2226"/>
+					<ref type="prev_chronologically" target="file2224"/>
+					<ref type="next_correspondence" target="file2414"/>
+					<ref type="prev_correspondence" target="file1895"/>
+					<ref type="next_correspondence_request" target="file2907"/>
+					<ref type="prev_correspondence_request" target="file12005"/>
+					<ref type="next_correspondence_reaction" target="file2414"/>
+					<ref type="prev_correspondence_reaction" target="file1895"/>
+					<ref type="next_same_sender" target="file2231"/>
+					<ref type="prev_same_sender" target="file2219"/>
+					<ref type="next_same_addressee" target="file2414"/>
+					<ref type="prev_same_addressee" target="file2214"/>
+					<ref type="next_with_sender_as_addressee" target="file2231"/>
+					<ref type="prev_with_sender_as_addressee" target="file2219"/>
+					<ref type="next_with_addressee_as_sender" target="file2414"/>
+					<ref type="prev_with_addressee_as_sender" target="file2214"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -123,39 +125,39 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Quotidie experior Lutheranos, et iudicio sinceriore et caritate adeoque et humanitate vacuos, quod non sine dolore dico, accelerare sibi iustum domini iudicium.</s>
-					<s xml:lang="la" type="auto">Multis iam annis perpessi sumus et dissimulavimus ipsorum barbaram duritiem, quam neque tu, neque alii boni viri fuerant experti, qui iudicabant nos peccasse, qui vivo responderamus Luthero, nec immoderate tamen.</s>
-					<s xml:lang="la" type="auto">Librum Ioachimi Westphali et re vera Westphali, hoc est, hominis crassi, accepi, sed quia heri demum a Gallo omnia illa tua accepi, quum alioqui occupatissimus essem, non licuit quidpiam in illo legere.</s>
+					<s n="1" xml:lang="la" type="auto">Quotidie experior Lutheranos, et iudicio sinceriore et caritate adeoque et humanitate vacuos, quod non sine dolore dico, accelerare sibi iustum domini iudicium.</s>
+					<s n="2" xml:lang="la" type="auto">Multis iam annis perpessi sumus et dissimulavimus ipsorum barbaram duritiem, quam neque tu, neque alii boni viri fuerant experti, qui iudicabant nos peccasse, qui vivo responderamus Luthero, nec immoderate tamen.</s>
+					<s n="3" xml:lang="la" type="auto">Librum Ioachimi Westphali et re vera Westphali, hoc est, hominis crassi, accepi, sed quia heri demum a Gallo omnia illa tua accepi, quum alioqui occupatissimus essem, non licuit quidpiam in illo legere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Farraginem eius nuper inspexi et quale sit hominis ingenium intellexi.</s>
-					<s xml:lang="la" type="auto">Dominus ignoscat et huic, et reliquis ineptis plane Lutheranis et instruat mente puriore et meliore.</s>
-					<s xml:lang="la" type="auto">Sat aliqui et plus quam satis in ecclesia litium erat, utcunque illi sopitam qualicunque modo non excitarent tragoediam.</s>
-					<s xml:lang="la" type="auto">Sed reddent rationem iusto universorum iudici deo.</s>
-					<s xml:lang="la" type="auto">Oppugnamur valide a papistis, Anabaptistis, ab Epicureismi... sectatoribus, ab Arianis in Serveto Hispano renatis, et a multis aliis haeresibus, quae et Christi carnem et meritum et resurrectionem vellicant.</s>
-					<s xml:lang="la" type="auto">Accedunt iam et Lutherani.</s>
-					<s xml:lang="la" type="auto">Sed non deerit purae veritati et nobis deus noster sanctissimus, potentissimus, clementissimus.</s>
-					<s xml:lang="la" type="auto">Probo in te quod instituis Westphali respondere farragini.</s>
-					<s xml:lang="la" type="auto">Perge modo, neque differas diu opus necessarium.</s>
-					<s xml:lang="la" type="auto">Sic intelligent calumniatores et Zoili te non dissentire a nobis.</s>
-					<s xml:lang="la" type="auto">Spero autem Calvinum nostrum ei libello responsurum, quem misisti de recta fide in coena etc.</s>
-					<s xml:lang="de" type="auto">Westphali.</s>
-					<s xml:lang="la" type="auto">Forte respondebit illi aliquis ex nostris, praecipue vero Bibliander noster.</s>
-					<s xml:lang="la" type="auto">Ego enim quum nondum legerim nihildum certi potui constituere et ad te scribere.</s>
+					<s n="4" xml:lang="la" type="auto">Farraginem eius nuper inspexi et quale sit hominis ingenium intellexi.</s>
+					<s n="5" xml:lang="la" type="auto">Dominus ignoscat et huic, et reliquis ineptis plane Lutheranis et instruat mente puriore et meliore.</s>
+					<s n="6" xml:lang="la" type="auto">Sat aliqui et plus quam satis in ecclesia litium erat, utcunque illi sopitam qualicunque modo non excitarent tragoediam.</s>
+					<s n="7" xml:lang="la" type="auto">Sed reddent rationem iusto universorum iudici deo.</s>
+					<s n="8" xml:lang="la" type="auto">Oppugnamur valide a papistis, Anabaptistis, ab Epicureismi... sectatoribus, ab Arianis in Serveto Hispano renatis, et a multis aliis haeresibus, quae et Christi carnem et meritum et resurrectionem vellicant.</s>
+					<s n="9" xml:lang="la" type="auto">Accedunt iam et Lutherani.</s>
+					<s n="10" xml:lang="la" type="auto">Sed non deerit purae veritati et nobis deus noster sanctissimus, potentissimus, clementissimus.</s>
+					<s n="11" xml:lang="la" type="auto">Probo in te quod instituis Westphali respondere farragini.</s>
+					<s n="12" xml:lang="la" type="auto">Perge modo, neque differas diu opus necessarium.</s>
+					<s n="13" xml:lang="la" type="auto">Sic intelligent calumniatores et Zoili te non dissentire a nobis.</s>
+					<s n="14" xml:lang="la" type="auto">Spero autem Calvinum nostrum ei libello responsurum, quem misisti de recta fide in coena etc.</s>
+					<s n="15" xml:lang="de" type="auto">Westphali.</s>
+					<s n="16" xml:lang="la" type="auto">Forte respondebit illi aliquis ex nostris, praecipue vero Bibliander noster.</s>
+					<s n="17" xml:lang="la" type="auto">Ego enim quum nondum legerim nihildum certi potui constituere et ad te scribere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hoc autem scio, Calvinum cogitasse de responsione ad farraginem: id quod nuper epistola mecum contulit.</s>
-					<s xml:lang="la" type="auto">Ego vero iam illi scribo, te responsurum farragini: satius esse... adhunc respondeat ipse quem modo misisti, neque quisquam nostrum vidit hucusque.</s>
-					<s xml:lang="la" type="auto">Dominus deus noster concedat nobis ut illud faciamus, maximam quod promovet gloriam eius, animarum nostrarum salutem et aedificationem ecclesiarum, tollat iurgia, conteniones, offendicula - - - - - - - - -</s>
+					<s n="18" xml:lang="la" type="auto">Hoc autem scio, Calvinum cogitasse de responsione ad farraginem: id quod nuper epistola mecum contulit.</s>
+					<s n="19" xml:lang="la" type="auto">Ego vero iam illi scribo, te responsurum farragini: satius esse... adhunc respondeat ipse quem modo misisti, neque quisquam nostrum vidit hucusque.</s>
+					<s n="20" xml:lang="la" type="auto">Dominus deus noster concedat nobis ut illud faciamus, maximam quod promovet gloriam eius, animarum nostrarum salutem et aedificationem ecclesiarum, tollat iurgia, conteniones, offendicula - - - - - - - - -</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus et piorum omnium ex animo totus Henricus Bullingerus.</s>
+					<s n="21" xml:lang="la" type="auto">Tuus et piorum omnium ex animo totus Henricus Bullingerus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Ioanni a Lasco baroni Polono, Emdae peregrinorum ecclesiae superintendenti fidelissimo et vigilantissimo, domino colendo et fratri carissimo.</s>
+					<s n="22" xml:lang="la" type="auto">Clarissimo viro d. Ioanni a Lasco baroni Polono, Emdae peregrinorum ecclesiae superintendenti fidelissimo et vigilantissimo, domino colendo et fratri carissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
+					<s n="23" xml:lang="la" type="auto">S. D.</s>
 				</p>
 			</div>
 		</body>

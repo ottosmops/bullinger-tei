@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3098</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3098</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 361,159</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 361,159</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -76,44 +79,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13147">
 				<correspAction type="sent">
-					<persName ref="person#1010" cert="high">
+					<!--
+					<persName ref="person1010" cert="high">
 						<forename cert="high">Matthias</forename>
 						<surname cert="high">Erb</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Matthias_Erb"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/100972160"/>
 					</persName>
-					<place source="#411" cert="high">
-						<settlement>Reichenweier</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.16672 7.29707</geo>
-					</place>
+					-->
+					<persName ref="person1010" cert="high"/>
+					<place source="place411" cert="high"/>
 					<date when="1547-12-22" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13148"/>
-					<ref type="prev_chronologically" target="files.xml#13146"/>
-					<ref type="next_correspondence" target="files.xml#45"/>
-					<ref type="prev_correspondence" target="files.xml#13097"/>
-					<ref type="next_correspondence_request" target="files.xml#309"/>
-					<ref type="prev_correspondence_request" target="files.xml#13014"/>
-					<ref type="next_correspondence_reaction" target="files.xml#45"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#13097"/>
-					<ref type="next_same_sender" target="files.xml#309"/>
-					<ref type="prev_same_sender" target="files.xml#13014"/>
-					<ref type="next_same_addressee" target="files.xml#3"/>
-					<ref type="prev_same_addressee" target="files.xml#13145"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#309"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13014"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13145"/>
+					<ref type="next_chronologically" target="file13148"/>
+					<ref type="prev_chronologically" target="file13146"/>
+					<ref type="next_correspondence" target="file45"/>
+					<ref type="prev_correspondence" target="file13097"/>
+					<ref type="next_correspondence_request" target="file309"/>
+					<ref type="prev_correspondence_request" target="file13014"/>
+					<ref type="next_correspondence_reaction" target="file45"/>
+					<ref type="prev_correspondence_reaction" target="file13097"/>
+					<ref type="next_same_sender" target="file309"/>
+					<ref type="prev_same_sender" target="file13014"/>
+					<ref type="next_same_addressee" target="file3"/>
+					<ref type="prev_same_addressee" target="file13145"/>
+					<ref type="next_with_sender_as_addressee" target="file309"/>
+					<ref type="prev_with_sender_as_addressee" target="file13014"/>
+					<ref type="next_with_addressee_as_sender" target="file3"/>
+					<ref type="prev_with_addressee_as_sender" target="file13145"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -131,38 +138,38 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratia domini tecum!</s>
-					<s xml:lang="la" type="auto">Ante triennium fere fuit Petro Tossano superstitiosa et acris disputatio de communione impiorum<note xml:id="fn1" type="footnote" n="1">Die lutherische Lehre, laut der die am Abendmahl teilnehmenden Gottlosen auch des Leibes und Blutes Christi teilhaftig werden, was ihnen jedoch zum Fluch und nicht zum Segen gereicht.</note> et Iudę.<note xml:id="fn2" type="footnote" n="2">Ende 1544 und 1545; s. <abbr>Viénot</abbr> I 102-134; II 37. 42f; <abbr>HBBW</abbr> XIV 440f; XV 138f und Anm. 31f; 290f.</note></s>
-					<s xml:lang="la" type="auto">Scripsit ad me Tossanus, cui ego ea, quę tum meditabar, atque ut nunc ad te mitto, indolata misi, ut suo ingenio expumicaret et expoliret.</s>
-					<s xml:lang="la" type="auto">Quum vero princeps<note xml:id="fn3" type="footnote" n="3">Graf Georg von Württemberg-Mömpelgard.</note> tuum iuditium<note xml:id="fn4" type="footnote" n="4">Bullingers damals nur handschriftlich vorhandenes "Bedencken ob der verraͤther Judas auch an dem Tisch deß Herren gesessen"; s. dazu <ref target="file#13097">Nr. 3048</ref>, <qv>fn17317-1</qv>.</note> ad me miserit diebus superioribus,<note xml:id="fn5" type="footnote" n="5">Siehe <ref target="file#13097">Nr. 3048</ref>, <qv>fn17317-3</qv>.</note> doctissime Bullingere, voluit, ut <pb type="edition" next="718"/> mea ad te<note xml:id="fna" type="footnote" n="a"><hi>Über der Zeile nachgetragen.</hi></note> mitterem meditata, etc.<note xml:id="fn6" type="footnote" n="6">Die hier angesprochene Schrift von Erb ist weder in handschriftlicher noch in gedruckter Form bekannt. Aus dem unten in <qv>fn17365-1</qv> zitierten Briefauszug wird deutlich, dass Erb eine deutsche Fassung seiner Abhandlung sandte, und aus dem am 10. April 1548 verfassten Brief des Grafen Georg an Bullinger (Zürich StA, E II 363, 108) wird deutlich, dass Bullinger Erbs Abhandlung zustimmte.<zfn>fn17365-2</zfn></note></s>
-					<s xml:lang="la" type="auto">Habes ergo meas litteras et nugas.</s>
-					<s xml:lang="la" type="auto">Si vacarit, lege, emenda vel, si visum fuerit, Vulcano trade, ne lectorum oculos offendat.</s>
-					<s xml:lang="la" type="auto">Sunt enim, qui hoc negotii scripturis et argumentis solidioribus possint ad ędificationem ecclesię aedere.</s>
-					<s xml:lang="la" type="auto">Tu tantum ex hoc meo scripto collige, quid de impiorum communione sentiam, etc.</s>
+					<s n="1" xml:lang="la" type="auto">Gratia domini tecum!</s>
+					<s n="2" xml:lang="la" type="auto">Ante triennium fere fuit Petro Tossano superstitiosa et acris disputatio de communione impiorum<note xml:id="fn1" type="footnote" n="1">Die lutherische Lehre, laut der die am Abendmahl teilnehmenden Gottlosen auch des Leibes und Blutes Christi teilhaftig werden, was ihnen jedoch zum Fluch und nicht zum Segen gereicht.</note> et Iudę.<note xml:id="fn2" type="footnote" n="2">Ende 1544 und 1545; s. <abbr>Viénot</abbr> I 102-134; II 37. 42f; <abbr>HBBW</abbr> XIV 440f; XV 138f und Anm. 31f; 290f.</note></s>
+					<s n="3" xml:lang="la" type="auto">Scripsit ad me Tossanus, cui ego ea, quę tum meditabar, atque ut nunc ad te mitto, indolata misi, ut suo ingenio expumicaret et expoliret.</s>
+					<s n="4" xml:lang="la" type="auto">Quum vero princeps<note xml:id="fn3" type="footnote" n="3">Graf Georg von Württemberg-Mömpelgard.</note> tuum iuditium<note xml:id="fn4" type="footnote" n="4">Bullingers damals nur handschriftlich vorhandenes "Bedencken ob der verraͤther Judas auch an dem Tisch deß Herren gesessen"; s. dazu <ref target="file13097">Nr. 3048</ref>, <qv>fn17317-1</qv>.</note> ad me miserit diebus superioribus,<note xml:id="fn5" type="footnote" n="5">Siehe <ref target="file13097">Nr. 3048</ref>, <qv>fn17317-3</qv>.</note> doctissime Bullingere, voluit, ut <pb type="edition" next="718"/> mea ad te<note xml:id="fna" type="footnote" n="a"><hi>Über der Zeile nachgetragen.</hi></note> mitterem meditata, etc.<note xml:id="fn6" type="footnote" n="6">Die hier angesprochene Schrift von Erb ist weder in handschriftlicher noch in gedruckter Form bekannt. Aus dem unten in <qv>fn17365-1</qv> zitierten Briefauszug wird deutlich, dass Erb eine deutsche Fassung seiner Abhandlung sandte, und aus dem am 10. April 1548 verfassten Brief des Grafen Georg an Bullinger (Zürich StA, E II 363, 108) wird deutlich, dass Bullinger Erbs Abhandlung zustimmte.<zfn>fn17365-2</zfn></note></s>
+					<s n="5" xml:lang="la" type="auto">Habes ergo meas litteras et nugas.</s>
+					<s n="6" xml:lang="la" type="auto">Si vacarit, lege, emenda vel, si visum fuerit, Vulcano trade, ne lectorum oculos offendat.</s>
+					<s n="7" xml:lang="la" type="auto">Sunt enim, qui hoc negotii scripturis et argumentis solidioribus possint ad ędificationem ecclesię aedere.</s>
+					<s n="8" xml:lang="la" type="auto">Tu tantum ex hoc meo scripto collige, quid de impiorum communione sentiam, etc.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Nos hic vivimus haud aliter quam ii, qui lata sententia carnificem expectant.</s>
-					<s xml:lang="la" type="auto">Tot sunt insidię, tot minę, tot adversarii, ut nullibi sit tuta fides!<note xml:id="fn7" type="footnote" n="7"><hi>Vergil,</hi> Aeneis, 4, 373. - Vgl. auch Mt 10, 21.</note></s>
-					<s xml:lang="la" type="auto">Innitimur domino, qui est refugium suorum et asylum tutissimum, etc.</s>
+					<s n="9" xml:lang="la" type="auto">Nos hic vivimus haud aliter quam ii, qui lata sententia carnificem expectant.</s>
+					<s n="10" xml:lang="la" type="auto">Tot sunt insidię, tot minę, tot adversarii, ut nullibi sit tuta fides!<note xml:id="fn7" type="footnote" n="7"><hi>Vergil,</hi> Aeneis, 4, 373. - Vgl. auch Mt 10, 21.</note></s>
+					<s n="11" xml:lang="la" type="auto">Innitimur domino, qui est refugium suorum et asylum tutissimum, etc.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Vale perpetuo cum familia et ecclesia Christi.</s>
-					<s xml:lang="la" type="auto">Salutabis d. Gvaltherum et Geroldum<note xml:id="fn8" type="footnote" n="8">Gerold Meyer von Knonau d.J., der 1545/46 eine Lehre als Schreiber in Reichenweier absolviert hatte; s. <abbr>HBBW</abbr> XV und XVI Reg.</note> cum reliquis piis.</s>
-					<s xml:lang="la" type="auto">Raptissime, Richenvillę, 22. Decembris 1547.</s>
-					<s xml:lang="la" type="auto">Tuus ex animo Erbius.</s>
+					<s n="12" xml:lang="la" type="auto">Vale perpetuo cum familia et ecclesia Christi.</s>
+					<s n="13" xml:lang="la" type="auto">Salutabis d. Gvaltherum et Geroldum<note xml:id="fn8" type="footnote" n="8">Gerold Meyer von Knonau d.J., der 1545/46 eine Lehre als Schreiber in Reichenweier absolviert hatte; s. <abbr>HBBW</abbr> XV und XVI Reg.</note> cum reliquis piis.</s>
+					<s n="14" xml:lang="la" type="auto">Raptissime, Richenvillę, 22. Decembris 1547.</s>
+					<s n="15" xml:lang="la" type="auto">Tuus ex animo Erbius.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Orate pro nobis.</s>
+					<s n="16" xml:lang="la" type="auto">Orate pro nobis.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">An meister Henrichen Bullinger, predicanten zuͦ Zürich.<note xml:id="fn9" type="footnote" n="9">Dieser Brief wurde durch Graf Georg an Bullinger weitergeleitet; s. Graf Georg an Erb, 25. Dezember 1547 (Stuttgart HStA, G 44, Bü 8, 45): "Ewer zugeschickt schreiben an Heinrichen Bullinger wollen wir ime, so eheßt wir bottschafft, zusenden. Und habt uns kein misfallen gethon, indem ir im die proposition uns verteütscht zuschicken, dan die one zweyffell ime nitt misfallen wurdt. Und was uns deshalben zu antwurtt zukompt [s. dazu oben <qv>fn17365-2</qv>], wellen wir euch auch nit verhalten."<zfn>fn17365-1</zfn></note></s>
+					<s n="17" xml:lang="de" type="auto">An meister Henrichen Bullinger, predicanten zuͦ Zürich.<note xml:id="fn9" type="footnote" n="9">Dieser Brief wurde durch Graf Georg an Bullinger weitergeleitet; s. Graf Georg an Erb, 25. Dezember 1547 (Stuttgart HStA, G 44, Bü 8, 45): "Ewer zugeschickt schreiben an Heinrichen Bullinger wollen wir ime, so eheßt wir bottschafft, zusenden. Und habt uns kein misfallen gethon, indem ir im die proposition uns verteütscht zuschicken, dan die one zweyffell ime nitt misfallen wurdt. Und was uns deshalben zu antwurtt zukompt [s. dazu oben <qv>fn17365-2</qv>], wellen wir euch auch nit verhalten."<zfn>fn17365-1</zfn></note></s>
 				</p>
 			</div>
 		</body>

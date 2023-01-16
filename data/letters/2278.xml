@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Rückseite" n="2278">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Brief" n="2278">
 	<teiHeader xml:lang="de">
 		<fileDesc>
 			<titleStmt>
 				<title subtype="file">[Heinrich Bullinger] / Zürich AN [Robert Horn], wohl zwischen Oktober und Dezember 1554</title>
 			</titleStmt>
 			<sourceDesc>
-				<msDesc type="Rückseite" subtype="Autograph" xml:lang="">
+				<msDesc type="Rückseite" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 369,148d (1v-2r)</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 369,148d (1v-2r)</idno>
+						<idno subtype="Hinweis">Beginn Blattende, nicht Bullingers Hand (daher Kopie, nicht wie auf Karteikarte vermerkt Autograph)</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -34,50 +38,68 @@
 						<note type="Allgemein">Datierung: Antwort auf Horn an HB [zw. Mai 1554 / Mrz. 55] Rückseite hierzu siehe Verweiskarte: o.D., ID 2277</note>
 					</additional>
 				</msDesc>
+				<msDesc type="Brief" subtype="Kopie" xml:lang="">
+					<msIdentifier>
+						<!--
+						<repository ref="archive94">
+							<name>Zürich StA</name>
+							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
+						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 369,148d (3r-v)</idno>
+					</msIdentifier>
+					<physDesc/>
+				</msDesc>
 			</sourceDesc>
 		</fileDesc>
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2278">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date min="1554-05-00" max="1555-03-00" cert="low">wohl zwischen Oktober und Dezember 1554<note type="Datum">nach 1554 Mai, evtl. erst 1566</note></date>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
+					<date notBefore="1554-05-01" notAfter="1555-03-12" cert="low">wohl zwischen Oktober und Dezember 1554<note type="Datum">nach 1554 Mai, evtl. erst 1566</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1564" cert="low">
+					<!--
+					<persName ref="person1564" cert="low">
 						<forename cert="low">Robert</forename>
 						<surname cert="low">Horn</surname>
-						<addName type="main">Horne (Horn), Robert</addName>
+						<persName type="main" ref="person8085>Horne (Horn), Robert</addName>
 					</persName>
+					-->
+					<persName ref="person1564" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2279"/>
-					<ref type="prev_chronologically" target="files.xml#2276"/>
-					<ref type="next_correspondence" target="files.xml#3047"/>
-					<ref type="prev_correspondence" target="files.xml#2276"/>
-					<ref type="next_correspondence_request" target="files.xml#6569"/>
+					<ref type="next_chronologically" target="file2279"/>
+					<ref type="prev_chronologically" target="file2276"/>
+					<ref type="next_correspondence" target="file3047"/>
+					<ref type="prev_correspondence" target="file2276"/>
+					<ref type="next_correspondence_request" target="file6569"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#3047"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#2276"/>
-					<ref type="next_same_sender" target="files.xml#2283"/>
-					<ref type="prev_same_sender" target="files.xml#2269"/>
-					<ref type="next_same_addressee" target="files.xml#3047"/>
-					<ref type="prev_same_addressee" target="files.xml#2276"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2283"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2269"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3047"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2276"/>
-					<ref type="parent" target="files.xml#2277"/>
+					<ref type="next_correspondence_reaction" target="file3047"/>
+					<ref type="prev_correspondence_reaction" target="file2276"/>
+					<ref type="next_same_sender" target="file2283"/>
+					<ref type="prev_same_sender" target="file2269"/>
+					<ref type="next_same_addressee" target="file3047"/>
+					<ref type="prev_same_addressee" target="file2276"/>
+					<ref type="next_with_sender_as_addressee" target="file2283"/>
+					<ref type="prev_with_sender_as_addressee" target="file2269"/>
+					<ref type="next_with_addressee_as_sender" target="file3047"/>
+					<ref type="prev_with_addressee_as_sender" target="file2276"/>
+					<ref type="parent" target="file2277"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
@@ -85,11 +107,9 @@
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
 	<facsimile>
-		<graphic url="2278/Autograph/00 E_II_369__fol__148_d_1_v_.tif" n="1"/>
-		<graphic url="2278/Autograph/01 E_II_369__fol__148_d_2_r_.tif" n="2"/>
-		<graphic url="2278/Autograph/02 E_II_369__fol__148_d_2_v_.tif" n="3"/>
-		<graphic url="2278/Autograph/03 E_II_369__fol__148_d_3_r_.tif" n="4"/>
-		<graphic url="2278/Autograph/04 E_II_369__fol__148_d_3_v_.tif" n="5"/>
+		<graphic url="2278/Kopie/00 E_II_369__fol__148_d_1_v_.tif" n="1"/>
+		<graphic url="2278/Kopie/01 E_II_369__fol__148_d_2_r_.tif" n="2"/>
+		<graphic url="2278/Kopie/02 E_II_369__fol__148_d_2_v_.tif" n="3"/>
 	</facsimile>
 	<text xml:lang="">
 		<body>

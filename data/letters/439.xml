@@ -12,25 +12,28 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1346</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 335,2119</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">gleichzeitig Kopie</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 335,2119</idno>
+						<idno subtype="Hinweis">gleichzeitig Kopie</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -42,13 +45,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 69,109</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 69,109</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -57,57 +63,31 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/439">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#50" cert="high">Prediger</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role0" role="Prediger"/>
+					<place source="place587" cert="high"/>
 					<date when="1549-02-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#50" cert="high">Prediger</name>
-						<place source="#41" cert="high">
-							<settlement>Bern</settlement>
-							<district>Bern</district>
-							<country>Schweiz</country>
-							<geo>46.94809 7.44744</geo>
-						</place>
-					</roleName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					<personGrp ref="role0" role="Prediger"/>
+					<place source="place41" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#440"/>
-					<ref type="prev_chronologically" target="files.xml#438"/>
-					<ref type="next_correspondence" target="files.xml#440"/>
-					<ref type="prev_correspondence" target="files.xml#10142"/>
-					<ref type="next_correspondence_request" target="files.xml#440"/>
-					<ref type="prev_correspondence_request" target="files.xml#10142"/>
-					<ref type="next_correspondence_reaction" target="files.xml#440"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10142"/>
-					<ref type="next_same_sender" target="files.xml#440"/>
-					<ref type="prev_same_sender" target="files.xml#10142"/>
-					<ref type="next_same_addressee" target="files.xml#440"/>
-					<ref type="prev_same_addressee" target="files.xml#10142"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#440"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10142"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#440"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10142"/>
+					<ref type="next_chronologically" target="file440"/>
+					<ref type="prev_chronologically" target="file438"/>
+					<ref type="next_correspondence" target="file440"/>
+					<ref type="prev_correspondence" target="file10142"/>
+					<ref type="next_correspondence_request" target="file440"/>
+					<ref type="prev_correspondence_request" target="file10142"/>
+					<ref type="next_correspondence_reaction" target="file440"/>
+					<ref type="prev_correspondence_reaction" target="file10142"/>
+					<ref type="next_same_sender" target="file440"/>
+					<ref type="prev_same_sender" target="file10142"/>
+					<ref type="next_same_addressee" target="file440"/>
+					<ref type="prev_same_addressee" target="file10142"/>
+					<ref type="next_with_sender_as_addressee" target="file440"/>
+					<ref type="prev_with_sender_as_addressee" target="file10142"/>
+					<ref type="next_with_addressee_as_sender" target="file440"/>
+					<ref type="prev_with_addressee_as_sender" target="file10142"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -121,38 +101,38 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Venit ad vos, venerandi et dilecti symmistę et fratres, colendus et dilectus frager noster D. V[olfgangus] Musculus vestro omnium communi assensu a clarissimo urbis vestrę senatu vocatus ad vestrę ecclesię ministerium, et gratulamur quidem tam vobis quam ecclesię gratias agentes domino nostro Iesu Christo, qui dignatus est eam vocationem vestris vestrorumque animis inspirare.</s>
-					<s xml:lang="la" type="auto">Speramus enim illum ecclesię, vobis atque nobis omnibus fore salutarem; est enim vir pietatis maximę, eruditionis rarę, animi donis excellens et vitę prorsus inculpatę; fortiter et prudenter et candide se gessit in extremo periculo Augustę constanter Christum et doctrinam christianam confessus palam pro contione publica in comitiis illis Augustanis ultimis, in quibus ipse Cęsar cum rege fratre principibusque Germanię, Hispaniarum, Pannonię.</s>
-					<s xml:lang="la" type="auto">Italię et episcoporum caterva victoria recenti captisque principibus elatus et ferox tantum non extremum religioni nostrę excidium minabatur.</s>
-					<s xml:lang="la" type="auto">Cumque in Cesaris partes inclinans misera Augusta a religionis synceritate deflecteret, maluit hic vir bonus cum maximo rerum suarum dispendio et liberis novem eligere exilium quam muneribus regiis suffacrcinatus vel nutu approbare religionem adulteratam Interimicam vel Jerobe anicam.</s>
-					<s xml:lang="la" type="auto">Ita ad nos tandem divertit tanquam et eos, quorum libertatem et religionem diu antea amavit.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Venit ad vos, venerandi et dilecti symmistę et fratres, colendus et dilectus frager noster D. V[olfgangus] Musculus vestro omnium communi assensu a clarissimo urbis vestrę senatu vocatus ad vestrę ecclesię ministerium, et gratulamur quidem tam vobis quam ecclesię gratias agentes domino nostro Iesu Christo, qui dignatus est eam vocationem vestris vestrorumque animis inspirare.</s>
+					<s n="3" xml:lang="la" type="auto">Speramus enim illum ecclesię, vobis atque nobis omnibus fore salutarem; est enim vir pietatis maximę, eruditionis rarę, animi donis excellens et vitę prorsus inculpatę; fortiter et prudenter et candide se gessit in extremo periculo Augustę constanter Christum et doctrinam christianam confessus palam pro contione publica in comitiis illis Augustanis ultimis, in quibus ipse Cęsar cum rege fratre principibusque Germanię, Hispaniarum, Pannonię.</s>
+					<s n="4" xml:lang="la" type="auto">Italię et episcoporum caterva victoria recenti captisque principibus elatus et ferox tantum non extremum religioni nostrę excidium minabatur.</s>
+					<s n="5" xml:lang="la" type="auto">Cumque in Cesaris partes inclinans misera Augusta a religionis synceritate deflecteret, maluit hic vir bonus cum maximo rerum suarum dispendio et liberis novem eligere exilium quam muneribus regiis suffacrcinatus vel nutu approbare religionem adulteratam Interimicam vel Jerobe anicam.</s>
+					<s n="6" xml:lang="la" type="auto">Ita ad nos tandem divertit tanquam et eos, quorum libertatem et religionem diu antea amavit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Susceptus est a nobis amicę atque utinam ita etiam a nobis fuisset tractatus, sicut eius merebantur virtutes.</s>
-					<s xml:lang="la" type="auto">Apud nos autem mensibus aliquot vixit una cum honestissima optime educata et piissima familia sua inculpate.</s>
-					<s xml:lang="la" type="auto">Contulit semel et iterum nobiscum de rebus religionis nostrę, pręterea concionatus est publice in nostra ecclesia sepius ac placuit populo et nobis eius doctrina et fides, nec dubium, quin in numerum ministrorum huius ecclesię receptus fuisset, si aliquis vacasset locus.</s>
+					<s n="7" xml:lang="la" type="auto">Susceptus est a nobis amicę atque utinam ita etiam a nobis fuisset tractatus, sicut eius merebantur virtutes.</s>
+					<s n="8" xml:lang="la" type="auto">Apud nos autem mensibus aliquot vixit una cum honestissima optime educata et piissima familia sua inculpate.</s>
+					<s n="9" xml:lang="la" type="auto">Contulit semel et iterum nobiscum de rebus religionis nostrę, pręterea concionatus est publice in nostra ecclesia sepius ac placuit populo et nobis eius doctrina et fides, nec dubium, quin in numerum ministrorum huius ecclesię receptus fuisset, si aliquis vacasset locus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cum vero intelligeremus vocari ipsum in vestrę ecclesię ministerium, ascitum ipsum in cętum nostrum, ei diligenter exposuimus, qualis fuerit aliquando statum ecclesie vestrę et qualis nunc sit, adhortantes modis omnibus, adnitatur, ne vetus illa de sacramento et explosa concertatio revocetur aut Buceranismus foveatur etc.</s>
-					<s xml:lang="la" type="auto">Ad hoc ille omnem suam operam sancte promisit, insuper et confessionem fidei et doctrinę suę nobis recitavit, quam approbamus nihil dubitantes illam etiam vobis placituram.</s>
+					<s n="10" xml:lang="la" type="auto">Cum vero intelligeremus vocari ipsum in vestrę ecclesię ministerium, ascitum ipsum in cętum nostrum, ei diligenter exposuimus, qualis fuerit aliquando statum ecclesie vestrę et qualis nunc sit, adhortantes modis omnibus, adnitatur, ne vetus illa de sacramento et explosa concertatio revocetur aut Buceranismus foveatur etc.</s>
+					<s n="11" xml:lang="la" type="auto">Ad hoc ille omnem suam operam sancte promisit, insuper et confessionem fidei et doctrinę suę nobis recitavit, quam approbamus nihil dubitantes illam etiam vobis placituram.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sicubi vero declaratione opus fuerit, satisfaciet is vobis, ut in omnibus glorificetur nomen domini nostri Iesu Christi ac conservetur in ecclesiis nostris pax et tranquillitas una cum religione syncera.</s>
+					<s n="12" xml:lang="la" type="auto">Sicubi vero declaratione opus fuerit, satisfaciet is vobis, ut in omnibus glorificetur nomen domini nostri Iesu Christi ac conservetur in ecclesiis nostris pax et tranquillitas una cum religione syncera.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Oramus ergo per fraternitatem nostram, symmistę et fratres in domino honorandi et dilecti, ut benigne excipiatis virum optimum conferatisque cum eo de omnibus fraterne, deinde curetis, ut ipsi stipendium dignum et familię eius sustentandęnecessarium ab amplissimo senatu ordinetur.</s>
-					<s xml:lang="la" type="auto">Sentietis illum nec ingratum nec modice utilem ecclesię futurum.</s>
-					<s xml:lang="la" type="auto">Quod reliquum est, pręcamur dominum, ut vestris benedicat laboribus, in pace servet et ab omni malo protegat.</s>
-					<s xml:lang="la" type="auto">Amamus vos ex animo et toti sumus vestri.</s>
-					<s xml:lang="la" type="auto">Vos tales erga nos perseverate, quales fuistis hucusque.</s>
-					<s xml:lang="la" type="auto">Orate pro nobis dominum ac bene valete.</s>
+					<s n="13" xml:lang="la" type="auto">Oramus ergo per fraternitatem nostram, symmistę et fratres in domino honorandi et dilecti, ut benigne excipiatis virum optimum conferatisque cum eo de omnibus fraterne, deinde curetis, ut ipsi stipendium dignum et familię eius sustentandęnecessarium ab amplissimo senatu ordinetur.</s>
+					<s n="14" xml:lang="la" type="auto">Sentietis illum nec ingratum nec modice utilem ecclesię futurum.</s>
+					<s n="15" xml:lang="la" type="auto">Quod reliquum est, pręcamur dominum, ut vestris benedicat laboribus, in pace servet et ab omni malo protegat.</s>
+					<s n="16" xml:lang="la" type="auto">Amamus vos ex animo et toti sumus vestri.</s>
+					<s n="17" xml:lang="la" type="auto">Vos tales erga nos perseverate, quales fuistis hucusque.</s>
+					<s n="18" xml:lang="la" type="auto">Orate pro nobis dominum ac bene valete.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 20. Februarii anno 1549.</s>
+					<s n="19" xml:lang="la" type="auto">Tiguri 20. Februarii anno 1549.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pastores et lectores sacrarum literarum, ministri ecclesię Tigurinę, fratres vestri.</s>
+					<s n="20" xml:lang="la" type="auto">Pastores et lectores sacrarum literarum, ministri ecclesię Tigurinę, fratres vestri.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>

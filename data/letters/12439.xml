@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2014"/>
-				<idno type="ISBN">ISBN 978-3-290-17760-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2392</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17760-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2392</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 16</title>
+				<title subtype="publication">HBBW XVI</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">16</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 346,207</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 346,207</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -55,15 +58,15 @@
 								</p>
 								<p xml:id="regest3">
 								- Angesichts der ärgerlichen Missverständnisse zwischen den [Zwinglianern und Lutheranern] lässt
-								<persName ref="138">Luthers</persName> Tod nun auf Besserung hoffen.
+								<persName ref="person138">Luthers</persName> Tod nun auf Besserung hoffen.
 								</p>
 								<p xml:id="regest4">
-								- Da <persName ref="146">Melanchthon</persName>, der viel unter
-								<persName ref="138">Luther</persName> leiden musste, ein friedfertiger Mensch ist, wäre es gut, wenn
-								Bullinger und <persName ref="19">Ambrosius Blarer</persName>
+								- Da <persName ref="person146">Melanchthon</persName>, der viel unter
+								<persName ref="person138">Luther</persName> leiden musste, ein friedfertiger Mensch ist, wäre es gut, wenn
+								Bullinger und <persName ref="person19">Ambrosius Blarer</persName>
 								einen brüderlichen Brief an ihn richteten. Herbrot wird sich auch in diesem Sinn an
-								<persName ref="19">Blarer</persName> wenden. Es ist zu erwarten, dass solche Schreiben der Kirche
-								dienlich sind. Sobald Bullinger und <persName ref="19">Blarer</persName> sich darüber geeinigt haben,
+								<persName ref="person19">Blarer</persName> wenden. Es ist zu erwarten, dass solche Schreiben der Kirche
+								dienlich sind. Sobald Bullinger und <persName ref="person19">Blarer</persName> sich darüber geeinigt haben,
 								sollen sie Herbrot ihre Briefe zur Weiterleitung übermitteln.
 								</p>
 								<p xml:id="regest5">
@@ -78,30 +81,34 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12439">
 				<correspAction type="sent">
-					<persName ref="person#1410" cert="high">
+					<!--
+					<persName ref="person1410" cert="high">
 						<forename cert="high">Jakob</forename>
 						<surname cert="high">Herbrot</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Jakob_Herbrot"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/130302287"/>
 					</persName>
-					<place source="#18" cert="high">
-						<settlement>Augsburg</settlement>
-						<district>Bayern</district>
-						<country>Deutschland</country>
-						<geo>48.37154 10.89851</geo>
-					</place>
+					-->
+					<persName ref="person1410" cert="high"/>
+					<place source="place18" cert="high"/>
 					<date when="1546-03-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12440"/>
-					<ref type="prev_chronologically" target="files.xml#12438"/>
+					<ref type="next_chronologically" target="file12440"/>
+					<ref type="prev_chronologically" target="file12438"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -110,12 +117,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#12443"/>
-					<ref type="prev_same_addressee" target="files.xml#12435"/>
+					<ref type="next_same_addressee" target="file12443"/>
+					<ref type="prev_same_addressee" target="file12435"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12443"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12435"/>
+					<ref type="next_with_addressee_as_sender" target="file12443"/>
+					<ref type="prev_with_addressee_as_sender" target="file12435"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -134,52 +141,52 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Erwürdiger, hochgelerter, was ich eern, lyeb und guts vermag, ist euer w[ürde] yeder zeyt vonn mir bevor.</s>
-					<s xml:lang="de" type="auto">Innsunder, günstiger her und freint, eur schreyben, mir durch mein gelyepten hern Johann Haller gethan,<note xml:id="fn1" type="footnote" n="1">Bullingers Brief ist nicht erhalten, aber bezeugt; s. <ref target="file#12436">Nr. 2389</ref>,81f.</note> habe ich empfangen (in wölchm ir melden, das sich gedachter her Haller meiner guthatn, so ich ime erzeygt solt haben, beryemt<note xml:id="fn2" type="footnote" n="2">sich ... meiner gutthatn ... beryemt: meine Wohltaten rühmt.</note>, das<note xml:id="fn3" type="footnote" n="3">so dass.</note> ir euch gegen mir thon bedancken mit beger, das ich in furan<note xml:id="fn4" type="footnote" n="4">weiterhin.</note> wie pisher in gunstigm bevelh haben wöll)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note>, habe ich ales innhalt erlesen<note xml:id="fn5" type="footnote" n="5">herausgelesen.</note>.</s>
-					<s xml:lang="de" type="auto">Darauff ich euch, meinem günstigen hern,<note xml:id="fn6" type="footnote" n="6">Zu ergänzen: bitte.</note> freintlich zu vernemen, das ich pis an her gedachtem herrn Haller nit fül<note xml:id="fn7" type="footnote" n="7">viel.</note> sunderer freintschaft erzeygt; ist auch keynes danncks werdt.</s>
-					<s xml:lang="de" type="auto">Er sol mir aber furan und sunderlich eurthalben in gutem bevolhn sein.</s>
-					<s xml:lang="de" type="auto">Daran wölen ir, mein her, nicht zweyfflen.</s>
+					<s n="1" xml:lang="de" type="auto">Erwürdiger, hochgelerter, was ich eern, lyeb und guts vermag, ist euer w[ürde] yeder zeyt vonn mir bevor.</s>
+					<s n="2" xml:lang="de" type="auto">Innsunder, günstiger her und freint, eur schreyben, mir durch mein gelyepten hern Johann Haller gethan,<note xml:id="fn1" type="footnote" n="1">Bullingers Brief ist nicht erhalten, aber bezeugt; s. <ref target="file12436">Nr. 2389</ref>,81f.</note> habe ich empfangen (in wölchm ir melden, das sich gedachter her Haller meiner guthatn, so ich ime erzeygt solt haben, beryemt<note xml:id="fn2" type="footnote" n="2">sich ... meiner gutthatn ... beryemt: meine Wohltaten rühmt.</note>, das<note xml:id="fn3" type="footnote" n="3">so dass.</note> ir euch gegen mir thon bedancken mit beger, das ich in furan<note xml:id="fn4" type="footnote" n="4">weiterhin.</note> wie pisher in gunstigm bevelh haben wöll)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note>, habe ich ales innhalt erlesen<note xml:id="fn5" type="footnote" n="5">herausgelesen.</note>.</s>
+					<s n="3" xml:lang="de" type="auto">Darauff ich euch, meinem günstigen hern,<note xml:id="fn6" type="footnote" n="6">Zu ergänzen: bitte.</note> freintlich zu vernemen, das ich pis an her gedachtem herrn Haller nit fül<note xml:id="fn7" type="footnote" n="7">viel.</note> sunderer freintschaft erzeygt; ist auch keynes danncks werdt.</s>
+					<s n="4" xml:lang="de" type="auto">Er sol mir aber furan und sunderlich eurthalben in gutem bevolhn sein.</s>
+					<s n="5" xml:lang="de" type="auto">Daran wölen ir, mein her, nicht zweyfflen.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="de" type="auto">Inn sunder, günstiger her, ich hab mich eurs gethan schreyben hoch erfreudt, das ir unverdyentr sachn dermassen kuntschaft<note xml:id="fn8" type="footnote" n="8">Bekanntschaft.</note> mit mir zu machen gedencken.</s>
-					<s xml:lang="de" type="auto">Thu mich dessen freintlich bedancken und pin dagegn nicht mynder geneygt, furan guten wüllen bey euch, meinem hern, zu erhalten.</s>
+					<s n="6" xml:lang="de" type="auto">Inn sunder, günstiger her, ich hab mich eurs gethan schreyben hoch erfreudt, das ir unverdyentr sachn dermassen kuntschaft<note xml:id="fn8" type="footnote" n="8">Bekanntschaft.</note> mit mir zu machen gedencken.</s>
+					<s n="7" xml:lang="de" type="auto">Thu mich dessen freintlich bedancken und pin dagegn nicht mynder geneygt, furan guten wüllen bey euch, meinem hern, zu erhalten.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="de" type="auto">Und demnach ain zeyt her zwyschen unnsern kirchen<note xml:id="fn9" type="footnote" n="9">D.h. den Zwinglianern und Lutheranern.</note> furwar alerley myssverstand erfolgt, wölcher nicht alein bey den widerwertigen<note xml:id="fn10" type="footnote" n="10">Gegnern.</note>, sunder auch bey den unnsrn zu grosser ergernus gereycht, dieweyl aber Marthino <persName ref="138">Luther</persName> von got aus düsem zeyt erfordrt<note xml:id="fn11" type="footnote" n="11">aus düsem zeyt erfordrt: aus dieser Welt abberufen. - <persName ref="138">Luther</persName> war am 18. Februar verstorben.</note>, hoff ich zu got, die sachen solen<pb type="edition" next="261"/> sich zu frydlichem thon rychtn.</s>
-					<s xml:lang="de" type="auto">Demselben ain anfang zu machen, were ich auff euer, meines hern, verpessrung<note xml:id="fn12" type="footnote" n="12">Hier im Sinne von: Förderung, Unterstützung.</note> darauff bedacht.</s>
+					<s n="8" xml:lang="de" type="auto">Und demnach ain zeyt her zwyschen unnsern kirchen<note xml:id="fn9" type="footnote" n="9">D.h. den Zwinglianern und Lutheranern.</note> furwar alerley myssverstand erfolgt, wölcher nicht alein bey den widerwertigen<note xml:id="fn10" type="footnote" n="10">Gegnern.</note>, sunder auch bey den unnsrn zu grosser ergernus gereycht, dieweyl aber Marthino <persName ref="person138">Luther</persName> von got aus düsem zeyt erfordrt<note xml:id="fn11" type="footnote" n="11">aus düsem zeyt erfordrt: aus dieser Welt abberufen. - <persName ref="person138">Luther</persName> war am 18. Februar verstorben.</note>, hoff ich zu got, die sachen solen<pb type="edition" next="261"/> sich zu frydlichem thon rychtn.</s>
+					<s n="9" xml:lang="de" type="auto">Demselben ain anfang zu machen, were ich auff euer, meines hern, verpessrung<note xml:id="fn12" type="footnote" n="12">Hier im Sinne von: Förderung, Unterstützung.</note> darauff bedacht.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="de" type="auto">Demnach her Fülüpo <persName ref="146">Melanchton</persName> ain theurer und frydsamer man ist, der sich füll mit Marthino leydn myessen, und warlich der kirchn wolfart zu fürdrn geneygt, ob nicht gut wer, das ir sampt dem heren <persName ref="19">Ambrosio</persName> Plaurer in mit aym bryederlichn schreyben ersuchtn, wie ir bede, meine hern, zu thon wüssen,<note xml:id="fn13" type="footnote" n="13">Bullinger kam aber diesem Wunsch am 1. April (<ref target="file#12451">Nr. 2404</ref>) zuvor, ehe vorliegender Brief in Zürich eintraf; s. <ref target="file#12455">Nr. 2408</ref>,1f. <persName ref="19">Blarers</persName> Brief, zu dem es wohl auch kam (s. <ref target="file#12460">Nr. 2413</ref>, Anm. 41), ist nicht erhalten.</note> zweyfflt mir nicht.</s>
-					<s xml:lang="de" type="auto">Es wurde der gemein sach zu gutem kumen.</s>
-					<s xml:lang="de" type="auto">Ich thu auch solichs hiemit meinem hern und freindt, dem Plaurer, vermelden<note xml:id="fn14" type="footnote" n="14">Ein Brief Herbrots findet sich nicht in <hi><persName ref="19">Blarer</persName> BW;</hi> <persName ref="19">Blarer</persName> erwähnt einen solchen aber im Brief an Bullinger vom 7. April (<ref target="file#12460">Nr. 2413</ref>,57-61).</note>.</s>
-					<s xml:lang="de" type="auto"><pb type="scan" next="207v."/>Hoff auch, er werde sich, solichs neben und mit euch, meinem heren, fürzunemen, nit beschweren, dann ich enntlich darfür acht, das durch ain solich mitl fül myssverstand hingelegt<note xml:id="fn15" type="footnote" n="15">beigelegt.</note> und der kirchn gotes zu gutem raychen.</s>
-					<s xml:lang="de" type="auto">Da sich nun ir, bed meine hernn, dessen vergleychn<note xml:id="fn16" type="footnote" n="16">dessen vergleychn: darin übereinkommen.</note> (wölchs auff den odr ander weg got mit seynen genaden verleyhen wöll)<note xml:id="fnc" type="footnote" n="c"><hi>Klammern ergänzt.</hi></note>, so mugen ir mir die schreyben ubersenndn; so wul ichs an ir gehörig ort<note xml:id="fn17" type="footnote" n="17">nämlich nach <placeName ref="1205">Wittenberg</placeName>.</note> verschaffen.</s>
+					<s n="10" xml:lang="de" type="auto">Demnach her Fülüpo <persName ref="person146">Melanchton</persName> ain theurer und frydsamer man ist, der sich füll mit Marthino leydn myessen, und warlich der kirchn wolfart zu fürdrn geneygt, ob nicht gut wer, das ir sampt dem heren <persName ref="person19">Ambrosio</persName> Plaurer in mit aym bryederlichn schreyben ersuchtn, wie ir bede, meine hern, zu thon wüssen,<note xml:id="fn13" type="footnote" n="13">Bullinger kam aber diesem Wunsch am 1. April (<ref target="file12451">Nr. 2404</ref>) zuvor, ehe vorliegender Brief in Zürich eintraf; s. <ref target="file12455">Nr. 2408</ref>,1f. <persName ref="person19">Blarers</persName> Brief, zu dem es wohl auch kam (s. <ref target="file12460">Nr. 2413</ref>, Anm. 41), ist nicht erhalten.</note> zweyfflt mir nicht.</s>
+					<s n="11" xml:lang="de" type="auto">Es wurde der gemein sach zu gutem kumen.</s>
+					<s n="12" xml:lang="de" type="auto">Ich thu auch solichs hiemit meinem hern und freindt, dem Plaurer, vermelden<note xml:id="fn14" type="footnote" n="14">Ein Brief Herbrots findet sich nicht in <hi><persName ref="person19">Blarer</persName> BW;</hi> <persName ref="person19">Blarer</persName> erwähnt einen solchen aber im Brief an Bullinger vom 7. April (<ref target="file12460">Nr. 2413</ref>,57-61).</note>.</s>
+					<s n="13" xml:lang="de" type="auto"><pb type="scan" next="207v."/>Hoff auch, er werde sich, solichs neben und mit euch, meinem heren, fürzunemen, nit beschweren, dann ich enntlich darfür acht, das durch ain solich mitl fül myssverstand hingelegt<note xml:id="fn15" type="footnote" n="15">beigelegt.</note> und der kirchn gotes zu gutem raychen.</s>
+					<s n="14" xml:lang="de" type="auto">Da sich nun ir, bed meine hernn, dessen vergleychn<note xml:id="fn16" type="footnote" n="16">dessen vergleychn: darin übereinkommen.</note> (wölchs auff den odr ander weg got mit seynen genaden verleyhen wöll)<note xml:id="fnc" type="footnote" n="c"><hi>Klammern ergänzt.</hi></note>, so mugen ir mir die schreyben ubersenndn; so wul ichs an ir gehörig ort<note xml:id="fn17" type="footnote" n="17">nämlich nach <placeName ref="place1205">Wittenberg</placeName>.</note> verschaffen.</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="de" type="auto">Des habe ich euer w[ürde], meinem günstigen heren, zum anfang unnsrer freintschaft in gutem nicht verhaltn<note xml:id="fn18" type="footnote" n="18">verschweigen.</note> solen.</s>
-					<s xml:lang="de" type="auto">Dann was ich in gotes sachen zu befürdern wüst, solt mich nichts verhindern.</s>
-					<s xml:lang="de" type="auto">Und thu mich zu euer, meines heren, dyennstn gannz freintlich erpietn.</s>
-					<s xml:lang="de" type="auto">Die genad des herenn sey mit unns alen<note xml:id="fn19" type="footnote" n="19">Vgl. 2Kor 13, 14.</note>.</s>
+					<s n="15" xml:lang="de" type="auto">Des habe ich euer w[ürde], meinem günstigen heren, zum anfang unnsrer freintschaft in gutem nicht verhaltn<note xml:id="fn18" type="footnote" n="18">verschweigen.</note> solen.</s>
+					<s n="16" xml:lang="de" type="auto">Dann was ich in gotes sachen zu befürdern wüst, solt mich nichts verhindern.</s>
+					<s n="17" xml:lang="de" type="auto">Und thu mich zu euer, meines heren, dyennstn gannz freintlich erpietn.</s>
+					<s n="18" xml:lang="de" type="auto">Die genad des herenn sey mit unns alen<note xml:id="fn19" type="footnote" n="19">Vgl. 2Kor 13, 14.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Actum <placeName ref="70">Augsburg</placeName>, den 24. tag marzo, im 1546. jar.</s>
-					<s xml:lang="de" type="auto">E[uer] w[ürden] dyenstwüliger</s>
+					<s n="19" xml:lang="de" type="auto">Actum <placeName ref="place70">Augsburg</placeName>, den 24. tag marzo, im 1546. jar.</s>
+					<s n="20" xml:lang="de" type="auto">E[uer] w[ürden] dyenstwüliger</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Jacob Herbrott, alter burgermayster<note xml:id="fn20" type="footnote" n="20">In <placeName ref="70">Augsburg</placeName> wechselten jährlich um den Dreikönigstag (6. Januar) die beiden Bürgermeister. Zwischen 1544 und 1547 amtierten als Bürgermeister Jakob Herwart und Simprecht Hoser während den geraden Jahren, Herbrot und Hans Welser während den ungeraden Jahren; s. Katarina <hi>Sieh-Burens,</hi> Oligarchie, Konfession und Politik im 16. Jahrhundert. Zur sozialen Verflechtung der <placeName ref="70">Augsburger</placeName> Bürgermeister und Stadtpfleger 1518-1618, München 1986, S. 30; <hi><placeName ref="70">Augsburger</placeName> Eliten</hi> 269. 277. 349. 936.</note>.</s>
+					<s n="21" xml:lang="de" type="auto">Jacob Herbrott, alter burgermayster<note xml:id="fn20" type="footnote" n="20">In <placeName ref="place70">Augsburg</placeName> wechselten jährlich um den Dreikönigstag (6. Januar) die beiden Bürgermeister. Zwischen 1544 und 1547 amtierten als Bürgermeister Jakob Herwart und Simprecht Hoser während den geraden Jahren, Herbrot und Hans Welser während den ungeraden Jahren; s. Katarina <hi>Sieh-Burens,</hi> Oligarchie, Konfession und Politik im 16. Jahrhundert. Zur sozialen Verflechtung der <placeName ref="place70">Augsburger</placeName> Bürgermeister und Stadtpfleger 1518-1618, München 1986, S. 30; <hi><placeName ref="place70">Augsburger</placeName> Eliten</hi> 269. 277. 349. 936.</note>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf f. 209c,v.:]</note>
-					<s xml:lang="de" type="auto">Dem erwurdigen hochgelerten heren Hainrich Bullinger, etc., meinem sunder vertrautenn lyebn hern und freint.</s>
-					<s xml:lang="de" type="auto">Zurich<note xml:id="fnd" type="footnote" n="d">Darunter von Bullingers Hand: Jacob Herbrot, burgermeister zu <placeName ref="70">Augsburg</placeName>.</note>.<note xml:id="fn21" type="footnote" n="21">Vorliegender Brief traf am 1. April in Konstanz ein und wurde von <persName ref="19">Ambrosius Blarer</persName> weitergeleitet; s. <ref target="file#12455">Nr. 2408</ref>,1f.</note></s>
+					<s n="22" xml:lang="de" type="auto">Dem erwurdigen hochgelerten heren Hainrich Bullinger, etc., meinem sunder vertrautenn lyebn hern und freint.</s>
+					<s n="23" xml:lang="de" type="auto">Zurich<note xml:id="fnd" type="footnote" n="d">Darunter von Bullingers Hand: Jacob Herbrot, burgermeister zu <placeName ref="place70">Augsburg</placeName>.</note>.<note xml:id="fn21" type="footnote" n="21">Vorliegender Brief traf am 1. April in Konstanz ein und wurde von <persName ref="person19">Ambrosius Blarer</persName> weitergeleitet; s. <ref target="file12455">Nr. 2408</ref>,1f.</note></s>
 				</p>
 			</div>
 		</body>

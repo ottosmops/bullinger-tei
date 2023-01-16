@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2079</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 62,554</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 62,554</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 72,268</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 72,268</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -61,36 +67,34 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/955">
 				<correspAction type="sent">
-					<persName ref="person#3311" cert="high">
+					<!--
+					<persName ref="person3311" cert="high">
 						<forename cert="high">Jacobus</forename>
 						<surname cert="high">Valerius</surname>
-						<addName type="main">Valier, Jacques</addName>
+						<persName type="main" ref="person9701>Valier, Jacques</addName>
 					</persName>
-					<place source="#280" cert="high">
-						<settlement>Lausanne</settlement>
-						<district>Waadt</district>
-						<country>Schweiz</country>
-						<geo>46.516 6.63282</geo>
-					</place>
+					-->
+					<persName ref="person3311" cert="high"/>
+					<place source="place280" cert="high"/>
 					<date when="1550-06-29" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#956"/>
-					<ref type="prev_chronologically" target="files.xml#954"/>
+					<ref type="next_chronologically" target="file956"/>
+					<ref type="prev_chronologically" target="file954"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -99,12 +103,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#958"/>
-					<ref type="prev_same_addressee" target="files.xml#936"/>
+					<ref type="next_same_addressee" target="file958"/>
+					<ref type="prev_same_addressee" target="file936"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#958"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#936"/>
+					<ref type="next_with_addressee_as_sender" target="file958"/>
+					<ref type="prev_with_addressee_as_sender" target="file936"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -121,35 +125,35 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Gratia et pax a deo patre nostro per Iesum Christum dominum nostrum.</s>
+					<s n="1" xml:lang="la" type="auto">Gratia et pax a deo patre nostro per Iesum Christum dominum nostrum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuas commendatitias literas, vir clarissime ac domine perquam reverende, mihi retulit indole haud poenitenda felix d. doctoris Engelhardi unicus et valde dilectus filius.</s>
-					<s xml:lang="la" type="auto">De quo iam pridem ad me scripserat venerandus dominus Ioannes Hallerus, primarię ecclesię Bernensis fidelis minister et pastor vigilantissimus, cuius nomine iam fuerat mihi hic Felix commendatissimus.</s>
+					<s n="2" xml:lang="la" type="auto">Tuas commendatitias literas, vir clarissime ac domine perquam reverende, mihi retulit indole haud poenitenda felix d. doctoris Engelhardi unicus et valde dilectus filius.</s>
+					<s n="3" xml:lang="la" type="auto">De quo iam pridem ad me scripserat venerandus dominus Ioannes Hallerus, primarię ecclesię Bernensis fidelis minister et pastor vigilantissimus, cuius nomine iam fuerat mihi hic Felix commendatissimus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Meminerat etiam laudis eximię, quam meretur optimo iure perquam venerandus senex d. doctor Engelhardus, cui sane plurimum debent, quotquot in Christi domini nostri evangelium bene affecti sunt.</s>
-					<s xml:lang="la" type="auto">Ad hęc omnia nunc accessit tua commendatio, quę apud me et apud omnes nostros tanti fit (et merito), ut nobis omnibus sit commendatissimo commendatior in eoque talem simus daturi operam, ne fides et diligentia desiderari queant.</s>
-					<s xml:lang="la" type="auto">Cętera deo committimus (ut par est), qui solus foelicem successum huius Foelicis rebus et studiis dare potest sicut et aliorum omnium.</s>
-					<s xml:lang="la" type="auto">Hoc autem unum hac in parte nobis molestum est, quod, quemadmodum cuperemus eos, qui ad nos mittuntur, tractare pro dignitate et meritis et eorum, qui nobis eos commendant, et eorum, qui commendantur, non possumus.</s>
-					<s xml:lang="la" type="auto">Habemus enim domos non satis commodas ad plures hospites recipiendos, et in nostra oeconomia parum periti res omnes pluris emere solemus, quam indigenę, unde fit plerumque, ut apud hos cives minori pretio et maiori lucro quam apud nos alantur convictores.</s>
-					<s xml:lang="la" type="auto">Nam quod alii per se, nos per procuratores efficimus.</s>
-					<s xml:lang="la" type="auto">Tractabimus tamen eum ita domino iuvante, ut ipse de nobis iure nullo modo conqueri possit et tuam et domini Halleri commendationem non vulgarem fuisse cognoscat.</s>
-					<s xml:lang="la" type="auto">Quod autem tanto opere tuam operam et studium nobis pręter nostrum aliquod meritum polliceris, tuę est humanitatis ac beneficentię, pro quibus tibi, non quas debemus, sed quas possumus, et habemus et agimus gratias.</s>
+					<s n="4" xml:lang="la" type="auto">Meminerat etiam laudis eximię, quam meretur optimo iure perquam venerandus senex d. doctor Engelhardus, cui sane plurimum debent, quotquot in Christi domini nostri evangelium bene affecti sunt.</s>
+					<s n="5" xml:lang="la" type="auto">Ad hęc omnia nunc accessit tua commendatio, quę apud me et apud omnes nostros tanti fit (et merito), ut nobis omnibus sit commendatissimo commendatior in eoque talem simus daturi operam, ne fides et diligentia desiderari queant.</s>
+					<s n="6" xml:lang="la" type="auto">Cętera deo committimus (ut par est), qui solus foelicem successum huius Foelicis rebus et studiis dare potest sicut et aliorum omnium.</s>
+					<s n="7" xml:lang="la" type="auto">Hoc autem unum hac in parte nobis molestum est, quod, quemadmodum cuperemus eos, qui ad nos mittuntur, tractare pro dignitate et meritis et eorum, qui nobis eos commendant, et eorum, qui commendantur, non possumus.</s>
+					<s n="8" xml:lang="la" type="auto">Habemus enim domos non satis commodas ad plures hospites recipiendos, et in nostra oeconomia parum periti res omnes pluris emere solemus, quam indigenę, unde fit plerumque, ut apud hos cives minori pretio et maiori lucro quam apud nos alantur convictores.</s>
+					<s n="9" xml:lang="la" type="auto">Nam quod alii per se, nos per procuratores efficimus.</s>
+					<s n="10" xml:lang="la" type="auto">Tractabimus tamen eum ita domino iuvante, ut ipse de nobis iure nullo modo conqueri possit et tuam et domini Halleri commendationem non vulgarem fuisse cognoscat.</s>
+					<s n="11" xml:lang="la" type="auto">Quod autem tanto opere tuam operam et studium nobis pręter nostrum aliquod meritum polliceris, tuę est humanitatis ac beneficentię, pro quibus tibi, non quas debemus, sed quas possumus, et habemus et agimus gratias.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in Christo Iesu, qui te et tui similes servet suę ecclesię incolumes.</s>
-					<s xml:lang="la" type="auto">Lausannę 3. calendas iulii 1550.</s>
+					<s n="12" xml:lang="la" type="auto">Vale in Christo Iesu, qui te et tui similes servet suę ecclesię incolumes.</s>
+					<s n="13" xml:lang="la" type="auto">Lausannę 3. calendas iulii 1550.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus ex animo Iacobus Valerius.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus ex animo Iacobus Valerius.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse:]</note>
-					<s xml:lang="la" type="auto">Insigni pietate eximiaque eruditione celeberrimo viro d. d. Henrycho Bullingero, primarię ecclesię Tigurinensis pastori vigilantissimo, domino suo in primis observando.</s>
+					<s n="15" xml:lang="la" type="auto">Insigni pietate eximiaque eruditione celeberrimo viro d. d. Henrycho Bullingero, primarię ecclesię Tigurinensis pastori vigilantissimo, domino suo in primis observando.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="16" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

@@ -9,10 +9,10 @@
 				<publisher>Basler Buch- und Antiquariatshandlung</publisher>
 				<pubPlace>Basel</pubPlace>
 				<date when="1904"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1330</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1330</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Bullingers Korrespondenz mit den Graubündnern</title>
+				<title subtype="publication">Graubünden, Korr.</title>
 				<biblScope type="author">Bullinger, H.; Schiess, T.</biblScope>
 				<biblScope type="edition">Bullingers Korrespondenz mit den Graubündnern</biblScope>
 				<biblScope type="page">19</biblScope>
@@ -20,13 +20,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,262</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,262</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -35,17 +38,17 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Sendet die [Sechs] Artikel des englischen <persName ref="98">Königs</persName>
-								[<persName ref="98">Heinrich VIII.</persName>] zurück;
-								glücklicherweise beschränkt sich dessen Macht auf <placeName ref="9">England</placeName>. Ist
+								Sendet die [Sechs] Artikel des englischen Königs
+								[<persName ref="person98">Heinrich VIII.</persName>] zurück;
+								glücklicherweise beschränkt sich dessen Macht auf <placeName ref="place9">England</placeName>. Ist
 								sehr beschäftigt, da die neue Schule unerwartet gut gedeiht und von den Söhnen vornehmer Familien aus ganz
 								Bünden besucht wird. Im Land herrscht Ruhe, abgesehen von der Festnahme und Hinrichtung einiger Räuber,
-								worüber <persName ref="1930">Gotthard</persName> [<persName ref="1930">Richmut</persName>]
-								mehr berichten kann. Im <placeName ref="2">Comersee</placeName> sind sechs Häuser spurlos
-								versunken. Schickt einen Brief von [<persName ref="220">Johannes</persName>]
-								<persName ref="220">Travers</persName> und bietet sich als Briefübermittler an, da er mit
-								<persName ref="220">Travers</persName> verwandte Knaben aus
-								<placeName ref="1239">Zuoz</placeName> beherbergt. Grüße an Zürcher Gelehrte.
+								worüber Gotthard [<persName ref="person1930">Richmut</persName>]
+								mehr berichten kann. Im <placeName ref="place2">Comersee</placeName> sind sechs Häuser spurlos
+								versunken. Schickt einen Brief von [Johannes]
+								<persName ref="person220">Travers</persName> und bietet sich als Briefübermittler an, da er mit
+								<persName ref="person220">Travers</persName> verwandte Knaben aus
+								<placeName ref="place1239">Zuoz</placeName> beherbergt. Grüße an Zürcher Gelehrte.
 							</p>
 						</summary>
 					</msContents>
@@ -62,42 +65,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11373">
 				<correspAction type="sent">
-					<persName ref="person#2594" cert="high">
+					<!--
+					<persName ref="person2594" cert="high">
 						<forename cert="high">Nikolaus</forename>
 						<surname cert="high">Pfister</surname>
-						<addName type="main">Pfister (Artopoeus, Baling), Nikolaus</addName>
+						<persName type="main" ref="person8114>Pfister (Artopoeus, Baling), Nikolaus</addName>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person2594" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1539-11-18" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11374"/>
-					<ref type="prev_chronologically" target="files.xml#11375"/>
-					<ref type="next_correspondence" target="files.xml#11671"/>
-					<ref type="prev_correspondence" target="files.xml#11366"/>
-					<ref type="next_correspondence_request" target="files.xml#11671"/>
-					<ref type="prev_correspondence_request" target="files.xml#11366"/>
+					<ref type="next_chronologically" target="file11374"/>
+					<ref type="prev_chronologically" target="file11375"/>
+					<ref type="next_correspondence" target="file11671"/>
+					<ref type="prev_correspondence" target="file11366"/>
+					<ref type="next_correspondence_request" target="file11671"/>
+					<ref type="prev_correspondence_request" target="file11366"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11671"/>
-					<ref type="prev_same_sender" target="files.xml#11366"/>
-					<ref type="next_same_addressee" target="files.xml#11376"/>
-					<ref type="prev_same_addressee" target="files.xml#11370"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11671"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11366"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11376"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11370"/>
+					<ref type="next_same_sender" target="file11671"/>
+					<ref type="prev_same_sender" target="file11366"/>
+					<ref type="next_same_addressee" target="file11376"/>
+					<ref type="prev_same_addressee" target="file11370"/>
+					<ref type="next_with_sender_as_addressee" target="file11671"/>
+					<ref type="prev_with_sender_as_addressee" target="file11366"/>
+					<ref type="next_with_addressee_as_sender" target="file11376"/>
+					<ref type="prev_with_addressee_as_sender" target="file11370"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -106,34 +114,37 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="11373/Autograph/00 E_II_365__fol__262_r_.tif" n="1"/>
+		<graphic url="11373/Autograph/01 E_II_365__fol__262_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Nicolaus Artopoeus Balingius Henrico Bullingero, viro clarissimo S. D.</s>
+					<s n="1" xml:lang="la" type="auto">Nicolaus Artopoeus Balingius Henrico Bullingero, viro clarissimo S. D.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">En remitto articulos regis Angliae, qui, Domino sit gratia, heic non admodum multos movent; omnes dicunt, quod tu cum scriptura dicis: „Nolite confidere in principibus“, etc.</s>
-					<s xml:lang="la" type="auto">Meo iuditio rex ille rex est Angliae et nihil aliud, quamcunque personam induxerit.</s>
-					<s xml:lang="la" type="auto">Velim pluribus tecum agere, sed negotia non sinunt.</s>
-					<s xml:lang="la" type="auto">Crede mihi, nunquam fui occupatior; adeo fervet et gratiosum est nostrae scholae initium etiam iis, quibus putaram abominationem fore.</s>
-					<s xml:lang="la" type="auto">Ex omnibus Foederibus huc advolant, et quod mire nos afficit, magnatum atque procerum filii.</s>
-					<s xml:lang="la" type="auto">Faxit optimus maximus, ut semper felicibus auspiciis sic procedat.</s>
-					<s xml:lang="la" type="auto">Hactenus illa.</s>
-					<s xml:lang="la" type="auto">Caeterum quod attinet ad universam nostram rempublicam: pacate satis agimus, nisi quod latrones nobis negotium facessunt, quorum plures sunt capti, plures affecti supplicio et plures, ut ferunt, adhuc latent incogniti, quemadmodum a Goethardo, si vacat, liquido cognosces.</s>
-					<s xml:lang="la" type="auto">Mihi si vacaret, certe mira scriberem, quae mihi nescio quid portendere videntur; Dominus novit.</s>
-					<s xml:lang="la" type="auto">Ad Larium lacum aiunt sex domos subsidisse ex improviso et aquis obrutas esse, quarum iam nullum plane extet vestigium neque ullae usquam apparent reliquiae.</s>
-					<s xml:lang="la" type="auto">Machinis ac anchoris quaesitum est diu, sed frustra.</s>
-					<s xml:lang="la" type="auto">Mitto epistolam nostri Trawersi.</s>
-					<s xml:lang="la" type="auto">Cui si responderis, ad me mittito; ego facili opera transmittam ei.</s>
-					<s xml:lang="la" type="auto">Alo aliquot pueros Zucianos et Trawerso cognatos.</s>
-					<s xml:lang="la" type="auto">Tu vale, vir doctissime, et indoctam epistolam boni aequique consulito.</s>
-					<s xml:lang="la" type="auto">Leonem, Bibliandrum, Megandrum, Ammianum, Rhellicanum meo nomine salutabis.</s>
-					<s xml:lang="la" type="auto">Curiae, 18. Novembris.</s>
+					<s n="2" xml:lang="la" type="auto">En remitto articulos regis Angliae, qui, Domino sit gratia, heic non admodum multos movent; omnes dicunt, quod tu cum scriptura dicis: „Nolite confidere in principibus“, etc.</s>
+					<s n="3" xml:lang="la" type="auto">Meo iuditio rex ille rex est Angliae et nihil aliud, quamcunque personam induxerit.</s>
+					<s n="4" xml:lang="la" type="auto">Velim pluribus tecum agere, sed negotia non sinunt.</s>
+					<s n="5" xml:lang="la" type="auto">Crede mihi, nunquam fui occupatior; adeo fervet et gratiosum est nostrae scholae initium etiam iis, quibus putaram abominationem fore.</s>
+					<s n="6" xml:lang="la" type="auto">Ex omnibus Foederibus huc advolant, et quod mire nos afficit, magnatum atque procerum filii.</s>
+					<s n="7" xml:lang="la" type="auto">Faxit optimus maximus, ut semper felicibus auspiciis sic procedat.</s>
+					<s n="8" xml:lang="la" type="auto">Hactenus illa.</s>
+					<s n="9" xml:lang="la" type="auto">Caeterum quod attinet ad universam nostram rempublicam: pacate satis agimus, nisi quod latrones nobis negotium facessunt, quorum plures sunt capti, plures affecti supplicio et plures, ut ferunt, adhuc latent incogniti, quemadmodum a Goethardo, si vacat, liquido cognosces.</s>
+					<s n="10" xml:lang="la" type="auto">Mihi si vacaret, certe mira scriberem, quae mihi nescio quid portendere videntur; Dominus novit.</s>
+					<s n="11" xml:lang="la" type="auto">Ad Larium lacum aiunt sex domos subsidisse ex improviso et aquis obrutas esse, quarum iam nullum plane extet vestigium neque ullae usquam apparent reliquiae.</s>
+					<s n="12" xml:lang="la" type="auto">Machinis ac anchoris quaesitum est diu, sed frustra.</s>
+					<s n="13" xml:lang="la" type="auto">Mitto epistolam nostri Trawersi.</s>
+					<s n="14" xml:lang="la" type="auto">Cui si responderis, ad me mittito; ego facili opera transmittam ei.</s>
+					<s n="15" xml:lang="la" type="auto">Alo aliquot pueros Zucianos et Trawerso cognatos.</s>
+					<s n="16" xml:lang="la" type="auto">Tu vale, vir doctissime, et indoctam epistolam boni aequique consulito.</s>
+					<s n="17" xml:lang="la" type="auto">Leonem, Bibliandrum, Megandrum, Ammianum, Rhellicanum meo nomine salutabis.</s>
+					<s n="18" xml:lang="la" type="auto">Curiae, 18. Novembris.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Henrico Bullingero, viro et eruditione et prudentia conspicuo.</s>
+					<s n="19" xml:lang="la" type="auto">Henrico Bullingero, viro et eruditione et prudentia conspicuo.</s>
 				</p>
 			</div>
 		</body>

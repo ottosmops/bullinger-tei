@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=467</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=467</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 345,155-158</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 345,155-158</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,12 +50,12 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Wegen Überlastung legt er eine Abschrift seines an <persName ref="28">Bucer</persName> gerichteten
-								Briefes bei. König <persName ref="832">Ferdinand</persName> I. ist nicht zu fürchten, um so mehr aber
+								Wegen Überlastung legt er eine Abschrift seines an <persName ref="person28">Bucer</persName> gerichteten
+								Briefes bei. König <persName ref="person832">Ferdinand I.</persName> ist nicht zu fürchten, um so mehr aber
 								die Verlockung des französischen Goldes. Großmachtziele sollen durch das Vergießen schweizerischen Blutes
 								erreicht werden, befürchtet Bullinger. Neid und der aus Kriegsbeute entstehende Luxus werden das Land
 								zugrunde richten, wenn man nicht zu einer bescheideneren Lebensführung zurückfindet. Er hofft, mit dem Brief
-								an <persName ref="28">Bucer</persName> auch <persName ref="154">Myconius</persName>' Fragen
+								an <persName ref="person28">Bucer</persName> auch <persName ref="person154">Myconius</persName>' Fragen
 								beantwortet zu haben.
 							</p>
 						</summary>
@@ -63,46 +66,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10502">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1534-10-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
+					-->
+					<persName ref="person2234" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10503"/>
-					<ref type="prev_chronologically" target="files.xml#10501"/>
-					<ref type="next_correspondence" target="files.xml#10509"/>
-					<ref type="prev_correspondence" target="files.xml#10492"/>
-					<ref type="next_correspondence_request" target="files.xml#10542"/>
-					<ref type="prev_correspondence_request" target="files.xml#10486"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10509"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10492"/>
-					<ref type="next_same_sender" target="files.xml#10528"/>
-					<ref type="prev_same_sender" target="files.xml#10501"/>
-					<ref type="next_same_addressee" target="files.xml#10509"/>
-					<ref type="prev_same_addressee" target="files.xml#10492"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10528"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10501"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10509"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10492"/>
+					<ref type="next_chronologically" target="file10503"/>
+					<ref type="prev_chronologically" target="file10501"/>
+					<ref type="next_correspondence" target="file10509"/>
+					<ref type="prev_correspondence" target="file10492"/>
+					<ref type="next_correspondence_request" target="file10542"/>
+					<ref type="prev_correspondence_request" target="file10486"/>
+					<ref type="next_correspondence_reaction" target="file10509"/>
+					<ref type="prev_correspondence_reaction" target="file10492"/>
+					<ref type="next_same_sender" target="file10528"/>
+					<ref type="prev_same_sender" target="file10501"/>
+					<ref type="next_same_addressee" target="file10509"/>
+					<ref type="prev_same_addressee" target="file10492"/>
+					<ref type="next_with_sender_as_addressee" target="file10528"/>
+					<ref type="prev_with_sender_as_addressee" target="file10501"/>
+					<ref type="next_with_addressee_as_sender" target="file10509"/>
+					<ref type="prev_with_addressee_as_sender" target="file10492"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -121,45 +129,45 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam<note xml:id="fnb" type="footnote" n="b"><hi>Darüber von Bullingers Hand:</hi> Domino Oswaldo Myconio.</note> et pacem a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam<note xml:id="fnb" type="footnote" n="b"><hi>Darüber von Bullingers Hand:</hi> Domino Oswaldo Myconio.</note> et pacem a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Propter negotia urgentia transcripsi epistolam <persName ref="28">Bucero</persName> scriptam<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file#10501">Nr. 466</ref>.</note> ut, simul apographum haberem et tuae quaestioni<note xml:id="fn2" type="footnote" n="2">Siehe oben <ref target="file#10492">Nr. 457</ref>.</note> satisfacerem.</s>
-					<s xml:lang="la" type="auto">Ea ergo lege.</s>
-					<s xml:lang="la" type="auto">Apographum hoc mitto, ut aliquando remittas.</s>
-					<s xml:lang="la" type="auto">Cupio te in domino valere plurimum.</s>
+					<s n="2" xml:lang="la" type="auto">Propter negotia urgentia transcripsi epistolam <persName ref="person28">Bucero</persName> scriptam<note xml:id="fn1" type="footnote" n="1">Oben <ref target="file10501">Nr. 466</ref>.</note> ut, simul apographum haberem et tuae quaestioni<note xml:id="fn2" type="footnote" n="2">Siehe oben <ref target="file10492">Nr. 457</ref>.</note> satisfacerem.</s>
+					<s n="3" xml:lang="la" type="auto">Ea ergo lege.</s>
+					<s n="4" xml:lang="la" type="auto">Apographum hoc mitto, ut aliquando remittas.</s>
+					<s n="5" xml:lang="la" type="auto">Cupio te in domino valere plurimum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nihil nobis a <persName ref="832">Ferdinando</persName> metuendum puto<note xml:id="fn3" type="footnote" n="3">Vgl. oben S. 353f, 3-6.</note>.</s>
-					<s xml:lang="la" type="auto">Magis timendum, ne a luxu nostro vincamur, tandem vero subigamur ab auro gallico<note xml:id="fn4" type="footnote" n="4">Gemeint ist die Verlockung der Söldnerwerbung durch <placeName ref="11">Frankreich</placeName> und der französischen «Pensionen», die in Zürich seit der Zwinglizeit verboten waren.</note>.</s>
-					<s xml:lang="la" type="auto">Quod enim nostri per universam Helvetiam contra omnes leges sumptuarias commessantur et omni substantia mulctis partim exuuntur, partim intemperantia, quis, obsecro, symbolum tandem dabit nisi Gallus?</s>
-					<s xml:lang="la" type="auto">Hic enim, vereor, alienis inhians regnis nostro sanguine aliquando sibi illa parare cogitat.</s>
-					<s xml:lang="la" type="auto">Utinam vanus sim vates!</s>
-					<s xml:lang="la" type="auto">Nostrorum certe multos neque leges neque mulctę neque correctio ulla - quamquam et hanc severiorem optarem - neque veritatis verbum acre quicquam permonent, quo frugalius viverent.</s>
-					<s xml:lang="la" type="auto">Videor mihi videre Helvetiam omnem se non invidia solum, sed et fatali luxu seipsam, inquam, brevi absumpturam.</s>
-					<s xml:lang="la" type="auto">Utinam spolia aliunde importata eos oppressissent solos, qui importarunt.</s>
+					<s n="6" xml:lang="la" type="auto">Nihil nobis a <persName ref="person832">Ferdinando</persName> metuendum puto<note xml:id="fn3" type="footnote" n="3">Vgl. oben S. 353f, 3-6.</note>.</s>
+					<s n="7" xml:lang="la" type="auto">Magis timendum, ne a luxu nostro vincamur, tandem vero subigamur ab auro gallico<note xml:id="fn4" type="footnote" n="4">Gemeint ist die Verlockung der Söldnerwerbung durch <placeName ref="place11">Frankreich</placeName> und der französischen «Pensionen», die in Zürich seit der Zwinglizeit verboten waren.</note>.</s>
+					<s n="8" xml:lang="la" type="auto">Quod enim nostri per universam Helvetiam contra omnes leges sumptuarias commessantur et omni substantia mulctis partim exuuntur, partim intemperantia, quis, obsecro, symbolum tandem dabit nisi Gallus?</s>
+					<s n="9" xml:lang="la" type="auto">Hic enim, vereor, alienis inhians regnis nostro sanguine aliquando sibi illa parare cogitat.</s>
+					<s n="10" xml:lang="la" type="auto">Utinam vanus sim vates!</s>
+					<s n="11" xml:lang="la" type="auto">Nostrorum certe multos neque leges neque mulctę neque correctio ulla - quamquam et hanc severiorem optarem - neque veritatis verbum acre quicquam permonent, quo frugalius viverent.</s>
+					<s n="12" xml:lang="la" type="auto">Videor mihi videre Helvetiam omnem se non invidia solum, sed et fatali luxu seipsam, inquam, brevi absumpturam.</s>
+					<s n="13" xml:lang="la" type="auto">Utinam spolia aliunde importata eos oppressissent solos, qui importarunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="383"/>Verum istiusmodi sunt iudicia domini.</s>
-					<s xml:lang="la" type="auto">Sed ne nos quidem immunes sumus.</s>
-					<s xml:lang="la" type="auto">Placent vel hodie nobis maiorum triumphi.</s>
+					<s n="14" xml:lang="la" type="auto"><pb type="edition" next="383"/>Verum istiusmodi sunt iudicia domini.</s>
+					<s n="15" xml:lang="la" type="auto">Sed ne nos quidem immunes sumus.</s>
+					<s n="16" xml:lang="la" type="auto">Placent vel hodie nobis maiorum triumphi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cęterum, dum <persName ref="28">Bucero</persName> scriberem, ita stilum ducebam, quasi iam tibi scripsissem, quod utrique unica epistola respondere cogitarem.</s>
-					<s xml:lang="la" type="auto">Est autem hoc istius apographum: «Nescio<note xml:id="fnc" type="footnote" n="c"><hi>Vgl. diese Passage oben in Bullingers Brief an <persName ref="28">Bucer</persName> vom gleichen Tag, S. 377, 1-381, 87.</hi></note>, quid [...] monentem etc.<note xml:id="fnd" type="footnote" n="d"><hi>Vgl. diese Passage oben in Bullingers Brief an <persName ref="28">Bucer</persName> vom gleichen Tag, S. 377, 1-381, 87.</hi></note>»</s>
+					<s n="17" xml:lang="la" type="auto">Cęterum, dum <persName ref="person28">Bucero</persName> scriberem, ita stilum ducebam, quasi iam tibi scripsissem, quod utrique unica epistola respondere cogitarem.</s>
+					<s n="18" xml:lang="la" type="auto">Est autem hoc istius apographum: «Nescio<note xml:id="fnc" type="footnote" n="c"><hi>Vgl. diese Passage oben in Bullingers Brief an <persName ref="person28">Bucer</persName> vom gleichen Tag, S. 377, 1-381, 87.</hi></note>, quid [...] monentem etc.<note xml:id="fnd" type="footnote" n="d"><hi>Vgl. diese Passage oben in Bullingers Brief an <persName ref="person28">Bucer</persName> vom gleichen Tag, S. 377, 1-381, 87.</hi></note>»</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Hęc sunt, <persName ref="154">Myconi</persName>, frater venerande, quę <persName ref="28">Bucero</persName> scripsimus, quibus et tibi satisfactum credimus.</s>
-					<s xml:lang="la" type="auto">Tu, quid ab Argentorato receperis, indica.</s>
+					<s n="19" xml:lang="la" type="auto">Hęc sunt, <persName ref="person154">Myconi</persName>, frater venerande, quę <persName ref="person28">Bucero</persName> scripsimus, quibus et tibi satisfactum credimus.</s>
+					<s n="20" xml:lang="la" type="auto">Tu, quid ab Argentorato receperis, indica.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salvum volo <persName ref="117">Carolostadium</persName>, Bersium, Thomam<note xml:id="fn5" type="footnote" n="5">Gemeint ist wahrscheinlich der Diakon <persName ref="85">Thomas Gyrfalk</persName>.</note> et reliquos, precipue autem W[olfgangum] <persName ref="250">Wissenburgium</persName>.</s>
+					<s n="21" xml:lang="la" type="auto">Salvum volo <persName ref="person117">Carolostadium</persName>, Bersium, Thomam<note xml:id="fn5" type="footnote" n="5">Gemeint ist wahrscheinlich der Diakon <persName ref="person85">Thomas Gyrfalk</persName>.</note> et reliquos, precipue autem W[olfgangum] <persName ref="person250">Wissenburgium</persName>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Octobris 28. 1534.</s>
+					<s n="22" xml:lang="la" type="auto">Octobris 28. 1534.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus tuus.</s>
+					<s n="23" xml:lang="la" type="auto">H. Bullingerus tuus.</s>
 				</p>
 			</div>
 		</body>

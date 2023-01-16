@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">8021/268</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Original" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Original">Ms A 44, p. 671-672</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Original">Ms A 44, p. 671-672</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -49,25 +52,31 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms F 58,589</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms F 58,589</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
 				<msDesc type="Brief" subtype="Teilkopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#492">Strassburg</settlement>
-						<institution>National- und Universitätsbibliothek</institution>
-						<idno type="Teilkopie">Ms 0.694 = STB Bd. 35,56</idno>
-						<repository ref="archive#81">
+						<!--
+						<repository ref="archive81">
 							<name>Strassburg BNU</name>
 							<ref target="https://www.bnu.fr/fr"/>
 						</repository>
+						<settlement ref="place492">Strassburg</settlement>
+						<institution>National- und Universitätsbibliothek</institution>
+						-->
+						<repository ref="archive81"/>
+						<idno subtype="Teilkopie">Ms 0.694 = STB Bd. 35,56</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -76,56 +85,43 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9122">
 				<correspAction type="sent">
-					<persName ref="person#890" cert="high">
+					<!--
+					<persName ref="person890" cert="high">
 						<forename cert="high">Theodor</forename>
 						<surname cert="high">Beza</surname>
-						<addName type="main">de Bèze (Beza), Théodor</addName>
+						<persName type="main" ref="person8033>de Bèze (Beza), Théodor</addName>
 						<note type="Person">(im Namen der Compagnie)</note>
 						<graphic type="portrait" url="portraits/876_Beza_Theodor.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Th%C3%A9odore_de_B%C3%A8ze"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118662864"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11418065"/>
 					</persName>
-					<place source="#167" cert="high">
-						<settlement>Genf</settlement>
-						<district>Genève</district>
-						<country>Schweiz</country>
-						<geo>46.20222 6.14569</geo>
-					</place>
+					-->
+					<persName ref="person890" cert="high"/>
+					<place source="place167" cert="high"/>
 					<date when="1572-12-05" cert="low"><note>Tag unsicher  (5.) (oder 4.)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#50" cert="high">Prediger</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role0" role="Prediger"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9123"/>
-					<ref type="prev_chronologically" target="files.xml#9121"/>
+					<ref type="next_chronologically" target="file9123"/>
+					<ref type="prev_chronologically" target="file9121"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#6741"/>
+					<ref type="prev_correspondence" target="file6741"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#6741"/>
+					<ref type="prev_correspondence_request" target="file6741"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#9177"/>
-					<ref type="prev_same_sender" target="files.xml#9121"/>
-					<ref type="next_same_addressee" target="files.xml#9533"/>
-					<ref type="prev_same_addressee" target="files.xml#8153"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9177"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9121"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9533"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8153"/>
+					<ref type="next_same_sender" target="file9177"/>
+					<ref type="prev_same_sender" target="file9121"/>
+					<ref type="next_same_addressee" target="file9533"/>
+					<ref type="prev_same_addressee" target="file8153"/>
+					<ref type="next_with_sender_as_addressee" target="file9177"/>
+					<ref type="prev_with_sender_as_addressee" target="file9121"/>
+					<ref type="next_with_addressee_as_sender" target="file9533"/>
+					<ref type="prev_with_addressee_as_sender" target="file8153"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -135,42 +131,42 @@
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
 	<facsimile>
-		<graphic url="9122/Autograph/00 Ms A 44 (671)_00001.tif" n="1"/>
-		<graphic url="9122/Autograph/01 Ms A 44 (671)_00002.tif" n="2"/>
-		<graphic url="9122/Autograph/02 Ms A 44 (671)_00003.tif" n="3"/>
-		<graphic url="9122/Autograph/03 Ms A 44 (671)_00004.tif" n="4"/>
+		<graphic url="9122/Original/00 Ms A 44 (671)_00001.tif" n="1"/>
+		<graphic url="9122/Original/01 Ms A 44 (671)_00002.tif" n="2"/>
+		<graphic url="9122/Original/02 Ms A 44 (671)_00003.tif" n="3"/>
+		<graphic url="9122/Original/03 Ms A 44 (671)_00004.tif" n="4"/>
 	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Quod iubet charitas, quod cogit nos facere necessitas, reverendi viri et observandi fratres, hoc ipsum facimus, id est miserorum exulum causam vestrae pietati commendamus.</s>
-					<s xml:lang="la" type="auto">Quae sit autem eorum calamitas, etsi vobis ignotum esse non potest, tamen hoc affirmare possumus rem ipsam longe lateque superare, quaecunque de adversariorum impudentia, perfidia et immanitate adhuc audivistis.</s>
+					<s n="1" xml:lang="la" type="auto">Quod iubet charitas, quod cogit nos facere necessitas, reverendi viri et observandi fratres, hoc ipsum facimus, id est miserorum exulum causam vestrae pietati commendamus.</s>
+					<s n="2" xml:lang="la" type="auto">Quae sit autem eorum calamitas, etsi vobis ignotum esse non potest, tamen hoc affirmare possumus rem ipsam longe lateque superare, quaecunque de adversariorum impudentia, perfidia et immanitate adhuc audivistis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Imo, quod plane videri potest incredibile, quamvis hostium rabies ad summum usque gradum pervenisse videri iam poterat, multo tamen quam unquam antea saeviora et atrociora quotidie excogitare non desinunt, sicut ex Ricaldi, charissimi fratris et symmistae nostri sermone plenius cognoscetis.</s>
-					<s xml:lang="la" type="auto">Quae cum ita se habeant et, quicquid ad tantas fratrum miserias partim leniendas partim etiam avertendas facit, experiendum videatur, istuc quoque proficiscuntur ab amplissimo vestro senatu subsidii ac consilii aliquid petituri.</s>
-					<s xml:lang="la" type="auto">Ad quae impetranda quum plurimum possent vestra quoque authoritate iuvari, petimus a vobis etiam atque etiam in domino, ut illos audire et, prout expedire videbitur, charitate singulari vestra complecti non gravemini.</s>
-					<s xml:lang="la" type="auto">Ita enim certe deo optimo maximo gratum facietis et vel uno hoc beneficio innumeros miseros fratres vobis devincietis.</s>
+					<s n="3" xml:lang="la" type="auto">Imo, quod plane videri potest incredibile, quamvis hostium rabies ad summum usque gradum pervenisse videri iam poterat, multo tamen quam unquam antea saeviora et atrociora quotidie excogitare non desinunt, sicut ex Ricaldi, charissimi fratris et symmistae nostri sermone plenius cognoscetis.</s>
+					<s n="4" xml:lang="la" type="auto">Quae cum ita se habeant et, quicquid ad tantas fratrum miserias partim leniendas partim etiam avertendas facit, experiendum videatur, istuc quoque proficiscuntur ab amplissimo vestro senatu subsidii ac consilii aliquid petituri.</s>
+					<s n="5" xml:lang="la" type="auto">Ad quae impetranda quum plurimum possent vestra quoque authoritate iuvari, petimus a vobis etiam atque etiam in domino, ut illos audire et, prout expedire videbitur, charitate singulari vestra complecti non gravemini.</s>
+					<s n="6" xml:lang="la" type="auto">Ita enim certe deo optimo maximo gratum facietis et vel uno hoc beneficio innumeros miseros fratres vobis devincietis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bene valete, reverendi viri et observandi fratres.</s>
-					<s xml:lang="la" type="auto">D. Iesus vos custodiat ab omni malo sanctoque ministerio vestro magis ac magis benedicat.</s>
+					<s n="7" xml:lang="la" type="auto">Bene valete, reverendi viri et observandi fratres.</s>
+					<s n="8" xml:lang="la" type="auto">D. Iesus vos custodiat ab omni malo sanctoque ministerio vestro magis ac magis benedicat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Genevae decembris 1572.</s>
+					<s n="9" xml:lang="la" type="auto">Genevae decembris 1572.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Theodorus Beza totius ecclesiastici nostri collegii nomine ac mandato subscripsi.</s>
+					<s n="10" xml:lang="la" type="auto">Theodorus Beza totius ecclesiastici nostri collegii nomine ac mandato subscripsi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si quid subsidii a Sangallensis quoque fratribus obtineri potuerit, magnopere vos rogamus ut hanc apud illos procurandam causam suscipiatis.</s>
+					<s n="11" xml:lang="la" type="auto">Si quid subsidii a Sangallensis quoque fratribus obtineri potuerit, magnopere vos rogamus ut hanc apud illos procurandam causam suscipiatis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Reverendis et observandis in domino patribus ac fratribus ecclesiae Tigurinae pastoribus ac doctoribus.</s>
+					<s n="12" xml:lang="la" type="auto">Reverendis et observandis in domino patribus ac fratribus ecclesiae Tigurinae pastoribus ac doctoribus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="13" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

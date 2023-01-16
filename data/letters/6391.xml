@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6607/27</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 378,1723</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 378,1723</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,44 +54,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6391">
 				<correspAction type="sent">
-					<persName ref="person#867" cert="high">
+					<!--
+					<persName ref="person867" cert="high">
 						<forename cert="high">Pomponne</forename>
 						<surname cert="high">de Bellièvre</surname>
-						<addName type="main">de Bellièvre, Sr. de Grignon, Pomponne Ier</addName>
-						<graphic type="portrait" url="portraits/8160_de_Bellièvre_Pomponne.jpg"/>
-						<ref type="wikipedia" target="https://en.wikipedia.org/wiki/Pomponne_de_Belli%C3%A8vre"/>
+						<persName type="main" ref="person8160>de Bellièvre, Sr. de Grignon, Pomponne Ier</addName>
+						<graphic type="portrait" url="portraits/8160_de_Bellievre_Pomponne.jpg"/>
+						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Pomponne_de_Belli%C3%A8vre"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/120668696"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person867" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1565-03-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6392"/>
-					<ref type="prev_chronologically" target="files.xml#6390"/>
-					<ref type="next_correspondence" target="files.xml#6462"/>
-					<ref type="prev_correspondence" target="files.xml#6345"/>
-					<ref type="next_correspondence_request" target="files.xml#6462"/>
-					<ref type="prev_correspondence_request" target="files.xml#6345"/>
-					<ref type="next_correspondence_reaction" target="files.xml#8732"/>
+					<ref type="next_chronologically" target="file6392"/>
+					<ref type="prev_chronologically" target="file6390"/>
+					<ref type="next_correspondence" target="file6462"/>
+					<ref type="prev_correspondence" target="file6345"/>
+					<ref type="next_correspondence_request" target="file6462"/>
+					<ref type="prev_correspondence_request" target="file6345"/>
+					<ref type="next_correspondence_reaction" target="file8732"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#6462"/>
-					<ref type="prev_same_sender" target="files.xml#6345"/>
-					<ref type="next_same_addressee" target="files.xml#6392"/>
-					<ref type="prev_same_addressee" target="files.xml#6383"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6462"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6345"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6392"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6383"/>
+					<ref type="next_same_sender" target="file6462"/>
+					<ref type="prev_same_sender" target="file6345"/>
+					<ref type="next_same_addressee" target="file6392"/>
+					<ref type="prev_same_addressee" target="file6383"/>
+					<ref type="next_with_sender_as_addressee" target="file6462"/>
+					<ref type="prev_with_sender_as_addressee" target="file6345"/>
+					<ref type="next_with_addressee_as_sender" target="file6392"/>
+					<ref type="prev_with_addressee_as_sender" target="file6383"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -107,31 +116,31 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Balthesari ad vos proficiscenti non potui nihil literarum dare, cum praesertim hodie a te mihi reddita sit epistola amoris benevolentiaeque plena.</s>
-					<s xml:lang="la" type="auto">Hoc mihi in caeteris meis molestiis incommodisque longe gratissimum accidit, quod te virum bonum bonis omnibus artibus illustrem in dies mihi amiciorem experior.</s>
-					<s xml:lang="la" type="auto">Non invitus fateor, laetus sum me tuo iudicio ornari atque id praecipui beneficii loco habeo, ut mihi sedula in posterum navandi sit opera, uti quicquid iudicii officiique in me contuleris, bene positum arbitrere.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Balthesari ad vos proficiscenti non potui nihil literarum dare, cum praesertim hodie a te mihi reddita sit epistola amoris benevolentiaeque plena.</s>
+					<s n="3" xml:lang="la" type="auto">Hoc mihi in caeteris meis molestiis incommodisque longe gratissimum accidit, quod te virum bonum bonis omnibus artibus illustrem in dies mihi amiciorem experior.</s>
+					<s n="4" xml:lang="la" type="auto">Non invitus fateor, laetus sum me tuo iudicio ornari atque id praecipui beneficii loco habeo, ut mihi sedula in posterum navandi sit opera, uti quicquid iudicii officiique in me contuleris, bene positum arbitrere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Gratiam habeo, quod me de rebus Germanicis certiorem facis; nihil illic magni motus metuendum videtur.</s>
-					<s xml:lang="la" type="auto">De classe Turcica multorum sermone et epistolis compertum habeo.</s>
+					<s n="5" xml:lang="la" type="auto">Gratiam habeo, quod me de rebus Germanicis certiorem facis; nihil illic magni motus metuendum videtur.</s>
+					<s n="6" xml:lang="la" type="auto">De classe Turcica multorum sermone et epistolis compertum habeo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Res nostrae in Gallia satis bono loco sunt.</s>
-					<s xml:lang="la" type="auto">Rex Tholosae agit, ubi multum est, quod agat.</s>
+					<s n="7" xml:lang="la" type="auto">Res nostrae in Gallia satis bono loco sunt.</s>
+					<s n="8" xml:lang="la" type="auto">Rex Tholosae agit, ubi multum est, quod agat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Deus principis nostri adolescentiae misericorditer adesse et christianum nomen, te meque sua pace donare velit.</s>
-					<s xml:lang="la" type="auto">Bene vale, vir optime, cui salutem plurimam, consulibus reique publicae vestrae, Gvaltero et Gesnero precor.</s>
+					<s n="9" xml:lang="la" type="auto">Deus principis nostri adolescentiae misericorditer adesse et christianum nomen, te meque sua pace donare velit.</s>
+					<s n="10" xml:lang="la" type="auto">Bene vale, vir optime, cui salutem plurimam, consulibus reique publicae vestrae, Gvaltero et Gesnero precor.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Curia kalendis martiis 1565.</s>
+					<s n="11" xml:lang="la" type="auto">Curia kalendis martiis 1565.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus ex animo P[omponne] Bellieure.</s>
+					<s n="12" xml:lang="la" type="auto">Tuus ex animo P[omponne] Bellieure.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Amplissimo viro domino Henrico Bullingero, ecclesiae Tigurinae pastori dignissimo.</s>
+					<s n="13" xml:lang="la" type="auto">Amplissimo viro domino Henrico Bullingero, ecclesiae Tigurinae pastori dignissimo.</s>
 				</p>
 			</div>
 		</body>

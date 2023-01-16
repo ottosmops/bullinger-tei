@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7941/188</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 375,872</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 375,872</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,52 +47,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9028">
 				<correspAction type="sent">
-					<persName ref="person#3243" cert="low">
+					<!--
+					<persName ref="person3243" cert="low">
 						<forename cert="low">Johann Konrad</forename>
 						<surname cert="low">Ulmer</surname>
-						<addName type="main">Ulmer (ab Ulmis), Johann Konrad</addName>
-						<graphic type="portrait" url="portraits/3243_Johann_Conrad_Ulmer.jpg"/>
+						<persName type="main" ref="person8109>Ulmer (ab Ulmis), Johann Konrad</addName>
+						<graphic type="portrait" url="portraits/3243_Ulmer_Johann_Conrad.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johann_Konrad_Ulmer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/120341913"/>
 					</persName>
-					<place source="#441" cert="low">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					-->
+					<persName ref="person3243" cert="low"/>
+					<place source="place441" cert="low"/>
 					<date when="1572-09-18" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9029"/>
-					<ref type="prev_chronologically" target="files.xml#9027"/>
-					<ref type="next_correspondence" target="files.xml#9037"/>
-					<ref type="prev_correspondence" target="files.xml#9023"/>
-					<ref type="next_correspondence_request" target="files.xml#9060"/>
-					<ref type="prev_correspondence_request" target="files.xml#9023"/>
-					<ref type="next_correspondence_reaction" target="files.xml#9037"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#8987"/>
-					<ref type="next_same_sender" target="files.xml#9060"/>
-					<ref type="prev_same_sender" target="files.xml#9023"/>
-					<ref type="next_same_addressee" target="files.xml#9029"/>
-					<ref type="prev_same_addressee" target="files.xml#9024"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9060"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9023"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#9029"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#9024"/>
+					<ref type="next_chronologically" target="file9029"/>
+					<ref type="prev_chronologically" target="file9027"/>
+					<ref type="next_correspondence" target="file9037"/>
+					<ref type="prev_correspondence" target="file9023"/>
+					<ref type="next_correspondence_request" target="file9060"/>
+					<ref type="prev_correspondence_request" target="file9023"/>
+					<ref type="next_correspondence_reaction" target="file9037"/>
+					<ref type="prev_correspondence_reaction" target="file8987"/>
+					<ref type="next_same_sender" target="file9060"/>
+					<ref type="prev_same_sender" target="file9023"/>
+					<ref type="next_same_addressee" target="file9029"/>
+					<ref type="prev_same_addressee" target="file9024"/>
+					<ref type="next_with_sender_as_addressee" target="file9060"/>
+					<ref type="prev_with_sender_as_addressee" target="file9023"/>
+					<ref type="next_with_addressee_as_sender" target="file9029"/>
+					<ref type="prev_with_addressee_as_sender" target="file9024"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -99,43 +101,46 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="9028/Autograph/00 E_II_375__fol__872_r_.tif" n="1"/>
+		<graphic url="9028/Autograph/01 E_II_375__fol__872_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Clarissime vir et pater in Christo summe colende, binas uno atque eodem die abs te literas accepi, alteras 11. alteras 12. septembris scriptas, ex quibus convenire ea, quae ex Gallia accepimus, cum iis, quae etiam ad vos perlata sunt, imprimis intellexi.</s>
-					<s xml:lang="la" type="auto">Quod igitur hac immani et perfida caede piorum tantum efferuntur papistae, signum iudico fore eo maturioris vindictae, quae illis immineat a domino.</s>
-					<s xml:lang="la" type="auto">Quis enim vel immanissimarum gentium sapiens hoc nefandum scelus approbaverit?</s>
-					<s xml:lang="la" type="auto">Consolatur igitur Christi sententia dicentis:</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Clarissime vir et pater in Christo summe colende, binas uno atque eodem die abs te literas accepi, alteras 11. alteras 12. septembris scriptas, ex quibus convenire ea, quae ex Gallia accepimus, cum iis, quae etiam ad vos perlata sunt, imprimis intellexi.</s>
+					<s n="3" xml:lang="la" type="auto">Quod igitur hac immani et perfida caede piorum tantum efferuntur papistae, signum iudico fore eo maturioris vindictae, quae illis immineat a domino.</s>
+					<s n="4" xml:lang="la" type="auto">Quis enim vel immanissimarum gentium sapiens hoc nefandum scelus approbaverit?</s>
+					<s n="5" xml:lang="la" type="auto">Consolatur igitur Christi sententia dicentis:</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">"Amen, amen dico vobis, plorabitis et lamentabimini vos; mundus contra gaudebit.</s>
+					<s n="6" xml:lang="la" type="auto">"Amen, amen dico vobis, plorabitis et lamentabimini vos; mundus contra gaudebit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vos autem moerore afficiemini; sed moeror vester vertetur in gaudium."</s>
-					<s xml:lang="la" type="auto">Quas secum unica Zachariae lapidatio poenas paulo post traxerit, notum est ex historia.</s>
-					<s xml:lang="la" type="auto">Interim his exemplis de agenda poenitentia et fide in invocatione seria et assidua exercenda admonemur.</s>
-					<s xml:lang="la" type="auto">Proxima dominica d. doctor Burgoverus in publico diversorio offendit literas Neroberga hospiti nescio a quo traditas ad tuam pertinentes humanitatem, quas, quantum ex pictura coniicere possum, Durnhoferi esse iudico; eas cum hoc nuncio nunc demum mitto, cum praeter hunc maturius nullus alias offerretur.</s>
-					<s xml:lang="la" type="auto">Remitto et d. doctoris Ursini literas, pro quarum communicatione summas tibi gratias ago.</s>
-					<s xml:lang="la" type="auto">Nec materiam nec ocium plura scribendi in hoc praesertim nunc vindemiali strepitu et summa nuncii festinatione habeo.</s>
-					<s xml:lang="la" type="auto">Si quid tua humanitas acceperit vel ex Gallia vel ex Belgio, nobis ut paucis communicet oro.</s>
+					<s n="7" xml:lang="la" type="auto">Vos autem moerore afficiemini; sed moeror vester vertetur in gaudium."</s>
+					<s n="8" xml:lang="la" type="auto">Quas secum unica Zachariae lapidatio poenas paulo post traxerit, notum est ex historia.</s>
+					<s n="9" xml:lang="la" type="auto">Interim his exemplis de agenda poenitentia et fide in invocatione seria et assidua exercenda admonemur.</s>
+					<s n="10" xml:lang="la" type="auto">Proxima dominica d. doctor Burgoverus in publico diversorio offendit literas Neroberga hospiti nescio a quo traditas ad tuam pertinentes humanitatem, quas, quantum ex pictura coniicere possum, Durnhoferi esse iudico; eas cum hoc nuncio nunc demum mitto, cum praeter hunc maturius nullus alias offerretur.</s>
+					<s n="11" xml:lang="la" type="auto">Remitto et d. doctoris Ursini literas, pro quarum communicatione summas tibi gratias ago.</s>
+					<s n="12" xml:lang="la" type="auto">Nec materiam nec ocium plura scribendi in hoc praesertim nunc vindemiali strepitu et summa nuncii festinatione habeo.</s>
+					<s n="13" xml:lang="la" type="auto">Si quid tua humanitas acceperit vel ex Gallia vel ex Belgio, nobis ut paucis communicet oro.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in Christo.</s>
-					<s xml:lang="la" type="auto">salutant humanitatem tuam reverenter d. d. consules, doctores Peyerus et Burgoverus, Beatus Leo, Benedictus Stockerus [Stokar, Stockar] iunior et ministri omnes et singuli.</s>
-					<s xml:lang="la" type="auto">Saluto reverenter omnes symmystas Tigurinos.</s>
+					<s n="14" xml:lang="la" type="auto">Vale in Christo.</s>
+					<s n="15" xml:lang="la" type="auto">salutant humanitatem tuam reverenter d. d. consules, doctores Peyerus et Burgoverus, Beatus Leo, Benedictus Stockerus [Stokar, Stockar] iunior et ministri omnes et singuli.</s>
+					<s n="16" xml:lang="la" type="auto">Saluto reverenter omnes symmystas Tigurinos.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum festinantissime 18. septembris anno domini 1572.</s>
-					<s xml:lang="la" type="auto">Tuae humanitatis studiosissimus Iohannes Conradus Ulmerus.</s>
+					<s n="17" xml:lang="la" type="auto">Datum festinantissime 18. septembris anno domini 1572.</s>
+					<s n="18" xml:lang="la" type="auto">Tuae humanitatis studiosissimus Iohannes Conradus Ulmerus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro atque eximio Iesu Christi servo d. Henrico Bullingero seniori, ecclesiae Tigurinae antistiti fidelissimo, domino et patri suo in Christo summe colendo.</s>
+					<s n="19" xml:lang="la" type="auto">Clarissimo viro atque eximio Iesu Christi servo d. Henrico Bullingero seniori, ecclesiae Tigurinae antistiti fidelissimo, domino et patri suo in Christo summe colendo.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">An den ehrwirdigen, hochgelehrten herren Heinrichen Bullingern den eltern, dienern der kirchen Zürich.</s>
+					<s n="20" xml:lang="de" type="auto">An den ehrwirdigen, hochgelehrten herren Heinrichen Bullingern den eltern, dienern der kirchen Zürich.</s>
 				</p>
 			</div>
 		</body>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">1690</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 337,413 f.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 337,413 f.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -66,14 +69,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 71,48</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">(angefügt die Drucke)*</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 71,48</idno>
+						<idno subtype="Hinweis">(angefügt die Drucke)*</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -84,13 +90,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#167">Genf</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">RCP 90</idno>
-						<repository ref="archive#37">
+						<!--
+						<repository ref="archive37">
 							<name>Genf StA</name>
 							<ref target="https://ge.ch/archives/"/>
 						</repository>
+						<settlement ref="place167">Genf</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive37"/>
+						<idno subtype="Kopie">RCP 90</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -99,55 +108,41 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/666">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
 					<date when="1549-08-30" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#540" cert="high">
+					<!--
+					<persName ref="person540" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Calvin</surname>
 						<graphic type="portrait" url="portraits/540_Calvin_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Calvin"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118518534"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11418245"/>
 					</persName>
-					<place source="#167" cert="high">
-						<settlement>Genf</settlement>
-						<district>Genève</district>
-						<country>Schweiz</country>
-						<geo>46.20222 6.14569</geo>
-					</place>
+					-->
+					<persName ref="person540" cert="high"/>
+					<place source="place167" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#667"/>
-					<ref type="prev_chronologically" target="files.xml#665"/>
-					<ref type="next_correspondence" target="files.xml#2088"/>
-					<ref type="prev_correspondence" target="files.xml#613"/>
-					<ref type="next_correspondence_request" target="files.xml#2435"/>
-					<ref type="prev_correspondence_request" target="files.xml#578"/>
-					<ref type="next_correspondence_reaction" target="files.xml#2088"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#613"/>
-					<ref type="next_same_sender" target="files.xml#670"/>
-					<ref type="prev_same_sender" target="files.xml#578"/>
-					<ref type="next_same_addressee" target="files.xml#711"/>
-					<ref type="prev_same_addressee" target="files.xml#630"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#670"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#578"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#711"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#630"/>
+					<ref type="next_chronologically" target="file667"/>
+					<ref type="prev_chronologically" target="file665"/>
+					<ref type="next_correspondence" target="file2088"/>
+					<ref type="prev_correspondence" target="file613"/>
+					<ref type="next_correspondence_request" target="file2435"/>
+					<ref type="prev_correspondence_request" target="file578"/>
+					<ref type="next_correspondence_reaction" target="file2088"/>
+					<ref type="prev_correspondence_reaction" target="file613"/>
+					<ref type="next_same_sender" target="file670"/>
+					<ref type="prev_same_sender" target="file578"/>
+					<ref type="next_same_addressee" target="file711"/>
+					<ref type="prev_same_addressee" target="file630"/>
+					<ref type="next_with_sender_as_addressee" target="file670"/>
+					<ref type="prev_with_sender_as_addressee" target="file578"/>
+					<ref type="next_with_addressee_as_sender" target="file711"/>
+					<ref type="prev_with_addressee_as_sender" target="file630"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -166,27 +161,27 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Ecclesiae Genevensis fido pastori D. Ioanni Calvino, fratri charissimo.</s>
+					<s n="1" xml:lang="la" type="auto">Ecclesiae Genevensis fido pastori D. Ioanni Calvino, fratri charissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ingens tuum studium, Calvine, frater in domino colendissime, et opera sedula, quibus moliris doctrinam de sacramentis indies illustrirorem facere ac tollere offensiones e media ecclesia, quę obortę videntur ex obscuriore quadam explicatione mysteriorum, adeo nihil molestiae nobis adferunt, ut ea non modo laude ac praedicatione digna, verum etiam pro nostra virili et adiuvanda esse et imitanda iudicemus.</s>
-					<s xml:lang="la" type="auto">Quum enim sacrosanctę leges principis nostri Iesu Christi omnes actiones referant ad culturam charitatis studiumque mutuum iuvandi, nihil etiam severius prohibent, quam ut ullus obiiciat alteri impedimentum, quominus vel recte vereque iudicet de iis rebus quarum notitia necessaria est aut certe utilis et salutaris hominibus, vel minus pręstet officium suum, quod tum deo tum proximis debetur, eademque gravitate iubent summovere, quantum fieri potest, offendicula, in quę impingere solent homines.</s>
-					<s xml:lang="la" type="auto">Quamobrem causa tui adventus ad nos et D. Guilielmi Farelli, venerandi nobis fratris, honestissima nobis visa est et imprimis digna viris ecclesiasticis, ut primum familiari - colloquio quam simplicissime mutuam exponeremus nostram sententiam de sacramentis, pręsertim in iis capitibus, in quibus aliqua certe controversia hactenus fuit inter eos, qui per cętera capita synceriorem evangelii doctrinam magno consensu tradiderunt, deinde consensum nostrum edito in publicum scripto testaremur.</s>
+					<s n="2" xml:lang="la" type="auto">Ingens tuum studium, Calvine, frater in domino colendissime, et opera sedula, quibus moliris doctrinam de sacramentis indies illustrirorem facere ac tollere offensiones e media ecclesia, quę obortę videntur ex obscuriore quadam explicatione mysteriorum, adeo nihil molestiae nobis adferunt, ut ea non modo laude ac praedicatione digna, verum etiam pro nostra virili et adiuvanda esse et imitanda iudicemus.</s>
+					<s n="3" xml:lang="la" type="auto">Quum enim sacrosanctę leges principis nostri Iesu Christi omnes actiones referant ad culturam charitatis studiumque mutuum iuvandi, nihil etiam severius prohibent, quam ut ullus obiiciat alteri impedimentum, quominus vel recte vereque iudicet de iis rebus quarum notitia necessaria est aut certe utilis et salutaris hominibus, vel minus pręstet officium suum, quod tum deo tum proximis debetur, eademque gravitate iubent summovere, quantum fieri potest, offendicula, in quę impingere solent homines.</s>
+					<s n="4" xml:lang="la" type="auto">Quamobrem causa tui adventus ad nos et D. Guilielmi Farelli, venerandi nobis fratris, honestissima nobis visa est et imprimis digna viris ecclesiasticis, ut primum familiari - colloquio quam simplicissime mutuam exponeremus nostram sententiam de sacramentis, pręsertim in iis capitibus, in quibus aliqua certe controversia hactenus fuit inter eos, qui per cętera capita synceriorem evangelii doctrinam magno consensu tradiderunt, deinde consensum nostrum edito in publicum scripto testaremur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Nullam enim aliam viam et rationem commodiorem videmus, qua controversiae religionis dirimantur aut pellantur vanę suspiciones discrepantię, ubi discrepantia nulla existit, aut denique tollantur offensiones, quę nasci nonnunquam solent in ecclesia dei ex docentium controversis opinionibus, quam si partes, quę dissentire videntur aut revera dissentiunt, invicem apertissime suam mentem explanent tum sermone tum scriptis.</s>
-					<s xml:lang="la" type="auto">Sed parum esset veritatem investigatam et deprehensam apud eos retineri, nisi aliis quoque hominibus ea patefiat plenius expositis iis, quę parcius indicata fuerant, et quod obscurius fuit dictum notioribus verbis enunciato, quodque ambigue fuit enunciatum, certis propriis et significantibus vocibus declarato.</s>
-					<s xml:lang="la" type="auto">Quę ratio semper ecclesiasticis patribus placuit et in controversiis de religione componendis adhibita est saepissime et nunquam non salutaris fuit ecclesi[ae], denique approbata est summo exemplo apostolorum Chri[sti], domini ac dei nostri.</s>
-					<s xml:lang="la" type="auto">Nam ut in actis legimus cap. 25, non alio modo et via sedata est maxima dissensio, quum apostoli et apostolorum germani discipuli docerent fid[u]cia in nomen Christi purificari corda et eius solius gratia servari homines, aliqui contenderent oportere circumcidi et servari legem Mosaicam.</s>
-					<s xml:lang="la" type="auto">Itaque non possumus non summopere probara, Calvine, tuos sanctos conatus et omnium piorum, qui student idoneis rationibus offensiones tollere et labefactam pacem atque tranquillitatem ecclesiae instaurare, dum christianam doctrinam simplici et accurata explicatione magis magisque illustrem ac plenam reddere nituntur et vanas opiniones discordię eximere animis aut eos etiam, qui verbis et sententiis nonnihil dissiderunt, in veram, solidam et sanctam concordiam reducere.</s>
-					<s xml:lang="la" type="auto">Caeterum ut publicatione scripti, quo nostrum consensum clare testari volumus piis iuxta et adversariis veritatis, eum speramus fructum, quem in epistola tua ominaris, facto iam periculo etiam adducimur; nam formisimus et hic exhibuimus aliquot viris Christum et veritatem diligentibus neque imperitis rerum sacrarum, qui non modo agnoverunt inter nos convenire in iis etiam capitibus, in quibus hactenus multorum opinione dissensimus, sed etiam gratias egerunt Christo servatori cernentes nos in deo et veritate consentire magnamque spem uberioris fructus in ecclesia polliciti sunt, quamquam nonnulli copiosiorem tractationem huius argumenti ob ingenia quędam desideravere, qui audito consilio nostro haud difficile admiserunt satisfactionem.</s>
-					<s xml:lang="la" type="auto">Quorsum enim adtinebat sic pluribus verbis edisserere deum esse authorem sacramentorum et ea instituisse legitimis ecclesiae filiis, quotquot sint a Christo ecclesiae tradita sacramenta aut quę inventa sint ab hominibus, quę sint partes sacramentorum aut quo loco, quo tempore, quo instrumento sacro peragi conveniat mysteria.</s>
-					<s xml:lang="la" type="auto">In quibus et aliis nonnullis capitibus nullam fuisse inter nos vel speciem vel umbram dissensionis satis probant libri editi, quos vel pręceptores nostri pię sanctęque memorię vel ipsi scripsimus de sacramentis.</s>
-					<s xml:lang="la" type="auto">Verum de corporali Christi domini pręsentia, de genuina sententia verborum solemnium, de manducatione corporis Christi<note xml:id="fn1" type="footnote" n="1">de mand.- Christi ist v. Bullinders Hd. am R. beigefügt.</note>, de fine et usu et effectu sacramentorum, in quibus capitibus multi existimarunt hactenus confligere nostras sententias aut certe verba, tam copiose, tam plane et simpliciter locuti sumus, ut speremus homines studiosos tum fraternę concordię tum perspicuę veritatis non desideraturos esse in scripto nostro vel copiam vel lucem orationis.</s>
-					<s xml:lang="la" type="auto">Neque diffidimus, quin aliarum quoque ecclesiarum Christi per Helvetiam ministri facile agnituri sint eam ipsam doctrinam de sacramentis nos expressisse, quę multis iam annis populo christiano vulgata est, utque in veritate confessa minime gentium a nobis discrepent.</s>
-					<s xml:lang="la" type="auto">Id quod pollicemur nobis non sine magnis rationibus de omnibus piis per ecclesias aliarum nationum.</s>
-					<s xml:lang="la" type="auto">Sie quis tamen evidentiorem sacramentorum explicationem protulerit, malumus ea ipsa uti cum piis omnibus quam hortari unum hominem, ut subscribat nostrę consensioni<note xml:id="fn2" type="footnote" n="2">v. Bull. aus confessioni korrig.</note>, in qua scripturę sanctę verba usurpavimus et expressimus aperte, quo sensu accipiamus, et cum ecclesia catholica nos facere pro compertissimo habemus.</s>
-					<s xml:lang="la" type="auto">Porro si non offensiones omnium, quos discordiae inter nos species impedivit in viis domini, scriptum hoc sustulerit, quod maxime in votis habemus<note xml:id="fn3" type="footnote" n="3">quod-habemus, ein gestrichener Zus. a. Rand</note>, pręclare tamen suo munere functum existimabimus, quod non obscure neque fucate omnibus testati sumus nos, quibus Christus dedit idem sentire et loqui de religionibus dogmatibus, in mysteriorum etiam explicatione haudquaquam discrepare...</s>
+					<s n="5" xml:lang="la" type="auto">Nullam enim aliam viam et rationem commodiorem videmus, qua controversiae religionis dirimantur aut pellantur vanę suspiciones discrepantię, ubi discrepantia nulla existit, aut denique tollantur offensiones, quę nasci nonnunquam solent in ecclesia dei ex docentium controversis opinionibus, quam si partes, quę dissentire videntur aut revera dissentiunt, invicem apertissime suam mentem explanent tum sermone tum scriptis.</s>
+					<s n="6" xml:lang="la" type="auto">Sed parum esset veritatem investigatam et deprehensam apud eos retineri, nisi aliis quoque hominibus ea patefiat plenius expositis iis, quę parcius indicata fuerant, et quod obscurius fuit dictum notioribus verbis enunciato, quodque ambigue fuit enunciatum, certis propriis et significantibus vocibus declarato.</s>
+					<s n="7" xml:lang="la" type="auto">Quę ratio semper ecclesiasticis patribus placuit et in controversiis de religione componendis adhibita est saepissime et nunquam non salutaris fuit ecclesi[ae], denique approbata est summo exemplo apostolorum Chri[sti], domini ac dei nostri.</s>
+					<s n="8" xml:lang="la" type="auto">Nam ut in actis legimus cap. 25, non alio modo et via sedata est maxima dissensio, quum apostoli et apostolorum germani discipuli docerent fid[u]cia in nomen Christi purificari corda et eius solius gratia servari homines, aliqui contenderent oportere circumcidi et servari legem Mosaicam.</s>
+					<s n="9" xml:lang="la" type="auto">Itaque non possumus non summopere probara, Calvine, tuos sanctos conatus et omnium piorum, qui student idoneis rationibus offensiones tollere et labefactam pacem atque tranquillitatem ecclesiae instaurare, dum christianam doctrinam simplici et accurata explicatione magis magisque illustrem ac plenam reddere nituntur et vanas opiniones discordię eximere animis aut eos etiam, qui verbis et sententiis nonnihil dissiderunt, in veram, solidam et sanctam concordiam reducere.</s>
+					<s n="10" xml:lang="la" type="auto">Caeterum ut publicatione scripti, quo nostrum consensum clare testari volumus piis iuxta et adversariis veritatis, eum speramus fructum, quem in epistola tua ominaris, facto iam periculo etiam adducimur; nam formisimus et hic exhibuimus aliquot viris Christum et veritatem diligentibus neque imperitis rerum sacrarum, qui non modo agnoverunt inter nos convenire in iis etiam capitibus, in quibus hactenus multorum opinione dissensimus, sed etiam gratias egerunt Christo servatori cernentes nos in deo et veritate consentire magnamque spem uberioris fructus in ecclesia polliciti sunt, quamquam nonnulli copiosiorem tractationem huius argumenti ob ingenia quędam desideravere, qui audito consilio nostro haud difficile admiserunt satisfactionem.</s>
+					<s n="11" xml:lang="la" type="auto">Quorsum enim adtinebat sic pluribus verbis edisserere deum esse authorem sacramentorum et ea instituisse legitimis ecclesiae filiis, quotquot sint a Christo ecclesiae tradita sacramenta aut quę inventa sint ab hominibus, quę sint partes sacramentorum aut quo loco, quo tempore, quo instrumento sacro peragi conveniat mysteria.</s>
+					<s n="12" xml:lang="la" type="auto">In quibus et aliis nonnullis capitibus nullam fuisse inter nos vel speciem vel umbram dissensionis satis probant libri editi, quos vel pręceptores nostri pię sanctęque memorię vel ipsi scripsimus de sacramentis.</s>
+					<s n="13" xml:lang="la" type="auto">Verum de corporali Christi domini pręsentia, de genuina sententia verborum solemnium, de manducatione corporis Christi<note xml:id="fn1" type="footnote" n="1">de mand.- Christi ist v. Bullinders Hd. am R. beigefügt.</note>, de fine et usu et effectu sacramentorum, in quibus capitibus multi existimarunt hactenus confligere nostras sententias aut certe verba, tam copiose, tam plane et simpliciter locuti sumus, ut speremus homines studiosos tum fraternę concordię tum perspicuę veritatis non desideraturos esse in scripto nostro vel copiam vel lucem orationis.</s>
+					<s n="14" xml:lang="la" type="auto">Neque diffidimus, quin aliarum quoque ecclesiarum Christi per Helvetiam ministri facile agnituri sint eam ipsam doctrinam de sacramentis nos expressisse, quę multis iam annis populo christiano vulgata est, utque in veritate confessa minime gentium a nobis discrepent.</s>
+					<s n="15" xml:lang="la" type="auto">Id quod pollicemur nobis non sine magnis rationibus de omnibus piis per ecclesias aliarum nationum.</s>
+					<s n="16" xml:lang="la" type="auto">Sie quis tamen evidentiorem sacramentorum explicationem protulerit, malumus ea ipsa uti cum piis omnibus quam hortari unum hominem, ut subscribat nostrę consensioni<note xml:id="fn2" type="footnote" n="2">v. Bull. aus confessioni korrig.</note>, in qua scripturę sanctę verba usurpavimus et expressimus aperte, quo sensu accipiamus, et cum ecclesia catholica nos facere pro compertissimo habemus.</s>
+					<s n="17" xml:lang="la" type="auto">Porro si non offensiones omnium, quos discordiae inter nos species impedivit in viis domini, scriptum hoc sustulerit, quod maxime in votis habemus<note xml:id="fn3" type="footnote" n="3">quod-habemus, ein gestrichener Zus. a. Rand</note>, pręclare tamen suo munere functum existimabimus, quod non obscure neque fucate omnibus testati sumus nos, quibus Christus dedit idem sentire et loqui de religionibus dogmatibus, in mysteriorum etiam explicatione haudquaquam discrepare...</s>
 				</p>
 				<p>
 					<note type="address">[Adresse fehlt.]</note>

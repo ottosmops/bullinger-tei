@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Briefanfang" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#311">Marburg</settlement>
-						<institution>Hessisches Landesarchiv Abteilung Staatsarchiv</institution>
-						<idno type="Autograph">3 (= PA) 1797, fo 258-259v (259r leer)</idno>
-						<repository ref="archive#61">
+						<!--
+						<repository ref="archive61">
 							<name>Marburg HStA</name>
-							<note type="Mikrofilm">IRG</note>
 							<ref target="https://landesarchiv.hessen.de/"/>
 						</repository>
+						<settlement ref="place311">Marburg</settlement>
+						<institution>Hessisches Landesarchiv Abteilung Staatsarchiv</institution>
+						-->
+						<repository ref="archive61"/>
+						<idno subtype="Autograph">3 (= PA) 1797, fo 258-259v (259r leer)</idno>
+						<idno subtype="Mikrofilm">IRG</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -29,13 +32,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms F 178, p 145-163</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms F 178, p 145-163</idno>
 					</msIdentifier>
 					<history><origin><p><date>18. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -45,52 +51,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6841">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1566-07-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1872" cert="high">
+					<!--
+					<persName ref="person1872" cert="high">
 						<forename cert="high">Philipp</forename>
 						<surname cert="high">Landgraf von Hessen</surname>
-						<addName type="main">von Hessen, Philipp I. («der Großmütige»)</addName>
-						<graphic type="portrait" url="portraits/8019_von_Hessen_Philipp_I.jpg"/>
+						<persName type="main" ref="person8019>von Hessen, Philipp I. («der Großmütige»)</addName>
+						<graphic type="portrait" url="portraits/1871_von_Hessen_Philipp_I.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Philipp_I._(Hessen)"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11859382X"/>
 					</persName>
-					<place source="#408" cert="high">
-						<settlement>Rauschenberg</settlement>
-						<district>Hessen</district>
-						<country>Deutschland</country>
-						<geo>50.88329 8.91864</geo>
-					</place>
+					-->
+					<persName ref="person1872" cert="high"/>
+					<place source="place408" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6842"/>
-					<ref type="prev_chronologically" target="files.xml#6840"/>
-					<ref type="next_correspondence" target="files.xml#6858"/>
-					<ref type="prev_correspondence" target="files.xml#6721"/>
-					<ref type="next_correspondence_request" target="files.xml#7730"/>
-					<ref type="prev_correspondence_request" target="files.xml#6721"/>
-					<ref type="next_correspondence_reaction" target="files.xml#6858"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5683"/>
-					<ref type="next_same_sender" target="files.xml#6843"/>
-					<ref type="prev_same_sender" target="files.xml#6839"/>
-					<ref type="next_same_addressee" target="files.xml#6858"/>
-					<ref type="prev_same_addressee" target="files.xml#5683"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6843"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6839"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6858"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5683"/>
+					<ref type="next_chronologically" target="file6842"/>
+					<ref type="prev_chronologically" target="file6840"/>
+					<ref type="next_correspondence" target="file6858"/>
+					<ref type="prev_correspondence" target="file6721"/>
+					<ref type="next_correspondence_request" target="file7730"/>
+					<ref type="prev_correspondence_request" target="file6721"/>
+					<ref type="next_correspondence_reaction" target="file6858"/>
+					<ref type="prev_correspondence_reaction" target="file5683"/>
+					<ref type="next_same_sender" target="file6843"/>
+					<ref type="prev_same_sender" target="file6839"/>
+					<ref type="next_same_addressee" target="file6858"/>
+					<ref type="prev_same_addressee" target="file5683"/>
+					<ref type="next_with_sender_as_addressee" target="file6843"/>
+					<ref type="prev_with_sender_as_addressee" target="file6839"/>
+					<ref type="next_with_addressee_as_sender" target="file6858"/>
+					<ref type="prev_with_addressee_as_sender" target="file5683"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

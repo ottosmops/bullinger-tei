@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2013"/>
-				<idno type="ISBN">ISBN 978-3-290-17664-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2177</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17664-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2177</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 15</title>
+				<title subtype="publication">HBBW XV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">15</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 345,305</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 345,305</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,11 +49,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Auch wenn <persName ref="182">Rümlang</persName> u.a. mit einem schwerkranken Jungen [...] und einer
+								Auch wenn <persName ref="person182">Rümlang</persName> u.a. mit einem schwerkranken Jungen [...] und einer
 								kränkelnden Frau [...], die auf Badekur ist, vom Teufel geplagt wird, will er diesem Boten [...] ein
 								Lebenszeichen mitgeben, zumal Bullinger ihn der Unbeständigkeit verdächtigt, was
-								<persName ref="182">Rümlang</persName> bedauert. - Der Abendmahlsstreit ist [in
-								<placeName ref="121">Bern</placeName>] fast erloschen. Die Gegner nehmen nur noch auf verhüllte
+								<persName ref="person182">Rümlang</persName> bedauert. - Der Abendmahlsstreit ist [in
+								<placeName ref="place121">Bern</placeName>] fast erloschen. Die Gegner nehmen nur noch auf verhüllte
 								Weise darauf Bezug. Sie versuchen, anhand neuer Bräuche ihren heimlichen Lutheranismus zu fördern; doch
 								wurde unterdessen ihre List aufgedeckt. - Der Kleine Rat würde sich entzweien, wenn er über das [Abendmahl]
 								diskutieren würde. Deshalb hat er auch nicht auf das [„Warhaffte Bekanntnuß“] der [Zürcher] reagiert. Viele
@@ -64,43 +67,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12224">
 				<correspAction type="sent">
-					<persName ref="person#3700" cert="high">
+					<!--
+					<persName ref="person3700" cert="high">
 						<forename cert="high">Eberhard</forename>
 						<surname cert="high">von Rümlang</surname>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089804970"/>
 					</persName>
-					<place source="#41" cert="low">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person3700" cert="high"/>
+					<place source="place41" cert="low"/>
 					<date when="1545-06-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12225"/>
-					<ref type="prev_chronologically" target="files.xml#12223"/>
-					<ref type="next_correspondence" target="files.xml#12267"/>
-					<ref type="prev_correspondence" target="files.xml#12182"/>
-					<ref type="next_correspondence_request" target="files.xml#12267"/>
-					<ref type="prev_correspondence_request" target="files.xml#12102"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12480"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12182"/>
-					<ref type="next_same_sender" target="files.xml#12267"/>
-					<ref type="prev_same_sender" target="files.xml#12102"/>
-					<ref type="next_same_addressee" target="files.xml#12226"/>
-					<ref type="prev_same_addressee" target="files.xml#12219"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12267"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12102"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12226"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12219"/>
+					<ref type="next_chronologically" target="file12225"/>
+					<ref type="prev_chronologically" target="file12223"/>
+					<ref type="next_correspondence" target="file12267"/>
+					<ref type="prev_correspondence" target="file12182"/>
+					<ref type="next_correspondence_request" target="file12267"/>
+					<ref type="prev_correspondence_request" target="file12102"/>
+					<ref type="next_correspondence_reaction" target="file12480"/>
+					<ref type="prev_correspondence_reaction" target="file12182"/>
+					<ref type="next_same_sender" target="file12267"/>
+					<ref type="prev_same_sender" target="file12102"/>
+					<ref type="next_same_addressee" target="file12226"/>
+					<ref type="prev_same_addressee" target="file12219"/>
+					<ref type="next_with_sender_as_addressee" target="file12267"/>
+					<ref type="prev_with_sender_as_addressee" target="file12102"/>
+					<ref type="next_with_addressee_as_sender" target="file12226"/>
+					<ref type="prev_with_addressee_as_sender" target="file12219"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,34 +124,34 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratia et pax a domino et salvatore nostro Iesu Christo.</s>
+					<s n="1" xml:lang="la" type="auto">Gratia et pax a domino et salvatore nostro Iesu Christo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tametsi valde sum<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage</hi> suum.</note> turbatus a morbo filiole<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note> capitali, quo laborat, et uxoris<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> absentia, quae iam thermis se pristinam valetudinem recuperaturam sperat, quę et illi graviter labefacta fuit, ut praeteream<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> praeteram.</note> alia, quę et privatim et publice me impugnant, non tamen committere volui, ut his nuncius<note xml:id="fn3" type="footnote" n="3">Unbekannt.</note> vacuus ad te rediret, ne suspiceris mentem meam mutatam.</s>
-					<s xml:lang="la" type="auto">Dolet, quod me tam inconstantem et leviculum verearis<note xml:id="fnc" type="footnote" n="c">verearis <hi>nach gestrichenem</hi> suspi[caris].</note>.<note xml:id="fn4" type="footnote" n="4">Vgl. oben <ref target="file#12182">Nr. 2135</ref>, 4f. - Bullinger hat vielleicht dem schweigenden <persName ref="182">Rümlang</persName> noch einen weiteren Brief nach dem 14. April geschrieben, in dem er dessen Standhaftigkeit ausdrücklich bezweifelte.</note></s>
-					<s xml:lang="la" type="manual">Utcunque me<note xml:id="fnd" type="footnote" n="d"><hi>In der Vorlage</hi> ne.</note> satan cribrat,<note xml:id="fn5" type="footnote" n="5">Vgl. Lk 22, 31.</note> dominus tamen, fulcrum meum, me sustentat.<pb type="edition" next="359"/></s>
+					<s n="2" xml:lang="la" type="auto">Tametsi valde sum<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage</hi> suum.</note> turbatus a morbo filiole<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note> capitali, quo laborat, et uxoris<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> absentia, quae iam thermis se pristinam valetudinem recuperaturam sperat, quę et illi graviter labefacta fuit, ut praeteream<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> praeteram.</note> alia, quę et privatim et publice me impugnant, non tamen committere volui, ut his nuncius<note xml:id="fn3" type="footnote" n="3">Unbekannt.</note> vacuus ad te rediret, ne suspiceris mentem meam mutatam.</s>
+					<s n="3" xml:lang="la" type="auto">Dolet, quod me tam inconstantem et leviculum verearis<note xml:id="fnc" type="footnote" n="c">verearis <hi>nach gestrichenem</hi> suspi[caris].</note>.<note xml:id="fn4" type="footnote" n="4">Vgl. oben <ref target="file12182">Nr. 2135</ref>, 4f. - Bullinger hat vielleicht dem schweigenden <persName ref="person182">Rümlang</persName> noch einen weiteren Brief nach dem 14. April geschrieben, in dem er dessen Standhaftigkeit ausdrücklich bezweifelte.</note></s>
+					<s n="4" xml:lang="la" type="manual">Utcunque me<note xml:id="fnd" type="footnote" n="d"><hi>In der Vorlage</hi> ne.</note> satan cribrat,<note xml:id="fn5" type="footnote" n="5">Vgl. Lk 22, 31.</note> dominus tamen, fulcrum meum, me sustentat.<pb type="edition" next="359"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Propemodum sopita est apud nos disceptatio sacramentaria,<note xml:id="fn6" type="footnote" n="6">Vgl. schon oben <ref target="file#12108">Nr. 2061</ref>, 9f.</note> ut, qua parum promoverunt, obtecte tantum loquantur, ut non nisi acuti capiant.</s>
-					<s xml:lang="la" type="auto">At alia via ceremonias urgent et Lutheranismum obnubilant<note xml:id="fn7" type="footnote" n="7">Sie befürworteten nämlich die Austeilung des Abendmahls an Kranke und Sterbende in deren Häusern; s. oben <ref target="file#12129">Nr. 2082</ref>,5-20; <hi>Hundeshagen</hi> 196f. 387-389 (hier die ent sprechende Stelle aus Stettlers Berner Chronik).</note>.</s>
-					<s xml:lang="la" type="auto">Sed dolus deprehenditur, ut confidam ipsos succubituros.</s>
+					<s n="5" xml:lang="la" type="auto">Propemodum sopita est apud nos disceptatio sacramentaria,<note xml:id="fn6" type="footnote" n="6">Vgl. schon oben <ref target="file12108">Nr. 2061</ref>, 9f.</note> ut, qua parum promoverunt, obtecte tantum loquantur, ut non nisi acuti capiant.</s>
+					<s n="6" xml:lang="la" type="auto">At alia via ceremonias urgent et Lutheranismum obnubilant<note xml:id="fn7" type="footnote" n="7">Sie befürworteten nämlich die Austeilung des Abendmahls an Kranke und Sterbende in deren Häusern; s. oben <ref target="file12129">Nr. 2082</ref>,5-20; <hi>Hundeshagen</hi> 196f. 387-389 (hier die ent sprechende Stelle aus Stettlers Berner Chronik).</note>.</s>
+					<s n="7" xml:lang="la" type="auto">Sed dolus deprehenditur, ut confidam ipsos succubituros.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Senatus minor in duas partes dissectus, si de hoc negotio quid tractandum sit.</s>
-					<s xml:lang="la" type="auto">Ideo suspendunt ea<note xml:id="fne" type="footnote" n="e">ea <hi>über der Zeile nachgetragen.</hi></note> et sese mutuo timent, nam adversus se invicem excandescunt.</s>
-					<s xml:lang="la" type="auto">Ideo et de vestro libello<note xml:id="fn8" type="footnote" n="8">Die Antwort der Zürcher auf <persName ref="138">Luthers</persName> "Kurtz bekentnis"; s. oben <ref target="file#12108">Nr. 2061</ref>, Anm. 9.</note> tacetur et nihil rescribitur,<note xml:id="fn9" type="footnote" n="9">Vgl. oben <ref target="file#12182">Nr. 2135</ref>.</note> tametsi a plurimis ematur et legatur; et placeat plurimum.</s>
+					<s n="8" xml:lang="la" type="auto">Senatus minor in duas partes dissectus, si de hoc negotio quid tractandum sit.</s>
+					<s n="9" xml:lang="la" type="auto">Ideo suspendunt ea<note xml:id="fne" type="footnote" n="e">ea <hi>über der Zeile nachgetragen.</hi></note> et sese mutuo timent, nam adversus se invicem excandescunt.</s>
+					<s n="10" xml:lang="la" type="auto">Ideo et de vestro libello<note xml:id="fn8" type="footnote" n="8">Die Antwort der Zürcher auf <persName ref="person138">Luthers</persName> "Kurtz bekentnis"; s. oben <ref target="file12108">Nr. 2061</ref>, Anm. 9.</note> tacetur et nihil rescribitur,<note xml:id="fn9" type="footnote" n="9">Vgl. oben <ref target="file12182">Nr. 2135</ref>.</note> tametsi a plurimis ematur et legatur; et placeat plurimum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salutabis omnes bonos amicos, quibus me commendabis ubique inprimis.</s>
-					<s xml:lang="la" type="auto">Vale optime.</s>
-					<s xml:lang="la" type="auto">Datum raptim, 12. iunii anno 1545.</s>
+					<s n="11" xml:lang="la" type="auto">Salutabis omnes bonos amicos, quibus me commendabis ubique inprimis.</s>
+					<s n="12" xml:lang="la" type="auto">Vale optime.</s>
+					<s n="13" xml:lang="la" type="auto">Datum raptim, 12. iunii anno 1545.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Eber. a <persName ref="182">Rumlang</persName>.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus Eber. a <persName ref="person182">Rumlang</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Vigilantissimo fidelissimoque viro d. Heinricho Bullingero, pastori Tigurinę ecclesię primario, patrono suo semper observando.</s>
+					<s n="15" xml:lang="la" type="auto">Vigilantissimo fidelissimoque viro d. Heinricho Bullingero, pastori Tigurinę ecclesię primario, patrono suo semper observando.</s>
 				</p>
 			</div>
 		</body>

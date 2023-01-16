@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Briefschluss" subtype="Autograph (Entwurf)" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph (Entwurf)">E II 381,1335-1338</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph (Entwurf)">E II 381,1335-1338</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -39,14 +42,17 @@
 				</msDesc>
 				<msDesc type="Briefschluss" subtype="Original" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#142">Erfurt</settlement>
-						<institution>Forschungsbibliothek Gotha der Universität Erfurt</institution>
-						<idno type="Original">chart A 404, f. 99-102v</idno>
-						<repository ref="archive#41">
+						<!--
+						<repository ref="archive41">
 							<name>Gotha FB</name>
-							<note type="Hinweis">xOriginal?</note>
 							<ref target="https://www.uni-erfurt.de/forschungsbibliothek-gotha"/>
 						</repository>
+						<settlement ref="place142">Erfurt</settlement>
+						<institution>Forschungsbibliothek Gotha der Universität Erfurt</institution>
+						-->
+						<repository ref="archive41"/>
+						<idno subtype="Original">chart A 404, f. 99-102v</idno>
+						<idno subtype="Hinweis">xOriginal?</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -58,13 +64,16 @@
 				</msDesc>
 				<msDesc type="Briefschluss" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms F 62,77v-79v</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms F 62,77v-79v</idno>
 					</msIdentifier>
 					<history><origin><p><date>16./(17.) Jh.</date></p></origin></history>
 					<physDesc/>
@@ -74,77 +83,53 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8851">
 				<correspAction type="sent">
-					<orgName type="institution">
-						<name type="singular" ref="org#19" cert="high">Kirche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</orgName>
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#55" cert="high">Professoren</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date when="1572-04-00" cert="low"><note>Datum unsicher  kein Tag</note></date>
+					<orgName ref="org37" role="Kirche"/>"
+					<personGrp ref="role0" role="Pfarrer"/>
+					<personGrp ref="role0" role="Professoren"/>
+					<place source="place587" cert="high"/>
+					<date notBefore="1572-04-01" notAfter="1572-04-12" cert="low"><note>Datum unsicher  kein Tag</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#52" cert="high">Prädikanten</name>
-						<place source="#832" cert="high">
-							<country>Frankreich</country>
-						</place>
-					</roleName>
+					<!--
 					<note type="Adresse">Französische Prädikanten an der Synode zu Nîmes</note>
-					<place source="#832" cert="high">
-						<country>Frankreich</country>
-					</place>
+					-->
+					<personGrp ref="role0" role="Prädikanten"/>
+					<orgName ref="org49" role="Synode"/>"
+					<place source="place832" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8852"/>
-					<ref type="prev_chronologically" target="files.xml#8850"/>
+					<ref type="next_chronologically" target="file8852"/>
+					<ref type="prev_chronologically" target="file8850"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#9979"/>
-					<ref type="prev_same_sender" target="files.xml#2131"/>
+					<ref type="next_same_sender" target="file9979"/>
+					<ref type="prev_same_sender" target="file2131"/>
 					<ref type="next_same_addressee" target=""/>
-					<ref type="prev_same_addressee" target="files.xml#5440"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9979"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2131"/>
+					<ref type="prev_same_addressee" target="file5440"/>
+					<ref type="next_with_sender_as_addressee" target="file9979"/>
+					<ref type="prev_with_sender_as_addressee" target="file2131"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5440"/>
+					<ref type="prev_with_addressee_as_sender" target="file5440"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="8851/Autograph (Entwurf)/00 E_II_381__fol__1335_r_.tif" n="1"/>
+		<graphic url="8851/Autograph (Entwurf)/01 E_II_381__fol__1335_v_.tif" n="2"/>
+		<graphic url="8851/Autograph (Entwurf)/02 E_II_381__fol__1336_r_.tif" n="3"/>
+		<graphic url="8851/Autograph (Entwurf)/03 E_II_381__fol__1336_v_.tif" n="4"/>
+		<graphic url="8851/Autograph (Entwurf)/04 E_II_381__fol__1337_r_.tif" n="5"/>
+		<graphic url="8851/Autograph (Entwurf)/05 E_II_381__fol__1337_v_.tif" n="6"/>
+		<graphic url="8851/Autograph (Entwurf)/06 E_II_381__fol__1338_r_.tif" n="7"/>
+		<graphic url="8851/Autograph (Entwurf)/07 E_II_381__fol__1338_v_.tif" n="8"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

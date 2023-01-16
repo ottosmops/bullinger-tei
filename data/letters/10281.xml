@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1983"/>
-				<idno type="ISBN">ISBN 3-290-11531-3</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=250</idno>
+				<idno subtype="ISBN">ISBN 3-290-11531-3</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=250</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 3</title>
+				<title subtype="publication">HBBW III</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">3</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 375,725</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 375,725</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,7 +50,7 @@
 						<summary>
 							<p xml:id="regest1">
 								Obwohl er Bullinger vor kurzem seine Lage dargelegt hat, schreibt er jetzt noch einmal. Landvogt
-								<persName ref="53">Edlibach</persName> will seine Sache im Zürcher Rat vertreten. Hofft, daß auch
+								<persName ref="person53">Edlibach</persName> will seine Sache im Zürcher Rat vertreten. Hofft, daß auch
 								Bullinger sich für ihn verwendet.
 							</p>
 						</summary>
@@ -58,44 +61,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10281">
 				<correspAction type="sent">
-					<persName ref="person#2919" cert="high">
+					<!--
+					<persName ref="person2919" cert="high">
 						<forename cert="high">Michael</forename>
 						<surname cert="high">Schlatter</surname>
 						<ref type="wikipedia" target="https://en.wikipedia.org/wiki/Michael_Schlatter"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089471572"/>
 					</persName>
-					<place source="#159" cert="high">
-						<settlement>Frauenfeld</settlement>
-						<district>Thurgau</district>
-						<country>Schweiz</country>
-						<geo>47.55776 8.89893</geo>
-					</place>
+					-->
+					<persName ref="person2919" cert="high"/>
+					<place source="place159" cert="high"/>
 					<date when="1533-08-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10282"/>
-					<ref type="prev_chronologically" target="files.xml#10280"/>
-					<ref type="next_correspondence" target="files.xml#11728"/>
-					<ref type="prev_correspondence" target="files.xml#10143"/>
-					<ref type="next_correspondence_request" target="files.xml#11728"/>
-					<ref type="prev_correspondence_request" target="files.xml#10143"/>
+					<ref type="next_chronologically" target="file10282"/>
+					<ref type="prev_chronologically" target="file10280"/>
+					<ref type="next_correspondence" target="file11728"/>
+					<ref type="prev_correspondence" target="file10143"/>
+					<ref type="next_correspondence_request" target="file11728"/>
+					<ref type="prev_correspondence_request" target="file10143"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11728"/>
-					<ref type="prev_same_sender" target="files.xml#10143"/>
-					<ref type="next_same_addressee" target="files.xml#10282"/>
-					<ref type="prev_same_addressee" target="files.xml#10277"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11728"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10143"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10282"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10277"/>
+					<ref type="next_same_sender" target="file11728"/>
+					<ref type="prev_same_sender" target="file10143"/>
+					<ref type="next_same_addressee" target="file10282"/>
+					<ref type="prev_same_addressee" target="file10277"/>
+					<ref type="next_with_sender_as_addressee" target="file11728"/>
+					<ref type="prev_with_sender_as_addressee" target="file10143"/>
+					<ref type="next_with_addressee_as_sender" target="file10282"/>
+					<ref type="prev_with_addressee_as_sender" target="file10277"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -105,37 +112,40 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="10281/Autograph/00 E_II_375__fol__725_r_.tif" n="1"/>
+		<graphic url="10281/Autograph/01 E_II_375__fol__725_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Tametsi nuper, eruditissime Henrice, tibi longissima epistola<note xml:id="fn2" type="footnote" n="2">Nicht erhalten; vgl. auch oben Anm. 1.</note> rationes vitae<note xml:id="fn3" type="footnote" n="3"><persName ref="185">Schlatter</persName> war seit dem Sommer 1532 stellenlos und wurde mit Mitteln aus dem <placeName ref="1106">Tößer</placeName> Klostergut unterstützt. An Bemühungen, ihm eine neue Stelle zu verschaffen, fehlte es nicht, doch scheiterten sie zum Teil an seinen eigenen Ansprüchen, s. oben <ref target="file#10199">Nr. 168</ref>.</note> aperuerim, non tamen ab re esse existimavi, si te denuo de eadem re admonerem.</s>
-					<s xml:lang="la" type="manual">Non<pb type="edition" next="166"/> necesse habeo, opinor, ut rem altius repetam.</s>
-					<s xml:lang="la" type="auto">Id enim antea satis abunde factum est.</s>
-					<s xml:lang="la" type="auto">Iam vero nonnihil tuis occupationibus inservire volens, quae te non sinunt accurate semper meminisse omnium calamitatum, statui hoc epistolio tibi mei memoriam refricare.</s>
-					<s xml:lang="la" type="auto">Nec id quoque fecissem, nisi huius consilii autor mihi fuisset praefectus nostrae provinciae<note xml:id="fn4" type="footnote" n="4">der Gemeinen Herrschaft <placeName ref="87">Thurgau</placeName>.</note> Johannes <persName ref="53">Edlibach</persName>, qui postridie Tigurum se profecturum dicebat.</s>
-					<s xml:lang="la" type="auto">Is mei caussa coram senatu officiose ac amanter intercedet<note xml:id="fn5" type="footnote" n="5">Ob <persName ref="53">Edlibach</persName> die Sache <persName ref="185">Schlatters</persName> vor dem Zürcher Rat vertrat, und ob dieser sich überhaupt damit befaßte, ließ sich nicht nachweisen.</note>.</s>
-					<s xml:lang="la" type="auto">Ad hanc rem fortassis subsidiaria tua opera utetur.</s>
-					<s xml:lang="la" type="auto">Quare per Christum te oro atque obtestor, ne mihi deesse velis amicus amico.</s>
-					<s xml:lang="la" type="auto">Sed ne importunius tuam operam abs te rogare videar, quasi is sim, qui ab amicis officia soleat intempestivius efflagitare, iam me hisce literis tibi perpurgatum esse velim.</s>
-					<s xml:lang="la" type="auto">Quando autem et occasio temporum et tuae occupationes patientur, tum demum te mihi paulisper accommodato.</s>
-					<s xml:lang="la" type="auto">Ego vero, si licuerit<note xml:id="fn6" type="footnote" n="6">Vgl. Adagia, 1, 1, 35 (LB II 41 D).</note> per tenuitatem meam, libens paria tecum facturus sum.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Tametsi nuper, eruditissime Henrice, tibi longissima epistola<note xml:id="fn2" type="footnote" n="2">Nicht erhalten; vgl. auch oben Anm. 1.</note> rationes vitae<note xml:id="fn3" type="footnote" n="3"><persName ref="person185">Schlatter</persName> war seit dem Sommer 1532 stellenlos und wurde mit Mitteln aus dem <placeName ref="place1106">Tößer</placeName> Klostergut unterstützt. An Bemühungen, ihm eine neue Stelle zu verschaffen, fehlte es nicht, doch scheiterten sie zum Teil an seinen eigenen Ansprüchen, s. oben <ref target="file10199">Nr. 168</ref>.</note> aperuerim, non tamen ab re esse existimavi, si te denuo de eadem re admonerem.</s>
+					<s n="3" xml:lang="la" type="manual">Non<pb type="edition" next="166"/> necesse habeo, opinor, ut rem altius repetam.</s>
+					<s n="4" xml:lang="la" type="auto">Id enim antea satis abunde factum est.</s>
+					<s n="5" xml:lang="la" type="auto">Iam vero nonnihil tuis occupationibus inservire volens, quae te non sinunt accurate semper meminisse omnium calamitatum, statui hoc epistolio tibi mei memoriam refricare.</s>
+					<s n="6" xml:lang="la" type="auto">Nec id quoque fecissem, nisi huius consilii autor mihi fuisset praefectus nostrae provinciae<note xml:id="fn4" type="footnote" n="4">der Gemeinen Herrschaft <placeName ref="place87">Thurgau</placeName>.</note> <persName ref="person53">Johannes Edlibach</persName>, qui postridie Tigurum se profecturum dicebat.</s>
+					<s n="7" xml:lang="la" type="auto">Is mei caussa coram senatu officiose ac amanter intercedet<note xml:id="fn5" type="footnote" n="5">Ob <persName ref="person53">Edlibach</persName> die Sache <persName ref="person185">Schlatters</persName> vor dem Zürcher Rat vertrat, und ob dieser sich überhaupt damit befaßte, ließ sich nicht nachweisen.</note>.</s>
+					<s n="8" xml:lang="la" type="auto">Ad hanc rem fortassis subsidiaria tua opera utetur.</s>
+					<s n="9" xml:lang="la" type="auto">Quare per Christum te oro atque obtestor, ne mihi deesse velis amicus amico.</s>
+					<s n="10" xml:lang="la" type="auto">Sed ne importunius tuam operam abs te rogare videar, quasi is sim, qui ab amicis officia soleat intempestivius efflagitare, iam me hisce literis tibi perpurgatum esse velim.</s>
+					<s n="11" xml:lang="la" type="auto">Quando autem et occasio temporum et tuae occupationes patientur, tum demum te mihi paulisper accommodato.</s>
+					<s n="12" xml:lang="la" type="auto">Ego vero, si licuerit<note xml:id="fn6" type="footnote" n="6">Vgl. Adagia, 1, 1, 35 (LB II 41 D).</note> per tenuitatem meam, libens paria tecum facturus sum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="13" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum raptim Frowenfeldiae irrevise, 9. die augusti.</s>
+					<s n="14" xml:lang="la" type="auto">Datum raptim Frowenfeldiae irrevise, 9. die augusti.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="185">Michael Schlatterus</persName>, tuus ut suus.</s>
+					<s n="15" xml:lang="la" type="auto"><persName ref="person185">Michael Schlatterus</persName>, tuus ut suus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. viro <persName ref="1479">Henrico</persName> Bulingero, sacrae theologiae publico professori Tiguri, domino suo in primis numerando.</s>
-					<s xml:lang="de" type="auto">Zurich.</s>
+					<s n="16" xml:lang="la" type="auto">D. viro <persName ref="person1479">Henrico</persName> Bulingero, sacrae theologiae publico professori Tiguri, domino suo in primis numerando.</s>
+					<s n="17" xml:lang="de" type="auto">Zurich.</s>
 				</p>
 			</div>
 		</body>

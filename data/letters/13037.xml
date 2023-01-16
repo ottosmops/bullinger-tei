@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2988</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2988</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 62,385</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 62,385</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,7 +49,7 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								[1] Myconius dankt für Bullingers Antwort [<ref target="file#13033">Nr. 2984</ref>]. Johannes Gast wird die
+								[1] Myconius dankt für Bullingers Antwort [<ref target="file13033">Nr. 2984</ref>]. Johannes Gast wird die
 								[Ausgabe von Persius’ Satiren] beschaffen. Bullingers Ausführungen über die Fünf Orte (der Herr segne sie!)
 								sind zufriedenstellend, auch wenn Myconius immerzu vorsichtig bleibt.
 								</p>
@@ -93,46 +96,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13037">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1547-08-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13038"/>
-					<ref type="prev_chronologically" target="files.xml#13036"/>
-					<ref type="next_correspondence" target="files.xml#13043"/>
-					<ref type="prev_correspondence" target="files.xml#13034"/>
-					<ref type="next_correspondence_request" target="files.xml#13043"/>
-					<ref type="prev_correspondence_request" target="files.xml#13034"/>
-					<ref type="next_correspondence_reaction" target="files.xml#13052"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#13033"/>
-					<ref type="next_same_sender" target="files.xml#13043"/>
-					<ref type="prev_same_sender" target="files.xml#13034"/>
-					<ref type="next_same_addressee" target="files.xml#13041"/>
-					<ref type="prev_same_addressee" target="files.xml#13033"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13043"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#13034"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13041"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13033"/>
+					<ref type="next_chronologically" target="file13038"/>
+					<ref type="prev_chronologically" target="file13036"/>
+					<ref type="next_correspondence" target="file13043"/>
+					<ref type="prev_correspondence" target="file13034"/>
+					<ref type="next_correspondence_request" target="file13043"/>
+					<ref type="prev_correspondence_request" target="file13034"/>
+					<ref type="next_correspondence_reaction" target="file13052"/>
+					<ref type="prev_correspondence_reaction" target="file13033"/>
+					<ref type="next_same_sender" target="file13043"/>
+					<ref type="prev_same_sender" target="file13034"/>
+					<ref type="next_same_addressee" target="file13041"/>
+					<ref type="prev_same_addressee" target="file13033"/>
+					<ref type="next_with_sender_as_addressee" target="file13043"/>
+					<ref type="prev_with_sender_as_addressee" target="file13034"/>
+					<ref type="next_with_addressee_as_sender" target="file13041"/>
+					<ref type="prev_with_addressee_as_sender" target="file13033"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -150,62 +158,62 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Recte, id est quemadmodum volui, respondisti.<note xml:id="fn1" type="footnote" n="1">Auf die in Myconius' Brief <ref target="file#13016">Nr. 2967</ref> vom 25. Juli gestellten Fragen, die Bullinger mit seinem Schreiben <ref target="file#13033">Nr. 2984</ref> vom 11. August beantwortete. - Der um sechs Uhr morgens verfasste Brief Bullingers (s. <ref target="file#13033">Nr. 2984</ref>,<qv>zl17249-5</qv>) war umgehend durch den Boten Andreas Müller (s. <ref target="file#13033">Nr. 2984</ref>, <qv>fn17249-4</qv>) nach Basel befördert worden.</note></s>
-					<s xml:lang="la" type="auto">Ago tibi gratias.</s>
-					<s xml:lang="la" type="auto">Cum Gastio egi, quicquid petisti.<note xml:id="fn2" type="footnote" n="2">Nämlich eine bestimmte Ausgabe von Persius' Satiren; s. <ref target="file#13033">Nr. 2984</ref>,<qv>zl17249-6</qv>.</note></s>
-					<s xml:lang="la" type="auto">Promisit se obtemperaturum.</s>
-					<s xml:lang="la" type="auto">De 5 Pagicorum interpretatione<note xml:id="fn3" type="footnote" n="3">Bezug auf <ref target="file#13033">Nr. 2984</ref>,<qv>zl17249-4</qv>, wo Bullinger auf die von Myconius in <ref target="file#13016">Nr. 2967</ref>,<qv>zl17232-1</qv>, geäußerten Bedenken reagierte.</note> contentus sum, quamvis semper timeam anguem latentem.<note xml:id="fn4" type="footnote" n="4">Myconius bezieht sich hier auf Bullingers Worte in <ref target="file#13033">Nr. 2984</ref>,<qv>zl17249-9</qv>. - Zur Redewendung s. <ref target="file#12928">Nr. 2879</ref>, <qv>fn17145-3</qv>.</note></s>
-					<s xml:lang="la" type="auto">Dominus eis benedicat!</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Recte, id est quemadmodum volui, respondisti.<note xml:id="fn1" type="footnote" n="1">Auf die in Myconius' Brief <ref target="file13016">Nr. 2967</ref> vom 25. Juli gestellten Fragen, die Bullinger mit seinem Schreiben <ref target="file13033">Nr. 2984</ref> vom 11. August beantwortete. - Der um sechs Uhr morgens verfasste Brief Bullingers (s. <ref target="file13033">Nr. 2984</ref>,<qv>zl17249-5</qv>) war umgehend durch den Boten Andreas Müller (s. <ref target="file13033">Nr. 2984</ref>, <qv>fn17249-4</qv>) nach Basel befördert worden.</note></s>
+					<s n="3" xml:lang="la" type="auto">Ago tibi gratias.</s>
+					<s n="4" xml:lang="la" type="auto">Cum Gastio egi, quicquid petisti.<note xml:id="fn2" type="footnote" n="2">Nämlich eine bestimmte Ausgabe von Persius' Satiren; s. <ref target="file13033">Nr. 2984</ref>,<qv>zl17249-6</qv>.</note></s>
+					<s n="5" xml:lang="la" type="auto">Promisit se obtemperaturum.</s>
+					<s n="6" xml:lang="la" type="auto">De 5 Pagicorum interpretatione<note xml:id="fn3" type="footnote" n="3">Bezug auf <ref target="file13033">Nr. 2984</ref>,<qv>zl17249-4</qv>, wo Bullinger auf die von Myconius in <ref target="file13016">Nr. 2967</ref>,<qv>zl17232-1</qv>, geäußerten Bedenken reagierte.</note> contentus sum, quamvis semper timeam anguem latentem.<note xml:id="fn4" type="footnote" n="4">Myconius bezieht sich hier auf Bullingers Worte in <ref target="file13033">Nr. 2984</ref>,<qv>zl17249-9</qv>. - Zur Redewendung s. <ref target="file12928">Nr. 2879</ref>, <qv>fn17145-3</qv>.</note></s>
+					<s n="7" xml:lang="la" type="auto">Dominus eis benedicat!</s>
+					<s n="8" xml:lang="la" type="manual">Amen.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Cęsaris<note xml:id="fn5" type="footnote" n="5">Karl V. - Bezug auf <ref target="file#13033">Nr. 2984</ref>,<qv>zl17249-1</qv>.</note> verba lubens audio.</s>
-					<s xml:lang="la" type="auto">Verum dum repeto, subinde fiunt insuaviora.</s>
-					<s xml:lang="la" type="auto">Hispanicae fraudi fidere nequeo!</s>
-					<s xml:lang="la" type="auto">Non est vipera magis referta veneno, quam vir ille multis et variis dolis; id quod per annos iam 20 satis experti sumus.</s>
-					<s xml:lang="la" type="auto">Bonis verbis conatur nos facere securos, quales postquam reddidit, tunc tandem obprimet imprudentes.</s>
-					<s xml:lang="la" type="auto">Age, vult deus forsitan ita frangere nostram <pb type="edition" next="416"/> insolentiam, qua satis diu sumus usi.</s>
-					<s xml:lang="la" type="auto">Fiat voluntas eius<note xml:id="fn6" type="footnote" n="6">Vgl. Mt 6, 10.</note> largiaturque in omnibus patientiam nobis!</s>
+					<s n="9" xml:lang="la" type="auto">Cęsaris<note xml:id="fn5" type="footnote" n="5">Karl V. - Bezug auf <ref target="file13033">Nr. 2984</ref>,<qv>zl17249-1</qv>.</note> verba lubens audio.</s>
+					<s n="10" xml:lang="la" type="auto">Verum dum repeto, subinde fiunt insuaviora.</s>
+					<s n="11" xml:lang="la" type="auto">Hispanicae fraudi fidere nequeo!</s>
+					<s n="12" xml:lang="la" type="auto">Non est vipera magis referta veneno, quam vir ille multis et variis dolis; id quod per annos iam 20 satis experti sumus.</s>
+					<s n="13" xml:lang="la" type="auto">Bonis verbis conatur nos facere securos, quales postquam reddidit, tunc tandem obprimet imprudentes.</s>
+					<s n="14" xml:lang="la" type="auto">Age, vult deus forsitan ita frangere nostram <pb type="edition" next="416"/> insolentiam, qua satis diu sumus usi.</s>
+					<s n="15" xml:lang="la" type="auto">Fiat voluntas eius<note xml:id="fn6" type="footnote" n="6">Vgl. Mt 6, 10.</note> largiaturque in omnibus patientiam nobis!</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">De visione<note xml:id="fn7" type="footnote" n="7">Die in <ref target="file#13033">Nr. 2984</ref>,<qv>zl17249-13</qv>, beschriebene Erscheinung. - Bullinger hatte, wohl halb scherzend, Myconius gebeten, sie zu deuten.</note> maluissem audire tuam interpretationem quam meam <ptr target="#fna" type="footnote" n="a"/>interponere sententiam.<note xml:id="fna" type="footnote" n="a"><hi>Nach gestrichenem</hi> interpretationem.</note></s>
-					<s xml:lang="la" type="auto">Dum viverem in patria<note xml:id="fn8" type="footnote" n="8">Myconius stammte aus Luzern und hatte dort von 1519 bis 1522 als Schullehrer gewirkt; s. <abbr>HBBW</abbr> I 226, Anm. 15.</note>, sic satur eram factus eiusmodi fabularum, ut tandem contemnerem, et hic contemptus etiamnum me comitatur.</s>
-					<s xml:lang="la" type="auto">Scio, quod dominus nonnunquam signis praenunciat futuras calamitates, at ego (quoties ita fit)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note> non libenter iudicia dei mea interpretatione praevenio.</s>
-					<s xml:lang="la" type="auto">Postquam leo devorarit leonem, tum et ego dicam, quid sentiam.</s>
+					<s n="16" xml:lang="la" type="auto">De visione<note xml:id="fn7" type="footnote" n="7">Die in <ref target="file13033">Nr. 2984</ref>,<qv>zl17249-13</qv>, beschriebene Erscheinung. - Bullinger hatte, wohl halb scherzend, Myconius gebeten, sie zu deuten.</note> maluissem audire tuam interpretationem quam meam <ptr target="fna" type="footnote" n="a"/>interponere sententiam.<note xml:id="fna" type="footnote" n="a"><hi>Nach gestrichenem</hi> interpretationem.</note></s>
+					<s n="17" xml:lang="la" type="auto">Dum viverem in patria<note xml:id="fn8" type="footnote" n="8">Myconius stammte aus Luzern und hatte dort von 1519 bis 1522 als Schullehrer gewirkt; s. <abbr>HBBW</abbr> I 226, Anm. 15.</note>, sic satur eram factus eiusmodi fabularum, ut tandem contemnerem, et hic contemptus etiamnum me comitatur.</s>
+					<s n="18" xml:lang="la" type="auto">Scio, quod dominus nonnunquam signis praenunciat futuras calamitates, at ego (quoties ita fit)<note xml:id="fnb" type="footnote" n="b"><hi>Klammern ergänzt.</hi></note> non libenter iudicia dei mea interpretatione praevenio.</s>
+					<s n="19" xml:lang="la" type="auto">Postquam leo devorarit leonem, tum et ego dicam, quid sentiam.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Lignum Guaiacum<note xml:id="fn9" type="footnote" n="9">Sowohl wörtlich als auch im übertragenen Sinn zu verstehen, wie schon bei Vadian in <ref target="file#13032">Nr. 2983</ref>,[2], wo vom spanischen Lügen-Holz die Rede ist. Einige Protestanten hielten nämlich dem Kaiser ein Doppelspiel vor. - Myconius bezieht sich hier auf <ref target="file#13033">Nr. 2984</ref>,<qv>zl17249-3</qv>.</note>, nisi aliquando perdat Nabuchodonosorem Germanię<note xml:id="fn10" type="footnote" n="10">Der babylonische König Nebukadnezar II. steht hier für Karl V.</note>, non videtur salubre.</s>
-					<s xml:lang="la" type="auto">Differt Hispanus Helvetios bonis verbis, donec et foedere<note xml:id="fn11" type="footnote" n="11">Der vom Kaiser geplante neue Schwäbische Bund; s. dazu die Verweise in <ref target="file#13038">Nr. 2989</ref>, <qv>fn17253-1</qv>. - Myconius bezieht sich hier auf <ref target="file#13033">Nr. 2984</ref>,<qv>zl17249-8</qv>.</note> et aliis rebus obportunis paraverit se contra illos.</s>
+					<s n="20" xml:lang="la" type="auto">Lignum Guaiacum<note xml:id="fn9" type="footnote" n="9">Sowohl wörtlich als auch im übertragenen Sinn zu verstehen, wie schon bei Vadian in <ref target="file13032">Nr. 2983</ref>,[2], wo vom spanischen Lügen-Holz die Rede ist. Einige Protestanten hielten nämlich dem Kaiser ein Doppelspiel vor. - Myconius bezieht sich hier auf <ref target="file13033">Nr. 2984</ref>,<qv>zl17249-3</qv>.</note>, nisi aliquando perdat Nabuchodonosorem Germanię<note xml:id="fn10" type="footnote" n="10">Der babylonische König Nebukadnezar II. steht hier für Karl V.</note>, non videtur salubre.</s>
+					<s n="21" xml:lang="la" type="auto">Differt Hispanus Helvetios bonis verbis, donec et foedere<note xml:id="fn11" type="footnote" n="11">Der vom Kaiser geplante neue Schwäbische Bund; s. dazu die Verweise in <ref target="file13038">Nr. 2989</ref>, <qv>fn17253-1</qv>. - Myconius bezieht sich hier auf <ref target="file13033">Nr. 2984</ref>,<qv>zl17249-8</qv>.</note> et aliis rebus obportunis paraverit se contra illos.</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">De Halero gaudeo, quod tandem redibit ad vos<note xml:id="fnc" type="footnote" n="c"><hi>Die Lesung</hi> nos <hi>wäre auch möglich.</hi></note>.<note xml:id="fn12" type="footnote" n="12">Vgl. <ref target="file#13033">Nr. 2984</ref>,<qv>zl17249-10</qv>.</note></s>
+					<s n="22" xml:lang="la" type="auto">De Halero gaudeo, quod tandem redibit ad vos<note xml:id="fnc" type="footnote" n="c"><hi>Die Lesung</hi> nos <hi>wäre auch möglich.</hi></note>.<note xml:id="fn12" type="footnote" n="12">Vgl. <ref target="file13033">Nr. 2984</ref>,<qv>zl17249-10</qv>.</note></s>
 				</p>
 			</div>
 			<div xml:id="div6" corresp="regest6">
 				<p>
-					<s xml:lang="la" type="auto">Deformationem religionis<note xml:id="fn13" type="footnote" n="13">Die von Karl V. geplante Kirchenreformation; s. <abbr>RTA-JR</abbr> XVIII/1 59 mit Anm. 32; 83f. - Bezug auf <ref target="file#13033">Nr. 2984</ref>,<qv>zl17249-11</qv>.</note> postquam tentaturus est, dominus nimirum exurget et vindicabit eam.<note xml:id="fn14" type="footnote" n="14">Vgl. z.B. Ps 7, 7; 34 (Vulg. 33), 23.</note></s>
+					<s n="23" xml:lang="la" type="auto">Deformationem religionis<note xml:id="fn13" type="footnote" n="13">Die von Karl V. geplante Kirchenreformation; s. <abbr>RTA-JR</abbr> XVIII/1 59 mit Anm. 32; 83f. - Bezug auf <ref target="file13033">Nr. 2984</ref>,<qv>zl17249-11</qv>.</note> postquam tentaturus est, dominus nimirum exurget et vindicabit eam.<note xml:id="fn14" type="footnote" n="14">Vgl. z.B. Ps 7, 7; 34 (Vulg. 33), 23.</note></s>
 				</p>
 			</div>
 			<div xml:id="div7" corresp="regest7">
 				<p>
-					<s xml:lang="la" type="auto">Vale in Christo cum Theodoro<note xml:id="fn15" type="footnote" n="15">Theodor Bibliander.</note> et Gvalthero.</s>
-					<s xml:lang="la" type="auto">Quid si et illi aliquando scriberent ad me vel saltem salutarent?</s>
-					<s xml:lang="la" type="auto">Basileę, raptim 12. augusti anno 1547.</s>
-					<s xml:lang="la" type="auto">Os. My. tuus.</s>
+					<s n="24" xml:lang="la" type="auto">Vale in Christo cum Theodoro<note xml:id="fn15" type="footnote" n="15">Theodor Bibliander.</note> et Gvalthero.</s>
+					<s n="25" xml:lang="la" type="auto">Quid si et illi aliquando scriberent ad me vel saltem salutarent?</s>
+					<s n="26" xml:lang="la" type="auto">Basileę, raptim 12. augusti anno 1547.</s>
+					<s n="27" xml:lang="la" type="auto">Os. My. tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">D. Heinricho Bullingero doctissimo, fratri et domino in Christo suo.</s>
-					<s xml:lang="de" type="auto">Zü[ri]ch.<note xml:id="fnd" type="footnote" n="d"><hi>Textverlust bei der Entfernung des Siegels.</hi></note></s>
+					<s n="28" xml:lang="la" type="auto">D. Heinricho Bullingero doctissimo, fratri et domino in Christo suo.</s>
+					<s n="29" xml:lang="de" type="auto">Zü[ri]ch.<note xml:id="fnd" type="footnote" n="d"><hi>Textverlust bei der Entfernung des Siegels.</hi></note></s>
 				</p>
 			</div>
 		</body>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4960/69</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 91,197</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 91,197</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -65,48 +68,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3540">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1558-03-17" cert="low"><note>(auch irrt. auf 7. März datiert)</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#224" cert="low">
+					<!--
+					<persName ref="person224" cert="low">
 						<forename cert="low">Johannes</forename>
 						<surname cert="low">a Lasco</surname>
-						<addName type="main">a Lasco (Laski), Johannes (Jan)</addName>
+						<persName type="main" ref="person8041>a Lasco (Laski), Johannes (Jan)</addName>
 						<note type="Person">Polen</note>
 						<graphic type="portrait" url="portraits/220_Laski_Jan.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_a_Lasco"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118726633"/>
 					</persName>
+					-->
+					<persName ref="person224" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3541"/>
-					<ref type="prev_chronologically" target="files.xml#3539"/>
-					<ref type="next_correspondence" target="files.xml#3626"/>
-					<ref type="prev_correspondence" target="files.xml#3526"/>
-					<ref type="next_correspondence_request" target="files.xml#3626"/>
-					<ref type="prev_correspondence_request" target="files.xml#3526"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3667"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3054"/>
-					<ref type="next_same_sender" target="files.xml#3541"/>
-					<ref type="prev_same_sender" target="files.xml#3536"/>
-					<ref type="next_same_addressee" target="files.xml#3667"/>
-					<ref type="prev_same_addressee" target="files.xml#3054"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3541"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3536"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3667"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3054"/>
-					<ref type="child" target="files.xml#3526"/>
+					<ref type="next_chronologically" target="file3541"/>
+					<ref type="prev_chronologically" target="file3539"/>
+					<ref type="next_correspondence" target="file3626"/>
+					<ref type="prev_correspondence" target="file3526"/>
+					<ref type="next_correspondence_request" target="file3626"/>
+					<ref type="prev_correspondence_request" target="file3526"/>
+					<ref type="next_correspondence_reaction" target="file3667"/>
+					<ref type="prev_correspondence_reaction" target="file3054"/>
+					<ref type="next_same_sender" target="file3541"/>
+					<ref type="prev_same_sender" target="file3536"/>
+					<ref type="next_same_addressee" target="file3667"/>
+					<ref type="prev_same_addressee" target="file3054"/>
+					<ref type="next_with_sender_as_addressee" target="file3541"/>
+					<ref type="prev_with_sender_as_addressee" target="file3536"/>
+					<ref type="next_with_addressee_as_sender" target="file3667"/>
+					<ref type="prev_with_addressee_as_sender" target="file3054"/>
+					<ref type="child" target="file3526"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -120,62 +127,62 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Spero literas nostras tibi fide optima per Stanislaum D[...] ministrum esse redditas.</s>
-					<s xml:lang="la" type="auto">Interea Anglus huc venit pusillo corpore et ruffa barbula, qui mihi a d. Ioanne Utenhovio attulit literas, simul etiam a d. Melanchthone.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Spero literas nostras tibi fide optima per Stanislaum D[...] ministrum esse redditas.</s>
+					<s n="3" xml:lang="la" type="auto">Interea Anglus huc venit pusillo corpore et ruffa barbula, qui mihi a d. Ioanne Utenhovio attulit literas, simul etiam a d. Melanchthone.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pollicebatur se recta per Bernam iturum Genevam, deinde per nos in Poloniam rediturum.</s>
-					<s xml:lang="la" type="auto">Dedi ipsi literas, quas Bernam et ad Calvinum portaret: factum hoc 11. ianuarii.</s>
+					<s n="4" xml:lang="la" type="auto">Pollicebatur se recta per Bernam iturum Genevam, deinde per nos in Poloniam rediturum.</s>
+					<s n="5" xml:lang="la" type="auto">Dedi ipsi literas, quas Bernam et ad Calvinum portaret: factum hoc 11. ianuarii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Interim vero iste comparet nusquam, Bernam non venit, neque Calvino quidquam dedit.</s>
-					<s xml:lang="la" type="auto">Dubito an mortuus sit in itinere, an literas prodiderit meas nescio quibus.</s>
+					<s n="6" xml:lang="la" type="auto">Interim vero iste comparet nusquam, Bernam non venit, neque Calvino quidquam dedit.</s>
+					<s n="7" xml:lang="la" type="auto">Dubito an mortuus sit in itinere, an literas prodiderit meas nescio quibus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Genevenses perpetuo foedere coaluerunt cum Bernensibus.</s>
-					<s xml:lang="la" type="auto">Itaque civitatibus illis reddita est pax, quae aliquandiu periclitabatur.</s>
+					<s n="8" xml:lang="la" type="auto">Genevenses perpetuo foedere coaluerunt cum Bernensibus.</s>
+					<s n="9" xml:lang="la" type="auto">Itaque civitatibus illis reddita est pax, quae aliquandiu periclitabatur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tranquillae sunt alioqui ecclesiae Helveticae per dei gratiam.</s>
-					<s xml:lang="la" type="auto">Dominus velit hoc nobis esse diuturnum.</s>
+					<s n="10" xml:lang="la" type="auto">Tranquillae sunt alioqui ecclesiae Helveticae per dei gratiam.</s>
+					<s n="11" xml:lang="la" type="auto">Dominus velit hoc nobis esse diuturnum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Colloquium, quod Wormatiae institutum fuerat, absque collatione diffluxit et sine omni fructu, utinam etiam sine damno, dissipatum est.</s>
-					<s xml:lang="la" type="auto">Principio Saxonum quidam, oblata condemnatione Iulio praesidi, relictis symmystis discesserunt: deinde quum urgerentur a papistis qui remanserant ex protestantibus docti, ut ipsi quoque declararent quos putarent alienos esse a confessione Augustana, nominatim expresserunt optimum virum Zwinglium ac condemnarunt.</s>
-					<s xml:lang="la" type="auto">Quam hoc affecerit viros bonos in Helvetia ipse aestimare potes.</s>
+					<s n="12" xml:lang="la" type="auto">Colloquium, quod Wormatiae institutum fuerat, absque collatione diffluxit et sine omni fructu, utinam etiam sine damno, dissipatum est.</s>
+					<s n="13" xml:lang="la" type="auto">Principio Saxonum quidam, oblata condemnatione Iulio praesidi, relictis symmystis discesserunt: deinde quum urgerentur a papistis qui remanserant ex protestantibus docti, ut ipsi quoque declararent quos putarent alienos esse a confessione Augustana, nominatim expresserunt optimum virum Zwinglium ac condemnarunt.</s>
+					<s n="14" xml:lang="la" type="auto">Quam hoc affecerit viros bonos in Helvetia ipse aestimare potes.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Et his coniunxit se etiam Philippus noster.</s>
-					<s xml:lang="la" type="auto">Nunc laborant quidam pro instruenda synodo, in qua colloquantur docti Helveticarum et Germanicarum ecclesiarum.</s>
-					<s xml:lang="la" type="auto">Nos nunquam deerimus nostris partibus, deo nos iuvante, qui semper parati sumus rationem reddere spei quae in nobis est cuilibet petenti.</s>
+					<s n="15" xml:lang="la" type="auto">Et his coniunxit se etiam Philippus noster.</s>
+					<s n="16" xml:lang="la" type="auto">Nunc laborant quidam pro instruenda synodo, in qua colloquantur docti Helveticarum et Germanicarum ecclesiarum.</s>
+					<s n="17" xml:lang="la" type="auto">Nos nunquam deerimus nostris partibus, deo nos iuvante, qui semper parati sumus rationem reddere spei quae in nobis est cuilibet petenti.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sed quanta cum spe colloquium instituatur cum his, qui palam nostros damnant doctores et damnationem scripto ad imperatorem et Caesarem principesque transmittunt, intelligit qui nihil intelligit.</s>
-					<s xml:lang="la" type="auto">Dominus sarciat defectus illos humanos et concedat omnibus diligentibus veritatem, ut posita invidia, litibus et ambitione, idem sentiant et loquantur omnes.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="18" xml:lang="la" type="auto">Sed quanta cum spe colloquium instituatur cum his, qui palam nostros damnant doctores et damnationem scripto ad imperatorem et Caesarem principesque transmittunt, intelligit qui nihil intelligit.</s>
+					<s n="19" xml:lang="la" type="auto">Dominus sarciat defectus illos humanos et concedat omnibus diligentibus veritatem, ut posita invidia, litibus et ambitione, idem sentiant et loquantur omnes.</s>
+					<s n="20" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salutant te nostri omnes cum omnibus tuis, Lysm(anino) Utenh(ovio) etc.</s>
-					<s xml:lang="la" type="auto">Saluta hos quoque.</s>
+					<s n="21" xml:lang="la" type="auto">Salutant te nostri omnes cum omnibus tuis, Lysm(anino) Utenh(ovio) etc.</s>
+					<s n="22" xml:lang="la" type="auto">Saluta hos quoque.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ora pro nobis.</s>
+					<s n="23" xml:lang="la" type="auto">Ora pro nobis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Significa quo loco sint res vestrae.</s>
+					<s n="24" xml:lang="la" type="auto">Significa quo loco sint res vestrae.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Festinantissime.</s>
+					<s n="25" xml:lang="la" type="auto">Festinantissime.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 17. martii 1558.</s>
+					<s n="26" xml:lang="la" type="auto">Tiguri 17. martii 1558.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus tuus.</s>
+					<s n="27" xml:lang="la" type="auto">Bullingerus tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Ioanni a Lasco, baroni Polono iam in Polonia agenti, domino suo colendissimo et fratri carissimo.</s>
+					<s n="28" xml:lang="la" type="auto">Clarissimo viro d. Ioanni a Lasco, baroni Polono iam in Polonia agenti, domino suo colendissimo et fratri carissimo.</s>
 				</p>
 			</div>
 		</body>

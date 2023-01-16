@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2002"/>
-				<idno type="ISBN">ISBN 3-290-17220-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1299</idno>
+				<idno subtype="ISBN">ISBN 3-290-17220-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1299</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 9</title>
+				<title subtype="publication">HBBW IX</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">9</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Autograph">Ms F 62,246</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Autograph">Ms F 62,246</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,10 +49,10 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Der Briefüberbringer, Bürgermeister [<persName ref="909">Balthasar Funk</persName>] aus
-								<placeName ref="697">Memmingen</placeName>, ist auf der Suche nach einem Provisor für die Memminger
-								Schule; [die Basler] weisen ihn auf <persName ref="1052">Sebastian Guldibeck</persName> hin, und
-								<persName ref="81">Grynäus</persName> bittet um Unterstützung seines Anliegens. Grüße.
+								Der Briefüberbringer, Bürgermeister [<persName ref="person909">Balthasar Funk</persName>] aus
+								<placeName ref="place697">Memmingen</placeName>, ist auf der Suche nach einem Provisor für die Memminger
+								Schule; [die Basler] weisen ihn auf <persName ref="person1052">Sebastian Guldibeck</persName> hin, und
+								<persName ref="person81">Grynäus</persName> bittet um Unterstützung seines Anliegens. Grüße.
 							</p>
 						</summary>
 					</msContents>
@@ -59,39 +62,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11342">
 				<correspAction type="sent">
-					<persName ref="person#1365" cert="high">
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
+					-->
+					<persName ref="person1365" cert="high"/>
 					<date when="1539-08-18" cert="low">nach 18. August 1539</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11343"/>
-					<ref type="prev_chronologically" target="files.xml#11341"/>
-					<ref type="next_correspondence" target="files.xml#11369"/>
-					<ref type="prev_correspondence" target="files.xml#11312"/>
-					<ref type="next_correspondence_request" target="files.xml#11369"/>
-					<ref type="prev_correspondence_request" target="files.xml#11312"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11378"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11310"/>
-					<ref type="next_same_sender" target="files.xml#11369"/>
-					<ref type="prev_same_sender" target="files.xml#11312"/>
-					<ref type="next_same_addressee" target="files.xml#11345"/>
-					<ref type="prev_same_addressee" target="files.xml#11340"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11369"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11312"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11345"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11340"/>
+					<ref type="next_chronologically" target="file11343"/>
+					<ref type="prev_chronologically" target="file11341"/>
+					<ref type="next_correspondence" target="file11369"/>
+					<ref type="prev_correspondence" target="file11312"/>
+					<ref type="next_correspondence_request" target="file11369"/>
+					<ref type="prev_correspondence_request" target="file11312"/>
+					<ref type="next_correspondence_reaction" target="file11378"/>
+					<ref type="prev_correspondence_reaction" target="file11310"/>
+					<ref type="next_same_sender" target="file11369"/>
+					<ref type="prev_same_sender" target="file11312"/>
+					<ref type="next_same_addressee" target="file11345"/>
+					<ref type="prev_same_addressee" target="file11340"/>
+					<ref type="next_with_sender_as_addressee" target="file11369"/>
+					<ref type="prev_with_sender_as_addressee" target="file11312"/>
+					<ref type="next_with_addressee_as_sender" target="file11345"/>
+					<ref type="prev_with_addressee_as_sender" target="file11340"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -102,35 +115,32 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile>
-		<graphic url="11342/Autograph/00 Ms F 62 (246)_00001.tif" n="1"/>
-		<graphic url="11342/Autograph/01 Ms F 62 (246)_00002.tif" n="2"/>
-	</facsimile>
+	<facsimile/>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Is, qui has ad te perfert, consul <placeName ref="697">Memmingensis</placeName><note xml:id="fn2" type="footnote" n="2"><persName ref="909">Balthasar Funk</persName>, s. oben Anm. 1.</note>, vir optimus, quaerit scolę, quam diligentius paulo adornant, <foreign xml:lang="el">ὑποδιδάσκαλον</foreign>.</s>
-					<s xml:lang="la" type="manual">Indicabimus <persName ref="1052">Sebastianum</persName> Goldebeckium idoneum ei provincię<note xml:id="fn3" type="footnote" n="3"><persName ref="1052">Guldibeck</persName> war Provisor an der Großmünsterschule, eine Funktion übrigens, die auch Bullinger gelegentlich mit "hypodidascalus" umschreibt (vgl. Zürich ZB, Ms F 37, 405v.).</note>.</s>
-					<s xml:lang="la" type="auto">Oro te, ut hic quoque velis Christi negotium promovere.</s>
-					<s xml:lang="la" type="auto">Non addo plura; scio, quae est humanitas et synceritas tua, frater mihi dilectissime.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Is, qui has ad te perfert, consul <placeName ref="place697">Memmingensis</placeName><note xml:id="fn2" type="footnote" n="2"><persName ref="person909">Balthasar Funk</persName>, s. oben Anm. 1.</note>, vir optimus, quaerit scolę, quam diligentius paulo adornant, <foreign xml:lang="el">ὑποδιδάσκαλον</foreign>.</s>
+					<s n="3" xml:lang="la" type="manual">Indicabimus <persName ref="person1052">Sebastianum</persName> Goldebeckium idoneum ei provincię<note xml:id="fn3" type="footnote" n="3"><persName ref="person1052">Guldibeck</persName> war Provisor an der Großmünsterschule, eine Funktion übrigens, die auch Bullinger gelegentlich mit "hypodidascalus" umschreibt (vgl. Zürich ZB, Ms F 37, 405v.).</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Oro te, ut hic quoque velis Christi negotium promovere.</s>
+					<s n="5" xml:lang="la" type="auto">Non addo plura; scio, quae est humanitas et synceritas tua, frater mihi dilectissime.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino.</s>
+					<s n="6" xml:lang="la" type="auto">Vale in domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="81">Simon</persName> Gryn. tuus.</s>
+					<s n="7" xml:lang="la" type="auto"><persName ref="person81">Simon</persName> Gryn. tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Saluta fratres omnes diligenter, pręsertim <persName ref="14">Theodorum</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="14">Theodor Bibliander</persName>.</note> nostrum.</s>
-					<s xml:lang="la" type="auto">Christus<note xml:id="fnb" type="footnote" n="b"><hi>in der Vorlage</hi> <foreign xml:lang="el">ΧΡΣ</foreign>.</note> dominus nos conservet.</s>
-					<s xml:lang="de" type="auto">A[men]<note xml:id="fnc" type="footnote" n="c"><hi>Rand beschädigt.</hi></note>.</s>
+					<s n="8" xml:lang="la" type="auto">Saluta fratres omnes diligenter, pręsertim <persName ref="person14">Theodorum</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="person14">Theodor Bibliander</persName>.</note> nostrum.</s>
+					<s n="9" xml:lang="la" type="auto">Christus<note xml:id="fnb" type="footnote" n="b"><hi>in der Vorlage</hi> <foreign xml:lang="el">ΧΡΣ</foreign>.</note> dominus nos conservet.</s>
+					<s n="10" xml:lang="de" type="auto">A[men]<note xml:id="fnc" type="footnote" n="c"><hi>Rand beschädigt.</hi></note>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Henrico Bullingero, amico et fratri.</s>
-					<s xml:lang="de" type="auto">Zürch.</s>
+					<s n="11" xml:lang="la" type="auto">Clarissimo viro d. Henrico Bullingero, amico et fratri.</s>
+					<s n="12" xml:lang="de" type="auto">Zürch.</s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2000"/>
-				<idno type="ISBN">ISBN 3-290-17211-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1202</idno>
+				<idno subtype="ISBN">ISBN 3-290-17211-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1202</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 8</title>
+				<title subtype="publication">HBBW VIII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">8</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 355,93</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 355,93</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,7 +49,7 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Versichert Bullinger, daß er seinem [Neffen] <persName ref="1071">Johann <persName ref="1071">Heinrich</persName> Göldli</persName>
+								Versichert Bullinger, daß er seinem [Neffen] <persName ref="person1071">Johann Heinrich Göldli</persName>
 								gerne behilflich sein will; dieser wird selbst berichten. Entbietet seine Dienste und bittet um Nachsicht
 								für sein knappes Schreiben.
 							</p>
@@ -58,30 +61,33 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11245">
 				<correspAction type="sent">
-					<persName ref="person#3858" cert="high">
+					<!--
+					<persName ref="person3858" cert="high">
 						<forename cert="high">Hans</forename>
 						<surname cert="high">von Landenberg</surname>
-						<addName type="main">von Landenberg (Breitenlandenberg) d.Ä., Hans (Itelhans)</addName>
+						<persName type="main" ref="person8402>von Landenberg (Breitenlandenberg) d.Ä., Hans (Itelhans)</addName>
 					</persName>
-					<place source="#456" cert="high">
-						<settlement>Schramberg</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>48.225478 8.3852168</geo>
-					</place>
+					-->
+					<persName ref="person3858" cert="high"/>
+					<place source="place456" cert="high"/>
 					<date when="1538-12-02" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11246"/>
-					<ref type="prev_chronologically" target="files.xml#11244"/>
+					<ref type="next_chronologically" target="file11246"/>
+					<ref type="prev_chronologically" target="file11244"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -90,12 +96,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#11246"/>
-					<ref type="prev_same_addressee" target="files.xml#11233"/>
+					<ref type="next_same_addressee" target="file11246"/>
+					<ref type="prev_same_addressee" target="file11233"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11246"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11233"/>
+					<ref type="next_with_addressee_as_sender" target="file11246"/>
+					<ref type="prev_with_addressee_as_sender" target="file11233"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -112,25 +118,25 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Sunders guinstiger, lieber herr.</s>
-					<s xml:lang="de" type="auto">Uff uiwer schriben und begeren, her <persName ref="130">Hans</persName> Hainrichen Gollin, min lieben vettern<note xml:id="fn2" type="footnote" n="2"><persName ref="1071">Johann Heinrich Göldli</persName>, 1496-1553, war der Sohn von <persName ref="1072">Kaspar Göldli</persName> und <persName ref="1075">Ursula</persName> von Breitenlandenberg, der Halbschwester von <persName ref="130">Hans von Landenberg</persName>; siehe René <hi>Goeldlin de Tiefenau,</hi> Le recueil d'armoiries du chevalier Renward Goeldlin, in: Archives héraldiques suisses LXXXIV, Annuaire 1970, S. 77, und <hi>Studer,</hi> aaO, S. 235; vgl. HBBW IV, S. 254, Anm. 8.</note>, bellangend<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> bellangen.</note>, loss ich uich wuissen, dass ich im mitsamt andern gernn hellffen will lut uiwers und her Hainrich Goelldliss schriben<note xml:id="fn3" type="footnote" n="3">Nicht erhalten. -Über die angesprochene Angelegenheit ist nichts weiter bekannt.</note>, wieg er uich selbss anzaigen wirt.</s>
-					<s xml:lang="de" type="auto">Wellend in uich auch beffollen lassen sin.</s>
+					<s n="1" xml:lang="de" type="auto">Sunders guinstiger, lieber herr.</s>
+					<s n="2" xml:lang="de" type="auto">Uff uiwer schriben und begeren, her Hans Hainrichen Gollin, min lieben vettern<note xml:id="fn2" type="footnote" n="2"><persName ref="person1071">Johann Heinrich Göldli</persName>, 1496-1553, war der Sohn von <persName ref="person1072">Kaspar Göldli</persName> und Ursula von Breitenlandenberg, der Halbschwester von <persName ref="person130">Hans von Landenberg</persName>; siehe René <hi>Goeldlin de Tiefenau,</hi> Le recueil d'armoiries du chevalier Renward Goeldlin, in: Archives héraldiques suisses LXXXIV, Annuaire 1970, S. 77, und <hi>Studer,</hi> aaO, S. 235; vgl. HBBW IV, S. 254, Anm. 8.</note>, bellangend<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> bellangen.</note>, loss ich uich wuissen, dass ich im mitsamt andern gernn hellffen will lut uiwers und her Hainrich Goelldliss schriben<note xml:id="fn3" type="footnote" n="3">Nicht erhalten. -Über die angesprochene Angelegenheit ist nichts weiter bekannt.</note>, wieg er uich selbss anzaigen wirt.</s>
+					<s n="3" xml:lang="de" type="auto">Wellend in uich auch beffollen lassen sin.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Will mich uich auch allsso beffollen haben gegen got und im zit<note xml:id="fn4" type="footnote" n="4">in der Welt.</note>, mit herbiettung, was ich uich fruindschaft, libss und guͦtz bewissen kann, findend ir mich allwegens guͦtwillig.</s>
-					<s xml:lang="de" type="auto">Wellend allsso mins schlechten schribens verguͦt haben<note xml:id="fn5" type="footnote" n="5">vorlieb nehmen.</note>, dan ich allss<note xml:id="fn6" type="footnote" n="6">so.</note> müed von schriben bin, dass ich nuimen<note xml:id="fn7" type="footnote" n="7">nicht mehr.</note> mag.</s>
-					<s xml:lang="de" type="auto">Damit sind got beffollen, und wass uich lieb ist.</s>
-					<s xml:lang="de" type="auto">Damit bewar unss gott ally.</s>
+					<s n="4" xml:lang="de" type="auto">Will mich uich auch allsso beffollen haben gegen got und im zit<note xml:id="fn4" type="footnote" n="4">in der Welt.</note>, mit herbiettung, was ich uich fruindschaft, libss und guͦtz bewissen kann, findend ir mich allwegens guͦtwillig.</s>
+					<s n="5" xml:lang="de" type="auto">Wellend allsso mins schlechten schribens verguͦt haben<note xml:id="fn5" type="footnote" n="5">vorlieb nehmen.</note>, dan ich allss<note xml:id="fn6" type="footnote" n="6">so.</note> müed von schriben bin, dass ich nuimen<note xml:id="fn7" type="footnote" n="7">nicht mehr.</note> mag.</s>
+					<s n="6" xml:lang="de" type="auto">Damit sind got beffollen, und wass uich lieb ist.</s>
+					<s n="7" xml:lang="de" type="auto">Damit bewar unss gott ally.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum in ill zum <placeName ref="960">Schramberg</placeName>, uff mendag nach sant Andrass tag im 38. jar.</s>
+					<s n="8" xml:lang="de" type="auto">Datum in ill zum <placeName ref="place960">Schramberg</placeName>, uff mendag nach sant Andrass tag im 38. jar.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto"><persName ref="130">Hans von Landenberg</persName> zum <placeName ref="960">Schramberg</placeName>.</s>
+					<s n="9" xml:lang="de" type="auto">Hans von <placeName ref="place35">Landenberg</placeName> zum <placeName ref="place960">Schramberg</placeName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Dem erwirdigen heren Maister<note xml:id="fnb" type="footnote" n="b">Maister <hi>über der Zeile nachgetragen.</hi></note> Hainrichen Bullin, bredykant zum Grossen Muinster zuͦ Zuirch, minem sundern, guinstigen, lieben heren.</s>
+					<s n="10" xml:lang="de" type="auto">Dem erwirdigen heren Maister<note xml:id="fnb" type="footnote" n="b">Maister <hi>über der Zeile nachgetragen.</hi></note> Hainrichen Bullin, bredykant zum Grossen Muinster zuͦ Zuirch, minem sundern, guinstigen, lieben heren.</s>
 				</p>
 			</div>
 		</body>

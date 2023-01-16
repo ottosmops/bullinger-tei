@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=639</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=639</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 441,480</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 441,480</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,8 +50,8 @@
 						<summary>
 							<p xml:id="regest1">
 								Dankt für Bullingers [Kommentar zu vier Paulusbriefen]; in der Auslegung schwieriger Stellen des
-								Epheserbriefs ist dieser [den Kommentaren von] <persName ref="549">Bugenhagen</persName>,
-								<persName ref="28">Bucer</persName> und <persName ref="145">Megander</persName> überlegen.
+								Epheserbriefs ist dieser [den Kommentaren von] <persName ref="person549">Bugenhagen</persName>,
+								<persName ref="person28">Bucer</persName> und <persName ref="person145">Megander</persName> überlegen.
 							</p>
 						</summary>
 					</msContents>
@@ -65,31 +68,34 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10677">
 				<correspAction type="sent">
-					<persName ref="person#1998" cert="high">
+					<!--
+					<persName ref="person1998" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Lüthard</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_L%C3%BCthard"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11502836"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
-					<date when="1535-08-00" cert="low"/>
+					-->
+					<persName ref="person1998" cert="high"/>
+					<place source="place28" cert="high"/>
+					<date notBefore="1535-08-01" notAfter="1535-08-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10662"/>
-					<ref type="prev_chronologically" target="files.xml#10661"/>
+					<ref type="next_chronologically" target="file10662"/>
+					<ref type="prev_chronologically" target="file10661"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -98,12 +104,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10662"/>
-					<ref type="prev_same_addressee" target="files.xml#10658"/>
+					<ref type="next_same_addressee" target="file10662"/>
+					<ref type="prev_same_addressee" target="file10658"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10662"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10658"/>
+					<ref type="next_with_addressee_as_sender" target="file10662"/>
+					<ref type="prev_with_addressee_as_sender" target="file10658"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -112,30 +118,33 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="10677/Autograph/00 E_II_441__fol__480_r_.tif" n="1"/>
+		<graphic url="10677/Autograph/01 E_II_441__fol__480_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratia Christi tecum, optime Bullingere.</s>
+					<s n="1" xml:lang="la" type="auto">Gratia Christi tecum, optime Bullingere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Accepi equidem donum tuum<note xml:id="fn2" type="footnote" n="2">Da im folgenden von Auslegungen des Epheserbriefs die Rede ist, muß es sich beim Geschenk Bullingers um ein Exemplar seines Kommentars zu vier Paulusbriefen (vgl. Anm. 1) gehandelt haben.</note> et cum tanta accepi animi alacritate, ac si a deo, non ab homine thesaurus michi esset transmissus celestis.</s>
-					<s xml:lang="la" type="auto">Resedi cicius atque revidi scripta tua ac mentem tuam Paulinam maxime in locis quibusdam nodosioribus epistole [ad] Ephe[sios].</s>
-					<s xml:lang="la" type="auto">Et ingenue hoc fateor te unum plus paucis michi praestitisse quam omnes, quos legerim.</s>
-					<s xml:lang="la" type="auto"><persName ref="549">Pomeranus</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="139">Johannes</persName> <hi><persName ref="549">Bugenhagen</persName>,</hi> Annotationes in decem epistolas Pauli, Nürnberg 1524.</note> brevis est, <persName ref="28">Bucerus</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="28">Martin</persName> <hi>Bucer,</hi> Epistola d. Pauli ad Ephesios, Straßburg 1527.</note> verbosissimus, <persName ref="145">Megandrum</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="145">Kaspar</persName> <hi>Megander,</hi> In epistolam Pauli ad Ephesios commentarius, <placeName ref="97">Basel</placeName> 1534.</note> pro nichilo habeo.</s>
-					<s xml:lang="la" type="auto">Quid igitur retribuam Bullingero pro omnibus, quae retribuit michi?</s>
-					<s xml:lang="la" type="auto">Calicem gratitudinis accipiam et nomen domini invocabo, ut iis [!], qui dives est in omnes, in te quoque dives sit teque vice mea in omnibus ditescat bonis, ut et ecclesie Christi et michi non tam diuturna vita quam scriptis diu prosis, licet equales<note xml:id="fna" type="footnote" n="a">equales <hi>aus</hi> equalem <hi>korrigiert.</hi></note> ego rependere non queam.</s>
+					<s n="2" xml:lang="la" type="auto">Accepi equidem donum tuum<note xml:id="fn2" type="footnote" n="2">Da im folgenden von Auslegungen des Epheserbriefs die Rede ist, muß es sich beim Geschenk Bullingers um ein Exemplar seines Kommentars zu vier Paulusbriefen (vgl. Anm. 1) gehandelt haben.</note> et cum tanta accepi animi alacritate, ac si a deo, non ab homine thesaurus michi esset transmissus celestis.</s>
+					<s n="3" xml:lang="la" type="auto">Resedi cicius atque revidi scripta tua ac mentem tuam Paulinam maxime in locis quibusdam nodosioribus epistole [ad] Ephe[sios].</s>
+					<s n="4" xml:lang="la" type="auto">Et ingenue hoc fateor te unum plus paucis michi praestitisse quam omnes, quos legerim.</s>
+					<s n="5" xml:lang="la" type="auto"><persName ref="person549">Pomeranus</persName><note xml:id="fn3" type="footnote" n="3">Johannes <hi><persName ref="person549">Bugenhagen</persName>,</hi> Annotationes in decem epistolas Pauli, Nürnberg 1524.</note> brevis est, <persName ref="person28">Bucerus</persName><note xml:id="fn4" type="footnote" n="4">Martin <hi><persName ref="person28">Bucer</persName>,</hi> Epistola d. Pauli ad Ephesios, Straßburg 1527.</note> verbosissimus, <persName ref="person145">Megandrum</persName><note xml:id="fn5" type="footnote" n="5">Kaspar <hi><persName ref="person145">Megander</persName>,</hi> In epistolam Pauli ad Ephesios commentarius, <placeName ref="place97">Basel</placeName> 1534.</note> pro nichilo habeo.</s>
+					<s n="6" xml:lang="la" type="auto">Quid igitur retribuam Bullingero pro omnibus, quae retribuit michi?</s>
+					<s n="7" xml:lang="la" type="auto">Calicem gratitudinis accipiam et nomen domini invocabo, ut iis [!], qui dives est in omnes, in te quoque dives sit teque vice mea in omnibus ditescat bonis, ut et ecclesie Christi et michi non tam diuturna vita quam scriptis diu prosis, licet equales<note xml:id="fna" type="footnote" n="a">equales <hi>aus</hi> equalem <hi>korrigiert.</hi></note> ego rependere non queam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale cum tua ecclesia domestica faustissime.</s>
+					<s n="8" xml:lang="la" type="auto">Vale cum tua ecclesia domestica faustissime.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Luithhardus, minoritice dudum factionis concionator <placeName ref="97">Basilee</placeName>.</s>
+					<s n="9" xml:lang="la" type="auto">Tuus Luithhardus, minoritice dudum factionis concionator <placeName ref="place97">Basilee</placeName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinrico Bullingero, ecclesie Tigurine episcopo vigilantissimo, patri suo in Christo etc.</s>
+					<s n="10" xml:lang="la" type="auto">Domino Heinrico Bullingero, ecclesie Tigurine episcopo vigilantissimo, patri suo in Christo etc.</s>
 				</p>
 			</div>
 		</body>

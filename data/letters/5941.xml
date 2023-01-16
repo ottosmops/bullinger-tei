@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6340/184</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 373,393</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 373,393</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,46 +54,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5941">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1563-11-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1075" cert="low">
+					<!--
+					<persName ref="person1075" cert="low">
 						<forename cert="low">Johannes</forename>
 						<surname cert="low">Fabricius</surname>
-						<addName type="main">Fabricius Montanus (Schmid), Johannes</addName>
+						<persName type="main" ref="person8009>Fabricius Montanus (Schmid), Johannes</addName>
 						<graphic type="portrait" url="portraits/1075_Fabricius_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Fabricius_Montanus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104045698"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414870"/>
 					</persName>
+					-->
+					<persName ref="person1075" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5942"/>
-					<ref type="prev_chronologically" target="files.xml#5940"/>
-					<ref type="next_correspondence" target="files.xml#5945"/>
-					<ref type="prev_correspondence" target="files.xml#5935"/>
-					<ref type="next_correspondence_request" target="files.xml#5947"/>
-					<ref type="prev_correspondence_request" target="files.xml#5930"/>
-					<ref type="next_correspondence_reaction" target="files.xml#5945"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#5935"/>
-					<ref type="next_same_sender" target="files.xml#5943"/>
-					<ref type="prev_same_sender" target="files.xml#5940"/>
-					<ref type="next_same_addressee" target="files.xml#5945"/>
-					<ref type="prev_same_addressee" target="files.xml#5935"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5943"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5940"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5945"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5935"/>
+					<ref type="next_chronologically" target="file5942"/>
+					<ref type="prev_chronologically" target="file5940"/>
+					<ref type="next_correspondence" target="file5945"/>
+					<ref type="prev_correspondence" target="file5935"/>
+					<ref type="next_correspondence_request" target="file5947"/>
+					<ref type="prev_correspondence_request" target="file5930"/>
+					<ref type="next_correspondence_reaction" target="file5945"/>
+					<ref type="prev_correspondence_reaction" target="file5935"/>
+					<ref type="next_same_sender" target="file5943"/>
+					<ref type="prev_same_sender" target="file5940"/>
+					<ref type="next_same_addressee" target="file5945"/>
+					<ref type="prev_same_addressee" target="file5935"/>
+					<ref type="next_with_sender_as_addressee" target="file5943"/>
+					<ref type="prev_with_sender_as_addressee" target="file5940"/>
+					<ref type="next_with_addressee_as_sender" target="file5945"/>
+					<ref type="prev_with_addressee_as_sender" target="file5935"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -100,7 +108,10 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="5941/Autograph/00 E_II_373__S__393_.tif" n="1"/>
+		<graphic url="5941/Autograph/01 E_II_373__S__394_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="de">
 		<body>
 			<div>
@@ -108,40 +119,40 @@
 					<note>[Anfang fehlt, ist weggeschnitten.]</note>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Uß Franckrych schribt von Parys 13. octobris min lieber herr und fründ Coignet, er habe mir die zyt har zuͦgeschriben; ist mir aber nüt worden.</s>
-					<s xml:lang="de" type="auto">Jetzund gange es in Franckrych fridlich und an vilen orten wol mitt dem evangelio, und sye grosse hoffnung.</s>
-					<s xml:lang="de" type="auto">Gott habe lob.</s>
+					<s n="1" xml:lang="de" type="auto">Uß Franckrych schribt von Parys 13. octobris min lieber herr und fründ Coignet, er habe mir die zyt har zuͦgeschriben; ist mir aber nüt worden.</s>
+					<s n="2" xml:lang="de" type="auto">Jetzund gange es in Franckrych fridlich und an vilen orten wol mitt dem evangelio, und sye grosse hoffnung.</s>
+					<s n="3" xml:lang="de" type="auto">Gott habe lob.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Benedict Stocker [Stokar, Stockar] schribt von Leon, das er gesähen hab in 6000 menschen in einer predig; wenn 100 zur meß, so gangind 1000 zur predig; sye still und ruͤwig.</s>
-					<s xml:lang="de" type="auto">Der könig werde 2000 eydgnossen uff sin lib behallten; die andern all lasse er heymb faren.</s>
-					<s xml:lang="de" type="auto">Die sygend gemustert und bezalltt.</s>
+					<s n="4" xml:lang="de" type="auto">Benedict Stocker [Stokar, Stockar] schribt von Leon, das er gesähen hab in 6000 menschen in einer predig; wenn 100 zur meß, so gangind 1000 zur predig; sye still und ruͤwig.</s>
+					<s n="5" xml:lang="de" type="auto">Der könig werde 2000 eydgnossen uff sin lib behallten; die andern all lasse er heymb faren.</s>
+					<s n="6" xml:lang="de" type="auto">Die sygend gemustert und bezalltt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Novembris.</s>
-					<s xml:lang="de" type="auto">Die pfaffen mußsind ire guͤtter verkouffen, das man gällt habe, die eydgnossen zuͦ bezalen, und sye vorhanden, das man bezalen werde.</s>
+					<s n="7" xml:lang="la" type="auto">Novembris.</s>
+					<s n="8" xml:lang="de" type="auto">Die pfaffen mußsind ire guͤtter verkouffen, das man gällt habe, die eydgnossen zuͦ bezalen, und sye vorhanden, das man bezalen werde.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Sunst wyters nüt.</s>
+					<s n="9" xml:lang="de" type="auto">Sunst wyters nüt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valde miror minus quam nihil significari de concilio, de quo tamen fertur, quod brevi cogitent conclusione promulgata domum redire et exequtionem committere nescio quibus.</s>
-					<s xml:lang="la" type="auto">Miror, an legatio Gallica cum doctis Galliae Tridento relicto in Galliam redierint.</s>
+					<s n="10" xml:lang="la" type="auto">Valde miror minus quam nihil significari de concilio, de quo tamen fertur, quod brevi cogitent conclusione promulgata domum redire et exequtionem committere nescio quibus.</s>
+					<s n="11" xml:lang="la" type="auto">Miror, an legatio Gallica cum doctis Galliae Tridento relicto in Galliam redierint.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bene vale, optime frater.</s>
+					<s n="12" xml:lang="la" type="auto">Bene vale, optime frater.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 12. novembris 1563.</s>
+					<s n="13" xml:lang="la" type="auto">Tiguri 12. novembris 1563.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus tuus.</s>
+					<s n="14" xml:lang="la" type="auto">Bullingerus tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Praestantissimo viro d. Ioanni Fabritio, Curiensis ecclesiae ministro fideli, domino et fratri meo colendissimo et charissimo.</s>
+					<s n="15" xml:lang="la" type="auto">Praestantissimo viro d. Ioanni Fabritio, Curiensis ecclesiae ministro fideli, domino et fratri meo colendissimo et charissimo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Chur.</s>
+					<s n="16" xml:lang="la" type="auto">Chur.</s>
 				</p>
 			</div>
 		</body>

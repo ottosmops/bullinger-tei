@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=976</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=976</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,15 +31,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 336,181r-v</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 336,181r-v</idno>
 						<altIdentifier>
-							<idno type="Autograph">E II 336,162r-v</idno>
+							<idno subtype="Autograph">E II 336,162r-v</idno>
 						</altIdentifier>
 					</msIdentifier>
 					<physDesc/>
@@ -49,12 +52,12 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Die Basler Universität wundert sich darüber, daß [<persName ref="263">Johannes</persName>]
-								<persName ref="69">Fries</persName> durch die Berufung in den Schuldienst an der Fortsetzung seiner
+								Die Basler Universität wundert sich darüber, daß [Johannes]
+								<persName ref="person69">Fries</persName> durch die Berufung in den Schuldienst an der Fortsetzung seiner
 								juristischen Studien gehindert werden soll, und bittet Bullinger, den Zürcher Rat umzustimmen, da auch
 								Zürich einst Nutzen daraus ziehen könnte. Außerdem ist
-								<placeName ref="97">Basel</placeName> für den Aufbau des
-								neugegründeten Pädagogiums, dessen Vorsteher <persName ref="69">Fries</persName> ist, dringend auf
+								<placeName ref="place97">Basel</placeName> für den Aufbau des
+								neugegründeten Pädagogiums, dessen Vorsteher <persName ref="person69">Fries</persName> ist, dringend auf
 								ihn angewiesen.
 							</p>
 						</summary>
@@ -65,56 +68,53 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11018">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
 					<note type="Adresse">Oswald Myconius im Auftrag der Universität Basel</note>
-					<orgName type="institution">
-						<name type="singular" ref="org#29" cert="high">Universität</name>
-						<place source="#28" cert="high">
-							<settlement>Basel</settlement>
-							<district>Basel-Stadt</district>
-							<country>Schweiz</country>
-							<geo>47.55839 7.57327</geo>
-						</place>
-					</orgName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<orgName ref="org57" role="Universität"/>"
+					<place source="place28" cert="high"/>
 					<date when="1537-03-27" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11019"/>
-					<ref type="prev_chronologically" target="files.xml#11017"/>
-					<ref type="next_correspondence" target="files.xml#12806"/>
-					<ref type="prev_correspondence" target="files.xml#10967"/>
+					<ref type="next_chronologically" target="file11019"/>
+					<ref type="prev_chronologically" target="file11017"/>
+					<ref type="next_correspondence" target="file12806"/>
+					<ref type="prev_correspondence" target="file10967"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#10966"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12806"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10967"/>
+					<ref type="prev_correspondence_request" target="file10966"/>
+					<ref type="next_correspondence_reaction" target="file12806"/>
+					<ref type="prev_correspondence_reaction" target="file10967"/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#10966"/>
-					<ref type="next_same_addressee" target="files.xml#11030"/>
-					<ref type="prev_same_addressee" target="files.xml#11015"/>
+					<ref type="prev_same_sender" target="file10966"/>
+					<ref type="next_same_addressee" target="file11030"/>
+					<ref type="prev_same_addressee" target="file11015"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10966"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11030"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11015"/>
+					<ref type="prev_with_sender_as_addressee" target="file10966"/>
+					<ref type="next_with_addressee_as_sender" target="file11030"/>
+					<ref type="prev_with_addressee_as_sender" target="file11015"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -131,45 +131,45 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Miratur academia nostra<note xml:id="fn1" type="footnote" n="1">Rektor, Regenten und Verwalter der Basler Universität wandten sich am 26. März an Zürich mit der Bitte, auf die Abberufung von <persName ref="69">Johannes Fries</persName> (vgl. oben <ref target="file#11001">Nr. 959</ref>, Anm. 1) zu verzichten, da sonst sowohl seinen Schülern als auch seinen juristischen Studien Schaden entstünde (Zürich StA, A 240. 1; zum Entwurf von Karlstadts Hand vgl. <hi>Barge</hi> II 484, Anm. 229).</note>, quod quidam isthic non aliter favent bonis et probis ingeniis, quam ut, postquam duriora iam et difficiliora superarunt et<pb type="edition" next="112"/> nunc per amoena transire coeperunt, illi velut non bene faventes literis aut literatis gradum sistere, ne voluptate fruantur salubriore, tentent.</s>
-					<s xml:lang="la" type="auto">Frisius iam eo processit, ut sine labore et cum ingenti delectatione, quę desunt, queat comparare et, si quid de novo tentare fuerit animus, brevi percurrere magna cum utilitate tum sua tum patriae, cum illi gradum revocantes in pistrinum detrudere<note xml:id="fn2" type="footnote" n="2">Vgl. <persName ref="632">Cicero</persName>, De Oratore, 1, 11, 46.</note> volunt, ubi, quicquid hactenus bonarum disciplinarum adeptus est, partim amittet, partim deteret non ita magno commodo puerorum.</s>
-					<s xml:lang="la" type="auto">Taceo, quod interim laboribus alphabetariis et pedore nocentissimo ingenium perdet, memoriae nocebit et vitam parabit valetudinariam.</s>
-					<s xml:lang="la" type="auto">Illud autem omnino desecabitur, ne, quod animo constituerat, possit perficere, imo ne incipere quidem.</s>
-					<s xml:lang="la" type="auto">Ex quo et utilitate carebit respublica vestra non parva.</s>
-					<s xml:lang="la" type="auto">Certum est enim hac tempestate iuris civilis prudentiam adeo conducere civitatibus, ut theologia non habeat proximiorem.</s>
-					<s xml:lang="la" type="auto">Nam haec quae docet pro voluntate dei, prosequitur illa et ita non parum adiuvat, ut species saltem ecclesiae fiat melior atque formosior et nos minus cogamur audire male propter evangelium non ita bene custoditum hactenus.</s>
-					<s xml:lang="la" type="auto">Scis, qui prudentia illa noverit uti apud eos recte, quibus non sunt nisi plebiscita forsitan quaedam et consilia ex tempore sumpta, quantam possit authoritatem nancisci quamque prodesse populo, maxime, si idem huc adhibuerit sapientiam divinam.</s>
-					<s xml:lang="la" type="auto">Accepimus autem, quam Frisius totus in hoc sit, ut, quicquid temporis queat impetrari, daturus sit iuribus, postquam satis habeat et artium et philosophię et, quantum ad bene vivendum habere conveniat, doctrinę sacrae, quamvis ab hac non sit aliter cessaturus, atque quantum permittendum est studio iuris civilis necessario.</s>
-					<s xml:lang="la" type="auto">Sic igitur sentiunt prudentes et docti viri apud nos te in primis illa debere pro tua prudentia, maxime dum alii negligunt, expendere et senatui persuadere, quam esset ex commodo reipublicae, si aliquot adhuc annis Frisius <placeName ref="97">Basileae</placeName> perduraret, non aliter tamen, quam ut doctior olim et utilior posset redire ad suos et multo felicius rependere, quicquid hi beneficiorum unquam contulerunt.</s>
-					<s xml:lang="la" type="auto">Sunt, quibus iste ludus<note xml:id="fn3" type="footnote" n="3">Gemeint ist die Zürcher Fraumünsterschule.</note> poterit committi non minus utiliter quam Frisio.</s>
-					<s xml:lang="la" type="auto">Nam nescio, si qua sit civitas hodie, quae doctis iuvenibus aeque redundet.</s>
-					<s xml:lang="la" type="auto">Ac docere norunt, ut quibus docendi munus pro parte fuit hactenus commissum.</s>
-					<s xml:lang="la" type="auto">Tum et uxoribus sunt alligati, quamobrem iustius labor ille scholasticus eis imponetur quam homini libero.</s>
-					<s xml:lang="la" type="auto">Non opus est, ut hunc aut illum digito demonstrem<note xml:id="fn4" type="footnote" n="4">Vgl. Otto 116, Nr. 550.</note> tibi.</s>
-					<s xml:lang="la" type="auto">Delectum age; nam est, ut valeas, multitudo.</s>
-					<s xml:lang="la" type="auto">Invenies, per quos fiet, ut Frisius ingenti literarum et iurium sacrorum thesauro rediturus sit quondam in patriam, et cum decore etiam evangelii.<pb type="edition" next="113"/></s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Miratur academia nostra<note xml:id="fn1" type="footnote" n="1">Rektor, Regenten und Verwalter der Basler Universität wandten sich am 26. März an Zürich mit der Bitte, auf die Abberufung von <persName ref="person69">Johannes Fries</persName> (vgl. oben <ref target="file11001">Nr. 959</ref>, Anm. 1) zu verzichten, da sonst sowohl seinen Schülern als auch seinen juristischen Studien Schaden entstünde (Zürich StA, A 240. 1; zum Entwurf von Karlstadts Hand vgl. <hi>Barge</hi> II 484, Anm. 229).</note>, quod quidam isthic non aliter favent bonis et probis ingeniis, quam ut, postquam duriora iam et difficiliora superarunt et<pb type="edition" next="112"/> nunc per amoena transire coeperunt, illi velut non bene faventes literis aut literatis gradum sistere, ne voluptate fruantur salubriore, tentent.</s>
+					<s n="3" xml:lang="la" type="auto">Frisius iam eo processit, ut sine labore et cum ingenti delectatione, quę desunt, queat comparare et, si quid de novo tentare fuerit animus, brevi percurrere magna cum utilitate tum sua tum patriae, cum illi gradum revocantes in pistrinum detrudere<note xml:id="fn2" type="footnote" n="2">Vgl. <persName ref="person632">Cicero</persName>, De Oratore, 1, 11, 46.</note> volunt, ubi, quicquid hactenus bonarum disciplinarum adeptus est, partim amittet, partim deteret non ita magno commodo puerorum.</s>
+					<s n="4" xml:lang="la" type="auto">Taceo, quod interim laboribus alphabetariis et pedore nocentissimo ingenium perdet, memoriae nocebit et vitam parabit valetudinariam.</s>
+					<s n="5" xml:lang="la" type="auto">Illud autem omnino desecabitur, ne, quod animo constituerat, possit perficere, imo ne incipere quidem.</s>
+					<s n="6" xml:lang="la" type="auto">Ex quo et utilitate carebit respublica vestra non parva.</s>
+					<s n="7" xml:lang="la" type="auto">Certum est enim hac tempestate iuris civilis prudentiam adeo conducere civitatibus, ut theologia non habeat proximiorem.</s>
+					<s n="8" xml:lang="la" type="auto">Nam haec quae docet pro voluntate dei, prosequitur illa et ita non parum adiuvat, ut species saltem ecclesiae fiat melior atque formosior et nos minus cogamur audire male propter evangelium non ita bene custoditum hactenus.</s>
+					<s n="9" xml:lang="la" type="auto">Scis, qui prudentia illa noverit uti apud eos recte, quibus non sunt nisi plebiscita forsitan quaedam et consilia ex tempore sumpta, quantam possit authoritatem nancisci quamque prodesse populo, maxime, si idem huc adhibuerit sapientiam divinam.</s>
+					<s n="10" xml:lang="la" type="auto">Accepimus autem, quam Frisius totus in hoc sit, ut, quicquid temporis queat impetrari, daturus sit iuribus, postquam satis habeat et artium et philosophię et, quantum ad bene vivendum habere conveniat, doctrinę sacrae, quamvis ab hac non sit aliter cessaturus, atque quantum permittendum est studio iuris civilis necessario.</s>
+					<s n="11" xml:lang="la" type="auto">Sic igitur sentiunt prudentes et docti viri apud nos te in primis illa debere pro tua prudentia, maxime dum alii negligunt, expendere et senatui persuadere, quam esset ex commodo reipublicae, si aliquot adhuc annis Frisius <placeName ref="place97">Basileae</placeName> perduraret, non aliter tamen, quam ut doctior olim et utilior posset redire ad suos et multo felicius rependere, quicquid hi beneficiorum unquam contulerunt.</s>
+					<s n="12" xml:lang="la" type="auto">Sunt, quibus iste ludus<note xml:id="fn3" type="footnote" n="3">Gemeint ist die Zürcher Fraumünsterschule.</note> poterit committi non minus utiliter quam Frisio.</s>
+					<s n="13" xml:lang="la" type="auto">Nam nescio, si qua sit civitas hodie, quae doctis iuvenibus aeque redundet.</s>
+					<s n="14" xml:lang="la" type="auto">Ac docere norunt, ut quibus docendi munus pro parte fuit hactenus commissum.</s>
+					<s n="15" xml:lang="la" type="auto">Tum et uxoribus sunt alligati, quamobrem iustius labor ille scholasticus eis imponetur quam homini libero.</s>
+					<s n="16" xml:lang="la" type="auto">Non opus est, ut hunc aut illum digito demonstrem<note xml:id="fn4" type="footnote" n="4">Vgl. Otto 116, Nr. 550.</note> tibi.</s>
+					<s n="17" xml:lang="la" type="auto">Delectum age; nam est, ut valeas, multitudo.</s>
+					<s n="18" xml:lang="la" type="auto">Invenies, per quos fiet, ut Frisius ingenti literarum et iurium sacrorum thesauro rediturus sit quondam in patriam, et cum decore etiam evangelii.<pb type="edition" next="113"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Caeterum, ne praeteream, quod nobis est inter prima: Credere vix poteris, quantum abitio eius nocitura foret studiis adulescentiae nostrae.</s>
-					<s xml:lang="la" type="auto">Coeptum est enim paedagogium d. <persName ref="81">Grynaeo</persName> una cum <persName ref="6">Amorbachio</persName>, <persName ref="161">Oporino</persName> reliquisque doctis nostrae universitatis viris scriptore.</s>
-					<s xml:lang="la" type="auto">Atque huic posteaquam Frisius est laudabiliter pręfectus, sic adulescentes iam adsueverunt ad vocem eius, ad linguam, ad formulam docendi, ut aliter adimi non queat et alius supponi, quam equis iuvenibus magister, qui gressum aliquamdiu formavit ac sessorem pati docuit.</s>
-					<s xml:lang="la" type="auto">Nam alio superveniente nihil non erit novum, unde quid aliud quam perditio consequetur?</s>
-					<s xml:lang="la" type="auto">Igitur, cum Frisius hic manere valeat tanta cum utilitate sua, patrię nostrorumque adulescentium, imo et totius academię, petit abs te senatus universitatis nostrae, ut tuis persuadeas utilius fore laudabiliusque, si bona venia ipsorum remittatur ad nos ille, quo <pb type="scan" next="|| 162v."/> cumulatior bonis multis aliquando ad eos repedare valeat et interim instauratae nostrae academiae fundamenta sic iacere, ut ipsi laus, nobis honor et emolimentum, vobis utrunque tandem obveniat abundanter.</s>
-					<s xml:lang="la" type="auto">Quod adtinet ad nos, nihil, si morem gesseritis, imponetis, ad quod ferendum non futuri simus paratissimi.</s>
+					<s n="19" xml:lang="la" type="auto">Caeterum, ne praeteream, quod nobis est inter prima: Credere vix poteris, quantum abitio eius nocitura foret studiis adulescentiae nostrae.</s>
+					<s n="20" xml:lang="la" type="auto">Coeptum est enim paedagogium d. <persName ref="person81">Grynaeo</persName> una cum <persName ref="person6">Amorbachio</persName>, <persName ref="person161">Oporino</persName> reliquisque doctis nostrae universitatis viris scriptore.</s>
+					<s n="21" xml:lang="la" type="auto">Atque huic posteaquam Frisius est laudabiliter pręfectus, sic adulescentes iam adsueverunt ad vocem eius, ad linguam, ad formulam docendi, ut aliter adimi non queat et alius supponi, quam equis iuvenibus magister, qui gressum aliquamdiu formavit ac sessorem pati docuit.</s>
+					<s n="22" xml:lang="la" type="auto">Nam alio superveniente nihil non erit novum, unde quid aliud quam perditio consequetur?</s>
+					<s n="23" xml:lang="la" type="auto">Igitur, cum Frisius hic manere valeat tanta cum utilitate sua, patrię nostrorumque adulescentium, imo et totius academię, petit abs te senatus universitatis nostrae, ut tuis persuadeas utilius fore laudabiliusque, si bona venia ipsorum remittatur ad nos ille, quo <pb type="scan" next="|| 162v."/> cumulatior bonis multis aliquando ad eos repedare valeat et interim instauratae nostrae academiae fundamenta sic iacere, ut ipsi laus, nobis honor et emolimentum, vobis utrunque tandem obveniat abundanter.</s>
+					<s n="24" xml:lang="la" type="auto">Quod adtinet ad nos, nihil, si morem gesseritis, imponetis, ad quod ferendum non futuri simus paratissimi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale cum tuis semper.</s>
+					<s n="25" xml:lang="la" type="auto">Vale cum tuis semper.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileae</placeName>, 27. martii anno 37.</s>
+					<s n="26" xml:lang="la" type="auto"><placeName ref="place97">Basileae</placeName>, 27. martii anno 37.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Os. <persName ref="154">Myconius</persName> ex imperio academiae, tuus.</s>
+					<s n="27" xml:lang="la" type="auto">Os. <persName ref="person154">Myconius</persName> ex imperio academiae, tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse darunter:]</note>
-					<s xml:lang="la" type="auto">Domino Heinricho Bullingero, episcopo Tigurino vigilantissimo, domino ac fratri in Christo plurimum observando suo.</s>
+					<s n="28" xml:lang="la" type="auto">Domino Heinricho Bullingero, episcopo Tigurino vigilantissimo, domino ac fratri in Christo plurimum observando suo.</s>
 				</p>
 			</div>
 		</body>

@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 377,2572</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 377,2572</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -31,58 +34,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9263">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1573-03-30" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3082" cert="high">
+					<!--
+					<persName ref="person3082" cert="high">
 						<forename cert="high">Johann Nikolaus</forename>
 						<surname cert="high">Stupanus</surname>
-						<graphic type="portrait" url="portraits/3082_Stupanus_Johann Nikolaus.jpg"/>
+						<graphic type="portrait" url="portraits/3082_Stupanus_Johann_Nikolaus.jpg"/>
 						<ref type="wikipedia" target="https://en.wikipedia.org/wiki/Johann_Nikolaus_Stupanus"/>
-						<roleName type="title">
-							<name type="plural" ref="role#20" cert="high">Doktoren</name>
-							<place source="#28" cert="high">
-								<settlement>Basel</settlement>
-								<district>Basel-Stadt</district>
-								<country>Schweiz</country>
-								<geo>47.55839 7.57327</geo>
-							</place>
-						</roleName>
+						<ref type="gnd" target="https://d-nb.info/gnd/120745984"/>
+						<personGrp ref="role40" role="Doktoren"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person3082" cert="high"/>
+					<personGrp ref="role40" role="Doktoren"/>
+					<place source="place28" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9264"/>
-					<ref type="prev_chronologically" target="files.xml#9262"/>
+					<ref type="next_chronologically" target="file9264"/>
+					<ref type="prev_chronologically" target="file9262"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#9271"/>
-					<ref type="prev_same_sender" target="files.xml#9262"/>
+					<ref type="next_same_sender" target="file9271"/>
+					<ref type="prev_same_sender" target="file9262"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9271"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9262"/>
+					<ref type="next_with_sender_as_addressee" target="file9271"/>
+					<ref type="prev_with_sender_as_addressee" target="file9262"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
@@ -91,7 +86,10 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="9263/Autograph/00 E_II_377__fol__2572_r_.tif" n="1"/>
+		<graphic url="9263/Autograph/01 E_II_377__fol__2572_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="">
 		<body>
 		</body>

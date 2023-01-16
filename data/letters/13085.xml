@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3036</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=3036</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 360,425</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 360,425</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -81,45 +84,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/13085">
 				<correspAction type="sent">
-					<persName ref="person#1804" cert="high">
+					<!--
+					<persName ref="person1804" cert="high">
 						<forename cert="high">Jodocus</forename>
 						<surname cert="high">Kilchmeyer</surname>
 						<graphic type="portrait" url="portraits/1804_Kilchmeyer_Jodocus.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Jodocus_Kilchmeyer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089363095"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415743"/>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person1804" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1547-10-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#13086"/>
-					<ref type="prev_chronologically" target="files.xml#13084"/>
-					<ref type="next_correspondence" target="files.xml#13105"/>
-					<ref type="prev_correspondence" target="files.xml#12986"/>
-					<ref type="next_correspondence_request" target="files.xml#13105"/>
-					<ref type="prev_correspondence_request" target="files.xml#12986"/>
+					<ref type="next_chronologically" target="file13086"/>
+					<ref type="prev_chronologically" target="file13084"/>
+					<ref type="next_correspondence" target="file13105"/>
+					<ref type="prev_correspondence" target="file12986"/>
+					<ref type="next_correspondence_request" target="file13105"/>
+					<ref type="prev_correspondence_request" target="file12986"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#13105"/>
-					<ref type="prev_same_sender" target="files.xml#12986"/>
-					<ref type="next_same_addressee" target="files.xml#13088"/>
-					<ref type="prev_same_addressee" target="files.xml#13081"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13105"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12986"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#13088"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#13081"/>
+					<ref type="next_same_sender" target="file13105"/>
+					<ref type="prev_same_sender" target="file12986"/>
+					<ref type="next_same_addressee" target="file13088"/>
+					<ref type="prev_same_addressee" target="file13081"/>
+					<ref type="next_with_sender_as_addressee" target="file13105"/>
+					<ref type="prev_with_sender_as_addressee" target="file12986"/>
+					<ref type="next_with_addressee_as_sender" target="file13088"/>
+					<ref type="prev_with_addressee_as_sender" target="file13081"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -136,35 +144,35 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Nona die octobris scito d. Hallerum<note xml:id="fn1" type="footnote" n="1">Johannes Haller, der am 3. oder 4. Oktober aus Augsburg abgereist war, traf in Zürich am 12. oder 13. Oktober ein; s. <ref target="file#13066">Nr. 3017</ref>, <qv>fn17285-4</qv>.</note> in amplissimo senatu amplissimis suffragiis in ministerium ecclesię Bernensis electum esse<note xml:id="fn2" type="footnote" n="2">Dies geschah auf Kilchmeyers (und nicht auf Bullingers; s. <ref target="file#13103">Nr. 3054</ref>, <qv>fn17322-3</qv>) Betreiben, wie aus Kilchmeyers Brief <ref target="file#13105">Nr. 3056</ref>,<qv>zl17329-7</qv>, hervorgeht. - Zu Hallers Berufung s. <ref target="file#12986">Nr. 2937</ref>, <qv>fn17204-3</qv>; <abbr>Bähler, Dekan Haller</abbr> I 19, Anm. 47.<zfn>fn17305-2</zfn></note> et iam per publicum tabellarium a senatu vocari datis literis ad magnificum senatum Tigurinum<note xml:id="fn3" type="footnote" n="3">Falls es schon damals zu diesem Brief kam, hat dieser sich in den Beständen der politischen Korrespondenz mit Bern (Zürich StA, A 241.1) nicht erhalten.</note>, ut, quod deus optimus maximus singulari gratia sua et sanctissima providentia decrevit, in gloriam et ecclesię suę salutem<note xml:id="fna" type="footnote" n="a"><hi>Danach folgt ein Einfügezeichen, doch ist der entsprechende Textteil heute nicht mehr sichtbar, da er wohl im Einband eingebunden wurde.</hi></note> concedatur et, quantum potest, promoveatur, de quo minime dubitamus.</s>
-					<s xml:lang="la" type="auto">Salvis enim duabus amplissimis Helvecię nostrę ecclesiis<note xml:id="fn4" type="footnote" n="4">Gemeint sind die Kirche von Bern und Zürich.</note> spes plane erit optima, et reliquas<note xml:id="fn5" type="footnote" n="5">Nämlich die Kirchen von Basel und Schaffhausen.</note> dominum nullatenus neglecturum.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Nona die octobris scito d. Hallerum<note xml:id="fn1" type="footnote" n="1">Johannes Haller, der am 3. oder 4. Oktober aus Augsburg abgereist war, traf in Zürich am 12. oder 13. Oktober ein; s. <ref target="file13066">Nr. 3017</ref>, <qv>fn17285-4</qv>.</note> in amplissimo senatu amplissimis suffragiis in ministerium ecclesię Bernensis electum esse<note xml:id="fn2" type="footnote" n="2">Dies geschah auf Kilchmeyers (und nicht auf Bullingers; s. <ref target="file13103">Nr. 3054</ref>, <qv>fn17322-3</qv>) Betreiben, wie aus Kilchmeyers Brief <ref target="file13105">Nr. 3056</ref>,<qv>zl17329-7</qv>, hervorgeht. - Zu Hallers Berufung s. <ref target="file12986">Nr. 2937</ref>, <qv>fn17204-3</qv>; <abbr>Bähler, Dekan Haller</abbr> I 19, Anm. 47.<zfn>fn17305-2</zfn></note> et iam per publicum tabellarium a senatu vocari datis literis ad magnificum senatum Tigurinum<note xml:id="fn3" type="footnote" n="3">Falls es schon damals zu diesem Brief kam, hat dieser sich in den Beständen der politischen Korrespondenz mit Bern (Zürich StA, A 241.1) nicht erhalten.</note>, ut, quod deus optimus maximus singulari gratia sua et sanctissima providentia decrevit, in gloriam et ecclesię suę salutem<note xml:id="fna" type="footnote" n="a"><hi>Danach folgt ein Einfügezeichen, doch ist der entsprechende Textteil heute nicht mehr sichtbar, da er wohl im Einband eingebunden wurde.</hi></note> concedatur et, quantum potest, promoveatur, de quo minime dubitamus.</s>
+					<s n="3" xml:lang="la" type="auto">Salvis enim duabus amplissimis Helvecię nostrę ecclesiis<note xml:id="fn4" type="footnote" n="4">Gemeint sind die Kirche von Bern und Zürich.</note> spes plane erit optima, et reliquas<note xml:id="fn5" type="footnote" n="5">Nämlich die Kirchen von Basel und Schaffhausen.</note> dominum nullatenus neglecturum.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Tuum igitur iam erit movere omnem lapidem, ut protinus d. Hallerus acquiescat vocationi et, quo potest, ad nos celerrime missus properet, ne forte dilatione facta inimicus homo zizania seminet<note xml:id="fn6" type="footnote" n="6">Nach Mt 13, 28. - Mit dem "inimicus homo" ist der Teufel gemeint.</note> opusque dei machinationibus suis dissolvat.</s>
-					<s xml:lang="la" type="auto">Nosti enim, quam egeat ecclesia Bernensis pastoribus piis.</s>
-					<s xml:lang="la" type="auto">Nosti eciam, quibus sudoribus hactenus senio confectus<note xml:id="fn7" type="footnote" n="7">Kilchmeyer dürfte 1547 etwa 55 Jahre alt gewesen sein. Anlass für diese Vermutung gibt die im Jahr 1509 erfolgte Immatrikulation an der Universität Basel; s. <abbr>HBBW</abbr> III 137, Anm. 1.<zfn>fn17305-3</zfn></note> laborarim, quantum in me fuit, per domini gratiam, ne<note xml:id="fnb" type="footnote" n="b"><hi>Über der Zeile nachgetragen.</hi></note> navis pęnitus periclitaretur.</s>
-					<s xml:lang="la" type="auto">Nunc ergo viribus omnibus adhibitis insta, ut ad nos mittatur, quem dominus <pb type="edition" next="535"/> citra dubium suę patrię<note xml:id="fn8" type="footnote" n="8">Haller wurde 1523 in Amsoldingen (Kt. Bern) geboren, lebte aber seit seinem zweiten Lebensjahr in Stadt und Landschaft Zürich; s. <abbr>HBBW</abbr> X 72, Anm. 9.<zfn>fn17305-1</zfn></note> destinavit et elegit.</s>
-					<s xml:lang="la" type="auto">In quo rem facies deo Bernatibusque gratissimam tibique comparabis gloriam immortalem, ut qui curam Helvecię, patrię nostrę, ardentissimo spiritu et<note xml:id="fnc" type="footnote" n="c"><hi>Danach folgt ein Einfügezeichen. Aus den gleichen Gründen wie oben in Anm. (a) ist der entsprechende Text nicht mehr zu sehen.</hi></note> gesserit et quaesierit.</s>
+					<s n="4" xml:lang="la" type="auto">Tuum igitur iam erit movere omnem lapidem, ut protinus d. Hallerus acquiescat vocationi et, quo potest, ad nos celerrime missus properet, ne forte dilatione facta inimicus homo zizania seminet<note xml:id="fn6" type="footnote" n="6">Nach Mt 13, 28. - Mit dem "inimicus homo" ist der Teufel gemeint.</note> opusque dei machinationibus suis dissolvat.</s>
+					<s n="5" xml:lang="la" type="auto">Nosti enim, quam egeat ecclesia Bernensis pastoribus piis.</s>
+					<s n="6" xml:lang="la" type="auto">Nosti eciam, quibus sudoribus hactenus senio confectus<note xml:id="fn7" type="footnote" n="7">Kilchmeyer dürfte 1547 etwa 55 Jahre alt gewesen sein. Anlass für diese Vermutung gibt die im Jahr 1509 erfolgte Immatrikulation an der Universität Basel; s. <abbr>HBBW</abbr> III 137, Anm. 1.<zfn>fn17305-3</zfn></note> laborarim, quantum in me fuit, per domini gratiam, ne<note xml:id="fnb" type="footnote" n="b"><hi>Über der Zeile nachgetragen.</hi></note> navis pęnitus periclitaretur.</s>
+					<s n="7" xml:lang="la" type="auto">Nunc ergo viribus omnibus adhibitis insta, ut ad nos mittatur, quem dominus <pb type="edition" next="535"/> citra dubium suę patrię<note xml:id="fn8" type="footnote" n="8">Haller wurde 1523 in Amsoldingen (Kt. Bern) geboren, lebte aber seit seinem zweiten Lebensjahr in Stadt und Landschaft Zürich; s. <abbr>HBBW</abbr> X 72, Anm. 9.<zfn>fn17305-1</zfn></note> destinavit et elegit.</s>
+					<s n="8" xml:lang="la" type="auto">In quo rem facies deo Bernatibusque gratissimam tibique comparabis gloriam immortalem, ut qui curam Helvecię, patrię nostrę, ardentissimo spiritu et<note xml:id="fnc" type="footnote" n="c"><hi>Danach folgt ein Einfügezeichen. Aus den gleichen Gründen wie oben in Anm. (a) ist der entsprechende Text nicht mehr zu sehen.</hi></note> gesserit et quaesierit.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Quam mendaciter et contra datum iuramentum duo illi crucis Christi inimici<note xml:id="fn9" type="footnote" n="9">Gemeint sind (in Anlehnung an Phil 3, 18) Beat Gering und Simon Sulzer, die Anhänger der bucerisch-lutherisch orientierten Partei in Bern, die schon Ende 1546 die Berufung von Jodocus Kilchmeyer nach Bern zu verhindern versucht hatten. - Ihren Eid, nicht gegen die Berner Disputation zu handeln, legten sie am 6. Dezember 1546 ab und hielten ihn in dem am 25. Mai 1546 auf Beschluss des Großen Rates (s. <abbr>Hundeshagen</abbr> 199) angelegten Berner Prädikantenrodel schriftlich fest; s. Bern StA, B III 21, f. 6r., Nr. 30. 31.<zfn>fn17305-4</zfn></note> et domini gratiam ad lascivitatem transferentes superioribus diebus docuerint, proximis literis te ordine edocebo.<note xml:id="fn10" type="footnote" n="10">In Kilchmeyers nächstem Brief <ref target="file#13105">Nr. 3056</ref> kam es nicht dazu. Dass es dazwischen keinen anderen Brief mehr gab, geht aus <ref target="file#13105">Nr. 3056</ref>,<qv>zl17329-6</qv>, hervor.</note></s>
-					<s xml:lang="la" type="auto">Nunc longiorem esse non vacat partim prę nimio gaudio ex d. Halleri vocatione accepto, partim quod hora me ad instantem publicam concionem faciendam ad sacrarum lectionem compulit et abduxit.</s>
+					<s n="9" xml:lang="la" type="auto">Quam mendaciter et contra datum iuramentum duo illi crucis Christi inimici<note xml:id="fn9" type="footnote" n="9">Gemeint sind (in Anlehnung an Phil 3, 18) Beat Gering und Simon Sulzer, die Anhänger der bucerisch-lutherisch orientierten Partei in Bern, die schon Ende 1546 die Berufung von Jodocus Kilchmeyer nach Bern zu verhindern versucht hatten. - Ihren Eid, nicht gegen die Berner Disputation zu handeln, legten sie am 6. Dezember 1546 ab und hielten ihn in dem am 25. Mai 1546 auf Beschluss des Großen Rates (s. <abbr>Hundeshagen</abbr> 199) angelegten Berner Prädikantenrodel schriftlich fest; s. Bern StA, B III 21, f. 6r., Nr. 30. 31.<zfn>fn17305-4</zfn></note> et domini gratiam ad lascivitatem transferentes superioribus diebus docuerint, proximis literis te ordine edocebo.<note xml:id="fn10" type="footnote" n="10">In Kilchmeyers nächstem Brief <ref target="file13105">Nr. 3056</ref> kam es nicht dazu. Dass es dazwischen keinen anderen Brief mehr gab, geht aus <ref target="file13105">Nr. 3056</ref>,<qv>zl17329-6</qv>, hervor.</note></s>
+					<s n="10" xml:lang="la" type="auto">Nunc longiorem esse non vacat partim prę nimio gaudio ex d. Halleri vocatione accepto, partim quod hora me ad instantem publicam concionem faciendam ad sacrarum lectionem compulit et abduxit.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Vale cum tua familia omni et fratribus omnibus, quos omnes, nomine meo valere iubeas, velim.</s>
-					<s xml:lang="la" type="auto">Datum Bernę, 9. octobris 1547.</s>
-					<s xml:lang="la" type="auto">I. K., tuus semper ex animo.</s>
+					<s n="11" xml:lang="la" type="auto">Vale cum tua familia omni et fratribus omnibus, quos omnes, nomine meo valere iubeas, velim.</s>
+					<s n="12" xml:lang="la" type="auto">Datum Bernę, 9. octobris 1547.</s>
+					<s n="13" xml:lang="la" type="auto">I. K., tuus semper ex animo.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Ornatissimo viro domino m. Heynricho Bullingero, apud pręposituram<note xml:id="fn11" type="footnote" n="11">Das Großmünsterstift.</note> Tiguri pastori vigilantissimo, suo confratri ac symmystę perpetuo colendo.</s>
+					<s n="14" xml:lang="la" type="auto">Ornatissimo viro domino m. Heynricho Bullingero, apud pręposituram<note xml:id="fn11" type="footnote" n="11">Das Großmünsterstift.</note> Tiguri pastori vigilantissimo, suo confratri ac symmystę perpetuo colendo.</s>
 				</p>
 			</div>
 		</body>

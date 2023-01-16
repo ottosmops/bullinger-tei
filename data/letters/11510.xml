@@ -9,10 +9,10 @@
 				<publisher>Basler Buch- und Antiquariatshandlung</publisher>
 				<pubPlace>Basel</pubPlace>
 				<date when="1904"/>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1467</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1467</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Bullingers Korrespondenz mit den Graubündnern</title>
+				<title subtype="publication">Graubünden, Korr.</title>
 				<biblScope type="author">Bullinger, H.; Schiess, T.</biblScope>
 				<biblScope type="edition">Bullingers Korrespondenz mit den Graubündnern</biblScope>
 				<biblScope type="page">33</biblScope>
@@ -20,13 +20,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343a,430</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343a,430</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -36,12 +39,12 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Haben Bullingers Schreiben [<ref target="file#11508">Nr. 1465</ref>] erhalten und freuen sich über die
+								Haben Bullingers Schreiben [<ref target="file11508">Nr. 1465</ref>] erhalten und freuen sich über die
 								Fortschritte der Reformation, welche den Gegnern jeden Mut rauben. Der aus Zürich geflohene
-								<persName ref="2055">Rudolf Schinz</persName> beteuert seine Unschuld und hat sie gebeten, mit
+								<persName ref="person2055">Rudolf Schinz</persName> beteuert seine Unschuld und hat sie gebeten, mit
 								Bullinger Kontakt aufzunehmen, um eine Rückkehr zu erwirken; obwohl sie sich gut vorstellen können, dass
-								<persName ref="2055">Schinz</persName> mit seinem Eigensinn seine Herren verärgert hat, wollen sie ihm dennoch für die Jahre, die er in
-								<placeName ref="243">Chur</placeName> verbracht hat, ein gutes Zeugnis ausstellen; möglicherweise
+								<persName ref="person2055">Schinz</persName> mit seinem Eigensinn seine Herren verärgert hat, wollen sie ihm dennoch für die Jahre, die er in
+								<placeName ref="place243">Chur</placeName> verbracht hat, ein gutes Zeugnis ausstellen; möglicherweise
 								benimmt er sich auswärts aber besser als zu Hause; Bullinger soll nach seinem Gutdünken über das weitere
 								Vorgehen entscheiden. Grüße.
 							</p>
@@ -60,47 +63,58 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11510">
 				<correspAction type="sent">
-					<persName ref="person#654" cert="high">
+					<!--
+					<persName ref="person654" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Comander</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Comander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118713841"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413826"/>
 					</persName>
-					<persName ref="person#396" cert="high">
+					-->
+					<persName ref="person654" cert="high"/>
+					<!--
+					<persName ref="person396" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Blasius</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Blasius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/1089451822"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person396" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1541-02-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11511"/>
-					<ref type="prev_chronologically" target="files.xml#11509"/>
-					<ref type="next_correspondence" target="files.xml#11648"/>
-					<ref type="prev_correspondence" target="files.xml#10848"/>
-					<ref type="next_correspondence_request" target="files.xml#11648"/>
-					<ref type="prev_correspondence_request" target="files.xml#10848"/>
+					<ref type="next_chronologically" target="file11511"/>
+					<ref type="prev_chronologically" target="file11509"/>
+					<ref type="next_correspondence" target="file11648"/>
+					<ref type="prev_correspondence" target="file10848"/>
+					<ref type="next_correspondence_request" target="file11648"/>
+					<ref type="prev_correspondence_request" target="file10848"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11648"/>
-					<ref type="prev_same_sender" target="files.xml#10848"/>
-					<ref type="next_same_addressee" target="files.xml#11520"/>
-					<ref type="prev_same_addressee" target="files.xml#11509"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11648"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10848"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11520"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11509"/>
+					<ref type="next_same_sender" target="file11648"/>
+					<ref type="prev_same_sender" target="file10848"/>
+					<ref type="next_same_addressee" target="file11520"/>
+					<ref type="prev_same_addressee" target="file11509"/>
+					<ref type="next_with_sender_as_addressee" target="file11648"/>
+					<ref type="prev_with_sender_as_addressee" target="file10848"/>
+					<ref type="next_with_addressee_as_sender" target="file11520"/>
+					<ref type="prev_with_addressee_as_sender" target="file11509"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,24 +131,24 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S. D. P.</s>
-					<s xml:lang="la" type="auto">Literas humanitatis tuae hisce diebus accepimus, frater observande, quae nos ingenti gaudio affecerunt.</s>
-					<s xml:lang="la" type="auto">Nulla enim re maiorem consolacionem accipere possumus, quam cum Christi notitia in orbe quam latissime spargitur.</s>
-					<s xml:lang="la" type="auto">Eadem, quae tu scribis, papistae nostri ante nos sciverunt, sed oppresserunt; maerore magno affecti ringuntur.</s>
-					<s xml:lang="la" type="auto">Deo autem gratia, qui hos superbissimos pietatis hostes brevi tempore ad desperationem adacturus est, ut relicta superstitione sua et falsa pietate una nobiscum Christum adorent vel contempta cognita veritate sua sponte in interitum corruant.</s>
-					<s xml:lang="la" type="auto">Venit ad nos adversa fortuna actus Růdolphus Schintius, confitens se Tiguri ex ergastulo quodam auffugisse, sanctissime affirmans se prorsus nescire, qua causa illuc impositus fuerit, obsecrans ut ad te literas sui causa daremus, ut tuo auxilio tuto redire ad urbem possit et res suas componere.</s>
-					<s xml:lang="la" type="auto">Sua morositate dominos suos illum offendisse non dubitamus.</s>
-					<s xml:lang="la" type="auto">Hoc tamen illi testimonium dare libere possumus: tempore illo, - nam aliquot annis apud nos vixit -, quo nobiscum Curiae habitavit, honeste, irreprehensibilis et victum sibi durissimo labore queritans vitam egit.</s>
-					<s xml:lang="la" type="auto">Forsitan, cum domi est, libertate sua abutitur et apud exteros intra cuticulam suam sese continet.</s>
-					<s xml:lang="la" type="auto">Fac pro tua prudencia, quod tibi visum fuerit optimum, et ex nostra supplicatione pro illo fructus aliquis et refrigerium illi eveniat.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">Ex Rhetiae Curia, 20. die Februarii.</s>
+					<s n="1" xml:lang="la" type="auto">S. D. P.</s>
+					<s n="2" xml:lang="la" type="auto">Literas humanitatis tuae hisce diebus accepimus, frater observande, quae nos ingenti gaudio affecerunt.</s>
+					<s n="3" xml:lang="la" type="auto">Nulla enim re maiorem consolacionem accipere possumus, quam cum Christi notitia in orbe quam latissime spargitur.</s>
+					<s n="4" xml:lang="la" type="auto">Eadem, quae tu scribis, papistae nostri ante nos sciverunt, sed oppresserunt; maerore magno affecti ringuntur.</s>
+					<s n="5" xml:lang="la" type="auto">Deo autem gratia, qui hos superbissimos pietatis hostes brevi tempore ad desperationem adacturus est, ut relicta superstitione sua et falsa pietate una nobiscum Christum adorent vel contempta cognita veritate sua sponte in interitum corruant.</s>
+					<s n="6" xml:lang="la" type="auto">Venit ad nos adversa fortuna actus Růdolphus Schintius, confitens se Tiguri ex ergastulo quodam auffugisse, sanctissime affirmans se prorsus nescire, qua causa illuc impositus fuerit, obsecrans ut ad te literas sui causa daremus, ut tuo auxilio tuto redire ad urbem possit et res suas componere.</s>
+					<s n="7" xml:lang="la" type="auto">Sua morositate dominos suos illum offendisse non dubitamus.</s>
+					<s n="8" xml:lang="la" type="auto">Hoc tamen illi testimonium dare libere possumus: tempore illo, - nam aliquot annis apud nos vixit -, quo nobiscum Curiae habitavit, honeste, irreprehensibilis et victum sibi durissimo labore queritans vitam egit.</s>
+					<s n="9" xml:lang="la" type="auto">Forsitan, cum domi est, libertate sua abutitur et apud exteros intra cuticulam suam sese continet.</s>
+					<s n="10" xml:lang="la" type="auto">Fac pro tua prudencia, quod tibi visum fuerit optimum, et ex nostra supplicatione pro illo fructus aliquis et refrigerium illi eveniat.</s>
+					<s n="11" xml:lang="la" type="auto">Vale.</s>
+					<s n="12" xml:lang="la" type="auto">Ex Rhetiae Curia, 20. die Februarii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tui ex animo <persName ref="1527">Ioannes</persName> Blasius Comander.</s>
+					<s n="13" xml:lang="la" type="auto">Tui ex animo Ioannes Blasius Comander.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Pietate et doctrina praestantissimo viro M. Heinricho Bullingero, Tigurinae ecclesiae episcopo vigilantissimo, domino et amico suo inprimis observando.</s>
+					<s n="14" xml:lang="la" type="auto">Pietate et doctrina praestantissimo viro M. Heinricho Bullingero, Tigurinae ecclesiae episcopo vigilantissimo, domino et amico suo inprimis observando.</s>
 				</p>
 			</div>
 		</body>

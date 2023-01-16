@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Teilkopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#441">Schaffhausen</settlement>
-						<institution>Stadtbibliothek</institution>
-						<idno type="Teilkopie">Min. 127,664</idno>
-						<repository ref="archive#77">
+						<!--
+						<repository ref="archive77">
 							<name>Schaffhausen StB</name>
-							<note type="Hinweis">dat.: 17. April</note>
 							<ref target="https://bibliotheken-schaffhausen.ch/digitale-bibliothek/online-katalog/"/>
 						</repository>
+						<settlement ref="place441">Schaffhausen</settlement>
+						<institution>Stadtbibliothek</institution>
+						-->
+						<repository ref="archive77"/>
+						<idno subtype="Teilkopie">Min. 127,664</idno>
+						<idno subtype="Hinweis">dat.: 17. April</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -30,15 +33,18 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#336">München</settlement>
-						<institution>Bayerische Staatsbibliothek</institution>
-						<idno type="Kopie">Clm. 11470 a, fo 147r-v</idno>
-						<repository ref="archive#63">
+						<!--
+						<repository ref="archive63">
 							<name>München BStB</name>
-							<note type="Mikrofilm">Schaffhausen StB</note>
-							<note type="Hinweis">dat.: 25. April, mit Eingangsvermerk 29. April [Interna]</note>
 							<ref target="https://www.bsb-muenchen.de/"/>
 						</repository>
+						<settlement ref="place336">München</settlement>
+						<institution>Bayerische Staatsbibliothek</institution>
+						-->
+						<repository ref="archive63"/>
+						<idno subtype="Kopie">Clm. 11470 a, fo 147r-v</idno>
+						<idno subtype="Mikrofilm">Schaffhausen StB</idno>
+						<idno subtype="Hinweis">dat.: 25. April, mit Eingangsvermerk 29. April [Interna]</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -47,52 +53,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/8553">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date min="1571-04-27" max="1571-04-28" cert="low"/>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
+					<date notBefore="1571-04-27" notAfter="1571-04-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3243" cert="high">
+					<!--
+					<persName ref="person3243" cert="high">
 						<forename cert="high">Johann Konrad</forename>
 						<surname cert="high">Ulmer</surname>
-						<addName type="main">Ulmer (ab Ulmis), Johann Konrad</addName>
-						<graphic type="portrait" url="portraits/3243_Johann_Conrad_Ulmer.jpg"/>
+						<persName type="main" ref="person8109>Ulmer (ab Ulmis), Johann Konrad</addName>
+						<graphic type="portrait" url="portraits/3243_Ulmer_Johann_Conrad.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johann_Konrad_Ulmer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/120341913"/>
 					</persName>
-					<place source="#441" cert="high">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					-->
+					<persName ref="person3243" cert="high"/>
+					<place source="place441" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#8554"/>
-					<ref type="prev_chronologically" target="files.xml#8552"/>
-					<ref type="next_correspondence" target="files.xml#8558"/>
-					<ref type="prev_correspondence" target="files.xml#8548"/>
-					<ref type="next_correspondence_request" target="files.xml#8565"/>
-					<ref type="prev_correspondence_request" target="files.xml#8424"/>
-					<ref type="next_correspondence_reaction" target="files.xml#8558"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#8548"/>
-					<ref type="next_same_sender" target="files.xml#8554"/>
-					<ref type="prev_same_sender" target="files.xml#8549"/>
-					<ref type="next_same_addressee" target="files.xml#8558"/>
-					<ref type="prev_same_addressee" target="files.xml#8548"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8554"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#8549"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#8558"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#8548"/>
+					<ref type="next_chronologically" target="file8554"/>
+					<ref type="prev_chronologically" target="file8552"/>
+					<ref type="next_correspondence" target="file8558"/>
+					<ref type="prev_correspondence" target="file8548"/>
+					<ref type="next_correspondence_request" target="file8565"/>
+					<ref type="prev_correspondence_request" target="file8424"/>
+					<ref type="next_correspondence_reaction" target="file8558"/>
+					<ref type="prev_correspondence_reaction" target="file8548"/>
+					<ref type="next_same_sender" target="file8554"/>
+					<ref type="prev_same_sender" target="file8549"/>
+					<ref type="next_same_addressee" target="file8558"/>
+					<ref type="prev_same_addressee" target="file8548"/>
+					<ref type="next_with_sender_as_addressee" target="file8554"/>
+					<ref type="prev_with_sender_as_addressee" target="file8549"/>
+					<ref type="next_with_addressee_as_sender" target="file8558"/>
+					<ref type="prev_with_addressee_as_sender" target="file8548"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

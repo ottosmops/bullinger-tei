@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2006"/>
-				<idno type="ISBN">ISBN 978-3-290-17431-6</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1640</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17431-6</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1640</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 12</title>
+				<title subtype="publication">HBBW XII</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">12</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Original" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Original">Ms F 37,58</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Original">Ms F 37,58</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,12 +49,12 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Der Überbringer dieses Briefes, <persName ref="185">Michael</persName>
-								[<persName ref="185">Schlatter</persName>], wird betreffend den weiteren Aufenthalt der
-								<placeName ref="136">Bieler</placeName> Stipendiaten [Abraham und Beat Steinegger] nach dem Rechten
+								Der Überbringer dieses Briefes, Michael
+								[<persName ref="person185">Schlatter</persName>], wird betreffend den weiteren Aufenthalt der
+								<placeName ref="place136">Bieler</placeName> Stipendiaten [Abraham und Beat Steinegger] nach dem Rechten
 								sehen; die Knaben sollen [als Tischgänger] in einem anderen Haushalt untergebracht werden, wo bessere
 								Möglichkeiten zur Pflege der mündlichen lateinischen Sprache bestehen; Bitte um Beratung
-								[<persName ref="185">Schlatters</persName>] und gute Betreuung der Knaben.
+								[<persName ref="person185">Schlatters</persName>] und gute Betreuung der Knaben.
 							</p>
 						</summary>
 					</msContents>
@@ -61,75 +64,33 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11683">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#48" cert="high">Meier</name>
-						<place source="#49" cert="high">
-							<settlement>Biel</settlement>
-							<district>Metropolitanes Frankreich</district>
-							<country>Frankreich</country>
-							<geo>47.13713 7.24608</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="high">Räte</name>
-						<place source="#49" cert="high">
-							<settlement>Biel</settlement>
-							<district>Metropolitanes Frankreich</district>
-							<country>Frankreich</country>
-							<geo>47.13713 7.24608</geo>
-						</place>
-					</roleName>
-					<place source="#49" cert="low">
-						<settlement>Biel</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>47.13713 7.24608</geo>
-					</place>
+					<personGrp ref="role0" role="Meier"/>
+					<personGrp ref="role0" role="Räte"/>
+					<place source="place49" cert="low"/>
 					<date when="1542-06-25" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#45" cert="high">Lehrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<personGrp ref="role0" role="Lehrer"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11684"/>
-					<ref type="prev_chronologically" target="files.xml#11682"/>
-					<ref type="next_correspondence" target="files.xml#11699"/>
-					<ref type="prev_correspondence" target="files.xml#11658"/>
+					<ref type="next_chronologically" target="file11684"/>
+					<ref type="prev_chronologically" target="file11682"/>
+					<ref type="next_correspondence" target="file11699"/>
+					<ref type="prev_correspondence" target="file11658"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#11658"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11699"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11642"/>
-					<ref type="next_same_sender" target="files.xml#11703"/>
-					<ref type="prev_same_sender" target="files.xml#11658"/>
-					<ref type="next_same_addressee" target="files.xml#11699"/>
-					<ref type="prev_same_addressee" target="files.xml#11652"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11703"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11658"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11699"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11652"/>
+					<ref type="prev_correspondence_request" target="file11658"/>
+					<ref type="next_correspondence_reaction" target="file11699"/>
+					<ref type="prev_correspondence_reaction" target="file11642"/>
+					<ref type="next_same_sender" target="file11703"/>
+					<ref type="prev_same_sender" target="file11658"/>
+					<ref type="next_same_addressee" target="file11699"/>
+					<ref type="prev_same_addressee" target="file11652"/>
+					<ref type="next_with_sender_as_addressee" target="file11703"/>
+					<ref type="prev_with_sender_as_addressee" target="file11658"/>
+					<ref type="next_with_addressee_as_sender" target="file11699"/>
+					<ref type="prev_with_addressee_as_sender" target="file11652"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -143,21 +104,21 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Unser früntlich gruͦß sammpt erbiettunng aller erenn, liebß und guͦtz zuͦ befor.</s>
+					<s n="1" xml:lang="de" type="auto">Unser früntlich gruͦß sammpt erbiettunng aller erenn, liebß und guͦtz zuͦ befor.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Wolgelertt, fromm, ersamm, wyß, insunders günstig, lieb herrenn und guͦtte fründt, alß dann unser predicantt, herr Michell<note xml:id="fn2" type="footnote" n="2"><persName ref="185">Michael Schlatter</persName>.</note>, zeiger diß brieffs<note xml:id="fn3" type="footnote" n="3">Überbringer dieses Briefes.</note>, zuͦ üch khomenn wirtt, habenn wir ime befolchen, unser stipendiarios<note xml:id="fn4" type="footnote" n="4">Bei den <placeName ref="136">Bieler</placeName> Stipendiaten handelt es sich um Abraham und Beat Steinegger, vgl. HBBW XI, <ref target="file#11550">Nr. 1507</ref> und 1515.</note> by üch mitt üweremm rhatt widerumb ze versächen.</s>
-					<s xml:lang="de" type="auto">Doch so ist unser will und meynung, das die knabenn für hin<note xml:id="fn5" type="footnote" n="5">forthin.</note> zuͦ einemm in disch verdinngtt<note xml:id="fn6" type="footnote" n="6">in Kost geben.</note> wärdenn, der mer knabenn by im am disch hatt, von wägenn sy sich mitt andrenn jungenn studenttenn lattin zuͦ redenn gebruchen mögenn<note xml:id="fn7" type="footnote" n="7">Aus Bullingers Schreiben an Meier und Rat von <placeName ref="136">Biel</placeName> vom 23. Januar 1543 (<placeName ref="136">Biel</placeName> Stadtarchiv, 119, CXXIX, Nr. 12) geht hervor, dass die beiden Stipendiaten zu diesem Zeitpunkt bei <persName ref="69">Johannes Fries</persName> einquartiert waren.</note>.</s>
-					<s xml:lang="de" type="auto">Derhalbenn ist unser ernstig, früntlich bitt an üch, wellenntt genanntem unseremm predicanntten in selichem mitt rhatt beholffenn sin und ein jeder under üch uff unser knabenn ein ernstig, flissig uff sächenn habenn, alß wärendt sy die üwerenn.</s>
-					<s xml:lang="de" type="auto">Selichs wellenntt wir ummb üch sammpt oder sunders, wo eß sich iemer<note xml:id="fn8" type="footnote" n="8">immer.</note> gebürtt, früntlich gern verdienenn und günstlich beschuldenn<note xml:id="fn9" type="footnote" n="9">gerne vergelten.</note> mitt hilff deß allmächtigenn, den wir bittenn, üwer würde säligcklich zuͦ bewarenn etc.</s>
+					<s n="2" xml:lang="de" type="auto">Wolgelertt, fromm, ersamm, wyß, insunders günstig, lieb herrenn und guͦtte fründt, alß dann unser predicantt, herr Michell<note xml:id="fn2" type="footnote" n="2"><persName ref="person185">Michael Schlatter</persName>.</note>, zeiger diß brieffs<note xml:id="fn3" type="footnote" n="3">Überbringer dieses Briefes.</note>, zuͦ üch khomenn wirtt, habenn wir ime befolchen, unser stipendiarios<note xml:id="fn4" type="footnote" n="4">Bei den <placeName ref="place136">Bieler</placeName> Stipendiaten handelt es sich um Abraham und Beat Steinegger, vgl. HBBW XI, <ref target="file11550">Nr. 1507</ref> und 1515.</note> by üch mitt üweremm rhatt widerumb ze versächen.</s>
+					<s n="3" xml:lang="de" type="auto">Doch so ist unser will und meynung, das die knabenn für hin<note xml:id="fn5" type="footnote" n="5">forthin.</note> zuͦ einemm in disch verdinngtt<note xml:id="fn6" type="footnote" n="6">in Kost geben.</note> wärdenn, der mer knabenn by im am disch hatt, von wägenn sy sich mitt andrenn jungenn studenttenn lattin zuͦ redenn gebruchen mögenn<note xml:id="fn7" type="footnote" n="7">Aus Bullingers Schreiben an Meier und Rat von <placeName ref="place136">Biel</placeName> vom 23. Januar 1543 (<placeName ref="place136">Biel</placeName> Stadtarchiv, 119, CXXIX, Nr. 12) geht hervor, dass die beiden Stipendiaten zu diesem Zeitpunkt bei <persName ref="person69">Johannes Fries</persName> einquartiert waren.</note>.</s>
+					<s n="4" xml:lang="de" type="auto">Derhalbenn ist unser ernstig, früntlich bitt an üch, wellenntt genanntem unseremm predicanntten in selichem mitt rhatt beholffenn sin und ein jeder under üch uff unser knabenn ein ernstig, flissig uff sächenn habenn, alß wärendt sy die üwerenn.</s>
+					<s n="5" xml:lang="de" type="auto">Selichs wellenntt wir ummb üch sammpt oder sunders, wo eß sich iemer<note xml:id="fn8" type="footnote" n="8">immer.</note> gebürtt, früntlich gern verdienenn und günstlich beschuldenn<note xml:id="fn9" type="footnote" n="9">gerne vergelten.</note> mitt hilff deß allmächtigenn, den wir bittenn, üwer würde säligcklich zuͦ bewarenn etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datumm suntag deß 25. iunii anno etc. 42.</s>
-					<s xml:lang="de" type="auto">Meiger und rhatt zuͦ <placeName ref="136">Biell</placeName>.<pb type="edition" next="105"/></s>
+					<s n="6" xml:lang="de" type="auto">Datumm suntag deß 25. iunii anno etc. 42.</s>
+					<s n="7" xml:lang="de" type="auto">Meiger und rhatt zuͦ <placeName ref="place136">Biell</placeName>.<pb type="edition" next="105"/></s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Den wolgelerttenn, ersamen, wysen herrenn gemeinnen<note xml:id="fn10" type="footnote" n="10">vereinten.</note> predicanttenn sammpt andrenn gelerttenn der statt Zürich, unsern sunders günstig, lieb herrenn und guͦtten fründen.</s>
+					<s n="8" xml:lang="de" type="auto">Den wolgelerttenn, ersamen, wysen herrenn gemeinnen<note xml:id="fn10" type="footnote" n="10">vereinten.</note> predicanttenn sammpt andrenn gelerttenn der statt Zürich, unsern sunders günstig, lieb herrenn und guͦtten fründen.</s>
 				</p>
 			</div>
 		</body>

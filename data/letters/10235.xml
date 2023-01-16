@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1983"/>
-				<idno type="ISBN">ISBN 3-290-11531-3</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=204</idno>
+				<idno subtype="ISBN">ISBN 3-290-11531-3</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=204</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 3</title>
+				<title subtype="publication">HBBW III</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">3</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 364,90</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 364,90</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -63,45 +66,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10235">
 				<correspAction type="sent">
-					<persName ref="person#2259" cert="high">
+					<!--
+					<persName ref="person2259" cert="high">
 						<forename cert="high">Gregor</forename>
 						<surname cert="high">Mangolt</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Gregor_Mangolt"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/119752085"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11558654"/>
 					</persName>
-					<place source="#257" cert="high">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person2259" cert="high"/>
+					<place source="place257" cert="high"/>
 					<date when="1533-03-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10236"/>
-					<ref type="prev_chronologically" target="files.xml#10234"/>
-					<ref type="next_correspondence" target="files.xml#10666"/>
+					<ref type="next_chronologically" target="file10236"/>
+					<ref type="prev_chronologically" target="file10234"/>
+					<ref type="next_correspondence" target="file10666"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#10666"/>
+					<ref type="next_correspondence_request" target="file10666"/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10666"/>
+					<ref type="next_same_sender" target="file10666"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10260"/>
-					<ref type="prev_same_addressee" target="files.xml#10228"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10666"/>
+					<ref type="next_same_addressee" target="file10260"/>
+					<ref type="prev_same_addressee" target="file10228"/>
+					<ref type="next_with_sender_as_addressee" target="file10666"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10260"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10228"/>
+					<ref type="next_with_addressee_as_sender" target="file10260"/>
+					<ref type="prev_with_addressee_as_sender" target="file10228"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,21 +123,21 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Ich schick uch hiemit etlich geterdt<note xml:id="fn2" type="footnote" n="2">gedörrte.</note> gangfisch<note xml:id="fn3" type="footnote" n="3">Im <placeName ref="1">Bodensee</placeName> lebende Renke oder Felche (SI I 1100f; Ribi, aaO, S. 24-27).</note>, wie ich üch vergangner tagen verheissen hab<note xml:id="fn4" type="footnote" n="4">Wahrscheinlich anläßlich eines Aufenthaltes <persName ref="143">Mangolts</persName> in Zürich.</note>, die wellind sampt üwer lieben husfrowen<note xml:id="fn5" type="footnote" n="5"><persName ref="32">Anna Bullinger</persName>, geb. Adlischwyler.</note> und üwerm herren<note xml:id="fn6" type="footnote" n="6">Wohl Dekan <persName ref="560">Heinrich Bullinger</persName>.</note> von minetwegen die tag essen, dann ye lenger sy behalten werden, je unkrefftiger sy sind.</s>
+					<s n="1" xml:lang="de" type="auto">Ich schick uch hiemit etlich geterdt<note xml:id="fn2" type="footnote" n="2">gedörrte.</note> gangfisch<note xml:id="fn3" type="footnote" n="3">Im <placeName ref="place1">Bodensee</placeName> lebende Renke oder Felche (SI I 1100f; Ribi, aaO, S. 24-27).</note>, wie ich üch vergangner tagen verheissen hab<note xml:id="fn4" type="footnote" n="4">Wahrscheinlich anläßlich eines Aufenthaltes <persName ref="person143">Mangolts</persName> in Zürich.</note>, die wellind sampt üwer lieben husfrowen<note xml:id="fn5" type="footnote" n="5"><persName ref="person32">Anna Bullinger</persName>, geb. Adlischwyler.</note> und üwerm herren<note xml:id="fn6" type="footnote" n="6">Wohl Dekan <persName ref="person560">Heinrich Bullinger</persName>.</note> von minetwegen die tag essen, dann ye lenger sy behalten werden, je unkrefftiger sy sind.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Des testaments<note xml:id="fn7" type="footnote" n="7">Gemeint ist wahrscheinlich ein Druck des Alten oder Neuen Testaments, um den Bullinger den Buchhändler <persName ref="143">Mangolt</persName> gebeten hatte.</note> halben will ich üwer nit vergessen; ist es ienen<note xml:id="fn8" type="footnote" n="8">irgendwie (SI I 296).</note> möglich, will ichs zuͦ wegen bringen<note xml:id="fn9" type="footnote" n="9">zustande bringen (SI V 734f).</note> und nechstmals, vilicht bald nach ostren, mit mir hinyn<note xml:id="fn10" type="footnote" n="10">nach Zürich hinein.</note> bringen.</s>
-					<s xml:lang="de" type="auto">Hiezwüschen und alzyt got befolhen.</s>
+					<s n="2" xml:lang="de" type="auto">Des testaments<note xml:id="fn7" type="footnote" n="7">Gemeint ist wahrscheinlich ein Druck des Alten oder Neuen Testaments, um den Bullinger den Buchhändler <persName ref="person143">Mangolt</persName> gebeten hatte.</note> halben will ich üwer nit vergessen; ist es ienen<note xml:id="fn8" type="footnote" n="8">irgendwie (SI I 296).</note> möglich, will ichs zuͦ wegen bringen<note xml:id="fn9" type="footnote" n="9">zustande bringen (SI V 734f).</note> und nechstmals, vilicht bald nach ostren, mit mir hinyn<note xml:id="fn10" type="footnote" n="10">nach Zürich hinein.</note> bringen.</s>
+					<s n="3" xml:lang="de" type="auto">Hiezwüschen und alzyt got befolhen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum Costenntz, 28. marcii anno etc. 33.</s>
+					<s n="4" xml:lang="la" type="auto">Datum Costenntz, 28. marcii anno etc. 33.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">E[wer] w[illiger] <persName ref="143">Gregorius Mangolt</persName>, buchfürer.</s>
+					<s n="5" xml:lang="de" type="auto">E[wer] w[illiger] <persName ref="person143">Gregorius Mangolt</persName>, buchfürer.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Dem getrüwen, frommen und wolgelerten Heinrich Bullingern, dienern des evangeliums Christi zuͦ Zürich, ze handen.</s>
+					<s n="6" xml:lang="de" type="auto">Dem getrüwen, frommen und wolgelerten Heinrich Bullingern, dienern des evangeliums Christi zuͦ Zürich, ze handen.</s>
 				</p>
 			</div>
 		</body>

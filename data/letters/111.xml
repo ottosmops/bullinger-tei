@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">858</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Beilage" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,551</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,551</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -49,14 +52,17 @@
 				</msDesc>
 				<msDesc type="Beilage" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 66,148</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">dat.: nach 18. April 1548</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 66,148</idno>
+						<idno subtype="Hinweis">dat.: nach 18. April 1548</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -65,53 +71,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/111">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="low">
+					<!--
+					<persName ref="person392" cert="low">
 						<forename cert="low">Ambrosius</forename>
 						<surname cert="low">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#257" cert="low">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="low"/>
+					<place source="place257" cert="low"/>
 					<date when="1548-05-04" cert="low"><note>gemäss Schiess; zu seiner Datierungsbegründung siehe Blarer BW II 699, Anm. 3 [Interna]</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="low"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#112"/>
-					<ref type="prev_chronologically" target="files.xml#110"/>
-					<ref type="next_correspondence" target="files.xml#115"/>
-					<ref type="prev_correspondence" target="files.xml#110"/>
-					<ref type="next_correspondence_request" target="files.xml#115"/>
-					<ref type="prev_correspondence_request" target="files.xml#110"/>
-					<ref type="next_correspondence_reaction" target="files.xml#311"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#13134"/>
-					<ref type="next_same_sender" target="files.xml#115"/>
-					<ref type="prev_same_sender" target="files.xml#110"/>
-					<ref type="next_same_addressee" target="files.xml#120"/>
-					<ref type="prev_same_addressee" target="files.xml#107"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#115"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#110"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#120"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#107"/>
-					<ref type="parent" target="files.xml#110"/>
+					<ref type="next_chronologically" target="file112"/>
+					<ref type="prev_chronologically" target="file110"/>
+					<ref type="next_correspondence" target="file115"/>
+					<ref type="prev_correspondence" target="file110"/>
+					<ref type="next_correspondence_request" target="file115"/>
+					<ref type="prev_correspondence_request" target="file110"/>
+					<ref type="next_correspondence_reaction" target="file311"/>
+					<ref type="prev_correspondence_reaction" target="file13134"/>
+					<ref type="next_same_sender" target="file115"/>
+					<ref type="prev_same_sender" target="file110"/>
+					<ref type="next_same_addressee" target="file120"/>
+					<ref type="prev_same_addressee" target="file107"/>
+					<ref type="next_with_sender_as_addressee" target="file115"/>
+					<ref type="prev_with_sender_as_addressee" target="file110"/>
+					<ref type="next_with_addressee_as_sender" target="file120"/>
+					<ref type="prev_with_addressee_as_sender" target="file107"/>
+					<ref type="parent" target="file110"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -120,26 +125,29 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="111/Autograph/00 E_II_357__fol__551_r_.tif" n="1"/>
+		<graphic url="111/Autograph/01 E_II_357__fol__551_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="de">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Des Claudij halber ists mir warlich ain hertzlichs laid, das ir euch selbs mitt so vyl schreiben bemuͤhet haben.</s>
-					<s xml:lang="de" type="auto">Derselbig brieff ist mir ouch erst zuͦ kommen durch Buttlerum mitt ewerm letsten schreiben.</s>
-					<s xml:lang="de" type="auto">Ich bedanck mich zum hochsten gegen euch mit gar ernstlichem bitt, mir diser sach halber nichts zuͦ verargen.</s>
-					<s xml:lang="de" type="auto">Meine herren schreibend dem guͦten herrn und wirt zuͦ Wynterthur isr mainung; kompt der Claudi dem beschaid nach, wirt mitt hail sein, wa nitt, acht ich, meine herren werdend inn mitt ernst strauffen sampt dem weyb, die doch gar nütsollend sein will.</s>
-					<s xml:lang="de" type="auto">Gott erbarm sich unser aller!</s>
-					<s xml:lang="de" type="auto">Ir ellend hat mich ubel erbarmt; aber wem nitt ze raten, dem ist kains wegs ze helffen.</s>
-					<s xml:lang="de" type="auto">Muͦß es gott bevelchen; bedauret mich zum hochsten ewer muͤh und gehapte arbait.</s>
-					<s xml:lang="de" type="auto">Aber ir hapt mich mitt ewerm hoflichen schreiben wol bezalt.</s>
-					<s xml:lang="de" type="auto">Verzycht mir; ich wills, hab ich guͦt im synn, nitt mehr thain, bin zum tail durch ewern brieff sonst ouch des Claudij halber etlicher sorgen ledig worden.</s>
-					<s xml:lang="de" type="auto">Dem herren seye lob umb alles guͦts in ewigkait!</s>
+					<s n="1" xml:lang="de" type="auto">Des Claudij halber ists mir warlich ain hertzlichs laid, das ir euch selbs mitt so vyl schreiben bemuͤhet haben.</s>
+					<s n="2" xml:lang="de" type="auto">Derselbig brieff ist mir ouch erst zuͦ kommen durch Buttlerum mitt ewerm letsten schreiben.</s>
+					<s n="3" xml:lang="de" type="auto">Ich bedanck mich zum hochsten gegen euch mit gar ernstlichem bitt, mir diser sach halber nichts zuͦ verargen.</s>
+					<s n="4" xml:lang="de" type="auto">Meine herren schreibend dem guͦten herrn und wirt zuͦ Wynterthur isr mainung; kompt der Claudi dem beschaid nach, wirt mitt hail sein, wa nitt, acht ich, meine herren werdend inn mitt ernst strauffen sampt dem weyb, die doch gar nütsollend sein will.</s>
+					<s n="5" xml:lang="de" type="auto">Gott erbarm sich unser aller!</s>
+					<s n="6" xml:lang="de" type="auto">Ir ellend hat mich ubel erbarmt; aber wem nitt ze raten, dem ist kains wegs ze helffen.</s>
+					<s n="7" xml:lang="de" type="auto">Muͦß es gott bevelchen; bedauret mich zum hochsten ewer muͤh und gehapte arbait.</s>
+					<s n="8" xml:lang="de" type="auto">Aber ir hapt mich mitt ewerm hoflichen schreiben wol bezalt.</s>
+					<s n="9" xml:lang="de" type="auto">Verzycht mir; ich wills, hab ich guͦt im synn, nitt mehr thain, bin zum tail durch ewern brieff sonst ouch des Claudij halber etlicher sorgen ledig worden.</s>
+					<s n="10" xml:lang="de" type="auto">Dem herren seye lob umb alles guͦts in ewigkait!</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Newes waiß ich euch gar nichts ze schreiben.</s>
-					<s xml:lang="de" type="auto">Es ist sydher nitt ain wort von Augspurg kommen.</s>
-					<s xml:lang="de" type="auto">Unsere gesandten sind wol und glucklich hinab kommen, habend ain gar guͦte, stille herrberg; wartend allso, was gott weyter geben welle.</s>
+					<s n="11" xml:lang="de" type="auto">Newes waiß ich euch gar nichts ze schreiben.</s>
+					<s n="12" xml:lang="de" type="auto">Es ist sydher nitt ain wort von Augspurg kommen.</s>
+					<s n="13" xml:lang="de" type="auto">Unsere gesandten sind wol und glucklich hinab kommen, habend ain gar guͦte, stille herrberg; wartend allso, was gott weyter geben welle.</s>
 				</p>
 				<p>
 					<note type="signature">[Unterschrift fehlt.]</note>

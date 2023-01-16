@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4750/321</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 375,665</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 375,665</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,14 +44,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 90,160</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">nur Regest</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 90,160</idno>
+						<idno subtype="Hinweis">nur Regest</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -62,50 +68,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3350">
 				<correspAction type="sent">
-					<persName ref="person#1075" cert="low">
+					<!--
+					<persName ref="person1075" cert="low">
 						<forename cert="low">Johannes</forename>
 						<surname cert="low">Fabricius</surname>
-						<addName type="main">Fabricius Montanus (Schmid), Johannes</addName>
+						<persName type="main" ref="person8009>Fabricius Montanus (Schmid), Johannes</addName>
 						<graphic type="portrait" url="portraits/1075_Fabricius_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Fabricius_Montanus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104045698"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414870"/>
 					</persName>
-					<place source="#98" cert="low">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person1075" cert="low"/>
+					<place source="place98" cert="low"/>
 					<date when="1557-10-05" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3351"/>
-					<ref type="prev_chronologically" target="files.xml#3349"/>
-					<ref type="next_correspondence" target="files.xml#3357"/>
-					<ref type="prev_correspondence" target="files.xml#3349"/>
-					<ref type="next_correspondence_request" target="files.xml#3366"/>
-					<ref type="prev_correspondence_request" target="files.xml#3349"/>
-					<ref type="next_correspondence_reaction" target="files.xml#3357"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#3346"/>
-					<ref type="next_same_sender" target="files.xml#3366"/>
-					<ref type="prev_same_sender" target="files.xml#3349"/>
-					<ref type="next_same_addressee" target="files.xml#3352"/>
-					<ref type="prev_same_addressee" target="files.xml#3346"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3366"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3349"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3352"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3346"/>
+					<ref type="next_chronologically" target="file3351"/>
+					<ref type="prev_chronologically" target="file3349"/>
+					<ref type="next_correspondence" target="file3357"/>
+					<ref type="prev_correspondence" target="file3349"/>
+					<ref type="next_correspondence_request" target="file3366"/>
+					<ref type="prev_correspondence_request" target="file3349"/>
+					<ref type="next_correspondence_reaction" target="file3357"/>
+					<ref type="prev_correspondence_reaction" target="file3346"/>
+					<ref type="next_same_sender" target="file3366"/>
+					<ref type="prev_same_sender" target="file3349"/>
+					<ref type="next_same_addressee" target="file3352"/>
+					<ref type="prev_same_addressee" target="file3346"/>
+					<ref type="next_with_sender_as_addressee" target="file3366"/>
+					<ref type="prev_with_sender_as_addressee" target="file3349"/>
+					<ref type="next_with_addressee_as_sender" target="file3352"/>
+					<ref type="prev_with_addressee_as_sender" target="file3346"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -115,17 +123,20 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="3350/Autograph/00 E_II_375__fol__665_r_.tif" n="1"/>
+		<graphic url="3350/Autograph/01 E_II_375__fol__665_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="de">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="de" type="auto">Der her Tscharner zeigt mir an, das dem legaten uff der post sye zuͦkommen, wie der Polwyler mitt synem züg yle uff Burgopräß (wen ich echter den nammen recht setzen), lyt nit wyt von Legion, sye des fürnemmens, unsere knecht zuͦ fürzüchen, daamit sy zuͦ dem überigen gwaltshuffen nit kommen mögind.</s>
-					<s xml:lang="de" type="auto">Item Maximilianus füre ein starchen huffen Ungerer und Behemer, willens syn züg auch uff Legion dem Polwyler naach ze nemmen.</s>
-					<s xml:lang="de" type="auto">Item die Spanier syend den Gaschonieren ins land gefallen, habind dieselben geschedigett.</s>
+					<s n="1" xml:lang="de" type="auto">Der her Tscharner zeigt mir an, das dem legaten uff der post sye zuͦkommen, wie der Polwyler mitt synem züg yle uff Burgopräß (wen ich echter den nammen recht setzen), lyt nit wyt von Legion, sye des fürnemmens, unsere knecht zuͦ fürzüchen, daamit sy zuͦ dem überigen gwaltshuffen nit kommen mögind.</s>
+					<s n="2" xml:lang="de" type="auto">Item Maximilianus füre ein starchen huffen Ungerer und Behemer, willens syn züg auch uff Legion dem Polwyler naach ze nemmen.</s>
+					<s n="3" xml:lang="de" type="auto">Item die Spanier syend den Gaschonieren ins land gefallen, habind dieselben geschedigett.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Haec ex consule, postquam alteras priores literas consignassem.</s>
+					<s n="4" xml:lang="la" type="auto">Haec ex consule, postquam alteras priores literas consignassem.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse fehlt.]</note>

@@ -8,15 +8,18 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#396">Prag</settlement>
-						<institution>Staats-Zentralarchiv</institution>
-						<idno type="Kopie">AUF XII, fo 210v-211r (Nr. 22 f)</idno>
-						<repository ref="archive#75">
+						<!--
+						<repository ref="archive75">
 							<name>Prag StUA</name>
-							<note type="Mikrofilm">IRG</note>
-							<note type="Hinweis">früher Herrnhut</note>
 							<ref target="https://www.nacr.cz/en/"/>
 						</repository>
+						<settlement ref="place396">Prag</settlement>
+						<institution>Staats-Zentralarchiv</institution>
+						-->
+						<repository ref="archive75"/>
+						<idno subtype="Kopie">AUF XII, fo 210v-211r (Nr. 22 f)</idno>
+						<idno subtype="Mikrofilm">IRG</idno>
+						<idno subtype="Hinweis">früher Herrnhut</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -40,54 +43,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/9952">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1575-05-23" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#3029" cert="high">
+					<!--
+					<persName ref="person3029" cert="high">
 						<forename cert="high">Andreas</forename>
 						<surname cert="high">Stephan</surname>
-						<roleName type="title">
-							<name type="singular" ref="role#70" cert="high">Senior</name>
-							<place source="#132" cert="high">
-								<settlement>Eibenschitz bei Brünn</settlement>
-								<country>Tschechien</country>
-								<geo>49.548526 16.856056</geo>
-							</place>
-						</roleName>
+						<personGrp ref="role0" role="Senior"/>
 					</persName>
-					<place source="#132" cert="low">
-						<settlement>Eibenschitz bei Brünn</settlement>
-						<country>Tschechien</country>
-						<geo>49.548526 16.856056</geo>
-					</place>
+					-->
+					<persName ref="person3029" cert="high"/>
+					<personGrp ref="role0" role="Senior"/>
+					<place source="place132" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#9953"/>
-					<ref type="prev_chronologically" target="files.xml#9951"/>
+					<ref type="next_chronologically" target="file9953"/>
+					<ref type="prev_chronologically" target="file9951"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#9972"/>
-					<ref type="prev_same_sender" target="files.xml#9940"/>
+					<ref type="next_same_sender" target="file9972"/>
+					<ref type="prev_same_sender" target="file9940"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#9972"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#9940"/>
+					<ref type="next_with_sender_as_addressee" target="file9972"/>
+					<ref type="prev_with_sender_as_addressee" target="file9940"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>

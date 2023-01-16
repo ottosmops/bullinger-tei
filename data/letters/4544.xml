@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">5613/252</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 373,195a</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 373,195a</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,13 +51,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 98,167</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 98,167</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -63,50 +69,52 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/4544">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1560-11-15" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1075" cert="high">
+					<!--
+					<persName ref="person1075" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Fabricius</surname>
-						<addName type="main">Fabricius Montanus (Schmid), Johannes</addName>
+						<persName type="main" ref="person8009>Fabricius Montanus (Schmid), Johannes</addName>
 						<graphic type="portrait" url="portraits/1075_Fabricius_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Fabricius_Montanus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104045698"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414870"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person1075" cert="high"/>
+					<place source="place98" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#4545"/>
-					<ref type="prev_chronologically" target="files.xml#4543"/>
-					<ref type="next_correspondence" target="files.xml#4546"/>
-					<ref type="prev_correspondence" target="files.xml#4539"/>
-					<ref type="next_correspondence_request" target="files.xml#4559"/>
-					<ref type="prev_correspondence_request" target="files.xml#4537"/>
-					<ref type="next_correspondence_reaction" target="files.xml#4546"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#4539"/>
-					<ref type="next_same_sender" target="files.xml#4545"/>
-					<ref type="prev_same_sender" target="files.xml#4543"/>
-					<ref type="next_same_addressee" target="files.xml#4546"/>
-					<ref type="prev_same_addressee" target="files.xml#4539"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#4545"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4543"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#4546"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#4539"/>
+					<ref type="next_chronologically" target="file4545"/>
+					<ref type="prev_chronologically" target="file4543"/>
+					<ref type="next_correspondence" target="file4546"/>
+					<ref type="prev_correspondence" target="file4539"/>
+					<ref type="next_correspondence_request" target="file4559"/>
+					<ref type="prev_correspondence_request" target="file4537"/>
+					<ref type="next_correspondence_reaction" target="file4546"/>
+					<ref type="prev_correspondence_reaction" target="file4539"/>
+					<ref type="next_same_sender" target="file4545"/>
+					<ref type="prev_same_sender" target="file4543"/>
+					<ref type="next_same_addressee" target="file4546"/>
+					<ref type="prev_same_addressee" target="file4539"/>
+					<ref type="next_with_sender_as_addressee" target="file4545"/>
+					<ref type="prev_with_sender_as_addressee" target="file4543"/>
+					<ref type="next_with_addressee_as_sender" target="file4546"/>
+					<ref type="prev_with_addressee_as_sender" target="file4539"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,7 +124,10 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="4544/Autograph/00 E_II_373__fol__195_a_r_.tif" n="1"/>
+		<graphic url="4544/Autograph/01 E_II_373__fol__195_a_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
@@ -124,48 +135,48 @@
 					<note>[Angfang fehlt, ist abgeschnitten].</note>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">An in armis sit Navarrus, non facile dixero; nam post literas illas nihil praeterea accepi necdum audio, communicarem alioqui.</s>
-					<s xml:lang="la" type="auto">Ad d. Calvinum scribam, ut mones, successum permissurus deo.</s>
-					<s xml:lang="la" type="auto">Pecunias illas depositas esse Mediolani, consulibus indicavi.</s>
+					<s n="1" xml:lang="la" type="auto">An in armis sit Navarrus, non facile dixero; nam post literas illas nihil praeterea accepi necdum audio, communicarem alioqui.</s>
+					<s n="2" xml:lang="la" type="auto">Ad d. Calvinum scribam, ut mones, successum permissurus deo.</s>
+					<s n="3" xml:lang="la" type="auto">Pecunias illas depositas esse Mediolani, consulibus indicavi.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Horum alter dicit se recessum misisse d. consuli vestro.</s>
+					<s n="4" xml:lang="la" type="auto">Horum alter dicit se recessum misisse d. consuli vestro.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ex Clarona haec hodie accepi: Verganges frytags ist zuͦ Glarus ein lantman toub worden, hat sin spieß genommen, ist gen Schwanden umb die 2 gägen tag geloffen, geschruwen: mordio, figendio.</s>
-					<s xml:lang="de" type="auto">Deß ist ein glöuff worden, das in einer stund ein hüpsch volck by einandren xin; doch wie sy vernommen.</s>
-					<s xml:lang="de" type="auto">wie der mensch toub, hat man inn gefangen gen Glarus gefürt, in ysen glegt, und wie er da hüpschlich gethan, das man imm vertruwt, hat er 3 eerenmann, under denen ouch der aman Hässig einer ist, verwundet etc.</s>
-					<s xml:lang="la" type="auto">Ex Augusta Vindelicorum habeo semina belli sparsa esse et spargi; nam Sebastianum Schertlinum in controversiam venisse cum Ludovico, comite Oetingensi, propter ius nescio quod venandi etc.</s>
-					<s xml:lang="la" type="auto">Habet uterque suos, qui instigent.</s>
+					<s n="5" xml:lang="de" type="auto">Ex Clarona haec hodie accepi: Verganges frytags ist zuͦ Glarus ein lantman toub worden, hat sin spieß genommen, ist gen Schwanden umb die 2 gägen tag geloffen, geschruwen: mordio, figendio.</s>
+					<s n="6" xml:lang="de" type="auto">Deß ist ein glöuff worden, das in einer stund ein hüpsch volck by einandren xin; doch wie sy vernommen.</s>
+					<s n="7" xml:lang="de" type="auto">wie der mensch toub, hat man inn gefangen gen Glarus gefürt, in ysen glegt, und wie er da hüpschlich gethan, das man imm vertruwt, hat er 3 eerenmann, under denen ouch der aman Hässig einer ist, verwundet etc.</s>
+					<s n="8" xml:lang="la" type="auto">Ex Augusta Vindelicorum habeo semina belli sparsa esse et spargi; nam Sebastianum Schertlinum in controversiam venisse cum Ludovico, comite Oetingensi, propter ius nescio quod venandi etc.</s>
+					<s n="9" xml:lang="la" type="auto">Habet uterque suos, qui instigent.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Prudentes colligunt nescio quid.</s>
+					<s n="10" xml:lang="la" type="auto">Prudentes colligunt nescio quid.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex urbe Venetorum scribitur Turcam duci Florentino ex portu abduxisse triremes 3 et Turcae metum esse magnum in Italia; parare itaque se papam, Florentinum, Sabaudum, Philippum Hispanum etc., quod appetente vere expectent Turcicam classem certo venturam contra Italiam et maxime Siciliam.</s>
-					<s xml:lang="de" type="auto">Vilicht wirt das frid uff nemmen.</s>
+					<s n="11" xml:lang="la" type="auto">Ex urbe Venetorum scribitur Turcam duci Florentino ex portu abduxisse triremes 3 et Turcae metum esse magnum in Italia; parare itaque se papam, Florentinum, Sabaudum, Philippum Hispanum etc., quod appetente vere expectent Turcicam classem certo venturam contra Italiam et maxime Siciliam.</s>
+					<s n="12" xml:lang="de" type="auto">Vilicht wirt das frid uff nemmen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dominus det nobis pacem etc.</s>
+					<s n="13" xml:lang="la" type="auto">Dominus det nobis pacem etc.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vive et vale.</s>
+					<s n="14" xml:lang="la" type="auto">Vive et vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 15. novembris 1560.</s>
+					<s n="15" xml:lang="la" type="auto">Tiguri 15. novembris 1560.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salutant te nostri.</s>
+					<s n="16" xml:lang="la" type="auto">Salutant te nostri.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salutato optimos viros d. d. consules, Philippum, Pontasellam et alios amicos.</s>
+					<s n="17" xml:lang="la" type="auto">Salutato optimos viros d. d. consules, Philippum, Pontasellam et alios amicos.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus tuus.</s>
+					<s n="18" xml:lang="la" type="auto">Bullingerus tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">[Pre]stantissimo viro d. Ioan[ni] Fabritio, Curiensis [eccl]esiae ministro fide[li], domino et compatri [m]eo colendo et percharo.</s>
-					<s xml:lang="de" type="auto">Gen Chur dem pfarrer zuͦ S. Martin.</s>
+					<s n="19" xml:lang="la" type="auto">[Pre]stantissimo viro d. Ioan[ni] Fabritio, Curiensis [eccl]esiae ministro fide[li], domino et compatri [m]eo colendo et percharo.</s>
+					<s n="20" xml:lang="de" type="auto">Gen Chur dem pfarrer zuͦ S. Martin.</s>
 				</p>
 			</div>
 		</body>

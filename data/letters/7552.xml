@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">7272/109</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 377,2441</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 377,2441</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -55,50 +58,61 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/7552">
 				<correspAction type="sent">
-					<persName ref="person#2473" cert="high">
+					<!--
+					<persName ref="person2473" cert="high">
 						<forename cert="high">John</forename>
 						<surname cert="high">Parkhurst</surname>
 						<graphic type="portrait" url="portraits/2473_Parkhurst_John.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/John_Parkhurst"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/119781492"/>
 					</persName>
-					<place source="#299" cert="high">
-						<settlement>Ludham</settlement>
-						<geo>52.70473 1.56135</geo>
-					</place>
+					-->
+					<persName ref="person2473" cert="high"/>
+					<place source="place299" cert="high"/>
 					<date when="1568-08-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<persName ref="person#1381" cert="high">
+					-->
+					<persName ref="person495" cert="high"/>
+					<!--
+					<persName ref="person1381" cert="high">
 						<forename cert="high">Rudolf</forename>
 						<surname cert="high">Gwalther</surname>
-						<addName type="main">Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
+						<persName type="main" ref="person8011>Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
 						<graphic type="portrait" url="portraits/1381_Gwalther_Rudolf.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Rudolf_Gwalther"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11854392X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11522600"/>
 					</persName>
+					-->
+					<persName ref="person1381" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#7553"/>
-					<ref type="prev_chronologically" target="files.xml#7551"/>
+					<ref type="next_chronologically" target="file7553"/>
+					<ref type="prev_chronologically" target="file7551"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#6877"/>
+					<ref type="prev_correspondence" target="file6877"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#6877"/>
+					<ref type="prev_correspondence_request" target="file6877"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#8469"/>
-					<ref type="prev_same_sender" target="files.xml#7406"/>
-					<ref type="next_same_addressee" target="files.xml#7926"/>
-					<ref type="prev_same_addressee" target="files.xml#7183"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#8469"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#7406"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#7926"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#7183"/>
+					<ref type="next_same_sender" target="file8469"/>
+					<ref type="prev_same_sender" target="file7406"/>
+					<ref type="next_same_addressee" target="file7926"/>
+					<ref type="prev_same_addressee" target="file7183"/>
+					<ref type="next_with_sender_as_addressee" target="file8469"/>
+					<ref type="prev_with_sender_as_addressee" target="file7406"/>
+					<ref type="next_with_addressee_as_sender" target="file7926"/>
+					<ref type="prev_with_addressee_as_sender" target="file7183"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -107,35 +121,38 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="7552/Autograph/00 E_II_377__fol__2441_r_.tif" n="1"/>
+		<graphic url="7552/Autograph/01 E_II_377__fol__2441_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Scripsi literas ad vos in fine februarii; spero esse redditas.</s>
-					<s xml:lang="la" type="auto">11. maii Bullingeri et Lavateri literas accepi, tuas vero, Gwalthere, 18. eiusdem mensis.</s>
-					<s xml:lang="la" type="auto">Regina Scotiae e carcere evasit circa idem tempus.</s>
-					<s xml:lang="la" type="auto">Cruentum subito commissum est proelium inter papistas reginae amicos et protestantes regis fautores.</s>
-					<s xml:lang="la" type="auto">Illa, cum bellum ferveret, in colle celeri equo innsidens omnia oculis lustrabat; sed cum tandem videret victoriam cessisse d. Iacobo et suis, aufugit cum paucis in Angliam; maluit enim se Anglis committere quam suis Scotis, et credo tutius fuisse.</s>
-					<s xml:lang="la" type="auto">Agit iam Carleoli, in loco satis munito, brevi in medio Angliae commoratura, ut audio.</s>
-					<s xml:lang="la" type="auto">13. iulii d. Gulielmus Turnerus, medicus bonus et vir optimus, Londini obiit; Leverus in eius funere est concionatus.</s>
-					<s xml:lang="la" type="auto">Scripsi unicas has ad vos literas et breves quidem; dubito enim, utrum hae in tantis rerum tumultibus ad vestras manus sint perventurae, quare plures in praesentia scribere nolui.</s>
+					<s n="1" xml:lang="la" type="auto">Scripsi literas ad vos in fine februarii; spero esse redditas.</s>
+					<s n="2" xml:lang="la" type="auto">11. maii Bullingeri et Lavateri literas accepi, tuas vero, Gwalthere, 18. eiusdem mensis.</s>
+					<s n="3" xml:lang="la" type="auto">Regina Scotiae e carcere evasit circa idem tempus.</s>
+					<s n="4" xml:lang="la" type="auto">Cruentum subito commissum est proelium inter papistas reginae amicos et protestantes regis fautores.</s>
+					<s n="5" xml:lang="la" type="auto">Illa, cum bellum ferveret, in colle celeri equo innsidens omnia oculis lustrabat; sed cum tandem videret victoriam cessisse d. Iacobo et suis, aufugit cum paucis in Angliam; maluit enim se Anglis committere quam suis Scotis, et credo tutius fuisse.</s>
+					<s n="6" xml:lang="la" type="auto">Agit iam Carleoli, in loco satis munito, brevi in medio Angliae commoratura, ut audio.</s>
+					<s n="7" xml:lang="la" type="auto">13. iulii d. Gulielmus Turnerus, medicus bonus et vir optimus, Londini obiit; Leverus in eius funere est concionatus.</s>
+					<s n="8" xml:lang="la" type="auto">Scripsi unicas has ad vos literas et breves quidem; dubito enim, utrum hae in tantis rerum tumultibus ad vestras manus sint perventurae, quare plures in praesentia scribere nolui.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Salutate meo nomine amicos meos omnes et praecipue d. Simlerum, Lavaterum, Wolphium, Hallerum, Wickium, Vonlichium, Zvinglium etc.</s>
-					<s xml:lang="la" type="auto">Bene valete.</s>
+					<s n="9" xml:lang="la" type="auto">Salutate meo nomine amicos meos omnes et praecipue d. Simlerum, Lavaterum, Wolphium, Hallerum, Wickium, Vonlichium, Zvinglium etc.</s>
+					<s n="10" xml:lang="la" type="auto">Bene valete.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Raptim Ludhamiae 4. augusti 1568.</s>
+					<s n="11" xml:lang="la" type="auto">Raptim Ludhamiae 4. augusti 1568.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vester quantus quantus est Ioannes P[arkhurstus], N[ordovicensis].</s>
+					<s n="12" xml:lang="la" type="auto">Vester quantus quantus est Ioannes P[arkhurstus], N[ordovicensis].</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Doctissimis viris et integerrimis amicis d. Rod[olpho] Gwalthero et d. Henrico Bullingero.</s>
+					<s n="13" xml:lang="la" type="auto">Doctissimis viris et integerrimis amicis d. Rod[olpho] Gwalthero et d. Henrico Bullingero.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="14" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

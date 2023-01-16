@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1989"/>
-				<idno type="ISBN">ISBN 3-290-11600-X</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=369</idno>
+				<idno subtype="ISBN">ISBN 3-290-11600-X</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=369</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 4</title>
+				<title subtype="publication">HBBW IV</title>
 				<biblScope type="editor">Zsindely, Endre; Senn, Matthias; Rüetschi, Kurt Jakob; Bächtold, Hans Ulrich</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">4</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 355,56</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 355,56</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,11 +49,11 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								<persName ref="140">Konrad</persName> [<persName ref="140">Lüthard</persName>] hat gebeten,
+								Konrad [<persName ref="person140">Lüthard</persName>] hat gebeten,
 								jemanden von der Gemeinde abzuordnen, um bei der Obrigkeit zu seinen Gunsten einzutreten. Eine vom Weibel
 								veranlaßte Aufforderung ist aber erfolglos geblieben, will sich doch niemand der Sache annehmen, um keinen
-								Streit mit dem Kloster zu haben. <persName ref="120">Kilchrat</persName> bittet Bullinger, ein
-								Mitglied des Rates zu unterrichten, da er fürchtet, <persName ref="140">Lüthard</persName> werde
+								Streit mit dem Kloster zu haben. <persName ref="person120">Kilchrat</persName> bittet Bullinger, ein
+								Mitglied des Rates zu unterrichten, da er fürchtet, <persName ref="person140">Lüthard</persName> werde
 								vielleicht allzu hart gestraft.
 							</p>
 						</summary>
@@ -61,29 +64,32 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10401">
 				<correspAction type="sent">
-					<persName ref="person#1758" cert="high">
+					<!--
+					<persName ref="person1758" cert="high">
 						<forename cert="high">Hans</forename>
 						<surname cert="high">Kilchrat</surname>
 					</persName>
-					<place source="#435" cert="high">
-						<settlement>Rüti</settlement>
-						<district>Glarus</district>
-						<country>Schweiz</country>
-						<geo>47.256699 8.854421</geo>
-					</place>
+					-->
+					<persName ref="person1758" cert="high"/>
+					<place source="place435" cert="high"/>
 					<date when="1534-05-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10402"/>
-					<ref type="prev_chronologically" target="files.xml#10400"/>
+					<ref type="next_chronologically" target="file10402"/>
+					<ref type="prev_chronologically" target="file10400"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
@@ -92,12 +98,12 @@
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#10407"/>
-					<ref type="prev_same_addressee" target="files.xml#10400"/>
+					<ref type="next_same_addressee" target="file10407"/>
+					<ref type="prev_same_addressee" target="file10400"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10407"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10400"/>
+					<ref type="next_with_addressee_as_sender" target="file10407"/>
+					<ref type="prev_with_addressee_as_sender" target="file10400"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -114,31 +120,31 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Minn früntlich gruͦs und wilig diennst sinnd üch altzit faran [!] bereit, lieber her.</s>
+					<s n="1" xml:lang="de" type="auto">Minn früntlich gruͦs und wilig diennst sinnd üch altzit faran [!] bereit, lieber her.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Es ist mir geschriben von her Kuͦnraten<note xml:id="fn1" type="footnote" n="1"><persName ref="140">Konrad Lüthard</persName>. - Sein Brief ist nicht erhalten.</note>, uinserem bredikanten, so by üch zuͦ Zürich gefangen lit<note xml:id="fn2" type="footnote" n="2">Zum Anlaß von <persName ref="140">Lüthards</persName> Gefangenschaft, s. oben S. 149f, Anm. 5.</note>, und mich also ermant, zuͦ verschalen, das tie gmeind im ein man ader [!] zwen von ir aler wägen zuͦ mienen heren<note xml:id="fn3" type="footnote" n="3">dem Zürcher Rat.</note> schiken, da ze biten, das min heren im das best weiten tun.</s>
-					<s xml:lang="de" type="auto">Und uf semlichs hab ich den weibel<note xml:id="fn4" type="footnote" n="4">Wohl <persName ref="541">Thomas Bucher</persName>, s. unten S. 463, 7-9.</note> beschikt<note xml:id="fn5" type="footnote" n="5">kommen lassen (SI VIII 523f).</note> und im<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> inn.</note> die meinung antzeigt.</s>
-					<s xml:lang="de" type="auto">Des er guͦtwilig<pb type="edition" next="153"/> was unnd hat darumm die unndertanen beruͦft.</s>
-					<s xml:lang="de" type="auto">Aber es hat nüt mögen verfahen<note xml:id="fn6" type="footnote" n="6">nützen, fruchten (SI I 722).</note>, da sich der merteil der sach nüt welen beladen und etlich die antwurt gen<note xml:id="fn7" type="footnote" n="7">gegeben.</note>, der keler<note xml:id="fn8" type="footnote" n="8">Verwalter der grundherrschaftlichen Einkünfte (SI <persName ref="1330">III</persName> 204). - Im Kloster <placeName ref="928">Rüti</placeName> war Wolf <persName ref="1237">Huber</persName> mit diesem Amt betraut (s. unten S. 163, 59), den man als den kräftigsten und rücksichtslosesten der verbliebenen Mönche fürchtete.</note> im kloster hör<note xml:id="fn9" type="footnote" n="9">gehöre.</note> ouch derzuͦ, hinder dem<note xml:id="fn10" type="footnote" n="10">hinter dessen Rücken.</note> nüt zuͦ handlen, und aber er sich der sach nüt welen beladen.</s>
-					<s xml:lang="de" type="auto">Und aber damit ir nüt möchten dengken, wie es zuͦgieng, das semlichs nüt möcht verfahen, hat es die gestalt, das mich die sach also anset<note xml:id="fn11" type="footnote" n="11">daß es mir den Anschein macht (SI VII 555).</note>, das teren nach als fil sinnd, die sich abtretinnd<note xml:id="fn12" type="footnote" n="12">die sich (der Sache) entziehen.</note> von wägen, da sy nüt unwilen<note xml:id="fn13" type="footnote" n="13">Streit, Mißhelligkeit (Grimm XI/<persName ref="1330">III</persName> 2216).</note> wider das kloster empfahind<note xml:id="fn14" type="footnote" n="14">Gemeint ist: weil sie keinen Streit mit dem Kloster haben möchten.</note>; darf nüt jehen<note xml:id="fn15" type="footnote" n="15">sagen (SI <persName ref="1330">III</persName> 5).</note> die münch<note xml:id="fnb" type="footnote" n="b"><hi>in der Vorlage</hi> müch.</note><note xml:id="fn16" type="footnote" n="16">geschweige denn die Mönche.</note>.</s>
-					<s xml:lang="de" type="auto">Und ist aber deren, so an die gmeind hören, wenig, und gand dan etlich näbend umm oich an die bieye<note xml:id="fn17" type="footnote" n="17">Nicht nachweisbar, Bedeutung unklar.</note>, die nüt zuͦ der gmeind hören, die sich der sach ouch nüt können<note xml:id="fnc" type="footnote" n="c"><hi>in der Vorlage</hi> kömen.</note> beladen.</s>
-					<s xml:lang="de" type="auto">Und darum so mögend ir etwan ein guͦten man des ratz berichten, das tenn guͦten heren gescheyden<note xml:id="fn18" type="footnote" n="18">berichtet, erklärt (vgl. Lexer I 899).</note> möcht werden.</s>
-					<s xml:lang="de" type="auto">Dan ich besorg, es sy inn<note xml:id="fn19" type="footnote" n="19">ihnen, den Herren des Rats.</note> drülich<note xml:id="fn20" type="footnote" n="20">genau, sorgfältig (Grimm XI/I 2 377).</note> dartan, was<note xml:id="fn21" type="footnote" n="21">der Pfarrer, <persName ref="140">Konrad Lüthard</persName>.</note> geret hab, dan es nüt jederman so scharpf dücht, als er aber flucht engelten muͦs.</s>
-					<s xml:lang="de" type="auto">Wie warlich<note xml:id="fnd" type="footnote" n="d"><hi>in der Vorlage</hi> walich.</note> niemand in sin sagen nüt gret wil han<note xml:id="fn22" type="footnote" n="22">sich nicht einmischen wollte (vgl. SI VI 550).</note>.</s>
+					<s n="2" xml:lang="de" type="auto">Es ist mir geschriben von her Kuͦnraten<note xml:id="fn1" type="footnote" n="1"><persName ref="person140">Konrad Lüthard</persName>. - Sein Brief ist nicht erhalten.</note>, uinserem bredikanten, so by üch zuͦ Zürich gefangen lit<note xml:id="fn2" type="footnote" n="2">Zum Anlaß von <persName ref="person140">Lüthards</persName> Gefangenschaft, s. oben S. 149f, Anm. 5.</note>, und mich also ermant, zuͦ verschalen, das tie gmeind im ein man ader [!] zwen von ir aler wägen zuͦ mienen heren<note xml:id="fn3" type="footnote" n="3">dem Zürcher Rat.</note> schiken, da ze biten, das min heren im das best weiten tun.</s>
+					<s n="3" xml:lang="de" type="auto">Und uf semlichs hab ich den weibel<note xml:id="fn4" type="footnote" n="4">Wohl <persName ref="person541">Thomas Bucher</persName>, s. unten S. 463, 7-9.</note> beschikt<note xml:id="fn5" type="footnote" n="5">kommen lassen (SI VIII 523f).</note> und im<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> inn.</note> die meinung antzeigt.</s>
+					<s n="4" xml:lang="de" type="auto">Des er guͦtwilig<pb type="edition" next="153"/> was unnd hat darumm die unndertanen beruͦft.</s>
+					<s n="5" xml:lang="de" type="auto">Aber es hat nüt mögen verfahen<note xml:id="fn6" type="footnote" n="6">nützen, fruchten (SI I 722).</note>, da sich der merteil der sach nüt welen beladen und etlich die antwurt gen<note xml:id="fn7" type="footnote" n="7">gegeben.</note>, der keler<note xml:id="fn8" type="footnote" n="8">Verwalter der grundherrschaftlichen Einkünfte (SI III 204). - Im Kloster <placeName ref="place928">Rüti</placeName> war Wolf <persName ref="person1237">Huber</persName> mit diesem Amt betraut (s. unten S. 163, 59), den man als den kräftigsten und rücksichtslosesten der verbliebenen Mönche fürchtete.</note> im kloster hör<note xml:id="fn9" type="footnote" n="9">gehöre.</note> ouch derzuͦ, hinder dem<note xml:id="fn10" type="footnote" n="10">hinter dessen Rücken.</note> nüt zuͦ handlen, und aber er sich der sach nüt welen beladen.</s>
+					<s n="6" xml:lang="de" type="auto">Und aber damit ir nüt möchten dengken, wie es zuͦgieng, das semlichs nüt möcht verfahen, hat es die gestalt, das mich die sach also anset<note xml:id="fn11" type="footnote" n="11">daß es mir den Anschein macht (SI VII 555).</note>, das teren nach als fil sinnd, die sich abtretinnd<note xml:id="fn12" type="footnote" n="12">die sich (der Sache) entziehen.</note> von wägen, da sy nüt unwilen<note xml:id="fn13" type="footnote" n="13">Streit, Mißhelligkeit (Grimm XI/III 2216).</note> wider das kloster empfahind<note xml:id="fn14" type="footnote" n="14">Gemeint ist: weil sie keinen Streit mit dem Kloster haben möchten.</note>; darf nüt jehen<note xml:id="fn15" type="footnote" n="15">sagen (SI III 5).</note> die münch<note xml:id="fnb" type="footnote" n="b"><hi>in der Vorlage</hi> müch.</note><note xml:id="fn16" type="footnote" n="16">geschweige denn die Mönche.</note>.</s>
+					<s n="7" xml:lang="de" type="auto">Und ist aber deren, so an die gmeind hören, wenig, und gand dan etlich näbend umm oich an die bieye<note xml:id="fn17" type="footnote" n="17">Nicht nachweisbar, Bedeutung unklar.</note>, die nüt zuͦ der gmeind hören, die sich der sach ouch nüt können<note xml:id="fnc" type="footnote" n="c"><hi>in der Vorlage</hi> kömen.</note> beladen.</s>
+					<s n="8" xml:lang="de" type="auto">Und darum so mögend ir etwan ein guͦten man des ratz berichten, das tenn guͦten heren gescheyden<note xml:id="fn18" type="footnote" n="18">berichtet, erklärt (vgl. Lexer I 899).</note> möcht werden.</s>
+					<s n="9" xml:lang="de" type="auto">Dan ich besorg, es sy inn<note xml:id="fn19" type="footnote" n="19">ihnen, den Herren des Rats.</note> drülich<note xml:id="fn20" type="footnote" n="20">genau, sorgfältig (Grimm XI/I 2 377).</note> dartan, was<note xml:id="fn21" type="footnote" n="21">der Pfarrer, <persName ref="person140">Konrad Lüthard</persName>.</note> geret hab, dan es nüt jederman so scharpf dücht, als er aber flucht engelten muͦs.</s>
+					<s n="10" xml:lang="de" type="auto">Wie warlich<note xml:id="fnd" type="footnote" n="d"><hi>in der Vorlage</hi> walich.</note> niemand in sin sagen nüt gret wil han<note xml:id="fn22" type="footnote" n="22">sich nicht einmischen wollte (vgl. SI VI 550).</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Der almechtig got well üch und unns alli vor üblem behuͦten.</s>
+					<s n="11" xml:lang="de" type="auto">Der almechtig got well üch und unns alli vor üblem behuͦten.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum zuͦ <placeName ref="928">Rüti</placeName>, fritag, was Filip und Jakoby inn 34. jar.</s>
+					<s n="12" xml:lang="de" type="auto">Datum zuͦ <placeName ref="place928">Rüti</placeName>, fritag, was Filip und Jakoby inn 34. jar.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Von mir, Hanns <persName ref="120">Kilchrat</persName>, üwer altzit willigen d[iener].</s>
+					<s n="13" xml:lang="de" type="auto">Von mir, Hanns <persName ref="person120">Kilchrat</persName>, üwer altzit willigen d[iener].</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="de" type="auto">Dem ersamen und erwirdigen heren, her Heinrichen Bulli, vorsteher<note xml:id="fne" type="footnote" n="e"><hi>in der Vorlage</hi> vorseher.</note> und bredikant zumm großen müster Zürich.</s>
+					<s n="14" xml:lang="de" type="auto">Dem ersamen und erwirdigen heren, her Heinrichen Bulli, vorsteher<note xml:id="fne" type="footnote" n="e"><hi>in der Vorlage</hi> vorseher.</note> und bredikant zumm großen müster Zürich.</s>
 				</p>
 			</div>
 		</body>

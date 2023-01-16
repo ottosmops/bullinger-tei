@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1992"/>
-				<idno type="ISBN">ISBN 3-290-10856-2</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=507</idno>
+				<idno subtype="ISBN">ISBN 3-290-10856-2</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=507</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 5</title>
+				<title subtype="publication">HBBW V</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer; Rüetschi, Kurt Jakob</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">5</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,62</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,62</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,18 +49,18 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Ein Brief an die <placeName ref="121">Berner</placeName> [wegen eines gemeinsamen
+								Ein Brief an die <placeName ref="place121">Berner</placeName> [wegen eines gemeinsamen
 								Abendmahlsbekenntnisses] blieb erfolglos. Haben ihnen die Zürcher Anlaß zu Befürchtungen gegeben? Nicht bei
-								<persName ref="90">Berchtold</persName> [<persName ref="90">Haller</persName>], wohl aber in
-								seiner Umgebung scheint Überheblichkeit mitzuspielen. <persName ref="154">Myconius</persName> hat das
-								Bekenntnis der Zürcher [<ref target="file#10518">Nr. 482</ref>] an
-								<persName ref="81">Grynäus</persName> weitergeleitet, mußte ihm jedoch das versprochene Bekenntnis
-								der <placeName ref="121">Berner</placeName> schuldig bleiben. Bittet um Nachricht über die
-								Zusammenkunft mit <persName ref="28">Bucer</persName> in
-								<placeName ref="565">Konstanz</placeName>. In <placeName ref="97">Basel</placeName> ist im
-								Anschluß an eine Predigt von <persName ref="154">Myconius</persName> ein Streit um den theologischen
-								Doktorgrad entbrannt. Bittet um Stellungnahme der Zürcher. <persName ref="40">Capito</persName> wird
-								in dieser Sache nach <placeName ref="97">Basel</placeName> kommen.
+								Berchtold [<persName ref="person90">Haller</persName>], wohl aber in
+								seiner Umgebung scheint Überheblichkeit mitzuspielen. <persName ref="person154">Myconius</persName> hat das
+								Bekenntnis der Zürcher [<ref target="file10518">Nr. 482</ref>] an
+								<persName ref="person81">Grynäus</persName> weitergeleitet, mußte ihm jedoch das versprochene Bekenntnis
+								der <placeName ref="place121">Berner</placeName> schuldig bleiben. Bittet um Nachricht über die
+								Zusammenkunft mit <persName ref="person28">Bucer</persName> in
+								<placeName ref="place565">Konstanz</placeName>. In <placeName ref="place97">Basel</placeName> ist im
+								Anschluß an eine Predigt von <persName ref="person154">Myconius</persName> ein Streit um den theologischen
+								Doktorgrad entbrannt. Bittet um Stellungnahme der Zürcher. <persName ref="person40">Capito</persName> wird
+								in dieser Sache nach <placeName ref="place97">Basel</placeName> kommen.
 							</p>
 						</summary>
 					</msContents>
@@ -67,46 +70,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10543">
 				<correspAction type="sent">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person2234" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1535-01-10" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10544"/>
-					<ref type="prev_chronologically" target="files.xml#10542"/>
-					<ref type="next_correspondence" target="files.xml#10547"/>
-					<ref type="prev_correspondence" target="files.xml#10542"/>
-					<ref type="next_correspondence_request" target="files.xml#10557"/>
-					<ref type="prev_correspondence_request" target="files.xml#10509"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10547"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10542"/>
-					<ref type="next_same_sender" target="files.xml#10557"/>
-					<ref type="prev_same_sender" target="files.xml#10509"/>
-					<ref type="next_same_addressee" target="files.xml#10547"/>
-					<ref type="prev_same_addressee" target="files.xml#10542"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10557"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10509"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10547"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10542"/>
+					<ref type="next_chronologically" target="file10544"/>
+					<ref type="prev_chronologically" target="file10542"/>
+					<ref type="next_correspondence" target="file10547"/>
+					<ref type="prev_correspondence" target="file10542"/>
+					<ref type="next_correspondence_request" target="file10557"/>
+					<ref type="prev_correspondence_request" target="file10509"/>
+					<ref type="next_correspondence_reaction" target="file10547"/>
+					<ref type="prev_correspondence_reaction" target="file10542"/>
+					<ref type="next_same_sender" target="file10557"/>
+					<ref type="prev_same_sender" target="file10509"/>
+					<ref type="next_same_addressee" target="file10547"/>
+					<ref type="prev_same_addressee" target="file10542"/>
+					<ref type="next_with_sender_as_addressee" target="file10557"/>
+					<ref type="prev_with_sender_as_addressee" target="file10509"/>
+					<ref type="next_with_addressee_as_sender" target="file10547"/>
+					<ref type="prev_with_addressee_as_sender" target="file10542"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -124,57 +132,57 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Scripsi <placeName ref="121">Bernensibus</placeName><note xml:id="fn1" type="footnote" n="1"><persName ref="154">Myconius</persName> und die Basler Pfarrer an die Pfarrer von <placeName ref="121">Bern</placeName>, 18. Dezember 1534 (<placeName ref="1011">St. Gallen</placeName> Kantonsbibliothek [Vadiana], Ms 32, 266).</note> certe qua potui fide et diligentia, verum sine fructu.</s>
-					<s xml:lang="la" type="auto">Rescripsit enim <persName ref="90">Berchtoldus</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="90">Berchtold Hallers</persName> Antwort ist nicht erhalten.</note> omnium nomine nos iam satis ex superioribus epistolis<note xml:id="fn3" type="footnote" n="3">Nicht erhalten.</note> intelligere, quęnam hic sit mens eorum, qui verborum tenor.</s>
-					<s xml:lang="la" type="auto">Hunc mutare tam sit impossibile, ut si quid tentarent, potius essent amissuri totum euangelion quam suos in aliam verborum inducturi formulam.</s>
-					<s xml:lang="la" type="auto">Cum nos de mutanda forma ne verbum quidem, imo contra admonuimus nihil esse tale timendum, dubito, si vos tale quidpiam ad eos scripseritis, postquam timorem istum ego prorsus meo iudicio sustulissem.</s>
-					<s xml:lang="la" type="auto">Rogarant, ut se apud vos et alios<pb type="edition" next="50"/> excusarem.</s>
-					<s xml:lang="la" type="auto">Non video causam nec modum excusandi.</s>
-					<s xml:lang="la" type="auto"><persName ref="90">Berchtoldum</persName> possem tueri, alios non item<note xml:id="fn4" type="footnote" n="4">Insbesondere geriet <persName ref="145">Megander</persName> in Verdacht, die <placeName ref="121">Berner</placeName> von der Unterzeichnung des Zürcher Abendmahlsbekenntnisses vom Dezember 1534 (HBBW IV, <ref target="file#10518">Nr. 482</ref>) abgehalten zu haben, vgl. Melchior <hi>Kirchhofer,</hi> <persName ref="154">Oswald Myconius</persName>, Antistes der Baslerischen Kirche, Zürich 1813, S. 227f und unten <ref target="file#10555">Nr. 519</ref>, 56f.</note>.</s>
-					<s xml:lang="la" type="auto">Nescio, quid insolentię videre mihi videar in quibusdam non laudande.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Scripsi <placeName ref="place121">Bernensibus</placeName><note xml:id="fn1" type="footnote" n="1"><persName ref="person154">Myconius</persName> und die Basler Pfarrer an die Pfarrer von <placeName ref="place121">Bern</placeName>, 18. Dezember 1534 (<placeName ref="place1011">St. Gallen</placeName> Kantonsbibliothek [Vadiana], Ms 32, 266).</note> certe qua potui fide et diligentia, verum sine fructu.</s>
+					<s n="3" xml:lang="la" type="auto">Rescripsit enim <persName ref="person90">Berchtoldus</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="person90">Berchtold Hallers</persName> Antwort ist nicht erhalten.</note> omnium nomine nos iam satis ex superioribus epistolis<note xml:id="fn3" type="footnote" n="3">Nicht erhalten.</note> intelligere, quęnam hic sit mens eorum, qui verborum tenor.</s>
+					<s n="4" xml:lang="la" type="auto">Hunc mutare tam sit impossibile, ut si quid tentarent, potius essent amissuri totum euangelion quam suos in aliam verborum inducturi formulam.</s>
+					<s n="5" xml:lang="la" type="auto">Cum nos de mutanda forma ne verbum quidem, imo contra admonuimus nihil esse tale timendum, dubito, si vos tale quidpiam ad eos scripseritis, postquam timorem istum ego prorsus meo iudicio sustulissem.</s>
+					<s n="6" xml:lang="la" type="auto">Rogarant, ut se apud vos et alios<pb type="edition" next="50"/> excusarem.</s>
+					<s n="7" xml:lang="la" type="auto">Non video causam nec modum excusandi.</s>
+					<s n="8" xml:lang="la" type="auto"><persName ref="person90">Berchtoldum</persName> possem tueri, alios non item<note xml:id="fn4" type="footnote" n="4">Insbesondere geriet <persName ref="person145">Megander</persName> in Verdacht, die <placeName ref="place121">Berner</placeName> von der Unterzeichnung des Zürcher Abendmahlsbekenntnisses vom Dezember 1534 (HBBW IV, <ref target="file10518">Nr. 482</ref>) abgehalten zu haben, vgl. Melchior <hi>Kirchhofer,</hi> <persName ref="person154">Oswald Myconius</persName>, Antistes der Baslerischen Kirche, Zürich 1813, S. 227f und unten <ref target="file10555">Nr. 519</ref>, 56f.</note>.</s>
+					<s n="9" xml:lang="la" type="auto">Nescio, quid insolentię videre mihi videar in quibusdam non laudande.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vestram<note xml:id="fna" type="footnote" n="a"><hi>von</hi> Vestram <hi>bis</hi> tu <hi>am Rande nachgetragen.</hi></note> cum aliis confessionem dimisi<note xml:id="fn5" type="footnote" n="5">Ursprünglich wollte <persName ref="154">Myconius</persName> das Bekenntnis der Zürcher erst nach der Unterzeichnung durch die <placeName ref="121">Berner</placeName> an <persName ref="81">Simon Grynäus</persName> senden; vgl. HBBW IV, S. 449, 44-46.</note>.</s>
-					<s xml:lang="la" type="auto">Quid putas dicturum <persName ref="81">Grynęum</persName> cęterosque, ubi videbunt <placeName ref="121">Bernenses</placeName> non adesse?</s>
-					<s xml:lang="la" type="auto">Tum mendax equidem iudicabor, nam pollicitus sum propediem et <placeName ref="121">Bernensium</placeName> confessionem missurum; ita speraram quemadmodum et tu<note xml:id="fnb" type="footnote" n="b"><hi>von</hi> Vestram <hi>bis</hi> tu <hi>am Rande nachgetragen.</hi></note>.</s>
+					<s n="10" xml:lang="la" type="auto">Vestram<note xml:id="fna" type="footnote" n="a"><hi>von</hi> Vestram <hi>bis</hi> tu <hi>am Rande nachgetragen.</hi></note> cum aliis confessionem dimisi<note xml:id="fn5" type="footnote" n="5">Ursprünglich wollte <persName ref="person154">Myconius</persName> das Bekenntnis der Zürcher erst nach der Unterzeichnung durch die <placeName ref="place121">Berner</placeName> an <persName ref="person81">Simon Grynäus</persName> senden; vgl. HBBW IV, S. 449, 44-46.</note>.</s>
+					<s n="11" xml:lang="la" type="auto">Quid putas dicturum <persName ref="person81">Grynęum</persName> cęterosque, ubi videbunt <placeName ref="place121">Bernenses</placeName> non adesse?</s>
+					<s n="12" xml:lang="la" type="auto">Tum mendax equidem iudicabor, nam pollicitus sum propediem et <placeName ref="place121">Bernensium</placeName> confessionem missurum; ita speraram quemadmodum et tu<note xml:id="fnb" type="footnote" n="b"><hi>von</hi> Vestram <hi>bis</hi> tu <hi>am Rande nachgetragen.</hi></note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Dein venit nuncium ad nos, Tigurinos fratres, <placeName ref="121">Bernenses</placeName>, Scafhusianos, Sanctogallenses, Svevos multos superioribus diebus fuisse congregatos <placeName ref="565">Constantiam</placeName> ad <persName ref="28">Bucerum</persName><note xml:id="fn6" type="footnote" n="6">Zur Tagung in <placeName ref="565">Konstanz</placeName> s. HBBW IV, S. 454, Anm. 1. Die genannten Schweizer Städte waren dort jedoch nicht vertreten. Die von <persName ref="154">Myconius</persName> erbetene Auskunft ist bereits in Bullingers Brief vom gleichen Datum enthalten, s. oben <ref target="file#10542">Nr. 506</ref>, 10f.</note>.</s>
-					<s xml:lang="la" type="auto">Si quid est, fac sciamus etiam.</s>
+					<s n="13" xml:lang="la" type="auto">Dein venit nuncium ad nos, Tigurinos fratres, <placeName ref="place121">Bernenses</placeName>, Scafhusianos, Sanctogallenses, Svevos multos superioribus diebus fuisse congregatos <placeName ref="place565">Constantiam</placeName> ad <persName ref="person28">Bucerum</persName><note xml:id="fn6" type="footnote" n="6">Zur Tagung in <placeName ref="place565">Konstanz</placeName> s. HBBW IV, S. 454, Anm. 1. Die genannten Schweizer Städte waren dort jedoch nicht vertreten. Die von <persName ref="person154">Myconius</persName> erbetene Auskunft ist bereits in Bullingers Brief vom gleichen Datum enthalten, s. oben <ref target="file10542">Nr. 506</ref>, 10f.</note>.</s>
+					<s n="14" xml:lang="la" type="auto">Si quid est, fac sciamus etiam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tandem adeo sumus hic ociosi, scilicet, ut contendamus, an doctores theologię in universitate nostra creandi sint necne<note xml:id="fn7" type="footnote" n="7">Der Streit um den theologischen Doktorgrad brachte <persName ref="154">Myconius</persName> in den ersten Monaten des Jahres 1535 in Opposition zu <persName ref="117">Karlstadt</persName> und <persName ref="40">Capito</persName>, während die Zürcher Verständnis für seine Haltung zeigten. Der Konflikt ruhte dann für einige Zeit, um 1538 in verschärfter Form erneut auszubrechen. <persName ref="154">Myconius</persName> verweigerte zeitlebens die Annahme des Doktorgrades. Vgl. <hi>Kirchhofer,</hi> aaO, S. 153-158. 315ff; weitere Lit. bei Willem <hi>van 't Spijker.</hi> Une disputation au sujet du doctorat, par le D. <persName ref="40">Wolfgang</persName> Capiton, in: Horizons européens de la réforme en Alsace. FS Jean Rott, Straßburg 1980. - Société Savante d'Alsace et des Régions de l'Est. Collection "Grandes Publications" XVII, S. 95-106.</note>.</s>
-					<s xml:lang="la" type="auto">Mira commotio est; universitas et senatus contra me sęviunt.</s>
-					<s xml:lang="la" type="auto">Originem audi paucis: Equidem motus tyrannide scholę <placeName ref="836">Parisiensis</placeName> dominica proxima post kalendas ianuarias<note xml:id="fn8" type="footnote" n="8">3. Januar 1535.</note> pro concione paucis quidem verborum iaculis pugnaram contra theologos istos, cum de gradibus sumendis esset pridie kalendas ianuarii decretum a senatu<note xml:id="fn9" type="footnote" n="9">Der Wortlaut des Ratsbeschlusses vom 31. Dezember 1534 ist nicht überliefert.</note>.</s>
-					<s xml:lang="la" type="auto">Mox consequuta est interpretatio, tanquam scholam totam, gradus omnes voluerim extinctos in contumeliam senatus decreti.</s>
-					<s xml:lang="la" type="auto">Ego nihil tale in mentem acceperam.</s>
-					<s xml:lang="la" type="auto">Vocat senatus, quod hactenus nunquam factum, exprobrat facinus (bone deus) grande, requirit rationem.</s>
-					<s xml:lang="la" type="auto">Qui nihil contra universitatem senseram, ni voluisset aliquid papisticum introducere, motus coepi contra doctoratum theologicum causam dicere et tantum effeci, ut res ad fratres et universitatis doctos sit reiecta.</s>
-					<s xml:lang="la" type="auto">Hic igitur defendam, quod post officii munus per ecclesiam a spiritu<pb type="edition" next="51"/> collatum non deceat honoris nomen pomposum adiicere.</s>
-					<s xml:lang="de" type="auto">Ich<note xml:id="fnc" type="footnote" n="c"><hi>von</hi> Ich <hi>bis</hi> <persName ref="225">Utinger</persName> <hi>am Rande nachgetragen.</hi></note> bin nit.</s>
-					<s xml:lang="de" type="auto">Sagend das dem <persName ref="225">Utinger</persName><note xml:id="fnd" type="footnote" n="d"><hi>von</hi> Ich <hi>bis</hi> <persName ref="225">Utinger</persName> <hi>am Rande nachgetragen.</hi></note>.</s>
-					<s xml:lang="la" type="auto">Officii contemplatio deiicit enim, dignitatis tollit.</s>
-					<s xml:lang="la" type="auto">Haec, requiro, conferas cum <persName ref="165">Pellicano</persName>, Leone<note xml:id="fn10" type="footnote" n="10"><persName ref="114">Leo Jud</persName>.</note> et <persName ref="14">Theodoro</persName><note xml:id="fn11" type="footnote" n="11"><persName ref="14">Theodor Bibliander</persName>.</note> rescribasque mentem vestram quam ocyssime.</s>
-					<s xml:lang="la" type="auto">Aderit brevi <persName ref="40">Capito</persName><note xml:id="fn12" type="footnote" n="12">Zum Besuch <persName ref="40">Capitos</persName> in <placeName ref="97">Basel</placeName> s. unten <ref target="file#10557">Nr. 521</ref>, Anm. 2f.</note> ob hanc tantam rem.</s>
-					<s xml:lang="la" type="auto">Ut<note xml:id="fne" type="footnote" n="e"><hi>von</hi> Ut <hi>bis</hi> capis <hi>am Rande nachgetragen.</hi></note> amicis haec.</s>
-					<s xml:lang="la" type="auto">Si quispiam effusurus esset, malo tibi soli scripta.</s>
-					<s xml:lang="la" type="auto">Me capis<note xml:id="fnf" type="footnote" n="f"><hi>von</hi> Ut <hi>bis</hi> capis <hi>am Rande nachgetragen.</hi></note>.</s>
-					<s xml:lang="la" type="auto">Si proprius mittendus nuncius, ne differas, ni velitis contra me pugnare.</s>
-					<s xml:lang="la" type="auto">Utcunque rescribito.</s>
+					<s n="15" xml:lang="la" type="auto">Tandem adeo sumus hic ociosi, scilicet, ut contendamus, an doctores theologię in universitate nostra creandi sint necne<note xml:id="fn7" type="footnote" n="7">Der Streit um den theologischen Doktorgrad brachte <persName ref="person154">Myconius</persName> in den ersten Monaten des Jahres 1535 in Opposition zu <persName ref="person117">Karlstadt</persName> und <persName ref="person40">Capito</persName>, während die Zürcher Verständnis für seine Haltung zeigten. Der Konflikt ruhte dann für einige Zeit, um 1538 in verschärfter Form erneut auszubrechen. <persName ref="person154">Myconius</persName> verweigerte zeitlebens die Annahme des Doktorgrades. Vgl. <hi>Kirchhofer,</hi> aaO, S. 153-158. 315ff; weitere Lit. bei Willem <hi>van 't Spijker.</hi> Une disputation au sujet du doctorat, par le D. Wolfgang Capiton, in: Horizons européens de la réforme en Alsace. FS Jean Rott, Straßburg 1980. - Société Savante d'Alsace et des Régions de l'Est. Collection "Grandes Publications" XVII, S. 95-106.</note>.</s>
+					<s n="16" xml:lang="la" type="auto">Mira commotio est; universitas et senatus contra me sęviunt.</s>
+					<s n="17" xml:lang="la" type="auto">Originem audi paucis: Equidem motus tyrannide scholę <placeName ref="place836">Parisiensis</placeName> dominica proxima post kalendas ianuarias<note xml:id="fn8" type="footnote" n="8">3. Januar 1535.</note> pro concione paucis quidem verborum iaculis pugnaram contra theologos istos, cum de gradibus sumendis esset pridie kalendas ianuarii decretum a senatu<note xml:id="fn9" type="footnote" n="9">Der Wortlaut des Ratsbeschlusses vom 31. Dezember 1534 ist nicht überliefert.</note>.</s>
+					<s n="18" xml:lang="la" type="auto">Mox consequuta est interpretatio, tanquam scholam totam, gradus omnes voluerim extinctos in contumeliam senatus decreti.</s>
+					<s n="19" xml:lang="la" type="auto">Ego nihil tale in mentem acceperam.</s>
+					<s n="20" xml:lang="la" type="auto">Vocat senatus, quod hactenus nunquam factum, exprobrat facinus (bone deus) grande, requirit rationem.</s>
+					<s n="21" xml:lang="la" type="auto">Qui nihil contra universitatem senseram, ni voluisset aliquid papisticum introducere, motus coepi contra doctoratum theologicum causam dicere et tantum effeci, ut res ad fratres et universitatis doctos sit reiecta.</s>
+					<s n="22" xml:lang="la" type="auto">Hic igitur defendam, quod post officii munus per ecclesiam a spiritu<pb type="edition" next="51"/> collatum non deceat honoris nomen pomposum adiicere.</s>
+					<s n="23" xml:lang="de" type="auto">Ich<note xml:id="fnc" type="footnote" n="c"><hi>von</hi> Ich <hi>bis</hi> <persName ref="person225">Utinger</persName> <hi>am Rande nachgetragen.</hi></note> bin nit.</s>
+					<s n="24" xml:lang="de" type="auto">Sagend das dem <persName ref="person225">Utinger</persName><note xml:id="fnd" type="footnote" n="d"><hi>von</hi> Ich <hi>bis</hi> <persName ref="person225">Utinger</persName> <hi>am Rande nachgetragen.</hi></note>.</s>
+					<s n="25" xml:lang="la" type="auto">Officii contemplatio deiicit enim, dignitatis tollit.</s>
+					<s n="26" xml:lang="la" type="auto">Haec, requiro, conferas cum <persName ref="person165">Pellicano</persName>, Leone<note xml:id="fn10" type="footnote" n="10"><persName ref="person114">Leo Jud</persName>.</note> et <persName ref="person14">Theodoro</persName><note xml:id="fn11" type="footnote" n="11"><persName ref="person14">Theodor Bibliander</persName>.</note> rescribasque mentem vestram quam ocyssime.</s>
+					<s n="27" xml:lang="la" type="auto">Aderit brevi <persName ref="person40">Capito</persName><note xml:id="fn12" type="footnote" n="12">Zum Besuch <persName ref="person40">Capitos</persName> in <placeName ref="place97">Basel</placeName> s. unten <ref target="file10557">Nr. 521</ref>, Anm. 2f.</note> ob hanc tantam rem.</s>
+					<s n="28" xml:lang="la" type="auto">Ut<note xml:id="fne" type="footnote" n="e"><hi>von</hi> Ut <hi>bis</hi> capis <hi>am Rande nachgetragen.</hi></note> amicis haec.</s>
+					<s n="29" xml:lang="la" type="auto">Si quispiam effusurus esset, malo tibi soli scripta.</s>
+					<s n="30" xml:lang="la" type="auto">Me capis<note xml:id="fnf" type="footnote" n="f"><hi>von</hi> Ut <hi>bis</hi> capis <hi>am Rande nachgetragen.</hi></note>.</s>
+					<s n="31" xml:lang="la" type="auto">Si proprius mittendus nuncius, ne differas, ni velitis contra me pugnare.</s>
+					<s n="32" xml:lang="la" type="auto">Utcunque rescribito.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale per dominum cum fratribus et familia.</s>
+					<s n="33" xml:lang="la" type="auto">Vale per dominum cum fratribus et familia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="97">Basileę</placeName>, 10. ianuarii mane ante concionem - ideo brevior esse coactus sum - anno 35.</s>
+					<s n="34" xml:lang="la" type="auto"><placeName ref="place97">Basileę</placeName>, 10. ianuarii mane ante concionem - ideo brevior esse coactus sum - anno 35.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">O. <persName ref="154">Myconius</persName> tuus.</s>
+					<s n="35" xml:lang="la" type="auto">O. <persName ref="person154">Myconius</persName> tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino <persName ref="225">Heinricho</persName> Bullingero, doctissimo piissimoque amico et fratri in domino suo.</s>
+					<s n="36" xml:lang="la" type="auto">Domino Heinricho Bullingero, doctissimo piissimoque amico et fratri in domino suo.</s>
 				</p>
 			</div>
 		</body>

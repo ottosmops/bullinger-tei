@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2005"/>
-				<idno type="ISBN">ISBN 3-290-17339-9</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1556</idno>
+				<idno subtype="ISBN">ISBN 3-290-17339-9</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1556</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 11</title>
+				<title subtype="publication">HBBW XI</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">11</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 364,28</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 364,28</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,10 +49,10 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								<persName ref="263">Zwicks</persName> Bruder [<persName ref="264">Konrad</persName>] ist
-								gestern [vom Reichstag in <placeName ref="880">Regensburg</placeName>] zurückgekehrt; sobald er dem
+								<persName ref="person263">Zwicks</persName> Bruder [Konrad] ist
+								gestern [vom Reichstag in <placeName ref="place880">Regensburg</placeName>] zurückgekehrt; sobald er dem
 								Rat seinen Bericht vorgelegt hat, soll auch Bullinger Nachricht erhalten. Der Tod von
-								[<persName ref="81">Simon</persName>] <persName ref="81">Grynäus</persName> hat alle
+								[Simon] <persName ref="person81">Grynäus</persName> hat alle
 								erschüttert.
 							</p>
 						</summary>
@@ -60,39 +63,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11599">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
+					-->
+					<persName ref="person4079" cert="high"/>
 					<date when="1541-08-15" cert="low">um Mitte August 1541</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11600"/>
-					<ref type="prev_chronologically" target="files.xml#11598"/>
-					<ref type="next_correspondence" target="files.xml#11603"/>
-					<ref type="prev_correspondence" target="files.xml#11589"/>
-					<ref type="next_correspondence_request" target="files.xml#11603"/>
-					<ref type="prev_correspondence_request" target="files.xml#11589"/>
+					<ref type="next_chronologically" target="file11600"/>
+					<ref type="prev_chronologically" target="file11598"/>
+					<ref type="next_correspondence" target="file11603"/>
+					<ref type="prev_correspondence" target="file11589"/>
+					<ref type="next_correspondence_request" target="file11603"/>
+					<ref type="prev_correspondence_request" target="file11589"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10990"/>
-					<ref type="next_same_sender" target="files.xml#11603"/>
-					<ref type="prev_same_sender" target="files.xml#11589"/>
-					<ref type="next_same_addressee" target="files.xml#11604"/>
-					<ref type="prev_same_addressee" target="files.xml#11596"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11603"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11589"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11604"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11596"/>
+					<ref type="prev_correspondence_reaction" target="file10990"/>
+					<ref type="next_same_sender" target="file11603"/>
+					<ref type="prev_same_sender" target="file11589"/>
+					<ref type="next_same_addressee" target="file11604"/>
+					<ref type="prev_same_addressee" target="file11596"/>
+					<ref type="next_with_sender_as_addressee" target="file11603"/>
+					<ref type="prev_with_sender_as_addressee" target="file11589"/>
+					<ref type="next_with_addressee_as_sender" target="file11604"/>
+					<ref type="prev_with_addressee_as_sender" target="file11596"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -106,18 +118,18 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Heri frater rediit<note xml:id="fn2" type="footnote" n="2"><persName ref="264">Konrad Zwick</persName> hatte <placeName ref="565">Konstanz</placeName> am Reichstag zu <placeName ref="880">Regensburg</placeName> vertreten (vgl. oben <ref target="file#11569">Nr. 1526</ref>, Anm. 3); das genaue Datum seiner Rückkehr ist nicht bekannt.</note>.</s>
-					<s xml:lang="la" type="auto">Relationem senatui non fecit adhuc.</s>
-					<s xml:lang="la" type="auto">Qua facta etiam nos sciemus certa, quae te non celabo tabellione proximo.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Heri frater rediit<note xml:id="fn2" type="footnote" n="2"><persName ref="person264">Konrad Zwick</persName> hatte <placeName ref="place565">Konstanz</placeName> am Reichstag zu <placeName ref="place880">Regensburg</placeName> vertreten (vgl. oben <ref target="file11569">Nr. 1526</ref>, Anm. 3); das genaue Datum seiner Rückkehr ist nicht bekannt.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Relationem senatui non fecit adhuc.</s>
+					<s n="4" xml:lang="la" type="auto">Qua facta etiam nos sciemus certa, quae te non celabo tabellione proximo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">De <persName ref="81">Grynei</persName> obitu<note xml:id="fn3" type="footnote" n="3">Zum Tod von <persName ref="81">Simon Grynäus</persName> vgl. oben <ref target="file#11595">Nr. 1552</ref>, Anm. b.</note> omnes sumus consternati.</s>
-					<s xml:lang="la" type="auto">Tuus Io. <persName ref="263">Zvick</persName>.</s>
+					<s n="5" xml:lang="la" type="auto">De <persName ref="person81">Grynei</persName> obitu<note xml:id="fn3" type="footnote" n="3">Zum Tod von <persName ref="person81">Simon Grynäus</persName> vgl. oben <ref target="file11595">Nr. 1552</ref>, Anm. b.</note> omnes sumus consternati.</s>
+					<s n="6" xml:lang="la" type="auto">Tuus <persName ref="person263">Io. Zvick</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Hainricho Bullingero, Tigurinae ecclesię pastori vigilantissimo.</s>
+					<s n="7" xml:lang="la" type="auto">Domino Hainricho Bullingero, Tigurinae ecclesię pastori vigilantissimo.</s>
 				</p>
 			</div>
 		</body>

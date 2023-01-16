@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3469</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 356,1015</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 356,1015</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 81,49</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 81,49</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -61,51 +67,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2176">
 				<correspAction type="sent">
-					<persName ref="person#1218" cert="high">
+					<!--
+					<persName ref="person1218" cert="high">
 						<forename cert="high">Georg</forename>
 						<surname cert="high">Frölich</surname>
-						<addName type="main">Frölich (Laetus), Georg</addName>
-						<ref type="wikipedia" target="https://www.deutsche-biographie.de/sfz17760.html"/>
+						<persName type="main" ref="person8354>Frölich (Laetus), Georg</addName>
 					</persName>
-					<place source="#279" cert="high">
-						<settlement>Lauingen</settlement>
-						<district>Bayern</district>
-						<country>Deutschland</country>
-						<geo>48.56775 10.42706</geo>
-					</place>
+					-->
+					<persName ref="person1218" cert="high"/>
+					<place source="place279" cert="high"/>
 					<date when="1554-02-03" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2177"/>
-					<ref type="prev_chronologically" target="files.xml#2175"/>
-					<ref type="next_correspondence" target="files.xml#2224"/>
-					<ref type="prev_correspondence" target="files.xml#2160"/>
-					<ref type="next_correspondence_request" target="files.xml#2224"/>
-					<ref type="prev_correspondence_request" target="files.xml#2160"/>
+					<ref type="next_chronologically" target="file2177"/>
+					<ref type="prev_chronologically" target="file2175"/>
+					<ref type="next_correspondence" target="file2224"/>
+					<ref type="prev_correspondence" target="file2160"/>
+					<ref type="next_correspondence_request" target="file2224"/>
+					<ref type="prev_correspondence_request" target="file2160"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12511"/>
-					<ref type="next_same_sender" target="files.xml#2224"/>
-					<ref type="prev_same_sender" target="files.xml#2160"/>
-					<ref type="next_same_addressee" target="files.xml#2179"/>
-					<ref type="prev_same_addressee" target="files.xml#2174"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2224"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2160"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2179"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2174"/>
+					<ref type="prev_correspondence_reaction" target="file12511"/>
+					<ref type="next_same_sender" target="file2224"/>
+					<ref type="prev_same_sender" target="file2160"/>
+					<ref type="next_same_addressee" target="file2179"/>
+					<ref type="prev_same_addressee" target="file2174"/>
+					<ref type="next_with_sender_as_addressee" target="file2224"/>
+					<ref type="prev_with_sender_as_addressee" target="file2160"/>
+					<ref type="next_with_addressee_as_sender" target="file2179"/>
+					<ref type="prev_with_addressee_as_sender" target="file2174"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -115,57 +118,60 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="2176/Autograph/00 E_II_356__S__1015_r_.tif" n="1"/>
+		<graphic url="2176/Autograph/01 E_II_356__S__1015_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Epistolam proxime 8. ianuarii ad me datam tertia februarii accepi.</s>
-					<s xml:lang="la" type="auto">Negligentię te minime, sed potius me ipsum arguo, qui nunc functionibus omnibus defunctus esse videor.</s>
-					<s xml:lang="la" type="auto">Quantum Ionam meum ratione chelis attinet, dicit ipse disertis verbis se nulli pro ea debere quicquam, sed dominum Simblerum pro eo instrumento sibi adscripsisse coronatum Gallicum, id quod etiam ratiuncula transmissa continet.</s>
-					<s xml:lang="la" type="auto">Velim igitur boni viri querelas esse sedatas.</s>
-					<s xml:lang="la" type="auto">De solutione debitorum nuper scripsi et promissa deo auspice brevi praestabo.</s>
-					<s xml:lang="la" type="auto">Ionas ulcerum et scabieie plęnus est adeo, ut non dum membra, sed ne ingenium quidem offitium suum faciat.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Epistolam proxime 8. ianuarii ad me datam tertia februarii accepi.</s>
+					<s n="3" xml:lang="la" type="auto">Negligentię te minime, sed potius me ipsum arguo, qui nunc functionibus omnibus defunctus esse videor.</s>
+					<s n="4" xml:lang="la" type="auto">Quantum Ionam meum ratione chelis attinet, dicit ipse disertis verbis se nulli pro ea debere quicquam, sed dominum Simblerum pro eo instrumento sibi adscripsisse coronatum Gallicum, id quod etiam ratiuncula transmissa continet.</s>
+					<s n="5" xml:lang="la" type="auto">Velim igitur boni viri querelas esse sedatas.</s>
+					<s n="6" xml:lang="la" type="auto">De solutione debitorum nuper scripsi et promissa deo auspice brevi praestabo.</s>
+					<s n="7" xml:lang="la" type="auto">Ionas ulcerum et scabieie plęnus est adeo, ut non dum membra, sed ne ingenium quidem offitium suum faciat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Translationis munus librorum tuorum De gratia quam lubentissime subirem; nihil profecto fuerit mihi iucundius quam in agro tuo, imo dei optimi agriculturam exercere.</s>
-					<s xml:lang="la" type="auto">Sed cum non unum, verum centum onera feram, nunc brevi opus tuum aggredi vix fieri potest.</s>
-					<s xml:lang="la" type="auto">Fęcit mihi negotium ingens magister Laurentius Agricola Vituduranus, cuius rerum bellicarum stratagemata<note xml:id="fn1" type="footnote" n="1">Vgl. in auch Brief 26101 (Agricola/Meyer an Ottheinrich, 15. Mai 1556: "die dry gwaltigen buͤcher der kriegskampffstucken"); Ludwig <hi>Rockinger,</hi> Die Pflege der Geschichte durch die Wittelsbacher. Akademische FS zur Feier des Wittelsbacher Jubiläums, München [1880], Beilage I, S. (15): "Laurentij Agricolae tomus tertius rerum bellicarum, ex clarissimis romanae historiae historiographis. vngepunden[sic] vnd geschriben." (In der Liste von Büchern, die Ottheinrich 1556 von Neuburg nach Heidelberg mitbrachte.).</note> princeps Ottohenrichus vertendi pondus mihi imposuit.</s>
-					<s xml:lang="la" type="auto">Vocat me idem princeps iam ad archigrammateatus sui functionem, idem facit magistratus Augustanus cum egregiis pollicitationibus.</s>
-					<s xml:lang="la" type="auto">Miraberis, si aliquando Proteotica hęc ex me recte et per longum intellexeris.</s>
-					<s xml:lang="la" type="auto">Quippe hę vocationes per integros menses duos mihi dubium iniiecerunt, utriusnam voluntati obtemperarem; vicit tandem principis Ottonis clęmentia et pietas, quę mihi exulanti et ex Augusta pulso manum largam satis porrexit.</s>
-					<s xml:lang="la" type="auto">Illi meas operas promisi, nondum tamen omnino constitui cancellariatum suscipere.</s>
-					<s xml:lang="la" type="auto">Augustani videntur sentiscere morbigenus aliquod, quo laborant, cui mederi meum non erit.</s>
-					<s xml:lang="la" type="auto">Dominus autem det illis resipiscendi animum.</s>
+					<s n="8" xml:lang="la" type="auto">Translationis munus librorum tuorum De gratia quam lubentissime subirem; nihil profecto fuerit mihi iucundius quam in agro tuo, imo dei optimi agriculturam exercere.</s>
+					<s n="9" xml:lang="la" type="auto">Sed cum non unum, verum centum onera feram, nunc brevi opus tuum aggredi vix fieri potest.</s>
+					<s n="10" xml:lang="la" type="auto">Fęcit mihi negotium ingens magister Laurentius Agricola Vituduranus, cuius rerum bellicarum stratagemata<note xml:id="fn1" type="footnote" n="1">Vgl. in auch Brief 26101 (Agricola/Meyer an Ottheinrich, 15. Mai 1556: "die dry gwaltigen buͤcher der kriegskampffstucken"); Ludwig <hi>Rockinger,</hi> Die Pflege der Geschichte durch die Wittelsbacher. Akademische FS zur Feier des Wittelsbacher Jubiläums, München [1880], Beilage I, S. (15): "Laurentij Agricolae tomus tertius rerum bellicarum, ex clarissimis romanae historiae historiographis. vngepunden[sic] vnd geschriben." (In der Liste von Büchern, die Ottheinrich 1556 von Neuburg nach Heidelberg mitbrachte.).</note> princeps Ottohenrichus vertendi pondus mihi imposuit.</s>
+					<s n="11" xml:lang="la" type="auto">Vocat me idem princeps iam ad archigrammateatus sui functionem, idem facit magistratus Augustanus cum egregiis pollicitationibus.</s>
+					<s n="12" xml:lang="la" type="auto">Miraberis, si aliquando Proteotica hęc ex me recte et per longum intellexeris.</s>
+					<s n="13" xml:lang="la" type="auto">Quippe hę vocationes per integros menses duos mihi dubium iniiecerunt, utriusnam voluntati obtemperarem; vicit tandem principis Ottonis clęmentia et pietas, quę mihi exulanti et ex Augusta pulso manum largam satis porrexit.</s>
+					<s n="14" xml:lang="la" type="auto">Illi meas operas promisi, nondum tamen omnino constitui cancellariatum suscipere.</s>
+					<s n="15" xml:lang="la" type="auto">Augustani videntur sentiscere morbigenus aliquod, quo laborant, cui mederi meum non erit.</s>
+					<s n="16" xml:lang="la" type="auto">Dominus autem det illis resipiscendi animum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Res Anglice plęrosque perturbant, plęrosque etiam exhilarant.</s>
-					<s xml:lang="la" type="auto">Cardinalis Augustanus habuit nuper contionem congratulatoriam super restitutione regni Anglici ad Romanam ecclesiam largitusque est multas miriades indulgentiarum omnibus, qui pro constantia reginę orent et principi Hispaniarum felicia precentur.</s>
+					<s n="17" xml:lang="la" type="auto">Res Anglice plęrosque perturbant, plęrosque etiam exhilarant.</s>
+					<s n="18" xml:lang="la" type="auto">Cardinalis Augustanus habuit nuper contionem congratulatoriam super restitutione regni Anglici ad Romanam ecclesiam largitusque est multas miriades indulgentiarum omnibus, qui pro constantia reginę orent et principi Hispaniarum felicia precentur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cęsar, ut rumor est, transfretabit propediem in Hispanias nunquam rediturus.</s>
-					<s xml:lang="la" type="auto">Quos Germanie relicturus sit aculeos tempus declarabit; certo certius est malum iam iterum atque iterum monstrum ali a nonnullis.</s>
+					<s n="19" xml:lang="la" type="auto">Cęsar, ut rumor est, transfretabit propediem in Hispanias nunquam rediturus.</s>
+					<s n="20" xml:lang="la" type="auto">Quos Germanie relicturus sit aculeos tempus declarabit; certo certius est malum iam iterum atque iterum monstrum ali a nonnullis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ad 5. februarii filia mea Affra celebratura est nuptias cum eleganti iuvene, pro quibus coniugatis et pro ipsorum salute deum optimum maximum mecum intense precaberis.</s>
-					<s xml:lang="la" type="auto">Vale cum tota domo tua.</s>
-					<s xml:lang="la" type="auto">3. februarii ex Lauginga 1554.</s>
+					<s n="21" xml:lang="la" type="auto">Ad 5. februarii filia mea Affra celebratura est nuptias cum eleganti iuvene, pro quibus coniugatis et pro ipsorum salute deum optimum maximum mecum intense precaberis.</s>
+					<s n="22" xml:lang="la" type="auto">Vale cum tota domo tua.</s>
+					<s n="23" xml:lang="la" type="auto">3. februarii ex Lauginga 1554.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Georgius Lętus a Lömnitz etc.</s>
+					<s n="24" xml:lang="la" type="auto">Tuus Georgius Lętus a Lömnitz etc.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Ich hab gar ein liben frund Jacob Relinger zuͦ Ledder, weiland herr Ulrich Rehlinger, burgermaisters zu A[ugspurg] sone, den ich fur einen christen ere unnd halt.</s>
-					<s xml:lang="de" type="auto">Der hett gern einen kirchendiner eur confessione.</s>
-					<s xml:lang="de" type="auto">Bitte euch freuntlich, ir wollend ime einen zuschicken und daneben schriben, das er uff min fuͦrdrung dahin komme; er wurdt guͦten platz haben.</s>
+					<s n="25" xml:lang="de" type="auto">Ich hab gar ein liben frund Jacob Relinger zuͦ Ledder, weiland herr Ulrich Rehlinger, burgermaisters zu A[ugspurg] sone, den ich fur einen christen ere unnd halt.</s>
+					<s n="26" xml:lang="de" type="auto">Der hett gern einen kirchendiner eur confessione.</s>
+					<s n="27" xml:lang="de" type="auto">Bitte euch freuntlich, ir wollend ime einen zuschicken und daneben schriben, das er uff min fuͦrdrung dahin komme; er wurdt guͦten platz haben.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Die zittung in Engelland wollen sich enndern.</s>
-					<s xml:lang="de" type="auto">Hertzog Hans Friederich und hertzog August von Saxen sollen entlich vertragen sin.</s>
+					<s n="28" xml:lang="de" type="auto">Die zittung in Engelland wollen sich enndern.</s>
+					<s n="29" xml:lang="de" type="auto">Hertzog Hans Friederich und hertzog August von Saxen sollen entlich vertragen sin.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Incomparabili viro domino Henricho Bullingero, ecclesiastę Tigurino vigilantissimo, amico ut fratri.</s>
+					<s n="30" xml:lang="la" type="auto">Incomparabili viro domino Henricho Bullingero, ecclesiastę Tigurino vigilantissimo, amico ut fratri.</s>
 				</p>
 			</div>
 		</body>

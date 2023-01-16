@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1995"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=909</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=909</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 6</title>
+				<title subtype="publication">HBBW VI</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">6</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 347,73</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 347,73</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,11 +50,11 @@
 						<summary>
 							<p xml:id="regest1">
 								Beklagt das Ausbleiben von Briefen. Sendet das Zürcher Gutachten [zur
-								<placeName ref="1205">Wittenberger</placeName> Konkordie], das der bevorstehenden Tagsatzung
-								vorgelegt werden soll, und hofft, daß <placeName ref="97">Basel</placeName>, wie schon
-								<placeName ref="121">Bern</placeName>, die gleiche Haltung einnehmen wird. Wünscht,
-								<persName ref="154">Myconius</persName> und <persName ref="81">Grynäus</persName> hätten die
-								unkluge "Retraktation" <persName ref="28">Bucers</persName> verhindern können. Die Antwort Zürichs
+								<placeName ref="place1205">Wittenberger</placeName> Konkordie], das der bevorstehenden Tagsatzung
+								vorgelegt werden soll, und hofft, daß <placeName ref="place97">Basel</placeName>, wie schon
+								<placeName ref="place121">Bern</placeName>, die gleiche Haltung einnehmen wird. Wünscht,
+								<persName ref="person154">Myconius</persName> und <persName ref="person81">Grynäus</persName> hätten die
+								unkluge "Retraktation" <persName ref="person28">Bucers</persName> verhindern können. Die Antwort Zürichs
 								ist noch nicht endgültig und deshalb vertraulich zu behandeln.
 							</p>
 						</summary>
@@ -62,51 +65,61 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10951">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1536-11-04" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2234" cert="high">
+					<!--
+					<persName ref="person2234" cert="high">
 						<forename cert="high">Oswald</forename>
 						<surname cert="high">Myconius</surname>
-						<addName type="main">Myconius (Geißhüsler), Oswald</addName>
+						<persName type="main" ref="person8418>Myconius (Geißhüsler), Oswald</addName>
 						<graphic type="portrait" url="portraits/2234_Myconius_Oswald.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Oswald_Myconius"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118735462"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11436560"/>
 					</persName>
-					<persName ref="person#1365" cert="high">
+					-->
+					<persName ref="person2234" cert="high"/>
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
+					-->
+					<persName ref="person1365" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10952"/>
-					<ref type="prev_chronologically" target="files.xml#10950"/>
-					<ref type="next_correspondence" target="files.xml#10966"/>
-					<ref type="prev_correspondence" target="files.xml#10809"/>
-					<ref type="next_correspondence_request" target="files.xml#10967"/>
-					<ref type="prev_correspondence_request" target="files.xml#10809"/>
-					<ref type="next_correspondence_reaction" target="files.xml#10966"/>
+					<ref type="next_chronologically" target="file10952"/>
+					<ref type="prev_chronologically" target="file10950"/>
+					<ref type="next_correspondence" target="file10966"/>
+					<ref type="prev_correspondence" target="file10809"/>
+					<ref type="next_correspondence_request" target="file10967"/>
+					<ref type="prev_correspondence_request" target="file10809"/>
+					<ref type="next_correspondence_reaction" target="file10966"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10958"/>
-					<ref type="prev_same_sender" target="files.xml#10947"/>
-					<ref type="next_same_addressee" target="files.xml#10966"/>
+					<ref type="next_same_sender" target="file10958"/>
+					<ref type="prev_same_sender" target="file10947"/>
+					<ref type="next_same_addressee" target="file10966"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10958"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10947"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10966"/>
+					<ref type="next_with_sender_as_addressee" target="file10958"/>
+					<ref type="prev_with_sender_as_addressee" target="file10947"/>
+					<ref type="next_with_addressee_as_sender" target="file10966"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>
@@ -123,47 +136,47 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Qui fit, fratres, ut tempore tanto non scribatis vel litteram?</s>
-					<s xml:lang="la" type="auto">Nostrumne obliti estis?</s>
-					<s xml:lang="la" type="auto">Ubi amor ille vester in nos quondam ardentissimus?</s>
+					<s n="2" xml:lang="la" type="auto">Qui fit, fratres, ut tempore tanto non scribatis vel litteram?</s>
+					<s n="3" xml:lang="la" type="auto">Nostrumne obliti estis?</s>
+					<s n="4" xml:lang="la" type="auto">Ubi amor ille vester in nos quondam ardentissimus?</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Habetis hic responsionem nostram, quam ad <persName ref="138">Lutheri</persName> articulos oblatos dabit proximis comitiis senatus et ecclesia nostra<note xml:id="fn1" type="footnote" n="1">Gemeint ist die von Bullinger verfaßte, am 24. Oktober von der Zürcher Synode und am 25. vom Kleinen und Großen Rat gebilligte-Deklaration, die an der Basler Tagung vom 12.-14. November in den Entwurf des Briefes der evangelischen Orte der Eidgenossenschaft an <persName ref="138">Luther</persName> eingearbeitet wurde (lateinischer Text: Zürich StA, E II 337, 187r.-192r.; deutsche Übersetzung [von <persName ref="114">Leo Jud</persName>?] sowie weitere Einzelheiten s. WA Briefwechsel XII 246-261, Nr. 4268, I). Die Abschrift der deutschen Fassung in Zürich StA, E I 1 2b tragt (von Bullingers Hand?) den Vermerk: D[omino]Myconio.</note>.</s>
-					<s xml:lang="la" type="auto">Hanc vobis mittimus sperantes nostram vobis non displicituram.</s>
-					<s xml:lang="la" type="auto">Hanc si nobiscum recipere potestis<note xml:id="fna" type="footnote" n="a">potestis <hi>am Rande nachgetragen.</hi></note> aut diversum ab hac non fueritis sequti, convenit probe omnibus.</s>
-					<s xml:lang="la" type="auto">Certe nobis convenit cum <placeName ref="121">Bernatibus</placeName>, quorum responsionem<note xml:id="fn2" type="footnote" n="2">Siehe oben <ref target="file#10945">Nr. 903</ref>, Anm. 6.</note> vidistis, opinor.</s>
-					<s xml:lang="la" type="auto">Non prodesset ecclesiis Helveticis, si scinderemur,<note xml:id="fnb" type="footnote" n="b">scinderemur <hi>korrigiert aus</hi> scinderemus.</note>, qui hactenus summa cohaesimus concordia.</s>
-					<s xml:lang="la" type="auto">Atqui meliora speramus.</s>
+					<s n="5" xml:lang="la" type="auto">Habetis hic responsionem nostram, quam ad <persName ref="person138">Lutheri</persName> articulos oblatos dabit proximis comitiis senatus et ecclesia nostra<note xml:id="fn1" type="footnote" n="1">Gemeint ist die von Bullinger verfaßte, am 24. Oktober von der Zürcher Synode und am 25. vom Kleinen und Großen Rat gebilligte-Deklaration, die an der Basler Tagung vom 12.-14. November in den Entwurf des Briefes der evangelischen Orte der Eidgenossenschaft an <persName ref="person138">Luther</persName> eingearbeitet wurde (lateinischer Text: Zürich StA, E II 337, 187r.-192r.; deutsche Übersetzung [von <persName ref="person114">Leo Jud</persName>?] sowie weitere Einzelheiten s. WA Briefwechsel XII 246-261, Nr. 4268, I). Die Abschrift der deutschen Fassung in Zürich StA, E I 1 2b tragt (von Bullingers Hand?) den Vermerk: D[omino]Myconio.</note>.</s>
+					<s n="6" xml:lang="la" type="auto">Hanc vobis mittimus sperantes nostram vobis non displicituram.</s>
+					<s n="7" xml:lang="la" type="auto">Hanc si nobiscum recipere potestis<note xml:id="fna" type="footnote" n="a">potestis <hi>am Rande nachgetragen.</hi></note> aut diversum ab hac non fueritis sequti, convenit probe omnibus.</s>
+					<s n="8" xml:lang="la" type="auto">Certe nobis convenit cum <placeName ref="place121">Bernatibus</placeName>, quorum responsionem<note xml:id="fn2" type="footnote" n="2">Siehe oben <ref target="file10945">Nr. 903</ref>, Anm. 6.</note> vidistis, opinor.</s>
+					<s n="9" xml:lang="la" type="auto">Non prodesset ecclesiis Helveticis, si scinderemur,<note xml:id="fnb" type="footnote" n="b">scinderemur <hi>korrigiert aus</hi> scinderemus.</note>, qui hactenus summa cohaesimus concordia.</s>
+					<s n="10" xml:lang="la" type="auto">Atqui meliora speramus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="28">Bucerus</persName> optimam concordiae causam apud nostros fecit suspectissimam sua ista (mea quidem sententia) imprudenti Retractation<note xml:id="fn3" type="footnote" n="3">Zu <persName ref="28">Bucers</persName> Retraktationen s. oben <ref target="file#10906">Nr. 866</ref>, Anm. 12.</note>.</s>
-					<s xml:lang="la" type="auto">Magnam sane apud nostros plerosque invidiam sibi concitavit.</s>
-					<s xml:lang="la" type="auto">Quantum animi dederit papistis, quantas calumniandi et blasphemandi ansas praebuerit tam infirmis quam malevolis, ipsi nostis melius.</s>
-					<s xml:lang="la" type="auto">Ego hoc retractandi studium a vobis impeditum vellem et ratione aliqua commodiori coeptum optarem.</s>
-					<s xml:lang="la" type="auto">Iam diversum evenit.</s>
+					<s n="11" xml:lang="la" type="auto"><persName ref="person28">Bucerus</persName> optimam concordiae causam apud nostros fecit suspectissimam sua ista (mea quidem sententia) imprudenti Retractation<note xml:id="fn3" type="footnote" n="3">Zu <persName ref="person28">Bucers</persName> Retraktationen s. oben <ref target="file10906">Nr. 866</ref>, Anm. 12.</note>.</s>
+					<s n="12" xml:lang="la" type="auto">Magnam sane apud nostros plerosque invidiam sibi concitavit.</s>
+					<s n="13" xml:lang="la" type="auto">Quantum animi dederit papistis, quantas calumniandi et blasphemandi ansas praebuerit tam infirmis quam malevolis, ipsi nostis melius.</s>
+					<s n="14" xml:lang="la" type="auto">Ego hoc retractandi studium a vobis impeditum vellem et ratione aliqua commodiori coeptum optarem.</s>
+					<s n="15" xml:lang="la" type="auto">Iam diversum evenit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Responsionem autem hanc nostram vobis sous communicatam putate.</s>
-					<s xml:lang="la" type="auto">Nolumus hanc ante comitia exhiberi Argentinensibus.</s>
-					<s xml:lang="la" type="auto">Expectamus enim adhuc aliorum iuditia.</s>
-					<s xml:lang="la" type="auto">Addemus itaque nonnihil fortassis aut adimemus.</s>
-					<s xml:lang="la" type="auto">Stabimus et iuditio vestro.</s>
+					<s n="16" xml:lang="la" type="auto">Responsionem autem hanc nostram vobis sous communicatam putate.</s>
+					<s n="17" xml:lang="la" type="auto">Nolumus hanc ante comitia exhiberi Argentinensibus.</s>
+					<s n="18" xml:lang="la" type="auto">Expectamus enim adhuc aliorum iuditia.</s>
+					<s n="19" xml:lang="la" type="auto">Addemus itaque nonnihil fortassis aut adimemus.</s>
+					<s n="20" xml:lang="la" type="auto">Stabimus et iuditio vestro.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Valete.</s>
+					<s n="21" xml:lang="la" type="auto">Valete.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="463"/>Tiguri, 4. novembris anno 1536.</s>
+					<s n="22" xml:lang="la" type="auto"><pb type="edition" next="463"/>Tiguri, 4. novembris anno 1536.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus vester.</s>
+					<s n="23" xml:lang="la" type="auto">H. Bullingerus vester.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino <persName ref="154">Osvaldo Myconio</persName> et d. <persName ref="81">Simoni Grynaeo</persName>, <placeName ref="97">Basileien[sium]</placeName> ecclesiae antistitibus ornatissimis, charissimis fratribus.</s>
+					<s n="24" xml:lang="la" type="auto">Domino <persName ref="person154">Osvaldo Myconio</persName> et d. <persName ref="person81">Simoni Grynaeo</persName>, <placeName ref="place97">Basileien[sium]</placeName> ecclesiae antistitibus ornatissimis, charissimis fratribus.</s>
 				</p>
 			</div>
 		</body>

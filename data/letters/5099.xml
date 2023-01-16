@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#492">Strassburg</settlement>
-						<institution>Archiv von Sankt-Thomas</institution>
-						<idno type="Autograph">Nr. 154, Epist.eccl. I, p. 633-634, Nr. 265</idno>
-						<repository ref="archive#80">
+						<!--
+						<repository ref="archive80">
 							<name>Strassburg AST</name>
-							<note type="Mikrofilm">IRG</note>
 							<ref target="https://archives.strasbourg.eu/"/>
 						</repository>
+						<settlement ref="place492">Strassburg</settlement>
+						<institution>Archiv von Sankt-Thomas</institution>
+						-->
+						<repository ref="archive80"/>
+						<idno subtype="Autograph">Nr. 154, Epist.eccl. I, p. 633-634, Nr. 265</idno>
+						<idno subtype="Mikrofilm">IRG</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -26,13 +29,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 102,132</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 102,132</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -41,50 +47,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5099">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1561-12-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#1644" cert="high">
+					<!--
+					<persName ref="person1644" cert="high">
 						<forename cert="high">Konrad</forename>
 						<surname cert="high">Hubert</surname>
-						<addName type="main">Hubert (Hubprecht), Konrad</addName>
+						<persName type="main" ref="person8385>Hubert (Hubprecht), Konrad</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Konrad_Hubert"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/119716097"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
+					-->
+					<persName ref="person1644" cert="high"/>
+					<place source="place492" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5100"/>
-					<ref type="prev_chronologically" target="files.xml#5098"/>
-					<ref type="next_correspondence" target="files.xml#5107"/>
+					<ref type="next_chronologically" target="file5100"/>
+					<ref type="prev_chronologically" target="file5098"/>
+					<ref type="next_correspondence" target="file5107"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#5107"/>
+					<ref type="next_correspondence_request" target="file5107"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#6087"/>
+					<ref type="next_correspondence_reaction" target="file6087"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#5106"/>
-					<ref type="prev_same_sender" target="files.xml#5096"/>
-					<ref type="next_same_addressee" target="files.xml#6087"/>
+					<ref type="next_same_sender" target="file5106"/>
+					<ref type="prev_same_sender" target="file5096"/>
+					<ref type="next_same_addressee" target="file6087"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5106"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#5096"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6087"/>
+					<ref type="next_with_sender_as_addressee" target="file5106"/>
+					<ref type="prev_with_sender_as_addressee" target="file5096"/>
+					<ref type="next_with_addressee_as_sender" target="file6087"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
 			</correspDesc>

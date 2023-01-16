@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1039</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1039</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 342a,690</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 342a,690</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,10 +49,10 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								<persName ref="151">Lorenz Meyer</persName> soll der Tochter Geißmeiers in
-								<placeName ref="405">Girsberg</placeName> [Waltalingen, Kt. Zürich] ins Gewissen reden, da sie
+								<persName ref="person151">Lorenz Meyer</persName> soll der Tochter Geißmeiers in
+								<placeName ref="place405">Girsberg</placeName> [Waltalingen, Kt. Zürich] ins Gewissen reden, da sie
 								leichtfertig abstreitet, dem Sohn des alten Mannes, der den Brief überbringt, die Ehe versprochen zu haben;
-								soll auch vorsichtig der Haltung der Mutter nachfragen. Wird <persName ref="151">Meyer</persName> diesen Dienst hoch anrechnen.
+								soll auch vorsichtig der Haltung der Mutter nachfragen. Wird <persName ref="person151">Meyer</persName> diesen Dienst hoch anrechnen.
 							</p>
 						</summary>
 					</msContents>
@@ -59,44 +62,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11081">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1537-09-09" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2115" cert="high">
+					<!--
+					<persName ref="person2115" cert="high">
 						<forename cert="high">Lorenz</forename>
 						<surname cert="high">Meyer</surname>
-						<addName type="main">Meyer (Agricola), Lorenz</addName>
+						<persName type="main" ref="person8130>Meyer (Agricola), Lorenz</addName>
 					</persName>
+					-->
+					<persName ref="person2115" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11082"/>
-					<ref type="prev_chronologically" target="files.xml#11080"/>
-					<ref type="next_correspondence" target="files.xml#11959"/>
-					<ref type="prev_correspondence" target="files.xml#10508"/>
+					<ref type="next_chronologically" target="file11082"/>
+					<ref type="prev_chronologically" target="file11080"/>
+					<ref type="next_correspondence" target="file11959"/>
+					<ref type="prev_correspondence" target="file10508"/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#11959"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10508"/>
-					<ref type="next_same_sender" target="files.xml#11096"/>
-					<ref type="prev_same_sender" target="files.xml#11079"/>
-					<ref type="next_same_addressee" target="files.xml#11959"/>
-					<ref type="prev_same_addressee" target="files.xml#10508"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11096"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11079"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11959"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10508"/>
+					<ref type="next_correspondence_reaction" target="file11959"/>
+					<ref type="prev_correspondence_reaction" target="file10508"/>
+					<ref type="next_same_sender" target="file11096"/>
+					<ref type="prev_same_sender" target="file11079"/>
+					<ref type="next_same_addressee" target="file11959"/>
+					<ref type="prev_same_addressee" target="file10508"/>
+					<ref type="next_with_sender_as_addressee" target="file11096"/>
+					<ref type="prev_with_sender_as_addressee" target="file11079"/>
+					<ref type="next_with_addressee_as_sender" target="file11959"/>
+					<ref type="prev_with_addressee_as_sender" target="file10508"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -110,36 +116,36 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et vitae innocentiam a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bonus hic senecio<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note> caussam habet matrimonialem, in qua ipsi tua intelligo opus esse opera.</s>
-					<s xml:lang="la" type="auto">Fidem enim dedit filia Geysmeyeri<note xml:id="fn2" type="footnote" n="2">Wohl <persName ref="943">Margareta Geißmeyer</persName>, die Tochter von <persName ref="944">Michael Geißmeyer</persName> (s. Emil <hi>Stauber,</hi> Geschichte der Kirchgemeinde Andelfingen, Bd. II, Zürich 1941, S. 889).</note> a Gyrspurg<note xml:id="fn3" type="footnote" n="3"><placeName ref="405">Girsberg</placeName> (Waltalingen, Kt. Zürich).</note> filio<note xml:id="fn4" type="footnote" n="4">Unbekannt.</note> suo.</s>
-					<s xml:lang="la" type="auto">Nunc, quantum intelligo, dissimulat et facta infecta esse vellet.</s>
-					<s xml:lang="la" type="auto">Tu vero pro tua pietate nosti fidem pactam maxime in nuptiis atque sponsalibus non temere solvendam esse.</s>
-					<s xml:lang="la" type="auto">Dabis ergo operam, ut commonita offitii sui caveat, ne conscientiam perfidia polluat.</s>
-					<s xml:lang="la" type="auto">Modica scintillula in fomitem recondita conscientiae incredibile<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> incredebile.</note> aliquando excitabit homini incendium<note xml:id="fn5" type="footnote" n="5">Vgl. Otto 311f, Nr. 1604.</note>.</s>
-					<s xml:lang="la" type="auto">Credidit fortasse delatoribus nimis credula puella.</s>
-					<s xml:lang="la" type="auto">Si fidem dedit, credat deo magis<note xml:id="fnb" type="footnote" n="b">magis <hi>am Rande nachgetragen.</hi></note> et stet pactis.</s>
-					<s xml:lang="la" type="auto">Non audio quicquam hic inscia matre<note xml:id="fn6" type="footnote" n="6">Wohl <persName ref="942">Magdalena Geißmeyer</persName> (s. <hi>Stauber,</hi> aaO, S. 889).</note> actum esse.</s>
-					<s xml:lang="la" type="auto">Fortassis filiae poenitentiam nescit.</s>
-					<s xml:lang="la" type="auto">Prudenter tamen ista omnia inquires.</s>
+					<s n="2" xml:lang="la" type="auto">Bonus hic senecio<note xml:id="fn1" type="footnote" n="1">Unbekannt.</note> caussam habet matrimonialem, in qua ipsi tua intelligo opus esse opera.</s>
+					<s n="3" xml:lang="la" type="auto">Fidem enim dedit filia Geysmeyeri<note xml:id="fn2" type="footnote" n="2">Wohl <persName ref="person943">Margareta Geißmeyer</persName>, die Tochter von <persName ref="person944">Michael Geißmeyer</persName> (s. Emil <hi>Stauber,</hi> Geschichte der Kirchgemeinde Andelfingen, Bd. II, Zürich 1941, S. 889).</note> a Gyrspurg<note xml:id="fn3" type="footnote" n="3"><placeName ref="place405">Girsberg</placeName> (Waltalingen, Kt. Zürich).</note> filio<note xml:id="fn4" type="footnote" n="4">Unbekannt.</note> suo.</s>
+					<s n="4" xml:lang="la" type="auto">Nunc, quantum intelligo, dissimulat et facta infecta esse vellet.</s>
+					<s n="5" xml:lang="la" type="auto">Tu vero pro tua pietate nosti fidem pactam maxime in nuptiis atque sponsalibus non temere solvendam esse.</s>
+					<s n="6" xml:lang="la" type="auto">Dabis ergo operam, ut commonita offitii sui caveat, ne conscientiam perfidia polluat.</s>
+					<s n="7" xml:lang="la" type="auto">Modica scintillula in fomitem recondita conscientiae incredibile<note xml:id="fna" type="footnote" n="a"><hi>in der Vorlage</hi> incredebile.</note> aliquando excitabit homini incendium<note xml:id="fn5" type="footnote" n="5">Vgl. Otto 311f, Nr. 1604.</note>.</s>
+					<s n="8" xml:lang="la" type="auto">Credidit fortasse delatoribus nimis credula puella.</s>
+					<s n="9" xml:lang="la" type="auto">Si fidem dedit, credat deo magis<note xml:id="fnb" type="footnote" n="b">magis <hi>am Rande nachgetragen.</hi></note> et stet pactis.</s>
+					<s n="10" xml:lang="la" type="auto">Non audio quicquam hic inscia matre<note xml:id="fn6" type="footnote" n="6">Wohl <persName ref="person942">Magdalena Geißmeyer</persName> (s. <hi>Stauber,</hi> aaO, S. 889).</note> actum esse.</s>
+					<s n="11" xml:lang="la" type="auto">Fortassis filiae poenitentiam nescit.</s>
+					<s n="12" xml:lang="la" type="auto">Prudenter tamen ista omnia inquires.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale.</s>
+					<s n="13" xml:lang="la" type="auto">Vale.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri, 9. septembris anno 1537.</s>
+					<s n="14" xml:lang="la" type="auto">Tiguri, 9. septembris anno 1537.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quod autem huic seni impenderis diligentiae, mihi putabo impensum.</s>
+					<s n="15" xml:lang="la" type="auto">Quod autem huic seni impenderis diligentiae, mihi putabo impensum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">H. Bullingerus tuus.</s>
+					<s n="16" xml:lang="la" type="auto">H. Bullingerus tuus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino <persName ref="151">Laurentio Agricolae</persName>, Stamheymensi pastori vigilantissimo et longe charissimo fratri.</s>
+					<s n="17" xml:lang="la" type="auto">Domino <persName ref="person151">Laurentio Agricolae</persName>, Stamheymensi pastori vigilantissimo et longe charissimo fratri.</s>
 				</p>
 			</div>
 		</body>

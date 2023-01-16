@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2021"/>
-				<idno type="ISBN">ISBN 978-3-290-18354-7</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2893</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-18354-7</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2893</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 20</title>
+				<title subtype="publication">HBBW XX</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Häfner, Yvonne; Steiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">20</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 366,81</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 366,81</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -81,44 +84,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12942">
 				<correspAction type="sent">
-					<persName ref="person#714" cert="high">
+					<!--
+					<persName ref="person714" cert="high">
 						<forename cert="high">Celio Secondo</forename>
 						<surname cert="high">Curione</surname>
+						<graphic type="portrait" url="portraits/714_Curione_Celio_Secondo.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Celio_Secondo_Curione"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/10407440X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414681"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person714" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1547-05-02" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12943"/>
-					<ref type="prev_chronologically" target="files.xml#12941"/>
-					<ref type="next_correspondence" target="files.xml#13049"/>
-					<ref type="prev_correspondence" target="files.xml#12885"/>
-					<ref type="next_correspondence_request" target="files.xml#13049"/>
-					<ref type="prev_correspondence_request" target="files.xml#12885"/>
-					<ref type="next_correspondence_reaction" target="files.xml#13051"/>
+					<ref type="next_chronologically" target="file12943"/>
+					<ref type="prev_chronologically" target="file12941"/>
+					<ref type="next_correspondence" target="file13049"/>
+					<ref type="prev_correspondence" target="file12885"/>
+					<ref type="next_correspondence_request" target="file13049"/>
+					<ref type="prev_correspondence_request" target="file12885"/>
+					<ref type="next_correspondence_reaction" target="file13051"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#13049"/>
-					<ref type="prev_same_sender" target="files.xml#12885"/>
-					<ref type="next_same_addressee" target="files.xml#12952"/>
-					<ref type="prev_same_addressee" target="files.xml#12930"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#13049"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12885"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12952"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12930"/>
+					<ref type="next_same_sender" target="file13049"/>
+					<ref type="prev_same_sender" target="file12885"/>
+					<ref type="next_same_addressee" target="file12952"/>
+					<ref type="prev_same_addressee" target="file12930"/>
+					<ref type="next_with_sender_as_addressee" target="file13049"/>
+					<ref type="prev_with_sender_as_addressee" target="file12885"/>
+					<ref type="next_with_addressee_as_sender" target="file12952"/>
+					<ref type="prev_with_addressee_as_sender" target="file12930"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -135,43 +144,43 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Caelius S[ecundus] C[urio] per Christum Iesum S. P. D. Stancarus noster, Bullingere doctissime, superioribus<note xml:id="fn1" type="footnote" n="1">superioribus diebus.</note> Augustam reversus est.<note xml:id="fn2" type="footnote" n="2">Francesco Stancaro hatte sich ungefähr seit 18. Januar 1547 in Basel aufgehalten (s. <abbr>HBBW</abbr> XIX 233, Anm. 14), wo er etliche Schriften drucken ließ. Der vorliegenden Stelle zufolge reiste er also einige Tage vor dem 2. Mai 1547 wieder nach Augsburg zurück; s. auch <abbr>HBBW</abbr> XIX 271f, Anm. 9.</note></s>
-					<s xml:lang="la" type="auto">Cum autem esset profecturus et haberet comitem<note xml:id="fn3" type="footnote" n="3">Unbekannt.</note>, qui Tiguro iter facere non instituisset, reliquit apud me grammaticę Ebreę institutionem,<note xml:id="fn4" type="footnote" n="4"><hi>Stancaro,</hi> Ebreae grammaticae institutio, Basel 1547 (<abbr>VD16</abbr> S8549), die mit einer vom 9. April 1547 datierten Widmung versehen ist.<zfn>fn17161-2</zfn></note> quam hic edidit mandavitque mihi, ut, quando ipse (quod magnopere cupiebat)<note xml:id="fna" type="footnote" n="a"><hi>Klammern ergänzt.</hi></note> Tigurum venire, ut te salutaret, non potuit, eam ego ad te mitterem teque eius nomine plurimum salutarem.</s>
-					<s xml:lang="la" type="auto">Nactus igitur nuncium certum, iuvenem hunc studiosum<note xml:id="fn5" type="footnote" n="5">Caspar Herwagen, ein Neffe des Basler Druckers Johannes Herwagen. Er war seit August 1545 in Basel immatrikuliert (s. <abbr>M-Basel</abbr> II 43, Nr. 6) und damals auf dem Weg nach Italien; s. Curiones Brief an Bullinger vom 27. August 1547 (<ref target="file#13049">Nr. 3000</ref>,<qv>zl17267-1</qv>) und <abbr>AK</abbr> VIII 143f, Anm. 1.<zfn>fn17161-1</zfn></note>, eum librum ad te mitto et nomine Stancari tibi salutem dico.</s>
-					<s xml:lang="la" type="auto">Tu vero, qua es <pb type="edition" next="172"/> humanitate, non tam munus quam Stancari animum et voluntatem erga te aestimabis.</s>
+					<s n="1" xml:lang="la" type="auto">Caelius S[ecundus] C[urio] per Christum Iesum S. P. D. Stancarus noster, Bullingere doctissime, superioribus<note xml:id="fn1" type="footnote" n="1">superioribus diebus.</note> Augustam reversus est.<note xml:id="fn2" type="footnote" n="2">Francesco Stancaro hatte sich ungefähr seit 18. Januar 1547 in Basel aufgehalten (s. <abbr>HBBW</abbr> XIX 233, Anm. 14), wo er etliche Schriften drucken ließ. Der vorliegenden Stelle zufolge reiste er also einige Tage vor dem 2. Mai 1547 wieder nach Augsburg zurück; s. auch <abbr>HBBW</abbr> XIX 271f, Anm. 9.</note></s>
+					<s n="2" xml:lang="la" type="auto">Cum autem esset profecturus et haberet comitem<note xml:id="fn3" type="footnote" n="3">Unbekannt.</note>, qui Tiguro iter facere non instituisset, reliquit apud me grammaticę Ebreę institutionem,<note xml:id="fn4" type="footnote" n="4"><hi>Stancaro,</hi> Ebreae grammaticae institutio, Basel 1547 (<abbr>VD16</abbr> S8549), die mit einer vom 9. April 1547 datierten Widmung versehen ist.<zfn>fn17161-2</zfn></note> quam hic edidit mandavitque mihi, ut, quando ipse (quod magnopere cupiebat)<note xml:id="fna" type="footnote" n="a"><hi>Klammern ergänzt.</hi></note> Tigurum venire, ut te salutaret, non potuit, eam ego ad te mitterem teque eius nomine plurimum salutarem.</s>
+					<s n="3" xml:lang="la" type="auto">Nactus igitur nuncium certum, iuvenem hunc studiosum<note xml:id="fn5" type="footnote" n="5">Caspar Herwagen, ein Neffe des Basler Druckers Johannes Herwagen. Er war seit August 1545 in Basel immatrikuliert (s. <abbr>M-Basel</abbr> II 43, Nr. 6) und damals auf dem Weg nach Italien; s. Curiones Brief an Bullinger vom 27. August 1547 (<ref target="file13049">Nr. 3000</ref>,<qv>zl17267-1</qv>) und <abbr>AK</abbr> VIII 143f, Anm. 1.<zfn>fn17161-1</zfn></note>, eum librum ad te mitto et nomine Stancari tibi salutem dico.</s>
+					<s n="4" xml:lang="la" type="auto">Tu vero, qua es <pb type="edition" next="172"/> humanitate, non tam munus quam Stancari animum et voluntatem erga te aestimabis.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Caeterum Gastius me superioribus diebus tuo nomine salutavit<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> salustavit.</note> tuasque literas ad se<note xml:id="fn6" type="footnote" n="6">Nicht erhalten.</note> mihi legendas tradidit, ex<note xml:id="fnc" type="footnote" n="c"><hi>Über der Zeile nachgetragen.</hi></note> quibus intellexi te adolescentes quosdam vestrates<note xml:id="fn7" type="footnote" n="7">Johannes Buchter und Markus Wüst; s. <ref target="file#12921">Nr. 2872</ref>, <qv>fn17139-2</qv> und <qv>fn17139-3</qv>.</note> mihi commendare.</s>
-					<s xml:lang="la" type="auto">In quibus literis illud gratissimum fuit, quod intellexi te sentire mihi Tigurinos omnes esse charissimos.</s>
-					<s xml:lang="la" type="auto">Non enim ista tua de me persuasio falsa est aut vana; id quod sentient et intelligent, quicunque ex vestratibus ac praesertim a te commendati me, meis rebus omnibus uti volent!</s>
-					<s xml:lang="la" type="auto">Et quod ad istos, quos mihi commendasti, attinet, quibus rebus eos iuvare eorumque studia promovere potero, faciam sane quam lubentissime.</s>
+					<s n="5" xml:lang="la" type="auto">Caeterum Gastius me superioribus diebus tuo nomine salutavit<note xml:id="fnb" type="footnote" n="b"><hi>In der Vorlage</hi> salustavit.</note> tuasque literas ad se<note xml:id="fn6" type="footnote" n="6">Nicht erhalten.</note> mihi legendas tradidit, ex<note xml:id="fnc" type="footnote" n="c"><hi>Über der Zeile nachgetragen.</hi></note> quibus intellexi te adolescentes quosdam vestrates<note xml:id="fn7" type="footnote" n="7">Johannes Buchter und Markus Wüst; s. <ref target="file12921">Nr. 2872</ref>, <qv>fn17139-2</qv> und <qv>fn17139-3</qv>.</note> mihi commendare.</s>
+					<s n="6" xml:lang="la" type="auto">In quibus literis illud gratissimum fuit, quod intellexi te sentire mihi Tigurinos omnes esse charissimos.</s>
+					<s n="7" xml:lang="la" type="auto">Non enim ista tua de me persuasio falsa est aut vana; id quod sentient et intelligent, quicunque ex vestratibus ac praesertim a te commendati me, meis rebus omnibus uti volent!</s>
+					<s n="8" xml:lang="la" type="auto">Et quod ad istos, quos mihi commendasti, attinet, quibus rebus eos iuvare eorumque studia promovere potero, faciam sane quam lubentissime.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Zvinglius<note xml:id="fn8" type="footnote" n="8">Huldrych Zwingli d.J., der Sohn des Reformators.</note> vester et noster quoque ante paucos dies ad primum evectus est studiosorum gradum<note xml:id="fn9" type="footnote" n="9">Zum Baccalaureus. Er erhielt dieses Diplom am 27. April 1547; s. <abbr>M-Basel</abbr> II 44, Nr. 21.</note> pro huiusce academię more.</s>
-					<s xml:lang="la" type="auto">Ego illum sum adhortatus, ut virtutem ipsam magis quam virtutis insignia conaretur adipisci, cum virtutis insignia multi sine virtute assequantur.<note xml:id="fn10" type="footnote" n="10">Anspielung auf <hi>Cicero,</hi> Epistulae ad familiares, 3, 13, 1 ("insignia enim virtutis multi etiam sine virtute adsecuti sunt"). - Diese Bemerkungen sind im Zusammenhang mit dem in den 1530er Jahren in Basel ausgebrochenen Streit über die akademischen Titel zu verstehen; s. dazu zuletzt <abbr>Henrich, Myconius BW</abbr> 23-32.</note></s>
-					<s xml:lang="la" type="auto">Virtutem sine insignibus illis veris et solidis nemo assequi possit.</s>
-					<s xml:lang="la" type="auto">Et spero illum esse facturum cum suapte ingenio, tum bonorum stimulis et monitis.</s>
+					<s n="9" xml:lang="la" type="auto">Zvinglius<note xml:id="fn8" type="footnote" n="8">Huldrych Zwingli d.J., der Sohn des Reformators.</note> vester et noster quoque ante paucos dies ad primum evectus est studiosorum gradum<note xml:id="fn9" type="footnote" n="9">Zum Baccalaureus. Er erhielt dieses Diplom am 27. April 1547; s. <abbr>M-Basel</abbr> II 44, Nr. 21.</note> pro huiusce academię more.</s>
+					<s n="10" xml:lang="la" type="auto">Ego illum sum adhortatus, ut virtutem ipsam magis quam virtutis insignia conaretur adipisci, cum virtutis insignia multi sine virtute assequantur.<note xml:id="fn10" type="footnote" n="10">Anspielung auf <hi>Cicero,</hi> Epistulae ad familiares, 3, 13, 1 ("insignia enim virtutis multi etiam sine virtute adsecuti sunt"). - Diese Bemerkungen sind im Zusammenhang mit dem in den 1530er Jahren in Basel ausgebrochenen Streit über die akademischen Titel zu verstehen; s. dazu zuletzt <abbr>Henrich, Myconius BW</abbr> 23-32.</note></s>
+					<s n="11" xml:lang="la" type="auto">Virtutem sine insignibus illis veris et solidis nemo assequi possit.</s>
+					<s n="12" xml:lang="la" type="auto">Et spero illum esse facturum cum suapte ingenio, tum bonorum stimulis et monitis.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Novi nihil hic accipio, ni Argentoratum in magnis esse seditionum motibus.<note xml:id="fn11" type="footnote" n="11">Zu den Unruhen in Straßburg s. <ref target="file#12933">Nr. 2884</ref>,<qv>zl17151-6</qv>.</note></s>
-					<s xml:lang="la" type="auto">Tu, si quid habes certius de caesare<note xml:id="fn12" type="footnote" n="12">Karl V.</note> et Saxone<note xml:id="fn13" type="footnote" n="13">Kurfürst Johann Friedrich I. von Sachsen.</note>, oro, nobis significes.</s>
+					<s n="13" xml:lang="la" type="auto">Novi nihil hic accipio, ni Argentoratum in magnis esse seditionum motibus.<note xml:id="fn11" type="footnote" n="11">Zu den Unruhen in Straßburg s. <ref target="file12933">Nr. 2884</ref>,<qv>zl17151-6</qv>.</note></s>
+					<s n="14" xml:lang="la" type="auto">Tu, si quid habes certius de caesare<note xml:id="fn12" type="footnote" n="12">Karl V.</note> et Saxone<note xml:id="fn13" type="footnote" n="13">Kurfürst Johann Friedrich I. von Sachsen.</note>, oro, nobis significes.</s>
 				</p>
 			</div>
 			<div xml:id="div5" corresp="regest5">
 				<p>
-					<s xml:lang="la" type="auto">Vale per Christum tuamque familiam meo et meę uxoris<note xml:id="fn14" type="footnote" n="14">Margarita Bianca, geb. Isacchi.</note> nomine saluta.</s>
-					<s xml:lang="la" type="auto">Basileę, secunda maii 1547.</s>
+					<s n="15" xml:lang="la" type="auto">Vale per Christum tuamque familiam meo et meę uxoris<note xml:id="fn14" type="footnote" n="14">Margarita Bianca, geb. Isacchi.</note> nomine saluta.</s>
+					<s n="16" xml:lang="la" type="auto">Basileę, secunda maii 1547.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Pietate et doctrina clarissimo viro Henrico Bullingero, Tigurinae ecclesiae pastori sanctissimo ac vigilantissimo, fratri et amico singulari.</s>
-					<s xml:lang="la" type="auto">Tiguri.<note xml:id="fn15" type="footnote" n="15">Dieser Brief wurde durch den Studenten Caspar Herwagen überbracht; s. oben Z. <qv>zl17161-1</qv> mit <qv>fn17161-1</qv>.</note></s>
+					<s n="17" xml:lang="la" type="auto">Pietate et doctrina clarissimo viro Henrico Bullingero, Tigurinae ecclesiae pastori sanctissimo ac vigilantissimo, fratri et amico singulari.</s>
+					<s n="18" xml:lang="la" type="auto">Tiguri.<note xml:id="fn15" type="footnote" n="15">Dieser Brief wurde durch den Studenten Caspar Herwagen überbracht; s. oben Z. <qv>zl17161-1</qv> mit <qv>fn17161-1</qv>.</note></s>
 				</p>
 			</div>
 		</body>

@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2011"/>
-				<idno type="ISBN">ISBN 978-3-290-17565-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1902</idno>
+				<idno subtype="ISBN">ISBN 978-3-290-17565-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1902</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 14</title>
+				<title subtype="publication">HBBW XIV</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Henrich, Rainer; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">14</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Original" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Original">Ms S 54,140</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Original">Ms S 54,140</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -48,8 +51,8 @@
 							<p xml:id="regest1">
 								Haben im Gefolge der Reformation und teilweise nach dem Vorbild Zürichs und anderer Städte anstelle des
 								Klosters eine Schule gegründet, finden aber nur mit Mühe einheimische Lehrkräfte und bitten deshalb, ihnen
-								auf Pfingsten leihweise ihren Landsmann <persName ref="1866">Johannes</persName>
-								<persName ref="1866">Pontisella</persName> auf ein bis drei Jahre als Schulmeister zu überlassen.
+								auf Pfingsten leihweise ihren Landsmann Johannes
+								<persName ref="person1866">Pontisella</persName> auf ein bis drei Jahre als Schulmeister zu überlassen.
 							</p>
 						</summary>
 					</msContents>
@@ -59,63 +62,44 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11949">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#59" cert="high">Räte</name>
-						<place source="#98" cert="high">
-							<settlement>Chur</settlement>
-							<geo>46.84986 9.53287</geo>
-						</place>
-					</roleName>
+					<!--
 					<note type="Adresse">Räte des Gotteshausbundes</note>
-					<roleName type="title">
-						<name type="plural" ref="role#28" cert="high">Gesandte</name>
-						<place source="#98" cert="high">
-							<settlement>Chur</settlement>
-							<geo>46.84986 9.53287</geo>
-						</place>
-					</roleName>
+					-->
+					<personGrp ref="role0" role="Räte"/>
+					<orgName ref="org25" role="Gotteshausbund"/>"
+					<!--
 					<note type="Adresse">Gesandte des Gotteshausbundes</note>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<personGrp ref="role56" role="Gesandte"/>
+					<orgName ref="org25" role="Gotteshausbund"/>"
+					<place source="place98" cert="high"/>
 					<date when="1544-04-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
+					<!--
 					<note type="Adresse">Pfarrer des Kapitels Zürich</note>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<personGrp ref="role0" role="Pfarrer"/>
+					<orgName ref="org29" role="Kapitel"/>"
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11950"/>
-					<ref type="prev_chronologically" target="files.xml#11948"/>
+					<ref type="next_chronologically" target="file11950"/>
+					<ref type="prev_chronologically" target="file11948"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#11661"/>
+					<ref type="prev_correspondence" target="file11661"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#11564"/>
+					<ref type="prev_correspondence_request" target="file11564"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11661"/>
-					<ref type="next_same_sender" target="files.xml#12022"/>
-					<ref type="prev_same_sender" target="files.xml#11944"/>
-					<ref type="next_same_addressee" target="files.xml#12069"/>
-					<ref type="prev_same_addressee" target="files.xml#11661"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12022"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11944"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12069"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11661"/>
+					<ref type="prev_correspondence_reaction" target="file11661"/>
+					<ref type="next_same_sender" target="file12022"/>
+					<ref type="prev_same_sender" target="file11944"/>
+					<ref type="next_same_addressee" target="file12069"/>
+					<ref type="prev_same_addressee" target="file11661"/>
+					<ref type="next_with_sender_as_addressee" target="file12022"/>
+					<ref type="prev_with_sender_as_addressee" target="file11944"/>
+					<ref type="next_with_addressee_as_sender" target="file12069"/>
+					<ref type="prev_with_addressee_as_sender" target="file11661"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -134,26 +118,26 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Unnser fruntlich gruͦs ze bevor, sampt was wir liebs, eeren und guͦts vermechten<note xml:id="fnb" type="footnote" n="b"><hi>Vielleicht als</hi> vermochten <hi>zu lesen; e und o lassen sich bei diesem Schreiber nicht immer klar unterscheiden.</hi></note>, wolgelerten, wurdigen, ersamen und wysen, lieben herren.</s>
+					<s n="1" xml:lang="de" type="auto">Unnser fruntlich gruͦs ze bevor, sampt was wir liebs, eeren und guͦts vermechten<note xml:id="fnb" type="footnote" n="b"><hi>Vielleicht als</hi> vermochten <hi>zu lesen; e und o lassen sich bei diesem Schreiber nicht immer klar unterscheiden.</hi></note>, wolgelerten, wurdigen, ersamen und wysen, lieben herren.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Wie dan mengklich<note xml:id="fn3" type="footnote" n="3">jedermann.</note> waißt und offenbar ist, das gott der herr us sinen gnaden sin ewig wort hat lassen harfur trucken und vil nach<note xml:id="fn4" type="footnote" n="4">beinahe.</note> in gantze welt verkhundt und der thon darvon erschollen, durch welches, so es fur uns ouch komen, wir bericht erlernet und gott der herr uns sovil gnad mittailt, das vil mentschen gedicht, uff satzung und guͦt duncken<note xml:id="fn5" type="footnote" n="5">Erfindung, Einrichtung und Gutdünken von Menschen.</note>, in dem gotz dienst gebrucht (darin ouch das closter und munchen werch<note xml:id="fn6" type="footnote" n="6">das Kloster- und Mönchswesen.</note> unnutz befunden), abgefallen, furnemlich bewegt worden und zum tail von euch und andren erlichen stetten ain exempel gnomen, an statt des closter werchs offen schulen ingesetzt,<note xml:id="fn7" type="footnote" n="7">Zur 1539 erfolgten Gründung der <placeName ref="243">Churer</placeName> Nikolaischule s. Oskar <hi>Vasella,</hi> Geschichte des Predigerklosters St. Nicolai in <placeName ref="243">Chur</placeName>, Diss. Freiburg i. Üe. 1928, Paris 1931. - Institutum Historicum FF. Praedicatorum, Dissertationes Historicae, Fasc. I, S. 79-81.</note> und darmit die jugent guͦtter kunsten und sitten underwysen, zuͦ lob gottes und gemainer landen eeren, nutz und guͦt gepflantzet werd, des wir uns harin ain jar, zway old<note xml:id="fn8" type="footnote" n="8">oder.</note> drü beflissen und nach fur und fur<note xml:id="fn9" type="footnote" n="9">auch weiterhin.</note> ze offnen<note xml:id="fn10" type="footnote" n="10">fördern.</note> und nit ab ze gon lassen<note xml:id="fn11" type="footnote" n="11">in Niedergang kommen zu lassen.</note> gantz gesinnet, so aber in disem handel uns arbaiter manglen (wie dann in solichem und ouch in der ernd gottes<note xml:id="fn12" type="footnote" n="12">d.h. für das kirchliche Amt (vgl. Mt 9, 37f par.).</note> schnitter und arbeiter by uns gesuͦch sin wellen<note xml:id="fn13" type="footnote" n="13">d.h. schwer zu finden sind.</note>), werden wir uß vorigen wol ertzaigten fruntschafften, von euch uns erwysen, verer<note xml:id="fn14" type="footnote" n="14">weiterhin, erneut.</note> verursachet und bitten euch hoch vlissig, ir welten uns umb ain gschickten und glerten man, zuͦ aim schuͦlmaister togenlich<note xml:id="fn15" type="footnote" n="15">tauglich.</note>, verhelffen, und das er uns uff nechst pfingsten (so es muglich) gelangen möcht<note xml:id="fn16" type="footnote" n="16">Auf Pfingsten (1. Juni) wurde der bisherige Schulmeister Veit Kappeler entlassen; s. oben <ref target="file#11897">Nr. 1851</ref>; 1880; 1897; unten 1903.</note>.</s>
-					<s xml:lang="de" type="auto">Und insonders, dwyl uns unsere landskinder vilicht fur ander<note xml:id="fn17" type="footnote" n="17">vor anderen.</note> angenemer, wer unser bitt unnd flissig begeren, ir hetten uns unsern, der jetz der ewer ist, den Johannem Pontisellam lon werden<note xml:id="fn18" type="footnote" n="18">ihr würdet uns ... überlassen.</note>.</s>
-					<s xml:lang="de" type="auto">Wir begern<pb type="scan" next="140v."/> den euch nit abzefuren<note xml:id="fn19" type="footnote" n="19">abspenstig zu machen.</note>, bedencken wol, das er uß ewer hilff und furdrung dahin komen, sonder ir uns (dwyl jetz furhin unser schuͦl sunst muͦssig ston wurd), den ain jar, zway old dru alweg uff ewer gefallen lichen<note xml:id="fn20" type="footnote" n="20">ausleihen.</note> wellent.</s>
-					<s xml:lang="de" type="auto">In guͦtter hoffnung, wir uberkomen mitler zit ouch der unsern, so uns harin dienstlich sin megen.</s>
-					<s xml:lang="de" type="auto">Wir wellent inne ouch halten, das (als wir hoffnen) wir gegen euch und ime danckbar befunden werden.</s>
-					<s xml:lang="de" type="auto">Solicher fruntschafft und andrer wir uns gentzlich zuͦ euch vertrösten,<pb type="edition" next="219"/> in hoffnung, ir uns in unserm disem notturfftigen ansinnen willfare[n]<note xml:id="fnc" type="footnote" n="c"><hi>Randtext im engen Einband verdeckt.</hi></note>.</s>
-					<s xml:lang="de" type="auto">Das wellent wir umb euch gantz vlissig, gnaigts willen[s]<note xml:id="fnd" type="footnote" n="d"><hi>Randtext im engen Einband verdeckt.</hi></note> haben ze beschulden<note xml:id="fn21" type="footnote" n="21">zu entgelten haben.</note>.</s>
+					<s n="2" xml:lang="de" type="auto">Wie dan mengklich<note xml:id="fn3" type="footnote" n="3">jedermann.</note> waißt und offenbar ist, das gott der herr us sinen gnaden sin ewig wort hat lassen harfur trucken und vil nach<note xml:id="fn4" type="footnote" n="4">beinahe.</note> in gantze welt verkhundt und der thon darvon erschollen, durch welches, so es fur uns ouch komen, wir bericht erlernet und gott der herr uns sovil gnad mittailt, das vil mentschen gedicht, uff satzung und guͦt duncken<note xml:id="fn5" type="footnote" n="5">Erfindung, Einrichtung und Gutdünken von Menschen.</note>, in dem gotz dienst gebrucht (darin ouch das closter und munchen werch<note xml:id="fn6" type="footnote" n="6">das Kloster- und Mönchswesen.</note> unnutz befunden), abgefallen, furnemlich bewegt worden und zum tail von euch und andren erlichen stetten ain exempel gnomen, an statt des closter werchs offen schulen ingesetzt,<note xml:id="fn7" type="footnote" n="7">Zur 1539 erfolgten Gründung der <placeName ref="place243">Churer</placeName> Nikolaischule s. Oskar <hi>Vasella,</hi> Geschichte des Predigerklosters St. Nicolai in <placeName ref="place243">Chur</placeName>, Diss. Freiburg i. Üe. 1928, Paris 1931. - Institutum Historicum FF. Praedicatorum, Dissertationes Historicae, Fasc. I, S. 79-81.</note> und darmit die jugent guͦtter kunsten und sitten underwysen, zuͦ lob gottes und gemainer landen eeren, nutz und guͦt gepflantzet werd, des wir uns harin ain jar, zway old<note xml:id="fn8" type="footnote" n="8">oder.</note> drü beflissen und nach fur und fur<note xml:id="fn9" type="footnote" n="9">auch weiterhin.</note> ze offnen<note xml:id="fn10" type="footnote" n="10">fördern.</note> und nit ab ze gon lassen<note xml:id="fn11" type="footnote" n="11">in Niedergang kommen zu lassen.</note> gantz gesinnet, so aber in disem handel uns arbaiter manglen (wie dann in solichem und ouch in der ernd gottes<note xml:id="fn12" type="footnote" n="12">d.h. für das kirchliche Amt (vgl. Mt 9, 37f par.).</note> schnitter und arbeiter by uns gesuͦch sin wellen<note xml:id="fn13" type="footnote" n="13">d.h. schwer zu finden sind.</note>), werden wir uß vorigen wol ertzaigten fruntschafften, von euch uns erwysen, verer<note xml:id="fn14" type="footnote" n="14">weiterhin, erneut.</note> verursachet und bitten euch hoch vlissig, ir welten uns umb ain gschickten und glerten man, zuͦ aim schuͦlmaister togenlich<note xml:id="fn15" type="footnote" n="15">tauglich.</note>, verhelffen, und das er uns uff nechst pfingsten (so es muglich) gelangen möcht<note xml:id="fn16" type="footnote" n="16">Auf Pfingsten (1. Juni) wurde der bisherige Schulmeister Veit Kappeler entlassen; s. oben <ref target="file11897">Nr. 1851</ref>; 1880; 1897; unten 1903.</note>.</s>
+					<s n="3" xml:lang="de" type="auto">Und insonders, dwyl uns unsere landskinder vilicht fur ander<note xml:id="fn17" type="footnote" n="17">vor anderen.</note> angenemer, wer unser bitt unnd flissig begeren, ir hetten uns unsern, der jetz der ewer ist, den Johannem Pontisellam lon werden<note xml:id="fn18" type="footnote" n="18">ihr würdet uns ... überlassen.</note>.</s>
+					<s n="4" xml:lang="de" type="auto">Wir begern<pb type="scan" next="140v."/> den euch nit abzefuren<note xml:id="fn19" type="footnote" n="19">abspenstig zu machen.</note>, bedencken wol, das er uß ewer hilff und furdrung dahin komen, sonder ir uns (dwyl jetz furhin unser schuͦl sunst muͦssig ston wurd), den ain jar, zway old dru alweg uff ewer gefallen lichen<note xml:id="fn20" type="footnote" n="20">ausleihen.</note> wellent.</s>
+					<s n="5" xml:lang="de" type="auto">In guͦtter hoffnung, wir uberkomen mitler zit ouch der unsern, so uns harin dienstlich sin megen.</s>
+					<s n="6" xml:lang="de" type="auto">Wir wellent inne ouch halten, das (als wir hoffnen) wir gegen euch und ime danckbar befunden werden.</s>
+					<s n="7" xml:lang="de" type="auto">Solicher fruntschafft und andrer wir uns gentzlich zuͦ euch vertrösten,<pb type="edition" next="219"/> in hoffnung, ir uns in unserm disem notturfftigen ansinnen willfare[n]<note xml:id="fnc" type="footnote" n="c"><hi>Randtext im engen Einband verdeckt.</hi></note>.</s>
+					<s n="8" xml:lang="de" type="auto">Das wellent wir umb euch gantz vlissig, gnaigts willen[s]<note xml:id="fnd" type="footnote" n="d"><hi>Randtext im engen Einband verdeckt.</hi></note> haben ze beschulden<note xml:id="fn21" type="footnote" n="21">zu entgelten haben.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Datum und mit gmains<note xml:id="fn22" type="footnote" n="22">des vereinten, ganzen.</note> gotzhu[s]<note xml:id="fne" type="footnote" n="e"><hi>Randtext im engen Einband verdeckt.</hi></note> aigen insigel bschlüsslich versiglet uff [28.]<note xml:id="fnf" type="footnote" n="f"><hi>Die in römischen Ziffern geschriebene Tageszahl ist nur teilweise lesbar</hi> (x...iii), <hi>dürfte aber mit jener im Brief an Bürgermeister und Rat von Zürich (s. Anm. 1) übereinstimmen.</hi></note> tag aprell anno etc. 44.</s>
+					<s n="9" xml:lang="de" type="auto">Datum und mit gmains<note xml:id="fn22" type="footnote" n="22">des vereinten, ganzen.</note> gotzhu[s]<note xml:id="fne" type="footnote" n="e"><hi>Randtext im engen Einband verdeckt.</hi></note> aigen insigel bschlüsslich versiglet uff [28.]<note xml:id="fnf" type="footnote" n="f"><hi>Die in römischen Ziffern geschriebene Tageszahl ist nur teilweise lesbar</hi> (x...iii), <hi>dürfte aber mit jener im Brief an Bürgermeister und Rat von Zürich (s. Anm. 1) übereinstimmen.</hi></note> tag aprell anno etc. 44.</s>
 				</p>
 				<p>
-					<s xml:lang="de" type="auto">Gemains gotzhus rath und gesanthen, jetz zuͦ <placeName ref="243">Cur</placeName> versampt<note xml:id="fn23" type="footnote" n="23">versammelt.</note>.</s>
+					<s n="10" xml:lang="de" type="auto">Gemains gotzhus rath und gesanthen, jetz zuͦ <placeName ref="place243">Cur</placeName> versampt<note xml:id="fn23" type="footnote" n="23">versammelt.</note>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der 4. Seite des Doppelblatts:]</note>
-					<s xml:lang="de" type="auto">Den wolgelerten, wurdigen und ersamen herrn, des hailigen evangelii und wort gottes furstendern und dienern der kirchen gmainen cappittels zuͦ Zurich, unsern lieben herren und guͦtten frunden.</s>
+					<s n="11" xml:lang="de" type="auto">Den wolgelerten, wurdigen und ersamen herrn, des hailigen evangelii und wort gottes furstendern und dienern der kirchen gmainen cappittels zuͦ Zurich, unsern lieben herren und guͦtten frunden.</s>
 				</p>
 			</div>
 		</body>

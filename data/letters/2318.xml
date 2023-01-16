@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3612</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">E II 342,299</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Kopie">E II 342,299</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -46,13 +49,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 82,179</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 82,179</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -61,41 +67,44 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2318">
 				<correspAction type="sent">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 					<date when="1554-06-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#2953" cert="low">
+					<!--
+					<persName ref="person2953" cert="low">
 						<forename cert="low">Georg</forename>
 						<surname cert="low">Seemann</surname>
 					</persName>
+					-->
+					<persName ref="person2953" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2319"/>
-					<ref type="prev_chronologically" target="files.xml#2317"/>
+					<ref type="next_chronologically" target="file2319"/>
+					<ref type="prev_chronologically" target="file2317"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#2320"/>
-					<ref type="prev_same_sender" target="files.xml#2317"/>
+					<ref type="next_same_sender" target="file2320"/>
+					<ref type="prev_same_sender" target="file2317"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2320"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#2317"/>
+					<ref type="next_with_sender_as_addressee" target="file2320"/>
+					<ref type="prev_with_sender_as_addressee" target="file2317"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>
@@ -114,32 +123,32 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Non indigne feres, quod pro candore nostro tanquam amici ac patres bona fide egimus cum Maximiliano nostro, filio tuo.</s>
-					<s xml:lang="la" type="auto">Is tulit ad nos literis a generoso Wuilhelmo a Bernhusen, ex quibus intelleximus agi de ordinatione filii tui successioneque in munere ecclesiastico ecclesiae Güttingen.</s>
-					<s xml:lang="la" type="auto">Libenter vero hoc laboris suscepissemus in gratiam optimi viri N. a Bernhusen, ut illum examinavissemus.</s>
-					<s xml:lang="la" type="auto">Cęterum videbatur nobis, qui filium tuum veluti educavimus et forte rectius quam tu novimus, neque e re ecclesiae neque e salute filii adeoque non e tua utilitate esse, ut ei ecclesię praeficeretur noster ille.</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Non indigne feres, quod pro candore nostro tanquam amici ac patres bona fide egimus cum Maximiliano nostro, filio tuo.</s>
+					<s n="3" xml:lang="la" type="auto">Is tulit ad nos literis a generoso Wuilhelmo a Bernhusen, ex quibus intelleximus agi de ordinatione filii tui successioneque in munere ecclesiastico ecclesiae Güttingen.</s>
+					<s n="4" xml:lang="la" type="auto">Libenter vero hoc laboris suscepissemus in gratiam optimi viri N. a Bernhusen, ut illum examinavissemus.</s>
+					<s n="5" xml:lang="la" type="auto">Cęterum videbatur nobis, qui filium tuum veluti educavimus et forte rectius quam tu novimus, neque e re ecclesiae neque e salute filii adeoque non e tua utilitate esse, ut ei ecclesię praeficeretur noster ille.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Iuvenis est, qui nondum forte 20. annum excessit, literarum quidem principia indeptus, sed vix ad medium progressus colophonem prorsus non imposuit.</s>
-					<s xml:lang="la" type="auto">Scis autem, quid d. apud Ezechielem requirat et minetur, scis, quid apostolus requirat a pastore ecclesiarum.</s>
-					<s xml:lang="la" type="auto">Rursus ignorare non potes, quam non sit instructus rebus tantis Maximilianus noster; neque exercitatus est adhuc in rebus tantis neque facultatem habet ex semetipso citra exercitationem ecclesiae gubernandę necessariam.</s>
-					<s xml:lang="la" type="auto">Quanto ergo cum periculo tuo tum ecclesiae publico pręficeretur, videre, nisi videre nolis.</s>
+					<s n="6" xml:lang="la" type="auto">Iuvenis est, qui nondum forte 20. annum excessit, literarum quidem principia indeptus, sed vix ad medium progressus colophonem prorsus non imposuit.</s>
+					<s n="7" xml:lang="la" type="auto">Scis autem, quid d. apud Ezechielem requirat et minetur, scis, quid apostolus requirat a pastore ecclesiarum.</s>
+					<s n="8" xml:lang="la" type="auto">Rursus ignorare non potes, quam non sit instructus rebus tantis Maximilianus noster; neque exercitatus est adhuc in rebus tantis neque facultatem habet ex semetipso citra exercitationem ecclesiae gubernandę necessariam.</s>
+					<s n="9" xml:lang="la" type="auto">Quanto ergo cum periculo tuo tum ecclesiae publico pręficeretur, videre, nisi videre nolis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tacemus bonum et bonae spei in magnas angustias et certa pericula trudi, occasionem seu oportunitatem studendi amputari atque adeo in miseriam certam coniici.</s>
-					<s xml:lang="la" type="auto">Habet ille mecęnatem; consultum erit eius studiis.</s>
-					<s xml:lang="la" type="auto">Post aliquot annos maiore cum gloria et fructu uberiore serviet tibi, imo ecclesiae et proderit liberalius suis fratribus et sororibus.</s>
-					<s xml:lang="la" type="auto">Sunt alia multa, quae ipsi recitavimus, hic nihil repetitu necessaria.</s>
-					<s xml:lang="la" type="auto">Hortamur ergo te, ut consultes rebus filii, denique ecclesiae Güttingensi<note type="margin">a.R.: Grütt.!</note> et nobilis illius a Bernhusen ac filium in studiis suis percurrere sinas, et ut maturus aliquis ei ecclesiae praeficiatur, si potes, iuves.</s>
-					<s xml:lang="la" type="auto">Vale.</s>
-					<s xml:lang="la" type="auto">Scribimus haec paterno animo sperantes te illa, uti scripta sunt, accepturum.</s>
+					<s n="10" xml:lang="la" type="auto">Tacemus bonum et bonae spei in magnas angustias et certa pericula trudi, occasionem seu oportunitatem studendi amputari atque adeo in miseriam certam coniici.</s>
+					<s n="11" xml:lang="la" type="auto">Habet ille mecęnatem; consultum erit eius studiis.</s>
+					<s n="12" xml:lang="la" type="auto">Post aliquot annos maiore cum gloria et fructu uberiore serviet tibi, imo ecclesiae et proderit liberalius suis fratribus et sororibus.</s>
+					<s n="13" xml:lang="la" type="auto">Sunt alia multa, quae ipsi recitavimus, hic nihil repetitu necessaria.</s>
+					<s n="14" xml:lang="la" type="auto">Hortamur ergo te, ut consultes rebus filii, denique ecclesiae Güttingensi<note type="margin">a.R.: Grütt.!</note> et nobilis illius a Bernhusen ac filium in studiis suis percurrere sinas, et ut maturus aliquis ei ecclesiae praeficiatur, si potes, iuves.</s>
+					<s n="15" xml:lang="la" type="auto">Vale.</s>
+					<s n="16" xml:lang="la" type="auto">Scribimus haec paterno animo sperantes te illa, uti scripta sunt, accepturum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri 20. iunii anno 1554.</s>
+					<s n="17" xml:lang="la" type="auto">Tiguri 20. iunii anno 1554.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Bullingerus ministrorum ecclesiae Tigurinae nomine.</s>
+					<s n="18" xml:lang="la" type="auto">Bullingerus ministrorum ecclesiae Tigurinae nomine.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse fehlt.]</note>

@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">3725</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 355,141</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 355,141</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -41,13 +44,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 83,29</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 83,29</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -61,47 +67,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/2438">
 				<correspAction type="sent">
-					<persName ref="person#3963" cert="high">
+					<!--
+					<persName ref="person3963" cert="high">
 						<forename cert="high">Georg</forename>
 						<surname cert="high">Wimpfer</surname>
 					</persName>
-					<place source="#489" cert="high">
-						<settlement>Stein</settlement>
-						<geo>47.66429 8.84683</geo>
-					</place>
+					-->
+					<persName ref="person3963" cert="high"/>
+					<place source="place489" cert="high"/>
 					<date when="1554-10-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#2439"/>
-					<ref type="prev_chronologically" target="files.xml#2437"/>
+					<ref type="next_chronologically" target="file2439"/>
+					<ref type="prev_chronologically" target="file2437"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#10451"/>
+					<ref type="prev_correspondence" target="file10451"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#10451"/>
+					<ref type="prev_correspondence_request" target="file10451"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
 					<ref type="next_same_sender" target=""/>
-					<ref type="prev_same_sender" target="files.xml#10451"/>
-					<ref type="next_same_addressee" target="files.xml#2444"/>
-					<ref type="prev_same_addressee" target="files.xml#2436"/>
+					<ref type="prev_same_sender" target="file10451"/>
+					<ref type="next_same_addressee" target="file2444"/>
+					<ref type="prev_same_addressee" target="file2436"/>
 					<ref type="next_with_sender_as_addressee" target=""/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10451"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#2444"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#2436"/>
+					<ref type="prev_with_sender_as_addressee" target="file10451"/>
+					<ref type="next_with_addressee_as_sender" target="file2444"/>
+					<ref type="prev_with_addressee_as_sender" target="file2436"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -118,25 +124,25 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Salve, clarissime vir ac colende domine.</s>
-					<s xml:lang="la" type="auto">Ut vetus dictum est commode edificari domum cum vicinis, ita vicini nostri in Monte Duelli<note type="margin">a.R.: wohl Burg Hohentwiel?</note> hac commoditate freti diutinam intermissionem divini verbi predicationem per nos instaurari cupiunt.</s>
-					<s xml:lang="la" type="auto">Ab eo enim tempore, quo dilectus confrater noster d. Ioannes Wederlin amotus est a Ramsen, verbum dei in praefato Monte praedicatum non est neque coena domini acta.</s>
-					<s xml:lang="la" type="auto">Venerunt ergo feria quarta proxime elapsa ad me de praedicto Monte novus capitaneus cum edili et rogarunt me, ut permitterem cooperarium meum in septimana semel ascendere et praedicare eis verbum dei suoque tempore coenam domini peragere.</s>
-					<s xml:lang="la" type="auto">Cum hac autem peticione obtulerunt michi ordinationem ecclesiasticam dicionis Wirtenpergensis obsignatam, iuxta quam princeps velit eos in Monte cultum externum dirigere, et ob hanc causam nobis conspiciendam exhibuisse, ut super ea deliberare possemus.</s>
-					<s xml:lang="la" type="auto">Aperui illam et legi et tradidi diacono legendam.</s>
-					<s xml:lang="la" type="auto">Vidimus non nostrę farine esse illam neque nos illam bona conscientia pinsere posse.</s>
-					<s xml:lang="la" type="auto">Sed quia suspicor simplicibus illam esse ab aulicis quibusdam obtrusam, - nam id michi facit suspicionem, quod antea in Monte semper fuerunt liberi neque ipse Wolfgangus Moselus<note type="margin">a.R.: Wolf. Mösl(?)</note> neque milites coacti sunt antea a nostra dissentire confessione; eius rei testis esse potest d. Ioannes Weckerli, praeterea quottquot a Monte ad nos veniunt, visitant nostras conciones, diligenter audiu[n]t verbum et nobiscum in omnibus hactenus consenserunt.</s>
-					<s xml:lang="la" type="auto">Quid igitur nobis faciendum sit, dubii sumus; imploramus tuum auxilium et petimus, ut humanitas tua conferat super hac re cum decano nostro, an sit synodo proponenda, an secus quid agendum, nos cerciores reddere.</s>
-					<s xml:lang="la" type="auto">Certe cogimur contra voluntatem nostram dignitati tue molesti esse; sed quia est opus domini, quod tendit ad salutem proximi, ideo maiori confidencia negocium proposuimus.</s>
-					<s xml:lang="la" type="auto">Simul autem humanitati tue gracias agimus de universis beneficiis tuis et rogamus dominum, ut te diu ecclesiae sue et nobis incolumem conservet.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
-					<s xml:lang="la" type="auto">Ex Steinia Tigurinorum filia 28. octobris anno salutis 1554.</s>
+					<s n="1" xml:lang="la" type="auto">Salve, clarissime vir ac colende domine.</s>
+					<s n="2" xml:lang="la" type="auto">Ut vetus dictum est commode edificari domum cum vicinis, ita vicini nostri in Monte Duelli<note type="margin">a.R.: wohl Burg Hohentwiel?</note> hac commoditate freti diutinam intermissionem divini verbi predicationem per nos instaurari cupiunt.</s>
+					<s n="3" xml:lang="la" type="auto">Ab eo enim tempore, quo dilectus confrater noster d. Ioannes Wederlin amotus est a Ramsen, verbum dei in praefato Monte praedicatum non est neque coena domini acta.</s>
+					<s n="4" xml:lang="la" type="auto">Venerunt ergo feria quarta proxime elapsa ad me de praedicto Monte novus capitaneus cum edili et rogarunt me, ut permitterem cooperarium meum in septimana semel ascendere et praedicare eis verbum dei suoque tempore coenam domini peragere.</s>
+					<s n="5" xml:lang="la" type="auto">Cum hac autem peticione obtulerunt michi ordinationem ecclesiasticam dicionis Wirtenpergensis obsignatam, iuxta quam princeps velit eos in Monte cultum externum dirigere, et ob hanc causam nobis conspiciendam exhibuisse, ut super ea deliberare possemus.</s>
+					<s n="6" xml:lang="la" type="auto">Aperui illam et legi et tradidi diacono legendam.</s>
+					<s n="7" xml:lang="la" type="auto">Vidimus non nostrę farine esse illam neque nos illam bona conscientia pinsere posse.</s>
+					<s n="8" xml:lang="la" type="auto">Sed quia suspicor simplicibus illam esse ab aulicis quibusdam obtrusam, - nam id michi facit suspicionem, quod antea in Monte semper fuerunt liberi neque ipse Wolfgangus Moselus<note type="margin">a.R.: Wolf. Mösl(?)</note> neque milites coacti sunt antea a nostra dissentire confessione; eius rei testis esse potest d. Ioannes Weckerli, praeterea quottquot a Monte ad nos veniunt, visitant nostras conciones, diligenter audiu[n]t verbum et nobiscum in omnibus hactenus consenserunt.</s>
+					<s n="9" xml:lang="la" type="auto">Quid igitur nobis faciendum sit, dubii sumus; imploramus tuum auxilium et petimus, ut humanitas tua conferat super hac re cum decano nostro, an sit synodo proponenda, an secus quid agendum, nos cerciores reddere.</s>
+					<s n="10" xml:lang="la" type="auto">Certe cogimur contra voluntatem nostram dignitati tue molesti esse; sed quia est opus domini, quod tendit ad salutem proximi, ideo maiori confidencia negocium proposuimus.</s>
+					<s n="11" xml:lang="la" type="auto">Simul autem humanitati tue gracias agimus de universis beneficiis tuis et rogamus dominum, ut te diu ecclesiae sue et nobis incolumem conservet.</s>
+					<s n="12" xml:lang="la" type="manual">Amen.</s>
+					<s n="13" xml:lang="la" type="auto">Ex Steinia Tigurinorum filia 28. octobris anno salutis 1554.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Georgius Winpher, cliens tuus.</s>
+					<s n="14" xml:lang="la" type="auto">Georgius Winpher, cliens tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro ac sincerissimo theologo d. Henricho Bullingero, ecclesiae Tigurine antistiti dignissimo, domino suo colendissimo.</s>
+					<s n="15" xml:lang="la" type="auto">Clarissimo viro ac sincerissimo theologo d. Henricho Bullingero, ecclesiae Tigurine antistiti dignissimo, domino suo colendissimo.</s>
 				</p>
 			</div>
 		</body>

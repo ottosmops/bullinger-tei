@@ -8,14 +8,17 @@
 			<sourceDesc>
 				<msDesc type="Hinweis" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#441">Schaffhausen</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Kopie">Kirchenakten AA 73.4, Nr. 21</idno>
-						<repository ref="archive#76">
+						<!--
+						<repository ref="archive76">
 							<name>Schaffhausen StA</name>
-							<note type="Hinweis">Photoaufnahme von April 2017 im Bull. Laufwerk u. Fotoaufnahmen von HBBriefen\ 66.00.00</note>
 							<ref target="https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Regierung/Staatskanzlei/Staatsarchiv-3936-DE.html"/>
 						</repository>
+						<settlement ref="place441">Schaffhausen</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive76"/>
+						<idno subtype="Kopie">Kirchenakten AA 73.4, Nr. 21</idno>
+						<idno subtype="Hinweis">Photoaufnahme von April 2017 im Bull. Laufwerk u. Fotoaufnahmen von HBBriefen\ 66.00.00</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -33,49 +36,29 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6632">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
-					<date when="1566-00-00" cert="low"><note>Datum unsicher  kein Monat, kein Tag</note></date>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
+					<date notBefore="1566-01-01" notAfter="1566-12-12" cert="low"><note>Datum unsicher  kein Monat, kein Tag</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#17" cert="low">Christen</name>
-						<place source="#822" cert="low">
-							<country>Deutschland</country>
-						</place>
-					</roleName>
-					<place source="#822" cert="low">
-						<country>Deutschland</country>
-					</place>
+					<personGrp ref="role34" role="Christen"/>
+					<place source="place822" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6914"/>
-					<ref type="prev_chronologically" target="files.xml#6630"/>
+					<ref type="next_chronologically" target="file6914"/>
+					<ref type="prev_chronologically" target="file6630"/>
 					<ref type="next_correspondence" target=""/>
 					<ref type="prev_correspondence" target=""/>
 					<ref type="next_correspondence_request" target=""/>
 					<ref type="prev_correspondence_request" target=""/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#6699"/>
-					<ref type="prev_same_sender" target="files.xml#6463"/>
+					<ref type="next_same_sender" target="file6699"/>
+					<ref type="prev_same_sender" target="file6463"/>
 					<ref type="next_same_addressee" target=""/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6699"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6463"/>
+					<ref type="next_with_sender_as_addressee" target="file6699"/>
+					<ref type="prev_with_sender_as_addressee" target="file6463"/>
 					<ref type="next_with_addressee_as_sender" target=""/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
 				</correspContext>

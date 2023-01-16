@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2005"/>
-				<idno type="ISBN">ISBN 3-290-17339-9</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1456</idno>
+				<idno subtype="ISBN">ISBN 3-290-17339-9</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1456</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 11</title>
+				<title subtype="publication">HBBW XI</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">11</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#474">St. Gallen</settlement>
-						<institution>Kantonsbibliothek Vadiana</institution>
-						<idno type="Autograph">Ms 33 (VBS IV),111</idno>
-						<repository ref="archive#78">
+						<!--
+						<repository ref="archive78">
 							<name>St. Gallen KB</name>
 							<ref target="https://www.sg.ch/kultur/kantonsbibliothek-vadiana.html"/>
 						</repository>
+						<settlement ref="place474">St. Gallen</settlement>
+						<institution>Kantonsbibliothek Vadiana</institution>
+						-->
+						<repository ref="archive78"/>
+						<idno subtype="Autograph">Ms 33 (VBS IV),111</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,7 +50,7 @@
 						<summary>
 							<p xml:id="regest1">
 								Kam gestern nach Hause; wird einen Bericht über die Verhandlungen in
-								<placeName ref="1214">Worms</placeName> schicken, sobald dieser abgeschrieben ist. Hofft auf
+								<placeName ref="place1214">Worms</placeName> schicken, sobald dieser abgeschrieben ist. Hofft auf
 								bleibende Verbundenheit.
 							</p>
 						</summary>
@@ -58,54 +61,41 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11499">
 				<correspAction type="sent">
-					<persName ref="person#1365" cert="high">
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
-					<place source="#28" cert="high">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person1365" cert="high"/>
+					<place source="place28" cert="high"/>
 					<date when="1541-01-28" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#49" cert="high">Pfarrer</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="low">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role0" role="Pfarrer"/>
+					<place source="place587" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11500"/>
-					<ref type="prev_chronologically" target="files.xml#11498"/>
-					<ref type="next_correspondence" target="files.xml#11512"/>
-					<ref type="prev_correspondence" target="files.xml#11393"/>
-					<ref type="next_correspondence_request" target="files.xml#11512"/>
-					<ref type="prev_correspondence_request" target="files.xml#11393"/>
+					<ref type="next_chronologically" target="file11500"/>
+					<ref type="prev_chronologically" target="file11498"/>
+					<ref type="next_correspondence" target="file11512"/>
+					<ref type="prev_correspondence" target="file11393"/>
+					<ref type="next_correspondence_request" target="file11512"/>
+					<ref type="prev_correspondence_request" target="file11393"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#11502"/>
-					<ref type="prev_same_sender" target="files.xml#11484"/>
-					<ref type="next_same_addressee" target="files.xml#11617"/>
-					<ref type="prev_same_addressee" target="files.xml#11465"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11502"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11484"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11617"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11465"/>
+					<ref type="next_same_sender" target="file11502"/>
+					<ref type="prev_same_sender" target="file11484"/>
+					<ref type="next_same_addressee" target="file11617"/>
+					<ref type="prev_same_addressee" target="file11465"/>
+					<ref type="next_with_sender_as_addressee" target="file11502"/>
+					<ref type="prev_with_sender_as_addressee" target="file11484"/>
+					<ref type="next_with_addressee_as_sender" target="file11617"/>
+					<ref type="prev_with_addressee_as_sender" target="file11465"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -119,27 +109,27 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Veni heri domum<note xml:id="fn2" type="footnote" n="2">Zur Rückkehr von <persName ref="81">Grynäus</persName> aus <placeName ref="1214">Worms</placeName> vgl. das Dankschreiben <placeName ref="1049">Straßburgs</placeName> an <placeName ref="97">Basel</placeName> vom 24. Januar in PC III 162f.</note>.</s>
-					<s xml:lang="la" type="auto">Acta <placeName ref="1214">Vormatię</placeName> voluissem mittere ad vos, sed describi subito non potuerunt.</s>
-					<s xml:lang="la" type="auto">Mittam, cum primum descripta fuerint<note xml:id="fn3" type="footnote" n="3">Vgl. unten <ref target="file#11512">Nr. 1469</ref>.</note>.</s>
-					<s xml:lang="la" type="auto">Interea hoc significare saltem volui.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Veni heri domum<note xml:id="fn2" type="footnote" n="2">Zur Rückkehr von <persName ref="person81">Grynäus</persName> aus <placeName ref="place1214">Worms</placeName> vgl. das Dankschreiben <placeName ref="place1049">Straßburgs</placeName> an <placeName ref="place97">Basel</placeName> vom 24. Januar in PC III 162f.</note>.</s>
+					<s n="3" xml:lang="la" type="auto">Acta <placeName ref="place1214">Vormatię</placeName> voluissem mittere ad vos, sed describi subito non potuerunt.</s>
+					<s n="4" xml:lang="la" type="auto">Mittam, cum primum descripta fuerint<note xml:id="fn3" type="footnote" n="3">Vgl. unten <ref target="file11512">Nr. 1469</ref>.</note>.</s>
+					<s n="5" xml:lang="la" type="auto">Interea hoc significare saltem volui.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Omnem amorem et coniunctionem in domino integrum nobis inter nos esse spero.</s>
-					<s xml:lang="la" type="auto">Omnes vos et valere in domino et videre cupio.</s>
-					<s xml:lang="la" type="auto">Dominus Christus<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage</hi> XPus.</note> nos in veritate sua regat.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="6" xml:lang="la" type="auto">Omnem amorem et coniunctionem in domino integrum nobis inter nos esse spero.</s>
+					<s n="7" xml:lang="la" type="auto">Omnes vos et valere in domino et videre cupio.</s>
+					<s n="8" xml:lang="la" type="auto">Dominus Christus<note xml:id="fna" type="footnote" n="a"><hi>In der Vorlage</hi> XPus.</note> nos in veritate sua regat.</s>
+					<s n="9" xml:lang="la" type="manual">Amen.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Datum <placeName ref="97">Basileae</placeName>, 28. ianuarii.</s>
+					<s n="10" xml:lang="la" type="auto">Datum <placeName ref="place97">Basileae</placeName>, 28. ianuarii.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S. <persName ref="81">Grynęus</persName> vester in domino frater.</s>
+					<s n="11" xml:lang="la" type="auto">S. <persName ref="person81">Grynęus</persName> vester in domino frater.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Sacri evangelii ministris Tyguri, fratribus in domino Christo charissimis.</s>
+					<s n="12" xml:lang="la" type="auto">Sacri evangelii ministris Tyguri, fratribus in domino Christo charissimis.</s>
 				</p>
 			</div>
 		</body>

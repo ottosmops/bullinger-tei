@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2003"/>
-				<idno type="ISBN">ISBN 3-290-17265-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1356</idno>
+				<idno subtype="ISBN">ISBN 3-290-17265-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1356</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 10</title>
+				<title subtype="publication">HBBW X</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">10</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 346,116</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 346,116</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -50,8 +53,8 @@
 								ist vor allem die Uneinigkeit im eigenen Lager, die gerade dann droht, wenn der Ruf nach Einheit ertönt;
 								[die Schwächung der Gegner durch] die zunehmende Türkengefahr ist nur ein schwacher Trost. Die Gefahr einer
 								Spaltung hat sich bei den eidgenössischen Kirchen bereits in früheren Jahren gezeigt, als die
-								<placeName ref="121">Berner</placeName> und Basler den Straßburgern entgegenkamen.
-								<persName ref="19">Ambrosius</persName> [<persName ref="19">Blarer</persName>] ist
+								<placeName ref="place121">Berner</placeName> und Basler den Straßburgern entgegenkamen.
+								Ambrosius [<persName ref="person19">Blarer</persName>] ist
 								wohlbehalten zurückgekehrt und läßt grüßen; sonst gibt es nichts Neues.
 							</p>
 						</summary>
@@ -62,45 +65,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11399">
 				<correspAction type="sent">
-					<persName ref="person#4079" cert="high">
+					<!--
+					<persName ref="person4079" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Zwick</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Zwick"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118773305"/>
 						<ref type="histhub" target="https://data.histhub.ch/person/11417732"/>
 					</persName>
-					<place source="#257" cert="high">
-						<settlement>Konstanz</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>47.6633 9.1759</geo>
-					</place>
+					-->
+					<persName ref="person4079" cert="high"/>
+					<place source="place257" cert="high"/>
 					<date when="1540-02-08" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11400"/>
-					<ref type="prev_chronologically" target="files.xml#11398"/>
-					<ref type="next_correspondence" target="files.xml#11413"/>
-					<ref type="prev_correspondence" target="files.xml#11388"/>
-					<ref type="next_correspondence_request" target="files.xml#11413"/>
-					<ref type="prev_correspondence_request" target="files.xml#11388"/>
+					<ref type="next_chronologically" target="file11400"/>
+					<ref type="prev_chronologically" target="file11398"/>
+					<ref type="next_correspondence" target="file11413"/>
+					<ref type="prev_correspondence" target="file11388"/>
+					<ref type="next_correspondence_request" target="file11413"/>
+					<ref type="prev_correspondence_request" target="file11388"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10990"/>
-					<ref type="next_same_sender" target="files.xml#11413"/>
-					<ref type="prev_same_sender" target="files.xml#11388"/>
-					<ref type="next_same_addressee" target="files.xml#11409"/>
-					<ref type="prev_same_addressee" target="files.xml#11397"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11413"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11388"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11409"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11397"/>
+					<ref type="prev_correspondence_reaction" target="file10990"/>
+					<ref type="next_same_sender" target="file11413"/>
+					<ref type="prev_same_sender" target="file11388"/>
+					<ref type="next_same_addressee" target="file11409"/>
+					<ref type="prev_same_addressee" target="file11397"/>
+					<ref type="next_with_sender_as_addressee" target="file11413"/>
+					<ref type="prev_with_sender_as_addressee" target="file11388"/>
+					<ref type="next_with_addressee_as_sender" target="file11409"/>
+					<ref type="prev_with_addressee_as_sender" target="file11397"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -117,34 +124,34 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salus.</s>
+					<s n="1" xml:lang="la" type="auto">Salus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Recte tu quidem omnia<note xml:id="fn1" type="footnote" n="1">Der Brief, auf den <persName ref="263">Zwick</persName> antwortet, ist nicht erhalten.</note>, Bullingere charissime; utinam sic pergamus!</s>
-					<s xml:lang="la" type="auto">Sed nescio quis metus invaserit quorundam animos; alios lactat spes quędam magnifica, quam tamen nec ego ratam crediderim.</s>
-					<s xml:lang="la" type="auto">Dissidia autem fratrum magis me terrent; nam alias cruces omnes facilius devoraremus.</s>
-					<s xml:lang="la" type="auto">Hinc enecabit nos quoque<note xml:id="fna" type="footnote" n="a">quoque <hi>am Rande nachgetragen.</hi></note> concordiae et unanimitatis titulus, qui mirifice dementat incautos, imo plus semel occęcavit cautissimos.</s>
-					<s xml:lang="la" type="auto">Unum hoc me consolatur, quod iterum ingruit Turca potentissime<note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file#11392">Nr. 1349</ref>, 13-17.</note>; sed o funestam consolationem!</s>
+					<s n="2" xml:lang="la" type="auto">Recte tu quidem omnia<note xml:id="fn1" type="footnote" n="1">Der Brief, auf den <persName ref="person263">Zwick</persName> antwortet, ist nicht erhalten.</note>, Bullingere charissime; utinam sic pergamus!</s>
+					<s n="3" xml:lang="la" type="auto">Sed nescio quis metus invaserit quorundam animos; alios lactat spes quędam magnifica, quam tamen nec ego ratam crediderim.</s>
+					<s n="4" xml:lang="la" type="auto">Dissidia autem fratrum magis me terrent; nam alias cruces omnes facilius devoraremus.</s>
+					<s n="5" xml:lang="la" type="auto">Hinc enecabit nos quoque<note xml:id="fna" type="footnote" n="a">quoque <hi>am Rande nachgetragen.</hi></note> concordiae et unanimitatis titulus, qui mirifice dementat incautos, imo plus semel occęcavit cautissimos.</s>
+					<s n="6" xml:lang="la" type="auto">Unum hoc me consolatur, quod iterum ingruit Turca potentissime<note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file11392">Nr. 1349</ref>, 13-17.</note>; sed o funestam consolationem!</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Utinam Helveticae ecclesiae non scindantur, dum tractabitur de<note xml:id="fnb" type="footnote" n="b">de <hi>über der Zeile nachgetragen.</hi></note> concordia.</s>
-					<s xml:lang="la" type="auto">Non bene cohęsistis annis elapsis, dum <placeName ref="121">Bernates</placeName> et <placeName ref="97">Basilienses</placeName> Argentoratensibus - quorundam iuditio - nimium acquiescerent<note xml:id="fn3" type="footnote" n="3"><persName ref="263">Zwick</persName> denkt wohl an den Auftritt <persName ref="28">Bucers</persName> und <persName ref="40">Capitos</persName> an der <placeName ref="121">Berner</placeName> Synode vom September 1537 (vgl. besonders HBBW VII, <ref target="file#11088">Nr. 1045</ref>) und an die Bereitschaft <placeName ref="97">Basels</placeName>, der <placeName ref="1205">Wittenberger</placeName> Konkordie zuzustimmen (vgl. HBBW VI. S. <hi>459,</hi> 15f mit Anm. 6).</note>.</s>
-					<s xml:lang="la" type="auto">Defendat vos dominus ab intestinis contentionibus, nos vero a metu tirannorum et blanditiis hominum quorundam astutissimorum.</s>
+					<s n="7" xml:lang="la" type="auto">Utinam Helveticae ecclesiae non scindantur, dum tractabitur de<note xml:id="fnb" type="footnote" n="b">de <hi>über der Zeile nachgetragen.</hi></note> concordia.</s>
+					<s n="8" xml:lang="la" type="auto">Non bene cohęsistis annis elapsis, dum <placeName ref="place121">Bernates</placeName> et <placeName ref="place97">Basilienses</placeName> Argentoratensibus - quorundam iuditio - nimium acquiescerent<note xml:id="fn3" type="footnote" n="3"><persName ref="person263">Zwick</persName> denkt wohl an den Auftritt <persName ref="person28">Bucers</persName> und <persName ref="person40">Capitos</persName> an der <placeName ref="place121">Berner</placeName> Synode vom September 1537 (vgl. besonders HBBW VII, <ref target="file11088">Nr. 1045</ref>) und an die Bereitschaft <placeName ref="place97">Basels</placeName>, der <placeName ref="place1205">Wittenberger</placeName> Konkordie zuzustimmen (vgl. HBBW VI. S. 459, 15f mit Anm. 6).</note>.</s>
+					<s n="9" xml:lang="la" type="auto">Defendat vos dominus ab intestinis contentionibus, nos vero a metu tirannorum et blanditiis hominum quorundam astutissimorum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="19">Ambrosius</persName> rediit<note xml:id="fn4" type="footnote" n="4"><persName ref="19">Ambrosius Blarer</persName> war am 4. Februar nach längerem Aufenthalt in <placeName ref="70">Augsburg</placeName> und im <placeName ref="3">Allgäu</placeName> nach <placeName ref="565">Konstanz</placeName> zurückgekehrt; vgl. unten <ref target="file#11411">Nr. 1368</ref>, 11 mit Anm. 4.</note> salvus gratia domini et te salvum esse cupit modis omnibus.</s>
-					<s xml:lang="la" type="auto">Novarum rerum alias nichil habemus.</s>
+					<s n="10" xml:lang="la" type="auto"><persName ref="person19">Ambrosius</persName> rediit<note xml:id="fn4" type="footnote" n="4"><persName ref="person19">Ambrosius Blarer</persName> war am 4. Februar nach längerem Aufenthalt in <placeName ref="place70">Augsburg</placeName> und im <placeName ref="place3">Allgäu</placeName> nach <placeName ref="place565">Konstanz</placeName> zurückgekehrt; vgl. unten <ref target="file11411">Nr. 1368</ref>, 11 mit Anm. 4.</note> salvus gratia domini et te salvum esse cupit modis omnibus.</s>
+					<s n="11" xml:lang="la" type="auto">Novarum rerum alias nichil habemus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, mi frater, cum tota domo et fratribus.</s>
-					<s xml:lang="la" type="auto"><placeName ref="565">Constantiae</placeName>, 8. februarii 1540.</s>
+					<s n="12" xml:lang="la" type="auto">Vale, mi frater, cum tota domo et fratribus.</s>
+					<s n="13" xml:lang="la" type="auto"><placeName ref="place565">Constantiae</placeName>, 8. februarii 1540.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Io. <persName ref="263">Zvick</persName>.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus <persName ref="person263">Io. Zvick</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Hainricho Bullingero, antistiti Tigurino, fratri suo observando.</s>
+					<s n="15" xml:lang="la" type="auto">Domino Hainricho Bullingero, antistiti Tigurino, fratri suo observando.</s>
 				</p>
 			</div>
 		</body>

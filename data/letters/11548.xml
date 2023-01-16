@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2005"/>
-				<idno type="ISBN">ISBN 3-290-17339-9</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1505</idno>
+				<idno subtype="ISBN">ISBN 3-290-17339-9</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1505</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 11</title>
+				<title subtype="publication">HBBW XI</title>
 				<biblScope type="editor">Henrich, Rainer; Kess, Alexandra; Moser, Christian</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">11</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,187</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,187</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -47,9 +50,9 @@
 						<summary>
 							<p xml:id="regest1">
 								Empfiehlt Besucher, welche die Zürcher Kirche kennen lernen möchten; sie wollen vorübergehend nach
-								<placeName ref="11">Frankreich</placeName> zurückkehren, sich dann aber [in
-								<placeName ref="97">Basel</placeName>] niederlassen. [<persName ref="228">Hans</persName>]
-								<persName ref="228">Vogler</persName> [d. J.] soll zum täglichen Predigtbesuch angehalten und auch
+								<placeName ref="place11">Frankreich</placeName> zurückkehren, sich dann aber [in
+								<placeName ref="place97">Basel</placeName>] niederlassen. [Hans]
+								<persName ref="person228">Vogler</persName> [d. J.] soll zum täglichen Predigtbesuch angehalten und auch
 								darüber abgefragt werden, damit sich sein Charakter festigt.
 							</p>
 						</summary>
@@ -60,45 +63,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11548">
 				<correspAction type="sent">
-					<persName ref="person#1365" cert="high">
+					<!--
+					<persName ref="person1365" cert="high">
 						<forename cert="high">Simon</forename>
 						<surname cert="high">Grynäus</surname>
 						<graphic type="portrait" url="portraits/1365_Grynaeus_Simon.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Simon_Grynaeus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11690240X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11415284"/>
 					</persName>
-					<place source="#28" cert="low">
-						<settlement>Basel</settlement>
-						<district>Basel-Stadt</district>
-						<country>Schweiz</country>
-						<geo>47.55839 7.57327</geo>
-					</place>
+					-->
+					<persName ref="person1365" cert="high"/>
+					<place source="place28" cert="low"/>
 					<date when="1541-04-24" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11549"/>
-					<ref type="prev_chronologically" target="files.xml#11547"/>
-					<ref type="next_correspondence" target="files.xml#11557"/>
-					<ref type="prev_correspondence" target="files.xml#11547"/>
-					<ref type="next_correspondence_request" target="files.xml#11557"/>
-					<ref type="prev_correspondence_request" target="files.xml#11547"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11593"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11378"/>
-					<ref type="next_same_sender" target="files.xml#11557"/>
-					<ref type="prev_same_sender" target="files.xml#11547"/>
-					<ref type="next_same_addressee" target="files.xml#11576"/>
-					<ref type="prev_same_addressee" target="files.xml#11530"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11557"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11547"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11576"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11530"/>
+					<ref type="next_chronologically" target="file11549"/>
+					<ref type="prev_chronologically" target="file11547"/>
+					<ref type="next_correspondence" target="file11557"/>
+					<ref type="prev_correspondence" target="file11547"/>
+					<ref type="next_correspondence_request" target="file11557"/>
+					<ref type="prev_correspondence_request" target="file11547"/>
+					<ref type="next_correspondence_reaction" target="file11593"/>
+					<ref type="prev_correspondence_reaction" target="file11378"/>
+					<ref type="next_same_sender" target="file11557"/>
+					<ref type="prev_same_sender" target="file11547"/>
+					<ref type="next_same_addressee" target="file11576"/>
+					<ref type="prev_same_addressee" target="file11530"/>
+					<ref type="next_with_sender_as_addressee" target="file11557"/>
+					<ref type="prev_with_sender_as_addressee" target="file11547"/>
+					<ref type="next_with_addressee_as_sender" target="file11576"/>
+					<ref type="prev_with_addressee_as_sender" target="file11530"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -115,26 +123,26 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Commendo vobis hos fratres<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> in domino.</s>
-					<s xml:lang="la" type="auto">Pietatem videntur intelligere.</s>
-					<s xml:lang="la" type="auto">Vestram ecclesiam cupiunt cognoscere, deinde in Galliam redituri ea, ut videtur, lege, si inde ad nos transferre possint sua omnia.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Commendo vobis hos fratres<note xml:id="fn2" type="footnote" n="2">Unbekannt.</note> in domino.</s>
+					<s n="3" xml:lang="la" type="auto">Pietatem videntur intelligere.</s>
+					<s n="4" xml:lang="la" type="auto">Vestram ecclesiam cupiunt cognoscere, deinde in Galliam redituri ea, ut videtur, lege, si inde ad nos transferre possint sua omnia.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="228">Voglerum</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="228">Hans Vogler</persName> d. J.</note> coges, ut contiones sacras audiat quottidie, tum, ut eas alicui repetat.</s>
-					<s xml:lang="la" type="auto">Hęc verbi dei meditatio<note xml:id="fna" type="footnote" n="a"><hi>Vielleicht als</hi> meditacio <hi>zu lesen.</hi></note> faciet, arbitror, ut animus stabilimentum accipiat.</s>
+					<s n="5" xml:lang="la" type="auto"><persName ref="person228">Voglerum</persName><note xml:id="fn3" type="footnote" n="3"><persName ref="person228">Hans Vogler</persName> d. J.</note> coges, ut contiones sacras audiat quottidie, tum, ut eas alicui repetat.</s>
+					<s n="6" xml:lang="la" type="auto">Hęc verbi dei meditatio<note xml:id="fna" type="footnote" n="a"><hi>Vielleicht als</hi> meditacio <hi>zu lesen.</hi></note> faciet, arbitror, ut animus stabilimentum accipiat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale in domino, frater mihi dilectissime.</s>
-					<s xml:lang="la" type="auto">24. aprilis.</s>
+					<s n="7" xml:lang="la" type="auto">Vale in domino, frater mihi dilectissime.</s>
+					<s n="8" xml:lang="la" type="auto">24. aprilis.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="81">Simon Grynęus</persName> tuus.<pb type="edition" next="167"/></s>
+					<s n="9" xml:lang="la" type="auto"><persName ref="person81">Simon Grynęus</persName> tuus.<pb type="edition" next="167"/></s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinricho Bullingero suo, amico et fratri colendo.</s>
-					<s xml:lang="la" type="auto">Tyguri.</s>
+					<s n="10" xml:lang="la" type="auto">Domino Heinricho Bullingero suo, amico et fratri colendo.</s>
+					<s n="11" xml:lang="la" type="auto">Tyguri.</s>
 				</p>
 			</div>
 		</body>

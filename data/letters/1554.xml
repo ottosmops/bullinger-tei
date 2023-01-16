@@ -12,25 +12,28 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2765</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Briefanfang" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 337,505</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">Plut VI Vol 105, fo 505 = alt B 1</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 337,505</idno>
+						<idno subtype="Hinweis">Plut VI Vol 105, fo 505 = alt B 1</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -50,14 +53,17 @@
 				</msDesc>
 				<msDesc type="Briefanfang" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 76,111</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">dat.: 17. Dez. 1551</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 76,111</idno>
+						<idno subtype="Hinweis">dat.: 17. Dez. 1551</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -68,14 +74,17 @@
 				</msDesc>
 				<msDesc type="Briefanfang" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 337,505</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
-							<note type="Hinweis">ohne Adresse, Unterschrift, Datum</note>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 337,505</idno>
+						<idno subtype="Hinweis">ohne Adresse, Unterschrift, Datum</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -84,104 +93,38 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1554">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#167" cert="high">
-							<settlement>Genf</settlement>
-							<district>Genève</district>
-							<country>Schweiz</country>
-							<geo>46.20222 6.14569</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#339" cert="high">
-							<settlement>Neuenburg</settlement>
-							<district>Neuchâtel</district>
-							<country>Schweiz</country>
-							<geo>46.99179 6.931</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#280" cert="high">
-							<settlement>Lausanne</settlement>
-							<district>Waadt</district>
-							<country>Schweiz</country>
-							<geo>46.516 6.63282</geo>
-						</place>
-					</roleName>
-					<place source="#280" cert="high">
-						<settlement>Lausanne</settlement>
-						<district>Waadt</district>
-						<country>Schweiz</country>
-						<geo>46.516 6.63282</geo>
-					</place>
-					<date when="1552-02-00" cert="low">Anfang Februar 1552<note type="Datum">ZBZ, Ms 76,111: 1551 Dez. 17.</note></date>
+					<personGrp ref="role52" role="Geistliche"/>
+					<personGrp ref="role52" role="Geistliche"/>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place280" cert="high"/>
+					<date notBefore="1552-02-01" notAfter="1552-02-12" cert="low">Anfang Februar 1552<note type="Datum">ZBZ, Ms 76,111: 1551 Dez. 17.</note></date>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#28" cert="high">
-							<settlement>Basel</settlement>
-							<district>Basel-Stadt</district>
-							<country>Schweiz</country>
-							<geo>47.55839 7.57327</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#41" cert="high">
-							<settlement>Bern</settlement>
-							<district>Bern</district>
-							<country>Schweiz</country>
-							<geo>46.94809 7.44744</geo>
-						</place>
-					</roleName>
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#441" cert="high">
-							<settlement>Schaffhausen</settlement>
-							<district>Schaffhausen</district>
-							<country>Schweiz</country>
-							<geo>47.69732 8.63493</geo>
-						</place>
-					</roleName>
-					<place source="#441" cert="high">
-						<settlement>Schaffhausen</settlement>
-						<district>Schaffhausen</district>
-						<country>Schweiz</country>
-						<geo>47.69732 8.63493</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<personGrp ref="role52" role="Geistliche"/>
+					<personGrp ref="role52" role="Geistliche"/>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place441" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1555"/>
-					<ref type="prev_chronologically" target="files.xml#1553"/>
+					<ref type="next_chronologically" target="file1555"/>
+					<ref type="prev_chronologically" target="file1553"/>
 					<ref type="next_correspondence" target=""/>
-					<ref type="prev_correspondence" target="files.xml#1505"/>
+					<ref type="prev_correspondence" target="file1505"/>
 					<ref type="next_correspondence_request" target=""/>
-					<ref type="prev_correspondence_request" target="files.xml#1505"/>
+					<ref type="prev_correspondence_request" target="file1505"/>
 					<ref type="next_correspondence_reaction" target=""/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#2029"/>
-					<ref type="prev_same_sender" target="files.xml#1505"/>
-					<ref type="next_same_addressee" target="files.xml#3355"/>
+					<ref type="next_same_sender" target="file2029"/>
+					<ref type="prev_same_sender" target="file1505"/>
+					<ref type="next_same_addressee" target="file3355"/>
 					<ref type="prev_same_addressee" target=""/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2029"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#1505"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3355"/>
+					<ref type="next_with_sender_as_addressee" target="file2029"/>
+					<ref type="prev_with_sender_as_addressee" target="file1505"/>
+					<ref type="next_with_addressee_as_sender" target="file3355"/>
 					<ref type="prev_with_addressee_as_sender" target=""/>
-					<ref type="child" target="files.xml#1505"/>
-					<ref type="parent" target="files.xml#1505"/>
+					<ref type="child" target="file1505"/>
+					<ref type="parent" target="file1505"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -198,16 +141,16 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Strenui magnifici excellentes et nobiles principes et domini nostri benignissime et humillime supplicant dignissimas excellentias vestras humiles vestri servi pastores ecclesiarum Lausan[n]ensis, Genevensis et Neocomensis, ut quam celerrime fieri poterit vestris placeat excellentiis literas scribere ad d. Moreletum Francorum regis legatum, qui vestras literas quam citissime fieri poterit ad Francorum regem mittat, ut dignetur mitius agere in fideles qui ob Christi evangelium in suo regno vinculis irretiti detinentur, eosque velit liberare: maxime vero Hugonem Graverium, Gallice Gravier, sacri evangelii in Neocomensi comitatu ministrum, qui abhinc sesquimense vel circiter, Macutio, Gallice Macon, transiens captus est et illinc aliquanto post tempore Lugdunum vinculis alligatus ductus est.</s>
-					<s xml:lang="la" type="auto">Ubi a duobus cis mensibus cum docti tum pii duo viri, quorum unius nomen erat Claudius Monnerius, alterius vero Velutarius, qui mira cum fidei constantia vivi combusti sunt, ut et paulo ante incredibili cum Christi nominis confessione ac fide lento igne Lutetiae quidam undeviginti annos natus similiter absorptus est, qui frater erat doctissimi viri Francisci a Sancto Paulo, Viviacensis ecclesiae pastoris sub dominorum Bernatium ditione.</s>
-					<s xml:lang="la" type="auto">Nos vero plurimum timemus, ne itidem symmistae nostro pio ac sancto viro Hugoni Gravier, nisi vestrae excellentiae ei sint auxilio, brevi contingat.</s>
-					<s xml:lang="la" type="auto">Res nunc profecto, christianissimi principes ac domini, apud Gallos maxima commiseratione digna est.</s>
-					<s xml:lang="la" type="auto">Nam nuper profugi quidam illinc ad nos accurrentes retulerunt, virorum pariter ac mulierum cum pauperrimis suis familiis ingentem numerum e propriis aedibus aufugisse, imprimisque ex urbe quam vocant Nymmes, ac e locis circumvicinis, qui nunc in sylvis et cavernis illic fame pereuntes latent, nec ad urbes, pagos propriasque domos redire audent, ne statim agniti arripiantur in carceresque cum aliis coniiciantur, quandoquidem in eorum catalogos, qui papisticae fidei inquisitores vocantur, redacti sunt.</s>
+					<s n="1" xml:lang="la" type="auto">Strenui magnifici excellentes et nobiles principes et domini nostri benignissime et humillime supplicant dignissimas excellentias vestras humiles vestri servi pastores ecclesiarum Lausan[n]ensis, Genevensis et Neocomensis, ut quam celerrime fieri poterit vestris placeat excellentiis literas scribere ad d. Moreletum Francorum regis legatum, qui vestras literas quam citissime fieri poterit ad Francorum regem mittat, ut dignetur mitius agere in fideles qui ob Christi evangelium in suo regno vinculis irretiti detinentur, eosque velit liberare: maxime vero Hugonem Graverium, Gallice Gravier, sacri evangelii in Neocomensi comitatu ministrum, qui abhinc sesquimense vel circiter, Macutio, Gallice Macon, transiens captus est et illinc aliquanto post tempore Lugdunum vinculis alligatus ductus est.</s>
+					<s n="2" xml:lang="la" type="auto">Ubi a duobus cis mensibus cum docti tum pii duo viri, quorum unius nomen erat Claudius Monnerius, alterius vero Velutarius, qui mira cum fidei constantia vivi combusti sunt, ut et paulo ante incredibili cum Christi nominis confessione ac fide lento igne Lutetiae quidam undeviginti annos natus similiter absorptus est, qui frater erat doctissimi viri Francisci a Sancto Paulo, Viviacensis ecclesiae pastoris sub dominorum Bernatium ditione.</s>
+					<s n="3" xml:lang="la" type="auto">Nos vero plurimum timemus, ne itidem symmistae nostro pio ac sancto viro Hugoni Gravier, nisi vestrae excellentiae ei sint auxilio, brevi contingat.</s>
+					<s n="4" xml:lang="la" type="auto">Res nunc profecto, christianissimi principes ac domini, apud Gallos maxima commiseratione digna est.</s>
+					<s n="5" xml:lang="la" type="auto">Nam nuper profugi quidam illinc ad nos accurrentes retulerunt, virorum pariter ac mulierum cum pauperrimis suis familiis ingentem numerum e propriis aedibus aufugisse, imprimisque ex urbe quam vocant Nymmes, ac e locis circumvicinis, qui nunc in sylvis et cavernis illic fame pereuntes latent, nec ad urbes, pagos propriasque domos redire audent, ne statim agniti arripiantur in carceresque cum aliis coniiciantur, quandoquidem in eorum catalogos, qui papisticae fidei inquisitores vocantur, redacti sunt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Supplices igitur rogamus ut vestris christianissimis excellentiis placeat pro Christi Iesu nomine eorum misereri, proque ipsis ad Gallorum regem scribere.</s>
-					<s xml:lang="la" type="auto">Nos interim d. Iesum precabimur ut vos in bona et perpetua pace et tranquilla felicitate servare velit et in fide et confessione verbi sui retinere dignetur.</s>
-					<s xml:lang="la" type="manual">Amen.</s>
+					<s n="6" xml:lang="la" type="auto">Supplices igitur rogamus ut vestris christianissimis excellentiis placeat pro Christi Iesu nomine eorum misereri, proque ipsis ad Gallorum regem scribere.</s>
+					<s n="7" xml:lang="la" type="auto">Nos interim d. Iesum precabimur ut vos in bona et perpetua pace et tranquilla felicitate servare velit et in fide et confessione verbi sui retinere dignetur.</s>
+					<s n="8" xml:lang="la" type="manual">Amen.</s>
 				</p>
 			</div>
 		</body>

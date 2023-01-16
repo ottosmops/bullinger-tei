@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2003"/>
-				<idno type="ISBN">ISBN 3-290-17265-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1432</idno>
+				<idno subtype="ISBN">ISBN 3-290-17265-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=1432</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 10</title>
+				<title subtype="publication">HBBW X</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">10</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 335,2042</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 335,2042</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,18 +49,18 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Das Geld für <persName ref="84">Gwalther</persName> und seine Mitstudenten soll nicht nach
-								<placeName ref="565">Konstanz</placeName> geschickt werden, da der im vorigen Brief
-								[<ref target="file#11473">Nr. 1430</ref>] erwähnte <placeName ref="672">Marburger</placeName>
+								Das Geld für <persName ref="person84">Gwalther</persName> und seine Mitstudenten soll nicht nach
+								<placeName ref="place565">Konstanz</placeName> geschickt werden, da der im vorigen Brief
+								[<ref target="file11473">Nr. 1430</ref>] erwähnte <placeName ref="place672">Marburger</placeName>
 								Ratsherr bereit ist, soviel vorzuschießen, wie die Zürcher zusagen. Bittet, ihn noch für ein Jahr zu
 								unterstützen; nachher wird er sich in den Dienst Zürichs stellen. Ihr Stipendium soll
-								<persName ref="891">Froschauer</persName> mitbringen, wenn er zur
-								[<placeName ref="361">Frankfurter</placeName>] Messe reist.
-								<persName ref="84">Gwalthers</persName> Epicedium auf <persName ref="773">Eobanus</persName>
-								[<persName ref="773">Hessus</persName>] wird demnächst erscheinen; er verspricht, es umgehend zu
-								schicken. Bittet nochmals um Bilder <persName ref="265">Zwinglis</persName>, da der Kreis jener, die
-								dessen Lehre befürworten, täglich wächst; auch der Fürst [<persName ref="169">Philipp</persName> von
-								<persName ref="169">Hessen</persName>] soll dazu gehören.
+								<persName ref="person891">Froschauer</persName> mitbringen, wenn er zur
+								[<placeName ref="place361">Frankfurter</placeName>] Messe reist.
+								<persName ref="person84">Gwalthers</persName> Epicedium auf Eobanus
+								[Hessus] wird demnächst erscheinen; er verspricht, es umgehend zu
+								schicken. Bittet nochmals um Bilder <persName ref="person265">Zwinglis</persName>, da der Kreis jener, die
+								dessen Lehre befürworten, täglich wächst; auch der Fürst [Philipp von
+								Hessen] soll dazu gehören.
 							</p>
 						</summary>
 					</msContents>
@@ -77,46 +80,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11475">
 				<correspAction type="sent">
-					<persName ref="person#1381" cert="high">
+					<!--
+					<persName ref="person1381" cert="high">
 						<forename cert="high">Rudolf</forename>
 						<surname cert="high">Gwalther</surname>
-						<addName type="main">Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
+						<persName type="main" ref="person8011>Gwalther (Walter, Gualtherus, Walthart) d.Ä., Rudolf</addName>
 						<graphic type="portrait" url="portraits/1381_Gwalther_Rudolf.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Rudolf_Gwalther"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11854392X"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11522600"/>
 					</persName>
-					<place source="#311" cert="high">
-						<settlement>Marburg</settlement>
-						<district>Hessen</district>
-						<country>Deutschland</country>
-						<geo>50.80904 8.77069</geo>
-					</place>
+					-->
+					<persName ref="person1381" cert="high"/>
+					<place source="place311" cert="high"/>
 					<date when="1540-11-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11476"/>
-					<ref type="prev_chronologically" target="files.xml#11474"/>
-					<ref type="next_correspondence" target="files.xml#11479"/>
-					<ref type="prev_correspondence" target="files.xml#11473"/>
-					<ref type="next_correspondence_request" target="files.xml#11516"/>
-					<ref type="prev_correspondence_request" target="files.xml#11473"/>
-					<ref type="next_correspondence_reaction" target="files.xml#11479"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#11434"/>
-					<ref type="next_same_sender" target="files.xml#11516"/>
-					<ref type="prev_same_sender" target="files.xml#11473"/>
-					<ref type="next_same_addressee" target="files.xml#11479"/>
-					<ref type="prev_same_addressee" target="files.xml#11471"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11516"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11473"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11479"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11471"/>
+					<ref type="next_chronologically" target="file11476"/>
+					<ref type="prev_chronologically" target="file11474"/>
+					<ref type="next_correspondence" target="file11479"/>
+					<ref type="prev_correspondence" target="file11473"/>
+					<ref type="next_correspondence_request" target="file11516"/>
+					<ref type="prev_correspondence_request" target="file11473"/>
+					<ref type="next_correspondence_reaction" target="file11479"/>
+					<ref type="prev_correspondence_reaction" target="file11434"/>
+					<ref type="next_same_sender" target="file11516"/>
+					<ref type="prev_same_sender" target="file11473"/>
+					<ref type="next_same_addressee" target="file11479"/>
+					<ref type="prev_same_addressee" target="file11471"/>
+					<ref type="next_with_sender_as_addressee" target="file11516"/>
+					<ref type="prev_with_sender_as_addressee" target="file11473"/>
+					<ref type="next_with_addressee_as_sender" target="file11479"/>
+					<ref type="prev_with_addressee_as_sender" target="file11471"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -133,38 +141,38 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam et pacem a domino.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Cum literas omnes obsignavissemus<note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file#11473">Nr. 1430</ref>, 2-8 mit Anm. 2.</note> ac <placeName ref="672">Marpurgensis</placeName> hic senator<note xml:id="fn3" type="footnote" n="3">Unbekannt; vgl. ebd.</note>, vir honestissimus, qui <placeName ref="565">Constantiam</placeName> petiit, de nummis agi audiret, iussit, ut aut ad te aut alium nostrorum parentum scriberemus, ne nummi <placeName ref="565">Constantiam</placeName> mitterentur, sed per literas tantum illi nobis mutuo dandi copia a nostris daretur<note xml:id="fna" type="footnote" n="a"><hi>für gestrichenes</hi> detur <hi>über der Zeile nachgetragen.</hi></note>.</s>
-					<s xml:lang="la" type="auto">Offert enim se (ut est erga studiosos optime affectus) se omni in re nobis etiam ignotis adfuturum.</s>
-					<s xml:lang="la" type="auto">Quare, pater colendissime, etiam atque etiam te rogo, ut <persName ref="143">Gregorio Mangolt</persName>, Constantiensi bibliopolę, nomine nostro scribas, qui illi hęc nomine vestro indicabit.</s>
-					<s xml:lang="la" type="auto">Hoc enim si fiat, summa, qua nunc laboramus, necessitate facile extricabimur.</s>
-					<s xml:lang="la" type="auto">Opus autem est, ut eadem Wolphii<note xml:id="fn4" type="footnote" n="4"><persName ref="251">Johannes Wolf</persName>.</note> et Wikii<note xml:id="fn5" type="footnote" n="5"><persName ref="242">Johann Jakob Wick</persName>.</note> parentibus indices.</s>
+					<s n="2" xml:lang="la" type="auto">Cum literas omnes obsignavissemus<note xml:id="fn2" type="footnote" n="2">Vgl. oben <ref target="file11473">Nr. 1430</ref>, 2-8 mit Anm. 2.</note> ac <placeName ref="place672">Marpurgensis</placeName> hic senator<note xml:id="fn3" type="footnote" n="3">Unbekannt; vgl. ebd.</note>, vir honestissimus, qui <placeName ref="place565">Constantiam</placeName> petiit, de nummis agi audiret, iussit, ut aut ad te aut alium nostrorum parentum scriberemus, ne nummi <placeName ref="place565">Constantiam</placeName> mitterentur, sed per literas tantum illi nobis mutuo dandi copia a nostris daretur<note xml:id="fna" type="footnote" n="a"><hi>für gestrichenes</hi> detur <hi>über der Zeile nachgetragen.</hi></note>.</s>
+					<s n="3" xml:lang="la" type="auto">Offert enim se (ut est erga studiosos optime affectus) se omni in re nobis etiam ignotis adfuturum.</s>
+					<s n="4" xml:lang="la" type="auto">Quare, pater colendissime, etiam atque etiam te rogo, ut <persName ref="person143">Gregorio Mangolt</persName>, Constantiensi bibliopolę, nomine nostro scribas, qui illi hęc nomine vestro indicabit.</s>
+					<s n="5" xml:lang="la" type="auto">Hoc enim si fiat, summa, qua nunc laboramus, necessitate facile extricabimur.</s>
+					<s n="6" xml:lang="la" type="auto">Opus autem est, ut eadem <persName ref="person251">Wolphii</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="person251">Johannes Wolf</persName>.</note> et <persName ref="person242">Wikii</persName><note xml:id="fn5" type="footnote" n="5"><persName ref="person242">Johann Jakob Wick</persName>.</note> parentibus indices.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Fac, quaeso, mi pater, ut te et alios mihi patronos ut hactenus habeam; efficiam certe, quantum in me erit, ne aut vos vestrę beneficentiae aut quenquam sui in me beneficii poeniteat.</s>
-					<s xml:lang="la" type="auto">Pudet me hercle ab ignotis mutuo sumere, si domestico auxilio destituar.</s>
-					<s xml:lang="la" type="auto">Unum hunc annum ut liberius vivere possim, peto; hoc enim transacto me in vestrę reipublicae usum paratissimo animo offero.</s>
+					<s n="7" xml:lang="la" type="auto">Fac, quaeso, mi pater, ut te et alios mihi patronos ut hactenus habeam; efficiam certe, quantum in me erit, ne aut vos vestrę beneficentiae aut quenquam sui in me beneficii poeniteat.</s>
+					<s n="8" xml:lang="la" type="auto">Pudet me hercle ab ignotis mutuo sumere, si domestico auxilio destituar.</s>
+					<s n="9" xml:lang="la" type="auto">Unum hunc annum ut liberius vivere possim, peto; hoc enim transacto me in vestrę reipublicae usum paratissimo animo offero.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Fac autem, ut <persName ref="891">Froschouero</persName> stipendia nostra ad nundinas ituro numerentur, quo statim in nundinarum principio nostris s[atis]<note xml:id="fnb" type="footnote" n="b"><hi>Text beim Öffnen des Siegels beschädigt.</hi></note> fieri possit creditoribus.</s>
-					<s xml:lang="la" type="auto">Vale, pater charissime.</s>
+					<s n="10" xml:lang="la" type="auto">Fac autem, ut <persName ref="person891">Froschouero</persName> stipendia nostra ad nundinas ituro numerentur, quo statim in nundinarum principio nostris s[atis]<note xml:id="fnb" type="footnote" n="b"><hi>Text beim Öffnen des Siegels beschädigt.</hi></note> fieri possit creditoribus.</s>
+					<s n="11" xml:lang="la" type="auto">Vale, pater charissime.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Epicedion <persName ref="773">Eobani</persName><note xml:id="fn6" type="footnote" n="6">Vgl. oben <ref target="file#11468">Nr. 1425</ref>, Anm. 12.</note> tuo nomini dicatum hisce diebus (ut d. <persName ref="1527">Lonicerus</persName> affirmat) universitatis huius nomine imprimetur, quod primo, quo possum, nuntio mittam.<pb type="edition" next="185"/></s>
+					<s n="12" xml:lang="la" type="auto">Epicedion <persName ref="person773">Eobani</persName><note xml:id="fn6" type="footnote" n="6">Vgl. oben <ref target="file11468">Nr. 1425</ref>, Anm. 12.</note> tuo nomini dicatum hisce diebus (ut d. <persName ref="person1527">Lonicerus</persName> affirmat) universitatis huius nomine imprimetur, quod primo, quo possum, nuntio mittam.<pb type="edition" next="185"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si tamen nunc <persName ref="265">Zvinglii</persName> imagines<note xml:id="fn7" type="footnote" n="7">Vgl. oben <ref target="file#11473">Nr. 1430</ref>, 50-60.</note> mittere poteris, quaeso, mittas.</s>
-					<s xml:lang="la" type="auto">Nunc enim quotidie et inter cives et doctos prodire incipiunt, qui nostrę religionis fautores sese manifesto testantur, quod idem de principe<note xml:id="fnc" type="footnote" n="c"><hi>vor</hi> principe <hi>gestrichenes</hi> duct.</note><note xml:id="fn8" type="footnote" n="8"><persName ref="169">Landgraf Philipp von Hessen</persName>.</note> omnes affirmant.</s>
-					<s xml:lang="la" type="auto">Vale iterum, deusque te nobis diu incolumem<note xml:id="fnd" type="footnote" n="d"><hi>vor</hi> incolumem <hi>gestrichenes</hi> aux.</note> servet.</s>
+					<s n="13" xml:lang="la" type="auto">Si tamen nunc <persName ref="person265">Zvinglii</persName> imagines<note xml:id="fn7" type="footnote" n="7">Vgl. oben <ref target="file11473">Nr. 1430</ref>, 50-60.</note> mittere poteris, quaeso, mittas.</s>
+					<s n="14" xml:lang="la" type="auto">Nunc enim quotidie et inter cives et doctos prodire incipiunt, qui nostrę religionis fautores sese manifesto testantur, quod idem de principe<note xml:id="fnc" type="footnote" n="c"><hi>vor</hi> principe <hi>gestrichenes</hi> duct.</note><note xml:id="fn8" type="footnote" n="8">Landgraf Philipp von Hessen.</note> omnes affirmant.</s>
+					<s n="15" xml:lang="la" type="auto">Vale iterum, deusque te nobis diu incolumem<note xml:id="fnd" type="footnote" n="d"><hi>vor</hi> incolumem <hi>gestrichenes</hi> aux.</note> servet.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tui observantissimus Rodolphus <persName ref="84">Gvaltherus</persName>.</s>
+					<s n="16" xml:lang="la" type="auto">Tui observantissimus Rodolphus <persName ref="person84">Gvaltherus</persName>.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Clarissimo viro d. Heinricho Bullingero, Tigurinę ecclesiae antistiti vigilantissimo, patri suo plurimum colendo.</s>
+					<s n="17" xml:lang="la" type="auto">Clarissimo viro d. Heinricho Bullingero, Tigurinę ecclesiae antistiti vigilantissimo, patri suo plurimum colendo.</s>
 				</p>
 			</div>
 		</body>

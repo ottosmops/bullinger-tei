@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1998"/>
-				<idno type="ISBN">ISBN 3-290-10980-1</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=967</idno>
+				<idno subtype="ISBN">ISBN 3-290-10980-1</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=967</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 7</title>
+				<title subtype="publication">HBBW VII</title>
 				<biblScope type="editor">Bächtold, Hans Ulrich; Henrich, Rainer</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">7</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 343,133</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 343,133</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,12 +49,12 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								Äußert sich nur kurz zu <persName ref="114">Leo</persName>
-								[<persName ref="114">Juds</persName>] Mahnschreiben betreffend [die geplanten Maßnahmen gegen
-								Schriften von] <persName ref="28">Bucer</persName>, da er bereits eine Stellungnahme
-								[<ref target="file#11007">Nr. 965</ref>] geschickt hat; daß <persName ref="28">Bucers</persName>
+								Äußert sich nur kurz zu Leo
+								[<persName ref="person114">Juds</persName>] Mahnschreiben betreffend [die geplanten Maßnahmen gegen
+								Schriften von] <persName ref="person28">Bucer</persName>, da er bereits eine Stellungnahme
+								[<ref target="file11007">Nr. 965</ref>] geschickt hat; daß <persName ref="person28">Bucers</persName>
 								Vorgehen nicht mit seinem Eifer entschuldigt werden kann, wird sich schon bald erweisen, doch wollen die
-								<placeName ref="121">Berner</placeName> nichts ohne die Zürcher unternehmen. Grüße.
+								<placeName ref="place121">Berner</placeName> nichts ohne die Zürcher unternehmen. Grüße.
 							</p>
 						</summary>
 					</msContents>
@@ -61,45 +64,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/11009">
 				<correspAction type="sent">
-					<persName ref="person#2263" cert="high">
+					<!--
+					<persName ref="person2263" cert="high">
 						<forename cert="high">Kaspar</forename>
 						<surname cert="high">Megander</surname>
-						<addName type="main">Megander (Großmann), Kaspar</addName>
+						<persName type="main" ref="person8412>Megander (Großmann), Kaspar</addName>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Kaspar_Megander"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/12037210X"/>
 					</persName>
-					<place source="#41" cert="high">
-						<settlement>Bern</settlement>
-						<district>Bern</district>
-						<country>Schweiz</country>
-						<geo>46.94809 7.44744</geo>
-					</place>
+					-->
+					<persName ref="person2263" cert="high"/>
+					<place source="place41" cert="high"/>
 					<date when="1537-03-11" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#11010"/>
-					<ref type="prev_chronologically" target="files.xml#11008"/>
-					<ref type="next_correspondence" target="files.xml#11031"/>
-					<ref type="prev_correspondence" target="files.xml#11007"/>
-					<ref type="next_correspondence_request" target="files.xml#11031"/>
-					<ref type="prev_correspondence_request" target="files.xml#11007"/>
+					<ref type="next_chronologically" target="file11010"/>
+					<ref type="prev_chronologically" target="file11008"/>
+					<ref type="next_correspondence" target="file11031"/>
+					<ref type="prev_correspondence" target="file11007"/>
+					<ref type="next_correspondence_request" target="file11031"/>
+					<ref type="prev_correspondence_request" target="file11007"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#10870"/>
-					<ref type="next_same_sender" target="files.xml#11031"/>
-					<ref type="prev_same_sender" target="files.xml#11007"/>
-					<ref type="next_same_addressee" target="files.xml#11010"/>
-					<ref type="prev_same_addressee" target="files.xml#11008"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#11031"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#11007"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#11010"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#11008"/>
+					<ref type="prev_correspondence_reaction" target="file10870"/>
+					<ref type="next_same_sender" target="file11031"/>
+					<ref type="prev_same_sender" target="file11007"/>
+					<ref type="next_same_addressee" target="file11010"/>
+					<ref type="prev_same_addressee" target="file11008"/>
+					<ref type="next_with_sender_as_addressee" target="file11031"/>
+					<ref type="prev_with_sender_as_addressee" target="file11007"/>
+					<ref type="next_with_addressee_as_sender" target="file11010"/>
+					<ref type="prev_with_addressee_as_sender" target="file11008"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,28 +123,28 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Gratiam a domino, charissime mi Bullingere.</s>
+					<s n="1" xml:lang="la" type="auto">Gratiam a domino, charissime mi Bullingere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Leonis in negocio <persName ref="28">Buceri</persName> amicam dehortationem accepimus<note xml:id="fn1" type="footnote" n="1">Der Brief, in dem <persName ref="114">Leo Jud</persName> wie zuvor Bullinger (vgl. oben <ref target="file#11007">Nr. 965</ref>, 2f) die <placeName ref="121">Berner</placeName> vor einem Verbot von <persName ref="28">Bucer</persName>-Schriften gewarnt haben muß, ist nicht erhalten.</note>, de qua non opus est multa tibi dicere.</s>
-					<s xml:lang="la" type="auto">Non multis enim ante diebus mentem nostram accepisti<note xml:id="fn2" type="footnote" n="2">Gemeint ist der Brief vom 8. März, oben <ref target="file#11007">Nr. 965</ref>.</note>, licet tumultuarie opera amanuensis<note xml:id="fn3" type="footnote" n="3">Der Brief ist von unbekannter Hand geschrieben.</note>, quando ob capitis fluxum ipse scribere non potui.</s>
-					<s xml:lang="la" type="auto"><persName ref="114">Leo</persName> excusat <persName ref="28">Bucerum</persName> non dolo, sed zelo omnia egisse.</s>
-					<s xml:lang="la" type="auto">Nescio, an zelus dici queat ex ipsissima luce aliquem in abstrusissimas tenebras pertrahere velle, quod egit <persName ref="28">Bucerus</persName>.</s>
-					<s xml:lang="la" type="auto">Si non satis esse videtur, expectemus, obsecro, paulisper, donec satis faciat, id quod haud dubie brevi futurum est.</s>
-					<s xml:lang="la" type="auto">At sine vobis nihil tentabimus.</s>
+					<s n="2" xml:lang="la" type="auto">Leonis in negocio <persName ref="person28">Buceri</persName> amicam dehortationem accepimus<note xml:id="fn1" type="footnote" n="1">Der Brief, in dem <persName ref="person114">Leo Jud</persName> wie zuvor Bullinger (vgl. oben <ref target="file11007">Nr. 965</ref>, 2f) die <placeName ref="place121">Berner</placeName> vor einem Verbot von <persName ref="person28">Bucer</persName>-Schriften gewarnt haben muß, ist nicht erhalten.</note>, de qua non opus est multa tibi dicere.</s>
+					<s n="3" xml:lang="la" type="auto">Non multis enim ante diebus mentem nostram accepisti<note xml:id="fn2" type="footnote" n="2">Gemeint ist der Brief vom 8. März, oben <ref target="file11007">Nr. 965</ref>.</note>, licet tumultuarie opera amanuensis<note xml:id="fn3" type="footnote" n="3">Der Brief ist von unbekannter Hand geschrieben.</note>, quando ob capitis fluxum ipse scribere non potui.</s>
+					<s n="4" xml:lang="la" type="auto"><persName ref="person114">Leo</persName> excusat <persName ref="person28">Bucerum</persName> non dolo, sed zelo omnia egisse.</s>
+					<s n="5" xml:lang="la" type="auto">Nescio, an zelus dici queat ex ipsissima luce aliquem in abstrusissimas tenebras pertrahere velle, quod egit <persName ref="person28">Bucerus</persName>.</s>
+					<s n="6" xml:lang="la" type="auto">Si non satis esse videtur, expectemus, obsecro, paulisper, donec satis faciat, id quod haud dubie brevi futurum est.</s>
+					<s n="7" xml:lang="la" type="auto">At sine vobis nihil tentabimus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="edition" next="98"/>Bene vale salvis omnibus fratribus, <persName ref="14">Theodoro</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="14">Theodor Bibliander</persName>.</note>, Bellicano<note xml:id="fn5" type="footnote" n="5"><persName ref="165">Konrad Pellikan</persName>.</note>, <persName ref="78">Beato</persName><note xml:id="fn6" type="footnote" n="6"><persName ref="78">Beat Gering</persName>.</note>.</s>
+					<s n="8" xml:lang="la" type="auto"><pb type="edition" next="98"/>Bene vale salvis omnibus fratribus, <persName ref="person14">Theodoro</persName><note xml:id="fn4" type="footnote" n="4"><persName ref="person14">Theodor Bibliander</persName>.</note>, Bellicano<note xml:id="fn5" type="footnote" n="5"><persName ref="person165">Konrad Pellikan</persName>.</note>, <persName ref="person78">Beato</persName><note xml:id="fn6" type="footnote" n="6"><persName ref="person78">Beat Gering</persName>.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><placeName ref="121">Bernę</placeName>, marcii 11. anno 37.</s>
+					<s n="9" xml:lang="la" type="auto"><placeName ref="place121">Bernę</placeName>, marcii 11. anno 37.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><persName ref="145">Megander</persName> tuus totus.</s>
+					<s n="10" xml:lang="la" type="auto"><persName ref="person145">Megander</persName> tuus totus.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Domino Heinrico Bullingero, Tiguri Christum profitenti, fratri suo in domino charissmo.</s>
+					<s n="11" xml:lang="la" type="auto">Domino Heinrico Bullingero, Tiguri Christum profitenti, fratri suo in domino charissmo.</s>
 				</p>
 			</div>
 		</body>

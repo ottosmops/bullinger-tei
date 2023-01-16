@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="1982"/>
-				<idno type="ISBN">ISBN 3-290-11467-8</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=144</idno>
+				<idno subtype="ISBN">ISBN 3-290-11467-8</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=144</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 2</title>
+				<title subtype="publication">HBBW II</title>
 				<biblScope type="editor">Gäbler, Ulrich; Zsindely, Endre; Senn, Matthias</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">2</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 32,156</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 32,156</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -65,46 +68,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/10175">
 				<correspAction type="sent">
-					<persName ref="person#1286" cert="high">
+					<!--
+					<persName ref="person1286" cert="high">
 						<forename cert="high">Konrad</forename>
 						<surname cert="high">Gessner</surname>
-						<addName type="main">Geßner, Konrad</addName>
+						<persName type="main" ref="person1283>Geßner, Konrad</addName>
 						<graphic type="portrait" url="portraits/1283_Gessner_Conrad.jpg"/>
-						<ref type="wikipedia" target="https://en.wikipedia.org/wiki/Conrad_Gessner"/>
+						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Conrad_Gessner"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118694413"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11438405"/>
 					</persName>
-					<place source="#492" cert="high">
-						<settlement>Strassburg</settlement>
-						<district>Metropolitanes Frankreich</district>
-						<country>Frankreich</country>
-						<geo>48.58392 7.74553</geo>
-					</place>
-					<date when="1532-10-00" cert="low"/>
+					-->
+					<persName ref="person1286" cert="high"/>
+					<place source="place492" cert="high"/>
+					<date notBefore="1532-10-01" notAfter="1532-10-12" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#10176"/>
-					<ref type="prev_chronologically" target="files.xml#10168"/>
-					<ref type="next_correspondence" target="files.xml#10241"/>
+					<ref type="next_chronologically" target="file10176"/>
+					<ref type="prev_chronologically" target="file10168"/>
+					<ref type="next_correspondence" target="file10241"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#10241"/>
+					<ref type="next_correspondence_request" target="file10241"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#2517"/>
+					<ref type="next_correspondence_reaction" target="file2517"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#10241"/>
-					<ref type="prev_same_sender" target="files.xml#10150"/>
-					<ref type="next_same_addressee" target="files.xml#10173"/>
-					<ref type="prev_same_addressee" target="files.xml#10160"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#10241"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#10150"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#10173"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#10160"/>
+					<ref type="next_same_sender" target="file10241"/>
+					<ref type="prev_same_sender" target="file10150"/>
+					<ref type="next_same_addressee" target="file10173"/>
+					<ref type="prev_same_addressee" target="file10160"/>
+					<ref type="next_with_sender_as_addressee" target="file10241"/>
+					<ref type="prev_with_sender_as_addressee" target="file10150"/>
+					<ref type="next_with_addressee_as_sender" target="file10173"/>
+					<ref type="prev_with_addressee_as_sender" target="file10160"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -119,36 +127,36 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Incomparabili heroi M. Henrico Bullingero, verbi apud Tigurinos ministro, patrono reverendo.<pb type="edition" next="253"/></s>
+					<s n="1" xml:lang="la" type="auto">Incomparabili heroi M. Henrico Bullingero, verbi apud Tigurinos ministro, patrono reverendo.<pb type="edition" next="253"/></s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Mearum hic rerum plane suspensus haereo, quid agam incertus<note xml:id="fn2" type="footnote" n="2">Zur Situation <persName ref="79">Geßners</persName> im Hause <persName ref="40">Capitos</persName> vgl. <hi>Hanhart</hi> 16f.</note>.</s>
-					<s xml:lang="la" type="auto">Ad te confugio, opem imploro tuam.</s>
-					<s xml:lang="la" type="auto">Spe et consilio destitutus sum omni tu nisi tuteris opem, actum erit de me.</s>
-					<s xml:lang="la" type="auto">Quid enim misero reliquum esset spei, cui adeo citra omnem fructum iuventutem perit irreparabile tempus<note xml:id="fn3" type="footnote" n="3">Vgl. <persName ref="2382">Vergil</persName>, Georgica 3,284.</note>?</s>
-					<s xml:lang="la" type="auto">Praetervolat, inquam, iuventus<note xml:id="fnb" type="footnote" n="b">iuventus <hi>übergeschrieben, ersetzt ein gestrichenes</hi> tempu.</note>, articulus studendi optimus, meque relicto clamat: <foreign xml:lang="el">οὐδεὶς ἐμὲ δράζεται ἐξόπισθεν</foreign>.</s>
-					<s xml:lang="la" type="auto">Quantulum studendi relictum sit illis tempus, qui in tantis dominorum versantur negotiis, ipse coniicere potes.</s>
-					<s xml:lang="la" type="auto">Nulla hora, immo nullum momentum est, quod meum dicere licet, quodve libere musis indulgeam.</s>
-					<s xml:lang="la" type="manual">Nosti illud Homericum: <foreign xml:lang="el">Ἥμισυ γάρ τ’ ἀπετῆς ἀποαίνυται εὐρύοπα Ζεὺς Ἀνέρος, εὖτ’ ἄν μιν κατὰ δούλιον ἦμαρ ἕλῃσιν</foreign><note xml:id="fn4" type="footnote" n="4"><persName ref="1215">Homer</persName>, Odyssee 17, 322f.</note>.</s>
+					<s n="2" xml:lang="la" type="auto">S.</s>
+					<s n="3" xml:lang="la" type="auto">Mearum hic rerum plane suspensus haereo, quid agam incertus<note xml:id="fn2" type="footnote" n="2">Zur Situation <persName ref="person79">Geßners</persName> im Hause <persName ref="person40">Capitos</persName> vgl. <hi>Hanhart</hi> 16f.</note>.</s>
+					<s n="4" xml:lang="la" type="auto">Ad te confugio, opem imploro tuam.</s>
+					<s n="5" xml:lang="la" type="auto">Spe et consilio destitutus sum omni tu nisi tuteris opem, actum erit de me.</s>
+					<s n="6" xml:lang="la" type="auto">Quid enim misero reliquum esset spei, cui adeo citra omnem fructum iuventutem perit irreparabile tempus<note xml:id="fn3" type="footnote" n="3">Vgl. <persName ref="person2382">Vergil</persName>, Georgica 3,284.</note>?</s>
+					<s n="7" xml:lang="la" type="auto">Praetervolat, inquam, iuventus<note xml:id="fnb" type="footnote" n="b">iuventus <hi>übergeschrieben, ersetzt ein gestrichenes</hi> tempu.</note>, articulus studendi optimus, meque relicto clamat: <foreign xml:lang="el">οὐδεὶς ἐμὲ δράζεται ἐξόπισθεν</foreign>.</s>
+					<s n="8" xml:lang="la" type="auto">Quantulum studendi relictum sit illis tempus, qui in tantis dominorum versantur negotiis, ipse coniicere potes.</s>
+					<s n="9" xml:lang="la" type="auto">Nulla hora, immo nullum momentum est, quod meum dicere licet, quodve libere musis indulgeam.</s>
+					<s n="10" xml:lang="la" type="manual">Nosti illud Homericum: <foreign xml:lang="el">Ἥμισυ γάρ τ’ ἀπετῆς ἀποαίνυται εὐρύοπα Ζεὺς Ἀνέρος, εὖτ’ ἄν μιν κατὰ δούλιον ἦμαρ ἕλῃσιν</foreign><note xml:id="fn4" type="footnote" n="4"><persName ref="person1215">Homer</persName>, Odyssee 17, 322f.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Rogo itaque humanitatem tuam, consilium aliquod rerum mearum mihi dubio praestare dignetur.</s>
-					<s xml:lang="la" type="auto">Si mihi stipendium non tenuius aliorum stipendio permittetur, ad vos, cum licebit, redibo<note xml:id="fn5" type="footnote" n="5">Ende November 1532 war <persName ref="79">Geßner</persName> wieder in Zürich, s. oben Anm. 1 und <hi>Hanhart</hi> 19f.</note>.</s>
-					<s xml:lang="la" type="auto">Sin minus, musae invito relinquendae erunt.</s>
-					<s xml:lang="la" type="auto">Certior per te fieri, quam primum licebit, cupio, ut, quid agam, quamprimum sciam.</s>
+					<s n="11" xml:lang="la" type="auto">Rogo itaque humanitatem tuam, consilium aliquod rerum mearum mihi dubio praestare dignetur.</s>
+					<s n="12" xml:lang="la" type="auto">Si mihi stipendium non tenuius aliorum stipendio permittetur, ad vos, cum licebit, redibo<note xml:id="fn5" type="footnote" n="5">Ende November 1532 war <persName ref="person79">Geßner</persName> wieder in Zürich, s. oben Anm. 1 und <hi>Hanhart</hi> 19f.</note>.</s>
+					<s n="13" xml:lang="la" type="auto">Sin minus, musae invito relinquendae erunt.</s>
+					<s n="14" xml:lang="la" type="auto">Certior per te fieri, quam primum licebit, cupio, ut, quid agam, quamprimum sciam.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Vale, et me tuae humanitati commendatum habe.</s>
-					<s xml:lang="el" type="manual">Γουνοῦμαί σε, ἄναξ, σὺ δέ μ’ ἐντρέπῃ ἠδ’ ἐλέησον<note xml:id="fn6" type="footnote" n="6">Vgl. <persName ref="1215">Homer</persName>, Ilias 21,74; <foreign xml:lang="el">αἴδεο καί μ’</foreign> bewußt durch <foreign xml:lang="el">ἐντρέπη ἠδ’</foreign> ersetzt.</note>.</s>
+					<s n="15" xml:lang="la" type="auto">Vale, et me tuae humanitati commendatum habe.</s>
+					<s n="16" xml:lang="el" type="manual">Γουνοῦμαί σε, ἄναξ, σὺ δέ μ’ ἐντρέπῃ ἠδ’ ἐλέησον<note xml:id="fn6" type="footnote" n="6">Vgl. <persName ref="person1215">Homer</persName>, Ilias 21,74; <foreign xml:lang="el">αἴδεο καί μ’</foreign> bewußt durch <foreign xml:lang="el">ἐντρέπη ἠδ’</foreign> ersetzt.</note>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Plurimum te salutat cum reliquis fratribus dominus meus <persName ref="40">Capito</persName>.</s>
-					<s xml:lang="la" type="auto">Vale iterum.</s>
-					<s xml:lang="la" type="auto">Datum raptim in aedibus <persName ref="40">Capitonis</persName>.</s>
+					<s n="17" xml:lang="la" type="auto">Plurimum te salutat cum reliquis fratribus dominus meus <persName ref="person40">Capito</persName>.</s>
+					<s n="18" xml:lang="la" type="auto">Vale iterum.</s>
+					<s n="19" xml:lang="la" type="auto">Datum raptim in aedibus <persName ref="person40">Capitonis</persName>.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus ad pedes <persName ref="79">Conradus Gesnerus</persName>.</s>
+					<s n="20" xml:lang="la" type="auto">Tuus ad pedes <persName ref="person79">Conradus Gesnerus</persName>.</s>
 				</p>
 			</div>
 		</body>

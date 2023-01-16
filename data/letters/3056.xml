@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">4411/305</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 346,322</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 346,322</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -44,13 +47,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 88,146</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 88,146</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -64,45 +70,47 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/3056">
 				<correspAction type="sent">
-					<persName ref="person#1218" cert="high">
+					<!--
+					<persName ref="person1218" cert="high">
 						<forename cert="high">Georg</forename>
 						<surname cert="high">Frölich</surname>
-						<addName type="main">Frölich (Laetus), Georg</addName>
-						<ref type="wikipedia" target="https://www.deutsche-biographie.de/sfz17760.html"/>
+						<persName type="main" ref="person8354>Frölich (Laetus), Georg</addName>
 					</persName>
+					-->
+					<persName ref="person1218" cert="high"/>
 					<date when="1556-11-29" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#3057"/>
-					<ref type="prev_chronologically" target="files.xml#3055"/>
-					<ref type="next_correspondence" target="files.xml#3087"/>
-					<ref type="prev_correspondence" target="files.xml#3031"/>
-					<ref type="next_correspondence_request" target="files.xml#3087"/>
-					<ref type="prev_correspondence_request" target="files.xml#3031"/>
+					<ref type="next_chronologically" target="file3057"/>
+					<ref type="prev_chronologically" target="file3055"/>
+					<ref type="next_correspondence" target="file3087"/>
+					<ref type="prev_correspondence" target="file3031"/>
+					<ref type="next_correspondence_request" target="file3087"/>
+					<ref type="prev_correspondence_request" target="file3031"/>
 					<ref type="next_correspondence_reaction" target=""/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12511"/>
-					<ref type="next_same_sender" target="files.xml#3087"/>
-					<ref type="prev_same_sender" target="files.xml#3031"/>
-					<ref type="next_same_addressee" target="files.xml#3058"/>
-					<ref type="prev_same_addressee" target="files.xml#3048"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#3087"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#3031"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#3058"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#3048"/>
+					<ref type="prev_correspondence_reaction" target="file12511"/>
+					<ref type="next_same_sender" target="file3087"/>
+					<ref type="prev_same_sender" target="file3031"/>
+					<ref type="next_same_addressee" target="file3058"/>
+					<ref type="prev_same_addressee" target="file3048"/>
+					<ref type="next_with_sender_as_addressee" target="file3087"/>
+					<ref type="prev_with_sender_as_addressee" target="file3031"/>
+					<ref type="next_with_addressee_as_sender" target="file3058"/>
+					<ref type="prev_with_addressee_as_sender" target="file3048"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -120,48 +128,48 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S. D.</s>
-					<s xml:lang="la" type="auto">Quid et quantum damni mercator quidam mihi fecerit, superioribus litteris a te scripsi; significavi etiam alia, quę tum ex re esse videbantur.</s>
-					<s xml:lang="la" type="auto">Quodsi respondere volueris, Zvicius in Ror ad me Ratisbonam mittere poterit.</s>
-					<s xml:lang="la" type="auto">Ego enim cras deo volente iter ad comitia instituam; utinam istic non diutius, quam par sit, molestissime herere cogar.</s>
-					<s xml:lang="la" type="auto">Rex adducit secum Canisium, Gropperum, Wizelium et magnam eius farinę catervam, quibus longe maxima pars multum assentitur.</s>
-					<s xml:lang="la" type="auto">Saxones ne gregarii quidem lapides amplius, sed ipsa cera molliores sunt cum impiis quibusdam iamdudum pacti.</s>
-					<s xml:lang="la" type="auto">De imperio Germanico iamdudum actum est, religio vero exulat, nec aliud superest quam conglutinatio tam veteris quam novi papatus.</s>
-					<s xml:lang="la" type="auto">Porro cerevisiarii mihi hoc totis viribus querere videntur.</s>
-					<s xml:lang="la" type="auto">Principes sunt, ut ipsorum proprium est, molles, effeminati, delicati etc.</s>
-					<s xml:lang="la" type="auto">Finem rerum quis coniecturare nescit?</s>
+					<s n="1" xml:lang="la" type="auto">S. D.</s>
+					<s n="2" xml:lang="la" type="auto">Quid et quantum damni mercator quidam mihi fecerit, superioribus litteris a te scripsi; significavi etiam alia, quę tum ex re esse videbantur.</s>
+					<s n="3" xml:lang="la" type="auto">Quodsi respondere volueris, Zvicius in Ror ad me Ratisbonam mittere poterit.</s>
+					<s n="4" xml:lang="la" type="auto">Ego enim cras deo volente iter ad comitia instituam; utinam istic non diutius, quam par sit, molestissime herere cogar.</s>
+					<s n="5" xml:lang="la" type="auto">Rex adducit secum Canisium, Gropperum, Wizelium et magnam eius farinę catervam, quibus longe maxima pars multum assentitur.</s>
+					<s n="6" xml:lang="la" type="auto">Saxones ne gregarii quidem lapides amplius, sed ipsa cera molliores sunt cum impiis quibusdam iamdudum pacti.</s>
+					<s n="7" xml:lang="la" type="auto">De imperio Germanico iamdudum actum est, religio vero exulat, nec aliud superest quam conglutinatio tam veteris quam novi papatus.</s>
+					<s n="8" xml:lang="la" type="auto">Porro cerevisiarii mihi hoc totis viribus querere videntur.</s>
+					<s n="9" xml:lang="la" type="auto">Principes sunt, ut ipsorum proprium est, molles, effeminati, delicati etc.</s>
+					<s n="10" xml:lang="la" type="auto">Finem rerum quis coniecturare nescit?</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sermonem tuum, apologiam tuam aliquoties petii, sed etiam promissam, nondum obtinui.</s>
-					<s xml:lang="la" type="auto">Quam ut etiamnum mittas, oro.</s>
+					<s n="11" xml:lang="la" type="auto">Sermonem tuum, apologiam tuam aliquoties petii, sed etiam promissam, nondum obtinui.</s>
+					<s n="12" xml:lang="la" type="auto">Quam ut etiamnum mittas, oro.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Zvictius Ratisbonam mittere poterit.</s>
-					<s xml:lang="la" type="auto">Ego quantumvis pauperculus precium... bo.</s>
-					<s xml:lang="la" type="auto">Res imperii in eo sunt statu, ut prudens quilibet malit se subducere quam ingerere.</s>
-					<s xml:lang="la" type="auto">Utinam fortunę mee essent in pristino ordine.</s>
-					<s xml:lang="la" type="auto">Quid facturus essem, brevi deliberarem.</s>
-					<s xml:lang="la" type="auto">Nunc proh dolor manibus et pedibus ligatus teneor.</s>
+					<s n="13" xml:lang="la" type="auto">Zvictius Ratisbonam mittere poterit.</s>
+					<s n="14" xml:lang="la" type="auto">Ego quantumvis pauperculus precium... bo.</s>
+					<s n="15" xml:lang="la" type="auto">Res imperii in eo sunt statu, ut prudens quilibet malit se subducere quam ingerere.</s>
+					<s n="16" xml:lang="la" type="auto">Utinam fortunę mee essent in pristino ordine.</s>
+					<s n="17" xml:lang="la" type="auto">Quid facturus essem, brevi deliberarem.</s>
+					<s n="18" xml:lang="la" type="auto">Nunc proh dolor manibus et pedibus ligatus teneor.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">In istis imperii tractatibus spero me eam gratiam relaturum, quam optimi quique retulerunt, id est ne posthac admittar; ita me iubet deus, ita mundi iniuria poscit.</s>
+					<s n="19" xml:lang="la" type="auto">In istis imperii tractatibus spero me eam gratiam relaturum, quam optimi quique retulerunt, id est ne posthac admittar; ita me iubet deus, ita mundi iniuria poscit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Princeps Iuliacensis dicitur evangelium Lutheranum acceptasse.</s>
-					<s xml:lang="la" type="auto">Quodsi ita est, tu pro rei dignitate, congratulaberis.</s>
-					<s xml:lang="la" type="auto">Ego quid facturus sim, incertus sum; nam Lutheranorum invidia et odium plus quam papistarum me infestant; sed bene est, dominus videt.</s>
+					<s n="20" xml:lang="la" type="auto">Princeps Iuliacensis dicitur evangelium Lutheranum acceptasse.</s>
+					<s n="21" xml:lang="la" type="auto">Quodsi ita est, tu pro rei dignitate, congratulaberis.</s>
+					<s n="22" xml:lang="la" type="auto">Ego quid facturus sim, incertus sum; nam Lutheranorum invidia et odium plus quam papistarum me infestant; sed bene est, dominus videt.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Rex Romanus intra triduum Ratisbonam veniet et malum peius faciet, nisi natura aulicorum immutata fuerit.</s>
+					<s n="23" xml:lang="la" type="auto">Rex Romanus intra triduum Ratisbonam veniet et malum peius faciet, nisi natura aulicorum immutata fuerit.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tu vale.</s>
-					<s xml:lang="la" type="auto">Consules atque singulos mihi benevolos ex me salutabis et meus ut semper manebis.</s>
-					<s xml:lang="la" type="auto">Vale iterum.</s>
-					<s xml:lang="de" type="auto">29. septembris anno etc. 56.</s>
+					<s n="24" xml:lang="la" type="auto">Tu vale.</s>
+					<s n="25" xml:lang="la" type="auto">Consules atque singulos mihi benevolos ex me salutabis et meus ut semper manebis.</s>
+					<s n="26" xml:lang="la" type="auto">Vale iterum.</s>
+					<s n="27" xml:lang="de" type="auto">29. septembris anno etc. 56.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus Georgius Laetus a Lemnicz in Schlachtegk etc.</s>
+					<s n="28" xml:lang="la" type="auto">Tuus Georgius Laetus a Lemnicz in Schlachtegk etc.</s>
 				</p>
 				<p>
 					<note type="address">[Adresse fehlt?]</note>

@@ -9,28 +9,31 @@
 				<publisher>(nicht publiziert)</publisher>
 				<pubPlace>(Zürich)</pubPlace>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2846</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2846</idno>
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">416</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="de">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 351,140</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 351,140</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -40,7 +43,7 @@
 						<summary>
 							<p xml:id="regest1">
 								[1] Der Abt von St. Gallen
-								[<persName ref="463">Diethelm <persName ref="19">Blarer</persName> von Wartensee</persName>]
+								[<persName ref="person463">Diethelm Blarer von Wartensee</persName>]
 								ergeht sich in üblen Plänen gegen die Stadt. So hat er wieder einen neuen Grund zur Anklage erfunden und
 								behauptet, dass St. Gallen beabsichtige, die Klosteruntertanen, die im Leinwandgewerbe tätig sind, mit
 								Steuern zu belasten, was die Stadt keineswegs vorhat. Der Abt gibt vor, dass er von den Untertanen zu diesem
@@ -58,7 +61,7 @@
 								[2] Vadian wollte dies seinem guten Freund nicht vorenthalten und bittet diesen, auch die Bürgermeister
 								Hans Rudolf Lavater und Johannes Haab sowie andere Vertraute davon in Kenntnis zu setzen. Diese sollen zudem
 								wissen, dass die St. Galler die Angelegenheit vor die Tagsatzung [zu
-								<placeName ref="85">Baden</placeName>] bringen wollen, wenn der Abt von seinen Kungeleien nicht
+								<placeName ref="place85">Baden</placeName>] bringen wollen, wenn der Abt von seinen Kungeleien nicht
 								ablässt. Dabei streben sie nur nach ihrem guten Recht und wollen weitere Verleumdungen und Drohungen
 								verhindern. Es geht ihnen also nicht um irgendeinen Gewinn. Bullinger weiß, was Vadian meint. Man hofft auf
 								ein gerechtes Urteil, befürchtet aber das Gegenteil.
@@ -69,8 +72,8 @@
 								<p xml:id="regest4">
 								[4] [P.S.:] Falls Bullinger, wie Vadian es sich wünscht, diesen Brief den Bürgermeistern zeigt, soll er
 								eine Abschrift davon vorweisen, als hätte er Vadians Schreiben aus dem Latein übersetzt, damit niemand,
-								außer Bullinger und [<persName ref="215">Itelhans</persName>]
-								<persName ref="215">Thumysen</persName>, sieht, was Vadian am Rand vermerkt hat.<note xml:id="fn3" type="footnote" n="3">Siehe dazu oben Anm. a.</note>
+								außer Bullinger und [Itelhans]
+								<persName ref="person215">Thumysen</persName>, sieht, was Vadian am Rand vermerkt hat.<note xml:id="fn3" type="footnote" n="3">Siehe dazu oben Anm. a.</note>
 							</p>
 						</summary>
 					</msContents>
@@ -87,40 +90,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12895">
 				<correspAction type="sent">
-					<persName ref="person#3306" cert="high">
+					<!--
+					<persName ref="person3306" cert="high">
 						<forename cert="high">Joachim</forename>
 						<surname cert="high">Vadian</surname>
-						<addName type="main">Vadian (von Watt), Joachim</addName>
+						<persName type="main" ref="person8049>Vadian (von Watt), Joachim</addName>
 						<graphic type="portrait" url="portraits/3306_Vadian_Joachim.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Joachim_Vadian"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118625780"/>
 					</persName>
-					<date min="1547-03-16" max="1547-03-23" cert="low">nach dem 15. und vor dem 24. März 1547</date>
+					-->
+					<persName ref="person3306" cert="high"/>
+					<date notBefore="1547-03-16" notAfter="1547-03-23" cert="low">nach dem 15. und vor dem 24. März 1547</date>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12896"/>
-					<ref type="prev_chronologically" target="files.xml#12920"/>
-					<ref type="next_correspondence" target="files.xml#12900"/>
-					<ref type="prev_correspondence" target="files.xml#12866"/>
-					<ref type="next_correspondence_request" target="files.xml#12900"/>
-					<ref type="prev_correspondence_request" target="files.xml#12830"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12906"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12866"/>
-					<ref type="next_same_sender" target="files.xml#12900"/>
-					<ref type="prev_same_sender" target="files.xml#12830"/>
-					<ref type="next_same_addressee" target="files.xml#12899"/>
-					<ref type="prev_same_addressee" target="files.xml#12891"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12900"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12830"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12899"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12891"/>
+					<ref type="next_chronologically" target="file12896"/>
+					<ref type="prev_chronologically" target="file12920"/>
+					<ref type="next_correspondence" target="file12900"/>
+					<ref type="prev_correspondence" target="file12866"/>
+					<ref type="next_correspondence_request" target="file12900"/>
+					<ref type="prev_correspondence_request" target="file12830"/>
+					<ref type="next_correspondence_reaction" target="file12906"/>
+					<ref type="prev_correspondence_reaction" target="file12866"/>
+					<ref type="next_same_sender" target="file12900"/>
+					<ref type="prev_same_sender" target="file12830"/>
+					<ref type="next_same_addressee" target="file12899"/>
+					<ref type="prev_same_addressee" target="file12891"/>
+					<ref type="next_with_sender_as_addressee" target="file12900"/>
+					<ref type="prev_with_sender_as_addressee" target="file12830"/>
+					<ref type="next_with_addressee_as_sender" target="file12899"/>
+					<ref type="prev_with_addressee_as_sender" target="file12891"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -138,33 +150,33 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="de" type="auto">Unser abt<note xml:id="fn4" type="footnote" n="4">Diethelm <persName ref="19">Blarer</persName> von Wartensee.</note> treybt alle wonder mit seinen krommen anschlegen gegen unser statt zuͦ S. Gallen.</s>
-					<s xml:lang="de" type="auto">Hat abermals ain neuw ansprach aufgetriben, sam wir mit ettwas anlagen seine gotzhaußleut in unserm leimvatgewerb über billichs zuͦ beschwären vorhabind, daß sich aber nit befinden sol noch wirt, und masset imm den handel an, als ob er von seinen underthuͦnen zuͦ söllichem seinem anlangen beworben seyge.</s>
-					<s xml:lang="de" type="auto">Vernemend aber wir landtmerßweyß und habend desse nit ongegröndte anzaygen, daß seine rädt und amptleut söllichs in die pauren gestoßen und ettlichen gegninen (die nit darinn verwilgen wellen, sonder gegen ainer statt vast dankbar sind) getröuwt worden ist, item ain vogt vor ainer gmaind die sach anbracht, etc., und geredt haben sol: welchem gefall, das man sich gegen ainer statt beschwäre, der heb sein hand auf, etc., und aber niemand wellen aufheben, sol er gwüsslich gsagt haben: "Hebend auf, das euch gotz lyden schend!</s>
-					<s xml:lang="de" type="auto">Wend ir üwern aygnen nutz und frommen nit betrachten?", etc.</s>
-					<s xml:lang="de" type="auto">Ist aber (so war gott unser haylland ist) nützit anderß dann ain verbunst des wolstands ainer statt, und mögend die mönch nit sechen, das wir näbend inen mögend hinkhommen, schemmend sich khainer calumnien noch alafentzen.</s>
-					<s xml:lang="de" type="auto">Geschicht nit allain von der religion, sonder ouch von alt harbrachtz hasses und aufsatzeß wegen.</s>
+					<s n="1" xml:lang="de" type="auto">Unser abt<note xml:id="fn4" type="footnote" n="4">Diethelm <persName ref="person19">Blarer</persName> von Wartensee.</note> treybt alle wonder mit seinen krommen anschlegen gegen unser statt zuͦ S. Gallen.</s>
+					<s n="2" xml:lang="de" type="auto">Hat abermals ain neuw ansprach aufgetriben, sam wir mit ettwas anlagen seine gotzhaußleut in unserm leimvatgewerb über billichs zuͦ beschwären vorhabind, daß sich aber nit befinden sol noch wirt, und masset imm den handel an, als ob er von seinen underthuͦnen zuͦ söllichem seinem anlangen beworben seyge.</s>
+					<s n="3" xml:lang="de" type="auto">Vernemend aber wir landtmerßweyß und habend desse nit ongegröndte anzaygen, daß seine rädt und amptleut söllichs in die pauren gestoßen und ettlichen gegninen (die nit darinn verwilgen wellen, sonder gegen ainer statt vast dankbar sind) getröuwt worden ist, item ain vogt vor ainer gmaind die sach anbracht, etc., und geredt haben sol: welchem gefall, das man sich gegen ainer statt beschwäre, der heb sein hand auf, etc., und aber niemand wellen aufheben, sol er gwüsslich gsagt haben: "Hebend auf, das euch gotz lyden schend!</s>
+					<s n="4" xml:lang="de" type="auto">Wend ir üwern aygnen nutz und frommen nit betrachten?", etc.</s>
+					<s n="5" xml:lang="de" type="auto">Ist aber (so war gott unser haylland ist) nützit anderß dann ain verbunst des wolstands ainer statt, und mögend die mönch nit sechen, das wir näbend inen mögend hinkhommen, schemmend sich khainer calumnien noch alafentzen.</s>
+					<s n="6" xml:lang="de" type="auto">Geschicht nit allain von der religion, sonder ouch von alt harbrachtz hasses und aufsatzeß wegen.</s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="de" type="auto">Hab ich euch als meinem vertrauwtesten fründt nit bergen wellen, mit beger, den herren b[urgermeistern] Lavatter und Haben dasselbig mittleydenlich zuͦ erschainen und andern vertrauwten, und daß sye sich khains andern gegen uns versehind, [dan] das wir unser billikhait dermaßen (so er nit abston wurde) an den tag thuͦn werdind,<pb type="scan" next="v."/> daß wir sein billich zuͦ geniessen habind.</s>
-					<s xml:lang="de" type="auto">Wir begerend (got waist eß) nützit zuͦ unsern henden ze bringen, das wir nit vor ghabt und zächenfaltenklich vergolten habend.</s>
-					<s xml:lang="de" type="auto">Allain wellend wir mit höchem dankh in disen löuffen zuͦfriden und umb alle eer und eerbarkhait mit leyb und guͦt zuͦ verdienen urbüttig sein, daß wir bey dem allain gehandthabt und errett werdind, darzuͦ wir billich, grondtlich und eerlich fuͦg und recht habend, und daß man uns demnach vor prattikhen mit treuwem und umsichtigem zuͦthon verhuͤten und vergoumen welle.</s>
-					<s xml:lang="la" type="auto">Intelligis, qui ipse intelligam; synceram cognitionem dari nobis optamus, sordidam pertimescimus.</s>
+					<s n="7" xml:lang="de" type="auto">Hab ich euch als meinem vertrauwtesten fründt nit bergen wellen, mit beger, den herren b[urgermeistern] Lavatter und Haben dasselbig mittleydenlich zuͦ erschainen und andern vertrauwten, und daß sye sich khains andern gegen uns versehind, [dan] das wir unser billikhait dermaßen (so er nit abston wurde) an den tag thuͦn werdind,<pb type="scan" next="v."/> daß wir sein billich zuͦ geniessen habind.</s>
+					<s n="8" xml:lang="de" type="auto">Wir begerend (got waist eß) nützit zuͦ unsern henden ze bringen, das wir nit vor ghabt und zächenfaltenklich vergolten habend.</s>
+					<s n="9" xml:lang="de" type="auto">Allain wellend wir mit höchem dankh in disen löuffen zuͦfriden und umb alle eer und eerbarkhait mit leyb und guͦt zuͦ verdienen urbüttig sein, daß wir bey dem allain gehandthabt und errett werdind, darzuͦ wir billich, grondtlich und eerlich fuͦg und recht habend, und daß man uns demnach vor prattikhen mit treuwem und umsichtigem zuͦthon verhuͤten und vergoumen welle.</s>
+					<s n="10" xml:lang="la" type="auto">Intelligis, qui ipse intelligam; synceram cognitionem dari nobis optamus, sordidam pertimescimus.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Dominus vos et nos forti sua manu in omnibus Satanę tentationibus tueatur!</s>
+					<s n="11" xml:lang="la" type="auto">Dominus vos et nos forti sua manu in omnibus Satanę tentationibus tueatur!</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Vadianus tuus.</s>
+					<s n="12" xml:lang="la" type="auto">Vadianus tuus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Si exemplum dominis consulibus<note xml:id="fn5" type="footnote" n="5">Lavater und Haab.</note> ostensurus es, ut ego sane vellem, describe, obsecro, velut sis e Latino interpretatus, ne, quod in margine est, quisquam praeter te solum et d. Dommysium resciscat.</s>
+					<s n="13" xml:lang="la" type="auto">Si exemplum dominis consulibus<note xml:id="fn5" type="footnote" n="5">Lavater und Haab.</note> ostensurus es, ut ego sane vellem, describe, obsecro, velut sis e Latino interpretatus, ne, quod in margine est, quisquam praeter te solum et d. Dommysium resciscat.</s>
 				</p>
 				<p>
 					<note type="address">[Ohne Adresse.]</note>

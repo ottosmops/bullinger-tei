@@ -15,11 +15,11 @@
 				</address>
 				<authority>Institut für Schweizerische Reformationsgeschichte (IRG)</authority>
 				<date when="2017"/>
-				<idno type="ISBN">ISBN 078-3-290-17889-5547</idno>
-				<idno type="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2679</idno>
+				<idno subtype="ISBN">ISBN 078-3-290-17889-5547</idno>
+				<idno subtype="url">http://teoirgsed.uzh.ch/SedWEB.cgi?Alias=Briefe&amp;Lng=1&amp;aheight=910&amp;PrjName=Bullinger+-+Briefwechsel&amp;fld_418=2679</idno>
 			</publicationStmt>
 			<seriesStmt>
-				<title subtype="publication">Heinrich Bullinger Briefwechsel Band 18</title>
+				<title subtype="publication">HBBW XVIII</title>
 				<biblScope type="editor">Bodenmann, Reinhard; Kess, Alexandra; Seiniger, Judith</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">18</biblScope>
@@ -31,13 +31,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 357,208</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 357,208</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -46,27 +49,27 @@
 						</msItem>
 						<summary>
 							<p xml:id="regest1">
-								[1] <persName ref="19">Blarer</persName> befindet sich immer noch in
-								<placeName ref="1450">Griesenberg</placeName> bei seiner Schwester [Barbara], deren Mann
-								[<persName ref="223">Heinrich</persName> von <placeName ref="1113">Ulm</placeName>] am 14.
-								November in seligem Vertrauen auf Christus verstorben ist. <persName ref="19">Blarer</persName> wird
-								innerhalb der nächsten beiden Tage nach [<placeName ref="565">Konstanz</placeName>] zurückkehren.
+								[1] <persName ref="person19">Blarer</persName> befindet sich immer noch in
+								<placeName ref="place1450">Griesenberg</placeName> bei seiner Schwester [Barbara], deren Mann
+								[Heinrich von <placeName ref="place1113">Ulm</placeName>] am 14.
+								November in seligem Vertrauen auf Christus verstorben ist. <persName ref="person19">Blarer</persName> wird
+								innerhalb der nächsten beiden Tage nach [<placeName ref="place565">Konstanz</placeName>] zurückkehren.
 								Bullinger soll sich also nicht verwundern, wenn er ihm keine Nachrichten mitteilt; doch wird dieser ja von
-								[den Zürcher Ratsherren] auf dem Laufenden gehalten. Sobald <persName ref="19">Blarer</persName>
+								[den Zürcher Ratsherren] auf dem Laufenden gehalten. Sobald <persName ref="person19">Blarer</persName>
 								wieder zuhause ist, wird er erneut eifrig berichten, es sei denn, Bullinger erhalte ohnehin ausführlichere
 								Nachrichten von seiner [Obrigkeit].
 								</p>
 								<p xml:id="regest2">
-								[2] Bullinger möge für <persName ref="19">Blarer</persName> und für seine trauernde Schwester beten.
-								Diese bittet Bullinger, Jakob <persName ref="180">Röist</persName> [den Ehemann ihrer Nichte Barbara]
-								zu ermahnen, nicht aus der Art seines Vaters [<persName ref="180">Diethelm</persName>] zu schlagen.
+								[2] Bullinger möge für <persName ref="person19">Blarer</persName> und für seine trauernde Schwester beten.
+								Diese bittet Bullinger, Jakob <persName ref="person180">Röist</persName> [den Ehemann ihrer Nichte Barbara]
+								zu ermahnen, nicht aus der Art seines Vaters [Diethelm] zu schlagen.
 								Man hört nämlich, dass Jakob sich durch schlechten Umgang vom rechten Weg abbringen lässt.
 								</p>
 								<p xml:id="regest3">
 								[3] Bullingers Bitte [um bessere Besoldung] von [Hans Rudolf] Lavaters Sohn [Wolfgang] hat
-								<persName ref="19">Blarer</persName> an K[onrad] <persName ref="264">Zwick</persName>
+								<persName ref="person19">Blarer</persName> an K[onrad] <persName ref="person264">Zwick</persName>
 								übermittelt und diesen nochmals schriftlich daran erinnert. Hätte Bullinger dies doch früher erwähnt, vor
-								<persName ref="264">Zwicks</persName> Abreise nach <placeName ref="1113">Ulm</placeName>!
+								<persName ref="person264">Zwicks</persName> Abreise nach <placeName ref="place1113">Ulm</placeName>!
 								Von Angesicht zu Angesicht hätte sich das leichter verhandeln lassen.
 								</p>
 								<p xml:id="regest4">
@@ -87,46 +90,50 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/12726">
 				<correspAction type="sent">
-					<persName ref="person#392" cert="high">
+					<!--
+					<persName ref="person392" cert="high">
 						<forename cert="high">Ambrosius</forename>
 						<surname cert="high">Blarer</surname>
-						<addName type="main">Blarer (Blaurer), Ambrosius</addName>
-						<graphic type="portrait" url="portraits/wtf.png"/>
+						<persName type="main" ref="person8055>Blarer (Blaurer), Ambrosius</addName>
+						<graphic type="portrait" url="portraits/392_Blarer_Ambrosius.png"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Ambrosius_Blarer"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118663763"/>
 					</persName>
-					<place source="#184" cert="high">
-						<settlement>Griesenberg</settlement>
-						<district>Thurgau</district>
-						<country>Schweiz</country>
-						<geo>47.568889 9.011667</geo>
-					</place>
+					-->
+					<persName ref="person392" cert="high"/>
+					<place source="place184" cert="high"/>
 					<date when="1546-11-16" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#12727"/>
-					<ref type="prev_chronologically" target="files.xml#12725"/>
-					<ref type="next_correspondence" target="files.xml#12737"/>
-					<ref type="prev_correspondence" target="files.xml#12723"/>
-					<ref type="next_correspondence_request" target="files.xml#12737"/>
-					<ref type="prev_correspondence_request" target="files.xml#12723"/>
-					<ref type="next_correspondence_reaction" target="files.xml#12744"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#12699"/>
-					<ref type="next_same_sender" target="files.xml#12737"/>
-					<ref type="prev_same_sender" target="files.xml#12723"/>
-					<ref type="next_same_addressee" target="files.xml#12734"/>
-					<ref type="prev_same_addressee" target="files.xml#12722"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#12737"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#12723"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#12734"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#12722"/>
+					<ref type="next_chronologically" target="file12727"/>
+					<ref type="prev_chronologically" target="file12725"/>
+					<ref type="next_correspondence" target="file12737"/>
+					<ref type="prev_correspondence" target="file12723"/>
+					<ref type="next_correspondence_request" target="file12737"/>
+					<ref type="prev_correspondence_request" target="file12723"/>
+					<ref type="next_correspondence_reaction" target="file12744"/>
+					<ref type="prev_correspondence_reaction" target="file12699"/>
+					<ref type="next_same_sender" target="file12737"/>
+					<ref type="prev_same_sender" target="file12723"/>
+					<ref type="next_same_addressee" target="file12734"/>
+					<ref type="prev_same_addressee" target="file12722"/>
+					<ref type="next_with_sender_as_addressee" target="file12737"/>
+					<ref type="prev_with_sender_as_addressee" target="file12723"/>
+					<ref type="next_with_addressee_as_sender" target="file12734"/>
+					<ref type="prev_with_addressee_as_sender" target="file12722"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -144,36 +151,36 @@
 		<body>
 			<div xml:id="div1" corresp="regest1">
 				<p>
-					<s xml:lang="la" type="auto">Salve, mi venerande et charissime frater.</s>
-					<s xml:lang="la" type="auto">Adhuc Griessembergi apud optimam sororem<note xml:id="fn1" type="footnote" n="1">Barbara von <placeName ref="1113">Ulm</placeName>, geb. <persName ref="19">Blarer</persName>.</note>, sed nunc moestissimam viduam, hęreo, cuius maritus <persName ref="223">Heinrichus</persName><note xml:id="fn2" type="footnote" n="2"><persName ref="223">Heinrich</persName> von <placeName ref="1113">Ulm</placeName>.</note> nudius tertius<note xml:id="fn3" type="footnote" n="3">Am 14. November; s. auch <ref target="file#12723">Nr. 2676</ref>,1-5. 13f.</note> firma in Christum fiducia nixus feliciter promissam nobis in cęlis hęreditatem adiit.</s>
-					<s xml:lang="la" type="auto">Ego cras aut postridie rursum domum redibo; id quod significare tibi visum est, ne mireris me nihil diebus hisce ad te scripsisse de rebus novis, quarum tamen certiorem te faciunt tui.<note xml:id="fn4" type="footnote" n="4">Die Zürcher Ratsherren, die damals von den Konstanzern Ratsherren auf dem Laufenden gehalten wurden.</note></s>
-					<s xml:lang="la" type="auto">Domum reversus rursum diligenter curabo, ne me scribendi officiositate vincas, nisi quantum negocia ipsa vestratium maiorem tibi scribendi materiam suppeditant.<pb type="edition" next="289"/></s>
+					<s n="1" xml:lang="la" type="auto">Salve, mi venerande et charissime frater.</s>
+					<s n="2" xml:lang="la" type="auto">Adhuc Griessembergi apud optimam sororem<note xml:id="fn1" type="footnote" n="1">Barbara von <placeName ref="place1113">Ulm</placeName>, geb. <persName ref="person19">Blarer</persName>.</note>, sed nunc moestissimam viduam, hęreo, cuius maritus <persName ref="person223">Heinrichus</persName><note xml:id="fn2" type="footnote" n="2">Heinrich von <placeName ref="place1113">Ulm</placeName>.</note> nudius tertius<note xml:id="fn3" type="footnote" n="3">Am 14. November; s. auch <ref target="file12723">Nr. 2676</ref>,1-5. 13f.</note> firma in Christum fiducia nixus feliciter promissam nobis in cęlis hęreditatem adiit.</s>
+					<s n="3" xml:lang="la" type="auto">Ego cras aut postridie rursum domum redibo; id quod significare tibi visum est, ne mireris me nihil diebus hisce ad te scripsisse de rebus novis, quarum tamen certiorem te faciunt tui.<note xml:id="fn4" type="footnote" n="4">Die Zürcher Ratsherren, die damals von den Konstanzern Ratsherren auf dem Laufenden gehalten wurden.</note></s>
+					<s n="4" xml:lang="la" type="auto">Domum reversus rursum diligenter curabo, ne me scribendi officiositate vincas, nisi quantum negocia ipsa vestratium maiorem tibi scribendi materiam suppeditant.<pb type="edition" next="289"/></s>
 				</p>
 			</div>
 			<div xml:id="div2" corresp="regest2">
 				<p>
-					<s xml:lang="la" type="auto">Fac Christo me diligenter commendes.</s>
-					<s xml:lang="la" type="auto">Commendat se sacris tuis precationibus germana mea valdeque ob mariti mortem afflicta soror, rogatque plurimum, ut Iacobo Röstio<note xml:id="fn5" type="footnote" n="5">Jakob <persName ref="180">Röist</persName>. - Er war mit Barbara, der Tochter von Hans Jakob von <placeName ref="1113">Ulm</placeName> (<persName ref="223">Heinrichs</persName> Bruder) und demzufolge mit der Nichte der soeben verwitweten Barbara von <placeName ref="1113">Ulm</placeName> verheiratet; s. <ref target="file#12691">Nr. 2644</ref>,12-14. Nach Hans Jakobs Tod 1539 wurde <persName ref="223">Heinrich</persName> von <placeName ref="1113">Ulm</placeName> Barbaras Vormund; s. <hi>HBBW</hi> XII 90, Anm. 22.</note> sedulus monitor adsis, ne ab optimi patris<note xml:id="fn6" type="footnote" n="6"><persName ref="180">Diethelm Röist</persName>, ehemaliger Bürgermeister von Zürich, verstorben am 3. Dezember 1544; s. <hi>HBD</hi> 32,11-13.</note> ingenio degeneret.</s>
-					<s xml:lang="la" type="auto">Nam audimus illum quorundam parum frugi hominum contubernio transversum rapi ab eo itinere, quod iam inde a puero ingressus fuit.</s>
-					<s xml:lang="la" type="auto">In rem igitur illius fuerit quamprimum reduci in viam.</s>
+					<s n="5" xml:lang="la" type="auto">Fac Christo me diligenter commendes.</s>
+					<s n="6" xml:lang="la" type="auto">Commendat se sacris tuis precationibus germana mea valdeque ob mariti mortem afflicta soror, rogatque plurimum, ut Iacobo Röstio<note xml:id="fn5" type="footnote" n="5">Jakob <persName ref="person180">Röist</persName>. - Er war mit Barbara, der Tochter von Hans Jakob von <placeName ref="place1113">Ulm</placeName> (Heinrichs Bruder) und demzufolge mit der Nichte der soeben verwitweten Barbara von <placeName ref="place1113">Ulm</placeName> verheiratet; s. <ref target="file12691">Nr. 2644</ref>,12-14. Nach Hans Jakobs Tod 1539 wurde Heinrich von <placeName ref="place1113">Ulm</placeName> Barbaras Vormund; s. <hi>HBBW</hi> XII 90, Anm. 22.</note> sedulus monitor adsis, ne ab optimi patris<note xml:id="fn6" type="footnote" n="6"><persName ref="person180">Diethelm Röist</persName>, ehemaliger Bürgermeister von Zürich, verstorben am 3. Dezember 1544; s. <hi>HBD</hi> 32,11-13.</note> ingenio degeneret.</s>
+					<s n="7" xml:lang="la" type="auto">Nam audimus illum quorundam parum frugi hominum contubernio transversum rapi ab eo itinere, quod iam inde a puero ingressus fuit.</s>
+					<s n="8" xml:lang="la" type="auto">In rem igitur illius fuerit quamprimum reduci in viam.</s>
 				</p>
 			</div>
 			<div xml:id="div3" corresp="regest3">
 				<p>
-					<s xml:lang="la" type="auto">Quę de Lavateri<note xml:id="fn7" type="footnote" n="7">Hans Rudolf Lavater.</note> filio<note xml:id="fn8" type="footnote" n="8">Wolfgang.</note> rogasti, officiose apud C[onradum] Zvic meum egi,<note xml:id="fn9" type="footnote" n="9">Bullinger hatte <persName ref="19">Blarer</persName> am 1. November gebeten, <persName ref="264">Zwick</persName> dazu zu bewegen, an den <placeName ref="565">Konstanzer</placeName> Kriegsrat in <placeName ref="1113">Ulm</placeName> zu schreiben, um für den in schmalkaldischem Dienst stehenden Wolfgang Lavater eine bessere Besoldung aus Standesgründen zu erwirken; s. <ref target="file#12699">Nr. 2652</ref>,30-49.</note> quem hinc quoque literis rursum admonui,<note xml:id="fn10" type="footnote" n="10">Ein solcher Brief findet sich nicht in <hi><persName ref="19">Blarer</persName> BW.</hi></note> ut ne excidere sibi permittat.</s>
-					<s xml:lang="la" type="auto">Atque utinam paulo tempestivius, hoc est antequam <persName ref="264">Conradus</persName> Zviccius <placeName ref="1113">Ulmam</placeName> nuper profectus est, huius me admonuisses!</s>
-					<s xml:lang="la" type="auto">Poterat enim praesens multo felicius negocium hoc conficere.</s>
+					<s n="9" xml:lang="la" type="auto">Quę de Lavateri<note xml:id="fn7" type="footnote" n="7">Hans Rudolf Lavater.</note> filio<note xml:id="fn8" type="footnote" n="8">Wolfgang.</note> rogasti, officiose apud C[onradum] Zvic meum egi,<note xml:id="fn9" type="footnote" n="9">Bullinger hatte <persName ref="person19">Blarer</persName> am 1. November gebeten, <persName ref="person264">Zwick</persName> dazu zu bewegen, an den <placeName ref="place565">Konstanzer</placeName> Kriegsrat in <placeName ref="place1113">Ulm</placeName> zu schreiben, um für den in schmalkaldischem Dienst stehenden Wolfgang Lavater eine bessere Besoldung aus Standesgründen zu erwirken; s. <ref target="file12699">Nr. 2652</ref>,30-49.</note> quem hinc quoque literis rursum admonui,<note xml:id="fn10" type="footnote" n="10">Ein solcher Brief findet sich nicht in <hi><persName ref="person19">Blarer</persName> BW.</hi></note> ut ne excidere sibi permittat.</s>
+					<s n="10" xml:lang="la" type="auto">Atque utinam paulo tempestivius, hoc est antequam <persName ref="person264">Conradus</persName> Zviccius <placeName ref="place1113">Ulmam</placeName> nuper profectus est, huius me admonuisses!</s>
+					<s n="11" xml:lang="la" type="auto">Poterat enim praesens multo felicius negocium hoc conficere.</s>
 				</p>
 			</div>
 			<div xml:id="div4" corresp="regest4">
 				<p>
-					<s xml:lang="la" type="auto">Bene vale, mi Bullingere, et domum tuam cum omnibus fratribus et amicis reverenter et amanter saluta.</s>
-					<s xml:lang="de" type="auto">Griessembergi, 16. novembris 1546.</s>
-					<s xml:lang="la" type="auto">Tuus Ambr. Bl.</s>
+					<s n="12" xml:lang="la" type="auto">Bene vale, mi Bullingere, et domum tuam cum omnibus fratribus et amicis reverenter et amanter saluta.</s>
+					<s n="13" xml:lang="de" type="auto">Griessembergi, 16. novembris 1546.</s>
+					<s n="14" xml:lang="la" type="auto">Tuus Ambr. Bl.</s>
 				</p>
 				<p>
 					<note>[Adresse auf der Rückseite:]</note>
-					<s xml:lang="la" type="auto">Praestantissimo viro d. <persName ref="223">Heinricho</persName> Bullingero, Tiguricensium antistiti, amico incomparabili.</s>
+					<s n="15" xml:lang="la" type="auto">Praestantissimo viro d. Heinricho Bullingero, Tiguricensium antistiti, amico incomparabili.</s>
 				</p>
 			</div>
 		</body>

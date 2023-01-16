@@ -7,8 +7,8 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>Heidelberger Akademie der Wissenschaften</publisher>
-				<idno type="ISBN">ISBN 978-3-579-05979-2</idno>
-				<idno type="url">https://thbw.hadw-bw.de/brief/30755</idno>
+				<idno subtype="ISBN">ISBN 978-3-579-05979-2</idno>
+				<idno subtype="url">https://thbw.hadw-bw.de/brief/30755</idno>
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Theologenbriefwechsel im Südwesten des Reichs in der Frühen Neuzeit (1550-1620).</title>
@@ -20,13 +20,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 347,735 ff.</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 347,735 ff.</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -54,50 +57,49 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/5061">
 				<correspAction type="sent">
-					<persName ref="person#997" cert="high">
+					<!--
+					<persName ref="person997" cert="high">
 						<forename cert="high">Christoph</forename>
 						<surname cert="high">Ehem</surname>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Christoph_von_Ehem"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/11564167X"/>
 					</persName>
-					<place source="#210" cert="high">
-						<settlement>Heidelberg</settlement>
-						<district>Baden-Württemberg</district>
-						<country>Deutschland</country>
-						<geo>49.41222 8.71</geo>
-					</place>
+					-->
+					<persName ref="person997" cert="high"/>
+					<place source="place210" cert="high"/>
 					<date when="1561-11-13" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#5060"/>
-					<ref type="prev_chronologically" target="files.xml#5059"/>
-					<ref type="next_correspondence" target="files.xml#5773"/>
-					<ref type="prev_correspondence" target="files.xml#4974"/>
-					<ref type="next_correspondence_request" target="files.xml#5773"/>
-					<ref type="prev_correspondence_request" target="files.xml#4974"/>
-					<ref type="next_correspondence_reaction" target="files.xml#6668"/>
+					<ref type="next_chronologically" target="file5060"/>
+					<ref type="prev_chronologically" target="file5059"/>
+					<ref type="next_correspondence" target="file5773"/>
+					<ref type="prev_correspondence" target="file4974"/>
+					<ref type="next_correspondence_request" target="file5773"/>
+					<ref type="prev_correspondence_request" target="file4974"/>
+					<ref type="next_correspondence_reaction" target="file6668"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#5773"/>
-					<ref type="prev_same_sender" target="files.xml#4974"/>
-					<ref type="next_same_addressee" target="files.xml#5066"/>
-					<ref type="prev_same_addressee" target="files.xml#5055"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#5773"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#4974"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#5066"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#5055"/>
+					<ref type="next_same_sender" target="file5773"/>
+					<ref type="prev_same_sender" target="file4974"/>
+					<ref type="next_same_addressee" target="file5066"/>
+					<ref type="prev_same_addressee" target="file5055"/>
+					<ref type="next_with_sender_as_addressee" target="file5773"/>
+					<ref type="prev_with_sender_as_addressee" target="file4974"/>
+					<ref type="next_with_addressee_as_sender" target="file5066"/>
+					<ref type="prev_with_addressee_as_sender" target="file5055"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,48 +118,48 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="scan" next="735"/>Intellexi, vir ornatissime, ex Erasto nostro literas, quas nuper ad te per D. Marium dedi, tibi redditas et gratas fuisse, quapropter iterum ad te scribo, ut intelligas te tuosque omnes mihi meisque omnibus charos esse.</s>
+					<s n="1" xml:lang="la" type="auto"><pb type="scan" next="735"/>Intellexi, vir ornatissime, ex Erasto nostro literas, quas nuper ad te per D. Marium dedi, tibi redditas et gratas fuisse, quapropter iterum ad te scribo, ut intelligas te tuosque omnes mihi meisque omnibus charos esse.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Responsionem tuam adversus monstrum ubiquitatis avide expectamus, optaremusque et latine et Germanice id in publicum aedi, ut qui latina non intelligant et animos iam opinionibus fascinatos habent, Germanico scripto admonerentur.</s>
-					<s xml:lang="la" type="auto">Dici non potest, quantopere huius pestilentissimae doctrinae authores suum monstrum disseminare et quotidie hominibus inculcare satagant.</s>
-					<s xml:lang="la" type="auto">Nos in eo toti sumus, ut Ecclesias nostras ab his fecibus purgemus, sed non sine magna difficultate, invidia et periculo.</s>
-					<s xml:lang="la" type="auto">Verum dominus (cuius res tota est) et consilia dat et eventus gubernat.</s>
+					<s n="2" xml:lang="la" type="auto">Responsionem tuam adversus monstrum ubiquitatis avide expectamus, optaremusque et latine et Germanice id in publicum aedi, ut qui latina non intelligant et animos iam opinionibus fascinatos habent, Germanico scripto admonerentur.</s>
+					<s n="3" xml:lang="la" type="auto">Dici non potest, quantopere huius pestilentissimae doctrinae authores suum monstrum disseminare et quotidie hominibus inculcare satagant.</s>
+					<s n="4" xml:lang="la" type="auto">Nos in eo toti sumus, ut Ecclesias nostras ab his fecibus purgemus, sed non sine magna difficultate, invidia et periculo.</s>
+					<s n="5" xml:lang="la" type="auto">Verum dominus (cuius res tota est) et consilia dat et eventus gubernat.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Audivi iam pridem libellum tuum priorem, quem de verbis christi (in domo patris mei etc.) conscripsisti germanice quoque vulgatum esse, sed non vidi cuperem itaque id abs te certo cognoscere.</s>
-					<s xml:lang="la" type="auto">Nam si aeditus non est operam dabimus, ut Germanice quoque loqui incipiat.</s>
-					<s xml:lang="la" type="auto">Petri Martyris de eadem re liber iam prope conversus est.</s>
+					<s n="6" xml:lang="la" type="auto">Audivi iam pridem libellum tuum priorem, quem de verbis christi (in domo patris mei etc.) conscripsisti germanice quoque vulgatum esse, sed non vidi cuperem itaque id abs te certo cognoscere.</s>
+					<s n="7" xml:lang="la" type="auto">Nam si aeditus non est operam dabimus, ut Germanice quoque loqui incipiat.</s>
+					<s n="8" xml:lang="la" type="auto">Petri Martyris de eadem re liber iam prope conversus est.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="scan" next="736"/>Res Galliae se satis commode habere partim ex tuis partim ex aliorum accepimus literis, misimus eo rogatu Regis Navarrae duos Theologos viros pios doctos et tibi (ni fallor) notos: D. Michaelem Tillerum et P. Boquinum, quos intelligis sanae doctrinae ex animo favere.</s>
-					<s xml:lang="la" type="auto">Utinam et alii, qui eo missi sunt, id facerent.</s>
+					<s n="9" xml:lang="la" type="auto"><pb type="scan" next="736"/>Res Galliae se satis commode habere partim ex tuis partim ex aliorum accepimus literis, misimus eo rogatu Regis Navarrae duos Theologos viros pios doctos et tibi (ni fallor) notos: D. Michaelem Tillerum et P. Boquinum, quos intelligis sanae doctrinae ex animo favere.</s>
+					<s n="10" xml:lang="la" type="auto">Utinam et alii, qui eo missi sunt, id facerent.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Miramur autem illos iam fere vi septimanis in Gallia haesisse et ne verbum quidem ad nos scripsisse.</s>
-					<s xml:lang="la" type="auto">Et quantum intelligere seu coniectura assequi possumus metuimus, ne literae aut interceptae sint aut cursores impediantur.</s>
-					<s xml:lang="la" type="auto">Quare rem gratam nobis facies, si primo tempore nos de statu totius causae certiores feceris, quod si tabellarii deerunt, nostris sumptibus ad nos aliquem mittito.</s>
+					<s n="11" xml:lang="la" type="auto">Miramur autem illos iam fere vi septimanis in Gallia haesisse et ne verbum quidem ad nos scripsisse.</s>
+					<s n="12" xml:lang="la" type="auto">Et quantum intelligere seu coniectura assequi possumus metuimus, ne literae aut interceptae sint aut cursores impediantur.</s>
+					<s n="13" xml:lang="la" type="auto">Quare rem gratam nobis facies, si primo tempore nos de statu totius causae certiores feceris, quod si tabellarii deerunt, nostris sumptibus ad nos aliquem mittito.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Interest enim et vestra et nostra communicari consilia.</s>
-					<s xml:lang="la" type="auto">Hoc tibi semel de nobis persuadeas velim, nos hactenus et dedisse et in posterum daturos operam, ut agnitam doctrinam pro virili tueamur, propagemus et adversariorum consilia impediamus.</s>
+					<s n="14" xml:lang="la" type="auto">Interest enim et vestra et nostra communicari consilia.</s>
+					<s n="15" xml:lang="la" type="auto">Hoc tibi semel de nobis persuadeas velim, nos hactenus et dedisse et in posterum daturos operam, ut agnitam doctrinam pro virili tueamur, propagemus et adversariorum consilia impediamus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="scan" next="737"/>Opus habemus viro maturi iudicii doctrinae pietatis et authoritatis hic Heydelbergae, quem libenter in senatum Ecclesiasticum reciperemus, illique nostrorum Ecclesiarum vicinarum inspectionem et unicam in hebdomada concionem demanderemus.</s>
-					<s xml:lang="la" type="auto">Tu, si quem habes, quo carere possis, vir clarissime, nos iuvato.</s>
-					<s xml:lang="la" type="auto">Et in domino cum tuis omnibus foeliciter valeto.</s>
-					<s xml:lang="la" type="auto">Dominus collegas tuos omnes meo nomine valeto.</s>
-					<s xml:lang="la" type="auto">Raptim Heydelbergae 13. novembris anno 1561</s>
+					<s n="16" xml:lang="la" type="auto"><pb type="scan" next="737"/>Opus habemus viro maturi iudicii doctrinae pietatis et authoritatis hic Heydelbergae, quem libenter in senatum Ecclesiasticum reciperemus, illique nostrorum Ecclesiarum vicinarum inspectionem et unicam in hebdomada concionem demanderemus.</s>
+					<s n="17" xml:lang="la" type="auto">Tu, si quem habes, quo carere possis, vir clarissime, nos iuvato.</s>
+					<s n="18" xml:lang="la" type="auto">Et in domino cum tuis omnibus foeliciter valeto.</s>
+					<s n="19" xml:lang="la" type="auto">Dominus collegas tuos omnes meo nomine valeto.</s>
+					<s n="20" xml:lang="la" type="auto">Raptim Heydelbergae 13. novembris anno 1561</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tuus ex amino Christophorus Ehemius, palatini consiliarius</s>
+					<s n="21" xml:lang="la" type="auto">Tuus ex amino Christophorus Ehemius, palatini consiliarius</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">D. Probus et Cirlerus te salutant.</s>
+					<s n="22" xml:lang="la" type="auto">D. Probus et Cirlerus te salutant.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto"><pb type="scan" next="737[a]"/>Clarissimo viro D. Henricho Bullingero verbi Dei apud Tigurinos Ministro domino et amico suo in primis colendo.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="23" xml:lang="la" type="auto"><pb type="scan" next="737[a]"/>Clarissimo viro D. Henricho Bullingero verbi Dei apud Tigurinos Ministro domino et amico suo in primis colendo.</s>
+					<s n="24" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

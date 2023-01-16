@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">2548</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 365,114</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 365,114</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -51,13 +54,16 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 75,159</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 75,159</idno>
 					</msIdentifier>
 					<physDesc/>
 				</msDesc>
@@ -66,48 +72,48 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/1380">
 				<correspAction type="sent">
-					<persName ref="person#2467" cert="high">
+					<!--
+					<persName ref="person2467" cert="high">
 						<forename cert="high">Petrus</forename>
 						<surname cert="high">Parisotus</surname>
-						<addName type="main">Parisotti (Bergomas), Pietro</addName>
+						<persName type="main" ref="person8492>Parisotti (Bergomas), Pietro</addName>
 					</persName>
-					<place source="#525" cert="high">
-						<settlement>Vicosoprano</settlement>
-						<geo>46.35112 9.6208</geo>
-					</place>
+					-->
+					<persName ref="person2467" cert="high"/>
+					<place source="place525" cert="high"/>
 					<date when="1551-08-20" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="high">
+					<!--
+					<persName ref="person495" cert="high">
 						<forename cert="high">Heinrich</forename>
 						<surname cert="high">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					-->
+					<persName ref="person495" cert="high"/>
+					<place source="place587" cert="high"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#1381"/>
-					<ref type="prev_chronologically" target="files.xml#1379"/>
-					<ref type="next_correspondence" target="files.xml#2917"/>
+					<ref type="next_chronologically" target="file1381"/>
+					<ref type="prev_chronologically" target="file1379"/>
+					<ref type="next_correspondence" target="file2917"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#2917"/>
+					<ref type="next_correspondence_request" target="file2917"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#8027"/>
+					<ref type="next_correspondence_reaction" target="file8027"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#2917"/>
+					<ref type="next_same_sender" target="file2917"/>
 					<ref type="prev_same_sender" target=""/>
-					<ref type="next_same_addressee" target="files.xml#1381"/>
-					<ref type="prev_same_addressee" target="files.xml#1378"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#2917"/>
+					<ref type="next_same_addressee" target="file1381"/>
+					<ref type="prev_same_addressee" target="file1378"/>
+					<ref type="next_with_sender_as_addressee" target="file2917"/>
 					<ref type="prev_with_sender_as_addressee" target=""/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#1381"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#1378"/>
+					<ref type="next_with_addressee_as_sender" target="file1381"/>
+					<ref type="prev_with_addressee_as_sender" target="file1378"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -116,25 +122,28 @@
 		</profileDesc>
 		<revisionDesc status="abgeschlossen"/>
 	</teiHeader>
-	<facsimile/>
+	<facsimile>
+		<graphic url="1380/Autograph/00 E_II_365__fol__114_r_.tif" n="1"/>
+		<graphic url="1380/Autograph/01 E_II_365__fol__114_v_.tif" n="2"/>
+	</facsimile>
 	<text xml:lang="la">
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">Doctissime vir, salus a deo patre nostro per Iesum Christum.</s>
+					<s n="1" xml:lang="la" type="auto">Doctissime vir, salus a deo patre nostro per Iesum Christum.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="manual">Amen.</s>
-					<s xml:lang="la" type="auto">D. Petrus Paulus Vergerius, vir ille scilicet pro Christiana religione optimus athleta, nuper scripsit ad me in han[c]<note type="margin">a.R.: [c</note>...] sententiam: "Si ullas ad me literas dare velis, eas ad d. Heinrychum Bullingerum dirigito, qui, ut ad me quam primum perferantur, operam navabit:" Idcirco, ut monuit, egi confisus te, qua praeditus es diligentia, curatum ire, ut, quae de te mihi persuasum habuit, vera se dixisse videat.</s>
-					<s xml:lang="la" type="auto">Vale in domino semper.</s>
+					<s n="2" xml:lang="la" type="manual">Amen.</s>
+					<s n="3" xml:lang="la" type="auto">D. Petrus Paulus Vergerius, vir ille scilicet pro Christiana religione optimus athleta, nuper scripsit ad me in han[c]<note type="margin">a.R.: [c</note>...] sententiam: "Si ullas ad me literas dare velis, eas ad d. Heinrychum Bullingerum dirigito, qui, ut ad me quam primum perferantur, operam navabit:" Idcirco, ut monuit, egi confisus te, qua praeditus es diligentia, curatum ire, ut, quae de te mihi persuasum habuit, vera se dixisse videat.</s>
+					<s n="4" xml:lang="la" type="auto">Vale in domino semper.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ex loco de Vicosoprano, die 20. augusti 1551.</s>
-					<s xml:lang="la" type="auto">Frater tuus in domino Paris a Bergamo.</s>
+					<s n="5" xml:lang="la" type="auto">Ex loco de Vicosoprano, die 20. augusti 1551.</s>
+					<s n="6" xml:lang="la" type="auto">Frater tuus in domino Paris a Bergamo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Clarissimo viro domino Heinrycho Bullingero, ecclesiae Tigurinae pastori fidelissimo, plurimum [mihi]<note type="margin">a.R.: in?</note> domino observando.</s>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="7" xml:lang="la" type="auto">Clarissimo viro domino Heinrycho Bullingero, ecclesiae Tigurinae pastori fidelissimo, plurimum [mihi]<note type="margin">a.R.: in?</note> domino observando.</s>
+					<s n="8" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>

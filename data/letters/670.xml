@@ -8,13 +8,16 @@
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 337,436-438</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 337,436-438</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -25,14 +28,17 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Zentralbibliothek</institution>
-						<idno type="Kopie">Ms S 70,235</idno>
-						<repository ref="archive#96">
+						<!--
+						<repository ref="archive96">
 							<name>Zürich ZB</name>
-							<note type="Hinweis">eingeordnet bei Aug. 7.</note>
 							<ref target="https://www.zb.uzh.ch/de/"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Zentralbibliothek</institution>
+						-->
+						<repository ref="archive96"/>
+						<idno subtype="Kopie">Ms S 70,235</idno>
+						<idno subtype="Hinweis">eingeordnet bei Aug. 7.</idno>
 					</msIdentifier>
 					<physDesc>
 						<objectDesc/>
@@ -43,12 +49,15 @@
 				</msDesc>
 				<msDesc type="Brief" subtype="Kopie" xml:lang="">
 					<msIdentifier>
-						<settlement ref="place#138">Emden</settlement>
-						<institution>Bibliothek der Grossen Kirche</institution>
-						<idno type="Kopie">Hs. fol. 37, Nr. 102</idno>
-						<repository ref="archive#34">
+						<!--
+						<repository ref="archive34">
 							<name>Emden BGK</name>
 						</repository>
+						<settlement ref="place138">Emden</settlement>
+						<institution>Bibliothek der Grossen Kirche</institution>
+						-->
+						<repository ref="archive34"/>
+						<idno subtype="Kopie">Hs. fol. 37, Nr. 102</idno>
 					</msIdentifier>
 					<history><origin><p><date>20. Jh.</date></p></origin></history>
 					<physDesc/>
@@ -58,57 +67,31 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/670">
 				<correspAction type="sent">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="high">Geistliche</name>
-						<place source="#587" cert="high">
-							<settlement>Zürich</settlement>
-							<district>Zürich</district>
-							<country>Schweiz</country>
-							<geo>47.370093 8.544054</geo>
-						</place>
-					</roleName>
-					<place source="#587" cert="high">
-						<settlement>Zürich</settlement>
-						<district>Zürich</district>
-						<country>Schweiz</country>
-						<geo>47.370093 8.544054</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place587" cert="high"/>
 					<date when="1549-09-08" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<roleName type="title">
-						<name type="plural" ref="role#26" cert="low">Geistliche</name>
-						<place source="#138" cert="low">
-							<settlement>Emden</settlement>
-							<district>Niedersachsen</district>
-							<country>Deutschland</country>
-							<geo>53.36745 7.20778</geo>
-						</place>
-					</roleName>
-					<place source="#138" cert="low">
-						<settlement>Emden</settlement>
-						<district>Niedersachsen</district>
-						<country>Deutschland</country>
-						<geo>53.36745 7.20778</geo>
-					</place>
+					<personGrp ref="role52" role="Geistliche"/>
+					<place source="place138" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#671"/>
-					<ref type="prev_chronologically" target="files.xml#669"/>
-					<ref type="next_correspondence" target="files.xml#676"/>
+					<ref type="next_chronologically" target="file671"/>
+					<ref type="prev_chronologically" target="file669"/>
+					<ref type="next_correspondence" target="file676"/>
 					<ref type="prev_correspondence" target=""/>
-					<ref type="next_correspondence_request" target="files.xml#676"/>
+					<ref type="next_correspondence_request" target="file676"/>
 					<ref type="prev_correspondence_request" target=""/>
-					<ref type="next_correspondence_reaction" target="files.xml#676"/>
+					<ref type="next_correspondence_reaction" target="file676"/>
 					<ref type="prev_correspondence_reaction" target=""/>
-					<ref type="next_same_sender" target="files.xml#676"/>
-					<ref type="prev_same_sender" target="files.xml#666"/>
-					<ref type="next_same_addressee" target="files.xml#676"/>
-					<ref type="prev_same_addressee" target="files.xml#666"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#676"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#666"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#676"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#666"/>
+					<ref type="next_same_sender" target="file676"/>
+					<ref type="prev_same_sender" target="file666"/>
+					<ref type="next_same_addressee" target="file676"/>
+					<ref type="prev_same_addressee" target="file666"/>
+					<ref type="next_with_sender_as_addressee" target="file676"/>
+					<ref type="prev_with_sender_as_addressee" target="file666"/>
+					<ref type="next_with_addressee_as_sender" target="file676"/>
+					<ref type="prev_with_addressee_as_sender" target="file666"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage/>

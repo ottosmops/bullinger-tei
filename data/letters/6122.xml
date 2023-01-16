@@ -12,24 +12,27 @@
 			</publicationStmt>
 			<seriesStmt>
 				<title subtype="publication">Vorläufige Transkriptionen der HBBW-EditorInnen</title>
-				<biblScope type="editor">unbekannt</biblScope>
+				<biblScope type="editor">(nicht ediert, Transkribierer unbekannt)</biblScope>
 				<biblScope type="edition">HBBW</biblScope>
 				<biblScope type="volume">0</biblScope>
 				<biblScope type="volumes">20</biblScope>
-				<biblScope type="period">[1547-1580]</biblScope>
+				<biblScope type="period">[1547-1575]</biblScope>
 				<biblScope type="page">6438/74</biblScope>
 				<biblScope type="pages">8412</biblScope>
 			</seriesStmt>
 			<sourceDesc>
 				<msDesc type="Brief" subtype="Autograph" xml:lang="la">
 					<msIdentifier>
-						<settlement ref="place#587">Zürich</settlement>
-						<institution>Staatsarchiv</institution>
-						<idno type="Autograph">E II 376,103</idno>
-						<repository ref="archive#94">
+						<!--
+						<repository ref="archive94">
 							<name>Zürich StA</name>
 							<ref target="https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html"/>
 						</repository>
+						<settlement ref="place587">Zürich</settlement>
+						<institution>Staatsarchiv</institution>
+						-->
+						<repository ref="archive94"/>
+						<idno subtype="Autograph">E II 376,103</idno>
 					</msIdentifier>
 					<physDesc/>
 					<msContents>
@@ -60,44 +63,51 @@
 		<profileDesc>
 			<correspDesc ref="https://www.bullinger-digital.ch/letter/6122">
 				<correspAction type="sent">
-					<persName ref="person#1075" cert="high">
+					<!--
+					<persName ref="person1075" cert="high">
 						<forename cert="high">Johannes</forename>
 						<surname cert="high">Fabricius</surname>
-						<addName type="main">Fabricius Montanus (Schmid), Johannes</addName>
+						<persName type="main" ref="person8009>Fabricius Montanus (Schmid), Johannes</addName>
 						<graphic type="portrait" url="portraits/1075_Fabricius_Johannes.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Johannes_Fabricius_Montanus"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/104045698"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11414870"/>
 					</persName>
-					<place source="#98" cert="high">
-						<settlement>Chur</settlement>
-						<geo>46.84986 9.53287</geo>
-					</place>
+					-->
+					<persName ref="person1075" cert="high"/>
+					<place source="place98" cert="high"/>
 					<date when="1564-05-01" cert="low"/>
 				</correspAction>
 				<correspAction type="received">
-					<persName ref="person#495" cert="low">
+					<!--
+					<persName ref="person495" cert="low">
 						<forename cert="low">Heinrich</forename>
 						<surname cert="low">Bullinger</surname>
 						<graphic type="portrait" url="portraits/495_Bullinger_Heinrich.jpg"/>
 						<ref type="wikipedia" target="https://de.wikipedia.org/wiki/Heinrich_Bullinger"/>
+						<ref type="gnd" target="https://d-nb.info/gnd/118517384"/>
+						<ref type="histhub" target="https://data.histhub.ch/person/11413754"/>
 					</persName>
+					-->
+					<persName ref="person495" cert="low"/>
 				</correspAction>
 				<correspContext>
-					<ref type="next_chronologically" target="files.xml#6123"/>
-					<ref type="prev_chronologically" target="files.xml#6121"/>
-					<ref type="next_correspondence" target="files.xml#6129"/>
-					<ref type="prev_correspondence" target="files.xml#6119"/>
-					<ref type="next_correspondence_request" target="files.xml#6129"/>
-					<ref type="prev_correspondence_request" target="files.xml#6118"/>
-					<ref type="next_correspondence_reaction" target="files.xml#6133"/>
-					<ref type="prev_correspondence_reaction" target="files.xml#6119"/>
-					<ref type="next_same_sender" target="files.xml#6129"/>
-					<ref type="prev_same_sender" target="files.xml#6118"/>
-					<ref type="next_same_addressee" target="files.xml#6132"/>
-					<ref type="prev_same_addressee" target="files.xml#6119"/>
-					<ref type="next_with_sender_as_addressee" target="files.xml#6129"/>
-					<ref type="prev_with_sender_as_addressee" target="files.xml#6118"/>
-					<ref type="next_with_addressee_as_sender" target="files.xml#6132"/>
-					<ref type="prev_with_addressee_as_sender" target="files.xml#6119"/>
+					<ref type="next_chronologically" target="file6123"/>
+					<ref type="prev_chronologically" target="file6121"/>
+					<ref type="next_correspondence" target="file6129"/>
+					<ref type="prev_correspondence" target="file6119"/>
+					<ref type="next_correspondence_request" target="file6129"/>
+					<ref type="prev_correspondence_request" target="file6118"/>
+					<ref type="next_correspondence_reaction" target="file6133"/>
+					<ref type="prev_correspondence_reaction" target="file6119"/>
+					<ref type="next_same_sender" target="file6129"/>
+					<ref type="prev_same_sender" target="file6118"/>
+					<ref type="next_same_addressee" target="file6132"/>
+					<ref type="prev_same_addressee" target="file6119"/>
+					<ref type="next_with_sender_as_addressee" target="file6129"/>
+					<ref type="prev_with_sender_as_addressee" target="file6118"/>
+					<ref type="next_with_addressee_as_sender" target="file6132"/>
+					<ref type="prev_with_addressee_as_sender" target="file6119"/>
 				</correspContext>
 			</correspDesc>
 			<langUsage>
@@ -114,60 +124,60 @@
 		<body>
 			<div>
 				<p>
-					<s xml:lang="la" type="auto">S.</s>
-					<s xml:lang="la" type="auto">Si literas priores non signavi, inepte admodum et incogitanter plane feci; etsi enim nihil arcani in se continent, tamen molestum esset eas in alienas manus devenire.</s>
+					<s n="1" xml:lang="la" type="auto">S.</s>
+					<s n="2" xml:lang="la" type="auto">Si literas priores non signavi, inepte admodum et incogitanter plane feci; etsi enim nihil arcani in se continent, tamen molestum esset eas in alienas manus devenire.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Sed, ut scias, binas scripsi, et priores quidem Balingketus Clavennensi dedit, qui Basileam per vos proficiscebatur; in illis erat, quid inter Philippi legatum et d. Vergerium accidisset, in posterioribus, quid famulus Vergerii perpetrasset, qui postmodum intercessione nostra liberatus est.</s>
-					<s xml:lang="la" type="auto">Fuimus autem authores d. Vergerio, ut, quoniam adversa multa haberet, hinc discederet.</s>
-					<s xml:lang="la" type="auto">Paruit et se quam primum in viam dedit; discedens autem nescio quae de suo ad nos reditu pollicebatur nec intelligit bonus senex, quam ad res agendas nunc sit ineptus et plerisque insuper in his partibus exosus.</s>
-					<s xml:lang="la" type="auto">Si redit, novas de integro turbas concitabit.</s>
-					<s xml:lang="la" type="auto">- Legatum regis Gallici nec vidi nec conveni, nec ipse congressus nostros unquam expetivit, quod mihi argumento est eum religioni nostrae non propitium, de quo tamen nihil affirmo.</s>
+					<s n="3" xml:lang="la" type="auto">Sed, ut scias, binas scripsi, et priores quidem Balingketus Clavennensi dedit, qui Basileam per vos proficiscebatur; in illis erat, quid inter Philippi legatum et d. Vergerium accidisset, in posterioribus, quid famulus Vergerii perpetrasset, qui postmodum intercessione nostra liberatus est.</s>
+					<s n="4" xml:lang="la" type="auto">Fuimus autem authores d. Vergerio, ut, quoniam adversa multa haberet, hinc discederet.</s>
+					<s n="5" xml:lang="la" type="auto">Paruit et se quam primum in viam dedit; discedens autem nescio quae de suo ad nos reditu pollicebatur nec intelligit bonus senex, quam ad res agendas nunc sit ineptus et plerisque insuper in his partibus exosus.</s>
+					<s n="6" xml:lang="la" type="auto">Si redit, novas de integro turbas concitabit.</s>
+					<s n="7" xml:lang="la" type="auto">- Legatum regis Gallici nec vidi nec conveni, nec ipse congressus nostros unquam expetivit, quod mihi argumento est eum religioni nostrae non propitium, de quo tamen nihil affirmo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Quae dominis Trium Foederum proposuit, hic mitto.</s>
-					<s xml:lang="la" type="auto">Tu per occasionem remitte nam nullum exemplar servavi; potes tamen octiduum servare et vestris legenda exhibere.</s>
+					<s n="8" xml:lang="la" type="auto">Quae dominis Trium Foederum proposuit, hic mitto.</s>
+					<s n="9" xml:lang="la" type="auto">Tu per occasionem remitte nam nullum exemplar servavi; potes tamen octiduum servare et vestris legenda exhibere.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ego undique sum circumventus; multa mecum ipse disputo, quid sit faciendum.</s>
-					<s xml:lang="la" type="auto">Unum timeo, ne redeat Philippi legatus (quem hic non obscure pungit) et res deinde in nervum erumpat.</s>
-					<s xml:lang="la" type="auto">- Ad haec mala accedit ecclesię Clavennensis misera et afflicta facies.</s>
+					<s n="10" xml:lang="la" type="auto">Ego undique sum circumventus; multa mecum ipse disputo, quid sit faciendum.</s>
+					<s n="11" xml:lang="la" type="auto">Unum timeo, ne redeat Philippi legatus (quem hic non obscure pungit) et res deinde in nervum erumpat.</s>
+					<s n="12" xml:lang="la" type="auto">- Ad haec mala accedit ecclesię Clavennensis misera et afflicta facies.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Ecclesia varie est discerpta, utrinque factiones potentissimae.</s>
-					<s xml:lang="la" type="auto">Duo sunt ministri: Florillus et Zanchus; uterque suas habet partes et quidem alteri infensissimas.</s>
+					<s n="13" xml:lang="la" type="auto">Ecclesia varie est discerpta, utrinque factiones potentissimae.</s>
+					<s n="14" xml:lang="la" type="auto">Duo sunt ministri: Florillus et Zanchus; uterque suas habet partes et quidem alteri infensissimas.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Deum immortalem, quid tandem fiet?</s>
-					<s xml:lang="la" type="auto">Pestis Clavennam crudeliter infestat et, ut scribit Zanchus, media civitas infecta est.</s>
-					<s xml:lang="la" type="auto">Concionantur in publico foro, non intra parietes etc. et ne haec quidem dei tam evidens plaga eos redintegrare potest.</s>
+					<s n="15" xml:lang="la" type="auto">Deum immortalem, quid tandem fiet?</s>
+					<s n="16" xml:lang="la" type="auto">Pestis Clavennam crudeliter infestat et, ut scribit Zanchus, media civitas infecta est.</s>
+					<s n="17" xml:lang="la" type="auto">Concionantur in publico foro, non intra parietes etc. et ne haec quidem dei tam evidens plaga eos redintegrare potest.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Saepe dubito, an aliquid spiritus sit in istiusmodi hominibus.</s>
+					<s n="18" xml:lang="la" type="auto">Saepe dubito, an aliquid spiritus sit in istiusmodi hominibus.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Audio tamen Zanchi modestiam praedicari, illius vero alterius rigorem et ambitionem reprehendi.</s>
-					<s xml:lang="la" type="auto">Sed, quod dixi, partes sunt, et suum quaeque doctorem defendit, in alterum invehitur.</s>
+					<s n="19" xml:lang="la" type="auto">Audio tamen Zanchi modestiam praedicari, illius vero alterius rigorem et ambitionem reprehendi.</s>
+					<s n="20" xml:lang="la" type="auto">Sed, quod dixi, partes sunt, et suum quaeque doctorem defendit, in alterum invehitur.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Habeo tibi gratias pro novis illis, quae paterne communicas.</s>
-					<s xml:lang="la" type="auto">Perge nobis manum porrigere, quo facilius ex his omnibus fluctibus eluctari possim.</s>
+					<s n="21" xml:lang="la" type="auto">Habeo tibi gratias pro novis illis, quae paterne communicas.</s>
+					<s n="22" xml:lang="la" type="auto">Perge nobis manum porrigere, quo facilius ex his omnibus fluctibus eluctari possim.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Deum rogo, ut te nobis diu incolumem conservet.</s>
-					<s xml:lang="la" type="auto">Vale, reverende pater.</s>
+					<s n="23" xml:lang="la" type="auto">Deum rogo, ut te nobis diu incolumem conservet.</s>
+					<s n="24" xml:lang="la" type="auto">Vale, reverende pater.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Curię calendis maii anno 1564.</s>
+					<s n="25" xml:lang="la" type="auto">Curię calendis maii anno 1564.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">T[uus] F[abricius].</s>
+					<s n="26" xml:lang="la" type="auto">T[uus] F[abricius].</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Amplissimo viro d. Heinrycho Bullingero, domino suo et in Christo patri reverendo.</s>
+					<s n="27" xml:lang="la" type="auto">Amplissimo viro d. Heinrycho Bullingero, domino suo et in Christo patri reverendo.</s>
 				</p>
 				<p>
-					<s xml:lang="la" type="auto">Tiguri.</s>
+					<s n="28" xml:lang="la" type="auto">Tiguri.</s>
 				</p>
 			</div>
 		</body>
