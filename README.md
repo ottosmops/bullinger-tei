@@ -14,11 +14,12 @@ PROVISIONAL VERSION
 
   * Persons: data/persons.xml [~ 1 MB]
   * Places: data/places.xml [~ 0.1 MB]
-  *
+  * Institutions (organisations): data/orgs.xml
+  * Titles (professions): data/roles.xml
 - Portraits: data/portraits/*.(jpg|png) [453 files, ~220 MB]
 - DTD: *tei.dtd*
 - Validation: scripts/validate.py
 
 ---
 
-**Volk et al., November 30, 2022**
+**Volk et al., January 16, 2023**
